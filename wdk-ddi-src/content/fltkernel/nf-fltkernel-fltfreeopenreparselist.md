@@ -7,7 +7,7 @@ old-location: ifsk\fltfreeopenreparselist.htm
 old-project: ifsk
 ms.assetid: 78FA1585-F834-48E4-BB15-78BA5563F9D0
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltAddOpenReparseEntry, FltAddOpenReparseEntry routine [Installable File System Drivers], FltFreeOpenReparseList, fltkernel/FltAddOpenReparseEntry, ifsk.fltfreeopenreparselist
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,16 +46,16 @@ req.typenames: EXpsFontRestriction
 
 # FltFreeOpenReparseList function
 This routine deallocates any information copied into a create operation by
-    a previous call to <a href="..\fltkernel\nf-fltkernel-fltcopyopenreparselist.md">FltCopyOpenReparseList</a>.
+    a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt734258">FltCopyOpenReparseList</a>.
 
 ## Syntax
 
-````
-void FltAddOpenReparseEntry(
-  _In_ PFLT_FILTER Filter,
-  _In_ PECP_LIST   EcpList
+```
+VOID FLTAPI FltFreeOpenReparseList(
+  PFLT_FILTER Filter,
+  PECP_LIST   EcpList
 );
-````
+```
 
 ## Parameters
 

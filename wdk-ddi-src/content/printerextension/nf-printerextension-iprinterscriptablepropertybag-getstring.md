@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetString method
+# IPrinterScriptablePropertyBag::GetString method
 Gets a string property.
 
 ## Syntax
 
-````
+```
 HRESULT GetString(
-  [in]          BSTR bstrName,
-  [out, retval] BSTR *pbstrValue
+  BSTR bstrName,
+  BSTR *pbstrValue
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +85,4 @@ A call to <b>GetString</b> will throw an exception, if the specified property is
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973217">IPrinterScriptablePropertyBag</a>

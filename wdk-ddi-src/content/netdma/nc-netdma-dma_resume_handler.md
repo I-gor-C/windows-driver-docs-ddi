@@ -7,7 +7,7 @@ old-location: netvista\providerresumedma.htm
 old-project: netvista
 ms.assetid: 06609603-eeed-4fb0-a878-87cad2e72b46
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: DMA_RESUME_HANDLER, ProviderResumeDma, ProviderResumeDma callback function [Network Drivers Starting with Windows Vista], netdma/ProviderResumeDma, netdma_ref_75548093-1640-40f2-a715-0918b92900d3.xml, netvista.providerresumedma
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ NTSTATUS DmaResumeHandler(
 A pointer that identifies a DMA channel's context area. The DMA provider returned this handle to
      NetDMA at the location that is specified in the 
      <i>pProviderChannelContext</i> parameter of the 
-     <a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">
+     <a href="https://msdn.microsoft.com/42bc0e08-3d85-424f-aaa4-4df788d3706a">
      ProviderAllocateDmaChannel</a> function.
 
 
@@ -112,7 +112,7 @@ The
     <i>ProviderSuspendDma</i> function is an optional function for NetDMA providers. The NetDMA interface
     calls the 
     <i>ProviderResumeDma</i> function, if any, to resume DMA operations that were suspended by calling the 
-    <a href="..\netdma\nc-netdma-dma_suspend_handler.md">ProviderSuspendDma</a> function. If the DMA
+    <a href="https://msdn.microsoft.com/b020b0c6-eb69-44d0-a374-b39eb2f536f1">ProviderSuspendDma</a> function. If the DMA
     provider driver specifies an entry point for a 
     <i>ProviderSuspendDma</i> function, it must also specify an entry point for a 
     <i>ProviderResumeDma</i> function.
@@ -133,8 +133,8 @@ NetDMA calls
 
 ## See Also
 
-<a href="..\netdma\nc-netdma-dma_channel_allocate_handler.md">ProviderAllocateDmaChannel</a>
+<a href="https://msdn.microsoft.com/42bc0e08-3d85-424f-aaa4-4df788d3706a">ProviderAllocateDmaChannel</a>
 
 
 
-<a href="..\netdma\nc-netdma-dma_suspend_handler.md">ProviderSuspendDma</a>
+<a href="https://msdn.microsoft.com/b020b0c6-eb69-44d0-a374-b39eb2f536f1">ProviderSuspendDma</a>

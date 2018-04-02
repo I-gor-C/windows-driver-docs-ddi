@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongtoshort.htm
 old-project: kernel
 ms.assetid: F9FCB214-D56A-4BCC-BB7A-40833836D333
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlLongLongToShort, RtlLongLongToShort function [Kernel-Mode Driver Architecture], kernel.rtllonglongtoshort, ntintsafe/RtlLongLongToShort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>LONGLONG</b> to a value of type <b>SHORT</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlLongLongToShort(
-  _In_  LONGLONG llOperand,
-  _Out_ SHORT    *psResult
+  LONGLONG llOperand,
+  SHORT    *psResult
 );
-````
+```
 
 ## Parameters
 

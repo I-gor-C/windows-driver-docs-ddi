@@ -45,20 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetValidValues method
+# CWiauPropertyList::SetValidValues method
 The <b>CWiauPropertyList::SetValidValues(BSTR, list)</b> method sets the type, as well as default, current, and valid values for a <b>BSTR</b> property associated with a list of values. The method also sets the property type to VT_BSTR and subtype to WIA_PROP_LIST (defined in the Microsoft Windows SDK documentation).
 
 ## Syntax
 
-````
+```
 void SetValidValues(
-   INT    index,
-   BSTR   defaultValue,
-   BSTR   currentValue,
-   INT    numValues,
-   BSTR   *pValues
+  INT  index,
+  LONG defaultValue,
+  LONG currentValue,
+  LONG validFlags
 );
-````
+```
 
 ## Parameters
 
@@ -93,12 +92,12 @@ This method does not return a value.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/4f11bec0-8ff4-4fa0-824c-71ce9774d5d1">CWiauPropertyList</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540391">CWiauPropertyList::DefineProperty</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540403">CWiauPropertyList::SendToWia</a>
-
-
-
-<a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>

@@ -7,7 +7,7 @@ old-location: audio\ioctl_bthhfp_mic_get_volume_status_update.htm
 old-project: audio
 ms.assetid: 8BF4AEA4-B8EC-4C09-AEC8-5E47A0D715FB
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IOCTL_BTHHFP_MIC_GET_VOLUME_STATUS_UPDATE, IOCTL_BTHHFP_MIC_GET_VOLUME_STATUS_UPDATE control code [Audio Devices], audio.ioctl_bthhfp_mic_get_volume_status_update, bthhfpddi/IOCTL_BTHHFP_MIC_GET_VOLUME_STATUS_UPDATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,10 +85,6 @@ The request’s output parameter is the same as the <a href="https://msdn.micros
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537309">KSPROPERTY_AUDIO_VOLUMELEVEL</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn302027">Bluetooth HFP DDI IOCTLs</a>
 
 
@@ -98,3 +94,7 @@ The request’s output parameter is the same as the <a href="https://msdn.micros
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537208">KSNODETYPE_VOLUME</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537309">KSPROPERTY_AUDIO_VOLUMELEVEL</a>

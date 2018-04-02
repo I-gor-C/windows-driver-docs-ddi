@@ -2,7 +2,7 @@
 UID: NA:wdbgexts
 ms.assetid: 47d4ebbf-84ee-3898-8135-fa80fd566021
 ms.author: windowsdriverdev
-ms.date: 03/13/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -197,6 +197,9 @@ wdbgexts.h contains the following programming interfaces:
 | [_FIELD_INFO](ns-wdbgexts-_field_info.md) | The FIELD_INFO structure is used by the IG_DUMP_SYMBOL_INFOIoctl operation to provide information about a member in a structure. |
 | [_GETSETBUSDATA](ns-wdbgexts-_getsetbusdata.md) | The IG_GET_BUS_DATA Ioctl operation reads data from a system bus and the IG_SET_BUS_DATA Ioctl operation writes data to a system bus. |
 | [_POINTER_SEARCH_PHYSICAL](ns-wdbgexts-_pointer_search_physical.md) | The IG_POINTER_SEARCH_PHYSICAL Ioctl operation searches the target's physical memory for pointers lying within a specified range. |
+| [_READCONTROLSPACE](ns-wdbgexts-_readcontrolspace.md) | The ReadControlSpace function reads the processor-specific control space into the array pointed to by buf. |
+| [_READCONTROLSPACE64](ns-wdbgexts-_readcontrolspace64.md) | The ReadControlSpace64 function reads the processor-specific control space into the array pointed to by buf. |
+| [_SEARCHMEMORY](ns-wdbgexts-_searchmemory.md) | The SearchMemory function searches the target's virtual memory for a specified pattern of bytes. |
 | [_SYM_DUMP_PARAM](ns-wdbgexts-_sym_dump_param.md) | The IG_DUMP_SYMBOL_INFO Ioctl operation provides information about the type of a symbol. |
 | [_WDBGEXTS_THREAD_OS_INFO](ns-wdbgexts-_wdbgexts_thread_os_info.md) | The IG_GET_THREAD_OS_INFO Ioctl operation returns information about an operating system thread in the target. When calling Ioctl with IoctlType set to IG_GET_THREAD_OS_INFO, IpvData should contain an instance of the WDBGEXTS_THREAD_OS_INFO structure. |
 

@@ -2,7 +2,7 @@
 UID: NA:ntddk
 ms.assetid: 8dc3fa19-767c-3b6c-bd75-864cd70d19d4
 ms.author: windowsdriverdev
-ms.date: 03/13/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,13 +13,13 @@ ms.topic: portal
 
 
 
-This header is used by Windows Hardware Error Architecture (WHEA), Installable file system, Windows kernel, PCI, Driver test tools, Storage. For more information, see
-- [Windows Hardware Error Architecture (WHEA)](../_whea/index.md)
+This header is used by Installable file system, Windows kernel, Windows Hardware Error Architecture (WHEA), PCI, Storage, Driver test tools. For more information, see
 - [Installable file system](../_ifsk/index.md)
 - [Windows kernel](../_kernel/index.md)
+- [Windows Hardware Error Architecture (WHEA)](../_whea/index.md)
 - [PCI](../_PCI/index.md)
-- [Driver test tools](../_devtest/index.md)
 - [Storage](../_storage/index.md)
+- [Driver test tools](../_devtest/index.md)
 
 Ntddk.h contain these programming interfaces:
 
@@ -480,7 +480,7 @@ ntddk.h contains the following programming interfaces:
 | [IoGetFileObjectGenericMapping](nf-ntddk-iogetfileobjectgenericmapping.md) | The IoGetFileObjectGenericMapping routine returns information about the mapping between each generic access right and the set of specific access rights for file objects. |
 | [IoGetInitiatorProcess](nf-ntddk-iogetinitiatorprocess.md) | The IoGetInitiatorProcess routine retrieves the process which initiated the creation of a file object if different than the process which is issuing the create. |
 | [IoGetOplockKeyContext](nf-ntddk-iogetoplockkeycontext.md) | The IoGetOplockKeyContext routine returns a target oplock key context for a file object. |
-| [IoGetOplockKeyContextEx](nf-ntddk-iogetoplockkeycontextex.md) | The IoGetOplockKeyContextEx routine returns a parent and target oplock key context for a file object. |
+| [IoGetOplockKeyContextEx](nf-ntddk-iogetoplockkeycontextex.md) | The IoGetOplockKeyContext routine returns a target oplock key context for a file object. |
 | [IoGetPagingIoPriority](nf-ntddk-iogetpagingiopriority.md) | The IoGetPagingIoPriority routine indicates the priority level of a paging I/O request. |
 | [IoGetSiloParameters](nf-ntddk-iogetsiloparameters.md) | This routine indicates if a file is within a Container context. |
 | [IoGetTransactionParameterBlock](nf-ntddk-iogettransactionparameterblock.md) | The IoGetTransactionParameterBlock routine returns the transaction parameter block for a transacted file operation. |
@@ -793,7 +793,7 @@ ntddk.h contains the following programming interfaces:
 | [_WHEA_ERROR_INJECTION_CAPABILITIES](ns-ntddk-_whea_error_injection_capabilities.md) | The WHEA_ERROR_INJECTION_CAPABILITIES union describes the types of hardware errors that can be injected into a hardware platform. |
 | [_WHEA_ERROR_PACKET_FLAGS](ns-ntddk-_whea_error_packet_flags.md) | The WHEA_ERROR_PACKET_FLAGS union defines the error condition reported through a WHEA_ERROR_PACKET structure. |
 | [_WHEA_ERROR_PACKET_V1](ns-ntddk-_whea_error_packet_v1.md) | The WHEA_ERROR_PACKET_V1 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V1 structure is supported in Windows Server 2008 and Windows Vista SP1. |
-| [_WHEA_ERROR_PACKET_V2](ns-ntddk-_whea_error_packet_v2.md) | The WHEA_ERROR_PACKET_V2 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V2 structure is supported in Windows 7 and later versions of Windows. |
+| [_WHEA_ERROR_PACKET_V2](ns-ntddk-_whea_error_packet_v2.md) | The WHEA_ERROR_PACKET_V1 structure describes the hardware error data that is passed to the operating system by a low-level hardware error handler (LLHEH).Note  The WHEA_ERROR_PACKET_V1 structure is supported in Windows Server 2008 and Windows Vista SP1. |
 | [_WHEA_ERROR_RECORD](ns-ntddk-_whea_error_record.md) | The WHEA_ERROR_RECORD structure describes an error record that contains error information about a hardware error condition that occurred. |
 | [_WHEA_ERROR_RECORD_HEADER](ns-ntddk-_whea_error_record_header.md) | The WHEA_ERROR_RECORD_HEADER structure describes general information about a hardware error condition. |
 | [_WHEA_ERROR_RECORD_HEADER_VALIDBITS](ns-ntddk-_whea_error_record_header_validbits.md) | The WHEA_ERROR_RECORD_HEADER_VALIDBITS union describes which members of a WHEA_ERROR_RECORD_HEADER structure contain valid data. |

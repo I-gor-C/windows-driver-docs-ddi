@@ -51,12 +51,12 @@ PosCxRemoteRequestRelease is called whenever a remote device asks for
 
 ## Syntax
 
-````
+```
 NTSTATUS PosCxRemoteRequestRelease(
-  _In_ WDFDEVICE device,
-  _In_ ULONG     deviceInterfaceTag
+  WDFDEVICE device,
+  ULONG     deviceInterfaceTag
 );
-````
+```
 
 ## Parameters
 

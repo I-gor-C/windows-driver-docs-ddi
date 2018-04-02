@@ -7,7 +7,7 @@ old-location: kernel\rtlssizetsub.htm
 old-project: kernel
 ms.assetid: 6EFDD7BF-B347-4E02-905E-01F0F155DB6F
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlSSIZETSub, RtlSSIZETSub function [Kernel-Mode Driver Architecture], kernel.rtlssizetsub, ntintsafe/RtlSSIZETSub
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ Subtracts one value of type <b>SSIZE_T</b> from another.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlSSIZETSub(
-  _In_  SSIZE_T Minuend,
-  _In_  SSIZE_T Subtrahend,
-  _Out_ SSIZE_T *pResult
+  SSIZE_T Minuend,
+  SSIZE_T Subtrahend,
+  SSIZE_T *pResult
 );
-````
+```
 
 ## Parameters
 

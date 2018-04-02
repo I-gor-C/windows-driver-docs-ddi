@@ -47,21 +47,21 @@ req.typenames: KSFILTER_DISPATCH, *PKSFILTER_DISPATCH
 The KSFILTER_DISPATCH structure describes the client callbacks that are made to notify the client of certain events on a given filter type.
 
 ## Syntax
-````
+```
 typedef struct _KSFILTER_DISPATCH {
-  PFNKSFILTERIRP     Create;
-  PFNKSFILTERIRP     Close;
+  PFNKSFILTERIRP     Create;
+  PFNKSFILTERIRP     Close;
   PFNKSFILTERPROCESS Process;
-  PFNKSFILTERVOID    Reset;
+  PFNKSFILTERVOID    Reset;
 } KSFILTER_DISPATCH, *PKSFILTER_DISPATCH;
-````
+```
 
 ## Members
 
 
 `Create`
 
-Optional. A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksfilterirp.md">AVStrMiniFilterCreate</a> callback routine.
+Optional. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556310">AVStrMiniFilterCreate</a> callback routine.
 
 `Close`
 
@@ -69,11 +69,11 @@ Optional. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com
 
 `Process`
 
-Optional. A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksfilterprocess.md">AVStrMiniFilterProcess</a> callback routine.
+Optional. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556315">AVStrMiniFilterProcess</a> callback routine.
 
 `Reset`
 
-Optional. A pointer to a minidriver-supplied <a href="..\ks\nc-ks-pfnksfiltervoid.md">AVStrMiniFilterReset</a> callback routine.
+Optional. A pointer to a minidriver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556317">AVStrMiniFilterReset</a> callback routine.
 
 ## Remarks
 Any of the callback pointers may be <b>NULL</b>, indicating that the driver does not wish to receive notification of a given event.
@@ -91,12 +91,12 @@ Also see <a href="https://msdn.microsoft.com/f60d4dbd-61e6-4ae2-aa43-9edc8f36c3f
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksprocesspin_indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564256">KSPROCESSPIN</a>
 
 
 
-<a href="..\ks\nf-ks-kscompletependingrequest.md">KsCompletePendingRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564260">KSPROCESSPIN_INDEXENTRY</a>
 
 
 
-<a href="..\ks\ns-ks-_ksprocesspin.md">KSPROCESSPIN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561025">KsCompletePendingRequest</a>

@@ -50,13 +50,13 @@ This function creates an instance of a sensor in the class extension.
 
 ## Syntax
 
-````
-FORCEINLINE NTSTATUS SensorsCxSensorCreate(
-  _In_  WDFDEVICE              FxDevice,
-  _In_  PWDF_OBJECT_ATTRIBUTES pSensorAttributes,
-  _Out_ PSENSOROBJECT          pSensor
+```
+NTSTATUS SensorsCxSensorCreate(
+  WDFDEVICE              FxDevice,
+  PWDF_OBJECT_ATTRIBUTES pSensorAttributes,
+  PSENSOROBJECT          pSensor
 );
-````
+```
 
 ## Parameters
 

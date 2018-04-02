@@ -7,7 +7,7 @@ old-location: storage\msiscsi_initiatorinstancefailureevent.htm
 old-project: storage
 ms.assetid: f0213dc9-7299-4cf7-b2c9-27e5d1caea00
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PMSiSCSI_InitiatorInstanceFailureEvent, MSiSCSI_InitiatorInstanceFailureEvent, MSiSCSI_InitiatorInstanceFailureEvent structure [Storage Devices], PMSiSCSI_InitiatorInstanceFailureEvent, PMSiSCSI_InitiatorInstanceFailureEvent structure pointer [Storage Devices], _MSiSCSI_InitiatorInstanceFailureEvent, iscsimgt/MSiSCSI_InitiatorInstanceFailureEvent, iscsimgt/PMSiSCSI_InitiatorInstanceFailureEvent, storage.msiscsi_initiatorinstancefailureevent, structs-iSCSI_189ce06c-9fb3-49f5-9921-31c400c4ae23.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: MSiSCSI_InitiatorInstanceFailureEvent, *PMSiSCSI_InitiatorInstanc
 The MSiSCSI_InitiatorInstanceFailureEvent structure is used to report an event when an initiator instance failure occurs.
 
 ## Syntax
-````
+```
 typedef struct _MSiSCSI_InitiatorInstanceFailureEvent {
   UCHAR FailureType;
   WCHAR RemoteNodeName[223 + 1];
 } MSiSCSI_InitiatorInstanceFailureEvent, *PMSiSCSI_InitiatorInstanceFailureEvent;
-````
+```
 
 ## Members
 

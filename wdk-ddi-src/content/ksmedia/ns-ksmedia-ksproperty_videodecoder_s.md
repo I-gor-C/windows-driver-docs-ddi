@@ -47,12 +47,12 @@ req.typenames: KSPROPERTY_VIDEODECODER_S, *PKSPROPERTY_VIDEODECODER_S
 The KSPROPERTY_VIDEODECODER_S structure describes property settings in the PROPSETID_VIDCAP_VIDEODECODER property set.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_VIDEODECODER_S {
   KSPROPERTY Property;
-  ULONG      Value;
-} KSPROPERTY_VIDEODECODER_S, *PKSPROPERTY_VIDEODECODER_S;
-````
+  ULONG      Value;
+}  *PKSPROPERTY_VIDEODECODER_S;
+```
 
 ## Members
 
@@ -79,7 +79,7 @@ The KSPROPERTY_VIDEODECODER_S structure is shared among the KSPROPERTY_VIDEODECO
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566062">KSPROPERTY_VIDEODECODER_VCR_TIMING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566051">KSPROPERTY_VIDEODECODER_OUTPUT_ENABLE</a>
 
 
 
@@ -87,4 +87,4 @@ The KSPROPERTY_VIDEODECODER_S structure is shared among the KSPROPERTY_VIDEODECO
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566051">KSPROPERTY_VIDEODECODER_OUTPUT_ENABLE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566062">KSPROPERTY_VIDEODECODER_VCR_TIMING</a>

@@ -48,13 +48,14 @@ req.product: Windows 10 or later.
 The POS_CX_EVENT_DEST defines which applications receive this event.
 
 ## Syntax
-````
-typedef enum _POS_CX_EVENT_DEST { 
-  POS_CX_EVENT_DEST_INVALID       = 0,
-  POS_CX_EVENT_DEST_DEVICE_OWNER  = 1,
-  POS_CX_EVENT_DEST_ALL           = 2
+```
+typedef enum _POS_CX_EVENT_DEST {
+  POS_CX_EVENT_DEST_INVALID       ,
+  POS_CX_EVENT_DEST_DEVICE_OWNER  ,
+  POS_CX_EVENT_DEST_ALL           ,
+  POS_CX_EVENT_DEST__MAX
 } POS_CX_EVENT_DEST;
-````
+```
 
 ## Constants
 

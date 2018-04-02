@@ -7,7 +7,7 @@ old-location: ifsk\rtlsetgroupsecuritydescriptor.htm
 old-project: ifsk
 ms.assetid: f0473975-7ab6-46ba-bdb7-eb227e6bc258
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlSetGroupSecurityDescriptor, RtlSetGroupSecurityDescriptor routine [Installable File System Drivers], ifsk.rtlsetgroupsecuritydescriptor, ntifs/RtlSetGroupSecurityDescriptor, rtlref_113e5ca7-5db3-4c93-a26f-c568e2164de9.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,23 +50,23 @@ The <b>RtlSetGroupSecurityDescriptor</b> routine sets the primary group informat
 
 ## Syntax
 
-````
-NTSTATUS RtlSetGroupSecurityDescriptor(
-  _Inout_  PSECURITY_DESCRIPTOR SecurityDescriptor,
-  _In_opt_ PSID                 Group,
-  _In_opt_ BOOLEAN              GroupDefaulted
+```
+NTSYSAPI NTSTATUS RtlSetGroupSecurityDescriptor(
+  PSECURITY_DESCRIPTOR SecurityDescriptor,
+  PSID                 Group,
+  BOOLEAN              GroupDefaulted
 );
-````
+```
 
 ## Parameters
 
 `SecurityDescriptor`
 
-Pointer to the <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> structure whose primary group is to be set. <b>RtlSetGroupSecurityDescriptor</b> replaces any existing primary group with the new primary group.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> structure whose primary group is to be set. <b>RtlSetGroupSecurityDescriptor</b> replaces any existing primary group with the new primary group.
 
 `Group`
 
-Pointer to a security identifier (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>) structure for the security descriptor's new primary owner. This pointer, not the SID structure itself, is copied into the security descriptor. If <i>Group</i> is <b>NULL</b>, <b>RtlSetGroupSecurityDescriptor</b> clears the security descriptor's primary group information. This marks the security descriptor as having no primary group.
+Pointer to a security identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>) structure for the security descriptor's new primary owner. This pointer, not the SID structure itself, is copied into the security descriptor. If <i>Group</i> is <b>NULL</b>, <b>RtlSetGroupSecurityDescriptor</b> clears the security descriptor's primary group information. This marks the security descriptor as having no primary group.
 
 `GroupDefaulted`
 
@@ -108,9 +108,9 @@ The given security descriptor's revision is not recognized by this routine. STAT
 
 ## Remarks
 
-To retrieve the primary group information for a security descriptor, use <a href="..\ntifs\nf-ntifs-rtlgetgroupsecuritydescriptor.md">RtlGetGroupSecurityDescriptor</a>. 
+To retrieve the primary group information for a security descriptor, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff552305">RtlGetGroupSecurityDescriptor</a>. 
 
-To set the owner information for a security descriptor, use <a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>. 
+To set the owner information for a security descriptor, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553220">RtlSetOwnerSecurityDescriptor</a>. 
 
 For more information about security and access control, see the Microsoft Windows SDK documentation.
 
@@ -126,7 +126,15 @@ For more information about security and access control, see the Microsoft Window
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552305">RtlGetGroupSecurityDescriptor</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553220">RtlSetOwnerSecurityDescriptor</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>
 
 
 
@@ -134,12 +142,4 @@ For more information about security and access control, see the Microsoft Window
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlgetgroupsecuritydescriptor.md">RtlGetGroupSecurityDescriptor</a>
-
-
-
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-rtlsetownersecuritydescriptor.md">RtlSetOwnerSecurityDescriptor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>

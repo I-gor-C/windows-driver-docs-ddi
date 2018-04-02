@@ -7,7 +7,7 @@ old-location: debugger\removebreakpoint2.htm
 old-project: debugger
 ms.assetid: e1c77758-0249-4ec6-9244-329c0b823e44
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugControl4, IDebugControl4 interface [Windows Debugging], RemoveBreakpoint2 method, IDebugControl4::RemoveBreakpoint2, RemoveBreakpoint2 method [Windows Debugging], RemoveBreakpoint2 method [Windows Debugging], IDebugControl4 interface, RemoveBreakpoint2,IDebugControl4.RemoveBreakpoint2, dbgeng/IDebugControl4::RemoveBreakpoint2, debugger.removebreakpoint2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# RemoveBreakpoint2 method
+# IDebugControl4::RemoveBreakpoint2 method
 The <b>RemoveBreakpoint2</b>  method removes a breakpoint.
 
 ## Syntax
 
-````
+```
 HRESULT RemoveBreakpoint2(
-  [in] PDEBUG_BREAKPOINT2 Bp
+  PDEBUG_BREAKPOINT2 Bp
 );
-````
+```
 
 ## Parameters
 
@@ -89,7 +89,7 @@ This method may also return other error values.  See <a href="https://msdn.micro
 
 After <b>RemoveBreakpoint</b> and <b>RemoveBreakpoint2</b> are called, the breakpoint object specified in the <i>Bp</i> parameter must not be used again.
 
-<div class="alert"><b>Note</b>    Even though <a href="..\dbgeng\nn-dbgeng-idebugbreakpoint.md">IDebugBreakpoint</a> extends the COM interface <b>IUnknown</b>, the lifetime of the breakpoint is not controlled using the <b>IUnknown</b> interface.  Instead, the breakpoint is deleted after <b>RemoveBreakpoint</b> and <b>RemoveBreakpoint2</b> are called.</div>
+<div class="alert"><b>Note</b>    Even though <a href="https://msdn.microsoft.com/library/windows/hardware/ff549812">IDebugBreakpoint</a> extends the COM interface <b>IUnknown</b>, the lifetime of the breakpoint is not controlled using the <b>IUnknown</b> interface.  Instead, the breakpoint is deleted after <b>RemoveBreakpoint</b> and <b>RemoveBreakpoint2</b> are called.</div>
 <div> </div>
 For more details, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff560075">Using Breakpoints</a>.
 
@@ -105,8 +105,8 @@ For more details, see <a href="https://msdn.microsoft.com/library/windows/hardwa
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugbreakpoint.md">IDebugBreakpoint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549812">IDebugBreakpoint</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>

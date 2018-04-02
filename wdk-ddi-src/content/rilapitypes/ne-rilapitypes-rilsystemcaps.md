@@ -7,7 +7,7 @@ old-location: netvista\rilsystemcaps.htm
 old-project: netvista
 ms.assetid: ed0ecb71-22b4-4387-8d5a-4d6fd2c7047e
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: RILSYSTEMCAPS, RILSYSTEMCAPS enumeration [Network Drivers Starting with Windows Vista], RIL_SYSTEMCAPS_ALL, RIL_SYSTEMCAPS_VOICEDATA, netvista.rilsystemcaps, ntddrilapitypes/RILSYSTEMCAPS, ntddrilapitypes/RIL_SYSTEMCAPS_ALL, ntddrilapitypes/RIL_SYSTEMCAPS_VOICEDATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,12 +48,13 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef enum _RILSYSTEMCAPS { 
-  RIL_SYSTEMCAPS_VOICEDATA,
+```
+typedef enum RILSYSTEMCAPS {
+  RIL_SYSTEMCAPS_NONE       ,
+  RIL_SYSTEMCAPS_VOICEDATA  ,
   RIL_SYSTEMCAPS_ALL
-} RILSYSTEMCAPS;
-````
+} ;
+```
 
 ## Constants
 

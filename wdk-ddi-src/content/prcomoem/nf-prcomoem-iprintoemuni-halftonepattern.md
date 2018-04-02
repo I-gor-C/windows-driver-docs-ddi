@@ -45,29 +45,29 @@ req.product: Windows 10 or later.
 ---
 
 
-# HalftonePattern method
+# IPrintOemUni::HalftonePattern method
 The <code>IPrintOemUni::HalftonePattern</code> method can be used with Unidrv-supported printers to create or modify a halftone pattern before it is used in a halftoning operation.
 
 ## Syntax
 
-````
+```
 HRESULT HalftonePattern(
-   PDEVOBJ pdevobj,
-   PBYTE   pHTPattern,
-   DWORD   dwHTPatternX,
-   DWORD   dwHTPatternY,
-   DWORD   dwHTNumPatterns,
-   DWORD   dwCallbackID,
-   PBYTE   pResource,
-   DWORD   dwResourceSize
+  PDEVOBJ pdevobj,
+  PBYTE   pHTPattern,
+  DWORD   dwHTPatternX,
+  DWORD   dwHTPatternY,
+  DWORD   dwHTNumPatterns,
+  DWORD   dwCallbackID,
+  PBYTE   pResource,
+  DWORD   dwResourceSize
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `pHTPattern`
 
@@ -268,7 +268,7 @@ For more information about halftoning, see <a href="https://msdn.microsoft.com/c
 
 ## See Also
 
-<a href="..\prcomoem\nn-prcomoem-iprintoemuni.md">IPrintOemUni</a>
+<a href="https://msdn.microsoft.com/097366a0-2ded-435c-9b63-2b736b716032">IPrintOemUni</a>
 
 
 

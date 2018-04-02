@@ -47,13 +47,13 @@ req.typenames: KS_FRAMING_RANGE_WEIGHTED, *PKS_FRAMING_RANGE_WEIGHTED
 Drivers can use the KS_FRAMING_RANGE_WEIGHTED structure to specify a range of weighted frame sizes.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KS_FRAMING_RANGE_WEIGHTED {
   KS_FRAMING_RANGE Range;
-  ULONG            InPlaceWeight;
-  ULONG            NotInPlaceWeight;
-} KS_FRAMING_RANGE_WEIGHTED, *PKS_FRAMING_RANGE_WEIGHTED;
-````
+  ULONG            InPlaceWeight;
+  ULONG            NotInPlaceWeight;
+} *PKS_FRAMING_RANGE_WEIGHTED, KS_FRAMING_RANGE_WEIGHTED;
+```
 
 ## Members
 
@@ -78,4 +78,4 @@ Not currently supported. Drivers should set to zero.
 
 ## See Also
 
-<a href="..\ks\ns-ks-ks_framing_item.md">KS_FRAMING_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567646">KS_FRAMING_ITEM</a>

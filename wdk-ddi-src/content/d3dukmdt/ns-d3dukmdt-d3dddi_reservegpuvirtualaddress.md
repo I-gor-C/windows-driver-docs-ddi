@@ -7,7 +7,7 @@ old-location: display\d3dddi_reservegpuvirtualaddress.htm
 old-project: display
 ms.assetid: 89E8FCC6-B618-4D7E-B1E6-59E85261BE3C
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_RESERVEGPUVIRTUALADDRESS, D3DDDI_RESERVEGPUVIRTUALADDRESS structure [Display Devices], d3dukmdt/D3DDDI_RESERVEGPUVIRTUALADDRESS, display.d3dddi_reservegpuvirtualaddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: D3DDDI_RESERVEGPUVIRTUALADDRESS
 ---
 
 # D3DDDI_RESERVEGPUVIRTUALADDRESS structure
-<b>D3DDDI_RESERVEGPUVIRTUALADDRESS</b> is used with <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a> to reserve an address range in the graphics processing unit (GPU) virtual address space of the current process.
+<b>D3DDDI_RESERVEGPUVIRTUALADDRESS</b> is used with <a href="https://msdn.microsoft.com/CEDE03E1-4B0D-4839-B7D6-0826CC103C5E">pfnReserveGpuVirtualAddressCb</a> to reserve an address range in the graphics processing unit (GPU) virtual address space of the current process.
 
 ## Syntax
-````
+```
 typedef struct D3DDDI_RESERVEGPUVIRTUALADDRESS {
   union {
-    D3DKMT_HANDLE hPagingQueue;
     D3DKMT_HANDLE hAdapter;
+    D3DKMT_HANDLE hPagingQueue;
   };
   D3DGPU_VIRTUAL_ADDRESS BaseAddress;
   D3DGPU_VIRTUAL_ADDRESS MinimumAddress;
   D3DGPU_VIRTUAL_ADDRESS MaximumAddress;
-  D3DGPU_SIZE_T          Size;
+  D3DGPU_SIZE_T          Size;
   union {
     D3DDDIGPUVIRTUALADDRESS_RESERVATION_TYPE ReservationType;
-    UINT                                     Reserved0;
+    UINT                                     Reserved0;
   };
   union {
     UINT64 DriverProtection;
@@ -70,8 +70,8 @@ typedef struct D3DDDI_RESERVEGPUVIRTUALADDRESS {
     UINT64 PagingFenceValue;
     UINT64 Reserved2;
   };
-} D3DDDI_RESERVEGPUVIRTUALADDRESS;
-````
+};
+```
 
 ## Members
 
@@ -118,4 +118,4 @@ Specify the size of the range to reserve in bytes. Must be a multiple of 64KB.
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
+<a href="https://msdn.microsoft.com/CEDE03E1-4B0D-4839-B7D6-0826CC103C5E">pfnReserveGpuVirtualAddressCb</a>

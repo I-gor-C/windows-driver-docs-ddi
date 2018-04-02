@@ -99,7 +99,7 @@ The provider-defined data. This parameter is optional. The provider determines t
 
 `CallbackContext`
 
-The context of the callback function that is defined when the provider called <a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a> to register itself. This parameter is optional.
+The context of the callback function that is defined when the provider called <a href="https://msdn.microsoft.com/library/windows/hardware/ff545603">EtwRegister</a> to register itself. This parameter is optional.
 
 
 ## Return Value
@@ -124,14 +124,6 @@ Callers of <b>EtwEnableCallback</b> must be running at IRQL = PASSIVE_LEVEL in t
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a>
-
-
-
-<a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a>
-
-
-
 <a href="http://go.microsoft.com/fwlink/p/?linkid=103399">EnableTrace</a>
 
 
@@ -140,8 +132,16 @@ Callers of <b>EtwEnableCallback</b> must be running at IRQL = PASSIVE_LEVEL in t
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545590">EtwEventEnabled</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545595">EtwProviderEnabled</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545603">EtwRegister</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545684">Event Filter Descriptor</a>
-
-
-
-<a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a>

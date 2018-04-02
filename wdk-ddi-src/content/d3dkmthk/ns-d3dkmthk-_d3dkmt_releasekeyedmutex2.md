@@ -7,7 +7,7 @@ old-location: display\d3dkmt_releasekeyedmutex2.htm
 old-project: display
 ms.assetid: e343b11c-7cd1-4aea-a87c-e33577456851
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_RELEASEKEYEDMUTEX2, D3DKMT_RELEASEKEYEDMUTEX2 structure [Display Devices], _D3DKMT_RELEASEKEYEDMUTEX2, d3dkmthk/D3DKMT_RELEASEKEYEDMUTEX2, display.d3dkmt_releasekeyedmutex2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: D3DKMT_RELEASEKEYEDMUTEX2
 ---
 
 # _D3DKMT_RELEASEKEYEDMUTEX2 structure
-Describes a keyed mutex object that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex2.md">D3DKMTReleaseKeyedMutex2</a> function releases that includes private data.
+Describes a keyed mutex object that the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439455">D3DKMTReleaseKeyedMutex2</a> function releases that includes private data.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_RELEASEKEYEDMUTEX2 {
   D3DKMT_HANDLE hKeyedMutex;
-  UINT64        Key;
-  UINT64        FenceValue;
-  VOID          *pPrivateRuntimeData;
-  UINT          PrivateRuntimeDataSize;
+  UINT64        Key;
+  UINT64        FenceValue;
+  VOID          *pPrivateRuntimeData;
+  UINT          PrivateRuntimeDataSize;
 } D3DKMT_RELEASEKEYEDMUTEX2;
-````
+```
 
 ## Members
 
@@ -89,4 +89,4 @@ typedef struct _D3DKMT_RELEASEKEYEDMUTEX2 {
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreleasekeyedmutex2.md">D3DKMTReleaseKeyedMutex2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439455">D3DKMTReleaseKeyedMutex2</a>

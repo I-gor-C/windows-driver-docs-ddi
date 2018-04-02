@@ -7,7 +7,7 @@ old-location: buses\usbbuildgetstatusrequest.htm
 old-project: usbref
 ms.assetid: 7a5fcb4f-fc9a-4ebb-93ef-b83461557b22
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UsbBuildGetStatusRequest, UsbBuildGetStatusRequest routine [Buses], buses.usbbuildgetstatusrequest, usbdlib/UsbBuildGetStatusRequest, usbfunc_a99bf737-8bb6-4000-af2b-ac076a4ffc8e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,26 +46,26 @@ req.product: Windows 10 or later.
 
 
 # UsbBuildGetStatusRequest function
-The <b>UsbBuildGetStatusRequest</b> macro formats an <a href="..\usb\ns-usb-_urb.md">URB</a> to obtain status from a device, interface, endpoint, or other device-defined target on a USB device.
+The <b>UsbBuildGetStatusRequest</b> macro formats an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to obtain status from a device, interface, endpoint, or other device-defined target on a USB device.
 
 ## Syntax
 
-````
+```
 void UsbBuildGetStatusRequest(
-  _Inout_         urb,
-  _In_     USHORT op,
-  _In_     USHORT index,
-  _In_opt_ PVOID  transferBuffer,
-  _In_opt_ PMDL   transferBufferMDL,
-  _In_     PURB   link
+   urb,
+   op,
+   index,
+   transferBuffer,
+   transferBufferMDL,
+   link
 );
-````
+```
 
 ## Parameters
 
 `urb`
 
-Pointer to an <a href="..\usb\ns-usb-_urb.md">URB</a> to be formatted as an status request.
+Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to be formatted as an status request.
 
 `op`
 
@@ -127,7 +127,7 @@ None
 
 ## See Also
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
 
 
 
@@ -135,4 +135,4 @@ None
 
 
 
-<a href="..\usb\ns-usb-_urb_control_get_status_request.md">_URB_CONTROL_GET_STATUS_REQUEST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540378">_URB_CONTROL_GET_STATUS_REQUEST</a>

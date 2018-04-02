@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
+```
 typedef struct _NOTIFICATION_CONFIG_1 {
-  UINT                   cbSize;
-  DWORD                  fdwFlags;
+  UINT                   cbSize;
+  DWORD                  fdwFlags;
   ROUTER_NOTIFY_CALLBACK pfnNotifyCallback;
-  PVOID                  pContext;
-} NOTIFICATION_CONFIG_1, *PNOTIFICATION_CONFIG_1;
-````
+  PVOID                  pContext;
+} *PNOTIFICATION_CONFIG_1, NOTIFICATION_CONFIG_1;
+```
 
 ## Members
 

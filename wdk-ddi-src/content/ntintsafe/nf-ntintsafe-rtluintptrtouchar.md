@@ -7,7 +7,7 @@ old-location: kernel\rtluintptrtouchar.htm
 old-project: kernel
 ms.assetid: F5E4225F-4C66-44A8-9445-7D7DBAFA1DA4
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUIntPtrToUChar, RtlUIntPtrToUChar function [Kernel-Mode Driver Architecture], kernel.rtluintptrtouchar, ntintsafe/RtlUIntPtrToUChar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>UINT_PTR</b> to a value of type <b>UCHAR</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlUIntPtrToUChar(
-  _In_  UINT_PTR uOperand,
-  _Out_ UCHAR    *pch
+  UINT_PTR uOperand,
+  UCHAR    *pch
 );
-````
+```
 
 ## Parameters
 

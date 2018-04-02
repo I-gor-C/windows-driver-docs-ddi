@@ -50,12 +50,12 @@ Frees all create items with a specific context.
 
 ## Syntax
 
-````
-NTSTATUS KsFreeObjectCreateItemsByContext(
-  _In_ KSDEVICE_HEADER Header,
-  _In_ PVOID           Context
+```
+KSDDKAPI NTSTATUS KsFreeObjectCreateItemsByContext(
+  KSDEVICE_HEADER Header,
+  PVOID           Context
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +85,4 @@ Instead of freeing create items by name as <b>KsFreeObjectCreateItems</b> does, 
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfreeobjectcreateitem.md">KsFreeObjectCreateItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562563">KsFreeObjectCreateItem</a>

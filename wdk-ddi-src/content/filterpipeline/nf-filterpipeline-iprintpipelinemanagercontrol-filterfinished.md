@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# FilterFinished method
+# IPrintPipelineManagerControl::FilterFinished method
 The <code>FilterFinished</code> method reports that a filter is finished processing.
 
 ## Syntax
 
-````
-HRESULT STDMETHODCALLTYPE FilterFinished(
-    None
+```
+HRESULT FilterFinished(
+
 );
-````
+```
 
 ## Parameters
 

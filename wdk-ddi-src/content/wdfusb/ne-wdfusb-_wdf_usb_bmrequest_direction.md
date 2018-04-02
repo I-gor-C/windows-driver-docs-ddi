@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 The <b>WDF_USB_BMREQUEST_DIRECTION</b> enumeration identifies the data transfer direction for a USB control transfer.
 
 ## Syntax
-````
-typedef enum _WDF_USB_BMREQUEST_DIRECTION { 
-  BmRequestHostToDevice  = BMREQUEST_HOST_TO_DEVICE,
-  BmRequestDeviceToHost  = BMREQUEST_DEVICE_TO_HOST
+```
+typedef enum _WDF_USB_BMREQUEST_DIRECTION {
+  BmRequestHostToDevice  ,
+  BmRequestDeviceToHost
 } WDF_USB_BMREQUEST_DIRECTION;
-````
+```
 
 ## Constants
 
@@ -74,7 +74,7 @@ typedef enum _WDF_USB_BMREQUEST_DIRECTION {
 
 ## Remarks
 
-The <b>WDF_USB_BMREQUEST_DIRECTION</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
+The <b>WDF_USB_BMREQUEST_DIRECTION</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552568">WDF_USB_CONTROL_SETUP_PACKET</a> structure.
 
 For more information about the data transfer direction for a USB control transfer, see the USB specification.
 
@@ -87,4 +87,4 @@ For more information about the data transfer direction for a USB control transfe
 
 ## See Also
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_control_setup_packet.md">WDF_USB_CONTROL_SETUP_PACKET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552568">WDF_USB_CONTROL_SETUP_PACKET</a>

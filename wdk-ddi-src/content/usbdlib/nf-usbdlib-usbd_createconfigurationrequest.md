@@ -7,7 +7,7 @@ old-location: buses\usbd_createconfigurationrequest.htm
 old-project: usbref
 ms.assetid: e1f397f6-2f33-4352-9bbc-2b2a49dcd067
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: USBD_CreateConfigurationRequest, USBD_CreateConfigurationRequest routine [Buses], buses.usbd_createconfigurationrequest, usbdlib/USBD_CreateConfigurationRequest, usbfunc_d2701cb6-8159-48e0-b668-bb3b02226a7d.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,32 +47,31 @@ req.product: Windows 10 or later.
 
 
 # USBD_CreateConfigurationRequest function
-The  <b>USBD_CreateConfigurationRequest</b> routine has been deprecated. Use <a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a> instead.
+The  <b>USBD_CreateConfigurationRequest</b> routine has been deprecated. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539029">USBD_CreateConfigurationRequestEx</a> instead.
 
 ## Syntax
 
-````
-PURB USBD_CreateConfigurationRequest(
-  _In_    PUSB_CONFIGURATION_DESCRIPTOR   ConfigurationDescriptor,
-  _Inout_ PUSHORT                         Siz
-    
+```
+DECLSPEC_IMPORT PURB USBD_CreateConfigurationRequest(
+  PUSB_CONFIGURATION_DESCRIPTOR ConfigurationDescriptor,
+  PUSHORT                       Siz
 );
-````
+```
 
 ## Parameters
 
 `ConfigurationDescriptor`
 
-Pointer to a caller-allocated <a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> structure that contains the configuration descriptor for the configuration to be selected.
+Pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff539241">USB_CONFIGURATION_DESCRIPTOR</a> structure that contains the configuration descriptor for the configuration to be selected.
 
 `Siz`
 
-Size of the <a href="..\usb\ns-usb-_urb.md">URB</a> structure.
+Size of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure.
 
 
 ## Return Value
 
-<b>USBD_CreateConfigurationRequest</b> allocates a <a href="..\usb\ns-usb-_urb.md">URB</a> structure, formats it for the URB_FUNCTION_SELECT_CONFIGURATION request (select-configuration request), and returns a pointer to the <b>URB</b>.
+<b>USBD_CreateConfigurationRequest</b> allocates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> structure, formats it for the URB_FUNCTION_SELECT_CONFIGURATION request (select-configuration request), and returns a pointer to the <b>URB</b>.
 
 
 ## Requirements
@@ -89,4 +88,4 @@ Size of the <a href="..\usb\ns-usb-_urb.md">URB</a> structure.
 
 
 
-<a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539029">USBD_CreateConfigurationRequestEx</a>

@@ -7,7 +7,7 @@ old-location: kernel\read_register_ulong.htm
 old-project: kernel
 ms.assetid: a462734c-cac6-4de0-95c1-810766ef1644
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: READ_REGISTER_ULONG, READ_REGISTER_ULONG routine [Kernel-Mode Driver Architecture], k103_c2da9866-18ac-438b-aa32-991d1bda139f.xml, kernel.read_register_ulong, wdm/READ_REGISTER_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ api_name:
 -	READ_REGISTER_ULONG
 product: Windows
 targetos: Windows
-req.typenames: LUID
+req.typenames: IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS
 ---
 
 
@@ -49,11 +49,11 @@ The <b>READ_REGISTER_ULONG</b> routine reads a ULONG value from the specified re
 
 ## Syntax
 
-````
-ULONG READ_REGISTER_ULONG(
-  _In_ PULONG Register
+```
+void READ_REGISTER_ULONG(
+   Register
 );
-````
+```
 
 ## Parameters
 

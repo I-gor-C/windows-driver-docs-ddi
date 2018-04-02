@@ -7,7 +7,7 @@ old-location: debugger\ext_command_method.htm
 old-project: debugger
 ms.assetid: 30962127-a46f-43f5-a58e-891c5b8a867d
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EXT_COMMAND_METHOD, EXT_COMMAND_METHOD function [Windows Debugging], EngExtCpp_Ref_a4a0b264-50e1-457b-a962-ca691509ea36.xml, debugger.ext_command_method, engextcpp/EXT_COMMAND_METHOD
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The EXT_COMMAND_METHOD macro declares an extension command from inside the defin
 
 ## Syntax
 
-````
- EXT_COMMAND_METHOD(
-    _Name
+```
+void EXT_COMMAND_METHOD(
+   _Name
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ None
 
 This macro must be used inside the definition of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544508">EXT_CLASS</a> class.
 
-The macro <a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a> should be used to define the extension command.  As with all C++ declarations, the EXT_COMMAND_METHOD declaration should appear in the source files before the EXT_COMMAND definition.
+The macro <a href="https://msdn.microsoft.com/library/windows/hardware/ff544514">EXT_COMMAND</a> should be used to define the extension command.  As with all C++ declarations, the EXT_COMMAND_METHOD declaration should appear in the source files before the EXT_COMMAND definition.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,8 +80,8 @@ The macro <a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a> sho
 
 ## See Also
 
-<a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544508">EXT_CLASS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544514">EXT_COMMAND</a>

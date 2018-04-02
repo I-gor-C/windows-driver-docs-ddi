@@ -7,7 +7,7 @@ old-location: buses\ucmtcpci_port_controller_capabilities_init.htm
 old-project: usbref
 ms.assetid: d6a30351-4d0f-462a-bbf7-672f4da75bf5
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT, UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT method [Buses], buses.ucmtcpci_port_controller_capabilities_init, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT function
-Initializes the <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_capabilities.md">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.
+Initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/mt805870">UCMTCPCI_PORT_CONTROLLER_CAPABILITIES</a> structure.
 
 ## Syntax
 
-````
-VOID UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT(
-  _Out_ PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES Capabilities
+```
+void UCMTCPCI_PORT_CONTROLLER_CAPABILITIES_INIT(
+  PUCMTCPCI_PORT_CONTROLLER_CAPABILITIES Capabilities
 );
-````
+```
 
 ## Parameters
 
 `Capabilities`
 
-A pointer to the driver-allocated <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_capabilities.md">UCMTCPCI_PORT_CONTROLLER_CAPABILITIE</a>S structure.
+A pointer to the driver-allocated <a href="https://msdn.microsoft.com/d6a30351-4d0f-462a-bbf7-672f4da75bf5">UCMTCPCI_PORT_CONTROLLER_CAPABILITIE</a>S structure.
 
 
 ## Return Value
@@ -78,4 +78,4 @@ This method does not return a value.
 
 ## See Also
 
-<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>

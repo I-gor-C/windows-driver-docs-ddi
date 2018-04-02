@@ -50,13 +50,13 @@ For internal use only.
 
 ## Syntax
 
-````
-FORCEINLINE VOID WDF_TASK_QUEUE_CONFIG_INIT(
-  _Out_ PWDF_TASK_QUEUE_CONFIG       Config,
-  _In_  USHORT                       TaskQueueId,
-  _In_  WDF_TASK_QUEUE_DISPATCH_TYPE DispatchType
+```
+void WDF_TASK_QUEUE_CONFIG_INIT(
+  PWDF_TASK_QUEUE_CONFIG       Config,
+  USHORT                       TaskQueueId,
+  WDF_TASK_QUEUE_DISPATCH_TYPE DispatchType
 );
-````
+```
 
 ## Parameters
 

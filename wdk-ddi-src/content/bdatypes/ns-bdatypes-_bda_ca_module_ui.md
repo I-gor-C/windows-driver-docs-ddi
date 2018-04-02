@@ -47,13 +47,13 @@ req.typenames: BDA_CA_MODULE_UI, *PBDA_CA_MODULE_UI
 The BDA_CA_MODULE_UI structure describes the user interface (UI) that conditional access (CA) plugins can display.
 
 ## Syntax
-````
+```
 typedef struct _BDA_CA_MODULE_UI {
   ULONG ulFormat;
   ULONG ulbcDesc;
   ULONG ulDesc[MIN_DIMENSION];
-} BDA_CA_MODULE_UI, *PBDA_CA_MODULE_UI;
-````
+} *PBDA_CA_MODULE_UI, BDA_CA_MODULE_UI;
+```
 
 ## Members
 

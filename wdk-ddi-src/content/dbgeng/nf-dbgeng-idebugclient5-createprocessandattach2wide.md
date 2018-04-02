@@ -7,7 +7,7 @@ old-location: debugger\createprocessandattach2wide.htm
 old-project: debugger
 ms.assetid: a1a1170b-9ecc-4432-badd-50847c974469
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: CreateProcessAndAttach2Wide method [Windows Debugging], CreateProcessAndAttach2Wide method [Windows Debugging], IDebugClient5 interface, CreateProcessAndAttach2Wide,IDebugClient5.CreateProcessAndAttach2Wide, IDebugClient5, IDebugClient5 interface [Windows Debugging], CreateProcessAndAttach2Wide method, IDebugClient5::CreateProcessAndAttach2Wide, dbgeng/IDebugClient5::CreateProcessAndAttach2Wide, debugger.createprocessandattach2wide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,23 +44,23 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# CreateProcessAndAttach2Wide method
+# IDebugClient5::CreateProcessAndAttach2Wide method
 The <b>CreateProcessAndAttach2Wide</b> method creates a process from a specified command line, then attach to that process or another user-mode process.
 
 ## Syntax
 
-````
+```
 HRESULT CreateProcessAndAttach2Wide(
-  [in]           ULONG64 Server,
-  [in, optional] PWSTR   CommandLine,
-  [in]           PVOID   OptionsBuffer,
-  [in]           ULONG   OptionsBufferSize,
-  [in, optional] PCWSTR  InitialDirectory,
-  [in, optional] PCWSTR  Environment,
-  [in]           ULONG   ProcessId,
-  [in]           ULONG   AttachFlags
+  ULONG64 Server,
+  PWSTR   CommandLine,
+  PVOID   OptionsBuffer,
+  ULONG   OptionsBufferSize,
+  PCWSTR  InitialDirectory,
+  PCWSTR  Environment,
+  ULONG   ProcessId,
+  ULONG   AttachFlags
 );
-````
+```
 
 ## Parameters
 
@@ -74,7 +74,7 @@ Specifies the command line to execute to create the new process.  If <i>CommandL
 
 `OptionsBuffer`
 
-Specifies the process creation options.  <i>OptionsBuffer</i> is a pointer to a <a href="..\dbgeng\ns-dbgeng-_debug_create_process_options.md">DEBUG_CREATE_PROCESS_OPTIONS</a> structure.
+Specifies the process creation options.  <i>OptionsBuffer</i> is a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541464">DEBUG_CREATE_PROCESS_OPTIONS</a> structure.
 
 `OptionsBufferSize`
 
@@ -162,30 +162,6 @@ For more information about creating and attaching to live user-mode targets, see
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539237">ConnectProcessServer</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539323">CreateProcess2</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537786">AbandonCurrentProcess</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548265">GetRunningProcessSystemIds</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558866">TerminateCurrentProcess</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562135">.attach (Attach to Process)</a>
 
 
@@ -194,7 +170,7 @@ For more information about creating and attaching to live user-mode targets, see
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548243">GetRunningProcessDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537786">AbandonCurrentProcess</a>
 
 
 
@@ -202,4 +178,28 @@ For more information about creating and attaching to live user-mode targets, see
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539237">ConnectProcessServer</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539323">CreateProcess2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541846">DetachCurrentProcess</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548243">GetRunningProcessDescription</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548265">GetRunningProcessSystemIds</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558866">TerminateCurrentProcess</a>

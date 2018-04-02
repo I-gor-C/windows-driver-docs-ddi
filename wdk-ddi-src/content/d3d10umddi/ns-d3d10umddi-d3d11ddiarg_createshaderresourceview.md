@@ -7,7 +7,7 @@ old-location: display\d3d11ddiarg_createshaderresourceview.htm
 old-project: display
 ms.assetid: 0271e937-a55d-4153-b1e1-045fef4b76a0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D11DDIARG_CREATESHADERRESOURCEVIEW, D3D11DDIARG_CREATESHADERRESOURCEVIEW structure [Display Devices], UMDisplayDriver_Dx11param_Structs_e1d9908f-af17-4d66-ba86-4782bb22458e.xml, d3d10umddi/D3D11DDIARG_CREATESHADERRESOURCEVIEW, display.d3d11ddiarg_createshaderresourceview
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,21 +47,21 @@ req.typenames: D3D11DDIARG_CREATESHADERRESOURCEVIEW
 The D3D11DDIARG_CREATESHADERRESOURCEVIEW structure describes the shader resource view to create.
 
 ## Syntax
-````
+```
 typedef struct D3D11DDIARG_CREATESHADERRESOURCEVIEW {
-  D3D10DDI_HRESOURCE    hDrvResource;
-  DXGI_FORMAT           Format;
+  D3D10DDI_HRESOURCE    hDrvResource;
+  DXGI_FORMAT           Format;
   D3D10DDIRESOURCE_TYPE ResourceDimension;
   union {
-    D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW    Buffer;
-    D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW     Tex1D;
-    D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW     Tex2D;
-    D3D10DDIARG_TEX3D_SHADERRESOURCEVIEW     Tex3D;
+    D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW    Buffer;
+    D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW  BufferEx;
+    D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW     Tex1D;
+    D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW     Tex2D;
+    D3D10DDIARG_TEX3D_SHADERRESOURCEVIEW     Tex3D;
     D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW TexCube;
-    D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW  BufferEx;
   };
-} D3D11DDIARG_CREATESHADERRESOURCEVIEW;
-````
+};
+```
 
 ## Members
 
@@ -87,15 +87,27 @@ typedef struct D3D11DDIARG_CREATESHADERRESOURCEVIEW {
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_tex3d_shaderresourceview.md">D3D10DDIARG_TEX3D_SHADERRESOURCEVIEW</a>
+<a href="https://msdn.microsoft.com/894f6ef1-a5a4-40aa-9a07-f66da4ce7d81">CalcPrivateShaderResourceViewSize(D3D11)</a>
 
 
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_tex2d_shaderresourceview.md">D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW</a>
+<a href="https://msdn.microsoft.com/7ca462c7-ec43-4af7-92c8-ed69e5d324e2">CreateShaderResourceView(D3D11)</a>
 
 
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_bufferex_shaderresourceview.md">D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541645">D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541760">D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541773">D3D10DDIARG_TEX2D_SHADERRESOURCEVIEW</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541789">D3D10DDIARG_TEX3D_SHADERRESOURCEVIEW</a>
 
 
 
@@ -103,20 +115,8 @@ typedef struct D3D11DDIARG_CREATESHADERRESOURCEVIEW {
 
 
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_tex1d_shaderresourceview.md">D3D10DDIARG_TEX1D_SHADERRESOURCEVIEW</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541865">D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateshaderresourceviewsize.md">CalcPrivateShaderResourceViewSize(D3D11)</a>
-
-
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createshaderresourceview.md">CreateShaderResourceView(D3D11)</a>
-
-
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_buffer_shaderresourceview.md">D3D10DDIARG_BUFFER_SHADERRESOURCEVIEW</a>
-
-
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10_1ddiarg_texcube_shaderresourceview.md">D3D10_1DDIARG_TEXCUBE_SHADERRESOURCEVIEW</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542025">D3D11DDIARG_BUFFEREX_SHADERRESOURCEVIEW</a>

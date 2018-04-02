@@ -7,7 +7,7 @@ old-location: storage\hba_getfc4statistics.htm
 old-project: storage
 ms.assetid: 9c86c753-dddf-488d-b332-4b79602c454a
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_GetFC4Statistics, HBA_GetFC4Statistics routine [Storage Devices], fibreHBA_rtns_483a1f57-5e5b-4919-a61b-5853ffb5be6f.xml, hbaapi/HBA_GetFC4Statistics, storage.hba_getfc4statistics
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ The <b>HBA_GetFC4Statistics</b> routine retrieves traffic statistics that a spec
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_GetFC4Statistics(
-  _In_  HBA_HANDLE        handle,
-  _In_  HBA_WWN           portWWN,
-  _In_  HBA_UINT8         FC4type,
-  _Out_ HBA_FC4STATISTICS *statistics
+  IN HBA_HANDLE         Handle,
+  IN HBA_WWN            PortWWN,
+  IN HBA_UINT8          FC4type,
+  OUT HBA_FC4STATISTICS *Statistics
 );
-````
+```
 
 ## Parameters
 
@@ -123,7 +123,7 @@ Returned if an unspecified error occurred that prevented the retrieval of the po
 
 ## Remarks
 
-Statistics counters in <a href="..\hbaapi\ns-hbaapi-hba_fc4statistics.md">HBA_FC4Statistics</a> are 64-bit signed integers that wrap to zero on exceeding 2**63-1. If an HBA does not support a specific statistic, it returns a value with every bit set to 1 for that statistic. For an explanation of how the counter values are determined, see the T11 committee's <i>Fibre Channel Generic Services - 4 </i>specification.
+Statistics counters in <a href="https://msdn.microsoft.com/library/windows/hardware/ff556051">HBA_FC4Statistics</a> are 64-bit signed integers that wrap to zero on exceeding 2**63-1. If an HBA does not support a specific statistic, it returns a value with every bit set to 1 for that statistic. For an explanation of how the counter values are determined, see the T11 committee's <i>Fibre Channel Generic Services - 4 </i>specification.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -135,12 +135,12 @@ Statistics counters in <a href="..\hbaapi\ns-hbaapi-hba_fc4statistics.md">HBA_FC
 
 ## See Also
 
-<a href="..\hbaapi\ns-hbaapi-hba_fc4statistics.md">HBA_FC4Statistics</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556051">HBA_FC4Statistics</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>

@@ -7,7 +7,7 @@ old-location: kernel\iogetrelateddeviceobject.htm
 old-project: kernel
 ms.assetid: 70427fad-6a3d-40bb-9523-787c14fa1e39
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoGetRelatedDeviceObject, IoGetRelatedDeviceObject routine [Kernel-Mode Driver Architecture], k104_22abf9c6-81f5-497e-9bca-8a00b2c871df.xml, kernel.iogetrelateddeviceobject, wdm/IoGetRelatedDeviceObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ Given a file object, the <b>IoGetRelatedDeviceObject</b> routine returns a point
 
 ## Syntax
 
-````
-PDEVICE_OBJECT IoGetRelatedDeviceObject(
-  _In_ PFILE_OBJECT FileObject
+```
+NTKERNELAPI PDEVICE_OBJECT IoGetRelatedDeviceObject(
+  PFILE_OBJECT FileObject
 );
-````
+```
 
 ## Parameters
 
@@ -87,4 +87,4 @@ The caller must be running at IRQL &lt;= DISPATCH_LEVEL. Usually, callers of thi
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iogetdeviceobjectpointer.md">IoGetDeviceObjectPointer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549198">IoGetDeviceObjectPointer</a>

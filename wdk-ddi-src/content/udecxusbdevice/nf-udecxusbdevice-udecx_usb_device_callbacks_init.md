@@ -7,7 +7,7 @@ old-location: buses\udecx_usb_device_callbacks_init.htm
 old-project: usbref
 ms.assetid: ACBF5E07-9F36-4DF9-B72B-1BF159CE27A7
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UDECX_USB_DEVICE_CALLBACKS_INIT, UDECX_USB_DEVICE_CALLBACKS_INIT method [Buses], buses.udecx_usb_device_callbacks_init, udecxusbdevice/UDECX_USB_DEVICE_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,21 +47,21 @@ req.product: Windows 10 or later.
 
 
 # UDECX_USB_DEVICE_CALLBACKS_INIT function
-Initializes a <a href="..\udecxusbdevice\ns-udecxusbdevice-_udecx_usb_device_state_change_callbacks.md">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure before a <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a> call.
+Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628003">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure before a <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a> call.
 
 ## Syntax
 
-````
-FORCEINLINE void UDECX_USB_DEVICE_CALLBACKS_INIT(
-  _Out_ PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS Callbacks
+```
+void UDECX_USB_DEVICE_CALLBACKS_INIT(
+  PUDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS Callbacks
 );
-````
+```
 
 ## Parameters
 
 `Callbacks`
 
-A pointer to a <a href="..\udecxusbdevice\ns-udecxusbdevice-_udecx_usb_device_state_change_callbacks.md">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure to initialize.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628003">UDECX_USB_DEVICE_STATE_CHANGE_CALLBACKS</a> structure to initialize.
 
 
 ## Return Value
@@ -81,4 +81,4 @@ This method does not return a value.
 
 ## See Also
 
-<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>

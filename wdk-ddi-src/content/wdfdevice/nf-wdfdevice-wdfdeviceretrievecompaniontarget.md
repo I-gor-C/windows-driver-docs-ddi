@@ -50,12 +50,12 @@ For internal use only.
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDeviceRetrieveCompanionTarget(
-  _In_  WDFDEVICE          Device,
-  _Out_ WDFCOMPANIONTARGET *CompanionTarget
+  WDFDEVICE          Device,
+  WDFCOMPANIONTARGET *CompanionTarget
 );
-````
+```
 
 ## Parameters
 

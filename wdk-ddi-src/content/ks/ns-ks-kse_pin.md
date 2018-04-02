@@ -47,13 +47,13 @@ req.typenames: KSE_PIN, *PKSE_PIN
 
 
 ## Syntax
-````
-typedef struct {
-  ULONG Event;
-  ULONG PinId;
-  ULONG Reserved;
-} KSE_PIN, *PKSE_PIN;
-````
+```
+typedef struct KSE_PIN {
+  KSEVENT Event;
+  ULONG   PinId;
+  ULONG   Reserved;
+}  *PKSE_PIN;
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: storage\hba_sendreadcapacity.htm
 old-project: storage
 ms.assetid: 642a085f-03d4-438a-8584-c1f420161e94
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_SendReadCapacity, HBA_SendReadCapacity routine [Storage Devices], fibreHBA_rtns_0defc2d1-5d08-4d31-981e-09dbb0d700a7.xml, hbaapi/HBA_SendReadCapacity, storage.hba_sendreadcapacity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ The <b>HBA_SendReadCapacity</b> routine sends a SCSI read capacity command to th
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_SendReadCapacity(
-  _In_  HBA_HANDLE handle,
-  _In_  HBA_WWN    portWWN,
-  _In_  HBA_UINT64 fcLUN,
-  _Out_ void       *pRspBuffer,
-  _In_  HBA_UINT32 RspBufferSize,
-  _Out_ void       *pSenseBuffer,
-  _In_  HBA_UINT32 SenseBufferSize
+  IN HBA_HANDLE Handle,
+  IN HBA_WWN    PortWWN,
+  IN HBA_UINT64 FcLUN,
+  OUT void      *pRspBuffer,
+  IN HBA_UINT32 RspBufferSize,
+  OUT void      *pSenseBuffer,
+  IN HBA_UINT32 SenseBufferSize
 );
-````
+```
 
 ## Parameters
 
@@ -180,8 +180,8 @@ Returned if an unspecified error occurred that prevented the execution of the SC
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>

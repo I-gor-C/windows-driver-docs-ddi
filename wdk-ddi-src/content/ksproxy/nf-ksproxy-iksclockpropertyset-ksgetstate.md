@@ -44,22 +44,22 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsGetState method
+# IKsClockPropertySet::KsGetState method
 The <b>KsGetState</b> method retrieves the streaming state of a pin from the underlying clock.
 
 ## Syntax
 
-````
+```
 HRESULT KsGetState(
-  [out] KSSTATE *State
+  KSSTATE *State
 );
-````
+```
 
 ## Parameters
 
 `State`
 
-Pointer to a variable that receives a value that specifies the streaming state of a pin. This value can be one of the following values from the <a href="..\ks\ne-ks-pksstate.md">KSSTATE</a> enumerated type:
+Pointer to a variable that receives a value that specifies the streaming state of a pin. This value can be one of the following values from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566856">KSSTATE</a> enumerated type:
 
 <table>
 <tr>

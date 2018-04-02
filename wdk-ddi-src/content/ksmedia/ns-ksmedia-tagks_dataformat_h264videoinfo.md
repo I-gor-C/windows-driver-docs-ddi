@@ -47,12 +47,12 @@ req.typenames: KS_DATAFORMAT_H264VIDEOINFO, *PKS_DATAFORMAT_H264VIDEOINFO
 The KS_DATAFORMAT_H264VIDEOINFO structure describes the data formats range available for a stream.
 
 ## Syntax
-````
-typedef struct _KS_DATAFORMAT_H264VIDEOINFO {
-  KSDATAFORMAT                     DataFormat;
-     KS_H264VIDEOINFO              H264VideoInfoHeader;
+```
+typedef struct tagKS_DATAFORMAT_H264VIDEOINFO {
+  KSDATAFORMAT     DataFormat;
+  KS_H264VIDEOINFO H264VideoInfoHeader;
 } KS_DATAFORMAT_H264VIDEOINFO, *PKS_DATAFORMAT_H264VIDEOINFO;
-````
+```
 
 ## Members
 
@@ -74,8 +74,8 @@ Specifies the details of the video stream.
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_h264videoinfo.md">KS_H264VIDEOINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh464008">KS_H264VIDEOINFO</a>

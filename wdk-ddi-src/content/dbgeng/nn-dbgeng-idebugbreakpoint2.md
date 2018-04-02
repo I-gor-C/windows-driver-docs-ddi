@@ -7,7 +7,7 @@ old-location: debugger\idebugbreakpoint2.htm
 old-project: debugger
 ms.assetid: 097c10e1-fd83-4a3d-8193-873644370e35
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugBreakpoint2, IDebugBreakpoint2 interface [Windows Debugging], IDebugBreakpoint2 interface [Windows Debugging], described, dbgeng/IDebugBreakpoint2, debugger.idebugbreakpoint2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,4 +88,4 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugbreakpoint.md">IDebugBreakpoint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549812">IDebugBreakpoint</a>

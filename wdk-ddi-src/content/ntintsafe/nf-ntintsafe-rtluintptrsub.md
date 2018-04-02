@@ -7,7 +7,7 @@ old-location: kernel\rtluintptrsub.htm
 old-project: kernel
 ms.assetid: D0E23A94-515B-4225-A8AC-390CDD3BEA60
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUIntPtrSub, RtlUIntPtrSub function [Kernel-Mode Driver Architecture], kernel.rtluintptrsub, ntintsafe/RtlUIntPtrSub
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ Subtracts one value of type <b>UINT_PTR</b> from another.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlUIntPtrSub(
-  _In_  UINT_PTR uMinuend,
-  _In_  UINT_PTR uSubtrahend,
-  _Out_ UINT_PTR *puResult
+  UINT_PTR uMinuend,
+  UINT_PTR uSubtrahend,
+  UINT_PTR *puResult
 );
-````
+```
 
 ## Parameters
 

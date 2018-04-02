@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# Initialize method
+# IStiUSD::Initialize method
 A still image minidriver's <b>IStiUSD::Initialize</b> method initializes an instance of the COM object that defines the <b>IStiUSD</b> interface.
 
 ## Syntax
 
-````
+```
 HRESULT Initialize(
-   PSTIDEVICECONTROL pDcb,
-   DWORD             dwStiVersion,
-   HKEY              hParametersKey
+  PSTIDEVICECONTROL pHelDcb,
+  DWORD             dwStiVersion,
+  HKEY              hParametersKey
 );
-````
+```
 
 ## Parameters
 

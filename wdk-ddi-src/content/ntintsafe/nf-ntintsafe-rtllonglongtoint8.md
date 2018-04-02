@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongtoint8.htm
 old-project: kernel
 ms.assetid: C7BFDEA1-E0E9-4909-A543-94D047B1F1A9
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlLongLongToInt8, RtlLongLongToInt8 function [Kernel-Mode Driver Architecture], kernel.rtllonglongtoint8, ntintsafe/RtlLongLongToInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>LONGLONG</b> to a value of type <b>INT8</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlLongLongToInt8(
-  _In_  LONGLONG llOperand,
-  _Out_ INT8     *pi8Result
+  LONGLONG llOperand,
+  INT8     *pi8Result
 );
-````
+```
 
 ## Parameters
 

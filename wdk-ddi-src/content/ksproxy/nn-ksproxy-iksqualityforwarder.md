@@ -45,7 +45,7 @@ req.typenames: PIPE_STATE
 
 # IKsQualityForwarder interface
 
-The <b>IKsQualityForwarder</b> interface inherits the method of the <a href="..\ksproxy\nn-ksproxy-iksobject.md">IKsObject</a> interface and extends <b>IKsObject</b> to provide a method that flushes information from a pin.
+The <b>IKsQualityForwarder</b> interface inherits the method of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559883">IKsObject</a> interface and extends <b>IKsObject</b> to provide a method that flushes information from a pin.
 
 ## Methods
 

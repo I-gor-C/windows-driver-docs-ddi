@@ -7,7 +7,7 @@ old-location: buses\ucm_pd_power_data_object_init_battery.htm
 old-project: usbref
 ms.assetid: DA191158-D920-4965-AC2B-7DDA8B541504
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY, UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY function [Buses], buses.ucm_pd_power_data_object_init_battery, ucmtypes/UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY function
-Initializes a <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a> structure as a Battery Supply type Power Data Object.
+Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> structure as a Battery Supply type Power Data Object.
 
 ## Syntax
 
-````
-FORCEINLINE void UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY(
-  _Out_ PUCM_PD_POWER_DATA_OBJECT Pdo
+```
+void UCM_PD_POWER_DATA_OBJECT_INIT_BATTERY(
+  PUCM_PD_POWER_DATA_OBJECT Pdo
 );
-````
+```
 
 ## Parameters
 
 `Pdo`
 
-A pointer to a <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a> structure in which the <b>BatterySupplyPdo.Battery</b> member is set to <b>UcmPdPdoTypeBatterySupply</b>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> structure in which the <b>BatterySupplyPdo.Battery</b> member is set to <b>UcmPdPdoTypeBatterySupply</b>.
 
 
 ## Return Value
@@ -79,4 +79,4 @@ This function does not return a value.
 
 ## See Also
 
-<a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a>

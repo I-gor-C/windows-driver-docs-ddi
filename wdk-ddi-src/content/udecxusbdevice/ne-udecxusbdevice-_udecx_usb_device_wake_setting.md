@@ -7,7 +7,7 @@ old-location: buses\udecx_usb_device_wake_setting.htm
 old-project: usbref
 ms.assetid: 0CA3B49C-B2A7-497D-A97B-4AC845074BEC
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUDECX_USB_DEVICE_WAKE_SETTING, PUDECX_USB_DEVICE_WAKE_SETTING, PUDECX_USB_DEVICE_WAKE_SETTING enumeration pointer [Buses], UDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING enumeration [Buses], UdecxUsbDeviceWakeDisabled, UdecxUsbDeviceWakeEnabled, UdecxUsbDeviceWakeNotApplicable, _UDECX_USB_DEVICE_WAKE_SETTING, buses.udecx_usb_device_wake_setting, udecxusbdevice/PUDECX_USB_DEVICE_WAKE_SETTING, udecxusbdevice/UDECX_USB_DEVICE_WAKE_SETTING, udecxusbdevice/UdecxUsbDeviceWakeDisabled, udecxusbdevice/UdecxUsbDeviceWakeEnabled, udecxusbdevice/UdecxUsbDeviceWakeNotApplicable"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 Defines values for remote wake capability of a virtual USB device.
 
 ## Syntax
-````
-typedef enum _UDECX_USB_DEVICE_WAKE_SETTING { 
-  UdecxUsbDeviceWakeDisabled       = 0,
-  UdecxUsbDeviceWakeEnabled        = ,
-  UdecxUsbDeviceWakeNotApplicable  = 
-} UDECX_USB_DEVICE_WAKE_SETTING, *PUDECX_USB_DEVICE_WAKE_SETTING;
-````
+```
+typedef enum _UDECX_USB_DEVICE_WAKE_SETTING {
+  UdecxUsbDeviceWakeDisabled       ,
+  UdecxUsbDeviceWakeEnabled        ,
+  UdecxUsbDeviceWakeNotApplicable
+} *PUDECX_USB_DEVICE_WAKE_SETTING, UDECX_USB_DEVICE_WAKE_SETTING;
+```
 
 ## Constants
 
@@ -84,4 +84,4 @@ typedef enum _UDECX_USB_DEVICE_WAKE_SETTING {
 
 ## See Also
 
-<a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595911">EVT_UDECX_USB_DEVICE_D0_EXIT</a>

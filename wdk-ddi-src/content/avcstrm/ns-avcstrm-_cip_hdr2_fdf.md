@@ -47,13 +47,13 @@ req.typenames: CIP_HDR2_FDF, *PCIP_HDR2_FDF
 The CIP_HDR2_FDF structure describes the second quadlet of a CIP header pair.
 
 ## Syntax
-````
+```
 typedef struct _CIP_HDR2_FDF {
-  ULONG FDF  :24;
-  ULONG FMT  :6;
-  ULONG Bit10  :2;
-} CIP_HDR2_FDF, *PCIP_HDR2_FDF;
-````
+  ULONG  : 24 FDF;
+  ULONG  : 6  FMT;
+  ULONG  : 2  Bit10;
+} *PCIP_HDR2_FDF, CIP_HDR2_FDF;
+```
 
 ## Members
 
@@ -78,4 +78,4 @@ Must be set to 1:0
 
 ## See Also
 
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557668">CIP_HDR1</a>

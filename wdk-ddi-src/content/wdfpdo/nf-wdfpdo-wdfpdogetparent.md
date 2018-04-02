@@ -53,11 +53,11 @@ The <b>WdfPdoGetParent</b> method returns a handle to the framework device objec
 
 ## Syntax
 
-````
+```
 WDFDEVICE WdfPdoGetParent(
-  _In_ WDFDEVICE Device
+  WDFDEVICE Device
 );
-````
+```
 
 ## Parameters
 

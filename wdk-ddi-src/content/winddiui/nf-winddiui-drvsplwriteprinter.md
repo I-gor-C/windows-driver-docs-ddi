@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL WINAPI DrvSplWritePrinter(
-   HANDLE  hDriver,
-   LPVOID  pBuf,
-   DWORD   cbBuf,
-   LPDWORD pcWritten
+```
+BOOL DrvSplWritePrinter(
+  HANDLE  hDriver,
+  LPVOID  pBuf,
+  DWORD   cbBuf,
+  LPDWORD pcWritten
 );
-````
+```
 
 ## Parameters
 

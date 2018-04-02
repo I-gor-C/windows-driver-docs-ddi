@@ -45,22 +45,22 @@ req.typenames:
 
 
 # KsFilterFactoryRegisterAggregatedClientUnknown function
-This inline function is a wrapper for <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>.
+This inline function is a wrapper for <a href="https://msdn.microsoft.com/library/windows/hardware/ff566767">KsRegisterAggregatedClientUnknown</a>.
 
 ## Syntax
 
-````
-PUNKNOWN __inline KsFilterFactoryRegisterAggregatedClientUnknown(
-  _In_ PKSFILTERFACTORY FilterFactory,
-  _In_ PUNKNOWN         ClientUnknown
+```
+PUNKNOWN KsFilterFactoryRegisterAggregatedClientUnknown(
+  PKSFILTERFACTORY FilterFactory,
+  PUNKNOWN         ClientUnknown
 );
-````
+```
 
 ## Parameters
 
 `FilterFactory`
 
-A pointer to the <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> structure that represents the specified AVStream filter factory.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a> structure that represents the specified AVStream filter factory.
 
 `ClientUnknown`
 
@@ -84,4 +84,4 @@ Note that this inline function only performs a typecast and then calls <b>KsRegi
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566767">KsRegisterAggregatedClientUnknown</a>

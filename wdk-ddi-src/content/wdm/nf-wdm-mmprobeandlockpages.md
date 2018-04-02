@@ -7,7 +7,7 @@ old-location: kernel\mmprobeandlockpages.htm
 old-project: kernel
 ms.assetid: d958004f-1730-412d-be75-e51628e6fcdc
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: MmProbeAndLockPages, MmProbeAndLockPages routine [Kernel-Mode Driver Architecture], k106_ccfec34d-c0f9-4826-81e3-ee967da40677.xml, kernel.mmprobeandlockpages, wdm/MmProbeAndLockPages
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>MmProbeAndLockPages</b> routine probes the specified virtual memory pages
 
 ## Syntax
 
-````
-VOID MmProbeAndLockPages(
-  _Inout_ PMDLX           MemoryDescriptorList,
-  _In_    KPROCESSOR_MODE AccessMode,
-  _In_    LOCK_OPERATION  Operation
+```
+NTKERNELAPI VOID MmProbeAndLockPages(
+  PMDL            MemoryDescriptorList,
+  KPROCESSOR_MODE AccessMode,
+  LOCK_OPERATION  Operation
 );
-````
+```
 
 ## Parameters
 
@@ -93,7 +93,7 @@ The routine then confirms that the pages permit the operation specified by the <
 
 </li>
 <li>
-If the memory range permits the specified operation, the routine locks the pages in memory so that they cannot be paged out. Use the <a href="..\wdm\nf-wdm-mmunlockpages.md">MmUnlockPages</a> routine to unlock the pages.
+If the memory range permits the specified operation, the routine locks the pages in memory so that they cannot be paged out. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556381">MmUnlockPages</a> routine to unlock the pages.
 
 </li>
 <li>
@@ -105,7 +105,7 @@ A successful call to <b>MmProbeAndLockPages</b> locks the pages in an MDL and se
 
 If two or more MDLs describe the same physical page, the page can be locked multiple times—once for each MDL. The page is unlocked when the last MDL is set to the unlocked state.
 
-A routine such as <a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a> or <a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a> updates an MDL to describe pages that are either nonpageable or already locked. A call to <b>MmProbeAndLockPages</b> or <b>MmUnlockPages</b> to lock or unlock such an MDL is not allowed.
+A routine such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff554498">MmBuildMdlForNonPagedPool</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548324">IoBuildPartialMdl</a> updates an MDL to describe pages that are either nonpageable or already locked. A call to <b>MmProbeAndLockPages</b> or <b>MmUnlockPages</b> to lock or unlock such an MDL is not allowed.
 
 Calls to <b>MmProbeAndLockPages</b> must be enclosed in a <b>try/except</b> block. If the pages do not support the specified operation, the routine raises the STATUS_ACCESS_VIOLATION or other exceptions. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546823">Handling Exceptions</a>.
 
@@ -126,12 +126,12 @@ This routine does not provide any guarantees about the virtual address that desc
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmunlockpages.md">MmUnlockPages</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548324">IoBuildPartialMdl</a>
 
 
 
-<a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554498">MmBuildMdlForNonPagedPool</a>
 
 
 
-<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556381">MmUnlockPages</a>

@@ -48,28 +48,28 @@ req.product: Windows 10 or later.
 # WDF_QUERY_INTERFACE_CONFIG_INIT function
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WDF_QUERY_INTERFACE_CONFIG_INIT</b> function initializes a driver's <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure.
+The <b>WDF_QUERY_INTERFACE_CONFIG_INIT</b> function initializes a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552439">WDF_QUERY_INTERFACE_CONFIG</a> structure.
 
 ## Syntax
 
-````
-VOID WDF_QUERY_INTERFACE_CONFIG_INIT(
-  _Out_          PWDF_QUERY_INTERFACE_CONFIG                    InterfaceConfig,
-  _In_           PINTERFACE                                     Interface,
-  _In_     const GUID                                           *InterfaceType,
-  _In_opt_       PFN_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST EvtDeviceProcessQueryInterfaceRequest
+```
+void WDF_QUERY_INTERFACE_CONFIG_INIT(
+  PWDF_QUERY_INTERFACE_CONFIG                    InterfaceConfig,
+  PINTERFACE                                     Interface,
+  CONST GUID                                     *InterfaceType,
+  PFN_WDF_DEVICE_PROCESS_QUERY_INTERFACE_REQUEST EvtDeviceProcessQueryInterfaceRequest
 );
-````
+```
 
 ## Parameters
 
 `InterfaceConfig`
 
-A pointer to the driver's <a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a> structure.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552439">WDF_QUERY_INTERFACE_CONFIG</a> structure.
 
 `Interface`
 
-A pointer to an <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a> structure.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a> structure.
 
 `InterfaceType`
 
@@ -91,7 +91,7 @@ For more information about driver-defined interfaces, see <a href="https://docs.
 
 #### Examples
 
-For a code example that uses <b>WDF_QUERY_INTERFACE_CONFIG_INIT</b>, see <a href="..\wdfqueryinterface\nf-wdfqueryinterface-wdfdeviceaddqueryinterface.md">WdfDeviceAddQueryInterface</a>.
+For a code example that uses <b>WDF_QUERY_INTERFACE_CONFIG_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545870">WdfDeviceAddQueryInterface</a>.
 
 <div class="code"></div>
 
@@ -104,12 +104,12 @@ For a code example that uses <b>WDF_QUERY_INTERFACE_CONFIG_INIT</b>, see <a href
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
-
-
-
-<a href="..\wdfqueryinterface\ns-wdfqueryinterface-_wdf_query_interface_config.md">WDF_QUERY_INTERFACE_CONFIG</a>
-
-
-
 <a href="https://msdn.microsoft.com/b56fef85-4058-4942-90c0-36646164cd3e">EvtDeviceProcessQueryInterfaceRequest</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552439">WDF_QUERY_INTERFACE_CONFIG</a>

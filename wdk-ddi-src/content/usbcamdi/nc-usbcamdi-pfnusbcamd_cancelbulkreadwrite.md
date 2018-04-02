@@ -112,4 +112,4 @@ The current IRQL &gt;= DISPATCH_LEVEL.
 
 ## See Also
 
-<a href="..\usbcamdi\ns-usbcamdi-usbcamd_interface.md">USBCAMD_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568605">USBCAMD_INTERFACE</a>

@@ -7,7 +7,7 @@ old-location: kernel\extryconvertsharedspinlockexclusive_.htm
 old-project: kernel
 ms.assetid: 6B97865A-D589-4116-8492-109BEEE93ECA
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExTryConvertSharedSpinLockExclusive, ExTryConvertSharedSpinLockExclusive routine [Kernel-Mode Driver Architecture], kernel.extryconvertsharedspinlockexclusive_, wdm/ExTryConvertSharedSpinLockExclusive
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,11 +51,11 @@ The <b>ExTryConvertSharedSpinLockExclusive</b> routine attempts to convert the a
 
 ## Syntax
 
-````
-BOOLEAN ExTryConvertSharedSpinLockExclusive(
-  _Inout_ PEX_SPIN_LOCK  SpinLock
+```
+NTKERNELAPI LOGICAL ExTryConvertSharedSpinLockExclusive(
+  PEX_SPIN_LOCK SpinLock
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A pointer to the spin lock whose access state is to be converted to exclusive ac
 
 ## Remarks
 
-If the caller acquired the shared spin lock by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451055">ExAcquireSpinLockSharedAtDpcLevel</a> routine, the caller should release the converted spin lock by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451058">ExReleaseSpinLockExclusiveFromDpcLevel</a> routine. If the caller acquired the shared spin lock by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451053">ExAcquireSpinLockShared</a> routine, the caller should release the converted spin lock by calling the <a href="..\wdm\nf-wdm-exreleasespinlockexclusive.md">ExReleaseSpinLockExclusive</a> routine, and the <i>OldIrql</i> value supplied as an input parameter to this routine should be the KIRQL value returned by <b>ExAcquireSpinLockShared</b>.
+If the caller acquired the shared spin lock by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451055">ExAcquireSpinLockSharedAtDpcLevel</a> routine, the caller should release the converted spin lock by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451058">ExReleaseSpinLockExclusiveFromDpcLevel</a> routine. If the caller acquired the shared spin lock by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451053">ExAcquireSpinLockShared</a> routine, the caller should release the converted spin lock by calling the <a href="https://msdn.microsoft.com/D10C65A6-96E7-4BE0-BDD5-EFD129DC424C">ExReleaseSpinLockExclusive</a> routine, and the <i>OldIrql</i> value supplied as an input parameter to this routine should be the KIRQL value returned by <b>ExAcquireSpinLockShared</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,16 +83,16 @@ If the caller acquired the shared spin lock by calling the <a href="https://msdn
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451053">ExAcquireSpinLockShared</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451055">ExAcquireSpinLockSharedAtDpcLevel</a>
 
 
 
-<a href="..\wdm\nf-wdm-exreleasespinlockexclusive.md">ExReleaseSpinLockExclusive</a>
+<a href="https://msdn.microsoft.com/D10C65A6-96E7-4BE0-BDD5-EFD129DC424C">ExReleaseSpinLockExclusive</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451058">ExReleaseSpinLockExclusiveFromDpcLevel</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451053">ExAcquireSpinLockShared</a>

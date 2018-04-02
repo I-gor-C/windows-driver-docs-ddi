@@ -48,12 +48,12 @@ The BTH_SDP_SERVICE_SEARCH_REQUEST structure contains information pertinent to a
   search.
 
 ## Syntax
-````
+```
 typedef struct _BTH_SDP_SERVICE_SEARCH_REQUEST {
-  HANDLE_SDP   hConnection;
-  SdpQueryUuid uuids[MAX_UUIDS_IN_QUERY];
+  HANDLE_SDP_TYPE HANDLE_SDP_FIELD_NAME;
+  SdpQueryUuid    uuids[MAX_UUIDS_IN_QUERY];
 } BTH_SDP_SERVICE_SEARCH_REQUEST, *PBTH_SDP_SERVICE_SEARCH_REQUEST;
-````
+```
 
 ## Members
 
@@ -70,7 +70,7 @@ An array of UUIDs that represent the services for which to query. Each entry can
 
 ## Remarks
 This structure is passed as the input buffer to the 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_service_search.md">
+    <a href="https://msdn.microsoft.com/aea2aff2-5983-4583-9cc8-a45401ecdfb6">
     IOCTL_BTH_SDP_SERVICE_SEARCH</a> IOCTL.
 
 ## Requirements
@@ -81,8 +81,8 @@ This structure is passed as the input buffer to the
 
 ## See Also
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_service_search.md">IOCTL_BTH_SDP_SERVICE_SEARCH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536688">IOCTL_BTH_SDP_CONNECT</a>
 
 
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536692">IOCTL_BTH_SDP_SERVICE_SEARCH</a>

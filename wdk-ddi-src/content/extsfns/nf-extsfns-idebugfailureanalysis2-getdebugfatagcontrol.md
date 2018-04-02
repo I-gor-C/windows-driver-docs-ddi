@@ -7,7 +7,7 @@ old-location: debugger\idebugfailureanalysis2_getdebugfatagcontrol.htm
 old-project: debugger
 ms.assetid: AC69BCF1-B5C2-4A2F-AEF0-1BC4EBD0BE66
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetDebugFATagControl method [Windows Debugging], GetDebugFATagControl method [Windows Debugging], IDebugFailureAnalysis2 interface, GetDebugFATagControl,IDebugFailureAnalysis2.GetDebugFATagControl, IDebugFailureAnalysis2, IDebugFailureAnalysis2 interface [Windows Debugging], GetDebugFATagControl method, IDebugFailureAnalysis2::GetDebugFATagControl, debugger.idebugfailureanalysis2_getdebugfatagcontrol, extsfns/IDebugFailureAnalysis2::GetDebugFATagControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 
-# GetDebugFATagControl method
-The <b>GetDebugFATagControl</b> method gets a pointer to an <a href="..\extsfns\nn-extsfns-idebugfaentrytags.md">IDebugFAEntryTags</a> interface, which provides access to the tags in a DebugFailureAnalysisTags object. For information about the relationship between a <a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">DebugFailureAnalysis</a> object and a <a href="..\extsfns\nn-extsfns-idebugfaentrytags.md">DebugFailureAnalysisTags</a> object, see <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Failure Analysis Entries, Tags, and Data Types</a>.
+# IDebugFailureAnalysis2::GetDebugFATagControl method
+The <b>GetDebugFATagControl</b> method gets a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/jj983404">IDebugFAEntryTags</a> interface, which provides access to the tags in a DebugFailureAnalysisTags object. For information about the relationship between a <a href="https://msdn.microsoft.com/0B44FCB9-D23F-4630-9F9A-FBAD46712B14">DebugFailureAnalysis</a> object and a <a href="https://msdn.microsoft.com/B52DFB0E-0035-40C2-B2F5-5E16B16931C2">DebugFailureAnalysisTags</a> object, see <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Failure Analysis Entries, Tags, and Data Types</a>.
 
 ## Syntax
 
-````
-VOID GetDebugFATagControl(
-  [out] IDebugFAEntryTags** FATagControl
+```
+HRESULT GetDebugFATagControl(
+  IDebugFAEntryTags **FATagControl
 );
-````
+```
 
 ## Parameters
 
 `FATagControl`
 
-A pointer to a variable that receives a pointer to the <a href="..\extsfns\nn-extsfns-idebugfaentrytags.md">IDebugFAEntryTags</a> interface.
+A pointer to a variable that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/jj983404">IDebugFAEntryTags</a> interface.
 
 
 ## Return Value
@@ -75,12 +75,12 @@ This method does not return a value.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983405">IDebugFailureAnalysis2</a>
+
+
+
 <a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
 
 
 
-<a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
-
-
-
-<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983432">_EFN_Analyze</a>

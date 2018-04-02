@@ -50,12 +50,12 @@ The <b>KsReleaseIrpOnCancelableQueue</b> function releases an acquired IRP that 
 
 ## Syntax
 
-````
-VOID KsReleaseIrpOnCancelableQueue(
-  _In_     PIRP           Irp,
-  _In_opt_ PDRIVER_CANCEL DriverCancel
+```
+KSDDKAPI VOID KsReleaseIrpOnCancelableQueue(
+  PIRP           Irp,
+  PDRIVER_CANCEL DriverCancel
 );
-````
+```
 
 ## Parameters
 

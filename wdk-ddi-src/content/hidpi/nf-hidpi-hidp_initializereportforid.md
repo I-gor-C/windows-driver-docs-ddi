@@ -50,21 +50,21 @@ The <b>HidP_InitializeReportForID</b> routine initializes a HID report.
 
 ## Syntax
 
-````
-NTSTATUS __stdcall HidP_InitializeReportForID(
-  _In_  HIDP_REPORT_TYPE     ReportType,
-  _In_  UCHAR                ReportID,
-  _In_  PHIDP_PREPARSED_DATA PreparsedData,
-  _Out_ PCHAR                Report,
-  _In_  ULONG                ReportLength
+```
+NTSTATUS HidP_InitializeReportForID(
+  HIDP_REPORT_TYPE     ReportType,
+  UCHAR                ReportID,
+  PHIDP_PREPARSED_DATA PreparsedData,
+  PCHAR                Report,
+  ULONG                ReportLength
 );
-````
+```
 
 ## Parameters
 
 `ReportType`
 
-Specifies a <a href="..\hidpi\ne-hidpi-_hidp_report_type.md">HIDP_REPORT_TYPE</a> enumerator that indicates the type of HID report located at <i>Report</i>.
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator that indicates the type of HID report located at <i>Report</i>.
 
 `ReportID`
 
@@ -80,7 +80,7 @@ Pointer to the caller-allocated buffer containing the HID report that <b>HidP_In
 
 `ReportLength`
 
-Specifies the size, in bytes, of the HID report located at <i>Report</i>. <i>ReportLength</i> must be equal to the collection's report length for the specified report type, as specified by the <i>Xxx</i><b>ReportByteLength</b> members of a collection's <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure.
+Specifies the size, in bytes, of the HID report located at <i>Report</i>. <i>ReportLength</i> must be equal to the collection's report length for the specified report type, as specified by the <i>Xxx</i><b>ReportByteLength</b> members of a collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.
 
 
 ## Return Value
@@ -178,16 +178,16 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a>
+
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-
-
-
-<a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a>
-
-
-
-<a href="..\hidpi\ne-hidpi-_hidp_report_type.md">HIDP_REPORT_TYPE</a>
-
-
-
-<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>

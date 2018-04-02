@@ -7,7 +7,7 @@ old-location: audio\synthcaps.htm
 old-project: audio
 ms.assetid: d9d7327f-a413-4828-b204-e08198d0fe9e
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PSYNTHCAPS, PSYNTHCAPS, PSYNTHCAPS structure pointer [Audio Devices], SYNTHCAPS, SYNTHCAPS structure [Audio Devices], _SYNTHCAPS, aud-prop_609e484a-6bcb-4ea2-9ca5-fa640c4d9ba8.xml, audio.synthcaps, dmusprop/PSYNTHCAPS, dmusprop/SYNTHCAPS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,9 +47,9 @@ req.typenames: SYNTHCAPS, *PSYNTHCAPS
 The SYNTHCAPS structure specifies the capabilities of a synthesizer.
 
 ## Syntax
-````
+```
 typedef struct _SYNTHCAPS {
-  GUID  Guid;
+  GUID  Guid;
   DWORD Flags;
   DWORD MemorySize;
   DWORD MaxChannelGroups;
@@ -58,7 +58,7 @@ typedef struct _SYNTHCAPS {
   DWORD EffectFlags;
   WCHAR Description[128];
 } SYNTHCAPS, *PSYNTHCAPS;
-````
+```
 
 ## Members
 
@@ -206,8 +206,8 @@ In this example, the 0xFFFFFFFF values indicate that the handler has no way of k
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537389">KSPROPERTY_SYNTH_CAPS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537203">KSNODETYPE_SYNTHESIZER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537389">KSPROPERTY_SYNTH_CAPS</a>

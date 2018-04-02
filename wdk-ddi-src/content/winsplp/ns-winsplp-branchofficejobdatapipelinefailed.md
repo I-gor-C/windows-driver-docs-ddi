@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 Contains the necessary data for logging a branch office job Pipeline Rendering Failed event on a remote server. This is based on standard job-related data available to the spooler.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct BranchOfficeJobDataPipelineFailed {
   LPWSTR pDocumentName;
   LPWSTR pPrinterName;
   LPWSTR pExtraErrorInfo;
-} BranchOfficeJobDataPipelineFailed, *PBranchOfficeJobDataPipelineFailed;
-````
+} *PBranchOfficeJobDataPipelineFailed, BranchOfficeJobDataPipelineFailed;
+```
 
 ## Members
 

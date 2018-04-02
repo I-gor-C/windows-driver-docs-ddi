@@ -50,17 +50,17 @@ The <code>RouterUnregisterForPrintAsyncNotifications</code> function unregisters
 
 ## Syntax
 
-````
+```
 HRESULT RouterUnregisterForPrintAsyncNotifications(
-  _In_ HANDLE hNotify
+  HANDLE hNotify
 );
-````
+```
 
 ## Parameters
 
 `hNotify`
 
-The registration handle returned by the <a href="..\prnasntp\nf-prnasntp-routerregisterforprintasyncnotifications.md">RouterRegisterForPrintAsyncNotifications</a> function.
+The registration handle returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562024">RouterRegisterForPrintAsyncNotifications</a> function.
 
 
 ## Return Value
@@ -78,4 +78,4 @@ This function returns S_OK on success, and a standard COM error code otherwise.
 
 ## See Also
 
-<a href="..\prnasntp\nf-prnasntp-routerregisterforprintasyncnotifications.md">RouterRegisterForPrintAsyncNotifications</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562024">RouterRegisterForPrintAsyncNotifications</a>

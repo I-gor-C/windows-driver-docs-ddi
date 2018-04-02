@@ -53,11 +53,11 @@ The <b>WdfDeviceClearRemovalRelationsDevices</b> method removes all devices from
 
 ## Syntax
 
-````
-VOID WdfDeviceClearRemovalRelationsDevices(
-  _In_ WDFDEVICE Device
+```
+void WdfDeviceClearRemovalRelationsDevices(
+  WDFDEVICE Device
 );
-````
+```
 
 ## Parameters
 
@@ -85,8 +85,8 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceremoveremovalrelationsphysicaldevice.md">WdfDeviceRemoveRemovalRelationsPhysicalDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545875">WdfDeviceAddRemovalRelationsPhysicalDevice</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceaddremovalrelationsphysicaldevice.md">WdfDeviceAddRemovalRelationsPhysicalDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546834">WdfDeviceRemoveRemovalRelationsPhysicalDevice</a>

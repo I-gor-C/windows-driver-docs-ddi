@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_WindowParent method
+# IPrinterExtensionEventArgs::get_WindowParent method
 Gets the handle of the parent window.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_WindowParent(
-  [out, retval] HANDLE *phwndParent
+  HANDLE *phwndParent
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioneventargs.md">IPrinterExtensionEventArgs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973207">IPrinterExtensionEventArgs</a>

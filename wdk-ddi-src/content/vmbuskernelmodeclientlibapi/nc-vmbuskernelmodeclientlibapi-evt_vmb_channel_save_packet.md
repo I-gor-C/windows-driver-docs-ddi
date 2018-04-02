@@ -7,7 +7,7 @@ old-location: netvista\evt_vmb_channel_save_packet.htm
 old-project: netvista
 ms.assetid: 92CC3C36-D10C-4C6B-8BB4-476E72AD684C
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EVT_VMB_CHANNEL_SAVE_PACKET, EvtVmbChannelSavePacket, EvtVmbChannelSavePacket callback function [Network Drivers Starting with Windows Vista], PFN_VMB_CHANNEL_SAVE_PACKET, PFN_VMB_CHANNEL_SAVE_PACKET callback function pointer [Network Drivers Starting with Windows Vista], netvista.evt_vmb_channel_save_packet, vmbuskernelmodeclientlibapi/EvtVmbChannelSavePacket
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -94,7 +94,7 @@ Size necessary to save the state of the transaction, in bytes.
 
 ## Remarks
 
-The <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbserverchannelinitsetsaverestorepacketcallbacks.md">VmbServerChannelInitSetSaveRestorePacketCallbacks</a> function sets a callback function for saving packets for each channel.
+The <a href="https://msdn.microsoft.com/2E704BF1-21E2-498E-82C2-2B55BF44D044">VmbServerChannelInitSetSaveRestorePacketCallbacks</a> function sets a callback function for saving packets for each channel.
 
 The VSP saves the state associated with the transaction that is unique to the VSP.  The Kernel Mode Client Library (KMCL)
 saves its own state.
@@ -112,4 +112,4 @@ the length stipulated in the first call.
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbserverchannelinitsetsaverestorepacketcallbacks.md">VmbServerChannelInitSetSaveRestorePacketCallbacks</a>
+<a href="https://msdn.microsoft.com/2E704BF1-21E2-498E-82C2-2B55BF44D044">VmbServerChannelInitSetSaveRestorePacketCallbacks</a>

@@ -7,7 +7,7 @@ old-location: kernel\psquerytotalcycletimeprocess.htm
 old-project: kernel
 ms.assetid: 4DA34F96-A69A-46BE-B3D8-D542794052DE
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsQueryTotalCycleTimeProcess, PsQueryTotalCycleTimeProcess routine [Kernel-Mode Driver Architecture], kernel.psquerytotalcycletimeprocess, wdm/PsQueryTotalCycleTimeProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ The <b>PsQueryTotalCycleTimeProcess</b> routine returns the accumulated cycle ti
 
 ## Syntax
 
-````
+```
 ULONG64 PsQueryTotalCycleTimeProcess(
-  _Inout_ PEPROCESS Process,
-  _Out_   PULONG64  CycleTimeStamp
+  PEPROCESS Process,
+  PULONG64  CycleTimeStamp
 );
-````
+```
 
 ## Parameters
 

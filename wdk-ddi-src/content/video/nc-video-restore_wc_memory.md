@@ -7,7 +7,7 @@ old-location: display\videoportrestorewcmemory.htm
 old-project: display
 ms.assetid: 8fa0be0c-04ce-41ab-93dd-6dc9e8daa356
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: RESTORE_WC_MEMORY, VideoPortRestoreWCMemory, VideoPortRestoreWCMemory callback function [Display Devices], VideoPort_Functions_88c8ebcc-40d1-4883-9e99-eac1aab0c6c7.xml, display.videoportrestorewcmemory, video/VideoPortRestoreWCMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 
 
 # RESTORE_WC_MEMORY callback function
-The <i>VideoPortRestoreWCMemory</i> callback routine restores Write Combined video memory from a protected state after the <a href="..\video\nc-video-protect_wc_memory.md">VideoPortProtectWCMemory</a> callback routine was called.
+The <i>VideoPortRestoreWCMemory</i> callback routine restores Write Combined video memory from a protected state after the <a href="https://msdn.microsoft.com/0cee4f4d-4d9c-44be-94ad-459000f2adb1">VideoPortProtectWCMemory</a> callback routine was called.
 
 ## Syntax
 
@@ -64,7 +64,7 @@ VP_STATUS RestoreWcMemory(
 
 `Context`
 
-Pointer to a caller-determined context parameter to be passed to the <i>CallbackRoutine</i>. It typically points to the <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a> buffer.
+Pointer to a caller-determined context parameter to be passed to the <i>CallbackRoutine</i>. It typically points to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a> buffer.
 
 `HwDeviceExtension`
 
@@ -77,7 +77,7 @@ Pointer to the miniport driver's hardware device extension.
 
 ## Remarks
 
-After the <a href="..\video\nc-video-protect_wc_memory.md">VideoPortProtectWCMemory</a> callback routine is called, the CPU cannot write to Write Combined memory until <i>VideoPortRestoreWCMemory</i> is called.
+After the <a href="https://msdn.microsoft.com/0cee4f4d-4d9c-44be-94ad-459000f2adb1">VideoPortProtectWCMemory</a> callback routine is called, the CPU cannot write to Write Combined memory until <i>VideoPortRestoreWCMemory</i> is called.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,8 +88,8 @@ After the <a href="..\video\nc-video-protect_wc_memory.md">VideoPortProtectWCMem
 
 ## See Also
 
-<a href="..\video\nc-video-protect_wc_memory.md">VideoPortProtectWCMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a>
 
 
 
-<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
+<a href="https://msdn.microsoft.com/0cee4f4d-4d9c-44be-94ad-459000f2adb1">VideoPortProtectWCMemory</a>

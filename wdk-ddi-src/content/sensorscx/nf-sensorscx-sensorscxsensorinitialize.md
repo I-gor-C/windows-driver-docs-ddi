@@ -52,12 +52,12 @@ This function sets the enumeration properties of a sensor.
 
 ## Syntax
 
-````
-FORCEINLINE NTSTATUS SensorsCxSensorInitialize(
-  _In_ SENSOROBJECT   Sensor,
-  _In_ PSENSOR_CONFIG pSensorConfig
+```
+NTSTATUS SensorsCxSensorInitialize(
+  SENSOROBJECT   Sensor,
+  PSENSOR_CONFIG pSensorConfig
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ A reference to a sensor object.
 
 `pSensorConfig`
 
-A list of enumeration properties. For more information, see <a href="..\sensorscx\ns-sensorscx-_sensor_config.md">SENSOR_CONFIG</a>.
+A list of enumeration properties. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957096">SENSOR_CONFIG</a>.
 
 
 ## Return Value
@@ -84,7 +84,7 @@ STATUS_INVALID_PARAMETER is returned if any of the _In_ parameters are NULL or t
 
 </li>
 <li>
-STATUS_BUFFER_TOO_SMALL is returned if the <b>pSensorConfig</b> buffer is smaller than the size of the <a href="..\sensorscx\ns-sensorscx-_sensor_config.md">SENSOR_CONFIG</a> structure.
+STATUS_BUFFER_TOO_SMALL is returned if the <b>pSensorConfig</b> buffer is smaller than the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn957096">SENSOR_CONFIG</a> structure.
 
 </li>
 <li>

@@ -7,7 +7,7 @@ old-location: display\d3dddi_multiplane_overlay_flags.htm
 old-project: display
 ms.assetid: b91d87e8-3f63-45ac-919f-3597957ea497
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_MULTIPLANE_OVERLAY_FLAGS, D3DDDI_MULTIPLANE_OVERLAY_FLAGS enumeration [Display Devices], D3DDDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, D3DDDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, _D3DDDI_MULTIPLANE_OVERLAY_FLAGS, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_FLAGS, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP, d3dumddi/D3DDDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP, display.d3dddi_multiplane_overlay_flags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: D3DDDI_MULTIPLANE_OVERLAY_FLAGS
 Identifies a flip operation to be performed on an overlay plane.
 
 ## Syntax
-````
-typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FLAGS { 
-  D3DDDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP    = 0x1,
-  D3DDDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP  = 0x2
+```
+typedef enum _D3DDDI_MULTIPLANE_OVERLAY_FLAGS {
+  D3DDDI_MULTIPLANE_OVERLAY_FLAG_VERTICAL_FLIP    ,
+  D3DDDI_MULTIPLANE_OVERLAY_FLAG_HORIZONTAL_FLIP
 } D3DDDI_MULTIPLANE_OVERLAY_FLAGS;
-````
+```
 
 ## Constants
 

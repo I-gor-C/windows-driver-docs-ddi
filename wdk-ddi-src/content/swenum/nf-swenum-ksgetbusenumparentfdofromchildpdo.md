@@ -53,12 +53,12 @@ The <b>KsGetBusEnumParentFDOFromChildPDO </b>function retrieves the FDO of the p
 
 ## Syntax
 
-````
-NTSTATUS KsGetBusEnumParentFDOFromChildPDO(
-  _In_  PDEVICE_OBJECT DeviceObject,
-  _Out_ PDEVICE_OBJECT *FunctionalDeviceObject
+```
+KSDDKAPI NTSTATUS KsGetBusEnumParentFDOFromChildPDO(
+  PDEVICE_OBJECT DeviceObject,
+  PDEVICE_OBJECT *FunctionalDeviceObject
 );
-````
+```
 
 ## Parameters
 

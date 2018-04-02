@@ -7,7 +7,7 @@ old-location: buses\udecxusbdeviceinitallocate.htm
 old-project: usbref
 ms.assetid: 127D132B-6A40-4F6F-BCDA-473F89A1A747
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UdecxUsbDeviceInitAllocate, UdecxUsbDeviceInitAllocate function [Buses], buses.udecxusbdeviceinitallocate, udecxusbdevice/UdecxUsbDeviceInitAllocate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ Allocates memory for a  <b>UDECXUSBDEVICE_INIT</b> structure that is used to ini
 
 ## Syntax
 
-````
-FORCEINLINE PUDECXUSBDEVICE_INIT UdecxUsbDeviceInitAllocate(
-  _In_ WDFDEVICE UdecxWdfDevice
+```
+PUDECXUSBDEVICE_INIT UdecxUsbDeviceInitAllocate(
+  WDFDEVICE UdecxWdfDevice
 );
-````
+```
 
 ## Parameters
 
 `UdecxWdfDevice`
 
-A handle to a framework device object that represents the a USB device. The client driver initialized this object in the previous call to <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md">UdecxWdfDeviceAddUsbDeviceEmulation</a>.
+A handle to a framework device object that represents the a USB device. The client driver initialized this object in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627990">UdecxWdfDeviceAddUsbDeviceEmulation</a>.
 
 
 ## Return Value
@@ -70,7 +70,7 @@ This method returns a pointer to an opaque <b>UDECXUSBDEVICE_INIT</b> that conta
 
 ## Remarks
 
-The UDE client driver calls this method to allocate parameters for the virtual device that is created by a subsequent call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitfree.md">UdecxUsbDeviceInitFree</a>.
+The UDE client driver calls this method to allocate parameters for the virtual device that is created by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>. If the device is not created or the driver is finished using the resources, the driver must free the resources by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627969">UdecxUsbDeviceInitFree</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,8 +84,8 @@ The UDE client driver calls this method to allocate parameters for the virtual d
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>

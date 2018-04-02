@@ -7,7 +7,7 @@ old-location: netvista\ndk_mr.htm
 old-project: netvista
 ms.assetid: F0585210-048E-4397-98E4-46640731E66C
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_MR, NDK_MR structure [Network Drivers Starting with Windows Vista], PNDK_MR, PNDK_MR structure pointer [Network Drivers Starting with Windows Vista], _NDK_MR, ndkpi/NDK_MR, ndkpi/PNDK_MR, netvista.ndk_mr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,26 +47,26 @@ req.typenames: NDK_MR, NDK_MR
 The <b>NDK_MR</b> structure specifies the attributes of an NDK memory region (MR) object.
 
 ## Syntax
-````
+```
 typedef struct _NDK_MR {
-  NDK_OBJECT_HEADER     Header;
+  NDK_OBJECT_HEADER     Header;
   CONST NDK_MR_DISPATCH *Dispatch;
-} NDK_MR, *PNDK_MR;
-````
+} NDK_MR;
+```
 
 ## Members
 
 
 `Header`
 
-The <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a> structure for the <b>NDK_MR</b> structure. Set the <b>ObjectType</b> member of the structure that <b>Header</b> specifies to <b>NdkObjectTypeMr</b>.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a> structure for the <b>NDK_MR</b> structure. Set the <b>ObjectType</b> member of the structure that <b>Header</b> specifies to <b>NdkObjectTypeMr</b>.
 
 `Dispatch`
 
-A pointer to an <a href="..\ndkpi\ns-ndkpi-_ndk_mr_dispatch.md">NDK_MR_DISPATCH</a> structure that defines dispatch functions for the NDK MR object.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439924">NDK_MR_DISPATCH</a> structure that defines dispatch functions for the NDK MR object.
 
 ## Remarks
-An NDK provider must set the <b>Dispatch</b> member to point to its  <a href="..\ndkpi\ns-ndkpi-_ndk_mr_dispatch.md">NDK_MR_DISPATCH</a> table before returning the  created MR object. Also, the NDK provider must not use the <b>Dispatch</b> member after setting it because the NDK consumer can change the <b>Dispatch</b> member to some other value.
+An NDK provider must set the <b>Dispatch</b> member to point to its  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439924">NDK_MR_DISPATCH</a> table before returning the  created MR object. Also, the NDK provider must not use the <b>Dispatch</b> member after setting it because the NDK consumer can change the <b>Dispatch</b> member to some other value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,24 +76,24 @@ An NDK provider must set the <b>Dispatch</b> member to point to its  <a href="..
 
 ## See Also
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_completion.md">NDK_FN_CREATE_COMPLETION</a>
-
-
-
 <a href="https://msdn.microsoft.com/94993523-D0D7-441E-B95C-417800840BAC">NDKPI Object Lifetime Requirements</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_mr_dispatch.md">NDK_MR_DISPATCH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439863">NDK_FN_CLOSE_OBJECT</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_mr.md">NDK_FN_CREATE_MR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439871">NDK_FN_CREATE_COMPLETION</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439875">NDK_FN_CREATE_MR</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439924">NDK_MR_DISPATCH</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a>

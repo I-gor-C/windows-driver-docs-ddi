@@ -7,7 +7,7 @@ old-location: storage\ataportregistrychannelsubkeywritedeferred.htm
 old-project: storage
 ms.assetid: 332f6921-1ad2-42ae-9728-001f243b8cff
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortRegistryChannelSubkeyWriteDeferred, AtaPortRegistryChannelSubkeyWriteDeferred routine [Storage Devices], atartns_ddf14e05-c641-4382-88b4-18abb54e0f17.xml, irb/AtaPortRegistryChannelSubkeyWriteDeferred, storage.ataportregistrychannelsubkeywritedeferred
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,16 +50,16 @@ The <b>AtaPortRegistryChannelSubKeyWriteDeferred</b> routine writes data asynchr
 
 ## Syntax
 
-````
-BOOLEAN __inline AtaPortRegistryChannelSubkeyWriteDeferred(
-  _In_ PVOID  ChannelExtension,
-  _In_ UCHAR  ControllerNumber,
-  _In_ PCHAR  ValueName,
-  _In_ UCHAR  ValueType,
-  _In_ PUCHAR Buffer,
-  _In_ PULONG Length
+```
+_IRQL_requires_same_ BOOLEAN AtaPortRegistryChannelSubkeyWriteDeferred(
+  PVOID  ChannelExtension,
+  UCHAR  ControllerNumber,
+  PCHAR  ValueName,
+  UCHAR  ValueType,
+  PUCHAR Buffer,
+  PULONG BufferLength
 );
-````
+```
 
 ## Parameters
 
@@ -133,11 +133,11 @@ TBD
 
 If the value name is not present, <b>AtaPortRegistryChannelSubKeyWriteDeferred</b> creates an entry for the value and the data is stored in the newly created value. 
 
-The buffer that is pointed to by <i>Buffer </i>must be allocated by using <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>. 
+The buffer that is pointed to by <i>Buffer </i>must be allocated by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550200">AtaPortRegistryAllocateBuffer</a>. 
 
 The miniport driver can call <b>AtaPortRegistryChannelSubKeyWriteDeferred</b> from any of the key routines that belong to its channel interface. 
 
-The miniport driver must not reuse the buffer that is pointed to by <i>Buffer</i> after the initial call to <b>AtaPortRegistryChannelSubKeyWriteDeferred</b>. Because the call is asynchronous, <i>Buffer</i> might still point to data that has not been flushed to the registry. The port driver flushes the data in the buffer to the registry when the miniport driver calls <a href="..\irb\nf-irb-ataportregistryfreebuffer.md">AtaPortRegistryFreeBuffer</a>.
+The miniport driver must not reuse the buffer that is pointed to by <i>Buffer</i> after the initial call to <b>AtaPortRegistryChannelSubKeyWriteDeferred</b>. Because the call is asynchronous, <i>Buffer</i> might still point to data that has not been flushed to the registry. The port driver flushes the data in the buffer to the registry when the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550212">AtaPortRegistryFreeBuffer</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -147,8 +147,8 @@ The miniport driver must not reuse the buffer that is pointed to by <i>Buffer</i
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550200">AtaPortRegistryAllocateBuffer</a>
 
 
 
-<a href="..\irb\nf-irb-ataportregistryfreebuffer.md">AtaPortRegistryFreeBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550212">AtaPortRegistryFreeBuffer</a>

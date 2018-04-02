@@ -45,26 +45,26 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetPipeReadParameters method
+# IWDFUsbRequestCompletionParams::GetPipeReadParameters method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>GetPipeReadParameters</b> method retrieves parameters that are associated with the completion of a read request.
 
 ## Syntax
 
-````
+```
 void GetPipeReadParameters(
-  [out, optional] IWDFMemory **ppReadMemory,
-  [out, optional] SIZE_T     *pBytesRead,
-  [out, optional] SIZE_T     *pReadMemoryOffset
+  IWDFMemory **ppReadMemory,
+  SIZE_T     *pBytesRead,
+  SIZE_T     *pReadMemoryOffset
 );
-````
+```
 
 ## Parameters
 
 `ppReadMemory`
 
-A pointer to a variable that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface, for access to the read buffer for the read request. This parameter is optional and can be <b>NULL</b>.
+A pointer to a variable that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a> interface, for access to the read buffer for the read request. This parameter is optional and can be <b>NULL</b>.
 
 `pBytesRead`
 
@@ -91,8 +91,8 @@ None
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbrequestcompletionparams.md">IWDFUsbRequestCompletionParams</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a>
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560346">IWDFUsbRequestCompletionParams</a>

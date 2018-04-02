@@ -7,7 +7,7 @@ old-location: kernel\mm_physical_address_list.htm
 old-project: kernel
 ms.assetid: D653607A-7C37-408D-AD19-B4A8988CDACE
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PMM_PHYSICAL_ADDRESS_LIST, MM_PHYSICAL_ADDRESS_LIST, MM_PHYSICAL_ADDRESS_LIST structure [Kernel-Mode Driver Architecture], PMM_PHYSICAL_ADDRESS_LIST, PMM_PHYSICAL_ADDRESS_LIST structure pointer [Kernel-Mode Driver Architecture], _MM_PHYSICAL_ADDRESS_LIST, kernel.mm_physical_address_list, wdm/MM_PHYSICAL_ADDRESS_LIST, wdm/PMM_PHYSICAL_ADDRESS_LIST"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The <b>MM_PHYSICAL_ADDRESS_LIST</b> structure specifies a range of physical addresses.
 
 ## Syntax
-````
+```
 typedef struct _MM_PHYSICAL_ADDRESS_LIST {
   PHYSICAL_ADDRESS PhysicalAddress;
-  SIZE_T           NumberOfBytes;
+  SIZE_T           NumberOfBytes;
 } MM_PHYSICAL_ADDRESS_LIST, *PMM_PHYSICAL_ADDRESS_LIST;
-````
+```
 
 ## Members
 
@@ -67,7 +67,7 @@ The starting physical address of the range. This address must be aligned to a pa
 The number of bytes in the range. This member must be nonzero and an integer multiple of the memory page size.
 
 ## Remarks
-The first parameter to the <a href="..\wdm\nf-wdm-mmallocatemdlforiospace.md">MmAllocateMdlForIoSpace</a> routine is a pointer to an array of <b>MM_PHYSICAL_ADDRESS_LIST</b> structures.
+The first parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/jj206443">MmAllocateMdlForIoSpace</a> routine is a pointer to an array of <b>MM_PHYSICAL_ADDRESS_LIST</b> structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,4 +76,4 @@ The first parameter to the <a href="..\wdm\nf-wdm-mmallocatemdlforiospace.md">Mm
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmallocatemdlforiospace.md">MmAllocateMdlForIoSpace</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj206443">MmAllocateMdlForIoSpace</a>

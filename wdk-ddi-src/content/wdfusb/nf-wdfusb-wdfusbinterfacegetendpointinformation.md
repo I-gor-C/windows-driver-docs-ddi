@@ -55,20 +55,20 @@ The <b>WdfUsbInterfaceGetEndpointInformation</b> method retrieves information ab
 
 ## Syntax
 
-````
-VOID WdfUsbInterfaceGetEndpointInformation(
-  _In_  WDFUSBINTERFACE           UsbInterface,
-  _In_  UCHAR                     SettingIndex,
-  _In_  UCHAR                     EndpointIndex,
-  _Out_ PWDF_USB_PIPE_INFORMATION EndpointInfo
+```
+void WdfUsbInterfaceGetEndpointInformation(
+  WDFUSBINTERFACE           UsbInterface,
+  UCHAR                     SettingIndex,
+  UCHAR                     EndpointIndex,
+  PWDF_USB_PIPE_INFORMATION EndpointInfo
 );
-````
+```
 
 ## Parameters
 
 `UsbInterface`
 
-A handle to a USB interface object that was obtained by calling <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>.
+A handle to a USB interface object that was obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550092">WdfUsbTargetDeviceGetInterface</a>.
 
 `SettingIndex`
 
@@ -80,7 +80,7 @@ An index value that identifies an endpoint that is associated with the specified
 
 `EndpointInfo`
 
-A pointer to a caller-allocated <a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a> structure that the framework fills in.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff553037">WDF_USB_PIPE_INFORMATION</a> structure that the framework fills in.
 
 
 ## Return Value
@@ -144,12 +144,12 @@ for (i = 0; i &lt; numEndpoints; i++){
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553037">WDF_USB_PIPE_INFORMATION</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetnumendpoints.md">WdfUsbInterfaceGetNumEndpoints</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550068">WdfUsbInterfaceGetNumEndpoints</a>
 
 
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550092">WdfUsbTargetDeviceGetInterface</a>

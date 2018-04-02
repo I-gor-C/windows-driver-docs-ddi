@@ -7,7 +7,7 @@ old-location: buses\usbfn_class_interface.htm
 old-project: usbref
 ms.assetid: D7173157-D532-4E71-A4E5-55A3B9626DB8
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSBFN_CLASS_INTERFACE, PUSBFN_CLASS_INTERFACE, PUSBFN_CLASS_INTERFACE structure pointer [Buses], USBFN_CLASS_INTERFACE, USBFN_CLASS_INTERFACE structure [Buses], _USBFN_CLASS_INTERFACE, buses.usbfn_class_interface, usbfnbase/PUSBFN_CLASS_INTERFACE, usbfnbase/USBFN_CLASS_INTERFACE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 Describes an interface and its endpoints.
 
 ## Syntax
-````
+```
 typedef struct _USBFN_CLASS_INTERFACE {
-  UINT8                  InterfaceNumber;
-  UINT8                  PipeCount;
+  UINT8                  InterfaceNumber;
+  UINT8                  PipeCount;
   USBFN_PIPE_INFORMATION PipeArr[MAX_NUM_USBFN_PIPES];
 } USBFN_CLASS_INTERFACE, *PUSBFN_CLASS_INTERFACE;
-````
+```
 
 ## Members
 
@@ -69,7 +69,7 @@ The number of endpoints contained in  the interface.
 
 `PipeArr`
 
-An array of <a href="..\usbfnbase\ns-usbfnbase-_usbfn_pipe_information.md">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.
+An array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt188003">USBFN_PIPE_INFORMATION</a> structures that describes the endpoints in the interface.
 
 
 ## Requirements
@@ -79,4 +79,4 @@ An array of <a href="..\usbfnbase\ns-usbfnbase-_usbfn_pipe_information.md">USBFN
 
 ## See Also
 
-<a href="..\usbfnbase\ns-usbfnbase-_usbfn_pipe_information.md">USBFN_PIPE_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188003">USBFN_PIPE_INFORMATION</a>

@@ -7,7 +7,7 @@ old-location: buses\ursdeviceinitialize.htm
 old-project: usbref
 ms.assetid: 8A9C76C0-70F5-4F65-A460-CCFCD236A242
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UrsDeviceInitialize, UrsDeviceInitialize function [Buses], buses.ursdeviceinitialize, ursdevice/UrsDeviceInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,22 +51,22 @@ Initializes a framework device object to support operations related to  a USB du
 
 ## Syntax
 
-````
-FORCEINLINE NTSTATUS UrsDeviceInitialize(
-  _In_ WDFDEVICE   Device,
-  _In_ PURS_CONFIG Config
+```
+NTSTATUS UrsDeviceInitialize(
+  WDFDEVICE   Device,
+  PURS_CONFIG Config
 );
-````
+```
 
 ## Parameters
 
 `Device`
 
-A handle to the framework device object that the client driver retrieved in the previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.
+A handle to the framework device object that the client driver retrieved in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.
 
 `Config`
 
-A pointer to a <a href="..\ursdevice\ns-ursdevice-_urs_config.md">URS_CONFIG</a> structure that the client driver initialized by calling <a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a> structure that the client driver initialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt628021">URS_CONFIG_INIT</a>.
 
 
 ## Return Value
@@ -75,11 +75,11 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 ## Remarks
 
-The client driver for the USB dual-role controller must call this method after the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. 
+The client driver for the USB dual-role controller must call this method after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> call. 
 
-The client driver calls this method in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> implementation.
+The client driver calls this method in its <a href="https://msdn.microsoft.com/b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a">EvtDriverDeviceAdd</a> implementation.
 
-During this call, the client driver-supplied event callback implementations are also registered by setting appropriate members of <a href="..\ursdevice\ns-ursdevice-_urs_config.md">URS_CONFIG</a>. 
+During this call, the client driver-supplied event callback implementations are also registered by setting appropriate members of <a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a>. 
 
 The method creates resource lists for host and function roles and the queues required to handle IOCTL requests that are sent to the controller. With each role switch operation, the current role's child device stack  is torn down and the device stack for the new role is loaded. The  <b>UrsDeviceInitialize</b> method retrieves identifying information that is used to build those device stacks. The method also retrieves information about the device from the underlying bus, such as ACPI.
 
@@ -153,8 +153,8 @@ EvtDriverDeviceAdd (
 
 ## See Also
 
-<a href="..\ursdevice\ns-ursdevice-_urs_config.md">URS_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a>
 
 
 
-<a href="..\ursdevice\nf-ursdevice-urs_config_init.md">URS_CONFIG_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt628021">URS_CONFIG_INIT</a>

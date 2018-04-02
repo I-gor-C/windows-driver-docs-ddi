@@ -7,7 +7,7 @@ old-location: kernel\zwgetnotificationresourcemanager.htm
 old-project: kernel
 ms.assetid: 53892fd1-d83c-4b6e-9c39-2f64ba0ab310
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: NtGetNotificationResourceManager, ZwGetNotificationResourceManager, ZwGetNotificationResourceManager routine [Kernel-Mode Driver Architecture], kernel.zwgetnotificationresourcemanager, ktm_ref_c0a3b128-d49c-4080-ae12-0081ab5a27e9.xml, wdm/NtGetNotificationResourceManager, wdm/ZwGetNotificationResourceManager
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,23 +51,23 @@ The <b>ZwGetNotificationResourceManager</b> routine retrieves the next <a href="
 
 ## Syntax
 
-````
-NTSTATUS ZwGetNotificationResourceManager(
-  _In_      HANDLE                    ResourceManagerHandle,
-  _Out_     PTRANSACTION_NOTIFICATION TransactionNotification,
-  _In_      ULONG                     NotificationLength,
-  _In_      PLARGE_INTEGER            Timeout,
-  _Out_opt_ PULONG                    ReturnLength,
-  _In_      ULONG                     Asynchronous,
-  _In_opt_  ULONG_PTR                 AsynchronousContext
+```
+__kernel_entry NTSYSCALLAPI NTSTATUS NtGetNotificationResourceManager(
+  HANDLE                    ResourceManagerHandle,
+  PTRANSACTION_NOTIFICATION TransactionNotification,
+  ULONG                     NotificationLength,
+  PLARGE_INTEGER            Timeout,
+  PULONG                    ReturnLength,
+  ULONG                     Asynchronous,
+  ULONG_PTR                 AsynchronousContext
 );
-````
+```
 
 ## Parameters
 
 `ResourceManagerHandle`
 
-A handle to a <a href="https://msdn.microsoft.com/b44f2035-ee9f-453b-b12d-89ca36a8b280">resource manager object</a> that was obtained by a previous call to <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a> or <a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>. The handle must have RESOURCEMANAGER_GET_NOTIFICATION access to the object.
+A handle to a <a href="https://msdn.microsoft.com/b44f2035-ee9f-453b-b12d-89ca36a8b280">resource manager object</a> that was obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff566427">ZwCreateResourceManager</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567026">ZwOpenResourceManager</a>. The handle must have RESOURCEMANAGER_GET_NOTIFICATION access to the object.
 
 `TransactionNotification`
 
@@ -95,7 +95,7 @@ An optional pointer to a variable. If this pointer is not <b>NULL</b>, and if th
 
 `Asynchronous`
 
-A ULONG value that must be zero. <b>ZwGetNotificationResourceManager</b> does not support asynchronous notifications. Use <a href="..\wdm\nf-wdm-tmenablecallbacks.md">TmEnableCallbacks</a> to enable asynchronous notifications.
+A ULONG value that must be zero. <b>ZwGetNotificationResourceManager</b> does not support asynchronous notifications. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff564676">TmEnableCallbacks</a> to enable asynchronous notifications.
 
 `AsynchronousContext`
 
@@ -173,9 +173,9 @@ The routine might return other <a href="https://msdn.microsoft.com/library/windo
 
 ## Remarks
 
-Use the <b>ZwGetNotificationResourceManager</b> routine to obtain notifications synchronously. Use the <a href="..\wdm\nf-wdm-tmenablecallbacks.md">TmEnableCallbacks</a> routine to enable asynchronous notifications. 
+Use the <b>ZwGetNotificationResourceManager</b> routine to obtain notifications synchronously. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564676">TmEnableCallbacks</a> routine to enable asynchronous notifications. 
 
-The received <a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a> structure contains the enlistment key that the resource manager specified when it called <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>. You can use the enlistment key to identify the enlistment that the notification applies to.
+The received <a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a> structure contains the enlistment key that the resource manager specified when it called <a href="https://msdn.microsoft.com/library/windows/hardware/ff566422">ZwCreateEnlistment</a>. You can use the enlistment key to identify the enlistment that the notification applies to.
 
 For more information about the <b>ZwGetNotificationResourceManager</b> routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff542865">Creating a Resource Manager</a>. 
 
@@ -196,11 +196,11 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a>
 
 
 
-<a href="..\wdm\nf-wdm-zwopenresourcemanager.md">ZwOpenResourceManager</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564676">TmEnableCallbacks</a>
 
 
 
@@ -208,12 +208,12 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 
-<a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566422">ZwCreateEnlistment</a>
 
 
 
-<a href="..\wdm\nf-wdm-tmenablecallbacks.md">TmEnableCallbacks</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566427">ZwCreateResourceManager</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564813">TRANSACTION_NOTIFICATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567026">ZwOpenResourceManager</a>

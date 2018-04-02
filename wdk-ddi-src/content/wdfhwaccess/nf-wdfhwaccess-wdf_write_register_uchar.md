@@ -52,13 +52,13 @@ The <b>WDF_WRITE_REGISTER_UCHAR</b> routine writes a byte to the specified addre
 
 ## Syntax
 
-````
+```
 void WDF_WRITE_REGISTER_UCHAR(
-  _In_ WDFDEVICE Device,
-  _In_ PUCHAR    Register,
-  _In_ UCHAR     Value
+  WDFDEVICE Device,
+  PUCHAR    Register,
+  UCHAR     Value
 );
-````
+```
 
 ## Parameters
 

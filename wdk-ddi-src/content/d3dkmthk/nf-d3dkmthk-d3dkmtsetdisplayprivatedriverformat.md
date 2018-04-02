@@ -7,7 +7,7 @@ old-location: display\d3dkmtsetdisplayprivatedriverformat.htm
 old-project: display
 ms.assetid: 4b720076-161f-47b4-b410-f9554e502a53
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTSetDisplayPrivateDriverFormat, D3DKMTSetDisplayPrivateDriverFormat function [Display Devices], OpenGL_Functions_742fb584-0b9d-4650-a0a6-64f3e3f55dff.xml, d3dkmthk/D3DKMTSetDisplayPrivateDriverFormat, display.d3dkmtsetdisplayprivatedriverformat
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>D3DKMTSetDisplayPrivateDriverFormat</b> function changes the private-form
 
 ## Syntax
 
-````
-NTSTATUS APIENTRY D3DKMTSetDisplayPrivateDriverFormat(
-  _In_ const D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT *pData
+```
+NTSTATUS D3DKMTSetDisplayPrivateDriverFormat(
+  CONST *D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT
 );
-````
+```
 
 ## Parameters
 
@@ -114,7 +114,7 @@ Parameters were validated and determined to be incorrect.
 </dl>
 </td>
 <td width="60%">
-Before the call to <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplayprivatedriverformat.md">D3DKMTSetDisplayPrivateDriverFormat</a>, the device did not acquire exclusive ownership of the view. Therefore, the device could not change the private-format attribute of the video present source.
+Before the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547171">D3DKMTSetDisplayPrivateDriverFormat</a>, the device did not acquire exclusive ownership of the view. Therefore, the device could not change the private-format attribute of the video present source.
 
 </td>
 </tr>
@@ -125,7 +125,7 @@ Before the call to <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsetdisplayprivatedrive
 </dl>
 </td>
 <td width="60%">
-The display miniport driver does not support the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setdisplayprivatedriverformat.md">DxgkDdiSetDisplayPrivateDriverFormat</a> function. 
+The display miniport driver does not support the <a href="https://msdn.microsoft.com/053fdf22-20c3-4b57-94f4-0613857abfa7">DxgkDdiSetDisplayPrivateDriverFormat</a> function. 
 
 </td>
 </tr>
@@ -157,8 +157,8 @@ This function might also return other NTSTATUS values.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setdisplayprivatedriverformat.md">D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548290">D3DKMT_SETDISPLAYPRIVATEDRIVERFORMAT</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setdisplayprivatedriverformat.md">DxgkDdiSetDisplayPrivateDriverFormat</a>
+<a href="https://msdn.microsoft.com/053fdf22-20c3-4b57-94f4-0613857abfa7">DxgkDdiSetDisplayPrivateDriverFormat</a>

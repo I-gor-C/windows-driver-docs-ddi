@@ -50,14 +50,14 @@ The <code>OEMDitherColor</code> function requests the device to create a brush d
 
 ## Syntax
 
-````
-ULONG APIENTRY OEMDitherColor(
-   DHPDEV dhpdev,
-   ULONG  iMode,
-   ULONG  rgbColor,
-   ULONG  *pulDither
+```
+ULONG OEMDitherColor(
+  DHPDEV dhpdev,
+  ULONG  iMode,
+  ULONG  rgbColor,
+  ULONG  *pulDither
 );
-````
+```
 
 ## Parameters
 

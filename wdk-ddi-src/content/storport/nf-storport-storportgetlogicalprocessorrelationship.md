@@ -7,7 +7,7 @@ old-location: storage\storportgetlogicalprocessorrelationship.htm
 old-project: storage
 ms.assetid: 32b92771-7f23-492c-a3b0-b10032c9f80a
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortGetLogicalProcessorRelationship, StorPortGetLogicalProcessorRelationship routine [Storage Devices], storage.storportgetlogicalprocessorrelationship, storport/StorPortGetLogicalProcessorRelationship, storprt_65b00469-41a4-446b-aaa5-fee877aaff3c.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,15 +50,15 @@ The <b>StorPortGetLogicalProcessorRelationship</b> routine returns relationship 
 
 ## Syntax
 
-````
+```
 ULONG StorPortGetLogicalProcessorRelationship(
-  _In_     PVOID                                    HwDeviceExtension,
-  _In_opt_ PPROCESSOR_NUMBER                        ProcessorNumber,
-  _In_     LOGICAL_PROCESSOR_RELATIONSHIP           RelationshipType,
-  _Out_    PSYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX Information,
-  _Inout_  PULONG                                   Length
+  PVOID                                    HwDeviceExtension,
+  PPROCESSOR_NUMBER                        ProcessorNumber,
+  LOGICAL_PROCESSOR_RELATIONSHIP           RelationshipType,
+  PSYSTEM_LOGICAL_PROCESSOR_INFORMATION_EX Information,
+  PULONG                                   Length
 );
-````
+```
 
 ## Parameters
 

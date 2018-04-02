@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_srq_receive.htm
 old-project: netvista
 ms.assetid: 1D615DEA-5599-4A3D-AEE7-BDBFE9D40C47
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_FN_SRQ_RECEIVE, NdkSrqReceive, NdkSrqReceive callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkSrqReceive, netvista.ndk_fn_srq_receive
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,11 +66,11 @@ NTSTATUS NdkFnSrqReceive(
 `*pNdkSrq`
 
 A pointer to an NDK shared receive queue (SRQ) object
-(<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>).
+(<a href="https://msdn.microsoft.com/library/windows/hardware/hh439939">NDK_SRQ</a>).
 
 `RequestContext`
 
-A context value to be returned in the <b>RequestContext</b> member of the <a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a> structure for this request.
+A context value to be returned in the <b>RequestContext</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439935">NDK_RESULT</a> structure for this request.
 
 `NDK_SGE`
 
@@ -131,12 +131,12 @@ An error occurred.
 
 ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439935">NDK_RESULT</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_sge.md">NDK_SGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439936">NDK_SGE</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_result.md">NDK_RESULT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439939">NDK_SRQ</a>

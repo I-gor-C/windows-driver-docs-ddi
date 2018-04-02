@@ -7,7 +7,7 @@ old-location: debugger\getengineoptions.htm
 old-project: debugger
 ms.assetid: a64645da-e11a-4568-9865-64eb7463892c
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetEngineOptions method [Windows Debugging], GetEngineOptions method [Windows Debugging], IDebugControl interface, GetEngineOptions method [Windows Debugging], IDebugControl2 interface, GetEngineOptions method [Windows Debugging], IDebugControl3 interface, GetEngineOptions,IDebugControl3.GetEngineOptions, IDebugControl interface [Windows Debugging], GetEngineOptions method, IDebugControl2 interface [Windows Debugging], GetEngineOptions method, IDebugControl2::GetEngineOptions, IDebugControl3, IDebugControl3 interface [Windows Debugging], GetEngineOptions method, IDebugControl3::GetEngineOptions, IDebugControl::GetEngineOptions, IDebugControl_75edd4f2-c81d-408d-a61a-3c2fcf5932e6.xml, dbgeng/IDebugControl2::GetEngineOptions, dbgeng/IDebugControl3::GetEngineOptions, dbgeng/IDebugControl::GetEngineOptions, debugger.getengineoptions
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,16 +46,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetEngineOptions method
+# IDebugControl3::GetEngineOptions method
 The <b>GetEngineOptions</b> method returns the engine's options.
 
 ## Syntax
 
-````
+```
 HRESULT GetEngineOptions(
-  [out] PULONG Options
+  PULONG Options
 );
-````
+```
 
 ## Parameters
 
@@ -95,23 +95,23 @@ The method was successful.
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537884">AddEngineOptions</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550508">IDebugControl</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550512">IDebugControl2</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550519">IDebugControl3</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554491">RemoveEngineOptions</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537884">AddEngineOptions</a>
 
 
 

@@ -47,11 +47,14 @@ req.typenames: LineDisplayWindowDisplayBitmapData
 This structure is not implemented.
 
 ## Syntax
-````
+```
 typedef struct _LineDisplayWindowDisplayBitmapData {
-   ...;
-} LineDisplayWindowDisplayBitmapData, *PLineDisplayWindowDisplayBitmapData;
-````
+  PosStringType fileName;
+  UINT32        width;
+  UINT32        alignmentX;
+  UINT32        alignmentY;
+} LineDisplayWindowDisplayBitmapData;
+```
 
 ## Members
 

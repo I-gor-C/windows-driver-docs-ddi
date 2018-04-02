@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongsub.htm
 old-project: kernel
 ms.assetid: A0D35ECE-5B7F-4F60-9178-75673C9A945F
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlLongLongSub, RtlLongLongSub function [Kernel-Mode Driver Architecture], kernel.rtllonglongsub, ntintsafe/RtlLongLongSub
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ Subtracts one value of type <b>LONGLONG</b> from another.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlLongLongSub(
-  _In_  LONGLONG llMinuend,
-  _In_  LONGLONG llSubtrahend,
-  _Out_ LONGLONG *pllResult
+  LONGLONG llMinuend,
+  LONGLONG llSubtrahend,
+  LONGLONG *pllResult
 );
-````
+```
 
 ## Parameters
 

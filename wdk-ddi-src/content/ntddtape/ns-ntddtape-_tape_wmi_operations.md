@@ -7,7 +7,7 @@ old-location: storage\tape_wmi_operations.htm
 old-project: storage
 ms.assetid: 430d982e-4740-46ad-8391-aba5813a833a
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PTAPE_WMI_OPERATIONS, PTAPE_WMI_OPERATIONS, PTAPE_WMI_OPERATIONS structure pointer [Storage Devices], TAPE_WMI_OPERATIONS, TAPE_WMI_OPERATIONS structure [Storage Devices], _TAPE_WMI_OPERATIONS, ntddtape/PTAPE_WMI_OPERATIONS, ntddtape/TAPE_WMI_OPERATIONS, storage.tape_wmi_operations, structs-tape_93f1d9af-45b2-4121-9b4c-70ed7eaf1782.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: TAPE_WMI_OPERATIONS, *PTAPE_WMI_OPERATIONS
 The tape miniclass driver passes this structure to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff567957">TapeMiniWMIControl</a> routine to indicate which WMI operation must be performed by the device.
 
 ## Syntax
-````
+```
 typedef struct _TAPE_WMI_OPERATIONS {
   ULONG Method;
   ULONG DataBufferSize;
   PVOID DataBuffer;
-} TAPE_WMI_OPERATIONS, *PTAPE_WMI_OPERATIONS;
-````
+} *PTAPE_WMI_OPERATIONS, TAPE_WMI_OPERATIONS;
+```
 
 ## Members
 
@@ -92,7 +92,7 @@ Indicates the size in bytes of the buffer in which the tape minidriver returns t
 
 `DataBuffer`
 
-Pointer to a buffer in which the tape minidriver returns the results of the operation. The first <b>sizeof</b>(ULONG) bytes of <b>DataBuffer</b> contain a value of type <a href="..\ntddtape\ne-ntddtape-_tape_drive_problem_type.md">TAPE_DRIVE_PROBLEM_TYPE</a>, followed by <b>DataBufferSize</b> - <b>sizeof</b>(ULONG) bytes of tape data.
+Pointer to a buffer in which the tape minidriver returns the results of the operation. The first <b>sizeof</b>(ULONG) bytes of <b>DataBuffer</b> contain a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff567962">TAPE_DRIVE_PROBLEM_TYPE</a>, followed by <b>DataBufferSize</b> - <b>sizeof</b>(ULONG) bytes of tape data.
 
 
 ## Requirements
@@ -102,8 +102,8 @@ Pointer to a buffer in which the tape minidriver returns the results of the oper
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567962">TAPE_DRIVE_PROBLEM_TYPE</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567957">TapeMiniWMIControl</a>
-
-
-
-<a href="..\ntddtape\ne-ntddtape-_tape_drive_problem_type.md">TAPE_DRIVE_PROBLEM_TYPE</a>

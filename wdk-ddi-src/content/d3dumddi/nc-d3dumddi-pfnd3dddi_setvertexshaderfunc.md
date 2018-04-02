@@ -7,7 +7,7 @@ old-location: display\setvertexshaderfunc.htm
 old-project: display
 ms.assetid: 2cea4812-7eba-4558-9c2e-30de460be21f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3DDDI_SETVERTEXSHADERFUNC, SetVertexShaderFunc, SetVertexShaderFunc callback function [Display Devices], UserModeDisplayDriver_Functions_aeaa5094-5619-4cf5-b2c3-c4b6aeed9b33.xml, d3dumddi/SetVertexShaderFunc, display.setvertexshaderfunc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,4 +89,4 @@ For user-mode display drivers that support vertex shaders before version 2.0, th
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>

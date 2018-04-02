@@ -7,7 +7,7 @@ old-location: buses\ucminitializedevice.htm
 old-project: usbref
 ms.assetid: 9159A6ED-0D85-422D-936A-13D7EC907A7C
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UcmInitializeDevice, UcmInitializeDevice method [Buses], buses.ucminitializedevice, ucmmanager/UcmInitializeDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,22 +51,22 @@ Initializes the USB connector manager framework extension (UcmCx).
 
 ## Syntax
 
-````
+```
 NTSTATUS UcmInitializeDevice(
-  [in] WDFDEVICE           WdfDevice,
-  [in] PUCM_MANAGER_CONFIG  Config
+  WDFDEVICE           WdfDevice,
+  PUCM_MANAGER_CONFIG Config
 );
-````
+```
 
 ## Parameters
 
 `WdfDevice`
 
-A handle to a framework device object that the client driver received in the previous call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.
+A handle to a framework device object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.
 
 `Config`
 
-A pointer to a caller-supplied <a href="..\ucmmanager\ns-ucmmanager-_ucm_manager_config.md">UCM_MANAGER_CONFIG</a> structure that is initialized by calling <a href="..\ucmmanager\nf-ucmmanager-ucm_manager_config_init.md">UCM_MANAGER_CONFIG_INIT</a>.
+A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/mt187932">UCM_MANAGER_CONFIG</a> structure that is initialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt187933">UCM_MANAGER_CONFIG_INIT</a>.
 
 
 ## Return Value
@@ -75,7 +75,7 @@ A pointer to a caller-supplied <a href="..\ucmmanager\ns-ucmmanager-_ucm_manager
 
 ## Remarks
 
-This method initializes UcmCx and allocates resources required, registers for PnP events, and sets up I/O targets. The client driver must call this method in the driver's <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EVT_WDF_DRIVER_DEVICE_ADD</a>  implementation.
+This method initializes UcmCx and allocates resources required, registers for PnP events, and sets up I/O targets. The client driver must call this method in the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff541693">EVT_WDF_DRIVER_DEVICE_ADD</a>  implementation.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,8 +90,8 @@ This method initializes UcmCx and allocates resources required, registers for Pn
 
 ## See Also
 
-<a href="..\ucmmanager\ns-ucmmanager-_ucm_manager_config.md">UCM_MANAGER_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187932">UCM_MANAGER_CONFIG</a>
 
 
 
-<a href="..\ucmmanager\nf-ucmmanager-ucm_manager_config_init.md">UCM_MANAGER_CONFIG_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187933">UCM_MANAGER_CONFIG_INIT</a>

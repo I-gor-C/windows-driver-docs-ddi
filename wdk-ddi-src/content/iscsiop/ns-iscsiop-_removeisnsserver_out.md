@@ -7,7 +7,7 @@ old-location: storage\removeisnsserver_out.htm
 old-project: storage
 ms.assetid: 42866b25-280c-492c-8e98-1a04a46561a4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PRemoveiSNSServer_OUT, PRemoveiSNSServer_OUT, PRemoveiSNSServer_OUT structure pointer [Storage Devices], RemoveiSNSServer_OUT, RemoveiSNSServer_OUT structure [Storage Devices], _RemoveiSNSServer_OUT, iscsiop/PRemoveiSNSServer_OUT, iscsiop/RemoveiSNSServer_OUT, storage.removeisnsserver_out, structs-iSCSI_8d8df1a1-3b89-42a1-9ef8-3e749a94b531.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,11 +47,11 @@ req.typenames: RemoveiSNSServer_OUT, *PRemoveiSNSServer_OUT
 The RemoveiSNSServer_OUT structure holds the output data for the user-mode <b>RemoveISNSServer</b> method.
 
 ## Syntax
-````
+```
 typedef struct _RemoveiSNSServer_OUT {
   ULONG Status;
 } RemoveiSNSServer_OUT, *PRemoveiSNSServer_OUT;
-````
+```
 
 ## Members
 
@@ -74,4 +74,4 @@ It is optional that you implement this method.
 
 
 
-<a href="..\iscsiop\ns-iscsiop-_removeisnsserver_in.md">RemoveiSNSServer_IN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563981">RemoveiSNSServer_IN</a>

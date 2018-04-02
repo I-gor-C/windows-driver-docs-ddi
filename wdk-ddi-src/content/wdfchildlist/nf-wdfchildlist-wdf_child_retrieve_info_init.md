@@ -48,26 +48,26 @@ req.product: Windows 10 or later.
 # WDF_CHILD_RETRIEVE_INFO_INIT function
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WDF_CHILD_RETRIEVE_INFO_INIT</b> function initializes a <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_retrieve_info.md">WDF_CHILD_RETRIEVE_INFO</a> structure.
+The <b>WDF_CHILD_RETRIEVE_INFO_INIT</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551234">WDF_CHILD_RETRIEVE_INFO</a> structure.
 
 ## Syntax
 
-````
-VOID WDF_CHILD_RETRIEVE_INFO_INIT(
-  _Out_ PWDF_CHILD_RETRIEVE_INFO                     Info,
-  _In_  PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER IdentificationDescription
+```
+void WDF_CHILD_RETRIEVE_INFO_INIT(
+  PWDF_CHILD_RETRIEVE_INFO                     Info,
+  PWDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER IdentificationDescription
 );
-````
+```
 
 ## Parameters
 
 `Info`
 
-A pointer to a driver-supplied <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_retrieve_info.md">WDF_CHILD_RETRIEVE_INFO</a> structure.
+A pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff551234">WDF_CHILD_RETRIEVE_INFO</a> structure.
 
 `IdentificationDescription`
 
-A pointer to a driver-supplied <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure.
+A pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff551223">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a> structure.
 
 
 ## Return Value
@@ -85,8 +85,8 @@ None
 
 ## See Also
 
-<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_identification_description_header.md">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551223">WDF_CHILD_IDENTIFICATION_DESCRIPTION_HEADER</a>
 
 
 
-<a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_retrieve_info.md">WDF_CHILD_RETRIEVE_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551234">WDF_CHILD_RETRIEVE_INFO</a>

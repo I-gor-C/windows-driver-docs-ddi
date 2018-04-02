@@ -7,7 +7,7 @@ old-location: display\ioctl_video_query_current_mode.htm
 old-project: display
 ms.assetid: 16ce3db9-0295-4adc-9dc3-492b711adf2e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_VIDEO_QUERY_CURRENT_MODE, IOCTL_VIDEO_QUERY_CURRENT_MODE control code [Display Devices], Video_IOCTLs_18538d0f-5243-4326-850d-9fedf30e17cb.xml, display.ioctl_video_query_current_mode, ntddvdeo/IOCTL_VIDEO_QUERY_CURRENT_MODE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ None
 <text></text>
 
 ### Output Buffer
-The miniport driver returns the mode information in a <a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a> structure in the VRP <b>OutputBuffer</b>.
+The miniport driver returns the mode information in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570521">VIDEO_MODE_INFORMATION</a> structure in the VRP <b>OutputBuffer</b>.
 
 ### Output Buffer Length
 <text></text>
@@ -68,7 +68,7 @@ The miniport driver returns the mode information in a <a href="..\ntddvdeo\ns-nt
 <text></text>
 
 ### Status Block
-If the miniport driver successfully returns the mode data, it sets the <b>Information</b> member of the <a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a> structure to <b>sizeof</b>(VIDEO_MODE_INFORMATION); otherwise, the miniport driver sets this member to zero.
+If the miniport driver successfully returns the mode data, it sets the <b>Information</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569732">STATUS_BLOCK</a> structure to <b>sizeof</b>(VIDEO_MODE_INFORMATION); otherwise, the miniport driver sets this member to zero.
 
 
 ## Requirements
@@ -78,8 +78,8 @@ If the miniport driver successfully returns the mode data, it sets the <b>Inform
 
 ## See Also
 
-<a href="..\ntddvdeo\ns-ntddvdeo-_video_mode_information.md">VIDEO_MODE_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569732">STATUS_BLOCK</a>
 
 
 
-<a href="..\video\ns-video-_status_block.md">STATUS_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570521">VIDEO_MODE_INFORMATION</a>

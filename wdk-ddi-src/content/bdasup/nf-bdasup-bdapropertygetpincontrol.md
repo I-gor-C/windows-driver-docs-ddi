@@ -50,13 +50,13 @@ The <b>BdaPropertyGetPinControl</b> function retrieves either the identifier or 
 
 ## Syntax
 
-````
+```
 NTSTATUS BdaPropertyGetPinControl(
-  _In_      PIRP        Irp,
-  _In_      PKSPROPERTY pKSProperty,
-  _Out_opt_ ULONG       *pulProperty
+  PIRP        Irp,
+  PKSPROPERTY Property,
+  ULONG       *pulProperty
 );
-````
+```
 
 ## Parameters
 
@@ -96,11 +96,11 @@ A BDA minidriver calls the <b>BdaPropertyGetPinControl</b> function to retrieve 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564350">KSPROPERTY_BDA_PIN_TYPE</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564348">KSPROPERTY_BDA_PIN_ID</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564350">KSPROPERTY_BDA_PIN_TYPE</a>
 
 
 

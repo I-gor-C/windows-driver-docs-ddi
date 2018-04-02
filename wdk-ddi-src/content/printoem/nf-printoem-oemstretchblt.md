@@ -50,21 +50,21 @@ The <code>OEMStretchBlt</code> function provides stretching bit-block transfer c
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMStretchBlt(
-   SURFOBJ         *psoDest,
-   SURFOBJ         *psoSrc,
-   SURFOBJ         *psoMask,
-   CLIPOBJ         *pco,
-   XLATEOBJ        *pxlo,
-   COLORADJUSTMENT *pca,
-   POINTL          *pptlHTOrg,
-   RECTL           *prclDest,
-   RECTL           *prclSrc,
-   POINTL          *pptlMask,
-   ULONG           iMode
+```
+BOOL OEMStretchBlt(
+  SURFOBJ         *psoDest,
+  SURFOBJ         *psoSrc,
+  SURFOBJ         *psoMask,
+  CLIPOBJ         *pco,
+  XLATEOBJ        *pxlo,
+  COLORADJUSTMENT *pca,
+  POINTL          *pptlHTOrg,
+  RECTL           *prclDest,
+  RECTL           *prclSrc,
+  POINTL          *pptlMask,
+  ULONG           iMode
 );
-````
+```
 
 ## Parameters
 

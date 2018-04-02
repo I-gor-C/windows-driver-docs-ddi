@@ -50,11 +50,11 @@ For internal use only.
 
 ## Syntax
 
-````
+```
 PEPROCESS WdfCompanionTargetWdmGetCompanionProcess(
-  _In_ WDFCOMPANIONTARGET CompanionTarget
+  WDFCOMPANIONTARGET CompanionTarget
 );
-````
+```
 
 ## Parameters
 

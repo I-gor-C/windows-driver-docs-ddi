@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 The <b>UMDF_IO_TARGET_OPEN_PARAMS</b> structure contains file-open parameters.
 
 ## Syntax
-````
+```
 typedef struct _UMDF_IO_TARGET_OPEN_PARAMS {
   DWORD dwShareMode;
   DWORD dwCreationDisposition;
   DWORD dwFlagsAndAttributes;
-} UMDF_IO_TARGET_OPEN_PARAMS, *PUMDF_IO_TARGET_OPEN_PARAMS;
-````
+} *PUMDF_IO_TARGET_OPEN_PARAMS, UMDF_IO_TARGET_OPEN_PARAMS;
+```
 
 ## Members
 
@@ -84,8 +84,8 @@ The <b>UMDF_IO_TARGET_OPEN_PARAMS</b> structure is used as input to <a href="htt
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560273">IWDFRemoteTarget::OpenFileByName</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndismderegisterdmachannel.htm
 old-project: netvista
 ms.assetid: 1581cbfd-bdab-40ed-9978-f60ec220c17a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMDeregisterDmaChannel, NdisMDeregisterDmaChannel function [Network Drivers Starting with Windows Vista], dma_ref_8babcd45-1946-4928-a0a2-2fc0871b9f90.xml, ndis/NdisMDeregisterDmaChannel, netvista.ndismderegisterdmachannel
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,18 +52,18 @@ The
 
 ## Syntax
 
-````
-VOID NdisMDeregisterDmaChannel(
-  _In_ NDIS_HANDLE MiniportDmaHandle
+```
+void NdisMDeregisterDmaChannel(
+  NDIS_HANDLE MiniportDmaHandle
 );
-````
+```
 
 ## Parameters
 
 `MiniportDmaHandle`
 
 The DMA handle returned by the 
-     <a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">
+     <a href="https://msdn.microsoft.com/32e92f77-8f45-408b-a284-c00d3b5bd1b4">
      NdisMRegisterDmaChannel</a> function.
 
 
@@ -79,8 +79,8 @@ The caller should consider
     registry.
 
 <b>NdisMDeregisterDmaChannel</b> can be called only from a miniport driver's 
-    <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> and 
-    <a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a> functions.
+    <a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a> and 
+    <a href="https://msdn.microsoft.com/b8d452b4-bef3-4991-87cf-fac15bedfde4">MiniportHaltEx</a> functions.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -94,12 +94,12 @@ The caller should consider
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="https://msdn.microsoft.com/b8d452b4-bef3-4991-87cf-fac15bedfde4">MiniportHaltEx</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
+<a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563646">NdisMRegisterDmaChannel</a>

@@ -7,7 +7,7 @@ old-location: buses\usbd_unregister.htm
 old-project: usbref
 ms.assetid: 6876E96D-E249-4B7C-A496-27E3F4A7F7E2
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: USBD_CloseHandle, USBD_CloseHandle routine [Buses], buses.usbd_unregister, usbdlib/USBD_CloseHandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ The  <b>USBD_CloseHandle</b> routine is called by a USB client driver to close a
 
 ## Syntax
 
-````
-VOID USBD_CloseHandle(
-  _In_ USBD_HANDLE USBDHandle
+```
+void USBD_CloseHandle(
+  USBD_HANDLE USBDHandle
 );
-````
+```
 
 ## Parameters
 
 `USBDHandle`
 
-USBD handle to be closed. The handle is retrieved by the client driver in a previous call to  the <a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a> routine.
+USBD handle to be closed. The handle is retrieved by the client driver in a previous call to  the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406241">USBD_CreateHandle</a> routine.
 
 
 ## Return Value
@@ -87,4 +87,4 @@ A client driver should call <b>USBD_CloseHandle</b> in the driver's routine that
 
 
 
-<a href="..\usbdlib\nf-usbdlib-usbd_createhandle.md">USBD_CreateHandle</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406241">USBD_CreateHandle</a>

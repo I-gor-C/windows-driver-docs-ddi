@@ -44,21 +44,21 @@ req.typenames: ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPL
 ---
 
 # _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1 structure
-The ACPI_EVAL_INPUT_BUFFER_COMPLEX structure is used as input to an <a href="..\acpiioct\ni-acpiioct-ioctl_acpi_eval_method.md">IOCTL_ACPI_EVAL_METHOD</a> request and to an <a href="..\acpiioct\ni-acpiioct-ioctl_acpi_async_eval_method.md">IOCTL_ACPI_ASYNC_EVAL_METHOD</a> request. The structure supplies the name of a control method and an input array of <a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a> structures.
+The ACPI_EVAL_INPUT_BUFFER_COMPLEX structure is used as input to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff536148">IOCTL_ACPI_EVAL_METHOD</a> request and to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff536145">IOCTL_ACPI_ASYNC_EVAL_METHOD</a> request. The structure supplies the name of a control method and an input array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff536125">ACPI_METHOD_ARGUMENT</a> structures.
 
 ## Syntax
-````
+```
 typedef struct _ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1 {
-  ULONG                Signature;
+  ULONG                   Signature;
   union {
     UCHAR MethodName[4];
     ULONG MethodNameAsUlong;
-  } DUMMYUNIONNAME;
-  ULONG                Size;
-  ULONG                ArgumentCount;
-  ACPI_METHOD_ARGUMENT Argument[ANYSIZE_ARRAY];
-} ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1;
-````
+  } DUMMYUNIONNAME;
+  ULONG                   Size;
+  ULONG                   ArgumentCount;
+  ACPI_METHOD_ARGUMENT_V1 Argument[ANYSIZE_ARRAY];
+} ACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, *PACPI_EVAL_INPUT_BUFFER_COMPLEX_V1, ACPI_EVAL_INPUT_BUFFER_COMPLEX, *PACPI_EVAL_INPUT_BUFFER_COMPLEX;
+```
 
 ## Members
 
@@ -126,12 +126,12 @@ For more information about how to use this structure, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\acpiioct\ni-acpiioct-ioctl_acpi_eval_method.md">IOCTL_ACPI_EVAL_METHOD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536125">ACPI_METHOD_ARGUMENT</a>
 
 
 
-<a href="..\acpiioct\ni-acpiioct-ioctl_acpi_async_eval_method.md">IOCTL_ACPI_ASYNC_EVAL_METHOD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536145">IOCTL_ACPI_ASYNC_EVAL_METHOD</a>
 
 
 
-<a href="..\acpiioct\ns-acpiioct-_acpi_method_argument_v1.md">ACPI_METHOD_ARGUMENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536148">IOCTL_ACPI_EVAL_METHOD</a>

@@ -7,7 +7,7 @@ old-location: display\d3dkmtlock.htm
 old-project: display
 ms.assetid: d64abd43-edf2-465a-8d99-8fdce1fcd25f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTLock, D3DKMTLock function [Display Devices], OpenGL_Functions_ca085861-b8a0-434a-843d-9b8052376df5.xml, d3dkmthk/D3DKMTLock, display.d3dkmtlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>D3DKMTLock</b> function locks an entire allocation or specific pages with
 
 ## Syntax
 
-````
+```
 NTSTATUS D3DKMTLock(
-  _Inout_ D3DKMT_LOCK *pData
+
 );
-````
+```
 
 ## Parameters
 
@@ -188,4 +188,4 @@ The following code example demonstrates how an OpenGL ICD can use <b>D3DKMTLock<
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_lock.md">D3DKMT_LOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548094">D3DKMT_LOCK</a>

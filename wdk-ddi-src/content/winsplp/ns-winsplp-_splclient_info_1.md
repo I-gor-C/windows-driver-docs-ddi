@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 # _SPLCLIENT_INFO_1 structure
-The SPLCLIENT_INFO_1 structure is used as input to the <a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a> function that is exported by <a href="https://msdn.microsoft.com/7ead940e-8426-4756-890f-f3607dc1f9ca">Point and Print DLLs</a>.
+The SPLCLIENT_INFO_1 structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549896">GenerateCopyFilePaths</a> function that is exported by <a href="https://msdn.microsoft.com/7ead940e-8426-4756-890f-f3607dc1f9ca">Point and Print DLLs</a>.
 
 ## Syntax
-````
+```
 typedef struct _SPLCLIENT_INFO_1 {
-  DWORD  dwSize;
+  DWORD  dwSize;
   LPWSTR pMachineName;
   LPWSTR pUserName;
-  DWORD  dwBuildNum;
-  DWORD  dwMajorVersion;
-  DWORD  dwMinorVersion;
-  WORD   wProcessorArchitecture;
+  DWORD  dwBuildNum;
+  DWORD  dwMajorVersion;
+  DWORD  dwMinorVersion;
+  WORD   wProcessorArchitecture;
 } SPLCLIENT_INFO_1, *PSPLCLIENT_INFO_1, *LPSPLCLIENT_INFO_1;
-````
+```
 
 ## Members
 
@@ -92,7 +92,7 @@ The minor version number of the NT-based operating system print spooler running 
 The client's processor architecture, as returned by the Window SDK <b>GetSystemInfo</b> function.
 
 ## Remarks
-Values for all structure members are supplied by the print spooler before the spooler calls <a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a>.
+Values for all structure members are supplied by the print spooler before the spooler calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549896">GenerateCopyFilePaths</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

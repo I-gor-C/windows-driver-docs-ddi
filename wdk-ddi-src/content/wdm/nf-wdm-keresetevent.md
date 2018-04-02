@@ -7,7 +7,7 @@ old-location: kernel\keresetevent.htm
 old-project: kernel
 ms.assetid: 90be986b-e63e-4ae3-a0f3-87f6f58583dc
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeResetEvent, KeResetEvent routine [Kernel-Mode Driver Architecture], k105_d2a27b37-56af-46a4-8a48-da507261f77a.xml, kernel.keresetevent, wdm/KeResetEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>KeResetEvent</b> routine resets a specified event object to a not-signale
 
 ## Syntax
 
-````
-LONG KeResetEvent(
-  _Inout_ PRKEVENT Event
+```
+NTKERNELAPI LONG KeResetEvent(
+  PRKEVENT Event
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ A pointer to an initialized dispatcher object of type event for which the caller
 
 <i>Event</i> is reset to a not-signaled state, meaning that its value is set to zero.
 
-Unless the caller requires the value that is returned by <b>KeResetEvent</b>, using the <a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a> routine is a faster way to set an event object to a not-signaled state.
+Unless the caller requires the value that is returned by <b>KeResetEvent</b>, using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551980">KeClearEvent</a> routine is a faster way to set an event object to a not-signaled state.
 
 For more information about event objects, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544323">Event Objects</a>.
 
@@ -88,24 +88,24 @@ For more information about event objects, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551980">KeClearEvent</a>
 
 
 
-<a href="..\wdm\nf-wdm-keclearevent.md">KeClearEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552137">KeInitializeEvent</a>
 
 
 
-<a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553089">KeReadStateEvent</a>
 
 
 
-<a href="..\wdm\nf-wdm-kereadstateevent.md">KeReadStateEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553253">KeSetEvent</a>
 
 
 
-<a href="..\wdm\nf-wdm-kewaitformultipleobjects.md">KeWaitForMultipleObjects</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553324">KeWaitForMultipleObjects</a>
 
 
 
-<a href="..\wdm\nf-wdm-kesetevent.md">KeSetEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553350">KeWaitForSingleObject</a>

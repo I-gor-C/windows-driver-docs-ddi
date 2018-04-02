@@ -47,13 +47,13 @@ req.typenames: GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS, *PGPIO_SAVE_R
 The <b>GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS</b> structure describes a bank of general-purpose I/O (GPIO) pins whose hardware state is to be saved or restored.
 
 ## Syntax
-````
+```
 typedef struct _GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS {
-  BANK_ID                                       BankId;
-  ULONG                                         State;
+  BANK_ID                                       BankId;
+  ULONG                                         State;
   GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_FLAGS Flags;
 } GPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS, *PGPIO_SAVE_RESTORE_BANK_HARDWARE_CONTEXT_PARAMETERS;
-````
+```
 
 ## Members
 
@@ -81,11 +81,11 @@ The <i>Parameters</i> parameter of the <a href="https://msdn.microsoft.com/libra
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439419">CLIENT_SaveBankHardwareContext</a>
 
 
 
@@ -93,4 +93,4 @@ The <i>Parameters</i> parameter of the <a href="https://msdn.microsoft.com/libra
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439419">CLIENT_SaveBankHardwareContext</a>

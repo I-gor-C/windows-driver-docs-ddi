@@ -47,30 +47,30 @@ req.typenames: KSPROPERTY_EXTXPORT_S, *PKSPROPERTY_EXTXPORT_S
 The KSPROPERTY_EXTXPORT_S structure describes an external transport and its capabilities.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_EXTXPORT_S {
   KSPROPERTY Property;
   union {
-    ULONG           Capabilities;
-    ULONG           SignalMode;
-    ULONG           LoadMedium;
-    MEDIUM_INFO     MediumInfo;
+    ULONG           Capabilities;
+    DWORD           dwAbsTrackNumber;
+    DWORD           dwTimecode;
+    ULONG           LoadMedium;
+    MEDIUM_INFO     MediumInfo;
+    ULONG           SignalMode;
     TRANSPORT_STATE XPrtState;
     struct {
       BYTE frame;
       BYTE second;
       BYTE minute;
       BYTE hour;
-    } Timecode;
-    DWORD           dwTimecode;
-    DWORD           dwAbsTrackNumber;
+    } Timecode;
     struct {
       ULONG PayloadSize;
-      BYTE  Payload[512];
-    } RawAVC;
-  } u;
-} KSPROPERTY_EXTXPORT_S, *PKSPROPERTY_EXTXPORT_S;
-````
+      BYTE  Payload[512];
+    } RawAVC;
+  } u;
+}  *PKSPROPERTY_EXTXPORT_S;
+```
 
 ## Members
 
@@ -135,12 +135,12 @@ Any ED_TRANSCAP_Xxx or ED_TRANSBASIC_Xxx tokens are defined in <i>xprtdefs.h</i>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_extxport_node_s.md">KSPROPERTY_EXTXPORT_NODE_S</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565164">KSPROPERTY_EXTXPORT_NODE_S</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-transport_state.md">TRANSPORT_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567726">MEDIUM_INFO</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-medium_info.md">MEDIUM_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568546">TRANSPORT_STATE</a>

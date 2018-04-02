@@ -2,7 +2,7 @@
 UID: NA:wudfddi_types
 ms.assetid: 4b61f22a-ca30-3fe9-9635-a2872e82d5dd
 ms.author: windowsdriverdev
-ms.date: 03/13/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -59,7 +59,7 @@ wudfddi_types.h contains the following programming interfaces:
 | ---- |:---- |
 | [_WDF_CALLBACK_CONSTRAINT](ne-wudfddi_types-_wdf_callback_constraint.md) | WDF_CALLBACK_CONSTRAINT enumeration |
 | [_WDF_DEVICE_HWACCESS_TARGET_SIZE](ne-wudfddi_types-_wdf_device_hwaccess_target_size.md) | The WDF_DEVICE_HWACCESS_TARGET_SIZE enumeration is used internally by the framework. Do not use. |
-| [_WDF_DEVICE_HWACCESS_TARGET_TYPE](ne-wudfddi_types-_wdf_device_hwaccess_target_type.md) | The WDF_DEVICE_HWACCESS_TARGET_TYPE enumeration is used internally by the framework. Do not use. |
+| [_WDF_DEVICE_HWACCESS_TARGET_TYPE](ne-wudfddi_types-_wdf_device_hwaccess_target_type.md) | The WDF_DEVICE_HWACCESS_TARGET_SIZE enumeration is used internally by the framework. Do not use. |
 | [_WDF_DEVICE_IO_BUFFER_RETRIEVAL](ne-wudfddi_types-_wdf_device_io_buffer_retrieval.md) | The WDF_DEVICE_IO_BUFFER_RETRIEVAL enumeration is used to specify when UMDF makes an I/O request's buffers available to the driver. |
 | [_WDF_DEVICE_IO_TYPE](ne-wudfddi_types-_wdf_device_io_type.md) | The WDF_DEVICE_IO_TYPE enumeration is used to specify a method for accessing data buffers. |
 | [_WDF_EVENT_TYPE](ne-wudfddi_types-_wdf_event_type.md) | The WDF_EVENT_TYPE enumeration specifies. |
@@ -72,7 +72,7 @@ wudfddi_types.h contains the following programming interfaces:
 | [_WDF_PNP_CAPABILITY](ne-wudfddi_types-_wdf_pnp_capability.md) | The WDF_PNP_CAPABILITY enumeration contains values that identify Plug and Play (PnP) capabilities for a device. |
 | [_WDF_PNP_STATE](ne-wudfddi_types-_wdf_pnp_state.md) | The WDF_PNP_STATE enumeration contains values that identify the status of Plug and Play (PnP) for a device. |
 | [_WDF_POWER_DEVICE_STATE](ne-wudfddi_types-_wdf_power_device_state.md) | The WDF_POWER_DEVICE_STATE enumeration contains values that identify the power state that a device might support. |
-| [_WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS](ne-wudfddi_types-_wdf_power_policy_idle_timeout_constants.md) | The WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS enumeration is reserved for internal use. |
+| [_WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS](ne-wudfddi_types-_wdf_power_policy_idle_timeout_constants.md) | WDF_CALLBACK_CONSTRAINT enumeration |
 | [_WDF_POWER_POLICY_S0_IDLE_CAPABILITIES](ne-wudfddi_types-_wdf_power_policy_s0_idle_capabilities.md) | The WDF_POWER_POLICY_S0_IDLE_CAPABILITIES enumeration identifies the capabilities that a device can support when it enters a low-power state while it is idling. |
 | [_WDF_POWER_POLICY_S0_IDLE_USER_CONTROL](ne-wudfddi_types-_wdf_power_policy_s0_idle_user_control.md) | The WDF_POWER_POLICY_S0_IDLE_USER_CONTROL enumeration identifies whether a user can control a device's behavior when the device is idle and the system is in its working (S0) state. |
 | [_WDF_POWER_POLICY_SX_WAKE_USER_CONTROL](ne-wudfddi_types-_wdf_power_policy_sx_wake_user_control.md) | The WDF_POWER_POLICY_SX_WAKE_USER_CONTROL enumeration identifies whether a user can control a device's ability to wake the system from a low system power state. |

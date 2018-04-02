@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 <b>XPSRAS_BACKGROUND_COLOR</b> specifies the background clear color to be used by an XPS rasterizer:
 
 ## Syntax
-````
-typedef enum _XPSRAS_BACKGROUND_COLOR { 
-  XPSRAS_BACKGROUND_COLOR_TRANSPARENT  = 0,
-  XPSRAS_BACKGROUND_COLOR_OPAQUE       = 1
+```
+typedef enum __MIDL___MIDL_itf_xpsrassvc_0000_0004_0001 {
+  XPSRAS_BACKGROUND_COLOR_TRANSPARENT  ,
+  XPSRAS_BACKGROUND_COLOR_OPAQUE
 } XPSRAS_BACKGROUND_COLOR;
-````
+```
 
 ## Constants
 

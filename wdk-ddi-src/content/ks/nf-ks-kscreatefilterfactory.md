@@ -50,28 +50,28 @@ The<b> KsCreateFilterFactory</b> function adds a filter factory to a given devic
 
 ## Syntax
 
-````
-NTSTATUS KsCreateFilterFactory(
-  _In_            PDEVICE_OBJECT          DeviceObject,
-  _In_      const KSFILTER_DESCRIPTOR     *Descriptor,
-  _In_opt_        PWSTR                   RefString,
-  _In_opt_        PSECURITY_DESCRIPTOR    SecurityDescriptor,
-  _In_            ULONG                   CreateItemFlags,
-  _In_opt_        PFNKSFILTERFACTORYPOWER SleepCallback,
-  _In_opt_        PFNKSFILTERFACTORYPOWER WakeCallback,
-  _Out_opt_       PKSFILTERFACTORY        *FilterFactory
+```
+KSDDKAPI NTSTATUS KsCreateFilterFactory(
+  PDEVICE_OBJECT            DeviceObject,
+  const KSFILTER_DESCRIPTOR *Descriptor,
+  PWSTR                     RefString,
+  PSECURITY_DESCRIPTOR      SecurityDescriptor,
+  ULONG                     CreateItemFlags,
+  PFNKSFILTERFACTORYPOWER   SleepCallback,
+  PFNKSFILTERFACTORYPOWER   WakeCallback,
+  PKSFILTERFACTORY          *FilterFactory
 );
-````
+```
 
 ## Parameters
 
 `DeviceObject`
 
-A pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure for which to add a filter factory.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure for which to add a filter factory.
 
 `Descriptor`
 
-A pointer to a <a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a> that describes the characteristics of individual filters that this factory can create.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562553">KSFILTER_DESCRIPTOR</a> that describes the characteristics of individual filters that this factory can create.
 
 `RefString`
 
@@ -168,7 +168,7 @@ If this parameter is <b>NULL</b>, this filter factory is not notified that the d
 
 `FilterFactory`
 
-A pointer to a <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> structure that AVStream sets to point to the newly created filter factory object. If this optional parameter is unspecified, the caller is not informed about the resulting filter factory object.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a> structure that AVStream sets to point to the newly created filter factory object. If this optional parameter is unspecified, the caller is not informed about the resulting filter factory object.
 
 
 ## Return Value
@@ -177,13 +177,13 @@ Returns STATUS_SUCCESS if the filter factory can be created. Otherwise, it retur
 
 ## Remarks
 
-If you call <b>KsCreateFilterFactory</b> after <a href="..\ks\nc-ks-pfnksdevice.md">AVStrMiniDevicePostStart</a>), you must then call <a href="..\ks\nf-ks-ksfilterfactorysetdeviceclassesstate.md">KsFilterFactorySetDeviceClassesState</a> to enable the device class. (Also call <b>KsFilterFactorySetDeviceClassesState</b> to disable a filter factory.)
+If you call <b>KsCreateFilterFactory</b> after <a href="https://msdn.microsoft.com/library/windows/hardware/ff554284">AVStrMiniDevicePostStart</a>), you must then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff562539">KsFilterFactorySetDeviceClassesState</a> to enable the device class. (Also call <b>KsFilterFactorySetDeviceClassesState</b> to disable a filter factory.)
 
 If you call <b>KsCreateFilterFactory</b> in the context of <i>AVStrMiniDevicePostStart</i> or before, you do not need to do this.
 
 Before calling this function, the minidriver must obtain the device mutex. For information about how to do this, see <a href="https://msdn.microsoft.com/cec2a040-59d6-44ef-aef1-04f434811d60">Device Mutex in AVStream</a>.
 
-This function should be used by minidrivers that either initialize themselves without a call to <a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a> or that must dynamically add and remove new filter types.
+This function should be used by minidrivers that either initialize themselves without a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562683">KsInitializeDriver</a> or that must dynamically add and remove new filter types.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -196,16 +196,16 @@ This function should be used by minidrivers that either initialize themselves wi
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksdeletefilterfactory.md">KsDeleteFilterFactory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562553">KSFILTER_DESCRIPTOR</a>
 
 
 
-<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563473">KSNODE_DESCRIPTOR</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563534">KSPIN_DESCRIPTOR_EX</a>
 
 
 
-<a href="..\ks\ns-ks-_ksnode_descriptor.md">KSNODE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561675">KsDeleteFilterFactory</a>

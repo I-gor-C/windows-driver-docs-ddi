@@ -50,13 +50,13 @@ The <b>wiasUpdateValidFormat</b> function updates the valid format of the proper
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasUpdateValidFormat(
-  _In_ BYTE                 *pWiasContext,
-  _In_ WIA_PROPERTY_CONTEXT *pContext,
-  _In_ IWiaMiniDrv          *pIMiniDrv
+```
+HRESULT wiasUpdateValidFormat(
+  BYTE                 *pWiasContext,
+  WIA_PROPERTY_CONTEXT *pContext,
+  IWiaMiniDrv          *pIMiniDrv
 );
-````
+```
 
 ## Parameters
 
@@ -66,11 +66,11 @@ Pointer to a WIA item context.
 
 `pContext`
 
-Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a> structure containing a property context.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure containing a property context.
 
 `pIMiniDrv`
 
-Pointer to the <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv Interface</a> of the current minidriver.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545027">IWiaMiniDrv Interface</a> of the current minidriver.
 
 
 ## Return Value
@@ -89,4 +89,4 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a>

@@ -7,7 +7,7 @@ old-location: display\dxvaddi_sampleformat.htm
 old-project: display
 ms.assetid: 23482cdc-6412-4309-805e-a439d8e81b59
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXVA2_Structs_70e0302d-16a1-4a48-8f51-943873c20997.xml, DXVADDI_SAMPLEFORMAT, DXVADDI_SAMPLEFORMAT enumeration [Display Devices], DXVADDI_SampleFieldInterleavedEvenFirst, DXVADDI_SampleFieldInterleavedOddFirst, DXVADDI_SampleFieldSingleEven, DXVADDI_SampleFieldSingleOdd, DXVADDI_SampleFormatMask, DXVADDI_SampleProgressiveFrame, DXVADDI_SampleSubStream, DXVADDI_SampleUnknown, _DXVADDI_SAMPLEFORMAT, d3dumddi/DXVADDI_SAMPLEFORMAT, d3dumddi/DXVADDI_SampleFieldInterleavedEvenFirst, d3dumddi/DXVADDI_SampleFieldInterleavedOddFirst, d3dumddi/DXVADDI_SampleFieldSingleEven, d3dumddi/DXVADDI_SampleFieldSingleOdd, d3dumddi/DXVADDI_SampleFormatMask, d3dumddi/DXVADDI_SampleProgressiveFrame, d3dumddi/DXVADDI_SampleSubStream, d3dumddi/DXVADDI_SampleUnknown, display.dxvaddi_sampleformat
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: DXVADDI_SAMPLEFORMAT
 The DXVADDI_SAMPLEFORMAT enumeration type contains values that identify how a video frame is sampled.
 
 ## Syntax
-````
-typedef enum _DXVADDI_SAMPLEFORMAT { 
-  DXVADDI_SampleFormatMask                 = 0x00FF,
-  DXVADDI_SampleUnknown                    = 0,
-  DXVADDI_SampleProgressiveFrame           = 2,
-  DXVADDI_SampleFieldInterleavedEvenFirst  = 3,
-  DXVADDI_SampleFieldInterleavedOddFirst   = 4,
-  DXVADDI_SampleFieldSingleEven            = 5,
-  DXVADDI_SampleFieldSingleOdd             = 6,
-  DXVADDI_SampleSubStream                  = 7
+```
+typedef enum _DXVADDI_SAMPLEFORMAT {
+  DXVADDI_SampleFormatMask                 ,
+  DXVADDI_SampleUnknown                    ,
+  DXVADDI_SampleProgressiveFrame           ,
+  DXVADDI_SampleFieldInterleavedEvenFirst  ,
+  DXVADDI_SampleFieldInterleavedOddFirst   ,
+  DXVADDI_SampleFieldSingleEven            ,
+  DXVADDI_SampleFieldSingleOdd             ,
+  DXVADDI_SampleSubStream
 } DXVADDI_SAMPLEFORMAT;
-````
+```
 
 ## Constants
 
@@ -107,7 +107,7 @@ typedef enum _DXVADDI_SAMPLEFORMAT {
 
 ## Remarks
 
-One of the values of DXVADDI_SAMPLEFORMAT can be specified in the <b>SampleFormat</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure.
+One of the values of DXVADDI_SAMPLEFORMAT can be specified in the <b>SampleFormat</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -117,4 +117,4 @@ One of the values of DXVADDI_SAMPLEFORMAT can be specified in the <b>SampleForma
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a>

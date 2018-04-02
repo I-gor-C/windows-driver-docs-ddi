@@ -7,7 +7,7 @@ old-location: kernel\transactionmanager_information_class.htm
 old-project: kernel
 ms.assetid: 71d6db29-0a93-4793-92f4-3e85615e1b61
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: TRANSACTIONMANAGER_INFORMATION_CLASS, TRANSACTIONMANAGER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], TransactionManagerBasicInformation, TransactionManagerLogInformation, TransactionManagerLogPathInformation, TransactionManagerRecoveryInformation, _TRANSACTIONMANAGER_INFORMATION_CLASS, kernel.transactionmanager_information_class, ktm_ref_55fd8dd4-e88d-40df-9091-1aecc4de38a7.xml, wdm/TRANSACTIONMANAGER_INFORMATION_CLASS, wdm/TransactionManagerBasicInformation, wdm/TransactionManagerLogInformation, wdm/TransactionManagerLogPathInformation, wdm/TransactionManagerRecoveryInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 # _TRANSACTIONMANAGER_INFORMATION_CLASS Enumeration
-The <b>TRANSACTIONMANAGER_INFORMATION_CLASS</b> enumeration specifies the type of information that the <a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a> routine can retrieve for a <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a>.
+The <b>TRANSACTIONMANAGER_INFORMATION_CLASS</b> enumeration specifies the type of information that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567058">ZwQueryInformationTransactionManager</a> routine can retrieve for a <a href="https://msdn.microsoft.com/af53cda4-e2ab-47df-9311-a4da2a2ee08d">transaction manager object</a>.
 
 ## Syntax
-````
-typedef enum _TRANSACTIONMANAGER_INFORMATION_CLASS { 
-  TransactionManagerBasicInformation     = 0,
-  TransactionManagerLogInformation       = 1,
-  TransactionManagerLogPathInformation   = 2,
-  TransactionManagerRecoveryInformation  = 4
+```
+typedef enum _TRANSACTIONMANAGER_INFORMATION_CLASS {
+  TransactionManagerBasicInformation     ,
+  TransactionManagerLogInformation       ,
+  TransactionManagerLogPathInformation   ,
+  TransactionManagerRecoveryInformation
 } TRANSACTIONMANAGER_INFORMATION_CLASS;
-````
+```
 
 ## Constants
 
@@ -63,22 +63,22 @@ typedef enum _TRANSACTIONMANAGER_INFORMATION_CLASS {
             
                 <tr>
                     <td>TransactionManagerBasicInformation</td>
-                    <td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_basic_information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a> structure.</td>
+                    <td>Information about a transaction manager object is stored in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564753">TRANSACTIONMANAGER_BASIC_INFORMATION</a> structure.</td>
                 </tr>
             
                 <tr>
                     <td>TransactionManagerLogInformation</td>
-                    <td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_log_information.md">TRANSACTIONMANAGER_LOG_INFORMATION</a> structure.</td>
+                    <td>Information about a transaction manager object is stored in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564767">TRANSACTIONMANAGER_LOG_INFORMATION</a> structure.</td>
                 </tr>
             
                 <tr>
                     <td>TransactionManagerLogPathInformation</td>
-                    <td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a> structure.</td>
+                    <td>Information about a transaction manager object is stored in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564764">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a> structure.</td>
                 </tr>
             
                 <tr>
                     <td>TransactionManagerRecoveryInformation</td>
-                    <td>Information about a transaction manager object is stored in a <a href="..\wdm\ns-wdm-_transactionmanager_recovery_information.md">TRANSACTIONMANAGER_RECOVERY_INFORMATION</a> structure.</td>
+                    <td>Information about a transaction manager object is stored in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564776">TRANSACTIONMANAGER_RECOVERY_INFORMATION</a> structure.</td>
                 </tr>
 </table>
 
@@ -91,16 +91,16 @@ typedef enum _TRANSACTIONMANAGER_INFORMATION_CLASS {
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_transactionmanager_logpath_information.md">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564753">TRANSACTIONMANAGER_BASIC_INFORMATION</a>
 
 
 
-<a href="..\wdm\ns-wdm-_transactionmanager_basic_information.md">TRANSACTIONMANAGER_BASIC_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564764">TRANSACTIONMANAGER_LOGPATH_INFORMATION</a>
 
 
 
-<a href="..\wdm\ns-wdm-_transactionmanager_log_information.md">TRANSACTIONMANAGER_LOG_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564767">TRANSACTIONMANAGER_LOG_INFORMATION</a>
 
 
 
-<a href="..\wdm\nf-wdm-zwqueryinformationtransactionmanager.md">ZwQueryInformationTransactionManager</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567058">ZwQueryInformationTransactionManager</a>

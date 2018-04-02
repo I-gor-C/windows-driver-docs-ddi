@@ -7,7 +7,7 @@ old-location: netvista\fwpsconstructipheaderfortransportpacket0.htm
 old-project: netvista
 ms.assetid: badb7e91-1d5f-42c3-973b-c7d756d24a01
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsConstructIpHeaderForTransportPacket0, FwpsConstructIpHeaderForTransportPacket0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsConstructIpHeaderForTransportPacket0, netvista.fwpsconstructipheaderfortransportpacket0, wfp_ref_2_funct_3_fwps_C_6c1cec4b-8792-49b0-bd89-eb3614b71567.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,30 +53,30 @@ The
 
 ## Syntax
 
-````
-NTSTATUS NTAPI FwpsConstructIpHeaderForTransportPacket0(
-  _Inout_          NET_BUFFER_LIST *netBufferList,
-  _In_             ULONG           headerIncludeHeaderSize,
-  _In_             ADDRESS_FAMILY  addressFamily,
-  _In_       const UCHAR           *sourceAddress,
-  _In_       const UCHAR           *remoteAddress,
-  _In_             IPPROTO         nextProtocol,
-  _In_opt_         UINT64          endpointHandle,
-  _In_opt_   const WSACMSGHDR      *controlData,
-  _In_             ULONG           controlDataLength,
-  _In_             UINT32          flags,
-  _Reserved_       PVOID           reserved,
-  _In_opt_         IF_INDEX        interfaceIndex,
-  _In_opt_         IF_INDEX        subInterfaceIndex
+```
+NTSTATUS FwpsConstructIpHeaderForTransportPacket0(
+  NET_BUFFER_LIST  *netBufferList,
+  ULONG            headerIncludeHeaderLength,
+  ADDRESS_FAMILY   addressFamily,
+  const UCHAR      *sourceAddress,
+  const UCHAR      *remoteAddress,
+  IPPROTO          nextProtocol,
+  UINT64           endpointHandle,
+  const WSACMSGHDR *controlData,
+  ULONG            controlDataLength,
+  UINT32           flags,
+  PVOID            reserved,
+  IF_INDEX         interfaceIndex,
+  IF_INDEX         subInterfaceIndex
 );
-````
+```
 
 ## Parameters
 
 `netBufferList`
 
 A pointer to a 
-     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that describes
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that describes
      the cloned transport layer packet data for which a new IP header is to be constructed or rebuilt. To
      construct a new IP header, locate the offset of the cloned NET_BUFFER_LIST structure at the beginning of
      the transport header. To rebuild a preexisting IP packet header, locate the offset at the beginning of
@@ -133,9 +133,9 @@ Specifies the IPPROTO protocol type of the new IP header to be constructed. For 
 An optional handle that indicates the stack transport endpoint in the send data path into which
      the packet is to be injected. This endpoint handle is provided to a callout through the 
      <b>transportEndpointHandle</b> member of the 
-     <a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">
+     <a href="https://msdn.microsoft.com/fba7eb60-0d19-4bfd-b484-2e615d3e9237">
      FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
-     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function.
 
 `controlData`
 
@@ -147,13 +147,13 @@ An optional pointer to a buffer that contains socket control data specified by t
 
 If present, socket control data is provided to a callout with the 
      <b>controlData</b> member of the 
-     <a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">
+     <a href="https://msdn.microsoft.com/fba7eb60-0d19-4bfd-b484-2e615d3e9237">
      FWPS_INCOMING_METADATA_VALUES0</a> structure that is passed to the callout driver's 
-     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> callout function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> callout function.
 
 If socket control data is not <b>NULL</b>, it must be deep-copied in the callout driver's implementation of
      the 
-     <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function, and the 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> function, and the 
      <b>controlData</b> buffer must be kept valid until the injection completion function is
      called.
 
@@ -249,7 +249,7 @@ If the input net buffer list was cloned from an inbound WFP transport layer, or 
     processing, packets that have been indicated by WFP and cloned by callouts cannot readily be injected
     into the receive data path. Consequently this function is useful for rebuilding IPsec-processed packets
     that are to be injected into the receive data path with the 
-    <a href="..\fwpsk\nf-fwpsk-fwpsinjecttransportreceiveasync0.md">FwpsInjectTransportReceiveAsync0</a> function.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551186">FwpsInjectTransportReceiveAsync0</a> function.
 
 For a header-include session; for example, to filter Generic Routing Encapsulation (GRE) traffic (IP
     protocol 47) sent on a raw socket from outbound transport layers, use the following procedure before you
@@ -259,7 +259,7 @@ For a header-include session; for example, to filter Generic Routing Encapsulati
 <ol>
 <li>
 Clone the net buffer list by calling the 
-      <a href="..\fwpsk\nf-fwpsk-fwpsallocateclonenetbufferlist0.md">
+      <a href="https://msdn.microsoft.com/72759748-fac6-45b9-9a81-ab71e6e7c3ef">
       FwpsAllocateCloneNetBufferList0</a> function.
 
 </li>
@@ -267,9 +267,9 @@ Clone the net buffer list by calling the
 If the 
       <b>headerIncludeHeaderLength</b> member of the FWPS_INCOMING_METADATA_VALUES0 structure that is pointed
       to by the 
-      <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function's 
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> function's 
       <i>inMetaValues</i> parameter is greater than zero, retreat the cloned net buffer list by that amount; for example, by a call to 
-      <a href="..\ndis\nf-ndis-ndisretreatnetbufferlistdatastart.md">NdisRetreatNetBufferListDataStart</a>.
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff564529">NdisRetreatNetBufferListDataStart</a>.
 
 </li>
 <li>
@@ -303,7 +303,7 @@ Call
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543744">AF_INET</a>
 
 
 
@@ -311,22 +311,22 @@ Call
 
 
 
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544964">CMSGHDR</a>
 
 
 
-<a href="..\fwpsk\nf-fwpsk-fwpsinjecttransportreceiveasync0.md">
+<a href="https://msdn.microsoft.com/fba7eb60-0d19-4bfd-b484-2e615d3e9237">
+   FWPS_INCOMING_METADATA_VALUES0</a>
+
+
+
+<a href="https://msdn.microsoft.com/0809a013-9977-44fc-b800-576b4fd983e8">
    FwpsInjectTransportReceiveAsync0</a>
 
 
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543744">AF_INET</a>
-
-
-
-<a href="..\fwpsk\ns-fwpsk-fwps_incoming_metadata_values0_.md">
-   FWPS_INCOMING_METADATA_VALUES0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>

@@ -52,14 +52,14 @@ The <b>WDF_READ_PORT_BUFFER_UCHAR</b> function reads a number of bytes from the 
 
 ## Syntax
 
-````
+```
 void WDF_READ_PORT_BUFFER_UCHAR(
-  _In_  WDFDEVICE Device,
-  _In_  PUCHAR    Port,
-  _Out_ PUCHAR    Buffer,
-  _In_  ULONG     Count 
+  WDFDEVICE Device,
+  PUCHAR    Port,
+  PUCHAR    Buffer,
+  ULONG     Count
 );
-````
+```
 
 ## Parameters
 

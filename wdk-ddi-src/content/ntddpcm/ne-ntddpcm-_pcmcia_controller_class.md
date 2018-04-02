@@ -47,26 +47,26 @@ req.typenames: PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS
 The PCMCIA_CONTROLLER_CLASS enumeration lists the different sorts of PC Card and CardBus controllers.
 
 ## Syntax
-````
-typedef enum _PCMCIA_CONTROLLER_CLASS { 
-  PcmciaInvalidControllerClass  = -1,
-  PcmciaIntelCompatible         = 2,
-  PcmciaCardBusCompatible       = 3,
-  PcmciaElcController           = 4,
-  PcmciaDatabook                = 5,
-  PcmciaPciPcmciaBridge         = 6,
-  PcmciaCirrusLogic             = 7,
-  PcmciaTI                      = 8,
-  PcmciaTopic                   = 9,
-  PcmciaRicoh                   = 10,
-  PcmciaDatabookCB              = 11,
-  PcmciaOpti                    = 12,
-  PcmciaTrid                    = 13,
-  PcmciaO2Micro                 = 14,
-  PcmciaNEC                     = 15,
-  PcmciaNEC_98                  = 16
-} PCMCIA_CONTROLLER_CLASS, *PPCMCIA_CONTROLLER_CLASS;
-````
+```
+typedef enum _PCMCIA_CONTROLLER_CLASS {
+  PcmciaInvalidControllerClass  ,
+  PcmciaIntelCompatible         ,
+  PcmciaCardBusCompatible       ,
+  PcmciaElcController           ,
+  PcmciaDatabook                ,
+  PcmciaPciPcmciaBridge         ,
+  PcmciaCirrusLogic             ,
+  PcmciaTI                      ,
+  PcmciaTopic                   ,
+  PcmciaRicoh                   ,
+  PcmciaDatabookCB              ,
+  PcmciaOpti                    ,
+  PcmciaTrid                    ,
+  PcmciaO2Micro                 ,
+  PcmciaNEC                     ,
+  PcmciaNEC_98
+} *PPCMCIA_CONTROLLER_CLASS, PCMCIA_CONTROLLER_CLASS;
+```
 
 ## Constants
 

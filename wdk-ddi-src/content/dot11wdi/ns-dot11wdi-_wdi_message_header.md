@@ -7,7 +7,7 @@ old-location: netvista\wdi_message_header.htm
 old-project: netvista
 ms.assetid: 69c3ebf5-8805-47d0-a507-d2e3e1d1b0df
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWDI_MESSAGE_HEADER, PWDI_MESSAGE_HEADER, PWDI_MESSAGE_HEADER structure pointer [Network Drivers Starting with Windows Vista], WDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER structure [Network Drivers Starting with Windows Vista], _WDI_MESSAGE_HEADER, dot11wdi/PWDI_MESSAGE_HEADER, dot11wdi/WDI_MESSAGE_HEADER, netvista.wdi_message_header"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,15 +48,15 @@ The
   WDI_MESSAGE_HEADER structure defines the WDI message header. All WDI  command messages must start with this header.
 
 ## Syntax
-````
+```
 typedef struct _WDI_MESSAGE_HEADER {
-  UINT16      PortId;
-  UINT16      Reserved;
+  WDI_PORT_ID PortId;
+  UINT16      Reserved;
   NDIS_STATUS Status;
-  UINT32      TransactionId;
-  UINT32      IhvSpecificId;
-} WDI_MESSAGE_HEADER, *PWDI_MESSAGE_HEADER;
-````
+  UINT32      TransactionId;
+  UINT32      IhvSpecificId;
+} *PWDI_MESSAGE_HEADER, WDI_MESSAGE_HEADER;
+```
 
 ## Members
 

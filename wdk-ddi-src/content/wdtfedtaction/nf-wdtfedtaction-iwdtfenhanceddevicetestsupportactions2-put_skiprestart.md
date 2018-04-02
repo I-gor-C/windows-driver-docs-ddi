@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTFDriverEDTAction.Interop.dll
 req.type-library: 
-req.lib: 
+req.lib: wdtfedtaction.h
 req.dll: 
 req.irql: 
 topic_type:
@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# put_SkipRestart method
+# IWDTFEnhancedDeviceTestSupportActions2::put_SkipRestart method
 Sets a value that indicates whether the target device should be restarted by default.
 
 This property is write-only.
@@ -82,6 +82,7 @@ attempt to restart the target device by default. Use this method to skip that st
 | **Windows version** | Windows XP Professional Windows Server 2008 |
 | **Target Platform** | Windows |
 | **Header** | wdtfedtaction.h |
+| **Library** | wdtfedtaction.h |
 
 ## See Also
 

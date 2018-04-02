@@ -7,7 +7,7 @@ old-location: display\dxgkarg_controlinterrupt2.htm
 old-project: display
 ms.assetid: 881F93B2-999F-4E3A-A71D-731946E8AA97
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKARG_CONTROLINTERRUPT2, DXGKARG_CONTROLINTERRUPT2 structure [Display Devices], DXGKARG_CONTROLINTTERUPT2, DXGKARG_CONTROLINTTERUPT2 structure [Display Devices], _DXGKARG_CONTROLINTERRUPT2, d3dkmddi/DXGKARG_CONTROLINTERRUPT2, display.dxgkarg_controlinterrupt2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,15 +44,18 @@ req.typenames: DXGKARG_CONTROLINTERRUPT2
 ---
 
 # _DXGKARG_CONTROLINTERRUPT2 structure
-The DXGKARG_CONTROLINTERRUPT2 structure is used in <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_controlinterrupt2.md">DxgkDdi_ControlInterrupt2</a> calls to describe the state of interrupts.
+The DXGKARG_CONTROLINTERRUPT2 structure is used in <a href="https://msdn.microsoft.com/library/windows/hardware/mt667971">DxgkDdi_ControlInterrupt2</a> calls to describe the state of interrupts.
 
 ## Syntax
-````
+```
 typedef struct _DXGKARG_CONTROLINTERRUPT2 {
-  DXGK_INTERRUPT_STATE  InterruptState;
-  DXGK_CRTC_VSYNC_STATE CrtcVsyncState;
-} DXGKARG_CONTROLINTTERUPT2;
-````
+  DXGK_INTERRUPT_TYPE InterruptType;
+  union {
+    DXGK_CRTC_VSYNC_STATE CrtcVsyncState;
+    DXGK_INTERRUPT_STATE  InterruptState;
+  };
+} DXGKARG_CONTROLINTERRUPT2;
+```
 
 ## Members
 
@@ -70,4 +73,4 @@ typedef struct _DXGKARG_CONTROLINTERRUPT2 {
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_controlinterrupt2.md">DxgkDdi_ControlInterrupt2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt667971">DxgkDdi_ControlInterrupt2</a>

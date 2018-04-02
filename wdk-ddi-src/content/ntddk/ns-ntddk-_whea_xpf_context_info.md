@@ -47,15 +47,14 @@ req.typenames: WHEA_XPF_CONTEXT_INFO, *PWHEA_XPF_CONTEXT_INFO
 The WHEA_XPF_CONTEXT_INFO structure describes processor context information for an x86 or x64 processor.
 
 ## Syntax
-````
+```
 typedef struct _WHEA_XPF_CONTEXT_INFO {
-  USHORT    RegisterContextType;
-  USHORT    RegisterDataSize;
-  ULONG     MSRAddress;
+  USHORT    RegisterContextType;
+  USHORT    RegisterDataSize;
+  ULONG     MSRAddress;
   ULONGLONG MmRegisterAddress;
-  UCHAR     RegisterData[1];
 } WHEA_XPF_CONTEXT_INFO, *PWHEA_XPF_CONTEXT_INFO;
-````
+```
 
 ## Members
 
@@ -127,7 +126,7 @@ The starting address of the machine-specific registers. This member contains val
 The starting memory address of the memory mapped registers. This member contains valid data only if the <b>RegisterContextType</b> member is set to XPF_CONTEXT_INFO_MMREGISTERS. For all other types of processor context information, this member should contain zero.
 
 ## Remarks
-The <b>VariableInfo</b> member of the <a href="..\ntddk\ns-ntddk-_whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains zero or more WHEA_XPF_CONTEXT_INFO structures, each of which describes specific context information associated with the processor error that occurred. If the size of a particular WHEA_XPF_CONTEXT_INFO structure is not an even multiple of 16 bytes, the space that is allocated for the structure in the buffer will be padded with additional bytes that are set to zero to round the allocated space up to an even multiple of 16 bytes.
+The <b>VariableInfo</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560655">WHEA_XPF_PROCESSOR_ERROR_SECTION</a> structure contains zero or more WHEA_XPF_CONTEXT_INFO structures, each of which describes specific context information associated with the processor error that occurred. If the size of a particular WHEA_XPF_CONTEXT_INFO structure is not an even multiple of 16 bytes, the space that is allocated for the structure in the buffer will be padded with additional bytes that are set to zero to round the allocated space up to an even multiple of 16 bytes.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -137,12 +136,12 @@ The <b>VariableInfo</b> member of the <a href="..\ntddk\ns-ntddk-_whea_xpf_proce
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_xpf_processor_error_section.md">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560631">WHEA_X64_REGISTER_STATE</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_x64_register_state.md">WHEA_X64_REGISTER_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560634">WHEA_X86_REGISTER_STATE</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_x86_register_state.md">WHEA_X86_REGISTER_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560655">WHEA_XPF_PROCESSOR_ERROR_SECTION</a>

@@ -7,7 +7,7 @@ old-location: ifsk\iounregisterfsregistrationchange.htm
 old-project: ifsk
 ms.assetid: 4e10afc0-b9c4-4495-83a1-11f9b82143fc
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: IoUnregisterFsRegistrationChange, IoUnregisterFsRegistrationChange routine [Installable File System Drivers], ifsk.iounregisterfsregistrationchange, ioref_18a53f5a-49f9-40ba-bf85-d2fea7d6fbfb.xml, ntifs/IoUnregisterFsRegistrationChange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>IoUnregisterFsRegistrationChange</b> routine unregisters file system filt
 
 ## Syntax
 
-````
-VOID IoUnregisterFsRegistrationChange(
-  _In_ PDRIVER_OBJECT          DriverObject,
-  _In_ PDRIVER_FS_NOTIFICATION DriverNotificationRoutine
+```
+NTKERNELAPI VOID IoUnregisterFsRegistrationChange(
+  PDRIVER_OBJECT          DriverObject,
+  PDRIVER_FS_NOTIFICATION DriverNotificationRoutine
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +73,7 @@ None
 
 ## Remarks
 
-<b>IoUnregisterFsRegistrationChange</b> unregisters a file system filter driver's notification routine so that it is no longer called whenever a file system calls <a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a> or <a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>. <b>IoUnregisterFsRegistrationChange</b> also decrements the reference count on the filter driver's driver object.
+<b>IoUnregisterFsRegistrationChange</b> unregisters a file system filter driver's notification routine so that it is no longer called whenever a file system calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548494">IoRegisterFileSystem</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548552">IoUnregisterFileSystem</a>. <b>IoUnregisterFsRegistrationChange</b> also decrements the reference count on the filter driver's driver object.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,12 +86,12 @@ None
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ioregisterfilesystem.md">IoRegisterFileSystem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548494">IoRegisterFileSystem</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-iounregisterfilesystem.md">IoUnregisterFileSystem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548499">IoRegisterFsRegistrationChange</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-ioregisterfsregistrationchange.md">IoRegisterFsRegistrationChange</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548552">IoUnregisterFileSystem</a>

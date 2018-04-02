@@ -51,16 +51,13 @@ Streams use the <b>StreamClassStreamNotification</b> routine to notify the class
 
 ## Syntax
 
-````
-VOID  StreamClassStreamNotification(
-  _In_ STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE NotificationType,
-  _In_ PHW_STREAM_OBJECT                          StreamObject,
-       PHW_STREAM_REQUEST_BLOCK                   pSrb,
-       PKSEVENT_ENTRY                             EventEntry,
-       GUID                                       *EventSet,
-       ULONG                                      EventId
+```
+void StreamClassStreamNotification(
+  STREAM_MINIDRIVER_STREAM_NOTIFICATION_TYPE NotificationType,
+  PHW_STREAM_OBJECT                          StreamObject,
+  ...                                        
 );
-````
+```
 
 ## Parameters
 
@@ -121,7 +118,7 @@ None
 
 ## Remarks
 
-The minidriver uses this routine for requests or events that apply to the minidriver as a whole. Stream-specific requests or events use <a href="..\strmini\nf-strmini-streamclassdevicenotification.md">StreamClassDeviceNotification</a>.
+The minidriver uses this routine for requests or events that apply to the minidriver as a whole. Stream-specific requests or events use <a href="https://msdn.microsoft.com/library/windows/hardware/ff568239">StreamClassDeviceNotification</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -132,4 +129,4 @@ The minidriver uses this routine for requests or events that apply to the minidr
 
 ## See Also
 
-<a href="..\strmini\nf-strmini-streamclassdevicenotification.md">StreamClassDeviceNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568239">StreamClassDeviceNotification</a>

@@ -50,18 +50,18 @@ The <b>KsDispatchFastReadFailure</b> function is used in a KSDISPATCH_TABLE.Fast
 
 ## Syntax
 
-````
-BOOLEAN KsDispatchFastReadFailure(
-  _In_  PFILE_OBJECT     FileObject,
-  _In_  PLARGE_INTEGER   FileOffset,
-  _In_  ULONG            Length,
-  _In_  BOOLEAN          Wait,
-  _In_  ULONG            LockKey,
-  _Out_ PVOID            Buffer,
-  _Out_ PIO_STATUS_BLOCK IoStatus,
-  _In_  PDEVICE_OBJECT   DeviceObject
+```
+KSDDKAPI BOOLEAN KsDispatchFastReadFailure(
+  PFILE_OBJECT     FileObject,
+  PLARGE_INTEGER   FileOffset,
+  ULONG            Length,
+  BOOLEAN          Wait,
+  ULONG            LockKey,
+  PVOID            Buffer,
+  PIO_STATUS_BLOCK IoStatus,
+  PDEVICE_OBJECT   DeviceObject
 );
-````
+```
 
 ## Parameters
 

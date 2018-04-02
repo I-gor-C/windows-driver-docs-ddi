@@ -55,12 +55,12 @@ The <b>WdfDeviceCreateSymbolicLink</b> method creates a symbolic link to a speci
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDeviceCreateSymbolicLink(
-  _In_ WDFDEVICE        Device,
-  _In_ PCUNICODE_STRING SymbolicLinkName
+  WDFDEVICE        Device,
+  PCUNICODE_STRING SymbolicLinkName
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A handle to a framework device object.
 
 `SymbolicLinkName`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a user-visible name for the device.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains a user-visible name for the device.
 
 
 ## Return Value
@@ -168,4 +168,4 @@ For information about global and local <b>\DosDevices</b> namespaces, see <a hre
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

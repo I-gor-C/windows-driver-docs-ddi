@@ -50,14 +50,14 @@ The <b>wiasUpdateScanRect</b> function updates the scanning area sizes of the sc
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasUpdateScanRect(
-  _In_ BYTE                 *pWiasContext,
-  _In_ WIA_PROPERTY_CONTEXT *pContext,
-       LONG                 lWidth,
-       LONG                 lHeight
+```
+HRESULT wiasUpdateScanRect(
+  BYTE                 *pWiasContext,
+  WIA_PROPERTY_CONTEXT *pContext,
+  LONG                 lWidth,
+  LONG                 lHeight
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ Pointer to a WIA item context.
 
 `pContext`
 
-Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a> structure containing the property context, created by a prior call to <a href="..\wiamdef\nf-wiamdef-wiascreatepropcontext.md">wiasCreatePropContext</a>.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure containing the property context, created by a prior call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549167">wiasCreatePropContext</a>.
 
 `lWidth`
 
@@ -97,8 +97,8 @@ This helper method is called to update the properties making up the scan rectang
 
 ## See Also
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiascreatepropcontext.md">wiasCreatePropContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549167">wiasCreatePropContext</a>

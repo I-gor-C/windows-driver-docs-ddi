@@ -7,7 +7,7 @@ old-location: kernel\rtlulonglongtoulongptr.htm
 old-project: kernel
 ms.assetid: D170649F-D0CE-454B-8F2B-18C66F58CAF7
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlULongLongToULongPtr, RtlULongLongToULongPtr function [Kernel-Mode Driver Architecture], kernel.rtlulonglongtoulongptr, ntintsafe/RtlULongLongToULongPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>ULONGLONG</b> to a value of type <b>ULONG_PTR</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlULongLongToULongPtr(
-  _In_  ULONGLONG ullOperand,
-  _Out_ ULONG_PTR *puResult
+  ULONGLONG ullOperand,
+  ULONG_PTR *pulResult
 );
-````
+```
 
 ## Parameters
 

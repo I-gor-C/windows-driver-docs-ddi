@@ -7,7 +7,7 @@ old-location: display\d3dkmtreclaimallocations2.htm
 old-project: display
 ms.assetid: 0BC49546-ECDE-447D-8F7E-4235D96D293B
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTReclaimAllocations2, D3DKMTReclaimAllocations2 function [Display Devices], d3dkmthk/D3DKMTReclaimAllocations2, display.d3dkmtreclaimallocations2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ req.typenames: D3DKMT_DRIVERVERSION
 
 ## Syntax
 
-````
-EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTReclaimAllocations2(
-  _Inout_ D3DKMT_RECLAIMALLOCATIONS2 *pData
+```
+NTSTATUS D3DKMTReclaimAllocations2(
+
 );
-````
+```
 
 ## Parameters
 
@@ -119,4 +119,4 @@ Parameters were validated and determined to be incorrect.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_reclaimallocations2.md">D3DKMT_RECLAIMALLOCATIONS2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906801">D3DKMT_RECLAIMALLOCATIONS2</a>

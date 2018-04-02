@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvValidateItemProperties method
+# IWiaMiniDrv::drvValidateItemProperties method
 The <b>IWiaMiniDrv::drvValidateItemProperties</b> method validates an item's properties against the set of valid values for each property and will update those properties if necessary.
 
 ## Syntax
 
-````
+```
 HRESULT drvValidateItemProperties(
-  [in]        BYTE     *pWiasContext,
-  [in]        LONG     lFlags,
-  [in]        ULONG    nPropSpec,
-  [in]  const PROPSPEC *pPropSpec,
-  [out]       LONG     *plDevErrVal
+  BYTE           *__MIDL__IWiaMiniDrv0016,
+  LONG           __MIDL__IWiaMiniDrv0017,
+  ULONG          __MIDL__IWiaMiniDrv0018,
+  const PROPSPEC *__MIDL__IWiaMiniDrv0019,
+  LONG           *__MIDL__IWiaMiniDrv0020
 );
-````
+```
 
 ## Parameters
 
@@ -99,11 +99,7 @@ The value pointed to by <i>plDevErrVal</i> can be converted to a string by calli
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-
-
-
-<a href="..\wiamdef\nf-wiamdef-wiasvalidateitemproperties.md">wiasValidateItemProperties</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 
@@ -111,4 +107,8 @@ The value pointed to by <i>plDevErrVal</i> can be converted to a string by calli
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetitemtype.md">wiasGetItemType</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549255">wiasGetItemType</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549454">wiasValidateItemProperties</a>

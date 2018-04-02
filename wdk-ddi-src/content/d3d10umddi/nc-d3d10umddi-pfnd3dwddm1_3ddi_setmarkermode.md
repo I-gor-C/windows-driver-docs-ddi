@@ -7,7 +7,7 @@ old-location: display\setmarkermode.htm
 old-project: display
 ms.assetid: 18B13509-7692-4336-937C-264B31A6FB78
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3DWDDM1_3DDI_SETMARKERMODE, SetMarkerMode, SetMarkerMode callback function [Display Devices], d3d10umddi/SetMarkerMode, display.setmarkermode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ A handle to the display device (graphics context).
 
 `Type`
 
-A value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1_3ddi_marker_type.md">D3DWDDM1_3DDI_MARKER_TYPE</a> enumeration that indicates the type of marker event  that the driver should support.
+A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/dn535968">D3DWDDM1_3DDI_MARKER_TYPE</a> enumeration that indicates the type of marker event  that the driver should support.
 
 `Flags`
 
@@ -100,4 +100,4 @@ Follow these guidelines when you set up profile-type marker events in your user-
 
 ## See Also
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3dwddm1_3ddi_marker_type.md">D3DWDDM1_3DDI_MARKER_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn535968">D3DWDDM1_3DDI_MARKER_TYPE</a>

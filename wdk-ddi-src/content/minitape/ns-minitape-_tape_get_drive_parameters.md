@@ -7,7 +7,7 @@ old-location: storage\tape_get_drive_parameters.htm
 old-project: storage
 ms.assetid: 2b1b196f-f012-4136-983e-8c8192bdbd2f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PTAPE_GET_DRIVE_PARAMETERS, PTAPE_GET_DRIVE_PARAMETERS, PTAPE_GET_DRIVE_PARAMETERS structure pointer [Storage Devices], TAPE_GET_DRIVE_PARAMETERS, TAPE_GET_DRIVE_PARAMETERS structure [Storage Devices], _TAPE_GET_DRIVE_PARAMETERS, ntddtape/PTAPE_GET_DRIVE_PARAMETERS, ntddtape/TAPE_GET_DRIVE_PARAMETERS, storage.tape_get_drive_parameters, structs-tape_aa0e95ac-ea8b-4c88-abc0-7809cd538e26.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,24 +44,24 @@ req.typenames: TAPE_GET_DRIVE_PARAMETERS, *PTAPE_GET_DRIVE_PARAMETERS
 ---
 
 # _TAPE_GET_DRIVE_PARAMETERS structure
-The TAPE_GET_DRIVE_PARAMETERS structure is used in conjunction with the <a href="..\ntddtape\ni-ntddtape-ioctl_tape_get_drive_params.md">IOCTL_TAPE_GET_DRIVE_PARAMS</a> request to retrieve information about capabilities of the tape drive.
+The TAPE_GET_DRIVE_PARAMETERS structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560618">IOCTL_TAPE_GET_DRIVE_PARAMS</a> request to retrieve information about capabilities of the tape drive.
 
 ## Syntax
-````
+```
 typedef struct _TAPE_GET_DRIVE_PARAMETERS {
   BOOLEAN ECC;
   BOOLEAN Compression;
   BOOLEAN DataPadding;
   BOOLEAN ReportSetmarks;
-  ULONG   DefaultBlockSize;
-  ULONG   MaximumBlockSize;
-  ULONG   MinimumBlockSize;
-  ULONG   MaximumPartitionCount;
-  ULONG   FeaturesLow;
-  ULONG   FeaturesHigh;
-  ULONG   EOTWarningZoneSize;
-} TAPE_GET_DRIVE_PARAMETERS, *PTAPE_GET_DRIVE_PARAMETERS;
-````
+  ULONG   DefaultBlockSize;
+  ULONG   MaximumBlockSize;
+  ULONG   MinimumBlockSize;
+  ULONG   MaximumPartitionCount;
+  ULONG   FeaturesLow;
+  ULONG   FeaturesHigh;
+  ULONG   EOTWarningZoneSize;
+} *PTAPE_GET_DRIVE_PARAMETERS, TAPE_GET_DRIVE_PARAMETERS;
+```
 
 ## Members
 
@@ -692,7 +692,7 @@ Indicates the size in bytes of the early warning zone toward the end of the tape
 
 ## See Also
 
-<a href="..\ntddtape\ni-ntddtape-ioctl_tape_get_drive_params.md">IOCTL_TAPE_GET_DRIVE_PARAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560618">IOCTL_TAPE_GET_DRIVE_PARAMS</a>
 
 
 

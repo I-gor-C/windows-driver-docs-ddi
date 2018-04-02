@@ -7,7 +7,7 @@ old-location: storage\storportgetsystemaddress.htm
 old-project: storage
 ms.assetid: 28bb26bd-7259-4664-8092-6b9a917c1a91
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortGetSystemAddress, StorPortGetSystemAddress routine [Storage Devices], storage.storportgetsystemaddress, storport/StorPortGetSystemAddress, storprt_6e6713c8-a235-43b8-a325-2d4b8fca8f35.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>StorPortGetSystemAddress</b> routine returns a virtual address in system 
 
 ## Syntax
 
-````
+```
 ULONG StorPortGetSystemAddress(
-  _In_  PVOID               HwDeviceExtension,
-  _In_  PSCSI_REQUEST_BLOCK Srb,
-  _Out_ PVOID               *SystemAddress
+  PVOID               HwDeviceExtension,
+  PSCSI_REQUEST_BLOCK Srb,
+  PVOID               *SystemAddress
 );
-````
+```
 
 ## Parameters
 
@@ -66,7 +66,7 @@ A pointer to the hardware device extension for the host bus adapter (HBA).
 
 `Srb`
 
-A pointer to a <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> structure.
 
 `SystemAddress`
 
@@ -146,7 +146,7 @@ The attempt to map the data buffer to system space failed.
 
 ## Remarks
 
-Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a> or <a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.
+Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/hh451474">STORAGE_REQUEST_BLOCK</a>. If the function identifier in the <b>Function</b> field of <i>Srb</i> is <b>SRB_FUNCTION_STORAGE_REQUEST_BLOCK</b>, the SRB is a <b>STORAGE_REQUEST_BLOCK</b> request structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -159,8 +159,8 @@ Starting in Windows 8, the <i>Srb</i> parameter may point to either <a href="..
 
 ## See Also
 
-<a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>
 
 
 
-<a href="..\storport\ns-storport-_storage_request_block.md">STORAGE_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451474">STORAGE_REQUEST_BLOCK</a>

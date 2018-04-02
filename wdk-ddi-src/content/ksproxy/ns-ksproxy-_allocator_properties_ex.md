@@ -47,31 +47,31 @@ req.typenames: ALLOCATOR_PROPERTIES_EX
 The ALLOCATOR_PROPERTIES_EX structure is for proxy use and not recommended for application use. ALLOCATOR_PROPERTIES_EX contains information that describes properties of an allocator.
 
 ## Syntax
-````
+```
 typedef struct _ALLOCATOR_PROPERTIES_EX {
-  long                 cBuffers;
-  long                 cbBuffer;
-  long                 cbAlign;
-  long                 cbPrefix;
-  GUID                 MemoryType;
-  GUID                 BusType;
-  PIPE_STATE           State;
-  PIPE_TERMINATION     Input;
-  PIPE_TERMINATION     Output;
-  ULONG                Strategy;
-  ULONG                Flags;
-  ULONG                Weight;
+  long                 cBuffers;
+  long                 cbBuffer;
+  long                 cbAlign;
+  long                 cbPrefix;
+  GUID                 MemoryType;
+  GUID                 BusType;
+  PIPE_STATE           State;
+  PIPE_TERMINATION     Input;
+  PIPE_TERMINATION     Output;
+  ULONG                Strategy;
+  ULONG                Flags;
+  ULONG                Weight;
   KS_LogicalMemoryType LogicalMemoryType;
   PIPE_ALLOCATOR_PLACE AllocatorPlace;
-  PIPE_DIMENSIONS      Dimensions;
-  KS_FRAMING_RANGE     PhysicalRange;
-  IKsAllocatorEx       *PrevSegment;
-  ULONG                CountNextSegments;
-  IKsAllocatorEx       **NextSegments;
-  ULONG                InsideFactors;
-  ULONG                NumberPins;
-} ALLOCATOR_PROPERTIES_EX, *PALLOCATOR_PROPERTIES_EX;
-````
+  PIPE_DIMENSIONS      Dimensions;
+  KS_FRAMING_RANGE     PhysicalRange;
+  IKsAllocatorEx       *PrevSegment;
+  ULONG                CountNextSegments;
+  IKsAllocatorEx       **NextSegments;
+  ULONG                InsideFactors;
+  ULONG                NumberPins;
+} ALLOCATOR_PROPERTIES_EX;
+```
 
 ## Members
 

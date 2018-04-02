@@ -50,14 +50,14 @@ The <b>EtwRegister</b> function registers the event provider and must be called 
 
 ## Syntax
 
-````
+```
 NTSTATUS EtwRegister(
-  _In_     LPCGUID            ProviderId,
-  _In_opt_ PETWENABLECALLBACK EnableCallback,
-  _In_opt_ PVOID              CallbackContext,
-  _Out_    PREGHANDLE         RegHandle
+  LPCGUID            ProviderId,
+  PETWENABLECALLBACK EnableCallback,
+  PVOID              CallbackContext,
+  PREGHANDLE         RegHandle
 );
-````
+```
 
 ## Parameters
 
@@ -141,4 +141,4 @@ Callers of <b>EtwRegister</b> must be running at IRQL = PASSIVE_LEVEL in the con
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-etwunregister.md">EtwUnregister</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545613">EtwUnregister</a>

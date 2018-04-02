@@ -7,7 +7,7 @@ old-location: ifsk\iogetdevicetoverify.htm
 old-project: ifsk
 ms.assetid: 3dcd33ac-845a-4519-b697-5917687a9672
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: IoGetDeviceToVerify, IoGetDeviceToVerify routine [Installable File System Drivers], ifsk.iogetdevicetoverify, k104_47163b80-0b35-40e0-9a30-3f5e2fe51bba.xml, ntifs/IoGetDeviceToVerify
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>IoGetDeviceToVerify</b> routine returns a pointer to the device object, r
 
 ## Syntax
 
-````
-PDEVICE_OBJECT IoGetDeviceToVerify(
-  _In_ PETHREAD Thread
+```
+NTKERNELAPI PDEVICE_OBJECT IoGetDeviceToVerify(
+  PETHREAD Thread
 );
-````
+```
 
 ## Parameters
 
@@ -85,16 +85,16 @@ An underlying removable-media device driver is responsible for notifying higher-
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioiserroruserinduced.md">IoIsErrorUserInduced</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549375">IoIsErrorUserInduced</a>
 
 
 
-<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548529">IoSetDeviceToVerify</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-iosetharderrororverifydevice.md">IoSetHardErrorOrVerifyDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549707">IoSetHardErrorOrVerifyDevice</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-iosetdevicetoverify.md">IoSetDeviceToVerify</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559936">PsGetCurrentThread</a>

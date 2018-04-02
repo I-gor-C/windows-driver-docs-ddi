@@ -49,17 +49,17 @@ The <b>WheaIsValidErrorRecordSignature </b>function verifies whether a WHEA <a h
 
 ## Syntax
 
-````
+```
 BOOLEAN WheaIsValidErrorRecordSignature(
-  _In_ PWHEA_ERROR_RECORD Record
+  PWHEA_ERROR_RECORD Record
 );
-````
+```
 
 ## Parameters
 
 `Record`
 
-A pointer to a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a> that is formatted as a <a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a> structure.
+A pointer to a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">error record</a> that is formatted as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560483">WHEA_ERROR_RECORD</a> structure.
 
 
 ## Return Value
@@ -68,7 +68,7 @@ A pointer to a WHEA <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-
 
 ## Remarks
 
-The <b>WheaIsValidErrorRecordSignature </b>function verifies that the specified <a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a> structure contains valid values.
+The <b>WheaIsValidErrorRecordSignature </b>function verifies that the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff560483">WHEA_ERROR_RECORD</a> structure contains valid values.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,12 +80,12 @@ The <b>WheaIsValidErrorRecordSignature </b>function verifies that the specified 
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_record.md">WHEA_ERROR_RECORD</a>
-
-
-
-<a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
-
-
-
 <a href="https://msdn.microsoft.com/080da29a-b5cb-45a5-848d-048d9612ee2a">Error record</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560483">WHEA_ERROR_RECORD</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a>

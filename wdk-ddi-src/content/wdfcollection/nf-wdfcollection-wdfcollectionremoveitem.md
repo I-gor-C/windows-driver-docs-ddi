@@ -55,12 +55,12 @@ The <b>WdfCollectionRemoveItem</b> method removes a specified object from an obj
 
 ## Syntax
 
-````
-VOID WdfCollectionRemoveItem(
-  _In_ WDFCOLLECTION Collection,
-  _In_ ULONG         Index
+```
+void WdfCollectionRemoveItem(
+  WDFCOLLECTION Collection,
+  ULONG         Index
 );
-````
+```
 
 ## Parameters
 
@@ -91,7 +91,7 @@ For more information about object collections, see <a href="https://docs.microso
 
 #### Examples
 
-For a code example that uses <b>WdfCollectionRemoveItem</b>, see <a href="..\wdfcollection\nf-wdfcollection-wdfcollectiongetfirstitem.md">WdfCollectionGetFirstItem</a>.
+For a code example that uses <b>WdfCollectionRemoveItem</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545763">WdfCollectionGetFirstItem</a>.
 
 <div class="code"></div>
 
@@ -108,4 +108,4 @@ For a code example that uses <b>WdfCollectionRemoveItem</b>, see <a href="..\wdf
 
 ## See Also
 
-<a href="..\wdfcollection\nf-wdfcollection-wdfcollectionremove.md">WdfCollectionRemove</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545784">WdfCollectionRemove</a>

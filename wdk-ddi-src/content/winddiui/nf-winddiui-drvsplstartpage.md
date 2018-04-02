@@ -50,11 +50,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL WINAPI DrvSplStartPage(
-   HANDLE hDriver
+```
+BOOL DrvSplStartPage(
+  HANDLE hDriver
 );
-````
+```
 
 ## Parameters
 

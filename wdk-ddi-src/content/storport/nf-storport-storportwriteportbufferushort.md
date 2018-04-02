@@ -7,7 +7,7 @@ old-location: storage\storportwriteportbufferushort.htm
 old-project: storage
 ms.assetid: e7b7718b-0c03-4114-8402-9657c49230ad
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortWritePortBufferUshort, StorPortWritePortBufferUshort routine [Storage Devices], storage.storportwriteportbufferushort, storport/StorPortWritePortBufferUshort, storprt_831acb6e-3529-4e20-897d-e2765b6f7f53.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,14 +51,14 @@ The <b>StorPortWritePortBufferUshort</b> routine writes a value to a specified r
 
 ## Syntax
 
-````
-STORPORT_API VOID StorPortWritePortBufferUshort(
-  _In_ PVOID   HwDeviceExtension,
-  _In_ PUSHORT Port,
-  _In_ PUSHORT Buffer,
-  _In_ ULONG   Count
+```
+void StorPortWritePortBufferUshort(
+   h,
+   p,
+   b,
+   c
 );
-````
+```
 
 ## Parameters
 
@@ -85,7 +85,7 @@ None
 
 ## Remarks
 
-For more information, see <a href="..\storport\nf-storport-scsiportwriteportbufferushort.md">ScsiPortWritePortBufferUshort</a>. For a non-buffered equivalent of this routine, see <a href="..\storport\nf-storport-storportwriteportushort.md">StorPortWritePortUshort</a>.
+For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564826">ScsiPortWritePortBufferUshort</a>. For a non-buffered equivalent of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567527">StorPortWritePortUshort</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,8 +96,8 @@ For more information, see <a href="..\storport\nf-storport-scsiportwriteportbuff
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportwriteportushort.md">StorPortWritePortUshort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564826">ScsiPortWritePortBufferUshort</a>
 
 
 
-<a href="..\storport\nf-storport-scsiportwriteportbufferushort.md">ScsiPortWritePortBufferUshort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567527">StorPortWritePortUshort</a>

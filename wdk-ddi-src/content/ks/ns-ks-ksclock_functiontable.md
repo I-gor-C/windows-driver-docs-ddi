@@ -47,21 +47,21 @@ req.typenames: KSCLOCK_FUNCTIONTABLE, *PKSCLOCK_FUNCTIONTABLE
 The KSCLOCK_FUNCTIONTABLE structure describes a function table for the master clock.
 
 ## Syntax
-````
-typedef struct {
-  PFNKSCLOCK_GETTIME        GetTime;
-  PFNKSCLOCK_GETTIME        GetPhysicalTime;
+```
+typedef struct KSCLOCK_FUNCTIONTABLE {
+  PFNKSCLOCK_GETTIME        GetTime;
+  PFNKSCLOCK_GETTIME        GetPhysicalTime;
   PFNKSCLOCK_CORRELATEDTIME GetCorrelatedTime;
   PFNKSCLOCK_CORRELATEDTIME GetCorrelatedPhysicalTime;
-} KSCLOCK_FUNCTIONTABLE, *PKSCLOCK_FUNCTIONTABLE;
-````
+}  *PKSCLOCK_FUNCTIONTABLE;
+```
 
 ## Members
 
 
 `GetTime`
 
-Pointer to a driver-allocated <a href="..\ks\nc-ks-pfnksclock_gettime.md">KStrClockGetTime</a> routine.
+Pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff567161">KStrClockGetTime</a> routine.
 
 `GetPhysicalTime`
 
@@ -69,7 +69,7 @@ Pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/window
 
 `GetCorrelatedTime`
 
-Pointer to a driver-allocated <a href="..\ks\nc-ks-pfnksclock_correlatedtime.md">KStrClockGetCorrelatedTime</a> routine.
+Pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff567159">KStrClockGetCorrelatedTime</a> routine.
 
 `GetCorrelatedPhysicalTime`
 

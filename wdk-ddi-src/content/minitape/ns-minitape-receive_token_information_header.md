@@ -7,7 +7,7 @@ old-location: storage\receive_token_information_header.htm
 old-project: storage
 ms.assetid: 3D8BF059-2063-499E-B287-41EE184A2264
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PRECEIVE_TOKEN_INFORMATION_HEADER, PRECEIVE_TOKEN_INFORMATION_HEADER, PRECEIVE_TOKEN_INFORMATION_HEADER structure pointer [Storage Devices], RECEIVE_TOKEN_INFORMATION_HEADER, RECEIVE_TOKEN_INFORMATION_HEADER structure [Storage Devices], SERVICE_ACTION_POPULATE_TOKEN, SERVICE_ACTION_WRITE_USING_TOKEN, TRANSFER_COUNT_UNITS_BYTES, TRANSFER_COUNT_UNITS_EXBIBYTES, TRANSFER_COUNT_UNITS_GIBIBYTES, TRANSFER_COUNT_UNITS_KIBIBYTES, TRANSFER_COUNT_UNITS_MEBIBYTES, TRANSFER_COUNT_UNITS_NUMBER_BLOCKS, TRANSFER_COUNT_UNITS_PEBIBYTES, TRANSFER_COUNT_UNITS_TEBIBYTES, scsi/PRECEIVE_TOKEN_INFORMATION_HEADER, scsi/RECEIVE_TOKEN_INFORMATION_HEADER, storage.receive_token_information_header"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,25 +47,25 @@ req.typenames: RECEIVE_TOKEN_INFORMATION_HEADER, *PRECEIVE_TOKEN_INFORMATION_HEA
 The <b>RECEIVE_TOKEN_INFORMATION_HEADER</b> structure contains information returned as status from an offload data transfer operation.
 
 ## Syntax
-````
-typedef struct _RECEIVE_TOKEN_INFORMATION_HEADER {
-  UCHAR AvailableData[4];
-  UCHAR ResponseToServiceAction  :5;
-  UCHAR Reserved1  :3;
-  UCHAR OperationStatus  :7;
-  UCHAR Reserved2   :1;
-  UCHAR OperationCounter[2];
-  UCHAR EstimatedStatusUpdateDelay[4];
-  UCHAR CompletionStatus;
-  UCHAR SenseDataFieldLength;
-  UCHAR SenseDataLength;
-  UCHAR TransferCountUnits;
-  UCHAR TransferCount[8];
-  UCHAR SegmentsProcessed[2];
-  UCHAR Reserved3[6];
-  UCHAR SenseData[ANYSIZE_ARRAY];
-} RECEIVE_TOKEN_INFORMATION_HEADER, *PRECEIVE_TOKEN_INFORMATION_HEADER;
-````
+```
+typedef struct RECEIVE_TOKEN_INFORMATION_HEADER {
+  UCHAR      AvailableData[4];
+  UCHAR  : 5 ResponseToServiceAction;
+  UCHAR  : 3 Reserved1;
+  UCHAR  : 7 OperationStatus;
+  UCHAR  : 1 Reserved2;
+  UCHAR      OperationCounter[2];
+  UCHAR      EstimatedStatusUpdateDelay[4];
+  UCHAR      CompletionStatus;
+  UCHAR      SenseDataFieldLength;
+  UCHAR      SenseDataLength;
+  UCHAR      TransferCountUnits;
+  UCHAR      TransferCount[8];
+  UCHAR      SegmentsProcessed[2];
+  UCHAR      Reserved3[6];
+  UCHAR      SenseData[ANYSIZE_ARRAY];
+} *PRECEIVE_TOKEN_INFORMATION_HEADER, RECEIVE_TOKEN_INFORMATION_HEADER;
+```
 
 ## Members
 
@@ -329,7 +329,7 @@ Reserved.
 Sense data returned for the copy operation.
 
 ## Remarks
-If <b>RECEIVE_TOKEN_INFORMATION_HEADER</b> is for a POPULATE TOKEN command operation, and the command completed successfully, a <a href="..\storport\ns-storport-receive_token_information_response_header.md">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a> structure will also be present after <b>SenseData</b> at an offset of <b>SenseDataFieldLength</b> from the beginning of the <b>SenseData</b> array. The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure will contain the token created as a representation of data (ROD) for the range parameters sent with the command.
+If <b>RECEIVE_TOKEN_INFORMATION_HEADER</b> is for a POPULATE TOKEN command operation, and the command completed successfully, a <a href="https://msdn.microsoft.com/library/windows/hardware/hh967732">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a> structure will also be present after <b>SenseData</b> at an offset of <b>SenseDataFieldLength</b> from the beginning of the <b>SenseData</b> array. The <b>RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</b> structure will contain the token created as a representation of data (ROD) for the range parameters sent with the command.
 
 All multibyte values are in big endian format. Prior to evaluation, these values must be converted to match the endian format of the current platform.
 
@@ -341,4 +341,4 @@ All multibyte values are in big endian format. Prior to evaluation, these values
 
 ## See Also
 
-<a href="..\storport\ns-storport-receive_token_information_response_header.md">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967732">RECEIVE_TOKEN_INFORMATION_RESPONSE_HEADER</a>

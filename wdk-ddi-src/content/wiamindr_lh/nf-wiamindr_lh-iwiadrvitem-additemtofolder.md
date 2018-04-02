@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# AddItemToFolder method
+# IWiaDrvItem::AddItemToFolder method
 The AddItemToFolder method adds an IWiaDrvItem item to a folder in a driver item tree.
 
 ## Syntax
 
-````
+```
 HRESULT AddItemToFolder(
-  [in, optional] IWiaDrvItem *pIParent
+  IWiaDrvItem *__MIDL__IWiaDrvItem0004
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ Minidrivers typically use the AddItemToFolder method to add an item to a parent 
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/0609e1b2-48df-413c-90bd-d7ddea26510a">IWiaDrvItem</a>
+
+
+
 <a href="https://msdn.microsoft.com/f800427e-d6b6-4f4c-aee7-4b2b0d0aa0c4">RemoveItemFromFolder</a>
-
-
-
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>

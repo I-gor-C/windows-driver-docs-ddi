@@ -7,7 +7,7 @@ old-location: storage\storportinterlockedflushslist.htm
 old-project: storage
 ms.assetid: C686ABA7-BC44-45CE-A35B-63E76961A032
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortInterlockedFlushSList, StorPortInterlockedFlushSList routine [Storage Devices], storage.storportinterlockedflushslist, storport/StorPortInterlockedFlushSList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ Removes all items from a Storport managed singly linked list. Access to the list
 
 ## Syntax
 
-````
+```
 ULONG StorPortInterlockedFlushSList(
-  _In_    PVOID               HwDeviceExtension,
-  _Inout_ PSTOR_SLIST_HEADER  SListHead,
-  _Out_   PSTOR_SLIST_ENTRY * Result
+  PVOID              HwDeviceExtension,
+  PSTOR_SLIST_HEADER SListHead,
+  PSTOR_SLIST_ENTRY  *Result
 );
-````
+```
 
 ## Parameters
 
@@ -131,16 +131,16 @@ The <b>StorPortInterlockedFlushSList</b> will also return <b>STATUS_SUCCESS</b> 
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportinterlockedpopentryslist.md">StorPortInterlockedPopEntrySList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967735">StorPortInitializeSListHead</a>
 
 
 
-<a href="..\storport\nf-storport-storportinitializeslisthead.md">StorPortInitializeSListHead</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967737">StorPortInterlockedPopEntrySList</a>
 
 
 
-<a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967738">StorPortInterlockedPushEntrySList</a>
 
 
 
-<a href="..\storport\nf-storport-storportquerydepthslist.md">StorPortQueryDepthSList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967739">StorPortQueryDepthSList</a>

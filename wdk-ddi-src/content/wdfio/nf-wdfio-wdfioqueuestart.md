@@ -55,11 +55,11 @@ The <b>WdfIoQueueStart</b> method enables an I/O queue to start receiving and de
 
 ## Syntax
 
-````
-VOID WdfIoQueueStart(
-  _In_ WDFQUEUE Queue
+```
+void WdfIoQueueStart(
+  WDFQUEUE Queue
 );
-````
+```
 
 ## Parameters
 
@@ -114,8 +114,8 @@ WdfIoQueueStart(ReadQueue);</pre>
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuestop.md">WdfIoQueueStop</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548442">WdfIoQueuePurge</a>
 
 
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuepurge.md">WdfIoQueuePurge</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548482">WdfIoQueueStop</a>

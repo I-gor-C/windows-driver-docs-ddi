@@ -7,7 +7,7 @@ old-location: kernel\rtlunicodestringtointeger.htm
 old-project: kernel
 ms.assetid: d9357864-d49b-44fe-b884-64c6da609789
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUnicodeStringToInteger, RtlUnicodeStringToInteger routine [Kernel-Mode Driver Architecture], k109_862feacf-64af-4aae-87b5-264ef277ea22.xml, kernel.rtlunicodestringtointeger, wdm/RtlUnicodeStringToInteger
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,19 +51,19 @@ The <b>RtlUnicodeStringToInteger</b> routine converts a Unicode string represent
 
 ## Syntax
 
-````
-NTSTATUS RtlUnicodeStringToInteger(
-  _In_     PCUNICODE_STRING String,
-  _In_opt_ ULONG            Base,
-  _Out_    PULONG           Value
+```
+NTSYSAPI NTSTATUS RtlUnicodeStringToInteger(
+  PCUNICODE_STRING String,
+  ULONG            Base,
+  PULONG           Value
 );
-````
+```
 
 ## Parameters
 
 `String`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the number representation to convert to the equivalent integer value.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains the number representation to convert to the equivalent integer value.
 
 `Base`
 
@@ -162,7 +162,7 @@ The following table contains examples of output values that result from various 
 </table>
  
 
-A related routine, <a href="..\wudfwdm\nf-wudfwdm-rtlintegertounicodestring.md">RtlIntegerToUnicodeString</a>, converts an integer value to the equivalent Unicode string representation.
+A related routine, <a href="https://msdn.microsoft.com/library/windows/hardware/ff561941">RtlIntegerToUnicodeString</a>, converts an integer value to the equivalent Unicode string representation.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -176,8 +176,8 @@ A related routine, <a href="..\wudfwdm\nf-wudfwdm-rtlintegertounicodestring.md">
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561941">RtlIntegerToUnicodeString</a>
 
 
 
-<a href="..\wudfwdm\nf-wudfwdm-rtlintegertounicodestring.md">RtlIntegerToUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

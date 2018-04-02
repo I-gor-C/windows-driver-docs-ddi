@@ -50,12 +50,12 @@ The <code>OEMNextBand</code> function is called by GDI when it has finished draw
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMNextBand(
-   SURFOBJ *pso,
-   POINTL  *pptl
+```
+BOOL OEMNextBand(
+  SURFOBJ *pso,
+  POINTL  *pptl
 );
-````
+```
 
 ## Parameters
 

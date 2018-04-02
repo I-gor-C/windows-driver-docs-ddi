@@ -47,14 +47,14 @@ req.typenames: BDA_LockType
 The BDA_LockType enumerated type contains values that specify lock types for a signal.
 
 ## Syntax
-````
-typedef enum _BdaLockType { 
-  Bda_LockType_None          = 0x00,
-  Bda_LockType_PLL           = 0x01,
-  Bda_LockType_DecoderDemod  = 0x02,
-  Bda_LockType_Complete      = 0x80
+```
+typedef enum _BdaLockType {
+  Bda_LockType_None          ,
+  Bda_LockType_PLL           ,
+  Bda_LockType_DecoderDemod  ,
+  Bda_LockType_Complete
 } BDA_LockType;
-````
+```
 
 ## Constants
 
@@ -89,8 +89,8 @@ typedef enum _BdaLockType {
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564370">KSPROPERTY_BDA_SIGNAL_LOCK_TYPE</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564369">KSPROPERTY_BDA_SIGNAL_LOCK_CAPS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564370">KSPROPERTY_BDA_SIGNAL_LOCK_TYPE</a>

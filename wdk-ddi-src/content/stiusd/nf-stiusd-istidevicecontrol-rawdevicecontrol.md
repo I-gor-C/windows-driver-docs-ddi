@@ -45,21 +45,21 @@ req.product: Windows 10 or later.
 ---
 
 
-# RawDeviceControl method
+# IStiDeviceControl::RawDeviceControl method
 This topic describes the <b>RawDeviceControl</b> method.
 
 ## Syntax
 
-````
+```
 HRESULT RawDeviceControl(
-   USD_CONTROL_CODE EscapeFunction,
-   LPVOID           lpInData,
-   DWORD            cbInDataSize,
-   LPVOID           pOutData,
-   DWORD            dwOutDataSize,
-   LPDWORD          pdwActualData
+  USD_CONTROL_CODE EscapeFunction,
+  LPVOID           lpInData,
+  DWORD            cbInDataSize,
+  LPVOID           pOutData,
+  DWORD            dwOutDataSize,
+  LPDWORD          pdwActualData
 );
-````
+```
 
 ## Parameters
 

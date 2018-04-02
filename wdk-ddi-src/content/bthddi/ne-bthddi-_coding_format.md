@@ -47,11 +47,17 @@ req.typenames: CODING_FORMAT, *PCODING_FORMAT
 This enumeration is for internal use only.
 
 ## Syntax
-````
-typedef enum _CODING_FORMAT { 
-    = 
-} CODING_FORMAT, *PCODING_FORMAT;
-````
+```
+typedef enum _CODING_FORMAT {
+  ScoCodingFormatULaw            ,
+  ScoCodingFormatALaw            ,
+  ScoCodingFormatCVSD            ,
+  ScoCodingFormatTransparent     ,
+  ScoCodingFormatLinearPCM       ,
+  ScoCodingFormatMSBC            ,
+  ScoCodingFormatVendorSpecific
+} *PCODING_FORMAT, CODING_FORMAT;
+```
 
 ## Constants
 

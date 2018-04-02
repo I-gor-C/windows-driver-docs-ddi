@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# CopyToBuffer method
+# IWDFMemory::CopyToBuffer method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>CopyToBuffer</b> method safely copies data from a memory object to the specified target buffer.
 
 ## Syntax
 
-````
+```
 HRESULT CopyToBuffer(
-  [in]  ULONG_PTR SourceOffset,
-  [out] void      *pTargetBuffer,
-  [in]  SIZE_T    NumOfBytesToCopyTo
+  ULONG_PTR SourceOffset,
+  void      *TargetBuffer,
+  SIZE_T    NumOfBytesToCopyTo
 );
-````
+```
 
 ## Parameters
 
@@ -91,4 +91,4 @@ The number of bytes to copy to the buffer that <i>pTargetBuffer</i> points to.
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a>

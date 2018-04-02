@@ -7,7 +7,7 @@ old-location: debugger\getsymbolvaluetext.htm
 old-project: debugger
 ms.assetid: 587b8769-86b6-48bd-b238-84aeb5611668
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: ComOther_2a064ea0-63f4-441f-a79c-e6fc1e9688c7.xml, GetSymbolValueText method [Windows Debugging], GetSymbolValueText method [Windows Debugging], IDebugSymbolGroup2 interface, GetSymbolValueText,IDebugSymbolGroup2.GetSymbolValueText, IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolValueText method, IDebugSymbolGroup2::GetSymbolValueText, dbgeng/IDebugSymbolGroup2::GetSymbolValueText, debugger.getsymbolvaluetext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetSymbolValueText method
+# IDebugSymbolGroup2::GetSymbolValueText method
 The <b>GetSymbolValueText</b>  method returns a string that represents the value of a symbol.
 
 ## Syntax
 
-````
+```
 HRESULT GetSymbolValueText(
-  [in]            ULONG  Index,
-  [out, optional] PSTR   Buffer,
-  [in]            ULONG  BufferSize,
-  [out, optional] PULONG NameSize
+  ULONG  Index,
+  PSTR   Buffer,
+  ULONG  BufferSize,
+  PULONG NameSize
 );
-````
+```
 
 ## Parameters
 
@@ -129,8 +129,8 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550846">IDebugSymbolGroup2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561457">WriteSymbol</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>

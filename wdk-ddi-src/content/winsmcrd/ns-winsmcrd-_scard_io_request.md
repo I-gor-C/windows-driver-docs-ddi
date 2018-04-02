@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 This structure is used to identify a smart card I/O request.
 
 ## Syntax
-````
+```
 typedef struct _SCARD_IO_REQUEST {
-  DWORD  dwProtocol;
-  DWORD  cbPciLength;
-} SCARD_IO_REQUEST, *PSCARD_IO_REQUEST, *LPSCARD_IO_REQUEST;
-````
+  DWORD dwProtocol;
+  DWORD cbPciLength;
+} *PSCARD_IO_REQUEST, SCARD_IO_REQUEST, *LPSCARD_IO_REQUEST;
+```
 
 ## Members
 
@@ -74,8 +74,8 @@ Specifies the protocol control information length.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a>
-
-
-
 <a href="http://go.microsoft.com/fwlink/p/?LinkID=785320">Near field communication (NFC) design guide</a>
+
+
+
+<a href="https://msdn.microsoft.com/windows/hardware/drivers/nfc/design-guide-smart-card">Smart card design guide</a>

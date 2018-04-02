@@ -7,7 +7,7 @@ old-location: display\d3dddi_mapgpuvirtualaddress.htm
 old-project: display
 ms.assetid: A23F5847-0DA9-4F3F-B1C1-DACCA35DBC53
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_MAPGPUVIRTUALADDRESS, D3DDDI_MAPGPUVIRTUALADDRESS structure [Display Devices], Execute, NoAccess, Write, Zero, d3dukmdt/D3DDDI_MAPGPUVIRTUALADDRESS, display.d3dddi_mapgpuvirtualaddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,26 +44,26 @@ req.typenames: D3DDDI_MAPGPUVIRTUALADDRESS
 ---
 
 # D3DDDI_MAPGPUVIRTUALADDRESS structure
-<b>D3DDDI_MAPGPUVIRTUALADDRESS</b> is used with <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a> to map a graphics processing unit (GPU) virtual address ranges to a specific allocation range or to put it to the <i>Invalid</i> or <i>Zero</i> state.
+<b>D3DDDI_MAPGPUVIRTUALADDRESS</b> is used with <a href="https://msdn.microsoft.com/DA67A98C-BE9C-412D-9382-CAC5B05FEE3B">pfnMapGpuVirtualAddressCb</a> to map a graphics processing unit (GPU) virtual address ranges to a specific allocation range or to put it to the <i>Invalid</i> or <i>Zero</i> state.
 
 ## Syntax
-````
+```
 typedef struct D3DDDI_MAPGPUVIRTUALADDRESS {
-  D3DKMT_HANDLE                           hPagingQueue;
-  D3DGPU_VIRTUAL_ADDRESS                  BaseAddress;
-  D3DGPU_VIRTUAL_ADDRESS                  MinimumAddress;
-  D3DGPU_VIRTUAL_ADDRESS                  MaximumAddress;
-  D3DKMT_HANDLE                           hAllocation;
-  D3DGPU_SIZE_T                           OffsetInPages;
-  D3DGPU_SIZE_T                           SizeInPages;
+  D3DKMT_HANDLE                           hPagingQueue;
+  D3DGPU_VIRTUAL_ADDRESS                  BaseAddress;
+  D3DGPU_VIRTUAL_ADDRESS                  MinimumAddress;
+  D3DGPU_VIRTUAL_ADDRESS                  MaximumAddress;
+  D3DKMT_HANDLE                           hAllocation;
+  D3DGPU_SIZE_T                           OffsetInPages;
+  D3DGPU_SIZE_T                           SizeInPages;
   D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE Protection;
-  UINT64                                  DriverProtection;
-  UINT                                    Reserved0;
-  UINT64                                  Reserved1;
-  D3DGPU_VIRTUAL_ADDRESS                  VirtualAddress;
-  UINT64                                  PagingFenceValue;
-} D3DDDI_MAPGPUVIRTUALADDRESS;
-````
+  UINT64                                  DriverProtection;
+  UINT                                    Reserved0;
+  UINT64                                  Reserved1;
+  D3DGPU_VIRTUAL_ADDRESS                  VirtualAddress;
+  UINT64                                  PagingFenceValue;
+};
+```
 
 ## Members
 
@@ -74,7 +74,7 @@ A handle for the device paging queue, used for the operation.
 
 `BaseAddress`
 
-(Optional) If non-<b>NULL</b>, the video memory manager will attempt to use this address as the base address for the mapping. If the range from <b>BaseAddress</b> to <b>BaseAddress</b>+<b>Size</b> isn’t free, it must belong to a range, previously obtained by calling <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a> or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a>. 
+(Optional) If non-<b>NULL</b>, the video memory manager will attempt to use this address as the base address for the mapping. If the range from <b>BaseAddress</b> to <b>BaseAddress</b>+<b>Size</b> isn’t free, it must belong to a range, previously obtained by calling <a href="https://msdn.microsoft.com/CEDE03E1-4B0D-4839-B7D6-0826CC103C5E">pfnReserveGpuVirtualAddressCb</a> or <a href="https://msdn.microsoft.com/DA67A98C-BE9C-412D-9382-CAC5B05FEE3B">pfnMapGpuVirtualAddressCb</a>. 
 The <b>BaseAddress</b> value is in bytes and must be aligned to CPU page boundary.
 If <b>NULL</b> is specified, the video memory manager will pick the base address for the allocation within the specified <b>MinimumAddress</b> and <b>MaximumAddress</b>.
 
@@ -104,7 +104,7 @@ Specifies the size of the range to map in 4KB pages.
 
 `Protection`
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddigpuvirtualaddress_protection_type.md">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a> structure that specifies the protection on the GPU virtual address that is mapped.
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906319">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a> structure that specifies the protection on the GPU virtual address that is mapped.
 
 <table>
 <tr>
@@ -185,7 +185,7 @@ A zero fence value might be returned, meaning that the operation is already comp
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_mapgpuvirtualaddresscb.md">pfnMapGpuVirtualAddressCb</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906319">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a>
 
 
 
@@ -193,8 +193,8 @@ A zero fence value might be returned, meaning that the operation is already comp
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
+<a href="https://msdn.microsoft.com/DA67A98C-BE9C-412D-9382-CAC5B05FEE3B">pfnMapGpuVirtualAddressCb</a>
 
 
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddigpuvirtualaddress_protection_type.md">D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE</a>
+<a href="https://msdn.microsoft.com/CEDE03E1-4B0D-4839-B7D6-0826CC103C5E">pfnReserveGpuVirtualAddressCb</a>

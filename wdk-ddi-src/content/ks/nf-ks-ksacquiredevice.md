@@ -50,11 +50,11 @@ The<b> KsAcquireDevice</b> function gains synchronous access for <i>Device</i> b
 
 ## Syntax
 
-````
+```
 void KsAcquireDevice(
-  _In_ PKSDEVICE Device
+  PKSDEVICE Device
 );
-````
+```
 
 ## Parameters
 
@@ -82,8 +82,8 @@ For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a>
 
 
 
-<a href="..\ks\nf-ks-ksreleasedevice.md">KsReleaseDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566783">KsReleaseDevice</a>

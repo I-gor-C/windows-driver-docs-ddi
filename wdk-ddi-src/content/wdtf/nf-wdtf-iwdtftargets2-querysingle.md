@@ -7,7 +7,7 @@ old-location: dtf\iwdtftargets2_querysingle.htm
 old-project: dtf
 ms.assetid: d9aa36b6-8ce4-41dd-96a8-104fa9094405
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFTargets2, IWDTFTargets2 interface [Windows Device Testing Framework], QuerySingle method, IWDTFTargets2::QuerySingle, Microsoft.WDTF.IWDTFTargets2.QuerySingle, Microsoft::WDTF::IWDTFTargets2::QuerySingle, QuerySingle method [Windows Device Testing Framework], QuerySingle method [Windows Device Testing Framework], IWDTFTargets2 interface, QuerySingle,IWDTFTargets2.QuerySingle, dtf.iwdtftargets2_querysingle, wdtf/IWDTFTargets2::QuerySingle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# QuerySingle method
+# IWDTFTargets2::QuerySingle method
 Returns a single item from the collection.
 
 ## Syntax
 
-````
+```
 HRESULT QuerySingle(
-  [in]          BSTR         SDEL,
-  [out, retval] IWDTFTarget2 **ppTarget
+  BSTR         SDEL,
+  IWDTFTarget2 **ppTarget
 );
-````
+```
 
 ## Parameters
 
@@ -82,4 +82,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtftargets2.md">IWDTFTargets2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439458">IWDTFTargets2</a>

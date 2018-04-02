@@ -7,7 +7,7 @@ old-location: ifsk\fltgetrequestorprocessid.htm
 old-project: ifsk
 ms.assetid: 45965b8c-749c-42ef-b29f-22a46028e4d3
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_e_to_o_1e770f18-5024-4f82-9d63-eba6a9e6fd5b.xml, FltGetRequestorProcessId, FltGetRequestorProcessId routine [Installable File System Drivers], fltkernel/FltGetRequestorProcessId, ifsk.fltgetrequestorprocessid
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ The <b>FltGetRequestorProcessId</b> routine returns the unique 32-bit process ID
 
 ## Syntax
 
-````
-ULONG FltGetRequestorProcessId(
-  _In_ PFLT_CALLBACK_DATA CallbackData
+```
+ULONG FLTAPI FltGetRequestorProcessId(
+  PFLT_CALLBACK_DATA CallbackData
 );
-````
+```
 
 ## Parameters
 
 `CallbackData`
 
-Pointer to the callback data structure (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) for the I/O operation.
+Pointer to the callback data structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) for the I/O operation.
 
 
 ## Return Value
@@ -81,8 +81,8 @@ Pointer to the callback data structure (<a href="..\fltkernel\ns-fltkernel-_flt_
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltgetrequestorprocess.md">FltGetRequestorProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
 
 
 
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543115">FltGetRequestorProcess</a>

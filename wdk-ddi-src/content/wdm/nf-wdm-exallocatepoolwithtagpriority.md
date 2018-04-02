@@ -7,7 +7,7 @@ old-location: kernel\exallocatepoolwithtagpriority.htm
 old-project: kernel
 ms.assetid: 33087a37-e6fc-4b21-aa9e-e4617eeccd29
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExAllocatePoolWithTagPriority, ExAllocatePoolWithTagPriority routine [Kernel-Mode Driver Architecture], k102_cca6adc7-0f37-4565-858d-a191062f4fbd.xml, kernel.exallocatepoolwithtagpriority, wdm/ExAllocatePoolWithTagPriority
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,20 +50,20 @@ The <b>ExAllocatePoolWithTagPriority</b> routine allocates pool memory of the sp
 
 ## Syntax
 
-````
-PVOID ExAllocatePoolWithTagPriority(
-  _In_ POOL_TYPE        PoolType,
-  _In_ SIZE_T           NumberOfBytes,
-  _In_ ULONG            Tag,
-  _In_ EX_POOL_PRIORITY Priority
+```
+NTKERNELAPI PVOID ExAllocatePoolWithTagPriority(
+  __drv_strictTypeMatch(__drv_typeCond)POOL_TYPE        PoolType,
+  SIZE_T                                                NumberOfBytes,
+  ULONG                                                 Tag,
+  __drv_strictTypeMatch(__drv_typeExpr)EX_POOL_PRIORITY Priority
 );
-````
+```
 
 ## Parameters
 
 `PoolType`
 
-The type of pool memory to allocate. For a description of the available pool memory types, see <a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a>.
+The type of pool memory to allocate. For a description of the available pool memory types, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a>.
 
 You can modify the <i>PoolType</i> value by bitwise-ORing this value with the POOL_RAISE_IF_ALLOCATION_FAILURE flag. This flag causes an exception to be raised if the request cannot be satisfied.
 
@@ -75,7 +75,7 @@ The number of bytes to allocate.
 
 `Tag`
 
-The pool tag to use for the allocated memory. For more information, see the <i>Tag</i> parameter of <a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>.
+The pool tag to use for the allocated memory. For more information, see the <i>Tag</i> parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>.
 
 `Priority`
 
@@ -154,12 +154,12 @@ In a non-uniform memory access (NUMA) multiprocessor architecture, <b>ExAllocate
 
 ## See Also
 
-<a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544520">ExAllocatePoolWithTag</a>
 
 
 
-<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a>
 
 
 
-<a href="..\wdm\nf-wdm-exallocatepoolwithtag.md">ExAllocatePoolWithTag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a>

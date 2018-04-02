@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMPDriverEvent(
-   DWORD  dwDriverEvent,
-   DWORD  dwLevel,
-   LPBYTE pDriverInfo,
-   LPARAM lParam
+```
+BOOL OEMPDriverEvent(
+  DWORD  dwDriverEvent,
+  DWORD  dwLevel,
+  LPBYTE pDriverInfo,
+  LPARAM lParam
 );
-````
+```
 
 ## Parameters
 

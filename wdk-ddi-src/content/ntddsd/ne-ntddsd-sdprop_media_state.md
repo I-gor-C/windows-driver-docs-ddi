@@ -47,12 +47,12 @@ req.typenames: SDPROP_MEDIA_STATE
 The SDPROP_MEDIA_STATE enumeration lists the values associated with the media states property.
 
 ## Syntax
-````
-typedef enum  { 
-  SDPMS_NO_MEDIA        = 0,
-  SDPMS_MEDIA_INSERTED  = 1
-} SDPROP_MEDIA_STATE;
-````
+```
+typedef enum SDPROP_MEDIA_STATE {
+  SDPMS_NO_MEDIA        ,
+  SDPMS_MEDIA_INSERTED
+} ;
+```
 
 ## Constants
 
@@ -77,12 +77,12 @@ typedef enum  {
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>
-
-
-
-<a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>

@@ -7,7 +7,7 @@ old-location: kernel\rtlvalidatecorrelationvector.htm
 old-project: kernel
 ms.assetid: a73ab33b-3e8c-43d8-8547-1483bcd2af52
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlValidateCorrelationVector, RtlValidateCorrelationVector function [Kernel-Mode Driver Architecture], kernel.rtlvalidatecorrelationvector, ntddk/RtlValidateCorrelationVector
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ Validates the specified correlation vector to check whether it conforms to the C
 
 ## Syntax
 
-````
- NTSTATUS  RtlValidateCorrelationVector(
-  _Inout_ PCORRELATION_VECTOR CorrelationVector
+```
+NTSYSAPI NTSTATUS RtlValidateCorrelationVector(
+  PCORRELATION_VECTOR Vector
 );
-````
+```
 
 ## Parameters
 

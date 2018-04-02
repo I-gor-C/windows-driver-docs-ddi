@@ -47,13 +47,13 @@ req.typenames: DriverMagneticStripeReaderAuthenticationLevel
 This enumeration defines the levels of magnetic stripe reader (MSR) authentication support.
 
 ## Syntax
-````
-typedef enum _DriverMagneticStripeReaderAuthenticationLevel { 
-  NotSupported  = 0,
-  Optional      = 1,
-  Required      = 2
-} DriverMagneticStripeReaderAuthenticationLevel;
-````
+```
+typedef enum DriverMagneticStripeReaderAuthenticationLevel {
+  NotSupported  ,
+  Optional      ,
+  Required
+} ;
+```
 
 ## Constants
 

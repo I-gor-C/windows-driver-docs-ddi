@@ -47,12 +47,12 @@ req.typenames: ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, *PACPI_DEVICE_INFORMATION_
 The ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER structure contains output arguments from the IOCTL_ACPI_GET_DEVICE_INFORMATION control method.
 
 ## Syntax
-````
+```
 typedef struct _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER {
-  ULONG  Signature;
+  ULONG  Signature;
   USHORT Size;
-  UCHAR  Revision;
-  UCHAR  Reserved0;
+  UCHAR  Revision;
+  UCHAR  Reserved0;
   USHORT VendorIdStringOffset;
   USHORT VendorStringLength;
   USHORT DeviceIdStringOffset;
@@ -63,11 +63,11 @@ typedef struct _ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER {
   USHORT InstanceIdOffset;
   USHORT BaseClassCode;
   USHORT HardwareRevision;
-  UCHAR  ProgrammingInterface;
-  UCHAR  Reserved1;
+  UCHAR  ProgrammingInterface;
+  UCHAR  Reserved1;
   USHORT SubClassCode;
 } ACPI_DEVICE_INFORMATION_OUTPUT_BUFFER, *PACPI_DEVICE_INFORMATION_OUTPUT_BUFFER;
-````
+```
 
 ## Members
 
@@ -163,4 +163,4 @@ A string of <b>InstanceIDLength</b> in length which contains a number that uniqu
 
 ## See Also
 
-<a href="..\acpiioct\ni-acpiioct-ioctl_acpi_get_device_information.md">IOCTL_ACPI_GET_DEVICE_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450790">IOCTL_ACPI_GET_DEVICE_INFORMATION</a>

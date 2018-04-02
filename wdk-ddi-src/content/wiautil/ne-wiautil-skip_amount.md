@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The SKIP_AMOUNT enumeration is used to indicate whether the file and informational headers of an image should be skipped over.
 
 ## Syntax
-````
-typedef enum  { 
-  SKIP_OFF      = 0,
-  SKIP_FILEHDR  = 1,
-  SKIP_BOTHHDR  = 2
-} SKIP_AMOUNT;
-````
+```
+typedef enum SKIP_AMOUNT {
+  SKIP_OFF      ,
+  SKIP_FILEHDR  ,
+  SKIP_BOTHHDR
+} ;
+```
 
 ## Constants
 

@@ -7,7 +7,7 @@ old-location: display\videoportqueuedpc.htm
 old-project: display
 ms.assetid: 9715ff37-397b-4102-a363-443b8076f881
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortQueueDpc, VideoPortQueueDpc function [Display Devices], VideoPort_Functions_133e8c8b-e445-4f83-ad93-7eb560047f3f.xml, display.videoportqueuedpc, video/VideoPortQueueDpc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>VideoPortQueueDpc</b> function allows a miniport driver to queue a DPC.
 
 ## Syntax
 
-````
-BOOLEAN VideoPortQueueDpc(
-  _In_ PVOID                 HwDeviceExtension,
-  _In_ PMINIPORT_DPC_ROUTINE CallbackRoutine,
-  _In_ PVOID                 Context
+```
+VIDEOPORT_API BOOLEAN VideoPortQueueDpc(
+  IN PVOID                 HwDeviceExtension,
+  IN PMINIPORT_DPC_ROUTINE CallbackRoutine,
+  IN PVOID                 Context
 );
-````
+```
 
 ## Parameters
 
@@ -66,7 +66,7 @@ Pointer to the miniport driver's device extension.
 
 `CallbackRoutine`
 
-Pointer to the miniport driver's <a href="..\video\nc-video-pminiport_dpc_routine.md">HwVidDpcRoutine</a> to be called when the DPC is scheduled. The callback routine must be nonpaged.
+Pointer to the miniport driver's <a href="https://msdn.microsoft.com/d4b443a2-3665-4e7c-b84a-5388a8fe8681">HwVidDpcRoutine</a> to be called when the DPC is scheduled. The callback routine must be nonpaged.
 
 `Context`
 
@@ -93,4 +93,4 @@ The deferred procedure is run when the IRQL on the current processor drops below
 
 ## See Also
 
-<a href="..\video\nc-video-pminiport_dpc_routine.md">HwVidDpcRoutine</a>
+<a href="https://msdn.microsoft.com/d4b443a2-3665-4e7c-b84a-5388a8fe8681">HwVidDpcRoutine</a>

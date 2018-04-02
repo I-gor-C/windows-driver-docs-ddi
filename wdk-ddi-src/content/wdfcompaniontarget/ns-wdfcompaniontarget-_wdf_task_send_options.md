@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 For internal use only.
 
 ## Syntax
-````
+```
 typedef struct _WDF_TASK_SEND_OPTIONS {
-  ULONG    Size;
-  ULONG    Flags;
+  ULONG    Size;
+  ULONG    Flags;
   LONGLONG Timeout;
-} WDF_TASK_SEND_OPTIONS, *PWDF_TASK_SEND_OPTIONS;
-````
+} *PWDF_TASK_SEND_OPTIONS, WDF_TASK_SEND_OPTIONS;
+```
 
 ## Members
 

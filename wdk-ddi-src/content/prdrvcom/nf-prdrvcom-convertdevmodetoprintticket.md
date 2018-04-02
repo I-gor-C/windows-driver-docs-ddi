@@ -50,15 +50,13 @@ The <code>IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket</code> metho
 
 ## Syntax
 
-````
+```
 HRESULT ConvertDevModeToPrintTicket(
-  [in]      ULONG            cbDevmode,
-  [in]      PDEVMODE         pDevmode,
-  [in]      ULONG            cbDrvPrivateSize,
-  [in]      PVOID            pPrivateDevmode,
-  [in, out] IXMLDOMDocument2 *pPrintTicket
+  IN ULONG            cbDevmode,
+  IN PDEVMODE         pDevmode,
+  IN IXMLDOMDocument2 *pPrintTicket
 );
-````
+```
 
 ## Parameters
 
@@ -93,8 +91,8 @@ The DEVMODEW structure fields that correlate with the part of the DEVMODEW struc
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/a32b5ec9-b4f2-4f33-879d-252806bd34ed">IPrintOemPrintTicketProvider</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553167">IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode</a>
-
-
-
-<a href="..\prcomoem\nn-prcomoem-iprintoemprintticketprovider.md">IPrintOemPrintTicketProvider</a>

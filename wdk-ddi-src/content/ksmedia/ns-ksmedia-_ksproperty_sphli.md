@@ -47,19 +47,19 @@ req.typenames: KSPROPERTY_SPHLI, *PKSPROPERTY_SPHLI
 The KSPROPERTY_SPHLI structure is used to describe a rectangle of subpicture or screen whose color or contrast is to be changed.
 
 ## Syntax
-````
+```
 typedef struct _KSPROPERTY_SPHLI {
-  USHORT    HLISS;
-  USHORT    Reserved;
-  ULONG     StartPTM;
-  ULONG     EndPTM;
-  USHORT    StartX;
-  USHORT    StartY;
-  USHORT    StopX;
-  USHORT    StopY;
+  USHORT    HLISS;
+  USHORT    Reserved;
+  ULONG     StartPTM;
+  ULONG     EndPTM;
+  USHORT    StartX;
+  USHORT    StartY;
+  USHORT    StopX;
+  USHORT    StopY;
   KS_COLCON ColCon;
-} KSPROPERTY_SPHLI, *PKSPROPERTY_SPHLI;
-````
+} *PKSPROPERTY_SPHLI, KSPROPERTY_SPHLI;
+```
 
 ## Members
 

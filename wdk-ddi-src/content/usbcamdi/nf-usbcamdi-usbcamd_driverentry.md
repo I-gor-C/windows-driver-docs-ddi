@@ -51,15 +51,15 @@ The <b>USBCAMD_DriverEntry</b> function registers the minidriver with USBCAMD, e
 
 ## Syntax
 
-````
+```
 ULONG USBCAMD_DriverEntry(
-  _In_ PVOID                           Context1,
-  _In_ PVOID                           Context2,
-  _In_ ULONG                           DeviceContextSize,
-  _In_ ULONG                           FrameContextSize,
-  _In_ PADAPTER_RECEIVE_PACKET_ROUTINE ReceivePacket
+  PVOID                           Context1,
+  PVOID                           Context2,
+  ULONG                           DeviceContextSize,
+  ULONG                           FrameCOntextSize,
+  PADAPTER_RECEIVE_PACKET_ROUTINE ReceivePacket
 );
-````
+```
 
 ## Parameters
 
@@ -81,7 +81,7 @@ TBD
 
 `ReceivePacket`
 
-Pointer to the minidriver-defined <a href="..\usbcamdi\nc-usbcamdi-padapter_receive_packet_routine.md">AdapterReceivePacket</a> function that handles adapter-based SRB requests.
+Pointer to the minidriver-defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff554080">AdapterReceivePacket</a> function that handles adapter-based SRB requests.
 
 
 ## Return Value
@@ -93,7 +93,7 @@ Pointer to the minidriver-defined <a href="..\usbcamdi\nc-usbcamdi-padapter_rece
 A camera minidriver must call <b>USBCAMD_DriverEntry</b> from the minidriver's <b>DriverEntry</b> routine. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff558717">DriverEntry for Stream Class Minidrivers</a>
 
 
-<i>FrameContextSize</i> is optional. A non-<b>NULL</b> value should be provided only with calls to <a href="..\usbcamdi\nc-usbcamdi-pcam_new_frame_routine.md">CamNewVideoFrame</a> or <a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine.md">CamProcessRawVideoFrame</a>.
+<i>FrameContextSize</i> is optional. A non-<b>NULL</b> value should be provided only with calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff557617">CamNewVideoFrame</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff557623">CamProcessRawVideoFrame</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -104,12 +104,12 @@ A camera minidriver must call <b>USBCAMD_DriverEntry</b> from the minidriver's <
 
 ## See Also
 
-<a href="..\usbcamdi\nc-usbcamdi-pcam_new_frame_routine.md">CamNewVideoFrame</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554080">AdapterReceivePacket</a>
 
 
 
-<a href="..\usbcamdi\nc-usbcamdi-padapter_receive_packet_routine.md">AdapterReceivePacket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557617">CamNewVideoFrame</a>
 
 
 
-<a href="..\usbcamdi\nc-usbcamdi-pcam_process_raw_frame_routine.md">CamProcessRawVideoFrame</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557623">CamProcessRawVideoFrame</a>

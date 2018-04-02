@@ -7,7 +7,7 @@ old-location: ifsk\fsrtllookupperstreamcontextinternal.htm
 old-project: ifsk
 ms.assetid: 672fc668-452b-4f37-9526-88bedb4a1ef9
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlLookupPerStreamContextInternal, FsRtlLookupPerStreamContextInternal function [Installable File System Drivers], fsrtlref_872d7113-0cde-4ac9-a504-fedca6aa51e7.xml, ifsk.fsrtllookupperstreamcontextinternal, ntifs/FsRtlLookupPerStreamContextInternal
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,15 +45,17 @@ req.typenames: TOKEN_TYPE
 
 
 # FsRtlLookupPerStreamContextInternal function
-The <b>FsRtlLookupPerStreamContextInternal</b> routine is reserved for system use. See <a href="..\ntifs\nf-ntifs-fsrtllookupperstreamcontext.md">FsRtlLookupPerStreamContext</a>.
+The <b>FsRtlLookupPerStreamContextInternal</b> routine is reserved for system use. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff546945">FsRtlLookupPerStreamContext</a>.
 
 ## Syntax
 
-````
-  FsRtlLookupPerStreamContextInternal(
-    
+```
+NTKERNELAPI PFSRTL_PER_STREAM_CONTEXT FsRtlLookupPerStreamContextInternal(
+  PFSRTL_ADVANCED_FCB_HEADER StreamContext,
+  PVOID                      OwnerId,
+  PVOID                      InstanceId
 );
-````
+```
 
 ## Parameters
 

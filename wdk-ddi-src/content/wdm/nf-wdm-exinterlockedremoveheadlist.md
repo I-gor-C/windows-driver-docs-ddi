@@ -7,7 +7,7 @@ old-location: kernel\exinterlockedremoveheadlist.htm
 old-project: kernel
 ms.assetid: d024da2c-9629-4907-98b8-a29dc6022ac0
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExInterlockedRemoveHeadList, ExInterlockedRemoveHeadList routine [Kernel-Mode Driver Architecture], k102_6ab2420a-7522-4445-9a6e-c8a603f5cff8.xml, kernel.exinterlockedremoveheadlist, wdm/ExInterlockedRemoveHeadList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>ExInterlockedRemoveHeadList</b> routine removes an entry from the beginni
 
 ## Syntax
 
-````
-PLIST_ENTRY ExInterlockedRemoveHeadList(
-  _Inout_ PLIST_ENTRY ListHead,
-  _Inout_ PKSPIN_LOCK Lock
+```
+NTKERNELAPI PLIST_ENTRY ExInterlockedRemoveHeadList(
+  PLIST_ENTRY                                  ListHead,
+  _Requires_lock_not_held_(*_Curr_)PKSPIN_LOCK Lock
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff
 
 `Lock`
 
-A pointer to a <b>KSPIN_LOCK</b> structure that serves as the spin lock used to synchronize access to the list. The storage for the spin lock must be resident and must have been initialized by calling <a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>. You must use this spin lock only with the <b>ExInterlocked<i>Xxx</i>List</b> routines.
+A pointer to a <b>KSPIN_LOCK</b> structure that serves as the spin lock used to synchronize access to the list. The storage for the spin lock must be resident and must have been initialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff552160">KeInitializeSpinLock</a>. You must use this spin lock only with the <b>ExInterlocked<i>Xxx</i>List</b> routines.
 
 
 ## Return Value
@@ -74,7 +74,7 @@ A pointer to a <b>KSPIN_LOCK</b> structure that serves as the spin lock used to 
 
 ## Remarks
 
-<b>ExInterlockedRemoveHeadList</b> performs a similar operation as <a href="..\wudfwdm\nf-wudfwdm-removeheadlist.md">RemoveHeadList</a>, but atomically. Do not mix atomic and non-atomic calls on the same list.
+<b>ExInterlockedRemoveHeadList</b> performs a similar operation as <a href="https://msdn.microsoft.com/library/windows/hardware/ff561032">RemoveHeadList</a>, but atomically. Do not mix atomic and non-atomic calls on the same list.
 
 For more information about using this routine to implement a doubly linked list, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563802">Singly and Doubly Linked Lists</a>.
 
@@ -92,20 +92,20 @@ The <b>ExInterlockedRemoveHeadList</b> routine can be called at any IRQL. The st
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinterlockedinsertheadlist.md">ExInterlockedInsertHeadList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545397">ExInterlockedInsertHeadList</a>
 
 
 
-<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545402">ExInterlockedInsertTailList</a>
 
 
 
-<a href="..\wudfwdm\nf-wudfwdm-initializelisthead.md">InitializeListHead</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547799">InitializeListHead</a>
 
 
 
-<a href="..\wudfwdm\nf-wudfwdm-removeheadlist.md">RemoveHeadList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552160">KeInitializeSpinLock</a>
 
 
 
-<a href="..\wdm\nf-wdm-exinterlockedinserttaillist.md">ExInterlockedInsertTailList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561032">RemoveHeadList</a>

@@ -47,13 +47,13 @@ req.typenames: KSTIME, *PKSTIME
 The KSTIME structure specifies a time stamp that can be used to indicate stream position.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSTIME {
   LONGLONG Time;
-  ULONG    Numerator;
-  ULONG    Denominator;
-} KSTIME, *PKSTIME;
-````
+  ULONG    Numerator;
+  ULONG    Denominator;
+} *PKSTIME, KSTIME;
+```
 
 ## Members
 

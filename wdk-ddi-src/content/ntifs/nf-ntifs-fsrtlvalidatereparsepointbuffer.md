@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlvalidatereparsepointbuffer.htm
 old-project: ifsk
 ms.assetid: fb67b116-12f5-4eef-ab05-f2056ccec4e3
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlValidateReparsePointBuffer, FsRtlValidateReparsePointBuffer routine [Installable File System Drivers], fsrtlref_809c9e16-62b6-4a08-82d5-d6e86e7844ff.xml, ifsk.fsrtlvalidatereparsepointbuffer, ntifs/FsRtlValidateReparsePointBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>FsRtlValidateReparsePointBuffer</b> routine verifies that the specified r
 
 ## Syntax
 
-````
-NTSTATUS FsRtlValidateReparsePointBuffer(
-  _In_ ULONG                BufferLength,
-  _In_ PREPARSE_DATA_BUFFER ReparseBuffer
+```
+NTKERNELAPI NTSTATUS FsRtlValidateReparsePointBuffer(
+  ULONG                BufferLength,
+  PREPARSE_DATA_BUFFER ReparseBuffer
 );
-````
+```
 
 ## Parameters
 
@@ -129,8 +129,8 @@ Reparse tags contain several bits that cannot be set except by system components
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_reparse_guid_data_buffer.md">REPARSE_GUID_DATA_BUFFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552012">REPARSE_DATA_BUFFER</a>
 
 
 
-<a href="..\ntifs\ns-ntifs-_reparse_data_buffer.md">REPARSE_DATA_BUFFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552014">REPARSE_GUID_DATA_BUFFER</a>

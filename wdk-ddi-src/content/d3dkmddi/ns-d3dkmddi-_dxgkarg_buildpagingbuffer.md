@@ -7,7 +7,7 @@ old-location: display\dxgkarg_buildpagingbuffer.htm
 old-project: display
 ms.assetid: dc0de06b-d495-4ce2-b0e2-a6fefd6c8e0c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*IN_PDXGKARG_BUILDPAGINGBUFFER, DXGKARG_BUILDPAGINGBUFFER, DXGKARG_BUILDPAGINGBUFFER structure [Display Devices], DXGKARG_BUILDPAGINGBUFFER_OPERATION, DXGK_BUILDPAGINGBUFFER_OPERATION, DmStructs_06cb7ec2-482d-41ba-b550-3c4f27d36070.xml, _DXGKARG_BUILDPAGINGBUFFER, d3dkmddi/DXGKARG_BUILDPAGINGBUFFER, display.dxgkarg_buildpagingbuffer"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,141 +47,135 @@ req.typenames: DXGKARG_BUILDPAGINGBUFFER
 The <b>DXGKARG_BUILDPAGINGBUFFER</b> structure describes parameters for building a paging buffer that is used in a memory-transfer operation.
 
 ## Syntax
-````
+```
 typedef struct _DXGKARG_BUILDPAGINGBUFFER {
-  VOID                             *pDmaBuffer;
-  UINT                             DmaSize;
-  VOID                             *pDmaBufferPrivateData;
-  UINT                             DmaBufferPrivateDataSize;
+  VOID                             *pDmaBuffer;
+  UINT                             DmaSize;
+  VOID                             *pDmaBufferPrivateData;
+  UINT                             DmaBufferPrivateDataSize;
   DXGK_BUILDPAGINGBUFFER_OPERATION Operation;
-  UINT                             MultipassOffset;
+  UINT                             MultipassOffset;
   union {
+    DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES    CopyPageTableEntries;
+    DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL             FillVirtual;
+    DXGK_BUILDPAGINGBUFFER_FLUSHTLB                FlushTlb;
+    DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY         NotifyResidency;
+    DXGK_BUILDPAGINGBUFFER_SIGNALMONITOREDFENCE    SignalMonitoredFence;
     struct {
-      HANDLE             hAllocation;
-      UINT               TransferOffset;
-      SIZE_T             TransferSize;
+      HANDLE             hAllocation;
+      UINT               TransferOffset;
+      SIZE_T             TransferSize;
       struct {
         UINT SegmentId;
-        union {
+        struct {
           LARGE_INTEGER SegmentAddress;
-          MDL           *pMdl;
+          MDL           *pMdl;
         };
-      } Source;
+      } Source;
       struct {
         UINT SegmentId;
-        union {
+        struct {
           LARGE_INTEGER SegmentAddress;
-          MDL           *pMdl;
+          MDL           *pMdl;
         };
-      } Destination;
+      } Destination;
       DXGK_TRANSFERFLAGS Flags;
-      UINT               MdlOffset;
-    } Transfer;
+      UINT               MdlOffset;
+    } Transfer;
+    DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL         TransferVirtual;
+    DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION UpdateContextAllocation;
+    DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE         UpdatePageTable;
     struct {
       HANDLE hAllocation;
       SIZE_T FillSize;
-      UINT   FillPattern;
+      UINT   FillPattern;
       struct {
-        UINT          SegmentId;
         LARGE_INTEGER SegmentAddress;
-      } Destination;
-    } Fill;
+        UINT          SegmentId;
+      } Destination;
+    } Fill;
     struct {
-      HANDLE                   hAllocation;
+      HANDLE                   hAllocation;
       DXGK_DISCARDCONTENTFLAGS Flags;
-      UINT                     SegmentId;
-      PHYSICAL_ADDRESS         SegmentAddress;
-    } DiscardContent;
+      UINT                     SegmentId;
+      PHYSICAL_ADDRESS         SegmentAddress;
+    } DiscardContent;
     struct {
-      UINT             SegmentId;
+      UINT             SegmentId;
       PHYSICAL_ADDRESS PhysicalAddress;
-    } ReadPhysical;
+    } ReadPhysical;
     struct {
-      UINT             SegmentId;
+      UINT             SegmentId;
       PHYSICAL_ADDRESS PhysicalAddress;
-    } WritePhysical;
+    } WritePhysical;
     struct {
-      HANDLE                hDevice;
-      HANDLE                hAllocation;
-      UINT                  SegmentId;
-      SIZE_T                OffsetInPages;
-      SIZE_T                NumberOfPages;
-      PMDL                  pMdl;
+      HANDLE                hDevice;
+      HANDLE                hAllocation;
+      UINT                  SegmentId;
+      SIZE_T                OffsetInPages;
+      SIZE_T                NumberOfPages;
+      PMDL                  pMdl;
       DXGK_MAPAPERTUREFLAGS Flags;
-      ULONG                 MdlOffset;
-    } MapApertureSegment;
+      ULONG                 MdlOffset;
+    } MapApertureSegment;
     struct {
-      HANDLE           hDevice;
-      HANDLE           hAllocation;
-      UINT             SegmentId;
-      SIZE_T           OffsetInPages;
-      SIZE_T           NumberOfPages;
+      HANDLE           hDevice;
+      HANDLE           hAllocation;
+      UINT             SegmentId;
+      SIZE_T           OffsetInPages;
+      SIZE_T           NumberOfPages;
       PHYSICAL_ADDRESS DummyPage;
-    } UnmapApertureSegment;
+    } UnmapApertureSegment;
     struct {
-      HANDLE             hAllocation;
-      UINT               TransferOffset;
-      SIZE_T             TransferSize;
+      HANDLE             hAllocation;
+      UINT               TransferOffset;
+      SIZE_T             TransferSize;
       struct {
         UINT SegmentId;
-        union {
+        struct {
           LARGE_INTEGER SegmentAddress;
-          MDL           *pMdl;
+          MDL           *pMdl;
         };
-      } Source;
+      } Source;
       struct {
         UINT SegmentId;
-        union {
+        struct {
           LARGE_INTEGER SegmentAddress;
-          MDL           *pMdl;
+          MDL           *pMdl;
         };
-      } Destination;
+      } Destination;
       DXGK_TRANSFERFLAGS Flags;
-      UINT               SwizzlingRangeId;
-      UINT               SwizzlingRangeData;
-    } SpecialLockTransfer;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WIN8)
+      UINT               SwizzlingRangeId;
+      UINT               SwizzlingRangeData;
+    } SpecialLockTransfer;
     struct {
       HANDLE hAllocation;
       struct {
-        UINT                    SegmentId;
-        union {
+        D3DGPU_VIRTUAL_ADDRESS GpuVirtualAddress;
+        UINT                   SegmentId;
+        PVOID                  VirtualAddress;
+        struct {
           LARGE_INTEGER SegmentAddress;
-          MDL           *pMdl;
+          MDL           *pMdl;
         };
-        PVOID                   VirtualAddress;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM2_0)
-        D3DGPU_VIRTUAL_ADDRESS  GpuVirtualAddress;
-#endif 
-      } Destination;
-    } InitContextResource;
-#endif 
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM2_0)
-    DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL         TransferVirtual;
-    DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL             FillVirtual;
-    DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE         UpdatePageTable;
-    DXGK_BUILDPAGINGBUFFER_FLUSHTLB                FlushTlb;
-    DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES    CopyPageTableEntries;
-    DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION UpdateContextAllocation;
-    DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY         NotifyResidency;
-#endif 
+      } Destination;
+    } InitContextResource;
     struct {
       UINT Reserved[64];
-    } Reserved;
+    } Reserved;
   };
-  HANDLE                           hSystemContext;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM2_0)
-  D3DGPU_VIRTUAL_ADDRESS           DmaBufferGpuVirtualAddress;
-#endif 
+  HANDLE                           hSystemContext;
+  D3DGPU_VIRTUAL_ADDRESS           DmaBufferGpuVirtualAddress;
+  UINT                             DmaBufferWriteOffset;
 } DXGKARG_BUILDPAGINGBUFFER;
-````
+```
 
 ## Members
 
 
 `pDmaBuffer`
 
-[in/out] A virtual address to the first available byte in the paging buffer. When the driver is first called with a new paging buffer, this virtual address is aligned on 4 KB. The driver tightly packs operations in the paging buffer until the paging buffer is full and then uses a new paging buffer. Therefore, if the graphics processing unit (GPU) requires a specific alignment for a paging-buffer submission, the driver should enforce this alignment by padding the operations that it writes to the paging buffer. Before the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a> function returns, the driver should update <b>pDmaBuffer</b> to point past the last byte that is written to the paging buffer.
+[in/out] A virtual address to the first available byte in the paging buffer. When the driver is first called with a new paging buffer, this virtual address is aligned on 4 KB. The driver tightly packs operations in the paging buffer until the paging buffer is full and then uses a new paging buffer. Therefore, if the graphics processing unit (GPU) requires a specific alignment for a paging-buffer submission, the driver should enforce this alignment by padding the operations that it writes to the paging buffer. Before the <a href="https://msdn.microsoft.com/d315ff53-4a9f-46a3-ad74-d65a5eb72de1">DxgkDdiBuildPagingBuffer</a> function returns, the driver should update <b>pDmaBuffer</b> to point past the last byte that is written to the paging buffer.
 
 `DmaSize`
 
@@ -197,7 +191,7 @@ typedef struct _DXGKARG_BUILDPAGINGBUFFER {
 
 `Operation`
 
-[in] A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_buildpagingbuffer_operation.md">DXGK_BUILDPAGINGBUFFER_OPERATION</a>-typed value that indicates the type of memory operation to perform.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/dn906827">DXGK_BUILDPAGINGBUFFER_OPERATION</a>-typed value that indicates the type of memory operation to perform.
 
 `MultipassOffset`
 
@@ -226,35 +220,71 @@ MDL is defined in the <a href="https://msdn.microsoft.com/library/windows/hardwa
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_buildpagingbuffer_fillvirtual.md">DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451242">DXGKARGCB_CREATECONTEXTALLOCATION</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557559">DXGKARG_CREATEALLOCATION</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_buildpagingbuffer_copypagetableentries.md">DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_buildpagingbuffer_updatepagetable.md">DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn894164">DXGK_BUILDPAGINGBUFFER_COPYPAGETABLEENTRIES</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_createcontextallocation.md">DXGKARGCB_CREATECONTEXTALLOCATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn894166">DXGK_BUILDPAGINGBUFFER_FILLVIRTUAL</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_buildpagingbuffer_transfervirtual.md">DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn894167">DXGK_BUILDPAGINGBUFFER_FLUSHTLB</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn894168">DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn894169">DXGK_BUILDPAGINGBUFFER_TRANSFERVIRTUAL</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn894170">DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn894171">DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561055">DXGK_DISCARDCONTENTFLAGS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561139">DXGK_MAPAPERTUREFLAGS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562066">DXGK_TRANSFERFLAGS</a>
+
+
+
+<a href="https://msdn.microsoft.com/b6b142a4-20eb-4368-bd7f-8a25f4fe48ca">DxgkCbCreateContextAllocation</a>
+
+
+
+<a href="https://msdn.microsoft.com/d315ff53-4a9f-46a3-ad74-d65a5eb72de1">DxgkDdiBuildPagingBuffer</a>
+
+
+
+<a href="https://msdn.microsoft.com/a28287d6-4dfa-4db4-92df-bbcd9379a5b2">DxgkDdiCreateAllocation</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a>
 
 
 
@@ -262,40 +292,4 @@ MDL is defined in the <a href="https://msdn.microsoft.com/library/windows/hardwa
 
 
 
-<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
-
-
-
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
-
-
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
-
-
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_buildpagingbuffer_notifyresidency.md">DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY</a>
-
-
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_buildpagingbuffer_updatecontextallocation.md">DXGK_BUILDPAGINGBUFFER_UPDATECONTEXTALLOCATION</a>
-
-
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_discardcontentflags.md">DXGK_DISCARDCONTENTFLAGS</a>
-
-
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_transferflags.md">DXGK_TRANSFERFLAGS</a>
-
-
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_buildpagingbuffer_flushtlb.md">DXGK_BUILDPAGINGBUFFER_FLUSHTLB</a>
-
-
-
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_mapapertureflags.md">DXGK_MAPAPERTUREFLAGS</a>
-
-
-
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
+<a href="https://msdn.microsoft.com/69022797-432a-410b-8cbf-e1ef7111e7ea">pfnLockCb</a>

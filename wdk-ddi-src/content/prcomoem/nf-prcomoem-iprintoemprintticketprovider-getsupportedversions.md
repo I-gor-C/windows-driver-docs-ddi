@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetSupportedVersions method
+# IPrintOemPrintTicketProvider::GetSupportedVersions method
 The <code>IPrintOemPrintTicketProvider::GetSupportedVersions</code> method retrieves major versions of the print schemas that are supported by the plug-in provider.
 
 ## Syntax
 
-````
-STDMETHOD GetSupportedVersions(
-  [in]  HANDLE hPrinter,
-  [out] INT    *ppVersions,
-  [out] INT    *cVersions
+```
+HRESULT GetSupportedVersions(
+  HANDLE   hPrinter,
+  INT * [] ppVersions,
+  INT      *cVersions
 );
-````
+```
 
 ## Parameters
 
@@ -93,8 +93,8 @@ The plug-in is responsible for allocating the array memory that is pointed to by
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/a32b5ec9-b4f2-4f33-879d-252806bd34ed">IPrintOemPrintTicketProvider</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553151">IPrintOemPrintTicketProvider::BindPrinter</a>
-
-
-
-<a href="..\prcomoem\nn-prcomoem-iprintoemprintticketprovider.md">IPrintOemPrintTicketProvider</a>

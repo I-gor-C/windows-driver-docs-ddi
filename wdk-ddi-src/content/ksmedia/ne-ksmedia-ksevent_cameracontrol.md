@@ -47,12 +47,12 @@ req.typenames: KSEVENT_CAMERACONTROL
 Specifies camera control event notifications that the driver generates to indicate that an operation has been completed or canceled.
 
 ## Syntax
-````
-typedef enum  { 
-  KSEVENT_CAMERACONTROL_FOCUS  = 0,
-  KSEVENT_CAMERACONTROL_ZOOM   = 1
-} KSEVENT_CAMERACONTROL;
-````
+```
+typedef enum KSEVENT_CAMERACONTROL {
+  KSEVENT_CAMERACONTROL_FOCUS  ,
+  KSEVENT_CAMERACONTROL_ZOOM
+} ;
+```
 
 ## Constants
 
@@ -71,7 +71,7 @@ typedef enum  {
 
 ## Remarks
 
-For more information, see <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s_ex.md">KSPROPERTY_CAMERACONTROL_S_EX</a>.
+For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/jj151593">KSPROPERTY_CAMERACONTROL_S_EX</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,7 +81,7 @@ For more information, see <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontro
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s_ex.md">KSPROPERTY_CAMERACONTROL_S_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj156037">KSEVENT_CAMERACONTROL_FOCUS</a>
 
 
 
@@ -89,4 +89,4 @@ For more information, see <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontro
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/jj156037">KSEVENT_CAMERACONTROL_FOCUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj151593">KSPROPERTY_CAMERACONTROL_S_EX</a>

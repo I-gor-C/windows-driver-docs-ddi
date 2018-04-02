@@ -53,12 +53,12 @@ The <b>KsGetBusEnumPnpDeviceObject</b> function retrieves the Plug and Play devi
 
 ## Syntax
 
-````
-NTSTATUS KsGetBusEnumPnpDeviceObject(
-  _In_  PDEVICE_OBJECT DeviceObject,
-  _Out_ PDEVICE_OBJECT *PnpDeviceObject
+```
+KSDDKAPI NTSTATUS KsGetBusEnumPnpDeviceObject(
+  PDEVICE_OBJECT DeviceObject,
+  PDEVICE_OBJECT *PnpDeviceObject
 );
-````
+```
 
 ## Parameters
 

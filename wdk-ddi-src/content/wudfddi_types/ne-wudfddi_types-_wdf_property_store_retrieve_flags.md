@@ -50,17 +50,14 @@ req.product: Windows 10 or later.
 The <b>WDF_PROPERTY_STORE_RETRIEVE_FLAGS</b> enumeration contains values that indicate whether  UMDF should create a registry key if the key does not already exist.
 
 ## Syntax
-````
-typedef enum _WDF_PROPERTY_STORE_RETRIEVE_FLAGS { 
-  WdfPropertyStoreNormal              = 0,
-  WdfPropertyStoreCreateIfMissing     = 0x1,
-  WdfPropertyStoreCreateVolatile      = 0x2,
-  WdfPropertyStoreRetrieveFlagsMask   = WdfPropertyStoreNormal |
-                                      WdfPropertyStoreCreateIfMissing |
-                                      WdfPropertyStoreCreateVolatile
-
+```
+typedef enum _WDF_PROPERTY_STORE_RETRIEVE_FLAGS {
+  WdfPropertyStoreNormal             ,
+  WdfPropertyStoreCreateIfMissing    ,
+  WdfPropertyStoreCreateVolatile     ,
+  WdfPropertyStoreRetrieveFlagsMask
 } WDF_PROPERTY_STORE_RETRIEVE_FLAGS;
-````
+```
 
 ## Constants
 
@@ -98,7 +95,7 @@ typedef enum _WDF_PROPERTY_STORE_RETRIEVE_FLAGS {
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
 
 
 
@@ -106,4 +103,4 @@ typedef enum _WDF_PROPERTY_STORE_RETRIEVE_FLAGS {
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>

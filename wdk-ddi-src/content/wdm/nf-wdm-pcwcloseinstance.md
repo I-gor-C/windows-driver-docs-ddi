@@ -50,11 +50,11 @@ The <b>PcwCloseInstance</b> function closes the specified instance of the counte
 
 ## Syntax
 
-````
-VOID PcwCloseInstance(
-  _In_ PPCW_INSTANCE Instance
+```
+void PcwCloseInstance(
+  PPCW_INSTANCE Instance
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ None
 
 ## Remarks
 
-Use the <a href="..\wdm\nf-wdm-pcwcreateinstance.md">PcwCreateInstance</a> function to create an instance of a registered counter set. You cannot call <b>PcwCloseInstance</b> if you have already called <a href="..\wdm\nf-wdm-pcwunregister.md">PcwUnregister</a>. When you unregister the counter set, the instances are closed for you.
+Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550318">PcwCreateInstance</a> function to create an instance of a registered counter set. You cannot call <b>PcwCloseInstance</b> if you have already called <a href="https://msdn.microsoft.com/library/windows/hardware/ff550326">PcwUnregister</a>. When you unregister the counter set, the instances are closed for you.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,4 +83,4 @@ Use the <a href="..\wdm\nf-wdm-pcwcreateinstance.md">PcwCreateInstance</a> funct
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pcwcreateinstance.md">PcwCreateInstance</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550318">PcwCreateInstance</a>

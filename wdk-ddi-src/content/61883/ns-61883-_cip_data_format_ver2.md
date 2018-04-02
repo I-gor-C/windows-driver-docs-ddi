@@ -44,15 +44,22 @@ req.typenames: CIP_DATA_FORMAT_VER2, *PCIP_DATA_FORMAT_VER2
 ---
 
 # _CIP_DATA_FORMAT_VER2 structure
-This structure is a CIP data format which is used by <a href="..\61883\ns-61883-_cmp_connect_ver2.md">CMP_CONNECT_VER2</a>.
+This structure is a CIP data format which is used by <a href="https://msdn.microsoft.com/2A2C1478-0512-4F84-90B9-B9C62B5D44DA">CMP_CONNECT_VER2</a>.
 
 ## Syntax
-````
+```
 typedef struct _CIP_DATA_FORMAT_VER2 {
-  HANDLE     hConnect;
-  PCIP_FRAME Frame;
+  UCHAR    FMT;
+  UCHAR    FDF_hi;
+  UCHAR    FDF_mid;
+  UCHAR    FDF_lo;
+  BOOLEAN  bHeader;
+  UCHAR    Padding;
+  UCHAR    BlockSize;
+  UCHAR    Fraction;
+  IN ULONG BlockPeriod;
 } CIP_DATA_FORMAT_VER2, *PCIP_DATA_FORMAT_VER2;
-````
+```
 
 ## Members
 

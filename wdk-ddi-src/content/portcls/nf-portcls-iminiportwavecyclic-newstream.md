@@ -7,7 +7,7 @@ old-location: audio\iminiportwavecyclic_newstream.htm
 old-project: audio
 ms.assetid: a83c6eb9-a29a-4695-99d3-168dff68c4a2
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IMiniportWaveCyclic, IMiniportWaveCyclic interface [Audio Devices], NewStream method, IMiniportWaveCyclic::NewStream, NewStream method [Audio Devices], NewStream method [Audio Devices], IMiniportWaveCyclic interface, NewStream,IMiniportWaveCyclic.NewStream, audio.iminiportwavecyclic_newstream, audmp-routines_eb476e18-bd94-4665-a3df-3e95f91e1c5b.xml, portcls/IMiniportWaveCyclic::NewStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,29 +44,29 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# NewStream method
+# IMiniportWaveCyclic::NewStream method
 The <code>NewStream</code> method creates a new instance of a logical stream that is associated with a specified physical channel.
 
 ## Syntax
 
-````
+```
 NTSTATUS NewStream(
-  [out]          PMINIPORTWAVECYCLICSTREAM *Stream,
-  [in, optional] PUNKNOWN                  OuterUnknown,
-  [in]           POOL_TYPE                 PoolType,
-  [in]           ULONG                     Pin,
-  [in]           BOOLEAN                   Capture,
-  [in]           PKSDATAFORMAT             DataFormat,
-  [out]          PDMACHANNEL               *DmaChannel,
-  [out]          PSERVICEGROUP             *ServiceGroup
+  PMINIPORTWAVECYCLICSTREAM *Stream,
+  PUNKNOWN                  OuterUnknown,
+  POOL_TYPE                 PoolType,
+  ULONG                     Pin,
+  BOOLEAN                   Capture,
+  PKSDATAFORMAT             DataFormat,
+  PDMACHANNEL               *DmaChannel,
+  PSERVICEGROUP             *ServiceGroup
 );
-````
+```
 
 ## Parameters
 
 `Stream`
 
-Output pointer for the new stream. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the stream object's <a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a> interface. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter.
+Output pointer for the new stream. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the stream object's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536715">IMiniportWaveCyclicStream</a> interface. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter.
 
 `OuterUnknown`
 
@@ -74,7 +74,7 @@ Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate th
 
 `PoolType`
 
-Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter will be one of the nonpaged pool types defined in the <a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a> enumeration.
+Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter will be one of the nonpaged pool types defined in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a> enumeration.
 
 `Pin`
 
@@ -86,15 +86,15 @@ Specifies whether to create a capture stream or a render stream. This parameter 
 
 `DataFormat`
 
-Pointer to a <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> structure indicating the format to use for this instance.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a> structure indicating the format to use for this instance.
 
 `DmaChannel`
 
-Output pointer to the DMA channel. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a> interface of the miniport driver's DMA-channel object. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter. For more information, see the following Remarks section.
+Output pointer to the DMA channel. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536547">IDmaChannel</a> interface of the miniport driver's DMA-channel object. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter. For more information, see the following Remarks section.
 
 `ServiceGroup`
 
-Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> interface of the stream's service group object. This is the service group that is being registered for interrupt notification. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter.
+Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536994">IServiceGroup</a> interface of the stream's service group object. This is the service group that is being registered for interrupt notification. The caller specifies a valid, non-<b>NULL</b> pointer value for this parameter.
 
 
 ## Return Value
@@ -142,23 +142,7 @@ The <i>Stream</i>, <i>OuterUnknown</i>, <i>DmaChannel</i>, and <i>ServiceGroup</
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-idmachannel.md">IDmaChannel</a>
-
-
-
-<a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a>
-
-
-
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-
-
-
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-
-
-
-<a href="..\portcls\nn-portcls-iminiportwavecyclicstream.md">IMiniportWaveCyclicStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536547">IDmaChannel</a>
 
 
 
@@ -166,4 +150,20 @@ The <i>Stream</i>, <i>OuterUnknown</i>, <i>DmaChannel</i>, and <i>ServiceGroup</
 
 
 
-<a href="..\portcls\nn-portcls-iminiportwavecyclic.md">IMiniportWaveCyclic</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536714">IMiniportWaveCyclic</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536715">IMiniportWaveCyclicStream</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536994">IServiceGroup</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a>

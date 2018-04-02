@@ -49,17 +49,17 @@ The<b> KsGateTerminateAnd</b> function deletes an existing AND gate and removes 
 
 ## Syntax
 
-````
-void __inline KsGateTerminateAnd(
-  _In_ PKSGATE AndGate
+```
+void KsGateTerminateAnd(
+  PKSGATE AndGate
 );
-````
+```
 
 ## Parameters
 
 `AndGate`
 
-A pointer to a <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure that is the AND gate to delete. This gate must be at the beginning of a gate chain.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a> structure that is the AND gate to delete. This gate must be at the beginning of a gate chain.
 
 
 ## Return Value
@@ -80,12 +80,12 @@ Logical gates should be deleted in a front to back manner. <b>KsGateTerminateAnd
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562574">KsGateInitializeAnd</a>
 
 
 
-<a href="..\ks\nf-ks-ksgateterminateor.md">KsGateTerminateOr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562576">KsGateInitializeOr</a>
 
 
 
-<a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562588">KsGateTerminateOr</a>

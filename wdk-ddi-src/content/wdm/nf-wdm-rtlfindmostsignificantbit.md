@@ -7,7 +7,7 @@ old-location: kernel\rtlfindmostsignificantbit.htm
 old-project: kernel
 ms.assetid: 372a155f-e270-49ab-a5ab-9b933b29ed74
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlFindMostSignificantBit, RtlFindMostSignificantBit routine [Kernel-Mode Driver Architecture], k109_c8dcb9dd-ec2c-4b0c-92f2-167dcee10a96.xml, kernel.rtlfindmostsignificantbit, wdm/RtlFindMostSignificantBit
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>RtlFindMostSignificantBit</b> routine returns the zero-based position of 
 
 ## Syntax
 
-````
-CCHAR RtlFindMostSignificantBit(
-  _In_ ULONGLONG Set
+```
+NTSYSAPI CCHAR RtlFindMostSignificantBit(
+  ULONGLONG Set
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ The zero-based bit position of the most significant nonzero bit, or -1 if every 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlfindleastsignificantbit.md">RtlFindLeastSignificantBit</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561880">RtlFindLeastSignificantBit</a>

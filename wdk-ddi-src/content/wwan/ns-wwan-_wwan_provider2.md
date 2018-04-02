@@ -7,7 +7,7 @@ old-location: netvista\wwan_provider2.htm
 old-project: netvista
 ms.assetid: 0B9352EE-C7CE-4F9D-9373-0096222295A4
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWWAN_PROVIDER2, PWWAN_PROVIDER2, PWWAN_PROVIDER2 structure pointer [Network Drivers Starting with Windows Vista], WWAN_PROVIDER2, WWAN_PROVIDER2 structure [Network Drivers Starting with Windows Vista], _WWAN_PROVIDER2, netvista.wwan_provider2, wwan/PWWAN_PROVIDER2, wwan/WWAN_PROVIDER2"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 The WWAN_PROVIDER2 structure describes the details of a network provider.
 
 ## Syntax
-````
+```
 typedef struct _WWAN_PROVIDER2 {
-  WWAN_PROVIDER       Provider;
+  WWAN_PROVIDER       Provider;
   WWAN_CELLULAR_CLASS WwanCellularClass;
-  ULONG               Rssi;
-  ULONG               ErrorRate;
-} WWAN_PROVIDER2, *PWWAN_PROVIDER2;
-````
+  ULONG               Rssi;
+  ULONG               ErrorRate;
+} *PWWAN_PROVIDER2, WWAN_PROVIDER2;
+```
 
 ## Members
 
@@ -70,11 +70,11 @@ The cellular class that the provider uses.
 
 `Rssi`
 
-A value that represents the strength of the wireless signal. Please refer to <a href="..\wwan\ns-wwan-_wwan_signal_state.md">WWAN_SIGNAL_STATE</a> on the format of this member.
+A value that represents the strength of the wireless signal. Please refer to <a href="https://msdn.microsoft.com/library/windows/hardware/ff571239">WWAN_SIGNAL_STATE</a> on the format of this member.
 
 `ErrorRate`
 
-A coded value that represents a percentage range of error rates. Please refer to <a href="..\wwan\ns-wwan-_wwan_signal_state.md">WWAN_SIGNAL_STATE</a> on the format of this member.
+A coded value that represents a percentage range of error rates. Please refer to <a href="https://msdn.microsoft.com/library/windows/hardware/ff571239">WWAN_SIGNAL_STATE</a> on the format of this member.
 
 
 ## Requirements
@@ -85,12 +85,12 @@ A coded value that represents a percentage range of error rates. Please refer to
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_signal_state.md">WWAN_SIGNAL_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571199">WWAN_CELLULAR_CLASS</a>
 
 
 
-<a href="..\wwan\ne-wwan-_wwan_cellular_class.md">WWAN_CELLULAR_CLASS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571223">WWAN_PROVIDER</a>
 
 
 
-<a href="..\wwan\ns-wwan-_wwan_provider.md">WWAN_PROVIDER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571239">WWAN_SIGNAL_STATE</a>

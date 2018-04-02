@@ -47,14 +47,14 @@ req.typenames: IRB_REQ_FREE_ADDRESS_RANGE
 This structure contains the fields necessary for the 1394 stack to carry out a free address range reqeust.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_FREE_ADDRESS_RANGE {
-  ULONG          nAddressesToFree;
+  ULONG          nAddressesToFree;
   PADDRESS_RANGE p1394AddressRange;
-  PHANDLE        pAddressRange;
-  PVOID          DeviceExtension;
+  PHANDLE        pAddressRange;
+  PVOID          DeviceExtension;
 } IRB_REQ_FREE_ADDRESS_RANGE;
-````
+```
 
 ## Members
 

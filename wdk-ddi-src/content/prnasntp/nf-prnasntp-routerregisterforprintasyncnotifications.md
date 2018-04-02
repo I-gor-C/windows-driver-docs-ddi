@@ -50,16 +50,16 @@ The <code>RouterRegisterForPrintAsyncNotifications</code> function registers for
 
 ## Syntax
 
-````
+```
 HRESULT RouterRegisterForPrintAsyncNotifications(
-  _In_  PCWSTR                            pName,
-  _In_  PrintAsyncNotificationType        *pNotificationType,
-  _In_  PrintAsyncNotifyUserFilter        eNotifyFilter,
-  _In_  PrintAsyncNotifyConversationStyle eConversationStyle,
-  _In_  IPrintAsyncNotifyCallback         *pCallback,
-  _Out_ HANDLE                            *phNotify
+  PCWSTR                            pName,
+  PrintAsyncNotificationType        *pNotificationType,
+  PrintAsyncNotifyUserFilter        eNotifyFilter,
+  PrintAsyncNotifyConversationStyle eConversationStyle,
+  IPrintAsyncNotifyCallback         *pCallback,
+  HANDLE                            *phNotify
 );
-````
+```
 
 ## Parameters
 
@@ -103,4 +103,4 @@ This function returns S_OK on success, and a standard COM error code otherwise.
 
 ## See Also
 
-<a href="..\prnasntp\nf-prnasntp-routerunregisterforprintasyncnotifications.md">RouterUnregisterForPrintAsyncNotifications</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562028">RouterUnregisterForPrintAsyncNotifications</a>

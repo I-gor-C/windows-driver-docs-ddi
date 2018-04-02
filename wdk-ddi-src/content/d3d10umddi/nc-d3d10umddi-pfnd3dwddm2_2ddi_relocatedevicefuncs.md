@@ -7,7 +7,7 @@ old-location: display\pfnd3dwddm2_2ddi_relocatedevicefuncs.htm
 old-project: display
 ms.assetid: EAABE65C-3893-4B4C-BB7E-A02F91F869BE
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3DWDDM2_2DDI_RELOCATEDEVICEFUNCS, d3d10umddi/pfnRelocateDeviceFuncs, display.pfnd3dwddm2_2ddi_relocatedevicefuncs, pfnRelocateDeviceFuncs, pfnRelocateDeviceFuncs callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -83,4 +83,4 @@ This callback function does not return a value.
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3dwddm2_2ddi_devicefuncs.md">D3DWDDM2_2DDI_DEVICEFUNCS</a>
+<a href="https://msdn.microsoft.com/4E082193-70BA-4F36-9001-2A12014F3AC3">D3DWDDM2_2DDI_DEVICEFUNCS</a>

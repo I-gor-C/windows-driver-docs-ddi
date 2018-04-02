@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The <b>SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS</b> enumeration defines constants that indicate whether process is being made toward completing a custom-receive transaction.
 
 ## Syntax
-````
-typedef enum _SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS { 
-  SERCX2_CUSTOM_RECEIVE_NO_PROGRESS,
-  SERCX2_CUSTOM_RECEIVE_BYTES_TRANSFERRED
-} SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS;
-````
+```
+typedef enum _SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS {
+  SerCx2CustomReceiveTransactionNoProgress        ,
+  SerCx2CustomReceiveTransactionBytesTransferred
+} SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS, *PSERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS;
+```
 
 ## Constants
 
@@ -72,7 +72,7 @@ typedef enum _SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS {
 
 ## Remarks
 
-The constants in this enumeration are used by the <a href="..\sercx\nf-sercx-sercx2customreceivetransactionreportprogress.md">SerCx2CustomReceiveTransactionReportProgress</a> method.
+The constants in this enumeration are used by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265254">SerCx2CustomReceiveTransactionReportProgress</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,4 +81,4 @@ The constants in this enumeration are used by the <a href="..\sercx\nf-sercx-ser
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercx2customreceivetransactionreportprogress.md">SerCx2CustomReceiveTransactionReportProgress</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265254">SerCx2CustomReceiveTransactionReportProgress</a>

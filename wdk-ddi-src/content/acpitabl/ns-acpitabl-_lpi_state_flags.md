@@ -47,16 +47,16 @@ req.typenames: LPI_STATE_FLAGS, *PLPI_STATE_FLAGS
 Defines LPI state flags, either as a structure or as an integer.
 
 ## Syntax
-````
-typedef union _LPI_STATE_FLAGS {
-  struct  {
-        ULONG Disabled:1;
-        ULONG CounterUnavailable:1;
-        ULONG Reserved:30;
-    };
-  ULONG  AsUlong;
-} LPI_STATE_FLAGS;
-````
+```
+typedef struct _LPI_STATE_FLAGS {
+  struct {
+    ULONG  : 1  CounterUnavailable;
+    ULONG  : 1  Disabled;
+    ULONG  : 30 Reserved;
+  };
+  ULONG  AsUlong;
+} LPI_STATE_FLAGS, *PLPI_STATE_FLAGS;
+```
 
 ## Members
 

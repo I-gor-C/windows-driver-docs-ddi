@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 The EXTTEXTMETRIC structure is used to specify font-specific information within <a href="https://msdn.microsoft.com/6e643703-ace1-4660-990c-3a9ca735829d">Unidrv font metrics files</a> (.ufm files).
 
 ## Syntax
-````
+```
 typedef struct _EXTTEXTMETRIC {
   short emSize;
   short emPointSize;
@@ -74,10 +74,10 @@ typedef struct _EXTTEXTMETRIC {
   short emDoubleLowerUnderlineWidth;
   short emStrikeOutOffset;
   short emStrikeOutWidth;
-  WORD  emKernPairs;
-  WORD  emKernTracks;
-} EXTTEXTMETRIC, *PEXTTEXTMETRIC;
-````
+  WORD  emKernPairs;
+  WORD  emKernTracks;
+} *PEXTTEXTMETRIC, EXTTEXTMETRIC;
+```
 
 ## Members
 

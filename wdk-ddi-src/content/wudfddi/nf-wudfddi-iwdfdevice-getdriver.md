@@ -45,24 +45,24 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetDriver method
+# IWDFDevice::GetDriver method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>GetDriver</b> method retrieves the interface to the parent driver object of a device instance.
 
 ## Syntax
 
-````
+```
 void GetDriver(
-  [out] IWDFDriver **ppWdfDriver
+  IWDFDriver **ppWdfDriver
 );
-````
+```
 
 ## Parameters
 
 `ppWdfDriver`
 
-A pointer to a variable that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a> interface for the parent driver object.
+A pointer to a variable that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558893">IWDFDriver</a> interface for the parent driver object.
 
 
 ## Return Value
@@ -84,8 +84,8 @@ For a code example of how to use the GetDriver method, see <a href="https://msdn
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556917">IWDFDevice</a>
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558893">IWDFDriver</a>

@@ -7,7 +7,7 @@ old-location: display\dxgkarg_flipoverlay.htm
 old-project: display
 ms.assetid: c5396581-e9f2-47eb-bb82-1e54f5def4d0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKARG_FLIPOVERLAY, DXGKARG_FLIPOVERLAY structure [Display Devices], DmStructs_8ff06344-e7f5-44b1-95fc-d3b363428d43.xml, _DXGKARG_FLIPOVERLAY, d3dkmddi/DXGKARG_FLIPOVERLAY, display.dxgkarg_flipoverlay
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: DXGKARG_FLIPOVERLAY
 The DXGKARG_FLIPOVERLAY structure describes a new allocation to display for the overlay.
 
 ## Syntax
-````
+```
 typedef struct _DXGKARG_FLIPOVERLAY {
-  HANDLE           hSource;
+  HANDLE           hSource;
   PHYSICAL_ADDRESS SrcPhysicalAddress;
-  UINT             SrcSegmentId;
-  VOID             *pPrivateDriverData;
-  UINT             PrivateDriverDataSize;
+  UINT             SrcSegmentId;
+  VOID             *pPrivateDriverData;
+  UINT             PrivateDriverDataSize;
 } DXGKARG_FLIPOVERLAY;
-````
+```
 
 ## Members
 
@@ -89,4 +89,4 @@ typedef struct _DXGKARG_FLIPOVERLAY {
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_flipoverlay.md">DxgkDdiFlipOverlay</a>
+<a href="https://msdn.microsoft.com/9e35a48b-1741-4ee2-8e15-6ce51ad4c0ad">DxgkDdiFlipOverlay</a>

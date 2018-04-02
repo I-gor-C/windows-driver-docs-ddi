@@ -50,13 +50,13 @@ The <b>DbgPrompt</b> routine displays a caller-specified user prompt string on t
 
 ## Syntax
 
-````
-ULONG DbgPrompt(
-  _In_  PCCH  Prompt,
-  _Out_ PCHAR Response,
-  _In_  ULONG MaximumResponseLength
+```
+NTSYSAPI ULONG DbgPrompt(
+  PCCH  Prompt,
+  PCH   Response,
+  ULONG Length
 );
-````
+```
 
 ## Parameters
 

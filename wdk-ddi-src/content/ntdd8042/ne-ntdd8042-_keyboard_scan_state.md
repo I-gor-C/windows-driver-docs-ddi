@@ -47,13 +47,13 @@ req.typenames: KEYBOARD_SCAN_STATE, *PKEYBOARD_SCAN_STATE
 The KEYBOARD_SCAN_STATE enumeration type indicates the scan state of an input byte from a keyboard.
 
 ## Syntax
-````
-typedef enum _KEYBOARD_SCAN_STATE { 
-  Normal,
-  GotE0,
+```
+typedef enum _KEYBOARD_SCAN_STATE {
+  Normal  ,
+  GotE0   ,
   GotE1
-} KEYBOARD_SCAN_STATE, *PKEYBOARD_SCAN_STATE;
-````
+} *PKEYBOARD_SCAN_STATE, KEYBOARD_SCAN_STATE;
+```
 
 ## Constants
 
@@ -90,4 +90,4 @@ This enumeration type is used as input to an optional <a href="https://msdn.micr
 
 
 
-<a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543248">PI8042_KEYBOARD_ISR</a>

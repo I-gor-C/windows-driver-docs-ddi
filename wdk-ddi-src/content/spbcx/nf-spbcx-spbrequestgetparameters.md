@@ -51,12 +51,12 @@ The <b>SpbRequestGetParameters</b> method retrieves a set of SPB-specific parame
 
 ## Syntax
 
-````
-VOID SpbRequestGetParameters(
-  _In_  SPBREQUEST             SpbRequest,
-  _Out_ SPB_REQUEST_PARAMETERS *Parameters
+```
+void SpbRequestGetParameters(
+  SPBREQUEST             SpbRequest,
+  SPB_REQUEST_PARAMETERS *Parameters
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ None.
 
 ## Remarks
 
-<b>SpbRequestGetParameters</b> is similar to the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a> method, but retrieves only SPB-specific information. Your SPB controller driver can call  <b>SpbRequestGetParameters</b> to retrieve SPB-specific information from I/O requests that it receives from the SPB framework extension (SpbCx). The SPB controller driver can call <b>WdfRequestGetParameters</b> to retrieve the generic request parameters from I/O requests that it receives.
+<b>SpbRequestGetParameters</b> is similar to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549969">WdfRequestGetParameters</a> method, but retrieves only SPB-specific information. Your SPB controller driver can call  <b>SpbRequestGetParameters</b> to retrieve SPB-specific information from I/O requests that it receives from the SPB framework extension (SpbCx). The SPB controller driver can call <b>WdfRequestGetParameters</b> to retrieve the generic request parameters from I/O requests that it receives.
 
 
 #### Examples
@@ -110,7 +110,7 @@ SpbRequestGetParameters(spbRequest, &amp;parameters);
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406210">SPB_REQUEST_PARAMETERS_INIT</a>
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
 
 
 
@@ -118,8 +118,8 @@ SpbRequestGetParameters(spbRequest, &amp;parameters);
 
 
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406210">SPB_REQUEST_PARAMETERS_INIT</a>
 
 
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetparameters.md">WdfRequestGetParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549969">WdfRequestGetParameters</a>

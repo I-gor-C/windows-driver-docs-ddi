@@ -55,12 +55,12 @@ The <b>WdfRegistryRemoveValue</b> method removes a specified value and its data 
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfRegistryRemoveValue(
-  _In_ WDFKEY           Key,
-  _In_ PCUNICODE_STRING ValueName
+  WDFKEY           Key,
+  PCUNICODE_STRING ValueName
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A handle to a registry-key object that represents an opened registry key.
 
 `ValueName`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains a value name.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains a value name.
 
 
 ## Return Value
@@ -90,7 +90,7 @@ A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING
 </td>
 <td width="60%">
 
-<a href="..\wdfregistry\nf-wdfregistry-wdfregistryremovevalue.md">WdfRegistryRemoveValue</a> was not called at IRQL = PASSIVE_LEVEL. 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549932">WdfRegistryRemoveValue</a> was not called at IRQL = PASSIVE_LEVEL. 
 
 </td>
 </tr>
@@ -161,4 +161,4 @@ status = WdfRegistryRemoveValue(
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

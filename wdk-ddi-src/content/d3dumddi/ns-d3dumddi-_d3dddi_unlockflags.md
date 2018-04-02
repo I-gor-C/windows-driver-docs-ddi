@@ -7,7 +7,7 @@ old-location: display\d3dddi_unlockflags.htm
 old-project: display
 ms.assetid: f3c3356c-ec7b-4869-896d-9d3b285f0e87
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_UNLOCKFLAGS, D3DDDI_UNLOCKFLAGS structure [Display Devices], D3D_other_Structs_c1133d3b-9330-4278-85c7-4083436278cf.xml, _D3DDDI_UNLOCKFLAGS, d3dumddi/D3DDDI_UNLOCKFLAGS, display.d3dddi_unlockflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,17 @@ req.typenames: D3DDDI_UNLOCKFLAGS
 The D3DDDI_UNLOCKFLAGS structure identifies how to unlock a resource.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDI_UNLOCKFLAGS {
   union {
     struct {
-      UINT NotifyOnly  :1;
-      UINT Reserved  :31;
+      UINT  : 1  NotifyOnly;
+      UINT  : 31 Reserved;
     };
-    UINT   Value;
+    UINT Value;
   };
 } D3DDDI_UNLOCKFLAGS;
-````
+```
 
 ## Members
 
@@ -71,4 +71,4 @@ typedef struct _D3DDDI_UNLOCKFLAGS {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_unlock.md">D3DDDIARG_UNLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543394">D3DDDIARG_UNLOCK</a>

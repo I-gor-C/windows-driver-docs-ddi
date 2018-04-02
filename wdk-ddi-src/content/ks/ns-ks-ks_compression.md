@@ -47,13 +47,13 @@ req.typenames: KS_COMPRESSION, *PKS_COMPRESSION
 The KS_COMPRESSION structure defines the compression of frames on an output pin.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KS_COMPRESSION {
   ULONG RatioNumerator;
   ULONG RatioDenominator;
   ULONG RatioConstantMargin;
-} KS_COMPRESSION, *PKS_COMPRESSION;
-````
+} *PKS_COMPRESSION, KS_COMPRESSION;
+```
 
 ## Members
 

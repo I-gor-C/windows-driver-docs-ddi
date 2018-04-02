@@ -51,15 +51,15 @@ Minidrivers can use the <b>StreamClassGetNextEvent</b> routine to search the eve
 
 ## Syntax
 
-````
+```
 PKSEVENT_ENTRY StreamClassGetNextEvent(
-  _In_opt_ PVOID             HwDeviceExtension,
-  _In_opt_ PHW_STREAM_OBJECT HwStreamObject,
-  _In_opt_ GUID              *EventGuid,
-  _In_     ULONG             EventItem,
-  _In_opt_ PKSEVENT_ENTRY    CurrentEvent
+  PVOID             HwInstanceExtension_OR_HwDeviceExtension,
+  PHW_STREAM_OBJECT HwStreamObject,
+  GUID              *EventGuid,
+  ULONG             EventItem,
+  PKSEVENT_ENTRY    CurrentEvent
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ TBD
 
 `HwStreamObject`
 
-Pointer to a <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a>. Set to <b>NULL</b> to search the event queue of the device itself. To search the event queue of a particular stream, set to the stream's stream object.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559697">HW_STREAM_OBJECT</a>. Set to <b>NULL</b> to search the event queue of the device itself. To search the event queue of a particular stream, set to the stream's stream object.
 
 `EventGuid`
 

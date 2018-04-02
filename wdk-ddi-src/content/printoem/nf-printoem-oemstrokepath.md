@@ -50,18 +50,18 @@ The <code>OEMStrokePath</code> function strokes a path.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMStrokePath(
-   SURFOBJ   *pso,
-   PATHOBJ   *ppo,
-   CLIPOBJ   *pco,
-   XFORMOBJ  *pxo,
-   BRUSHOBJ  *pbo,
-   POINTL    *pptlBrushOrg,
-   LINEATTRS *plineattrs,
-   MIX       mix
+```
+BOOL OEMStrokePath(
+  SURFOBJ   *pso,
+  PATHOBJ   *ppo,
+  CLIPOBJ   *pco,
+  XFORMOBJ  *pxo,
+  BRUSHOBJ  *pbo,
+  POINTL    *pptlBrushOrg,
+  LINEATTRS *plineattrs,
+  MIX       mix
 );
-````
+```
 
 ## Parameters
 

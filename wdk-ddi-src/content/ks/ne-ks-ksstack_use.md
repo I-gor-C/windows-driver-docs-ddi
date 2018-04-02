@@ -47,13 +47,13 @@ req.typenames: KSSTACK_USE
 
 
 ## Syntax
-````
-typedef enum  { 
-  KsStackCopyToNewLocation,
-  KsStackReuseCurrentLocation,
+```
+typedef enum KSSTACK_USE {
+  KsStackCopyToNewLocation     ,
+  KsStackReuseCurrentLocation  ,
   KsStackUseNewLocation
-} KSSTACK_USE;
-````
+} ;
+```
 
 ## Constants
 

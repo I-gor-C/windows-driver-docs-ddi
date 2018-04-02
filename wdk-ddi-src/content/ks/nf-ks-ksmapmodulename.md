@@ -50,15 +50,15 @@ The <b>KsMapModuleName</b> function returns the image name and resource identifi
 
 ## Syntax
 
-````
-NTSTATUS KsMapModuleName(
-  _In_  PDEVICE_OBJECT  PhysicalDeviceObject,
-  _In_  PUNICODE_STRING ModuleName,
-  _Out_ PUNICODE_STRING ImageName,
-  _Out_ PULONG_PTR      ResourceId,
-  _Out_ PULONG          ValueType
+```
+KSDDKAPI NTSTATUS KsMapModuleName(
+  PDEVICE_OBJECT  PhysicalDeviceObject,
+  PUNICODE_STRING ModuleName,
+  PUNICODE_STRING ImageName,
+  PULONG_PTR      ResourceId,
+  PULONG          ValueType
 );
-````
+```
 
 ## Parameters
 
@@ -97,4 +97,4 @@ Pointer to a location into which the function returns the value type of the spec
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgetimagenameandresourceid.md">KsGetImageNameAndResourceId</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562634">KsGetImageNameAndResourceId</a>

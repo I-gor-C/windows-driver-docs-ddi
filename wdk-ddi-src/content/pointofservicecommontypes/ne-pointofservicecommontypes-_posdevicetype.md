@@ -44,19 +44,20 @@ req.typenames: PosDeviceType
 ---
 
 # _PosDeviceType Enumeration
-This enumeration defines values used in the <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posdevicebasicstype.md">PosDeviceBasicsType</a> structure to indicate the type of device (for instance, barcode scanner or magnetic stripe reader).
+This enumeration defines values used in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn772213">PosDeviceBasicsType</a> structure to indicate the type of device (for instance, barcode scanner or magnetic stripe reader).
 
 ## Syntax
-````
-typedef enum _PosDeviceType { 
-  PosDeviceType_Unknown               = 0,
-  PosDeviceType_BarcodeScanner        = 1,
-  PosDeviceType_MagneticStripeReader  = 2,
-  PosDeviceType_Printer               = 3,
-  PosDeviceType_CashDrawer            = 4,
-  PosDeviceType_Max                   = 5
+```
+typedef enum _PosDeviceType {
+  PosDeviceType_Unknown               ,
+  PosDeviceType_BarcodeScanner        ,
+  PosDeviceType_MagneticStripeReader  ,
+  PosDeviceType_Printer               ,
+  PosDeviceType_CashDrawer            ,
+  PosDeviceType_LineDisplay           ,
+  PosDeviceType_Max
 } PosDeviceType;
-````
+```
 
 ## Constants
 

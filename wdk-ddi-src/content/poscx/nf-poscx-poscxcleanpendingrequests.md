@@ -52,13 +52,13 @@ PosCxCleanPendingRequests is called to cancel all pending requests for a given
 
 ## Syntax
 
-````
-VOID PosCxCleanPendingRequests(
-  _In_     WDFDEVICE     device,
-  _In_opt_ WDFFILEOBJECT callerFileObj,
-  _In_     NTSTATUS      completionStatus
+```
+void PosCxCleanPendingRequests(
+  WDFDEVICE     device,
+  WDFFILEOBJECT callerFileObj,
+  NTSTATUS      completionStatus
 );
-````
+```
 
 ## Parameters
 

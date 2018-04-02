@@ -50,11 +50,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL WINAPI SpoolerFindClosePrinterChangeNotification(
-  _In_ HANDLE                   hPrinter
+```
+BOOL SpoolerFindClosePrinterChangeNotification(
+  HANDLE hPrinter
 );
-````
+```
 
 ## Parameters
 

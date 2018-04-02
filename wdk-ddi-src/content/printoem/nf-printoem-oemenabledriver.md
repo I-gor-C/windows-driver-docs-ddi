@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-DWORD APIENTRY OEMEnableDriver(
-        DWORD                                 dwOemIntfVersion,
-        DWORD                                 cbSize,
-  _Out_ _writes_bytes_(cbSize) PDRVENABLEDATA pded
+```
+BOOL OEMEnableDriver(
+  DWORD          dwOemIntfVersion,
+  DWORD          cbSize,
+  PDRVENABLEDATA pded
 );
-````
+```
 
 ## Parameters
 

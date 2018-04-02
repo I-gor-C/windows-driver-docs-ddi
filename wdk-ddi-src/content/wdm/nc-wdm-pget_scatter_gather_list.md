@@ -7,7 +7,7 @@ old-location: kernel\getscattergatherlist.htm
 old-project: kernel
 ms.assetid: 44c597ed-a41e-4170-b75b-dcd61aa70350
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: GetScatterGatherList, GetScatterGatherList callback function [Kernel-Mode Driver Architecture], PGET_SCATTER_GATHER_LIST, kdma_b451cb34-7181-4272-a1ef-0c8fc233a7fd.xml, kernel.getscattergatherlist, ntddk/GetScatterGatherList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ NTSTATUS PgetScatterGatherList(
 
 `DmaAdapter`
 
-Pointer to the <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structure returned by <a href="..\wdm\nf-wdm-iogetdmaadapter.md">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544062">DMA_ADAPTER</a> structure returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> that represents the bus-master adapter or DMA controller.
 
 `DeviceObject`
 
@@ -90,7 +90,7 @@ Specifies the length, in bytes, to be mapped.
 
 `ExecutionRoutine`
 
-Pointer to a driver-supplied <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a> routine, which is called at DISPATCH_LEVEL when the system DMA controller or bus-master adapter is available.
+Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff540513">AdapterListControl</a> routine, which is called at DISPATCH_LEVEL when the system DMA controller or bus-master adapter is available.
 
 `Context`
 
@@ -128,7 +128,7 @@ The operation succeeded.
 </dl>
 </td>
 <td width="60%">
-The routine could not allocate sufficient memory or the number of map registers required for the transfer is larger than the value returned by <a href="..\wdm\nf-wdm-iogetdmaadapter.md">IoGetDmaAdapter</a>.
+The routine could not allocate sufficient memory or the number of map registers required for the transfer is larger than the value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>.
 
 </td>
 </tr>
@@ -151,12 +151,12 @@ The <b>GetScatterGatherList</b> routine dynamically allocates a buffer to hold t
 
 <b>GetScatterGatherList</b>
            is not a system routine that can be called directly by name. This routine is callable only by pointer from the address returned in a 
-          <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
-           structure. Drivers obtain the address of this routine by calling <a href="..\wdm\nf-wdm-iogetdmaadapter.md">IoGetDmaAdapter</a>.
+          <a href="https://msdn.microsoft.com/library/windows/hardware/ff544071">DMA_OPERATIONS</a>
+           structure. Drivers obtain the address of this routine by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>.
 
-As soon as the appropriate DMA channel and any necessary map registers are available, <b>GetScatterGatherList</b> creates a scatter/gather list, initializes the map registers, and then calls the driver-supplied <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a> routine to carry out the I/O operation.
+As soon as the appropriate DMA channel and any necessary map registers are available, <b>GetScatterGatherList</b> creates a scatter/gather list, initializes the map registers, and then calls the driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff540513">AdapterListControl</a> routine to carry out the I/O operation.
 
-<b>GetScatterGatherList</b> combines the actions of the <a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a> and <a href="..\wdm\nc-wdm-pmap_transfer.md">MapTransfer</a> routines for drivers that perform scatter/gather DMA. <b>GetScatterGatherList</b> determines how many map registers are required for the transfer, allocates the map registers, maps the buffers for DMA, and fills in the scatter/gather list. It then calls the supplied <a href="..\wdm\nc-wdm-driver_list_control.md">AdapterListControl</a> routine, passing a pointer to the scatter/gather list in <i>ScatterGather</i>. The driver should retain this pointer for use when calling <a href="..\wdm\nc-wdm-pput_scatter_gather_list.md">PutScatterGatherList</a>. Note that <b>GetScatterGatherList</b> does not have the queuing restrictions that apply to <b>AllocateAdapterChannel</b>.
+<b>GetScatterGatherList</b> combines the actions of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540573">AllocateAdapterChannel</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554402">MapTransfer</a> routines for drivers that perform scatter/gather DMA. <b>GetScatterGatherList</b> determines how many map registers are required for the transfer, allocates the map registers, maps the buffers for DMA, and fills in the scatter/gather list. It then calls the supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff540513">AdapterListControl</a> routine, passing a pointer to the scatter/gather list in <i>ScatterGather</i>. The driver should retain this pointer for use when calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff559967">PutScatterGatherList</a>. Note that <b>GetScatterGatherList</b> does not have the queuing restrictions that apply to <b>AllocateAdapterChannel</b>.
 
 In its <i>AdapterListControl</i> routine, the driver should perform the I/O. On return from the driver-supplied routine, <b>GetScatterGatherList</b> keeps the map registers but frees the DMA adapter structure. The driver must call <b>PutScatterGatherList</b> (which flushes the buffers) before it can access the data in the buffer.
 
@@ -173,28 +173,28 @@ This routine can handle chained MDLs, provided that the total number of map regi
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540573">AllocateAdapterChannel</a>
 
 
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 
 
 
-<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544062">DMA_ADAPTER</a>
 
 
 
-<a href="..\wdm\nf-wdm-iogetdmaadapter.md">IoGetDmaAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544071">DMA_OPERATIONS</a>
 
 
 
-<a href="..\wdm\nc-wdm-pput_scatter_gather_list.md">PutScatterGatherList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
 
 
 
-<a href="..\wdm\ns-wdm-_scatter_gather_list.md">SCATTER_GATHER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559967">PutScatterGatherList</a>
 
 
 
-<a href="..\wdm\nc-wdm-pallocate_adapter_channel.md">AllocateAdapterChannel</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563664">SCATTER_GATHER_LIST</a>

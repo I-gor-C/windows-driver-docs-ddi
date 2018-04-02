@@ -7,7 +7,7 @@ old-location: debugger\removesyntheticmodule.htm
 old-project: debugger
 ms.assetid: 951b42b6-4d6a-45af-a27f-6e8056676bb0
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], RemoveSyntheticModule method, IDebugSymbols3::RemoveSyntheticModule, IDebugSymbols_f1ed1ce4-53ad-469f-9ab8-17900b6870e8.xml, RemoveSyntheticModule method [Windows Debugging], RemoveSyntheticModule method [Windows Debugging], IDebugSymbols3 interface, RemoveSyntheticModule,IDebugSymbols3.RemoveSyntheticModule, dbgeng/IDebugSymbols3::RemoveSyntheticModule, debugger.removesyntheticmodule
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# RemoveSyntheticModule method
+# IDebugSymbols3::RemoveSyntheticModule method
 The <b>RemoveSyntheticModule</b> method removes a synthetic module from the module list the debugger maintains for the current process.
 
 ## Syntax
 
-````
+```
 HRESULT RemoveSyntheticModule(
-  [in] ULONG64 Base
+  ULONG64 Base
 );
-````
+```
 
 ## Parameters
 
@@ -110,12 +110,12 @@ For more information about synthetic modules, see Synthetic Modules.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554542">RemoveSyntheticSymbol</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537937">AddSyntheticModule</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554542">RemoveSyntheticSymbol</a>

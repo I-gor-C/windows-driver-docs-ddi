@@ -7,7 +7,7 @@ old-location: buses\ursdeviceinitinitialize.htm
 old-project: usbref
 ms.assetid: EFA83238-77DF-474D-8F8F-2400C9B23A00
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UrsDeviceInitInitialize, UrsDeviceInitInitialize method [Buses], buses.ursdeviceinitinitialize, ursdevice/UrsDeviceInitInitialize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,11 +51,11 @@ Initializes device initialization operations when the Plug and Play (PnP) manage
 
 ## Syntax
 
-````
-FORCEINLINE NTSTATUS UrsDeviceInitInitialize(
-   PWDFDEVICE_INIT DeviceInit
+```
+NTSTATUS UrsDeviceInitInitialize(
+  PWDFDEVICE_INIT DeviceInit
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 ## Remarks
 
-The client driver for the dual-role controller calls this method in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> implementation before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> and <a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>. For code example, see <b>UrsDeviceInitialize</b>.
+The client driver for the dual-role controller calls this method in its <a href="https://msdn.microsoft.com/b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a">EvtDriverDeviceAdd</a> implementation before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt628012">UrsDeviceInitialize</a>. For code example, see <b>UrsDeviceInitialize</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,4 +84,4 @@ The client driver for the dual-role controller calls this method in its <a href=
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>

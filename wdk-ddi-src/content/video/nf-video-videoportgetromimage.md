@@ -7,7 +7,7 @@ old-location: display\videoportgetromimage.htm
 old-project: display
 ms.assetid: e4930661-fb88-458b-9460-129ab057e0f4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortGetRomImage, VideoPortGetRomImage function [Display Devices], VideoPort_Functions_070e50af-a33d-4dc5-9bd1-9f60367f49b2.xml, display.videoportgetromimage, video/VideoPortGetRomImage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ Reads the device's read-only memory (ROM).
 
 ## Syntax
 
-````
-PVOID VideoPortGetRomImage(
-  _In_       PVOID HwDeviceExtension,
-  _Reserved_ PVOID Unused1,
-  _Reserved_ ULONG Unused2,
-  _In_       ULONG Length
+```
+VIDEOPORT_API PVOID VideoPortGetRomImage(
+  IN PVOID HwDeviceExtension,
+  IN PVOID Unused1,
+  IN ULONG Unused2,
+  IN ULONG Length
 );
-````
+```
 
 ## Parameters
 
@@ -106,4 +106,4 @@ The miniport driver can free the buffer allocated by the video port driver by ca
 
 ## See Also
 
-<a href="..\video\nf-video-videoportscanrom.md">VideoPortScanRom</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570360">VideoPortScanRom</a>

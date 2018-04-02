@@ -50,12 +50,12 @@ The <b>wiasCreateLogInstance</b> function creates an instance of a logging objec
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasCreateLogInstance(
-  _In_  BYTE      *pModuleHandle,
-  _Out_ IWiaLogEx **ppIWiaLogEx
+```
+HRESULT wiasCreateLogInstance(
+  BYTE      *pModuleHandle,
+  IWiaLogEx **ppIWiaLogEx
 );
-````
+```
 
 ## Parameters
 

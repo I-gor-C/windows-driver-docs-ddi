@@ -7,7 +7,7 @@ old-location: storage\msiscsi_bootconfiguration.htm
 old-project: storage
 ms.assetid: 3a4b55b1-977d-43fb-9968-7a734e04b21b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PMSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration structure [Storage Devices], PMSiSCSI_BootConfiguration, PMSiSCSI_BootConfiguration structure pointer [Storage Devices], _MSiSCSI_BootConfiguration, iscsicfg/MSiSCSI_BootConfiguration, iscsicfg/PMSiSCSI_BootConfiguration, storage.msiscsi_bootconfiguration, structs-iSCSI_eb9ca716-5f5e-4bec-a4e0-e00d5a93b329.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,20 +47,20 @@ req.typenames: MSiSCSI_BootConfiguration, *PMSiSCSI_BootConfiguration
 The MSiSCSI_BootConfiguration structure describes how the boot device is configured.
 
 ## Syntax
-````
+```
 typedef struct _MSiSCSI_BootConfiguration {
-  ULONGLONG          LUN;
-  ULONGLONG          SecurityFlags;
-  ULONG              UsernameSize;
-  ULONG              PasswordSize;
-  BOOLEAN            DiscoverBootDevice;
-  WCHAR              InitiatorNode[223 + 1];
-  WCHAR              TargetName[223 + 1];
+  ULONGLONG          LUN;
+  ULONGLONG          SecurityFlags;
+  ULONG              UsernameSize;
+  ULONG              PasswordSize;
+  BOOLEAN            DiscoverBootDevice;
+  WCHAR              InitiatorNode[223 + 1];
+  WCHAR              TargetName[223 + 1];
   ISCSI_TargetPortal TargetPortal;
   ISCSI_LoginOptions LoginOptions;
-  UCHAR              Username[1];
-} MSiSCSI_BootConfiguration, *PMSiSCSI_BootConfiguration;
-````
+  UCHAR              Username[1];
+} *PMSiSCSI_BootConfiguration, MSiSCSI_BootConfiguration;
+```
 
 ## Members
 
@@ -95,11 +95,11 @@ The iSCSI name for the target that contains the boot device.
 
 `TargetPortal`
 
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a> structure that specifies the portal to use for the connection.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561574">ISCSI_TargetPortal</a> structure that specifies the portal to use for the connection.
 
 `LoginOptions`
 
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_loginoptions.md">ISCSI_LoginOptions</a> structure that specifies the characteristics of the logon session to establish with the boot device.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561541">ISCSI_LoginOptions</a> structure that specifies the characteristics of the logon session to establish with the boot device.
 
 `Username`
 
@@ -115,11 +115,11 @@ The WMI tool suite automatically generates a declaration of the MSiSCSI_BootConf
 
 ## See Also
 
-<a href="..\iscsidef\ns-iscsidef-_iscsi_targetportal.md">ISCSI_TargetPortal</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561541">ISCSI_LoginOptions</a>
 
 
 
-<a href="..\iscsidef\ns-iscsidef-_iscsi_loginoptions.md">ISCSI_LoginOptions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561574">ISCSI_TargetPortal</a>
 
 
 

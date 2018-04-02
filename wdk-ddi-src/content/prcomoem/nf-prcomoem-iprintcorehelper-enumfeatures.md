@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# EnumFeatures method
+# IPrintCoreHelper::EnumFeatures method
 The <b>IPrintCoreHelper::EnumFeatures</b> method gets a list of all available features, including synthesized and core driver-implement features.
 
 ## Syntax
 
-````
-STDMETHOD EnumFeatures(
-  [out] PCSTR *pFeatureList[],
-  [out] DWORD *pdwNumFeatures
+```
+HRESULT EnumFeatures(
+  PCSTR * [] pFeatureList,
+  DWORD      *pdwNumFeatures
 );
-````
+```
 
 ## Parameters
 
@@ -84,7 +84,7 @@ For Unidrv features, the feature list is based on the GPD view of the configurat
 
 ## See Also
 
-<a href="..\prcomoem\nn-prcomoem-iprintcorehelper.md">IPrintCoreHelper</a>
+<a href="https://msdn.microsoft.com/db13410f-e4cb-4077-bb4b-7963e97b435c">IPrintCoreHelper</a>
 
 
 

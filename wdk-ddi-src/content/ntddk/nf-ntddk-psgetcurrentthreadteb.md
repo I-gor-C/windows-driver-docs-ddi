@@ -7,7 +7,7 @@ old-location: kernel\psgetcurrentthreadteb.htm
 old-project: kernel
 ms.assetid: 822B75D4-A825-4BB1-8265-A1389F4982C7
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsGetCurrentThreadTeb, PsGetCurrentThreadTeb routine [Kernel-Mode Driver Architecture], kernel.psgetcurrentthreadteb, ntddk/PsGetCurrentThreadTeb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>PsGetCurrentThreadTeb</b> routine returns the Thread Environment Block (T
 
 ## Syntax
 
-````
-PVOID  PsGetCurrentThreadTeb(
-   void 
+```
+NTKERNELAPI PVOID PsGetCurrentThreadTeb(
+
 );
-````
+```
 
 ## Parameters
 

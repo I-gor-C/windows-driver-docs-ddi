@@ -46,23 +46,23 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnClientDisconnect method
+# ISensorDriver::OnClientDisconnect method
 The <b>ISensorDriver::OnClientDisconnect</b> method notifies the sensor driver that a client application has disconnected.
 
 ## Syntax
 
-````
+```
 HRESULT OnClientDisconnect(
-  [in] IWDFFile           *pClientFile,
-  [in] __in_string LPWSTR pwszSensorID
+  IWDFFile *pClientFile,
+  LPWSTR   pwszSensorID
 );
-````
+```
 
 ## Parameters
 
 `pClientFile`
 
-Pointer to an <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface that represents the file object for the client that disconnected.
+Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a> interface that represents the file object for the client that disconnected.
 
 `pwszSensorID`
 

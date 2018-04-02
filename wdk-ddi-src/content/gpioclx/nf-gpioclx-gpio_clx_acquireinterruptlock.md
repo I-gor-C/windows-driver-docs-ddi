@@ -50,12 +50,12 @@ The <b>GPIO_CLX_AcquireInterruptLock</b> method acquires an interrupt lock on a 
 
 ## Syntax
 
-````
-VOID GPIO_CLX_AcquireInterruptLock(
-  _In_ PVOID   Context,
-  _In_ BANK_ID BankId
+```
+void GPIO_CLX_AcquireInterruptLock(
+  PVOID   Context,
+  BANK_ID BankId
 );
-````
+```
 
 ## Parameters
 

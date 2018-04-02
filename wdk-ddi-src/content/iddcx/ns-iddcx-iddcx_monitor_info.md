@@ -7,7 +7,7 @@ old-location: display\iddcx_monitor_info.htm
 old-project: display
 ms.assetid: 62c2182c-af55-4482-a890-803f92dc863a
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IDDCX_MONITOR_INFO, IDDCX_MONITOR_INFO structure [Display Devices], display.iddcx_monitor_info, iddcx/IDDCX_MONITOR_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames:
 Gives information about the current monitor and its connection type.
 
 ## Syntax
-````
-typedef struct IDDCX_MONITOR_INFO {
-  UINT                                  Size;
+```
+struct IDDCX_MONITOR_INFO {
+  UINT                                  Size;
   DISPLAYCONFIG_VIDEO_OUTPUT_TECHNOLOGY MonitorType;
-  UINT                                  ConnectorIndex;
-  IDDCX_MONITOR_DESCRIPTION             MonitorDescription;
-  GUID                                  MonitorContainerId;
-} IDDCX_MONITOR_INFO, *IDDCX_MONITOR_INFO;
-````
+  UINT                                  ConnectorIndex;
+  IDDCX_MONITOR_DESCRIPTION             MonitorDescription;
+  GUID                                  MonitorContainerId;
+};
+```
 
 ## Members
 
@@ -72,7 +72,7 @@ The monitor connector type of the monitor
 
 This is a zero-based unique identifier for this connector. It should be unique for this adapter and the value should not change for this connector across system reboot or driver upgrade. 
 
-<div class="alert"><b>Note</b>  The value has to be between 0 and the <a href="..\iddcx\ns-iddcx-iddcx_adapter_caps.md">IDDCX_ADAPTER_CAPS</a> value MaxMonitorsSupported minus 1.
+<div class="alert"><b>Note</b>  The value has to be between 0 and the <a href="https://msdn.microsoft.com/library/windows/hardware/mt761932">IDDCX_ADAPTER_CAPS</a> value MaxMonitorsSupported minus 1.
                  </div>
 <div> </div>
 

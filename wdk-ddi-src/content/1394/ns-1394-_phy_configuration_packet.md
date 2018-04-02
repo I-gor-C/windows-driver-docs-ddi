@@ -47,18 +47,18 @@ req.typenames: PHY_CONFIGURATION_PACKET, *PPHY_CONFIGURATION_PACKET
 The PHY_CONFIGURATION_PACKET structure contains a raw PHY configuration packet.
 
 ## Syntax
-````
+```
 typedef struct _PHY_CONFIGURATION_PACKET {
-  ULONG PCP_Phys_ID  :6;
-  ULONG PCP_Packet_ID  :2;
-  ULONG PCP_Gap_Count  :6;
-  ULONG PCP_Set_Gap_Count  :1;
-  ULONG PCP_Force_Root  :1;
-  ULONG PCP_Reserved1  :8;
-  ULONG PCP_Reserved2  :8;
-  ULONG PCP_Inverse;
-} PHY_CONFIGURATION_PACKET, *PPHY_CONFIGURATION_PACKET;
-````
+  ULONG  : 6 PCP_Phys_ID;
+  ULONG  : 2 PCP_Packet_ID;
+  ULONG  : 6 PCP_Gap_Count;
+  ULONG  : 1 PCP_Set_Gap_Count;
+  ULONG  : 1 PCP_Force_Root;
+  ULONG  : 8 PCP_Reserved1;
+  ULONG  : 8 PCP_Reserved2;
+  ULONG      PCP_Inverse;
+} *PPHY_CONFIGURATION_PACKET, PHY_CONFIGURATION_PACKET;
+```
 
 ## Members
 

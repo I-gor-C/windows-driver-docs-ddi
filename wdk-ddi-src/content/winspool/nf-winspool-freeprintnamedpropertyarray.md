@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-void WINAPI FreePrintNamedPropertyArray(
-  _In_        DWORD               cProperties,
-  _Inout_opt_ PrintNamedProperty  **ppProperties
+```
+void FreePrintNamedPropertyArray(
+  DWORD              cProperties,
+  PrintNamedProperty **ppProperties
 );
-````
+```
 
 ## Parameters
 

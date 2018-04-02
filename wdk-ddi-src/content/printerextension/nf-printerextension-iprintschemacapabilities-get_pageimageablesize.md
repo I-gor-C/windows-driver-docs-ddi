@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_PageImageableSize method
+# IPrintSchemaCapabilities::get_PageImageableSize method
 Gets the imageable area information of the printer.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_PageImageableSize(
-  [out, retval] IPrintSchemaPageImageableSize **ppPageImageableSize
+  IPrintSchemaPageImageableSize **ppPageImageableSize
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemapageimageablesize.md">IPrintSchemaPageImageableSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451256">IPrintSchemaCapabilities</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451366">IPrintSchemaPageImageableSize</a>

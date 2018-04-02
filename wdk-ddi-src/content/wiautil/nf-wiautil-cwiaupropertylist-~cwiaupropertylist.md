@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# ~CWiauPropertyList method
+# CWiauPropertyList::~CWiauPropertyList method
 The <b>CWiauPropertyList::~CWiauPropertyList</b> method is the destructor for the <b>CWiauPropertyList</b> class.
 
 ## Syntax
 
-````
-void ~CWiauPropertyList();
-````
+```
+void ~CWiauPropertyList(
+
+);
+```
 
 ## Parameters
 
@@ -72,8 +74,8 @@ This method does not return a value.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/4f11bec0-8ff4-4fa0-824c-71ce9774d5d1">CWiauPropertyList</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540389">CWiauPropertyList::CWiauPropertyList</a>
-
-
-
-<a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>

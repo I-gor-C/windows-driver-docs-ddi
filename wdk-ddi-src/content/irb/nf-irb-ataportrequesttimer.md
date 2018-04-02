@@ -7,7 +7,7 @@ old-location: storage\ataportrequesttimer.htm
 old-project: storage
 ms.assetid: b057ae2e-53ae-4da9-8668-1ebca3c80998
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortRequestTimer, AtaPortRequestTimer routine [Storage Devices], atartns_604a8d41-c918-4121-97ef-10d3a7fbf3b4.xml, irb/AtaPortRequestTimer, storage.ataportrequesttimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>AtaPortRequestTimer</b> routine requests a timer callback.
 
 ## Syntax
 
-````
-BOOLEAN __inline AtaPortRequestTimer(
-  _In_ PVOID      ChannelExtension,
-  _In_ IDE_HW_DPC TimerRoutine,
-  _In_ ULONG      TimerValue
+```
+_IRQL_requires_same_ BOOLEAN AtaPortRequestTimer(
+  PVOID      ChannelExtension,
+  IDE_HW_DPC CallBackRoutine,
+  ULONG      TimerValue
 );
-````
+```
 
 ## Parameters
 
@@ -91,4 +91,4 @@ The ATA port driver passes a pointer to the channel extension to the timer routi
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportstallexecution.md">AtaPortStallExecution</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550234">AtaPortStallExecution</a>

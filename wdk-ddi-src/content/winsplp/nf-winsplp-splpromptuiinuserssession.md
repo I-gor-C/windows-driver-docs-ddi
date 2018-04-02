@@ -50,14 +50,14 @@ The <code>SplPromptUIInUsersSession</code> function displays a standard message 
 
 ## Syntax
 
-````
+```
 BOOL SplPromptUIInUsersSession(
-  _In_  HANDLE        hPrinter,
-  _In_  DWORD         JobId,
-  _In_  PSHOWUIPARAMS pUIParams,
-  _Out_ DWORD         *pResponse
+  HANDLE        hPrinter,
+  DWORD         JobId,
+  PSHOWUIPARAMS pUIParams,
+  DWORD         *pResponse
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ Specifies the print job.
 
 `pUIParams`
 
-Pointer to a <a href="..\winsplp\ns-winsplp-showuiparams.md">SHOWUIPARAMS</a> structure that contains values that determine the appearance and behavior of the message box.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562645">SHOWUIPARAMS</a> structure that contains values that determine the appearance and behavior of the message box.
 
 `pResponse`
 
@@ -99,8 +99,8 @@ If you plan to use this function in a driver intended to run under Windows 2000,
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-splissessionzero.md">SplIsSessionZero</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562645">SHOWUIPARAMS</a>
 
 
 
-<a href="..\winsplp\ns-winsplp-showuiparams.md">SHOWUIPARAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562677">SplIsSessionZero</a>

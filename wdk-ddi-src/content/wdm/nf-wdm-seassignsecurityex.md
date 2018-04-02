@@ -7,7 +7,7 @@ old-location: kernel\seassignsecurityex.htm
 old-project: kernel
 ms.assetid: 94f6d3a3-7f0d-4f57-8240-3c4a10cf4488
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: SeAssignSecurityEx, SeAssignSecurityEx routine [Kernel-Mode Driver Architecture], k110_e014ad32-3cbd-47e6-908b-65357203ee59.xml, kernel.seassignsecurityex, wdm/SeAssignSecurityEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,33 +51,33 @@ The
 
 ## Syntax
 
-````
-NTSTATUS SeAssignSecurityEx(
-  _In_opt_ PSECURITY_DESCRIPTOR      ParentDescriptor,
-  _In_opt_ PSECURITY_DESCRIPTOR      ExplicitDescriptor,
-  _Out_    PSECURITY_DESCRIPTOR      *NewDescriptor,
-  _In_opt_ GUID                      *ObjectType,
-  _In_     BOOLEAN                   IsDirectoryObject,
-  _In_     ULONG                     AutoInheritFlags,
-  _In_     PSECURITY_SUBJECT_CONTEXT SubjectContext,
-  _In_     PGENERIC_MAPPING          GenericMapping,
-  _In_     POOL_TYPE                 PoolType
+```
+NTKERNELAPI NTSTATUS SeAssignSecurityEx(
+  PSECURITY_DESCRIPTOR      ParentDescriptor,
+  PSECURITY_DESCRIPTOR      ExplicitDescriptor,
+  PSECURITY_DESCRIPTOR      *NewDescriptor,
+  GUID                      *ObjectType,
+  BOOLEAN                   IsDirectoryObject,
+  ULONG                     AutoInheritFlags,
+  PSECURITY_SUBJECT_CONTEXT SubjectContext,
+  PGENERIC_MAPPING          GenericMapping,
+  POOL_TYPE                 PoolType
 );
-````
+```
 
 ## Parameters
 
 `ParentDescriptor`
 
-Pointer to the <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> of the parent object that contains the new object being created. <i>ParentDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> system access control list (<a href="https://msdn.microsoft.com/5f6fec1a-1134-4765-81be-9b50939e5e66">SACL</a>) or a <b>NULL</b> discretionary access control list (<a href="https://msdn.microsoft.com/86688b5d-575d-42e1-9158-7ffba1aaf1d3">DACL</a>).
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> of the parent object that contains the new object being created. <i>ParentDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> system access control list (<a href="https://msdn.microsoft.com/5f6fec1a-1134-4765-81be-9b50939e5e66">SACL</a>) or a <b>NULL</b> discretionary access control list (<a href="https://msdn.microsoft.com/86688b5d-575d-42e1-9158-7ffba1aaf1d3">DACL</a>).
 
 `ExplicitDescriptor`
 
-Pointer to an explicit <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> that is applied to the new object. <i>ExplicitDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> SACL or a <b>NULL</b> DACL.
+Pointer to an explicit <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> that is applied to the new object. <i>ExplicitDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> SACL or a <b>NULL</b> DACL.
 
 `NewDescriptor`
 
-Receives a pointer to the returned <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>.  <b>SeAssignSecurityEx</b> allocates the buffer from the paged memory pool.
+Receives a pointer to the returned <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>.  <b>SeAssignSecurityEx</b> allocates the buffer from the paged memory pool.
 
 `ObjectType`
 
@@ -336,16 +336,16 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-sedeassignsecurity.md">SeDeassignSecurity</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a>
 
 
 
-<a href="..\wdm\nf-wdm-seassignsecurity.md">SeAssignSecurity</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>
 
 
 
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563676">SeAssignSecurity</a>
 
 
 
-<a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563716">SeDeassignSecurity</a>

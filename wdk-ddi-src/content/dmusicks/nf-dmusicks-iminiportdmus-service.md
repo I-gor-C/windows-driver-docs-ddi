@@ -7,7 +7,7 @@ old-location: audio\iminiportdmus_service.htm
 old-project: audio
 ms.assetid: a3f8d3f2-180c-454b-8e15-57c479c00db9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IMiniportDMus, IMiniportDMus interface [Audio Devices], Service method, IMiniportDMus::Service, Service method [Audio Devices], Service method [Audio Devices], IMiniportDMus interface, Service,IMiniportDMus.Service, audio.iminiportdmus_service, audmp-routines_0c872bc5-12b7-4e9d-b6ea-0da47cd41483.xml, dmusicks/IMiniportDMus::Service
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DMUS_STREAM_TYPE
 ---
 
 
-# Service method
+# IMiniportDMus::Service method
 This method does not currently need to be implemented in the miniport driver. The<code> Service</code> method is currently unused.
 
 ## Syntax
 
-````
-VOID Service(
-    None
+```
+void Service(
+
 );
-````
+```
 
 ## Parameters
 
@@ -75,11 +75,11 @@ None
 
 ## See Also
 
-<a href="..\dmusicks\nn-dmusicks-iminiportdmus.md">IMiniportDMus</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536791">IMXF::PutMessage</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536699">IMiniportDMus</a>
 
 
 

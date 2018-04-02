@@ -7,7 +7,7 @@ old-location: display\hwvidinterrupt.htm
 old-project: display
 ms.assetid: 523471e3-cf1e-48d2-b5f0-2f8d19ad71e0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HwVidInterrupt, HwVidInterrupt callback function [Display Devices], PVIDEO_HW_INTERRUPT, VideoMiniport_Functions_9c3ff1cb-9812-461c-8ac5-b6cbdbe63c59.xml, display.hwvidinterrupt, video/HwVidInterrupt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -101,25 +101,25 @@ If any other miniport driver function shares memory, such as part of the <i>HwDe
 <ul>
 <li>
 
-<a href="..\video\nf-video-videoportqueuedpc.md">VideoPortQueueDpc</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570339">VideoPortQueueDpc</a>
 
 
 </li>
 <li>
 
-<a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a> and <a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570492">VideoPortZeroDeviceMemory</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff570493">VideoPortZeroMemory</a>
 
 
 </li>
 <li>
 
-<a href="..\video\nf-video-videoportlogerror.md">VideoPortLogError</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570328">VideoPortLogError</a>
 
 
 </li>
 <li>
 
-<a href="..\video\nf-video-videoportstallexecution.md">VideoPortStallExecution</a> for no more than a very few microseconds. If possible, <i>HwVidInterrupt</i> should avoid calling this function.
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570368">VideoPortStallExecution</a> for no more than a very few microseconds. If possible, <i>HwVidInterrupt</i> should avoid calling this function.
 
 </li>
 <li>
@@ -128,12 +128,12 @@ All <b>VideoPortRead</b><i>Xxx</i> and <b>VideoPortWrite</b><i>Xxx</i> routines.
 </li>
 <li>
 
-<a href="..\video\nf-video-videoportdisableinterrupt.md">VideoPortDisableInterrupt</a> (obsolete)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570294">VideoPortDisableInterrupt</a> (obsolete)
 
 </li>
 <li>
 
-<a href="..\video\nf-video-videoportenableinterrupt.md">VideoPortEnableInterrupt</a> (obsolete)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570296">VideoPortEnableInterrupt</a> (obsolete)
 
 </li>
 </ul>
@@ -149,36 +149,36 @@ A <i>HwVidInterrupt</i> function cannot be pageable, nor can any function that i
 
 ## See Also
 
-<a href="..\video\nf-video-videoportdisableinterrupt.md">VideoPortDisableInterrupt</a>
-
-
-
-<a href="..\video\nf-video-videoportsynchronizeexecution.md">VideoPortSynchronizeExecution</a>
-
-
-
-<a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
-
-
-
-<a href="..\video\nf-video-videoportstallexecution.md">VideoPortStallExecution</a>
-
-
-
-<a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a>
-
-
-
-<a href="..\video\nf-video-videoportenableinterrupt.md">VideoPortEnableInterrupt</a>
-
-
-
-<a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566461">Functions Exported by the Video Port Driver</a>
 
 
 
-<a href="..\video\nf-video-videoportlogerror.md">VideoPortLogError</a>
+<a href="https://msdn.microsoft.com/04e3bac6-c905-4c95-bd1b-e85b46c4296d">HwVidSynchronizeExecutionCallback</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570294">VideoPortDisableInterrupt</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570296">VideoPortEnableInterrupt</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570328">VideoPortLogError</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570368">VideoPortStallExecution</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570372">VideoPortSynchronizeExecution</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570492">VideoPortZeroDeviceMemory</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570493">VideoPortZeroMemory</a>

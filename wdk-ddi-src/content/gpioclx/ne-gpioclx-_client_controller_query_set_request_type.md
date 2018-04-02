@@ -47,14 +47,14 @@ req.typenames: CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, *PCLIENT_CONTROLLER_QUE
 The <b>CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE</b> enumeration type indicates what type of attribute information the GPIO framework extension (GpioClx) is requesting from the GPIO controller driver.
 
 ## Syntax
-````
-typedef enum _CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE { 
-  QueryBankPowerInformation,
-  QueryBankInterruptBindingInformation,
-  QueryControllerFunctionBankMappingInformation,
+```
+typedef enum _CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE {
+  QueryBankPowerInformation                      ,
+  QueryBankInterruptBindingInformation           ,
+  QueryControllerFunctionBankMappingInformation  ,
   QuerySetRequestMaximumType
-} CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE;
-````
+} *PCLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE, CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE;
+```
 
 ## Constants
 
@@ -93,12 +93,12 @@ The <b>RequestType</b> member of the <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh698238">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698239">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_OUTPUT</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698241">CLIENT_QuerySetControllerInformation</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh698238">CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</a>

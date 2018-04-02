@@ -7,7 +7,7 @@ old-location: netvista\miniportenableinterruptex.htm
 old-project: netvista
 ms.assetid: 61edeb80-a686-4b8c-ae19-4757616151ef
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: MINIPORT_ENABLE_INTERRUPT, MiniportEnableInterruptEx, MiniportEnableInterruptEx callback function [Network Drivers Starting with Windows Vista], ndis/MiniportEnableInterruptEx, ndis_interrupts_miniport_functions_ref_4a4172dc-19bc-4405-8fc1-48bb8af2ae8d.xml, netvista.miniportenableinterruptex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ void MiniportEnableInterrupt(
 
 A handle to a block of context information. The miniport driver supplied this handle in the 
      <i>MiniportInterruptContext</i> parameter that the miniport driver passed to the 
-     <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">
+     <a href="https://msdn.microsoft.com/db0b3d51-5bbb-45fb-8c45-dda8c2212b5f">
      NdisMRegisterInterruptEx</a> function.
 
 
@@ -80,22 +80,22 @@ None
 
 A miniport driver must provide a
     <i>MiniportEnableInterruptEx</i> handler if the driver calls the 
-    <a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a> function
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563649">NdisMRegisterInterruptEx</a> function
     to register an interrupt.
 
 Miniport drivers should disable and enable interrupts as explained in the 
-    <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> and 
-    <a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDpc</a> reference
+    <a href="https://msdn.microsoft.com/810503b9-75cd-4b38-ab1f-de240968ded6">MiniportInterrupt</a> and 
+    <a href="https://msdn.microsoft.com/345715fb-878c-44d8-bf78-f3add10dd02b">MiniportInterruptDpc</a> reference
     pages.
 
 NDIS calls the 
     <i>MiniportEnableInterruptEx</i> and 
-    <a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">
+    <a href="https://msdn.microsoft.com/6016ab15-56c6-4430-8883-d4cdcdf6116f">
     MiniportDisableInterruptEx</a> functions to enable and disable interrupts for diagnostic and
     troubleshooting purposes. Typically, 
     <i>MiniportEnableInterruptEx</i> and 
     <i>MiniportDisableInterruptEx</i> access miniport driver resources that are shared by the 
-    <a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a> function.
+    <a href="https://msdn.microsoft.com/810503b9-75cd-4b38-ab1f-de240968ded6">MiniportInterrupt</a> function.
     Therefore, NDIS calls these handlers at DIRQL.
 
 <h3><a id="Examples"></a><a id="examples"></a><a id="EXAMPLES"></a>Examples</h3>
@@ -144,21 +144,21 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_miniport_interrupt_characteristics.md">
+<a href="https://msdn.microsoft.com/6016ab15-56c6-4430-8883-d4cdcdf6116f">MiniportDisableInterruptEx</a>
+
+
+
+<a href="https://msdn.microsoft.com/810503b9-75cd-4b38-ab1f-de240968ded6">MiniportInterrupt</a>
+
+
+
+<a href="https://msdn.microsoft.com/345715fb-878c-44d8-bf78-f3add10dd02b">MiniportInterruptDPC</a>
+
+
+
+<a href="https://msdn.microsoft.com/f4176e2d-d8d2-4e75-bccb-0c452da4d703">
    NDIS_MINIPORT_INTERRUPT_CHARACTERISTICS</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismregisterinterruptex.md">NdisMRegisterInterruptEx</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_isr.md">MiniportInterrupt</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_interrupt_dpc.md">MiniportInterruptDPC</a>
-
-
-
-<a href="..\ndis\nc-ndis-miniport_disable_interrupt.md">MiniportDisableInterruptEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563649">NdisMRegisterInterruptEx</a>

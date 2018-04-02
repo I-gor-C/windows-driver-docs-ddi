@@ -7,7 +7,7 @@ old-location: ifsk\fltclose.htm
 old-project: ifsk
 ms.assetid: fd5967cc-fb30-4882-9567-4617b9f9e723
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_a_to_d_f50e2397-1161-4e6e-9688-2baa417f6845.xml, FltClose, FltClose function [Installable File System Drivers], fltkernel/FltClose, ifsk.fltclose
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,21 +45,21 @@ req.typenames: EXpsFontRestriction
 
 
 # FltClose function
-<b>FltClose</b> closes a file handle that was opened by <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> or <a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>.
+<b>FltClose</b> closes a file handle that was opened by <a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff541937">FltCreateFileEx</a>.
 
 ## Syntax
 
-````
-NTSTATUS FltClose(
-  _In_ HANDLE FileHandle
+```
+NTSTATUS FLTAPI FltClose(
+  HANDLE FileHandle
 );
-````
+```
 
 ## Parameters
 
 `FileHandle`
 
-Handle created by a successful call to <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> or <a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>.
+Handle created by a successful call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff541937">FltCreateFileEx</a>.
 
 
 ## Return Value
@@ -86,7 +86,7 @@ Handle created by a successful call to <a href="..\fltkernel\nf-fltkernel-fltcre
 
 ## Remarks
 
-<b>FltClose</b> is only for closing file handles opened by <a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a> or <a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>. It should not be used to close arbitrary handles.
+<b>FltClose</b> is only for closing file handles opened by <a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff541937">FltCreateFileEx</a>. It should not be used to close arbitrary handles.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -99,12 +99,12 @@ Handle created by a successful call to <a href="..\fltkernel\nf-fltkernel-fltcre
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltcreatefileex.md">FltCreateFileEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541935">FltCreateFile</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltcreatefile.md">FltCreateFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541937">FltCreateFileEx</a>
 
 
 
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a>

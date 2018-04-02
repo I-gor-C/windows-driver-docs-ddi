@@ -44,7 +44,7 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# ExtRemoteTypedList method
+# ExtRemoteTypedList::ExtRemoteTypedList method
 The <b>ExtRemoteTypedList</b> class extends the <a href="..\engextcpp\nl-engextcpp-extremotelist.md">ExtRemoteList</a> class.  The <b>ExtRemoteTypedList</b> class adds type information allowing each item in the list to be represented by an instance of the <a href="..\engextcpp\nl-engextcpp-extremotetyped.md">ExtRemoteTyped</a> class.
 
 The <b>ExtRemoteTypedList</b> class includes the following constructors and methods:

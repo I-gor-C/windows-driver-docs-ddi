@@ -7,7 +7,7 @@ old-location: kernel\process_mitigation_payload_restriction_policy.htm
 old-project: kernel
 ms.assetid: f55a47b2-c95c-4b6c-aeff-aed99dd9e43b
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY structure [Kernel-Mode Driver Architecture], _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, kernel.process_mitigation_payload_restriction_policy, ntddk/PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,28 +47,28 @@ req.typenames: PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, *PPROCESS_MITIGATI
 Stores information about process mitigation policy.
 
 ## Syntax
-````
+```
 typedef struct _PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY {
   union {
     ULONG Flags;
     struct {
-      ULONG EnableExportAddressFilter  :1;
-      ULONG AuditExportAddressFilter  :1;
-      ULONG EnableExportAddressFilterPlus  :1;
-      ULONG AuditExportAddressFilterPlus  :1;
-      ULONG EnableImportAddressFilter  :1;
-      ULONG AuditImportAddressFilter  :1;
-      ULONG EnableRopStackPivot  :1;
-      ULONG AuditRopStackPivot  :1;
-      ULONG EnableRopCallerCheck  :1;
-      ULONG AuditRopCallerCheck  :1;
-      ULONG EnableRopSimExec  :1;
-      ULONG AuditRopSimExec  :1;
-      ULONG ReservedFlags  :20;
-    } DUMMYSTRUCTNAME;
-  } DUMMYUNIONNAME;
-} PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY;
-````
+      ULONG  : 1  EnableExportAddressFilter;
+      ULONG  : 1  AuditExportAddressFilter;
+      ULONG  : 1  EnableExportAddressFilterPlus;
+      ULONG  : 1  AuditExportAddressFilterPlus;
+      ULONG  : 1  EnableImportAddressFilter;
+      ULONG  : 1  AuditImportAddressFilter;
+      ULONG  : 1  EnableRopStackPivot;
+      ULONG  : 1  AuditRopStackPivot;
+      ULONG  : 1  EnableRopCallerCheck;
+      ULONG  : 1  AuditRopCallerCheck;
+      ULONG  : 1  EnableRopSimExec;
+      ULONG  : 1  AuditRopSimExec;
+      ULONG  : 20 ReservedFlags;
+    } DUMMYSTRUCTNAME;
+  } DUMMYUNIONNAME;
+} *PPROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY, PROCESS_MITIGATION_PAYLOAD_RESTRICTION_POLICY;
+```
 
 ## Members
 

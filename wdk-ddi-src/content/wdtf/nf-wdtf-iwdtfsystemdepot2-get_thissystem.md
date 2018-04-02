@@ -7,7 +7,7 @@ old-location: dtf\iwdtfsystemdepot2_thissystem.htm
 old-project: dtf
 ms.assetid: 8bf680a9-3779-447c-99b0-813ec454658e
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFSystemDepot2, IWDTFSystemDepot2 interface [Windows Device Testing Framework], ThisSystem property, IWDTFSystemDepot2.ThisSystem, IWDTFSystemDepot2::get_ThisSystem, Microsoft.WDTF.IWDTFSystemDepot2.ThisSystem, Microsoft::WDTF::IWDTFSystemDepot2::ThisSystem, ThisSystem property [Windows Device Testing Framework], ThisSystem property [Windows Device Testing Framework], IWDTFSystemDepot2 interface, dtf.iwdtfsystemdepot2_thissystem, get_ThisSystem,IWDTFSystemDepot2.get_ThisSystem, wdtf/IWDTFSystemDepot2::ThisSystem, wdtf/IWDTFSystemDepot2::get_ThisSystem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_ThisSystem method
-Gets an <a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a> value that represents the local computer.
+# IWDTFSystemDepot2::get_ThisSystem method
+Gets an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439367">IWDTFTarget2</a> value that represents the local computer.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_ThisSystem(
-  [out, retval] IWDTFTarget2 **pVal
+  IWDTFTarget2 **pVal
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ None
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtfsystemdepot2.md">IWDTFSystemDepot2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439331">IWDTFSystemDepot2</a>
 
 
 
-<a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439367">IWDTFTarget2</a>

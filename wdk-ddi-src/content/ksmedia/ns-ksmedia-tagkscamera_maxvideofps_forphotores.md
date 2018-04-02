@@ -47,8 +47,8 @@ req.typenames: KSCAMERA_MAXVIDEOFPS_FORPHOTORES, *PKSCAMERA_MAXVIDEOFPS_FORPHOTO
 The <b>KSCAMERA_MAXVIDEOFPS_FORPHOTORES</b> structure contains the property data for maximum frame rate at a particular resolution for a camera supporting preview and capture. This structure is used when setting or retrieving the data for the <b>KSPROPERTY_CAMERACONTROL_EXTENDED_MAXVIDFPS_PHOTORES</b> extended control property.
 
 ## Syntax
-````
-typedef struct _KSCAMERA_MAXVIDEOFPS_FORPHOTORES {
+```
+typedef struct tagKSCAMERA_MAXVIDEOFPS_FORPHOTORES {
   ULONG PhotoResWidth;
   ULONG PhotoResHeight;
   ULONG PreviewFPSNum;
@@ -56,7 +56,7 @@ typedef struct _KSCAMERA_MAXVIDEOFPS_FORPHOTORES {
   ULONG CaptureFPSNum;
   ULONG CaptureFPSDenom;
 } KSCAMERA_MAXVIDEOFPS_FORPHOTORES, *PKSCAMERA_MAXVIDEOFPS_FORPHOTORES;
-````
+```
 
 ## Members
 

@@ -76,9 +76,9 @@ To get extended error information, call <a href="http://go.microsoft.com/fwlink/
 <h3><a id="Parameters"></a><a id="parameters"></a><a id="PARAMETERS"></a>Parameters</h3>
 
 
-The driver can handle this IOCTL by calling <a href="..\poscx\nf-poscx-poscxreleasedevice.md">PosCxReleaseDevice</a>.
+The driver can handle this IOCTL by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt593132">PosCxReleaseDevice</a>.
 
-To use this IOCTL, the client must have previously called <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_claim_device.md">IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE</a>.
+To use this IOCTL, the client must have previously called <a href="https://msdn.microsoft.com/library/windows/hardware/dn772093">IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

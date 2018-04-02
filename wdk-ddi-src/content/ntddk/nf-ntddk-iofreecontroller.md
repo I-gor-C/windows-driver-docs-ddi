@@ -7,7 +7,7 @@ old-location: kernel\iofreecontroller.htm
 old-project: kernel
 ms.assetid: a9b0ca27-dc46-4f9b-a3f9-51bbd759afc1
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoFreeController, IoFreeController routine [Kernel-Mode Driver Architecture], k104_42ed98f0-34b1-45d9-981e-e3e62411ad70.xml, kernel.iofreecontroller, ntddk/IoFreeController
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>IoFreeController</b> routine releases a previously allocated controller o
 
 ## Syntax
 
-````
-VOID IoFreeController(
-  _In_ PCONTROLLER_OBJECT ControllerObject
+```
+NTKERNELAPI VOID IoFreeController(
+  PCONTROLLER_OBJECT ControllerObject
 );
-````
+```
 
 ## Parameters
 
@@ -83,12 +83,12 @@ The connection between the current target device object and the controller objec
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-iocreatecontroller.md">IoCreateController</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548224">IoAllocateController</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-iodeletecontroller.md">IoDeleteController</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548395">IoCreateController</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-ioallocatecontroller.md">IoAllocateController</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549078">IoDeleteController</a>

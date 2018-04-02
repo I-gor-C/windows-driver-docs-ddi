@@ -7,7 +7,7 @@ old-location: buses\_urb_os_feature_descriptor_request.htm
 old-project: usbref
 ms.assetid: 9ff62523-e9e3-4f32-802f-6fee0082d925
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "_URB_OS_FEATURE_DESCRIPTOR_REQUEST, _URB_OS_FEATURE_DESCRIPTOR_REQUEST structure [Buses], buses._urb_os_feature_descriptor_request, usb/_URB_OS_FEATURE_DESCRIPTOR_REQUEST"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,26 +48,35 @@ req.product: Windows 10 or later.
 The <b>_URB_OS_FEATURE_DESCRIPTOR_REQUEST</b> structure is used by the USB hub driver to retrieve Microsoft OS Feature Descriptors from a USB device or an interface on a USB device.
 
 ## Syntax
-````
+```
 struct _URB_OS_FEATURE_DESCRIPTOR_REQUEST {
-  _URB_HEADER  Hdr;
-  ULONG       TransferBufferLength;
-  PVOID       TransferBuffer;
-  PMDL        TransferBufferMDL;
-  struct URB  *UrbLink;
-  UCHAR       Recipient;
-  UCHAR       InterfaceNumber;
-  UCHAR       MS_PageIndex;
-  USHORT      MS_FeatureDescriptorIndex;
+  _URB_HEADER   Hdr;
+  struct        _URB_HEADER;
+  PVOID         Reserved;
+  ULONG         Reserved0;
+  ULONG         TransferBufferLength;
+  PVOID         TransferBuffer;
+  PMDL          TransferBufferMDL;
+  _URB          *UrbLink;
+  struct        _URB;
+  _URB_HCD_AREA hca;
+  struct        _URB_HCD_AREA;
+  UCHAR  : 5    Recipient;
+  UCHAR  : 3    Reserved1;
+  UCHAR         Reserved2;
+  UCHAR         InterfaceNumber;
+  UCHAR         MS_PageIndex;
+  USHORT        MS_FeatureDescriptorIndex;
+  USHORT        Reserved3;
 };
-````
+```
 
 ## Members
 
 
 `Hdr`
 
-Pointer to a <a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a> structure that specifies the URB header information. <b>Hdr.Function</b> must URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR.
 <b>Hdr.Length</b> must be <code>sizeof(_URB_OS_FEATURE_DESCRIPTOR_REQUEST)</code>.
 
 `Reserved`
@@ -146,8 +155,8 @@ The reserved members of this structure must be treated as opaque and are reserve
 
 ## See Also
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
 
 
 
-<a href="..\usb\ns-usb-_urb_header.md">_URB_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540409">_URB_HEADER</a>

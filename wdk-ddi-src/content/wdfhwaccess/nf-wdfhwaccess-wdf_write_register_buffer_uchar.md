@@ -52,14 +52,14 @@ The <b>WDF_WRITE_REGISTER_BUFFER_UCHAR</b> function writes a number of bytes fro
 
 ## Syntax
 
-````
+```
 void WDF_WRITE_REGISTER_BUFFER_UCHAR(
-  _In_ WDFDEVICE Device,
-  _In_ PUCHAR    Register,
-  _In_ PUCHAR    Buffer,
-  _In_ ULONG     Count 
+  WDFDEVICE Device,
+  PUCHAR    Register,
+  PUCHAR    Buffer,
+  ULONG     Count
 );
-````
+```
 
 ## Parameters
 

@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# RawReadCommand method
+# IStiUSD::RawReadCommand method
 A still image minidriver's <b>IStiUSD::RawReadCommand</b> method reads command information from a still image device.
 
 ## Syntax
 
-````
+```
 HRESULT RawReadCommand(
-   LPVOID       lpBuffer,
-   LPDWORD      lpdwNumberOfBytes,
-   LPOVERLAPPED lpOverlapped
+  LPVOID       lpBuffer,
+  LPDWORD      lpdwNumberOfBytes,
+  LPOVERLAPPED lpOverlapped
 );
-````
+```
 
 ## Parameters
 
@@ -91,8 +91,8 @@ Implementation of this method, along with the meaning of buffer contents, are ve
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/62740263-5bbb-48e1-be3d-9ee9cb37d6b9">IStiUSD</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543758">IStiDevice::RawReadCommand</a>
+
+
+
+<a href="https://msdn.microsoft.com/62740263-5bbb-48e1-be3d-9ee9cb37d6b9">IStiUSD</a>

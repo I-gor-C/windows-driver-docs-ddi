@@ -7,7 +7,7 @@ old-location: debugger\outputpromptvalistwide.htm
 old-project: debugger
 ms.assetid: ddd2cc89-1747-46e8-ade0-c4ccb10584f6
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugControl4, IDebugControl4 interface [Windows Debugging], OutputPromptVaListWide method, IDebugControl4::OutputPromptVaListWide, OutputPromptVaListWide method [Windows Debugging], OutputPromptVaListWide method [Windows Debugging], IDebugControl4 interface, OutputPromptVaListWide,IDebugControl4.OutputPromptVaListWide, dbgeng/IDebugControl4::OutputPromptVaListWide, debugger.outputpromptvalistwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# OutputPromptVaListWide method
+# IDebugControl4::OutputPromptVaListWide method
 The <b>OutputPromptVaListWide</b>  method formats and sends a user prompt to the <a href="https://msdn.microsoft.com/9090a465-b6ab-4e99-8155-b0abdb729468">output callback objects</a>.
 
 ## Syntax
 
-````
+```
 HRESULT OutputPromptVaListWide(
-  [in]           ULONG   OutputControl,
-  [in, optional] PCWSTR  Format,
-  [in]           va_list Args
+  ULONG   OutputControl,
+  PCWSTR  Format,
+  va_list Args
 );
-````
+```
 
 ## Parameters
 
@@ -288,19 +288,19 @@ For more information about prompting the user, see <a href="https://msdn.microso
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541518">DEBUG_OUTPUT_XXX</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548180">GetPromptText</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
 
 
 

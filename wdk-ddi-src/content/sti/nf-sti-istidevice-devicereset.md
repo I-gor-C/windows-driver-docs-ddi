@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# DeviceReset method
+# IStiDevice::DeviceReset method
 The <b>IStiDevice::DeviceReset</b> method resets a still image device to a known state.
 
 ## Syntax
 
-````
-HRESULT DeviceReset();
-````
+```
+HRESULT DeviceReset(
+
+);
+```
 
 ## Parameters
 

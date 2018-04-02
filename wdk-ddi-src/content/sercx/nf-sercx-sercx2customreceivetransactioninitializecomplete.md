@@ -50,18 +50,18 @@ The <b>SerCx2CustomReceiveTransactionInitializeComplete</b> method notifies vers
 
 ## Syntax
 
-````
-VOID SerCx2CustomReceiveTransactionInitializeComplete(
-  [in] SERCX2CUSTOMRECEIVETRANSACTION CustomReceiveTransaction,
-  [in] BOOLEAN                        InitSuccess
+```
+void SerCx2CustomReceiveTransactionInitializeComplete(
+  SERCX2CUSTOMRECEIVETRANSACTION CustomReceiveTransaction,
+  BOOLEAN                        InitSuccess
 );
-````
+```
 
 ## Parameters
 
 `CustomReceiveTransaction`
 
-A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a> handle to a custom-receive object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a> method to create this object.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a> handle to a custom-receive object. The serial controller driver previously called the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265251">SerCx2CustomReceiveTransactionCreate</a> method to create this object.
 
 `InitSuccess`
 
@@ -74,7 +74,7 @@ None.
 
 ## Remarks
 
-Before SerCx2 starts a custom-receive transaction, SerCx2 calls the <a href="..\sercx\nc-sercx-evt_sercx2_custom_receive_transaction_initialize.md">EvtSerCx2CustomReceiveTransactionInitialize</a> event callback function, if it is implemented, to initialize the serial controller to perform the transaction. In response to this call, the driver should first do any initialization that is needed; then the driver must call <b>SerCx2CustomReceiveTransactionInitializeComplete</b> to notify SerCx2. SerCx2 expects this notification and does not start the transaction until it is notified.
+Before SerCx2 starts a custom-receive transaction, SerCx2 calls the <a href="https://msdn.microsoft.com/B3C23236-2A35-456A-B461-AEC688ACA5B7">EvtSerCx2CustomReceiveTransactionInitialize</a> event callback function, if it is implemented, to initialize the serial controller to perform the transaction. In response to this call, the driver should first do any initialization that is needed; then the driver must call <b>SerCx2CustomReceiveTransactionInitializeComplete</b> to notify SerCx2. SerCx2 expects this notification and does not start the transaction until it is notified.
 
 The serial controller driver must call <b>SerCx2CustomReceiveTransactionInitializeComplete</b> only in response to a call to the <i>EvtSerCx2CustomReceiveTransactionInitialize</i> function.
 
@@ -90,12 +90,12 @@ For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C
 
 ## See Also
 
-<a href="..\sercx\nc-sercx-evt_sercx2_custom_receive_transaction_initialize.md">EvtSerCx2CustomReceiveTransactionInitialize</a>
-
-
-
-<a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
+<a href="https://msdn.microsoft.com/B3C23236-2A35-456A-B461-AEC688ACA5B7">EvtSerCx2CustomReceiveTransactionInitialize</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265249">SERCX2CUSTOMRECEIVETRANSACTION</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265251">SerCx2CustomReceiveTransactionCreate</a>

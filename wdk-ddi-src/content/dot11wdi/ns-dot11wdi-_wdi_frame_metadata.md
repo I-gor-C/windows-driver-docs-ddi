@@ -7,7 +7,7 @@ old-location: netvista\wdi_frame_metadata.htm
 old-project: netvista
 ms.assetid: 34733e8f-cbe0-4fcd-abcf-6791e298282f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWDI_FRAME_METADATA, PWDI_FRAME_METADATA, PWDI_FRAME_METADATA structure pointer [Network Drivers Starting with Windows Vista], WDI_FRAME_METADATA, WDI_FRAME_METADATA structure [Network Drivers Starting with Windows Vista], _WDI_FRAME_METADATA, dot11wdi/PWDI_FRAME_METADATA, dot11wdi/WDI_FRAME_METADATA, netvista.wdi_frame_metadata, netvista.wifi_frame_metadata"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,21 +48,19 @@ The
   WDI_FRAME_METADATA structure defines the frame metadata.
 
 ## Syntax
-````
+```
 typedef struct _WDI_FRAME_METADATA {
-  LIST_ENTRY       Linkage;
+  LIST_ENTRY       Linkage;
   PNET_BUFFER_LIST pNBL;
-  WDI_FRAME_ID     FrameID;
-  UINT16           wPad;
-#ifdef _WIN64
-  UINT32           dPad;
-#endif 
+  WDI_FRAME_ID     FrameID;
+  UINT16           wPad;
+  UINT32           dPad;
   union {
-    WDI_TX_METADATA txMetaData;
     WDI_RX_METADATA rxMetaData;
-  } u;
-} WDI_FRAME_METADATA, *PWDI_FRAME_METADATA;
-````
+    WDI_TX_METADATA txMetaData;
+  } u;
+} *PWDI_FRAME_METADATA, WDI_FRAME_METADATA;
+```
 
 ## Members
 
@@ -108,20 +106,20 @@ RX metadata.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt297642">WDI_FRAME_ID</a>
-
-
-
-<a href="..\dot11wdi\ns-dot11wdi-_wdi_rx_metadata.md">WDI_RX_METADATA</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
 
 
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
 
 
 
-<a href="..\dot11wdi\ns-dot11wdi-_wdi_tx_metadata.md">WDI_TX_METADATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt297642">WDI_FRAME_ID</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn926112">WDI_RX_METADATA</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn898195">WDI_TX_METADATA</a>

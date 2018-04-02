@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# UnLockDevice method
+# IStiUSD::UnLockDevice method
 A still image minidriver's <b>IStiUSD::UnLockDevice</b> method unlocks a device that was locked by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543829">IStiUSD::LockDevice</a>.
 
 ## Syntax
 
-````
-STDMETHODIMP UnLockDevice();
-````
+```
+HRESULT UnLockDevice(
+
+);
+```
 
 ## Parameters
 

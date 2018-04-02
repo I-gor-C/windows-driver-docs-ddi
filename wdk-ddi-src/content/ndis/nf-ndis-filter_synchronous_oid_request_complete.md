@@ -7,7 +7,7 @@ old-location: netvista\filter_synchronous_oid_request_complete.htm
 old-project: netvista
 ms.assetid: E0749F52-CC7C-484D-8350-1986154957C1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE, FilterSynchronousOidRequestComplete, FilterSynchronousOidRequestComplete function [Network Drivers Starting with Windows Vista], ndis/FilterSynchronousOidRequestComplete, netvista.filter_synchronous_oid_request_complete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 
 ## Syntax
 
-````
-VOID FilterSynchronousOidRequestComplete(
-  _In_    NDIS_HANDLE      FilterModuleContext,
-  _Inout_ NDIS_OID_REQUEST *OidRequest,
-  _Inout_ NDIS_STATUS      *Status,
-  _In_    PVOID            CallContext
+```
+void FILTER_SYNCHRONOUS_OID_REQUEST_COMPLETE(
+  NDIS_HANDLE      FilterModuleContext,
+  NDIS_OID_REQUEST *OidRequest,
+  NDIS_STATUS      *Status,
+  PVOID            CallContext
 );
-````
+```
 
 ## Parameters
 

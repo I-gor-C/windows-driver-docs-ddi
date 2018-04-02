@@ -47,12 +47,12 @@ req.typenames: KSERROR, *PKSERROR
 The KSERROR structure is used to report streaming errors in both kernel and user mode to their respective quality managers.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSERROR {
   PVOID Context;
   ULONG Status;
-} KSERROR, *PKSERROR;
-````
+}  *PKSERROR;
+```
 
 ## Members
 
@@ -79,8 +79,8 @@ Streaming error notifications can be generated against the Quality Management si
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561673">KSDEGRADE_STANDARD</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565211">KSPROPERTY_QUALITY_ERROR</a>
-
-
-
-<a href="..\ks\ne-ks-ksdegrade_standard.md">KSDEGRADE_STANDARD</a>

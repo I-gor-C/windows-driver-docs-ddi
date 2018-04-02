@@ -47,16 +47,16 @@ req.typenames: TOPOLOGY_MAP, *PTOPOLOGY_MAP
 The TOPOLOGY_MAP structure is used to store an IEEE 1394 bus topology map. The relations between devices are found in the port members of the entries in <b>TOP_Self_ID_Array</b>.
 
 ## Syntax
-````
+```
 typedef struct _TOPOLOGY_MAP {
-  USHORT  TOP_Length;
-  USHORT  TOP_CRC;
-  ULONG   TOP_Generation;
-  USHORT  TOP_Node_Count;
-  USHORT  TOP_Self_ID_Count;
+  USHORT  TOP_Length;
+  USHORT  TOP_CRC;
+  ULONG   TOP_Generation;
+  USHORT  TOP_Node_Count;
+  USHORT  TOP_Self_ID_Count;
   SELF_ID TOP_Self_ID_Array[1];
 } TOPOLOGY_MAP, *PTOPOLOGY_MAP;
-````
+```
 
 ## Members
 

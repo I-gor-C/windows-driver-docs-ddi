@@ -7,7 +7,7 @@ old-location: display\dxgkarg_createprocess.htm
 old-project: display
 ms.assetid: F4FDF254-1C36-43DC-B1FD-376AD7658E61
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*INOUT_PDXGKARG_CREATEPROCESS, DXGKARG_CREATEPROCESS, DXGKARG_CREATEPROCESS structure [Display Devices], _DXGKARG_CREATEPROCESS, d3dkmddi/DXGKARG_CREATEPROCESS, display.dxgkarg_createprocess"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DXGKARG_CREATEPROCESS
 ---
 
 # _DXGKARG_CREATEPROCESS structure
-<b>DXGKARG_CREATEPROCESS</b> is used with <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a> to create a kernel mode driver object for a Microsoft DirectX graphics kernel process object.
+<b>DXGKARG_CREATEPROCESS</b> is used with <a href="https://msdn.microsoft.com/E5AAEEB1-C29E-4AA7-9F8E-2C2DCFADED81">DxgkDdiCreateProcess</a> to create a kernel mode driver object for a Microsoft DirectX graphics kernel process object.
 
 ## Syntax
-````
+```
 typedef struct _DXGKARG_CREATEPROCESS {
-  HANDLE                  hDxgkProcess;
-  HANDLE                  hKmdProcess;
+  HANDLE                  hDxgkProcess;
+  HANDLE                  hKmdProcess;
   DXGK_CREATEPROCESSFLAGS Flags;
-  UINT                    NumPasid;
-  ULONG*                  pPasid;
+  UINT                    NumPasid;
+  ULONG                   *pPasid;
 } DXGKARG_CREATEPROCESS;
-````
+```
 
 ## Members
 
@@ -70,7 +70,7 @@ typedef struct _DXGKARG_CREATEPROCESS {
 
 `Flags`
 
-[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createprocessflags.md">DXGK_CREATEPROCESSFLAGS</a> structure describing the operation.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/dn914476">DXGK_CREATEPROCESSFLAGS</a> structure describing the operation.
 
 `NumPasid`
 
@@ -89,8 +89,8 @@ typedef struct _DXGKARG_CREATEPROCESS {
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn914476">DXGK_CREATEPROCESSFLAGS</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_createprocessflags.md">DXGK_CREATEPROCESSFLAGS</a>
+<a href="https://msdn.microsoft.com/E5AAEEB1-C29E-4AA7-9F8E-2C2DCFADED81">DxgkDdiCreateProcess</a>

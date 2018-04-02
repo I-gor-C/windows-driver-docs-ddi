@@ -44,20 +44,20 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsMethod method
+# IKsControl::KsMethod method
 The <b>KsMethod</b> method sends a method to a KS object, along with any other defined support operations available on a method set.
 
 ## Syntax
 
-````
+```
 HRESULT KsMethod(
-  [in]      PKSMETHOD Method,
-  [in]      ULONG     MethodLength,
-  [in, out] LPVOID    MethodData,
-  [in]      ULONG     DataLength,
-  [in, out] ULONG     *BytesReturned
+  PKSMETHOD Method,
+  ULONG     MethodLength,
+  LPVOID    MethodData,
+  ULONG     DataLength,
+  ULONG     *BytesReturned
 );
-````
+```
 
 ## Parameters
 

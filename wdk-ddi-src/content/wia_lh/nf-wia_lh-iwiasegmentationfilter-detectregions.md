@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# DetectRegions method
+# IWiaSegmentationFilter::DetectRegions method
 The <b>IWiaSegmentationFilter::DetectRegions</b> method determines the subregions of an image laid out on the flatbed platen so that each subregion can be acquired into a separate image item.
 
 ## Syntax
 
-````
+```
 HRESULT DetectRegions(
-  [in]           LONG      lFlags,
-  [in, optional] IStream   *pInputStream ,
-  [in, optional] IWiaItem2 *pWiaItem2
+  LONG      lFlags,
+  IStream   *pInputStream,
+  IWiaItem2 *pWiaItem2
 );
-````
+```
 
 ## Parameters
 

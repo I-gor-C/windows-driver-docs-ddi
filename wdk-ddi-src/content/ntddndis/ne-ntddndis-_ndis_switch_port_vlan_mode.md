@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_port_vlan_mode.htm
 old-project: netvista
 ms.assetid: 87828768-BE97-4549-AC5B-7CB27D0A9720
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_SWITCH_PORT_VLAN_MODE, NDIS_SWITCH_PORT_VLAN_MODE, NDIS_SWITCH_PORT_VLAN_MODE enumeration [Network Drivers Starting with Windows Vista], NdisSwitchPortVlanModeAccess, NdisSwitchPortVlanModeMax, NdisSwitchPortVlanModePrivate, NdisSwitchPortVlanModeTrunk, NdisSwitchPortVlanModeUnknown, PNDIS_SWITCH_PORT_VLAN_MODE, PNDIS_SWITCH_PORT_VLAN_MODE enumeration pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PORT_VLAN_MODE, netvista.ndis_switch_port_vlan_mode, ntddndis/NDIS_SWITCH_PORT_VLAN_MODE, ntddndis/NdisSwitchPortVlanModeAccess, ntddndis/NdisSwitchPortVlanModeMax, ntddndis/NdisSwitchPortVlanModePrivate, ntddndis/NdisSwitchPortVlanModeTrunk, ntddndis/NdisSwitchPortVlanModeUnknown, ntddndis/PNDIS_SWITCH_PORT_VLAN_MODE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: NDIS_SWITCH_PORT_VLAN_MODE, *PNDIS_SWITCH_PORT_VLAN_MODE
 The <b>NDIS_SWITCH_PORT_VLAN_MODE</b> enumeration specifies the operation mode of the virtual local area network (VLAN) policy property of a Hyper-V extensible switch port.
 
 ## Syntax
-````
-typedef enum  { 
-  NdisSwitchPortVlanModeUnknown  = 0,
-  NdisSwitchPortVlanModeAccess   = 1,
-  NdisSwitchPortVlanModeTrunk    = 2,
-  NdisSwitchPortVlanModePrivate  = 3,
-  NdisSwitchPortVlanModeMax      = 4
-} NDIS_SWITCH_PORT_VLAN_MODE, *PNDIS_SWITCH_PORT_VLAN_MODE;
-````
+```
+typedef enum _NDIS_SWITCH_PORT_VLAN_MODE {
+  NdisSwitchPortVlanModeUnknown  ,
+  NdisSwitchPortVlanModeAccess   ,
+  NdisSwitchPortVlanModeTrunk    ,
+  NdisSwitchPortVlanModePrivate  ,
+  NdisSwitchPortVlanModeMax
+} *PNDIS_SWITCH_PORT_VLAN_MODE, NDIS_SWITCH_PORT_VLAN_MODE;
+```
 
 ## Constants
 
@@ -89,7 +89,7 @@ typedef enum  {
 
 ## Remarks
 
-The <b>OperationMode</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_vlan.md">NDIS_SWITCH_PORT_PROPERTY_VLAN</a> structure is an <b>NDIS_SWITCH_PORT_VLAN_MODE</b> enumeration data type. 
+The <b>OperationMode</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598243">NDIS_SWITCH_PORT_PROPERTY_VLAN</a> structure is an <b>NDIS_SWITCH_PORT_VLAN_MODE</b> enumeration data type. 
 
 
 
@@ -103,12 +103,12 @@ For more information about extensible switch port policies, see <a href="https:/
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_switch_forwarding_destination_array.md">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a>
-
-
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_port_property_vlan.md">NDIS_SWITCH_PORT_PROPERTY_VLAN</a>
-
-
-
 <b></b>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598210">NDIS_SWITCH_FORWARDING_DESTINATION_ARRAY</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598243">NDIS_SWITCH_PORT_PROPERTY_VLAN</a>

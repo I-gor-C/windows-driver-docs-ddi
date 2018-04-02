@@ -53,12 +53,12 @@ The <b>KsServiceBusEnumCreateRequest</b> function services IRP_MJ_CREATE request
 
 ## Syntax
 
-````
-NTSTATUS KsServiceBusEnumCreateRequest(
-  _In_    PDEVICE_OBJECT DeviceObject,
-  _Inout_ PIRP           Irp
+```
+KSDDKAPI NTSTATUS KsServiceBusEnumCreateRequest(
+  PDEVICE_OBJECT DeviceObject,
+  PIRP           Irp
 );
-````
+```
 
 ## Parameters
 
@@ -88,4 +88,4 @@ Returns STATUS_SUCCESS if successful. Otherwise. it returns STATUS_OBJECT_NAME_N
 
 ## See Also
 
-<a href="..\swenum\nf-swenum-ksservicebusenumpnprequest.md">KsServiceBusEnumPnpRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566816">KsServiceBusEnumPnpRequest</a>

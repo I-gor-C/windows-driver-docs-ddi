@@ -7,7 +7,7 @@ old-location: storage\hba_removeallpersistentbindings.htm
 old-project: storage
 ms.assetid: f15823dd-a9c5-46a8-a376-41b831450b66
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_RemoveAllPersistentBindings, HBA_RemoveAllPersistentBindings routine [Storage Devices], fibreHBA_rtns_1b72392e-f155-41aa-915a-a39da952afec.xml, hbaapi/HBA_RemoveAllPersistentBindings, storage.hba_removeallpersistentbindings
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,18 +49,18 @@ The <b>HBA_RemoveAllPersistentBindings</b> routine removes all persistent bindin
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_RemoveAllPersistentBindings(
-  _In_ HBA_HANDLE Handle,
-  _In_ HBA_WWN    HbaPortWWN
+  IN HBA_HANDLE Handle,
+  IN HBA_WWN    HbaPortWWN
 );
-````
+```
 
 ## Parameters
 
 `Handle`
 
-Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located.
+Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port is located.
 
 `HbaPortWWN`
 
@@ -136,8 +136,8 @@ The removal of persistent bindings does not change target mappings until the ope
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>

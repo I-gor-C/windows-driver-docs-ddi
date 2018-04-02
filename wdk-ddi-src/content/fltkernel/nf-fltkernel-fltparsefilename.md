@@ -7,7 +7,7 @@ old-location: ifsk\fltparsefilename.htm
 old-project: ifsk
 ms.assetid: 8d91390b-22a1-4e0b-8c9e-78c0872e7b21
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_p_to_z_57a4d7c0-f653-4c91-a16b-1de79ef56342.xml, FltParseFileName, FltParseFileName function [Installable File System Drivers], fltkernel/FltParseFileName, ifsk.fltparsefilename
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,20 +49,20 @@ req.typenames: EXpsFontRestriction
 
 ## Syntax
 
-````
-NTSTATUS FltParseFileName(
-  _In_    PCUNICODE_STRING FileName,
-  _Inout_ PUNICODE_STRING  Extension,
-  _Inout_ PUNICODE_STRING  Stream,
-  _Inout_ PUNICODE_STRING  FinalComponent
+```
+NTSTATUS FLTAPI FltParseFileName(
+  PCUNICODE_STRING FileName,
+  PUNICODE_STRING  Extension,
+  PUNICODE_STRING  Stream,
+  PUNICODE_STRING  FinalComponent
 );
-````
+```
 
 ## Parameters
 
 `FileName`
 
-Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the string to parse as a file name. This parameter is required and cannot be <b>NULL</b>.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains the string to parse as a file name. This parameter is required and cannot be <b>NULL</b>.
 
 `Extension`
 
@@ -125,9 +125,9 @@ The following is an example of a short name for a file:
 
 <i>FinalComponent</i>: "TestRe~1.txt" 
 
-For more information about file name normalization and file name parsing, see <a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>. 
+For more information about file name normalization and file name parsing, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff544633">FLT_FILE_NAME_INFORMATION</a>. 
 
-To parse the contents of a FLT_FILE_NAME_INFORMATION structure, call <a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>.
+To parse the contents of a FLT_FILE_NAME_INFORMATION structure, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543417">FltParseFileNameInformation</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -141,12 +141,12 @@ To parse the contents of a FLT_FILE_NAME_INFORMATION structure, call <a href="..
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltparsefilenameinformation.md">FltParseFileNameInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544633">FLT_FILE_NAME_INFORMATION</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543417">FltParseFileNameInformation</a>
 
 
 
-<a href="..\fltkernel\ns-fltkernel-_flt_file_name_information.md">FLT_FILE_NAME_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

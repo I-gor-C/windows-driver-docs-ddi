@@ -47,22 +47,20 @@ req.typenames: KS_VideoControlFlags
 The KS_VideoControlFlags enumeration defines video control capabilities for a specific stream.
 
 ## Syntax
-````
-typedef enum  { 
-  KS_VideoControlFlag_FlipHorizontal                  = 0x0001,
-  KS_VideoControlFlag_FlipVertical                    = 0x0002,
-  KS_Obsolete_VideoControlFlag_ExternalTriggerEnable  = 0x0010,
-  KS_Obsolete_VideoControlFlag_Trigger                = 0x0020,
-  KS_VideoControlFlag_ExternalTriggerEnable           = 0x0004,
-  KS_VideoControlFlag_Trigger                         = 0x0008,
-  KS_VideoControlFlag_IndependentImagePin             = 0x0040,
-#if NTDDI_VERSION >= NTDDI_WIN8
-  KS_VideoControlFlag_StillCapturePreviewFrame        = 0x0080,
-  KS_VideoControlFlag_StartPhotoSequenceCapture       = 0x0100,
-  KS_VideoControlFlag_StopPhotoSequenceCapture        = 0x0200
-
-#endif } KS_VideoControlFlags;
-````
+```
+typedef enum KS_VideoControlFlags {
+  KS_VideoControlFlag_FlipHorizontal                  ,
+  KS_VideoControlFlag_FlipVertical                    ,
+  KS_Obsolete_VideoControlFlag_ExternalTriggerEnable  ,
+  KS_Obsolete_VideoControlFlag_Trigger                ,
+  KS_VideoControlFlag_ExternalTriggerEnable           ,
+  KS_VideoControlFlag_Trigger                         ,
+  KS_VideoControlFlag_IndependentImagePin             ,
+  KS_VideoControlFlag_StillCapturePreviewFrame        ,
+  KS_VideoControlFlag_StartPhotoSequenceCapture       ,
+  KS_VideoControlFlag_StopPhotoSequenceCapture
+} ;
+```
 
 ## Constants
 
@@ -135,8 +133,8 @@ Supported starting with Windows 8.1.</td>
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_videocontrol_caps_s.md">KSPROPERTY_VIDEOCONTROL_CAPS_S</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566036">KSPROPERTY_VIDEOCONTROL_CAPS_S</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_videocontrol_mode_s.md">KSPROPERTY_VIDEOCONTROL_MODE_S</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566043">KSPROPERTY_VIDEOCONTROL_MODE_S</a>

@@ -45,36 +45,41 @@ req.product: Windows 10 or later.
 ---
 
 # _VHF_CONFIG structure
-Contains initial configuration information that is provided by the HID source driver when it calls <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a> to create a virtual HID device.
+Contains initial configuration information that is provided by the HID source driver when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/dn925036">VhfCreate</a> to create a virtual HID device.
 
 ## Syntax
-````
+```
 typedef struct _VHF_CONFIG {
-  ULONG                                            Size;
-  PVOID                                            VhfClientContext;
-  ULONG                                            OperationContextSize;
-  PDEVICE_OBJECT                                   DeviceObject;
-  USHORT                                           VendorID;
-  USHORT                                           ProductID;
-  USHORT                                           VersionNumber;
-  GUID                                             ContainerID;
-  USHORT                                           ReportDescriptorLength;
-  _Field_size_full_(ReportDescriptorLength) PUCHAR ReportDescriptor;
-  PEVT_VHF_READY_FOR_NEXT_READ_REPORT              EvtVhfReadyForNextReadReport;
-  PEVT_VHF_ASYNC_OPERATION                         EvtVhfAsyncOperationGetFeature;
-  PEVT_VHF_ASYNC_OPERATION                         EvtVhfAsyncOperationSetFeature;
-  PEVT_VHF_ASYNC_OPERATION                         EvtVhfAsyncOperationWriteReport;
-  PEVT_VHF_ASYNC_OPERATION                         EvtVhfAsyncOperationGetInputReport;
-  PEVT_VHF_CLEANUP                                 EvtVhfCleanup;
+  ULONG                               Size;
+  PVOID                               VhfClientContext;
+  ULONG                               OperationContextSize;
+  PDEVICE_OBJECT                      DeviceObject;
+  PVOID                               Reserved;
+  USHORT                              VendorID;
+  USHORT                              ProductID;
+  USHORT                              VersionNumber;
+  GUID                                ContainerID;
+  USHORT                              InstanceIDLength;
+  PWSTR                               InstanceID;
+  USHORT                              ReportDescriptorLength;
+  PUCHAR                              ReportDescriptor;
+  PEVT_VHF_READY_FOR_NEXT_READ_REPORT EvtVhfReadyForNextReadReport;
+  PEVT_VHF_ASYNC_OPERATION            EvtVhfAsyncOperationGetFeature;
+  PEVT_VHF_ASYNC_OPERATION            EvtVhfAsyncOperationSetFeature;
+  PEVT_VHF_ASYNC_OPERATION            EvtVhfAsyncOperationWriteReport;
+  PEVT_VHF_ASYNC_OPERATION            EvtVhfAsyncOperationGetInputReport;
+  PEVT_VHF_CLEANUP                    EvtVhfCleanup;
+  USHORT                              HardwareIDsLength;
+  PWSTR                               HardwareIDs;
 } VHF_CONFIG, *PVHF_CONFIG;
-````
+```
 
 ## Members
 
 
 `Size`
 
-Required. Size of this structure initialized by <a href="..\vhf\nf-vhf-vhf_config_init.md">VHF_CONFIG_INIT</a>.
+Required. Size of this structure initialized by <a href="https://msdn.microsoft.com/library/windows/hardware/dn925046">VHF_CONFIG_INIT</a>.
 
 `VhfClientContext`
 
@@ -82,11 +87,11 @@ Optional. An opaque pointer to HID source driver-allocated memory that the Virtu
 
 `OperationContextSize`
 
-Optional. Size of the buffer that VHF must allocate for an asynchronous operation started by <a href="..\vhf\nc-vhf-evt_vhf_async_operation.md">EvtVhfAsyncOperation</a>. If non-zero, VHF allocates a buffer of this size and passes a pointer to that buffer in the <i>VhfOperationContext</i> parameter each time it invokes <i>EvtVhfAsyncOperation</i> to start a new operation.
+Optional. Size of the buffer that VHF must allocate for an asynchronous operation started by <a href="https://msdn.microsoft.com/C42174FE-202F-405D-840B-8613762F43AC">EvtVhfAsyncOperation</a>. If non-zero, VHF allocates a buffer of this size and passes a pointer to that buffer in the <i>VhfOperationContext</i> parameter each time it invokes <i>EvtVhfAsyncOperation</i> to start a new operation.
 
 `DeviceObject`
 
-Required. A pointer to the <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetdeviceobject.md">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call.
+Required. A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="https://msdn.microsoft.com/library/windows/hardware/ff546942">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> call.
 
 `Reserved`
 
@@ -126,28 +131,28 @@ Required. A pointer to a HID source driver-allocated buffer that contains the  H
 
 `EvtVhfReadyForNextReadReport`
 
-Optional. A pointer to an <a href="..\vhf\nc-vhf-evt_vhf_ready_for_next_read_report.md">EvtVhfReadyForNextReadReport</a> callback. The HID source driver must implement and register this callback function if it wants to handle the buffering policy for submitting HID Input Reports. If this callback is specified, VHF does not buffer those reports. The HID source driver should submit one report by calling <a href="..\vhf\nf-vhf-vhfreadreportsubmit.md">VhfReadReportSubmit</a>, each time VHF invokes   <i>EvtVhfReadyForNextReadReport</i>.
+Optional. A pointer to an <a href="https://msdn.microsoft.com/02DDBE00-C342-474B-8D06-FBB929BA4760">EvtVhfReadyForNextReadReport</a> callback. The HID source driver must implement and register this callback function if it wants to handle the buffering policy for submitting HID Input Reports. If this callback is specified, VHF does not buffer those reports. The HID source driver should submit one report by calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn925040">VhfReadReportSubmit</a>, each time VHF invokes   <i>EvtVhfReadyForNextReadReport</i>.
 
 `EvtVhfAsyncOperationGetFeature`
 
-Optional. A pointer to an <a href="..\vhf\nc-vhf-evt_vhf_async_operation.md">EvtVhfAsyncOperation</a> callback. The HID source driver must implement and register this callback function if it wants to a get a HID Feature Report associated with a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">Top-Level Collection</a> from the HID class driver pair.
+Optional. A pointer to an <a href="https://msdn.microsoft.com/C42174FE-202F-405D-840B-8613762F43AC">EvtVhfAsyncOperation</a> callback. The HID source driver must implement and register this callback function if it wants to a get a HID Feature Report associated with a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">Top-Level Collection</a> from the HID class driver pair.
 The driver can get a Feature Report only if the Report Descriptor declares it.
 
 `EvtVhfAsyncOperationSetFeature`
 
-Optional. A pointer to an <a href="..\vhf\nc-vhf-evt_vhf_async_operation.md">EvtVhfAsyncOperation</a> callback. The HID source driver must implement and register this callback function if it wants to a send  a HID Feature Report associated with a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">Top-Level Collection</a> to the HID class driver pair. The driver can set a Feature Report only if the Report Descriptor declares it.
+Optional. A pointer to an <a href="https://msdn.microsoft.com/C42174FE-202F-405D-840B-8613762F43AC">EvtVhfAsyncOperation</a> callback. The HID source driver must implement and register this callback function if it wants to a send  a HID Feature Report associated with a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">Top-Level Collection</a> to the HID class driver pair. The driver can set a Feature Report only if the Report Descriptor declares it.
 
 `EvtVhfAsyncOperationWriteReport`
 
-Optional. A pointer to an <a href="..\vhf\nc-vhf-evt_vhf_async_operation.md">EvtVhfAsyncOperation</a> callback. The HID source driver must implement and register this callback function if it wants to a support HID Output Reports and send  them to the  HID class driver pair.
+Optional. A pointer to an <a href="https://msdn.microsoft.com/C42174FE-202F-405D-840B-8613762F43AC">EvtVhfAsyncOperation</a> callback. The HID source driver must implement and register this callback function if it wants to a support HID Output Reports and send  them to the  HID class driver pair.
 
 `EvtVhfAsyncOperationGetInputReport`
 
-Optional. A pointer to an <a href="..\vhf\nc-vhf-evt_vhf_async_operation.md">EvtVhfAsyncOperation</a> callback. The HID source driver must implement and register this callback function if it wants to support on-demand query for Input Reports.
+Optional. A pointer to an <a href="https://msdn.microsoft.com/C42174FE-202F-405D-840B-8613762F43AC">EvtVhfAsyncOperation</a> callback. The HID source driver must implement and register this callback function if it wants to support on-demand query for Input Reports.
 
 `EvtVhfCleanup`
 
-Optional. A pointer to a <a href="..\vhf\nc-vhf-evt_vhf_cleanup.md">EvtVhfCleanup</a> callback. The HID source driver can implement and register this callback function if it wants to free the allocated resources for the virtual HID device.
+Optional. A pointer to a <a href="https://msdn.microsoft.com/1D477E7B-E4EA-46E7-872C-3BEBFBD31702">EvtVhfCleanup</a> callback. The HID source driver can implement and register this callback function if it wants to free the allocated resources for the virtual HID device.
 
 `HardwareIDsLength`
 

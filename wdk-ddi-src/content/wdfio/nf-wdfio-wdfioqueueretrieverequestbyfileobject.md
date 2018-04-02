@@ -55,13 +55,13 @@ The <b>WdfIoQueueRetrieveRequestByFileObject</b> method retrieves the next avail
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfIoQueueRetrieveRequestByFileObject(
-  _In_  WDFQUEUE      Queue,
-  _In_  WDFFILEOBJECT FileObject,
-  _Out_ WDFREQUEST    *OutRequest
+  WDFQUEUE      Queue,
+  WDFFILEOBJECT FileObject,
+  WDFREQUEST    *OutRequest
 );
-````
+```
 
 ## Parameters
 
@@ -181,8 +181,8 @@ status = WdfIoQueueRetrieveRequestByFileObject(
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueueretrievenextrequest.md">WdfIoQueueRetrieveNextRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975099">WdfIoQueueRetrieveFoundRequest</a>
 
 
 
-<a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975100">WdfIoQueueRetrieveNextRequest</a>

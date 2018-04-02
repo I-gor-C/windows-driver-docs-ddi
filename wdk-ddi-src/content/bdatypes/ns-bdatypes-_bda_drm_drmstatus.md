@@ -47,14 +47,14 @@ req.typenames: BDA_DRM_DRMSTATUS, *PBDA_DRM_DRMSTATUS
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_DRM_DRMSTATUS {
   PBDARESULT lResult;
-  GUID       DRMuuid;
-  ULONG      ulDrmUuidListStringSize;
-  GUID       argbDrmUuidListString[MIN_DIMENSION];
-} BDA_DRM_DRMSTATUS, *PBDA_DRM_DRMSTATUS;
-````
+  GUID       DRMuuid;
+  ULONG      ulDrmUuidListStringSize;
+  GUID       argbDrmUuidListString[MIN_DIMENSION];
+} *PBDA_DRM_DRMSTATUS, BDA_DRM_DRMSTATUS;
+```
 
 ## Members
 

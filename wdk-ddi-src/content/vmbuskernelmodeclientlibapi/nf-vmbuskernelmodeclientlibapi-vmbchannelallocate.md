@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelallocate.htm
 old-project: netvista
 ms.assetid: 97169CF5-566E-4EF6-88AD-7B68E9FE46EC
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VmbChannelAllocate, VmbChannelAllocate function [Network Drivers Starting with Windows Vista], netvista.vmbchannelallocate, vmbuskernelmodeclientlibapi/VmbChannelAllocate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,14 +53,13 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-NTSTATUS
- VmbChannelAllocate(
-  _In_  PDEVICE_OBJECT                                     ParentDeviceObject,
-  _In_  BOOLEAN                                            IsServer,
-  _Out_ _At_(*Channel, __drv_allocatesMem(Mem)) VMBCHANNEL *Channel
+```
+NTSTATUS VmbChannelAllocate(
+  PDEVICE_OBJECT ParentDeviceObject,
+  BOOLEAN        IsServer,
+  VMBCHANNEL     *Channel
 );
-````
+```
 
 ## Parameters
 
@@ -85,7 +84,7 @@ None
 
 The
 channel may be further initialized using the VMBus channel initialization routines before
-it is enabled by using the  <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelenable.md">VmbChannelEnable</a> function. The channel must be freed by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelcleanup.md">VmbChannelCleanup</a> function.
+it is enabled by using the  <a href="https://msdn.microsoft.com/A0256B3F-C35C-45AB-A825-0A82189F08DC">VmbChannelEnable</a> function. The channel must be freed by using the <a href="https://msdn.microsoft.com/E079527D-1687-4A12-B86E-96C89CE458CE">VmbChannelCleanup</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,8 +99,8 @@ it is enabled by using the  <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskern
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelenable.md">VmbChannelEnable</a>
+<a href="https://msdn.microsoft.com/E079527D-1687-4A12-B86E-96C89CE458CE">VmbChannelCleanup</a>
 
 
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelcleanup.md">VmbChannelCleanup</a>
+<a href="https://msdn.microsoft.com/A0256B3F-C35C-45AB-A825-0A82189F08DC">VmbChannelEnable</a>

@@ -7,7 +7,7 @@ old-location: ifsk\mrxstart.htm
 old-project: ifsk
 ms.assetid: b5985fc4-dd1a-455d-b2ad-3dc2dfec2e6e
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: MRxStart, MRxStart routine [Installable File System Drivers], PMRX_CALLDOWN_CTX, ifsk.mrxstart, mrx/MRxStart, mrxref_e76b85d0-b290-4206-a16c-5d5ed9a5cfff.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -113,7 +113,7 @@ The <b>MajorFunction</b> member is set to the major function of the IRP.
 
 The <b>LowIoContext.ParamsFor.FsCtl.FsControlCode</b> member is set to the FSCTL code for the IRP if this was an FSTCL request used to start the network mini-redirector. 
 
-<i>MRxStart</i> is called by RDBSS from the <a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a> routine. Before calling <i>MRxStart</i>, RDBSS will register <i>RxDeviceObject</i> of the network mini-redirector as a file system. RDBSS will also register the network mini-redirector as a UNC provider if the network mini-redirector indicates support for UNC names.
+<i>MRxStart</i> is called by RDBSS from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554736">RxStartMinirdr</a> routine. Before calling <i>MRxStart</i>, RDBSS will register <i>RxDeviceObject</i> of the network mini-redirector as a file system. RDBSS will also register the network mini-redirector as a UNC provider if the network mini-redirector indicates support for UNC names.
 
 If <i>MRxStart</i> returns STATUS_SUCCESS, then the routine was successful. Any other return value indicates that an error occurred in the startup sequence. 
 
@@ -129,7 +129,7 @@ A network mini-redirector would normally maintain an internal variable indicatin
 
 ## See Also
 
-<a href="..\mrx\nf-mrx-rxstartminirdr.md">RxStartMinirdr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549876">MRxDevFcbXXXControlFile</a>
 
 
 
@@ -137,4 +137,4 @@ A network mini-redirector would normally maintain an internal variable indicatin
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549876">MRxDevFcbXXXControlFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554736">RxStartMinirdr</a>

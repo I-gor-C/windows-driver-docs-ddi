@@ -7,7 +7,7 @@ old-location: buses\get_iso_urb_size.htm
 old-project: usbref
 ms.assetid: 37e96d41-3a8c-429a-a8fd-463f9be5555f
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: GET_ISO_URB_SIZE, GET_ISO_URB_SIZE macro [Buses], buses.get_iso_urb_size, usbdlib/GET_ISO_URB_SIZE, usbfunc_949a4f14-4bc8-4ba1-821c-f81c6bcec0fa.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>GET_ISO_URB_SIZE</b> macro returns the number of bytes required to hold a
 
 ## Syntax
 
-````
-ULONG  GET_ISO_URB_SIZE(
-  [in] ULONG   NumberOfPackets
+```
+void GET_ISO_URB_SIZE(
+   n
 );
-````
+```
 
 ## Parameters
 
@@ -76,16 +76,16 @@ None
 
 ## See Also
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
-
-
-
-<a href="..\usb\ns-usb-_usbd_iso_packet_descriptor.md">USBD_ISO_PACKET_DESCRIPTOR</a>
-
-
-
 <a href="https://docs.microsoft.com/en-us/windows/iot-core/learn-about-hardware/hardwarecompatlist">Routines for USB Client Drivers</a>
 
 
 
-<a href="..\usb\ns-usb-_urb_isoch_transfer.md">_URB_ISOCH_TRANSFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539084">USBD_ISO_PACKET_DESCRIPTOR</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540414">_URB_ISOCH_TRANSFER</a>

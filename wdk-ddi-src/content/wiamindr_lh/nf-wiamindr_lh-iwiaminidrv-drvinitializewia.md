@@ -45,24 +45,24 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvInitializeWia method
+# IWiaMiniDrv::drvInitializeWia method
 The <b>IWiaMiniDrv::drvInitializeWia</b> method initializes the minidriver and builds the driver item tree representing the device.
 
 ## Syntax
 
-````
+```
 HRESULT drvInitializeWia(
-  [in]            BYTE        *pWiasContext,
-  [in]            LONG        lFlags,
-  [in]            BSTR        bstrDeviceID,
-  [in]            BSTR        bstrRootFullItemName,
-  [in, optional]  IUnknown    *pStiDevice,
-  [in, optional]  IUnknown    *pIUnknownOuter,
-  [out, optional] IWiaDrvItem **ppIDrvItemRoot,
-  [out, optional] IUnknown    **ppIUnknownInner,
-  [out]           LONG        *plDevErrVal
+  BYTE        *__MIDL__IWiaMiniDrv0000,
+  LONG        __MIDL__IWiaMiniDrv0001,
+  BSTR        __MIDL__IWiaMiniDrv0002,
+  BSTR        __MIDL__IWiaMiniDrv0003,
+  IUnknown    *__MIDL__IWiaMiniDrv0004,
+  IUnknown    *__MIDL__IWiaMiniDrv0005,
+  IWiaDrvItem **__MIDL__IWiaMiniDrv0006,
+  IUnknown    **__MIDL__IWiaMiniDrv0007,
+  LONG        *__MIDL__IWiaMiniDrv0008
 );
-````
+```
 
 ## Parameters
 
@@ -126,15 +126,11 @@ For example, if the user right-clicks a WIA scanner icon in <b>My Computer</b>, 
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543856">IWiaDrvItem::AddItemToFolder</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545010">IWiaMiniDrv::drvUnInitializeWia</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 
@@ -142,4 +138,8 @@ For example, if the user right-clicks a WIA scanner icon in <b>My Computer</b>, 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543856">IWiaDrvItem::AddItemToFolder</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545010">IWiaMiniDrv::drvUnInitializeWia</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549160">wiasCreateDrvItem</a>

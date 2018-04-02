@@ -7,7 +7,7 @@ old-location: storage\storportwriteportulong.htm
 old-project: storage
 ms.assetid: 7c6d61c6-40e5-46fd-8c18-1f9d89c58515
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortWritePortUlong, StorPortWritePortUlong routine [Storage Devices], storage.storportwriteportulong, storport/StorPortWritePortUlong, storprt_4f568f62-adb7-4176-9229-e2af5d4453cb.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,13 +51,13 @@ The <b>StorPortWritePortUlong</b> routine writes a value to a specified register
 
 ## Syntax
 
-````
-STORPORT_API VOID StorPortWritePortUlong(
-  _In_ PVOID  HwDeviceExtension,
-  _In_ PULONG Port,
-  _In_ ULONG  Value
+```
+void StorPortWritePortUlong(
+   h,
+   p,
+   v
 );
-````
+```
 
 ## Parameters
 
@@ -80,7 +80,7 @@ None
 
 ## Remarks
 
-For more information, see <a href="..\storport\nf-storport-scsiportwriteportulong.md">ScsiPortWritePortUlong</a>. For a buffered equivalent of this routine, see <a href="..\storport\nf-storport-storportwriteportbufferulong.md">StorPortWritePortBufferUlong</a>.
+For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564837">ScsiPortWritePortUlong</a>. For a buffered equivalent of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567517">StorPortWritePortBufferUlong</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,8 +91,8 @@ For more information, see <a href="..\storport\nf-storport-scsiportwriteportulon
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportwriteportbufferulong.md">StorPortWritePortBufferUlong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564837">ScsiPortWritePortUlong</a>
 
 
 
-<a href="..\storport\nf-storport-scsiportwriteportulong.md">ScsiPortWritePortUlong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567517">StorPortWritePortBufferUlong</a>

@@ -46,18 +46,18 @@ req.typenames:
 
 
 # KsSetDefaultClockState function
-The <b>KsSetDefaultClockState</b> function sets the current state of the clock that is used to reflect the current state of the underlying filter pin. The owner of the default clock is expected to serialize access to this function and to call <a href="..\ks\nf-ks-kssetdefaultclocktime.md">KsSetDefaultClockTime</a>.
+The <b>KsSetDefaultClockState</b> function sets the current state of the clock that is used to reflect the current state of the underlying filter pin. The owner of the default clock is expected to serialize access to this function and to call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566827">KsSetDefaultClockTime</a>.
 
 The function can be called at DISPATCH_LEVEL.
 
 ## Syntax
 
-````
-VOID KsSetDefaultClockState(
-  _In_ PKSDEFAULTCLOCK DefaultClock,
-  _In_ KSSTATE         State
+```
+KSDDKAPI VOID KsSetDefaultClockState(
+  PKSDEFAULTCLOCK DefaultClock,
+  KSSTATE         State
 );
-````
+```
 
 ## Parameters
 
@@ -84,4 +84,4 @@ None
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgetdefaultclockstate.md">KsGetDefaultClockState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562612">KsGetDefaultClockState</a>

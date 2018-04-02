@@ -7,7 +7,7 @@ old-location: kernel\flushadapterbuffersex.htm
 old-project: kernel
 ms.assetid: D211CB5B-9FE6-4829-950D-F7DDD1A00F76
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: FlushAdapterBuffersEx, FlushAdapterBuffersEx callback function [Kernel-Mode Driver Architecture], PFLUSH_ADAPTER_BUFFERS_EX, kernel.flushadapterbuffersex, wdm/FlushAdapterBuffersEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,11 +68,11 @@ NTSTATUS PflushAdapterBuffersEx(
 
 `DmaAdapter`
 
-A pointer to a <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structure. This structure is the adapter object that represents the driver's system DMA channel or bus-master device. The caller obtained this pointer from a previous call to the <a href="..\wdm\nf-wdm-iogetdmaadapter.md">IoGetDmaAdapter</a> routine.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544062">DMA_ADAPTER</a> structure. This structure is the adapter object that represents the driver's system DMA channel or bus-master device. The caller obtained this pointer from a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> routine.
 
 `Mdl`
 
-A pointer to the MDL chain that describes the pages of memory that are to be flushed.  Set this parameter to point to the MDL chain that was used for the DMA transfer. For more information, see the description of the <i>Mdl</i> parameter in <a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>, <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>, or <a href="..\wdm\nc-wdm-pmap_transfer_ex.md">MapTransferEx</a>.
+A pointer to the MDL chain that describes the pages of memory that are to be flushed.  Set this parameter to point to the MDL chain that was used for the DMA transfer. For more information, see the description of the <i>Mdl</i> parameter in <a href="https://msdn.microsoft.com/library/windows/hardware/hh451134">GetScatterGatherListEx</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406371">BuildScatterGatherListEx</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/hh406521">MapTransferEx</a>.
 
 `MapRegisterBase`
 
@@ -80,15 +80,15 @@ A handle to the map registers that were previously allocated for the adapter obj
 
 `Offset`
 
-The starting offset relative to the start of the MDL chain to use for the flush operation. Set this parameter to the value that was used as the starting offset for the DMA transfer. For more information, see the description of the <i>Offset</i> parameter in <a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>, <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>, or <a href="..\wdm\nc-wdm-pmap_transfer_ex.md">MapTransferEx</a>.
+The starting offset relative to the start of the MDL chain to use for the flush operation. Set this parameter to the value that was used as the starting offset for the DMA transfer. For more information, see the description of the <i>Offset</i> parameter in <a href="https://msdn.microsoft.com/library/windows/hardware/hh451134">GetScatterGatherListEx</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406371">BuildScatterGatherListEx</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/hh406521">MapTransferEx</a>.
 
 `Length`
 
-The number of bytes of data to flush. Set this parameter to the value that was used as the transfer length for the DMA transfer. For more information, see the description of the <i>Length</i> parameter in <a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>, <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>, or <a href="..\wdm\nc-wdm-pmap_transfer_ex.md">MapTransferEx</a>.
+The number of bytes of data to flush. Set this parameter to the value that was used as the transfer length for the DMA transfer. For more information, see the description of the <i>Length</i> parameter in <a href="https://msdn.microsoft.com/library/windows/hardware/hh451134">GetScatterGatherListEx</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406371">BuildScatterGatherListEx</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/hh406521">MapTransferEx</a>.
 
 `WriteToDevice`
 
-The direction of the DMA transfer. Set this parameter to the value that was used as the transfer direction for the DMA transfer. For more information, see the description of the <i>WriteToDevice</i> parameter in <a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>, <a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>, or <a href="..\wdm\nc-wdm-pmap_transfer_ex.md">MapTransferEx</a>.
+The direction of the DMA transfer. Set this parameter to the value that was used as the transfer direction for the DMA transfer. For more information, see the description of the <i>WriteToDevice</i> parameter in <a href="https://msdn.microsoft.com/library/windows/hardware/hh451134">GetScatterGatherListEx</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/hh406371">BuildScatterGatherListEx</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/hh406521">MapTransferEx</a>.
 
 
 ## Return Value
@@ -115,13 +115,13 @@ The routine failed due to invalid parameter values passed by the caller.
 
 ## Remarks
 
-<b>FlushAdapterBuffersEx</b><i> is not a system routine that can be called directly by name. This routine can be called only by pointer from the address returned in a </i><a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a><i> structure. </i>Drivers obtain the address of this routine by calling <a href="..\wdm\nf-wdm-iogetdmaadapter.md">IoGetDmaAdapter</a> with the <b>Version</b> member of the <i>DeviceDescription</i> parameter set to DEVICE_DESCRIPTION_VERSION3. If <b>IoGetDmaAdapter</b> returns <b>NULL</b>, the routine is not available on your platform.
+<b>FlushAdapterBuffersEx</b><i> is not a system routine that can be called directly by name. This routine can be called only by pointer from the address returned in a </i><a href="https://msdn.microsoft.com/library/windows/hardware/ff544071">DMA_OPERATIONS</a><i> structure. </i>Drivers obtain the address of this routine by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a> with the <b>Version</b> member of the <i>DeviceDescription</i> parameter set to DEVICE_DESCRIPTION_VERSION3. If <b>IoGetDmaAdapter</b> returns <b>NULL</b>, the routine is not available on your platform.
 
 <b>FlushAdapterBuffersEx</b> enables processor cache coherency in hardware platforms that do not implement hardware-enforced cache coherency (bus snooping). In addition, for a system DMA transfer, <b>FlushAdapterBuffersEx</b> flushes any data that remains in the system DMA controller's internal cache.
 
 The driver that initiates a scatter/gather DMA transfer must ensure that all of the transferred data is flushed from the cache after the transfer completes. The driver should call <b>FlushAdapterBuffersEx</b> before the driver completes the IRP that requested the DMA transfer, and before the driver frees the map registers. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545924">Flushing Cached Data during DMA Operations</a>.
 
-<b>FlushAdapterBuffersEx</b> is an extended version of the <a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a> routine. <b>FlushAdapterBuffersEx</b> can flush an entire scatter/gather list in one call. In contrast, to use <b>FlushAdapterBuffers</b> to flush a scatter/gather list requires a separate call for each MDL in the MDL chain.
+<b>FlushAdapterBuffersEx</b> is an extended version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545917">FlushAdapterBuffers</a> routine. <b>FlushAdapterBuffersEx</b> can flush an entire scatter/gather list in one call. In contrast, to use <b>FlushAdapterBuffers</b> to flush a scatter/gather list requires a separate call for each MDL in the MDL chain.
 
 <b>FlushAdapterBuffersEx</b> can be used in place of <b>FlushAdapterBuffers</b> to flush the buffer for a one-packet DMA transfer. In this case, the MDL chain that the <i>Mdl</i> parameter points to contains only one MDL. A benefit of using <b>FlushAdapterBuffersEx</b> in this way is that the caller can specify an offset into the MDL.
 
@@ -137,28 +137,28 @@ If <b>FlushAdapterBuffersEx</b> is called before the DMA transfer operation fini
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406371">BuildScatterGatherListEx</a>
 
 
 
-<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544062">DMA_ADAPTER</a>
 
 
 
-<a href="..\wdm\nc-wdm-pbuild_scatter_gather_list_ex.md">BuildScatterGatherListEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544071">DMA_OPERATIONS</a>
 
 
 
-<a href="..\wdm\ns-wdm-_dma_adapter_info.md">DMA_ADAPTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545917">FlushAdapterBuffers</a>
 
 
 
-<a href="..\wdm\nc-wdm-pmap_transfer_ex.md">MapTransferEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451134">GetScatterGatherListEx</a>
 
 
 
-<a href="..\wdm\nf-wdm-iogetdmaadapter.md">IoGetDmaAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549220">IoGetDmaAdapter</a>
 
 
 
-<a href="..\wdm\nc-wdm-pget_scatter_gather_list_ex.md">GetScatterGatherListEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406521">MapTransferEx</a>

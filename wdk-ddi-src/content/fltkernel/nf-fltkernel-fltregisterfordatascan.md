@@ -7,7 +7,7 @@ old-location: ifsk\fltregisterfordatascan.htm
 old-project: ifsk
 ms.assetid: E603975A-B927-475A-9DEA-2D01C1249819
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltRegisterForDataScan, FltRegisterForDataScan routine [Installable File System Drivers], fltkernel/FltRegisterForDataScan, ifsk.fltregisterfordatascan
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>FltRegisterForDataScan</b> routine enables data scanning for the volume a
 
 ## Syntax
 
-````
-NTSTATUS FltRegisterForDataScan(
-  _In_ PFLT_INSTANCE Instance
+```
+NTSTATUS FLTAPI FltRegisterForDataScan(
+  PFLT_INSTANCE Instance
 );
-````
+```
 
 ## Parameters
 
@@ -86,7 +86,7 @@ The filter manager does not support data scans for the volume attached to this i
 
 ## Remarks
 
-If <b>STATUS_NOT_SUPPORTED</b> is returned by <b>FltRegisterForDataScan</b>, a minifilter can still create sections for data scanning using <a href="..\ntifs\nf-ntifs-fsrtlcreatesectionfordatascan.md">FsRtlCreateSectionForDataScan</a>. However, section access is not synchronized and conflict resolution is left to the minifilter driver.
+If <b>STATUS_NOT_SUPPORTED</b> is returned by <b>FltRegisterForDataScan</b>, a minifilter can still create sections for data scanning using <a href="https://msdn.microsoft.com/library/windows/hardware/ff545812">FsRtlCreateSectionForDataScan</a>. However, section access is not synchronized and conflict resolution is left to the minifilter driver.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,16 +100,16 @@ If <b>STATUS_NOT_SUPPORTED</b> is returned by <b>FltRegisterForDataScan</b>, a m
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541710">FltAllocateContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406456">FltCloseSectionForDataScan</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450937">FltCreateSectionForDataScan</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-fsrtlcreatesectionfordatascan.md">FsRtlCreateSectionForDataScan</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545812">FsRtlCreateSectionForDataScan</a>

@@ -49,11 +49,11 @@ The <b>PshedAllocateMemory</b> function allocates a block of memory from the non
 
 ## Syntax
 
-````
-PVOID PshedAllocateMemory(
-  _In_ ULONG Size
+```
+NTPSHEDAPI PVOID PshedAllocateMemory(
+  ULONG Size
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ The size, in bytes, of the block of memory being allocated.
 
 ## Remarks
 
-A PSHED plug-in calls the <b>PshedAllocateMemory</b> function to allocate a block of memory. When the PSHED plug-in is done using the allocated block of memory, it calls the <a href="..\ntddk\nf-ntddk-pshedfreememory.md">PshedFreeMemory</a> function to free the memory.
+A PSHED plug-in calls the <b>PshedAllocateMemory</b> function to allocate a block of memory. When the PSHED plug-in is done using the allocated block of memory, it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559463">PshedFreeMemory</a> function to free the memory.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,4 +82,4 @@ A PSHED plug-in calls the <b>PshedAllocateMemory</b> function to allocate a bloc
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-pshedfreememory.md">PshedFreeMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559463">PshedFreeMemory</a>

@@ -47,18 +47,18 @@ req.typenames: KSPROPERTY_TUNER_FREQUENCY_S, *PKSPROPERTY_TUNER_FREQUENCY_S
 The KSPROPERTY_TUNER_FREQUENCY_S structure describes the frequency of a TV or radio tuner device.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_TUNER_FREQUENCY_S {
   KSPROPERTY Property;
-  ULONG      Frequency;
-  ULONG      LastFrequency;
-  ULONG      TuningFlags;
-  ULONG      VideoSubChannel;
-  ULONG      AudioSubChannel;
-  ULONG      Channel;
-  ULONG      Country;
-} KSPROPERTY_TUNER_FREQUENCY_S, *PKSPROPERTY_TUNER_FREQUENCY_S;
-````
+  ULONG      Frequency;
+  ULONG      LastFrequency;
+  ULONG      TuningFlags;
+  ULONG      VideoSubChannel;
+  ULONG      AudioSubChannel;
+  ULONG      Channel;
+  ULONG      Country;
+}  *PKSPROPERTY_TUNER_FREQUENCY_S;
+```
 
 ## Members
 
@@ -77,7 +77,7 @@ Specifies the last frequency tuned.
 
 `TuningFlags`
 
-Specifies tuning flags that describe the granularity of a tuning operation. If the request is a Get request, the minidriver returns the current tuning flags. If the request is a Set request, the minidriver should use the specified tuning method. This member must be set to one of the values from the <a href="..\ksmedia\ne-ksmedia-ks_tuner_tuning_flags.md">KS_TUNER_TUNING_FLAGS</a> enumeration.
+Specifies tuning flags that describe the granularity of a tuning operation. If the request is a Get request, the minidriver returns the current tuning flags. If the request is a Set request, the minidriver should use the specified tuning method. This member must be set to one of the values from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567689">KS_TUNER_TUNING_FLAGS</a> enumeration.
 
 `VideoSubChannel`
 
@@ -107,12 +107,12 @@ Specifies the current country code for the tuning operation. Country codes follo
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567800">PROPSETID_TUNER</a>
-
-
-
-<a href="..\ksmedia\ne-ksmedia-ks_tuner_tuning_flags.md">KS_TUNER_TUNING_FLAGS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565833">KSPROPERTY_TUNER_FREQUENCY</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567689">KS_TUNER_TUNING_FLAGS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567800">PROPSETID_TUNER</a>

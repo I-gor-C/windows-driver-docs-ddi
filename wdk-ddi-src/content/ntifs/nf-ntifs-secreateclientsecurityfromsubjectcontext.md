@@ -7,7 +7,7 @@ old-location: ifsk\secreateclientsecurityfromsubjectcontext.htm
 old-project: ifsk
 ms.assetid: 3b3b12b8-05f7-40e6-909c-b99bf18cc299
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: SeCreateClientSecurityFromSubjectContext, SeCreateClientSecurityFromSubjectContext routine [Installable File System Drivers], ifsk.secreateclientsecurityfromsubjectcontext, ntifs/SeCreateClientSecurityFromSubjectContext, seref_fac27935-a941-48f6-a27b-7ca56bd1f9e2.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ The <b>SeCreateClientSecurityFromSubjectContext</b> routine retrieves the access
 
 ## Syntax
 
-````
-NTSTATUS SeCreateClientSecurityFromSubjectContext(
-  _In_  PSECURITY_SUBJECT_CONTEXT    SubjectContext,
-  _In_  PSECURITY_QUALITY_OF_SERVICE ClientSecurityQos,
-  _In_  BOOLEAN                      ServerIsRemote,
-  _Out_ PSECURITY_CLIENT_CONTEXT     ClientContext
+```
+NTKERNELAPI NTSTATUS SeCreateClientSecurityFromSubjectContext(
+  PSECURITY_SUBJECT_CONTEXT    SubjectContext,
+  PSECURITY_QUALITY_OF_SERVICE ClientSecurityQos,
+  BOOLEAN                      ServerIsRemote,
+  PSECURITY_CLIENT_CONTEXT     ClientContext
 );
-````
+```
 
 ## Parameters
 
@@ -140,12 +140,12 @@ For more information about security and access control, see the documentation on
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-sedeleteclientsecurity.md">SeDeleteClientSecurity</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556648">SeDeleteClientSecurity</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-seimpersonateclientex.md">SeImpersonateClientEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556659">SeImpersonateClientEx</a>

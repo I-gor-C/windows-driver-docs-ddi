@@ -7,7 +7,7 @@ old-location: debugger\idebugplmclient_launchplmpackagefordebugwide.htm
 old-project: debugger
 ms.assetid: DE11B4A5-5AE3-4369-AF6D-6CE34B9AAFAB
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugPlmClient, IDebugPlmClient interface [Windows Debugging], LaunchPlmPackageForDebugWide method, IDebugPlmClient::LaunchPlmPackageForDebugWide, LaunchPlmPackageForDebugWide method [Windows Debugging], LaunchPlmPackageForDebugWide method [Windows Debugging], IDebugPlmClient interface, LaunchPlmPackageForDebugWide,IDebugPlmClient.LaunchPlmPackageForDebugWide, dbgeng/IDebugPlmClient::LaunchPlmPackageForDebugWide, debugger.idebugplmclient_launchplmpackagefordebugwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# LaunchPlmPackageForDebugWide method
+# IDebugPlmClient::LaunchPlmPackageForDebugWide method
 Launches a suspended Process Lifecycle Management (PLM) application.
 
 ## Syntax
 
-````
+```
 HRESULT LaunchPlmPackageForDebugWide(
-  [in]           ULONG64 Server,
-  [in]           ULONG   Timeout,
-  [in]           PCWSTR  PackageFullName,
-  [in]           PCWSTR  AppName,
-  [in, optional] PCWSTR  Arguments,
-  [out]          PULONG  ProcessId,
-  [out]          PULONG  ThreadId
+  ULONG64 Server,
+  ULONG   Timeout,
+  PCWSTR  PackageFullName,
+  PCWSTR  AppName,
+  PCWSTR  Arguments,
+  PULONG  ProcessId,
+  PULONG  ThreadId
 );
-````
+```
 
 ## Parameters
 
@@ -105,4 +105,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugplmclient.md">IDebugPlmClient</a>
+<a href="https://msdn.microsoft.com/2D713354-4C93-4DC1-A3E9-7E6BC991FD08">IDebugPlmClient</a>

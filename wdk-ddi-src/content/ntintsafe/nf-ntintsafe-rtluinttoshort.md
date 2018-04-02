@@ -7,7 +7,7 @@ old-location: kernel\rtluinttoshort.htm
 old-project: kernel
 ms.assetid: 5D86CFF4-4943-475A-856E-3A97FE9C3E8A
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUIntToShort, RtlUIntToShort function [Kernel-Mode Driver Architecture], kernel.rtluinttoshort, ntintsafe/RtlUIntToShort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>UINT</b> to a value of type <b>SHORT</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlUIntToShort(
-  _In_  UINT  uOperand,
-  _Out_ SHORT *psResult
+  UINT  uOperand,
+  SHORT *psResult
 );
-````
+```
 
 ## Parameters
 

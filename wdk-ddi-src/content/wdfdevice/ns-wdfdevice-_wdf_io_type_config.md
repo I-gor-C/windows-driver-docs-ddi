@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 The <b>WDF_IO_TYPE_CONFIG</b> structure specifies the driver's preferred buffer access method for read and write requests, and for device I/O control requests.
 
 ## Syntax
-````
+```
 typedef struct _WDF_IO_TYPE_CONFIG {
-  ULONG              Size;
+  ULONG              Size;
   WDF_DEVICE_IO_TYPE ReadWriteIoType;
   WDF_DEVICE_IO_TYPE DeviceControlIoType;
-  ULONG              DirectTransferThreshold;
+  ULONG              DirectTransferThreshold;
 } WDF_IO_TYPE_CONFIG, *PWDF_IO_TYPE_CONFIG;
-````
+```
 
 ## Members
 
@@ -68,17 +68,17 @@ Size of this structure in bytes.
 
 `ReadWriteIoType`
 
-<b>KMDF </b>A <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that the driver will use to access data buffers 
+<b>KMDF </b>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that the driver will use to access data buffers 
     that it receives for read and write requests.
 
 
-<b>UMDF </b>A <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use to access data buffers of read and write requests. Valid values include <b>WdfDeviceIoBuffered</b>           and <b>WdfDeviceIoDirect</b>.
+<b>UMDF </b>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use to access data buffers of read and write requests. Valid values include <b>WdfDeviceIoBuffered</b>           and <b>WdfDeviceIoDirect</b>.
 
 `DeviceControlIoType`
 
 This member does not apply to KMDF.
 
-<b>UMDF </b>A <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use for the data 
+<b>UMDF </b>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>-typed enumerator that identifies the method that you prefer the driver use for the data 
     buffers of IOCTL requests. Valid values include <b>WdfDeviceIoBuffered</b>           and <b>WdfDeviceIoDirect</b>.
 
 `DirectTransferThreshold`
@@ -92,9 +92,9 @@ This member does not apply to KMDF.
     the best performance.
 
 ## Remarks
-The <b>WDF_IO_TYPE_CONFIG</b> structure is used as input to the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a> method.
+The <b>WDF_IO_TYPE_CONFIG</b> structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265604">WdfDeviceInitSetIoTypeEx</a> method.
 
-To initialize a <b>WDF_IO_TYPE_CONFIG</b> structure, your driver should call <a href="..\wdfdevice\nf-wdfdevice-wdf_io_type_config_init.md">WDF_IO_TYPE_CONFIG_INIT</a>.
+To initialize a <b>WDF_IO_TYPE_CONFIG</b> structure, your driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/dn265643">WDF_IO_TYPE_CONFIG_INIT</a>.
 
 If you are writing a driver using UMDF version 2.0 or later, see <a href="https://msdn.microsoft.com/BDB78BCD-1964-431B-BE99-CABA6DF44D7A">Managing Buffer Access Methods in UMDF Drivers</a> for more information about specifying preferred buffer access methods.
 
@@ -110,12 +110,12 @@ If you are writing a driver using UMDF version 1.<i>x</i>, your driver calls <a 
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_io_type_config_init.md">WDF_IO_TYPE_CONFIG_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265643">WDF_IO_TYPE_CONFIG_INIT</a>
 
 
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265604">WdfDeviceInitSetIoTypeEx</a>

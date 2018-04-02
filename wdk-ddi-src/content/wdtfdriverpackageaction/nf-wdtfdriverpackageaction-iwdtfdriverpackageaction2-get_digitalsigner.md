@@ -7,7 +7,7 @@ old-location: dtf\iwdtfdriverpackageaction2_digitalsigner.htm
 old-project: dtf
 ms.assetid: ab544760-7539-4e16-b1c3-457629ce78aa
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: DigitalSigner property [Windows Device Testing Framework], DigitalSigner property [Windows Device Testing Framework], IWDTFDriverPackageAction2 interface, IWDTFDriverPackageAction2, IWDTFDriverPackageAction2 interface [Windows Device Testing Framework], DigitalSigner property, IWDTFDriverPackageAction2.DigitalSigner, IWDTFDriverPackageAction2::get_DigitalSigner, Microsoft.WDTF.IWDTFDriverPackageAction2.DigitalSigner, Microsoft::WDTF::IWDTFDriverPackageAction2::DigitalSigner, dtf.iwdtfdriverpackageaction2_digitalsigner, get_DigitalSigner,IWDTFDriverPackageAction2.get_DigitalSigner, wdtfdriverpackageaction/IWDTFDriverPackageAction2::DigitalSigner, wdtfdriverpackageaction/IWDTFDriverPackageAction2::get_DigitalSigner
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_DigitalSigner method
+# IWDTFDriverPackageAction2::get_DigitalSigner method
 Gets the digital signer.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_DigitalSigner(
-  [out, retval] BSTR *pVal
+  BSTR *pVal
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\wdtfdriverpackageaction\nn-wdtfdriverpackageaction-iwdtfdriverpackageaction2.md">IWDTFDriverPackageAction2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406427">IWDTFDriverPackageAction2</a>

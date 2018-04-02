@@ -7,7 +7,7 @@ old-location: kernel\ioconnectinterruptex.htm
 old-project: kernel
 ms.assetid: f77a2701-bde2-42c2-8393-88a7e4576f1b
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoConnectInterruptEx, IoConnectInterruptEx routine [Kernel-Mode Driver Architecture], WdmlibIoConnectInterruptEx, k104_17833453-ee13-4346-9c58-a1c47dccf636.xml, kernel.ioconnectinterruptex, wdm/IoConnectInterruptEx, wdm/WdmlibIoConnectInterruptEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,28 +47,28 @@ req.product: Windows 10 or later.
 
 
 # IoConnectInterruptEx function
-For more information, see the <a href="..\iointex\nf-iointex-wdmlibioconnectinterruptex.md">WdmlibIoConnectInterruptEx</a> function.
+For more information, see the <a href="https://msdn.microsoft.com/172598B1-C486-489F-98F0-382EB8139A08">WdmlibIoConnectInterruptEx</a> function.
 
 <code>#define IoConnectInterruptEx WdmlibIoConnectInterruptEx</code>
 
 ## Syntax
 
-````
-NTSTATUS IoConnectInterruptEx(
-  _Inout_ PIO_CONNECT_INTERRUPT_PARAMETERS Parameters
+```
+NTKERNELAPI NTSTATUS IoConnectInterruptEx(
+  PIO_CONNECT_INTERRUPT_PARAMETERS Parameters
 );
-````
+```
 
 ## Parameters
 
 `Parameters`
 
-For more information, see the <a href="..\iointex\nf-iointex-wdmlibioconnectinterruptex.md">WdmlibIoConnectInterruptEx</a> function.
+For more information, see the <a href="https://msdn.microsoft.com/172598B1-C486-489F-98F0-382EB8139A08">WdmlibIoConnectInterruptEx</a> function.
 
 
 ## Return Value
 
-For more information, see the <a href="..\iointex\nf-iointex-wdmlibioconnectinterruptex.md">WdmlibIoConnectInterruptEx</a> function.
+For more information, see the <a href="https://msdn.microsoft.com/172598B1-C486-489F-98F0-382EB8139A08">WdmlibIoConnectInterruptEx</a> function.
 
 
 ## Requirements
@@ -84,4 +84,4 @@ For more information, see the <a href="..\iointex\nf-iointex-wdmlibioconnectinte
 
 ## See Also
 
-<a href="..\iointex\nf-iointex-wdmlibioconnectinterruptex.md">WdmlibIoConnectInterruptEx</a>
+<a href="https://msdn.microsoft.com/172598B1-C486-489F-98F0-382EB8139A08">WdmlibIoConnectInterruptEx</a>

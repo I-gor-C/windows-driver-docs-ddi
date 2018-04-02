@@ -7,7 +7,7 @@ old-location: storage\msiscsi_tcpipconfig.htm
 old-project: storage
 ms.assetid: 1f33d262-0488-46cb-a762-1f3e24cdd219
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PMSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig structure [Storage Devices], PMSiSCSI_TCPIPConfig, PMSiSCSI_TCPIPConfig structure pointer [Storage Devices], _MSiSCSI_TCPIPConfig, iscsicfg/MSiSCSI_TCPIPConfig, iscsicfg/PMSiSCSI_TCPIPConfig, storage.msiscsi_tcpipconfig, structs-iSCSI_4ca5e222-7926-4646-a915-014cf20caed1.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,19 +47,19 @@ req.typenames: MSiSCSI_TCPIPConfig, *PMSiSCSI_TCPIPConfig
 The MSiSCSI_TCPIPConfig structure reports TCP/IP configuration information about one of the adapter's ports.
 
 ## Syntax
-````
+```
 typedef struct _MSiSCSI_TCPIPConfig {
-  BOOLEAN          UseLinkLocalAddress;
-  BOOLEAN          EnableDHCP;
-  BOOLEAN          UseDHCPForDNS;
-  ULONG            IPVersions;
+  BOOLEAN          UseLinkLocalAddress;
+  BOOLEAN          EnableDHCP;
+  BOOLEAN          UseDHCPForDNS;
+  ULONG            IPVersions;
   ISCSI_IP_Address IpAddress;
   ISCSI_IP_Address DefaultGateway;
   ISCSI_IP_Address SubnetMask;
   ISCSI_IP_Address PreferredDNSServer;
   ISCSI_IP_Address AlternateDNSServer;
-} MSiSCSI_TCPIPConfig, *PMSiSCSI_TCPIPConfig;
-````
+} *PMSiSCSI_TCPIPConfig, MSiSCSI_TCPIPConfig;
+```
 
 ## Members
 
@@ -82,23 +82,23 @@ The version of the IP protocol that the HBA supports. A value of 0x00000001 indi
 
 `IpAddress`
 
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that specifies the IP address for the HBA. The ISCSI_IP_Address structure provides a version-independent way of defining the IP address.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that specifies the IP address for the HBA. The ISCSI_IP_Address structure provides a version-independent way of defining the IP address.
 
 `DefaultGateway`
 
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that specifies the static IP address for the default gateway. The ISCSI_IP_Address structure provides a version-independent way of defining the IP address of the default gateway.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that specifies the static IP address for the default gateway. The ISCSI_IP_Address structure provides a version-independent way of defining the IP address of the default gateway.
 
 `SubnetMask`
 
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that specifies the static subnet mask. The ISCSI_IP_Address structure provides a version-independent way of defining the subnet mask.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that specifies the static subnet mask. The ISCSI_IP_Address structure provides a version-independent way of defining the subnet mask.
 
 `PreferredDNSServer`
 
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that specifies the IP address of the preferred DNS server. The ISCSI_IP_Address structure provides a version-independent way of defining the IP address of the preferred DNS server.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that specifies the IP address of the preferred DNS server. The ISCSI_IP_Address structure provides a version-independent way of defining the IP address of the preferred DNS server.
 
 `AlternateDNSServer`
 
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that specifies the IP address of the alternate DNS server. The ISCSI_IP_Address structure provides a version-independent way of defining the IP address of the alternate DNS server.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that specifies the IP address of the alternate DNS server. The ISCSI_IP_Address structure provides a version-independent way of defining the IP address of the alternate DNS server.
 
 ## Remarks
 The WMI tool suite automatically generates a declaration of the MSiSCSI_TCPIPConfig structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563151">MSiSCSI_TCPIPConfig WMI Class</a> in <i>Config.mof</i>.You must implement this class.
@@ -110,7 +110,7 @@ The WMI tool suite automatically generates a declaration of the MSiSCSI_TCPIPCon
 
 ## See Also
 
-<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
 
 
 

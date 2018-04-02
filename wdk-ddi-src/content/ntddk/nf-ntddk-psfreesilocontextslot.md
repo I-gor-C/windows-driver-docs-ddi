@@ -7,7 +7,7 @@ old-location: kernel\psfreesilocontextslot.htm
 old-project: kernel
 ms.assetid: 659B92A6-8582-468F-8CDD-119832A95230
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsFreeSiloContextSlot, PsFreeSiloContextSlot routine [Kernel-Mode Driver Architecture], kernel.psfreesilocontextslot, ntddk/PsFreeSiloContextSlot
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,21 +45,21 @@ req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 
 
 # PsFreeSiloContextSlot function
-This routine  frees the specified slot and makes it available in the system. It undoes the effects of the  <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine.
+This routine  frees the specified slot and makes it available in the system. It undoes the effects of the  <a href="https://msdn.microsoft.com/library/windows/hardware/mt735056">PsAllocSiloContextSlot</a> routine.
 
 ## Syntax
 
-````
-NTSTATUS PsFreeSiloContextSlot(
-  _In_ ULONG ContextSlot
+```
+NTKERNELAPI NTSTATUS PsFreeSiloContextSlot(
+  ULONG ContextSlot
 );
-````
+```
 
 ## Parameters
 
 `ContextSlot`
 
-A slot allocated by the <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine. 
+A slot allocated by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt735056">PsAllocSiloContextSlot</a> routine. 
 
 <div class="alert"><b>Warning</b>  Setting this parameter to a slot that is still in use causes the system to execute bug check.</div>
 <div> </div>
@@ -108,4 +108,4 @@ The operation completed successfully.
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt735056">PsAllocSiloContextSlot</a>

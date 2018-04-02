@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_JobCopiesAllDocuments method
+# IPrintSchemaTicket::get_JobCopiesAllDocuments method
 Gets the copy count.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_JobCopiesAllDocuments(
-  [out, retval] ULONG *pulJobCopiesAllDocuments
+  ULONG *pulJobCopiesAllDocuments
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>

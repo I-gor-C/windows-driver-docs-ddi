@@ -7,7 +7,7 @@ old-location: kernel\hardware_counter_type.htm
 old-project: kernel
 ms.assetid: 837f5a55-ca07-4462-85d7-203d02df168c
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PHARDWARE_COUNTER_TYPE, HARDWARE_COUNTER_TYPE, HARDWARE_COUNTER_TYPE enumeration [Kernel-Mode Driver Architecture], MaxHardwareCounterType, PHARDWARE_COUNTER_TYPE, PHARDWARE_COUNTER_TYPE enumeration pointer [Kernel-Mode Driver Architecture], PMCCounter, _HARDWARE_COUNTER_TYPE, kernel.hardware_counter_type, ntddk/HARDWARE_COUNTER_TYPE, ntddk/MaxHardwareCounterType, ntddk/PHARDWARE_COUNTER_TYPE, ntddk/PMCCounter, sysenum_861db9b8-cd2d-4cfe-ae99-5c292f28c420.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: HARDWARE_COUNTER_TYPE, *PHARDWARE_COUNTER_TYPE
 The <b>HARDWARE_COUNTER_TYPE</b> enumeration specifies the type of a hardware counter.
 
 ## Syntax
-````
-typedef enum _HARDWARE_COUNTER_TYPE { 
-  PMCCounter              = 0,
-  MaxHardwareCounterType  = 1
-} HARDWARE_COUNTER_TYPE, *PHARDWARE_COUNTER_TYPE;
-````
+```
+typedef enum _HARDWARE_COUNTER_TYPE {
+  PMCCounter              ,
+  MaxHardwareCounterType
+} *PHARDWARE_COUNTER_TYPE, HARDWARE_COUNTER_TYPE;
+```
 
 ## Constants
 
@@ -71,7 +71,7 @@ typedef enum _HARDWARE_COUNTER_TYPE {
 
 ## Remarks
 
-The <b>Type</b> member of the <a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a> structure contains a <b>HARDWARE_COUNTER_TYPE</b> enumeration value.
+The <b>Type</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546980">HARDWARE_COUNTER</a> structure contains a <b>HARDWARE_COUNTER_TYPE</b> enumeration value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,4 +81,4 @@ The <b>Type</b> member of the <a href="..\ntddk\ns-ntddk-_hardware_counter.md">H
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_hardware_counter.md">HARDWARE_COUNTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546980">HARDWARE_COUNTER</a>

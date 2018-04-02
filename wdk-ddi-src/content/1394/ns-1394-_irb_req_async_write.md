@@ -47,21 +47,21 @@ req.typenames: IRB_REQ_ASYNC_WRITE
 This structure contains the fields necessary for the 1394 stack to carry out an asynchronous write request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_ASYNC_WRITE {
   IO_ADDRESS DestinationAddress;
-  ULONG      nNumberOfBytesToWrite;
-  ULONG      nBlockSize;
-  ULONG      fulFlags;
-  PMDL       Mdl;
-  ULONG      ulGeneration;
-  UCHAR      chPriority;
-  UCHAR      nSpeed;
-  UCHAR      tCode;
-  UCHAR      Reserved;
-  ULONG      ElapsedTime;
+  ULONG      nNumberOfBytesToWrite;
+  ULONG      nBlockSize;
+  ULONG      fulFlags;
+  PMDL       Mdl;
+  ULONG      ulGeneration;
+  UCHAR      chPriority;
+  UCHAR      nSpeed;
+  UCHAR      tCode;
+  UCHAR      Reserved;
+  ULONG      ElapsedTime;
 } IRB_REQ_ASYNC_WRITE;
-````
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: display\videoportallocatecommonbuffer.htm
 old-project: display
 ms.assetid: 950c2509-688e-4aaa-a12d-4106bb722bbc
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortAllocateCommonBuffer, VideoPortAllocateCommonBuffer function [Display Devices], VideoPort_Functions_bd747ea0-7963-4008-a91c-eb5598fc6bdd.xml, display.videoportallocatecommonbuffer, video/VideoPortAllocateCommonBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,16 +50,16 @@ The <b>VideoPortAllocateCommonBuffer</b> function allocates and maps system memo
 
 ## Syntax
 
-````
-PVOID VideoPortAllocateCommonBuffer(
-  _In_  PVOID             HwDeviceExtension,
-  _In_  PVP_DMA_ADAPTER   VpDmaAdapter,
-  _In_  ULONG             DesiredLength,
-  _Out_ PPHYSICAL_ADDRESS LogicalAddress,
-  _In_  BOOLEAN           CacheEnabled,
-  _Out_ PVOID             Reserved
+```
+VIDEOPORT_API PVOID VideoPortAllocateCommonBuffer(
+  IN PVOID              HwDeviceExtension,
+  IN PVP_DMA_ADAPTER    VpDmaAdapter,
+  IN ULONG              DesiredLength,
+  OUT PPHYSICAL_ADDRESS LogicalAddress,
+  IN BOOLEAN            CacheEnabled,
+  OUT PVOID             Reserved
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ Pointer to the miniport driver's device extension.
 
 `VpDmaAdapter`
 
-Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a previous call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>.
 
 `DesiredLength`
 
@@ -81,7 +81,7 @@ Pointer to a memory location that receives the logical address to be used by the
 
 `CacheEnabled`
 
-Specifies whether the allocated memory can be cached.  For more information, see the description of the <i>CacheEnabled</i> parameter for <a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>.
+Specifies whether the allocated memory can be cached.  For more information, see the description of the <i>CacheEnabled</i> parameter for <a href="https://msdn.microsoft.com/library/windows/hardware/ff540575">AllocateCommonBuffer</a>.
 
 `Reserved`
 
@@ -94,7 +94,7 @@ Is currently ignored by the video port driver; should be set to <b>NULL</b>.
 
 ## Remarks
 
-When the buffer is no longer needed, the video miniport driver should release it by calling <a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>.
+When the buffer is no longer needed, the video miniport driver should release it by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff570355">VideoPortReleaseCommonBuffer</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -108,7 +108,7 @@ When the buffer is no longer needed, the video miniport driver should release it
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540575">AllocateCommonBuffer</a>
 
 
 
@@ -116,8 +116,8 @@ When the buffer is no longer needed, the video miniport driver should release it
 
 
 
-<a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>
 
 
 
-<a href="..\wdm\nc-wdm-pallocate_common_buffer.md">AllocateCommonBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570355">VideoPortReleaseCommonBuffer</a>

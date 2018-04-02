@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# UnregisterLaunchApplication method
+# IStillImageW::UnregisterLaunchApplication method
 The <b>IStillImage::UnregisterLaunchApplication</b> method removes an application from the still image event monitor's list of push-model aware applications.
 
 ## Syntax
 
-````
+```
 HRESULT UnregisterLaunchApplication(
-  [in] LPWSTR pwszAppName
+  LPWSTR pwszAppName
 );
-````
+```
 
 ## Parameters
 

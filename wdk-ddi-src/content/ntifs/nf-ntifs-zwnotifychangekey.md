@@ -7,7 +7,7 @@ old-location: kernel\zwnotifychangekey.htm
 old-project: kernel
 ms.assetid: 660c04b0-499b-40e7-94c2-5cb457e93f00
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: NtNotifyChangeKey, ZwNotifyChangeKey, ZwNotifyChangeKey routine [Kernel-Mode Driver Architecture], k111_e9219ad8-c702-45a2-97f1-a195c1aa8b89.xml, kernel.zwnotifychangekey, ntifs/NtNotifyChangeKey, ntifs/ZwNotifyChangeKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,26 +50,26 @@ The <b>ZwNotifyChangeKey</b> routine allows a driver to request notification whe
 
 ## Syntax
 
-````
-NTSTATUS ZwNotifyChangeKey(
-  _In_      HANDLE           KeyHandle,
-  _In_opt_  HANDLE           Event,
-  _In_opt_  PIO_APC_ROUTINE  ApcRoutine,
-  _In_opt_  PVOID            ApcContext,
-  _Out_     PIO_STATUS_BLOCK IoStatusBlock,
-  _In_      ULONG            CompletionFilter,
-  _In_      BOOLEAN          WatchTree,
-  _Out_opt_ PVOID            Buffer,
-  _In_      ULONG            BufferSize,
-  _In_      BOOLEAN          Asynchronous
+```
+NTSYSAPI NTSTATUS ZwNotifyChangeKey(
+  HANDLE           KeyHandle,
+  HANDLE           Event,
+  PIO_APC_ROUTINE  ApcRoutine,
+  PVOID            ApcContext,
+  PIO_STATUS_BLOCK IoStatusBlock,
+  ULONG            CompletionFilter,
+  BOOLEAN          WatchTree,
+  PVOID            Buffer,
+  ULONG            BufferSize,
+  BOOLEAN          Asynchronous
 );
-````
+```
 
 ## Parameters
 
 `KeyHandle`
 
-Handle to the key to register a notification routine for. This handle is created by a successful call to <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> or <a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>. The caller must have specified KEY_NOTIFY access.
+Handle to the key to register a notification routine for. This handle is created by a successful call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff566425">ZwCreateKey</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567014">ZwOpenKey</a>. The caller must have specified KEY_NOTIFY access.
 
 `Event`
 
@@ -83,7 +83,7 @@ For a user-mode call, this parameter points to a caller-supplied APC routine tha
 
 `ApcContext`
 
-The meaning of this parameter depends on whether the routine is called from kernel mode or from user mode. For a kernel-mode call, set this parameter to one of the following <a href="..\wdm\ne-wdm-_work_queue_type.md">WORK_QUEUE_TYPE</a> enumeration values:
+The meaning of this parameter depends on whether the routine is called from kernel mode or from user mode. For a kernel-mode call, set this parameter to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/ff566382">WORK_QUEUE_TYPE</a> enumeration values:
 
 <ul>
 <li>
@@ -99,7 +99,7 @@ The parameter value must be cast to type PVOID. For a user-mode call, this param
 
 `IoStatusBlock`
 
-Pointer to an <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that contains the final status and information about the operation. For successful calls that return data, the number of bytes written to <i>Buffer</i> is supplied in <i>IoStatusBlock</i>-&gt;<b>Information</b>.
+Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure that contains the final status and information about the operation. For successful calls that return data, the number of bytes written to <i>Buffer</i> is supplied in <i>IoStatusBlock</i>-&gt;<b>Information</b>.
 
 `CompletionFilter`
 
@@ -171,15 +171,7 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<a href="..\wdm\ne-wdm-_work_queue_type.md">WORK_QUEUE_TYPE</a>
-
-
-
-<a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a>
-
-
-
-<a href="..\wdm\nf-wdm-zwopenkey.md">ZwOpenKey</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a>
 
 
 
@@ -187,8 +179,16 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 
 
-<a href="..\wdm\ns-wdm-_work_queue_item.md">WORK_QUEUE_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557304">WORK_QUEUE_ITEM</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566382">WORK_QUEUE_TYPE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566425">ZwCreateKey</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567014">ZwOpenKey</a>

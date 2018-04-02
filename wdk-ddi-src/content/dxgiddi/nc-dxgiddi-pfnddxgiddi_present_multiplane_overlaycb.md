@@ -7,7 +7,7 @@ old-location: display\pfnpresentmultiplaneoverlay__dxgi_.htm
 old-project: display
 ms.assetid: C6EB96AC-0D5B-4D75-9B44-B1744F6A4360
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFNDDXGIDDI_PRESENT_MULTIPLANE_OVERLAYCB, display.pfnpresentmultiplaneoverlay__dxgi_, dxgiddi/pfnPresentMultiPlaneOverlayCb, pfnPresentMultiPlaneOverlayCb, pfnPresentMultiPlaneOverlayCb callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,8 +87,8 @@ When the user-mode display driver successfully completes its processing of a cal
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh780280">DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh780324">pfnPresentMultiPlaneOverlayCb (DXGI)</a>
-
-
-
-<a href="..\dxgiddi\ns-dxgiddi-_dxgi_ddi_arg_presentmultiplaneoverlay.md">DXGI_DDI_ARG_PRESENTMULTIPLANEOVERLAY</a>

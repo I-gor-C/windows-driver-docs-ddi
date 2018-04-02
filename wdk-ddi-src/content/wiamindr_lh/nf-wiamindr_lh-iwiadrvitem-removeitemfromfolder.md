@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# RemoveItemFromFolder method
+# IWiaDrvItem::RemoveItemFromFolder method
 The <b>IWiaDrvItem::RemoveItemFromFolder</b> method removes an item from a parent folder.
 
 ## Syntax
 
-````
+```
 HRESULT RemoveItemFromFolder(
-  [in] LONG lReason
+  LONG __MIDL__IWiaDrvItem0006
 );
-````
+```
 
 ## Parameters
 
@@ -80,7 +80,7 @@ After the item has been removed from the folder, it can no longer be used for de
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+<a href="https://msdn.microsoft.com/0609e1b2-48df-413c-90bd-d7ddea26510a">IWiaDrvItem</a>
 
 
 

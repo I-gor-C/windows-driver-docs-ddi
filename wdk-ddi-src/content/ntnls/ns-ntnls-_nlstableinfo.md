@@ -7,7 +7,7 @@ old-location: kernel\nlstableinfo.htm
 old-project: kernel
 ms.assetid: B9E64163-B338-49C9-8167-C36B110AB710
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PNLSTABLEINFO, NLSTABLEINFO, NLSTABLEINFO structure [Kernel-Mode Driver Architecture], PNLSTABLEINFO, PNLSTABLEINFO structure pointer [Kernel-Mode Driver Architecture], _NLSTABLEINFO, kernel.nlstableinfo, ntnls/NLSTABLEINFO, ntnls/PNLSTABLEINFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: NLSTABLEINFO, *PNLSTABLEINFO
 Stores the NLS file formats .
 
 ## Syntax
-````
+```
 typedef struct _NLSTABLEINFO {
-  CPTABLEINFO    OemTableInfo;
-  CPTABLEINFO    AnsiTableInfo;
-  PUSHORT        UpperCaseTable;
-  LowerCaseTable PUSHORT;
+  CPTABLEINFO OemTableInfo;
+  CPTABLEINFO AnsiTableInfo;
+  PUSHORT     UpperCaseTable;
+  PUSHORT     LowerCaseTable;
 } NLSTABLEINFO, *PNLSTABLEINFO;
-````
+```
 
 ## Members
 

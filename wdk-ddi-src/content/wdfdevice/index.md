@@ -2,7 +2,7 @@
 UID: NA:wdfdevice
 ms.assetid: 24b2e402-56ef-3f36-b4f0-426a9d758500
 ms.author: windowsdriverdev
-ms.date: 03/13/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -404,7 +404,7 @@ wdfdevice.h contains the following programming interfaces:
 | ---- |:---- |
 | [_WDF_DEVICE_FAILED_ACTION](ne-wdfdevice-_wdf_device_failed_action.md) | The WDF_DEVICE_FAILED_ACTION enumeration identifies the action that the framework will take when a driver reports an unrecoverable software or hardware failure. |
 | [_WDF_DEVICE_HWACCESS_TARGET_SIZE](ne-wdfdevice-_wdf_device_hwaccess_target_size.md) | The WDF_DEVICE_HWACCESS_TARGET_SIZE enumeration is used internally by the framework. Do not use. |
-| [_WDF_DEVICE_HWACCESS_TARGET_TYPE](ne-wdfdevice-_wdf_device_hwaccess_target_type.md) | The WDF_DEVICE_HWACCESS_TARGET_TYPE enumeration is used internally by the framework. Do not use. |
+| [_WDF_DEVICE_HWACCESS_TARGET_TYPE](ne-wdfdevice-_wdf_device_hwaccess_target_type.md) | The WDF_DEVICE_HWACCESS_TARGET_SIZE enumeration is used internally by the framework. Do not use. |
 | [_WDF_DEVICE_IO_TYPE](ne-wdfdevice-_wdf_device_io_type.md) | The WDF_DEVICE_IO_TYPE enumeration is used to specify a method for accessing data buffers. |
 | [_WDF_DEVICE_PNP_STATE](ne-wdfdevice-_wdf_device_pnp_state.md) | The WDF_DEVICE_PNP_STATE enumeration identifies all of the states that the framework's Plug and Play state machine can enter. |
 | [_WDF_DEVICE_POWER_POLICY_STATE](ne-wdfdevice-_wdf_device_power_policy_state.md) | The WDF_DEVICE_POWER_POLICY_STATE enumeration identifies all of the states that the framework's power policy state machine can enter. |

@@ -44,19 +44,19 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# ReadBytes method
+# IPrintReadStream::ReadBytes method
 The <code>ReadBytes</code> method reads a number of bytes into a buffer.
 
 ## Syntax
 
-````
+```
 HRESULT ReadBytes(
-  [out] void  *pvBuffer,
-  [in]  ULONG cbRequested,
-  [out] ULONG *pcbRead,
-  [out] BOOL  *pbEndOfFile
+  void  *pvBuffer,
+  ULONG cbRequested,
+  ULONG *pcbRead,
+  BOOL  *pbEndOfFile
 );
-````
+```
 
 ## Parameters
 

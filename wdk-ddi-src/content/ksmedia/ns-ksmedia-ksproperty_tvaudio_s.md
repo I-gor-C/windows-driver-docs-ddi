@@ -47,12 +47,12 @@ req.typenames: KSPROPERTY_TVAUDIO_S, *PKSPROPERTY_TVAUDIO_S
 The KSPROPERTY_TVAUDIO_S structure describes the current TV audio mode, such as stereo or mono audio and language settings.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_TVAUDIO_S {
   KSPROPERTY Property;
-  ULONG      Mode;
-} KSPROPERTY_TVAUDIO_S, *PKSPROPERTY_TVAUDIO_S;
-````
+  ULONG      Mode;
+} *PKSPROPERTY_TVAUDIO_S, KSPROPERTY_TVAUDIO_S;
+```
 
 ## Members
 

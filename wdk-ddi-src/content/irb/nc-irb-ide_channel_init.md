@@ -7,7 +7,7 @@ old-location: storage\atachannelinitroutine.htm
 old-project: storage
 ms.assetid: c59f93cc-d182-4764-a207-0799e55c6cf6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaChannelInitRoutine, AtaChannelInitRoutine routine [Storage Devices], IDE_CHANNEL_INIT, atartns_7bbe3bef-24c7-4666-9b83-a29646d92f71.xml, irb/AtaChannelInitRoutine, storage.atachannelinitroutine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ api_name:
 -	AtaChannelInitRoutine
 product: Windows
 targetos: Windows
-req.typenames: LUID
+req.typenames: IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS
 ---
 
 
@@ -69,7 +69,7 @@ A pointer to the miniport driver channel extension.
 
 `ChannelInterface`
 
-A pointer to a structure of type <a href="..\irb\ns-irb-_ide_channel_interface.md">IDE_CHANNEL_INTERFACE</a>.
+A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559034">IDE_CHANNEL_INTERFACE</a>.
 
 `InitContext`
 
@@ -82,15 +82,15 @@ A pointer to a structure of type <a href="..\irb\ns-irb-_ide_channel_interface.m
 
 ## Remarks
 
-A vendor-supplied miniport driver that supports the channel interface must implement an <b><i>AtaChannelInitRoutine</i></b> routine to initialize the controller's channels. In particular, the <b><i>AtaChannelInitRoutine</i></b> routine must complete the initialization of the <a href="..\irb\ns-irb-_ide_channel_interface.md">IDE_CHANNEL_INTERFACE</a> structure. The following sequence describes how the miniport driver and the port driver interact to initialize a channel: 
+A vendor-supplied miniport driver that supports the channel interface must implement an <b><i>AtaChannelInitRoutine</i></b> routine to initialize the controller's channels. In particular, the <b><i>AtaChannelInitRoutine</i></b> routine must complete the initialization of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559034">IDE_CHANNEL_INTERFACE</a> structure. The following sequence describes how the miniport driver and the port driver interact to initialize a channel: 
 
 <ol>
 <li>
-While in its <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine, the miniport driver calls the port driver's <a href="..\irb\nf-irb-ataportinitializeex.md">AtaPortInitializeEx</a> library routine to launch the initialization of the controller and the miniport driver. 
+While in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine, the miniport driver calls the port driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550167">AtaPortInitializeEx</a> library routine to launch the initialization of the controller and the miniport driver. 
 
 </li>
 <li>
-If the miniport driver supports the channel interface, the <b><i>DriverEntry</i></b> routine must initialize the <b>AtaChannelInitRoutine</b> member of <a href="..\irb\ns-irb-_ide_controller_interface.md">IDE_CONTROLLER_INTERFACE</a> to point to the miniport driver's <b><i>AtaChannelInitRoutine</i></b> routine.
+If the miniport driver supports the channel interface, the <b><i>DriverEntry</i></b> routine must initialize the <b>AtaChannelInitRoutine</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559039">IDE_CONTROLLER_INTERFACE</a> to point to the miniport driver's <b><i>AtaChannelInitRoutine</i></b> routine.
 
 </li>
 <li>
@@ -107,12 +107,12 @@ The port driver calls the <b><i>AtaAdapterControl</i></b> routine by using contr
 
 ## See Also
 
-<a href="..\irb\ns-irb-_ide_controller_interface.md">IDE_CONTROLLER_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550167">AtaPortInitializeEx</a>
 
 
 
-<a href="..\irb\ns-irb-_ide_channel_interface.md">IDE_CHANNEL_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559034">IDE_CHANNEL_INTERFACE</a>
 
 
 
-<a href="..\irb\nf-irb-ataportinitializeex.md">AtaPortInitializeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559039">IDE_CONTROLLER_INTERFACE</a>

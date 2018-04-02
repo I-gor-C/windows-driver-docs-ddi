@@ -7,7 +7,7 @@ old-location: display\dxgk_createcontextflags.htm
 old-project: display
 ms.assetid: f7cadf78-c908-4034-889d-b5c7d0ffdaad
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_CREATECONTEXTFLAGS, DXGK_CREATECONTEXTFLAGS structure [Display Devices], DmStructs_19418464-77f9-407f-8b04-c6a35561069b.xml, _DXGK_CREATECONTEXTFLAGS, d3dkmddi/DXGK_CREATECONTEXTFLAGS, display.dxgk_createcontextflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,20 +47,29 @@ req.typenames: DXGK_CREATECONTEXTFLAGS
 The DXGK_CREATECONTEXTFLAGS structure identifies how to create contexts.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_CREATECONTEXTFLAGS {
   union {
     struct {
-      UINT SystemContext  :1;
-      UINT GdiContext  :1;
-      UINT VirtualAddressing  :1;
-      UINT SystemProtectedContext  :1;
-      UINT Reserved  :28;
+      UINT  : 1  SystemContext;
+      UINT  : 1  GdiContext;
+      UINT  : 1  VirtualAddressing;
+      UINT  : 1  SystemProtectedContext;
+      UINT  : 1  HwQueueSupported;
+#if ...
+      UINT  : 27 Reserved;
+#elif
+      UINT  : 28 Reserved;
+#elif
+      UINT  : 29 Reserved;
+#else
+      UINT  : 30 Reserved;
+#endif
     };
     UINT Value;
   };
 } DXGK_CREATECONTEXTFLAGS;
-````
+```
 
 ## Members
 
@@ -74,8 +83,8 @@ typedef struct _DXGK_CREATECONTEXTFLAGS {
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createcontext.md">DXGKARG_CREATECONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557567">DXGKARG_CREATECONTEXT</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createcontext.md">DxgkDdiCreateContext</a>
+<a href="https://msdn.microsoft.com/aea21a36-f3d5-4541-bd2d-aa026668c562">DxgkDdiCreateContext</a>

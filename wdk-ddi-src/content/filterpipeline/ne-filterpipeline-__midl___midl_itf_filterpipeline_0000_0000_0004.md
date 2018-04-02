@@ -47,14 +47,14 @@ req.typenames: EXpsFontRestriction
 
 
 ## Syntax
-````
-typedef enum __MIDL___MIDL_itf_filterpipeline_0000_0000_0004 { 
-  Xps_Restricted_Font_Installable   = 0,
-  Xps_Restricted_Font_NoEmbedding   = 0x2,
-  Xps_Restricted_Font_PreviewPrint  = 0x4,
-  Xps_Restricted_Font_Editable      = 0x8
+```
+typedef enum __MIDL___MIDL_itf_filterpipeline_0000_0000_0004 {
+  Xps_Restricted_Font_Installable   ,
+  Xps_Restricted_Font_NoEmbedding   ,
+  Xps_Restricted_Font_PreviewPrint  ,
+  Xps_Restricted_Font_Editable
 } EXpsFontRestriction;
-````
+```
 
 ## Constants
 

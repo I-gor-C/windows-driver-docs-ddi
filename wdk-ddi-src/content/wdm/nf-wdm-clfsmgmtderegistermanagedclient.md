@@ -7,7 +7,7 @@ old-location: kernel\clfsmgmtderegistermanagedclient.htm
 old-project: kernel
 ms.assetid: 5dee3b70-9c8d-420d-86f9-9795b4d8b1e8
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsMgmtDeregisterManagedClient, ClfsMgmtDeregisterManagedClient routine [Kernel-Mode Driver Architecture], Clfs_management_6a802f4a-8157-42c8-8eda-740a1207714a.xml, kernel.clfsmgmtderegistermanagedclient, wdm/ClfsMgmtDeregisterManagedClient
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,11 +51,11 @@ The <b>ClfsMgmtDeregisterManagedClient</b> routine removes the connection betwee
 
 ## Syntax
 
-````
-NTSTATUS ClfsMgmtDeregisterManagedClient(
-  _In_ CLFS_MGMT_CLIENT Client
+```
+CLFSUSER_API NTSTATUS ClfsMgmtDeregisterManagedClient(
+  CLFS_MGMT_CLIENT ClientCookie
 );
-````
+```
 
 ## Parameters
 
@@ -135,4 +135,4 @@ After calling the <b>ClfsMgmtDeregisterManagedClient</b> routine, a client's cal
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541642">ClfsMgmtRegisterManagedClient</a>

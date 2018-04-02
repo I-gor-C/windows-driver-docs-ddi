@@ -7,7 +7,7 @@ old-location: kernel\zwunmapviewofsection.htm
 old-project: kernel
 ms.assetid: ebc67162-4e36-4af8-bc3b-764633dcda5d
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: NtUnmapViewOfSection, ZwUnmapViewOfSection, ZwUnmapViewOfSection routine [Kernel-Mode Driver Architecture], k111_4353325c-d2a1-47b3-b58a-b62929c417f9.xml, kernel.zwunmapviewofsection, wdm/NtUnmapViewOfSection, wdm/ZwUnmapViewOfSection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,18 +51,18 @@ The <b>ZwUnmapViewOfSection</b> routine unmaps a <a href="https://msdn.microsoft
 
 ## Syntax
 
-````
-NTSTATUS ZwUnmapViewOfSection(
-  _In_     HANDLE ProcessHandle,
-  _In_opt_ PVOID  BaseAddress
+```
+NTSYSAPI NTSTATUS ZwUnmapViewOfSection(
+  HANDLE ProcessHandle,
+  PVOID  BaseAddress
 );
-````
+```
 
 ## Parameters
 
 `ProcessHandle`
 
-Handle to a process object that was previously passed to <a href="..\wdm\nf-wdm-zwmapviewofsection.md">ZwMapViewOfSection</a>.
+Handle to a process object that was previously passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff566481">ZwMapViewOfSection</a>.
 
 `BaseAddress`
 
@@ -125,12 +125,12 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
 
 
 
-<a href="..\wdm\nf-wdm-zwmapviewofsection.md">ZwMapViewOfSection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566481">ZwMapViewOfSection</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567029">ZwOpenSection</a>

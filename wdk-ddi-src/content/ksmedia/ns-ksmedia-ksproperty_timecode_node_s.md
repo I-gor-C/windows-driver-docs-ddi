@@ -47,19 +47,19 @@ req.typenames: KSPROPERTY_TIMECODE_NODE_S, *PKSPROPERTY_TIMECODE_NODE_S
 The KSPROPERTY_TIMECODE_NODE_S structure describes a timecode.
 
 ## Syntax
-````
-typedef struct {
-  KSP_NODE        NodeProperty;
+```
+typedef struct KSPROPERTY_TIMECODE_NODE_S {
+  KSP_NODE        NodeProperty;
   TIMECODE_SAMPLE TimecodeSamp;
-} KSPROPERTY_TIMECODE_NODE_S, *PKSPROPERTY_TIMECODE_NODE_S;
-````
+} *PKSPROPERTY_TIMECODE_NODE_S, KSPROPERTY_TIMECODE_NODE_S;
+```
 
 ## Members
 
 
 `NodeProperty`
 
-Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the property set, property ID, request type, and node ID.
+Specifies an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff566720">KSP_NODE</a> structure that describes the property set, property ID, request type, and node ID.
 
 `TimecodeSamp`
 
@@ -77,8 +77,8 @@ Specifies the timecode sample. Timecode, absolute track number (ATN) and relativ
 
 
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_timecode_s.md">KSPROPERTY_TIMECODE_S</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565781">KSPROPERTY_TIMECODE_S</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagtimecode_sample.md">TIMECODE_SAMPLE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568528">TIMECODE_SAMPLE</a>

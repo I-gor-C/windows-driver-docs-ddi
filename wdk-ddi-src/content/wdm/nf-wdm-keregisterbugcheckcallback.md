@@ -7,7 +7,7 @@ old-location: kernel\keregisterbugcheckcallback.htm
 old-project: kernel
 ms.assetid: 6a4ab5a4-4d09-4fd5-bc7b-0a8e5a634eb3
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeRegisterBugCheckCallback, KeRegisterBugCheckCallback routine [Kernel-Mode Driver Architecture], k105_42736e68-1f5a-47df-976a-df3bfa9a356e.xml, kernel.keregisterbugcheckcallback, wdm/KeRegisterBugCheckCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,19 +46,19 @@ req.product: Windows 10 or later.
 
 
 # KeRegisterBugCheckCallback function
-The <b>KeRegisterBugCheckCallback</b> routine registers a <a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a> routine, which executes when the operating system issues a bug check.
+The <b>KeRegisterBugCheckCallback</b> routine registers a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540674">BugCheckCallback</a> routine, which executes when the operating system issues a bug check.
 
 ## Syntax
 
-````
-BOOLEAN KeRegisterBugCheckCallback(
-  _Out_    PKBUGCHECK_CALLBACK_RECORD  CallbackRecord,
-  _In_     PKBUGCHECK_CALLBACK_ROUTINE CallbackRoutine,
-  _In_opt_ PVOID                       Buffer,
-  _In_     ULONG                       Length,
-  _In_     PUCHAR                      Component
+```
+NTKERNELAPI BOOLEAN KeRegisterBugCheckCallback(
+  PKBUGCHECK_CALLBACK_RECORD  CallbackRecord,
+  PKBUGCHECK_CALLBACK_ROUTINE CallbackRoutine,
+  PVOID                       Buffer,
+  ULONG                       Length,
+  PUCHAR                      Component
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ Pointer to a callback record that was previously initialized by <a href="https:/
 
 `CallbackRoutine`
 
-Pointer to the driver-supplied <a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a> routine.
+Pointer to the driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff540674">BugCheckCallback</a> routine.
 
 `Buffer`
 
@@ -89,7 +89,7 @@ Pointer to a null-terminated ANSI string that identifies the caller. This string
 
 ## Remarks
 
-The <b>KeRegisterBugCheckCallback</b> routine registers a <a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a> routine, the simplest kind of bug-check callback routine. To register other kinds of bug-check callbacks, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a> and <a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a> routines, use the <a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a> routine instead.
+The <b>KeRegisterBugCheckCallback</b> routine registers a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540674">BugCheckCallback</a> routine, the simplest kind of bug-check callback routine. To register other kinds of bug-check callbacks, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff540677">BugCheckDumpIoCallback</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff540669">BugCheckAddPagesCallback</a> routines, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553110">KeRegisterBugCheckReasonCallback</a> routine instead.
 
 The <i>BugCheckCallback</i> routine is executed when the system issues a bug check. A driver can use the routine to reset the device to a known state. For more information, see <i>BugCheckCallback</i>.
 
@@ -109,7 +109,11 @@ The <i>Component</i> string is used to identify the driver during crash-dump deb
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540669">BugCheckAddPagesCallback</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540674">BugCheckCallback</a>
 
 
 
@@ -117,16 +121,12 @@ The <i>Component</i> string is used to identify the driver during crash-dump deb
 
 
 
-<a href="..\wdm\nf-wdm-kederegisterbugcheckcallback.md">KeDeregisterBugCheckCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551992">KeDeregisterBugCheckCallback</a>
 
 
 
-<a href="..\wdm\nc-wdm-kbugcheck_reason_callback_routine.md">BugCheckAddPagesCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552109">KeInitializeCallbackRecord</a>
 
 
 
-<a href="..\wdm\nc-wdm-kbugcheck_callback_routine.md">BugCheckCallback</a>
-
-
-
-<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553110">KeRegisterBugCheckReasonCallback</a>

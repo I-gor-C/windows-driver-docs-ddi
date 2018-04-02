@@ -7,7 +7,7 @@ old-location: display\d3dkmt_displaymodelist.htm
 old-project: display
 ms.assetid: 2eb99f42-3639-4327-a880-47e18d1da71d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_DISPLAYMODELIST, D3DKMT_DISPLAYMODELIST structure [Display Devices], _D3DKMT_DISPLAYMODELIST, d3dkmthk/D3DKMT_DISPLAYMODELIST, display.d3dkmt_displaymodelist
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: D3DKMT_DISPLAYMODELIST
 Describes a list of display modes.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_DISPLAYMODELIST {
   D3DDDI_VIDEO_PRESENT_SOURCE_ID VidPnSourceId;
-  UINT                           ModeCount;
-  D3DKMT_DISPLAYMODE             pModeList[];
+  UINT                           ModeCount;
+  D3DKMT_DISPLAYMODE             pModeList[0];
 } D3DKMT_DISPLAYMODELIST;
-````
+```
 
 ## Members
 
@@ -68,7 +68,7 @@ typedef struct _D3DKMT_DISPLAYMODELIST {
 
 `pModeList`
 
-[out] An array of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_displaymode.md">D3DKMT_DISPLAYMODE</a> structures that represent the list of display modes.
+[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff547942">D3DKMT_DISPLAYMODE</a> structures that represent the list of display modes.
 
 
 ## Requirements

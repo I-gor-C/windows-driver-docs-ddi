@@ -45,23 +45,23 @@ req.product: Windows 10 or later.
 ---
 
 
-# ResetPDEV method
+# IPrintOemPS::ResetPDEV method
 The <code>IPrintOemPS::ResetPDEV</code> method allows a rendering plug-in for Pscript5 to reset its PDEV structure.
 
 ## Syntax
 
-````
-STDMETHOD ResetPDEV(
-   PDEVOBJ pdevobjOld,
-   PDEVOBJ pdevobjNew
+```
+HRESULT ResetPDEV(
+  PDEVOBJ pdevobjOld,
+  PDEVOBJ pdevobjNew
 );
-````
+```
 
 ## Parameters
 
 `pdevobjOld`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure containing current PDEV information.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure containing current PDEV information.
 
 `pdevobjNew`
 

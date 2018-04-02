@@ -7,7 +7,7 @@ old-location: storage\iocreatedisk.htm
 old-project: storage
 ms.assetid: 0ad85551-a8d2-4f7f-958b-fe23111de340
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IoCreateDisk, IoCreateDisk routine [Storage Devices], ntddk/IoCreateDisk, rtns-disk_5f69686f-f812-4ccc-8bc8-4caa70230d20.xml, storage.iocreatedisk
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,22 +49,22 @@ The <b>IoCreateDisk</b> routine initializes a raw disk by creating a new partiti
 
 ## Syntax
 
-````
-NTSTATUS IoCreateDisk(
-  _In_     PDEVICE_OBJECT      DeviceObject,
-  _In_opt_ struct _CREATE_DISK *Disk
+```
+NTKERNELAPI NTSTATUS IoCreateDisk(
+  PDEVICE_OBJECT DeviceObject,
+  _CREATE_DISK   *Disk
 );
-````
+```
 
 ## Parameters
 
 `DeviceObject`
 
-Specifies the <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> for the raw disk.
+Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> for the raw disk.
 
 `Disk`
 
-Pointer to a <a href="..\ntdddisk\ns-ntdddisk-_create_disk.md">CREATE_DISK</a> structure that specifies the type and parameters for the partition table. If <i>Disk</i> is <b>NULL</b>, the routine deletes the partition table on the disk.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552484">CREATE_DISK</a> structure that specifies the type and parameters for the partition table. If <i>Disk</i> is <b>NULL</b>, the routine deletes the partition table on the disk.
 
 
 ## Return Value
@@ -73,7 +73,7 @@ Returns STATUS_SUCCESS on success, or the appropriate error code on failure.
 
 ## Remarks
 
-<b>IoCreateDisk</b> must only be used by disk drivers. Other drivers should use the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_create_disk.md">IOCTL_DISK_CREATE_DISK</a> I/O request instead.
+<b>IoCreateDisk</b> must only be used by disk drivers. Other drivers should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559436">IOCTL_DISK_CREATE_DISK</a> I/O request instead.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,8 +86,8 @@ Returns STATUS_SUCCESS on success, or the appropriate error code on failure.
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_create_disk.md">CREATE_DISK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552484">CREATE_DISK</a>
 
 
 
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_create_disk.md">IOCTL_DISK_CREATE_DISK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559436">IOCTL_DISK_CREATE_DISK</a>

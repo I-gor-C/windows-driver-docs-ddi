@@ -7,7 +7,7 @@ old-location: buses\ucmtcpciportcontrollersethardwarerequestqueue.htm
 old-project: usbref
 ms.assetid: 47142adb-4d22-41eb-b455-93409bbffffb
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UcmTcpciPortControllerSetHardwareRequestQueue, UcmTcpciPortControllerSetHardwareRequestQueue method [Buses], buses.ucmtcpciportcontrollersethardwarerequestqueue, ucmtcpciportcontroller/UcmTcpciPortControllerSetHardwareRequestQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,18 +50,18 @@ Assigns a framework queue object to which the UcmTcpciCx dispatches hardware req
 
 ## Syntax
 
-````
-VOID UcmTcpciPortControllerSetHardwareRequestQueue(
-   UCMTCPCIPORTCONTROLLER PortControllerObject,
-   WDFQUEUE               HardwareRequestQueue
+```
+void UcmTcpciPortControllerSetHardwareRequestQueue(
+  UCMTCPCIPORTCONTROLLER PortControllerObject,
+  WDFQUEUE               HardwareRequestQueue
 );
-````
+```
 
 ## Parameters
 
 `PortControllerObject`
 
-Handle to the port controller object that the client driver received in the previous call to <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>.
+Handle to the port controller object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>.
 
 `HardwareRequestQueue`
 
@@ -74,7 +74,7 @@ This method does not return a value.
 
 ## Remarks
 
-The client driver must call <b>UcmTcpciPortControllerSetHardwareRequestQueue</b> after creating the port controller object. The driver must call this method only once before calling <a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollerstart.md">UcmTcpciPortControllerStart</a>.
+The client driver must call <b>UcmTcpciPortControllerSetHardwareRequestQueue</b> after creating the port controller object. The driver must call this method only once before calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt805846">UcmTcpciPortControllerStart</a>.
 
 The parent of the queue object is the port controller object. 
 
@@ -91,4 +91,4 @@ A client driver may choose to use the same queue across multiple port controller
 
 ## See Also
 
-<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>

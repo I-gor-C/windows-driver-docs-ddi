@@ -7,7 +7,7 @@ old-location: storage\storage_physical_adapter_data.htm
 old-project: storage
 ms.assetid: 404A7AFC-291E-4056-9076-F9E62A07C9FB
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTORAGE_PHYSICAL_ADAPTER_DATA, PSTORAGE_PHYSICAL_ADAPTER_DATA, PSTORAGE_PHYSICAL_ADAPTER_DATA structure pointer [Storage Devices], STORAGE_PHYSICAL_ADAPTER_DATA, STORAGE_PHYSICAL_ADAPTER_DATA structure [Storage Devices], _STORAGE_PHYSICAL_ADAPTER_DATA, ntddstor/PSTORAGE_PHYSICAL_ADAPTER_DATA, ntddstor/STORAGE_PHYSICAL_ADAPTER_DATA, storage.storage_physical_adapter_data"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,21 +47,21 @@ req.typenames: STORAGE_PHYSICAL_ADAPTER_DATA, *PSTORAGE_PHYSICAL_ADAPTER_DATA
 Specifies the physical device data of a storage adapter.
 
 ## Syntax
-````
+```
 typedef struct _STORAGE_PHYSICAL_ADAPTER_DATA {
-  ULONG                           AdapterId;
+  ULONG                           AdapterId;
   STORAGE_COMPONENT_HEALTH_STATUS HealthStatus;
-  STORAGE_PROTOCOL_TYPE           CommandProtocol;
-  STORAGE_SPEC_VERSION            SpecVersion;
-  UCHAR                           Vendor[8];
-  UCHAR                           Model[40];
-  UCHAR                           FirmwareRevision[16];
-  UCHAR                           PhysicalLocation[32];
-  BOOLEAN                         ExpandedConnector;
-  UCHAR                           Reserved0[3];
-  ULONG                           Reserved1[3];
-} STORAGE_PHYSICAL_ADAPTER_DATA, *PSTORAGE_PHYSICAL_ADAPTER_DATA;
-````
+  STORAGE_PROTOCOL_TYPE           CommandProtocol;
+  STORAGE_SPEC_VERSION            SpecVersion;
+  UCHAR                           Vendor[8];
+  UCHAR                           Model[40];
+  UCHAR                           FirmwareRevision[16];
+  UCHAR                           PhysicalLocation[32];
+  BOOLEAN                         ExpanderConnected;
+  UCHAR                           Reserved0[3];
+  ULONG                           Reserved1[3];
+} *PSTORAGE_PHYSICAL_ADAPTER_DATA, STORAGE_PHYSICAL_ADAPTER_DATA;
+```
 
 ## Members
 
@@ -72,15 +72,15 @@ The hardware ID of the storage adapter.
 
 `HealthStatus`
 
-Indicates the health status of a storage adapter, of type <a href="..\ntddstor\ne-ntddstor-_storage_component_health_status.md">STORAGE_COMPONENT_HEALTH_STATUS</a>.
+Indicates the health status of a storage adapter, of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt653957">STORAGE_COMPONENT_HEALTH_STATUS</a>.
 
 `CommandProtocol`
 
-Specifies the storage command protocols that are used between software and hardware, of type <a href="..\ntddstor\ne-ntddstor-_storage_protocol_type.md">STORAGE_PROTOCOL_TYPE</a>.
+Specifies the storage command protocols that are used between software and hardware, of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn931818">STORAGE_PROTOCOL_TYPE</a>.
 
 `SpecVersion`
 
-Indicates the specification of the storage adapter, of type <a href="..\ntddstor\ns-ntddstor-_storage_spec_version.md">STORAGE_SPEC_VERSION</a>.
+Indicates the specification of the storage adapter, of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt653963">STORAGE_SPEC_VERSION</a>.
 
 `Vendor`
 

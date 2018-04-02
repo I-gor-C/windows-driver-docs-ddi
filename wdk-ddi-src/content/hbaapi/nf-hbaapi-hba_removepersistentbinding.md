@@ -7,7 +7,7 @@ old-location: storage\hba_removepersistentbinding.htm
 old-project: storage
 ms.assetid: f2dbdd95-ddf9-4e95-acd5-853c29cebf02
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_RemovePersistentBinding, HBA_RemovePersistentBinding routine [Storage Devices], fibreHBA_rtns_d8ccc5eb-b268-4809-88e5-3cee263f6b35.xml, hbaapi/HBA_RemovePersistentBinding, storage.hba_removepersistentbinding
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,19 +49,19 @@ The <b>HBA_RemovePersistentBinding</b> routine retrieves information about the s
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_RemovePersistentBinding(
-  _In_ HBA_HANDLE       Handle,
-  _In_ HBA_WWN          HbaPortWWN,
-  _In_ PHBA_FCPBINDING2 Binding
+  IN HBA_HANDLE       Handle,
+  IN HBA_WWN          HbaPortWWN,
+  IN PHBA_FCPBINDING2 Binding
 );
-````
+```
 
 ## Parameters
 
 `Handle`
 
-Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a> that identifies the HBA on which the port is located.
+Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA on which the port is located.
 
 `HbaPortWWN`
 
@@ -69,7 +69,7 @@ Contains a 64-bit worldwide name (WWN) that uniquely identifies the local HBA po
 
 `Binding`
 
-Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_fcpbinding2.md">HBA_FCPBinding2</a> that contains an array of bindings between operating system identifiers, SCSI logical unit ID descriptors (LUIDs) and fibre channel protocol (FCP) identifiers for a set of logical units.
+Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556057">HBA_FCPBinding2</a> that contains an array of bindings between operating system identifiers, SCSI logical unit ID descriptors (LUIDs) and fibre channel protocol (FCP) identifiers for a set of logical units.
 
 
 ## Return Value
@@ -141,8 +141,8 @@ The removal of persistent bindings does not change target mappings until the ope
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>

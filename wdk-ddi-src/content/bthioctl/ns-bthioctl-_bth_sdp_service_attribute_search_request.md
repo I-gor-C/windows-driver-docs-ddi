@@ -46,18 +46,18 @@ req.typenames: BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, *PBTH_SDP_SERVICE_ATTRI
 # _BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure
 The BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST structure contains information pertinent to a combined
   SDP service and attribute search. This structure is passed as the input buffer to the 
-  <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_service_attribute_search.md">
+  <a href="https://msdn.microsoft.com/f0955e88-df80-4f53-bc5f-5a38a840aab4">
   IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH</a> IOCTL.
 
 ## Syntax
-````
+```
 typedef struct _BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST {
-  HANDLE_SDP        hConnection;
-  ULONG             searchFlags;
-  SdpQueryUuid      uuids[MAX_UUIDS_IN_QUERY];
+  HANDLE_SDP_TYPE   HANDLE_SDP_FIELD_NAME;
+  ULONG             searchFlags;
+  SdpQueryUuid      uuids[MAX_UUIDS_IN_QUERY];
   SdpAttributeRange range[1];
-} BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, *PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST;
-````
+} *PBTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST, BTH_SDP_SERVICE_ATTRIBUTE_SEARCH_REQUEST;
+```
 
 ## Members
 
@@ -97,13 +97,13 @@ The Bluetooth driver stack determines the number of array items in the
 
 ## See Also
 
-<a href="http://go.microsoft.com/fwlink/p/?linkid=50714">SdpAttributeRange</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536688">IOCTL_BTH_SDP_CONNECT</a>
 
 
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_service_attribute_search.md">
+<a href="https://msdn.microsoft.com/f0955e88-df80-4f53-bc5f-5a38a840aab4">
    IOCTL_BTH_SDP_SERVICE_ATTRIBUTE_SEARCH</a>
 
 
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
+<a href="http://go.microsoft.com/fwlink/p/?linkid=50714">SdpAttributeRange</a>

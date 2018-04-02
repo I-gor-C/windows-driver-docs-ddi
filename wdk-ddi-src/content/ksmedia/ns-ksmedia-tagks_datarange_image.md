@@ -44,16 +44,16 @@ req.typenames: KS_DATARANGE_IMAGE, *PKS_DATARANGE_IMAGE
 ---
 
 # tagKS_DATARANGE_IMAGE structure
-Specifies an image data range that is used in the <a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a> structure that describes a pin (or stream).
+Specifies an image data range that is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563533">KSPIN_DESCRIPTOR</a> structure that describes a pin (or stream).
 
 ## Syntax
-````
+```
 typedef struct tagKS_DATARANGE_IMAGE {
-  KSDATARANGE                 DataRange;
+  KSDATARANGE                 DataRange;
   KS_VIDEO_STREAM_CONFIG_CAPS ConfigCaps;
-  KS_BITMAPINFOHEADER         ImageInfoHeader;
-} KS_DATARANGE_IMAGE, *PKS_DATARANGE_IMAGE;
-````
+  KS_BITMAPINFOHEADER         ImageInfoHeader;
+} *PKS_DATARANGE_IMAGE, KS_DATARANGE_IMAGE;
+```
 
 ## Members
 
@@ -64,11 +64,11 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATAR
 
 `ConfigCaps`
 
-A <a href="..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md">KS_VIDEO_STREAM_CONFIG_CAPS</a> structure that specifies the configuration of the stream, including scaling, cropping, and frame and data rates.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff567706">KS_VIDEO_STREAM_CONFIG_CAPS</a> structure that specifies the configuration of the stream, including scaling, cropping, and frame and data rates.
 
 `ImageInfoHeader`
 
-A <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that specifies image color and dimension information that the still image capture stream would provide.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a> structure that specifies image color and dimension information that the still image capture stream would provide.
 
 
 ## Requirements
@@ -79,16 +79,16 @@ A <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER<
 
 ## See Also
 
-<a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
-
-
-
-<a href="..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md">KS_VIDEO_STREAM_CONFIG_CAPS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563533">KSPIN_DESCRIPTOR</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567706">KS_VIDEO_STREAM_CONFIG_CAPS</a>

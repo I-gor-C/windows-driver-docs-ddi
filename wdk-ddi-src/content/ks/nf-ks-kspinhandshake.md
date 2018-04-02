@@ -49,27 +49,27 @@ The<b> KsPinHandshake </b>function attempts a protocol handshake with a connecte
 
 ## Syntax
 
-````
-NTSTATUS KsPinHandshake(
-  _In_  PKSPIN       Pin,
-  _In_  PKSHANDSHAKE In,
-  _Out_ PKSHANDSHAKE Out
+```
+KSDDKAPI NTSTATUS KsPinHandshake(
+  PKSPIN       Pin,
+  PKSHANDSHAKE In,
+  PKSHANDSHAKE Out
 );
-````
+```
 
 ## Parameters
 
 `Pin`
 
-A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure that is initiating the handshake. The handshake request is passed on to the pin connected to this object.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure that is initiating the handshake. The handshake request is passed on to the pin connected to this object.
 
 `In`
 
-A pointer to the <a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a> structure containing the handshake information to be passed to the connected pin.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562673">KSHANDSHAKE</a> structure containing the handshake information to be passed to the connected pin.
 
 `Out`
 
-A pointer to a <a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a> structure that is filled in with handshake information by the connected pin.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562673">KSHANDSHAKE</a> structure that is filled in with handshake information by the connected pin.
 
 
 ## Return Value
@@ -92,12 +92,12 @@ Connections between AVStream pins are performed using this type of handshake.
 
 ## See Also
 
-<a href="..\ks\ni-ks-ioctl_ks_handshake.md">IOCTL_KS_HANDSHAKE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560813">IOCTL_KS_HANDSHAKE</a>
 
 
 
-<a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562673">KSHANDSHAKE</a>
 
 
 
-<a href="..\ks\nf-ks-kspingetconnectedpininterface.md">KsPinGetConnectedPinInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563509">KsPinGetConnectedPinInterface</a>

@@ -47,24 +47,24 @@ req.typenames: WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR
 The WHEA_AER_BRIDGE_DESCRIPTOR structure describes a PCI Express (PCIe) bridge error source.
 
 ## Syntax
-````
+```
 typedef struct _WHEA_AER_BRIDGE_DESCRIPTOR {
-  USHORT                      Type;
-  BOOLEAN                     Enabled;
-  UCHAR                       Reserved;
-  ULONG                       BusNumber;
-  WHEA_PCI_SLOT_NUMBER        Slot;
-  USHORT                      DeviceControl;
+  USHORT                      Type;
+  BOOLEAN                     Enabled;
+  UCHAR                       Reserved;
+  ULONG                       BusNumber;
+  WHEA_PCI_SLOT_NUMBER        Slot;
+  USHORT                      DeviceControl;
   AER_BRIDGE_DESCRIPTOR_FLAGS Flags;
-  ULONG                       UncorrectableErrorMask;
-  ULONG                       UncorrectableErrorSeverity;
-  ULONG                       CorrectableErrorMask;
-  ULONG                       AdvancedCapsAndControl;
-  ULONG                       SecondaryUncorrectableErrorMask;
-  ULONG                       SecondaryUncorrectableErrorSev;
-  ULONG                       SecondaryCapsAndControl;
+  ULONG                       UncorrectableErrorMask;
+  ULONG                       UncorrectableErrorSeverity;
+  ULONG                       CorrectableErrorMask;
+  ULONG                       AdvancedCapsAndControl;
+  ULONG                       SecondaryUncorrectableErrorMask;
+  ULONG                       SecondaryUncorrectableErrorSev;
+  ULONG                       SecondaryCapsAndControl;
 } WHEA_AER_BRIDGE_DESCRIPTOR, *PWHEA_AER_BRIDGE_DESCRIPTOR;
-````
+```
 
 ## Members
 
@@ -87,7 +87,7 @@ The bridge's primary bus number.
 
 `Slot`
 
-A <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the bridge is located in the system.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560595">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the bridge is located in the system.
 
 `DeviceControl`
 
@@ -204,7 +204,7 @@ The contents of the bridge's Secondary Uncorrectable Error Severity register.
 The contents of the bridge's Secondary Error Capabilities and Control register.
 
 ## Remarks
-A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
+A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -214,8 +214,8 @@ A WHEA_AER_BRIDGE_DESCRIPTOR structure is contained within the <a href="..\ntddk
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560595">WHEA_PCI_SLOT_NUMBER</a>

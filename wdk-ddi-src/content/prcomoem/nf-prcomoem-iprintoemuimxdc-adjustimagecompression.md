@@ -45,21 +45,21 @@ req.product: Windows 10 or later.
 ---
 
 
-# AdjustImageCompression method
+# IPrintOemUIMXDC::AdjustImageCompression method
 The <code>IPrintOemUIMXDC::AdjustImageCompression</code> method allows an XPS filter pipeline driver to use UnidrvUI.dll or PS5UI.dll to support configuration of compression level for JPEG or PNG images.
 
 ## Syntax
 
-````
+```
 HRESULT AdjustImageCompression(
-         HANDLE   hPrinter,
-         DWORD    cbDevMode,
-   const PDEVMODE pDevMode,
-         DWORD    cbOEMDM,
-   const PVOID    pOEMDM,
-         PLONG    pCompressionMode
+  HANDLE         hPrinter,
+  DWORD          cbDevMode,
+  CONST PDEVMODE pDevMode,
+  DWORD          cbOEMDM,
+  CONST PVOID    pOEMDM,
+  PLONG          pCompressionMode
 );
-````
+```
 
 ## Parameters
 

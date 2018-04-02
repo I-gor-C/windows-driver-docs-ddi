@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 The <b>WDF_USB_DEVICE_INFORMATION</b> structure contains version and capability information for a USB device.
 
 ## Syntax
-````
+```
 typedef struct _WDF_USB_DEVICE_INFORMATION {
-  ULONG                    Size;
+  ULONG                    Size;
   USBD_VERSION_INFORMATION UsbdVersionInformation;
-  ULONG                    HcdPortCapabilities;
-  ULONG                    Traits;
+  ULONG                    HcdPortCapabilities;
+  ULONG                    Traits;
 } WDF_USB_DEVICE_INFORMATION, *PWDF_USB_DEVICE_INFORMATION;
-````
+```
 
 ## Members
 
@@ -68,7 +68,7 @@ The size, in bytes, of this structure.
 
 `UsbdVersionInformation`
 
-A <a href="..\usb\ns-usb-_usbd_version_information.md">USBD_VERSION_INFORMATION</a> structure that provides version information for the host controller driver (HCD) and the USB specification version that the device supports.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff539149">USBD_VERSION_INFORMATION</a> structure that provides version information for the host controller driver (HCD) and the USB specification version that the device supports.
 
 `HcdPortCapabilities`
 
@@ -76,10 +76,10 @@ This member is reserved for system use.
 
 `Traits`
 
-A set of bit flags that identify device traits. The flags are defined by the <a href="..\wdfusb\ne-wdfusb-_wdf_usb_device_traits.md">WDF_USB_DEVICE_TRAITS</a> enumeration.
+A set of bit flags that identify device traits. The flags are defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553002">WDF_USB_DEVICE_TRAITS</a> enumeration.
 
 ## Remarks
-The <b>WDF_USB_DEVICE_INFORMATION</b> structure is filled in by the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceretrieveinformation.md">WdfUsbTargetDeviceRetrieveInformation</a> method. Before calling <b>WdfUsbTargetDeviceRetrieveInformation</b>, the driver must call <a href="..\wdfusb\nf-wdfusb-wdf_usb_device_information_init.md">WDF_USB_DEVICE_INFORMATION_INIT</a> to initialize the structure.
+The <b>WDF_USB_DEVICE_INFORMATION</b> structure is filled in by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550100">WdfUsbTargetDeviceRetrieveInformation</a> method. Before calling <b>WdfUsbTargetDeviceRetrieveInformation</b>, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff552595">WDF_USB_DEVICE_INFORMATION_INIT</a> to initialize the structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,16 +90,16 @@ The <b>WDF_USB_DEVICE_INFORMATION</b> structure is filled in by the <a href="..\
 
 ## See Also
 
-<a href="..\usb\ns-usb-_usbd_version_information.md">USBD_VERSION_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539149">USBD_VERSION_INFORMATION</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdf_usb_device_information_init.md">WDF_USB_DEVICE_INFORMATION_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552595">WDF_USB_DEVICE_INFORMATION_INIT</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdeviceretrieveinformation.md">WdfUsbTargetDeviceRetrieveInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553002">WDF_USB_DEVICE_TRAITS</a>
 
 
 
-<a href="..\wdfusb\ne-wdfusb-_wdf_usb_device_traits.md">WDF_USB_DEVICE_TRAITS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550100">WdfUsbTargetDeviceRetrieveInformation</a>

@@ -7,7 +7,7 @@ old-location: netvista\nmrregisterprovider.htm
 old-project: netvista
 ms.assetid: aac9382c-5177-4216-bf3d-7970b18662eb
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NmrRegisterProvider, NmrRegisterProvider function [Network Drivers Starting with Windows Vista], netioddk/NmrRegisterProvider, netvista.nmrregisterprovider, nmrref_ad505c0b-91dd-413d-be24-ab331f8eadca.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,20 +51,20 @@ The
 
 ## Syntax
 
-````
+```
 NTSTATUS NmrRegisterProvider(
-  _In_  PNPI_PROVIDER_CHARACTERISTICS ProviderCharacteristics,
-  _In_  PVOID                         ProviderContext,
-  _Out_ PHANDLE                       NmrProviderHandle
+  PNPI_PROVIDER_CHARACTERISTICS ProviderCharacteristics,
+  __drv_aliasesMem PVOID        ProviderContext,
+  PHANDLE                       NmrProviderHandle
 );
-````
+```
 
 ## Parameters
 
 `ProviderCharacteristics`
 
 A pointer to an 
-     <a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">
+     <a href="https://msdn.microsoft.com/a83220e8-496c-4b83-b774-88ab1f017e8d">
      NPI_PROVIDER_CHARACTERISTICS</a> structure that describes the characteristics of the provider module.
      The provider module must make sure that this structure remains valid and resident in memory as long as
      the provider module is registered with the NMR.
@@ -75,7 +75,7 @@ A pointer to a caller-supplied context for the registration. The provider module
      to keep track of the state of the provider registration. The contents of the provider module's
      registration context are opaque to the NMR. The NMR passes this pointer to the provider module whenever
      it calls the provider module's 
-     <a href="..\netioddk\nc-netioddk-npi_provider_attach_client_fn.md">ProviderAttachClient</a> callback
+     <a href="https://msdn.microsoft.com/6c8e6cf1-0528-4da2-acc1-81ec9dbc23c3">ProviderAttachClient</a> callback
      function. The provider module must make sure that this context remains valid and resident in memory as
      long as the provider module is registered with the NMR.
 
@@ -83,7 +83,7 @@ A pointer to a caller-supplied context for the registration. The provider module
 
 A pointer to a variable that receives a handle used by the NMR to represent the registration of
      the provider module. The provider module must save this handle and pass it as a parameter to the 
-     <a href="..\netioddk\nf-netioddk-nmrderegisterprovider.md">NmrDeregisterProvider</a> function when
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568778">NmrDeregisterProvider</a> function when
      it deregisters from the NMR.
 
 
@@ -142,7 +142,7 @@ A provider module calls the
 
 A provider module typically calls the 
     <b>NmrRegisterProvider</b> function from its 
-    <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> function after it has completed
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function after it has completed
     all other initialization tasks. The call to the 
     <b>NmrRegisterProvider</b> function indicates to the NMR that the provider module is ready to attach to
     any client modules that have registered or will register as clients of the same 
@@ -160,12 +160,12 @@ A provider module typically calls the
 
 ## See Also
 
-<a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>
 
 
 
-<a href="..\netioddk\ns-netioddk-_npi_provider_characteristics.md">NPI_PROVIDER_CHARACTERISTICS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568814">NPI_PROVIDER_CHARACTERISTICS</a>
 
 
 
-<a href="..\netioddk\nf-netioddk-nmrderegisterprovider.md">NmrDeregisterProvider</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568778">NmrDeregisterProvider</a>

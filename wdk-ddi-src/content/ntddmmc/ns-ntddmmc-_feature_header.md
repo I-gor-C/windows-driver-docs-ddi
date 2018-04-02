@@ -7,7 +7,7 @@ old-location: storage\feature_header.htm
 old-project: storage
 ms.assetid: 61831fbb-48ad-4831-8b69-7b1a5cafa629
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PFEATURE_HEADER, FEATURE_HEADER, FEATURE_HEADER structure [Storage Devices], PFEATURE_HEADER, PFEATURE_HEADER structure pointer [Storage Devices], _FEATURE_HEADER, ntddmmc/FEATURE_HEADER, ntddmmc/PFEATURE_HEADER, storage.feature_header, structs-CD-ROM_41d7886f-d383-4416-8f89-b40f1bb0bc7f.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,26 +44,26 @@ req.typenames: FEATURE_HEADER, *PFEATURE_HEADER
 ---
 
 # _FEATURE_HEADER structure
-The FEATURE_HEADER structure is used in conjunction with the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_configuration.md">IOCTL_CDROM_GET_CONFIGURATION</a> request to report header information for both feature and profile descriptors.
+The FEATURE_HEADER structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559334">IOCTL_CDROM_GET_CONFIGURATION</a> request to report header information for both feature and profile descriptors.
 
 ## Syntax
-````
+```
 typedef struct _FEATURE_HEADER {
-  UCHAR FeatureCode[2];
-  UCHAR Current  :1;
-  UCHAR Persistent  :1;
-  UCHAR Version  :4;
-  UCHAR Reserved0  :2;
-  UCHAR AdditionalLength;
-} FEATURE_HEADER, *PFEATURE_HEADER;
-````
+  UCHAR      FeatureCode[2];
+  UCHAR  : 1 Current;
+  UCHAR  : 1 Persistent;
+  UCHAR  : 4 Version;
+  UCHAR  : 2 Reserved0;
+  UCHAR      AdditionalLength;
+} *PFEATURE_HEADER, FEATURE_HEADER;
+```
 
 ## Members
 
 
 `FeatureCode`
 
-Contains a value between zero and 0xffff that indicates a feature. The <a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a> enumeration provides a list of currently supported feature numbers. <b>FeatureCode</b>[0] contains the most significant byte of the feature number. <b>FeatureCode</b>[1] contains the least significant byte.
+Contains a value between zero and 0xffff that indicates a feature. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a> enumeration provides a list of currently supported feature numbers. <b>FeatureCode</b>[0] contains the most significant byte of the feature number. <b>FeatureCode</b>[1] contains the least significant byte.
 
 `Current`
 
@@ -93,12 +93,12 @@ Indicates the number of bytes of feature information that follow this header. Th
 
 ## See Also
 
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_get_configuration.md">IOCTL_CDROM_GET_CONFIGURATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>
 
 
 
-<a href="..\ntddmmc\ns-ntddmmc-_get_configuration_header.md">GET_CONFIGURATION_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554980">GET_CONFIGURATION_HEADER</a>
 
 
 
-<a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559334">IOCTL_CDROM_GET_CONFIGURATION</a>

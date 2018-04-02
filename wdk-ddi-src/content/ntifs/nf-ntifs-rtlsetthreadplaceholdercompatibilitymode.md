@@ -7,7 +7,7 @@ old-location: ifsk\rtlsetthreadplaceholdercompatibilitymode.htm
 old-project: ifsk
 ms.assetid: 0EA209B7-20B9-418F-AD29-83520ED27DAB
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlSetThreadPlaceholderCompatibilityMode, RtlSetThreadPlaceholderCompatibilityMode routine [Installable File System Drivers], ifsk.rtlsetthreadplaceholdercompatibilitymode, ntifs/RtlSetThreadPlaceholderCompatibilityMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ req.typenames: TOKEN_TYPE
 
 ## Syntax
 
-````
-CHAR RtlSetThreadPlaceholderCompatibilityMode(
-  _In_ CHAR Mode
+```
+NTSYSAPI CHAR RtlSetThreadPlaceholderCompatibilityMode(
+  CHAR Mode
 );
-````
+```
 
 ## Parameters
 
@@ -112,4 +112,4 @@ Most Windows applications see exposed placeholders by default.  For compatibilit
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlquerythreadplaceholdercompatibilitymode.md">RtlQueryThreadPlaceholderCompatibilityMode</a>
+<a href="https://msdn.microsoft.com/A38B30F9-D55B-4CC2-9B71-3B597ACCE0EB">RtlQueryThreadPlaceholderCompatibilityMode</a>

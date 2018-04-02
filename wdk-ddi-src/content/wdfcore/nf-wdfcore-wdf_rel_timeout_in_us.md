@@ -53,11 +53,11 @@ The <b>WDF_REL_TIMEOUT_IN_US</b> function converts a specified number of microse
 
 ## Syntax
 
-````
+```
 LONGLONG WDF_REL_TIMEOUT_IN_US(
-  _In_ ULONGLONG Time
+  ULONGLONG Time
 );
-````
+```
 
 ## Parameters
 
@@ -107,4 +107,4 @@ inTimerQueue = WdfTimerStart(
 
 ## See Also
 
-<a href="..\wdfcore\nf-wdfcore-wdf_abs_timeout_in_us.md">WDF_ABS_TIMEOUT_IN_US</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551212">WDF_ABS_TIMEOUT_IN_US</a>

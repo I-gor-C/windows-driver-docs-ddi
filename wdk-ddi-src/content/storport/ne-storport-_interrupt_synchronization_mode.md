@@ -7,7 +7,7 @@ old-location: storage\interrupt_synchronization_mode.htm
 old-project: storage
 ms.assetid: 964009ab-5f90-4f23-b22a-4c3e03d2449e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: INTERRUPT_SYNCHRONIZATION_MODE, INTERRUPT_SYNCHRONIZATION_MODE enumeration [Storage Devices], InterruptSupportNone, InterruptSynchronizeAll, InterruptSynchronizePerMessage, _INTERRUPT_SYNCHRONIZATION_MODE, storage.interrupt_synchronization_mode, storport/INTERRUPT_SYNCHRONIZATION_MODE, storport/InterruptSupportNone, storport/InterruptSynchronizeAll, storport/InterruptSynchronizePerMessage, structs-storport_036aa424-5b04-4bf5-8418-8da008834c5b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The INTERRUPT_SYNCHRONIZATION_MODE enumerator specifies the interrupt synchronization mode.
 
 ## Syntax
-````
-typedef enum _INTERRUPT_SYNCHRONIZATION_MODE { 
-  InterruptSupportNone            = 0,
-  InterruptSynchronizeAll         = 1,
-  InterruptSynchronizePerMessage  = 2
+```
+typedef enum _INTERRUPT_SYNCHRONIZATION_MODE {
+  InterruptSupportNone            ,
+  InterruptSynchronizeAll         ,
+  InterruptSynchronizePerMessage
 } INTERRUPT_SYNCHRONIZATION_MODE;
-````
+```
 
 ## Constants
 
@@ -67,18 +67,18 @@ typedef enum _INTERRUPT_SYNCHRONIZATION_MODE {
             
                 <tr>
                     <td>InterruptSynchronizeAll</td>
-                    <td>The Storport driver serializes all message signaled interrupts using a single interrupt spin lock. When an interrupt occurs, the Storport driver calls the miniport driver's <a href="..\storport\nc-storport-hw_message_signaled_interrupt_routine.md">HwMSInterruptRoutine</a> routine at DIRQL after acquiring the interrupt spin lock.</td>
+                    <td>The Storport driver serializes all message signaled interrupts using a single interrupt spin lock. When an interrupt occurs, the Storport driver calls the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557268">HwMSInterruptRoutine</a> routine at DIRQL after acquiring the interrupt spin lock.</td>
                 </tr>
             
                 <tr>
                     <td>InterruptSynchronizePerMessage</td>
-                    <td>The miniport driver serializes message signaled interrupts on a per message basis. In the synchronization per message mode, the Storport driver calls the miniport driver's <a href="..\storport\nc-storport-hw_message_signaled_interrupt_routine.md">HwMSInterruptRoutine</a> routine at DIRQL   holding the interrupt spin lock of the corresponding  message. For more on the behavior of this synchronization mode, see the remarks section for HwMSInterruptRoutine.</td>
+                    <td>The miniport driver serializes message signaled interrupts on a per message basis. In the synchronization per message mode, the Storport driver calls the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557268">HwMSInterruptRoutine</a> routine at DIRQL   holding the interrupt spin lock of the corresponding  message. For more on the behavior of this synchronization mode, see the remarks section for HwMSInterruptRoutine.</td>
                 </tr>
 </table>
 
 ## Remarks
 
-Miniport drivers define the HBA's interrupt synchronization mode by assigning one of the INTERRUPT_SYNCHRONIZATION_MODE enumeration values to the <b>InterruptSynchronizationMode</b> member of the <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structure.
+Miniport drivers define the HBA's interrupt synchronization mode by assigning one of the INTERRUPT_SYNCHRONIZATION_MODE enumeration values to the <b>InterruptSynchronizationMode</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,16 +87,16 @@ Miniport drivers define the HBA's interrupt synchronization mode by assigning on
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_message_signaled_interrupt_routine.md">HwMSInterruptRoutine</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557268">HwMSInterruptRoutine</a>
 
 
 
-<a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a>
 
 
 
-<a href="..\storport\nf-storport-storportacquiremsispinlock.md">StorPortAcquireMSISpinLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567023">StorPortAcquireMSISpinLock</a>
 
 
 
-<a href="..\storport\nf-storport-storportreleasemsispinlock.md">StorPortReleaseMSISpinLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567494">StorPortReleaseMSISpinLock</a>

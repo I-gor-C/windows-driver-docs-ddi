@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlisdaxvolume.htm
 old-project: ifsk
 ms.assetid: FFCD2329-FD6A-48AE-8E9D-56AA7D79B174
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlIsDaxVolume, FsRtlIsDaxVolume routine [Installable File System Drivers], ifsk.fsrtlisdaxvolume, ntifs/FsRtlIsDaxVolume
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ This routine queries if the specified file is on a  direct access (DAX) volume.
 
 ## Syntax
 
-````
+```
 BOOLEAN FsRtlIsDaxVolume(
-  _In_ PFILE_OBJECT FileObject
+  PFILE_OBJECT FileObject
 );
-````
+```
 
 ## Parameters
 

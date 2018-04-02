@@ -7,7 +7,7 @@ old-location: kernel\probeforread.htm
 old-project: kernel
 ms.assetid: 86b09f5c-6527-447e-b383-b97d45a57ce7
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ProbeForRead, ProbeForRead routine [Kernel-Mode Driver Architecture], k102_a0260886-9f28-408e-91a1-fde07974ef9b.xml, kernel.probeforread, wdm/ProbeForRead
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>ProbeForRead</b> routine checks that a user-mode buffer actually resides 
 
 ## Syntax
 
-````
-VOID ProbeForRead(
-  _In_ PVOID  Address,
-  _In_ SIZE_T Length,
-  _In_ ULONG  Alignment
+```
+NTKERNELAPI VOID ProbeForRead(
+  __in_data_source(USER_MODE) const volatile VOID *Address,
+  SIZE_T                                          Length,
+  ULONG                                           Alignment
 );
-````
+```
 
 ## Parameters
 
@@ -104,4 +104,4 @@ If <i>Length</i> = 0, <b>ProbeForRead</b> does no checking of the address. In th
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-probeforwrite.md">ProbeForWrite</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559879">ProbeForWrite</a>

@@ -7,7 +7,7 @@ old-location: kernel\rtllongadd.htm
 old-project: kernel
 ms.assetid: E8CF5E74-2EDA-4B27-A9C0-053930FF741D
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlLongAdd, RtlLongAdd function [Kernel-Mode Driver Architecture], kernel.rtllongadd, ntintsafe/RtlLongAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ Adds two values of type <b>LONG</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlLongAdd(
-  _In_  LONG lAugend,
-  _In_  LONG lAddend,
-  _Out_ LONG *plResult
+  LONG lAugend,
+  LONG lAddend,
+  LONG *plResult
 );
-````
+```
 
 ## Parameters
 

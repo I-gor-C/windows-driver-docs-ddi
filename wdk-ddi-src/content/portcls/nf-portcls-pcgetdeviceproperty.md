@@ -7,7 +7,7 @@ old-location: audio\pcgetdeviceproperty.htm
 old-project: audio
 ms.assetid: 75d66965-ab97-4f67-b62f-e7fedbf524a6
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: PcGetDeviceProperty, PcGetDeviceProperty function [Audio Devices], audio.pcgetdeviceproperty, audpc-routines_c95326e5-dc8f-4a04-b31d-6c4e79cc6771.xml, portcls/PcGetDeviceProperty
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,21 +50,21 @@ The <b>PcGetDeviceProperty</b> function returns the requested device property fr
 
 ## Syntax
 
-````
-NTSTATUS PcGetDeviceProperty(
-  _In_  PVOID                    DeviceObject,
-  _In_  DEVICE_REGISTRY_PROPERTY DeviceProperty,
-  _In_  ULONG                    BufferLength,
-  _Out_ PVOID                    PropertyBuffer,
-  _Out_ PULONG                   ResultLength
+```
+PORTCLASSAPI NTSTATUS PcGetDeviceProperty(
+  PVOID                    DeviceObject,
+  DEVICE_REGISTRY_PROPERTY DeviceProperty,
+  ULONG                    BufferLength,
+  PVOID                    PropertyBuffer,
+  PULONG                   ResultLength
 );
-````
+```
 
 ## Parameters
 
 `DeviceObject`
 
-Pointer to the device object for the device. This parameter points to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> system structure but is cast to type PVOID.
+Pointer to the device object for the device. This parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> system structure but is cast to type PVOID.
 
 `DeviceProperty`
 
@@ -131,7 +131,7 @@ Set the <b>DeviceProperty</b> parameter to one of the following DEVICE_REGISTRY_
 
 <b>DevicePropertyUINumber</b>
 
-For a description of the preceding DeviceProperty<i>Xxx</i> values, see <a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>.
+For a description of the preceding DeviceProperty<i>Xxx</i> values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549203">IoGetDeviceProperty</a>.
 
 Two calls to <b>PcGetDeviceProperty</b> might be necessary to determine the required <i>BufferLength</i>. In the first call, <i>BufferLength</i> can either be zero or a best-guess estimate of the required buffer size. If the return status is STATUS_BUFFER_TOO_SMALL, this means that the caller should allocate a buffer of the size that was output through <i>ResultLength</i> and call <b>PcGetDeviceProperty</b> again.
 
@@ -146,8 +146,8 @@ Two calls to <b>PcGetDeviceProperty</b> might be necessary to determine the requ
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 
 
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549203">IoGetDeviceProperty</a>

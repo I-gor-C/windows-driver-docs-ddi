@@ -63,11 +63,11 @@ void Pfnkspinirpcompletion(
 
 `Pin`
 
-Points to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which the callback is registered.
+Points to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure for which the callback is registered.
 
 `Irp`
 
-Points to an <a href="..\wdm\ns-wdm-_irp.md">IRP</a> which originated from the circuit to which <i>Pin</i> belongs.
+Points to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> which originated from the circuit to which <i>Pin</i> belongs.
 
 
 ## Return Value
@@ -76,7 +76,7 @@ None
 
 ## Remarks
 
-The minidriver specifies this routine's address in the <i>IrpCompletion</i> parameter of a call to <a href="..\ks\nf-ks-kspinregisterirpcompletioncallback.md">KsPinRegisterIrpCompletionCallback</a>.
+The minidriver specifies this routine's address in the <i>IrpCompletion</i> parameter of a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff563524">KsPinRegisterIrpCompletionCallback</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,8 +88,8 @@ The minidriver specifies this routine's address in the <i>IrpCompletion</i> para
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspinregisterirpcompletioncallback.md">KsPinRegisterIrpCompletionCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a>
 
 
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563524">KsPinRegisterIrpCompletionCallback</a>

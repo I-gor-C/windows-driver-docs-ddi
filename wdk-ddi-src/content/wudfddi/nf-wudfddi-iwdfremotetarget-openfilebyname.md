@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# OpenFileByName method
+# IWDFRemoteTarget::OpenFileByName method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>OpenFileByName</b> method opens a <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/general-i-o-targets-in-umdf">remote I/O target</a> that is a file.
 
 ## Syntax
 
-````
+```
 HRESULT OpenFileByName(
-  [in]           PCWSTR                      pszFileName,
-  [in]           DWORD                       DesiredAccess,
-  [in, optional] PUMDF_IO_TARGET_OPEN_PARAMS pOpenParams
+  PCWSTR                      pszFileName,
+  DWORD                       DesiredAccess,
+  PUMDF_IO_TARGET_OPEN_PARAMS pOpenParams
 );
-````
+```
 
 ## Parameters
 
@@ -72,7 +72,7 @@ A bitmask that specifies the caller's desired access to the file. For more infor
 
 `pOpenParams`
 
-A pointer to a caller-allocated <a href="..\wudfddi\ns-wudfddi-_umdf_io_target_open_params.md">UMDF_IO_TARGET_OPEN_PARAMS</a> structure that contains additional parameters. This parameter is optional and can be <b>NULL</b>.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff561275">UMDF_IO_TARGET_OPEN_PARAMS</a> structure that contains additional parameters. This parameter is optional and can be <b>NULL</b>.
 
 
 ## Return Value
@@ -164,12 +164,12 @@ hr = fxTarget-&gt;OpenFileByName(FILE_PATH,
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-iwdfremotetarget.md">IWDFRemoteTarget</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556928">IWDFDevice2::CreateRemoteTarget</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560247">IWDFRemoteTarget</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560276">IWDFRemoteTarget::OpenRemoteInterface</a>

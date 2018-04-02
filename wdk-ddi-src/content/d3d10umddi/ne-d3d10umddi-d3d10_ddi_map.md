@@ -7,7 +7,7 @@ old-location: display\d3d10_ddi_map.htm
 old-project: display
 ms.assetid: f544ae60-b9c4-497c-8cb5-a2f9500a0cde
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D10_DDI_MAP, D3D10_DDI_MAP enumeration [Display Devices], D3D10_DDI_MAP_READ, D3D10_DDI_MAP_READWRITE, D3D10_DDI_MAP_WRITE, D3D10_DDI_MAP_WRITE_DISCARD, D3D10_DDI_MAP_WRITE_NOOVERWRITE, UMDisplayDriver_Dx10param_Structs_7bf6d24a-def5-4d66-9b15-fee9a619597b.xml, d3d10umddi/D3D10_DDI_MAP, d3d10umddi/D3D10_DDI_MAP_READ, d3d10umddi/D3D10_DDI_MAP_READWRITE, d3d10umddi/D3D10_DDI_MAP_WRITE, d3d10umddi/D3D10_DDI_MAP_WRITE_DISCARD, d3d10umddi/D3D10_DDI_MAP_WRITE_NOOVERWRITE, display.d3d10_ddi_map
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: D3D10_DDI_MAP
 ---
 
 # D3D10_DDI_MAP Enumeration
-The D3D10_DDI_MAP enumeration type contains values that identify the access levels to map to a subresource in a call to the driver's <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a> function.
+The D3D10_DDI_MAP enumeration type contains values that identify the access levels to map to a subresource in a call to the driver's <a href="https://msdn.microsoft.com/1310a3f8-02dd-4d35-98ad-4016e57d1eb2">ResourceMap</a> function.
 
 ## Syntax
-````
-typedef enum D3D10_DDI_MAP { 
-  D3D10_DDI_MAP_READ               = 1,
-  D3D10_DDI_MAP_WRITE              = 2,
-  D3D10_DDI_MAP_READWRITE          = 3,
-  D3D10_DDI_MAP_WRITE_DISCARD      = 4,
-  D3D10_DDI_MAP_WRITE_NOOVERWRITE  = 5
-} D3D10_DDI_MAP;
-````
+```
+typedef enum D3D10_DDI_MAP {
+  D3D10_DDI_MAP_READ               ,
+  D3D10_DDI_MAP_WRITE              ,
+  D3D10_DDI_MAP_READWRITE          ,
+  D3D10_DDI_MAP_WRITE_DISCARD      ,
+  D3D10_DDI_MAP_WRITE_NOOVERWRITE
+} ;
+```
 
 ## Constants
 
@@ -96,4 +96,4 @@ typedef enum D3D10_DDI_MAP {
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_resourcemap.md">ResourceMap</a>
+<a href="https://msdn.microsoft.com/1310a3f8-02dd-4d35-98ad-4016e57d1eb2">ResourceMap</a>

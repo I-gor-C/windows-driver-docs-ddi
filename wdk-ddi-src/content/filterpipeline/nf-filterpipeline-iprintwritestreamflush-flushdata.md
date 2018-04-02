@@ -52,16 +52,6 @@ req.typenames: EXpsFontRestriction
 The FlushData method flushes buffered data to a data stream while leaving the stream open, allowing the caller to write additional data to the stream.Writing to the stream is done using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554394">IPrintWriteStream::WriteBytes</a> method.
 
 
-## -syntax
-
-
-````
-HRESULT FlushData(
-    None
-);
-````
-
-
 ## -parameters
 
 
@@ -104,16 +94,16 @@ The following code snippet shows how to flush data to a data stream. Note that e
 // ------------------------------
 
 
-# FlushData method
+# IPrintWriteStreamFlush::FlushData method
 The FlushData method flushes buffered data to a data stream while leaving the stream open, allowing the caller to write additional data to the stream.Writing to the stream is done using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554394">IPrintWriteStream::WriteBytes</a> method.
 
 ## Syntax
 
-````
+```
 HRESULT FlushData(
-    None
+
 );
-````
+```
 
 ## Parameters
 
@@ -169,4 +159,4 @@ hr = pIFlush-&gt;FlushData();
 
 
 
-<a href="..\filterpipeline\nn-filterpipeline-iprintwritestreamflush.md">IPrintWriteStreamFlush</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh768282">IPrintWriteStreamFlush</a>

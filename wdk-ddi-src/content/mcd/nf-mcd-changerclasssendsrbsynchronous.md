@@ -7,7 +7,7 @@ old-location: storage\changerclasssendsrbsynchronous.htm
 old-project: storage
 ms.assetid: 6765d7d5-528f-42c5-98c3-0484608a020b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ChangerClassSendSrbSynchronous, ChangerClassSendSrbSynchronous routine [Storage Devices], chgrclas_ad6fe2cb-20f1-404d-ad08-5bf9798de6bd.xml, mcd/ChangerClassSendSrbSynchronous, storage.changerclasssendsrbsynchronous
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,15 +50,15 @@ The <b>ChangerClassSendSrbSynchronous</b> routine synchronously sends an SRB to 
 
 ## Syntax
 
-````
+```
 NTSTATUS ChangerClassSendSrbSynchronous(
-  _In_ PDEVICE_OBJECT      DeviceObject,
-  _In_ PSCSI_REQUEST_BLOCK Srb,
-  _In_ PVOID               Buffer,
-  _In_ ULONG               BufferSize,
-  _In_ BOOLEAN             WriteToDevice
+  PDEVICE_OBJECT      DeviceObject,
+  PSCSI_REQUEST_BLOCK Srb,
+  PVOID               Buffer,
+  ULONG               BufferSize,
+  BOOLEAN             WriteToDevice
 );
-````
+```
 
 ## Parameters
 
@@ -104,4 +104,4 @@ If the IRP fails and the sense request data indicates that the IRP should be ret
 
 ## See Also
 
-<a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565393">SCSI_REQUEST_BLOCK</a>

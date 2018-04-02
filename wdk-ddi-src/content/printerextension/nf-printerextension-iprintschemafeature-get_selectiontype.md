@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_SelectionType method
+# IPrintSchemaFeature::get_SelectionType method
 Gets the selection type of the Feature.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_SelectionType(
-  [out, retval] PrintSchemaSelectionType *pSelectionType
+  PrintSchemaSelectionType *pSelectionType
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemafeature.md">IPrintSchemaFeature</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451284">IPrintSchemaFeature</a>

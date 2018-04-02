@@ -47,24 +47,24 @@ req.typenames: PMI_REPORTED_CAPABILITIES, *PPMI_REPORTED_CAPABILITIES
 The PMI_REPORTED_CAPABILITIES structure contains information about the type of power metering and budgeting capabilities a power meter supports. Additionally, this structure contains asset information about the power meter itself.
 
 ## Syntax
-````
+```
 typedef struct _PMI_REPORTED_CAPABILITIES {
-  ULONG                Flags;
+  ULONG                Flags;
   PMI_MEASUREMENT_UNIT MeasurementUnit;
   PMI_MEASUREMENT_TYPE MeasurementType;
-  ULONG                Accuracy;
-  ULONG                SamplingPeriod;
-  ULONG                MinimumAverageInterval;
-  ULONG                MaximumAverageInterval;
-  ULONG                Hysteresis;
-  BOOLEAN              Writeable;
-  ULONG                MinBudget;
-  ULONG                MaxBudget;
-  WCHAR                ModelNumber[PMI_NAME_MAX];
-  WCHAR                SerialNumber[PMI_NAME_MAX];
-  WCHAR                OEMInformation[PMI_NAME_MAX];
+  ULONG                Accuracy;
+  ULONG                SamplingPeriod;
+  ULONG                MinimumAverageInterval;
+  ULONG                MaximumAverageInterval;
+  ULONG                Hysteresis;
+  BOOLEAN              Writeable;
+  ULONG                MinBudget;
+  ULONG                MaxBudget;
+  WCHAR                ModelNumber[PMI_NAME_MAX];
+  WCHAR                SerialNumber[PMI_NAME_MAX];
+  WCHAR                OEMInformation[PMI_NAME_MAX];
 } PMI_REPORTED_CAPABILITIES, *PPMI_REPORTED_CAPABILITIES;
-````
+```
 
 ## Members
 
@@ -101,14 +101,14 @@ This bit is set if the power meter reports data only when the power supply is di
 
 `MeasurementUnit`
 
-A <a href="..\pmi\ne-pmi-pmi_measurement_unit.md">PMI_MEASUREMENT_UNIT</a> enumeration value that specifies the measurement unit. 
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff543897">PMI_MEASUREMENT_UNIT</a> enumeration value that specifies the measurement unit. 
 
 <div class="alert"><b>Note</b>  Beginning with Windows 7, Windows Server 2008 R2, only measurement units of milliwatts (mW) are supported.</div>
 <div> </div>
 
 `MeasurementType`
 
-A <a href="..\pmi\ne-pmi-pmi_measurement_type.md">PMI_MEASUREMENT_TYPE</a> enumeration value that specifies the measurement type, such as whether input or output power is measured.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff543895">PMI_MEASUREMENT_TYPE</a> enumeration value that specifies the measurement type, such as whether input or output power is measured.
 
 `Accuracy`
 
@@ -171,9 +171,9 @@ The power meter's asset information. This information is defined by the OEM for 
 
 </li>
 </ul>
-The PMI_REPORTED_CAPABILITIES structure is returned through an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> I/O control (IOCTL) query request. The input data for this query request is set to the <a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a> enumerator value of <b>PmiReportedCapabilities</b>..
+The PMI_REPORTED_CAPABILITIES structure is returned through an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543837">IOCTL_PMI_GET_CAPABILITIES</a> I/O control (IOCTL) query request. The input data for this query request is set to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543864">PMI_CAPABILITIES_TYPE</a> enumerator value of <b>PmiReportedCapabilities</b>..
 
-If the query request completes successfully, the request returns a <a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a> structure. The <b>Capabilities</b> member of this structure is formatted as a PMI_REPORTED_CAPABILITIES structure.
+If the query request completes successfully, the request returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543859">PMI_CAPABILITIES</a> structure. The <b>Capabilities</b> member of this structure is formatted as a PMI_REPORTED_CAPABILITIES structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -183,12 +183,12 @@ If the query request completes successfully, the request returns a <a href="..\p
 
 ## See Also
 
-<a href="..\pmi\ns-pmi-_pmi_capabilities.md">PMI_CAPABILITIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543837">IOCTL_PMI_GET_CAPABILITIES</a>
 
 
 
-<a href="..\pmi\ne-pmi-pmi_capabilities_type.md">PMI_CAPABILITIES_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543859">PMI_CAPABILITIES</a>
 
 
 
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543864">PMI_CAPABILITIES_TYPE</a>

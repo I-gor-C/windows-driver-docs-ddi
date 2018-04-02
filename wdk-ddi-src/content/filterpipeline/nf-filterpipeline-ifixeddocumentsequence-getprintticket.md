@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetPrintTicket method
+# IFixedDocumentSequence::GetPrintTicket method
 The <b>GetPrintTicket</b> method gets the print ticket object for the fixed document sequence.
 
 ## Syntax
 
-````
+```
 HRESULT GetPrintTicket(
-  [out] IPartPrintTicket **ppPrintTicket
+  IPartPrintTicket **ppPrintTicket
 );
-````
+```
 
 ## Parameters
 

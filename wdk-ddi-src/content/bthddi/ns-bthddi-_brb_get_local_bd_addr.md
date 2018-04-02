@@ -47,12 +47,12 @@ req.typenames:
 The _BRB_GET_LOCAL_BD_ADDR structure describes the address of the local radio.
 
 ## Syntax
-````
+```
 struct _BRB_GET_LOCAL_BD_ADDR {
   BRB_HEADER Hdr;
-  BTH_ADDR   BtAddress;
+  BTH_ADDR   BtAddress;
 };
-````
+```
 
 ## Members
 
@@ -60,7 +60,7 @@ struct _BRB_GET_LOCAL_BD_ADDR {
 `Hdr`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 `BtAddress`
@@ -87,4 +87,4 @@ Only a single local radio is supported by the Bluetooth driver stack.
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a>

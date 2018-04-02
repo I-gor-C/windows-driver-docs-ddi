@@ -50,12 +50,12 @@ The <b>EtwEventEnabled</b> function verifies whether an event is enabled.
 
 ## Syntax
 
-````
+```
 BOOLEAN EtwEventEnabled(
-  _In_ REGHANDLE          RegHandle,
-  _In_ PCEVENT_DESCRIPTOR EventDescriptor
+  REGHANDLE          RegHandle,
+  PCEVENT_DESCRIPTOR EventDescriptor
 );
-````
+```
 
 ## Parameters
 
@@ -81,7 +81,7 @@ If logging an event requires additional computing, the <b>EtwEventEnabled</b>
      logging is disabled.
 
 If the event descriptor is not available, use the 
-     <a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a> function instead.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff545595">EtwProviderEnabled</a> function instead.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,4 +95,4 @@ If the event descriptor is not available, use the
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545595">EtwProviderEnabled</a>

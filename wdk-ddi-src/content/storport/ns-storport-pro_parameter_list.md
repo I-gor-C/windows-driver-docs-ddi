@@ -7,7 +7,7 @@ old-location: storage\pro_parameter_list.htm
 old-project: storage
 ms.assetid: 96c128e1-c38a-412f-adeb-cde820e1af4e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PPRO_PARAMETER_LIST, PPRO_PARAMETER_LIST, PPRO_PARAMETER_LIST structure pointer [Storage Devices], PRO_PARAMETER_LIST, PRO_PARAMETER_LIST structure [Storage Devices], storage.pro_parameter_list, storport/PPRO_PARAMETER_LIST, storport/PRO_PARAMETER_LIST, structs-general_7481edb0-cc60-44b9-abcc-80bf0f79fbae.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,17 +48,17 @@ req.product: Windows 10 or later.
 The PRO_PARAMETER_LIST structure is sent in a Persistent Reserve Out command to a device server.
 
 ## Syntax
-````
-typedef struct {
-  UCHAR ReservationKey[8];
-  UCHAR ServiceActionReservationKey[8];
-  UCHAR ScopeSpecificAddress[4];
-  UCHAR ActivatePersistThroughPowerLoss  :1;
-  UCHAR Reserved1  :7;
-  UCHAR Reserved2;
-  UCHAR Obsolete[2];
-} PRO_PARAMETER_LIST, *PPRO_PARAMETER_LIST;
-````
+```
+typedef struct PRO_PARAMETER_LIST {
+  UCHAR      ReservationKey[8];
+  UCHAR      ServiceActionReservationKey[8];
+  UCHAR      ScopeSpecificAddress[4];
+  UCHAR  : 1 ActivatePersistThroughPowerLoss;
+  UCHAR  : 7 Reserved1;
+  UCHAR      Reserved2;
+  UCHAR      Obsolete[2];
+} *PPRO_PARAMETER_LIST, PRO_PARAMETER_LIST;
+```
 
 ## Members
 
@@ -122,7 +122,7 @@ Reserved. Must be zero.
 Reserved. Must be zero.
 
 ## Remarks
-The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> request is used to control information about persistent reservations and reservation keys that are active within a device server.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff560586">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a> request is used to control information about persistent reservations and reservation keys that are active within a device server.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -131,4 +131,4 @@ The <a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_out.md">IO
 
 ## See Also
 
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_persistent_reserve_out.md">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560586">IOCTL_STORAGE_PERSISTENT_RESERVE_OUT</a>

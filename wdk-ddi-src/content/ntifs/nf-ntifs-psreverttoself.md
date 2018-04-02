@@ -7,7 +7,7 @@ old-location: ifsk\psreverttoself.htm
 old-project: ifsk
 ms.assetid: 21ae3a61-55c6-437d-8c1e-84d720de9dd5
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: PsRevertToSelf, PsRevertToSelf routine [Installable File System Drivers], ifsk.psreverttoself, ntifs/PsRevertToSelf, psref_da555465-d8ee-4ae6-af44-cf0af7633458.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,9 +49,11 @@ The <b>PsRevertToSelf</b> routine ends the calling thread's impersonation of a c
 
 ## Syntax
 
-````
-VOID PsRevertToSelf(void);
-````
+```
+NTKERNELAPI VOID PsRevertToSelf(
+
+);
+```
 
 ## Parameters
 
@@ -63,7 +65,7 @@ None
 
 ## Remarks
 
-A server thread can impersonate a client by calling the <a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a> routine. When the thread is done impersonating the client, it can call the <b>PsRevertToSelf</b> routine to end all impersonations.
+A server thread can impersonate a client by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551907">PsImpersonateClient</a> routine. When the thread is done impersonating the client, it can call the <b>PsRevertToSelf</b> routine to end all impersonations.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,4 +79,4 @@ A server thread can impersonate a client by calling the <a href="..\ntifs\nf-nti
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-psimpersonateclient.md">PsImpersonateClient</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551907">PsImpersonateClient</a>

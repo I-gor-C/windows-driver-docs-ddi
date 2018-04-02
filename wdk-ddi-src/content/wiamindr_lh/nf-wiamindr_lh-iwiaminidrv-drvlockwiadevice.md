@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvLockWiaDevice method
+# IWiaMiniDrv::drvLockWiaDevice method
 The <b>IWiaMiniDrv::drvLockWiaDevice</b> method locks the WIA hardware device so that only the current minidriver can access it.
 
 ## Syntax
 
-````
+```
 HRESULT drvLockWiaDevice(
-  [in]  BYTE *pWiasContext,
-  [in]  LONG lFlags,
-  [out] LONG *plDevErrVal
+  BYTE *__MIDL__IWiaMiniDrv0030,
+  LONG __MIDL__IWiaMiniDrv0031,
+  LONG *__MIDL__IWiaMiniDrv0032
 );
-````
+```
 
 ## Parameters
 
@@ -92,12 +92,12 @@ The <b>IWiaMiniDrv::drvLockWiaDevice</b> method is used to lock access to the de
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545012">IWiaMiniDrv::drvUnLockWiaDevice</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545012">IWiaMiniDrv::drvUnLockWiaDevice</a>

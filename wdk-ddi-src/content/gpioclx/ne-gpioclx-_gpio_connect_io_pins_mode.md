@@ -47,14 +47,14 @@ req.typenames: GPIO_CONNECT_IO_PINS_MODE, *PGPIO_CONNECT_IO_PINS_MODE
 The <b>GPIO_CONNECT_IO_PINS_MODE</b> enumeration indicates whether a set of general-purpose I/O (GPIO) pins is configured as inputs or outputs.
 
 ## Syntax
-````
-typedef enum _GPIO_CONNECT_IO_PINS_MODE { 
-  ConnectModeInvalid,
-  ConnectModeInput,
-  ConnectModeOutput,
-  ConnectModeMaximum  = ConnectModeOutput
-} GPIO_CONNECT_IO_PINS_MODE;
-````
+```
+typedef enum _GPIO_CONNECT_IO_PINS_MODE {
+  ConnectModeInvalid  ,
+  ConnectModeInput    ,
+  ConnectModeOutput   ,
+  ConnectModeMaximum
+} GPIO_CONNECT_IO_PINS_MODE, *PGPIO_CONNECT_IO_PINS_MODE;
+```
 
 ## Constants
 
@@ -95,7 +95,7 @@ The <b>ConnectModeInput</b> enumeration constant labels a set of GPIO pins that 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406487">IOCTL_GPIO_WRITE_PINS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439502">GPIO_CONNECT_IO_PINS_PARAMETERS</a>
 
 
 
@@ -103,4 +103,4 @@ The <b>ConnectModeInput</b> enumeration constant labels a set of GPIO pins that 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439502">GPIO_CONNECT_IO_PINS_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406487">IOCTL_GPIO_WRITE_PINS</a>

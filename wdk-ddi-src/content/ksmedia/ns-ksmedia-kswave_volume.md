@@ -47,12 +47,12 @@ req.typenames: KSWAVE_VOLUME, *PKSWAVE_VOLUME
 The KSWAVE_VOLUME structure is used to describe sample volume.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSWAVE_VOLUME {
   LONG LeftAttenuation;
   LONG RightAttenuation;
-} KSWAVE_VOLUME, *PKSWAVE_VOLUME;
-````
+} *PKSWAVE_VOLUME, KSWAVE_VOLUME;
+```
 
 ## Members
 

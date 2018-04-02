@@ -76,4 +76,4 @@ After a UMDF driver receives a translated resource list in its <a href="https://
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>

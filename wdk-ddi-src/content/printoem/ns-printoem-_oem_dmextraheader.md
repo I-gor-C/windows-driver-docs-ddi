@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The OEM_DMEXTRAHEADER structure must be used to define the first members of a set of private <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure members.
 
 ## Syntax
-````
+```
 typedef struct _OEM_DMEXTRAHEADER {
   DWORD dwSize;
   DWORD dwSignature;
   DWORD dwVersion;
-} OEM_DMEXTRAHEADER, *POEM_DMEXTRAHEADER;
-````
+} *POEM_DMEXTRAHEADER, OEM_DMEXTRAHEADER;
+```
 
 ## Members
 

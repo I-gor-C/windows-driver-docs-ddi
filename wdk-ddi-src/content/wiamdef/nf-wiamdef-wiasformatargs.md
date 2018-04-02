@@ -50,11 +50,12 @@ The <b>wiasFormatArgs</b> function formats an argument list into a packaged stri
 
 ## Syntax
 
-````
-BSTR __cdecl wiasFormatArgs(
-   LPCSTR   lpszFormat, ...
+```
+BSTR wiasFormatArgs(
+  LPCSTR lpszFormat,
+  ...    
 );
-````
+```
 
 ## Parameters
 

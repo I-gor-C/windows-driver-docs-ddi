@@ -7,7 +7,7 @@ old-location: audio\iminiportstreamaudioenginenode_setstreamloopbackprotection.h
 old-project: audio
 ms.assetid: FAC9AC9B-9C4B-4D53-A59A-8901EC8755BC
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], SetStreamLoopbackProtection method, IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection, SetStreamLoopbackProtection method [Audio Devices], SetStreamLoopbackProtection method [Audio Devices], IMiniportStreamAudioEngineNode interface, SetStreamLoopbackProtection,IMiniportStreamAudioEngineNode.SetStreamLoopbackProtection, audio.iminiportstreamaudioenginenode_setstreamloopbackprotection, portcls/IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# SetStreamLoopbackProtection method
+# IMiniportStreamAudioEngineNode::SetStreamLoopbackProtection method
 Sets the loopback protection status of the audio engine node.
 
 ## Syntax
 
-````
+```
 NTSTATUS SetStreamLoopbackProtection(
-  [in] CONSTRICTOR_OPTION ProtectionOption
+  CONSTRICTOR_OPTION ProtectionOption
 );
-````
+```
 
 ## Parameters
 
@@ -79,11 +79,11 @@ For more information about audio stream loopback protection, see <a href="https:
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
-
-
-
 CONSTRICTOR_OPTION
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265090">IMiniportStreamAudioEngineNode</a>
 
 
 

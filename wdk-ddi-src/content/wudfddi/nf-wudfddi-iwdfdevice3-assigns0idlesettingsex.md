@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# AssignS0IdleSettingsEx method
+# IWDFDevice3::AssignS0IdleSettingsEx method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The 
@@ -53,17 +53,17 @@ The
 
 ## Syntax
 
-````
+```
 HRESULT AssignS0IdleSettingsEx(
-  [in] PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS IdleSettings
+  PWUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS IdleSettings
 );
-````
+```
 
 ## Parameters
 
 `IdleSettings`
 
-A pointer to a <a href="..\wudfddi_types\ns-wudfddi_types-_wudf_device_power_policy_idle_settings.md">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure that was initialized by a call to the <a href="..\wudfdevice\nf-wudfdevice-wudf_device_power_policy_idle_settings_init.md">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</a> macro.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh464078">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure that was initialized by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh464080">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS_INIT</a> macro.
 
 
 ## Return Value
@@ -81,7 +81,7 @@ For more information about idle power-down, see <a href="https://docs.microsoft.
 
 #### Examples
 
-The following code example initializes a <a href="..\wudfddi_types\ns-wudfddi_types-_wudf_device_power_policy_idle_settings.md">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure and sets an idle time-out value of 10 seconds. The example then obtains the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface and calls <b>AssignS0IdleSettingsEx</b>. 
+The following code example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/hh464078">WUDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure and sets an idle time-out value of 10 seconds. The example then obtains the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface and calls <b>AssignS0IdleSettingsEx</b>. 
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -131,12 +131,12 @@ SAFE_RELEASE(pIWDFDevice3);
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigns0idlesettings.md">WdfDeviceAssignS0IdleSettings</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556920">IWDFDevice2::AssignS0IdleSettings</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545903">WdfDeviceAssignS0IdleSettings</a>

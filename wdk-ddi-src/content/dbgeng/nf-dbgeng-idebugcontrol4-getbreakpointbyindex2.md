@@ -7,7 +7,7 @@ old-location: debugger\getbreakpointbyindex2.htm
 old-project: debugger
 ms.assetid: 3487addb-e196-4295-95fc-0590802e766a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetBreakpointByIndex2 method [Windows Debugging], GetBreakpointByIndex2 method [Windows Debugging], IDebugControl4 interface, GetBreakpointByIndex2,IDebugControl4.GetBreakpointByIndex2, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetBreakpointByIndex2 method, IDebugControl4::GetBreakpointByIndex2, dbgeng/IDebugControl4::GetBreakpointByIndex2, debugger.getbreakpointbyindex2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetBreakpointByIndex2 method
+# IDebugControl4::GetBreakpointByIndex2 method
 The <b>GetBreakpointByIndex2</b>  method returns the breakpoint located at the specified index.
 
 ## Syntax
 
-````
+```
 HRESULT GetBreakpointByIndex2(
-  [in]  ULONG              Index,
-  [out] PDEBUG_BREAKPOINT2 *Bp
+  ULONG              Index,
+  PDEBUG_BREAKPOINT2 *Bp
 );
-````
+```
 
 ## Parameters
 
@@ -112,8 +112,8 @@ The index and returned breakpoint are specific to the current process.  The same
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547880">GetNumberBreakpoints</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>

@@ -7,7 +7,7 @@ old-location: storage\hwstorstatechange.htm
 old-project: storage
 ms.assetid: E7E5E26A-B477-453C-AAFC-9B3572F4FC72
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HW_STATE_CHANGE, HwStorStateChange, HwStorStateChange routine [Storage Devices], storage.hwstorstatechange, storport/HwStorStateChange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 
 
 # HW_STATE_CHANGE callback function
-A miniport-provided callback that is called  after a notification from <a href="..\storport\nf-storport-storportstatechangedetected.md"> StorPortStateChangeDetected</a> is processed.
+A miniport-provided callback that is called  after a notification from <a href="https://msdn.microsoft.com/3E5E9C4E-5B82-4656-BDF2-23A9A8D40ADF"> StorPortStateChangeDetected</a> is processed.
 
 ## Syntax
 
@@ -71,7 +71,7 @@ void HwStateChange(
 
 `Context`
 
-The context supplied as <i>HwStateChangeContext</i> by the miniport in the call to <a href="..\storport\nf-storport-storportstatechangedetected.md"> StorPortStateChangeDetected</a>.
+The context supplied as <i>HwStateChangeContext</i> by the miniport in the call to <a href="https://msdn.microsoft.com/3E5E9C4E-5B82-4656-BDF2-23A9A8D40ADF"> StorPortStateChangeDetected</a>.
 
 `AddressType`
 
@@ -79,7 +79,7 @@ The type of the address in <i>Address</i>.
 
 `Address`
 
-A pointer to a <a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a> structure for the entity whose state change was processed.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451518">STOR_ADDRESS</a> structure for the entity whose state change was processed.
 
 `Status`
 
@@ -94,11 +94,11 @@ None.
 
 The <i>HwStorStateChange</i> is called with the StartIo lock acquired by Storport.
 
-This callback enables miniports to do any additional processing that is needed after hardware addition or removal. If a hardware change occurs on the HBA port or bus, the miniport can call <a href="..\storport\nf-storport-storportstatechangedetected.md"> StorPortStateChangeDetected</a> to alert the system of the event.
+This callback enables miniports to do any additional processing that is needed after hardware addition or removal. If a hardware change occurs on the HBA port or bus, the miniport can call <a href="https://msdn.microsoft.com/3E5E9C4E-5B82-4656-BDF2-23A9A8D40ADF"> StorPortStateChangeDetected</a> to alert the system of the event.
 
 If the value for <i>Status</i> is  &lt; 0x80000000, then the notification processing was successful. Otherwise, the notification process failed.
 
-The name <i>HwStorStateChange</i> is just a placeholder for the miniport function that is pointed to by the <i>HwStateChange</i> parameter of  <a href="..\storport\nf-storport-storportstatechangedetected.md"> StorPortStateChangeDetected</a>. The actual prototype of this routine is defined in <i>Storport.h</i> as follows:
+The name <i>HwStorStateChange</i> is just a placeholder for the miniport function that is pointed to by the <i>HwStateChange</i> parameter of  <a href="https://msdn.microsoft.com/3E5E9C4E-5B82-4656-BDF2-23A9A8D40ADF"> StorPortStateChangeDetected</a>. The actual prototype of this routine is defined in <i>Storport.h</i> as follows:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -129,8 +129,8 @@ HW_STATE_CHANGE (
 
 ## See Also
 
-<a href="..\storport\ns-storport-_stor_address.md">STOR_ADDRESS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451518">STOR_ADDRESS</a>
 
 
 
-<a href="..\storport\nf-storport-storportstatechangedetected.md"> StorPortStateChangeDetected</a>
+<a href="https://msdn.microsoft.com/3E5E9C4E-5B82-4656-BDF2-23A9A8D40ADF"> StorPortStateChangeDetected</a>

@@ -51,14 +51,14 @@ Supported starting in Windows 8.
 
 ## Syntax
 
-````
-KSDDKAPI HRESULT WINAPI KsCreateTopologyNode2(
-  _In_  HANDLE         ParentHandle,
-  _In_  PKSNODE_CREATE NodeCreate,
-  _In_  ACCESS_MASK    DesiredAccess,
-  _Out_ PHANDLE        NodeHandle
+```
+KSDDKAPI HRESULT KsCreateTopologyNode2(
+  HANDLE         ParentHandle,
+  PKSNODE_CREATE NodeCreate,
+  ACCESS_MASK    DesiredAccess,
+  PHANDLE        NodeHandle
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ Specifies the handle to the parent on which the node is created.
 
 `NodeCreate`
 
-A <a href="..\ks\ns-ks-ksnode_create.md">KSNODE_CREATE</a> structure that describes the set of information that is used to create the topology node handle.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563471">KSNODE_CREATE</a> structure that describes the set of information that is used to create the topology node handle.
 
 `DesiredAccess`
 
@@ -85,7 +85,7 @@ Returns <b>NOERROR</b> if successful; otherwise, returns an error code.
 
 ## Remarks
 
-This is a new version of the <a href="..\ks\nf-ks-kscreatetopologynode.md">KsCreateTopologyNode</a> function and uses the device broker to create the handle to the kernel streaming object. In addition, the Component Object Model (COM) <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a> function must be called before this function is called.
+This is a new version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561653">KsCreateTopologyNode</a> function and uses the device broker to create the handle to the kernel streaming object. In addition, the Component Object Model (COM) <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a> function must be called before this function is called.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,11 +97,7 @@ This is a new version of the <a href="..\ks\nf-ks-kscreatetopologynode.md">KsCre
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksnode_create.md">KSNODE_CREATE</a>
-
-
-
-<a href="..\ks\nf-ks-kscreatetopologynode.md">KsCreateTopologyNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
 
 
@@ -109,4 +105,8 @@ This is a new version of the <a href="..\ks\nf-ks-kscreatetopologynode.md">KsCre
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563471">KSNODE_CREATE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561653">KsCreateTopologyNode</a>

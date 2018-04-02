@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetNotificationHandle method
+# IStiUSD::SetNotificationHandle method
 A still image minidriver's <b>IStiUSD::SetNotificationHandle</b> method specifies an event handle that the minidriver should use to inform the caller of device events.
 
 ## Syntax
 
-````
+```
 HRESULT SetNotificationHandle(
-   HANDLE hEvent
+  HANDLE hEvent
 );
-````
+```
 
 ## Parameters
 

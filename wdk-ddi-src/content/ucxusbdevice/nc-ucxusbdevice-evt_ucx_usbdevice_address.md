@@ -7,7 +7,7 @@ old-location: buses\evt_ucx_usbdevice_address.htm
 old-project: usbref
 ms.assetid: 48bda241-18b0-44c2-8e8b-7d3ecaad8a05
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: EVT_UCX_USBDEVICE_ADDRESS, EvtUcxUsbDeviceAddress, EvtUcxUsbDeviceAddress callback function [Buses], PEVT_UCX_USBDEVICE_ADDRESS, PEVT_UCX_USBDEVICE_ADDRESS callback function pointer [Buses], buses.evt_ucx_usbdevice_address, ucxusbdevice/EvtUcxUsbDeviceAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ A handle to the UCX controller that the client driver received in a previous cal
 
 `Request`
 
-A structure of type <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_address.md">USBDEVICE_ADDRESS</a>.
+A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt188070">USBDEVICE_ADDRESS</a>.
 
 
 ## Return Value
@@ -77,7 +77,7 @@ This callback function does not return a value.
 
 ## Remarks
 
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a> method.
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a> method.
 
 The client driver returns completion status in <i>Request</i>.  The driver can complete the WDFREQUEST asynchronously.
 
@@ -124,12 +124,12 @@ UsbDevice_EvtUcxUsbDeviceAddress(
 
 ## See Also
 
-<a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdeviceinitseteventcallbacks.md">UcxUsbDeviceInitSetEventCallbacks</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188068">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
 
 
 
-<a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a>
 
 
 
-<a href="..\ucxusbdevice\nf-ucxusbdevice-ucx_usbdevice_event_callbacks_init.md">UCX_USBDEVICE_EVENT_CALLBACKS_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188053">UcxUsbDeviceInitSetEventCallbacks</a>

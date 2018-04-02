@@ -62,10 +62,10 @@ The <b>IOCTL_LAMP_SET_MODE</b>
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-<code>Irp-&gt;AssociatedIrp.SystemBuffer</code> points to a buffer of type <a href="..\lamp\ne-lamp-lamp_mode.md">LAMP_MODE</a>.
+<code>Irp-&gt;AssociatedIrp.SystemBuffer</code> points to a buffer of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn937009">LAMP_MODE</a>.
 
 ### Input Buffer Length
-Length of a <a href="..\lamp\ne-lamp-lamp_mode.md">LAMP_MODE</a>.
+Length of a <a href="https://msdn.microsoft.com/library/windows/hardware/dn937009">LAMP_MODE</a>.
 
 ### Output Buffer
 None.

@@ -50,11 +50,11 @@ The <b>UPSInit</b> function initializes a UPS minidriver, opens communication to
 
 ## Syntax
 
-````
+```
 DWORD UPSInit(
-   void 
+
 );
-````
+```
 
 ## Parameters
 
@@ -149,7 +149,7 @@ Beginning the monitoring of the UPS unit
 
 </li>
 </ul>
-If the <b>UPSInit</b> function returns a value other than UPS_INITOK, the UPS service immediately calls the <a href="..\upssvc\nf-upssvc-upsstop.md">UPSStop</a> function.
+If the <b>UPSInit</b> function returns a value other than UPS_INITOK, the UPS service immediately calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536314">UPSStop</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -159,4 +159,4 @@ If the <b>UPSInit</b> function returns a value other than UPS_INITOK, the UPS se
 
 ## See Also
 
-<a href="..\upssvc\nf-upssvc-upsstop.md">UPSStop</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536314">UPSStop</a>

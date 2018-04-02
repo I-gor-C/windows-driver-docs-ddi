@@ -45,28 +45,28 @@ req.product: Windows 10 or later.
 ---
 
 
-# WhyConstrained method
+# IPrintCoreUI2::WhyConstrained method
 The <code>IPrintCoreUI2::WhyConstrained</code> method determines why the specified feature/option selection is constrained.
 
 ## Syntax
 
-````
+```
 HRESULT WhyConstrained(
-  [in]  POEMUIOBJ poemuiobj,
-  [in]  DWORD     dwFlags,
-  [in]  PCSTR     pszFeatureKeyword,
-  [in]  PCSTR     pszOptionKeyword,
-  [out] PSTR      pmszReasonList,
-  [in]  DWORD     cbSize,
-  [out] PDWORD    pcbNeeded
+  POEMUIOBJ poemuiobj,
+  DWORD     dwFlags,
+  PCSTR     pszFeatureKeyword,
+  PCSTR     pszOptionKeyword,
+  PZZSTR    pmszReasonList,
+  DWORD     cbSize,
+  PDWORD    pcbNeeded
 );
-````
+```
 
 ## Parameters
 
 `poemuiobj`
 
-Pointer to the current context, an <a href="..\printoem\ns-printoem-_oemuiobj.md">OEMUIOBJ</a> structure.
+Pointer to the current context, an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559571">OEMUIOBJ</a> structure.
 
 `dwFlags`
 
@@ -183,11 +183,11 @@ To reduce the need to make two calls per data access, pass the method an output 
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/e2d2e486-d69d-4a6d-aaab-a7b8806665b4">IPrintCoreUI2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553045">IPrintCoreUI2::EnumConstrainedOptions</a>
-
-
-
-<a href="..\prcomoem\nn-prcomoem-iprintcoreui2.md">IPrintCoreUI2</a>
 
 
 
@@ -195,8 +195,8 @@ To reduce the need to make two calls per data access, pass the method an output 
 
 
 
-<a href="..\printoem\ns-printoem-_oemuiobj.md">OEMUIOBJ</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554173">IPrintOemUI::DocumentPropertySheets</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559571">OEMUIOBJ</a>

@@ -47,15 +47,15 @@ req.typenames: KSPROPERTY_TUNER_CAPS_S, *PKSPROPERTY_TUNER_CAPS_S
 The KSPROPERTY_TUNER_CAPS_S structure describes the hardware capabilities of TV and radio tuning devices.
 
 ## Syntax
-````
-typedef struct {
-  KSPROPERTY   Property;
-  ULONG        ModesSupported;
+```
+typedef struct KSPROPERTY_TUNER_CAPS_S {
+  KSPROPERTY   Property;
+  ULONG        ModesSupported;
   KSPIN_MEDIUM VideoMedium;
   KSPIN_MEDIUM TVAudioMedium;
   KSPIN_MEDIUM RadioAudioMedium;
-} KSPROPERTY_TUNER_CAPS_S, *PKSPROPERTY_TUNER_CAPS_S;
-````
+}  *PKSPROPERTY_TUNER_CAPS_S;
+```
 
 ## Members
 
@@ -149,12 +149,12 @@ Specifies a unique GUID representing the hardware connection of the analog radio
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565825">KSPROPERTY_TUNER_CAPS</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565842">KSPROPERTY_TUNER_IF_MEDIUM</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567800">PROPSETID_TUNER</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565825">KSPROPERTY_TUNER_CAPS</a>

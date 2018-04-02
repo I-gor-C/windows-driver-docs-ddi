@@ -50,15 +50,15 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-INT APIENTRY OEMCompression(
-        PDEVOBJ                        pdevobj,
-  _In_  _reads_bytes_(dwInLen) PBYTE   pInBuf,
-  _Out_ _writes_bytes_(dwOutLen) PBYTE pOutBuf,
-        DWORD                          dwInLen,
-        DWORD                          dwOutLen
+```
+INT OEMCompression(
+  PDEVOBJ pdevobj,
+  PBYTE   pInBuf,
+  PBYTE   pOutBuf,
+  DWORD   dwInLen,
+  DWORD   dwOutLen
 );
-````
+```
 
 ## Parameters
 

@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level (See Remarks section)
+req.irql: 
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -48,25 +48,29 @@ req.product: Windows 10 or later.
 The T1_DATA structure is used by the smart card driver library to process T1 I/O.
 
 ## Syntax
-````
-typedef struct {
-  UCHAR   InfSize;
-  ULONG   BytesReceived;
-  ULONG   BytesSent;
-  ULONG   BytesToSend;
-  UCHAR   LastError;
-  UCHAR   NAD;
-  ULONG   PrevState;
-  UCHAR   Resend;
-  UCHAR   Resynch;
-  UCHAR   RSN;
-  UCHAR   SSN;
-  ULONG   State;
-  UCHAR   Wtx;
-  PUCHAR  ReplyData;
+```
+typedef struct _T1_DATA {
+  UCHAR   IFSC;
+  UCHAR   IFSD;
+  ULONG   BytesReceived;
+  ULONG   BytesSent;
+  ULONG   BytesToSend;
+  UCHAR   LastError;
+  BOOLEAN MoreData;
+  UCHAR   NAD;
+  ULONG   OriginalState;
+  UCHAR   Resend;
+  UCHAR   Resynch;
+  UCHAR   RSN;
+  UCHAR   SSN;
+  ULONG   State;
+  UCHAR   Wtx;
+  PUCHAR  ReplyData;
   BOOLEAN WaitForReply;
+  UCHAR   InfBytesSent;
+  UCHAR   Reserved[10 - sizeof(PUCHAR)- sizeof(BOOLEAN)- sizeof(UCHAR)];
 } T1_DATA, *PT1_DATA;
-````
+```
 
 ## Members
 

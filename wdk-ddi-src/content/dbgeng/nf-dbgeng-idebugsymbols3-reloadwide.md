@@ -7,7 +7,7 @@ old-location: debugger\reloadwide.htm
 old-project: debugger
 ms.assetid: 3975bc55-15e3-45ca-82df-76c5ed3b0086
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], ReloadWide method, IDebugSymbols3::ReloadWide, ReloadWide method [Windows Debugging], ReloadWide method [Windows Debugging], IDebugSymbols3 interface, ReloadWide,IDebugSymbols3.ReloadWide, dbgeng/IDebugSymbols3::ReloadWide, debugger.reloadwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# ReloadWide method
+# IDebugSymbols3::ReloadWide method
 The <b>ReloadWide</b>  method deletes the engine's symbol information for the specified module and reload these symbols as needed.
 
 ## Syntax
 
-````
+```
 HRESULT ReloadWide(
-  [in] PCWSTR Module
+  PCWSTR Module
 );
-````
+```
 
 ## Parameters
 
@@ -103,4 +103,4 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

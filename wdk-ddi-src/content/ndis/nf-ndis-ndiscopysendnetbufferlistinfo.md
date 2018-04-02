@@ -7,7 +7,7 @@ old-location: netvista\ndiscopysendnetbufferlistinfo.htm
 old-project: netvista
 ms.assetid: 9c8227ea-53e4-47c9-ab74-84e42b0cbbe5
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisCopySendNetBufferListInfo, NdisCopySendNetBufferListInfo function [Network Drivers Starting with Windows Vista], ndis/NdisCopySendNetBufferListInfo, ndis_netbuf_functions_ref_6bea2e25-d488-4bf2-879b-1ace04c66b68.xml, netvista.ndiscopysendnetbufferlistinfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,27 +48,27 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisCopySendNetBufferListInfo function
 Intermediate drivers call the 
   <b>NdisCopySendNetBufferListInfo</b> function to copy the 
-  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> information in a transmit
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> information in a transmit
   <b>NET_BUFFER_LIST</b> structure.
 
 ## Syntax
 
-````
-VOID NdisCopySendNetBufferListInfo(
-  _In_ PNET_BUFFER_LIST DestNetBufferList,
-  _In_ PNET_BUFFER_LIST SrcNetBufferList
+```
+void NdisCopySendNetBufferListInfo(
+  PNET_BUFFER_LIST DestNetBufferList,
+  PNET_BUFFER_LIST SrcNetBufferList
 );
-````
+```
 
 ## Parameters
 
 `DestNetBufferList`
 
-A pointer to the destination <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
+A pointer to the destination <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.
 
 `SrcNetBufferList`
 
-A pointer to the source <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
+A pointer to the source <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.
 
 
 ## Return Value
@@ -79,16 +79,16 @@ None
 
 When an intermediate driver or filter driver receives a transmit request from an overlying driver, it
     can, for example, clone the 
-    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure or allocate a new
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure or allocate a new
     structure to propagate the request to underlying drivers. The driver should use 
     <b>NdisCopySendNetBufferListInfo</b> to copy the <b>NET_BUFFER_LIST</b> information, including private NDIS
     information, to the new structure.
 
-To copy the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> information on the receive path, use the 
-    <a href="..\ndis\nf-ndis-ndiscopyreceivenetbufferlistinfo.md">
+To copy the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> information on the receive path, use the 
+    <a href="https://msdn.microsoft.com/94dc33f4-06ad-4b36-9150-6fb7d491a247">
     NdisCopyReceiveNetBufferListInfo</a> function.
 
-The following <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> items are copied in a call to <b>NdisCopySendNetBufferListInfo</b>:
+The following <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> items are copied in a call to <b>NdisCopySendNetBufferListInfo</b>:
 
 <table>
 <tr>
@@ -153,7 +153,7 @@ The following <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> 
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
 
 
 
@@ -161,5 +161,5 @@ The following <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> 
 
 
 
-<a href="..\ndis\nf-ndis-ndiscopyreceivenetbufferlistinfo.md">
+<a href="https://msdn.microsoft.com/94dc33f4-06ad-4b36-9150-6fb7d491a247">
    NdisCopyReceiveNetBufferListInfo</a>

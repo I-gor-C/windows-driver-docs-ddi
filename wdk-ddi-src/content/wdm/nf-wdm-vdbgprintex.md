@@ -51,14 +51,14 @@ The <b>vDbgPrintEx</b> routine sends a string to the kernel debugger if certain 
 
 ## Syntax
 
-````
-ULONG vDbgPrintEx(
-  _In_ ULONG   ComponentId,
-  _In_ ULONG   Level,
-  _In_ PCCH    Format,
-  _In_ va_list arglist
+```
+NTSYSAPI ULONG vDbgPrintEx(
+  ULONG   ComponentId,
+  ULONG   Level,
+  PCCH    Format,
+  va_list arglist
 );
-````
+```
 
 ## Parameters
 
@@ -138,4 +138,4 @@ This routine is defined in Wdm.h. Component filter IDs are defined in Dpfilter.h
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543634">DbgPrintEx</a>

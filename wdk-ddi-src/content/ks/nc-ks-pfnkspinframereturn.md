@@ -67,11 +67,11 @@ void Pfnkspinframereturn(
 
 `Pin`
 
-Pointer to a <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure representing the pin on which the frame was injected.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure representing the pin on which the frame was injected.
 
 `Data`
 
-Pointer to the buffer originally specified in the call to <a href="..\ks\nf-ks-kspinsubmitframe.md">KsPinSubmitFrame</a>.
+Pointer to the buffer originally specified in the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff563529">KsPinSubmitFrame</a>.
 
 `OPTIONAL`
 
@@ -79,7 +79,7 @@ Pointer to the buffer originally specified in the call to <a href="..\ks\nf-ks-k
 
 `Mdl`
 
-Pointer to a memory descriptor list describing the injected frame as in the call to <a href="..\ks\nf-ks-kspinsubmitframemdl.md">KsPinSubmitFrameMdl</a><b>.</b>
+Pointer to a memory descriptor list describing the injected frame as in the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff563530">KsPinSubmitFrameMdl</a><b>.</b>
 
 `Context`
 
@@ -96,7 +96,7 @@ None
 
 ## Remarks
 
-The minidriver specifies this routine's address in the <i>FrameReturn</i> parameter of a call to <a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>.
+The minidriver specifies this routine's address in the <i>FrameReturn</i> parameter of a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff563522">KsPinRegisterFrameReturnCallback</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,8 +107,8 @@ The minidriver specifies this routine's address in the <i>FrameReturn</i> parame
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563522">KsPinRegisterFrameReturnCallback</a>
 
 
 
-<a href="..\ks\nf-ks-kspinsubmitframemdl.md">KsPinSubmitFrameMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563530">KsPinSubmitFrameMdl</a>

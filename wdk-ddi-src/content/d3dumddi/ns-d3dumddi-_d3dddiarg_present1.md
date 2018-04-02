@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_present1.htm
 old-project: display
 ms.assetid: 17EBEEF1-4C86-4948-AADA-669B2952755A
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDIARG_PRESENT1, D3DDDIARG_PRESENT1 structure [Display Devices], _D3DDDIARG_PRESENT1, d3dumddi/D3DDDIARG_PRESENT1, display.d3dddiarg_present1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,23 @@ req.typenames: D3DDDIARG_PRESENT1
 ---
 
 # _D3DDDIARG_PRESENT1 structure
-Describes a resource to display. Used with the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_present1.md">pfnPresent1(D3D)</a> function by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
+Describes a resource to display. Used with the <a href="https://msdn.microsoft.com/8BB8E85F-B081-422E-ACE1-C2312BA28B9F">pfnPresent1(D3D)</a> function by Windows Display Driver Model (WDDM) 1.3 and later user-mode display drivers.
 
 ## Syntax
-````
-typedef struct D3DDDIARG_PRESENT1 {
-  D3DDDIARG_PRESENTSURFACE *phSrcResources;
-  UINT                     SrcResources;
-  HANDLE                   hDstResource;
-  UINT                     DstSubResourceIndex;
-  D3DDDI_PRESENTFLAGS      Flags;
-  D3DDDI_FLIPINTERVAL_TYPE FlipInterval;
-  UINT                     Reserved;
-  const RECT               *pDirtyRects;
-  UINT                     DirtyRects;
+```
+typedef struct _D3DDDIARG_PRESENT1 {
+  CONST D3DDDIARG_PRESENTSURFACE *phSrcResources;
+  UINT                           SrcResources;
+  HANDLE                         hDstResource;
+  UINT                           DstSubResourceIndex;
+  D3DDDI_PRESENTFLAGS            Flags;
+  D3DDDI_FLIPINTERVAL_TYPE       FlipInterval;
+  UINT                           Reserved;
+  CONST RECT                     *pDirtyRects;
+  UINT                           DirtyRects;
+  UINT                           BackBufferMultiplicity;
 } D3DDDIARG_PRESENT1;
-````
+```
 
 ## Members
 
@@ -82,11 +83,11 @@ typedef struct D3DDDIARG_PRESENT1 {
 
 `Flags`
 
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddi_presentflags.md">D3DDDI_PRESENTFLAGS</a> structure that identifies, in bit-field flags, how to display.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544639">D3DDDI_PRESENTFLAGS</a> structure that identifies, in bit-field flags, how to display.
 
 `FlipInterval`
 
-[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544549">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).
 
 `Reserved`
 
@@ -114,20 +115,20 @@ The driver can use this member to perform optimizations, though it's not require
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_present1.md">pfnPresent1(D3D)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544549">D3DDDI_FLIPINTERVAL_TYPE</a>
 
 
 
-<a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>
-
-
-
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_presentflags.md">D3DDDI_PRESENTFLAGS</a>
-
-
-
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_presentcb.md">pfnPresentCb</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544639">D3DDDI_PRESENTFLAGS</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+
+
+
+<a href="https://msdn.microsoft.com/8BB8E85F-B081-422E-ACE1-C2312BA28B9F">pfnPresent1(D3D)</a>
+
+
+
+<a href="https://msdn.microsoft.com/460b9be5-5817-4225-9089-f86ad64f4554">pfnPresentCb</a>

@@ -7,7 +7,7 @@ old-location: display\calcprivaterasterizerstatesize_d3d11_1_.htm
 old-project: display
 ms.assetid: 76d0228e-a6e5-425e-a2b6-7d719dbfa43d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: CalcPrivateRasterizerStateSize(D3D11_1), CalcPrivateRasterizerStateSize(D3D11_1) callback function [Display Devices], PFND3D11_1DDI_CALCPRIVATERASTERIZERSTATESIZE, d3d10umddi/CalcPrivateRasterizerStateSize(D3D11_1), display.calcprivaterasterizerstatesize_d3d11_1_, display.pfncalcprivaterasterizerstatesize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,4 +84,4 @@ The size of the memory region that the driver requires for creating a rasterizer
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1_ddi_rasterizer_desc.md">D3D11_1_DDI_RASTERIZER_DESC</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451052">D3D11_1_DDI_RASTERIZER_DESC</a>

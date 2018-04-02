@@ -7,7 +7,7 @@ old-location: storage\scsiportvalidaterange.htm
 old-project: storage
 ms.assetid: a9ad58c2-16fc-410a-abc7-01c3f2354b88
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortValidateRange, ScsiPortValidateRange routine [Storage Devices], scsiprt_a5bae9f5-7912-4607-890d-ca08fda0c19c.xml, srb/ScsiPortValidateRange, storage.scsiportvalidaterange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,22 +52,22 @@ The <b>ScsiPortValidateRange</b> routine indicates whether the specified access 
 
 ## Syntax
 
-````
-BOOLEAN ScsiPortValidateRange(
-  _In_ PVOID                 HwDeviceExtension,
-  _In_ INTERFACE_TYPE        BusType,
-  _In_ ULONG                 SystemIoBusNumber,
-  _In_ SCSI_PHYSICAL_ADDRESS IoAddress,
-  _In_ ULONG                 NumberOfBytes,
-  _In_ BOOLEAN               InIoSpace
+```
+SCSIPORT_API BOOLEAN ScsiPortValidateRange(
+  PVOID                 HwDeviceExtension,
+  INTERFACE_TYPE        BusType,
+  ULONG                 SystemIoBusNumber,
+  SCSI_PHYSICAL_ADDRESS IoAddress,
+  ULONG                 NumberOfBytes,
+  BOOLEAN               InIoSpace
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
+Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 `BusType`
 
@@ -96,7 +96,7 @@ Indicates when TRUE that the range is in I/O space, rather than in memory. When 
 
 ## Remarks
 
-<b>ScsiPortValidateRange </b>can be called only from a miniport driver's <a href="..\srb\nc-srb-phw_find_adapter.md">HwScsiFindAdapter</a> routine. Calls from other miniport driver routines will result in system failure or incorrect operation for the caller.
+<b>ScsiPortValidateRange </b>can be called only from a miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a> routine. Calls from other miniport driver routines will result in system failure or incorrect operation for the caller.
 
 If the operating system-specific port driver initializes any <b>AccessRanges</b> element of the PORT_CONFIGURATION_INFORMATION structure before it calls the miniport driver's <i>HwScsiFindAdapter</i> routine, the miniport driver must pass the supplied values to <b>ScsiPortGetDeviceBase</b> and use the mapped logical addresses for the range to determine whether an HBA is one that it supports.
 
@@ -147,20 +147,20 @@ The <b>SCSI_PHYSICAL_ADDRESS</b> type is an operating system-independent data ty
 
 ## See Also
 
-<a href="..\strmini\ns-strmini-_access_range.md">ACCESS_RANGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550117">ACCESS_RANGE</a>
 
 
 
-<a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557300">HwScsiFindAdapter</a>
 
 
 
-<a href="..\srb\nc-srb-phw_find_adapter.md">HwScsiFindAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563900">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
 
 
 
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>
 
 
 
-<a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION (SCSI)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>

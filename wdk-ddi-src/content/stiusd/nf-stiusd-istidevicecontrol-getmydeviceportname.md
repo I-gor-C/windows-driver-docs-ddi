@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetMyDevicePortName method
+# IStiDeviceControl::GetMyDevicePortName method
 The <b>IStiDeviceControl::GetMyDevicePortName</b> method allows a user-mode still image minidriver to obtain a device's port name.
 
 ## Syntax
 
-````
+```
 HRESULT GetMyDevicePortName(
-   LPWSTR lpszDevicePath,
-   DWORD  cwDevicePathSize
+  LPWSTR lpszDevicePath,
+  DWORD  cwDevicePathSize
 );
-````
+```
 
 ## Parameters
 

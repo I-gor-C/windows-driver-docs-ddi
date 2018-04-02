@@ -7,7 +7,7 @@ old-location: debugger\readphysicalwithflags.htm
 old-project: debugger
 ms.assetid: 7ff5787f-f663-4ceb-be59-4f48ecea03a9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: ReadPhysicalWithFlags, ReadPhysicalWithFlags function [Windows Debugging], WdbgExts_Ref_cf166083-f21a-4cfd-8daa-90c3f6bbcdcb.xml, debugger.readphysicalwithflags, wdbgexts/ReadPhysicalWithFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,15 +50,15 @@ The <b>ReadPhysicalWithFlags</b> function reads from physical memory.
 
 ## Syntax
 
-````
-__inline VOID ReadPhysicalWithFlags(
-   ULONG64 address,
-   PVOID   buf,
-   ULONG   size,
-   ULONG   flags,
-   PULONG  sizer
+```
+void ReadPhysicalWithFlags(
+  ULONG64 address,
+  PVOID   buf,
+  ULONG   size,
+  ULONG   flags,
+  PULONG  sizer
 );
-````
+```
 
 ## Parameters
 
@@ -146,8 +146,8 @@ If you are writing a WdbgExts extension, include <b>wdbgexts.h</b>. If you are w
 
 ## See Also
 
-<a href="..\wdbgexts\nf-wdbgexts-writephysicalwithflags.md">WritePhysicalWithFlags</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554313">ReadPhysical</a>
 
 
 
-<a href="..\wdbgexts\nf-wdbgexts-readphysical.md">ReadPhysical</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561448">WritePhysicalWithFlags</a>

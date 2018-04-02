@@ -44,16 +44,16 @@ req.typenames: CMP_NOTIFY_INFO, *PCMP_NOTIFY_INFO
 ---
 
 # _CMP_NOTIFY_INFO structure
-This structure is used by the <a href="..\61883\nc-61883-pcmp_notify_routine.md">PCMP_NOTIFY_ROUTINE</a> callback.
+This structure is used by the <a href="https://msdn.microsoft.com/0576D73A-0A36-4AB7-952C-19B56FD246D8">PCMP_NOTIFY_ROUTINE</a> callback.
 
 ## Syntax
-````
+```
 typedef struct _CMP_NOTIFY_INFO {
   HANDLE hPlug;
   AV_PCR Pcr;
-  PVOID  Context;
-} CMP_NOTIFY_INFO, *PCMP_NOTIFY_INFO;
-````
+  PVOID  Context;
+} *PCMP_NOTIFY_INFO, CMP_NOTIFY_INFO;
+```
 
 ## Members
 

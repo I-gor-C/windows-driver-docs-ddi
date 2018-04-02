@@ -7,7 +7,7 @@ old-location: netvista\ndis_pm_packet_pattern.htm
 old-project: netvista
 ms.assetid: dfda0b5f-06fc-4e94-b14c-6bd32c2c138a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_PM_PACKET_PATTERN, 212pnpoid_bfc58374-2745-4c29-a2ac-b7ef864aa710.xml, NDIS_PM_PACKET_PATTERN, NDIS_PM_PACKET_PATTERN structure [Network Drivers Starting with Windows Vista], PNDIS_PM_PACKET_PATTERN, PNDIS_PM_PACKET_PATTERN structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PM_PACKET_PATTERN, netvista.ndis_pm_packet_pattern, ntddndis/NDIS_PM_PACKET_PATTERN, ntddndis/PNDIS_PM_PACKET_PATTERN"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,7 +48,7 @@ The NDIS_PM_PACKET_PATTERN structure specifies a wake-up pattern, which, when de
   has pattern-match enabled, causes the network adapter to signal a power-management wake-up event.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_PM_PACKET_PATTERN {
   ULONG Priority;
   ULONG Reserved;
@@ -57,7 +57,7 @@ typedef struct _NDIS_PM_PACKET_PATTERN {
   ULONG PatternSize;
   ULONG PatternFlags;
 } NDIS_PM_PACKET_PATTERN, *PNDIS_PM_PACKET_PATTERN;
-````
+```
 
 ## Members
 
@@ -92,7 +92,7 @@ These flags are reserved.
 ## Remarks
 NDIS_PM_PACKET_PATTERN is supplied in the 
     <i>InformationBuffer</i> of the 
-    <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure for following
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure for following
     OIDs:
 
 <ul>
@@ -136,11 +136,11 @@ A protocol uses this OID to request a list of the wake-up patterns currently set
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569773">OID_PNP_ADD_WAKE_UP_PATTERN</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569783">OID_PNP_WAKE_UP_PATTERN_LIST</a>
 
 
 
@@ -148,4 +148,4 @@ A protocol uses this OID to request a list of the wake-up patterns currently set
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569783">OID_PNP_WAKE_UP_PATTERN_LIST</a>

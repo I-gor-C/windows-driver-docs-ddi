@@ -47,16 +47,16 @@ req.typenames: HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION
 The HID_MINIDRIVER_REGISTRATION structure contains registration information that a HID minidriver passes to the <a href="https://msdn.microsoft.com/E7C57273-B661-4B82-816E-E1466DAF67EA">HID Client Drivers</a> when the minidriver registers with the class driver.
 
 ## Syntax
-````
+```
 typedef struct _HID_MINIDRIVER_REGISTRATION {
-  ULONG           Revision;
-  PDRIVER_OBJECT  DriverObject;
+  ULONG           Revision;
+  PDRIVER_OBJECT  DriverObject;
   PUNICODE_STRING RegistryPath;
-  ULONG           DeviceExtensionSize;
-  BOOLEAN         DevicesArePolled;
-  UCHAR           Reserved[3];
+  ULONG           DeviceExtensionSize;
+  BOOLEAN         DevicesArePolled;
+  UCHAR           Reserved[3];
 } HID_MINIDRIVER_REGISTRATION, *PHID_MINIDRIVER_REGISTRATION;
-````
+```
 
 ## Members
 
@@ -67,7 +67,7 @@ Specifies the HID version that this minidriver supports.
 
 `DriverObject`
 
-Pointer to the minidriver's <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>.
+Pointer to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>.
 
 `RegistryPath`
 
@@ -86,7 +86,7 @@ Specifies that the devices on the bus that this minidriver supports must be poll
 Reserved for internal system use.
 
 ## Remarks
-When a HID minidriver calls <a href="..\hidport\nf-hidport-hidregisterminidriver.md">HidRegisterMinidriver</a>, it uses this structure to pass information to the HID class driver. The minidriver must must zero-initialize this structure before setting members. A minidriver sets the members <b>DriverObject</b> and <b>RegistryPath</b> to the driver object and registry path parameters that are passed to the minidriver as system-supplied parameters to its <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine. <b>Revision</b> should be set to HID_REVISION.
+When a HID minidriver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff539835">HidRegisterMinidriver</a>, it uses this structure to pass information to the HID class driver. The minidriver must must zero-initialize this structure before setting members. A minidriver sets the members <b>DriverObject</b> and <b>RegistryPath</b> to the driver object and registry path parameters that are passed to the minidriver as system-supplied parameters to its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. <b>Revision</b> should be set to HID_REVISION.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,8 +95,8 @@ When a HID minidriver calls <a href="..\hidport\nf-hidport-hidregisterminidriver
 
 ## See Also
 
-<a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>
 
 
 
-<a href="..\hidport\nf-hidport-hidregisterminidriver.md">HidRegisterMinidriver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539835">HidRegisterMinidriver</a>

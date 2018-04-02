@@ -7,7 +7,7 @@ old-location: netvista\fwpsnetbufferlistgettagforcontext0.htm
 old-project: netvista
 ms.assetid: f4b9b6ab-2251-4b8a-baf5-16c845a1a4db
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsNetBufferListGetTagForContext0, FwpsNetBufferListGetTagForContext0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsNetBufferListGetTagForContext0, netvista.fwpsnetbufferlistgettagforcontext0, wfp_ref_2_funct_3_fwps_J-Q_f81dda7b-70fb-42ae-8641-c9bb2a9e7982.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,9 +52,11 @@ The <b>FwpsNetBufferListGetTagForContext0</b> function gets a locally unique con
 
 ## Syntax
 
-````
-UINT64 NTAPI FwpsNetBufferListGetTagForContext0(void);
-````
+```
+UINT64 FwpsNetBufferListGetTagForContext0(
+
+);
+```
 
 ## Parameters
 
@@ -69,7 +71,7 @@ The
 
 The 
     <b>FwpsNetBufferListGetTagForContext0</b> function must be called before calling 
-    <a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">FwpsNetBufferListAssociateContext0</a>.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551191">FwpsNetBufferListAssociateContext0</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,23 +84,23 @@ The
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/a151256b-d69f-4abb-bf68-644f157dfdd7">Using Packet Tagging</a>
-
-
-
-<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistassociatecontext0.md">
+<a href="https://msdn.microsoft.com/31135396-303b-4b94-8616-a4b7be207fa1">
    FwpsNetBufferListAssociateContext0</a>
 
 
 
-<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistretrievecontext0.md">
-   FwpsNetBufferListRetrieveContext0</a>
-
-
-
-<a href="..\fwpsk\nf-fwpsk-fwpsnetbufferlistremovecontext0.md">
+<a href="https://msdn.microsoft.com/bd3aa1a2-3ff5-47e4-93f6-5cb2022ec630">
    FwpsNetBufferListRemoveContext0</a>
 
 
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/482cec75-8a21-4988-b869-639d019f9460">
+   FwpsNetBufferListRetrieveContext0</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+
+
+
+<a href="https://msdn.microsoft.com/a151256b-d69f-4abb-bf68-644f157dfdd7">Using Packet Tagging</a>

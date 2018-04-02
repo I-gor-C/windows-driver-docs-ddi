@@ -7,7 +7,7 @@ old-location: audio\iminiportstreamaudioenginenode_getstreampresentationposition
 old-project: audio
 ms.assetid: 872A4445-8E0B-4804-ADDC-8CD9608E3EBF
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: GetStreamPresentationPosition method [Audio Devices], GetStreamPresentationPosition method [Audio Devices], IMiniportStreamAudioEngineNode interface, GetStreamPresentationPosition,IMiniportStreamAudioEngineNode.GetStreamPresentationPosition, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamPresentationPosition method, IMiniportStreamAudioEngineNode::GetStreamPresentationPosition, audio.iminiportstreamaudioenginenode_getstreampresentationposition, portcls/IMiniportStreamAudioEngineNode::GetStreamPresentationPosition
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# GetStreamPresentationPosition method
+# IMiniportStreamAudioEngineNode::GetStreamPresentationPosition method
 Gets the current cursor position in the audio data stream that is being rendered to the endpoint.
 
 ## Syntax
 
-````
+```
 NTSTATUS GetStreamPresentationPosition(
-  [out] KSAUDIO_PRESENTATION_POSITION *pPresentationPosition
+  KSAUDIO_PRESENTATION_POSITION *pPresentationPosition
 );
-````
+```
 
 ## Parameters
 
 `pPresentationPosition`
 
-A <a href="..\ksmedia\ns-ksmedia-ksaudio_presentation_position.md">KSAUDIO_PRESENTATION_POSITION</a> structure that represents the current cursor position in the audio data stream.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/hh450865">KSAUDIO_PRESENTATION_POSITION</a> structure that represents the current cursor position in the audio data stream.
 
 
 ## Return Value
@@ -78,8 +78,8 @@ code.
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265090">IMiniportStreamAudioEngineNode</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-ksaudio_presentation_position.md">KSAUDIO_PRESENTATION_POSITION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450865">KSAUDIO_PRESENTATION_POSITION</a>

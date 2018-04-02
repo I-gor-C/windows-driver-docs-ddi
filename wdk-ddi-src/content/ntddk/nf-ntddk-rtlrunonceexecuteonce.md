@@ -7,7 +7,7 @@ old-location: kernel\rtlrunonceexecuteonce.htm
 old-project: kernel
 ms.assetid: 2769eb2c-33e2-4e3f-a1bf-1ebc9213b224
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlRunOnceExecuteOnce, RtlRunOnceExecuteOnce function [Kernel-Mode Driver Architecture], k109_c1729bff-038f-4714-b422-1b97dd5a9c19.xml, kernel.rtlrunonceexecuteonce, ntddk/RtlRunOnceExecuteOnce
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ The <b>RtlRunOnceExecuteOnce</b> performs a one-time initialization.
 
 ## Syntax
 
-````
-NTSTATUS RtlRunOnceExecuteOnce(
-  _Inout_ PRTL_RUN_ONCE         RunOnce,
-  _In_    PRTL_RUN_ONCE_INIT_FN InitFn,
-  _Inout_ PVOID                 Parameter,
-  _Out_   PVOID                 *Context
+```
+_Maybe_raises_SEH_exception_ NTSYSAPI NTSTATUS RtlRunOnceExecuteOnce(
+  PRTL_RUN_ONCE         RunOnce,
+  PRTL_RUN_ONCE_INIT_FN InitFn,
+  PVOID                 Context,
+  PVOID                 *Parameter
 );
-````
+```
 
 ## Parameters
 
@@ -103,16 +103,16 @@ For the first call to <b>RtlRunOnceExecuteOnce</b> for a particular <a href="htt
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562759">RtlRunOnceBeginInitialize</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562763">RtlRunOnceComplete</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562767">RtlRunOnceInitialize</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563635">RunOnceInitialization</a>
-
-
-
-<a href="..\ntddk\nf-ntddk-rtlrunoncebegininitialize.md">RtlRunOnceBeginInitialize</a>
-
-
-
-<a href="..\ntddk\nf-ntddk-rtlrunoncecomplete.md">RtlRunOnceComplete</a>
-
-
-
-<a href="..\ntddk\nf-ntddk-rtlrunonceinitialize.md">RtlRunOnceInitialize</a>

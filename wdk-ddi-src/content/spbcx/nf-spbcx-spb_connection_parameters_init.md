@@ -50,11 +50,11 @@ The <b>SPB_CONNECTION_PARAMETERS_INIT</b> function initializes an  <a href="http
 
 ## Syntax
 
-````
-VOID SPB_CONNECTION_PARAMETERS_INIT(
-  _Out_ SPB_CONNECTION_PARAMETERS *Parameters
+```
+void SPB_CONNECTION_PARAMETERS_INIT(
+  SPB_CONNECTION_PARAMETERS *Parameters
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ Your SPB controller driver must use this function to initialize an <b>SPB_CONNEC
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450926">SpbTargetGetConnectionParameters</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406204">SPB_CONNECTION_PARAMETERS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450926">SpbTargetGetConnectionParameters</a>

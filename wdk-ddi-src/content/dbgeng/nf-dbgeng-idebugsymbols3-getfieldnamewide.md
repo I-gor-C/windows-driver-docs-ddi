@@ -7,7 +7,7 @@ old-location: debugger\getfieldnamewide.htm
 old-project: debugger
 ms.assetid: e27c6af5-c9fa-4fe6-ad39-82ea59a0f27b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetFieldNameWide method [Windows Debugging], GetFieldNameWide method [Windows Debugging], IDebugSymbols3 interface, GetFieldNameWide,IDebugSymbols3.GetFieldNameWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetFieldNameWide method, IDebugSymbols3::GetFieldNameWide, dbgeng/IDebugSymbols3::GetFieldNameWide, debugger.getfieldnamewide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetFieldNameWide method
+# IDebugSymbols3::GetFieldNameWide method
 The <b>GetFieldNameWide</b>  method returns the name of a field within a structure.
 
 ## Syntax
 
-````
+```
 HRESULT GetFieldNameWide(
-  [in]            ULONG64 Module,
-  [in]            ULONG   TypeId,
-  [in]            ULONG   FieldIndex,
-  [out, optional] PWSTR   NameBuffer,
-  [in]            ULONG   NameBufferSize,
-  [out, optional] PULONG  NameSize
+  ULONG64 Module,
+  ULONG   TypeId,
+  ULONG   FieldIndex,
+  PWSTR   NameBuffer,
+  ULONG   NameBufferSize,
+  PULONG  NameSize
 );
-````
+```
 
 ## Parameters
 

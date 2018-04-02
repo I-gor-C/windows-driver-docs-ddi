@@ -7,7 +7,7 @@ old-location: kernel\vpci_write_block_input.htm
 old-project: kernel
 ms.assetid: 57519a7c-7710-4482-82f2-32067b1af22f
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PVPCI_WRITE_BLOCK_INPUT, PVPCI_WRITE_BLOCK_INPUT, PVPCI_WRITE_BLOCK_INPUT structure pointer [Kernel-Mode Driver Architecture], VPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT structure [Kernel-Mode Driver Architecture], _VPCI_WRITE_BLOCK_INPUT, kernel.vpci_write_block_input, vpci/PVPCI_WRITE_BLOCK_INPUT, vpci/VPCI_WRITE_BLOCK_INPUT"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: DISPATCH_LEVEL
+req.irql: 
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -50,13 +50,13 @@ The <b>VPCI_WRITE_BLOCK_INPUT</b> structure is used in an <a href="https://msdn.
 This IOCTL request is issued by the driver of a PCIe  VF on a device that supports the single root I/O virtualization (SR-IOV) interface.
 
 ## Syntax
-````
+```
 typedef struct _VPCI_WRITE_BLOCK_INPUT {
   ULONG BlockId;
   ULONG DataLength;
   UCHAR Data[ANYSIZE_ARRAY];
-} VPCI_WRITE_BLOCK_INPUT, *PVPCI_WRITE_BLOCK_INPUT;
-````
+} *PVPCI_WRITE_BLOCK_INPUT, VPCI_WRITE_BLOCK_INPUT;
+```
 
 ## Members
 
@@ -100,8 +100,8 @@ This operating system runs within the Hyper-V parent partition.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439307">IOCTL_VPCI_WRITE_BLOCK</a>
-
-
-
 <b></b>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439307">IOCTL_VPCI_WRITE_BLOCK</a>

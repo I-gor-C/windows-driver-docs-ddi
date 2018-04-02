@@ -44,20 +44,20 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsNotifyEvent method
+# IKsNotifyEvent::KsNotifyEvent method
 <b>DirectX 9.0 and later versions only.</b>
 
 The <b>KsNotifyEvent</b> method requests that the KS object that owns the given DirectShow event notify the calling application with the given parameters whenever action related to the event occurs.
 
 ## Syntax
 
-````
+```
 HRESULT KsNotifyEvent(
-  [in] ULONG     Event,
-  [in] ULONG_PTR lParam1,
-  [in] ULONG_PTR lParam2
+  ULONG     Event,
+  ULONG_PTR lParam1,
+  ULONG_PTR lParam2
 );
-````
+```
 
 ## Parameters
 

@@ -50,12 +50,12 @@ The WIAS_ASSERT macro writes a diagnostic message to the <i>Wiatrace.log</i> fil
 
 ## Syntax
 
-````
-VOID WIAS_ASSERT(
-   HInst      HInst,
-   Expression Expression
+```
+void WIAS_ASSERT(
+   x,
+   y
 );
-````
+```
 
 ## Parameters
 
@@ -88,12 +88,12 @@ To enable asserts in free builds, drivers must define the WIA_DEBUG macro by add
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wias_trace.md">WIAS_TRACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549565">WIAS_ERROR</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wias_error.md">WIAS_ERROR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549572">WIAS_HRESULT</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wias_hresult.md">WIAS_HRESULT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549619">WIAS_TRACE</a>

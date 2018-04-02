@@ -47,21 +47,21 @@ req.typenames: KSPROPERTY_SELECTOR_S, *PKSPROPERTY_SELECTOR_S
 The KSPROPERTY_SELECTOR_S structure describes filter-based property settings in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567810">PROPSETID_VIDCAP_SELECTOR</a> property set.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_SELECTOR_S {
   KSPROPERTY Property;
-  LONG       Value;
-  ULONG      Flags;
-  ULONG      Capabilities;
-} KSPROPERTY_SELECTOR_S, *PKSPROPERTY_SELECTOR_S;
-````
+  LONG       Value;
+  ULONG      Flags;
+  ULONG      Capabilities;
+} *PKSPROPERTY_SELECTOR_S, KSPROPERTY_SELECTOR_S;
+```
 
 ## Members
 
 
 `Property`
 
-Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.
+Specifies an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff566720">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.
 
 `Value`
 
@@ -83,4 +83,4 @@ Specifies the capabilities of a property. This member has meaning only for Get r
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_selector_node_s.md">KSPROPERTY_SELECTOR_NODE_S</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565217">KSPROPERTY_SELECTOR_NODE_S</a>

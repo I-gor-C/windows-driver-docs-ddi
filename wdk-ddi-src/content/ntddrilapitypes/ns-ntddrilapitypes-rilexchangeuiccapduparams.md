@@ -7,7 +7,7 @@ old-location: netvista\rilexchangeuiccapduparams.htm
 old-project: netvista
 ms.assetid: be77f9e2-acf7-4b59-9a46-abda7c43817b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*LPRILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilexchangeuiccapduparams, ntddrilapitypes/RILEXCHANGEUICCAPDUPARAMS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: RILEXCHANGEUICCAPDUPARAMS, *LPRILEXCHANGEUICCAPDUPARAMS
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef struct _RILEXCHANGEUICCAPDUPARAMS {
-  DWORD    dwSlotIndex;
-  DWORD    dwChannelId;
-  DWORD    dwAPDULength;
-  BYTE [1] bAPDU;
-} RILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS;
-````
+```
+typedef struct RILEXCHANGEUICCAPDUPARAMS {
+  DWORD dwSlotIndex;
+  DWORD dwChannelId;
+  DWORD dwAPDULength;
+  BYTE  bAPDU[1];
+} *LPRILEXCHANGEUICCAPDUPARAMS, RILEXCHANGEUICCAPDUPARAMS;
+```
 
 ## Members
 

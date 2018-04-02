@@ -47,16 +47,16 @@ req.typenames: IPCR, *PIPCR
 The IPCR structure contains initialization values for an input plug.
 
 ## Syntax
-````
+```
 typedef struct _IPCR {
-  ULONG Reserved0  :16;
-  ULONG Channel  :6;
-  ULONG Reserved1  :2;
-  ULONG PPCCounter  :6;
-  ULONG BCCCounter  :1;
-  ULONG OnLine  :1;
+  ULONG  : 16 Reserved0;
+  ULONG  : 6  Channel;
+  ULONG  : 2  Reserved1;
+  ULONG  : 6  PPCCounter;
+  ULONG  : 1  BCCCounter;
+  ULONG  : 1  OnLine;
 } IPCR, *PIPCR;
-````
+```
 
 ## Members
 

@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetImageProperties method
+# IPartImage::GetImageProperties method
 The <b>GetImageProperties</b> method gets an image property that is based on the content type.
 
 ## Syntax
 
-````
+```
 HRESULT GetImageProperties(
-  [out] BSTR *pContentType
+  BSTR *pContentType
 );
-````
+```
 
 ## Parameters
 

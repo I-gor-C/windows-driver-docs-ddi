@@ -47,13 +47,16 @@ req.typenames: SD_REQUEST_FUNCTION
 The SD_REQUEST_FUNCTION enumeration indicates the type of request packet that a Secure Digital (SD) card driver sends to the bus driver.
 
 ## Syntax
-````
-typedef enum  { 
-  SDRF_GET_PROPERTY    = 0,
-  SDRF_SET_PROPERTY    = 1,
-  SDRF_DEVICE_COMMAND  = 2
-} SD_REQUEST_FUNCTION;
-````
+```
+typedef enum SD_REQUEST_FUNCTION {
+  SDRF_GET_PROPERTY    ,
+  SDRF_SET_PROPERTY    ,
+  SDRF_DEVICE_COMMAND  ,
+  SDRF_ERASE_COMMAND   ,
+  SDRF_MMC_SOFT_RESET  ,
+  SDRF_MMC_HPI
+} ;
+```
 
 ## Constants
 
@@ -101,8 +104,8 @@ The caller of the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>
-
-
-
 <a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537909">SdBusSubmitRequest</a>

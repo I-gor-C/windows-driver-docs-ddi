@@ -7,7 +7,7 @@ old-location: kernel\ioallocatemdl.htm
 old-project: kernel
 ms.assetid: c06cb000-837d-4ee9-baa1-0217ad8b14cb
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoAllocateMdl, IoAllocateMdl routine [Kernel-Mode Driver Architecture], k104_8f4336cd-03b0-4ca2-9538-182970594ba3.xml, kernel.ioallocatemdl, wdm/IoAllocateMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,15 +50,15 @@ The <b>IoAllocateMdl</b> routine allocates a memory descriptor list (MDL) large 
 
 ## Syntax
 
-````
-PMDL IoAllocateMdl(
-  _In_opt_    PVOID   VirtualAddress,
-  _In_        ULONG   Length,
-  _In_        BOOLEAN SecondaryBuffer,
-  _In_        BOOLEAN ChargeQuota,
-  _Inout_opt_ PIRP    Irp
+```
+NTKERNELAPI PMDL IoAllocateMdl(
+  __drv_aliasesMem PVOID VirtualAddress,
+  ULONG                  Length,
+  BOOLEAN                SecondaryBuffer,
+  BOOLEAN                ChargeQuota,
+  PIRP                   Irp
 );
-````
+```
 
 ## Parameters
 
@@ -89,7 +89,7 @@ Pointer to an IRP to be associated with the MDL. If the <i>Irp</i> pointer is no
 
 ## Remarks
 
-<b>IoAllocateMdl</b> can be used by a driver that needs to break a buffer into pieces, each mapped by a separate MDL, or to map a driver-allocated buffer. The driver should call <a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a> with the MDL allocated by this call to set up an MDL describing a driver-allocated buffer in nonpaged pool.
+<b>IoAllocateMdl</b> can be used by a driver that needs to break a buffer into pieces, each mapped by a separate MDL, or to map a driver-allocated buffer. The driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff554498">MmBuildMdlForNonPagedPool</a> with the MDL allocated by this call to set up an MDL describing a driver-allocated buffer in nonpaged pool.
 
 The <i>Length</i> parameter specifies the size of the buffer that is to be described by the MDL. In Windows Server 2003, Windows XP, and Windows 2000, the maximum buffer size, in bytes, that this routine can allocate is PAGE_SIZE * (65535 - <b>sizeof</b>(MDL)) / <b>sizeof</b>(ULONG_PTR). In Windows Vista and Windows Server 2008, the maximum buffer size is (2 gigabytes - PAGE_SIZE). In Windows 7 and Windows Server 2008 R2, the maximum buffer size is (4 gigabytes - PAGE_SIZE).
 
@@ -109,12 +109,12 @@ For more information about MDLs, see <a href="https://msdn.microsoft.com/library
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548324">IoBuildPartialMdl</a>
 
 
 
-<a href="..\wdm\nf-wdm-mmbuildmdlfornonpagedpool.md">MmBuildMdlForNonPagedPool</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549126">IoFreeMdl</a>
 
 
 
-<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554498">MmBuildMdlForNonPagedPool</a>

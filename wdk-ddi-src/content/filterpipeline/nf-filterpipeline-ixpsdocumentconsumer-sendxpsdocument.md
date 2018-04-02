@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SendXpsDocument method
+# IXpsDocumentConsumer::SendXpsDocument method
 The <code>SendXpsDocument</code> method sends an XPS document to the pipeline.
 
 ## Syntax
 
-````
+```
 HRESULT SendXpsDocument(
-  [in] IXpsDocument *pIXpsDocument
+  IXpsDocument *pIXpsDocument
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A pointer to the XPS document object to send.
 
 ## Remarks
 
-The <a href="..\filterpipeline\nn-filterpipeline-ixpsdocument.md">IXpsDocument</a> interface is the root for a tree view of an XPS document. The tree also contains one fixed document sequence and any number of fixed documents and fixed pages.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556287">IXpsDocument</a> interface is the root for a tree view of an XPS document. The tree also contains one fixed document sequence and any number of fixed documents and fixed pages.
 
 Only one XpsDocument interface can be sent. The <code>SendXpsDocument</code> method will fail if a filter submits more than one XpsDocument interface for the same print job.
 
@@ -80,8 +80,8 @@ Only one XpsDocument interface can be sent. The <code>SendXpsDocument</code> met
 
 ## See Also
 
-<a href="..\filterpipeline\nn-filterpipeline-ixpsdocumentconsumer.md">IXpsDocumentConsumer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556287">IXpsDocument</a>
 
 
 
-<a href="..\filterpipeline\nn-filterpipeline-ixpsdocument.md">IXpsDocument</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556291">IXpsDocumentConsumer</a>

@@ -44,17 +44,17 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetProperty method
+# IPrintPipelinePropertyBag::GetProperty method
 The <code>GetProperty</code> method gets a property from a property bag.
 
 ## Syntax
 
-````
+```
 HRESULT GetProperty(
-  [in]  const wchar_t *pszName,
-  [out]       VARIANT *pVar
+  const wchar_t *pszName,
+  VARIANT       *pVar
 );
-````
+```
 
 ## Parameters
 

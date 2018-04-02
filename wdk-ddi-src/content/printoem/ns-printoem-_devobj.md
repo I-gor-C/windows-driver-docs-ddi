@@ -48,18 +48,18 @@ req.product: Windows 10 or later.
 The DEVOBJ structure is used as an input argument to several of a rendering plug-in's COM interface methods.
 
 ## Syntax
-````
+```
 typedef struct _DEVOBJ {
-  DWORD     dwSize;
-  PDEVOEM   pdevOEM;
-  HANDLE    hEngine;
-  HANDLE    hPrinter;
-  HANDLE    hOEM;
-  PDEVMODE  pPublicDM;
-  PVOID     pOEMDM;
+  DWORD     dwSize;
+  PDEVOEM   pdevOEM;
+  HANDLE    hEngine;
+  HANDLE    hPrinter;
+  HANDLE    hOEM;
+  PDEVMODE  pPublicDM;
+  PVOID     pOEMDM;
   PDRVPROCS pDrvProcs;
-} DEVOBJ;
-````
+} DEVOBJ, *PDEVOBJ;
+```
 
 ## Members
 
@@ -94,7 +94,7 @@ Pointer to the rendering plug-in's private DEVMODEW structure members. Supplied 
 
 `pDrvProcs`
 
-Not used. In a previous version of the interface, this was a pointer to a <a href="..\printoem\ns-printoem-_drvprocs.md">DRVPROCS</a> structure.
+Not used. In a previous version of the interface, this was a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548571">DRVPROCS</a> structure.
 
 ## Remarks
 The DEVOBJ structure is accessible to graphics DDI hooking functions through the <a href="https://msdn.microsoft.com/library/windows/hardware/ff569901">SURFOBJ</a> structure's <b>dhpdev</b> member. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff554249">IPrintOemUni::EnablePDEV</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff553215">IPrintOemPS::EnablePDEV</a>.
@@ -110,15 +110,15 @@ The DEVOBJ structure is accessible to graphics DDI hooking functions through the
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553215">IPrintOemPS::EnablePDEV</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556181">DrvCompletePDEV</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553215">IPrintOemPS::EnablePDEV</a>
 
 
 

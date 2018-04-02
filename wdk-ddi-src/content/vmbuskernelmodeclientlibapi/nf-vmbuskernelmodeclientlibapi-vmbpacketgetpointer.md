@@ -7,7 +7,7 @@ old-location: netvista\vmbpacketgetpointer.htm
 old-project: netvista
 ms.assetid: 56B9C623-2038-4DD3-AA1B-D9A6E47E06C1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VmbPacketGetPointer, VmbPacketGetPointer function [Network Drivers Starting with Windows Vista], netvista.vmbpacketgetpointer, vmbuskernelmodeclientlibapi/VmbPacketGetPointer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,15 +50,15 @@ req.product: Windows 10 or later.
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 The <b>VmbPacketGetPointer</b> function retrieves a pointer that was previously
-saved by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsetpointer.md">VmbPacketSetPointer</a> function.
+saved by using the <a href="https://msdn.microsoft.com/FFEBEBD0-1FF2-4F27-B028-051B117CA325">VmbPacketSetPointer</a> function.
 
 ## Syntax
 
-````
+```
 PVOID VmbPacketGetPointer(
-  _In_ VMBPACKET PacketObject
+  VMBPACKET PacketObject
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ The handle of a packet object.
 
 ## Return Value
 
-<b>VmbPacketGetPointer</b> returns the value previously saved by using <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsetpointer.md">VmbPacketSetPointer</a>.
+<b>VmbPacketGetPointer</b> returns the value previously saved by using <a href="https://msdn.microsoft.com/FFEBEBD0-1FF2-4F27-B028-051B117CA325">VmbPacketSetPointer</a>.
 
 
 ## Requirements
@@ -84,4 +84,4 @@ The handle of a packet object.
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsetpointer.md">VmbPacketSetPointer</a>
+<a href="https://msdn.microsoft.com/FFEBEBD0-1FF2-4F27-B028-051B117CA325">VmbPacketSetPointer</a>

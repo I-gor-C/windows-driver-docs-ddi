@@ -50,20 +50,20 @@ The <code>OEMStrokeAndFillPath</code> function concurrently strokes and fills a 
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMStrokeAndFillPath(
-   SURFOBJ   *pso,
-   PATHOBJ   *ppo,
-   CLIPOBJ   *pco,
-   XFORMOBJ  *pxo,
-   BRUSHOBJ  *pboStroke,
-   LINEATTRS *plineattrs,
-   BRUSHOBJ  *pboFill,
-   POINTL    *pptlBrushOrg,
-   MIX       mixFill,
-   FLONG     flOptions
+```
+BOOL OEMStrokeAndFillPath(
+  SURFOBJ   *pso,
+  PATHOBJ   *ppo,
+  CLIPOBJ   *pco,
+  XFORMOBJ  *pxo,
+  BRUSHOBJ  *pboStroke,
+  LINEATTRS *plineattrs,
+  BRUSHOBJ  *pboFill,
+  POINTL    *pptlBrushOrg,
+  MIX       mixFill,
+  FLONG     flOptions
 );
-````
+```
 
 ## Parameters
 

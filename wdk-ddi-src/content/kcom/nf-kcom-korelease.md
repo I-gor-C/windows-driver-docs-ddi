@@ -52,11 +52,11 @@ The <b>KoRelease</b> function decrements the reference count for the calling int
 
 ## Syntax
 
-````
+```
 void KoRelease(
-  _In_ REFCLSID ClassId
+  REFCLSID ClassId
 );
-````
+```
 
 ## Parameters
 

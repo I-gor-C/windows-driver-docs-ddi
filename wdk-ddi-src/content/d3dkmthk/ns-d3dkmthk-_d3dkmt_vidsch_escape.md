@@ -7,7 +7,7 @@ old-location: display\d3dkmt_vidsch_escape.htm
 old-project: display
 ms.assetid: 8e19e8a1-0cb6-4d57-862c-2e3a785b949b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_VIDSCH_ESCAPE, D3DKMT_VIDSCH_ESCAPE structure [Display Devices], OpenGL_Structs_d668addb-7c4a-4f07-bf9b-71ccd4a216fa.xml, _D3DKMT_VIDSCH_ESCAPE, d3dkmthk/D3DKMT_VIDSCH_ESCAPE, display.d3dkmt_vidsch_escape
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,36 +46,39 @@ req.typenames: D3DKMT_VIDSCH_ESCAPE
 # _D3DKMT_VIDSCH_ESCAPE structure
 <b>Do not use the D3DKMT_VIDSCH_ESCAPE structure; it is for testing purposes only.</b>
 
-The D3DKMT_VIDSCH_ESCAPE structure describes how to control the graphics processing unit (GPU) scheduler (which is part of Dxgkrnl.sys) in a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a> function.
+The D3DKMT_VIDSCH_ESCAPE structure describes how to control the graphics processing unit (GPU) scheduler (which is part of Dxgkrnl.sys) in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546940">D3DKMTEscape</a> function.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_VIDSCH_ESCAPE {
   D3DKMT_VIDSCHESCAPETYPE Type;
   union {
-    BOOL   PreemptionControl;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WIN8)
-    BOOL   EnableContextDelay;
+    BOOL                              EnableContextDelay;
+    D3DKMT_ESCAPE_PFN_CONTROL_COMMAND PfnControl;
+    BOOL                              PreemptionControl;
+    BOOL                              SuspendScheduler;
+    ULONG                             SuspendTime;
+    ULONG                             TdrControl;
     struct {
       ULONG TdrControl;
       union {
         ULONG NodeOrdinal;
       };
-    } TdrControl2;
-#endif 
-    BOOL   SuspendScheduler;
-    ULONG  TdrControl;
-    ULONG  SuspendTime;
+    } TdrControl2;
+    struct {
+      UINT Count;
+      UINT Time;
+    } TdrLimit;
   };
 } D3DKMT_VIDSCH_ESCAPE;
-````
+```
 
 ## Members
 
 
 `Type`
 
-The escape type, of type <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_vidschescapetype.md">D3DKMT_VIDSCHESCAPETYPE</a>, which is reserved and should not be used in your driver.
+The escape type, of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn914467">D3DKMT_VIDSCHESCAPETYPE</a>, which is reserved and should not be used in your driver.
 
 
 ## Requirements
@@ -86,12 +89,12 @@ The escape type, of type <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_vidschescapety
 
 ## See Also
 
-<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_vidschescapetype.md">D3DKMT_VIDSCHESCAPETYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546940">D3DKMTEscape</a>
 
 
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_escape.md">D3DKMT_ESCAPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547970">D3DKMT_ESCAPE</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtescape.md">D3DKMTEscape</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn914467">D3DKMT_VIDSCHESCAPETYPE</a>

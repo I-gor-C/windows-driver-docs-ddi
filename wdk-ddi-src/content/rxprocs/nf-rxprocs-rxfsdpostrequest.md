@@ -7,7 +7,7 @@ old-location: ifsk\rxfsdpostrequest.htm
 old-project: ifsk
 ms.assetid: 0b1bc248-6b8e-498c-936d-64f6ff9fa183
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxFsdPostRequest, RxFsdPostRequest function [Installable File System Drivers], ifsk.rxfsdpostrequest, rxprocs/RxFsdPostRequest, rxref_ceb83e58-1e5a-49d0-b281-50cd5067e09f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 NTSTATUS RxFsdPostRequest(
-  _In_ PRX_CONTEXT RxContext
+  IN PRX_CONTEXT RxContext
 );
-````
+```
 
 ## Parameters
 
@@ -128,4 +128,4 @@ All calls to <b>RxFsdPostRequest</b> are queued to a worker thread to call the <
 
 ## See Also
 
-<a href="..\mrx\nf-mrx-rxfsddispatch.md">RxFsdDispatch</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554468">RxFsdDispatch</a>

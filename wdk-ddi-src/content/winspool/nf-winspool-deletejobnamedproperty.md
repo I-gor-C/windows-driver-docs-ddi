@@ -51,13 +51,13 @@ Deletes the named property for the specified print job on the specified printer.
 
 ## Syntax
 
-````
- WINAPI DeleteJobNamedProperty(
-  _In_ HANDLE hPrinter,
-  _In_ DWORD  JobId,
-  _In_ PCWSTR pszName
+```
+DWORD DeleteJobNamedProperty(
+  HANDLE hPrinter,
+  DWORD  JobId,
+  PCWSTR pszName
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ A handle to the printer object of interest. Use the <a href="https://msdn.micros
 
 `JobId`
 
-Identifier that specifies the print job. You obtain a print job identifier by calling the <a href="https://msdn.microsoft.com/cfafa874-6022-4bf4-bf3d-096213eb0c98">AddJob</a> function or the <a href="..\printoem\nf-printoem-oemstartdoc.md">StartDoc</a> function.
+Identifier that specifies the print job. You obtain a print job identifier by calling the <a href="https://msdn.microsoft.com/cfafa874-6022-4bf4-bf3d-096213eb0c98">AddJob</a> function or the <a href="https://msdn.microsoft.com/67580632-ff9a-4d29-8e4e-c21f04aa4b47">StartDoc</a> function.
 
 `pszName`
 

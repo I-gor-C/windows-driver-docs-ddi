@@ -7,7 +7,7 @@ old-location: storage\ufs_config_descriptor.htm
 old-project: storage
 ms.assetid: B65A2268-6959-4630-97DA-C0CFD37D9174
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUFS_CONFIG_DESCRIPTOR, PUFS_CONFIG_DESCRIPTOR, PUFS_CONFIG_DESCRIPTOR structure pointer [Storage Devices], UFS_CONFIG_DESCRIPTOR, UFS_CONFIG_DESCRIPTOR structure [Storage Devices], storage.ufs_config_descriptor, ufs/PUFS_CONFIG_DESCRIPTOR, ufs/UFS_CONFIG_DESCRIPTOR"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,22 +48,22 @@ req.product: Windows 10 or later.
 The <b>UFS_CONFIG_DESCRIPTOR</b> structure describes the modifiable values of the default device configuration set by the manufacturer.
 
 ## Syntax
-````
-typedef struct _UFS_CONFIG_DESCRIPTOR {
-  UCHAR                       bLength;
-  UCHAR                       bDescriptorIDN;
-  UCHAR                       Reserved1;
-  UCHAR                       bBootEnable;
-  UCHAR                       bDescrAccessEn;
-  UCHAR                       bInitPowerMode;
-  UCHAR                       bHighPriorityLUN;
-  UCHAR                       bSecureRemovalType;
-  UCHAR                        bInitActiveICCLevel;
-  UCHAR                       wPeriodicRTCUpdate[2];
-  UCHAR                        Reserved2[5];
-   UFS_UNIT_CONFIG_DESCRIPTOR UnitConfig[UFS_MAX_NUM_LU];
-} UFS_CONFIG_DESCRIPTOR, *PUFS_CONFIG_DESCRIPTOR;
-````
+```
+typedef struct UFS_CONFIG_DESCRIPTOR {
+  UCHAR                      bLength;
+  UCHAR                      bDescriptorIDN;
+  UCHAR                      Reserved1;
+  UCHAR                      bBootEnable;
+  UCHAR                      bDescrAccessEn;
+  UCHAR                      bInitPowerMode;
+  UCHAR                      bHighPriorityLUN;
+  UCHAR                      bSecureRemovalType;
+  UCHAR                      bInitActiveICCLevel;
+  UCHAR                      wPeriodicRTCUpdate[2];
+  UCHAR                      Reserved2[5];
+  UFS_UNIT_CONFIG_DESCRIPTOR UnitConfig[UFS_MAX_NUM_LU];
+}  *PUFS_CONFIG_DESCRIPTOR;
+```
 
 ## Members
 
@@ -128,4 +128,4 @@ Contains the configurable parameters of the Unit Descriptor.
 
 ## See Also
 
-<a href="..\ufs\ns-ufs-ufs_unit_config_descriptor.md">UFS_UNIT_CONFIG_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/09CBAD0A-CBDC-464E-908C-BF142D515969">UFS_UNIT_CONFIG_DESCRIPTOR</a>

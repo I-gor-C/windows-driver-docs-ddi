@@ -49,11 +49,13 @@ For system use only.
 
 ## Syntax
 
-````
-  KsValidateAllocatorFramingEx(
-    
+```
+KSDDKAPI NTSTATUS KsValidateAllocatorFramingEx(
+  PKSALLOCATOR_FRAMING_EX      Framing,
+  ULONG                        BufferSize,
+  const KSALLOCATOR_FRAMING_EX *PinFraming
 );
-````
+```
 
 ## Parameters
 

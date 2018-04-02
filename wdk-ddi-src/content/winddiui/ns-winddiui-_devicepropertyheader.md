@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 # _DEVICEPROPERTYHEADER structure
-The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's <a href="..\winddiui\nf-winddiui-drvdevicepropertysheets.md">DrvDevicePropertySheets</a> function.
+The DEVICEPROPERTYHEADER structure is used as an input parameter to a printer interface DLL's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548542">DrvDevicePropertySheets</a> function.
 
 ## Syntax
-````
+```
 typedef struct _DEVICEPROPERTYHEADER {
-  WORD   cbSize;
-  WORD   Flags;
+  WORD   cbSize;
+  WORD   Flags;
   HANDLE hPrinter;
   LPTSTR pszPrinterName;
 } DEVICEPROPERTYHEADER, *PDEVICEPROPERTYHEADER;
-````
+```
 
 ## Members
 

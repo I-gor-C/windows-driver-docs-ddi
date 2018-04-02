@@ -7,7 +7,7 @@ old-location: audio\usbsidebandaudio_ep_shadow_resources.htm
 old-project: audio
 ms.assetid: 56159F97-82CD-4F0A-ADF0-228E876A0266
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES structure pointer [Audio Devices], USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES structure [Audio Devices], _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, audio.usbsidebandaudio_ep_shadow_resources, usbsidebandaudio/PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, usbsidebandaudio/USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ req.product: Windows 10 or later.
 TBD
 
 ## Syntax
-````
+```
 typedef struct _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES {
-  ULONG                                          Reserved 0;
-  ULONG                                          Reserved 1;
-  PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION Reserved 2;
-  LONGLONG                                       Reserved 3;
-} USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES;
-````
+  ULONG                                          CbSize;
+  ULONG                                          CbDataSize;
+  PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_FUNCTION pEpFunctionResources;
+  LONGLONG                                       ShadowResourceBlob;
+} *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES;
+```
 
 ## Members
 

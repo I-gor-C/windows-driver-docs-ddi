@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_UserProperties method
+# IPrinterExtensionContext::get_UserProperties method
 Gets the user property bag for this app.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_UserProperties(
-  [out, retval] IPrinterPropertyBag **ppPropertyBag
+  IPrinterPropertyBag **ppPropertyBag
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406649">IPrinterExtensionContext</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>

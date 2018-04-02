@@ -51,17 +51,17 @@ A print processor's <b>ClosePrintProcessor</b> function completes the printing o
 
 ## Syntax
 
-````
+```
 BOOL ClosePrintProcessor(
-  _Inout_ HANDLE hPrintProcessor
+  HANDLE hPrintProcessor
 );
-````
+```
 
 ## Parameters
 
 `hPrintProcessor`
 
-Caller-supplied print processor handle. This is the handle returned by a previous call to <a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>.
+Caller-supplied print processor handle. This is the handle returned by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff559604">OpenPrintProcessor</a>.
 
 
 ## Return Value
@@ -70,7 +70,7 @@ If the operation succeeds, the function should return <b>TRUE</b>. If the operat
 
 ## Remarks
 
-Print processors are required to export a <b>ClosePrintProcessor</b> function. The spooler calls the function after the print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> returns. The function should free all resources that were allocated by the <a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a> function.
+Print processors are required to export a <b>ClosePrintProcessor</b> function. The spooler calls the function after the print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> returns. The function should free all resources that were allocated by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559604">OpenPrintProcessor</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,8 +81,8 @@ Print processors are required to export a <b>ClosePrintProcessor</b> function. T
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-openprintprocessor.md">OpenPrintProcessor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559604">OpenPrintProcessor</a>
 
 
 
-<a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a>

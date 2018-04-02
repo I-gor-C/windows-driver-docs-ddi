@@ -52,14 +52,14 @@ The <b>WDF_READ_REGISTER_BUFFER_USHORT</b> function reads a number of USHORT val
 
 ## Syntax
 
-````
+```
 void WDF_READ_REGISTER_BUFFER_USHORT(
-  _In_  WDFDEVICE Device,
-  _In_  PUSHORT   Register,
-  _Out_ PUSHORT   Buffer,
-  _In_  ULONG     Count 
+  WDFDEVICE Device,
+  PUSHORT   Register,
+  PUSHORT   Buffer,
+  ULONG     Count
 );
-````
+```
 
 ## Parameters
 

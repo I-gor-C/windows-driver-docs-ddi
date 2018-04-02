@@ -47,12 +47,12 @@ req.typenames: LineDisplayGlyphDefinitionData
 This structure is not implemented.
 
 ## Syntax
-````
+```
 typedef struct _LineDisplayGlyphDefinitionData {
   UINT32 glyphCode;
   UINT32 dataLength;
 } LineDisplayGlyphDefinitionData;
-````
+```
 
 ## Members
 

@@ -47,14 +47,14 @@ req.typenames: KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, *PKSCAMERA_EXTENDEDPROP_FIELDO
 The <i>Field of View Control</i> property describes the current Field of View (FOV) of the camera along with the pitch angle of the camera position.
 
 ## Syntax
-````
-typedef struct _KSCAMERA_EXTENDEDPROP_FIELDOFVIEW {
+```
+typedef struct tagKSCAMERA_EXTENDEDPROP_FIELDOFVIEW {
   ULONG NormalizedFocalLengthX;
   ULONG NormalizedFocalLengthY;
   ULONG Flag;
   ULONG Reserved;
-} KSCAMERA_EXTENDEDPROP_FIELDOFVIEW, *PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW;
-````
+} *PKSCAMERA_EXTENDEDPROP_FIELDOFVIEW, KSCAMERA_EXTENDEDPROP_FIELDOFVIEW;
+```
 
 ## Members
 

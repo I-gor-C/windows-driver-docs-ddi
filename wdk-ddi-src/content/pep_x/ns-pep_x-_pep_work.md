@@ -7,7 +7,7 @@ old-location: kernel\pep_work.htm
 old-project: kernel
 ms.assetid: 7C6ACFDD-809E-4E75-8E4D-8A4E0207593E
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPEP_WORK, PEP_WORK, PEP_WORK structure [Kernel-Mode Driver Architecture], PPEP_WORK, PPEP_WORK structure pointer [Kernel-Mode Driver Architecture], _PEP_WORK, kernel.pep_work, pepfx/PEP_WORK, pepfx/PPEP_WORK"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,19 +47,19 @@ req.typenames: PEP_WORK, *PPEP_WORK, PEP_WORK, *PPEP_WORK
 The <b>PEP_WORK</b> structure indicates whether the PEP has a work request to submit to the Windows <a href="https://msdn.microsoft.com/9F2D8ACD-44D5-46E0-9FC7-1B38B99450FF">power management framework</a> (PoFx).
 
 ## Syntax
-````
+```
 typedef struct _PEP_WORK {
   PPEP_WORK_INFORMATION WorkInformation;
-  BOOLEAN               NeedWork;
-} PEP_WORK, *PPEP_WORK;
-````
+  BOOLEAN               NeedWork;
+} *PPEP_WORK, PEP_WORK;
+```
 
 ## Members
 
 
 `WorkInformation`
 
-[out] A pointer to a PEP-allocated <a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a> structure that describes the work that the PEP is requesting. If <b>NeedWork</b> is TRUE, <b>WorkInformation</b> must point to a valid <b>PEP_WORK_INFORMATION</b> structure. If <b>NeedWork</b> is FALSE, <b>WorkInformation</b> must be NULL.
+[out] A pointer to a PEP-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt186864">PEP_WORK_INFORMATION</a> structure that describes the work that the PEP is requesting. If <b>NeedWork</b> is TRUE, <b>WorkInformation</b> must point to a valid <b>PEP_WORK_INFORMATION</b> structure. If <b>NeedWork</b> is FALSE, <b>WorkInformation</b> must be NULL.
 
 `NeedWork`
 
@@ -76,8 +76,8 @@ This structure is used by the <a href="https://docs.microsoft.com/en-us/windows-
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_work_information.md">PEP_WORK_INFORMATION</a>
-
-
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/using-peps-for-acpi-services">PEP_DPM_WORK</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186864">PEP_WORK_INFORMATION</a>

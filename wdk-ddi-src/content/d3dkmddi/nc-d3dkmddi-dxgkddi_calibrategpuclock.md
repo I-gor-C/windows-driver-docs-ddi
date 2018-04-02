@@ -7,7 +7,7 @@ old-location: display\dxgkddicalibrategpuclock.htm
 old-project: display
 ms.assetid: AF912508-D6EF-450D-AEC3-47D1C44D0DA0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKDDI_CALIBRATEGPUCLOCK, DxgkDdiCalibrateGpuClock, DxgkDdiCalibrateGpuClock callback function [Display Devices], d3dkmddi/DxgkDdiCalibrateGpuClock, display.dxgkddicalibrategpuclock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 
 
 # DXGKDDI_CALIBRATEGPUCLOCK callback function
-Called by the  Microsoft DirectX graphics kernel subsystem to calibrate the GPU time stamps in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_history_buffer.md">DXGK_HISTORY_BUFFER</a> history buffer with the CPU clock time.
+Called by the  Microsoft DirectX graphics kernel subsystem to calibrate the GPU time stamps in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn439361">DXGK_HISTORY_BUFFER</a> history buffer with the CPU clock time.
 
 ## Syntax
 
@@ -67,7 +67,7 @@ NTSTATUS DxgkddiCalibrategpuclock(
 
 A handle to the adapter object for the GPU for which timing calibration info is to be obtained. 
 
-The display miniport driver previously provided this handle to the DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function.
+The display miniport driver previously provided this handle to the DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="https://msdn.microsoft.com/5fd4046f-54c3-4dfc-8d51-0d9ebcde0bea">DxgkDdiAddDevice</a> function.
 
 `NodeOrdinal`
 
@@ -105,12 +105,12 @@ The DirectX graphics kernel subsystem calls this function often enough, typicall
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_history_buffer.md">DXGK_HISTORY_BUFFER</a>
-
-
-
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn467320">DXGKARG_CALIBRATEGPUCLOCK</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn439361">DXGK_HISTORY_BUFFER</a>
+
+
+
+<a href="https://msdn.microsoft.com/5fd4046f-54c3-4dfc-8d51-0d9ebcde0bea">DxgkDdiAddDevice</a>

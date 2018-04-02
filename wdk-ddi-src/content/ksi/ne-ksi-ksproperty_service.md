@@ -47,12 +47,12 @@ req.typenames: KSPROPERTY_SERVICE
 
 
 ## Syntax
-````
-typedef enum  { 
-  KSPROPERTY_SERVICE_BUILDCACHE,
+```
+typedef enum KSPROPERTY_SERVICE {
+  KSPROPERTY_SERVICE_BUILDCACHE  ,
   KSPROPERTY_SERVICE_MERIT
-} KSPROPERTY_SERVICE;
-````
+} ;
+```
 
 ## Constants
 

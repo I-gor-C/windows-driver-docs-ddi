@@ -21,10 +21,10 @@ req.kmdf-ver:
 req.umdf-ver: 
 req.ddi-compliance: 
 req.unicode-ansi: 
-req.idl: 
+req.idl: WDTFSystemAction.idl
 req.max-support: 
-req.namespace: 
-req.assembly: 
+req.namespace: Microsoft.WDTF
+req.assembly: WDTFSystemAction.Interop.dll
 req.type-library: 
 req.lib: 
 req.dll: 
@@ -48,17 +48,17 @@ req.product: Windows 10 or later.
 The DEVICEDIALOGDATA structure contains all the data needed to implement a custom device dialog.
 
 ## Syntax
-````
+```
 typedef struct tagDEVICEDIALOGDATA {
-  DWORD    cbSize;
-  HWND     hwndParent;
+  DWORD    cbSize;
+  HWND     hwndParent;
   IWiaItem *pIWiaItemRoot;
-  DWORD    dwFlags;
-  LONG     lIntent;
-  LONG     lItemCount;
+  DWORD    dwFlags;
+  LONG     lIntent;
+  LONG     lItemCount;
   IWiaItem **ppWiaItems;
-} DEVICEDIALOGDATA, *LPDEVICEDIALOGDATA, *PDEVICEDIALOGDATA;
-````
+} *PDEVICEDIALOGDATA, *LPDEVICEDIALOGDATA, DEVICEDIALOGDATA;
+```
 
 ## Members
 

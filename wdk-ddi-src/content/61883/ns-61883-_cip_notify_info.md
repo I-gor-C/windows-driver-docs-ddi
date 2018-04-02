@@ -47,13 +47,13 @@ req.typenames: CIP_NOTIFY_INFO, *PCIP_NOTIFY_INFO
 The CIP_NOTIFY_INFO structure contains information about the frame.
 
 ## Syntax
-````
+```
 typedef struct _CIP_NOTIFY_INFO {
-  HANDLE     hConnect;
-  PVOID      Context;
+  HANDLE     hConnect;
+  PVOID      Context;
   PCIP_FRAME Frame;
-} CIP_NOTIFY_INFO, *PCIP_NOTIFY_INFO;
-````
+} *PCIP_NOTIFY_INFO, CIP_NOTIFY_INFO;
+```
 
 ## Members
 

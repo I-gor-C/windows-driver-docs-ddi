@@ -47,23 +47,25 @@ req.typenames: KSSTREAM_POINTER_OFFSET, *PKSSTREAM_POINTER_OFFSET
 The KSSTREAM_POINTER_OFFSET structure indexes bytes or mappings within a frame.
 
 ## Syntax
-````
+```
 typedef struct _KSSTREAM_POINTER_OFFSET {
   union {
-    PUCHAR     Data;
+    PUCHAR     Data;
     PKSMAPPING Mappings;
   };
-  ULONG Count;
-  ULONG Remaining;
+  PUCHAR Data;
+  PVOID  Alignment;
+  ULONG  Count;
+  ULONG  Remaining;
 } KSSTREAM_POINTER_OFFSET, *PKSSTREAM_POINTER_OFFSET;
-````
+```
 
 ## Members
 
 
 `Data`
 
-A pointer to a buffer containing input data or a buffer to which data is to be output. Specify <b>Data</b> if the minidriver does not set the KSPIN_FLAG_GENERATE_MAPPINGS flag in the <b>Flags</b> member of <a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>.
+A pointer to a buffer containing input data or a buffer to which data is to be output. Specify <b>Data</b> if the minidriver does not set the KSPIN_FLAG_GENERATE_MAPPINGS flag in the <b>Flags</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563534">KSPIN_DESCRIPTOR_EX</a>.
 
 `Alignment`
 
@@ -88,8 +90,8 @@ See also <a href="https://msdn.microsoft.com/ba1c525b-26b0-4778-b58b-f4169cfb972
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksmapping.md">KSMAPPING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563394">KSMAPPING</a>
 
 
 
-<a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a>

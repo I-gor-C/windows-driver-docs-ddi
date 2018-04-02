@@ -7,7 +7,7 @@ old-location: ifsk\fltqueryquotainformationfile.htm
 old-project: ifsk
 ms.assetid: B460BE83-7050-469A-9AD6-68A47F03EB4B
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltQueryQuotaInformationFile, FltQueryQuotaInformationFile function [Installable File System Drivers], fltkernel/FltQueryQuotaInformationFile, ifsk.fltqueryquotainformationfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,21 +49,21 @@ The <b>FltQueryQuotaInformationFile</b> routine retrieves quota entries associat
 
 ## Syntax
 
-````
-NTSTATUS FltQueryQuotaInformationFile(
-  _In_      PFLT_INSTANCE    Instance,
-  _In_      PFILE_OBJECT     FileObject,
-  _Out_     PIO_STATUS_BLOCK IoStatusBlock,
-  _Out_     PVOID            Buffer,
-  _In_      ULONG            Length,
-  _In_      BOOLEAN          ReturnSingleEntry,
-  _In_opt_  PVOID            SidList,
-  _In_      ULONG            SidListLength,
-  _In_opt_  PULONG           StartSid,
-  _In_      BOOLEAN          RestartScan,
-  _Out_opt_ PULONG           LengthReturned
+```
+NTSTATUS FLTAPI FltQueryQuotaInformationFile(
+  PFLT_INSTANCE    Instance,
+  PFILE_OBJECT     FileObject,
+  PIO_STATUS_BLOCK IoStatusBlock,
+  PVOID            Buffer,
+  ULONG            Length,
+  BOOLEAN          ReturnSingleEntry,
+  PVOID            SidList,
+  ULONG            SidListLength,
+  PULONG           StartSid,
+  BOOLEAN          RestartScan,
+  PULONG           LengthReturned
 );
-````
+```
 
 ## Parameters
 
@@ -81,7 +81,7 @@ A caller-supplied <b>IO_STATUS_BLOCK</b> to receive the result of the call to <b
 
 `Buffer`
 
-A pointer to a caller-supplied <a href="..\ntifs\ns-ntifs-_file_get_ea_information.md"> FILE_GET_QUOTA_INFORMATION</a>-structured input buffer where the quota information values are to be returned.
+A pointer to a caller-supplied <a href="https://msdn.microsoft.com/2abaf505-b890-43b6-a277-d930417bdcb8"> FILE_GET_QUOTA_INFORMATION</a>-structured input buffer where the quota information values are to be returned.
 
 `Length`
 
@@ -93,7 +93,7 @@ Set to <b>TRUE</b> if <b>FltQueryQuotaInformationFile</b> should return only the
 
 `SidList`
 
-A pointer to a caller-supplied <a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>-structured input buffer that specifies the quota information to be queried. This parameter is optional and can be <b>NULL</b>.
+A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff540298">FILE_GET_QUOTA_INFORMATION</a>-structured input buffer that specifies the quota information to be queried. This parameter is optional and can be <b>NULL</b>.
 
 `SidListLength`
 
@@ -147,12 +147,12 @@ The instance or volume is being torn down. This is an error code.
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540298">FILE_GET_QUOTA_INFORMATION</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-zwqueryquotainformationfile.md">ZwQueryQuotaInformationFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451042">FltSetQuotaInformationFile</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltsetquotainformationfile.md">FltSetQuotaInformationFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567064">ZwQueryQuotaInformationFile</a>

@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a> function uses a PORT_DATA_1 structure when it adds a port or configures an existing port.
 
 ## Syntax
-````
+```
 typedef struct _PORT_DATA_1 {
   WCHAR sztPortName[MAX_PORTNAME_LEN];
   DWORD dwVersion;
@@ -60,12 +60,12 @@ typedef struct _PORT_DATA_1 {
   DWORD dwDoubleSpool;
   WCHAR sztQueue[MAX_QUEUENAME_LEN];
   WCHAR sztIPAddress[MAX_IPADDR_STR_LEN];
-  BYTE  Reserved[540];
+  BYTE  Reserved[540];
   DWORD dwPortNumber;
   DWORD dwSNMPEnabled;
   DWORD dwSNMPDevIndex;
 } PORT_DATA_1, *PPORT_DATA_1;
-````
+```
 
 ## Members
 

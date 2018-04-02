@@ -50,27 +50,27 @@ The<b> KsPinRegisterPowerCallbacks </b>function registers power management callb
 
 ## Syntax
 
-````
+```
 void KsPinRegisterPowerCallbacks(
-  _In_     PKSPIN        Pin,
-  _In_opt_ PFNKSPINPOWER Sleep,
-  _In_opt_ PFNKSPINPOWER Wake
+  PKSPIN        Pin,
+  PFNKSPINPOWER Sleep,
+  PFNKSPINPOWER Wake
 );
-````
+```
 
 ## Parameters
 
 `Pin`
 
-A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which to register power callbacks. Note that the pin must actually process (be pin-centric) in order to receive power notification messages.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure for which to register power callbacks. Note that the pin must actually process (be pin-centric) in order to receive power notification messages.
 
 `Sleep`
 
-This parameter supplies the address of a <a href="..\ks\nc-ks-pfnkspinpower.md">AVStrMiniPinPower</a>  function that handles sleep requests for the device. Optional.
+This parameter supplies the address of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556345">AVStrMiniPinPower</a>  function that handles sleep requests for the device. Optional.
 
 `Wake`
 
-This parameter supplies the address of a <a href="..\ks\nc-ks-pfnkspinpower.md">AVStrMiniPinPower</a>  function that handles wake requests for the device. Optional.
+This parameter supplies the address of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556345">AVStrMiniPinPower</a>  function that handles wake requests for the device. Optional.
 
 
 ## Return Value
@@ -93,8 +93,8 @@ At least one of the callbacks must be specified when calling <b>KsPinRegisterPow
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfilterregisterpowercallbacks.md">KsFilterRegisterPowerCallbacks</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556345">AVStrMiniPinPower</a>
 
 
 
-<a href="..\ks\nc-ks-pfnkspinpower.md">AVStrMiniPinPower</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562550">KsFilterRegisterPowerCallbacks</a>

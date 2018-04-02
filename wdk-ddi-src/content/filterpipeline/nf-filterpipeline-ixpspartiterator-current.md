@@ -44,17 +44,17 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# Current method
+# IXpsPartIterator::Current method
 The <code>Current</code> method provides the current URI and part.
 
 ## Syntax
 
-````
+```
 HRESULT Current(
-  [out] BSTR     *pUri,
-  [out] IUnknown **ppXpsPart
+  BSTR     *pUri,
+  IUnknown **ppXpsPart
 );
-````
+```
 
 ## Parameters
 

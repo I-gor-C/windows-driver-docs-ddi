@@ -7,7 +7,7 @@ old-location: ifsk\file_both_dir_information.htm
 old-project: ifsk
 ms.assetid: 892b8eda-0b8e-40ab-940b-a0a423aaa5b8
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: "*PFILE_BOTH_DIR_INFORMATION, FILE_BOTH_DIR_INFORMATION, FILE_BOTH_DIR_INFORMATION structure [Installable File System Drivers], PFILE_BOTH_DIR_INFORMATION, PFILE_BOTH_DIR_INFORMATION structure pointer [Installable File System Drivers], _FILE_BOTH_DIR_INFORMATION, fileinformationstructures_6e3069a3-7938-4c57-b741-594c3b70a986.xml, ifsk.file_both_dir_information, ntifs/FILE_BOTH_DIR_INFORMATION, ntifs/PFILE_BOTH_DIR_INFORMATION"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,24 +47,24 @@ req.typenames: FILE_BOTH_DIR_INFORMATION, *PFILE_BOTH_DIR_INFORMATION
 The FILE_BOTH_DIR_INFORMATION structure is used to query detailed information for the files in a directory.
 
 ## Syntax
-````
+```
 typedef struct _FILE_BOTH_DIR_INFORMATION {
-  ULONG         NextEntryOffset;
-  ULONG         FileIndex;
+  ULONG         NextEntryOffset;
+  ULONG         FileIndex;
   LARGE_INTEGER CreationTime;
   LARGE_INTEGER LastAccessTime;
   LARGE_INTEGER LastWriteTime;
   LARGE_INTEGER ChangeTime;
   LARGE_INTEGER EndOfFile;
   LARGE_INTEGER AllocationSize;
-  ULONG         FileAttributes;
-  ULONG         FileNameLength;
-  ULONG         EaSize;
-  CCHAR         ShortNameLength;
-  WCHAR         ShortName[12];
-  WCHAR         FileName[1];
+  ULONG         FileAttributes;
+  ULONG         FileNameLength;
+  ULONG         EaSize;
+  CCHAR         ShortNameLength;
+  WCHAR         ShortName[12];
+  WCHAR         FileName[1];
 } FILE_BOTH_DIR_INFORMATION, *PFILE_BOTH_DIR_INFORMATION;
-````
+```
 
 ## Members
 
@@ -149,7 +149,7 @@ This information can be queried in either of the following ways:
 
 <ul>
 <li>
-Call <a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>, passing FileBothDirectoryInformation as the value of <i>FileInformationClass</i> and passing a caller-allocated, FILE_BOTH_DIR_INFORMATION-structured buffer as the value of <i>FileInformation</i>. 
+Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567047">ZwQueryDirectoryFile</a>, passing FileBothDirectoryInformation as the value of <i>FileInformationClass</i> and passing a caller-allocated, FILE_BOTH_DIR_INFORMATION-structured buffer as the value of <i>FileInformation</i>. 
 
 </li>
 <li>
@@ -170,12 +170,12 @@ This structure must be aligned on a LONGLONG (8-byte) boundary. If a buffer cont
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547026">FsRtlNotifyFullChangeDirectory</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548658">IRP_MJ_DIRECTORY_CONTROL</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-zwquerydirectoryfile.md">ZwQueryDirectoryFile</a>
-
-
-
-<a href="..\rxprocs\nf-rxprocs-fsrtlnotifyfullchangedirectory.md">FsRtlNotifyFullChangeDirectory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567047">ZwQueryDirectoryFile</a>

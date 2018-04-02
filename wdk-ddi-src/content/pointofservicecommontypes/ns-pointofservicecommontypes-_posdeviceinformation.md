@@ -47,7 +47,7 @@ req.typenames: PosDeviceInformation
 This structure provides device information as defined in and required by the Unified Point of Service (UPOS) standard.
 
 ## Syntax
-````
+```
 typedef struct _PosDeviceInformation {
   wchar_t UnifiedPOSVersion[STATISTICS_STRING_SIZE];
   wchar_t DeviceCategory[STATISTICS_STRING_SIZE];
@@ -60,7 +60,7 @@ typedef struct _PosDeviceInformation {
   wchar_t Interface[STATISTICS_STRING_SIZE];
   wchar_t InstallationDate[STATISTICS_STRING_SIZE];
 } PosDeviceInformation;
-````
+```
 
 ## Members
 

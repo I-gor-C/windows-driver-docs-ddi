@@ -7,7 +7,7 @@ old-location: storage\ioctl_aacs_read_serial_number.htm
 old-project: storage
 ms.assetid: 258224d7-adc1-4002-8c90-4487134dbfd7
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_AACS_READ_SERIAL_NUMBER, IOCTL_AACS_READ_SERIAL_NUMBER control code [Storage Devices], k307_039c336e-5b51-4a22-83bc-1b28d5ba5a33.xml, ntddcdvd/IOCTL_AACS_READ_SERIAL_NUMBER, storage.ioctl_aacs_read_serial_number
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,10 +56,10 @@ The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a value of type
 Length of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553743">DVD_SESSION_ID</a>.
 
 ### Output Buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the value of type <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_serial_number.md">AACS_SERIAL_NUMBER</a> that specifies the volume ID.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff550115">AACS_SERIAL_NUMBER</a> that specifies the volume ID.
 
 ### Output Buffer Length
-Length of a <a href="..\ntddcdvd\ns-ntddcdvd-_aacs_serial_number.md">AACS_SERIAL_NUMBER</a>.
+Length of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff550115">AACS_SERIAL_NUMBER</a>.
 
 ### Input / Output Buffer
 <text></text>

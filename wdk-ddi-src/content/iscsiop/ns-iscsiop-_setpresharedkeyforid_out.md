@@ -7,7 +7,7 @@ old-location: storage\setpresharedkeyforid_out.htm
 old-project: storage
 ms.assetid: 839041be-bb8c-4e02-a260-e9adcec98ff3
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSetPresharedKeyForId_OUT, PSetPresharedKeyForId_OUT, PSetPresharedKeyForId_OUT structure pointer [Storage Devices], SetPresharedKeyForId_OUT, SetPresharedKeyForId_OUT structure [Storage Devices], _SetPresharedKeyForId_OUT, iscsiop/PSetPresharedKeyForId_OUT, iscsiop/SetPresharedKeyForId_OUT, storage.setpresharedkeyforid_out, structs-iSCSI_c0146684-fe9e-4bca-81d2-2a09b554d006.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,11 +47,11 @@ req.typenames: SetPresharedKeyForId_OUT, *PSetPresharedKeyForId_OUT
 The SetPresharedKeyForId_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565800">SetPresharedKeyForId</a> method.
 
 ## Syntax
-````
+```
 typedef struct _SetPresharedKeyForId_OUT {
   ULONG Status;
 } SetPresharedKeyForId_OUT, *PSetPresharedKeyForId_OUT;
-````
+```
 
 ## Members
 
@@ -74,8 +74,8 @@ You must implement this method.
 
 
 
-<a href="..\iscsiop\ns-iscsiop-_setpresharedkeyforid_in.md">SetPresharedKeyForId_IN</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565800">SetPresharedKeyForId</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565806">SetPresharedKeyForId_IN</a>

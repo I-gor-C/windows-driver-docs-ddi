@@ -45,28 +45,28 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetOptions method
+# IPrintCorePS2::GetOptions method
 The <code>IPrintCorePS2::GetOptions</code> method retrieves the driver's current feature settings in the format of a list of feature/option keyword pairs.
 
 ## Syntax
 
-````
+```
 HRESULT GetOptions(
-  [in]  PDEVOBJ pdevobj,
-  [in]  DWORD   dwFlags,
-  [in]  PCSTR   pmszFeaturesRequested,
-  [in]  DWORD   cbIn,
-  [out] PSTR    pmszFeatureOptionBuf,
-  [in]  DWORD   cbSize,
-  [out] PDWORD  pcbNeeded
+  PDEVOBJ pdevobj,
+  DWORD   dwFlags,
+  PCZZSTR pmszFeaturesRequested,
+  DWORD   cbIn,
+  PZZSTR  pmszFeatureOptionBuf,
+  DWORD   cbSize,
+  PDWORD  pcbNeeded
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `dwFlags`
 
@@ -183,15 +183,15 @@ For more information, see <a href="https://msdn.microsoft.com/c8b5c235-0b74-47c8
 
 ## See Also
 
-<a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553215">IPrintOemPS::EnablePDEV</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a>
 
 
 
-<a href="..\prcomoem\nn-prcomoem-iprintcoreps2.md">IPrintCorePS2</a>
+<a href="https://msdn.microsoft.com/bf7e15df-49ba-4850-acf6-dab5dc137f48">IPrintCorePS2</a>
 
 
 
@@ -199,4 +199,4 @@ For more information, see <a href="https://msdn.microsoft.com/c8b5c235-0b74-47c8
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556211">DrvEnablePDEV</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553215">IPrintOemPS::EnablePDEV</a>

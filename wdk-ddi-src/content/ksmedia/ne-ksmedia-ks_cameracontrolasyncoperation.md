@@ -47,13 +47,13 @@ req.typenames: KS_CameraControlAsyncOperation
 Defines notifications that the driver uses to start and stop an asynchronous camera operation, including setting the flash, the image pin control properties, the region of interest in the image, or video stabilization.
 
 ## Syntax
-````
-typedef enum  { 
-  KS_CAMERACONTROL_ASYNC_START  = 0x0001,
-  KS_CAMERACONTROL_ASYNC_STOP   = 0x0002,
-  KS_CAMERACONTROL_ASYNC_RESET  = 0x0003
-} KS_CameraControlAsyncOperation;
-````
+```
+typedef enum KS_CameraControlAsyncOperation {
+  KS_CAMERACONTROL_ASYNC_START  ,
+  KS_CAMERACONTROL_ASYNC_STOP   ,
+  KS_CAMERACONTROL_ASYNC_RESET
+} ;
+```
 
 ## Constants
 
@@ -77,7 +77,7 @@ typedef enum  {
 
 ## Remarks
 
-For more information, see <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s_ex.md">KSPROPERTY_CAMERACONTROL_S_EX</a>.
+For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/jj151593">KSPROPERTY_CAMERACONTROL_S_EX</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,4 +87,4 @@ For more information, see <a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontro
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_cameracontrol_s_ex.md">KSPROPERTY_CAMERACONTROL_S_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj151593">KSPROPERTY_CAMERACONTROL_S_EX</a>

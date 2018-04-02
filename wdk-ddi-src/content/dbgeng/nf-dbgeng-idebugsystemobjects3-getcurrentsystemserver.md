@@ -7,7 +7,7 @@ old-location: debugger\idebugsystemobjects3_getcurrentsystemserver.htm
 old-project: debugger
 ms.assetid: 7956E4F6-7FB5-4349-81D2-4953108557D2
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetCurrentSystemServer method [Windows Debugging], GetCurrentSystemServer method [Windows Debugging], IDebugSystemObjects3 interface, GetCurrentSystemServer,IDebugSystemObjects3.GetCurrentSystemServer, IDebugSystemObjects3, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentSystemServer method, IDebugSystemObjects3::GetCurrentSystemServer, dbgeng/IDebugSystemObjects3::GetCurrentSystemServer, debugger.idebugsystemobjects3_getcurrentsystemserver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetCurrentSystemServer method
+# IDebugSystemObjects3::GetCurrentSystemServer method
 Gets the server for the current process.
 
 ## Syntax
 
-````
+```
 HRESULT GetCurrentSystemServer(
-  [out] PULONG64 Server
+  PULONG64 Server
 );
-````
+```
 
 ## Parameters
 
@@ -97,4 +97,4 @@ The method was successful.
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550892">IDebugSystemObjects3</a>

@@ -53,11 +53,11 @@ The <b>KsDereferenceSoftwareBusObject</b> function decrements the reference coun
 
 ## Syntax
 
-````
-VOID KsDereferenceSoftwareBusObject(
-  _In_ KSDEVICE_HEADER Header
+```
+KSDDKAPI VOID KsDereferenceSoftwareBusObject(
+  KSDEVICE_HEADER Header
 );
-````
+```
 
 ## Parameters
 
@@ -85,12 +85,12 @@ When the demand-load bus enumerator object's PDO reference count is 0, it become
 
 ## See Also
 
-<a href="..\swenum\nf-swenum-ksreferencesoftwarebusobject.md">KsReferenceSoftwareBusObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557589">BUS_INTERFACE_SWENUM</a>
 
 
 
-<a href="..\swenum\ns-swenum-_bus_interface_swenum.md">BUS_INTERFACE_SWENUM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566749">KsQuerySoftwareBusInterface</a>
 
 
 
-<a href="..\swenum\nf-swenum-ksquerysoftwarebusinterface.md">KsQuerySoftwareBusInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566763">KsReferenceSoftwareBusObject</a>

@@ -7,7 +7,7 @@ old-location: netvista\vmbserverchannelinitsetflags.htm
 old-project: netvista
 ms.assetid: F6DBD055-8B6F-4B2B-B584-3C06979DD6DF
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VmbServerChannelInitSetFlags, VmbServerChannelInitSetFlags function [Network Drivers Starting with Windows Vista], netvista.vmbserverchannelinitsetflags, vmbuskernelmodeclientlibapi/VmbServerChannelInitSetFlags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,12 +52,12 @@ The <b>VmbServerChannelInitSetFlags</b> function sets flags unique to server cha
 
 ## Syntax
 
-````
+```
 NTSTATUS VmbServerChannelInitSetFlags(
-  _In_ VMBCHANNEL Channel,
-  _In_ UINT32     Flags
+  VMBCHANNEL Channel,
+  UINT32     Flags
 );
-````
+```
 
 ## Parameters
 

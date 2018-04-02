@@ -47,14 +47,14 @@ req.typenames: KSCAMERA_EXTENDEDPROP_CAMERAOFFSET, *PKSCAMERA_EXTENDEDPROP_CAMER
 The <b>KSCAMERA_EXTENDEDPROP_CAMERAOFFSET</b> structure contains the parameters for the <i>Camera Angle Offset Control</i> property. The members contain read-only values for the pitch and yaw angle of the camera position.  The pitch/yaw angle is defined to be an offset from horizontal and vertical axis.
 
 ## Syntax
-````
-typedef struct _KSCAMERA_EXTENDEDPROP_CAMERAOFFSET {
-  LONG  PitchAngle;
-  LONG  YawAngle;
+```
+typedef struct tagKSCAMERA_EXTENDEDPROP_CAMERAOFFSET {
+  LONG  PitchAngle;
+  LONG  YawAngle;
   ULONG Flag;
   ULONG Reserved;
-} KSCAMERA_EXTENDEDPROP_CAMERAOFFSET, *PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET;
-````
+} *PKSCAMERA_EXTENDEDPROP_CAMERAOFFSET, KSCAMERA_EXTENDEDPROP_CAMERAOFFSET;
+```
 
 ## Members
 
@@ -84,8 +84,8 @@ Reserved. Set to 0.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn567563">KSCAMERA_EXTENDEDPROP_HEADER</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn567571">KSPROPERTY_CAMERACONTROL_EXTENDED_CAMERAANGLEOFFSET</a>
-
-
-
-<a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_header.md">KSCAMERA_EXTENDEDPROP_HEADER</a>

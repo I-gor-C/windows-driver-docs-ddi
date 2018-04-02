@@ -7,7 +7,7 @@ old-location: netvista\ndis_arp_header_field.htm
 old-project: netvista
 ms.assetid: 63DA6329-C673-48A0-8E36-67035E2DB4C9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_ARP_HEADER_FIELD, NDIS_ARP_HEADER_FIELD, NDIS_ARP_HEADER_FIELD enumeration [Network Drivers Starting with Windows Vista], NdisARPHeaderFieldMaximum, NdisARPHeaderFieldOperation, NdisARPHeaderFieldSPA, NdisARPHeaderFieldTPA, NdisARPHeaderFieldUndefined, PNDIS_ARP_HEADER_FIELD, PNDIS_ARP_HEADER_FIELD enumeration pointer [Network Drivers Starting with Windows Vista], _NDIS_ARP_HEADER_FIELD, netvista.ndis_arp_header_field, ntddndis/NDIS_ARP_HEADER_FIELD, ntddndis/NdisARPHeaderFieldMaximum, ntddndis/NdisARPHeaderFieldOperation, ntddndis/NdisARPHeaderFieldSPA, ntddndis/NdisARPHeaderFieldTPA, ntddndis/NdisARPHeaderFieldUndefined, ntddndis/PNDIS_ARP_HEADER_FIELD"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: NDIS_ARP_HEADER_FIELD, *PNDIS_ARP_HEADER_FIELD
 The <b>NDIS_ARP_HEADER_FIELD</b> enumeration identifies the type of a field in an Address Resolution Protocol (ARP) header.
 
 ## Syntax
-````
-typedef enum _NDIS_ARP_HEADER_FIELD { 
-  NdisARPHeaderFieldUndefined,
-  NdisARPHeaderFieldOperation,
-  NdisARPHeaderFieldSPA,
-  NdisARPHeaderFieldTPA,
+```
+typedef enum _NDIS_ARP_HEADER_FIELD {
+  NdisARPHeaderFieldUndefined  ,
+  NdisARPHeaderFieldOperation  ,
+  NdisARPHeaderFieldSPA        ,
+  NdisARPHeaderFieldTPA        ,
   NdisARPHeaderFieldMaximum
-} NDIS_ARP_HEADER_FIELD, *PNDIS_ARP_HEADER_FIELD;
-````
+} *PNDIS_ARP_HEADER_FIELD, NDIS_ARP_HEADER_FIELD;
+```
 
 ## Constants
 
@@ -91,7 +91,7 @@ typedef enum _NDIS_ARP_HEADER_FIELD {
 ## Remarks
 
 The <b>NDIS_ARP_HEADER_FIELD</b> enumeration is used in the 
-    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+    <a href="https://msdn.microsoft.com/3d387fe9-a7cc-4034-b31e-ba1359db2ae1">
     NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
 
 ## Requirements
@@ -102,5 +102,5 @@ The <b>NDIS_ARP_HEADER_FIELD</b> enumeration is used in the
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+<a href="https://msdn.microsoft.com/3d387fe9-a7cc-4034-b31e-ba1359db2ae1">
    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>

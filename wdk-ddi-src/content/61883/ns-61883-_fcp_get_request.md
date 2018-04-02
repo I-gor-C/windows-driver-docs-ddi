@@ -53,13 +53,13 @@ For requests sent to a virtual device, the <b>NodeAddress</b> member of the outp
 For requests sent by a physical device, the 1394 bus driver determines the node address dynamically, and <b>NodeAddress</b> is not used.
 
 ## Syntax
-````
+```
 typedef struct _FCP_GET_REQUEST {
-  NODE_ADDRESS NodeAddress;
-  ULONG        Length;
-  PFCP_FRAME   Frame;
-} FCP_GET_REQUEST, *PFCP_GET_REQUEST;
-````
+  OUT NODE_ADDRESS  NodeAddress;
+  IN OUT ULONG      Length;
+  IN OUT PFCP_FRAME Frame;
+} *PFCP_GET_REQUEST, FCP_GET_REQUEST;
+```
 
 ## Members
 

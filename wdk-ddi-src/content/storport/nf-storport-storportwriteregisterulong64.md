@@ -7,7 +7,7 @@ old-location: storage\storportwriteregisterulong64.htm
 old-project: storage
 ms.assetid: FFBC7A27-B980-49AF-9207-237E0F0292FA
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortWriteRegisterUlong64, StorPortWriteRegisterUlong64 routine [Storage Devices], storage.storportwriteregisterulong64, storport/StorPortWriteRegisterUlong64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,13 @@ This <b>StorPortWriteRegisterUlong64</b> routine writes a <b>ULONG64</b> value t
 
 ## Syntax
 
-````
- VOID StorPortWriteRegisterUlong64(
-  _In_ PULONG64  Register,
-  _In_ ULONG64   Value
+```
+void StorPortWriteRegisterUlong64(
+   h,
+   r,
+   v
 );
-````
+```
 
 ## Parameters
 
@@ -89,4 +90,4 @@ The <b>StorPortWriteRegisterUlong64</b> routine is only available on the 64-bit 
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportreadregisterulong64.md">StorPortReadRegisterUlong64</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967741">StorPortReadRegisterUlong64</a>

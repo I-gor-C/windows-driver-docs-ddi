@@ -47,26 +47,51 @@ req.typenames: KSEVENTDATA, *PKSEVENTDATA
 Kernel streaming clients send the KSEVENTDATA structure to the class driver to specify a notification method.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSEVENTDATA {
   ULONG NotificationType;
   union {
     struct {
-      HANDLE    Event;
+      HANDLE    Event;
       ULONG_PTR Reserved[2];
-    } EventHandle;
+    } EventHandle;
     struct {
       HANDLE Semaphore;
-      ULONG  Reserved;
-      LONG   Adjustment;
-    } SemaphoreHandle;
+      ULONG  Reserved;
+      LONG   Adjustment;
+    } SemaphoreHandle;
     struct {
-      PVOID    Unused;
+      PVOID     Event;
+      KPRIORITY Increment;
+      ULONG_PTR Reserved;
+    } EventObject;
+    struct {
+      PVOID     Semaphore;
+      KPRIORITY Increment;
+      LONG      Adjustment;
+    } SemaphoreObject;
+    struct {
+      PKDPC     Dpc;
+      ULONG     ReferenceCount;
+      ULONG_PTR Reserved;
+    } Dpc;
+    struct {
+      PWORK_QUEUE_ITEM WorkQueueItem;
+      WORK_QUEUE_TYPE  WorkQueueType;
+      ULONG_PTR        Reserved;
+    } WorkItem;
+    struct {
+      PWORK_QUEUE_ITEM WorkQueueItem;
+      PKSWORKER        KsWorkerObject;
+      ULONG_PTR        Reserved;
+    } KsWorkItem;
+    struct {
+      PVOID    Unused;
       LONG_PTR Alignment[2];
-    } Alignment;
+    } Alignment;
   };
-} KSEVENTDATA, *PKSEVENTDATA;
-````
+}  *PKSEVENTDATA;
+```
 
 ## Members
 
@@ -162,19 +187,7 @@ For more information, see <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07
 
 ## See Also
 
-<a href="..\wdm\ne-wdm-_work_queue_type.md">WORK_QUEUE_TYPE</a>
-
-
-
-<a href="..\ks\nf-ks-ksincrementcountedworker.md">KsIncrementCountedWorker</a>
-
-
-
-<a href="..\ks\nf-ks-ksregisterworker.md">KsRegisterWorker</a>
-
-
-
-<a href="..\wdm\ns-wdm-_work_queue_item.md">WORK_QUEUE_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
 
 
 
@@ -182,4 +195,16 @@ For more information, see <a href="https://msdn.microsoft.com/3eaa1d65-8417-4a07
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551882">KDPC</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562678">KsIncrementCountedWorker</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566775">KsRegisterWorker</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557304">WORK_QUEUE_ITEM</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566382">WORK_QUEUE_TYPE</a>

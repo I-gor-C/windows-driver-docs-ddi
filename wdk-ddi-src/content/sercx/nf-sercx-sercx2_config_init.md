@@ -46,36 +46,36 @@ req.product: Windows 10 or later.
 
 
 # SERCX2_CONFIG_INIT function
-The <b>SERCX2_CONFIG_INIT</b> function initializes a <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a> structure.
+The <b>SERCX2_CONFIG_INIT</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265310">SERCX2_CONFIG</a> structure.
 
 ## Syntax
 
-````
-VOID SERCX2_CONFIG_INIT(
-  _Out_ SERCX2_CONFIG           *Config,
-  _In_  PFN_SERCX2_APPLY_CONFIG EvtSerCx2ApplyConfig,
-  _In_  PFN_SERCX2_CONTROL      EvtSerCx2Control,
-  _In_  PFN_SERCX2_PURGE_FIFOS  EvtSerCx2PurgeFifos
+```
+void SERCX2_CONFIG_INIT(
+  SERCX2_CONFIG           *Config,
+  PFN_SERCX2_APPLY_CONFIG EvtSerCx2ApplyConfig,
+  PFN_SERCX2_CONTROL      EvtSerCx2Control,
+  PFN_SERCX2_PURGE_FIFOS  EvtSerCx2PurgeFifos
 );
-````
+```
 
 ## Parameters
 
 `Config`
 
-A pointer to the <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a> structure that is to be initialized.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265310">SERCX2_CONFIG</a> structure that is to be initialized.
 
 `EvtSerCx2ApplyConfig`
 
-The value to load into the <b>EvtSerCx2ApplyConfig</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>.
+The value to load into the <b>EvtSerCx2ApplyConfig</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="https://msdn.microsoft.com/library/windows/hardware/dn265310">SERCX2_CONFIG</a>.
 
 `EvtSerCx2Control`
 
-The value to load into the <b>EvtSerCx2Control</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>.
+The value to load into the <b>EvtSerCx2Control</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="https://msdn.microsoft.com/library/windows/hardware/dn265310">SERCX2_CONFIG</a>.
 
 `EvtSerCx2PurgeFifos`
 
-The value to load into the <b>EvtSerCx2PurgeFifos</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>.
+The value to load into the <b>EvtSerCx2PurgeFifos</b> member of the <b>SERCX2_CONFIG</b> structure. For more information, see the description of this member in <a href="https://msdn.microsoft.com/library/windows/hardware/dn265310">SERCX2_CONFIG</a>.
 
 
 ## Return Value
@@ -84,7 +84,7 @@ None.
 
 ## Remarks
 
-Your serial controller driver must use this function to initialize a <a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a> method.
+Your serial controller driver must use this function to initialize a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265310">SERCX2_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265261">SerCx2InitializeDevice</a> method.
 
 <b>SERCX2_CONFIG_INIT</b> sets the <b>Size</b> member of the structure to <b>sizeof</b>(<b>SERCX2_CONFIG</b>), and sets three additional members of the structure to the values supplied as input parameters to the function. The function sets the other members of the structure to zero. The driver can, if necessary, explicitly set these other members to nonzero values after the <b>SERCX2_CONFIG_INIT</b> call.
 
@@ -98,8 +98,8 @@ Your serial controller driver must use this function to initialize a <a href="..
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercx2initializedevice.md">SerCx2InitializeDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265310">SERCX2_CONFIG</a>
 
 
 
-<a href="..\sercx\ns-sercx-_sercx2_config.md">SERCX2_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265261">SerCx2InitializeDevice</a>

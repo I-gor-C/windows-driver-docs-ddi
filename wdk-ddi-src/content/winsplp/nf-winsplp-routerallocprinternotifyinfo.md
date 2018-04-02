@@ -50,11 +50,11 @@ The print spooler's <code>RouterAllocPrinterNotifyInfo</code> function allocates
 
 ## Syntax
 
-````
+```
 PPRINTER_NOTIFY_INFO RouterAllocPrinterNotifyInfo(
-   DWORD cPrinterNotifyInfoData
+  DWORD cPrinterNotifyInfoData
 );
-````
+```
 
 ## Parameters
 
@@ -73,9 +73,9 @@ Print providers should call <code>RouterAllocPrinterNotifyInfo</code> to allocat
 
 The <code>RouterAllocPrinterNotifyInfo</code> function initializes the PRINTER_NOTIFY_INFO structure's <b>Version</b> member to the current version of the spooler's notification implementation. It initializes the structure's <b>Flags</b> and <b>Count</b> members to zero, regardless of the number specified for <i>cPrinterNotifyInfoData</i>.
 
-Print providers should call <a href="..\winsplp\nf-winsplp-appendprinternotifyinfodata.md">AppendPrinterNotifyInfoData</a> to fill in members of the PRINTER_NOTIFY_INFO_DATA structure array.
+Print providers should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff545038">AppendPrinterNotifyInfoData</a> to fill in members of the PRINTER_NOTIFY_INFO_DATA structure array.
 
-If <code>RefreshPrinterChangeNotification</code> executes successfully and returns the allocated structures to the caller, you should assume that the caller will deallocate structure memory. However, if <code>RefreshPrinterChangeNotification</code> encounters an error it should call <a href="..\winsplp\nf-winsplp-routerfreeprinternotifyinfo.md">RouterFreePrinterNotifyInfo</a> to deallocate the memory.
+If <code>RefreshPrinterChangeNotification</code> executes successfully and returns the allocated structures to the caller, you should assume that the caller will deallocate structure memory. However, if <code>RefreshPrinterChangeNotification</code> encounters an error it should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff562016">RouterFreePrinterNotifyInfo</a> to deallocate the memory.
 
 For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9cef-4900-af89-edf1f7f786c7">Supporting Printer Change Notifications</a>.
 
@@ -89,12 +89,12 @@ For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9ce
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-routerfreeprinternotifyinfo.md">RouterFreePrinterNotifyInfo</a>
-
-
-
-<a href="..\winsplp\nf-winsplp-appendprinternotifyinfodata.md">AppendPrinterNotifyInfoData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545038">AppendPrinterNotifyInfoData</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562016">RouterFreePrinterNotifyInfo</a>

@@ -45,30 +45,30 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetIoTypePreference method
+# IWDFDeviceInitialize2::SetIoTypePreference method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>SetIoTypePreference</b> method specifies your preferences for how UMDF and the driver access the data buffers of a device's I/O requests.
 
 ## Syntax
 
-````
+```
 void SetIoTypePreference(
-  [in] WDF_DEVICE_IO_BUFFER_RETRIEVAL RetrievalMode,
-  [in] WDF_DEVICE_IO_TYPE             ReadWritePreference,
-  [in] WDF_DEVICE_IO_TYPE             IoControlPreference
+  WDF_DEVICE_IO_BUFFER_RETRIEVAL RetrievalMode,
+  WDF_DEVICE_IO_TYPE             ReadWritePreference,
+  WDF_DEVICE_IO_TYPE             IoControlPreference
 );
-````
+```
 
 ## Parameters
 
 `RetrievalMode`
 
-A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_buffer_retrieval.md">WDF_DEVICE_IO_BUFFER_RETRIEVAL</a>-typed value that specifies the buffer retrieval mode that you prefer UMDF to use to make an I/O request's buffers available to the driver.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561399">WDF_DEVICE_IO_BUFFER_RETRIEVAL</a>-typed value that specifies the buffer retrieval mode that you prefer UMDF to use to make an I/O request's buffers available to the driver.
 
 `ReadWritePreference`
 
-A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed value that specifies the buffer access method that you prefer UMDF to use for the data buffers of read and write requests.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>-typed value that specifies the buffer access method that you prefer UMDF to use for the data buffers of read and write requests.
 
 `IoControlPreference`
 
@@ -94,7 +94,7 @@ For more information about accessing an I/O request's data buffers, see <a href=
 
 #### Examples
 
-The following code example shows a segment of a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554896">IDriverEntry::OnDeviceAdd</a> callback function. The segment obtains the <a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize2.md">IWDFDeviceInitialize2</a> interface and then calls <b>SetIoTypePreference</b>. 
+The following code example shows a segment of a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554896">IDriverEntry::OnDeviceAdd</a> callback function. The segment obtains the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556967">IWDFDeviceInitialize2</a> interface and then calls <b>SetIoTypePreference</b>. 
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -140,15 +140,7 @@ The following code example shows a segment of a driver's <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE (UMDF)</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize2.md">IWDFDeviceInitialize2</a>
-
-
-
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotype.md">WdfDeviceInitSetIoType</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556967">IWDFDeviceInitialize2</a>
 
 
 
@@ -156,8 +148,16 @@ The following code example shows a segment of a driver's <a href="https://msdn.m
 
 
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_device_io_buffer_retrieval.md">WDF_DEVICE_IO_BUFFER_RETRIEVAL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561399">WDF_DEVICE_IO_BUFFER_RETRIEVAL</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561404">WDF_DEVICE_IO_TYPE (UMDF)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546128">WdfDeviceInitSetIoType</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265604">WdfDeviceInitSetIoTypeEx</a>

@@ -55,14 +55,14 @@ The <b>WdfDeviceSetDeviceInterfaceState</b> method enables or disables a device 
 
 ## Syntax
 
-````
-VOID WdfDeviceSetDeviceInterfaceState(
-  _In_           WDFDEVICE        Device,
-  _In_     const GUID             *InterfaceClassGUID,
-  _In_opt_       PCUNICODE_STRING ReferenceString,
-  _In_           BOOLEAN          IsInterfaceEnabled
+```
+void WdfDeviceSetDeviceInterfaceState(
+  WDFDEVICE        Device,
+  CONST GUID       *InterfaceClassGUID,
+  PCUNICODE_STRING ReferenceString,
+  BOOLEAN          IsInterfaceEnabled
 );
-````
+```
 
 ## Parameters
 
@@ -76,7 +76,7 @@ A pointer to a GUID that identifies the device interface class.
 
 `ReferenceString`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that describes a reference string for the device interface. This parameter is optional and can be <b>NULL</b>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that describes a reference string for the device interface. This parameter is optional and can be <b>NULL</b>.
 
 `IsInterfaceEnabled`
 
@@ -127,8 +127,8 @@ The following code example disables a driver's COM port interface.
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatedeviceinterface.md">WdfDeviceCreateDeviceInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545935">WdfDeviceCreateDeviceInterface</a>

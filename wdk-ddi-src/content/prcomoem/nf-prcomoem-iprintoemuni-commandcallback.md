@@ -45,26 +45,26 @@ req.product: Windows 10 or later.
 ---
 
 
-# CommandCallback method
+# IPrintOemUni::CommandCallback method
 The <code>IPrintOemUni::CommandCallback</code> method is used to provide dynamically generated printer commands for Unidrv-supported printers.
 
 ## Syntax
 
-````
+```
 HRESULT CommandCallback(
-        PDEVOBJ pdevobj,
-        DWORD   dwCallbackID,
-        DWORD   dwCount,
-        PDWORD  pdwParams,
-  [out] INT     *piResult
+  PDEVOBJ pdevobj,
+  DWORD   dwCallbackID,
+  DWORD   dwCount,
+  PDWORD  pdwParams,
+  OUT INT *piResult
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `dwCallbackID`
 

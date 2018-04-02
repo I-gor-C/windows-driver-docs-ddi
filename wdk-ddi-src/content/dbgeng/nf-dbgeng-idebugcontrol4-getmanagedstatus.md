@@ -7,7 +7,7 @@ old-location: debugger\idebugcontrol4_getmanagedstatus.htm
 old-project: debugger
 ms.assetid: C2D32ABB-5ABE-4580-9577-1144569EA8E1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetManagedStatus method [Windows Debugging], GetManagedStatus method [Windows Debugging], IDebugControl4 interface, GetManagedStatus,IDebugControl4.GetManagedStatus, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetManagedStatus method, IDebugControl4::GetManagedStatus, dbgeng/IDebugControl4::GetManagedStatus, debugger.idebugcontrol4_getmanagedstatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetManagedStatus method
+# IDebugControl4::GetManagedStatus method
 Provides feedback on the engine's
     use of the runtime debugging APIs provided by the common language runtime (CLR).
 
 ## Syntax
 
-````
+```
 HRESULT GetManagedStatus(
-  [out, optional] PULONG                        Flags,
-  [in]            ULONG                         WhichString,
-  [out]           _writes_opt_(StringSize) PSTR String,
-  [in]            ULONG                         StringSize,
-  [out, optional] PULONG                        StringNeeded
+  PULONG Flags,
+  ULONG  WhichString,
+  PSTR   String,
+  ULONG  StringSize,
+  PULONG StringNeeded
 );
-````
+```
 
 ## Parameters
 
@@ -118,4 +118,4 @@ The method was successful.
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>

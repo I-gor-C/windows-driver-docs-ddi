@@ -50,24 +50,24 @@ This enumeration is a one-to-one mapping to the spooler flags suppled in the JOB
 For example, <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd145019(v=vs.85).aspx">JOB_INFO_1</a> has the same set of status flags as shown in the following list.
 
 ## Syntax
-````
-typedef enum _PrintJobStatus { 
-  PrintJobStatus_Paused              = 0x1,
-  PrintJobStatus_Error               = 0x2,
-  PrintJobStatus_Deleting            = 0x4,
-  PrintJobStatus_Spooling            = 0x8,
-  PrintJobStatus_Printing            = 0x10,
-  PrintJobStatus_Offline             = 0x20,
-  PrintJobStatus_PaperOut            = 0x40,
-  PrintJobStatus_Printed             = 0x80,
-  PrintJobStatus_Deleted             = 0x100,
-  PrintJobStatus_BlockedDeviceQueue  = 0x200,
-  PrintJobStatus_UserIntervention    = 0x400,
-  PrintJobStatus_Restarted           = 0x800,
-  PrintJobStatus_Complete            = 0x1000,
-  PrintJobStatus_Retained            = 0x2000
+```
+typedef enum tagPrintJobStatus {
+  PrintJobStatus_Paused              ,
+  PrintJobStatus_Error               ,
+  PrintJobStatus_Deleting            ,
+  PrintJobStatus_Spooling            ,
+  PrintJobStatus_Printing            ,
+  PrintJobStatus_Offline             ,
+  PrintJobStatus_PaperOut            ,
+  PrintJobStatus_Printed             ,
+  PrintJobStatus_Deleted             ,
+  PrintJobStatus_BlockedDeviceQueue  ,
+  PrintJobStatus_UserIntervention    ,
+  PrintJobStatus_Restarted           ,
+  PrintJobStatus_Complete            ,
+  PrintJobStatus_Retained
 } PrintJobStatus;
-````
+```
 
 ## Constants
 

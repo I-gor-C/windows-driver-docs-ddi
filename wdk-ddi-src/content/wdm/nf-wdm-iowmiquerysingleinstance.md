@@ -7,7 +7,7 @@ old-location: kernel\iowmiquerysingleinstance.htm
 old-project: kernel
 ms.assetid: 742535da-4726-4320-88ec-f6752ad02fb3
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoWMIQuerySingleInstance, IoWMIQuerySingleInstance routine [Kernel-Mode Driver Architecture], k104_ef4cfbd8-cca3-4ec0-99cd-3715c2ddf52f.xml, kernel.iowmiquerysingleinstance, wdm/IoWMIQuerySingleInstance
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,20 +50,20 @@ The <b>IoWMIQuerySingleInstance</b> routine returns the specified instance of a 
 
 ## Syntax
 
-````
-NTSTATUS IoWMIQuerySingleInstance(
-  _In_      PVOID           DataBlockObject,
-  _In_      PUNICODE_STRING InstanceName,
-  _Inout_   ULONG           *InOutBufferSize,
-  _Out_opt_ PVOID           OutBuffer
+```
+NTKERNELAPI NTSTATUS IoWMIQuerySingleInstance(
+  PVOID           DataBlockObject,
+  PUNICODE_STRING InstanceName,
+  PULONG          InOutBufferSize,
+  PVOID           OutBuffer
 );
-````
+```
 
 ## Parameters
 
 `DataBlockObject`
 
-Pointer to a WMI data block object. The caller opens the data block object for the WMI class with the <a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a> routine. The object must be opened with the WMIGUID_QUERY access right.
+Pointer to a WMI data block object. The caller opens the data block object for the WMI class with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550453">IoWMIOpenBlock</a> routine. The object must be opened with the WMIGUID_QUERY access right.
 
 `InstanceName`
 
@@ -75,7 +75,7 @@ Pointer to a memory location that specifies the size of the buffer passed in the
 
 `OutBuffer`
 
-Pointer to the buffer where the routine returns the WMI data. The routine returns a variable-sized <a href="..\wmistr\ns-wmistr-tagwnode_single_instance.md">WNODE_SINGLE_INSTANCE</a> structure. <i>OutBuffer</i> must point to a buffer allocated from nonpaged pool.
+Pointer to the buffer where the routine returns the WMI data. The routine returns a variable-sized <a href="https://msdn.microsoft.com/library/windows/hardware/ff566377">WNODE_SINGLE_INSTANCE</a> structure. <i>OutBuffer</i> must point to a buffer allocated from nonpaged pool.
 
 
 ## Return Value
@@ -137,7 +137,7 @@ The buffer passed by the caller in the <i>OutBuffer</i> parameter is too small. 
 
 <b>IoWMIQuerySingleInstance</b> determines which drivers might support the specified WMI class with the specified instance name, and issues an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551718">IRP_MN_QUERY_SINGLE_INSTANCE</a> request to each such driver. The driver that exports the data block instance with matching <b>InstanceName</b> property returns the appropriate data.
 
-To query for multiple WMI classes and instance names, use the <a href="..\wdm\nf-wdm-iowmiquerysingleinstancemultiple.md">IoWMIQuerySingleInstanceMultiple</a> routine. Drivers can use the <a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetSingleInstance</a> routine to update the class instance.
+To query for multiple WMI classes and instance names, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550477">IoWMIQuerySingleInstanceMultiple</a> routine. Drivers can use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550493">IoWMISetSingleInstance</a> routine to update the class instance.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -151,16 +151,16 @@ To query for multiple WMI classes and instance names, use the <a href="..\wdm\nf
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551718">IRP_MN_QUERY_SINGLE_INSTANCE</a>
 
 
 
-<a href="..\wdm\nf-wdm-iowmiquerysingleinstancemultiple.md">IoWMIQuerySingleInstanceMultiple</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550453">IoWMIOpenBlock</a>
 
 
 
-<a href="..\wdm\nf-wdm-iowmisetsingleinstance.md">IoWMISetSingleInstance</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550477">IoWMIQuerySingleInstanceMultiple</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550493">IoWMISetSingleInstance</a>

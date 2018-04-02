@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 # _WINBIO_DIAGNOSTICS structure
-The <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_sensor_status.md">IOCTL_BIOMETRIC_GET_SENSOR_STATUS</a> IOCTL returns the WINBIO_DIAGNOSTICS structure as output.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff536436">IOCTL_BIOMETRIC_GET_SENSOR_STATUS</a> IOCTL returns the WINBIO_DIAGNOSTICS structure as output.
 
 ## Syntax
-````
+```
 typedef struct _WINBIO_DIAGNOSTICS {
-  DWORD                PayloadSize;
-  HRESULT              WinBioHresult;
+  DWORD                PayloadSize;
+  HRESULT              WinBioHresult;
   WINBIO_SENSOR_STATUS SensorStatus;
-  WINBIO_DATA          VendorDiagnostics;
-} WINBIO_DIAGNOSTICS, *PWINBIO_DIAGNOSTICS;
-````
+  WINBIO_DATA          VendorDiagnostics;
+} *PWINBIO_DIAGNOSTICS, WINBIO_DIAGNOSTICS;
+```
 
 ## Members
 
@@ -101,7 +101,7 @@ A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware
 
 `VendorDiagnostics`
 
-An optional <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a> structure for vendor-specific additional information.
+An optional <a href="https://msdn.microsoft.com/library/windows/hardware/ff536469">WINBIO_DATA</a> structure for vendor-specific additional information.
 
 
 ## Requirements
@@ -112,4 +112,4 @@ An optional <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DAT
 
 ## See Also
 
-<a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_sensor_status.md">IOCTL_BIOMETRIC_GET_SENSOR_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536436">IOCTL_BIOMETRIC_GET_SENSOR_STATUS</a>

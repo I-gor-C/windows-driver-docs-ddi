@@ -7,7 +7,7 @@ old-location: netvista\ndispdfreecounter.htm
 old-project: netvista
 ms.assetid: 60C47437-A999-4F82-B144-6F77410E5C07
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDIS_PD_FREE_COUNTER, NdisPDFreeCounter, NdisPDFreeCounter callback function [Network Drivers Starting with Windows Vista], ndis/NdisPDFreeCounter, netvista.ndispdfreecounter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,7 +65,7 @@ void NdisPdFreeCounter(
 
 `CounterHandle`
 
-A counter handle that the miniport driver allocated in its <a href="..\ndis\nc-ndis-ndis_pd_allocate_counter.md">NdisPDAllocateCounter</a> function.
+A counter handle that the miniport driver allocated in its <a href="https://msdn.microsoft.com/86AA537D-952F-4A7A-ACA4-24B8C1AE932A">NdisPDAllocateCounter</a> function.
 
 
 ## Return Value
@@ -83,4 +83,4 @@ This callback function does not return a value.
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-ndis_pd_allocate_counter.md">NdisPDAllocateCounter</a>
+<a href="https://msdn.microsoft.com/86AA537D-952F-4A7A-ACA4-24B8C1AE932A">NdisPDAllocateCounter</a>

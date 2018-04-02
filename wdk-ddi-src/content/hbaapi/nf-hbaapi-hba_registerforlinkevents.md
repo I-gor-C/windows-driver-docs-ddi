@@ -7,7 +7,7 @@ old-location: storage\hba_registerforlinkevents.htm
 old-project: storage
 ms.assetid: f0e6834c-b827-4342-83f1-5980f8edce24
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_RegisterForLinkEvents, HBA_RegisterForLinkEvents routine [Storage Devices], fibreHBA_rtns_7fd8f7c4-faaf-4190-99c8-560615e14365.xml, hbaapi/HBA_RegisterForLinkEvents, storage.hba_registerforlinkevents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,16 +49,16 @@ The <b>HBA_RegisterForLinkEvents</b> routine registers with a specified adapter 
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_RegisterForLinkEvents(
-   HBA_LINK_CALLBACK  callback,
-   void               *userData,
-   void               *pRLIRBuffer,
-   HBA_UINT32         RLIRBufferSize,
-   HBA_HANDLE         handle,
-   HBA_CALLBACKHANDLE *callbackHandle
+  IN void(* )(void *data,HBA_WWN adapterWWN,HBA_UINT32 eventType, void *pRLIRBuffer,HBA_UINT32 RLIRBufferSize) callback,
+  IN void                                                                                                      *userData,
+  IN void                                                                                                      *pRLIRBuffer,
+  IN HBA_UINT32                                                                                                RLIRBufferSize,
+  IN HBA_HANDLE                                                                                                Handle,
+  OUT HBA_CALLBACKHANDLE                                                                                       *pCallbackHandle
 );
-````
+```
 
 ## Parameters
 
@@ -133,7 +133,7 @@ Returned if an unspecified error occurred that prevented the registration of the
 
 ## Remarks
 
-Only RLIR events are reported. To stop event delivery, call <a href="..\hbaapi\nf-hbaapi-hba_removecallback.md">HBA_RemoveCallback</a>.
+Only RLIR events are reported. To stop event delivery, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -149,12 +149,12 @@ Only RLIR events are reported. To stop event delivery, call <a href="..\hbaapi\n
 
 
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_removecallback.md">HBA_RemoveCallback</a>

@@ -7,7 +7,7 @@ old-location: kernel\vpci_read_block_input.htm
 old-project: kernel
 ms.assetid: d8d68231-017a-42fc-ad09-8e7f5cc743d3
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PVPCI_READ_BLOCK_INPUT, PVPCI_READ_BLOCK_INPUT, PVPCI_READ_BLOCK_INPUT structure pointer [Kernel-Mode Driver Architecture], VPCI_READ_BLOCK_INPUT, VPCI_READ_BLOCK_INPUT structure [Kernel-Mode Driver Architecture], _VPCI_READ_BLOCK_INPUT, kernel.vpci_read_block_input, vpci/PVPCI_READ_BLOCK_INPUT, vpci/VPCI_READ_BLOCK_INPUT"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: DISPATCH_LEVEL
+req.irql: 
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -50,12 +50,12 @@ The <b>VPCI_READ_BLOCK_INPUT</b> structure is used in an <a href="https://msdn.m
 This IOCTL request is issued by the driver of a PCIe  VF on a device that supports the single root I/O virtualization (SR-IOV) interface.
 
 ## Syntax
-````
+```
 typedef struct _VPCI_READ_BLOCK_INPUT {
   ULONG BlockId;
   ULONG BytesRequested;
 } VPCI_READ_BLOCK_INPUT, *PVPCI_READ_BLOCK_INPUT;
-````
+```
 
 ## Members
 
@@ -93,8 +93,8 @@ This operating system runs within the Hyper-V parent partition.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439304">IOCTL_VPCI_READ_BLOCK</a>
-
-
-
 <b></b>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439304">IOCTL_VPCI_READ_BLOCK</a>

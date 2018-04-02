@@ -7,7 +7,7 @@ old-location: display\d3dkmt_createkeyedmutex2_flags.htm
 old-project: display
 ms.assetid: 21c2d262-bf8c-48a3-9801-5c2bd73f0282
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_CREATEKEYEDMUTEX2_FLAGS, D3DKMT_CREATEKEYEDMUTEX2_FLAGS structure [Display Devices], _D3DKMT_CREATEKEYEDMUTEX2_FLAGS, d3dkmthk/D3DKMT_CREATEKEYEDMUTEX2_FLAGS, display.d3dkmt_createkeyedmutex2_flags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,17 @@ req.typenames: D3DKMT_CREATEKEYEDMUTEX2_FLAGS
 Indicates how a handle to a keyed mutex is specified.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_CREATEKEYEDMUTEX2_FLAGS {
   union {
     struct {
-      UINT NtSecuritySharing  :1;
-      UINT Reserved  :31;
+      UINT  : 1  NtSecuritySharing;
+      UINT  : 31 Reserved;
     };
-    UINT   Value;
+    UINT Value;
   };
 } D3DKMT_CREATEKEYEDMUTEX2_FLAGS;
-````
+```
 
 ## Members
 
@@ -71,12 +71,12 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2_FLAGS {
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2.md">D3DKMT_CREATEKEYEDMUTEX2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439345">D3DKMTCreateKeyedMutex2</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtshareobjects.md">D3DKMTShareObjects</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh780251">D3DKMTShareObjects</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatekeyedmutex2.md">D3DKMTCreateKeyedMutex2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439474">D3DKMT_CREATEKEYEDMUTEX2</a>

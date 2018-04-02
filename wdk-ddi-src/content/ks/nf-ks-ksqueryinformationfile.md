@@ -50,14 +50,14 @@ The <b>KsQueryInformationFile</b> function performs an information query against
 
 ## Syntax
 
-````
-NTSTATUS KsQueryInformationFile(
-  _In_  PFILE_OBJECT           FileObject,
-  _Out_ PVOID                  FileInformation,
-  _In_  ULONG                  Length,
-  _In_  FILE_INFORMATION_CLASS FileInformationClass
+```
+KSDDKAPI NTSTATUS KsQueryInformationFile(
+  PFILE_OBJECT           FileObject,
+  PVOID                  FileInformation,
+  ULONG                  Length,
+  FILE_INFORMATION_CLASS FileInformationClass
 );
-````
+```
 
 ## Parameters
 

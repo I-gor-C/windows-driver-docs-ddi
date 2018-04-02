@@ -7,7 +7,7 @@ old-location: storage\ioctl_cdrom_set_volume.htm
 old-project: storage
 ms.assetid: 9331ad0b-42e0-4f20-9410-fb135f4791b0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_CDROM_SET_VOLUME, IOCTL_CDROM_SET_VOLUME control code [Storage Devices], k307_d31efcd3-1072-49db-82d0-6ecce05a8964.xml, ntddcdrm/IOCTL_CDROM_SET_VOLUME, storage.ioctl_cdrom_set_volume
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,7 +50,7 @@ Resets the volume for its device's audio ports.  Obsolete, beginning with Window
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-The buffer at <i>Irp-&gt;AssociatedIrp.SystemBuffer</i> contains the <a href="..\ntddcdrm\ns-ntddcdrm-_volume_control.md">VOLUME_CONTROL</a> value or values to be set.
+The buffer at <i>Irp-&gt;AssociatedIrp.SystemBuffer</i> contains the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568015">VOLUME_CONTROL</a> value or values to be set.
 
 ### Input Buffer Length
 <i>Parameters.DeviceIoControl.InputBufferLength</i> in the I/O stack location indicates the size, in bytes, of the buffer, which must be greater than or equal to  <b>sizeof</b>(VOLUME_CONTROL).
@@ -83,4 +83,4 @@ Client applications should use the <i>Media Control Interface (MCI) API</i> rath
 
 ## See Also
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_volume_control.md">VOLUME_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568015">VOLUME_CONTROL</a>

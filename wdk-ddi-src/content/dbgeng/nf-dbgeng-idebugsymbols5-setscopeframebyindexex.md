@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols5_setscopeframebyindexex.htm
 old-project: debugger
 ms.assetid: E0638C55-4160-48A5-9378-6AA9AAC8DC36
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugSymbols5, IDebugSymbols5 interface [Windows Debugging], SetScopeFrameByIndexEx method, IDebugSymbols5::SetScopeFrameByIndexEx, SetScopeFrameByIndexEx method [Windows Debugging], SetScopeFrameByIndexEx method [Windows Debugging], IDebugSymbols5 interface, SetScopeFrameByIndexEx,IDebugSymbols5.SetScopeFrameByIndexEx, dbgeng/IDebugSymbols5::SetScopeFrameByIndexEx, debugger.idebugsymbols5_setscopeframebyindexex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# SetScopeFrameByIndexEx method
+# IDebugSymbols5::SetScopeFrameByIndexEx method
 Sets the current frame by using an index.
 
 ## Syntax
 
-````
+```
 HRESULT SetScopeFrameByIndexEx(
-  [in] ULONG Flags,
-  [in] ULONG Index
+  ULONG Flags,
+  ULONG Index
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols5.md">IDebugSymbols5</a>
+<a href="https://msdn.microsoft.com/0D239C0E-96C8-49F9-BDFD-182F3F7C3976">IDebugSymbols5</a>

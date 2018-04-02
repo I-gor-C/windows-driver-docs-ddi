@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlispagingfile.htm
 old-project: ifsk
 ms.assetid: 85363a0b-0e62-499e-bcdb-4b86c4a0c3a0
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlIsPagingFile, FsRtlIsPagingFile routine [Installable File System Drivers], fsrtlref_80254cb1-bb65-4b1b-8fe4-c975b0f00c63.xml, ifsk.fsrtlispagingfile, ntifs/FsRtlIsPagingFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>FsRtlIsPagingFile</b> routine determines whether a given file is a paging
 
 ## Syntax
 
-````
-LOGICAL FsRtlIsPagingFile(
-  _In_ PFILE_OBJECT FileObject
+```
+NTKERNELAPI LOGICAL FsRtlIsPagingFile(
+  PFILE_OBJECT FileObject
 );
-````
+```
 
 ## Parameters
 
@@ -85,8 +85,8 @@ File system filter drivers call <b>FsRtlIsPagingFile</b> to determine whether a 
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547152">FsRtlPostPagingFileStackOverflow</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547285">FsRtlSupportsPerStreamContexts</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpostpagingfilestackoverflow~r2.md">FsRtlPostPagingFileStackOverflow</a>

@@ -70,7 +70,7 @@ A handle to a framework request object that represents the I/O request that requ
 
 `Context`
 
-A pointer to a context that was previously supplied in the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestimpersonate.md">WdfRequestImpersonate</a> method. This parameter is optional and can be NULL if a context is not required.
+A pointer to a context that was previously supplied in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265619">WdfRequestImpersonate</a> method. This parameter is optional and can be NULL if a context is not required.
 
 
 ## Return Value
@@ -130,4 +130,4 @@ The <b>EVT_WDF_REQUEST_IMPERSONATE</b> function type is defined in the Wdfreques
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestimpersonate.md">WdfRequestImpersonate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265619">WdfRequestImpersonate</a>

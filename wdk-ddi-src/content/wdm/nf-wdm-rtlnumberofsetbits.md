@@ -7,7 +7,7 @@ old-location: kernel\rtlnumberofsetbits.htm
 old-project: kernel
 ms.assetid: 6208f750-4871-43b9-b848-011180d39fd8
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlNumberOfSetBits, RtlNumberOfSetBits routine [Kernel-Mode Driver Architecture], k109_b8b2c3f8-3ec3-4690-90bb-e5b120b5b062.xml, kernel.rtlnumberofsetbits, wdm/RtlNumberOfSetBits
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ The <b>RtlNumberOfSetBits</b> routine returns a count of the set bits in a given
 
 ## Syntax
 
-````
-ULONG RtlNumberOfSetBits(
-  _In_ PRTL_BITMAP BitMapHeader
+```
+NTSYSAPI ULONG RtlNumberOfSetBits(
+  PRTL_BITMAP BitMapHeader
 );
-````
+```
 
 ## Parameters
 
 `BitMapHeader`
 
-A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a> routine.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561925">RtlInitializeBitMap</a> routine.
 
 
 ## Return Value
@@ -84,16 +84,16 @@ Callers of <b>RtlNumberOfSetBits</b> must be running at IRQL &lt;= APC_LEVEL if 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlnumberofclearbits.md">RtlNumberOfClearBits</a>
-
-
-
-<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
-
-
-
-<a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561890">RtlFindSetBits</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561925">RtlInitializeBitMap</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562034">RtlNumberOfClearBits</a>

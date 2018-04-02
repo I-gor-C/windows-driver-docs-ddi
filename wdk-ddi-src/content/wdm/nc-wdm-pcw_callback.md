@@ -73,7 +73,7 @@ A pointer to a PCW_CALLBACK_INFORMATION union that supplies details about the re
 
 `Context`
 
-A pointer to the callback context. This value is supplied by the provider when calling <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>.
+A pointer to the callback context. This value is supplied by the provider when calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a>.
 
 
 ## Return Value
@@ -261,7 +261,7 @@ In the <i>DriverEntry</i> routine of the KCS example, the <i>KcsGeometricWaveCal
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a>
 
 
 

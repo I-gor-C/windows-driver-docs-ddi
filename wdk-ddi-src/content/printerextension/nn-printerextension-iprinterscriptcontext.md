@@ -112,9 +112,9 @@ Provides access to the user property bag, if the property bag is present.
 
 | Method | Description |
 | ---- |:---- |
-| [IPrinterScriptContext::get_DriverProperties](nf-printerextension-iprinterscriptcontext-get_driverproperties.md) | Gets the driver property bag. |
+| [IPrinterScriptContext::get_DriverProperties](nf-printerextension-iprinterscriptcontext-get_driverproperties.md) | Provides access to the driver property bag, if the property bag is present. |
 | [IPrinterScriptContext::get_QueueProperties](nf-printerextension-iprinterscriptcontext-get_queueproperties.md) | Provides access to the queue property bag, if the property bag is present. |
-| [IPrinterScriptContext::get_UserProperties](nf-printerextension-iprinterscriptcontext-get_userproperties.md) | Gets the user property bag for this app. |
+| [IPrinterScriptContext::get_UserProperties](nf-printerextension-iprinterscriptcontext-get_userproperties.md) | Provides access to the user property bag, if the property bag is present. |
 
 
 ## Requirements

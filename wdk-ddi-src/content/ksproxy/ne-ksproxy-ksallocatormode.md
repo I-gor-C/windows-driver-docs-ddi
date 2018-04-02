@@ -47,12 +47,12 @@ req.typenames: KSALLOCATORMODE
 
 
 ## Syntax
-````
-typedef enum  { 
-  KsAllocatorMode_User,
+```
+typedef enum KSALLOCATORMODE {
+  KsAllocatorMode_User    ,
   KsAllocatorMode_Kernel
-} KSALLOCATORMODE;
-````
+} ;
+```
 
 ## Constants
 

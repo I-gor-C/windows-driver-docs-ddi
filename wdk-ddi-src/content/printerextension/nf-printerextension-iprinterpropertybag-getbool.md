@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetBool method
+# IPrinterPropertyBag::GetBool method
 Reads a specified boolean property.
 
 ## Syntax
 
-````
+```
 HRESULT GetBool(
-  [in]          BSTR bstrName,
-  [out, retval] BOOL *pbValue
+  BSTR bstrName,
+  BOOL *pbValue
 );
-````
+```
 
 ## Parameters
 
@@ -81,4 +81,4 @@ This method returns an <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>

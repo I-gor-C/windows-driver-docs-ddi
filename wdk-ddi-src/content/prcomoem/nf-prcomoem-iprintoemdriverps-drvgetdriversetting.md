@@ -45,27 +45,27 @@ req.product: Windows 10 or later.
 ---
 
 
-# DrvGetDriverSetting method
+# IPrintOemDriverPS::DrvGetDriverSetting method
 The <code>IPrintOemDriverPS::DrvGetDriverSetting</code> method is provided by the Pscript5 driver so that rendering plug-ins can obtain the current status of printer features and other internal information.
 
 ## Syntax
 
-````
+```
 HRESULT DrvGetDriverSetting(
-   PVOID  pdriverobj,
-   PCSTR  Feature,
-   PVOID  pOutput,
-   DWORD  cbSize,
-   PDWORD pcbNeeded,
-   PDWORD pdwOptionsReturned
+  PVOID  pdriverobj,
+  PCSTR  Feature,
+  PVOID  pOutput,
+  DWORD  cbSize,
+  PDWORD pcbNeeded,
+  PDWORD pdwOptionsReturned
 );
-````
+```
 
 ## Parameters
 
 `pdriverobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `Feature`
 

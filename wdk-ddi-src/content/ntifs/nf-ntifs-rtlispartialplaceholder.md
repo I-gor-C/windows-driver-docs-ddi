@@ -7,7 +7,7 @@ old-location: ifsk\rtlispartialplaceholder.htm
 old-project: ifsk
 ms.assetid: FB47F5BE-76B4-4A99-A15F-DE3E11D1DA2B
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlIsPartialPlaceholder, RtlIsPartialPlaceholder routine [Installable File System Drivers], ifsk.rtlispartialplaceholder, ntifs/RtlIsPartialPlaceholder
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>RtlIsPartialPlaceholder</b> routine determines if a file or a directory i
 
 ## Syntax
 
-````
-BOOLEAN RtlIsPartialPlaceholder(
-  _In_ ULONG FileAttributes,
-  _In_ ULONG ReparseTag
+```
+NTSYSAPI BOOLEAN RtlIsPartialPlaceholder(
+  ULONG FileAttributes,
+  ULONG ReparseTag
 );
-````
+```
 
 ## Parameters
 
@@ -83,8 +83,8 @@ This function returns <b>TRUE</b> if the file or directory is a partial placehol
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlispartialplaceholderfilehandle.md">RtlIsPartialPlaceholderFileHandle</a>
+<a href="https://msdn.microsoft.com/A80C5714-525F-4E07-851D-2E203DD9387A">RtlIsPartialPlaceholderFileHandle</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlispartialplaceholderfileinfo.md">RtlIsPartialPlaceholderFileInfo</a>
+<a href="https://msdn.microsoft.com/B84CC8C1-639D-45B4-A2A4-03BA2F1FF04B">RtlIsPartialPlaceholderFileInfo</a>

@@ -47,13 +47,13 @@ req.typenames: NFC_CX_DEVICE_MODE, *PNFC_CX_DEVICE_MODE
 Specifies device mode flags.
 
 ## Syntax
-````
-typedef enum _NFC_CX_DEVICE_MODE { 
-  NFC_CX_DEVICE_MODE_NCI  = 0x00000000,
-  NFC_CX_DEVICE_MODE_DTA  = 0x00000001,
-  NFC_CX_DEVICE_MODE_RAW  = 0x00000002
-} NFC_CX_DEVICE_MODE;
-````
+```
+typedef enum _NFC_CX_DEVICE_MODE {
+  NFC_CX_DEVICE_MODE_NCI  ,
+  NFC_CX_DEVICE_MODE_DTA  ,
+  NFC_CX_DEVICE_MODE_RAW
+} *PNFC_CX_DEVICE_MODE, NFC_CX_DEVICE_MODE;
+```
 
 ## Constants
 

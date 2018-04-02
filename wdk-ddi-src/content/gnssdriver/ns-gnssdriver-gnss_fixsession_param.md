@@ -3,12 +3,12 @@ UID: NS:gnssdriver.GNSS_FIXSESSION_PARAM
 title: GNSS_FIXSESSION_PARAM
 author: windows-driver-content
 description: This structure defines the parameters used by the GNSS adapter to start a fix session.
-old-location: gnss\gnss_fixsession_param.htm
-old-project: gnss
+old-location: sensors\gnss_fixsession_param.htm
+old-project: sensors
 ms.assetid: D51126FD-0448-487A-BD4E-170901E90B1E
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: "*PGNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM structure [Sensor Devices], PGNSS_FIXSESSION_PARAM, PGNSS_FIXSESSION_PARAM structure pointer [Sensor Devices], gnss.gnss_fixsession_param, gnssdriver/GNSS_FIXSESSION_PARAM, gnssdriver/PGNSS_FIXSESSION_PARAM, sensors.gnss_fixsesson_param"
+ms.date: 2/22/2018
+ms.keywords: "*PGNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM structure [Sensor Devices], PGNSS_FIXSESSION_PARAM, PGNSS_FIXSESSION_PARAM structure pointer [Sensor Devices], gnssdriver/GNSS_FIXSESSION_PARAM, gnssdriver/PGNSS_FIXSESSION_PARAM, sensors.gnss_fixsession_param, sensors.gnss_fixsesson_param"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -47,25 +47,26 @@ req.typenames: GNSS_FIXSESSION_PARAM, *PGNSS_FIXSESSION_PARAM
 This structure defines the parameters used by the GNSS adapter to start a fix session.
 
 ## Syntax
-````
-typedef struct {
-  ULONG               Size;
-  ULONG               Version;
-  ULONG               FixSessionID;
+```
+typedef struct GNSS_FIXSESSION_PARAM {
+  ULONG               Size;
+  ULONG               Version;
+  ULONG               FixSessionID;
   GNSS_FIXSESSIONTYPE SessionType;
-  ULONG               HorizontalAccuracy;
-  ULONG               HorizontalConfidence;
-  ULONG               Reserved[9];
-  ULONG               FixLevelOfDetails;
+  ULONG               HorizontalAccuracy;
+  ULONG               HorizontalConfidence;
+  ULONG               Reserved[9];
+  ULONG               FixLevelOfDetails;
   union {
-    GNSS_SINGLESHOT_PARAM         SingleShotParam;
-    GNSS_DISTANCETRACKING_PARAM   DistanceParam;
     GNSS_CONTINUOUSTRACKING_PARAM ContinuousParam;
-    GNSS_LKGFIX_PARAM             LkgFixParam;
+    GNSS_DISTANCETRACKING_PARAM   DistanceParam;
+    GNSS_LKGFIX_PARAM             LkgFixParam;
+    GNSS_SINGLESHOT_PARAM         SingleShotParam;
+    BYTE                          UnusedParam[268];
   };
-  BYTE                Unused[512];
-} GNSS_FIXSESSION_PARAM, *PGNSS_FIXSESSION_PARAM;
-````
+  BYTE                Unused[256];
+} *PGNSS_FIXSESSION_PARAM, GNSS_FIXSESSION_PARAM;
+```
 
 ## Members
 

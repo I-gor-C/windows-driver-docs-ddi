@@ -47,17 +47,16 @@ req.typenames: KSP_PIN, *PKSP_PIN
 Kernel streaming clients use the KSP_PIN structure to specify the property and pin type within a KSPROPSETID_Pin property request.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSP_PIN {
   KSPROPERTY Property;
-  ULONG      PinId;
+  ULONG      PinId;
   union {
-    ULONG Reserved;
     ULONG Flags;
+    ULONG Reserved;
   };
-  ULONG      Reserved;
-} KSP_PIN, *PKSP_PIN;
-````
+} *PKSP_PIN, KSP_PIN;
+```
 
 ## Members
 

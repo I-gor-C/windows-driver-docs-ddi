@@ -7,7 +7,7 @@ old-location: kernel\pep_ppm_cst_states.htm
 old-project: kernel
 ms.assetid: 4E620796-3065-469E-8E91-8F698F672CAE
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPEP_PPM_CST_STATES, PEP_PPM_CST_STATES, PEP_PPM_CST_STATES structure [Kernel-Mode Driver Architecture], PPEP_PPM_CST_STATES, PPEP_PPM_CST_STATES structure pointer [Kernel-Mode Driver Architecture], _PEP_PPM_CST_STATES, kernel.pep_ppm_cst_states, pepfx/PEP_PPM_CST_STATES, pepfx/PPEP_PPM_CST_STATES"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: PEP_PPM_CST_STATES, *PPEP_PPM_CST_STATES
 The <b>PEP_PPM_CST_STATES</b> structure specifies the properties of the C states (ACPI processor power states) that are supported for a processor.
 
 ## Syntax
-````
+```
 typedef struct _PEP_PPM_CST_STATES {
-  ULONG              Count;
+  ULONG              Count;
   PPEP_PPM_CST_STATE IdleStates;
 } PEP_PPM_CST_STATES, *PPEP_PPM_CST_STATES;
-````
+```
 
 ## Members
 
@@ -63,7 +63,7 @@ The number of elements in the <b>IdleStates</b> array.
 
 `IdleStates`
 
-A pointer to an array of <a href="..\pepfx\ns-pepfx-_pep_ppm_cst_state.md">PEP_PPM_CST_STATE</a> structures.
+A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt186799">PEP_PPM_CST_STATE</a> structures.
 
 ## Remarks
 This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186800">PEP_NOTIFY_PPM_CST_STATES</a> notification. The contents of this structure are obtained from the _CST object that is located in the ACPI namespace for the processor.
@@ -76,8 +76,8 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_ppm_cst_state.md">PEP_PPM_CST_STATE</a>
-
-
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186800">PEP_NOTIFY_PPM_CST_STATES</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186799">PEP_PPM_CST_STATE</a>

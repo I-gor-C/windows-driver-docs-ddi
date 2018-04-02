@@ -7,7 +7,7 @@ old-location: audio\imusictechnology_settechnology.htm
 old-project: audio
 ms.assetid: 7e32b408-930d-4ef4-960e-1a0da5ef6803
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IMusicTechnology, IMusicTechnology interface [Audio Devices], SetTechnology method, IMusicTechnology::SetTechnology, SetTechnology method [Audio Devices], SetTechnology method [Audio Devices], IMusicTechnology interface, SetTechnology,IMusicTechnology.SetTechnology, audio.imusictechnology_settechnology, audmp-routines_d1d6abaa-c4b8-4dce-8ce5-9fc12cc87852.xml, portcls/IMusicTechnology::SetTechnology
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# SetTechnology method
-The <code>SetTechnology</code> method changes the <b>Technology</b> member of each <a href="..\ksmedia\ns-ksmedia-ksdatarange_music.md">KSDATARANGE_MUSIC</a> structure in the data ranges for the miniport driver's pins.
+# IMusicTechnology::SetTechnology method
+The <code>SetTechnology</code> method changes the <b>Technology</b> member of each <a href="https://msdn.microsoft.com/library/windows/hardware/ff537097">KSDATARANGE_MUSIC</a> structure in the data ranges for the miniport driver's pins.
 
 ## Syntax
 
-````
+```
 NTSTATUS SetTechnology(
-  [in] const GUID *Technology
+  const GUID *Technology
 );
-````
+```
 
 ## Parameters
 
 `Technology`
 
-Specifies a technology GUID. This parameter should point to one of the GUIDs that are defined for the <b>Technology</b> member of the <a href="..\ksmedia\ns-ksmedia-ksdatarange_music.md">KSDATARANGE_MUSIC</a> structure.
+Specifies a technology GUID. This parameter should point to one of the GUIDs that are defined for the <b>Technology</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537097">KSDATARANGE_MUSIC</a> structure.
 
 
 ## Return Value
@@ -141,8 +141,8 @@ For more information, see <a href="https://msdn.microsoft.com/3b7c2907-e67f-458e
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-imusictechnology.md">IMusicTechnology</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536778">IMusicTechnology</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-ksdatarange_music.md">KSDATARANGE_MUSIC</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537097">KSDATARANGE_MUSIC</a>

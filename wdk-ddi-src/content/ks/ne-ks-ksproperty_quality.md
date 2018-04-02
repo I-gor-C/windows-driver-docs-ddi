@@ -47,12 +47,12 @@ req.typenames: KSPROPERTY_QUALITY
 
 
 ## Syntax
-````
-typedef enum  { 
-  KSPROPERTY_QUALITY_REPORT,
+```
+typedef enum KSPROPERTY_QUALITY {
+  KSPROPERTY_QUALITY_REPORT  ,
   KSPROPERTY_QUALITY_ERROR
-} KSPROPERTY_QUALITY;
-````
+} ;
+```
 
 ## Constants
 

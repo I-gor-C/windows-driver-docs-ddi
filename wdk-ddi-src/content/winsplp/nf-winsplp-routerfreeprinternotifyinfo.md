@@ -50,11 +50,11 @@ The print spooler's <code>RouterFreePrinterNotifyInfo</code> function deallocate
 
 ## Syntax
 
-````
+```
 BOOL RouterFreePrinterNotifyInfo(
-  _In_opt_ PPRINTER_NOTIFY_INFO pInfo
+  PPRINTER_NOTIFY_INFO pInfo
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ If the operation succeeds, the function returns <b>TRUE</b>. Otherwise the funct
 
 ## Remarks
 
-A print provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a> function should call <code>RouterFreePrinterNotifyInfo</code> to deallocate structures previously allocated by <a href="..\winsplp\nf-winsplp-routerallocprinternotifyinfo.md">RouterAllocPrinterNotifyInfo</a>, but only if <b>RefreshPrinterChangeNotification</b> encounters a error. If <b>RefreshPrinterChangeNotification</b> succeeds, you should assume that the client application will deallocate the structures.
+A print provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a> function should call <code>RouterFreePrinterNotifyInfo</code> to deallocate structures previously allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff562007">RouterAllocPrinterNotifyInfo</a>, but only if <b>RefreshPrinterChangeNotification</b> encounters a error. If <b>RefreshPrinterChangeNotification</b> succeeds, you should assume that the client application will deallocate the structures.
 
 Besides deallocating the specified PRINTER_NOTIFY_INFO structure and its associated PRINTER_NOTIFY_INFO_DATA structure array, the function also deallocates buffer space pointed to by <i>pBuf</i> in any element of the PRINTER_NOTIFY_INFO_DATA structure array.
 
@@ -89,4 +89,4 @@ For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9ce
 
 
 
-<a href="..\winsplp\nf-winsplp-routerallocprinternotifyinfo.md">RouterAllocPrinterNotifyInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562007">RouterAllocPrinterNotifyInfo</a>

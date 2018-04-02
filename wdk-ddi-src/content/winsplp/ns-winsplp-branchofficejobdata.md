@@ -48,19 +48,19 @@ req.product: Windows 10 or later.
 This structure contains the type of event to log (eEventType), the job ID, and the data required by the event.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct BranchOfficeJobData {
   EBranchOfficeJobEventType eEventType;
-  DWORD                     JobId;
+  DWORD                     JobId;
   union {
-    BranchOfficeJobDataPrinted        LogJobPrinted;
-    BranchOfficeJobDataRendered       LogJobRendered;
-    BranchOfficeJobDataError          LogJobError;
+    BranchOfficeJobDataError          LogJobError;
+    BranchOfficeJobDataPrinted        LogJobPrinted;
+    BranchOfficeJobDataRendered       LogJobRendered;
+    BranchOfficeLogOfflineFileFull    LogOfflineFileFull;
     BranchOfficeJobDataPipelineFailed LogPipelineFailed;
-    BranchOfficeLogOfflineFileFull    LogOfflineFileFull;
-  } JobInfo;
-} BranchOfficeJobData, *PBranchOfficeJobData;
-````
+  } JobInfo;
+} *PBranchOfficeJobData, BranchOfficeJobData;
+```
 
 ## Members
 

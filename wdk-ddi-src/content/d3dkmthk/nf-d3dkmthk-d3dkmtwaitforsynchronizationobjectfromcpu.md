@@ -7,7 +7,7 @@ old-location: display\d3dkmtwaitforsynchronizationobjectfromcpu.htm
 old-project: display
 ms.assetid: C65880F7-DFCA-4DF9-ABF1-95A82D1D43ED
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTWaitForSynchronizationObjectFromCpu, D3DKMTWaitForSynchronizationObjectFromCpu function [Display Devices], d3dkmthk/D3DKMTWaitForSynchronizationObjectFromCpu, display.d3dkmtwaitforsynchronizationobjectfromcpu
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ req.typenames: D3DKMT_DRIVERVERSION
 
 ## Syntax
 
-````
-EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTWaitForSynchronizationObjectFromCpu(
-  _In_ const D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU *pData
+```
+NTSTATUS D3DKMTWaitForSynchronizationObjectFromCpu(
+  CONST *D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
 );
-````
+```
 
 ## Parameters
 
@@ -114,4 +114,4 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_waitforsynchronizationobjectfromcpu.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906810">D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU</a>

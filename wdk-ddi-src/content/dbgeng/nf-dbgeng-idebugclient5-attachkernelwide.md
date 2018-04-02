@@ -7,7 +7,7 @@ old-location: debugger\attachkernelwide.htm
 old-project: debugger
 ms.assetid: 02ddcd45-4848-402b-a0fa-5223b8fde52e
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: AttachKernelWide method [Windows Debugging], AttachKernelWide method [Windows Debugging], IDebugClient5 interface, AttachKernelWide,IDebugClient5.AttachKernelWide, IDebugClient5, IDebugClient5 interface [Windows Debugging], AttachKernelWide method, IDebugClient5::AttachKernelWide, dbgeng/IDebugClient5::AttachKernelWide, debugger.attachkernelwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# AttachKernelWide method
+# IDebugClient5::AttachKernelWide method
 The <b>AttachKernelWide</b> method connects the <a href="https://msdn.microsoft.com/e4d53375-c82e-493b-9ccb-444c211fbc79">debugger engine</a> to a kernel target.
 
 ## Syntax
 
-````
+```
 HRESULT AttachKernelWide(
-  [in]           ULONG  Flags,
-  [in, optional] PCWSTR ConnectOptions
+  ULONG  Flags,
+  PCWSTR ConnectOptions
 );
-````
+```
 
 ## Parameters
 
@@ -144,15 +144,15 @@ For more information about connecting to live kernel-mode targets, see <a href="
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538150">AttachProcess</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546970">GetKernelConnectionOptions</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538150">AttachProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>
 
 
 

@@ -7,7 +7,7 @@ old-location: display\d3d10_ddi_query_data_timestamp_disjoint.htm
 old-project: display
 ms.assetid: 1dd7e73d-b804-4018-8c72-732bd68dd8d2
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT, D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT structure [Display Devices], UMDisplayDriver_Dx10param_Structs_1dbd9e05-9c61-4753-902c-245471e71e36.xml, d3d10umddi/D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT, display.d3d10_ddi_query_data_timestamp_disjoint
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,15 +44,15 @@ req.typenames: D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT
 ---
 
 # D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT structure
-The D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT structure describes timestamp-disjoint information that is used in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a> function to create a D3D10DDI_QUERY_TIMESTAMPDISJOINT query type and in a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_querygetdata.md">QueryGetData</a> function to return information about the query.
+The D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT structure describes timestamp-disjoint information that is used in a call to the <a href="https://msdn.microsoft.com/abe6a82f-1613-4c74-9e81-01939db74bfd">CreateQuery(D3D10)</a> function to create a D3D10DDI_QUERY_TIMESTAMPDISJOINT query type and in a call to the <a href="https://msdn.microsoft.com/78ee9813-e23e-4d46-acc4-f2fa88559b03">QueryGetData</a> function to return information about the query.
 
 ## Syntax
-````
+```
 typedef struct D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT {
   UINT64 Frequency;
-  BOOL   Disjoint;
-} D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT;
-````
+  BOOL   Disjoint;
+};
+```
 
 ## Members
 
@@ -66,7 +66,7 @@ The frequency, in Hz, of the timestamp clock.
 A BOOL value that indicates whether something caused the timestamp counter to become discontinuous or disjoint. This value is <b>TRUE</b> if the values from TIMESTAMP queries cannot be guaranteed to be continuous throughout the duration of the D3D10DDI_QUERY_TIMESTAMPDISJOINT query. Otherwise, this value should be <b>FALSE</b>.
 
 ## Remarks
-The driver associates a D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT structure with the D3D10DDI_QUERY_TIMESTAMPDISJOINT query type value from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a> enumeration.
+The driver associates a D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT structure with the D3D10DDI_QUERY_TIMESTAMPDISJOINT query type value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541850">D3D10DDI_QUERY</a> enumeration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,12 +76,12 @@ The driver associates a D3D10_DDI_QUERY_DATA_TIMESTAMP_DISJOINT structure with t
 
 ## See Also
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d10ddi_query.md">D3D10DDI_QUERY</a>
+<a href="https://msdn.microsoft.com/abe6a82f-1613-4c74-9e81-01939db74bfd">CreateQuery(D3D10)</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_querygetdata.md">QueryGetData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541850">D3D10DDI_QUERY</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createquery.md">CreateQuery(D3D10)</a>
+<a href="https://msdn.microsoft.com/78ee9813-e23e-4d46-acc4-f2fa88559b03">QueryGetData</a>

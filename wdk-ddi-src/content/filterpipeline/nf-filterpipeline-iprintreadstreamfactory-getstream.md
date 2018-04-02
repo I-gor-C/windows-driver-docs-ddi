@@ -44,22 +44,22 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetStream method
+# IPrintReadStreamFactory::GetStream method
 The <code>GetStream</code> method gets the stream interface.
 
 ## Syntax
 
-````
+```
 HRESULT GetStream(
-  [out] IPrintReadStream **ppStream
+  IPrintReadStream **ppStream
 );
-````
+```
 
 ## Parameters
 
 `ppStream`
 
-A pointer to an <a href="..\filterpipeline\nn-filterpipeline-iprintreadstream.md">IPrintReadStream</a> interface. The filter can use this interface to read the contents of the print ticket.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff554337">IPrintReadStream</a> interface. The filter can use this interface to read the contents of the print ticket.
 
 
 ## Return Value

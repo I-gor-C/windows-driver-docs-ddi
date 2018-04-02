@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 The <b>SECURITY_IMPERSONATION_LEVEL</b> enumeration contains values that identify security impersonation levels.
 
 ## Syntax
-````
-typedef enum _SECURITY_IMPERSONATION_LEVEL { 
-  SecurityAnonymous       = 0,
-  SecurityIdentification  = ( SecurityAnonymous + 1 ),
-  SecurityImpersonation   = ( SecurityIdentification + 1 ),
-  SecurityDelegation      = ( SecurityImpersonation + 1 )
+```
+typedef enum _SECURITY_IMPERSONATION_LEVEL {
+  SecurityAnonymous       ,
+  SecurityIdentification  ,
+  SecurityImpersonation   ,
+  SecurityDelegation
 } SECURITY_IMPERSONATION_LEVEL;
-````
+```
 
 ## Constants
 

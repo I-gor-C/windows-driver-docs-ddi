@@ -7,7 +7,7 @@ old-location: display\d3dkmtupdateoverlay.htm
 old-project: display
 ms.assetid: bd8fc34a-60a3-4ae7-b13e-50d8b4342834
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTUpdateOverlay, D3DKMTUpdateOverlay function [Display Devices], OpenGL_Functions_bddc75da-dc62-43cf-8ee7-ec9958198669.xml, d3dkmthk/D3DKMTUpdateOverlay, display.d3dkmtupdateoverlay
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>D3DKMTUpdateOverlay</b> function modifies a kernel-mode overlay object.
 
 ## Syntax
 
-````
-NTSTATUS APIENTRY D3DKMTUpdateOverlay(
-  _In_ const D3DKMT_UPDATEOVERLAY *pData
+```
+NTSTATUS D3DKMTUpdateOverlay(
+  CONST *D3DKMT_UPDATEOVERLAY
 );
-````
+```
 
 ## Parameters
 
@@ -115,7 +115,7 @@ Parameters were validated and determined to be incorrect.
 </td>
 <td width="60%">
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtupdateoverlay.md">D3DKMTUpdateOverlay</a> could not complete because of insufficient memory.
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547241">D3DKMTUpdateOverlay</a> could not complete because of insufficient memory.
 
 </td>
 </tr>
@@ -136,4 +136,4 @@ This function might also return other NTSTATUS values.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_updateoverlay.md">D3DKMT_UPDATEOVERLAY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548402">D3DKMT_UPDATEOVERLAY</a>

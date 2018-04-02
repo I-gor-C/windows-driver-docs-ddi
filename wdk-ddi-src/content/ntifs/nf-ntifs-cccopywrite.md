@@ -7,7 +7,7 @@ old-location: ifsk\cccopywrite.htm
 old-project: ifsk
 ms.assetid: 100fec4a-eebe-4a4d-b322-09afbe68ec5c
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: CcCopyWrite, CcCopyWrite routine [Installable File System Drivers], ccref_97ca67a6-e212-42bb-8998-be458c792f7b.xml, ifsk.cccopywrite, ntifs/CcCopyWrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,15 +49,15 @@ The <b>CcCopyWrite</b> routine copies data from a user buffer to a cached file.
 
 ## Syntax
 
-````
-BOOLEAN CcCopyWrite(
-  _In_ PFILE_OBJECT   FileObject,
-  _In_ PLARGE_INTEGER FileOffset,
-  _In_ ULONG          Length,
-  _In_ BOOLEAN        Wait,
-  _In_ PVOID          Buffer
+```
+NTKERNELAPI BOOLEAN CcCopyWrite(
+  PFILE_OBJECT   FileObject,
+  PLARGE_INTEGER FileOffset,
+  ULONG          Length,
+  BOOLEAN        Wait,
+  PVOID          Buffer
 );
-````
+```
 
 ## Parameters
 
@@ -94,7 +94,7 @@ If <i>Wait</i> is <b>FALSE</b>, <b>CcCopyWrite</b> will refuse to block, and wil
 
 If any failure occurs, <b>CcCopyWrite</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcCopyWrite</b> raises a STATUS_INSUFFICIENT_RESOURCES exception; if an I/O error occurs, <b>CcCopyWrite</b> raises the status exception of the I/O error. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcCopyWrite</b> in a <b>try-except</b> or <b>try-finally</b> statement.
 
-To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
+To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -108,4 +108,4 @@ To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcIniti
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>

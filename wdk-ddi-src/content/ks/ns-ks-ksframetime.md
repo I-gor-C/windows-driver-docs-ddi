@@ -47,13 +47,13 @@ req.typenames: KSFRAMETIME, *PKSFRAMETIME
 The KSFRAMETIME structure is supported by rendering pins, and is used to return the duration of the next "frame" of data, and flags associated with that frame.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSFRAMETIME {
   LONGLONG Duration;
-  ULONG    FrameFlags;
-  ULONG    Reserved;
-} KSFRAMETIME, *PKSFRAMETIME;
-````
+  ULONG    FrameFlags;
+  ULONG    Reserved;
+}  *PKSFRAMETIME;
+```
 
 ## Members
 
@@ -64,7 +64,7 @@ Specifies the duration in presentation time units.
 
 `FrameFlags`
 
-Specifies the flags specific to the next frame, or to all frames. Flags are described on the reference page for <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>.
+Specifies the flags specific to the next frame, or to all frames. Flags are described on the reference page for <a href="https://msdn.microsoft.com/library/windows/hardware/ff560979">KSALLOCATOR_FRAMING</a>.
 
 `Reserved`
 

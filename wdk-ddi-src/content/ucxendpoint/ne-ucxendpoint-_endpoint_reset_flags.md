@@ -7,7 +7,7 @@ old-location: buses\endpoint_reset_flags.htm
 old-project: usbref
 ms.assetid: 3775836D-DC1E-47B4-8186-2AC329825FCE
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: ENDPOINT_RESET_FLAGS, ENDPOINT_RESET_FLAGS enumeration [Buses], FlagEndpointResetPreserveTransferState, _ENDPOINT_RESET_FLAGS, buses.endpoint_reset_flags, ucxendpoint/ENDPOINT_RESET_FLAGS, ucxendpoint/FlagEndpointResetPreserveTransferState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,11 +48,11 @@ req.product: Windows 10 or later.
 Defines parameters for a request to reset an endpoint.
 
 ## Syntax
-````
-typedef enum _ENDPOINT_RESET_FLAGS { 
-  FlagEndpointResetPreserveTransferState  = 0x1
+```
+typedef enum _ENDPOINT_RESET_FLAGS {
+  FlagEndpointResetPreserveTransferState
 } ENDPOINT_RESET_FLAGS;
-````
+```
 
 ## Constants
 
@@ -72,8 +72,8 @@ typedef enum _ENDPOINT_RESET_FLAGS {
 
 ## See Also
 
-<a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_reset.md">EVT_UCX_ENDPOINT_RESET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188021">ENDPOINT_RESET</a>
 
 
 
-<a href="..\ucxendpoint\ns-ucxendpoint-_endpoint_reset.md">ENDPOINT_RESET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187828">EVT_UCX_ENDPOINT_RESET</a>

@@ -7,7 +7,7 @@ old-location: debugger\getsymbolentryinformation.htm
 old-project: debugger
 ms.assetid: 02fe418f-1793-4585-9891-1274a4ddba74
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetSymbolEntryInformation method [Windows Debugging], GetSymbolEntryInformation method [Windows Debugging], IDebugSymbols3 interface, GetSymbolEntryInformation,IDebugSymbols3.GetSymbolEntryInformation, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryInformation method, IDebugSymbols3::GetSymbolEntryInformation, IDebugSymbols_a1ac4d9f-172c-4697-937d-a59c88bb8778.xml, dbgeng/IDebugSymbols3::GetSymbolEntryInformation, debugger.getsymbolentryinformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,27 +44,27 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetSymbolEntryInformation method
+# IDebugSymbols3::GetSymbolEntryInformation method
 The <b>GetSymbolEntryInformation</b> method returns the symbol entry information for a symbol.
 
 ## Syntax
 
-````
+```
 HRESULT GetSymbolEntryInformation(
-  [in]  PDEBUG_MODULE_AND_ID Id,
-  [out] PDEBUG_SYMBOL_ENTRY  Info
+  PDEBUG_MODULE_AND_ID Id,
+  PDEBUG_SYMBOL_ENTRY  Info
 );
-````
+```
 
 ## Parameters
 
 `Id`
 
-Specifies the module and symbol ID of the desired symbol.  For details on this structure, see <a href="..\dbgeng\ns-dbgeng-_debug_module_and_id.md">DEBUG_MODULE_AND_ID</a>.
+Specifies the module and symbol ID of the desired symbol.  For details on this structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541511">DEBUG_MODULE_AND_ID</a>.
 
 `Info`
 
-Receives the symbol entry information for the symbol.  For details on this structure, see <a href="..\dbgeng\ns-dbgeng-_debug_symbol_entry.md">DEBUG_SYMBOL_ENTRY</a>.
+Receives the symbol entry information for the symbol.  For details on this structure, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff541662">DEBUG_SYMBOL_ENTRY</a>.
 
 
 ## Return Value
@@ -101,7 +101,7 @@ For details on the symbol entry information, see <a href="https://msdn.microsoft
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>
 
 
 

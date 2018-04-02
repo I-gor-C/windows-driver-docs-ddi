@@ -7,7 +7,7 @@ old-location: netvista\ndiscanceloidrequest.htm
 old-project: netvista
 ms.assetid: 4cb12ac3-7cb6-4773-b680-d77a55b19246
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisCancelOidRequest, NdisCancelOidRequest function [Network Drivers Starting with Windows Vista], ndis/NdisCancelOidRequest, ndis_request_ref_5f7f8a9a-f773-4ca8-aba3-21fe74431e0c.xml, netvista.ndiscanceloidrequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,25 +51,25 @@ Protocol drivers call the
 
 ## Syntax
 
-````
-VOID NdisCancelOidRequest(
-  _In_ NDIS_HANDLE NdisBindingHandle,
-  _In_ PVOID       RequestId
+```
+void NdisCancelOidRequest(
+  NDIS_HANDLE NdisBindingHandle,
+  PVOID       RequestId
 );
-````
+```
 
 ## Parameters
 
 `NdisBindingHandle`
 
 The handle returned by the 
-     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function that
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function that
      identifies the target adapter on the binding.
 
 `RequestId`
 
 A cancellation identifier for the request. This identifier specifies the 
-     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structures that are being
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structures that are being
      canceled.
 
 
@@ -82,9 +82,9 @@ None
 Protocol drivers call this function to cancel a previously issued request. The request ID that is
     passed at the 
     <i>RequestId</i> parameter must match the request ID in the 
-    <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure that was passed
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure that was passed
     in the call to the 
-    <a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a> function.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,12 +98,12 @@ Protocol drivers call this function to cancel a previously issued request. The r
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisoidrequest.md">NdisOidRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563710">NdisOidRequest</a>
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>

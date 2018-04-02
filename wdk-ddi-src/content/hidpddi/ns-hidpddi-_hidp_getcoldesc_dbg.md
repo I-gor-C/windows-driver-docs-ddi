@@ -45,16 +45,16 @@ req.typenames: HIDP_GETCOLDESC_DBG, *PHIDP_GETCOLDESC_DBG
 
 # _HIDP_GETCOLDESC_DBG structure
 Contains the error code indicating the failure in parsing the report 
-                                      descriptor. This structure is used in the <a href="..\hidpddi\nf-hidpddi-hidp_getcollectiondescription.md">HidP_GetCollectionDescription</a> call.
+                                      descriptor. This structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt740164">HidP_GetCollectionDescription</a> call.
 
 ## Syntax
-````
+```
 typedef struct _HIDP_GETCOLDESC_DBG {
   ULONG BreakOffset;
   ULONG ErrorCode;
   ULONG Args[6];
 } HIDP_GETCOLDESC_DBG, *PHIDP_GETCOLDESC_DBG;
-````
+```
 
 ## Members
 
@@ -81,4 +81,4 @@ Error-specific arguments. These are described as comments in the possible values
 
 ## See Also
 
-<a href="..\hidpddi\nf-hidpddi-hidp_getcollectiondescription.md">HidP_GetCollectionDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt740164">HidP_GetCollectionDescription</a>

@@ -7,7 +7,7 @@ old-location: ifsk\rtlcomparememoryulong.htm
 old-project: ifsk
 ms.assetid: 78ff21da-be0f-4b57-9162-1052a6c12b5c
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlCompareMemoryUlong, RtlCompareMemoryUlong routine [Installable File System Drivers], ifsk.rtlcomparememoryulong, ntifs/RtlCompareMemoryUlong, rtlref_a220e168-945b-46d1-9aa7-7750bdfc39bd.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>RtlCompareMemoryUlong</b> routine returns how many bytes in a block of me
 
 ## Syntax
 
-````
-SIZE_T RtlCompareMemoryUlong(
-  _In_ PVOID  Source,
-  _In_ SIZE_T Length,
-  _In_ ULONG  Pattern
+```
+NTSYSAPI SIZE_T RtlCompareMemoryUlong(
+  PVOID  Source,
+  SIZE_T Length,
+  ULONG  Pattern
 );
-````
+```
 
 ## Parameters
 
@@ -94,4 +94,4 @@ For more information about managing buffered data and initializing driver-alloca
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlcomparememory.md">RtlCompareMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561778">RtlCompareMemory</a>

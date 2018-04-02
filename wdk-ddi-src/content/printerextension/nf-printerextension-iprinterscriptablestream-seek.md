@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# Seek method
+# IPrinterScriptableStream::Seek method
 Sets the seek pointer.
 
 ## Syntax
 
-````
+```
 HRESULT Seek(
-  [in]          LONG        lOffset,
-  [in]          STREAM_SEEK streamSeek,
-  [out, retval] LONG        *plPosition
+  LONG        lOffset,
+  STREAM_SEEK streamSeek,
+  LONG        *plPosition
 );
-````
+```
 
 ## Parameters
 
@@ -87,4 +87,4 @@ This method returns an <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablestream.md">IPrinterScriptableStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973218">IPrinterScriptableStream</a>

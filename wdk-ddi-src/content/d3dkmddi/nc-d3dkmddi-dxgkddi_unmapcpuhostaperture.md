@@ -7,7 +7,7 @@ old-location: display\dxgkddiunmapcpuhostaperture.htm
 old-project: display
 ms.assetid: AFE6B92F-49DB-47F9-90BC-F75B5F37178D
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKDDI_UNMAPCPUHOSTAPERTURE, DxgkDdiUnmapCpuHostAperture, DxgkDdiUnmapCpuHostAperture callback function [Display Devices], d3dkmddi/DxgkDdiUnmapCpuHostAperture, display.dxgkddiunmapcpuhostaperture
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ A handle to the display adapter.
 
 `pArgs`
 
-A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_unmapcpuhostaperture.md">DXGKARG_UNMAPCPUHOSTAPERTURE</a> structure that describes the operation.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/dn906826">DXGKARG_UNMAPCPUHOSTAPERTURE</a> structure that describes the operation.
 
 
 ## Return Value
@@ -84,4 +84,4 @@ Returns <b>STATUS_SUCCESS</b> if it succeeds. Otherwise, it returns one of the e
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_unmapcpuhostaperture.md">DXGKARG_UNMAPCPUHOSTAPERTURE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906826">DXGKARG_UNMAPCPUHOSTAPERTURE</a>

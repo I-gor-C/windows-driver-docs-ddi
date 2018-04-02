@@ -55,11 +55,11 @@ The <b>WdfInterruptGetDevice</b> method returns a handle to the framework device
 
 ## Syntax
 
-````
+```
 WDFDEVICE WdfInterruptGetDevice(
-  _In_ WDFINTERRUPT Interrupt
+  WDFINTERRUPT Interrupt
 );
-````
+```
 
 ## Parameters
 
@@ -81,7 +81,7 @@ For more information about handling interrupts in framework-based drivers, see <
 
 #### Examples
 
-The following code example shows how an <a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_isr.md">EvtInterruptIsr</a> callback function can obtain a pointer to driver-defined context space for the device object that an interrupt object belongs to.
+The following code example shows how an <a href="https://msdn.microsoft.com/6f28a66a-9c17-4020-bfe2-295c22af6ba7">EvtInterruptIsr</a> callback function can obtain a pointer to driver-defined context space for the device object that an interrupt object belongs to.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -117,4 +117,4 @@ MyEvtInterruptIsr(
 
 ## See Also
 
-<a href="..\wdfinterrupt\nc-wdfinterrupt-evt_wdf_interrupt_isr.md">EvtInterruptIsr</a>
+<a href="https://msdn.microsoft.com/6f28a66a-9c17-4020-bfe2-295c22af6ba7">EvtInterruptIsr</a>

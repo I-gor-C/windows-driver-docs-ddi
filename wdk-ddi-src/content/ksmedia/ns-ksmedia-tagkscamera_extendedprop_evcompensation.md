@@ -47,15 +47,15 @@ req.typenames: KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, *PKSCAMERA_EXTENDEDPROP_EVC
 The <i>EV Compensation Control</i> provides for exposure control that is adjusted by increments of EV compensation steps.
 
 ## Syntax
-````
-typedef struct _KSCAMERA_EXTENDEDPROP_EVCOMPENSATION {
-  ULONG     Mode;
-  LONG      Min;
-  LONG      Max;
-  LONG      Value;
+```
+typedef struct tagKSCAMERA_EXTENDEDPROP_EVCOMPENSATION {
+  ULONG     Mode;
+  LONG      Min;
+  LONG      Max;
+  LONG      Value;
   ULONGLONG Reserved;
-} KSCAMERA_EXTENDEDPROP_EVCOMPENSATION, *PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION;
-````
+} *PKSCAMERA_EXTENDEDPROP_EVCOMPENSATION, KSCAMERA_EXTENDEDPROP_EVCOMPENSATION;
+```
 
 ## Members
 
@@ -74,7 +74,7 @@ The maximum EV compensation supported. This is an absolute EV value.
 
 `Value`
 
-EV Compensation in units of steps  selected in the <b>Flags</b> member of <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_header.md">KSCAMERA_EXTENDEDPROP_HEADER</a>.
+EV Compensation in units of steps  selected in the <b>Flags</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/dn567563">KSCAMERA_EXTENDEDPROP_HEADER</a>.
 
 `Reserved`
 
@@ -91,7 +91,7 @@ Reserved.
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_header.md">KSCAMERA_EXTENDEDPROP_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn567563">KSCAMERA_EXTENDEDPROP_HEADER</a>
 
 
 

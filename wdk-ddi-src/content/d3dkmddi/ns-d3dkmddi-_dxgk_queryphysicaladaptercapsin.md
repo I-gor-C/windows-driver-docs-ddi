@@ -7,7 +7,7 @@ old-location: display\dxgk_queryphysicaladaptercapsin.htm
 old-project: display
 ms.assetid: 4B01E62F-5E5B-4316-B237-EADAA3C72242
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_QUERYPHYSICALADAPTERCAPSIN, DXGK_QUERYPHYSICALADAPTERCAPSIN structure [Display Devices], _DXGK_QUERYPHYSICALADAPTERCAPSIN, d3dkmddi/DXGK_QUERYPHYSICALADAPTERCAPSIN, display.dxgk_queryphysicaladaptercapsin
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,11 +47,11 @@ req.typenames: DXGK_QUERYPHYSICALADAPTERCAPSIN
 The <b>DXGK_QUERYPHYSICALADAPTERCAPSIN</b> structure is used to query the display driver for the capabilities of the physical display adapter.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_QUERYPHYSICALADAPTERCAPSIN {
   UINT PhysicalAdapterIndex;
 } DXGK_QUERYPHYSICALADAPTERCAPSIN;
-````
+```
 
 ## Members
 

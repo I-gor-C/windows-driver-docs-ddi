@@ -7,7 +7,7 @@ old-location: display\iddcxmonitorqueryhardwarecursor.htm
 old-project: display
 ms.assetid: e954b7e7-9e4a-47ae-9b0f-8c7e051cc00e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IddCxMonitorQueryHardwareCursor, IddCxMonitorQueryHardwareCursor method [Display Devices], display.iddcxmonitorqueryhardwarecursor, iddcx/IddCxMonitorQueryHardwareCursor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,19 +49,19 @@ An OS callback function the driver calls when it wants obtain the updated cursor
 
 ## Syntax
 
-````
+```
 NTSTATUS IddCxMonitorQueryHardwareCursor(
-  _In_        IDDCX_MONITOR             MonitorObject,
-  _In_  const IDARG_IN_QUERY_HWCURSOR*  pInArgs,
-  _Out_       IDARG_OUT_QUERY_HWCURSOR* pOutArgs
+  IDDCX_MONITOR                 MonitorObject,
+  CONST IDARG_IN_QUERY_HWCURSOR *pInArgs,
+  IDARG_OUT_QUERY_HWCURSOR      *pOutArgs
 );
-````
+```
 
 ## Parameters
 
 `MonitorObject`
 
-This is the OS context handle for this monitor returned by the <a href="..\iddcx\nf-iddcx-iddcxmonitorarrival.md">IddCxMonitorArrival</a> call
+This is the OS context handle for this monitor returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt761920">IddCxMonitorArrival</a> call
 
 `pInArgs`
 

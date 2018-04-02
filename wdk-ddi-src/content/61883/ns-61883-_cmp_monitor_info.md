@@ -47,15 +47,15 @@ req.typenames: CMP_MONITOR_INFO, *PCMP_MONITOR_INFO
 The CMP_MONITOR_INFO structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536987">Av61883_MonitorPlugs</a> request to allow a driver to monitor access to local oPCR and iPCR plugs.
 
 ## Syntax
-````
+```
 typedef struct _CMP_MONITOR_INFO {
-  ULONG  State;
-  ULONG  PlugNum;
-  ULONG  PlugType;
+  ULONG  State;
+  ULONG  PlugNum;
+  ULONG  PlugType;
   AV_PCR Pcr;
-  PVOID  Context;
+  PVOID  Context;
 } CMP_MONITOR_INFO, *PCMP_MONITOR_INFO;
-````
+```
 
 ## Members
 

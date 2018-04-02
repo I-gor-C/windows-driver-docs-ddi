@@ -7,7 +7,7 @@ old-location: display\d3d10ddiarg_stream_output_declaration_entry.htm
 old-project: display
 ms.assetid: 42d01b63-ca3b-4348-bf50-a1d648548266
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure [Display Devices], UMDisplayDriver_Dx10param_Structs_bdfafade-cf99-4cbb-9ae1-d1bd57997dac.xml, d3d10umddi/D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY, display.d3d10ddiarg_stream_output_declaration_entry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY
 The D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY structure describes a portion of the stream output for a geometry shader.
 
 ## Syntax
-````
+```
 typedef struct D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY {
   UINT OutputSlot;
   UINT RegisterIndex;
   BYTE RegisterMask;
-} D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY;
-````
+};
+```
 
 ## Members
 
@@ -79,4 +79,4 @@ typedef struct D3D10DDIARG_STREAM_OUTPUT_DECLARATION_ENTRY {
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_creategeometryshaderwithstreamoutput.md">D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541681">D3D10DDIARG_CREATEGEOMETRYSHADERWITHSTREAMOUTPUT</a>

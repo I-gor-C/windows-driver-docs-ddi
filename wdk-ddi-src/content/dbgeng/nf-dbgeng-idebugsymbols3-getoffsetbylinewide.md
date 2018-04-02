@@ -7,7 +7,7 @@ old-location: debugger\getoffsetbylinewide.htm
 old-project: debugger
 ms.assetid: ba09333e-84a5-4166-a859-e09c0cf74347
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetOffsetByLineWide method [Windows Debugging], GetOffsetByLineWide method [Windows Debugging], IDebugSymbols3 interface, GetOffsetByLineWide,IDebugSymbols3.GetOffsetByLineWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetOffsetByLineWide method, IDebugSymbols3::GetOffsetByLineWide, dbgeng/IDebugSymbols3::GetOffsetByLineWide, debugger.getoffsetbylinewide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetOffsetByLineWide method
+# IDebugSymbols3::GetOffsetByLineWide method
 The <b>GetOffsetByLineWide</b>  method returns the location of the instruction that corresponds to a specified line in the source code.
 
 ## Syntax
 
-````
+```
 HRESULT GetOffsetByLineWide(
-  [in]  ULONG    Line,
-  [in]  PCWSTR   File,
-  [out] PULONG64 Offset
+  ULONG    Line,
+  PCWSTR   File,
+  PULONG64 Offset
 );
-````
+```
 
 ## Parameters
 
@@ -108,8 +108,8 @@ For more information about source files, see <a href="https://msdn.microsoft.com
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546995">GetLineByOffset</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

@@ -7,7 +7,7 @@ old-location: display\videoportcompletedma.htm
 old-project: display
 ms.assetid: 8af5a397-7945-4f72-a253-04d227bf3ca1
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortCompleteDma, VideoPortCompleteDma function [Display Devices], VideoPort_Functions_1ee3a02f-e0bb-4230-8161-957ceba37206.xml, display.videoportcompletedma, video/VideoPortCompleteDma
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The <b>VideoPortCompleteDma</b> function flushes any data remaining in a bus-mas
 
 ## Syntax
 
-````
-VP_STATUS VideoPortCompleteDma(
-  _In_ PVOID                   HwDeviceExtension,
-  _In_ PVP_DMA_ADAPTER         VpDmaAdapter,
-  _In_ PVP_SCATTER_GATHER_LIST VpScatterGather,
-  _In_ BOOLEAN                 WriteToDevice
+```
+VIDEOPORT_API VP_STATUS VideoPortCompleteDma(
+  IN PVOID                   HwDeviceExtension,
+  IN PVP_DMA_ADAPTER         VpDmaAdapter,
+  IN PVP_SCATTER_GATHER_LIST VpScatterGather,
+  IN BOOLEAN                 WriteToDevice
 );
-````
+```
 
 ## Parameters
 
@@ -67,11 +67,11 @@ Pointer to the miniport driver's device extension.
 
 `VpDmaAdapter`
 
-Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This structure was returned by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>.
 
 `VpScatterGather`
 
-Pointer to the <a href="..\video\ns-video-_vp_scatter_gather_list.md">VP_SCATTER_GATHER_LIST</a> structure previously passed to the miniport driver callback routine, <a href="..\video\nc-video-pexecute_dma.md">HwVidExecuteDma</a>.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570572">VP_SCATTER_GATHER_LIST</a> structure previously passed to the miniport driver callback routine, <a href="https://msdn.microsoft.com/262c4b9b-fdca-4899-a635-fb273bbf4cc8">HwVidExecuteDma</a>.
 
 `WriteToDevice`
 
@@ -100,16 +100,16 @@ It is important to note that the scatter/gather list built by <b>VideoPortStartD
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
 
 
 
-<a href="..\video\nf-video-videoportstartdma.md">VideoPortStartDma</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570572">VP_SCATTER_GATHER_LIST</a>
 
 
 
-<a href="..\video\ns-video-_vp_scatter_gather_list.md">VP_SCATTER_GATHER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570369">VideoPortStartDma</a>

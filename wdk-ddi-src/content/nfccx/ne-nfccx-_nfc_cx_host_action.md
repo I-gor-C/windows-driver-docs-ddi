@@ -47,14 +47,14 @@ req.typenames: NFC_CX_HOST_ACTION, *PNFC_CX_HOST_ACTION
 The NFC_CX_HOST_ACTION enumeration specifies host actions.
 
 ## Syntax
-````
-typedef enum _NFC_CX_HOST_ACTION { 
-  HostActionStart    = 0,
-  HostActionStop     = 1,
-  HostActionRestart  = 2,
-  HostActionUnload   = 3
-} NFC_CX_HOST_ACTION;
-````
+```
+typedef enum _NFC_CX_HOST_ACTION {
+  HostActionStart    ,
+  HostActionStop     ,
+  HostActionRestart  ,
+  HostActionUnload
+} NFC_CX_HOST_ACTION, *PNFC_CX_HOST_ACTION;
+```
 
 ## Constants
 

@@ -7,7 +7,7 @@ old-location: kernel\keinitializecrashdumpheader.htm
 old-project: kernel
 ms.assetid: 6fa0cf86-35f4-4e5d-bced-ebd2ec499b64
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeInitializeCrashDumpHeader, KeInitializeCrashDumpHeader routine [Kernel-Mode Driver Architecture], k105_c15cf29a-9b95-4bec-9f9d-8664ac5e3cd3.xml, kernel.keinitializecrashdumpheader, wdm/KeInitializeCrashDumpHeader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,15 +50,15 @@ The <b>KeInitializeCrashDumpHeader</b> routine supplies the header information t
 
 ## Syntax
 
-````
-NTSTATUS KeInitializeCrashDumpHeader(
-  _In_      ULONG  DumpType,
-  _In_      ULONG  Flags,
-  _Out_     PVOID  Buffer,
-  _In_      ULONG  BufferSize,
-  _Out_opt_ PULONG BufferNeeded
+```
+NTKERNELAPI NTSTATUS KeInitializeCrashDumpHeader(
+  ULONG  DumpType,
+  ULONG  Flags,
+  PVOID  Buffer,
+  ULONG  BufferSize,
+  PULONG BufferNeeded
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: storage\hba_sendrls.htm
 old-project: storage
 ms.assetid: d2349c45-eb88-4584-bbdd-b7c46601a1bc
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_SendRLS, HBA_SendRLS routine [Storage Devices], fibreHBA_rtns_8a7d150c-eeba-4850-9a93-7a48096d6f22.xml, hbaapi/HBA_SendRLS, storage.hba_sendrls
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,21 +49,21 @@ The <b>HBA_SendRLS</b> WMI routine sends a read link error status block (RLS) re
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_SendRLS(
-  _In_    HBA_HANDLE HbaHandle,
-  _In_    HBA_WWN    HbaPortWWN,
-  _In_    HBA_WWN    DestWWN,
-  _Out_   void       *pRspBuffer,
-  _Inout_ HBA_UINT32 *pRspBufferSize
+  IN HBA_HANDLE     HbaHandle,
+  IN HBA_WWN        HbaPortWWN,
+  IN HBA_WWN        DestWWN,
+  OUT void          *pRspBuffer,
+  IN OUT HBA_UINT32 *pRspBufferSize
 );
-````
+```
 
 ## Parameters
 
 `HbaHandle`
 
-Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a> that identifies the HBA through which the request is sent.
+Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA through which the request is sent.
 
 `HbaPortWWN`
 
@@ -148,8 +148,8 @@ Returned if an unspecified error occurred that prevented the execution of the RL
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>

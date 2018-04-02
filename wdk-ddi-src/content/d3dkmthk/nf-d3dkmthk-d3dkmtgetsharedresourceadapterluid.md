@@ -7,7 +7,7 @@ old-location: display\d3dkmtgetsharedresourceadapterluid.htm
 old-project: display
 ms.assetid: 880bf5bd-eadc-480f-a10c-f6d57f670857
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTGetSharedResourceAdapterLuid, D3DKMTGetSharedResourceAdapterLuid function [Display Devices], d3dkmthk/D3DKMTGetSharedResourceAdapterLuid, display.d3dkmtgetsharedresourceadapterluid
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ Maps a shared resource to a locally unique identifier (LUID) that identifies the
 
 ## Syntax
 
-````
-EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTGetSharedResourceAdapterLuid(
-  _Inout_ D3DKMT_GETSHAREDRESOURCEADAPTERLUID *pLuid
+```
+NTSTATUS D3DKMTGetSharedResourceAdapterLuid(
+
 );
-````
+```
 
 ## Parameters
 
@@ -110,4 +110,4 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_getsharedresourceadapterluid.md">D3DKMT_GETSHAREDRESOURCEADAPTERLUID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj128344">D3DKMT_GETSHAREDRESOURCEADAPTERLUID</a>

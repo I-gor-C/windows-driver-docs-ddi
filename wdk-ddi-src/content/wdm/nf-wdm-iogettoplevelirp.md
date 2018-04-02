@@ -7,7 +7,7 @@ old-location: ifsk\iogettoplevelirp.htm
 old-project: ifsk
 ms.assetid: e92685f6-031a-464a-b26a-54bebf7d66b6
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: IoGetTopLevelIrp, IoGetTopLevelIrp routine [Installable File System Drivers], ifsk.iogettoplevelirp, ioref_4826c2a4-5c95-461d-b21c-7e3fca98c0cb.xml, ntifs/IoGetTopLevelIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>IoGetTopLevelIrp</b> routine returns the value of the <b>TopLevelIrp</b> 
 
 ## Syntax
 
-````
-PIRP IoGetTopLevelIrp(
-   VOID 
+```
+NTKERNELAPI PIRP IoGetTopLevelIrp(
+
 );
-````
+```
 
 ## Parameters
 
@@ -132,4 +132,4 @@ The cache manager is the top-level component for the current thread, and the cur
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iosettoplevelirp.md">IoSetTopLevelIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548540">IoSetTopLevelIrp</a>

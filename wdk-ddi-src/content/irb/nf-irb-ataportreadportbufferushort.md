@@ -7,7 +7,7 @@ old-location: storage\ataportreadportbufferushort.htm
 old-project: storage
 ms.assetid: f118af3b-5a9a-486b-9550-9b48bdfb48cd
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortReadPortBufferUshort, AtaPortReadPortBufferUshort routine [Storage Devices], atartns_9cf8ae36-e364-4fb8-9fda-c8a78cd022b4.xml, irb/AtaPortReadPortBufferUshort, storage.ataportreadportbufferushort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,19 +53,19 @@ The <b>AtaPortReadPortBufferUshort</b> routine transfers a given number of USHOR
 
 ## Syntax
 
-````
-VOID AtaPortReadPortBufferUshort(
-  _In_ PUSHORT Port,
-  _In_ PUSHORT Buffer,
-  _In_ ULONG   Count
+```
+void AtaPortReadPortBufferUshort(
+  PUSHORT Port,
+  PUSHORT Buffer,
+  ULONG   Count
 );
-````
+```
 
 ## Parameters
 
 `Port`
 
-A pointer to the I/O port. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>.
+A pointer to the I/O port. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>.
 
 `Buffer`
 
@@ -90,12 +90,12 @@ None
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>
 
 
 
-<a href="..\irb\nf-irb-ataportreadportbufferuchar.md">AtaPortReadPortBufferUchar</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550175">AtaPortReadPortBufferUchar</a>
 
 
 
-<a href="..\irb\nf-irb-ataportreadportbufferulong.md">AtaPortReadPortBufferUlong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550177">AtaPortReadPortBufferUlong</a>

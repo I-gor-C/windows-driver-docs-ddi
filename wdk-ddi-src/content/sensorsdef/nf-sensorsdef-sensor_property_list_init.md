@@ -46,16 +46,16 @@ req.product: Windows 10 or later.
 
 
 # SENSOR_PROPERTY_LIST_INIT function
-This function initializes a <a href="..\sensorsdef\ns-sensorsdef-sensor_property_list.md">SENSOR_PROPERTY_LIST</a> structure.
+This function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/dn946699">SENSOR_PROPERTY_LIST</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE VOID SENSOR_PROPERTY_LIST_INIT(
-  _Out_ writes_bytes_(PropertyListSize) PSENSOR_PROPERTY_LIST                       pPropertyList,
-  _In_  _Pre_satisfies_(SENSOR_PROPERTY_LIST_HEADER_SIZE <= PropertyListSize) ULONG PropertyListSize
+```
+void SENSOR_PROPERTY_LIST_INIT(
+  PSENSOR_PROPERTY_LIST pPropertyList,
+  ULONG                 PropertyListSize
 );
-````
+```
 
 ## Parameters
 
@@ -81,4 +81,4 @@ This function does not return a value.
 
 ## See Also
 
-<a href="..\sensorsdef\ns-sensorsdef-sensor_property_list.md">SENSOR_PROPERTY_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946699">SENSOR_PROPERTY_LIST</a>

@@ -7,7 +7,7 @@ old-location: debugger\executewide.htm
 old-project: debugger
 ms.assetid: 2aece5f0-5cfd-47fe-b8c1-e191f0a4296d
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: ExecuteWide method [Windows Debugging], ExecuteWide method [Windows Debugging], IDebugControl4 interface, ExecuteWide,IDebugControl4.ExecuteWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], ExecuteWide method, IDebugControl4::ExecuteWide, dbgeng/IDebugControl4::ExecuteWide, debugger.executewide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# ExecuteWide method
+# IDebugControl4::ExecuteWide method
 The <b>ExecuteWide</b>  method executes the specified debugger commands.
 
 ## Syntax
 
-````
+```
 HRESULT ExecuteWide(
-  [in] ULONG  OutputControl,
-  [in] PCWSTR Command,
-  [in] ULONG  Flags
+  ULONG  OutputControl,
+  PCWSTR Command,
+  ULONG  Flags
 );
-````
+```
 
 ## Parameters
 
@@ -143,8 +143,8 @@ This method executes the given command string.  If the string has multiple comma
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543215">ExecuteCommandFile</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>

@@ -7,7 +7,7 @@ old-location: storage\storportstatechangedetected.htm
 old-project: storage
 ms.assetid: 3E5E9C4E-5B82-4656-BDF2-23A9A8D40ADF
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ATTRIBUTE_VM_PASSTHROUGH_LUN, STATE_CHANGE_BUS, STATE_CHANGE_LUN, STATE_CHANGE_TARGET, StorPortStateChangeDetected, StorPortStateChangeDetected routine [Storage Devices], storage.storportstatechangedetected, storport/StorPortStateChangeDetected
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,22 +50,22 @@ Notifies the Storport port driver of a state change for a logical unit number (L
 
 ## Syntax
 
-````
+```
 ULONG StorPortStateChangeDetected(
-  _In_     PVOID            HwDeviceExtension,
-  _In_     ULONG            ChangedEntity,
-  _In_     PSTOR_ADDRESS    Address,
-  _In_     ULONG            Attributes,
-  _In_opt_ PHW_STATE_CHANGE HwStateChange,
-  _In_opt_ ULONG            HwStateChangeContext
+  PVOID            HwDeviceExtension,
+  ULONG            ChangedEntity,
+  PSTOR_ADDRESS    Address,
+  ULONG            Attributes,
+  PHW_STATE_CHANGE HwStateChange,
+  PVOID            HwStateChangeContext
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-A pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
+A pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 `ChangedEntity`
 
@@ -207,4 +207,4 @@ If multiple flags are specified in <i>ChangedEntity</i>, the  flag with greater 
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_state_change.md">HwStorStateChange</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451310">HwStorStateChange</a>

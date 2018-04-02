@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Commit method
+# IPrinterScriptableStream::Commit method
 Commits the operation.
 
 ## Syntax
 
-````
+```
 HRESULT Commit(
-    Void
+
 );
-````
+```
 
 ## Parameters
 
@@ -74,4 +74,4 @@ This method returns an <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablestream.md">IPrinterScriptableStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973218">IPrinterScriptableStream</a>

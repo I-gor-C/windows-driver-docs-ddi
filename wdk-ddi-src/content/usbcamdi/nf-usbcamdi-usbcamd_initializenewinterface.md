@@ -51,14 +51,14 @@ The <b>USBCAMD_InitializeNewInterface</b> function provides USBCAMD with all the
 
 ## Syntax
 
-````
+```
 ULONG USBCAMD_InitializeNewInterface(
-  _In_ PVOID DeviceContext,
-  _In_ PVOID DeviceData,
-  _In_ ULONG Version,
-  _In_ ULONG CamControlFlag
+  PVOID DeviceContext,
+  PVOID DeviceData,
+  ULONG Version,
+  ULONG CamControlFlag
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ Pointer to device-specific context.
 
 `DeviceData`
 
-Pointer to a <a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data2.md">USBCAMD_DEVICE_DATA2</a> structure.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568590">USBCAMD_DEVICE_DATA2</a> structure.
 
 `Version`
 
@@ -149,4 +149,4 @@ The <b>USBCAMD_InitializeNewInterface</b> function must be called by the camera 
 
 
 
-<a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data2.md">USBCAMD_DEVICE_DATA2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568590">USBCAMD_DEVICE_DATA2</a>

@@ -47,14 +47,14 @@ req.typenames: KSCAMERA_PERFRAMESETTING_FRAME_HEADER, *PKSCAMERA_PERFRAMESETTING
 This structure contains the header information for a frame in a per-frame settings payload.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSCAMERA_PERFRAMESETTING_FRAME_HEADER {
   ULONG Size;
   ULONG Id;
   ULONG ItemCount;
   ULONG Reserved;
-} KSCAMERA_PERFRAMESETTING_FRAME_HEADER, *PKSCAMERA_PERFRAMESETTING_FRAME_HEADER;
-````
+} *PKSCAMERA_PERFRAMESETTING_FRAME_HEADER, KSCAMERA_PERFRAMESETTING_FRAME_HEADER;
+```
 
 ## Members
 

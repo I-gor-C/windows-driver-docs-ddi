@@ -47,12 +47,12 @@ req.typenames: KSEVENT_CLOCK_POSITION
 
 
 ## Syntax
-````
-typedef enum  { 
-  KSEVENT_CLOCK_INTERVAL_MARK,
+```
+typedef enum KSEVENT_CLOCK_POSITION {
+  KSEVENT_CLOCK_INTERVAL_MARK  ,
   KSEVENT_CLOCK_POSITION_MARK
-} KSEVENT_CLOCK_POSITION;
-````
+} ;
+```
 
 ## Constants
 

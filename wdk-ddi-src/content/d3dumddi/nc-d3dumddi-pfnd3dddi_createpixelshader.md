@@ -7,7 +7,7 @@ old-location: display\createpixelshader.htm
 old-project: display
 ms.assetid: b80a1823-6d91-440f-89e4-f7248579cc8f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: CreatePixelShader, CreatePixelShader callback function [Display Devices], PFND3DDDI_CREATEPIXELSHADER, UserModeDisplayDriver_Functions_4e9d378f-d5aa-4b5d-9a66-ff2dd2f8fae8.xml, d3dumddi/CreatePixelShader, display.createpixelshader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -92,8 +92,8 @@ For more information about programming shader assemblers, see <a href="https://m
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542952">D3DDDIARG_CREATEPIXELSHADER</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createpixelshader.md">D3DDDIARG_CREATEPIXELSHADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>

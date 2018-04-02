@@ -45,21 +45,21 @@ req.product: Windows 10 or later.
 ---
 
 
-# Escape method
+# IStiUSD::Escape method
 A still image minidriver's <b>IStiUSD::Escape</b> method performs a vendor-specific I/O operation on a still image device.
 
 ## Syntax
 
-````
+```
 HRESULT Escape(
-   STI_RAW_CONTROL_CODE EscapeFunction,
-   LPVOID               lpInData,
-   DWORD                cbInDataSize,
-   LPVOID               pOutData,
-   DWORD                dwOutDataSize,
-   LPDWORD              pdwActualData
+  STI_RAW_CONTROL_CODE EscapeFunction,
+  LPVOID               lpInData,
+  DWORD                cbInDataSize,
+  LPVOID               pOutData,
+  DWORD                cbOutDataSize,
+  LPDWORD              pdwActualData
 );
-````
+```
 
 ## Parameters
 

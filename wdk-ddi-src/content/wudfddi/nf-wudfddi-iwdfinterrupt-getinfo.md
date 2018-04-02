@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetInfo method
+# IWDFInterrupt::GetInfo method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>GetInfo</b> method retrieves information about a specified interrupt.
 
 ## Syntax
 
-````
+```
 void GetInfo(
-   WDF_INTERRUPT_INFO *Info
+  PWDF_INTERRUPT_INFO InterruptInfo
 );
-````
+```
 
 ## Parameters
 
@@ -109,7 +109,7 @@ pInterrupt&gt;GetInfo(&amp;Info);
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfinterrupt.md">IWDFInterrupt</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451283">IWDFInterrupt</a>
 
 
 
@@ -117,12 +117,12 @@ pInterrupt&gt;GetInfo(&amp;Info);
 
 
 
-<a href="..\wudfinterrupt\nf-wudfinterrupt-wdf_interrupt_info_init.md">WDF_INTERRUPT_INFO_INIT</a>
-
-
-
-<a href="..\wudfinterrupt\ns-wudfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439739">OnReleaseHardware</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh464020">WDF_INTERRUPT_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh464024">WDF_INTERRUPT_INFO_INIT</a>

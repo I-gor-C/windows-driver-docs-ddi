@@ -7,7 +7,7 @@ old-location: debugger\getmodulenamestring.htm
 old-project: debugger
 ms.assetid: 4264f5e1-08f5-4878-9e10-b98859043515
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetModuleNameString method [Windows Debugging], GetModuleNameString method [Windows Debugging], IDebugSymbols2 interface, GetModuleNameString method [Windows Debugging], IDebugSymbols3 interface, GetModuleNameString,IDebugSymbols3.GetModuleNameString, IDebugSymbols2 interface [Windows Debugging], GetModuleNameString method, IDebugSymbols2::GetModuleNameString, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetModuleNameString method, IDebugSymbols3::GetModuleNameString, IDebugSymbols_e00a93fb-08c4-4f37-9915-577a22d9c889.xml, dbgeng/IDebugSymbols2::GetModuleNameString, dbgeng/IDebugSymbols3::GetModuleNameString, debugger.getmodulenamestring
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,21 +45,21 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetModuleNameString method
+# IDebugSymbols3::GetModuleNameString method
 The <b>GetModuleNameString</b>  method returns the name of the specified module.
 
 ## Syntax
 
-````
+```
 HRESULT GetModuleNameString(
-  [in]            ULONG   Which,
-  [in]            ULONG   Index,
-  [in]            ULONG64 Base,
-  [out, optional] PSTR    Buffer,
-  [in]            ULONG   BufferSize,
-  [out, optional] PULONG  NameSize
+  ULONG   Which,
+  ULONG   Index,
+  ULONG64 Base,
+  PSTR    Buffer,
+  ULONG   BufferSize,
+  PULONG  NameSize
 );
-````
+```
 
 ## Parameters
 
@@ -194,8 +194,8 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550864">IDebugSymbols2</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

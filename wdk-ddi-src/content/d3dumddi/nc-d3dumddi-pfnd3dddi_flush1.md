@@ -7,7 +7,7 @@ old-location: display\pfnflush1.htm
 old-project: display
 ms.assetid: 6BAC104A-85CE-42FC-AE30-969B2FF6AFEF
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3DDDI_FLUSH1, d3dumddi/pfnFlush1, display.pfnflush1, pfnFlush1, pfnFlush1 callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ A handle to the display device (graphics context).
 
 `FlushFlags`
 
-A value from the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_flush_flags.md">D3DDDI_FLUSH_FLAGS</a> enumeration that indicates whether the driver should continue to submit command buffers if there have been no new commands.
+A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/dn449154">D3DDDI_FLUSH_FLAGS</a> enumeration that indicates whether the driver should continue to submit command buffers if there have been no new commands.
 
 
 ## Return Value
@@ -84,4 +84,4 @@ If this routine succeeds, it returns <b>S_OK</b>. Otherwise, it returns an <b>HR
 
 ## See Also
 
-<a href="..\d3dumddi\ne-d3dumddi-d3dddi_flush_flags.md">D3DDDI_FLUSH_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn449154">D3DDDI_FLUSH_FLAGS</a>

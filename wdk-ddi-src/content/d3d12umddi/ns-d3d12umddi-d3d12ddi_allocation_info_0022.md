@@ -7,7 +7,7 @@ old-location: display\d3d12ddi_allocation_info_0022.htm
 old-project: display
 ms.assetid: A600C402-EB77-4C44-8349-96DAF11B807C
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D12DDI_ALLOCATION_INFO_0022, D3D12DDI_ALLOCATION_INFO_0022 structure [Display Devices], d3d12umddi/D3D12DDI_ALLOCATION_INFO_0022, display.d3d12ddi_allocation_info_0022
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,19 +47,19 @@ req.typenames: D3D12DDI_ALLOCATION_INFO_0022
 Specifies allocation information.
 
 ## Syntax
-````
+```
 typedef struct D3D12DDI_ALLOCATION_INFO_0022 {
-  D3DKMT_HANDLE                       hAllocation;
-  const VOID                          *pSystemMem;
-  VOID                                *pPrivateDriverData;
-  UINT                                PrivateDriverDataSize;
-  D3DDDI_VIDEO_PRESENT_SOURCE_ID      VidPnSourceId;
+  D3DKMT_HANDLE                       hAllocation;
+  CONST VOID                          *pSystemMem;
+  VOID                                *pPrivateDriverData;
+  UINT                                PrivateDriverDataSize;
+  D3DDDI_VIDEO_PRESENT_SOURCE_ID      VidPnSourceId;
   D3D12DDI_ALLOCATION_INFO_FLAGS_0022 Flags;
-  D3DGPU_VIRTUAL_ADDRESS              GpuVirtualAddress;
-  UINT                                Priority;
-  ULONG_PTR                           Reserved[5];
-} D3D12DDI_ALLOCATION_INFO_0022;
-````
+  D3DGPU_VIRTUAL_ADDRESS              GpuVirtualAddress;
+  UINT                                Priority;
+  ULONG_PTR                           Reserved[5];
+};
+```
 
 ## Members
 
@@ -86,7 +86,7 @@ A zero-based ID of the video present source in a path of a video present network
 
 `Flags`
 
-Flags that identify the type of the allocation information as a <a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_allocation_info_flags_0022.md">D3D12DDI_ALLOCATION_INFO_FLAGS_0022</a> value.
+Flags that identify the type of the allocation information as a <a href="https://msdn.microsoft.com/DE3C133C-C1A9-4735-B1C4-9F6E791845A1">D3D12DDI_ALLOCATION_INFO_FLAGS_0022</a> value.
 
 `GpuVirtualAddress`
 
@@ -108,4 +108,4 @@ Reserved.
 
 ## See Also
 
-<a href="..\d3d12umddi\ne-d3d12umddi-d3d12ddi_allocation_info_flags_0022.md">D3D12DDI_ALLOCATION_INFO_FLAGS_0022</a>
+<a href="https://msdn.microsoft.com/DE3C133C-C1A9-4735-B1C4-9F6E791845A1">D3D12DDI_ALLOCATION_INFO_FLAGS_0022</a>

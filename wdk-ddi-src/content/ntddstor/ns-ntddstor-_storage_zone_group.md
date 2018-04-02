@@ -7,7 +7,7 @@ old-location: storage\storage_zone_group.htm
 old-project: storage
 ms.assetid: 71CEEE58-22CC-4FB4-83E1-5FCC6563D1D2
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTORAGE_ZONE_GROUP, PSTORAGE_ZONE_GROUP, PSTORAGE_ZONE_GROUP structure pointer [Storage Devices], STORAGE_ZONE_GROUP, STORAGE_ZONE_GROUP structure [Storage Devices], _STORAGE_ZONE_GROUP, ntddstor/ STORAGE_ZONE_GROUP, ntddstor/PSTORAGE_ZONE_GROUP, storage.storage_zone_group"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,13 @@ req.typenames: STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP
 <div> </div>
 
 ## Syntax
-````
+```
 typedef struct _STORAGE_ZONE_GROUP {
-  ULONG               ZoneCount;
-   STORAGE_ZONE_TYPES ZoneType;
-  ULONGLONG           ZoneSize;
-} STORAGE_ZONE_GROUP, *PSTORAGE_ZONE_GROUP;
-````
+  __WRAPPED__ ULONG              ZoneCount;
+  __WRAPPED__ STORAGE_ZONE_TYPES ZoneType;
+  __WRAPPED__ ULONGLONG          ZoneSize;
+} *PSTORAGE_ZONE_GROUP, STORAGE_ZONE_GROUP;
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: display\d3dddi_evict_flags.htm
 old-project: display
 ms.assetid: 443671F1-98F5-4F9F-900B-37E3E50770CE
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_EVICT_FLAGS, D3DDDI_EVICT_FLAGS structure [Display Devices], d3dukmdt/D3DDDI_EVICT_FLAGS, display.d3dddi_evict_flags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: D3DDDI_EVICT_FLAGS
 <b>D3DDDI_EVICT_FLAGS</b> specifies the eviction behavior.
 
 ## Syntax
-````
+```
 typedef struct D3DDDI_EVICT_FLAGS {
   union {
     struct {
-      UINT EvictOnlyIfNecessary  :1;
-      UINT NotWrittenTo  :1;
-      UINT Reserved  :30;
+      UINT  : 1  EvictOnlyIfNecessary;
+      UINT  : 1  NotWrittenTo;
+      UINT  : 30 Reserved;
     };
     UINT Value;
   };
-} D3DDDI_EVICT_FLAGS;
-````
+};
+```
 
 ## Members
 
@@ -72,8 +72,8 @@ typedef struct D3DDDI_EVICT_FLAGS {
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtevict.md">D3DKMTEvict</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906774">D3DKMTEvict</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_evictcb.md">pfnEvictCb</a>
+<a href="https://msdn.microsoft.com/5E66A522-BC1C-4E7C-8732-87D40F99BBDA">pfnEvictCb</a>

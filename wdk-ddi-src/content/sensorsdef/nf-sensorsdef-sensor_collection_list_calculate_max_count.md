@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # SENSOR_COLLECTION_LIST_CALCULATE_MAX_COUNT function
-This function calculates the number of <a href="..\sensorsdef\ns-sensorsdef-sensor_value_pair.md">SENSOR_VALUE_PAIR</a> elements in a <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a> structure.
+This function calculates the number of <a href="https://msdn.microsoft.com/library/windows/hardware/dn946708">SENSOR_VALUE_PAIR</a> elements in a <a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE ULONG SENSOR_COLLECTION_LIST_CALCULATE_MAX_COUNT(
-  _In_ PSENSOR_COLLECTION_LIST pCollectionList
+```
+ULONG SENSOR_COLLECTION_LIST_CALCULATE_MAX_COUNT(
+  PSENSOR_COLLECTION_LIST pCollectionList
 );
-````
+```
 
 ## Parameters
 
 `pCollectionList`
 
-A pointer to a <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a> structure.
 
 
 ## Return Value
@@ -76,8 +76,8 @@ The <b>SENSOR_COLLECTION_LIST_CALCULATE_MAX_COUNT</b> function returns a ULONG v
 
 ## See Also
 
-<a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>
 
 
 
-<a href="..\sensorsdef\ns-sensorsdef-sensor_value_pair.md">SENSOR_VALUE_PAIR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946708">SENSOR_VALUE_PAIR</a>

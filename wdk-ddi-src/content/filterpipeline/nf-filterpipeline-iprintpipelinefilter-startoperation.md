@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# StartOperation method
+# IPrintPipelineFilter::StartOperation method
 The <code>StartOperation</code> method starts the operation of a filter. The filter reads, processes, and writes data in this method.
 
 ## Syntax
 
-````
-HRESULT STDMETHODCALLTYPE StartOperation(
-    None
+```
+HRESULT StartOperation(
+
 );
-````
+```
 
 ## Parameters
 

@@ -57,7 +57,7 @@ This interface also provides a method that allows a print job to be cancelled.
 | Method | Description |
 | ---- |:---- |
 | [IPrintJob::get_Id](nf-printerextension-iprintjob-get_id.md) | Gets the print job identifier (ID). |
-| [IPrintJob::get_Name](nf-printerextension-iprintjob-get_name.md) | Gets the name of the printer for this print queue. |
+| [IPrintJob::get_Name](nf-printerextension-iprintjob-get_name.md) | Gets the name of the print job. |
 | [IPrintJob::get_PrintedPages](nf-printerextension-iprintjob-get_printedpages.md) | Gets the number of pages that have been printed. |
 | [IPrintJob::get_Status](nf-printerextension-iprintjob-get_status.md) | Gets the current status of the print job. |
 | [IPrintJob::get_SubmissionTime](nf-printerextension-iprintjob-get_submissiontime.md) | Gets the submission time, in the “DATE” format, provided in the user’s local time (not in the UTC format that is provided by the spooler). |

@@ -47,12 +47,12 @@ req.typenames: KS_DATAFORMAT_MPEG2TS_AVC, *PKS_DATAFORMAT_MPEG2TS_AVC
 The KS_DATAFORMAT_MPEG2TS_AVC structure stores the data format for an AV/C MPEG2 connection.
 
 ## Syntax
-````
+```
 typedef struct tagKS_DATAFORMAT_MPEG2TS_AVC {
-  KSDATAFORMAT   DataFormat;
+  KSDATAFORMAT   DataFormat;
   AVCCONNECTINFO ConnectInfo;
 } KS_DATAFORMAT_MPEG2TS_AVC, *PKS_DATAFORMAT_MPEG2TS_AVC;
-````
+```
 
 ## Members
 
@@ -73,8 +73,8 @@ Specifies the AV/C connection information.
 
 ## See Also
 
-<a href="..\avc\ns-avc-_avcconnectinfo.md">AVCCONNECTINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554101">AVCCONNECTINFO</a>
 
 
 
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>

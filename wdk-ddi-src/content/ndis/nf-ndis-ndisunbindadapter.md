@@ -7,7 +7,7 @@ old-location: netvista\ndisunbindadapter.htm
 old-project: netvista
 ms.assetid: 47aacc23-f7d1-4c14-9541-3207debef327
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisUnbindAdapter, NdisUnbindAdapter function [Network Drivers Starting with Windows Vista], ndis/NdisUnbindAdapter, netvista.ndisunbindadapter, protocol_ndis_functions_ref_99324c18-23da-4ed1-9ccc-ab73ac342c50.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,18 +52,18 @@ Protocol drivers call the
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisUnbindAdapter(
-  _In_ NDIS_HANDLE NdisBindingHandle
+  NDIS_HANDLE NdisBindingHandle
 );
-````
+```
 
 ## Parameters
 
 `NdisBindingHandle`
 
 A handle that the protocol driver obtained from a call to the 
-     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function. The handle
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function. The handle
      identifies the binding to close.
 
 
@@ -104,8 +104,8 @@ A handle that the protocol driver obtained from a call to the
 
 Protocol drivers call 
     <b>NdisUnbindAdapter</b> outside the context of the 
-    <a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a> or 
-    <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a> functions.
+    <a href="https://msdn.microsoft.com/19fa7be2-acb9-42f6-bd9f-5be3e3c8b5fa">ProtocolUnbindAdapterEx</a> or 
+    <a href="https://msdn.microsoft.com/1958722e-012e-4110-a82c-751744bcf9b5">ProtocolBindAdapterEx</a> functions.
     NDIS schedules a work item to call the protocol driver's 
     <i>ProtocolUnbindAdapterEx</i> function and returns immediately.
 
@@ -131,12 +131,12 @@ Before the call to
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_unbind_adapter_ex.md">ProtocolUnbindAdapterEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
 
 
 
-<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
+<a href="https://msdn.microsoft.com/1958722e-012e-4110-a82c-751744bcf9b5">ProtocolBindAdapterEx</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="https://msdn.microsoft.com/19fa7be2-acb9-42f6-bd9f-5be3e3c8b5fa">ProtocolUnbindAdapterEx</a>

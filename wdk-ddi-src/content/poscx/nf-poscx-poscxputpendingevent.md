@@ -53,17 +53,16 @@ PosCxPutPendingEvent creates a new event object, copies the event data to the
 
 ## Syntax
 
-````
+```
 NTSTATUS PosCxPutPendingEvent(
-  _In_ WDFDEVICE                                  device,
-  _In_ ULONG                                      deviceInterfaceTag,
-  _In_ ULONG                                      eventType,
-  _In_ size_t                                     rawEventDataSize,
-       _In_reads_opt_(rawEventDataSize)
-    PVOID rawEventDataPtr,
-  _In_ POS_CX_EVENT_ATTRIBUTES                    eventAttr
+  WDFDEVICE               device,
+  ULONG                   deviceInterfaceTag,
+  ULONG                   eventType,
+  size_t                  rawEventDataSize,
+  PVOID                   rawEventDataPtr,
+  POS_CX_EVENT_ATTRIBUTES eventAttr
 );
-````
+```
 
 ## Parameters
 
@@ -124,4 +123,4 @@ Possible return values are:
 
 ## See Also
 
-<a href="..\poscx\ne-poscx-_pos_cx_event_attributes.md">POS_CX_EVENT_ATTRIBUTES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt593142">POS_CX_EVENT_ATTRIBUTES</a>

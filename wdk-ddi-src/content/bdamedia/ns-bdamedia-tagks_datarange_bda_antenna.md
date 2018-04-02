@@ -47,11 +47,11 @@ req.typenames: KS_DATARANGE_BDA_ANTENNA, *PKS_DATARANGE_BDA_ANTENNA
 The KS_DATARANGE_BDA_ANTENNA structure describes a range of data formats for a BDA antenna stream.
 
 ## Syntax
-````
+```
 typedef struct tagKS_DATARANGE_BDA_ANTENNA {
   KSDATARANGE DataRange;
 } KS_DATARANGE_BDA_ANTENNA, *PKS_DATARANGE_BDA_ANTENNA;
-````
+```
 
 ## Members
 
@@ -72,12 +72,12 @@ Pins of filters specify the data ranges they support to enable stream connection
 
 ## See Also
 
-<a href="..\ks\ns-ks-kspin_descriptor.md">KSPIN_DESCRIPTOR</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556552">BDA Stream Format GUIDs</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563533">KSPIN_DESCRIPTOR</a>

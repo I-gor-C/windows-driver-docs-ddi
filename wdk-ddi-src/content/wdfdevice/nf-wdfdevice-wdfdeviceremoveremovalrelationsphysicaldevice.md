@@ -53,12 +53,12 @@ The <b>WdfDeviceRemoveRemovalRelationsPhysicalDevice</b> method removes a specif
 
 ## Syntax
 
-````
-VOID WdfDeviceRemoveRemovalRelationsPhysicalDevice(
-  _In_ WDFDEVICE      Device,
-  _In_ PDEVICE_OBJECT PhysicalDevice
+```
+void WdfDeviceRemoveRemovalRelationsPhysicalDevice(
+  WDFDEVICE      Device,
+  PDEVICE_OBJECT PhysicalDevice
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A handle to a framework device object.
 
 `PhysicalDevice`
 
-A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents a physical device object (PDO).
+A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents a physical device object (PDO).
 
 
 ## Return Value
@@ -90,8 +90,8 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceclearremovalrelationsdevices.md">WdfDeviceClearRemovalRelationsDevices</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545875">WdfDeviceAddRemovalRelationsPhysicalDevice</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceaddremovalrelationsphysicaldevice.md">WdfDeviceAddRemovalRelationsPhysicalDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545914">WdfDeviceClearRemovalRelationsDevices</a>

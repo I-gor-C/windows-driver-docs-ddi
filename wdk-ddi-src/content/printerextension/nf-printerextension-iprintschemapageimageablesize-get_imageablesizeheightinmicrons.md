@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_ImageableSizeHeightInMicrons method
+# IPrintSchemaPageImageableSize::get_ImageableSizeHeightInMicrons method
 Gets the vertical dimension of the application media size relative to the page orientation.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_ImageableSizeHeightInMicrons(
-  [out, retval] ULONG *pulImageableSizeHeight
+  ULONG *pulImageableSizeHeight
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemapageimageablesize.md">IPrintSchemaPageImageableSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451366">IPrintSchemaPageImageableSize</a>

@@ -47,20 +47,20 @@ req.typenames: KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPR
 This structure contains the header information for ROI ISP controls.
 
 ## Syntax
-````
+```
 typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER {
-  ULONG     Size;
-  ULONG     ControlCount;
+  ULONG     Size;
+  ULONG     ControlCount;
   ULONGLONG Reserved;
 } KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER, *PKSCAMERA_EXTENDEDPROP_ROI_ISPCONTROLHEADER;
-````
+```
 
 ## Members
 
 
 `Size`
 
-The sum of this structure size, all <a href="..\ksmedia\ns-ksmedia-tagkscamera_extendedprop_roi_ispcontrol.md">KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL</a> structures, and all KSCAMERA_EXTENDEDPROP_ROI_RECTINFO structures that follow
+The sum of this structure size, all <a href="https://msdn.microsoft.com/library/windows/hardware/dn925171">KSCAMERA_EXTENDEDPROP_ROI_ISPCONTROL</a> structures, and all KSCAMERA_EXTENDEDPROP_ROI_RECTINFO structures that follow
 
 `ControlCount`
 

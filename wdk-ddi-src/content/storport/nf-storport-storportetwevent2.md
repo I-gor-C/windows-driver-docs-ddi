@@ -7,7 +7,7 @@ old-location: storage\storportetwevent2.htm
 old-project: storage
 ms.assetid: A390D684-C675-4140-8E8E-8330FB3192E4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: STORPORT_ETW_EVENT_KEYWORD_ENUMERATION, STORPORT_ETW_EVENT_KEYWORD_IO, STORPORT_ETW_EVENT_KEYWORD_PERFORMANCE, STORPORT_ETW_EVENT_KEYWORD_POWER, StorPortEtwEvent2, StorPortEtwEvent2 routine [Storage Devices], StorportEtwEventOpcodeDC_Start, StorportEtwEventOpcodeDC_Stop, StorportEtwEventOpcodeExtension, StorportEtwEventOpcodeInfo, StorportEtwEventOpcodeReceive, StorportEtwEventOpcodeReply, StorportEtwEventOpcodeResume, StorportEtwEventOpcodeStart, StorportEtwEventOpcodeStop, StorportEtwEventOpcodeSuspend, StorportEtwLevelCritical, StorportEtwLevelError, StorportEtwLevelInformational, StorportEtwLevelLogAlways, StorportEtwLevelVerbose, StorportEtwLevelWarning, storage.storportetwevent2, storport/StorPortEtwEvent2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,22 +50,22 @@ The <b>StorPortEtwEvent2</b> publishes an Event Tracing for Windows (ETW) event 
 
 ## Syntax
 
-````
+```
 ULONG StorPortEtwEvent2(
-  _In_     PVOID                     HwDeviceExtension,
-  _In_opt_ PSTOR_ADDRESS             Address,
-  _In_     ULONG                     EventId,
-  _In_     PWSTR                     EventDescription,
-  _In_     ULONGLONG                 EventKeywords,
-  _In_     STORPORT_ETW_LEVEL        EventLevel,
-  _In_     STORPORT_ETW_EVENT_OPCODE EventOpcode,
-  _In_opt_ PSCSI_REQUEST_BLOCK       Srb,
-  _In_opt_ PWSTR                     Parameter1Name,
-  _In_     ULONGLONG                 Parameter1Value,
-  _In_opt_ PWSTR                     Parameter2Name,
-  _In_     ULONGLONG                 Parameter2Value
+  PVOID                                                        HwDeviceExtension,
+  PSTOR_ADDRESS                                                Address,
+  ULONG                                                        EventId,
+  PWSTR                                                        EventDescription,
+  ULONGLONG                                                    EventKeywords,
+  STORPORT_ETW_LEVEL                                           EventLevel,
+  STORPORT_ETW_EVENT_OPCODE                                    EventOpcode,
+  PSCSI_REQUEST_BLOCK                                          Srb,
+  _In_reads_or_z_opt_(STORPORT_ETW_MAX_PARAM_NAME_LENGTH)PWSTR Parameter1Name,
+  ULONGLONG                                                    Parameter1Value,
+  _In_reads_or_z_opt_(STORPORT_ETW_MAX_PARAM_NAME_LENGTH)PWSTR Parameter2Name,
+  ULONGLONG                                                    Parameter2Value
 );
-````
+```
 
 ## Parameters
 
@@ -411,8 +411,8 @@ Events generated from StorPort miniport drivers are published to the "Microsoft-
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportetwevent8.md">StorPortEtwEvent8</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn582029">StorPortEtwEvent4</a>
 
 
 
-<a href="..\storport\nf-storport-storportetwevent4.md">StorPortEtwEvent4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn582030">StorPortEtwEvent8</a>

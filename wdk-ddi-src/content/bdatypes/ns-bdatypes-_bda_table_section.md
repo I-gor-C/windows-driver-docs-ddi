@@ -47,14 +47,14 @@ req.typenames: BDA_TABLE_SECTION, *PBDA_TABLE_SECTION
 The BDA_TABLE_SECTION structure describes a table section.
 
 ## Syntax
-````
+```
 typedef struct _BDA_TABLE_SECTION {
   ULONG ulPrimarySectionId;
   ULONG ulSecondarySectionId;
   ULONG ulcbSectionLength;
   ULONG argbSectionData[MIN_DIMENSION];
 } BDA_TABLE_SECTION, *PBDA_TABLE_SECTION;
-````
+```
 
 ## Members
 

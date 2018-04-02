@@ -7,7 +7,7 @@ old-location: ifsk\fltsetquotainformationfile.htm
 old-project: ifsk
 ms.assetid: 89EC9F5C-24AE-4340-99CF-05323F99B465
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltSetQuotaInformationFile, FltSetQuotaInformationFile function [Installable File System Drivers], fltkernel/FltSetQuotaInformationFile, ifsk.fltsetquotainformationfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ The <b>FltSetQuotaInformationFile</b> routine modifies quota entries for a file 
 
 ## Syntax
 
-````
-NTSTATUS FltSetQuotaInformationFile(
-  _In_ PFLT_INSTANCE Instance,
-  _In_ PFILE_OBJECT  FileObject,
-  _In_ PVOID         Buffer,
-  _In_ ULONG         Length
+```
+NTSTATUS FLTAPI FltSetQuotaInformationFile(
+  PFLT_INSTANCE Instance,
+  PFILE_OBJECT  FileObject,
+  PVOID         Buffer,
+  ULONG         Length
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ The file object pointer for the file.
 
 `Buffer`
 
-A pointer to a caller-supplied, <a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>-structured input buffer that contains the quota information entries to be set.
+A pointer to a caller-supplied, <a href="https://msdn.microsoft.com/library/windows/hardware/ff540298">FILE_GET_QUOTA_INFORMATION</a>-structured input buffer that contains the quota information entries to be set.
 
 `Length`
 
@@ -112,12 +112,12 @@ The instance or volume is being torn down. This is an error code.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-zwsetquotainformationfile.md">ZwSetQuotaInformationFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540298">FILE_GET_QUOTA_INFORMATION</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltqueryquotainformationfile.md">FltQueryQuotaInformationFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451030">FltQueryQuotaInformationFile</a>
 
 
 
-<a href="..\ntifs\ns-ntifs-_file_get_quota_information.md">FILE_GET_QUOTA_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567105">ZwSetQuotaInformationFile</a>

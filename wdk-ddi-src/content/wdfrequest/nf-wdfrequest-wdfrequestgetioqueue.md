@@ -55,11 +55,11 @@ The <b>WdfRequestGetIoQueue</b> method returns a handle to the framework queue o
 
 ## Syntax
 
-````
+```
 WDFQUEUE WdfRequestGetIoQueue(
-  _In_ WDFREQUEST Request
+  WDFREQUEST Request
 );
-````
+```
 
 ## Parameters
 
@@ -109,4 +109,4 @@ device = WdfIoQueueGetDevice(WdfRequestGetIoQueue(Request));</pre>
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuegetdevice.md">WdfIoQueueGetDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547421">WdfIoQueueGetDevice</a>

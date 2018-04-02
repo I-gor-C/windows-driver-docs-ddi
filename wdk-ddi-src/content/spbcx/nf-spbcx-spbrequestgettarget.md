@@ -51,11 +51,11 @@ The <b>SpbRequestGetTarget</b> method retrieves the SPBTARGET handle from the sp
 
 ## Syntax
 
-````
+```
 SPBTARGET SpbRequestGetTarget(
-  _In_ SPBREQUEST SpbRequest
+  SPBREQUEST SpbRequest
 );
-````
+```
 
 ## Parameters
 
@@ -83,8 +83,8 @@ The returned SPBTARGET handle is guaranteed to remain valid until the correspond
 
 ## See Also
 
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>
-
-
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBREQUEST</a>
+
+
+
+<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/spb/spbcx-object-handles">SPBTARGET</a>

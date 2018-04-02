@@ -50,13 +50,13 @@ This function configures the sensor device.
 
 ## Syntax
 
-````
-FORCEINLINE NTSTATUS SensorsCxDeviceInitConfig(
-  _Inout_ PWDFDEVICE_INIT        pFxDeviceInit,
-  _Inout_ PWDF_OBJECT_ATTRIBUTES pFdoAttributes,
-  _In_    ULONG                  Flags
+```
+NTSTATUS SensorsCxDeviceInitConfig(
+  PWDFDEVICE_INIT        pFxDeviceInit,
+  PWDF_OBJECT_ATTRIBUTES pFdoAttributes,
+  ULONG                  Flags
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_set_preshutdown_state.htm
 old-project: netvista
 ms.assetid: B1DC847C-B596-452D-B96E-3B78C6F995B2
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_WWAN_SET_PRESHUTDOWN_STATE, NDIS_WWAN_SET_PRESHUTDOWN_STATE, NDIS_WWAN_SET_PRESHUTDOWN_STATE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SET_PRESHUTDOWN_STATE, PNDIS_WWAN_SET_PRESHUTDOWN_STATE structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SET_PRESHUTDOWN_STATE, ndiswwan/NDIS_WWAN_SET_PRESHUTDOWN_STATE, ndiswwan/PNDIS_WWAN_SET_PRESHUTDOWN_STATE, netvista.ndis_wwan_set_preshutdown_state"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,11 +47,11 @@ req.typenames: NDIS_WWAN_SET_PRESHUTDOWN_STATE, *PNDIS_WWAN_SET_PRESHUTDOWN_STAT
 The NDIS_WWAN_SET_PRESHUTDOWN_STATE structure represents the command to notify the modem to finish all operations and prepare to shut down.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_WWAN_SET_PRESHUTDOWN_STATE {
   NDIS_OBJECT_HEADER Header;
 } NDIS_WWAN_SET_PRESHUTDOWN_STATE, *PNDIS_WWAN_SET_PRESHUTDOWN_STATE;
-````
+```
 
 ## Members
 
@@ -100,7 +100,7 @@ sizeof(NDIS_WWAN_SET_PRESHUTDOWN_STATE)
  
 
 For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 
 ## Requirements

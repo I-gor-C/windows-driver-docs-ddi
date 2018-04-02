@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcbcatnex.htm
 old-project: kernel
 ms.assetid: 76842444-e733-4dee-b83b-db4ef22f697e
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlStringCbCatNEx, RtlStringCbCatNExA, RtlStringCbCatNExW, RtlStringCbCatNExW function [Kernel-Mode Driver Architecture], STRSAFE_FILL_BEHIND_NULL, STRSAFE_FILL_ON_FAILURE, STRSAFE_IGNORE_NULLS, STRSAFE_NO_TRUNCATION, STRSAFE_NULL_ON_FAILURE, kernel.rtlstringcbcatnex, ntstrsafe/RtlStringCbCatNExA, ntstrsafe/RtlStringCbCatNExW, safestrings_9e639754-980b-4a6d-9760-b826a8e09351.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,17 +52,17 @@ The <b>RtlStringCbCatNExW</b> and <b>RtlStringCbCatNExA</b> functions concatenat
 
 ## Syntax
 
-````
-NTSTATUS RtlStringCbCatNExW(
-  _Inout_opt_ LPTSTR  pszDest,
-  _In_        size_t  cbDest,
-  _In_opt_    LPCTSTR pszSrc,
-  _In_        size_t  cbMaxAppend,
-  _Out_opt_   LPTSTR  *ppszDestEnd,
-  _Out_opt_   size_t  *pcbRemaining,
-  _In_        DWORD   dwFlags
+```
+NTSTRSAFEDDI RtlStringCbCatNExA(
+  NTSTRSAFE_PSTR pszDest,
+  size_t         cbDest,
+  STRSAFE_PCNZCH pszSrc,
+  size_t         cbToAppend,
+  NTSTRSAFE_PSTR *ppszDestEnd,
+  size_t         *pcbRemaining,
+  DWORD          dwFlags
 );
-````
+```
 
 ## Parameters
 
@@ -228,7 +228,7 @@ The function returns the STATUS_INVALID_PARAMETER value when:
 </ul>
 The size, in bytes, of the destination buffer is provided to <b>RtlStringCbCatNExW</b> and <b>RtlStringCbCatNExA</b> to ensure that they do not write past the end of the buffer. 
 
-<b>RtlStringCbCatNEx</b> adds to the functionality of <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnw.md">RtlStringCbCatN</a> by returning a pointer to the end of the destination string as well as the number of bytes left unused in that string. Flags can be passed to the function for additional control.
+<b>RtlStringCbCatNEx</b> adds to the functionality of <a href="https://msdn.microsoft.com/library/windows/hardware/ff562801">RtlStringCbCatN</a> by returning a pointer to the end of the destination string as well as the number of bytes left unused in that string. Flags can be passed to the function for additional control.
 
 Use <b>RtlStringCbCatNExW</b> to handle Unicode strings and  <b>RtlStringCbCatNExA</b> to handle ANSI strings. The form you use depends on your data, as shown in the following table.
 
@@ -286,12 +286,12 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatexw.md">RtlStringCbCatEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562799">RtlStringCbCatEx</a>
 
 
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnw.md">RtlStringCbCatN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562801">RtlStringCbCatN</a>
 
 
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnexw.md">RtlStringCchCatNEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562837">RtlStringCchCatNEx</a>

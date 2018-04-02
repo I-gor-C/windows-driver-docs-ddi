@@ -7,7 +7,7 @@ old-location: ifsk\rxcesenddatagram.htm
 old-project: ifsk
 ms.assetid: 9cb714d5-92f6-481d-bc5e-5fa05b6a0938
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxCeSendDatagram, RxCeSendDatagram function [Installable File System Drivers], ifsk.rxcesenddatagram, rxce/RxCeSendDatagram, rxref_dc97dbe7-c676-4b1f-8aee-7dbc7cfbc5e3.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,17 +50,16 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 NTSTATUS RxCeSendDatagram(
-  _In_ PRXCE_TRANSPORT              pTransport,
-  _In_ PRXCE_ADDRESS                pAddress,
-  _In_ PRXCE_CONNECTION_INFORMATION pConnectionInformation,
-  _In_ ULONG                        Options,
-  _In_ PMDL                         pMdl,
-  _In_ ULONG                        SendLength,
-  _In_ PVOID                        pCompletionContext
+  IN PRXCE_ADDRESS                hAddress,
+  IN PRXCE_CONNECTION_INFORMATION pConnectionInformation,
+  IN ULONG                        SendOptions,
+  IN PMDL                         pMdl,
+  IN ULONG                        SendLength,
+  IN PVOID                        pCompletionContext
 );
-````
+```
 
 ## Parameters
 
@@ -143,11 +142,11 @@ Note that the synchronous <i>Option</i> is disregarded for sending datagrams bec
 
 ## See Also
 
-<a href="..\rxce\nf-rxce-rxcesend.md">RxCeSend</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554414">MDL</a>
 
 
 
-<a href="..\wdm\ns-wdm-_mdl.md">MDL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553479">RxCeSend</a>
 
 
 

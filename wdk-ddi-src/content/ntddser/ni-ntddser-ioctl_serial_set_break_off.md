@@ -46,7 +46,7 @@ req.typenames: SD_REQUEST_FUNCTION
 # IOCTL_SERIAL_SET_BREAK_OFF IOCTL
 The <b>IOCTL_SERIAL_SET_BREAK_OFF</b> request sets the line control break signal inactive.
 
-To set the line control break signal active, a client can use an <a href="..\ntddser\ni-ntddser-ioctl_serial_set_break_on.md">IOCTL_SERIAL_SET_BREAK_ON</a> request.
+To set the line control break signal active, a client can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff546685">IOCTL_SERIAL_SET_BREAK_ON</a> request.
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -82,4 +82,4 @@ The <b>Status</b> member is to one of the <a href="https://docs.microsoft.com/en
 
 ## See Also
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_break_on.md">IOCTL_SERIAL_SET_BREAK_ON</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546685">IOCTL_SERIAL_SET_BREAK_ON</a>

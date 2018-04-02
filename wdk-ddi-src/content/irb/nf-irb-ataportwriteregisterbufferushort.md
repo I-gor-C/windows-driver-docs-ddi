@@ -7,7 +7,7 @@ old-location: storage\ataportwriteregisterbufferushort.htm
 old-project: storage
 ms.assetid: 1de586c7-2fee-488d-a84e-7cc08165ad50
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortWriteRegisterBufferUshort, AtaPortWriteRegisterBufferUshort routine [Storage Devices], atartns_7b2b3f11-f9ae-45a0-a690-9f879bd6e478.xml, irb/AtaPortWriteRegisterBufferUshort, storage.ataportwriteregisterbufferushort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,19 +53,19 @@ The <b>AtaPortWriteRegisterBufferUshort</b> routine transfers the indicated numb
 
 ## Syntax
 
-````
-VOID AtaPortWriteRegisterBufferUshort(
-  _In_ PUSHORT Register,
-  _In_ PUSHORT Buffer,
-  _In_ ULONG   Count
+```
+void AtaPortWriteRegisterBufferUshort(
+  PUSHORT Register,
+  PUSHORT Buffer,
+  ULONG   Count
 );
-````
+```
 
 ## Parameters
 
 `Register`
 
-Contains the destination register address where the transfer should begin. This address value must be within the range of mapped I/O space addresses that are obtained by a call to <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>.
+Contains the destination register address where the transfer should begin. This address value must be within the range of mapped I/O space addresses that are obtained by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>.
 
 `Buffer`
 
@@ -90,12 +90,12 @@ None
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>
 
 
 
-<a href="..\irb\nf-irb-ataportwriteregisterbufferuchar.md">AtaPortWriteRegisterBufferUchar</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550264">AtaPortWriteRegisterBufferUchar</a>
 
 
 
-<a href="..\irb\nf-irb-ataportwriteregisterbufferushort.md">AtaPortWriteRegisterBufferUshort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550273">AtaPortWriteRegisterBufferUshort</a>

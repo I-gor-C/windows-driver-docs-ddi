@@ -7,7 +7,7 @@ old-location: netvista\wskqueryprovidercharacteristics.htm
 old-project: netvista
 ms.assetid: b8a81d7e-abab-4343-a044-ac9dd913c7f2
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: WskQueryProviderCharacteristics, WskQueryProviderCharacteristics function [Network Drivers Starting with Windows Vista], netvista.wskqueryprovidercharacteristics, wsk/WskQueryProviderCharacteristics, wskref_dbe0fc4a-6df6-46aa-a17b-d3835f5d429b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,19 +53,19 @@ The
 
 ## Syntax
 
-````
+```
 NTSTATUS WskQueryProviderCharacteristics(
-  _In_  PWSK_REGISTRATION             WskRegistration,
-  _Out_ PWSK_PROVIDER_CHARACTERISTICS WskProviderCharacteristics
+  PWSK_REGISTRATION             WskRegistration,
+  PWSK_PROVIDER_CHARACTERISTICS WskProviderCharacteristics
 );
-````
+```
 
 ## Parameters
 
 `WskRegistration`
 
 A pointer to the memory location initialized by 
-     <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> that identifies a WSK
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a> that identifies a WSK
      application's registration instance.
 
 `WskProviderCharacteristics`
@@ -133,8 +133,8 @@ WSK clients can use this function to determine the WSK NPI versions supported by
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_provider_characteristics.md">WSK_PROVIDER_CHARACTERISTICS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571172">WSK_PROVIDER_CHARACTERISTICS</a>
 
 
 
-<a href="..\wsk\ns-wsk-_wsk_registration.md">WSK_REGISTRATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571178">WSK_REGISTRATION</a>

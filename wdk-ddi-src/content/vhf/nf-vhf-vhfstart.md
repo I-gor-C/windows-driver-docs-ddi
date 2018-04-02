@@ -51,17 +51,17 @@ The HID source driver calls this method to start the virtual HID device.
 
 ## Syntax
 
-````
+```
 NTSTATUS VhfStart(
-  [in] VHFHANDLE VhfHandle
+  VHFHANDLE VhfHandle
 );
-````
+```
 
 ## Parameters
 
 `VhfHandle`
 
-A handle to a virtual HID device that your HID source driver received in the previous call to <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a>.
+A handle to a virtual HID device that your HID source driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/dn925036">VhfCreate</a>.
 
 
 ## Return Value

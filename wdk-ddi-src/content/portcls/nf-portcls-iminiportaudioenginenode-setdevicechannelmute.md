@@ -7,7 +7,7 @@ old-location: audio\iminiportaudioenginenode_setdevicechannelmute.htm
 old-project: audio
 ms.assetid: 272B83D4-AACE-419D-9DD7-A1AE1C8A931A
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], SetDeviceChannelMute method, IMiniportAudioEngineNode::SetDeviceChannelMute, SetDeviceChannelMute method [Audio Devices], SetDeviceChannelMute method [Audio Devices], IMiniportAudioEngineNode interface, SetDeviceChannelMute,IMiniportAudioEngineNode.SetDeviceChannelMute, audio.iminiportaudioenginenode_setdevicechannelmute, portcls/IMiniportAudioEngineNode::SetDeviceChannelMute
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# SetDeviceChannelMute method
+# IMiniportAudioEngineNode::SetDeviceChannelMute method
 Sets the state of the Mute node for the audio device channel.
 
 ## Syntax
 
-````
+```
 NTSTATUS SetDeviceChannelMute(
-  [in] ULONG  ulNodeId,
-  [in] UINT32 ulChannel,
-  [in] BOOL   bMute
+  ULONG  ulNodeId,
+  UINT32 ulChannel,
+  BOOL   bMute
 );
-````
+```
 
 ## Parameters
 
@@ -88,4 +88,4 @@ code.
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302040">IMiniportAudioEngineNode</a>

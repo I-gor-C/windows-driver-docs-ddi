@@ -50,11 +50,11 @@ This function returns the size of the property list.
 
 ## Syntax
 
-````
-FORCEINLINE ULONG SENSOR_PROPERTY_LIST_SIZE(
-  _In_ ULONG Count
+```
+ULONG SENSOR_PROPERTY_LIST_SIZE(
+  ULONG Count
 );
-````
+```
 
 ## Parameters
 

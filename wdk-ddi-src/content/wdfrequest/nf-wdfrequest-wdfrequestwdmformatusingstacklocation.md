@@ -53,12 +53,12 @@ The <b>WdfRequestWdmFormatUsingStackLocation</b> method formats an I/O request b
 
 ## Syntax
 
-````
-VOID WdfRequestWdmFormatUsingStackLocation(
-  _In_ WDFREQUEST         Request,
-  _In_ PIO_STACK_LOCATION Stack
+```
+void WdfRequestWdmFormatUsingStackLocation(
+  WDFREQUEST         Request,
+  PIO_STACK_LOCATION Stack
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A handle to a framework request object.
 
 `Stack`
 
-A pointer to an <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure that contains driver-supplied information.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550659">IO_STACK_LOCATION</a> structure that contains driver-supplied information.
 
 
 ## Return Value
@@ -83,14 +83,14 @@ The <b>WdfRequestWdmFormatUsingStackLocation</b> method copies the information t
 
 <b>WdfRequestWdmFormatUsingStackLocation</b> formats the request independent of whether the I/O target object of the request is local or remote.
 
-If you want to set a completion routine for the request, your driver must call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a> after calling <b>WdfRequestWdmFormatUsingStackLocation</b>.
+If you want to set a completion routine for the request, your driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff550030">WdfRequestSetCompletionRoutine</a> after calling <b>WdfRequestWdmFormatUsingStackLocation</b>.
 
 For more information about <b>WdfRequestWdmFormatUsingStackLocation</b>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/forwarding-i-o-requests">Forwarding I/O Requests</a>.
 
 
 #### Examples
 
-The following code example supplies an <a href="..\wdm\ns-wdm-_io_stack_location.md">IO_STACK_LOCATION</a> structure for an I/O request, sets a <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a> callback function, and then sends the request to an I/O target.
+The following code example supplies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550659">IO_STACK_LOCATION</a> structure for an I/O request, sets a <a href="https://msdn.microsoft.com/7d3eb4d6-9fc7-4924-9b95-f5824713049b">CompletionRoutine</a> callback function, and then sends the request to an I/O target.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -144,4 +144,4 @@ sendStatus = WdfRequestSend(
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestsetcompletionroutine.md">WdfRequestSetCompletionRoutine</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550030">WdfRequestSetCompletionRoutine</a>

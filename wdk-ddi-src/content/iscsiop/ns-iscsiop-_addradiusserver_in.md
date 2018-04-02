@@ -7,7 +7,7 @@ old-location: storage\addradiusserver_in.htm
 old-project: storage
 ms.assetid: 7b7b9f3b-df33-4886-bd22-23429cb05ea7
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PAddRADIUSServer_IN, AddRADIUSServer_IN, AddRADIUSServer_IN structure [Storage Devices], PAddRADIUSServer_IN, PAddRADIUSServer_IN structure pointer [Storage Devices], _AddRADIUSServer_IN, iscsiop/AddRADIUSServer_IN, iscsiop/PAddRADIUSServer_IN, storage.addradiusserver_in, structs-iSCSI_9899ffb9-7e0d-4d1e-af4c-9dd771527610.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: AddRADIUSServer_IN, *PAddRADIUSServer_IN
 The AddRADIUSServer_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550133">AddRADIUSServer</a> method, which is used to add a new RADIUS server entry to existing list.
 
 ## Syntax
-````
+```
 typedef struct _AddRADIUSServer_IN {
   ISCSI_IP_Address RADIUSIPAddress;
-} AddRADIUSServer_IN, *PAddRADIUSServer_IN;
-````
+} *PAddRADIUSServer_IN, AddRADIUSServer_IN;
+```
 
 ## Members
 
 
 `RADIUSIPAddress`
 
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that contains an IP version-independent address of the RADIUS server.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that contains an IP version-independent address of the RADIUS server.
 
 ## Remarks
 It is optional that you implement this method.
@@ -74,11 +74,11 @@ It is optional that you implement this method.
 
 
 
-<a href="..\iscsiop\ns-iscsiop-_addradiusserver_out.md">AddRADIUSServer_OUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550135">AddRADIUSServer_OUT</a>
 
 
 
-<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
 
 
 

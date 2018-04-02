@@ -48,12 +48,12 @@ The SCO_LINK_TYPE enumeration type describes the type of link used by the SCO co
   <b>ScoIndicationRemoteConnect</b> indication event is processed.
 
 ## Syntax
-````
-typedef enum _SCO_LINK_TYPE { 
-  ScoLinkType   = 0x00,
-  eScoLinkType  = 0x02
+```
+typedef enum _SCO_LINK_TYPE {
+  ScoLinkType   ,
+  eScoLinkType
 } SCO_LINK_TYPE, *PSCO_LINK_TYPE;
-````
+```
 
 ## Constants
 
@@ -73,7 +73,7 @@ typedef enum _SCO_LINK_TYPE {
 ## Remarks
 
 The 
-    <a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">SCO_INDICATION_PARAMETERS</a> structure
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536779">SCO_INDICATION_PARAMETERS</a> structure
     uses this enumeration.
 
 ## Requirements
@@ -84,4 +84,4 @@ The
 
 ## See Also
 
-<a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">SCO_INDICATION_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536779">SCO_INDICATION_PARAMETERS</a>

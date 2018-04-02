@@ -7,7 +7,7 @@ old-location: buses\evt_udecx_usb_device_endpoint_add.htm
 old-project: usbref
 ms.assetid: 82E17C75-BE81-4263-AC04-D3C93505917D
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: EVT_UDECX_USB_DEVICE_ENDPOINT_ADD, EvtUsbDeviceEndpointAdd, EvtUsbDeviceEndpointAdd callback function [Buses], buses.evt_udecx_usb_device_endpoint_add, udecxusbdevice/EvtUsbDeviceEndpointAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,11 +64,11 @@ _IRQL_requires_same_ NTSTATUS EvtUdecxUsbDeviceEndpointAdd(
 
 `UdecxUsbDevice`
 
-A handle to the UDE device object for which the client driver creates an endpoint. The driver created this object in a previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>.
+A handle to the UDE device object for which the client driver creates an endpoint. The driver created this object in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>.
 
 `EndpointToCreate`
 
-A pointer to a <a href="..\udecxusbdevice\ns-udecxusbdevice-_udecx_usb_endpoint_init_and_metadata.md">UDECX_USB_ENDPOINT_INIT_AND_METADATA</a>             structure that contains the endpoint descriptor.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628007">UDECX_USB_ENDPOINT_INIT_AND_METADATA</a>             structure that contains the endpoint descriptor.
 
 
 ## Return Value
@@ -77,9 +77,9 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 
 ## Remarks
 
-The client driver registered this callback function in a previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitsetstatechangecallbacks.md">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.
+The client driver registered this callback function in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627972">UdecxUsbDeviceInitSetStateChangeCallbacks</a> by supplying a function pointer to its implementation.
 
-In the implementation, the client driver is expected to create the endpoint by calling <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a> by using the initialization parameters (<b>UDECXUSBENDPOINT_INIT</b>) passed by the class extension in the <a href="..\udecxusbdevice\ns-udecxusbdevice-_udecx_usb_endpoint_init_and_metadata.md">UDECX_USB_ENDPOINT_INIT_AND_METADATA</a> structure.
+In the implementation, the client driver is expected to create the endpoint by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a> by using the initialization parameters (<b>UDECXUSBENDPOINT_INIT</b>) passed by the class extension in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt628007">UDECX_USB_ENDPOINT_INIT_AND_METADATA</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,12 +92,12 @@ In the implementation, the client driver is expected to create the endpoint by c
 
 ## See Also
 
-<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>

@@ -48,14 +48,13 @@ req.product: Windows 10 or later.
 The <b>SensorConnectionType</b> enumeration type defines values for the <a href="https://msdn.microsoft.com/1BF1568D-A889-4158-9C6D-160D9B06F0DE">SENSOR_CONNECTION_TYPE</a> property.
 
 ## Syntax
-````
-enum SensorConnectionType {
-  SENSOR_CONNECTION_TYPE_PC_INTEGRATED  = 0, 
-  SENSOR_CONNECTION_TYPE_PC_ATTACHED    = ( SENSOR_CONNECTION_TYPE_PC_INTEGRATED + 1 ), 
-  SENSOR_CONNECTION_TYPE_PC_EXTERNAL    = ( SENSOR_CONNECTION_TYPE_PC_ATTACHED + 1 ) 
-
-};
-````
+```
+typedef enum __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0002 {
+  SENSOR_CONNECTION_TYPE_PC_INTEGRATED  ,
+  SENSOR_CONNECTION_TYPE_PC_ATTACHED    ,
+  SENSOR_CONNECTION_TYPE_PC_EXTERNAL
+} SensorConnectionType;
+```
 
 ## Constants
 
@@ -86,8 +85,8 @@ enum SensorConnectionType {
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn957027">Enumeration properties</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>

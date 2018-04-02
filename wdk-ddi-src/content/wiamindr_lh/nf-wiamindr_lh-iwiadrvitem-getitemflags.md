@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetItemFlags method
+# IWiaDrvItem::GetItemFlags method
 The <b>IWiaDrvItem::GetItemFlags</b> method gets the item flags of the current <b>IWiaDrvItem</b> item.
 
 ## Syntax
 
-````
+```
 HRESULT GetItemFlags(
-  [out] LONG *plFlags
+  LONG *__MIDL__IWiaDrvItem0000
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ If the method succeeds, it places the item flag values in the location pointed t
 
 ## Remarks
 
-The method places the current <b>IWiaDrvItem</b> item's flag values in the location pointed to by <i>pIFlags</i>. The item's flag values were set when the item was created by the driver services library function <a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>.
+The method places the current <b>IWiaDrvItem</b> item's flag values in the location pointed to by <i>pIFlags</i>. The item's flag values were set when the item was created by the driver services library function <a href="https://msdn.microsoft.com/library/windows/hardware/ff549160">wiasCreateDrvItem</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,8 +80,8 @@ The method places the current <b>IWiaDrvItem</b> item's flag values in the locat
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
+<a href="https://msdn.microsoft.com/0609e1b2-48df-413c-90bd-d7ddea26510a">IWiaDrvItem</a>
 
 
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549160">wiasCreateDrvItem</a>

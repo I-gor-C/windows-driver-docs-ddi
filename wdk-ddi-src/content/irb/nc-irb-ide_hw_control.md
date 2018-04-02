@@ -7,7 +7,7 @@ old-location: storage\idehwcontrol.htm
 old-project: storage
 ms.assetid: 53f85f8d-3b50-4cfe-8bdd-d41d8c057f3e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IDE_HW_CONTROL, IdeHwControl, IdeHwControl routine [Storage Devices], atartns_9c868c08-5470-4940-9067-0aa8a796b191.xml, irb/IdeHwControl, storage.idehwcontrol
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ api_name:
 -	IdeHwControl
 product: Windows
 targetos: Windows
-req.typenames: LUID
+req.typenames: IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS
 ---
 
 
@@ -69,7 +69,7 @@ A pointer to the channel extension.
 
 `ControlAction`
 
-Contains an enumerator value of type <a href="..\irb\ne-irb-ide_control_action.md">IDE_CONTROL_ACTION</a> that indicates the control action to perform.
+Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559082">IDE_CONTROL_ACTION</a> that indicates the control action to perform.
 
 `Parameters`
 
@@ -151,4 +151,4 @@ After vendor-defined power management is registered, the miniport driver will be
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportgetuncachedextension.md">AtaPortGetUncachedExtension</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550165">AtaPortGetUncachedExtension</a>

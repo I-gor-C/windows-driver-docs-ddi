@@ -7,7 +7,7 @@ old-location: netvista\miniportsharedmemoryallocatecomplete.htm
 old-project: netvista
 ms.assetid: d102a001-960c-4fe6-af2d-d740bba744b1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE, MiniportSharedMemoryAllocateComplete, MiniportSharedMemoryAllocateComplete callback function [Network Drivers Starting with Windows Vista], ndis/MiniportSharedMemoryAllocateComplete, ndis_sgdma_ref_0099c752-42ac-4b2d-9787-98deca358cfc.xml, netvista.miniportsharedmemoryallocatecomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,7 +48,7 @@ req.typenames: VIDEO_STREAM_INIT_PARMS, *LPVIDEO_STREAM_INIT_PARMS
 NDIS calls a miniport driver's 
    <i>MiniportSharedMemoryAllocateComplete</i> function to complete a shared memory allocation request that
    the miniport driver started by calling the 
-   <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
+   <a href="https://msdn.microsoft.com/ccbe98ca-7da9-4159-ac1a-c25ec6745ff4">
    NdisMAllocateSharedMemoryAsyncEx</a> function.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>MINIPORT_ALLOCATE_SHARED_MEM_COMPLETE</b>
    type. For more information, see the following Examples section.</div><div> </div>
@@ -74,7 +74,7 @@ void MiniportAllocateSharedMemComplete(
 
 The handle to a context area allocated by the miniport driver in which the driver maintains state
      information for a NIC. The driver allocates this context area in the 
-     <a href="..\ndis\nc-ndis-miniport_initialize.md">
+     <a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">
      MiniportInitializeEx</a> function.
 
 `VirtualAddress`
@@ -109,11 +109,11 @@ None
     driver registers a 
     <i>MiniportAllocateSharedMemoryComplete</i> function in the NDIS_SG_DMA_DESCRIPTION structure that the
     driver passed to the 
-    <a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
+    <a href="https://msdn.microsoft.com/90ce64a2-9140-4b5f-88aa-b4f01a3d0c6f">
     NdisMRegisterScatterGatherDma</a> function.
 
 Miniport drivers call 
-    <a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
+    <a href="https://msdn.microsoft.com/ccbe98ca-7da9-4159-ac1a-c25ec6745ff4">
     NdisMAllocateSharedMemoryAsyncEx</a> to allocate shared memory. If 
     <b>NdisMAllocateSharedMemoryAsyncEx</b> returns NDIS_STATUS_PENDING, NDIS calls 
     <i>MiniportAllocateSharedMemoryComplete</i> to pass the memory to the miniport driver.
@@ -171,14 +171,14 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismregisterscattergatherdma.md">
-   NdisMRegisterScatterGatherDma</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismallocatesharedmemoryasyncex.md">
+<a href="https://msdn.microsoft.com/ccbe98ca-7da9-4159-ac1a-c25ec6745ff4">
    NdisMAllocateSharedMemoryAsyncEx</a>
+
+
+
+<a href="https://msdn.microsoft.com/90ce64a2-9140-4b5f-88aa-b4f01a3d0c6f">
+   NdisMRegisterScatterGatherDma</a>

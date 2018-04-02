@@ -47,11 +47,11 @@ req.typenames: CIP_STOP, *PCIP_STOP
 This structure is used to stop transmission or reception. The  request stops isochronous transmission or reception on the specified connection. This request will stop capturing CIP packets, whether there are any frames attached. If frames are attached and the stream is resumed, then processing of the frame is resumed on the next source packet within the frame. To resume the stream on the beginning of the frame, a driver must set <b>Flags</b> with CIP_RESET_FRAME_ON_DISCONTINUITY in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537045">CIP_FRAME</a> structure passed with AttachFrame request.
 
 ## Syntax
-````
+```
 typedef struct _CIP_STOP {
-  HANDLE hConnect;
-} CIP_STOP, *PCIP_STOP;
-````
+  IN HANDLE hConnect;
+} *PCIP_STOP, CIP_STOP;
+```
 
 ## Members
 

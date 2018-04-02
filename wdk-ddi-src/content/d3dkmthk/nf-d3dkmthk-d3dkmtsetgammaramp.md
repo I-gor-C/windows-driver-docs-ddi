@@ -7,7 +7,7 @@ old-location: display\d3dkmtsetgammaramp.htm
 old-project: display
 ms.assetid: 48f1d2ba-747a-4588-8238-db6ac2aa89d6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTSetGammaRamp, D3DKMTSetGammaRamp function [Display Devices], OpenGL_Functions_4d684cea-8528-489d-bc35-b70a5f05a57b.xml, d3dkmthk/D3DKMTSetGammaRamp, display.d3dkmtsetgammaramp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>D3DKMTSetGammaRamp</b> function sets the gamma ramp.
 
 ## Syntax
 
-````
-NTSTATUS APIENTRY D3DKMTSetGammaRamp(
-  _In_ const D3DKMT_SETGAMMARAMP *pData
+```
+NTSTATUS D3DKMTSetGammaRamp(
+  CONST *D3DKMT_SETGAMMARAMP
 );
-````
+```
 
 ## Parameters
 
@@ -124,4 +124,4 @@ This function might also return other NTSTATUS values.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setgammaramp.md">D3DKMT_SETGAMMARAMP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548307">D3DKMT_SETGAMMARAMP</a>

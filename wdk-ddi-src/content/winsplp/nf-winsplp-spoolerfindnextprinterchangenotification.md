@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL WINAPI SpoolerFindNextPrinterChangeNotification(
-  _In_        HANDLE     hPrinter,
-  _Out_       LPDWORD    pfdwChange,
-  _In_opt_    LPVOID     pPrinterNotifyOptions,
-  _Inout_opt_ LPVOID     *ppPrinterNotifyInfo
+```
+BOOL SpoolerFindNextPrinterChangeNotification(
+  HANDLE  hPrinter,
+  LPDWORD pfdwChange,
+  LPVOID  pPrinterNotifyOptions,
+  LPVOID  *ppPrinterNotifyInfo
 );
-````
+```
 
 ## Parameters
 

@@ -45,15 +45,15 @@ req.product: Windows 10 or later.
 ---
 
 # _WINBIO_SET_INDICATOR structure
-The WINBIO_SET_INDICATOR structure is the IN payload for <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_set_indicator.md">IOCTL_BIOMETRIC_SET_INDICATOR</a>.
+The WINBIO_SET_INDICATOR structure is the IN payload for <a href="https://msdn.microsoft.com/library/windows/hardware/ff536441">IOCTL_BIOMETRIC_SET_INDICATOR</a>.
 
 ## Syntax
-````
+```
 typedef struct _WINBIO_SET_INDICATOR {
-  DWORD                   PayloadSize;
+  DWORD                   PayloadSize;
   WINBIO_INDICATOR_STATUS IndicatorStatus;
-} WINBIO_SET_INDICATOR, *PWINBIO_SET_INDICATOR;
-````
+} *PWINBIO_SET_INDICATOR, WINBIO_SET_INDICATOR;
+```
 
 ## Members
 
@@ -110,8 +110,8 @@ The sensor indicator light is off.  Sensors that do not have an indicator light 
 
 ## See Also
 
-<a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_set_indicator.md">IOCTL_BIOMETRIC_SET_INDICATOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536441">IOCTL_BIOMETRIC_SET_INDICATOR</a>
 
 
 
-<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_get_indicator.md">WINBIO_GET_INDICATOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536471">WINBIO_GET_INDICATOR</a>

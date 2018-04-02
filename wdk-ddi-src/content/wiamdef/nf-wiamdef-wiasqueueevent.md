@@ -50,13 +50,13 @@ The <b>wiasQueueEvent</b> function informs the service that the device generated
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasQueueEvent(
-  _In_           BSTR bstrDeviceId,
-  _In_     const GUID *pEventGUID,
-  _In_opt_       BSTR bstrFullItemName
+```
+HRESULT wiasQueueEvent(
+  BSTR       bstrDeviceId,
+  const GUID *pEventGUID,
+  BSTR       bstrFullItemName
 );
-````
+```
 
 ## Parameters
 

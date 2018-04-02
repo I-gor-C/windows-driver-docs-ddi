@@ -47,15 +47,15 @@ req.typenames: BUS_RESET_DATA, *PBUS_RESET_DATA
 The <b>BUS_RESET_DATA</b> structure specifies the context for the extended bus reset notification routine.
 
 ## Syntax
-````
+```
 typedef struct _BUS_RESET_DATA {
-  PVOID        ResetContext;
-  ULONG        GenerationCount;
+  PVOID        ResetContext;
+  ULONG        GenerationCount;
   NODE_ADDRESS DeviceNodeId;
   NODE_ADDRESS LocalNodeId;
-  UCHAR        SpeedToNode;
-} BUS_RESET_DATA, *PBUS_RESET_DATA;
-````
+  UCHAR        SpeedToNode;
+} *PBUS_RESET_DATA, BUS_RESET_DATA;
+```
 
 ## Members
 

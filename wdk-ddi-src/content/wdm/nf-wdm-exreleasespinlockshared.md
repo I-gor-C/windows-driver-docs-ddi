@@ -7,7 +7,7 @@ old-location: kernel\exreleasespinlockshared_.htm
 old-project: kernel
 ms.assetid: D79FD160-1A03-43F0-B9AB-D74C6176565A
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExReleaseSpinLockShared, ExReleaseSpinLockShared routine [Kernel-Mode Driver Architecture], kernel.exreleasespinlockshared_, wdm/ExReleaseSpinLockShared
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>ExReleaseSpinLockShared</b> routine releases ownership of a  <a href="htt
 
 ## Syntax
 
-````
-VOID ExReleaseSpinLockShared (
-  _Inout_ PEX_SPIN_LOCK SpinLock,
-  _In_    KIRQL         OldIrql
+```
+NTKERNELAPI VOID ExReleaseSpinLockShared(
+  _Requires_lock_held_(*_Curr_)_Releases_lock_(*_Curr_) PEX_SPIN_LOCK SpinLock ,
+  _IRQL_restores_ KIRQL                                                        OldIrql
 );
-````
+```
 
 ## Parameters
 

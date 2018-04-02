@@ -7,7 +7,7 @@ old-location: debugger\getidentitywide.htm
 old-project: debugger
 ms.assetid: 8e55f829-2f55-4b83-8e0d-2554246a5d59
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetIdentityWide method [Windows Debugging], GetIdentityWide method [Windows Debugging], IDebugClient5 interface, GetIdentityWide,IDebugClient5.GetIdentityWide, IDebugClient5, IDebugClient5 interface [Windows Debugging], GetIdentityWide method, IDebugClient5::GetIdentityWide, dbgeng/IDebugClient5::GetIdentityWide, debugger.getidentitywide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetIdentityWide method
+# IDebugClient5::GetIdentityWide method
 The <b>GetIdentityWide</b> method returns a string describing the computer and user this client represents.
 
 ## Syntax
 
-````
+```
 HRESULT GetIdentityWide(
-  [out, optional] PWSTR  Buffer,
-  [in]            ULONG  BufferSize,
-  [out, optional] PULONG IdentitySize
+  PWSTR  Buffer,
+  ULONG  BufferSize,
+  PULONG IdentitySize
 );
-````
+```
 
 ## Parameters
 
@@ -119,8 +119,8 @@ For more information about client objects, see <a href="https://msdn.microsoft.c
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553219">OutputIdentity</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>

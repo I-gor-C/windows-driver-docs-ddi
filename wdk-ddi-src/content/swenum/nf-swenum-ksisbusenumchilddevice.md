@@ -53,12 +53,12 @@ The <b>KsIsBusEnumChildDevice</b> function determines if the given device object
 
 ## Syntax
 
-````
-NTSTATUS KsIsBusEnumChildDevice(
-  _In_  PDEVICE_OBJECT DeviceObject,
-  _Out_ PBOOLEAN       ChildDevice
+```
+KSDDKAPI NTSTATUS KsIsBusEnumChildDevice(
+  PDEVICE_OBJECT DeviceObject,
+  PBOOLEAN       ChildDevice
 );
-````
+```
 
 ## Parameters
 

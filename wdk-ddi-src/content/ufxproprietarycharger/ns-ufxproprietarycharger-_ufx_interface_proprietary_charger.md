@@ -7,7 +7,7 @@ old-location: buses\ufx_interface_proprietary_charger.htm
 old-project: usbref
 ms.assetid: 3E75EA87-FBF8-4FFB-9CD7-F8E1D5353D68
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUFX_INTERFACE_PROPRIETARY_CHARGER, PUFX_INTERFACE_PROPRIETARY_CHARGER, PUFX_INTERFACE_PROPRIETARY_CHARGER structure pointer [Buses], UFX_INTERFACE_PROPRIETARY_CHARGER, UFX_INTERFACE_PROPRIETARY_CHARGER structure [Buses], _UFX_INTERFACE_PROPRIETARY_CHARGER, buses.ufx_interface_proprietary_charger, ufxproprietarycharger/PUFX_INTERFACE_PROPRIETARY_CHARGER, ufxproprietarycharger/UFX_INTERFACE_PROPRIETARY_CHARGER"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,15 +48,15 @@ req.product: Windows 10 or later.
 Stores pointers to driver-implemented callback functions for handling proprietary charger operations.
 
 ## Syntax
-````
+```
 typedef struct _UFX_INTERFACE_PROPRIETARY_CHARGER {
-  INTERFACE                                   InterfaceHeader;
-  PFN_UFX_PROPRIETARY_CHARGER_DETECT          ProprietaryChargerDetect;
-  PFN_UFX_PROPRIETARY_CHARGER_SET_PROPERTY    ProprietaryChargerSetProperty;
+  INTERFACE                                   InterfaceHeader;
+  PFN_UFX_PROPRIETARY_CHARGER_DETECT          ProprietaryChargerDetect;
+  PFN_UFX_PROPRIETARY_CHARGER_SET_PROPERTY    ProprietaryChargerSetProperty;
   PFN_UFX_PROPRIETARY_CHARGER_ABORT_OPERATION ProprietaryChargerAbortOperation;
   PFN_UFX_PROPRIETARY_CHARGER_RESET_OPERATION ProprietaryChargerResetOperation;
-} UFX_INTERFACE_PROPRIETARY_CHARGER, *PUFX_INTERFACE_PROPRIETARY_CHARGER;
-````
+} *PUFX_INTERFACE_PROPRIETARY_CHARGER, UFX_INTERFACE_PROPRIETARY_CHARGER;
+```
 
 ## Members
 
@@ -67,19 +67,19 @@ The interface version number.
 
 `ProprietaryChargerDetect`
 
-A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_detect.md">UFX_PROPRIETARY_CHARGER_DETECT</a> callback function.
+A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187981">UFX_PROPRIETARY_CHARGER_DETECT</a> callback function.
 
 `ProprietaryChargerSetProperty`
 
-A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_set_property.md">UFX_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback function.
+A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187983">UFX_PROPRIETARY_CHARGER_SET_PROPERTY</a> callback function.
 
 `ProprietaryChargerAbortOperation`
 
-A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_abort_operation.md">UFX_PROPRIETARY_CHARGER_ABORT_OPERATION</a> callback function.
+A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187980">UFX_PROPRIETARY_CHARGER_ABORT_OPERATION</a> callback function.
 
 `ProprietaryChargerResetOperation`
 
-A pointer to the driver's implementation of the <a href="..\ufxproprietarycharger\nc-ufxproprietarycharger-ufx_proprietary_charger_reset_operation.md">UFX_PROPRIETARY_CHARGER_RESET_OPERATION</a> callback function.
+A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187982">UFX_PROPRIETARY_CHARGER_RESET_OPERATION</a> callback function.
 
 
 ## Requirements

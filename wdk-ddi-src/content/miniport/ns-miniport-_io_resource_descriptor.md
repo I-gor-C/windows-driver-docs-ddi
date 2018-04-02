@@ -7,7 +7,7 @@ old-location: kernel\io_resource_descriptor.htm
 old-project: kernel
 ms.assetid: 03e3a656-c691-4aff-bcc8-4e0bc8390fd7
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PIO_RESOURCE_DESCRIPTOR, 0, CM_RESOURCE_CONNECTION_CLASS_GPIO, CM_RESOURCE_CONNECTION_CLASS_SERIAL, CM_RESOURCE_CONNECTION_TYPE_GPIO_IO, CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C, CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI, CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART, CM_RESOURCE_INTERRUPT_LATCHED, CM_RESOURCE_INTERRUPT_LEVEL_SENSITIVE, CM_RESOURCE_INTERRUPT_MESSAGE, CM_RESOURCE_INTERRUPT_POLICY_INCLUDED, CM_RESOURCE_INTERRUPT_SECONDARY_INTERRUPT, CM_RESOURCE_INTERRUPT_WAKE_HINT, IO_RESOURCE_ALTERNATIVE, IO_RESOURCE_DEFAULT, IO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], IO_RESOURCE_PREFERRED, PIO_RESOURCE_DESCRIPTOR, PIO_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture], _IO_RESOURCE_DESCRIPTOR, kernel.io_resource_descriptor, kstruct_b_6b096887-dd89-43b8-abb8-4f3582392573.xml, wdm/IO_RESOURCE_DESCRIPTOR, wdm/PIO_RESOURCE_DESCRIPTOR"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,90 +44,86 @@ req.typenames: IO_RESOURCE_DESCRIPTOR, *PIO_RESOURCE_DESCRIPTOR
 ---
 
 # _IO_RESOURCE_DESCRIPTOR structure
-The <b>IO_RESOURCE_DESCRIPTOR</b> structure describes a range of raw hardware resources, of one type, that can be used by a device. An array of <b>IO_RESOURCE_DESCRIPTOR</b> structures is contained within each <a href="..\wdm\ns-wdm-_io_resource_list.md">IO_RESOURCE_LIST</a> structure.
+The <b>IO_RESOURCE_DESCRIPTOR</b> structure describes a range of raw hardware resources, of one type, that can be used by a device. An array of <b>IO_RESOURCE_DESCRIPTOR</b> structures is contained within each <a href="https://msdn.microsoft.com/library/windows/hardware/ff550600">IO_RESOURCE_LIST</a> structure.
 
 ## Syntax
-````
+```
 typedef struct _IO_RESOURCE_DESCRIPTOR {
-  UCHAR  Option;
-  UCHAR  Type;
-  UCHAR  ShareDisposition;
-  UCHAR  Spare1;
+  UCHAR  Option;
+  UCHAR  Type;
+  UCHAR  ShareDisposition;
+  UCHAR  Spare1;
   USHORT Flags;
   USHORT Spare2;
   union {
     struct {
-      ULONG            Length;
-      ULONG            Alignment;
+      ULONG            Length;
+      ULONG            Alignment;
       PHYSICAL_ADDRESS MinimumAddress;
       PHYSICAL_ADDRESS MaximumAddress;
-    } port;
+    } Port;
     struct {
-      ULONG            Length;
-      ULONG            Alignment;
+      ULONG            Length;
+      ULONG            Alignment;
       PHYSICAL_ADDRESS MinimumAddress;
       PHYSICAL_ADDRESS MaximumAddress;
-    } Memory;
+    } Memory;
     struct {
-      ULONG             MinimumVector;
-      ULONG             MaximumVector;
-#if defined(NT_PROCESSOR_GROUPS)
+      ULONG             MinimumVector;
+      ULONG             MaximumVector;
       IRQ_DEVICE_POLICY AffinityPolicy;
-      USHORT            Group;
-#else 
-      IRQ_DEVICE_POLICY AffinityPolicy;
-#endif 
-      IRQ_PRIORITY      PriorityPolicy;
-      KAFFINITY         TargetedProcessors;
-    } Interrupt;
+      USHORT            Group;
+      IRQ_PRIORITY      PriorityPolicy;
+      KAFFINITY         TargetedProcessors;
+    } Interrupt;
     struct {
       ULONG MinimumChannel;
       ULONG MaximumChannel;
-    } Dma;
+    } Dma;
     struct {
       ULONG RequestLine;
       ULONG Reserved;
       ULONG Channel;
       ULONG TransferWidth;
-    } DmaV3;
+    } DmaV3;
     struct {
-      ULONG            Length;
-      ULONG            Alignment;
+      ULONG            Length;
+      ULONG            Alignment;
       PHYSICAL_ADDRESS MinimumAddress;
       PHYSICAL_ADDRESS MaximumAddress;
-    } Generic;
+    } Generic;
     struct {
       ULONG Data[3];
-    } DevicePrivate;
+    } DevicePrivate;
     struct {
       ULONG Length;
       ULONG MinBusNumber;
       ULONG MaxBusNumber;
       ULONG Reserved;
-    } BusNumber;
+    } BusNumber;
     struct {
       ULONG Priority;
       ULONG Reserved1;
       ULONG Reserved2;
-    } ConfigData;
+    } ConfigData;
     struct {
-      ULONG            Length40;
-      ULONG            Alignment40;
+      ULONG            Length40;
+      ULONG            Alignment40;
       PHYSICAL_ADDRESS MinimumAddress;
       PHYSICAL_ADDRESS MaximumAddress;
-    } Memory40;
+    } Memory40;
     struct {
-      ULONG            Length48;
-      ULONG            Alignment48;
+      ULONG            Length48;
+      ULONG            Alignment48;
       PHYSICAL_ADDRESS MinimumAddress;
       PHYSICAL_ADDRESS MaximumAddress;
-    } Memory48;
+    } Memory48;
     struct {
-      ULONG            Length64;
-      ULONG            Alignment64;
+      ULONG            Length64;
+      ULONG            Alignment64;
       PHYSICAL_ADDRESS MinimumAddress;
       PHYSICAL_ADDRESS MaximumAddress;
-    } Memory64;
+    } Memory64;
     struct {
       UCHAR Class;
       UCHAR Type;
@@ -135,10 +131,10 @@ typedef struct _IO_RESOURCE_DESCRIPTOR {
       UCHAR Reserved2;
       ULONG IdLowPart;
       ULONG IdHighPart;
-    } Connection;
-  } u;
-} IO_RESOURCE_DESCRIPTOR, *PIO_RESOURCE_DESCRIPTOR;
-````
+    } Connection;
+  } u;
+} *PIO_RESOURCE_DESCRIPTOR, IO_RESOURCE_DESCRIPTOR;
+```
 
 ## Members
 
@@ -196,11 +192,11 @@ Not used.
 
 `Type`
 
-Identifies the resource type. For a list of valid values, see the <b>Type</b> member of the <a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.
+Identifies the resource type. For a list of valid values, see the <b>Type</b> member of the <a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.
 
 `ShareDisposition`
 
-Indicates whether the described resource can be shared. For a list of valid values, see the <b>ShareDisposition</b> member of the <a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.
+Indicates whether the described resource can be shared. For a list of valid values, see the <b>ShareDisposition</b> member of the <a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.
 
 `Spare1`
 
@@ -278,7 +274,7 @@ The interrupt is capable of waking the operating system from a low-power idle st
 </table>
  
 
-For a list of valid flags for other resource types, see the description of the <b>Flags</b> member of the <a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.
+For a list of valid flags for other resource types, see the description of the <b>Flags</b> member of the <a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure.
 
 `Spare2`
 
@@ -290,7 +286,7 @@ For a list of valid flags for other resource types, see the description of the <
 
 Specifies a range of I/O port addresses, using the following members.
 
-Drivers for Windows Vista and later versions of the Windows operating system must use <a href="..\wdm\nf-wdm-rtliodecodememioresource.md">RtlIoDecodeMemIoResource</a> and <a href="..\wdm\nf-wdm-rtlioencodememioresource.md">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
+Drivers for Windows Vista and later versions of the Windows operating system must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff561950">RtlIoDecodeMemIoResource</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561952">RtlIoEncodeMemIoResource</a> to read and update this member, rather than updating it directly.
 
 
 
@@ -324,16 +320,16 @@ The maximum bus-relative I/O port address that can be assigned to the device.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
+<a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 
 
 
-<a href="..\wdm\ns-wdm-_io_resource_requirements_list.md">IO_RESOURCE_REQUIREMENTS_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550600">IO_RESOURCE_LIST</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550609">IO_RESOURCE_REQUIREMENTS_LIST</a>
 
 
 
-<a href="..\wdm\ns-wdm-_io_resource_list.md">IO_RESOURCE_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548371">IoConnectInterrupt</a>

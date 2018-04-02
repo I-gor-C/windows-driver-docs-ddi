@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_PrintSchemaTicket method
+# IPrinterExtensionContext::get_PrintSchemaTicket method
 Gets the print ticket that is appropriate for the queue and the activation.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_PrintSchemaTicket(
-  [out, retval] IPrintSchemaTicket **ppTicket
+  IPrintSchemaTicket **ppTicket
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406649">IPrinterExtensionContext</a>

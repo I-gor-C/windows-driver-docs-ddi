@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-DWORD APIENTRY OEMTTDownloadMethod(
-   PDEVOBJ     pdevobj,
-   PUNIFONTOBJ pUFObj
+```
+DWORD OEMTTDownloadMethod(
+  PDEVOBJ     pdevobj,
+  PUNIFONTOBJ pUFObj
 );
-````
+```
 
 ## Parameters
 

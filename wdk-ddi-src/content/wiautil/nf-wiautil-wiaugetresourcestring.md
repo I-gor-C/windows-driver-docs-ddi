@@ -50,13 +50,13 @@ The <b>wiauGetResourceString</b> function gets a resource string, storing it as 
 
 ## Syntax
 
-````
-HRESULT _stdcall wiauGetResourceString(
-        HINSTANCE hInst,
-        LONG      lResourceID,
-  _Out_ BSTR      *pbstrStr
+```
+HRESULT wiauGetResourceString(
+  HINSTANCE hInst,
+  LONG      lResourceID,
+  BSTR      *pbstrStr
 );
-````
+```
 
 ## Parameters
 

@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # SENSOR_COLLECTION_LIST_SIZE function
-This function returns the size of a <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a> structure.
+This function returns the size of a <a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE ULONG SENSOR_COLLECTION_LIST_SIZE(
-  _In_ ULONG Count
+```
+ULONG SENSOR_COLLECTION_LIST_SIZE(
+  ULONG Count
 );
-````
+```
 
 ## Parameters
 
 `Count`
 
-The number of <a href="..\sensorsdef\ns-sensorsdef-sensor_value_pair.md">SENSOR_VALUE_PAIR</a> elements in the <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>.
+The number of <a href="https://msdn.microsoft.com/library/windows/hardware/dn946708">SENSOR_VALUE_PAIR</a> elements in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>.
 
 
 ## Return Value
@@ -76,4 +76,4 @@ The <b>SENSOR_COLLECTION_LIST_SIZE</b> function returns a ULONG value that repre
 
 ## See Also
 
-<a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>

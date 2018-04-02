@@ -7,7 +7,7 @@ old-location: ifsk\seimpersonateclient.htm
 old-project: ifsk
 ms.assetid: b039609e-d259-44d7-bbde-20993576e18a
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: SeImpersonateClient, SeImpersonateClient function [Installable File System Drivers], ifsk.seimpersonateclient, ntifs/SeImpersonateClient, seref_27996dfe-95b9-4d36-8182-9528fedef7d8.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,15 +45,16 @@ req.typenames: TOKEN_TYPE
 
 
 # SeImpersonateClient function
-The <b>SeImpersonateClient</b> routine is obsolete, but it is exported to support existing driver binaries. Use <a href="..\ntifs\nf-ntifs-seimpersonateclientex.md">SeImpersonateClientEx</a> instead.
+The <b>SeImpersonateClient</b> routine is obsolete, but it is exported to support existing driver binaries. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff556659">SeImpersonateClientEx</a> instead.
 
 ## Syntax
 
-````
-  SeImpersonateClient(
-    
+```
+NTKERNELAPI VOID SeImpersonateClient(
+  PSECURITY_CLIENT_CONTEXT ClientContext,
+  PETHREAD                 ServerThread
 );
-````
+```
 
 ## Parameters
 

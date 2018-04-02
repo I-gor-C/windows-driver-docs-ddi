@@ -52,18 +52,18 @@ The <b>READ_REGISTER_ULONG</b> function reads a ULONG value from the specified r
 
 ## Syntax
 
-````
+```
 ULONG READ_REGISTER_ULONG(
-  _In_ IWDFDevice3 *pDevice,
-  _In_ PULONG      Register
+  IWDFDevice3 *pDevice,
+  PULONG      Register
 );
-````
+```
 
 ## Parameters
 
 `pDevice`
 
-Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.
+Specifies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface for the device object of the device to access.
 
 `Register`
 

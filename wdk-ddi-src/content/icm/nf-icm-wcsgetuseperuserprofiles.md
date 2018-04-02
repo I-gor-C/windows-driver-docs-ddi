@@ -49,13 +49,13 @@ The <code>WcsGetUsePerUserProfiles</code> function determines whether the user h
 
 ## Syntax
 
-````
+```
 BOOL WcsGetUsePerUserProfiles(
-  _In_  LPCWSTR pDeviceName,
-  _In_  DWORD   dwDeviceClass,
-  _Out_ PBOOL   pUsePerUserProfiles
+  LPCWSTR pDeviceName,
+  DWORD   dwDeviceClass,
+  PBOOL   pUsePerUserProfiles
 );
-````
+```
 
 ## Parameters
 
@@ -113,4 +113,4 @@ This function is executable in Least-Privileged User Account (LUA) context.
 
 ## See Also
 
-<a href="..\icm\nf-icm-wcssetuseperuserprofiles.md">WcsSetUsePerUserProfiles</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563741">WcsSetUsePerUserProfiles</a>

@@ -49,13 +49,13 @@ The <code>WcsDisassociateColorProfileFromDevice</code> function disassociates a 
 
 ## Syntax
 
-````
+```
 BOOL WcsDisassociateColorProfileFromDevice(
-  _In_ WCS_PROFILE_MANAGEMENT_SCOPE profileManagementScope,
-  _In_ PCWSTR                       pProfileName,
-  _In_ PCWSTR                       pDeviceName
+  WCS_PROFILE_MANAGEMENT_SCOPE scope,
+  PCWSTR                       pProfileName,
+  PCWSTR                       pDeviceName
 );
-````
+```
 
 ## Parameters
 
@@ -99,4 +99,4 @@ This function is executable in Least-Privileged User Account (LUA) context if <i
 
 ## See Also
 
-<a href="..\icm\nf-icm-wcsassociatecolorprofilewithdevice.md">WcsAssociateColorProfileWithDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563709">WcsAssociateColorProfileWithDevice</a>

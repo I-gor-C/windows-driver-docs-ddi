@@ -50,18 +50,18 @@ The <b>KsFastMethodHandler</b> function handles fast methods requested through I
 
 ## Syntax
 
-````
-BOOLEAN KsFastMethodHandler(
-  _In_          PFILE_OBJECT     FileObject,
-  _In_          PKSMETHOD        Method,
-  _In_          ULONG            MethodLength,
-  _Inout_       PVOID            Data,
-  _In_          ULONG            DataLength,
-  _Out_         PIO_STATUS_BLOCK IoStatus,
-  _In_          ULONG            MethodSetsCount,
-  _In_    const KSMETHOD_SET     *MethodSet
+```
+KSDDKAPI BOOLEAN KsFastMethodHandler(
+  PFILE_OBJECT       FileObject,
+  PKSMETHOD          Method,
+  ULONG              MethodLength,
+  PVOID              Data,
+  ULONG              DataLength,
+  PIO_STATUS_BLOCK   IoStatus,
+  ULONG              MethodSetsCount,
+  const KSMETHOD_SET *MethodSet
 );
-````
+```
 
 ## Parameters
 
@@ -115,4 +115,4 @@ The owner of a method set can perform prefiltering or postfiltering of the metho
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563399">KsMethodHandler</a>

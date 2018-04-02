@@ -7,7 +7,7 @@ old-location: display\videoportwriteregisteruchar.htm
 old-project: display
 ms.assetid: 259d01a5-d975-48f9-b0cf-4596d12046bc
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortWriteRegisterUchar, VideoPortWriteRegisterUchar function [Display Devices], VideoPort_Functions_b06fef25-2c8e-457f-9f6a-0f58573ac860.xml, display.videoportwriteregisteruchar, video/VideoPortWriteRegisterUchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,18 +50,18 @@ The <b>VideoPortWriteRegisterUchar</b> function writes a byte to a mapped regist
 
 ## Syntax
 
-````
-VOID VideoPortWriteRegisterUchar(
-   PUCHAR Register,
-   UCHAR  Value
+```
+VIDEOPORT_API VOID VideoPortWriteRegisterUchar(
+  PUCHAR Register,
+  UCHAR  Value
 );
-````
+```
 
 ## Parameters
 
 `Register`
 
-Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.
+Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a>.
 
 `Value`
 
@@ -74,7 +74,7 @@ None
 
 ## Remarks
 
-A miniport driver's <a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a> function can call <b>VideoPortWriteRegisterUchar</b>.
+A miniport driver's <a href="https://msdn.microsoft.com/523471e3-cf1e-48d2-b5f0-2f8d19ad71e0">HwVidInterrupt</a> or <a href="https://msdn.microsoft.com/04e3bac6-c905-4c95-bd1b-e85b46c4296d">HwVidSynchronizeExecutionCallback</a> function can call <b>VideoPortWriteRegisterUchar</b>.
 
 Callers of <b>VideoPortWriteRegisterUchar</b> can be running at any IRQL, provided that the memory pointed to by the <i>Register</i> parameter is resident, mapped device memory.
 
@@ -90,4 +90,4 @@ Callers of <b>VideoPortWriteRegisterUchar</b> can be running at any IRQL, provid
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a>

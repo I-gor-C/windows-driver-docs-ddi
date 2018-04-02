@@ -47,14 +47,14 @@ req.typenames: KS_DVD_YCrCb, *PKS_DVD_YCrCb
 The KS_DVD_YCrCb structure is used to describe a color in the YCrCb colorspace.
 
 ## Syntax
-````
+```
 typedef struct _KS_DVD_YCrCb {
   UCHAR Reserved;
   UCHAR Y;
   UCHAR Cr;
   UCHAR Cb;
-} KS_DVD_YCrCb, *PKS_DVD_YCrCb;
-````
+} *PKS_DVD_YCrCb, KS_DVD_YCrCb;
+```
 
 ## Members
 
@@ -85,4 +85,4 @@ The KS_DVD_YCrCb structure is used
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-_ks_dvd_yuv.md">KS_DVD_YUV</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567642">KS_DVD_YUV</a>

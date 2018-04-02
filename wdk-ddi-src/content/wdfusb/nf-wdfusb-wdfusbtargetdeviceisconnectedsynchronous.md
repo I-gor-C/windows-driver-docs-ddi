@@ -53,17 +53,17 @@ The <b>WdfUsbTargetDeviceIsConnectedSynchronous</b> method determines if the spe
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfUsbTargetDeviceIsConnectedSynchronous(
-  _In_ WDFUSBDEVICE UsbDevice
+  WDFUSBDEVICE UsbDevice
 );
-````
+```
 
 ## Parameters
 
 `UsbDevice`
 
-A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.
+A handle to a USB device object that was obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 
 ## Return Value
@@ -149,4 +149,4 @@ status = WdfUsbTargetDeviceIsConnectedSynchronous(UsbDevice);</pre>
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>

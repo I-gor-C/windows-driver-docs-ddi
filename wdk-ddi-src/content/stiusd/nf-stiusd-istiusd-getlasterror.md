@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetLastError method
+# IStiUSD::GetLastError method
 The <b>IStiUSD::GetLastError</b> method returns the last known error associated with a still image device.
 
 ## Syntax
 
-````
+```
 HRESULT GetLastError(
-   LPDWORD pdwLastDeviceError
+  LPDWORD pdwLastDeviceError
 );
-````
+```
 
 ## Parameters
 
@@ -76,8 +76,8 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/62740263-5bbb-48e1-be3d-9ee9cb37d6b9">IStiUSD</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543747">IStiDevice::GetLastError</a>
+
+
+
+<a href="https://msdn.microsoft.com/62740263-5bbb-48e1-be3d-9ee9cb37d6b9">IStiUSD</a>

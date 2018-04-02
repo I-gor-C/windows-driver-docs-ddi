@@ -7,7 +7,7 @@ old-location: dtf\iwdtfsimulatedbatterysystemaction_setsimulatedbatterychargeper
 old-project: dtf
 ms.assetid: b330c423-b295-4b5b-b6bf-1f48549e8bfa
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFSimulatedBatterySystemAction, IWDTFSimulatedBatterySystemAction interface [Windows Device Testing Framework], SetSimulatedBatteryChargePercentage method, IWDTFSimulatedBatterySystemAction::SetSimulatedBatteryChargePercentage, SetSimulatedBatteryChargePercentage method [Windows Device Testing Framework], SetSimulatedBatteryChargePercentage method [Windows Device Testing Framework], IWDTFSimulatedBatterySystemAction interface, SetSimulatedBatteryChargePercentage,IWDTFSimulatedBatterySystemAction.SetSimulatedBatteryChargePercentage, dtf.iwdtfsimulatedbatterysystemaction_setsimulatedbatterychargepercentage, wdtfsimulatedbatterysystemaction/IWDTFSimulatedBatterySystemAction::SetSimulatedBatteryChargePercentage
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetSimulatedBatteryChargePercentage method
+# IWDTFSimulatedBatterySystemAction::SetSimulatedBatteryChargePercentage method
 Sets the charge percentage reported to the OS by the simulated battery.
 
 
@@ -55,12 +55,12 @@ Use this method to change the charge level reported to the OS by the
 
 ## Syntax
 
-````
+```
 HRESULT SetSimulatedBatteryChargePercentage(
-  [in]          ULONG        Percent,
-  [out, retval] VARIANT_BOOL *pbSuccess
+  ULONG        Percent,
+  VARIANT_BOOL *pbSuccess
 );
-````
+```
 
 ## Parameters
 
@@ -87,4 +87,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\wdtfsimulatedbatterysystemaction\nn-wdtfsimulatedbatterysystemaction-iwdtfsimulatedbatterysystemaction.md">IWDTFSimulatedBatterySystemAction</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265160">IWDTFSimulatedBatterySystemAction</a>

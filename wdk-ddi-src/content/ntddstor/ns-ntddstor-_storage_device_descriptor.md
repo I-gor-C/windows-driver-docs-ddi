@@ -7,7 +7,7 @@ old-location: storage\storage_device_descriptor.htm
 old-project: storage
 ms.assetid: 99b270a0-0634-41a8-9de7-d2a2d4c3059f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PSTORAGE_DEVICE_DESCRIPTOR, PSTORAGE_DEVICE_DESCRIPTOR structure pointer [Storage Devices], STORAGE_DEVICE_DESCRIPTOR, STORAGE_DEVICE_DESCRIPTOR structure [Storage Devices], _STORAGE_DEVICE_DESCRIPTOR, ntddstor/PSTORAGE_DEVICE_DESCRIPTOR, ntddstor/STORAGE_DEVICE_DESCRIPTOR, storage.storage_device_descriptor, structs-general_3c393126-f5c8-47d8-bfb5-6127ce656e9a.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,27 +46,27 @@ req.typenames: STORAGE_DEVICE_DESCRIPTOR, PSTORAGE_DEVICE_DESCRIPTOR
 # _STORAGE_DEVICE_DESCRIPTOR structure
 The <b>STORAGE_DEVICE_DESCRIPTOR</b> structure 
    is used in conjunction with the 
-   <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request to 
+   <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request to 
    retrieve the storage device descriptor data for a device.
 
 ## Syntax
-````
+```
 typedef struct _STORAGE_DEVICE_DESCRIPTOR {
-  ULONG            Version;
-  ULONG            Size;
-  UCHAR            DeviceType;
-  UCHAR            DeviceTypeModifier;
-  BOOLEAN          RemovableMedia;
-  BOOLEAN          CommandQueueing;
-  ULONG            VendorIdOffset;
-  ULONG            ProductIdOffset;
-  ULONG            ProductRevisionOffset;
-  ULONG            SerialNumberOffset;
-  STORAGE_BUS_TYPE BusType;
-  ULONG            RawPropertiesLength;
-  UCHAR            RawDeviceProperties[1];
-} STORAGE_DEVICE_DESCRIPTOR, *PSTORAGE_DEVICE_DESCRIPTOR;
-````
+  __WRAPPED__ ULONG            Version;
+  __WRAPPED__ ULONG            Size;
+  __WRAPPED__ UCHAR            DeviceType;
+  __WRAPPED__ UCHAR            DeviceTypeModifier;
+  __WRAPPED__ BOOLEAN          RemovableMedia;
+  __WRAPPED__ BOOLEAN          CommandQueueing;
+  __WRAPPED__ ULONG            VendorIdOffset;
+  __WRAPPED__ ULONG            ProductIdOffset;
+  __WRAPPED__ ULONG            ProductRevisionOffset;
+  __WRAPPED__ ULONG            SerialNumberOffset;
+  __WRAPPED__ STORAGE_BUS_TYPE BusType;
+  __WRAPPED__ ULONG            RawPropertiesLength;
+  __WRAPPED__ UCHAR            RawDeviceProperties[1];
+} PSTORAGE_DEVICE_DESCRIPTOR, STORAGE_DEVICE_DESCRIPTOR;
+```
 
 ## Members
 
@@ -142,13 +142,13 @@ Contains an array of length one that serves as a place holder for the first byte
 
 ## Remarks
 Applications and storage class drivers issue a device-control request with the I/O control code 
-     <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve 
      this structure, which contains information about a target device. The structure can be retrieved only from an 
      FDO; attempting to retrieve device properties from an adapter causes an error.
 
 An application or driver can determine the required buffer size by casting the retrieved 
      <b>STORAGE_DEVICE_DESCRIPTOR</b> structure to a 
-     <a href="..\ntddstor\ns-ntddstor-_storage_descriptor_header.md">STORAGE_DESCRIPTOR_HEADER</a>, which contains 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566968">STORAGE_DESCRIPTOR_HEADER</a>, which contains 
      only <b>Version</b> and <b>Size</b>.
 
 ## Requirements
@@ -158,24 +158,24 @@ An application or driver can determine the required buffer size by casting the r
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iobuilddeviceiocontrolrequest.md">IoBuildDeviceIoControlRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a>
 
 
 
-<a href="..\ntddstor\ns-ntddstor-_storage_adapter_descriptor.md">STORAGE_ADAPTER_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548318">IoBuildDeviceIoControlRequest</a>
 
 
 
-<a href="..\ntddstor\ns-ntddstor-_storage_descriptor_header.md">STORAGE_DESCRIPTOR_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566346">STORAGE_ADAPTER_DESCRIPTOR</a>
 
 
 
-<a href="..\ntddstor\ns-ntddstor-_storage_device_descriptor.md">STORAGE_DEVICE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566968">STORAGE_DESCRIPTOR_HEADER</a>
 
 
 
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566971">STORAGE_DEVICE_DESCRIPTOR</a>
 
 
 
-<a href="..\ntddstor\ns-ntddstor-_storage_device_id_descriptor.md">STORAGE_DEVICE_ID_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566972">STORAGE_DEVICE_ID_DESCRIPTOR</a>

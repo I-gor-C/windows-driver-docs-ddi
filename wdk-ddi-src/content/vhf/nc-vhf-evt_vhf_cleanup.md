@@ -63,7 +63,7 @@ _IRQL_requires_same_ VOID EvtVhfCleanup(
 
 `VhfClientContext`
 
-Pointer to the HID source driver-defined context structure that the driver passed in the previous call to <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a> to create the virtual HID device.
+Pointer to the HID source driver-defined context structure that the driver passed in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/dn925036">VhfCreate</a> to create the virtual HID device.
 
 
 ## Return Value
@@ -72,11 +72,11 @@ This callback function does not return a value.
 
 ## Remarks
 
-To delete the virtual HID device, the HID source driver calls <a href="..\vhf\nf-vhf-vhfdelete.md">VhfDelete</a>. That call causes Virtual HID Framework (VHF) to invoke the previously-registered <i>EvtVhfCleanup</i>, if the callback function is  implemented by the HID source driver.  When the driver calls VhfDelete with <i>Wait</i> set to TRUE, <i>EvtVhfCleanup</i> gets called before <b>VhfDelete</b> returns. If <i>Wait</i> is FALSE, it might get called any time after <b>VhfDelete</b> is called that is before or after <b>VhfDelete</b> returns.
+To delete the virtual HID device, the HID source driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/dn925038">VhfDelete</a>. That call causes Virtual HID Framework (VHF) to invoke the previously-registered <i>EvtVhfCleanup</i>, if the callback function is  implemented by the HID source driver.  When the driver calls VhfDelete with <i>Wait</i> set to TRUE, <i>EvtVhfCleanup</i> gets called before <b>VhfDelete</b> returns. If <i>Wait</i> is FALSE, it might get called any time after <b>VhfDelete</b> is called that is before or after <b>VhfDelete</b> returns.
 
 The call gives the HID source driver an opportunity to free resources allocated for the virtual HID device when that device is deleted. 
 
-The HID source driver must not use the VHFHANDLE for the virtual HID device (created by <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a>) after this callback function returns. Before invoking this callback function, VHF makes sure that there are no asynchronous operations pending.
+The HID source driver must not use the VHFHANDLE for the virtual HID device (created by <a href="https://msdn.microsoft.com/library/windows/hardware/dn925036">VhfCreate</a>) after this callback function returns. Before invoking this callback function, VHF makes sure that there are no asynchronous operations pending.
 
 ## Requirements
 | &nbsp; | &nbsp; |

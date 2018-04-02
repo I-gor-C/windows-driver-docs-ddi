@@ -44,22 +44,22 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# ReportProgress method
+# IPrintPipelineProgressReport::ReportProgress method
 The <code>ReportProgress</code> method reports the progress of the XPS job consumption to the pipeline manager.
 
 ## Syntax
 
-````
+```
 HRESULT ReportProgress(
-  [in] EXpsJobConsumption update
+  EXpsJobConsumption update
 );
-````
+```
 
 ## Parameters
 
 `update`
 
-An <a href="..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0003.md">EXpsJobConsumption</a>-typed value that describes the progress to the pipeline manager.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/ff548778">EXpsJobConsumption</a>-typed value that describes the progress to the pipeline manager.
 
 
 ## Return Value
@@ -75,8 +75,8 @@ An <a href="..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline
 
 ## See Also
 
-<a href="..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0003.md">EXpsJobConsumption</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548778">EXpsJobConsumption</a>
 
 
 
-<a href="..\filterpipeline\nn-filterpipeline-iprintpipelineprogressreport.md">IPrintPipelineProgressReport</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554314">IPrintPipelineProgressReport</a>

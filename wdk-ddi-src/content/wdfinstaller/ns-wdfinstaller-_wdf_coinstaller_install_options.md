@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 The <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure contains installation options that a framework-based driver's installer can specify to the framework's co-installer.
 
 ## Syntax
-````
+```
 typedef struct _WDF_COINSTALLER_INSTALL_OPTIONS {
   ULONG Size;
-  BOOL  ShowRebootPrompt;
+  BOOL  ShowRebootPrompt;
 } WDF_COINSTALLER_INSTALL_OPTIONS, *PWDF_COINSTALLER_INSTALL_OPTIONS;
-````
+```
 
 ## Members
 
@@ -66,14 +66,14 @@ The size, in bytes, of this structure.
 
 `ShowRebootPrompt`
 
-A Boolean value. If this value is <b>TRUE</b>, and if the co-installer determines that the computer must be restarted to complete the driver installation, <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a> informs the Plug and Play (PnP) manager, and the PnP manager prompts the user that a restart is necessary.  
+A Boolean value. If this value is <b>TRUE</b>, and if the co-installer determines that the computer must be restarted to complete the driver installation, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548839">WdfPreDeviceInstallEx</a> informs the Plug and Play (PnP) manager, and the PnP manager prompts the user that a restart is necessary.  
 
-If this value is <b>FALSE</b>, and if the co-installer determines that the computer must be restarted to complete the driver installation, <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a> does not inform the PnP manager.
+If this value is <b>FALSE</b>, and if the co-installer determines that the computer must be restarted to complete the driver installation, <a href="https://msdn.microsoft.com/library/windows/hardware/ff548839">WdfPreDeviceInstallEx</a> does not inform the PnP manager.
 
 ## Remarks
-The <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure is used as an input parameter to <a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstallex.md">WdfPreDeviceInstallEx</a>.
+The <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure is used as an input parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548839">WdfPreDeviceInstallEx</a>.
 
-Your installer should initialize the <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure by calling <a href="..\wdfinstaller\nf-wdfinstaller-wdf_coinstaller_install_options_init.md">WDF_COINSTALLER_INSTALL_OPTIONS_INIT</a>.
+Your installer should initialize the <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff551243">WDF_COINSTALLER_INSTALL_OPTIONS_INIT</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,4 +83,4 @@ Your installer should initialize the <b>WDF_COINSTALLER_INSTALL_OPTIONS</b> stru
 
 ## See Also
 
-<a href="..\wdfinstaller\nf-wdfinstaller-wdf_coinstaller_install_options_init.md">WDF_COINSTALLER_INSTALL_OPTIONS_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551243">WDF_COINSTALLER_INSTALL_OPTIONS_INIT</a>

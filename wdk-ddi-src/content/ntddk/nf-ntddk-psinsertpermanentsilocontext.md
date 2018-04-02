@@ -7,7 +7,7 @@ old-location: kernel\psinsertpermanentsilocontext.htm
 old-project: kernel
 ms.assetid: ADBAB25B-7646-4E0E-AFD8-18B87A293674
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsInsertPermanentSiloContext, PsInsertPermanentSiloContext routine [Kernel-Mode Driver Architecture], kernel.psinsertpermanentsilocontext, ntddk/PsInsertPermanentSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ This routine inserts an object in an empty slot in a <i>Silo</i>.
 
 ## Syntax
 
-````
-NTSTATUS PsInsertPermanentSiloContext(
-  _In_ PESILO Silo,
-  _In_ ULONG  ContextSlot,
-  _In_ PVOID  SiloContext
+```
+NTKERNELAPI NTSTATUS PsInsertPermanentSiloContext(
+  PESILO Silo,
+  ULONG  ContextSlot,
+  PVOID  SiloContext
 );
-````
+```
 
 ## Parameters
 
@@ -65,11 +65,11 @@ The silo in which the object is to be inserted. This parameter is required and i
 
 `ContextSlot`
 
-The slot in which the object is to be inserted. A slot allocated by the <a href="..\ntddk\nf-ntddk-psallocsilocontextslot.md">PsAllocSiloContextSlot</a> routine.
+The slot in which the object is to be inserted. A slot allocated by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt735056">PsAllocSiloContextSlot</a> routine.
 
 `SiloContext`
 
-The object to be inserted, created by the <a href="..\ntddk\nf-ntddk-pscreatesilocontext.md">PsCreateSiloContext</a> routine. The object must be created using the same silo as specified in the <i>Silo</i> parameter. This parameter is required and it cannot be <b>NULL</b>.
+The object to be inserted, created by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt735058">PsCreateSiloContext</a> routine. The object must be created using the same silo as specified in the <i>Silo</i> parameter. This parameter is required and it cannot be <b>NULL</b>.
 
 
 ## Return Value
@@ -118,7 +118,7 @@ The operation completed successfully.
 
 ## Remarks
 
-A successful call to <b>PsInsertPermanentSiloContext</b> increments the reference count on <i>SiloContext</i>. If <b>PsInsertPermanentSiloContext</b> fails, the reference count remains unchanged. In either case, after the routine completes, the caller must call <a href="..\ntddk\nf-ntddk-psdereferencesilocontext.md">PsDereferenceSiloContext</a> to decrement the <i>SiloContext</i> object.
+A successful call to <b>PsInsertPermanentSiloContext</b> increments the reference count on <i>SiloContext</i>. If <b>PsInsertPermanentSiloContext</b> fails, the reference count remains unchanged. In either case, after the routine completes, the caller must call <a href="https://msdn.microsoft.com/library/windows/hardware/mt735059">PsDereferenceSiloContext</a> to decrement the <i>SiloContext</i> object.
 
 ## Requirements
 | &nbsp; | &nbsp; |

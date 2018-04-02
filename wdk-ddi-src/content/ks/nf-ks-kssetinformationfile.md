@@ -50,14 +50,14 @@ The <b>KsSetInformationFile</b> function performs an information set against the
 
 ## Syntax
 
-````
-NTSTATUS KsSetInformationFile(
-  _In_ PFILE_OBJECT           FileObject,
-  _In_ PVOID                  FileInformation,
-  _In_ ULONG                  Length,
-  _In_ FILE_INFORMATION_CLASS FileInformationClass
+```
+KSDDKAPI NTSTATUS KsSetInformationFile(
+  PFILE_OBJECT           FileObject,
+  PVOID                  FileInformation,
+  ULONG                  Length,
+  FILE_INFORMATION_CLASS FileInformationClass
 );
-````
+```
 
 ## Parameters
 

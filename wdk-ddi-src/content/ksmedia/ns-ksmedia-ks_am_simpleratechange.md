@@ -47,12 +47,12 @@ req.typenames: KS_AM_SimpleRateChange, *PKS_AM_SimpleRateChange
 The KS_AM_SimpleRateChange structure is used to describe a simple rate change (fast-forward or rewind) for an MPEG2 stream.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KS_AM_SimpleRateChange {
   REFERENCE_TIME StartTime;
-  LONG           Rate;
-} KS_AM_SimpleRateChange, *PKS_AM_SimpleRateChange;
-````
+  LONG           Rate;
+} *PKS_AM_SimpleRateChange, KS_AM_SimpleRateChange;
+```
 
 ## Members
 

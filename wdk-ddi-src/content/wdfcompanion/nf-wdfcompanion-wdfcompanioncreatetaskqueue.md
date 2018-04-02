@@ -50,14 +50,14 @@ For internal use only.
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfCompanionCreateTaskQueue(
-  _In_      WDFCOMPANION           Companion,
-  _In_      PWDF_TASK_QUEUE_CONFIG Config,
-  _In_opt_  PWDF_OBJECT_ATTRIBUTES QueueAttributes,
-  _Out_opt_ WDFTASKQUEUE           *Queue
+  WDFCOMPANION           Companion,
+  PWDF_TASK_QUEUE_CONFIG Config,
+  PWDF_OBJECT_ATTRIBUTES QueueAttributes,
+  WDFTASKQUEUE           *Queue
 );
-````
+```
 
 ## Parameters
 

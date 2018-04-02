@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Count method
-Gets a count of the number of <a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a> objects in the collection.
+# IPrinterExtensionContextCollection::get_Count method
+Gets a count of the number of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406649">IPrinterExtensionContext</a> objects in the collection.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_Count(
-  [out, retval] ULONG *pulCount
+  ULONG *pulCount
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md">IPrinterExtensionContextCollection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406649">IPrinterExtensionContext</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh846191">IPrinterExtensionContextCollection</a>

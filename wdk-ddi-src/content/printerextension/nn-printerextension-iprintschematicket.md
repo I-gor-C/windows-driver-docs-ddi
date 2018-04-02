@@ -60,7 +60,7 @@ Provides the primary method to access and validate a PrintTicket.
 | [IPrintSchemaTicket::GetFeature](nf-printerextension-iprintschematicket-getfeature.md) | Gets a named feature from the PrintTicket, by name and full namespace URI. |
 | [IPrintSchemaTicket::GetFeatureByKeyName](nf-printerextension-iprintschematicket-getfeaturebykeyname.md) | Gets a feature from the PrintTicket based on the specified key name. |
 | [IPrintSchemaTicket::NotifyXmlChanged](nf-printerextension-iprintschematicket-notifyxmlchanged.md) | Notifies the print system that the XML DOM object has changed. |
-| [IPrintSchemaTicket::put_JobCopiesAllDocuments](nf-printerextension-iprintschematicket-put_jobcopiesalldocuments.md) | Gets the copy count. |
+| [IPrintSchemaTicket::put_JobCopiesAllDocuments](nf-printerextension-iprintschematicket-put_jobcopiesalldocuments.md) | Sets the copy count. |
 | [IPrintSchemaTicket::ValidateAsync](nf-printerextension-iprintschematicket-validateasync.md) | Gets an asynchronous PrintTicket validation operation context. |
 
 ## Remarks
@@ -75,16 +75,16 @@ To obtain an IXMLDOMDocument2 object for the PrintTicket object, you must first 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/5E7F2292-1F71-4581-8E34-86F1464EC08F">IPrintSchemaElement::XmlNode</a>
-
-
-
-<a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
-
-
-
 <a href="https://msdn.microsoft.com/B1599F21-D6DD-497D-9CD8-6C637ABAA33A">IPrintSchemaAsyncOperationEvent::Completed</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451256">IPrintSchemaCapabilities</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451270">IPrintSchemaElement</a>
+
+
+
+<a href="https://msdn.microsoft.com/5E7F2292-1F71-4581-8E34-86F1464EC08F">IPrintSchemaElement::XmlNode</a>

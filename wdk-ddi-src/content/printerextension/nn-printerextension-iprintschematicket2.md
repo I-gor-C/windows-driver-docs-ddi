@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 
 # IPrintSchemaTicket2 interface
 
-The  <b>IPrintSchemaTicket2</b> interface is an extension to the <a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a> interface, which provides wrapper methods over a print ticket document.
+The  <b>IPrintSchemaTicket2</b> interface is an extension to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a> interface, which provides wrapper methods over a print ticket document.
 
 ## Methods
 
@@ -66,4 +66,4 @@ The  <b>IPrintSchemaTicket2</b> interface is an extension to the <a href="..\pri
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>

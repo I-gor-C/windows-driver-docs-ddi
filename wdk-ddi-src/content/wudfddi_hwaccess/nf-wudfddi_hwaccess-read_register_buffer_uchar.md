@@ -52,20 +52,20 @@ The <b>READ_REGISTER_BUFFER_UCHAR</b> function reads a number of bytes from the 
 
 ## Syntax
 
-````
+```
 void READ_REGISTER_BUFFER_UCHAR(
-  _In_  IWDFDevice3 *pDevice,
-  _In_  PUCHAR      Register,
-  _Out_ PUCHAR      Buffer,
-  _In_  ULONG       Count 
+  IWDFDevice3 *pDevice,
+  PUCHAR      Register,
+  PUCHAR      Buffer,
+  ULONG       Count
 );
-````
+```
 
 ## Parameters
 
 `pDevice`
 
-Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.
+Specifies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface for the device object of the device to access.
 
 `Register`
 

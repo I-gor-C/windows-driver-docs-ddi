@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetParentItem method
+# IWiaDrvItem::GetParentItem method
 The <b>IWiaDrvItem::GetParentItem</b> gets the parent item of the current item.
 
 ## Syntax
 
-````
+```
 HRESULT GetParentItem(
-  [out, optional] IWiaDrvItem **ppIParentItem
+  IWiaDrvItem **__MIDL__IWiaDrvItem0012
 );
-````
+```
 
 ## Parameters
 
@@ -80,12 +80,12 @@ Minidrivers typically use this method to obtain a pointer to the nonroot parent 
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543889">IWiaDrvItem::GetNextSiblingItem</a>
+<a href="https://msdn.microsoft.com/0609e1b2-48df-413c-90bd-d7ddea26510a">IWiaDrvItem</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543878">IWiaDrvItem::GetFirstChildItem</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543889">IWiaDrvItem::GetNextSiblingItem</a>

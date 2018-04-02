@@ -52,11 +52,11 @@ The function can be called at DISPATCH_LEVEL.
 
 ## Syntax
 
-````
-LONGLONG KsGetDefaultClockTime(
-  _In_ PKSDEFAULTCLOCK DefaultClock
+```
+KSDDKAPI LONGLONG KsGetDefaultClockTime(
+  PKSDEFAULTCLOCK DefaultClock
 );
-````
+```
 
 ## Parameters
 
@@ -79,4 +79,4 @@ The <b>KsGetDefaultClockTime</b> function returns the current clock time.
 
 ## See Also
 
-<a href="..\ks\nf-ks-kssetdefaultclocktime.md">KsSetDefaultClockTime</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566827">KsSetDefaultClockTime</a>

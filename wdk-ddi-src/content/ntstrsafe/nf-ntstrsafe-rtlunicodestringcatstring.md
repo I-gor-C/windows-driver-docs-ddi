@@ -7,7 +7,7 @@ old-location: kernel\rtlunicodestringcatstring.htm
 old-project: kernel
 ms.assetid: d8e96d49-e4f5-468c-bdce-fbfaa8428eb7
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUnicodeStringCatString, RtlUnicodeStringCatString function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringcatstring, ntstrsafe/RtlUnicodeStringCatString, safestrings_28fc9345-6d09-492c-bda5-94216a260965.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,16 +46,16 @@ req.typenames: SYSTEM_POWER_STATE_CONTEXT, *PSYSTEM_POWER_STATE_CONTEXT
 
 
 # RtlUnicodeStringCatString function
-The <b>RtlUnicodeStringCatString</b> function concatenates two strings when the destination string is contained in a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure.
+The <b>RtlUnicodeStringCatString</b> function concatenates two strings when the destination string is contained in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure.
 
 ## Syntax
 
-````
-NTSTATUS RtlUnicodeStringCatString(
-  _Inout_ PUNICODE_STRING  DestinationString,
-  _In_    NTSTRSAFE_PCWSTR pszSrc
+```
+NTSTRSAFEDDI RtlUnicodeStringCatString(
+  PUNICODE_STRING  DestinationString,
+  NTSTRSAFE_PCWSTR pszSrc
 );
-````
+```
 
 ## Parameters
 
@@ -129,7 +129,7 @@ The <b>RtlUnicodeStringCatString</b> function uses the destination buffer's size
 
 If the source and destination strings overlap, the behavior of the function is undefined.
 
-The <i>pszSrc</i> and <i>DestinationString</i> pointers cannot be <b>NULL</b>. If you need to handle <b>NULL</b> pointer values, use the <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcatstringex.md">RtlUnicodeStringCatStringEx</a> function.
+The <i>pszSrc</i> and <i>DestinationString</i> pointers cannot be <b>NULL</b>. If you need to handle <b>NULL</b> pointer values, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562902">RtlUnicodeStringCatStringEx</a> function.
 
 For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.
 
@@ -144,8 +144,8 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562902">RtlUnicodeStringCatStringEx</a>
 
 
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringcatstringex.md">RtlUnicodeStringCatStringEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # POS_CX_ATTRIBUTES_INIT function
-POS_CX_ATTRIBUTES_INIT initializes a <a href="..\poscx\ns-poscx-_pos_cx_attributes.md">POS_CX_ATTRIBUTE</a> structure.
+POS_CX_ATTRIBUTES_INIT initializes a <a href="https://msdn.microsoft.com/A91B8EAA-2FCB-4468-8CF3-A3C4D9D7E355">POS_CX_ATTRIBUTE</a> structure.
 
 ## Syntax
 
-````
-VOID POS_CX_ATTRIBUTES_INIT(
-  _Out_ POS_CX_ATTRIBUTE *PosCxAttrPtr
+```
+void POS_CX_ATTRIBUTES_INIT(
+  POS_CX_ATTRIBUTES *PosCxAttrPtr
 );
-````
+```
 
 ## Parameters
 
 `PosCxAttrPtr`
 
-A pointer to the caller-allocated <a href="..\poscx\ns-poscx-_pos_cx_attributes.md">POS_CX_ATTRIBUTE</a> structure to initialize.
+A pointer to the caller-allocated <a href="https://msdn.microsoft.com/A91B8EAA-2FCB-4468-8CF3-A3C4D9D7E355">POS_CX_ATTRIBUTE</a> structure to initialize.
 
 
 ## Return Value
@@ -76,8 +76,8 @@ This function does not return a value.
 
 ## See Also
 
-<a href="..\poscx\ns-poscx-_pos_cx_attributes.md">POS_CX_ATTRIBUTE</a>
+<a href="https://msdn.microsoft.com/A91B8EAA-2FCB-4468-8CF3-A3C4D9D7E355">POS_CX_ATTRIBUTE</a>
 
 
 
-<a href="..\poscx\nf-poscx-poscxinit.md">PosCxInit</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt593125">PosCxInit</a>

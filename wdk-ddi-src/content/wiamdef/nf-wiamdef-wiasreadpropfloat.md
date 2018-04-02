@@ -50,15 +50,15 @@ The <b>wiasReadPropFloat </b>function retrieves a floating-point property value 
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasReadPropFloat(
-  _In_      BYTE   *pWiasContext,
-            PROPID propid,
-  _Out_     FLOAT  *pfVal,
-  _Out_opt_ FLOAT  *pfValOld,
-            BOOL   bMustExist
+```
+HRESULT wiasReadPropFloat(
+  BYTE   *pWiasContext,
+  PROPID propid,
+  FLOAT  *pfVal,
+  FLOAT  *pfValOld,
+  BOOL   bMustExist
 );
-````
+```
 
 ## Parameters
 
@@ -99,20 +99,20 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropguid.md">wiasReadPropGuid</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549308">wiasReadPropBin</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropstr.md">wiasReadPropStr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549325">wiasReadPropGuid</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropbin.md">wiasReadPropBin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549330">wiasReadPropLong</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropfloat.md">wiasWritePropFloat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549341">wiasReadPropStr</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadproplong.md">wiasReadPropLong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549507">wiasWritePropFloat</a>

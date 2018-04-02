@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_certificate_info.htm
 old-project: display
 ms.assetid: 9a687c45-2201-483c-b1ad-958b9f651e54
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D11_1DDI_CERTIFICATE_INFO, D3D11_1DDI_CERTIFICATE_INFO structure [Display Devices], d3d10umddi/D3D11_1DDI_CERTIFICATE_INFO, display.d3d11_1ddi_certificate_info
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,22 +47,22 @@ req.typenames: D3D11_1DDI_CERTIFICATE_INFO
 Specifies a cryptographic  session certificate or authenticated channel.
 
 ## Syntax
-````
+```
 typedef struct D3D11_1DDI_CERTIFICATE_INFO {
   D3D11_1DDI_CERTIFICATE_TYPE CertificateType;
   union {
     D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE ChannelType;
-    GUID                                  CryptoSessionType;
+    GUID                                  CryptoSessionType;
   };
-} D3D11_1DDI_CERTIFICATE_INFO;
-````
+};
+```
 
 ## Members
 
 
 `CertificateType`
 
-A <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_certificate_type.md">D3D11_1DDI_CERTIFICATE_TYPE</a> value that specifies the type of authenticated certificate that is used to establish trust and perform a key exchange.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/hh406438">D3D11_1DDI_CERTIFICATE_TYPE</a> value that specifies the type of authenticated certificate that is used to establish trust and perform a key exchange.
 
 
 ## Requirements
@@ -73,8 +73,8 @@ A <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_certificate_type.md">D3D11_1DD
 
 ## See Also
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_certificate_type.md">D3D11_1DDI_CERTIFICATE_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406343">D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE</a>
 
 
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_authenticated_channel_type.md">D3D11_1DDI_AUTHENTICATED_CHANNEL_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406438">D3D11_1DDI_CERTIFICATE_TYPE</a>

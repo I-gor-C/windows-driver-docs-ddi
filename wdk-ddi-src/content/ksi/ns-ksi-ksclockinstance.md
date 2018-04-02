@@ -47,13 +47,13 @@ req.typenames: KSCLOCKINSTANCE, *PKSCLOCKINSTANCE
 
 
 ## Syntax
-````
-typedef struct {
-  KSOBJECT_HEADER  Header;
-  PKISDEFAULTCLOCK DefaultClock;
-  ULONG            Reserved;
-} KSCLOCKINSTANCE, *PKSCLOCKINSTANCE;
-````
+```
+typedef struct KSCLOCKINSTANCE {
+  KSOBJECT_HEADER  Header;
+  PKSIDEFAULTCLOCK DefaultClock;
+  ULONG            Reserved;
+} *PKSCLOCKINSTANCE, KSCLOCKINSTANCE;
+```
 
 ## Members
 

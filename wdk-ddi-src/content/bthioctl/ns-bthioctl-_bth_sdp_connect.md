@@ -47,17 +47,17 @@ req.typenames: BTH_SDP_CONNECT, *PBTH_SDP_CONNECT
 The BTH_SDP_CONNECT structure contains input and output information about a connection between the
   local Bluetooth system and a remote SDP server. This structure is passed as the input buffer and output
   buffer of 
-  <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>.
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff536688">IOCTL_BTH_SDP_CONNECT</a>.
 
 ## Syntax
-````
+```
 typedef struct _BTH_SDP_CONNECT {
-  BTH_ADDR   bthAddress;
-  ULONG      fSdpConnect;
-  HANDLE_SDP hConnection;
-  UCHAR      requestTimeout;
+  BTH_ADDR        bthAddress;
+  ULONG           fSdpConnect;
+  HANDLE_SDP_TYPE HANDLE_SDP_FIELD_NAME;
+  UCHAR           requestTimeout;
 } BTH_SDP_CONNECT, *PBTH_SDP_CONNECT;
-````
+```
 
 ## Members
 
@@ -120,4 +120,4 @@ The timeout, in seconds, for requests to the SDP connection handle that is retur
 
 ## See Also
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536688">IOCTL_BTH_SDP_CONNECT</a>

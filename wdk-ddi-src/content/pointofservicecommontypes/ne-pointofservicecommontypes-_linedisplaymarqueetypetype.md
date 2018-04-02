@@ -47,11 +47,16 @@ req.typenames: LineDisplayMarqueeTypeType
 This enumeration is not implemented.
 
 ## Syntax
-````
-typedef enum _LineDisplayMarqueeTypeType { 
-    = 
-} LineDisplayMarqueeTypeType, *PLineDisplayMarqueeTypeType;
-````
+```
+typedef enum _LineDisplayMarqueeTypeType {
+  MarqueeTypeNone   ,
+  MarqueeTypeUp     ,
+  MarqueeTypeDown   ,
+  MarqueeTypeLeft   ,
+  MarqueeTypeRight  ,
+  MarqueeTypeInit
+} LineDisplayMarqueeTypeType;
+```
 
 ## Constants
 

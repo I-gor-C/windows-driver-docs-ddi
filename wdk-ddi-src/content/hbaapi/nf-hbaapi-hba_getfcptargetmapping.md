@@ -7,7 +7,7 @@ old-location: storage\hba_getfcptargetmapping.htm
 old-project: storage
 ms.assetid: d1064f97-e640-49b6-be8c-19662e5de9bb
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_GetFcpTargetMapping, HBA_GetFcpTargetMapping routine [Storage Devices], fibreHBA_rtns_352928a8-39d5-4989-8156-0b1025b59350.xml, hbaapi/HBA_GetFcpTargetMapping, storage.hba_getfcptargetmapping
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>HBA_GetFcpTargetMapping</b> routine retrieves the mappings between operat
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_GetFcpTargetMapping(
-  _In_    HBA_HANDLE            HbaHandle,
-  _Inout_ PHBA_FCPTARGETMAPPING Mapping
+  IN HBA_HANDLE                Handle,
+  IN OUT PHBA_FCPTARGETMAPPING Mapping
 );
-````
+```
 
 ## Parameters
 
@@ -64,7 +64,7 @@ TBD
 
 `Mapping`
 
-Pointer to a structure of type <a href="..\hbaapi\ns-hbaapi-hba_fcptargetmapping.md">HBA_FCPTargetMapping</a> that contains an array of bindings between operating system and FCP identifiers for a set of target devices. These mappings are maintained by the HBA referenced by <i>HbaHandle</i>. On input, the <b>NumberOfEntries</b> member of HBA_FCPTargetMapping should contain a number of mappings that fit in the output buffer. On output, the <b>NumberOfEntries</b> contains the number of mappings requested, or the full set of mappings, whichever is smaller. The value in <b>NumberOfEntries</b> contains the number of mappings returned even when an error occurred due to insufficient buffer space.
+Pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556069">HBA_FCPTargetMapping</a> that contains an array of bindings between operating system and FCP identifiers for a set of target devices. These mappings are maintained by the HBA referenced by <i>HbaHandle</i>. On input, the <b>NumberOfEntries</b> member of HBA_FCPTargetMapping should contain a number of mappings that fit in the output buffer. On output, the <b>NumberOfEntries</b> contains the number of mappings requested, or the full set of mappings, whichever is smaller. The value in <b>NumberOfEntries</b> contains the number of mappings returned even when an error occurred due to insufficient buffer space.
 
 
 ## Return Value
@@ -122,12 +122,12 @@ Returned if an unspecified error occurred that prevented the retrieval of the ta
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556069">HBA_FCPTargetMapping</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-
-
-
-<a href="..\hbaapi\ns-hbaapi-hba_fcptargetmapping.md">HBA_FCPTargetMapping</a>

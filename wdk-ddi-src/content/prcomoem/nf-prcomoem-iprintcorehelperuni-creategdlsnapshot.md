@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# CreateGDLSnapshot method
+# IPrintCoreHelperUni::CreateGDLSnapshot method
 The <code>IPrintCoreHelperUni::CreateGDLSnapshot</code> method creates a GDL snapshot of the driver configuration file based on the current configuration.
 
 ## Syntax
 
-````
+```
 HRESULT CreateGDLSnapshot(
-  [in]  PDEVMODE pDevmode,
-  [in]  DWORD    cbSize,
-  [in]  DWORD    dwFlags,
-  [out] LPSTREAM *ppSnapshotStream
+  IN PDEVMODE       pDevmode,
+  OPTIONAL IN DWORD cbSize,
+  IN DWORD          dwFlags,
+  OUT LPSTREAM      *ppSnapshotStream
 );
-````
+```
 
 ## Parameters
 
@@ -91,8 +91,8 @@ A pointer to a stream that supplies the XML version of the GDL snapshot.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/e581d190-8185-45c1-80c7-ff8eb305360e">IPrintCoreHelperUni</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552917">IPrintCoreHelperUni::CreateDefaultGDLSnapshot</a>
-
-
-
-<a href="..\prcomoem\nn-prcomoem-iprintcorehelperuni.md">IPrintCoreHelperUni</a>

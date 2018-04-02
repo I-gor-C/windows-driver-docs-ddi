@@ -7,7 +7,7 @@ old-location: debugger\extremotedata_getptr.htm
 old-project: debugger
 ms.assetid: f9778881-9b53-49c5-9fe8-80f9a866b9af
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_6aea2145-72ce-4bdc-afb2-1fa360e643da.xml, ExtRemoteData, ExtRemoteData class [Windows Debugging], GetPtr method, ExtRemoteData::GetPtr, GetPtr method [Windows Debugging], GetPtr method [Windows Debugging], ExtRemoteData class, GetPtr,ExtRemoteData.GetPtr, debugger.extremotedata_getptr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,14 +44,16 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# GetPtr method
-The <b>GetPtr</b> method returns a pointer from the target's memory version of the <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a> object, which represents the contents of the target's memory. The size of the unsigned integer from the target is the same size as a pointer on the target.
+# ExtRemoteData::GetPtr method
+The <b>GetPtr</b> method returns a pointer from the target's memory version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a> object, which represents the contents of the target's memory. The size of the unsigned integer from the target is the same size as a pointer on the target.
 
 ## Syntax
 
-````
-ULONG64 GetPtr();
-````
+```
+ULONG64  throw() GetPtr(
+
+);
+```
 
 ## Parameters
 
@@ -63,7 +65,7 @@ This function has no parameters.
 
 ## Remarks
 
-The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a> object must be the same as the size of a pointer on the target, <code>ExtExtension::m_PtrSize</code>.
+The size of the memory represented by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a> object must be the same as the size of a pointer on the target, <code>ExtExtension::m_PtrSize</code>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,15 +75,15 @@ The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-ext
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544035">ExtRemoteData::GetLongPtr</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544069">ExtRemoteData::GetUlong64</a>
-
-
-
-<a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
 
 
 
@@ -89,4 +91,4 @@ The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-ext
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544069">ExtRemoteData::GetUlong64</a>

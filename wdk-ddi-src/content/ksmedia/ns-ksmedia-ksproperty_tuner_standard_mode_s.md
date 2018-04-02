@@ -47,12 +47,12 @@ req.typenames: KSPROPERTY_TUNER_STANDARD_MODE_S, *PKSPROPERTY_TUNER_STANDARD_MOD
 The KSPROPERTY_TUNER_STANDARD_MODE_S structure describes whether the tuning device can identify the tuner standard from the signal itself.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_TUNER_STANDARD_MODE_S {
   KSPROPERTY Property;
-  BOOL       AutoDetect;
-} KSPROPERTY_TUNER_STANDARD_MODE_S, *PKSPROPERTY_TUNER_STANDARD_MODE_S;
-````
+  BOOL       AutoDetect;
+} *PKSPROPERTY_TUNER_STANDARD_MODE_S, KSPROPERTY_TUNER_STANDARD_MODE_S;
+```
 
 ## Members
 
@@ -78,8 +78,8 @@ A Boolean value that indicates whether the tuning device can automatically detec
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567800">PROPSETID_TUNER</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565909">KSPROPERTY_TUNER_STANDARD_MODE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567800">PROPSETID_TUNER</a>

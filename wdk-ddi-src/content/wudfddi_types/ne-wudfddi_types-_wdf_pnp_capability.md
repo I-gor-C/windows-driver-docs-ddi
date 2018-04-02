@@ -50,18 +50,18 @@ req.product: Windows 10 or later.
 The <b>WDF_PNP_CAPABILITY</b> enumeration contains values that identify Plug and Play (PnP) capabilities for a device.
 
 ## Syntax
-````
-typedef enum _WDF_PNP_CAPABILITY { 
-  WdfPnpCapInvalid            = 0,
-  WdfPnpCapLockSupported      = 1,
-  WdfPnpCapEjectSupported     = 2,
-  WdfPnpCapRemovable          = 3,
-  WdfPnpCapDockDevice         = 4,
-  WdfPnpCapSurpriseRemovalOk  = 5,
-  WdfPnpCapNoDisplayInUI      = 6,
-  WdfPnpCapMaximum            = ( WdfPnpCapNoDisplayInUI + 1 )
+```
+typedef enum _WDF_PNP_CAPABILITY {
+  WdfPnpCapInvalid            ,
+  WdfPnpCapLockSupported      ,
+  WdfPnpCapEjectSupported     ,
+  WdfPnpCapRemovable          ,
+  WdfPnpCapDockDevice         ,
+  WdfPnpCapSurpriseRemovalOk  ,
+  WdfPnpCapNoDisplayInUI      ,
+  WdfPnpCapMaximum
 } WDF_PNP_CAPABILITY;
-````
+```
 
 ## Constants
 

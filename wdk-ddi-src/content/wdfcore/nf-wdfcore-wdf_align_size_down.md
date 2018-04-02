@@ -53,12 +53,12 @@ The <b>WDF_ALIGN_SIZE_DOWN</b> function returns the next-lower buffer size that 
 
 ## Syntax
 
-````
+```
 size_t WDF_ALIGN_SIZE_DOWN(
-  _In_ size_t Length,
-  _In_ size_t AlignTo
+  size_t Length,
+  size_t AlignTo
 );
-````
+```
 
 ## Parameters
 
@@ -77,7 +77,7 @@ WDF_ALIGN_SIZE_DOWN returns the aligned buffer size, in bytes.
 
 ## Remarks
 
-Drivers can use <a href="..\wdfcore\nf-wdfcore-wdf_align_size_up.md">WDF_ALIGN_SIZE_UP</a> or <b>WDF_ALIGN_SIZE_DOWN</b> to calculate a buffer size that is aligned to a specified alignment offset. This calculation is useful if your driver must allocate multiple contiguous buffers, if each buffer must begin at an address alignment boundary.
+Drivers can use <a href="https://msdn.microsoft.com/library/windows/hardware/ff551217">WDF_ALIGN_SIZE_UP</a> or <b>WDF_ALIGN_SIZE_DOWN</b> to calculate a buffer size that is aligned to a specified alignment offset. This calculation is useful if your driver must allocate multiple contiguous buffers, if each buffer must begin at an address alignment boundary.
 
 
 #### Examples
@@ -108,4 +108,4 @@ The following code example receives a buffer size and returns the size (either t
 
 ## See Also
 
-<a href="..\wdfcore\nf-wdfcore-wdf_align_size_up.md">WDF_ALIGN_SIZE_UP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551217">WDF_ALIGN_SIZE_UP</a>

@@ -50,13 +50,13 @@ The <b>KsSetDevicePnpAndBaseObject</b> function sets the PnP device object in th
 
 ## Syntax
 
-````
-void KsSetDevicePnpAndBaseObject(
-  _In_ KSDEVICE_HEADER Header ,
-  _In_ PDEVICE_OBJECT  PnpDeviceObject ,
-  _In_ PDEVICE_OBJECT  BaseDevice 
+```
+KSDDKAPI VOID KsSetDevicePnpAndBaseObject(
+  KSDEVICE_HEADER Header,
+  PDEVICE_OBJECT  PnpDeviceObject,
+  PDEVICE_OBJECT  BaseObject
 );
-````
+```
 
 ## Parameters
 
@@ -87,8 +87,8 @@ None
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksrecalculatestackdepth.md">KsRecalculateStackDepth</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560958">KsAllocateDeviceHeader</a>
 
 
 
-<a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
+<a href="https://msdn.microsoft.com/0b8f23a5-af8a-4b99-8f17-092076523914">KsRecalculateStackDepth</a>

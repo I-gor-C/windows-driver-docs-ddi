@@ -47,7 +47,7 @@ req.typenames: TRANSPORTAUDIOPARMS, *PTRANSPORTAUDIOPARMS
 The TRANSPORTAUDIOPARMS structure is defined but not used.
 
 ## Syntax
-````
+```
 typedef struct tagTRANSPORTAUDIOPARMS {
   LONG EnableOutput;
   LONG EnableRecord;
@@ -55,7 +55,7 @@ typedef struct tagTRANSPORTAUDIOPARMS {
   LONG Input;
   LONG MonitorSource;
 } TRANSPORTAUDIOPARMS, *PTRANSPORTAUDIOPARMS;
-````
+```
 
 ## Members
 

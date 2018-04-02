@@ -7,7 +7,7 @@ old-location: storage\scsiportlogerror.htm
 old-project: storage
 ms.assetid: 278f4fff-6e71-4544-8838-90f659c5029e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortLogError, ScsiPortLogError routine [Storage Devices], scsiprt_5d3ec5ab-07f8-47d1-ab0c-363639c1e8aa.xml, srb/ScsiPortLogError, storage.scsiportlogerror
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,23 +52,23 @@ The <b>ScsiPortLogError</b> routine logs errors to the system event log when a m
 
 ## Syntax
 
-````
-VOID ScsiPortLogError(
-  _In_     PVOID               HwDeviceExtension,
-  _In_opt_ PSCSI_REQUEST_BLOCK Srb,
-  _In_     UCHAR               PathId,
-  _In_     UCHAR               TargetId,
-  _In_     UCHAR               Lun,
-  _In_     ULONG               ErrorCode,
-  _In_     ULONG               UniqueId
+```
+SCSIPORT_API VOID ScsiPortLogError(
+  PVOID                   HwDeviceExtension,
+  PSCSI_REQUEST_BLOCK Srb OPTIONAL,
+  UCHAR                   PathId,
+  UCHAR                   TargetId,
+  UCHAR                   Lun,
+  ULONG                   ErrorCode,
+  ULONG                   UniqueId
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
+Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 `OPTIONAL`
 
@@ -219,4 +219,4 @@ A miniport driver should log all real hardware errors. However, it should not lo
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564657">ScsiPortNotification</a>

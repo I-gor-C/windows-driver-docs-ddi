@@ -45,23 +45,23 @@ req.product: Windows 10 or later.
 ---
 
 
-# WriteToHardware method
+# IWDFDevice3::WriteToHardware method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>WriteToHardware</b> method is used internally by the framework. Do not use.
 
 ## Syntax
 
-````
+```
 void WriteToHardware(
-  [in]           WDF_DEVICE_HWACCESS_TARGET_TYPE Type,
-  [in]           WDF_DEVICE_HWACCESS_TARGET_SIZE Size,
-  [in]           VOID                            *Address,
-  [in]           SIZE_T                          Value,
-  [in, optional] VOID                            *Buffer,
-  [in, optional] ULONG                           Count
+  WDF_DEVICE_HWACCESS_TARGET_TYPE Type,
+  WDF_DEVICE_HWACCESS_TARGET_SIZE Size,
+  void                            *Address,
+  SIZE_T                          Value,
+  void                            *Buffer,
+  ULONG                           Count
 );
-````
+```
 
 ## Parameters
 
@@ -106,4 +106,4 @@ This method does not return a value.
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a>

@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvDeviceCommand method
+# IWiaMiniDrv::drvDeviceCommand method
 The <b>IWiaMiniDrv::drvDeviceCommand</b> method issues a command to a WIA device.
 
 ## Syntax
 
-````
+```
 HRESULT drvDeviceCommand(
-  [in]                  BYTE        *pWiasContext,
-  [in]                  LONG        lFlags,
-  [in]            const GUID        *plCommand,
-  [out, optional]       IWiaDrvItem **ppWiaDrvItem,
-  [out]                 LONG        *plDevErrVal
+  BYTE        *__MIDL__IWiaMiniDrv0043,
+  LONG        __MIDL__IWiaMiniDrv0044,
+  const GUID  *__MIDL__IWiaMiniDrv0045,
+  IWiaDrvItem **__MIDL__IWiaMiniDrv0046,
+  LONG        *__MIDL__IWiaMiniDrv0047
 );
-````
+```
 
 ## Parameters
 
@@ -108,12 +108,12 @@ The WIA service does not write any properties before calling this method. If the
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545020">IWiaMiniDrv::drvWriteItemProperties</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543977">IWiaMiniDrv::drvGetCapabilities</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545020">IWiaMiniDrv::drvWriteItemProperties</a>

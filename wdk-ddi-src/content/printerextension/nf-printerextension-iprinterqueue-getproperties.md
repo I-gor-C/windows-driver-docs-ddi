@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetProperties method
+# IPrinterQueue::GetProperties method
 Gets the properties in the property bag for the queue.
 
 ## Syntax
 
-````
+```
 HRESULT GetProperties(
-  [out, retval] IPrinterPropertyBag **ppPropertyBag
+  IPrinterPropertyBag **ppPropertyBag
 );
-````
+```
 
 ## Parameters
 
@@ -77,8 +77,8 @@ This method returns and <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>

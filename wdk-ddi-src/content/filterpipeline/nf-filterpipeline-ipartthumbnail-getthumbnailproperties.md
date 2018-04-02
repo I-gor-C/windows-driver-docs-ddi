@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetThumbnailProperties method
+# IPartThumbnail::GetThumbnailProperties method
 The <b>GetThumbnailProperties</b> method gets the thumbnail properties.
 
 ## Syntax
 
-````
+```
 HRESULT GetThumbnailProperties(
-  [out] BSTR *pContentType
+  BSTR *pContentType
 );
-````
+```
 
 ## Parameters
 

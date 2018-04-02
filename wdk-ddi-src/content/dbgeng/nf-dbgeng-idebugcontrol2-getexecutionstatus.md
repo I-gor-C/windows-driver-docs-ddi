@@ -7,7 +7,7 @@ old-location: debugger\getexecutionstatus.htm
 old-project: debugger
 ms.assetid: 58352577-9ed9-4fc6-9cc7-dabcf4f77ad9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetExecutionStatus method [Windows Debugging], GetExecutionStatus method [Windows Debugging], IDebugControl interface, GetExecutionStatus method [Windows Debugging], IDebugControl2 interface, GetExecutionStatus method [Windows Debugging], IDebugControl3 interface, GetExecutionStatus,IDebugControl2.GetExecutionStatus, IDebugControl interface [Windows Debugging], GetExecutionStatus method, IDebugControl2, IDebugControl2 interface [Windows Debugging], GetExecutionStatus method, IDebugControl2::GetExecutionStatus, IDebugControl3 interface [Windows Debugging], GetExecutionStatus method, IDebugControl3::GetExecutionStatus, IDebugControl::GetExecutionStatus, IDebugControl_0e47a42b-f980-4c4b-b8b3-8d795498e5d5.xml, dbgeng/IDebugControl2::GetExecutionStatus, dbgeng/IDebugControl3::GetExecutionStatus, dbgeng/IDebugControl::GetExecutionStatus, debugger.getexecutionstatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,16 +46,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetExecutionStatus method
+# IDebugControl2::GetExecutionStatus method
 The <b>GetExecutionStatus</b> method returns information about the execution status of the <a href="https://msdn.microsoft.com/fa52a1f0-9397-48a5-acbd-ce5347c0baef">debugger engine</a>.
 
 ## Syntax
 
-````
+```
 HRESULT GetExecutionStatus(
-  [out] PULONG Status
+  PULONG Status
 );
-````
+```
 
 ## Parameters
 
@@ -165,15 +165,15 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550508">IDebugControl</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550512">IDebugControl2</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550519">IDebugControl3</a>
 
 
 

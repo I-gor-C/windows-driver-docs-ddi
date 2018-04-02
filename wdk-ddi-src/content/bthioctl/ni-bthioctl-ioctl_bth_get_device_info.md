@@ -53,16 +53,16 @@ The IOCTL_BTH_GET_DEVICE_INFO request returns information about all cached, prev
 ### Input Buffer
 The 
       <b>AssociatedIrp.SystemBuffer</b> member points to a buffer for a 
-      <a href="..\bthioctl\ns-bthioctl-_bth_device_info_list.md">BTH_DEVICE_INFO_LIST</a> structure.
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536642">BTH_DEVICE_INFO_LIST</a> structure.
 
 ### Input Buffer Length
 The length of a 
-      <a href="..\bthioctl\ns-bthioctl-_bth_device_info_list.md">BTH_DEVICE_INFO_LIST</a> structure
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536642">BTH_DEVICE_INFO_LIST</a> structure
 
 ### Output Buffer
 The 
       <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a 
-      <a href="..\bthioctl\ns-bthioctl-_bth_device_info_list.md">BTH_DEVICE_INFO_LIST</a> structure. The 
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff536642">BTH_DEVICE_INFO_LIST</a> structure. The 
       <b>numOfDevices</b> member of the BTH_DEVICE_INFO_LIST structure contains the number of devices for
       which there is information and an array of 
       <a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a> structures; one array
@@ -151,8 +151,8 @@ The BTH_DEVICE_INFO_LIST structure includes storage for the first BTH_DEVICE_INF
 
 ## See Also
 
-<a href="..\bthioctl\ns-bthioctl-_bth_device_info_list.md">BTH_DEVICE_INFO_LIST</a>
-
-
-
 <a href="http://go.microsoft.com/fwlink/p/?linkid=50713">BTH_DEVICE_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536642">BTH_DEVICE_INFO_LIST</a>

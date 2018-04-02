@@ -44,22 +44,22 @@ req.typenames: DRMRIGHTS, *PDRMRIGHTS
 ---
 
 
-# Get method
+# IKsPropertySet::Get method
 The <b>Get</b> method retrieves a property identified by a property-set GUID and a property identifier.
 
 ## Syntax
 
-````
+```
 HRESULT Get(
-  [in]  REFGUID PropSet,
-  [in]  ULONG   Id,
-  [in]  LPVOID  InstanceData,
-  [in]  ULONG   InstanceLength,
-  [out] LPVOID  PropertyData,
-  [in]  ULONG   DataLength,
-  [out] ULONG   *BytesReturned
+  REFGUID rguidPropSet,
+  ULONG   ulId,
+  LPVOID  pInstanceData,
+  ULONG   ulInstanceLength,
+  LPVOID  pPropertyData,
+  ULONG   ulDataLength,
+  PULONG  pulBytesReturned
 );
-````
+```
 
 ## Parameters
 

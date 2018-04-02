@@ -47,20 +47,20 @@ req.typenames: KSDEVICE_PROFILE_INFO, *PKSDEVICE_PROFILE_INFO
 The <b>KSDEVICE_PROFILE_INFO</b> is a generic structure designed to handle profile information for various device types.
 
 ## Syntax
-````
+```
 typedef struct _KSDEVICE_PROFILE_INFO {
   UINT32 Type;
   UINT32 Size;
   union {
     struct {
-      KSCAMERA_PROFILE_INFO             Info;
-      UINT32                            Reserved;
-      UINT32                            ConcurrencyCount;
+      KSCAMERA_PROFILE_INFO             Info;
+      UINT32                            Reserved;
+      UINT32                            ConcurrencyCount;
       PKSCAMERA_PROFILE_CONCURRENCYINFO Concurrency;
-    } Camera;
+    } Camera;
   };
 } KSDEVICE_PROFILE_INFO, *PKSDEVICE_PROFILE_INFO;
-````
+```
 
 ## Members
 

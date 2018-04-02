@@ -7,7 +7,7 @@ old-location: display\dxgk_standard_colorimetry_flags.htm
 old-project: display
 ms.assetid: 473C5D7B-8FDD-49E2-981A-00ECCA67671A
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PDXGK_STANDARD_COLORIMETRY_FLAGS, DXGK_STANDARD_COLORIMETRY_FLAGS, DXGK_STANDARD_COLORIMETRY_FLAGS union [Display Devices], PDXGK_STANDARD_COLORIMETRY_FLAGS, PDXGK_STANDARD_COLORIMETRY_FLAGS union pointer [Display Devices], _DXGK_STANDARD_COLORIMETRY_FLAGS, d3dkmddi/DXGK_STANDARD_COLORIMETRY_FLAGS, d3dkmddi/PDXGK_STANDARD_COLORIMETRY_FLAGS, display.dxgk_standard_colorimetry_flags"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,17 @@ req.typenames: DXGK_STANDARD_COLORIMETRY_FLAGS, *PDXGK_STANDARD_COLORIMETRY_FLAG
 Flags describing standard colorimetry and related support.
 
 ## Syntax
-````
-typedef union _DXGK_STANDARD_COLORIMETRY_FLAGS {
+```
+typedef struct _DXGK_STANDARD_COLORIMETRY_FLAGS {
   struct {
-    UINT BT2020YCC  :1;
-    UINT BT2020RGB  :1;
-    UINT ST2084  :1;
-    UINT Reserved  :29;
+    UINT  : 1  BT2020RGB;
+    UINT  : 1  BT2020YCC;
+    UINT  : 29 Reserved;
+    UINT  : 1  ST2084;
   };
-  ULONG Value;
-} DXGK_STANDARD_COLORIMETRY_FLAGS, *PDXGK_STANDARD_COLORIMETRY_FLAGS;
-````
+  ULONG  Value;
+} *PDXGK_STANDARD_COLORIMETRY_FLAGS, DXGK_STANDARD_COLORIMETRY_FLAGS;
+```
 
 ## Members
 

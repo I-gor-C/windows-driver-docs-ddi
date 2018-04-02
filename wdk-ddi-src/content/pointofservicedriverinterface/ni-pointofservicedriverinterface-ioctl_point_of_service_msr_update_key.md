@@ -50,7 +50,7 @@ This I/O control function sets a new encryption key.
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-Pointer to the input buffer, a <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_msr_update_key.md">MSR_UPDATE_KEY</a> variable.
+Pointer to the input buffer, a <a href="https://msdn.microsoft.com/library/windows/hardware/dn772191">MSR_UPDATE_KEY</a> variable.
 
 ### Input Buffer Length
 Size of the input buffer, in bytes. Set to <b>sizeof(MSR_UPDATE_KEY)</b>.

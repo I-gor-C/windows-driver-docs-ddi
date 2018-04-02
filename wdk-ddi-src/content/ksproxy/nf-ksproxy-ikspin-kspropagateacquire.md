@@ -44,14 +44,16 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsPropagateAcquire method
+# IKsPin::KsPropagateAcquire method
 The <b>KsPropagateAcquire</b> method directs all the pins on the filter to attain the Acquire state.
 
 ## Syntax
 
-````
-HRESULT KsPropagateAcquire();
-````
+```
+HRESULT KsPropagateAcquire(
+
+);
+```
 
 ## Parameters
 
@@ -75,4 +77,4 @@ This method is for proxy use and is not recommended for application use.
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-ikspin.md">IKsPin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559896">IKsPin</a>

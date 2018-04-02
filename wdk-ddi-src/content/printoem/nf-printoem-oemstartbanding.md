@@ -50,12 +50,12 @@ The <code>OEMStartBanding</code> function is called by GDI when it is ready to s
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMStartBanding(
-   SURFOBJ *pso,
-   POINTL  *pptl
+```
+BOOL OEMStartBanding(
+  SURFOBJ *pso,
+  POINTL  *pptl
 );
-````
+```
 
 ## Parameters
 

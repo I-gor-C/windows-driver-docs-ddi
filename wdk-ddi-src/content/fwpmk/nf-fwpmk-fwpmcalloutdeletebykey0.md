@@ -7,7 +7,7 @@ old-location: netvista\fwpmcalloutdeletebykey0.htm
 old-project: netvista
 ms.assetid: b4c3cb7e-9c4a-40a5-a11b-952562c4790b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpmCalloutDeleteByKey0, FwpmCalloutDeleteByKey0 function [Network Drivers Starting with Windows Vista], fwpmk/FwpmCalloutDeleteByKey0, netvista.fwpmcalloutdeletebykey0, wfp_ref_2_funct_2_fwpm_606dbd2f-8df7-497b-8feb-ba7aedbabedb.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,26 +52,26 @@ The
 
 ## Syntax
 
-````
-NTSTATUS NTAPI FwpmCalloutDeleteByKey0(
-  _In_       HANDLE engineHandle,
-  _In_ const GUID   *key
+```
+NTSTATUS FwpmCalloutDeleteByKey0(
+  HANDLE     engineHandle,
+  const GUID *key
 );
-````
+```
 
 ## Parameters
 
 `engineHandle`
 
 A handle for an open session to the filter engine. A callout driver calls the 
-     <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a> function to open a
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550075">FwpmEngineOpen0</a> function to open a
      session to the filter engine.
 
 `key`
 
 A pointer to a GUID that uniquely identifies the callout that is being deleted from the filter
      engine. This must be a pointer to the same GUID that was specified when the callout driver called the 
-     <a href="..\fwpmk\nf-fwpmk-fwpmcalloutadd0.md">FwpmCalloutAdd0</a> function to add the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550067">FwpmCalloutAdd0</a> function to add the
      callout to the filter engine.
 
 
@@ -155,12 +155,12 @@ A callout can be deleted from the filter engine only if there are no filters in 
 
 ## See Also
 
-<a href="..\fwpmk\nf-fwpmk-fwpmcalloutadd0.md">FwpmCalloutAdd0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550067">FwpmCalloutAdd0</a>
 
 
 
-<a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550069">FwpmCalloutDeleteById0</a>
 
 
 
-<a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebyid0.md">FwpmCalloutDeleteById0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550075">FwpmEngineOpen0</a>

@@ -7,7 +7,7 @@ old-location: storage\ataportallocatequeuetag.htm
 old-project: storage
 ms.assetid: e298f51b-58b7-4f04-85d3-3ee809deb489
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortAllocateQueueTag, AtaPortAllocateQueueTag routine [Storage Devices], atartns_bae1e6d8-6ae5-4428-88a6-334a63fcefae.xml, irb/AtaPortAllocateQueueTag, storage.ataportallocatequeuetag
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>AtaPortAllocateQueueTag</b> routine returns a queue tag for the specified
 
 ## Syntax
 
-````
-UCHAR AtaPortAllocateQueueTag(
-  _In_ PVOID ChannelExtension,
-  _In_ UCHAR TargetId,
-  _In_ UCHAR Lun
+```
+_IRQL_requires_same_ UCHAR AtaPortAllocateQueueTag(
+  PVOID DeviceExtension,
+  UCHAR TargetId,
+  UCHAR Lun
 );
-````
+```
 
 ## Parameters
 
@@ -89,8 +89,8 @@ The <b>AtaPortAllocateQueueTag</b> routine allocates either a per device queue t
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportinitializequeuetag.md">AtaPortInitializeQueueTag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550168">AtaPortInitializeQueueTag</a>
 
 
 
-<a href="..\irb\nf-irb-ataportreleasequeuetag.md">AtaPortReleaseQueueTag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550214">AtaPortReleaseQueueTag</a>

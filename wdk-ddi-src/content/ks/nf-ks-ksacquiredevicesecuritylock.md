@@ -50,12 +50,12 @@ The <b>KsAcquireDeviceSecurityLock</b> function acquires the security lock assoc
 
 ## Syntax
 
-````
-VOID KsAcquireDeviceSecurityLock(
-  _In_ KSDEVICE_HEADER Header,
-  _In_ BOOLEAN         Exclusive
+```
+KSDDKAPI VOID KsAcquireDeviceSecurityLock(
+  KSDEVICE_HEADER Header,
+  BOOLEAN         Exclusive
 );
-````
+```
 
 ## Parameters
 
@@ -86,4 +86,4 @@ A shared lock is acquired when validating access during a create. An exclusive l
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560958">KsAllocateDeviceHeader</a>

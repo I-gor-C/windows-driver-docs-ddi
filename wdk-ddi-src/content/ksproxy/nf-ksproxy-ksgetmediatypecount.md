@@ -50,13 +50,13 @@ The <b>KsGetMediaTypeCount</b> function returns the number of available media ty
 
 ## Syntax
 
-````
-HRESULT KsGetMediaTypeCount(
-  _In_  HANDLE FilterHandle,
-  _In_  ULONG  PinFactoryId,
-  _Out_ ULONG  *MediaTypeCount
+```
+KSDDKAPI HRESULT KsGetMediaTypeCount(
+  HANDLE FilterHandle,
+  ULONG  PinFactoryId,
+  ULONG  *MediaTypeCount
 );
-````
+```
 
 ## Parameters
 
@@ -90,7 +90,7 @@ The number of available media types that <b>KsGetMediaTypeCount</b> returns is e
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-ikspinfactory.md">IKsPinFactory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559910">IKsPinFactory</a>
 
 
 

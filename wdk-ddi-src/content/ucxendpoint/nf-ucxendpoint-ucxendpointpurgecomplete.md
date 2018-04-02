@@ -7,7 +7,7 @@ old-location: buses\_ucxendpointpurgecomplete.htm
 old-project: usbref
 ms.assetid: F640D54B-277F-4382-9478-8A7AFAD242E2
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UcxEndpointPurgeComplete, UcxEndpointPurgeComplete method [Buses], buses._ucxendpointpurgecomplete, ucxendpoint/UcxEndpointPurgeComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,17 +50,17 @@ Notifies UCX that a purge operation has been completed  on the specified endpoin
 
 ## Syntax
 
-````
+```
 void UcxEndpointPurgeComplete(
-  [in] UCXENDPOINT Endpoint
+  UCXENDPOINT Endpoint
 );
-````
+```
 
 ## Parameters
 
 `Endpoint`
 
-A handle to the endpoint object. The client driver retrieved the handle in a previous call to <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>.
+A handle to the endpoint object. The client driver retrieved the handle in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>.
 
 
 ## Return Value
@@ -80,4 +80,4 @@ This method does not return a value.
 
 ## See Also
 
-<a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>

@@ -52,14 +52,14 @@ The <b>WDF_WRITE_PORT_BUFFER_ULONG</b> function writes a number of ULONG values 
 
 ## Syntax
 
-````
+```
 void WDF_WRITE_PORT_BUFFER_ULONG(
-  _In_ WDFDEVICE Device,
-  _In_ PULONG    Port,
-  _In_ PULONG    Buffer,
-  _In_ ULONG     Count 
+  WDFDEVICE Device,
+  PULONG    Port,
+  PULONG    Buffer,
+  ULONG     Count
 );
-````
+```
 
 ## Parameters
 

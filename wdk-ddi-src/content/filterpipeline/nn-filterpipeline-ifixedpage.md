@@ -70,4 +70,4 @@ A filter uses the <b>IFixedPage</b> interface to work with fixed pages in an XPS
 
 ## See Also
 
-<a href="..\filterpipeline\nn-filterpipeline-ipartbase.md">IPartBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551846">IPartBase</a>

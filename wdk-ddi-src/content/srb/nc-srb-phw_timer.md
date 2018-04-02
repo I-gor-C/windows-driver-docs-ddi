@@ -7,7 +7,7 @@ old-location: storage\phw_timer.htm
 old-project: storage
 ms.assetid: 8f537ddb-ba94-4423-95a8-6497710d234f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "(*PHW_TIMER), (*PHW_TIMER) callback function [Storage Devices], ide_minikr_55cc9012-04fa-434c-b2b9-d24bbd1d1404.xml, srb/(*PHW_TIMER), storage.phw_timer"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -72,7 +72,7 @@ None
 
 ## Remarks
 
-The SCSI miniport driver's timer routine, <a href="..\srb\nc-srb-phw_timer.md">HwScsiTimer</a>, is called after the interval specified when the miniport driver called <b>ScsiPortNotification</b> with the <b>RequestTimerCall</b><i>NotificationType</i> value.
+The SCSI miniport driver's timer routine, <a href="https://msdn.microsoft.com/library/windows/hardware/ff557327">HwScsiTimer</a>, is called after the interval specified when the miniport driver called <b>ScsiPortNotification</b> with the <b>RequestTimerCall</b><i>NotificationType</i> value.
 
 Miniport drivers that work with the StorPort driver do not use this timer routine.
 
@@ -84,4 +84,4 @@ Miniport drivers that work with the StorPort driver do not use this timer routin
 
 ## See Also
 
-<a href="..\srb\nc-srb-phw_timer.md">HwScsiTimer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557327">HwScsiTimer</a>

@@ -46,17 +46,17 @@ req.typenames:
 
 
 # KsReleaseCachedMdl function
-The <b>KsReleaseCachedMdl</b> function is used to release the MDL acquired by the <a href="..\ks\nf-ks-ksacquirecachedmdl.md">KsAcquireCachedMdl</a> call.
+The <b>KsReleaseCachedMdl</b> function is used to release the MDL acquired by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186387">KsAcquireCachedMdl</a> call.
 
 ## Syntax
 
-````
-void _Must_inspect_result_ _IRQL_requires_max_(PASSIVE_LEVEL) KSDDKAPI NTSTATUS WINAPI KsReleaseCachedMdl(
-  _In_ REFGUID Guid,
-  _In_ PMDL    MdlAddr,
-  _In_ HANDLE  ReleaseContext
+```
+KSDDKAPI NTSTATUS KsReleaseCachedMdl(
+  REFGUID Guid,
+  PMDL    MdlAddr,
+  HANDLE  ReleaseContext
 );
-````
+```
 
 ## Parameters
 
@@ -66,11 +66,11 @@ The GUID extracted from the <b>MFSampleExtension_MDLCacheCookie</b> attribute it
 
 `MdlAddr`
 
-MDL address retrieved in the <a href="..\ks\nf-ks-ksacquirecachedmdl.md">KsAcquireCachedMdl</a> call. This should not be touched after the <b>KsReleaseCachedMdl</b> call.
+MDL address retrieved in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186387">KsAcquireCachedMdl</a> call. This should not be touched after the <b>KsReleaseCachedMdl</b> call.
 
 `ReleaseContext`
 
-The context passed as an output in the <a href="..\ks\nf-ks-ksacquirecachedmdl.md">KsAcquireCachedMdl</a> call.
+The context passed as an output in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186387">KsAcquireCachedMdl</a> call.
 
 
 ## Return Value

@@ -7,7 +7,7 @@ old-location: display\umdetwunregister.htm
 old-project: display
 ms.assetid: 19ab8771-2a86-469a-98e4-3d295a458b90
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: UMDEtwUnregister, UMDEtwUnregister function [Display Devices], display.umdetwunregister, umdprovider/UMDEtwUnregister
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,9 +50,11 @@ Unregisters the event trace provider. Call this function before the user-mode dr
 
 ## Syntax
 
-````
-void UMDEtwUnregister(void);
-````
+```
+void UMDEtwUnregister(
+
+);
+```
 
 ## Parameters
 
@@ -93,4 +95,4 @@ The <a href="https://msdn.microsoft.com/fdcccf6f-2f31-4356-a4ee-3b6229c01b75">Ev
 
 ## See Also
 
-<a href="..\umdprovider\nf-umdprovider-umdetwregister.md">UMDEtwRegister</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj542439">UMDEtwRegister</a>

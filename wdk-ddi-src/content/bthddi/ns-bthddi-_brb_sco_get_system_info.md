@@ -48,17 +48,17 @@ The _BRB_SCO_GET_SYSTEM_INFO structure describes information about the local sys
   connections.
 
 ## Syntax
-````
+```
 struct _BRB_SCO_GET_SYSTEM_INFO {
   BRB_HEADER Hdr;
-  ULONG      Features;
-  ULONG      MaxChannels;
-  ULONG      TransferUnit;
-  USHORT     PacketTypes;
-  USHORT     DataFormats;
-  ULONG      Reserved;
+  ULONG      Features;
+  ULONG      MaxChannels;
+  ULONG      TransferUnit;
+  USHORT     PacketTypes;
+  USHORT     DataFormats;
+  ULONG      Reserved;
 };
-````
+```
 
 ## Members
 
@@ -66,7 +66,7 @@ struct _BRB_SCO_GET_SYSTEM_INFO {
 `Hdr`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 `Features`
@@ -152,8 +152,8 @@ Higher-level profile drivers can build and send a <b>BRB_SCO_GET_SYSTEM_INFO</b>
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536625">BRB_SCO_GET_SYSTEM_INFO</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>

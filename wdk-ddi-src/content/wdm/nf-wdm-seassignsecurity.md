@@ -7,7 +7,7 @@ old-location: kernel\seassignsecurity.htm
 old-project: kernel
 ms.assetid: 08f0b4c0-ba77-450d-8b93-73231bbf760c
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: SeAssignSecurity, SeAssignSecurity routine [Kernel-Mode Driver Architecture], k110_10d67a00-4643-4d40-b9a2-1a19e79dc755.xml, kernel.seassignsecurity, wdm/SeAssignSecurity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,31 +51,31 @@ The
 
 ## Syntax
 
-````
-NTSTATUS SeAssignSecurity(
-  _In_opt_ PSECURITY_DESCRIPTOR      ParentDescriptor,
-  _In_opt_ PSECURITY_DESCRIPTOR      ExplicitDescriptor,
-  _Out_    PSECURITY_DESCRIPTOR      *NewDescriptor,
-  _In_     BOOLEAN                   IsDirectoryObject,
-  _In_     PSECURITY_SUBJECT_CONTEXT SubjectContext,
-  _In_     PGENERIC_MAPPING          GenericMapping,
-  _In_     POOL_TYPE                 PoolType
+```
+NTKERNELAPI NTSTATUS SeAssignSecurity(
+  PSECURITY_DESCRIPTOR      ParentDescriptor,
+  PSECURITY_DESCRIPTOR      ExplicitDescriptor,
+  PSECURITY_DESCRIPTOR      *NewDescriptor,
+  BOOLEAN                   IsDirectoryObject,
+  PSECURITY_SUBJECT_CONTEXT SubjectContext,
+  PGENERIC_MAPPING          GenericMapping,
+  POOL_TYPE                 PoolType
 );
-````
+```
 
 ## Parameters
 
 `ParentDescriptor`
 
-Pointer to a buffer containing the <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> for the parent directory, if any, containing the new object being created. <i>ParentDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> system access control list (<a href="https://msdn.microsoft.com/5f6fec1a-1134-4765-81be-9b50939e5e66">SACL</a>) or a <b>NULL</b> discretionary access control list (<a href="https://msdn.microsoft.com/86688b5d-575d-42e1-9158-7ffba1aaf1d3">DACL</a>).
+Pointer to a buffer containing the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> for the parent directory, if any, containing the new object being created. <i>ParentDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> system access control list (<a href="https://msdn.microsoft.com/5f6fec1a-1134-4765-81be-9b50939e5e66">SACL</a>) or a <b>NULL</b> discretionary access control list (<a href="https://msdn.microsoft.com/86688b5d-575d-42e1-9158-7ffba1aaf1d3">DACL</a>).
 
 `ExplicitDescriptor`
 
-Pointer to a buffer containing the <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> specified by the user that is applied to the new object. <i>ExplicitDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> SACL or a <b>NULL</b> DACL.
+Pointer to a buffer containing the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> specified by the user that is applied to the new object. <i>ExplicitDescriptor</i> can be <b>NULL</b>, or have a <b>NULL</b> SACL or a <b>NULL</b> DACL.
 
 `NewDescriptor`
 
-Receives a pointer to the returned <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>. <b>SeAssignSecurity</b> allocates the buffer from the paged memory pool.
+Receives a pointer to the returned <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>. <b>SeAssignSecurity</b> allocates the buffer from the paged memory pool.
 
 `IsDirectoryObject`
 
@@ -87,7 +87,7 @@ Pointer to a buffer containing the security context of the subject creating the 
 
 `GenericMapping`
 
-Pointer to the <a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a> structure that describes the mapping from each generic right to the implied nongeneric rights.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a> structure that describes the mapping from each generic right to the implied nongeneric rights.
 
 `PoolType`
 
@@ -221,16 +221,16 @@ If the passed security descriptor includes a group, it is assigned as the new ob
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-sedeassignsecurity.md">SeDeassignSecurity</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-iogetfileobjectgenericmapping.md">IoGetFileObjectGenericMapping</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549231">IoGetFileObjectGenericMapping</a>
 
 
 
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>
 
 
 
-<a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563716">SeDeassignSecurity</a>

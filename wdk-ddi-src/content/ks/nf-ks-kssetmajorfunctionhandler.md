@@ -50,12 +50,12 @@ The <b>KsSetMajorFunctionHandler</b> function sets the handler for a specified m
 
 ## Syntax
 
-````
-NTSTATUS KsSetMajorFunctionHandler(
-  _In_ PDRIVER_OBJECT DriverObject,
-  _In_ ULONG          MajorFunction
+```
+KSDDKAPI NTSTATUS KsSetMajorFunctionHandler(
+  PDRIVER_OBJECT DriverObject,
+  ULONG          MajorFunction
 );
-````
+```
 
 ## Parameters
 

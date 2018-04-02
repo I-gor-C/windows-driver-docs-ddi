@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcchlength.htm
 old-project: kernel
 ms.assetid: 37d9309d-b105-4e56-b236-530ed49ca116
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlStringCchLength, RtlStringCchLengthA, RtlStringCchLengthW, RtlStringCchLengthW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchlength, ntstrsafe/RtlStringCchLengthA, ntstrsafe/RtlStringCchLengthW, safestrings_530fb488-be05-467f-a8c5-22016fb49325.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,13 +52,13 @@ The <b>RtlStringCchLengthW</b> and <b>RtlStringCchLengthA</b> functions determin
 
 ## Syntax
 
-````
-NTSTATUS RtlStringCchLengthW(
-  _In_      LPCTSTR psz,
-  _In_      size_t  cchMax,
-  _Out_opt_ size_t  *pcch
+```
+NTSTRSAFEDDI RtlStringCchLengthW(
+  STRSAFE_PCNZWCH psz,
+  size_t          cchMax,
+  size_t          *pcchLength
 );
-````
+```
 
 ## Parameters
 
@@ -164,4 +164,4 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcblengthw.md">RtlStringCbLength</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562820">RtlStringCbLength</a>

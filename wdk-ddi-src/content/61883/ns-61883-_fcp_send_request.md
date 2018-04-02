@@ -47,13 +47,13 @@ req.typenames: FCP_REQUEST, *PFCP_REQUEST, FCP_SEND_REQUEST, *PFCP_SEND_REQUEST
 This structure is used for a send request. The  request sends an FCP request to the device. If the protocol driver is being used to represent a virtual device on the machine, the client driver must specify the <b>NodeAddress</b> member of FCP_SEND_REQUEST structure. This information is required in order to route the request to the proper node on the 1394 bus. If the protocol driver is being used to control a physical device, the 1394 bus driver determines the node address dynamically, and <b>NodeAddress</b> is not used.
 
 ## Syntax
-````
+```
 typedef struct _FCP_SEND_REQUEST {
-  NODE_ADDRESS NodeAddress;
-  ULONG        Length;
-  PFCP_FRAME   Frame;
-} FCP_SEND_REQUEST, *PFCP_SEND_REQUEST;
-````
+  IN NODE_ADDRESS NodeAddress;
+  IN ULONG        Length;
+  IN PFCP_FRAME   Frame;
+} *PFCP_SEND_REQUEST, FCP_REQUEST, *PFCP_REQUEST, FCP_SEND_REQUEST;
+```
 
 ## Members
 

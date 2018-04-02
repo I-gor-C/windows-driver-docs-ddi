@@ -7,7 +7,7 @@ old-location: ifsk\rtlfreenonvolatiletoken.htm
 old-project: ifsk
 ms.assetid: 8E083814-7408-47D2-A811-2DCBDCD13097
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlFreeNonVolatileToken, RtlFreeNonVolatileToken routine [Installable File System Drivers], ifsk.rtlfreenonvolatiletoken, ntddk/RtlFreeNonVolatileToken
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,22 +46,22 @@ req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 
 # RtlFreeNonVolatileToken function
 The routine <b>RtlFreeNonVolatileToken</b> is a cleanup function for the opaque <b>NvToken</b> which is given by a successful
-    call to <a href="..\ntddk\nf-ntddk-rtlgetnonvolatiletoken.md">RtlGetNonVolatileToken</a>.
+    call to <a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>.
 
 ## Syntax
 
-````
-NTSTATUS RtlFreeNonVolatileToken(
-  _In_ PVOID NvToken
+```
+NTSYSAPI NTSTATUS RtlFreeNonVolatileToken(
+  PVOID NvToken
 );
-````
+```
 
 ## Parameters
 
 `NvToken`
 
 A pointer to an opaque structure that has
-        information about various properties of the non-volatile memory region which <a href="..\ntddk\nf-ntddk-rtlgetnonvolatiletoken.md">RtlGetNonVolatileToken</a> had returned.
+        information about various properties of the non-volatile memory region which <a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a> had returned.
 
 
 ## Return Value
@@ -110,10 +110,6 @@ This routine is currently not supported for Windows Server until the next major 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>
-
-
-
 <a href="https://msdn.microsoft.com/EA1C2DF3-591C-407A-ABBF-DE615466A498">RtlDrainNonVolatileFlush</a>
 
 
@@ -124,6 +120,10 @@ RtlFlushNonVolatileMemory</a>
 
 
 <a href="https://msdn.microsoft.com/169C5F41-B372-4056-AAC5-53DD0582A563">RtlFlushNonVolatileMemoryRanges</a>
+
+
+
+<a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>
 
 
 

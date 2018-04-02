@@ -7,7 +7,7 @@ old-location: audio\iportclspnp_unregisteradapterpnpmanagement.htm
 old-project: audio
 ms.assetid: 7FAA5C88-2846-4C98-A44A-B53A1A7A953C
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IPortClsPnp, IPortClsPnp interface [Audio Devices], UnregisterAdapterPnpManagement method, IPortClsPnp::UnregisterAdapterPnpManagement, UnregisterAdapterPnpManagement method [Audio Devices], UnregisterAdapterPnpManagement method [Audio Devices], IPortClsPnp interface, UnregisterAdapterPnpManagement,IPortClsPnp.UnregisterAdapterPnpManagement, audio.iportclspnp_unregisteradapterpnpmanagement, portcls/IPortClsPnp::UnregisterAdapterPnpManagement
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# UnregisterAdapterPnpManagement method
+# IPortClsPnp::UnregisterAdapterPnpManagement method
 The <code>UnRegisterAdapterPowerManagement</code> method unregisters the PnP management interface of the adapter from PortCls.
 
 ## Syntax
 
-````
+```
 NTSTATUS UnregisterAdapterPnpManagement(
-  [in] PDEVICE_OBJECT DeviceObject
+  PDEVICE_OBJECT DeviceObject
 );
-````
+```
 
 ## Parameters
 
 `DeviceObject`
 
-Specifies a pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter that the PnP management was registered with earlier using <a href="https://msdn.microsoft.com/library/windows/hardware/mt604860">IPortClsPnp::RegisterAdapterPnpManagement</a>.
+Specifies a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter that the PnP management was registered with earlier using <a href="https://msdn.microsoft.com/library/windows/hardware/mt604860">IPortClsPnp::RegisterAdapterPnpManagement</a>.
 
 
 ## Return Value
@@ -80,7 +80,7 @@ For more information,  see <a href="https://msdn.microsoft.com/FCAD7F8B-AA9B-430
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iportclspnp.md">IPortClsPnp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt604859">IPortClsPnp</a>
 
 
 

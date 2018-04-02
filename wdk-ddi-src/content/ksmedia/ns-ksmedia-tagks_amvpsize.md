@@ -47,12 +47,12 @@ req.typenames: KS_AMVPSIZE, *PKS_AMVPSIZE
 The KS_AMVPSIZE structure is used to describe the dimension of a video port (width by height).
 
 ## Syntax
-````
+```
 typedef struct tagKS_AMVPSIZE {
   DWORD dwWidth;
   DWORD dwHeight;
 } KS_AMVPSIZE, *PKS_AMVPSIZE;
-````
+```
 
 ## Members
 

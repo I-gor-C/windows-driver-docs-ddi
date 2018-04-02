@@ -7,7 +7,7 @@ old-location: dtf\iwdtfnumbers2.htm
 old-project: dtf
 ms.assetid: 8cff3bc3-771f-47b7-bf4b-b7221f498252
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFNumbers2, IWDTFNumbers2 interface [Windows Device Testing Framework], IWDTFNumbers2 interface [Windows Device Testing Framework], described, Microsoft.WDTF.IWDTFNumbers2, dtf.iwdtfnumbers2, wdtf/IWDTFNumbers2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,8 +56,8 @@ Defines operations and properties for a collection of numbers.
 | ---- |:---- |
 | [IWDTFNumbers2::Add](nf-wdtf-iwdtfnumbers2-add.md) | Adds a single number to the collection. |
 | [IWDTFNumbers2::get__NewEnum](nf-wdtf-iwdtfnumbers2-get__newenum.md) | Gets a new iteration variable that the For Each loop structure implicitly uses. |
-| [IWDTFNumbers2::get_Count](nf-wdtf-iwdtfnumbers2-get_count.md) | Gets the number of devices that are currently provided by the DeviceDepot. |
-| [IWDTFNumbers2::get_Item](nf-wdtf-iwdtfnumbers2-get_item.md) | Gets an individual device in the DeviceDepot. |
+| [IWDTFNumbers2::get_Count](nf-wdtf-iwdtfnumbers2-get_count.md) | Gets the number of numbers in the collection. |
+| [IWDTFNumbers2::get_Item](nf-wdtf-iwdtfnumbers2-get_item.md) | Gets an individual number in the collection. |
 | [IWDTFNumbers2::Remove](nf-wdtf-iwdtfnumbers2-remove.md) | Removes a number from the collection. |
 
 

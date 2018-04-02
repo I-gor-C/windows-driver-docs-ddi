@@ -7,7 +7,7 @@ old-location: debugger\getfieldtypeandoffset.htm
 old-project: debugger
 ms.assetid: a73a3bb5-f9f4-41d7-9df7-c7f36a01d157
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetFieldTypeAndOffset method [Windows Debugging], GetFieldTypeAndOffset method [Windows Debugging], IDebugSymbols3 interface, GetFieldTypeAndOffset,IDebugSymbols3.GetFieldTypeAndOffset, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetFieldTypeAndOffset method, IDebugSymbols3::GetFieldTypeAndOffset, IDebugSymbols_032d7936-6c9c-4748-ac81-a15673aa4e0f.xml, dbgeng/IDebugSymbols3::GetFieldTypeAndOffset, debugger.getfieldtypeandoffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,20 +44,20 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetFieldTypeAndOffset method
+# IDebugSymbols3::GetFieldTypeAndOffset method
 The <b>GetFieldTypeAndOffset</b>  method returns the type of a field and its offset within a container.
 
 ## Syntax
 
-````
+```
 HRESULT GetFieldTypeAndOffset(
-  [in]            ULONG64 Module,
-  [in]            ULONG   ContainerTypeId,
-  [in]            PCSTR   Field,
-  [out, optional] PULONG  FieldTypeId,
-  [out, optional] PULONG  Offset
+  ULONG64 Module,
+  ULONG   ContainerTypeId,
+  PCSTR   Field,
+  PULONG  FieldTypeId,
+  PULONG  Offset
 );
-````
+```
 
 ## Parameters
 
@@ -129,12 +129,12 @@ For more information about types, see <a href="https://msdn.microsoft.com/librar
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546758">GetFieldOffset</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549376">GetTypeId</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

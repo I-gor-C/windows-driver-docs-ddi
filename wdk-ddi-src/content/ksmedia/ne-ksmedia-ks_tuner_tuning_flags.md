@@ -47,13 +47,13 @@ req.typenames: KS_TUNER_TUNING_FLAGS
 The KS_TUNER_TUNING_FLAGS enumeration defines tuning flags that describe the granularity of a tuning operation.
 
 ## Syntax
-````
-typedef enum  { 
-  KS_TUNER_TUNING_EXACT   = 1,
-  KS_TUNER_TUNING_FINE    = 2,
-  KS_TUNER_TUNING_COARSE  = 3
-} KS_TUNER_TUNING_FLAGS;
-````
+```
+typedef enum KS_TUNER_TUNING_FLAGS {
+  KS_TUNER_TUNING_EXACT   ,
+  KS_TUNER_TUNING_FINE    ,
+  KS_TUNER_TUNING_COARSE
+} ;
+```
 
 ## Constants
 
@@ -83,4 +83,4 @@ typedef enum  {
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_tuner_frequency_s.md">KSPROPERTY_TUNER_FREQUENCY_S</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565839">KSPROPERTY_TUNER_FREQUENCY_S</a>

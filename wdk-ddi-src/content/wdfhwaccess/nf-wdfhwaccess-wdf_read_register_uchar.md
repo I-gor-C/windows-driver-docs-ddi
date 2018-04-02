@@ -52,12 +52,12 @@ The <b>WDF_READ_REGISTER_UCHAR</b> function reads a byte from the specified regi
 
 ## Syntax
 
-````
-UCHAR WDF_READ_REGISTER_UCHAR(
-  _In_ WDFDEVICE Device,
-  _In_ PUCHAR    Register
+```
+WDF_EXTERN_C_START UCHAR WDF_READ_REGISTER_UCHAR(
+  WDFDEVICE Device,
+  PUCHAR    Register
 );
-````
+```
 
 ## Parameters
 

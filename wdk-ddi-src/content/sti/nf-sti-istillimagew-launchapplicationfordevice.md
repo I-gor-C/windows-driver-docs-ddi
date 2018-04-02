@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# LaunchApplicationForDevice method
+# IStillImageW::LaunchApplicationForDevice method
 The <b>IStillImage::LaunchApplicationForDevice</b> method starts a specified application for a specified still image device.
 
 ## Syntax
 
-````
+```
 HRESULT LaunchApplicationForDevice(
-  [in] LPWSTR      pwszDeviceName,
-  [in] LPWSTR      pwszAppName,
-  [in] LPSTINOTIFY pStiNotify
+  LPWSTR      pwszDeviceName,
+  LPWSTR      pwszAppName,
+  LPSTINOTIFY pStiNotify
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ Caller-supplied pointer to a string representing the short name of an applicatio
 
 `pStiNotify`
 
-Caller-supplied pointer to an <a href="..\sti\ns-sti-_stinotify.md">STINOTIFY</a> structure describing a device event. Typically,  the event's GUID is obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543751">IStiDevice::GetLastNotificationData</a>.
+Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548350">STINOTIFY</a> structure describing a device event. Typically,  the event's GUID is obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543751">IStiDevice::GetLastNotificationData</a>.
 
 
 ## Return Value

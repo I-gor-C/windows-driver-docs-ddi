@@ -50,20 +50,20 @@ The<b> KsFilterFactoryAddCreateItem</b> function adds a new create item for the 
 
 ## Syntax
 
-````
-NTSTATUS KsFilterFactoryAddCreateItem(
-  _In_     PKSFILTERFACTORY     FilterFactory,
-  _In_     PWSTR                RefString,
-  _In_opt_ PSECURITY_DESCRIPTOR SecurityDescriptor,
-  _In_     ULONG                CreateItemFlags
+```
+KSDDKAPI NTSTATUS KsFilterFactoryAddCreateItem(
+  PKSFILTERFACTORY     FilterFactory,
+  PWSTR                RefString,
+  PSECURITY_DESCRIPTOR SecurityDescriptor,
+  ULONG                CreateItemFlags
 );
-````
+```
 
 ## Parameters
 
 `FilterFactory`
 
-A pointer to a <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> structure representing the filter factory to which to add a new create item.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a> structure representing the filter factory to which to add a new create item.
 
 `RefString`
 
@@ -71,11 +71,11 @@ A pointer to a Unicode text string that identifies the create item.
 
 `SecurityDescriptor`
 
-This parameter optionally contains a pointer to a SECURITY_DESCRIPTOR structure for this type of object. See the Microsoft Windows SDK For information about this structure. For related information, see <a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>. If <b>NULL</b>, no descriptor is assigned.
+This parameter optionally contains a pointer to a SECURITY_DESCRIPTOR structure for this type of object. See the Microsoft Windows SDK For information about this structure. For related information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a>. If <b>NULL</b>, no descriptor is assigned.
 
 `CreateItemFlags`
 
-See the table for the <b>Flags</b> member of <a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>.
+See the table for the <b>Flags</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a>.
 
 
 ## Return Value
@@ -98,24 +98,24 @@ For more information, see <a href="https://msdn.microsoft.com/666d6efb-93ec-43f3
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksaddobjectcreateitemtoobjectheader.md">KsAddObjectCreateItemToObjectHeader</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a>
 
 
 
-<a href="..\ks\nf-ks-ksfreeobjectcreateitem.md">KsFreeObjectCreateItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560944">KsAddObjectCreateItemToDeviceHeader</a>
 
 
 
-<a href="..\ks\nf-ks-ksqueryobjectcreateitem.md">KsQueryObjectCreateItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560947">KsAddObjectCreateItemToObjectHeader</a>
 
 
 
-<a href="..\ks\nf-ks-ksaddobjectcreateitemtodeviceheader.md">KsAddObjectCreateItemToDeviceHeader</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560968">KsAllocateObjectCreateItem</a>
 
 
 
-<a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562563">KsFreeObjectCreateItem</a>
 
 
 
-<a href="..\ks\nf-ks-ksallocateobjectcreateitem.md">KsAllocateObjectCreateItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566744">KsQueryObjectCreateItem</a>

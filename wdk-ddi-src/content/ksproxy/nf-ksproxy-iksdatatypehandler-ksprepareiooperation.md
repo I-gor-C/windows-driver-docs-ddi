@@ -44,18 +44,18 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsPrepareIoOperation method
+# IKsDataTypeHandler::KsPrepareIoOperation method
 The <b>KsPrepareIoOperation</b> method initializes the extended header and prepares the media sample for an I/O operation.
 
 ## Syntax
 
-````
+```
 HRESULT KsPrepareIoOperation(
-  [in, out] IMediaSample  *Sample,
-  [in, out] PVOID         StreamHeader,
-  [in]      KSIOOPERATION IoOperation
+  IMediaSample  *Sample,
+  PVOID         StreamHeader,
+  KSIOOPERATION IoOperation
 );
-````
+```
 
 ## Parameters
 

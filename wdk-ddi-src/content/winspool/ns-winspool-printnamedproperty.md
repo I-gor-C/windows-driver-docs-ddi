@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
-typedef struct {
-  WCHAR                    *propertyName;
-  PrintPropertyValue       propertyValue;
-} PrintNamedProperty;
-````
+```
+typedef struct PrintNamedProperty {
+  WCHAR              *propertyName;
+  PrintPropertyValue propertyValue;
+};
+```
 
 ## Members
 

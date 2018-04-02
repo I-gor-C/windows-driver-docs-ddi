@@ -48,11 +48,11 @@ req.product: Windows 10 or later.
 The PDEV_HOSTFONT_ENABLED structure indicates whether the Hostfont feature is enabled.
 
 ## Syntax
-````
+```
 typedef struct _PDEV_HOSTFONT_ENABLED {
   BOOL bHostfontEnabled;
 } PDEV_HOSTFONT_ENABLED;
-````
+```
 
 ## Members
 

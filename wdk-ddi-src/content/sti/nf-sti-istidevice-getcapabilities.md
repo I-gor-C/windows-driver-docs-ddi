@@ -45,22 +45,22 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetCapabilities method
+# IStiDevice::GetCapabilities method
 The <b>IStiDevice::GetCapabilities</b> method returns a still image device's capabilities.
 
 ## Syntax
 
-````
+```
 HRESULT GetCapabilities(
-  [in, out] PSTI_DEV_CAPS pDevCaps
+  PSTI_DEV_CAPS pDevCaps
 );
-````
+```
 
 ## Parameters
 
 `pDevCaps`
 
-Caller-supplied pointer to an empty <a href="..\sti\ns-sti-_sti_dev_caps.md">STI_DEV_CAPS</a> structure.
+Caller-supplied pointer to an empty <a href="https://msdn.microsoft.com/library/windows/hardware/ff548380">STI_DEV_CAPS</a> structure.
 
 
 ## Return Value
@@ -69,7 +69,7 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 
 ## Remarks
 
-The <b>IStiDevice::GetCapabilities</b> method returns device capability flags in the caller-supplied <a href="..\sti\ns-sti-_sti_dev_caps.md">STI_DEV_CAPS</a> structure.
+The <b>IStiDevice::GetCapabilities</b> method returns device capability flags in the caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff548380">STI_DEV_CAPS</a> structure.
 
 Before calling <b>IStiDevice::GetCapabilities</b>, clients of the <b>IStiDevice</b> COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a> to obtain an <b>IStiDevice</b> interface pointer, which provides access to a specified device.
 

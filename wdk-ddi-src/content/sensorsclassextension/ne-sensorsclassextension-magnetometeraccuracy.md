@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 Specifies the accuracy of the magnetometer.
 
 ## Syntax
-````
-typedef enum _MagnetometerAccuracy { 
-  Unknown      = 0,
-  Unreliable   = 1,
-  Approximate  = 2,
-  High         = 3
-} MagnetometerAccuracy;
-````
+```
+typedef enum MagnetometerAccuracy {
+  MAGNETOMETER_ACCURACY_UNKNOWN      ,
+  MAGNETOMETER_ACCURACY_UNRELIABLE   ,
+  MAGNETOMETER_ACCURACY_APPROXIMATE  ,
+  MAGNETOMETER_ACCURACY_HIGH
+} ;
+```
 
 ## Constants
 

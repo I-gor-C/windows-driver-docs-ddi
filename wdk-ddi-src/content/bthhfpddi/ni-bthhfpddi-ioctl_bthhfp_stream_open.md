@@ -7,7 +7,7 @@ old-location: audio\ioctl_bthhfp_stream_open.htm
 old-project: audio
 ms.assetid: 67F42694-C6E1-458E-AE5F-7E3678F55A8B
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IOCTL_BTHHFP_STREAM_OPEN, IOCTL_BTHHFP_STREAM_OPEN control code [Audio Devices], audio.ioctl_bthhfp_stream_open, bthhfpddi/IOCTL_BTHHFP_STREAM_OPEN
 ms.prod: windows-hardware
 ms.technology: windows-devices

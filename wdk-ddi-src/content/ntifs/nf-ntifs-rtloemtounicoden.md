@@ -7,7 +7,7 @@ old-location: ifsk\rtloemtounicoden.htm
 old-project: ifsk
 ms.assetid: fe00b980-4bb5-4ad7-84c0-99d47d2f7c51
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlOemToUnicodeN, RtlOemToUnicodeN routine [Installable File System Drivers], ifsk.rtloemtounicoden, ntifs/RtlOemToUnicodeN, rtlref_7159eedf-5a97-4dc5-a9e8-c4a7f2ac2ee2.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,15 +49,15 @@ The <b>RtlOemToUnicodeN</b> routine translates the specified source string into 
 
 ## Syntax
 
-````
-NTSTATUS RtlOemToUnicodeN(
-  _Out_     PWCH   UnicodeString,
-  _In_      ULONG  MaxBytesInUnicodeString,
-  _Out_opt_ PULONG BytesInUnicodeString,
-  _In_      PCCH   OemString,
-  _In_      ULONG  BytesInOemString
+```
+NTSYSAPI NTSTATUS RtlOemToUnicodeN(
+  PWCH   UnicodeString,
+  ULONG  MaxBytesInUnicodeString,
+  PULONG BytesInUnicodeString,
+  PCCH   OemString,
+  ULONG  BytesInOemString
 );
-````
+```
 
 ## Parameters
 
@@ -109,12 +109,12 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtloemstringtounicodestring.md">RtlOemStringToUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553142">RtlOemStringToCountedUnicodeString</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlunicodetooemn.md">RtlUnicodeToOemN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553153">RtlOemStringToUnicodeString</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-rtloemstringtocountedunicodestring.md">RtlOemStringToCountedUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553272">RtlUnicodeToOemN</a>

@@ -7,7 +7,7 @@ old-location: audio\iportclspower_unregisteradapterpowermanagement.htm
 old-project: audio
 ms.assetid: 4c8734b1-d7f5-476b-a85f-1d3f4df888b9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IPortClsPower, IPortClsPower interface [Audio Devices], UnregisterAdapterPowerManagement method, IPortClsPower::UnregisterAdapterPowerManagement, UnregisterAdapterPowerManagement method [Audio Devices], UnregisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, UnregisterAdapterPowerManagement,IPortClsPower.UnregisterAdapterPowerManagement, audio.iportclspower_unregisteradapterpowermanagement, audmp-routines_3dca5fa9-542d-437d-a2d9-9eef51b5f2ea.xml, portcls/IPortClsPower::UnregisterAdapterPowerManagement
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# UnregisterAdapterPowerManagement method
+# IPortClsPower::UnregisterAdapterPowerManagement method
 The <code>UnregisterAdapterPowerManagement</code> method unregisters the adapter's power management interface with PortCls.
 
 ## Syntax
 
-````
+```
 NTSTATUS UnregisterAdapterPowerManagement(
-  [in] PDEVICE_OBJECT DeviceObject
+  PDEVICE_OBJECT _DeviceObject
 );
-````
+```
 
 ## Parameters
 
 `_DeviceObject`
 
-Specifies a pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
+Specifies a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 
 ## Return Value
@@ -80,12 +80,12 @@ The <code>UnregisterAdapterPowerManagement</code> method unregisters the adapter
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536844">IPortClsPower</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536874">IPortClsPower::RegisterAdapterPowerManagement</a>
-
-
-
-<a href="..\portcls\nn-portcls-iportclspower.md">IPortClsPower</a>
-
-
-
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>

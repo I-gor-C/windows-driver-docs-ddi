@@ -50,13 +50,13 @@ The <code>RouterGetPrintClassObject</code> function enumerates the list of print
 
 ## Syntax
 
-````
+```
 HRESULT RouterGetPrintClassObject(
-  _In_  PCWSTR pPrinter,
-  _In_  REFIID riid,
-  _Out_ VOID   **ppv
+  PCWSTR pPrinter,
+  REFIID riid,
+  VOID   **ppv
 );
-````
+```
 
 ## Parameters
 

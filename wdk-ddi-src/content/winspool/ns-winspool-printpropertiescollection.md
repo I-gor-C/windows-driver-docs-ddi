@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
-typedef struct {
-  ULONG                    numberOfProperties;
-  PrintNamedProperty       *propertiesCollection;
-} PrintPropertiesCollection;
-````
+```
+typedef struct PrintPropertiesCollection {
+  ULONG              numberOfProperties;
+  PrintNamedProperty *propertiesCollection;
+};
+```
 
 ## Members
 

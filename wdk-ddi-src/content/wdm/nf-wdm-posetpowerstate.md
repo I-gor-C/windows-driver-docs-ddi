@@ -7,7 +7,7 @@ old-location: kernel\posetpowerstate.htm
 old-project: kernel
 ms.assetid: 9fff319e-0428-4185-a792-d3842ab9feb8
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PoSetPowerState, PoSetPowerState routine [Kernel-Mode Driver Architecture], kernel.posetpowerstate, portn_b6d6559d-e4c7-4fa8-b0f2-556b840391f9.xml, wdm/PoSetPowerState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,27 +50,27 @@ The <b>PoSetPowerState</b> routine notifies the system of a change in the <a hre
 
 ## Syntax
 
-````
-POWER_STATE PoSetPowerState(
-  _In_ PDEVICE_OBJECT   DeviceObject,
-  _In_ POWER_STATE_TYPE Type,
-  _In_ POWER_STATE      State
+```
+NTKERNELAPI POWER_STATE PoSetPowerState(
+  PDEVICE_OBJECT   DeviceObject,
+  POWER_STATE_TYPE Type,
+  POWER_STATE      State
 );
-````
+```
 
 ## Parameters
 
 `DeviceObject`
 
-A pointer to the target <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>.
+A pointer to the target <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 `Type`
 
-Indicates a <a href="..\wdm\ne-wdm-_power_state_type.md">POWER_STATE_TYPE</a> value. Drivers must specify <b>DevicePowerState</b>.
+Indicates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559851">POWER_STATE_TYPE</a> value. Drivers must specify <b>DevicePowerState</b>.
 
 `State`
 
-Specifies the power state to be set. Drivers must specify a <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a> value.
+Specifies the power state to be set. Drivers must specify a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554628">DEVICE_POWER_STATE</a> value.
 
 
 ## Return Value
@@ -83,7 +83,7 @@ On Windows 2000 and later versions of the operating system, <b>PoSetPowerState</
 
 <ul>
 <li>
-A driver calls this routine after receiving a device set-power request and before calling <a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>. When handling a PnP <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request, the driver should call <b>PoSetPowerState</b> to notify the power manager that the device is in the D0 state.
+A driver calls this routine after receiving a device set-power request and before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff559776">PoStartNextPowerIrp</a>. When handling a PnP <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a> request, the driver should call <b>PoSetPowerState</b> to notify the power manager that the device is in the D0 state.
 
 </li>
 <li>
@@ -111,8 +111,8 @@ Callers of <b>PoSetPowerState</b> must be running at IRQL &lt;= APC_LEVEL except
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-postartnextpowerirp.md">PoStartNextPowerIrp</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551749">IRP_MN_START_DEVICE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559776">PoStartNextPowerIrp</a>

@@ -76,4 +76,4 @@ To obtain the <b>IWDFDevice3</b> interface, drivers call <b>IWDFDevice::QueryInt
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice2.md">IWDFDevice2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556918">IWDFDevice2</a>

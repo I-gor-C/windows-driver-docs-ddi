@@ -50,11 +50,11 @@ The <b>wiauDbgInit</b> function initializes WIA debugging.
 
 ## Syntax
 
-````
-void __stdcall wiauDbgInit(
-  _In_opt_ HINSTANCE hInstance
+```
+void wiauDbgInit(
+   a
 );
-````
+```
 
 ## Parameters
 

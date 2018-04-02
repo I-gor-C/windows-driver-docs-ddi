@@ -7,7 +7,7 @@ old-location: storage\vpd_zoned_block_device_characteristics_page.htm
 old-project: storage
 ms.assetid: 9b1f83fd-e367-4b0d-8f93-24f35d9a5fd8
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure pointer [Storage Devices], VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE structure [Storage Devices], _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, scsi/PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, scsi/VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, storage.vpd_zoned_block_device_characteristics_page"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,21 +49,21 @@ req.product: Windows 10 or later.
 <div> </div>
 
 ## Syntax
-````
+```
 typedef struct _VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE {
-  UCHAR  DeviceType  :5;
-  UCHAR  DeviceTypeQualifier  :3;
-  UCHAR  PageCode;
-  UCHAR  PageLength[2];
-  UCHAR  URSWRZ  :1;
-  UCHAR  Reserved1  :7;
-  UCHAR  Reserved2[3];
-  UCHAR  OptimalNumberOfOpenSequentialWritePreferredZone[4];
-  UCHAR  OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZone[4];
-  UCHAR  MaxNumberOfOpenSequentialWriteRequiredZone[4];
-  UCHAR  Reserved3[44];
-} VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE;
-````
+  UCHAR  : 5 DeviceType;
+  UCHAR  : 3 DeviceTypeQualifier;
+  UCHAR      PageCode;
+  UCHAR      PageLength[2];
+  UCHAR  : 1 URSWRZ;
+  UCHAR  : 7 Reserved1;
+  UCHAR      Reserved2[3];
+  UCHAR      OptimalNumberOfOpenSequentialWritePreferredZone[4];
+  UCHAR      OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZone[4];
+  UCHAR      MaxNumberOfOpenSequentialWriteRequiredZone[4];
+  UCHAR      Reserved3[44];
+} *PVPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE, VPD_ZONED_BLOCK_DEVICE_CHARACTERISTICS_PAGE;
+```
 
 ## Members
 

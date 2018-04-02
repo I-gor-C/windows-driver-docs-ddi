@@ -7,7 +7,7 @@ old-location: display\dxvaddi_fixed32.htm
 old-project: display
 ms.assetid: 4188c488-fda4-4596-96f5-f740a5cc9ffc
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXVA2_Structs_3d19835e-9a75-4d5a-bd6b-451a9978eadb.xml, DXVADDI_FIXED32, DXVADDI_FIXED32 structure [Display Devices], _DXVADDI_FIXED32, d3dumddi/DXVADDI_FIXED32, display.dxvaddi_fixed32
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,17 @@ req.typenames: DXVADDI_FIXED32
 The DXVADDI_FIXED32 structure describes a floating-point number from a 16.16 fixed-point number.
 
 ## Syntax
-````
+```
 typedef struct _DXVADDI_FIXED32 {
   union {
     struct {
       USHORT Fraction;
-      SHORT  Value;
+      SHORT  Value;
     };
-    LONG   ll;
+    LONG ll;
   };
 } DXVADDI_FIXED32;
-````
+```
 
 ## Members
 
@@ -71,4 +71,4 @@ typedef struct _DXVADDI_FIXED32 {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_procampvalues.md">DXVADDI_PROCAMPVALUES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562917">DXVADDI_PROCAMPVALUES</a>

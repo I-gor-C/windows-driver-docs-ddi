@@ -47,11 +47,11 @@ req.typenames: CMP_DISCONNECT, *PCMP_DISCONNECT
 This structure is used to break a connection.
 
 ## Syntax
-````
+```
 typedef struct _CMP_DISCONNECT {
-  HANDLE hConnect;
+  IN HANDLE hConnect;
 } CMP_DISCONNECT, *PCMP_DISCONNECT;
-````
+```
 
 ## Members
 

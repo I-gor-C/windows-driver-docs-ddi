@@ -7,7 +7,7 @@ old-location: netvista\ndiscompletebindadapterex.htm
 old-project: netvista
 ms.assetid: e52c7aeb-bbd8-402e-94af-f74df6deb23c
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisCompleteBindAdapterEx, NdisCompleteBindAdapterEx function [Network Drivers Starting with Windows Vista], ndis/NdisCompleteBindAdapterEx, netvista.ndiscompletebindadapterex, protocol_ndis_functions_ref_11cc35a5-fa39-4922-a00d-c4ccb634ea88.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,17 +48,17 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisCompleteBindAdapterEx function
 A protocol driver calls the 
   <b>NdisCompleteBindAdapterEx</b> function to complete a binding operation for which the driver's 
-  <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a> function
+  <a href="https://msdn.microsoft.com/1958722e-012e-4110-a82c-751744bcf9b5">ProtocolBindAdapterEx</a> function
   returned NDIS_STATUS_PENDING.
 
 ## Syntax
 
-````
-VOID NdisCompleteBindAdapterEx(
-  _In_ NDIS_HANDLE BindContext,
-  _In_ NDIS_STATUS Status
+```
+void NdisCompleteBindAdapterEx(
+  NDIS_HANDLE BindAdapterContext,
+  NDIS_STATUS Status
 );
-````
+```
 
 ## Parameters
 
@@ -97,7 +97,7 @@ None
 ## Remarks
 
 If a protocol driver returns NDIS_STATUS_PENDING from its 
-    <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a> function,
+    <a href="https://msdn.microsoft.com/1958722e-012e-4110-a82c-751744bcf9b5">ProtocolBindAdapterEx</a> function,
     that driver must call 
     <b>NdisCompleteBindAdapterEx</b> after the binding operation is completed.
 
@@ -118,8 +118,8 @@ If the open operation was successful, the protocol driver is ready to accept rec
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="https://msdn.microsoft.com/1958722e-012e-4110-a82c-751744bcf9b5">ProtocolBindAdapterEx</a>

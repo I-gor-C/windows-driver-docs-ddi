@@ -48,13 +48,13 @@ The BTH_VENDOR_EVENT_INFO structure specifies the buffer that is associated with
   GUID_BLUETOOTH_HCI_VENDOR_EVENT GUID.
 
 ## Syntax
-````
+```
 typedef struct _BTH_VENDOR_EVENT_INFO {
   BTH_ADDR BthAddress;
-  ULONG    EventSize;
-  UCHAR    EventInfo[1];
+  ULONG    EventSize;
+  UCHAR    EventInfo[1];
 } BTH_VENDOR_EVENT_INFO, *PBTH_VENDOR_EVENT_INFO;
-````
+```
 
 ## Members
 

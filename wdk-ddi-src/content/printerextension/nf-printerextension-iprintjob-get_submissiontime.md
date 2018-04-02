@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_SubmissionTime method
+# IPrintJob::get_SubmissionTime method
 Gets the submission time, in the “DATE” format, provided in the user’s local time (not in the UTC format that is provided by the spooler).
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_SubmissionTime(
-  [out, retval] DATE *pSubmissionTime
+  DATE *pSubmissionTime
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a>

@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetInt32 method
+# IPrinterScriptablePropertyBag::SetInt32 method
 Writes an integer property.
 
 ## Syntax
 
-````
+```
 HRESULT SetInt32(
-  [in] BSTR bstrName,
-  [in] LONG nValue
+  BSTR bstrName,
+  LONG nValue
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +85,4 @@ A call to <b>SetInt32</b> will throw an exception, if the specified property is 
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973217">IPrinterScriptablePropertyBag</a>

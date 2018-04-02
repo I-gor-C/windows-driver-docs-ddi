@@ -7,7 +7,7 @@ old-location: display\d3dkmt_configuresharedresource.htm
 old-project: display
 ms.assetid: ba190f01-428a-4574-8032-c800ce19ba3e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_CONFIGURESHAREDRESOURCE, D3DKMT_CONFIGURESHAREDRESOURCE structure [Display Devices], OpenGL_Structs_ae687fae-f425-4a9b-8426-ee3cc02c8170.xml, _D3DKMT_CONFIGURESHAREDRESOURCE, d3dkmthk/D3DKMT_CONFIGURESHAREDRESOURCE, display.d3dkmt_configuresharedresource
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: D3DKMT_CONFIGURESHAREDRESOURCE
 ---
 
 # _D3DKMT_CONFIGURESHAREDRESOURCE structure
-The D3DKMT_CONFIGURESHAREDRESOURCE structure describes parameters that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> function uses to configure a shared resource.
+The D3DKMT_CONFIGURESHAREDRESOURCE structure describes parameters that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546798">D3DKMTConfigureSharedResource</a> function uses to configure a shared resource.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_CONFIGURESHAREDRESOURCE {
   D3DKMT_HANDLE hDevice;
   D3DKMT_HANDLE hResource;
-  BOOLEAN       IsDwm;
-  HANDLE        hProcess;
-  BOOLEAN       AllowAccess;
+  BOOLEAN       IsDwm;
+  HANDLE        hProcess;
+  BOOLEAN       AllowAccess;
 } D3DKMT_CONFIGURESHAREDRESOURCE;
-````
+```
 
 ## Members
 
@@ -78,7 +78,7 @@ typedef struct _D3DKMT_CONFIGURESHAREDRESOURCE {
 
 `AllowAccess`
 
-[in] A Boolean value that specifies whether the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a> function should allow the process to access the resource. <b>TRUE</b> indicates to allow access; <b>FALSE</b> indicates to not allow access.
+[in] A Boolean value that specifies whether the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546798">D3DKMTConfigureSharedResource</a> function should allow the process to access the resource. <b>TRUE</b> indicates to allow access; <b>FALSE</b> indicates to not allow access.
 
 
 ## Requirements
@@ -89,4 +89,4 @@ typedef struct _D3DKMT_CONFIGURESHAREDRESOURCE {
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtconfiguresharedresource.md">D3DKMTConfigureSharedResource</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546798">D3DKMTConfigureSharedResource</a>

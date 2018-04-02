@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlmupgetproviderinfofromfileobject.htm
 old-project: ifsk
 ms.assetid: 3f4d8c5c-3a83-4027-8d9e-5ff7db4a6853
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlMupGetProviderInfoFromFileObject, FsRtlMupGetProviderInfoFromFileObject routine [Installable File System Drivers], fsrtlref_7ad681c5-3f7c-42d1-8644-7cd677101413.xml, ifsk.fsrtlmupgetproviderinfofromfileobject, ntifs/FsRtlMupGetProviderInfoFromFileObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ The <b>FsRtlMupGetProviderInfoFromFileObject</b> routine gets information about 
 
 ## Syntax
 
-````
-NTSTATUS FsRtlMupGetProviderInfoFromFileObject(
-  _In_    PFILE_OBJECT pFileObject,
-  _In_    ULONG        Level,
-  _Out_   PVOID        pBuffer,
-  _Inout_ PULONG       pBufferSize
+```
+NTKERNELAPI NTSTATUS FsRtlMupGetProviderInfoFromFileObject(
+  PFILE_OBJECT pFileObject,
+  ULONG        Level,
+  PVOID        pBuffer,
+  PULONG       pBufferSize
 );
-````
+```
 
 ## Parameters
 
@@ -182,7 +182,7 @@ A file system filter driver can quickly compare the value of the provider identi
 
 The value of the UNC provider identifier for a particular network redirector remains the same if the network redirector is unloaded from the system and then reloaded back into the system.
 
-To get the UNC provider identifier of a network redirector from the device name of the network redirector, a file system filter driver can call the <a href="..\ntifs\nf-ntifs-fsrtlmupgetprovideridfromname.md">FsRtlMupGetProviderIdFromName</a> routine.
+To get the UNC provider identifier of a network redirector from the device name of the network redirector, a file system filter driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546971">FsRtlMupGetProviderIdFromName</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -196,4 +196,4 @@ To get the UNC provider identifier of a network redirector from the device name 
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-fsrtlmupgetprovideridfromname.md">FsRtlMupGetProviderIdFromName</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546971">FsRtlMupGetProviderIdFromName</a>

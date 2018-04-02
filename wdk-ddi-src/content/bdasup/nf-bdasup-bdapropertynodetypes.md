@@ -50,13 +50,13 @@ The <b>BdaPropertyNodeTypes</b> function retrieves a list of node types in a tem
 
 ## Syntax
 
-````
+```
 NTSTATUS BdaPropertyNodeTypes(
-  _In_  PIRP        Irp,
-  _In_  PKSPROPERTY pKSProperty,
-  _Out_ ULONG       *pulProperty
+  PIRP        pIrp,
+  PKSPROPERTY pKSProperty,
+  ULONG       *pulProperty
 );
-````
+```
 
 ## Parameters
 

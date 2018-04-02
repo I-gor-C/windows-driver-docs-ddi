@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongtouint8.htm
 old-project: kernel
 ms.assetid: F0B69656-99DB-4FE1-BD39-3CE3F2676684
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlLongLongToUInt8, RtlLongLongToUInt8 function [Kernel-Mode Driver Architecture], kernel.rtllonglongtouint8, ntintsafe/RtlLongLongToUInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>LONGLONG</b> to a value of type <b>UNIT8</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlLongLongToUInt8(
-  _In_  LONGLONG llOperand,
-  _Out_ UNIT8    *pu8Result
+  LONGLONG llOperand,
+  UINT8    *pu8Result
 );
-````
+```
 
 ## Parameters
 

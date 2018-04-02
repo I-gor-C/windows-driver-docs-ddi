@@ -45,30 +45,30 @@ req.product: Windows 10 or later.
 ---
 
 
-# OutputCharStr method
+# IPrintOemUni::OutputCharStr method
 The <code>IPrintOemUni::OutputCharStr</code> method enables a rendering plug-in to control the printing of font glyphs.
 
 ## Syntax
 
-````
+```
 HRESULT OutputCharStr(
-   PDEVOBJ     pdevobj,
-   PUNIFONTOBJ pUFObj,
-   DWORD       dwType,
-   DWORD       dwCount,
-   PVOID       pGlyph
+  PDEVOBJ     pdevobj,
+  PUNIFONTOBJ pUFObj,
+  DWORD       dwType,
+  DWORD       dwCount,
+  PVOID       pGlyph
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `pUFObj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_unifontobj.md">UNIFONTOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563590">UNIFONTOBJ</a> structure.
 
 `dwType`
 
@@ -170,11 +170,11 @@ If the specified font is a device font, the method must do the following:
 
 <ol>
 <li>
-Allocate a <a href="..\printoem\ns-printoem-_getinfo_glyphstring.md">GETINFO_GLYPHSTRING</a> structure with <i>dwTypeIn</i> set to TYPE_GLYPHHANDLE and <i>dwTypeOut</i> set to TYPE_TRANSDATA.
+Allocate a <a href="https://msdn.microsoft.com/library/windows/hardware/ff550436">GETINFO_GLYPHSTRING</a> structure with <i>dwTypeIn</i> set to TYPE_GLYPHHANDLE and <i>dwTypeOut</i> set to TYPE_TRANSDATA.
 
 </li>
 <li>
-Call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> function, passing the GETINFO_GLYPHSTRING structure as input, to obtain glyph translations as <a href="..\prntfont\ns-prntfont-_transdata.md">TRANSDATA</a> structure contents.
+Call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> function, passing the GETINFO_GLYPHSTRING structure as input, to obtain glyph translations as <a href="https://msdn.microsoft.com/library/windows/hardware/ff562816">TRANSDATA</a> structure contents.
 
 </li>
 <li>

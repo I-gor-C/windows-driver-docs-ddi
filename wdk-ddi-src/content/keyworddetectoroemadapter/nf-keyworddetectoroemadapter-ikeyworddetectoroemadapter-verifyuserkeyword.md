@@ -7,7 +7,7 @@ old-location: audio\ikeyworddetectoroemadapter_verifyuserkeyword.htm
 old-project: audio
 ms.assetid: AFF679B6-B389-4EA2-8834-9B1B47412B7D
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IKeywordDetectorOemAdapter, IKeywordDetectorOemAdapter interface [Audio Devices], VerifyUserKeyword method, IKeywordDetectorOemAdapter::VerifyUserKeyword, VerifyUserKeyword method [Audio Devices], VerifyUserKeyword method [Audio Devices], IKeywordDetectorOemAdapter interface, VerifyUserKeyword,IKeywordDetectorOemAdapter.VerifyUserKeyword, audio.ikeyworddetectoroemadapter_verifyuserkeyword, keyworddetectoroemadapter/IKeywordDetectorOemAdapter::VerifyUserKeyword
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,20 +44,20 @@ req.typenames: KEYWORDID
 ---
 
 
-# VerifyUserKeyword method
+# IKeywordDetectorOemAdapter::VerifyUserKeyword method
 The <b>VerifyUserKeyword</b> method is used by the training user experience  to verify that one instance of a spoken utterance, captured during training, matches a predefined keyword within some tolerance.
 
 ## Syntax
 
-````
+```
 HRESULT VerifyUserKeyword(
-  [in] IStream        *ModelData,
-  [in] KEYWORDID      KeywordId,
-  [in] LANGID         LangId,
-  [in] LONG           KeywordEndBytePos,
-  [in] IMFMediaBuffer *UserRecording = 0
+  IStream        *ModelData,
+  KEYWORDID      KeywordId,
+  LANGID         LangId,
+  LONG           KeywordEndBytePos,
+  IMFMediaBuffer *UserRecording
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ A pointer to an <b>IStream</b> object bound to model data for a given stored mod
 
 `KeywordId`
 
-The <a href="..\keyworddetectoroemadapter\ne-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0002.md">KEYWORDID</a> in the  <i>UserRecording</i> parameter.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/dn957510">KEYWORDID</a> in the  <i>UserRecording</i> parameter.
 
 `LangId`
 
@@ -192,12 +192,12 @@ Note that audio is processed in a unique way for voice activation training. The 
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957504">IKeywordDetectorOemAdapter</a>
+
+
+
 <a href="https://msdn.microsoft.com/f1d60bec-71e4-4fcc-a020-92754b6f3c02">IMFMediaType</a>
 
 
 
-<a href="..\keyworddetectoroemadapter\ne-keyworddetectoroemadapter-__midl_ikeyworddetectoroemadapter_0002.md">KEYWORDID</a>
-
-
-
-<a href="..\keyworddetectoroemadapter\nn-keyworddetectoroemadapter-ikeyworddetectoroemadapter.md">IKeywordDetectorOemAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957510">KEYWORDID</a>

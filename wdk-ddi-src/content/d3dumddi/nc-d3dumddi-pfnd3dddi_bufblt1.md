@@ -7,7 +7,7 @@ old-location: display\bufblt1.htm
 old-project: display
 ms.assetid: 92F2AED7-935F-4E3E-934F-D6DF9AA87495
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: BufBlt1, BufBlt1 callback function [Display Devices], PFND3DDDI_BUFBLT1, d3dumddi/BufBlt1, display.bufblt1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,8 +84,8 @@ Returns S_OK or an appropriate error result if the buffer bitblt operation is no
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_bufferblt1.md">D3DDDIARG_BUFFERBLT1</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451069">D3DDDIARG_BUFFERBLT1</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>

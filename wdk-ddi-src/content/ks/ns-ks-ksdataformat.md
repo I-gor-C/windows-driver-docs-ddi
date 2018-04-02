@@ -47,17 +47,17 @@ req.typenames: KSDATAFORMAT, *PKSDATAFORMAT, KSDATARANGE, *PKSDATARANGE
 The KSDATAFORMAT structure is a variable-length structure that describes a data format.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSDATAFORMAT {
   ULONG FormatSize;
   ULONG Flags;
   ULONG SampleSize;
   ULONG Reserved;
-  GUID  MajorFormat;
-  GUID  SubFormat;
-  GUID  Specifier;
-} KSDATAFORMAT, *PKSDATAFORMAT, KSDATARANGE, *PKSDATARANGE;
-````
+  GUID  MajorFormat;
+  GUID  SubFormat;
+  GUID  Specifier;
+} KSDATARANGE, *PKSDATARANGE, KSDATAFORMAT, *PKSDATAFORMAT;
+```
 
 ## Members
 
@@ -68,7 +68,7 @@ Specifies the size, in bytes, of the KSDATAFORMAT structure. This must be at lea
 
 `Flags`
 
-Set Flags to KSDATAFORMAT_ATTRIBUTES (0x2) to indicate that the KSDATAFORMAT is followed in memory by a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a> of <a href="..\ks\ns-ks-ksattribute.md">KSATTRIBUTE</a> structures.
+Set Flags to KSDATAFORMAT_ATTRIBUTES (0x2) to indicate that the KSDATAFORMAT is followed in memory by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563441">KSMULTIPLE_ITEM</a> of <a href="https://msdn.microsoft.com/library/windows/hardware/ff560987">KSATTRIBUTE</a> structures.
 
 `SampleSize`
 

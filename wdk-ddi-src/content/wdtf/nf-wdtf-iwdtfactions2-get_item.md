@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTF.Interop.metadata_dll
 req.type-library: 
-req.lib: 
+req.lib: wdtf.h
 req.dll: 
 req.irql: 
 topic_type:
@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Item method
+# IWDTFActions2::get_Item method
 Gets an individual device in the DeviceDepot.
 
 This property is read-only.
@@ -82,11 +82,12 @@ None
 | **Windows version** | Windows XP Professional Windows Server 2008 |
 | **Target Platform** | Windows |
 | **Header** | wdtf.h |
+| **Library** | wdtf.h |
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtfdevicedepot2.md">IWDTFDeviceDepot2</a>
-
-
-
 <a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a>
+
+
+
+<a href="..\wdtf\nn-wdtf-iwdtfdevicedepot2.md">IWDTFDeviceDepot2</a>

@@ -49,13 +49,13 @@ Called by the client driver during initialization to register for handling speci
 
 ## Syntax
 
-````
+```
 NTSTATUS NfcCxRegisterSequenceHandler(
-   WDFDEVICE                   Device,
-   NFC_CX_SEQUENCE             Sequence,
-   PFN_NFC_CX_SEQUENCE_HANDLER EvtNfcCxSequenceHandler
+  WDFDEVICE                   Device,
+  NFC_CX_SEQUENCE             Sequence,
+  PFN_NFC_CX_SEQUENCE_HANDLER EvtNfcCxSequenceHandler
 );
-````
+```
 
 ## Parameters
 
@@ -65,11 +65,11 @@ A handle to a framework device object.
 
 `Sequence`
 
-An <a href="..\nfccx\ne-nfccx-_nfc_cx_sequence.md">NFC_CX_SEQUENCE</a>-typed enumerator.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/dn905563">NFC_CX_SEQUENCE</a>-typed enumerator.
 
 `EvtNfcCxSequenceHandler`
 
-A pointer to an <a href="..\nfccx\nc-nfccx-evt_nfc_cx_sequence_handler.md">EvtNfcCxSequenceHandler</a> callback function.
+A pointer to an <a href="https://msdn.microsoft.com/6EB96A37-06B9-4655-AD69-375EE770F4DF">EvtNfcCxSequenceHandler</a> callback function.
 
 
 ## Return Value

@@ -7,7 +7,7 @@ old-location: kernel\rtlinttoint8.htm
 old-project: kernel
 ms.assetid: ABE24C02-22C3-4F0A-B874-3079F70CA748
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlIntToInt8, RtlIntToInt8 function [Kernel-Mode Driver Architecture], kernel.rtlinttoint8, ntintsafe/RtlIntToInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>INT</b> to a value of type <b>INT8</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlIntToInt8(
-  _In_  INT  iOperand,
-  _Out_ INT8 *pi8Result
+  INT  iOperand,
+  INT8 *pi8Result
 );
-````
+```
 
 ## Parameters
 

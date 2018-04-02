@@ -7,7 +7,7 @@ old-location: netvista\fwpsaleendpointgetsecurityinfo0.htm
 old-project: netvista
 ms.assetid: 0c825695-7fef-4eb1-8615-f41c526aa32d
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsAleEndpointGetSecurityInfo0, FwpsAleEndpointGetSecurityInfo0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsAleEndpointGetSecurityInfo0, netvista.fwpsaleendpointgetsecurityinfo0, wfp_ref_2_funct_3_fwps_A-B_83803cc6-94be-4b32-8b33-2d12cec31e9e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,17 +53,17 @@ The
 
 ## Syntax
 
-````
-NTSTATUS NTAPI FwpsAleEndpointGetSecurityInfo0(
-  _In_  HANDLE               engineHandle,
-  _In_  SECURITY_INFORMATION securityInfo,
-  _Out_ PSID                 *sidOwner,
-  _Out_ PSID                 *sidGroup,
-  _Out_ PACL                 *dacl,
-  _Out_ PACL                 *sacl,
-  _Out_ PSECURITY_DESCRIPTOR *securityDescriptor
+```
+NTSTATUS FwpsAleEndpointGetSecurityInfo0(
+  HANDLE               engineHandle,
+  SECURITY_INFORMATION securityInfo,
+  PSID                 *sidOwner,
+  PSID                 *sidGroup,
+  PACL                 *dacl,
+  PACL                 *sacl,
+  PSECURITY_DESCRIPTOR *securityDescriptor
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ NTSTATUS NTAPI FwpsAleEndpointGetSecurityInfo0(
 
 A handle for an open session with the filter engine. This handle is obtained when a session is
      opened by calling 
-     <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550075">FwpmEngineOpen0</a>.
 
 `securityInfo`
 
@@ -146,13 +146,13 @@ An error occurred.
 
 ## See Also
 
-<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointsetsecurityinfo0.md">
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551126">FwpsAleEndpointEnum0</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551128">FwpsAleEndpointGetById0</a>
+
+
+
+<a href="https://msdn.microsoft.com/7b7fed83-dcf8-466d-8bd7-42a5ed15cced">
    FwpsAleEndpointSetSecurityInfo0</a>
-
-
-
-<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointenum0.md">FwpsAleEndpointEnum0</a>
-
-
-
-<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetbyid0.md">FwpsAleEndpointGetById0</a>

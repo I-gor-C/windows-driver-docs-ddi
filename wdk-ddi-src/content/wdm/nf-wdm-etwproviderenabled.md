@@ -50,13 +50,13 @@ The <b>EtwProviderEnabled</b> function verifies that a provider is enabled for e
 
 ## Syntax
 
-````
+```
 BOOLEAN EtwProviderEnabled(
-  _In_ REGHANDLE RegHandle,
-  _In_ UCHAR     Level,
-  _In_ ULONGLONG Keyword
+  REGHANDLE RegHandle,
+  UCHAR     Level,
+  ULONGLONG Keyword
 );
-````
+```
 
 ## Parameters
 
@@ -81,7 +81,7 @@ The function returns <b>TRUE</b> if the provider is enabled and <b>FALSE</b> if 
 
 You can use the <b>EtwProviderEnabled</b> function to verify that the registered provider is enabled for any event by passing in zeros for the <i>Level</i> and <i>Keyword</i> values when you call the function. If any event is enabled, the provider is enabled. 
 
-If an event descriptor is already available, use the <a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a> function.
+If an event descriptor is already available, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545590">EtwEventEnabled</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,4 +95,4 @@ If an event descriptor is already available, use the <a href="..\wdm\nf-wdm-etwe
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545590">EtwEventEnabled</a>

@@ -62,7 +62,7 @@ NTSTATUS Pfnksfiltervoid(
 
 `Filter`
 
-Pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> to return to its previous state.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> to return to its previous state.
 
 
 ## Return Value
@@ -75,7 +75,7 @@ For more information, see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687
 
 Note that it is not the filter in question, but rather a pin on this filter that actually receives the reset IOCTL.
 
-The minidriver specifies this routine's address in the <b>Reset</b> member of its <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a> structure.
+The minidriver specifies this routine's address in the <b>Reset</b> member of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff562554">KSFILTER_DISPATCH</a> structure.
 
 The filter control mutex may be held during this function. See <a href="https://msdn.microsoft.com/402795a0-e567-4e7e-a7d8-b2ce29ffb8fd">Filter Control Mutex in AVStream</a>.
 
@@ -90,4 +90,4 @@ This routine is optional.
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562554">KSFILTER_DISPATCH</a>

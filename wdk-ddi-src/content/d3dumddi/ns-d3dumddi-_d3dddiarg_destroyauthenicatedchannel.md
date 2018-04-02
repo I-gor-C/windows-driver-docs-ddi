@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_destroyauthenticatedchannel.htm
 old-project: display
 ms.assetid: 3b953c73-a033-465a-a041-7c21ee307c32
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL, D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL structure [Display Devices], UMDisplayDriver_param_Structs_be6187b3-2d01-450e-90a7-d01a97aba764.xml, _D3DDDIARG_DESTROYAUTHENICATEDCHANNEL, d3dumddi/D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL, display.d3dddiarg_destroyauthenticatedchannel
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,14 +44,14 @@ req.typenames: D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL
 ---
 
 # _D3DDDIARG_DESTROYAUTHENICATEDCHANNEL structure
-The D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL structure contains the handle to an authenticated channel that is destroyed in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroyauthenticatedchannel.md">DestroyAuthenticatedChannel</a> function.
+The D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL structure contains the handle to an authenticated channel that is destroyed in a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451630">DestroyAuthenticatedChannel</a> function.
 
 ## Syntax
-````
-typedef struct _D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL {
+```
+typedef struct _D3DDDIARG_DESTROYAUTHENICATEDCHANNEL {
   HANDLE hChannel;
 } D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL;
-````
+```
 
 ## Members
 
@@ -69,4 +69,4 @@ typedef struct _D3DDDIARG_DESTROYAUTHENTICATEDCHANNEL {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroyauthenticatedchannel.md">DestroyAuthenticatedChannel</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451630">DestroyAuthenticatedChannel</a>

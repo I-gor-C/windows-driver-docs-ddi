@@ -7,7 +7,7 @@ old-location: debugger\getsymbolentrystringwide.htm
 old-project: debugger
 ms.assetid: 65a8d959-98f5-4545-8865-d6d81a752d48
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetSymbolEntryStringWide method [Windows Debugging], GetSymbolEntryStringWide method [Windows Debugging], IDebugSymbols3 interface, GetSymbolEntryStringWide,IDebugSymbols3.GetSymbolEntryStringWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSymbolEntryStringWide method, IDebugSymbols3::GetSymbolEntryStringWide, dbgeng/IDebugSymbols3::GetSymbolEntryStringWide, debugger.getsymbolentrystringwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,26 +44,26 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetSymbolEntryStringWide method
+# IDebugSymbols3::GetSymbolEntryStringWide method
 The <b>GetSymbolEntryStringWide</b>  method returns string information for the specified symbol.
 
 ## Syntax
 
-````
+```
 HRESULT GetSymbolEntryStringWide(
-  [in]            PDEBUG_MODULE_AND_ID Id,
-  [in]            ULONG                Which,
-  [out, optional] PWSTR                Buffer,
-  [in]            ULONG                BufferSize,
-  [out, optional] PULONG               StringSize
+  PDEBUG_MODULE_AND_ID Id,
+  ULONG                Which,
+  PWSTR                Buffer,
+  ULONG                BufferSize,
+  PULONG               StringSize
 );
-````
+```
 
 ## Parameters
 
 `Id`
 
-Specifies the symbols whose memory regions are being requested.  The <a href="..\dbgeng\ns-dbgeng-_debug_module_and_id.md">DEBUG_MODULE_AND_ID</a> structure contains the module containing the symbol and the symbol ID of the symbol within the module.
+Specifies the symbols whose memory regions are being requested.  The <a href="https://msdn.microsoft.com/library/windows/hardware/ff541511">DEBUG_MODULE_AND_ID</a> structure contains the module containing the symbol and the symbol ID of the symbol within the module.
 
 `Which`
 
@@ -120,8 +120,8 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548476">GetSymbolEntriesByOffset</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

@@ -7,7 +7,7 @@ old-location: display\d3dddi_check_direct_flip_flags.htm
 old-project: display
 ms.assetid: 72b49af8-4d98-4fc0-ab40-72f1e19eef96
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_CHECKDIRECTFLIP_IMMEDIATE, D3DDDI_CHECK_DIRECT_FLIP_FLAGS, D3DDDI_CHECK_DIRECT_FLIP_FLAGS enumeration [Display Devices], d3dumddi/D3DDDI_CHECKDIRECTFLIP_IMMEDIATE, d3dumddi/D3DDDI_CHECK_DIRECT_FLIP_FLAGS, display.d3dddi_check_direct_flip_flags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,14 +44,14 @@ req.typenames: D3DDDI_CHECK_DIRECT_FLIP_FLAGS
 ---
 
 # D3DDDI_CHECK_DIRECT_FLIP_FLAGS Enumeration
-Used by the <i>CheckDirectFlipFlags</i> parameter of the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_checkdirectflipsupport.md">CheckDirectFlipSupport</a> function to specify seamless flipping of video memory.
+Used by the <i>CheckDirectFlipFlags</i> parameter of the <a href="https://msdn.microsoft.com/BB909041-0194-4828-ACA2-E3F6B1974DBB">CheckDirectFlipSupport</a> function to specify seamless flipping of video memory.
 
 ## Syntax
-````
-typedef enum D3DDDI_CHECK_DIRECT_FLIP_FLAGS { 
-  D3DDDI_CHECKDIRECTFLIP_IMMEDIATE  = 0x00000001
-} D3DDDI_CHECK_DIRECT_FLIP_FLAGS;
-````
+```
+typedef enum D3DDDI_CHECK_DIRECT_FLIP_FLAGS {
+  D3DDDI_CHECKDIRECTFLIP_IMMEDIATE
+} ;
+```
 
 ## Constants
 
@@ -72,8 +72,8 @@ typedef enum D3DDDI_CHECK_DIRECT_FLIP_FLAGS {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_checkdirectflipsupport.md">CheckDirectFlipSupport</a>
+<a href="https://msdn.microsoft.com/BB909041-0194-4828-ACA2-E3F6B1974DBB">CheckDirectFlipSupport</a>
 
 
 
-<a href="..\d3dumddi\ne-d3dumddi-d3dddi_check_direct_flip_flags.md">D3DDDI_CHECK_DIRECT_FLIP_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451172">D3DDDI_CHECK_DIRECT_FLIP_FLAGS</a>

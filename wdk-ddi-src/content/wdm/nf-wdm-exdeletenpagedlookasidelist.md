@@ -7,7 +7,7 @@ old-location: kernel\exdeletenpagedlookasidelist.htm
 old-project: kernel
 ms.assetid: c12d4e5f-ec02-405c-91e2-cd5884bb8494
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExDeleteNPagedLookasideList, ExDeleteNPagedLookasideList routine [Kernel-Mode Driver Architecture], k102_401f2550-ef71-4199-be7f-cdd7652a2c03.xml, kernel.exdeletenpagedlookasidelist, wdm/ExDeleteNPagedLookasideList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,17 +50,17 @@ The <b>ExDeleteNPagedLookasideList</b> routine destroys a nonpaged lookaside lis
 
 ## Syntax
 
-````
-VOID ExDeleteNPagedLookasideList(
-  _Inout_ PNPAGED_LOOKASIDE_LIST Lookaside
+```
+NTKERNELAPI VOID ExDeleteNPagedLookasideList(
+  PNPAGED_LOOKASIDE_LIST Lookaside
 );
-````
+```
 
 ## Parameters
 
 `Lookaside`
 
-A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a> structure for the lookaside list, which the caller originally set up with <a href="..\wdm\nf-wdm-exinitializenpagedlookasidelist.md">ExInitializeNPagedLookasideList</a>.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556431">NPAGED_LOOKASIDE_LIST</a> structure for the lookaside list, which the caller originally set up with <a href="https://msdn.microsoft.com/library/windows/hardware/ff545301">ExInitializeNPagedLookasideList</a>.
 
 
 ## Return Value
@@ -87,7 +87,7 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinitializenpagedlookasidelist.md">ExInitializeNPagedLookasideList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545301">ExInitializeNPagedLookasideList</a>
 
 
 

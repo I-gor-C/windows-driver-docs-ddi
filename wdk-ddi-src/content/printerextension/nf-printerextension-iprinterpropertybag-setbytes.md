@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetBytes method
+# IPrinterPropertyBag::SetBytes method
 Writes a byte array property.
 
 ## Syntax
 
-````
+```
 HRESULT SetBytes(
-  [in]                   BSTR   bstrName,
-  [in]                   DWORD  cbValue,
-  [in, size_is(cbValue)] BYTE * *rgbValue
+  BSTR  bstrName,
+  DWORD cbValue,
+  BYTE  *pValue
 );
-````
+```
 
 ## Parameters
 
@@ -95,4 +95,4 @@ A call to set a property on a queue property bag will fail with ERROR_ACCESS_DEN
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>

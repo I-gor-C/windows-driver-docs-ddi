@@ -7,7 +7,7 @@ old-location: kernel\kederegisterboundcallback.htm
 old-project: kernel
 ms.assetid: 697709D4-DBB7-4CB4-83A1-89E8BAFD68DA
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeDeregisterBoundCallback, KeDeregisterBoundCallback routine [Kernel-Mode Driver Architecture], kernel.kederegisterboundcallback, wdm/KeDeregisterBoundCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # KeDeregisterBoundCallback function
-The <b>KeDeregisterBoundCallback</b> routine deregisters a user-mode bound exception callback registered by <a href="..\wdm\nf-wdm-keregisterboundcallback.md">KeRegisterBoundCallback</a>.
+The <b>KeDeregisterBoundCallback</b> routine deregisters a user-mode bound exception callback registered by <a href="https://msdn.microsoft.com/library/windows/hardware/dn957856">KeRegisterBoundCallback</a>.
 
 ## Syntax
 
-````
-NTSTATUS KeDeregisterBoundCallback(
-  _In_ PVOID Handle
+```
+NTKERNELAPI NTSTATUS KeDeregisterBoundCallback(
+  PVOID Handle
 );
-````
+```
 
 ## Parameters
 
 `Handle`
 
-Specifies the value returned by <a href="..\wdm\nf-wdm-keregisterboundcallback.md">KeRegisterBoundCallback</a> when the callback was registered.
+Specifies the value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/dn957856">KeRegisterBoundCallback</a> when the callback was registered.
 
 
 ## Return Value
@@ -79,4 +79,4 @@ The <b>KeDeregisterBoundCallback</b> routine returns STATUS_SUCCESS if the callb
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keregisterboundcallback.md">KeRegisterBoundCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957856">KeRegisterBoundCallback</a>

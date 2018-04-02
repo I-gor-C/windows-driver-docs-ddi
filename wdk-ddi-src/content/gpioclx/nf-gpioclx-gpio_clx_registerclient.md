@@ -50,13 +50,13 @@ The <b>GPIO_CLX_RegisterClient</b> method registers a general-purpose I/O (GPIO)
 
 ## Syntax
 
-````
+```
 NTSTATUS GPIO_CLX_RegisterClient(
-  _In_    WDFDRIVER                        Driver,
-  _Inout_ PGPIO_CLIENT_REGISTRATION_PACKET RegistrationPacket,
-  _In_    PUNICODE_STRING                  RegistryPath
+  WDFDRIVER                        Driver,
+  PGPIO_CLIENT_REGISTRATION_PACKET RegistrationPacket,
+  PUNICODE_STRING                  RegistryPath
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/wind
 
 `RegistryPath`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the path name of the registry key for the  GPIO controller driver. This parameter should be the registry path name that was passed to the driver's <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine. For more information about driver registry keys, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-registry-trees-and-keys">Registry Trees for Devices and Drivers</a>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains the path name of the registry key for the  GPIO controller driver. This parameter should be the registry path name that was passed to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. For more information about driver registry keys, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-registry-trees-and-keys">Registry Trees for Devices and Drivers</a>.
 
 
 ## Return Value
@@ -134,7 +134,7 @@ Later, just before the GPIO controller driver unloads, the driver calls the <a h
 
 ## See Also
 
-<a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a>
 
 
 
@@ -142,8 +142,8 @@ Later, just before the GPIO controller driver unloads, the driver calls the <a h
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439498">GPIO_CLX_UnregisterClient</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

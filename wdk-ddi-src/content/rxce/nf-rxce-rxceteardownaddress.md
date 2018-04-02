@@ -7,7 +7,7 @@ old-location: ifsk\rxceteardownaddress.htm
 old-project: ifsk
 ms.assetid: 76fd7c35-fef1-43c2-aedd-d09d18ab27a4
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxCeTearDownAddress, RxCeTearDownAddress function [Installable File System Drivers], ifsk.rxceteardownaddress, rxce/RxCeTearDownAddress, rxref_99fcdd00-8c1a-4a0b-8007-5b7f01a725bb.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 NTSTATUS RxCeTearDownAddress(
-  _In_ PRXCE_ADDRESS pAddress
+  IN PRXCE_ADDRESS pAddress
 );
-````
+```
 
 ## Parameters
 
@@ -98,4 +98,4 @@ When <b>RxCeTearDownAddress</b> is successful, the data members in the RXCE_ADDR
 
 ## See Also
 
-<a href="..\rxce\nf-rxce-rxcebuildaddress.md">RxCeBuildAddress</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553414">RxCeBuildAddress</a>

@@ -7,7 +7,7 @@ old-location: kernel\psdetachsilofromcurrentthread.htm
 old-project: kernel
 ms.assetid: E364130B-9709-4FD9-8654-9FBC52E29145
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsDetachSiloFromCurrentThread, PsDetachSiloFromCurrentThread routine [Kernel-Mode Driver Architecture], kernel.psdetachsilofromcurrentthread, ntddk/PsDetachSiloFromCurrentThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 
 
 # PsDetachSiloFromCurrentThread function
-This routine removes a thread from a silo which was added by an attach. For more info about attaching, see the  <a href="..\ntddk\nf-ntddk-psattachsilotocurrentthread.md">PsAttachSiloToCurrentThread</a> routine.
+This routine removes a thread from a silo which was added by an attach. For more info about attaching, see the  <a href="https://msdn.microsoft.com/library/windows/hardware/mt735057">PsAttachSiloToCurrentThread</a> routine.
 
 
 
@@ -54,11 +54,11 @@ This routine removes a thread from a silo which was added by an attach. For more
 
 ## Syntax
 
-````
-void PsDetachSiloFromCurrentThread(
-  _In_ PESILO PreviousSilo
+```
+NTKERNELAPI VOID PsDetachSiloFromCurrentThread(
+  PESILO PreviousSilo
 );
-````
+```
 
 ## Parameters
 
@@ -81,4 +81,4 @@ This routine does not return a value.
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-psattachsilotocurrentthread.md">PsAttachSiloToCurrentThread</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt735057">PsAttachSiloToCurrentThread</a>

@@ -7,7 +7,7 @@ old-location: storage\hba_getrnidmgmtinfo.htm
 old-project: storage
 ms.assetid: 8018d52d-4454-4826-933f-a34a70243547
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_GetRNIDMgmtInfo, HBA_GetRNIDMgmtInfo routine [Storage Devices], fibreHBA_rtns_73ba5195-497c-4105-9b4c-eccd637962b9.xml, hbaapi/HBA_GetRNIDMgmtInfo, storage.hba_getrnidmgmtinfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>HBA_GetRNIDMgmtInfo</b> routine queries the HBA for request node identifi
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_GetRNIDMgmtInfo(
-  _In_  HBA_HANDLE   HbaHandle,
-  _Out_ HBA_MGMTINFO *HbaMgmtInfo
+  IN HBA_HANDLE    Handle,
+  OUT HBA_MGMTINFO *pInfo
 );
-````
+```
 
 ## Parameters
 
@@ -111,12 +111,12 @@ Returned if an unspecified error occurred that prevented the retrieval of the ma
 
 ## See Also
 
-<a href="..\hbaapi\ns-hbaapi-hba_mgmtinfo.md">HBA_MgmtInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557092">HBA_MgmtInfo</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>

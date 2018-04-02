@@ -7,7 +7,7 @@ old-location: kernel\interlockedcompareexchange.htm
 old-project: kernel
 ms.assetid: 925a5481-d626-4824-8cbe-4fc2a0a6ad92
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: InterlockedCompareExchange, InterlockedCompareExchange routine [Kernel-Mode Driver Architecture], k102_d40d8288-4c0d-43ed-af9f-3f9afabe1455.xml, kernel.interlockedcompareexchange, wdm/InterlockedCompareExchange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,13 +55,13 @@ The <b>InterlockedCompareExchange</b> routine performs an atomic operation that 
 
 ## Syntax
 
-````
-LONG InterlockedCompareExchange(
-  _Inout_ LONG volatile *Destination ,
-  _In_    LONG          Exchange ,
-  _In_    LONG          Comparand
+```
+LONG CDECL_NON_WVMPURE InterlockedCompareExchange(
+  _Interlocked_operand_ LONG *Destination,
+  LONG                       ExChange,
+  LONG                       Comperand
 );
-````
+```
 
 ## Parameters
 
@@ -103,24 +103,24 @@ Interlocked operations cannot be used on non-cached memory.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinterlockedcompareexchange64.md">ExInterlockedCompareExchange64</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545352">ExInterlockedCompareExchange64</a>
 
 
 
-<a href="..\wdm\nf-wdm-interlockeddecrement.md">InterlockedDecrement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547863">InterlockedCompareExchangePointer</a>
 
 
 
-<a href="..\wdm\nf-wdm-interlockedexchangepointer.md">InterlockedExchangePointer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547871">InterlockedDecrement</a>
 
 
 
-<a href="..\wdm\nf-wdm-interlockedcompareexchangepointer.md">InterlockedCompareExchangePointer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547892">InterlockedExchange</a>
 
 
 
-<a href="..\wdm\nf-wdm-interlockedexchange.md">InterlockedExchange</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547904">InterlockedExchangePointer</a>
 
 
 
-<a href="..\wdm\nf-wdm-interlockedincrement.md">InterlockedIncrement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547910">InterlockedIncrement</a>

@@ -53,14 +53,14 @@ The <b>WdfDeviceInitRegisterPowerStateChangeCallback</b> method registers a driv
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDeviceInitRegisterPowerStateChangeCallback(
-  _In_ PWDFDEVICE_INIT                                DeviceInit,
-  _In_ WDF_DEVICE_POWER_STATE                         PowerState,
-  _In_ PFN_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION EvtDevicePowerStateChange,
-  _In_ ULONG                                          CallbackTypes
+  PWDFDEVICE_INIT                                DeviceInit,
+  WDF_DEVICE_POWER_STATE                         PowerState,
+  PFN_WDF_DEVICE_POWER_STATE_CHANGE_NOTIFICATION EvtDevicePowerStateChange,
+  ULONG                                          CallbackTypes
 );
-````
+```
 
 ## Parameters
 
@@ -70,15 +70,15 @@ A caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windo
 
 `PowerState`
 
-A <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_power_state.md">WDF_DEVICE_POWER_STATE</a> enumerator that identifies the power machine state for which the driver is requesting notification.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551280">WDF_DEVICE_POWER_STATE</a> enumerator that identifies the power machine state for which the driver is requesting notification.
 
 `EvtDevicePowerStateChange`
 
-A caller-supplied pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_power_state_change_notification.md">EvtDevicePowerStateChange</a> event callback function.
+A caller-supplied pointer to the driver's <a href="https://msdn.microsoft.com/9f54c7e2-0c8a-46ee-9318-6db934c1aab6">EvtDevicePowerStateChange</a> event callback function.
 
 `CallbackTypes`
 
-An ORed combination of <a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notification_type.md">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerators.
+An ORed combination of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552513">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerators.
 
 
 ## Return Value
@@ -116,9 +116,9 @@ There is insufficient memory to complete the operation.
 
 ## Remarks
 
-If your driver calls <b>WdfDeviceInitRegisterPowerStateChangeCallback</b>, it must do so before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.
+If your driver calls <b>WdfDeviceInitRegisterPowerStateChangeCallback</b>, it must do so before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.
 
-For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>, see <a href="https://msdn.microsoft.com/5ef307c6-0310-4a83-a63f-3a6d96782013">State Machines in the Framework</a>.
+For more information about calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>, see <a href="https://msdn.microsoft.com/5ef307c6-0310-4a83-a63f-3a6d96782013">State Machines in the Framework</a>.
 
 
 #### Examples

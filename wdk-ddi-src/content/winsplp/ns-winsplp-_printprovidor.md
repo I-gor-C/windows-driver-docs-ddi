@@ -47,422 +47,113 @@ req.product: Windows 10 or later.
 # _PRINTPROVIDOR structure
 <div class="alert"><b>Warning</b>  <p class="note">Starting with Windows 10, the APIs which support third-party print providers are deprecated. Microsoft does not recommend any investment into third-party print providers. Additionally, on Windows 8 and newer products where the v4 print driver model is available, third-party print providers may not create or manage queues which use v4 print drivers.
 
-</div><div> </div>The PRINTPROVIDOR structure is used as a parameter to a print provider's <a href="..\winsplp\nf-winsplp-initializeprintprovidor.md">InitializePrintProvidor</a> function. All structure member values are supplied by the provider.
+</div><div> </div>The PRINTPROVIDOR structure is used as a parameter to a print provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551614">InitializePrintProvidor</a> function. All structure member values are supplied by the provider.
 
 ## Syntax
-````
+```
 typedef struct _PRINTPROVIDOR {
-  BOOL   (*fpOpenPrinter)(
-      PWSTR pPrinterName, 
-      PHANDLE phPrinter, 
-      PPRINTER_DEFAULTS pDefault);
-  BOOL   (*fpSetJob)(
-      HANDLE hPrinter, 
-      DWORD JobId, 
-      DWORD Level, 
-      LPBYTE pJob, 
-      DWORD Command);
-  BOOL   (*fpGetJob)(
-      HANDLE hPrinter, 
-      DWORD JobId, 
-      DWORD Level, 
-      LPBYTE pJob, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded);
-  BOOL   (*fpEnumJobs)(
-      HANDLE hPrinter, 
-      DWORD FirstJob, 
-      DWORD NoJobs, 
-      DWORD Level, 
-      LPBYTE pJob, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded, 
-      LPDWORD pcReturned);
-  HANDLE (*fpAddPrinter)(
-      LPWSTR pName, 
-      DWORD Level, 
-      LPBYTE pPrinter);
-  BOOL   (*fpDeletePrinter)(HANDLE hPrinter);
-  BOOL   (*fpSetPrinter)(
-      HANDLE hPrinter, 
-      DWORD Level, 
-      LPBYTE pPrinter, 
-      DWORD Command);
-  BOOL   (*fpGetPrinter)(
-      HANDLE hPrinter, 
-      DWORD Level, 
-      LPBYTE pPrinter, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded);
-  BOOL   (*fpEnumPrinters)(
-      DWORD Flags, 
-      LPWSTR Name, 
-      DWORD Level, 
-      LPBYTE pPrinterEnum, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded, 
-      LPDWORD pcReturned);
-  BOOL   (*fpAddPrinterDriver)(
-      LPWSTR Name, 
-      DWORD Level, 
-      LPBYTE pDriverInfo);
-  BOOL   (*fpEnumPrinterDrivers)(
-      LPWSTR pName, 
-      LPWSTR pEnvironment, 
-      DWORD Level, 
-      LPBYTE pDriverInfo, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded, 
-      LPDWORD pcReturned);
-  BOOL   (*fpGetPrinterDriver)(
-      HANDLE hPrinter, 
-      LPWSTR pEnvironment, 
-      DWORD Level, 
-      LPBYTE pDriverInfo, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded);
-  BOOL   (*fpGetPrinterDriverDirectory)(
-      LPWSTR pName, 
-      LPWSTR pEnvironment, 
-      DWORD Level, 
-      LPBYTE pDriverDirectory, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded);
-  BOOL   (*fpDeletePrinterDriver)(
-      LPWSTR pName, 
-      LPWSTR pEnvironment, 
-      LPWSTR pDriverName);
-  BOOL   (*fpAddPrintProcessor)(
-      LPWSTR pName, 
-      LPWSTR pEnvironment, 
-      LPWSTR pPathName, 
-      LPWSTR pPrintProcessorName);
-  BOOL   (*fpEnumPrintProcessors)(
-      LPWSTR pName, 
-      LPWSTR pEnvironment, 
-      DWORD Level, 
-      LPBYTE pPrintProcessorInfo, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded, 
-      LPDWORD pcReturned);
-  BOOL   (*fpGetPrintProcessorDirectory)(
-      LPWSTR pName, 
-      LPWSTR pEnvironment, 
-      DWORD Level, 
-      LPBYTE pPrintProcessorInfo, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded);
-  BOOL   (*fpDeletePrintProcessor)(
-      LPWSTR pName, 
-      LPWSTR pEnvironment, 
-      LPWSTR pPrintProcessorName);
-  BOOL   (*fpEnumPrintProcessorDatatypes)(
-      LPWSTR pName, 
-      LPWSTR pPrintProcessorName, 
-      DWORD Level, 
-      LPBYTE pDataypes, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded, 
-      LPDWORD pcReturned);
-  DWORD  (*fpStartDocPrinter)(
-      HANDLE hPrinter, 
-      DWORD Level, 
-      LPBYTE pDocInfo);
-  BOOL   (*fpStartPagePrinter)(HANDLE hPrinter);
-  BOOL   (*fpWritePrinter)(
-      HANDLE hPrinter, 
-      LPVOID pBuf, 
-      DWORD cbBuf, 
-      LPDWORD pcWritten);
-  BOOL   (*fpEndPagePrinter)(HANDLE hPrinter);
-  BOOL   (*fpAbortPrinter)(HANDLE hPrinter);
-  BOOL   (*fpReadPrinter)(
-      HANDLE hPrinter, 
-      LPVOID pBuf, 
-      DWORD cbBuf, 
-      LPDWORD pNoBytesRead);
-  BOOL   (*fpEndDocPrinter)(HANDLE hPrinter);
-  BOOL   (*fpAddJob)(
-      HANDLE hPrinter, 
-      DWORD Level, 
-      LPBYTE pData, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded);
-  BOOL   (*fpScheduleJob)(
-      HANDLE hPrinter, 
-      DWORD JobId);
-  DWORD  (*fpGetPrinterData)(
-      HANDLE hPrinter, 
-      LPWSTR pValueName, 
-      LPDWORD pType, 
-      LPBYTE pData, 
-      DWORD nSize, 
-      LPDWORD pcbNeeded);
-  DWORD  (*fpSetPrinterData)(
-      HANDLE hPrinter, 
-      LPWSTR pValueName, 
-      DWORD Type, 
-      LPBYTE pData, 
-      DWORD cbData);
-  DWORD  (*fpWaitForPrinterChange)(
-      HANDLE hPrinter, 
-      DWORD Flags);
-  BOOL   (*fpClosePrinter)(HANDLE hPrinter);
-  BOOL   (*fpAddForm)(
-      HANDLE hPrinter, 
-      DWORD Level, 
-      LPBYTE pForm);
-  BOOL   (*fpDeleteForm)(
-      HANDLE hPrinter, 
-      LPWSTR pFormName);
-  BOOL   (*fpGetForm)(
-      HANDLE hPrinter, 
-      LPWSTR pFormName, 
-      DWORD Level, 
-      LPBYTE pForm, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded);
-  BOOL   (*fpSetForm)(
-      HANDLE hPrinter, 
-      LPWSTR pFormName, 
-      DWORD Level, 
-      LPBYTE pForm);
-  BOOL   (*fpEnumForms)(
-      HANDLE hPrinter, 
-      DWORD Level, 
-      LPBYTE pForm, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded, 
-      LPDWORD pcReturned);
-  BOOL   (*fpEnumMonitors)(
-      LPWSTR pName, 
-      DWORD Level, 
-      LPBYTE pMonitors, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded, 
-      LPDWORD pcReturned);
-  BOOL   (*fpEnumPorts)(
-      LPWSTR pName, 
-      DWORD Level, 
-      LPBYTE pPorts, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded, 
-      LPDWORD pcReturned);
-  BOOL   (*fpAddPort)(
-      LPWSTR pName, 
-      HWND hWnd, 
-      LPWSTR pMonitorName);
-  BOOL   (*fpConfigurePort)(
-      LPWSTR pName, 
-      HWND hWnd, 
-      LPWSTR pPortName);
-  BOOL   (*fpDeletePort)(
-      LPWSTR pName, 
-      HWND hWnd, 
-      LPWSTR pPortName);
-  HANDLE (*fpCreatePrinterIC)(
-      HANDLE hPrinter, 
-      LPDEVMODEW pDevMode);
-  BOOL   (*fpPlayGdiScriptOnPrinterIC)(
-      HANDLE hPrinterIC, 
-      LPBYTE pIn, 
-      DWORD cIn, 
-      LPBYTE pOut, 
-      DWORD cOut, 
-      DWORD ul);
-  BOOL   (*fpDeletePrinterIC)(HANDLE hPrinterIC);
-  BOOL   (*fpAddPrinterConnection)(LPWSTR pName);
-  BOOL   (*fpDeletePrinterConnection)(LPWSTR pName);
-  DWORD  (*fpPrinterMessageBox)(
-      HANDLE hPrinter, 
-      DWORD Error, 
-      HWND hWnd, 
-      LPWSTR pText, 
-      LPWSTR pCaption, 
-      DWORD dwType);
-  BOOL   (*fpAddMonitor)(
-      LPWSTR pName, 
-      DWORD Level, 
-      LPBYTE pMonitorInfo);
-  BOOL   (*fpDeleteMonitor)(
-      LPWSTR pName, 
-      LPWSTR pEnvironment, 
-      LPWSTR pMonitorName);
-  BOOL   (*fpResetPrinter)(
-      HANDLE hPrinter, 
-      LPPRINTER_DEFAULTS pDefault);
-  BOOL   (*fpGetPrinterDriverEx)(
-      HANDLE hPrinter, 
-      LPWSTR pEnvironment, 
-      DWORD Level, 
-      LPBYTE pDriverInfo, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded, 
-      DWORD dwClientMajorVersion, 
-      DWORD dwClientMinorVersion, 
-      PDWORD pdwServerMajorVersion, 
-      PDWORD pdwServerMinorVersion);
-  BOOL   (*fpFindFirstPrinterChangeNotification)(
-      HANDLE hPrinter, 
-      DWORD fdwFlags, 
-      DWORD fdwOptions, 
-      HANDLE hNotify, 
-      PDWORD pfdwStatus, 
-      PVOID pPrinterNotifyOptions, 
-      PVOID pPrinterNotifyInit);
-  BOOL   (*fpFindClosePrinterChangeNotification)(HANDLE hPrinter);
-  BOOL   (*fpAddPortEx)(
-      LPWSTR pName, 
-      DWORD Level, 
-      LPBYTE lpBuffer, 
-      LPWSTR lpMonitorName);
-  BOOL   (*fpShutDown)(LPVOID pvReserved);
-  BOOL   (*fpRefreshPrinterChangeNotification)(
-      HANDLE hPrinter, 
-      DWORD Reserved, 
-      PVOID pvReserved, 
-      PVOID pPrinterNotifyInfo);
-  BOOL   (*fpOpenPrinterEx)(
-      LPWSTR pPrinterName, 
-      LPHANDLE phPrinter, 
-      LPPRINTER_DEFAULTS pDefault, 
-      LPBYTE pClientInfo, 
-      DWORD Level);
-  HANDLE (*fpAddPrinterEx)(
-      LPWSTR pName, 
-      DWORD Level, 
-      LPBYTE pPrinter, 
-      LPBYTE pClientInfo, 
-      DWORD ClientInfoLevel);
-  BOOL   (*fpSetPort)(
-      LPWSTR pName, 
-      LPWSTR pPortName, 
-      DWORD Level, 
-      LPBYTE pPortInfo);
-  DWORD  (*fpEnumPrinterData)(
-      HANDLE hPrinter, 
-      DWORD dwIndex, 
-      LPWSTR pValueName, 
-      DWORD cbValueName, 
-      LPDWORD pcbValueName, 
-      LPDWORD pType, 
-      LPBYTE pData, 
-      DWORD cbData, 
-      LPDWORD pcbData);
-  DWORD  (*fpDeletePrinterData)(
-      HANDLE hPrinter, 
-      LPWSTR pValueName);
-  DWORD  (*fpClusterSplOpen)(
-      LPCTSTR pszServer, 
-      LPCTSTR pszResource, 
-      PHANDLE phSpooler, 
-      LPCTSTR pszName, 
-      LPCTSTR pszAddress);
-  DWORD  (*fpClusterSplClose)(HANDLE hSpooler);
-  DWORD  (*fpClusterSplIsAlive)(HANDLE hSpooler);
-  DWORD  (*fpSetPrinterDataEx)(
-      HANDLE hPrinter, 
-      LPCWSTR pKeyName, 
-      LPCWSTR pValueName, 
-      DWORD Type, 
-      LPBYTE pData, 
-      DWORD cbData);
-  DWORD  (*fpGetPrinterDataEx)(
-      HANDLE hPrinter, 
-      LPCWSTR pKeyName, 
-      LPCWSTR pValueName, 
-      LPDWORD pType, 
-      LPBYTE pData, 
-      DWORD nSize, 
-      LPDWORD pcbNeeded);
-  DWORD  (*fpEnumPrinterDataEx)(
-      HANDLE hPrinter, 
-      LPCWSTR pKeyName, 
-      LPBYTE pEnumValues, 
-      DWORD cbEnumValues, 
-      LPDWORD pcbEnumValues, 
-      LPDWORD pnEnumValues);
-  DWORD  (*fpEnumPrinterKey)(
-      HANDLE hPrinter, 
-      LPCWSTR pKeyName, 
-      LPWSTR pSubkey, 
-      DWORD cbSubkey, 
-      LPDWORD pcbSubkey);
-  DWORD  (*fpDeletePrinterDataEx)(
-      HANDLE hPrinter, 
-      LPCWSTR pKeyName, 
-      LPCWSTR pValueName);
-  DWORD  (*fpDeletePrinterKey)(
-      HANDLE hPrinter, 
-      LPCWSTR pKeyName);
-  BOOL   (*fpSeekPrinter)(
-      HANDLE hPrinter, 
-      LARGE_INTEGER liDistanceToMove, 
-      PLARGE_INTEGER pliNewPointer, 
-      DWORD dwMoveMethod, 
-      BOOL bWrite);
-  BOOL   (*fpDeletePrinterDriverEx)(
-      LPWSTR pName, 
-      LPWSTR pEnvironment, 
-      LPWSTR pDriverName, 
-      DWORD dwDeleteFlag, 
-      DWORD dwVersionNum);
-  BOOL   (*fpAddPerMachineConnection)(
-      LPCWSTR pServer, 
-      LPCWSTR pPrinterName, 
-      LPCWSTR pPrintServer, 
-      LPCWSTR pProvider);
-  void   (*fpDeletePerMachineConnection)(
-      LPCWSTR pServer, 
-      LPCWSTR pPrinterName);
-  BOOL   (*fpEnumPerMachineConnections)(
-      LPCWSTR pServer, 
-      LPBYTE pPrinterEnum, 
-      DWORD cbBuf, 
-      LPDWORD pcbNeeded, 
-      LPDWORD pcReturned);
-  BOOL   (*fpXcvData)(
-      HANDLE hXcv, 
-      LPCWSTR pszDataName, 
-      PBYTE pInputData, 
-      DWORD cbInputData, 
-      PBYTE pOutputData, 
-      DWORD cbOutputData, 
-      PDWORD pcbOutputNeeded, 
-      PDWORD pdwStatus);
-  BOOL   (*fpAddPrinterDriverEx)(
-      LPWSTR pName, 
-      DWORD Level, 
-      LPBYTE pDriverInfo, 
-      DWORD dwFileCopyFlags);
-  BOOL   (*fpSplReadPrinter)(
-      HANDLE hPrinter, 
-      LPBYTE* pBuf, 
-      DWORD cbBuf);
-  BOOL   (*fpDriverUnloadComplete)(LPWSTR pDriverFile);
-  BOOL   (*fpGetSpoolFileInfo)(
-      HANDLE hPrinter, 
-      LPWSTR* pSpoolDir, 
-      LPHANDLE phFile, 
-      HANDLE hSpoolerProcess, 
-      HANDLE hAppProcess);
-  BOOL   (*fpCommitSpoolData)(
-      HANDLE hPrinter, 
-      DWORD cbCommit);
-  BOOL   (*fpCloseSpoolFileHandle)(HANDLE hPrinter);
-  BOOL   (*fpFlushPrinter)(
-      HANDLE hPrinter, 
-      LPBYTE pBuf, 
-      DWORD cbBuf, 
-      LPDWORD pcWritten, 
-      DWORD cSleep);
-  DWORD  (*fpSendRecvBidiData)(
-      HANDLE hPrinter, 
-      LPCWSTR pAction, 
-      PBIDI_REQUEST_CONTAINER pReqData, 
-      PBIDI_RESPONSE_CONTAINER* ppResData);
+  BOOL( )(PWSTR pPrinterName,PHANDLE phPrinter,PPRINTER_DEFAULTS pDefault)    *fpOpenPrinter;
+  BOOL( )(HANDLE hPrinter,DWORD JobId,DWORD Level,LPBYTE pJob,DWORD Command)    *fpSetJob;
+  BOOL( )(HANDLE hPrinter,DWORD JobId,DWORD Level,LPBYTE pJob,DWORD cbBuf,LPDWORD pcbNeeded)    *fpGetJob;
+  BOOL( )(HANDLE hPrinter,DWORD FirstJob,DWORD NoJobs,DWORD Level,LPBYTE pJob,DWORD cbBuf,LPDWORD pcbNeeded,LPDWORD pcReturned)    *fpEnumJobs;
+  HANDLE( )(LPWSTR pName,DWORD Level,LPBYTE pPrinter)  *fpAddPrinter;
+  BOOL( )(HANDLE hPrinter)    *fpDeletePrinter;
+  BOOL( )(HANDLE hPrinter,DWORD Level,LPBYTE pPrinter,DWORD Command)    *fpSetPrinter;
+  BOOL( )(HANDLE hPrinter,DWORD Level,LPBYTE pPrinter,DWORD cbBuf,LPDWORD pcbNeeded)    *fpGetPrinter;
+  BOOL( )(DWORD Flags,LPWSTR Name,DWORD Level,LPBYTE pPrinterEnum,DWORD cbBuf,LPDWORD pcbNeeded,LPDWORD pcReturned)    *fpEnumPrinters;
+  BOOL( )(LPWSTR pName,DWORD Level,LPBYTE pDriverInfo)    *fpAddPrinterDriver;
+  BOOL( )(LPWSTR pName,LPWSTR pEnvironment,DWORD Level,LPBYTE pDriverInfo,DWORD cbBuf,LPDWORD pcbNeeded,LPDWORD pcReturned)    *fpEnumPrinterDrivers;
+  BOOL( )(HANDLE hPrinter,LPWSTR pEnvironment,DWORD Level,LPBYTE pDriverInfo,DWORD cbBuf,LPDWORD pcbNeeded)    *fpGetPrinterDriver;
+  BOOL( )(LPWSTR pName,LPWSTR pEnvironment,DWORD Level,LPBYTE pDriverDirectory,DWORD cbBuf,LPDWORD pcbNeeded)    *fpGetPrinterDriverDirectory;
+  BOOL( )(LPWSTR pName,LPWSTR pEnvironment,LPWSTR pDriverName)    *fpDeletePrinterDriver;
+  BOOL( )(LPWSTR pName,LPWSTR pEnvironment,LPWSTR pPathName,LPWSTR pPrintProcessorName)    *fpAddPrintProcessor;
+  BOOL( )(LPWSTR pName,LPWSTR pEnvironment,DWORD Level,LPBYTE pPrintProcessorInfo,DWORD cbBuf,LPDWORD pcbNeeded,LPDWORD pcReturned)    *fpEnumPrintProcessors;
+  BOOL( )(LPWSTR pName,LPWSTR pEnvironment,DWORD Level,LPBYTE pPrintProcessorInfo,DWORD cbBuf,LPDWORD pcbNeeded)    *fpGetPrintProcessorDirectory;
+  BOOL( )(LPWSTR pName,LPWSTR pEnvironment,LPWSTR pPrintProcessorName)    *fpDeletePrintProcessor;
+  BOOL( )(LPWSTR pName,LPWSTR pPrintProcessorName,DWORD Level,LPBYTE pDataypes,DWORD cbBuf,LPDWORD pcbNeeded,LPDWORD pcReturned)    *fpEnumPrintProcessorDatatypes;
+  DWORD( )(HANDLE hPrinter,DWORD Level,LPBYTE pDocInfo)   *fpStartDocPrinter;
+  BOOL( )(HANDLE hPrinter)    *fpStartPagePrinter;
+  BOOL( )(HANDLE hPrinter,LPVOID pBuf,DWORD cbBuf,LPDWORD pcWritten)    *fpWritePrinter;
+  BOOL( )(HANDLE hPrinter)    *fpEndPagePrinter;
+  BOOL( )(HANDLE hPrinter)    *fpAbortPrinter;
+  BOOL( )(HANDLE hPrinter,LPVOID pBuf,DWORD cbBuf,LPDWORD pNoBytesRead)    *fpReadPrinter;
+  BOOL( )(HANDLE hPrinter)    *fpEndDocPrinter;
+  BOOL( )(HANDLE hPrinter,DWORD Level,LPBYTE pData,DWORD cbBuf,LPDWORD pcbNeeded)    *fpAddJob;
+  BOOL( )(HANDLE hPrinter,DWORD JobId)    *fpScheduleJob;
+  DWORD( )(HANDLE hPrinter,LPWSTR pValueName,LPDWORD pType,LPBYTE pData,DWORD nSize,LPDWORD pcbNeeded)   *fpGetPrinterData;
+  DWORD( )(HANDLE hPrinter,LPWSTR pValueName,DWORD Type,LPBYTE pData,DWORD cbData)   *fpSetPrinterData;
+  DWORD( )(HANDLE hPrinter,DWORD Flags)   *fpWaitForPrinterChange;
+  BOOL( )(HANDLE hPrinter)    *fpClosePrinter;
+  BOOL( )(HANDLE hPrinter,DWORD Level,LPBYTE pForm)    *fpAddForm;
+  BOOL( )(HANDLE hPrinter,LPWSTR pFormName)    *fpDeleteForm;
+  BOOL( )(HANDLE hPrinter,LPWSTR pFormName,DWORD Level,LPBYTE pForm,DWORD cbBuf,LPDWORD pcbNeeded)    *fpGetForm;
+  BOOL( )(HANDLE hPrinter,LPWSTR pFormName,DWORD Level,LPBYTE pForm)    *fpSetForm;
+  BOOL( )(HANDLE hPrinter,DWORD Level,LPBYTE pForm,DWORD cbBuf,LPDWORD pcbNeeded,LPDWORD pcReturned)    *fpEnumForms;
+  BOOL( )(LPWSTR pName,DWORD Level,LPBYTE pMonitors,DWORD cbBuf,LPDWORD pcbNeeded,LPDWORD pcReturned)    *fpEnumMonitors;
+  BOOL( )(LPWSTR pName,DWORD Level,LPBYTE pPorts,DWORD cbBuf,LPDWORD pcbNeeded,LPDWORD pcReturned)    *fpEnumPorts;
+  BOOL( )(LPWSTR pName,HWND hWnd,LPWSTR pMonitorName)    *fpAddPort;
+  BOOL( )(LPWSTR pName,HWND hWnd,LPWSTR pPortName)    *fpConfigurePort;
+  BOOL( )(LPWSTR pName,HWND hWnd,LPWSTR pPortName)    *fpDeletePort;
+  HANDLE( )(HANDLE hPrinter,LPDEVMODEW pDevMode)  *fpCreatePrinterIC;
+  BOOL( )(HANDLE hPrinterIC,LPBYTE pIn,DWORD cIn,LPBYTE pOut,DWORD cOut,DWORD ul)    *fpPlayGdiScriptOnPrinterIC;
+  BOOL( )(HANDLE hPrinterIC)    *fpDeletePrinterIC;
+  BOOL( )(LPWSTR pName)    *fpAddPrinterConnection;
+  BOOL( )(LPWSTR pName)    *fpDeletePrinterConnection;
+  DWORD( )(HANDLE hPrinter,DWORD Error,HWND hWnd,LPWSTR pText,LPWSTR pCaption,DWORD dwType)   *fpPrinterMessageBox;
+  BOOL( )(LPWSTR pName,DWORD Level,LPBYTE pMonitorInfo)    *fpAddMonitor;
+  BOOL( )(LPWSTR pName,LPWSTR pEnvironment,LPWSTR pMonitorName)    *fpDeleteMonitor;
+  BOOL( )(HANDLE hPrinter,LPPRINTER_DEFAULTS pDefault)    *fpResetPrinter;
+  BOOL( )(HANDLE hPrinter,LPWSTR pEnvironment,DWORD Level,LPBYTE pDriverInfo,DWORD cbBuf,LPDWORD pcbNeeded,DWORD dwClientMajorVersion,DWORD dwClientMinorVersion,PDWORD pdwServerMajorVersion,PDWORD pdwServerMinorVersion)    *fpGetPrinterDriverEx;
+  BOOL( )(HANDLE hPrinter,DWORD fdwFlags,DWORD fdwOptions,HANDLE hNotify,PDWORD pfdwStatus,PVOID pPrinterNotifyOptions,PVOID pPrinterNotifyInit)    *fpFindFirstPrinterChangeNotification;
+  BOOL( )(HANDLE hPrinter)    *fpFindClosePrinterChangeNotification;
+  BOOL( )(LPWSTR pName,DWORD Level,LPBYTE lpBuffer,LPWSTR lpMonitorName)    *fpAddPortEx;
+  BOOL( )(LPVOID pvReserved)    *fpShutDown;
+  BOOL( )(HANDLE hPrinter,DWORD Reserved,PVOID pvReserved,PVOID pPrinterNotifyInfo)    *fpRefreshPrinterChangeNotification;
+  BOOL( )(LPWSTR pPrinterName,LPHANDLE phPrinter,LPPRINTER_DEFAULTS pDefault,LPBYTE pClientInfo,DWORD Level)    *fpOpenPrinterEx;
+  HANDLE( )(LPWSTR pName,DWORD Level,LPBYTE pPrinter,LPBYTE pClientInfo,DWORD ClientInfoLevel)  *fpAddPrinterEx;
+  BOOL( )(LPWSTR pName,LPWSTR pPortName,DWORD Level,LPBYTE pPortInfo)    *fpSetPort;
+  DWORD( )(HANDLE hPrinter,DWORD dwIndex,LPWSTR pValueName,DWORD cbValueName,LPDWORD pcbValueName,LPDWORD pType,LPBYTE pData,DWORD cbData,LPDWORD pcbData)   *fpEnumPrinterData;
+  DWORD( )(HANDLE hPrinter,LPWSTR pValueName)   *fpDeletePrinterData;
+  DWORD( )(LPCTSTR pszServer,LPCTSTR pszResource,PHANDLE phSpooler,LPCTSTR pszName,LPCTSTR pszAddress)   *fpClusterSplOpen;
+  DWORD( )(HANDLE hSpooler)   *fpClusterSplClose;
+  DWORD( )(HANDLE hSpooler)   *fpClusterSplIsAlive;
+  DWORD( )(HANDLE hPrinter,LPCWSTR pKeyName,LPCWSTR pValueName,DWORD Type,LPBYTE pData,DWORD cbData)   *fpSetPrinterDataEx;
+  DWORD( )(HANDLE hPrinter,LPCWSTR pKeyName,LPCWSTR pValueName,LPDWORD pType,LPBYTE pData,DWORD nSize,LPDWORD pcbNeeded)   *fpGetPrinterDataEx;
+  DWORD( )(HANDLE hPrinter,LPCWSTR pKeyName,LPBYTE pEnumValues,DWORD cbEnumValues,LPDWORD pcbEnumValues,LPDWORD pnEnumValues)   *fpEnumPrinterDataEx;
+  DWORD( )(HANDLE hPrinter,LPCWSTR pKeyName,LPWSTR pSubkey,DWORD cbSubkey,LPDWORD pcbSubkey)   *fpEnumPrinterKey;
+  DWORD( )(HANDLE hPrinter,LPCWSTR pKeyName,LPCWSTR pValueName)   *fpDeletePrinterDataEx;
+  DWORD( )(HANDLE hPrinter,LPCWSTR pKeyName)   *fpDeletePrinterKey;
+  BOOL( )(HANDLE hPrinter,LARGE_INTEGER liDistanceToMove,PLARGE_INTEGER pliNewPointer,DWORD dwMoveMethod,BOOL bWrite)    *fpSeekPrinter;
+  BOOL( )(LPWSTR pName,LPWSTR pEnvironment,LPWSTR pDriverName,DWORD dwDeleteFlag,DWORD dwVersionNum)    *fpDeletePrinterDriverEx;
+  BOOL( )(LPCWSTR pServer,LPCWSTR pPrinterName,LPCWSTR pPrintServer,LPCWSTR pProvider)    *fpAddPerMachineConnection;
+  BOOL( )(LPCWSTR pServer,LPCWSTR pPrinterName)    *fpDeletePerMachineConnection;
+  BOOL( )(LPCWSTR pServer,LPBYTE pPrinterEnum,DWORD cbBuf,LPDWORD pcbNeeded,LPDWORD pcReturned)    *fpEnumPerMachineConnections;
+  BOOL( )(HANDLE hXcv,LPCWSTR pszDataName,PBYTE pInputData,DWORD cbInputData,PBYTE pOutputData,DWORD cbOutputData,PDWORD pcbOutputNeeded,PDWORD pdwStatus)    *fpXcvData;
+  BOOL( )(LPWSTR pName,DWORD Level,LPBYTE pDriverInfo,DWORD dwFileCopyFlags)    *fpAddPrinterDriverEx;
+  BOOL()(HANDLE hPrinter,LPBYTE *pBuf,DWORD cbBuf)    * fpSplReadPrinter;
+  BOOL( )(LPWSTR pDriverFile)    *fpDriverUnloadComplete;
+  BOOL()(HANDLE hPrinter,LPWSTR *pSpoolDir,LPHANDLE phFile,HANDLE hSpoolerProcess,HANDLE hAppProcess)    * fpGetSpoolFileInfo;
+  BOOL( )(HANDLE hPrinter,DWORD cbCommit)    *fpCommitSpoolData;
+  BOOL( )(HANDLE hPrinter)    *fpCloseSpoolFileHandle;
+  BOOL( )(HANDLE hPrinter,LPBYTE pBuf,DWORD cbBuf,LPDWORD pcWritten,DWORD cSleep)    *fpFlushPrinter;
+  DWORD()(HANDLE hPrinter,LPCWSTR pAction,PBIDI_REQUEST_CONTAINER pReqData,PBIDI_RESPONSE_CONTAINER *ppResData)   * fpSendRecvBidiData;
+  BOOL( )(LPCWSTR pName,DWORD dwLevel,PVOID pInfo)    *fpAddPrinterConnection2;
+  HRESULT((PCWSTR, const IID &,VOID **) * )fpGetPrintClassObject;
+  HRESULT(PCWSTR, const IID *,VOID **) * )(fpGetPrintClassObject;
+  HRESULT( )(HANDLE hPrinter,ULONG jobId,EPrintXPSJobOperation jobOperation,EPrintXPSJobProgress jobProgress) *fpReportJobProcessingProgress;
+  VOID()(DWORD dwLevel,VOID *pfOut)    * fpEnumAndLogProvidorObjects;
+  HRESULT( )(HANDLE hPrinter,LPWSTR pEnvironment,DWORD Level,LPBYTE pDriverInfo,DWORD cbBuf,LPDWORD pcbNeeded,DWORD dwClientMajorVersion,DWORD dwClientMinorVersion,PDWORD pdwServerMajorVersion,PDWORD pdwServerMinorVersion) *fpInternalGetPrinterDriver;
+  HRESULT( )(LPCWSTR pcszPnpId,LPCWSTR pcszPortName,LPWSTR pszManufacturerName,DWORD cchManufacturerName,LPDWORD pcchRequiredManufacturerNameSize,LPWSTR pszModelName,DWORD cchModelName,LPDWORD pcchRequiredModelNameSize,LPDWORD pdwRank0Matches) *fpFindCompatibleDriver;
+  DWORD()(HANDLE hPrinter,DWORD JobId,PCWSTR pszName,PrintPropertyValue *pValue)   * fpGetJobNamedPropertyValue;
+  DWORD()(HANDLE hPrinter,DWORD JobId, const PrintNamedProperty *pProperty)   * fpSetJobNamedProperty;
+  DWORD( )(HANDLE hPrinter,DWORD JobId,PCWSTR pszName)   *fpDeleteJobNamedProperty;
+  DWORD(HANDLE hPrinter,DWORD JobId,DWORD *pcProperties,PrintNamedProperty **ppProperties)   * )(fpEnumJobNamedProperties;
+  DWORD()(DWORD event,POWERBROADCAST_SETTING *pPowerSetting)   * fpPowerEvent;
+  DWORD()(HANDLE hPrinter,HKEY *phKey)   * fpGetUserPropertyBag;
+  BOOL( )()    *fpCanShutdown;
+  DWORD( )(HANDLE hPrinter,PBranchOfficeJobDataContainer pJobDataContainer)   *fpLogJobInfoForBranchOffice;
 } PRINTPROVIDOR, *LPPRINTPROVIDOR;
-````
+```
 
 ## Members
 
@@ -927,20 +618,20 @@ Function pointers are listed in the order they are specified within the PRINTPRO
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562068">SendRecvBidiData</a>
-
-
-
-<a href="..\winsplp\nf-winsplp-initializeprintprovidor.md">InitializePrintProvidor</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548837">FindFirstPrinterChangeNotification</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551614">InitializePrintProvidor</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562068">SendRecvBidiData</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>

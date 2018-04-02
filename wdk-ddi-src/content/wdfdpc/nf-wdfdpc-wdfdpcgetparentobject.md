@@ -53,11 +53,11 @@ The <b>WdfDpcGetParentObject</b> method returns the parent object of a specified
 
 ## Syntax
 
-````
+```
 WDFOBJECT WdfDpcGetParentObject(
-  _In_ WDFDPC Dpc
+  WDFDPC Dpc
 );
-````
+```
 
 ## Parameters
 
@@ -79,7 +79,7 @@ A driver might call <b>WdfDpcGetParentObject</b> from within its <a href="https:
 
 #### Examples
 
-The following code example returns a handle to the parent object of a specified DPC object. The <a href="..\wdfdpc\nf-wdfdpc-wdfdpccreate.md">WdfDpcCreate</a> code example shows how the specified DPC object was created.
+The following code example returns a handle to the parent object of a specified DPC object. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff547140">WdfDpcCreate</a> code example shows how the specified DPC object was created.
 
 <div class="code"><span codelanguage=""><table>
 <tr>

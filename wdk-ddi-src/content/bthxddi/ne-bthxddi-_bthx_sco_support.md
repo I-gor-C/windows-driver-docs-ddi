@@ -47,13 +47,13 @@ req.typenames: BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT
 The BTHX_SCO_SUPPORT enumeration lists the different types of SCO supported by the transport driver.
 
 ## Syntax
-````
-typedef enum _BTHX_SCO_SUPPORT { 
-  ScoSupportNone       = 0,
-  ScoSupportHCI        = 1,
-  ScoSupportHCIBypass  = 2
-} BTHX_SCO_SUPPORT;
-````
+```
+typedef enum _BTHX_SCO_SUPPORT {
+  ScoSupportNone       ,
+  ScoSupportHCI        ,
+  ScoSupportHCIBypass
+} BTHX_SCO_SUPPORT, *PBTHX_SCO_SUPPORT;
+```
 
 ## Constants
 
@@ -77,9 +77,9 @@ typedef enum _BTHX_SCO_SUPPORT {
 
 ## Remarks
 
-Upon starting, the Bluetooth stack will query the transport driver for its capabilities by sending the <a href="..\bthxddi\ni-bthxddi-ioctl_bthx_query_capabilities.md">IOCTL_BTHX_QUERY_CAPABILITIES</a> IOCTL.
+Upon starting, the Bluetooth stack will query the transport driver for its capabilities by sending the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450883">IOCTL_BTHX_QUERY_CAPABILITIES</a> IOCTL.
 
-The output buffer of this IOCTL is defined by the <a href="..\bthxddi\ns-bthxddi-_bthx_capabilities.md">BTHX_CAPABILITIES</a> structure which contains the 
+The output buffer of this IOCTL is defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450833">BTHX_CAPABILITIES</a> structure which contains the 
 BTHX_SCO_SUPPORT structure.
 
 The transport driver must specify <b>ScoSupportHCIBypass</b>.

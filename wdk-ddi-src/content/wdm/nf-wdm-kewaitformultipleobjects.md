@@ -7,7 +7,7 @@ old-location: kernel\kewaitformultipleobjects.htm
 old-project: kernel
 ms.assetid: 2e533d7b-be70-4601-b9e1-4fe3ce51817f
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeWaitForMultipleObjects, KeWaitForMultipleObjects routine [Kernel-Mode Driver Architecture], k105_03342f87-b6a7-4e26-a7e8-5a8157026c4a.xml, kernel.kewaitformultipleobjects, wdm/KeWaitForMultipleObjects
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,18 +50,18 @@ The <b>KeWaitForMultipleObjects</b> routine puts the current thread into an aler
 
 ## Syntax
 
-````
-NTSTATUS  KeWaitForMultipleObjects(
-  _In_      ULONG           Count,
-  _In_      PVOID           Object[],
-  _In_      WAIT_TYPE       WaitType,
-  _In_      KWAIT_REASON    WaitReason,
-  _In_      KPROCESSOR_MODE WaitMode,
-  _In_      BOOLEAN         Alertable,
-  _In_opt_  PLARGE_INTEGER  Timeout,
-  _Out_opt_ PKWAIT_BLOCK    WaitBlockArray
+```
+NTKERNELAPI NTSTATUS KeWaitForMultipleObjects(
+  ULONG                                                                         Count,
+  PVOID []                                                                      Object,
+  _Strict_type_match_ WAIT_TYPE                                                 WaitType,
+  _Strict_type_match_ KWAIT_REASON                                              WaitReason,
+  __drv_strictType(KPROCESSOR_MODE / enum _MODE,__drv_typeConst)KPROCESSOR_MODE WaitMode,
+  BOOLEAN                                                                       Alertable,
+  PLARGE_INTEGER                                                                Timeout,
+  PKWAIT_BLOCK                                                                  WaitBlockArray
 );
-````
+```
 
 ## Parameters
 
@@ -205,28 +205,28 @@ Callers of <b>KeWaitForMultipleObjects</b> can be running at IRQL &lt;= DISPATCH
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keinitializetimer.md">KeInitializeTimer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545293">ExInitializeFastMutex</a>
 
 
 
-<a href="..\wdm\nf-wdm-exinitializefastmutex.md">ExInitializeFastMutex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552137">KeInitializeEvent</a>
 
 
 
-<a href="..\wdm\nf-wdm-keinitializesemaphore.md">KeInitializeSemaphore</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552147">KeInitializeMutex</a>
 
 
 
-<a href="..\wdm\nf-wdm-keinitializemutex.md">KeInitializeMutex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552150">KeInitializeSemaphore</a>
 
 
 
-<a href="..\wdm\nf-wdm-keinitializeevent.md">KeInitializeEvent</a>
-
-
-
-<a href="..\wdm\nf-wdm-kewaitforsingleobject.md">KeWaitForSingleObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552168">KeInitializeTimer</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553344">KeWaitForMutexObject</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553350">KeWaitForSingleObject</a>

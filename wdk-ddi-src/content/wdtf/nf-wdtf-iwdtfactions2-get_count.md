@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTF.Interop.metadata_dll
 req.type-library: 
-req.lib: 
+req.lib: wdtf.h
 req.dll: 
 req.irql: 
 topic_type:
@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Count method
+# IWDTFActions2::get_Count method
 Gets the number of devices that are currently provided by the DeviceDepot.
 
 This property is read-only.
@@ -77,6 +77,7 @@ None
 | **Windows version** | Windows XP Professional Windows Server 2008 |
 | **Target Platform** | Windows |
 | **Header** | wdtf.h |
+| **Library** | wdtf.h |
 
 ## See Also
 

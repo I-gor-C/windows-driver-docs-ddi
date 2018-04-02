@@ -50,19 +50,19 @@ The <code>OEMLineTo</code> function draws a single, solid, integer-only cosmetic
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMLineTo(
-   SURFOBJ  *pso,
-   CLIPOBJ  *pco,
-   BRUSHOBJ *pbo,
-   LONG     x1,
-   LONG     y1,
-   LONG     x2,
-   LONG     y2,
-   RECTL    *prclBounds,
-   MIX      mix
+```
+BOOL OEMLineTo(
+  SURFOBJ  *pso,
+  CLIPOBJ  *pco,
+  BRUSHOBJ *pbo,
+  LONG     x1,
+  LONG     y1,
+  LONG     x2,
+  LONG     y2,
+  RECTL    *prclBounds,
+  MIX      mix
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: display\d3dddicb_signalflags.htm
 old-project: display
 ms.assetid: 1efe98c4-021b-4312-bbcc-52267e528b5f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDICB_SIGNALFLAGS, D3DDDICB_SIGNALFLAGS structure [Display Devices], D3D_other_Structs_3165168a-bcae-409c-8ca2-741675016ba8.xml, _D3DDDICB_SIGNALFLAGS, d3dukmdt/D3DDDICB_SIGNALFLAGS, display.d3dddicb_signalflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,25 +44,29 @@ req.typenames: D3DDDICB_SIGNALFLAGS
 ---
 
 # _D3DDDICB_SIGNALFLAGS structure
-The D3DDDICB_SIGNALFLAGS structure describes signaling behavior in a call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectcb.md">pfnSignalSynchronizationObjectCb</a> or <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizationobject2cb.md">pfnSignalSynchronizationObject2Cb</a> functions.
+The D3DDDICB_SIGNALFLAGS structure describes signaling behavior in a call to the <a href="https://msdn.microsoft.com/12ffa230-2c26-4cd3-ae83-f753a0b6ba38">pfnSignalSynchronizationObjectCb</a> or <a href="https://msdn.microsoft.com/01B5E793-D075-42B5-9ADF-D033249AEE9F">pfnSignalSynchronizationObject2Cb</a> functions.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDICB_SIGNALFLAGS {
   union {
     struct {
-      UINT SignalAtSubmission  :1;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WIN8)
-      UINT EnqueueCpuEvent  :1;
-      UINT Reserved  :30;
-#else 
-      UINT Reserved  :31;
-#endif 
+      UINT  : 1  SignalAtSubmission;
+      UINT  : 1  EnqueueCpuEvent;
+      UINT  : 1  AllowFenceRewind;
+#if ...
+      UINT  : 28 Reserved;
+      UINT  : 1  DXGK_SIGNAL_FLAG_INTERNAL0;
+#elif
+      UINT  : 30 Reserved;
+#else
+      UINT  : 31 Reserved;
+#endif
     };
     UINT Value;
   };
 } D3DDDICB_SIGNALFLAGS;
-````
+```
 
 ## Members
 
@@ -76,16 +80,16 @@ typedef struct _D3DDDICB_SIGNALFLAGS {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizationobject2cb.md">pfnSignalSynchronizationObject2Cb</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544274">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_signalsynchronizationobject2.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451164">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT2</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectcb.md">pfnSignalSynchronizationObjectCb</a>
+<a href="https://msdn.microsoft.com/01B5E793-D075-42B5-9ADF-D033249AEE9F">pfnSignalSynchronizationObject2Cb</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_signalsynchronizationobject.md">D3DDDICB_SIGNALSYNCHRONIZATIONOBJECT</a>
+<a href="https://msdn.microsoft.com/12ffa230-2c26-4cd3-ae83-f753a0b6ba38">pfnSignalSynchronizationObjectCb</a>

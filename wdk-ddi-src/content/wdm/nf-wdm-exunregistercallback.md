@@ -7,7 +7,7 @@ old-location: kernel\exunregistercallback.htm
 old-project: kernel
 ms.assetid: a7631732-fac5-458a-b644-eaffd5e53c31
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExUnregisterCallback, ExUnregisterCallback routine [Kernel-Mode Driver Architecture], k102_981ea9e7-42fc-4c63-9cc9-5d7aa3d35b72.xml, kernel.exunregistercallback, wdm/ExUnregisterCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>ExUnregisterCallback</b> routine removes a callback routine previously re
 
 ## Syntax
 
-````
-VOID ExUnregisterCallback(
-  _Inout_ PVOID CbRegistration
+```
+NTKERNELAPI VOID ExUnregisterCallback(
+  PVOID CallbackRegistration
 );
-````
+```
 
 ## Parameters
 
@@ -84,8 +84,8 @@ For more information about callback objects, see <a href="https://msdn.microsoft
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-excreatecallback.md">ExCreateCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544560">ExCreateCallback</a>
 
 
 
-<a href="..\wdm\nf-wdm-exregistercallback.md">ExRegisterCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545534">ExRegisterCallback</a>

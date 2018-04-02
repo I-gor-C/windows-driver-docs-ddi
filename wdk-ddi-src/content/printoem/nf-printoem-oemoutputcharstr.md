@@ -50,15 +50,15 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-VOID APIENTRY OEMOutputCharStr(
-       PDEVOBJ                pdevobj,
-       PUNIFONTOBJ            pUFObj,
-       DWORD                  dwType,
-       DWORD                  dwCount,
-  _In_ _reads_(dwCount) PVOID pGlyph
+```
+void OEMOutputCharStr(
+  PDEVOBJ     pdevobj,
+  PUNIFONTOBJ pUFObj,
+  DWORD       dwType,
+  DWORD       dwCount,
+  PVOID       pGlyph
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: ifsk\rtlfillmemoryulong.htm
 old-project: ifsk
 ms.assetid: a3758f32-daa9-4795-9a79-694b02da43cd
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlFillMemoryUlong, RtlFillMemoryUlong routine [Installable File System Drivers], ifsk.rtlfillmemoryulong, ntifs/RtlFillMemoryUlong, rtlref_11aa35b5-f5b5-459c-9996-e7dcb7741dd8.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ The <b>RtlFillMemoryUlong</b> routine fills the specified range of memory with o
 
 ## Syntax
 
-````
-VOID RtlFillMemoryUlong(
-  _Out_ PVOID  Destination,
-  _In_  SIZE_T Length,
-  _In_  ULONG  Pattern
+```
+void RtlFillMemoryUlong(
+  PVOID  Destination,
+  SIZE_T Length,
+  ULONG  Pattern
 );
-````
+```
 
 ## Parameters
 
@@ -93,12 +93,12 @@ For more information about managing buffered data and initializing driver-alloca
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlfillmemoryulonglong.md">RtlFillMemoryUlonglong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561870">RtlFillMemory</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlfillmemory.md">RtlFillMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552267">RtlFillMemoryUlonglong</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563610">RtlZeroMemory</a>

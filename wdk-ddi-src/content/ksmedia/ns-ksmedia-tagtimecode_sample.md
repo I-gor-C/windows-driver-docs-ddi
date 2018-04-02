@@ -47,14 +47,14 @@ req.typenames: TIMECODE_SAMPLE
 The TIMECODE_SAMPLE structure describes a complete timecode.
 
 ## Syntax
-````
+```
 typedef struct tagTIMECODE_SAMPLE {
   LONGLONG qwTick;
   TIMECODE timecode;
-  DWORD    dwUser;
-  DWORD    dwFlags;
+  DWORD    dwUser;
+  DWORD    dwFlags;
 } TIMECODE_SAMPLE;
-````
+```
 
 ## Members
 
@@ -65,7 +65,7 @@ Specifies a reference time, in 100-nanosecond units.
 
 `timecode`
 
-Specifies the <a href="..\ksmedia\ns-ksmedia-_timecode.md">TIMECODE</a> structure.
+Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568520">TIMECODE</a> structure.
 
 `dwUser`
 
@@ -194,4 +194,4 @@ The upper 16 bits in <b>dwFlags</b> are reserved for future use and must be set 
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-_timecode.md">TIMECODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568520">TIMECODE</a>

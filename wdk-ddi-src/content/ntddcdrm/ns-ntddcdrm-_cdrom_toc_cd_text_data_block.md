@@ -7,7 +7,7 @@ old-location: storage\cdrom_toc_cd_text_data_block.htm
 old-project: storage
 ms.assetid: 119386fe-1eff-4dac-b9d5-54baefcf6e12
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PCDROM_TOC_CD_TEXT_DATA_BLOCK, CDROM_TOC_CD_TEXT_DATA_BLOCK, CDROM_TOC_CD_TEXT_DATA_BLOCK structure [Storage Devices], PCDROM_TOC_CD_TEXT_DATA_BLOCK, PCDROM_TOC_CD_TEXT_DATA_BLOCK structure pointer [Storage Devices], _CDROM_TOC_CD_TEXT_DATA_BLOCK, ntddcdrm/CDROM_TOC_CD_TEXT_DATA_BLOCK, ntddcdrm/PCDROM_TOC_CD_TEXT_DATA_BLOCK, storage.cdrom_toc_cd_text_data_block, structs-CD-ROM_6bdb8d21-6388-4505-b9a1-1b3e1e594e02.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,25 +44,25 @@ req.typenames: CDROM_TOC_CD_TEXT_DATA_BLOCK, *PCDROM_TOC_CD_TEXT_DATA_BLOCK
 ---
 
 # _CDROM_TOC_CD_TEXT_DATA_BLOCK structure
-This structure contains CD text descriptor data used in conjunction with the data in the <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_cd_text_data.md">CDROM_TOC_CD_TEXT_DATA</a> structure.
+This structure contains CD text descriptor data used in conjunction with the data in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551380">CDROM_TOC_CD_TEXT_DATA</a> structure.
 
 ## Syntax
-````
+```
 typedef struct _CDROM_TOC_CD_TEXT_DATA_BLOCK {
-  UCHAR PackType;
-  UCHAR TrackNumber  :7;
-  UCHAR ExtensionFlag  :1;
-  UCHAR SequenceNumber;
-  UCHAR CharacterPosition  :4;
-  UCHAR BlockNumber  :3;
-  UCHAR Unicode  :1;
+  UCHAR      PackType;
+  UCHAR  : 7 TrackNumber;
+  UCHAR  : 1 ExtensionFlag;
+  UCHAR      SequenceNumber;
+  UCHAR  : 4 CharacterPosition;
+  UCHAR  : 3 BlockNumber;
+  UCHAR  : 1 Unicode;
   union {
     UCHAR Text[12];
     WCHAR WText[6];
   };
-  UCHAR CRC[2];
+  UCHAR      CRC[2];
 } CDROM_TOC_CD_TEXT_DATA_BLOCK, *PCDROM_TOC_CD_TEXT_DATA_BLOCK;
-````
+```
 
 ## Members
 
@@ -203,12 +203,12 @@ Contains the cyclic redundancy check.
 
 ## See Also
 
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551366">CDROM_READ_TOC_EX</a>
 
 
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_read_toc_ex.md">CDROM_READ_TOC_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551380">CDROM_TOC_CD_TEXT_DATA</a>
 
 
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_cd_text_data.md">CDROM_TOC_CD_TEXT_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559367">IOCTL_CDROM_READ_TOC_EX</a>

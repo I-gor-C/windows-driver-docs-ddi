@@ -53,13 +53,13 @@ The <b>WdfIoResourceListUpdateDescriptor</b> method updates a resource descripto
 
 ## Syntax
 
-````
-VOID WdfIoResourceListUpdateDescriptor(
-  _In_ WDFIORESLIST            ResourceList,
-  _In_ PIO_RESOURCE_DESCRIPTOR Descriptor,
-  _In_ ULONG                   Index
+```
+void WdfIoResourceListUpdateDescriptor(
+  WDFIORESLIST            ResourceList,
+  PIO_RESOURCE_DESCRIPTOR Descriptor,
+  ULONG                   Index
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ A handle to a framework resource-range-list object that represents a logical con
 
 `Descriptor`
 
-A pointer to an <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
+A pointer to an <a href="https://msdn.microsoft.com/03e3a656-c691-4aff-bcc8-4e0bc8390fd7">IO_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
 
 `Index`
 
@@ -136,4 +136,4 @@ WdfIoResourceListUpdateDescriptor(
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/03e3a656-c691-4aff-bcc8-4e0bc8390fd7">IO_RESOURCE_DESCRIPTOR</a>

@@ -55,14 +55,14 @@ The <b>WdfObjectDereferenceActual</b> method decrements the reference count for 
 
 ## Syntax
 
-````
-VOID WdfObjectDereferenceActual(
-  _In_     WDFOBJECT Handle,
-  _In_opt_ PVOID     Tag,
-  _In_     LONG      Line,
-  _In_opt_ PCCH      File
+```
+void WdfObjectDereferenceActual(
+  WDFOBJECT Handle,
+  PVOID     Tag,
+  LONG      Line,
+  PCCH      File
 );
-````
+```
 
 ## Parameters
 
@@ -72,7 +72,7 @@ A handle to a framework object.
 
 `Tag`
 
-A driver-defined value that identifies an object reference. The tag value must match a tag value that the driver previously supplied to <a href="..\wdfobject\nf-wdfobject-wdfobjectreferenceactual.md">WdfObjectReferenceActual</a>.
+A driver-defined value that identifies an object reference. The tag value must match a tag value that the driver previously supplied to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548760">WdfObjectReferenceActual</a>.
 
 `Line`
 
@@ -137,4 +137,4 @@ The following code example decrements an object's reference count and assigns a 
 
 
 
-<a href="..\wdfobject\nf-wdfobject-wdfobjectreferenceactual.md">WdfObjectReferenceActual</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548760">WdfObjectReferenceActual</a>

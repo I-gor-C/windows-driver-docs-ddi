@@ -7,7 +7,7 @@ old-location: storage\storage_device_layout_signature.htm
 old-project: storage
 ms.assetid: 3c433fe5-1782-4a00-aa7b-1558b0f56080
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTORAGE_DEVICE_LAYOUT_SIGNATURE, PSTORAGE_DEVICE_LAYOUT_SIGNATURE, PSTORAGE_DEVICE_LAYOUT_SIGNATURE structure pointer [Storage Devices], STORAGE_DEVICE_LAYOUT_SIGNATURE, STORAGE_DEVICE_LAYOUT_SIGNATURE structure [Storage Devices], _STORAGE_DEVICE_LAYOUT_SIGNATURE, storage.storage_device_layout_signature, storduid/PSTORAGE_DEVICE_LAYOUT_SIGNATURE, storduid/STORAGE_DEVICE_LAYOUT_SIGNATURE, structs-general_0392587a-aab6-4f49-bb7e-3ebf8acc87bb.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,17 +48,17 @@ req.product: Windows 10 or later.
 The STORAGE_DEVICE_LAYOUT_SIGNATURE structure defines a device layout structure.
 
 ## Syntax
-````
+```
 typedef struct _STORAGE_DEVICE_LAYOUT_SIGNATURE {
-  ULONG   Version;
-  ULONG   Size;
+  ULONG   Version;
+  ULONG   Size;
   BOOLEAN Mbr;
   union {
+    GUID  GptDiskId;
     ULONG MbrSignature;
-    GUID  GptDiskId;
-  } DeviceSpecific;
+  } DeviceSpecific;
 } STORAGE_DEVICE_LAYOUT_SIGNATURE, *PSTORAGE_DEVICE_LAYOUT_SIGNATURE;
-````
+```
 
 ## Members
 
@@ -88,7 +88,7 @@ The signature value, which uniquely identifies the disk.
 The GUID that uniquely identifies the disk.
 
 ## Remarks
-The device layout signature contributes to the definition of a device unique identifier (DUID). For more information about DUIDs, see the description of the <a href="..\storduid\ns-storduid-_storage_device_unique_identifier.md">STORAGE_DEVICE_UNIQUE_IDENTIFIER</a> structure.
+The device layout signature contributes to the definition of a device unique identifier (DUID). For more information about DUIDs, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566975">STORAGE_DEVICE_UNIQUE_IDENTIFIER</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,4 +97,4 @@ The device layout signature contributes to the definition of a device unique ide
 
 ## See Also
 
-<a href="..\storduid\ns-storduid-_storage_device_unique_identifier.md">STORAGE_DEVICE_UNIQUE_IDENTIFIER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566975">STORAGE_DEVICE_UNIQUE_IDENTIFIER</a>

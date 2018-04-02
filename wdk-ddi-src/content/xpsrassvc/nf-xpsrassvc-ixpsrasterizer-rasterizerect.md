@@ -45,21 +45,21 @@ req.product: Windows 10 or later.
 ---
 
 
-# RasterizeRect method
+# IXpsRasterizer::RasterizeRect method
 The <code>RasterizeRect</code> method rasterizes an axis-aligned, rectangular region of an XPS fixed page.
 
 ## Syntax
 
-````
+```
 HRESULT RasterizeRect(
-  [in]            INT                                x,
-  [in]            INT                                y,
-  [in]            INT                                width,
-  [in]            INT                                height,
-  [in, optional]  IXpsRasterizerNotificationCallback *notificationCallback,
-  [out, optional] IWICBitmap                         **bitmap
+  INT                                x,
+  INT                                y,
+  INT                                width,
+  INT                                height,
+  IXpsRasterizerNotificationCallback *notificationCallback,
+  IWICBitmap                         **bitmap
 );
-````
+```
 
 ## Parameters
 
@@ -81,7 +81,7 @@ The height, in pixels, of the output bitmap.
 
 `notificationCallback`
 
-Pointer to the <a href="..\xpsrassvc\nn-xpsrassvc-ixpsrasterizernotificationcallback.md">IXpsRasterizerNotificationCallback</a> interface of a notification object that is implemented by the caller. This parameter is optional and can be <b>NULL</b> if the caller does not require notification callbacks.
+Pointer to the <a href="https://msdn.microsoft.com/7616b5c7-a21f-4db1-923b-ebf2a039b5ec">IXpsRasterizerNotificationCallback</a> interface of a notification object that is implemented by the caller. This parameter is optional and can be <b>NULL</b> if the caller does not require notification callbacks.
 
 `bitmap`
 
@@ -162,7 +162,7 @@ For a code example that calls the <code>RasterizeRect</code> method, see the XPS
 
 ## See Also
 
-<a href="..\xpsrassvc\nn-xpsrassvc-ixpsrasterizernotificationcallback.md">IXpsRasterizerNotificationCallback</a>
+<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee719675.aspx">IWICBitmap</a>
 
 
 
@@ -170,12 +170,12 @@ For a code example that calls the <code>RasterizeRect</code> method, see the XPS
 
 
 
+<a href="https://msdn.microsoft.com/1ef99120-2b3b-45aa-bcf7-16bcb9656089">IXpsRasterizer</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556366">IXpsRasterizer::SetMinimalLineWidth</a>
 
 
 
-<a href="..\xpsrassvc\nn-xpsrassvc-ixpsrasterizer.md">IXpsRasterizer</a>
-
-
-
-<a href="http://msdn.microsoft.com/en-us/library/windows/desktop/ee719675.aspx">IWICBitmap</a>
+<a href="https://msdn.microsoft.com/7616b5c7-a21f-4db1-923b-ebf2a039b5ec">IXpsRasterizerNotificationCallback</a>

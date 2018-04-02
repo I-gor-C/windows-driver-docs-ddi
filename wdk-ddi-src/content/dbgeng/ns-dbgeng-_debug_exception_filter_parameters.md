@@ -7,7 +7,7 @@ old-location: debugger\debug_exception_filter_parameters.htm
 old-project: debugger
 ms.assetid: 26a101c5-0866-44e3-948b-8d3ca4dd9d00
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PDEBUG_EXCEPTION_FILTER_PARAMETERS, DEBUG_EXCEPTION_FILTER_PARAMETERS, DEBUG_EXCEPTION_FILTER_PARAMETERS structure [Windows Debugging], PDEBUG_EXCEPTION_FILTER_PARAMETERS, PDEBUG_EXCEPTION_FILTER_PARAMETERS structure pointer [Windows Debugging], Structures_f3f2b1ac-e10c-439e-9de9-6b4161bf3c28.xml, _DEBUG_EXCEPTION_FILTER_PARAMETERS, dbgeng/DEBUG_EXCEPTION_FILTER_PARAMETERS, dbgeng/PDEBUG_EXCEPTION_FILTER_PARAMETERS, debugger.debug_exception_filter_parameters"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,7 +47,7 @@ req.typenames: DEBUG_EXCEPTION_FILTER_PARAMETERS, *PDEBUG_EXCEPTION_FILTER_PARAM
 The DEBUG_EXCEPTION_FILTER_PARAMETERS structure contains the parameters for an exception filter.
 
 ## Syntax
-````
+```
 typedef struct _DEBUG_EXCEPTION_FILTER_PARAMETERS {
   ULONG ExecutionOption;
   ULONG ContinueOption;
@@ -56,7 +56,7 @@ typedef struct _DEBUG_EXCEPTION_FILTER_PARAMETERS {
   ULONG SecondCommandSize;
   ULONG ExceptionCode;
 } DEBUG_EXCEPTION_FILTER_PARAMETERS, *PDEBUG_EXCEPTION_FILTER_PARAMETERS;
-````
+```
 
 ## Members
 
@@ -93,8 +93,8 @@ The exception code for the exception filter.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556683">SetExceptionFilterParameters</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546650">GetExceptionFilterParameters</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556683">SetExceptionFilterParameters</a>

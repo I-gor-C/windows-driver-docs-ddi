@@ -7,7 +7,7 @@ old-location: netvista\fwps_fields_ikeext_v4.htm
 old-project: netvista
 ms.assetid: 5d2a7eda-343b-4713-9481-6f54f713811f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FWPS_FIELDS_IKEEXT_V4, FWPS_FIELDS_IKEEXT_V4 enumeration [Network Drivers Starting with Windows Vista], FWPS_FIELDS_IKEEXT_V4_, FWPS_FIELD_IKEEXT_V4_IP_LOCAL_ADDRESS, FWPS_FIELD_IKEEXT_V4_IP_LOCAL_INTERFACE, FWPS_FIELD_IKEEXT_V4_IP_REMOTE_ADDRESS, FWPS_FIELD_IKEEXT_V4_MAX, FWPS_FIELD_IKEEXT_V4_PROFILE_ID, fwpsk/FWPS_FIELDS_IKEEXT_V4, fwpsk/FWPS_FIELD_IKEEXT_V4_IP_LOCAL_ADDRESS, fwpsk/FWPS_FIELD_IKEEXT_V4_IP_LOCAL_INTERFACE, fwpsk/FWPS_FIELD_IKEEXT_V4_IP_REMOTE_ADDRESS, fwpsk/FWPS_FIELD_IKEEXT_V4_MAX, fwpsk/FWPS_FIELD_IKEEXT_V4_PROFILE_ID, netvista.fwps_fields_ikeext_v4, wfp_ref_5_const_3_data_fields_c891b6cd-82a0-45f1-9284-97d89aaeef6e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,16 @@ The FWPS_FIELDS_IKEEXT_V4 enumeration type specifies the data field identifiers 
   <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa366492">run-time filtering layer</a>.
 
 ## Syntax
-````
-typedef enum FWPS_FIELDS_IKEEXT_V4_ { 
-  FWPS_FIELD_IKEEXT_V4_IP_LOCAL_ADDRESS,
-  FWPS_FIELD_IKEEXT_V4_IP_REMOTE_ADDRESS,
-  FWPS_FIELD_IKEEXT_V4_IP_LOCAL_INTERFACE,
-#if (NTDDI_VERSION >= NTDDI_WIN7)
-  FWPS_FIELD_IKEEXT_V4_PROFILE_ID,
-#endif 
+```
+typedef enum FWPS_FIELDS_IKEEXT_V4_ {
+  FWPS_FIELD_IKEEXT_V4_IP_LOCAL_ADDRESS         ,
+  FWPS_FIELD_IKEEXT_V4_IP_REMOTE_ADDRESS        ,
+  FWPS_FIELD_IKEEXT_V4_IP_LOCAL_INTERFACE       ,
+  FWPS_FIELD_IKEEXT_V4_PROFILE_ID               ,
+  FWPS_FIELD_IKEEXT_V4_IPSEC_SECURITY_REALM_ID  ,
   FWPS_FIELD_IKEEXT_V4_MAX
 } FWPS_FIELDS_IKEEXT_V4;
-````
+```
 
 ## Constants
 
@@ -77,7 +76,7 @@ typedef enum FWPS_FIELDS_IKEEXT_V4_ {
             
                 <tr>
                     <td>FWPS_FIELD_IKEEXT_V4_IP_LOCAL_INTERFACE</td>
-                    <td>The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) for the network interface associated with the local IP address.</td>
+                    <td>The locally unique identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>) for the network interface associated with the local IP address.</td>
                 </tr>
             
                 <tr>
@@ -111,4 +110,4 @@ typedef enum FWPS_FIELDS_IKEEXT_V4_ {
 
 ## See Also
 
-<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>

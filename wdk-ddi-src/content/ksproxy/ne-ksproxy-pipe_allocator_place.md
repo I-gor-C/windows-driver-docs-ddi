@@ -47,14 +47,14 @@ req.typenames: PIPE_ALLOCATOR_PLACE
 
 
 ## Syntax
-````
-typedef enum  { 
-  Pipe_Allocator_None,
-  Pipe_Allocator_FirstPin,
-  Pipe_Allocator_LastPin,
+```
+typedef enum PIPE_ALLOCATOR_PLACE {
+  Pipe_Allocator_None       ,
+  Pipe_Allocator_FirstPin   ,
+  Pipe_Allocator_LastPin    ,
   Pipe_Allocator_MiddlePin
-} PIPE_ALLOCATOR_PLACE;
-````
+} ;
+```
 
 ## Constants
 

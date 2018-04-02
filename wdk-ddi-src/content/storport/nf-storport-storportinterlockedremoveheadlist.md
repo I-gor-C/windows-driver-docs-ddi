@@ -7,7 +7,7 @@ old-location: storage\storportinterlockedremoveheadlist.htm
 old-project: storage
 ms.assetid: 6B99D78A-B582-4114-9472-D01D39FDD4C9
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortInterlockedRemoveHeadList, StorPortInterlockedRemoveHeadList routine [Storage Devices], storage.storportinterlockedremoveheadlist, storport/StorPortInterlockedRemoveHeadList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,14 +52,14 @@ The StorPortInterlockedRemoveHeadList routine removes an entry from the beginnin
 
 ## Syntax
 
-````
+```
 ULONG StorPortInterlockedRemoveHeadList(
-  _In_    PVOID            HwDeviceExtension,
-  _Inout_ PSTOR_LIST_ENTRY ListHead,
-  _Inout_ PSTOR_LIST_ENTRY *Result,
-  _Inout_ PSTOR_KSPIN_LOCK Lock
+  PVOID            HwDeviceExtension,
+  PSTOR_LIST_ENTRY ListHead,
+  PSTOR_LIST_ENTRY *Result,
+  PSTOR_KSPIN_LOCK Lock
 );
-````
+```
 
 ## Parameters
 
@@ -135,20 +135,20 @@ A pointer in <i>ListHead</i> or <i>Result</i> is <b>NULL</b>.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547799">InitializeListHead</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547820">InsertHeadList</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt790427">StorPortInitializeSpinLock</a>
 
 
 
-<a href="..\storport\nf-storport-storportinterlockedinserttaillist.md">StorPortInterlockedInsertTailList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt790429">StorPortInterlockedInsertTailList</a>
 
 
 
-<a href="..\wudfwdm\nf-wudfwdm-insertheadlist.md">InsertHeadList</a>
-
-
-
-<a href="..\wudfwdm\nf-wudfwdm-initializelisthead.md">InitializeListHead</a>
-
-
-
-<a href="..\storport\nf-storport-storportinterlockedremoveheadlist.md">StorPortInterlockedRemoveHeadList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt790430">StorPortInterlockedRemoveHeadList</a>

@@ -7,7 +7,7 @@ old-location: buses\_ucxendpointneedtocanceltransfers.htm
 old-project: usbref
 ms.assetid: 4DA3FB63-D2D3-43E1-9420-29303176B837
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UcxEndpointNeedToCancelTransfers, UcxEndpointNeedToCancelTransfers method [Buses], buses._ucxendpointneedtocanceltransfers, ucxendpoint/UcxEndpointNeedToCancelTransfers
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,17 +50,17 @@ The client driver calls this method before it cancels transfers on the wire.
 
 ## Syntax
 
-````
+```
 void UcxEndpointNeedToCancelTransfers(
-  [in] UCXENDPOINT Endpoint
+  UCXENDPOINT Endpoint
 );
-````
+```
 
 ## Parameters
 
 `Endpoint`
 
-A handle to the endpoint object. The client driver retrieved the handle in a previous call to <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>.
+A handle to the endpoint object. The client driver retrieved the handle in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>.
 
 
 ## Return Value
@@ -85,4 +85,4 @@ If needed, UCX coordinates with the hub driver to send a Clear TT buffer command
 
 ## See Also
 
-<a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>

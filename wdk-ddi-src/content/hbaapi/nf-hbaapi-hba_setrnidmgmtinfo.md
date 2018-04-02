@@ -7,7 +7,7 @@ old-location: storage\hba_setrnidmgmtinfo.htm
 old-project: storage
 ms.assetid: 0c4fbe80-03f2-4ee0-b766-c1ccaa8e83c2
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_SetRNIDMgmtInfo, HBA_SetRNIDMgmtInfo routine [Storage Devices], fibreHBA_rtns_ebe3859b-fe8c-42c6-a4a7-9d756489d818.xml, hbaapi/HBA_SetRNIDMgmtInfo, storage.hba_setrnidmgmtinfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>HBA_SetRNIDMgmtInfo</b> routine programs the HBA to return the indicated 
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_SetRNIDMgmtInfo(
-  _In_ HBA_HANDLE   HbaHandle,
-  _In_ HBA_MGMTINFO *HbaMgmtInfo
+  IN HBA_HANDLE   Handle,
+  IN HBA_MGMTINFO *pInfo
 );
-````
+```
 
 ## Parameters
 
@@ -111,8 +111,8 @@ Returned if an unspecified error occurred that prevented the routine from progra
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>

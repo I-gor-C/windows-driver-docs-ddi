@@ -7,7 +7,7 @@ old-location: netvista\wwan_ip_configuration_flags.htm
 old-project: netvista
 ms.assetid: 5157F48F-E1D3-4B22-BBB0-0FC7965C794B
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: WWAN_IP_CONFIGURATION_FLAGS, WWAN_IP_CONFIGURATION_FLAGS union [Network Drivers Starting with Windows Vista], netvista.wwan_ip_configuration_flags, wwan/WWAN_IP_CONFIGURATION_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,17 +48,17 @@ req.product: Windows 10 or later.
 The WWAN_IP_CONFIGURATION_FLAGS structure represents flags that describe the availability of the IP address, gateway, DNS server, and/or MTU information of a PDP context.
 
 ## Syntax
-````
-typedef union {
-  ULONG  Value;
+```
+typedef struct WWAN_IP_CONFIGURATION_FLAGS {
+  ULONG  Value;
   struct {
-    ULONG AddressAvailable:1;
-    ULONG GatewayAvailable:1;
-    ULONG DnsServerAvailable:1;
-    ULONG MTUAvailable:1;
+    ULONG  : 1 AddressAvailable;
+    ULONG  : 1 DnsServerAvailable;
+    ULONG  : 1 GatewayAvailable;
+    ULONG  : 1 MTUAvailable;
   };
-} WWAN_IP_CONFIGURATION_FLAGS;
-````
+};
+```
 
 ## Members
 
@@ -76,4 +76,4 @@ Reserved. Do not use.
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-wwan_ip_configuration_flags.md">WWAN_IP_CONFIGURATION_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn449758">WWAN_IP_CONFIGURATION_FLAGS</a>

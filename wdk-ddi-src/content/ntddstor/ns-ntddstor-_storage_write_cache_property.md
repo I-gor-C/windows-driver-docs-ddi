@@ -7,7 +7,7 @@ old-location: storage\storage_write_cache_property.htm
 old-project: storage
 ms.assetid: 4abc44ab-1729-46c3-befd-5f917e10953c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PSTORAGE_WRITE_CACHE_PROPERTY, PSTORAGE_WRITE_CACHE_PROPERTY structure pointer [Storage Devices], STORAGE_WRITE_CACHE_PROPERTY, STORAGE_WRITE_CACHE_PROPERTY structure [Storage Devices], _STORAGE_WRITE_CACHE_PROPERTY, ntddstor/PSTORAGE_WRITE_CACHE_PROPERTY, ntddstor/STORAGE_WRITE_CACHE_PROPERTY, storage.storage_write_cache_property, structs-general_9c0929be-3c02-4f48-a6be-e24c42b0783c.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: STORAGE_WRITE_CACHE_PROPERTY, PSTORAGE_WRITE_CACHE_PROPERTY
 ---
 
 # _STORAGE_WRITE_CACHE_PROPERTY structure
-The STORAGE_WRITE_CACHE_PROPERTY structure is used with the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request to retrieve information about a device's write cache property.
+The STORAGE_WRITE_CACHE_PROPERTY structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request to retrieve information about a device's write cache property.
 
 ## Syntax
-````
+```
 typedef struct _STORAGE_WRITE_CACHE_PROPERTY {
-  ULONG              Version;
-  ULONG              Size;
-  WRITE_CACHE_TYPE   WriteCacheType;
-  WRITE_CACHE_ENABLE WriteCacheEnabled;
-  WRITE_CACHE_CHANGE WriteCacheChangeable;
-  WRITE_THROUGH      WriteThroughSupported;
-  BOOLEAN            FlushCacheSupported;
-  BOOLEAN            UserDefinedPowerProtection;
-  BOOLEAN            NVCacheEnabled;
-} STORAGE_WRITE_CACHE_PROPERTY, *PSTORAGE_WRITE_CACHE_PROPERTY;
-````
+  __WRAPPED__ ULONG              Version;
+  __WRAPPED__ ULONG              Size;
+  __WRAPPED__ WRITE_CACHE_TYPE   WriteCacheType;
+  __WRAPPED__ WRITE_CACHE_ENABLE WriteCacheEnabled;
+  __WRAPPED__ WRITE_CACHE_CHANGE WriteCacheChangeable;
+  __WRAPPED__ WRITE_THROUGH      WriteThroughSupported;
+  __WRAPPED__ BOOLEAN            FlushCacheSupported;
+  __WRAPPED__ BOOLEAN            UserDefinedPowerProtection;
+  __WRAPPED__ BOOLEAN            NVCacheEnabled;
+} STORAGE_WRITE_CACHE_PROPERTY, PSTORAGE_WRITE_CACHE_PROPERTY;
+```
 
 ## Members
 
@@ -101,7 +101,7 @@ A Boolean value that indicates whether a user can configure the device's power p
 A Boolean value that indicates whether the device has a battery backup for the write cache. If <b>TRUE</b>, the device has a battery backup for the write cache. If <b>FALSE</b>, the device does not have a battery backup for the writer cache.
 
 ## Remarks
-All of the parameter values that are described in this topic refer to the output of the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request.
+All of the parameter values that are described in this topic refer to the output of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -110,4 +110,4 @@ All of the parameter values that are described in this topic refer to the output
 
 ## See Also
 
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a>

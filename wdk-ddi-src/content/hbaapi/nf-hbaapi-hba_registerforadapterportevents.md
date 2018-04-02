@@ -7,7 +7,7 @@ old-location: storage\hba_registerforadapterportevents.htm
 old-project: storage
 ms.assetid: 596bfba5-7025-4cdc-b1f9-c8df546f6dac
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_RegisterForAdapterPortEvents, HBA_RegisterForAdapterPortEvents routine [Storage Devices], fibreHBA_rtns_147e7408-58e4-47bc-8d3f-185c8ee68b83.xml, hbaapi/HBA_RegisterForAdapterPortEvents, storage.hba_registerforadapterportevents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,15 +49,15 @@ The <b>HBA_RegisterForAdapterPortEvents</b> routine registers the indicated user
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_RegisterForAdapterPortEvents(
-   HBA_PORT_CALLBACK  callback,
-   void               *userData,
-   HBA_HANDLE         handle,
-   HBA_WWN            PortWWN,
-   HBA_CALLBACKHANDLE *callbackHandle
+  IN void(* )(void *pData,HBA_WWN PortWWN,HBA_UINT32 eventType,HBA_UINT32 fabricPortID) callback,
+  IN void                                                                               *UserData,
+  IN HBA_HANDLE                                                                         Handle,
+  IN HBA_WWN                                                                            PortWWN,
+  OUT HBA_CALLBACKHANDLE                                                                *pCallbackHandle
 );
-````
+```
 
 ## Parameters
 
@@ -140,16 +140,16 @@ For a list of port events, see <a href="https://msdn.microsoft.com/library/windo
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_removecallback.md">HBA_RemoveCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557123">HBA_PORT_CALLBACK</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>

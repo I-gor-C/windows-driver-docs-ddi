@@ -50,7 +50,7 @@ This IOCTL is used by the SE radio management application or service to query th
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-<a href="..\nfcradiodev\ns-nfcradiodev-_nfcrm_set_radio_state.md"> NFCRM_SET_RADIO_STATE structure</a>
+<a href="https://msdn.microsoft.com/22FE29AC-790D-40D2-949F-9C132F67AEAB"> NFCRM_SET_RADIO_STATE structure</a>
 
 ### Input Buffer Length
 sizeof(NFCRM_SET_RADIO_STATE)

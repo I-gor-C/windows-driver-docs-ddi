@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2setrendertarget2.htm
 old-project: display
 ms.assetid: 0e7d7093-3b49-4fb1-b7ac-49d366c08ab8
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*LPD3DHAL_DP2SETRENDERTARGET2, D3DHAL_DP2SETRENDERTARGET2, D3DHAL_DP2SETRENDERTARGET2 structure [Display Devices], LPD3DHAL_DP2SETRENDERTARGET2, LPD3DHAL_DP2SETRENDERTARGET2 structure pointer [Display Devices], _D3DHAL_DP2SETRENDERTARGET2, d3dhal/D3DHAL_DP2SETRENDERTARGET2, d3dhal/LPD3DHAL_DP2SETRENDERTARGET2, d3dstrct_b2b69c9b-94db-4451-b731-fbe90ba059f0.xml, display.d3dhal_dp2setrendertarget2"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: D3DHAL_DP2SETRENDERTARGET2
 The D3DHAL_DP2SETRENDERTARGET2 structure is used with the D3DDP2OP_SETRENDERTARGET2 opcode to map a portion of a rendering target surface and depth buffer in the current context.
 
 ## Syntax
-````
+```
 typedef struct _D3DHAL_DP2SETRENDERTARGET2 {
   DWORD RTIndex;
   DWORD hRenderTarget;
-} D3DHAL_DP2SETRENDERTARGET2, *LPD3DHAL_DP2SETRENDERTARGET2;
-````
+} D3DHAL_DP2SETRENDERTARGET2;
+```
 
 ## Members
 
@@ -77,4 +77,4 @@ D3DDP2OP_SETRENDERTARGET2
 
 
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+<a href="https://msdn.microsoft.com/6128ff7a-0d2c-48df-8b5e-cab33c5a74f5">D3dDrawPrimitives2</a>

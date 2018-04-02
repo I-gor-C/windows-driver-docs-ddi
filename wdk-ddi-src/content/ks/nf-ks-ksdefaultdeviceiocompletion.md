@@ -50,12 +50,12 @@ The <b>KsDefaultDeviceIoCompletion</b> function is used to return a default resp
 
 ## Syntax
 
-````
-NTSTATUS KsDefaultDeviceIoCompletion(
-  _In_ PDEVICE_OBJECT DeviceObject,
-  _In_ PIRP           Irp
+```
+KSDDKAPI NTSTATUS KsDefaultDeviceIoCompletion(
+  PDEVICE_OBJECT DeviceObject,
+  PIRP           Irp
 );
-````
+```
 
 ## Parameters
 

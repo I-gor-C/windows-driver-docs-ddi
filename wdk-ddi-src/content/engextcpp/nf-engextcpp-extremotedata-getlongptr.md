@@ -7,7 +7,7 @@ old-location: debugger\extremotedata_getlongptr.htm
 old-project: debugger
 ms.assetid: 9f796af1-870b-4349-b86a-3c9d868662f6
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_3160f5ef-8983-40b4-a7f8-95a1a40d67ac.xml, ExtRemoteData, ExtRemoteData class [Windows Debugging], GetLongPtr method, ExtRemoteData::GetLongPtr, GetLongPtr method [Windows Debugging], GetLongPtr method [Windows Debugging], ExtRemoteData class, GetLongPtr,ExtRemoteData.GetLongPtr, debugger.extremotedata_getlongptr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,14 +44,16 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# GetLongPtr method
-The <b>GetLongPtr</b> method returns a signed integer version (extended to LONG64) of the <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a> object, which represents the contents of the target's memory.  The size of the unsigned integer from the target is the same size as a pointer on the target.
+# ExtRemoteData::GetLongPtr method
+The <b>GetLongPtr</b> method returns a signed integer version (extended to LONG64) of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a> object, which represents the contents of the target's memory.  The size of the unsigned integer from the target is the same size as a pointer on the target.
 
 ## Syntax
 
-````
-LONG64 GetLongPtr();
-````
+```
+LONG64  throw() GetLongPtr(
+
+);
+```
 
 ## Parameters
 
@@ -59,11 +61,11 @@ This function has no parameters.
 
 ## Return Value
 
-<b>GetLongPtr</b> returns a signed integer version of the <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a> object, extended to LONG64.
+<b>GetLongPtr</b> returns a signed integer version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a> object, extended to LONG64.
 
 ## Remarks
 
-The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a> object must be the same as the size of a pointer on the target, <code>ExtExtension::m_PtrSize</code>.
+The size of the memory represented by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a> object must be the same as the size of a pointer on the target, <code>ExtExtension::m_PtrSize</code>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,15 +75,11 @@ The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-ext
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544072">ExtRemoteData::GetUlongPtr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544033">ExtRemoteData::GetLong64</a>
-
-
-
-<a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
 
 
 
@@ -89,4 +87,8 @@ The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-ext
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544033">ExtRemoteData::GetLong64</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544072">ExtRemoteData::GetUlongPtr</a>

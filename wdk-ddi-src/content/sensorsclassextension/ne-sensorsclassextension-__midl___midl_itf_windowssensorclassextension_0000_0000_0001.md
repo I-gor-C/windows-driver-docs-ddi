@@ -48,19 +48,18 @@ req.product: Windows 10 or later.
 The <b>SensorState</b> enumeration type specifies the current operational state of a sensor.
 
 ## Syntax
-````
-enum SensorState {
-  SENSOR_STATE_MIN            = 0, 
-  SENSOR_STATE_READY          = SENSOR_STATE_MIN, 
-  SENSOR_STATE_NOT_AVAILABLE  = ( SENSOR_STATE_READY + 1 ), 
-  SENSOR_STATE_NO_DATA        = ( SENSOR_STATE_NOT_AVAILABLE + 1 ), 
-  SENSOR_STATE_INITIALIZING   = ( SENSOR_STATE_NO_DATA + 1 ), 
-  SENSOR_STATE_ACCESS_DENIED  = ( SENSOR_STATE_INITIALIZING + 1 ), 
-  SENSOR_STATE_ERROR          = ( SENSOR_STATE_ACCESS_DENIED + 1 ), 
-  SENSOR_STATE_MAX            = SENSOR_STATE_ERROR 
-
-};
-````
+```
+typedef enum __MIDL___MIDL_itf_windowssensorclassextension_0000_0000_0001 {
+  SENSOR_STATE_MIN            ,
+  SENSOR_STATE_READY          ,
+  SENSOR_STATE_NOT_AVAILABLE  ,
+  SENSOR_STATE_NO_DATA        ,
+  SENSOR_STATE_INITIALIZING   ,
+  SENSOR_STATE_ACCESS_DENIED  ,
+  SENSOR_STATE_ERROR          ,
+  SENSOR_STATE_MAX
+} SensorState;
+```
 
 ## Constants
 
@@ -119,8 +118,8 @@ This enumeration also defines values used for the <a href="https://msdn.microsof
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>
-
-
-
 <a href="https://msdn.microsoft.com/ae3bc846-df63-4186-9554-f4600e1f2066">ISensorClassExtension::PostStateChange</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a>

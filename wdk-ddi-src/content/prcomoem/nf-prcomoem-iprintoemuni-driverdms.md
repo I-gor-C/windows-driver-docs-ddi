@@ -45,25 +45,25 @@ req.product: Windows 10 or later.
 ---
 
 
-# DriverDMS method
+# IPrintOemUni::DriverDMS method
 The <code>IPrintOemUni::DriverDMS</code> method allows a rendering plug-in for <a href="https://msdn.microsoft.com/0a51fa2b-3d09-4a5f-9fff-40604877a414">Unidrv</a> to indicate that it uses a device-managed drawing surface.
 
 ## Syntax
 
-````
+```
 HRESULT DriverDMS(
-   PVOID  pDevObj,
-   PVOID  pBuffer,
-   DWORD  cbSize,
-   PDWORD pcbNeeded
+  PVOID  pDevObj,
+  PVOID  pBuffer,
+  DWORD  cbSize,
+  PDWORD pcbNeeded
 );
-````
+```
 
 ## Parameters
 
 `pDevObj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `pBuffer`
 

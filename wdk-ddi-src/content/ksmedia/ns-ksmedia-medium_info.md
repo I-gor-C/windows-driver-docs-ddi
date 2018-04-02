@@ -47,13 +47,13 @@ req.typenames: MEDIUM_INFO, *PMEDIUM_INFO
 The MEDIUM_INFO structure describes the media loaded into an external device.
 
 ## Syntax
-````
-typedef struct {
-  BOOL  MediaPresent;
+```
+typedef struct MEDIUM_INFO {
+  BOOL  MediaPresent;
   ULONG MediaType;
-  BOOL  RecordInhibit;
-} MEDIUM_INFO, *PMEDIUM_INFO;
-````
+  BOOL  RecordInhibit;
+} *PMEDIUM_INFO, MEDIUM_INFO;
+```
 
 ## Members
 

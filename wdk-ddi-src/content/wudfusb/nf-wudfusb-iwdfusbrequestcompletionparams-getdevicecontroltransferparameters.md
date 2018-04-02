@@ -45,27 +45,27 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetDeviceControlTransferParameters method
+# IWDFUsbRequestCompletionParams::GetDeviceControlTransferParameters method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>GetDeviceControlTransferParameters</b> method retrieves parameters that are associated with the completion of a device I/O control request.
 
 ## Syntax
 
-````
+```
 void GetDeviceControlTransferParameters(
-  [out, optional] IWDFMemory           **ppMemory,
-  [out, optional] ULONG                *pLengthTransferred,
-  [out, optional] SIZE_T               *pOffset,
-  [out, optional] PWINUSB_SETUP_PACKET pSetupPacket
+  IWDFMemory           **ppMemory,
+  ULONG                *pLengthTransferred,
+  SIZE_T               *pOffset,
+  PWINUSB_SETUP_PACKET pSetupPacket
 );
-````
+```
 
 ## Parameters
 
 `ppMemory`
 
-A pointer to a variable that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface, for access to the buffer for the device I/O control request. This parameter is optional and can be <b>NULL</b>.
+A pointer to a variable that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a> interface, for access to the buffer for the device I/O control request. This parameter is optional and can be <b>NULL</b>.
 
 `pLengthTransferred`
 
@@ -96,8 +96,8 @@ None
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbrequestcompletionparams.md">IWDFUsbRequestCompletionParams</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a>
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560346">IWDFUsbRequestCompletionParams</a>

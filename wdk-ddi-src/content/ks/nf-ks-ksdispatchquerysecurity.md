@@ -50,12 +50,12 @@ The <b>KsDispatchQuerySecurity</b> function is used in the KSDISPATCH_TABLE.Quer
 
 ## Syntax
 
-````
-NTSTATUS KsDispatchQuerySecurity(
-  _In_ PDEVICE_OBJECT DeviceObject,
-  _In_ PIRP           Irp
+```
+KSDDKAPI NTSTATUS KsDispatchQuerySecurity(
+  PDEVICE_OBJECT DeviceObject,
+  PIRP           Irp
 );
-````
+```
 
 ## Parameters
 

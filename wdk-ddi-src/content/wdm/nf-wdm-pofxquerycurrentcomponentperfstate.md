@@ -7,7 +7,7 @@ old-location: kernel\pofxquerycurrentcomponentperfstate.htm
 old-project: kernel
 ms.assetid: DFB59020-1F4A-4ABB-8BBE-85F9C8615249
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PoFxQueryCurrentComponentPerfState, PoFxQueryCurrentComponentPerfState routine [Kernel-Mode Driver Architecture], kernel.pofxquerycurrentcomponentperfstate, wdm/PoFxQueryCurrentComponentPerfState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,21 +50,21 @@ The <b>PoFxQueryCurrentComponentPerfState</b> routine retrieves the active perfo
 
 ## Syntax
 
-````
-NTSTATUS PoFxQueryCurrentComponentPerfState(
-  _In_ POHANDLE   Handle,
-  _In_ ULONG      Flags,
-  _In_ ULONG      Component,
-  _In_ ULONG      SetIndex,
-  _In_ PULONGLONG CurrentPerf
+```
+NTKERNELAPI NTSTATUS PoFxQueryCurrentComponentPerfState(
+  POHANDLE   Handle,
+  ULONG      Flags,
+  ULONG      Component,
+  ULONG      SetIndex,
+  PULONGLONG CurrentPerf
 );
-````
+```
 
 ## Parameters
 
 `Handle`
 
-A handle that represents the registration of the device with power management framework (PoFx). The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.
+A handle that represents the registration of the device with power management framework (PoFx). The device driver previously received this handle from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439521">PoFxRegisterDevice</a> routine.
 
 `Flags`
 
@@ -72,11 +72,11 @@ Set to 0. Currently, no flags are defined for this routine.
 
 `Component`
 
-The index that identifies the component whose performance state is being retrieved. This parameter is an index into the <b>Components</b> array in the <a href="..\wudfwdm\ns-wudfwdm-_po_fx_device_v1.md">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
+The index that identifies the component whose performance state is being retrieved. This parameter is an index into the <b>Components</b> array in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439585">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
 `SetIndex`
 
-The index that identifies the performance state set whose performance is being queried. This parameter is an index into the <b>PerfStateSets</b> array in the <a href="..\wudfwdm\ns-wudfwdm-_po_fx_device_v1.md">PO_FX_COMPONENT_PERF_INFO</a> structure that the device driver used to register the component performance states with PoFx. If the <b>PerfStateSets</b> array contains N elements, performance state set indexes range from 0 to N–1.
+The index that identifies the performance state set whose performance is being queried. This parameter is an index into the <b>PerfStateSets</b> array in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a> structure that the device driver used to register the component performance states with PoFx. If the <b>PerfStateSets</b> array contains N elements, performance state set indexes range from 0 to N–1.
 
 `CurrentPerf`
 
@@ -107,11 +107,11 @@ The caller supplied an invalid index for the component or component state set.
 
 ## Remarks
 
-A driver can call the <b>PoFxQueryCurrentComponentPerfState</b> routine to retrieve the current performance state of a given performance state set for a component. If the call succeeds, the <i>CurrentPerf</i> parameter is overwritten with a pointer to a value that specifies the current performance state of the set. This value may be one of the following, depending on the contents of the <a href="..\wudfwdm\ns-wudfwdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> structure that the driver passed to the <a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a> routine:
+A driver can call the <b>PoFxQueryCurrentComponentPerfState</b> routine to retrieve the current performance state of a given performance state set for a component. If the call succeeds, the <i>CurrentPerf</i> parameter is overwritten with a pointer to a value that specifies the current performance state of the set. This value may be one of the following, depending on the contents of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939833">PO_FX_COMPONENT_PERF_SET</a> structure that the driver passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939778">PoFxRegisterComponentPerfStates</a> routine:
 
 <ul>
-<li>For a performance state set that represents a continuous distribution of performance states, this is a value between the <b>Minimum</b> and <b>Maximum</b> members of the <a href="..\wudfwdm\ns-wudfwdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> structure.</li>
-<li>For a performance state set that represents a discrete number of performance states, this value is an index into the <b>States</b> member of the <a href="..\wudfwdm\ns-wudfwdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> structure .</li>
+<li>For a performance state set that represents a continuous distribution of performance states, this is a value between the <b>Minimum</b> and <b>Maximum</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939833">PO_FX_COMPONENT_PERF_SET</a> structure.</li>
+<li>For a performance state set that represents a discrete number of performance states, this value is an index into the <b>States</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939833">PO_FX_COMPONENT_PERF_SET</a> structure .</li>
 </ul>
 This call always executes synchronously.
 
@@ -127,16 +127,16 @@ This call always executes synchronously.
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_po_fx_device_v1.md">PO_FX_COMPONENT_PERF_INFO</a>
-
-
-
-<a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
-
-
-
-<a href="..\wudfwdm\ns-wudfwdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a>
-
-
-
 <a href="https://msdn.microsoft.com/D5341D6D-7C71-43CB-9C70-7E939B32C33F">Device Performance State Management</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn939832">PO_FX_COMPONENT_PERF_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn939833">PO_FX_COMPONENT_PERF_SET</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn939778">PoFxRegisterComponentPerfStates</a>

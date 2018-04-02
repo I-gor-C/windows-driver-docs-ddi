@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetDeviceList method
+# IStillImageW::GetDeviceList method
 The <b>IStillImage::GetDeviceList</b> method returns hardware characteristics for all installed still image devices.
 
 ## Syntax
 
-````
+```
 HRESULT GetDeviceList(
-        DWORD  dwType,
-        DWORD  dwFlags,
-  [out] DWORD  *pdwItemsReturned,
-  [out] LPVOID *ppBuffer
+  DWORD  dwType,
+  DWORD  dwFlags,
+  DWORD  *pdwItemsReturned,
+  LPVOID *ppBuffer
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ Receives the number of STI_DEVICE_INFORMATION structures supplied in the buffer 
 
 `ppBuffer`
 
-Receives a handle to an STI-allocated buffer. This buffer will contain an array of <a href="..\sti\ns-sti-_sti_device_informationw.md">STI_DEVICE_INFORMATION</a> structures.
+Receives a handle to an STI-allocated buffer. This buffer will contain an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548361">STI_DEVICE_INFORMATION</a> structures.
 
 
 ## Return Value
@@ -84,7 +84,7 @@ If the operation succeeds, the method returns S_OK. Otherwise, it returns one of
 
 ## Remarks
 
-The <b>IStillImage::GetDeviceList</b> method returns an <a href="..\sti\ns-sti-_sti_device_informationw.md">STI_DEVICE_INFORMATION</a> structure for each installed still-image device. Structure contents are typically used for creating user interface displays and for finding a device's internal name.
+The <b>IStillImage::GetDeviceList</b> method returns an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548361">STI_DEVICE_INFORMATION</a> structure for each installed still-image device. Structure contents are typically used for creating user interface displays and for finding a device's internal name.
 
 Before calling <b>IStillImage::GetDeviceList</b>, clients of the <b>IStillImage</b> COM interface must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543804">IStillImage::StiCreateInstance</a> to obtain an <b>IStillImage</b> interface pointer.
 
@@ -98,8 +98,8 @@ When the caller has finished using the array of STI_DEVICE_INFORMATION structure
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/a9ceee48-cbb5-4448-83b4-9c19fe89fcb9">IStillImageW</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543782">IStillImage::GetDeviceInfo</a>
+
+
+
+<a href="https://msdn.microsoft.com/a9ceee48-cbb5-4448-83b4-9c19fe89fcb9">IStillImageW</a>

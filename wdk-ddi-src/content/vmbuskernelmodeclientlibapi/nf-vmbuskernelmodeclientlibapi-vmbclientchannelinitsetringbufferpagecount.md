@@ -7,7 +7,7 @@ old-location: netvista\vmbclientchannelinitsetringbufferpagecount.htm
 old-project: netvista
 ms.assetid: 560A7CD9-5D9D-434B-ACEE-5852CC9A2CC3
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VmbClientChannelInitSetRingBufferPageCount, VmbClientChannelInitSetRingBufferPageCount function [Network Drivers Starting with Windows Vista], netvista.vmbclientchannelinitsetringbufferpagecount, vmbuskernelmodeclientlibapi/VmbClientChannelInitSetRingBufferPageCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,14 +54,13 @@ buffers.
 
 ## Syntax
 
-````
-NTSTATUS
- VmbClientChannelInitSetRingBufferPageCount(
-  _In_     VMBCHANNEL Channel,
-  _In_ UINT32         IncomingPageCount,
-  _In_ UINT32         OutgoingPageCount
+```
+NTSTATUS VmbClientChannelInitSetRingBufferPageCount(
+  VMBCHANNEL Channel,
+  UINT32     IncomingPageCount,
+  UINT32     OutgoingPageCount
 );
-````
+```
 
 ## Parameters
 

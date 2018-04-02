@@ -3,12 +3,12 @@ UID: NS:gnssdriver.GNSS_PLATFORM_CAPABILITY
 title: GNSS_PLATFORM_CAPABILITY
 author: windows-driver-content
 description: This structure is used to communicate the platform/HLOS capabilities to the underlying GNSS driver.
-old-location: gnss\gnss_platform_capability.htm
-old-project: gnss
+old-location: sensors\gnss_platform_capability.htm
+old-project: sensors
 ms.assetid: A97DE517-26ED-452F-9066-94F73BC47BDE
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: "*PGNSS_PLATFORM_CAPABILITY, GNSS_PLATFORM_CAPABILITY, GNSS_PLATFORM_CAPABILITY structure [Sensor Devices], PGNSS_PLATFORM_CAPABILITY, PGNSS_PLATFORM_CAPABILITY structure pointer [Sensor Devices], gnss.gnss_platform_capability, gnssdriver/GNSS_PLATFORM_CAPABILITY, gnssdriver/PGNSS_PLATFORM_CAPABILITY"
+ms.date: 2/22/2018
+ms.keywords: "*PGNSS_PLATFORM_CAPABILITY, GNSS_PLATFORM_CAPABILITY, GNSS_PLATFORM_CAPABILITY structure [Sensor Devices], PGNSS_PLATFORM_CAPABILITY, PGNSS_PLATFORM_CAPABILITY structure pointer [Sensor Devices], gnssdriver/GNSS_PLATFORM_CAPABILITY, gnssdriver/PGNSS_PLATFORM_CAPABILITY, sensors.gnss_platform_capability"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -47,16 +47,15 @@ req.typenames: GNSS_PLATFORM_CAPABILITY, *PGNSS_PLATFORM_CAPABILITY
 This structure is used to communicate the platform/HLOS capabilities to the underlying GNSS driver.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct GNSS_PLATFORM_CAPABILITY {
   ULONG Size;
   ULONG Version;
-  BOOL  SupportAgnssInjection;
+  BOOL  SupportAgnssInjection;
   ULONG AgnssFormatSupported;
-  BOOL  Reserved;
-  BYTE  Unused[512];
-} GNSS_PLATFORM_CAPABILITY, *PGNSS_PLATFORM_CAPABILITY;
-````
+  BYTE  Unused[516];
+} *PGNSS_PLATFORM_CAPABILITY, GNSS_PLATFORM_CAPABILITY;
+```
 
 ## Members
 

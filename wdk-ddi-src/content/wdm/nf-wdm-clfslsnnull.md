@@ -7,7 +7,7 @@ old-location: kernel\clfslsnnull.htm
 old-project: kernel
 ms.assetid: 858fb84a-8df8-4748-ab09-3f7c4aca905c
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsLsnNull, ClfsLsnNull routine [Kernel-Mode Driver Architecture], Clfs_26a9c0db-2336-4151-9de0-81a58ed9e2f0.xml, kernel.clfslsnnull, wdm/ClfsLsnNull
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ The <b>ClfsLsnNull</b> routine determines whether a specified LSN is equal to th
 
 ## Syntax
 
-````
-BOOLEAN ClfsLsnNull(
-  _In_ const CLFS_LSN *plsn
+```
+CLFSUSER_API BOOLEAN ClfsLsnNull(
+  const CLFS_LSN *plsn
 );
-````
+```
 
 ## Parameters
 
 `plsn`
 
-A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that supplies the LSN to be tested.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a> structure that supplies the LSN to be tested.
 
 
 ## Return Value
@@ -84,12 +84,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfslsnless.md">ClfsLsnLess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541590">ClfsLsnEqual</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfslsngreater.md">ClfsLsnGreater</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541595">ClfsLsnGreater</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfslsnequal.md">ClfsLsnEqual</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541608">ClfsLsnLess</a>

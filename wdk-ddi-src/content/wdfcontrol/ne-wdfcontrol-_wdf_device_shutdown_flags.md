@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: 
+req.irql: PASSIVE_LEVEL
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 The <b>WDF_DEVICE_SHUTDOWN_FLAGS</b> enumeration defines flags that identify types of shutdown notifications that a driver can receive.
 
 ## Syntax
-````
-typedef enum _WDF_DEVICE_SHUTDOWN_FLAGS { 
-  WdfDeviceShutdown            = 0x01,
-  WdfDeviceLastChanceShutdown  = 0x02
+```
+typedef enum _WDF_DEVICE_SHUTDOWN_FLAGS {
+  WdfDeviceShutdown            ,
+  WdfDeviceLastChanceShutdown
 } WDF_DEVICE_SHUTDOWN_FLAGS;
-````
+```
 
 ## Constants
 
@@ -74,7 +74,7 @@ typedef enum _WDF_DEVICE_SHUTDOWN_FLAGS {
 
 ## Remarks
 
-The <b>WDF_DEVICE_SHUTDOWN_FLAGS</b> enumeration is used as an input parameter to <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification.md">WdfControlDeviceInitSetShutdownNotification</a>.
+The <b>WDF_DEVICE_SHUTDOWN_FLAGS</b> enumeration is used as an input parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545847">WdfControlDeviceInitSetShutdownNotification</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,4 +84,4 @@ The <b>WDF_DEVICE_SHUTDOWN_FLAGS</b> enumeration is used as an input parameter t
 
 ## See Also
 
-<a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitsetshutdownnotification.md">WdfControlDeviceInitSetShutdownNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545847">WdfControlDeviceInitSetShutdownNotification</a>

@@ -7,7 +7,7 @@ old-location: debugger\outputsymbolbyoffset.htm
 old-project: debugger
 ms.assetid: a9b3ac31-2001-45cc-a917-de687419b561
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], OutputSymbolByOffset method, IDebugSymbols3::OutputSymbolByOffset, IDebugSymbols_45f0a841-85cf-4be8-82bc-e962b5af2f5d.xml, OutputSymbolByOffset method [Windows Debugging], OutputSymbolByOffset method [Windows Debugging], IDebugSymbols3 interface, OutputSymbolByOffset,IDebugSymbols3.OutputSymbolByOffset, dbgeng/IDebugSymbols3::OutputSymbolByOffset, debugger.outputsymbolbyoffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# OutputSymbolByOffset method
+# IDebugSymbols3::OutputSymbolByOffset method
 The <b>OutputSymbolByOffset</b> method looks up a symbol by address and prints the symbol name and other symbol information to the debugger console.
 
 ## Syntax
 
-````
+```
 HRESULT OutputSymbolByOffset(
-  [in] ULONG   OutputControl,
-  [in] ULONG   Flags,
-  [in] ULONG64 Offset
+  ULONG   OutputControl,
+  ULONG   Flags,
+  ULONG64 Offset
 );
-````
+```
 
 ## Parameters
 
@@ -158,8 +158,8 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

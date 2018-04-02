@@ -50,13 +50,13 @@ The <b>KsMethodHandler</b> function handles methods requested through IOCTL_KS_M
 
 ## Syntax
 
-````
-NTSTATUS KsMethodHandler(
-  _In_       PIRP         Irp,
-  _In_       ULONG        MethodSetsCount,
-  _In_ const KSMETHOD_SET *MethodSet
+```
+KSDDKAPI NTSTATUS KsMethodHandler(
+  PIRP               Irp,
+  ULONG              MethodSetsCount,
+  const KSMETHOD_SET *MethodSet
 );
-````
+```
 
 ## Parameters
 
@@ -90,8 +90,8 @@ The owner of a method set can perform prefiltering or postfiltering of the metho
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksmethodhandlerwithallocator.md">KsMethodHandlerWithAllocator</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561940">KsFastMethodHandler</a>
 
 
 
-<a href="..\ks\nf-ks-ksfastmethodhandler.md">KsFastMethodHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563401">KsMethodHandlerWithAllocator</a>

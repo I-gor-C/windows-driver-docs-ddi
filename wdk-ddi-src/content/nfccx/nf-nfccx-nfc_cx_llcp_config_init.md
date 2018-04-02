@@ -46,21 +46,21 @@ req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 
 
 # NFC_CX_LLCP_CONFIG_INIT function
-The <b>NFC_CX_LLCP_CONFIG_INIT</b> function initializes the <a href="..\nfccx\ns-nfccx-_nfc_cx_llcp_config.md">NFC_CX_LLCP_CONFIG</a> structure.
+The <b>NFC_CX_LLCP_CONFIG_INIT</b> function initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/dn905545">NFC_CX_LLCP_CONFIG</a> structure.
 
 ## Syntax
 
-````
-VOID NFC_CX_LLCP_CONFIG_INIT(
-  _Out_ PNFC_CX_LLCP_CONFIG Config
+```
+void NFC_CX_LLCP_CONFIG_INIT(
+  PNFC_CX_LLCP_CONFIG Config
 );
-````
+```
 
 ## Parameters
 
 `Config`
 
-A pointer to the <a href="..\nfccx\ns-nfccx-_nfc_cx_llcp_config.md">NFC_CX_LLCP_CONFIG</a> structure that the function will initialize.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn905545">NFC_CX_LLCP_CONFIG</a> structure that the function will initialize.
 
 
 ## Return Value

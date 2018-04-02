@@ -7,7 +7,7 @@ old-location: buses\ucm_pd_power_data_object.htm
 old-project: usbref
 ms.assetid: C54750A9-EE64-4FE7-9ED6-EC9709A82C43
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT, PUCM_PD_POWER_DATA_OBJECT union pointer [Buses], UCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT union [Buses], _UCM_PD_POWER_DATA_OBJECT, buses.ucm_pd_power_data_object, ucmtypes/PUCM_PD_POWER_DATA_OBJECT, ucmtypes/UCM_PD_POWER_DATA_OBJECT"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,39 +48,39 @@ req.product: Windows 10 or later.
 Describes a Power Data Object. For information about these members, see the <a href="http://www.usb.org/developers/docs/usb20_docs/">Power Delivery specification</a>.
 
 ## Syntax
-````
-typedef union _UCM_PD_POWER_DATA_OBJECT {
-  Ulong  Ul;
+```
+typedef struct _UCM_PD_POWER_DATA_OBJECT {
+  ULONG  Ul;
   struct {
-    unsigned Reserved  :30;
-    unsigned Type  :2;
-  } Common;
+    unsigned  : 30 Reserved;
+    unsigned  : 2  Type;
+  } Common;
   struct {
-    unsigned MaximumCurrentIn10mA  :10;
-    unsigned VoltageIn50mV  :10;
-    unsigned PeakCurrent  :2;
-    unsigned Reserved  :3;
-    unsigned DataRoleSwap  :1;
-    unsigned UsbCommunicationCapable  :1;
-    unsigned ExternallyPowered  :1;
-    unsigned UsbSuspendSupported  :1;
-    unsigned DualRolePower  :1;
-    unsigned FixedSupply  :2;
-  } FixedSupplyPdo;
+    unsigned  : 1  DataRoleSwap;
+    unsigned  : 1  DualRolePower;
+    unsigned  : 1  ExternallyPowered;
+    unsigned  : 2  FixedSupply;
+    unsigned  : 10 MaximumCurrentIn10mA;
+    unsigned  : 2  PeakCurrent;
+    unsigned  : 3  Reserved;
+    unsigned  : 1  UsbCommunicationCapable;
+    unsigned  : 1  UsbSuspendSupported;
+    unsigned  : 10 VoltageIn50mV;
+  } FixedSupplyPdo;
   struct {
-    unsigned MaximumCurrentIn10mA  :10;
-    unsigned MinimumVoltageIn50mV  :10;
-    unsigned MaximumVoltageIn50mV  :10;
-    unsigned VariableSupportNonBattery  :2;
-  } VariableSupplyNonBatteryPdo;
+    unsigned  : 10 MaximumCurrentIn10mA;
+    unsigned  : 10 MaximumVoltageIn50mV;
+    unsigned  : 10 MinimumVoltageIn50mV;
+    unsigned  : 2  VariableSupportNonBattery;
+  } VariableSupplyNonBatteryPdo;
   struct {
-    unsigned MaximumAllowablePowerIn250mW  :10;
-    unsigned MinimumVoltageIn50mV  :10;
-    unsigned MaximumVoltageIn50mV  :10;
-    unsigned Battery  :2;
-  } BatterySupplyPdo;
-} UCM_PD_POWER_DATA_OBJECT, *PUCM_PD_POWER_DATA_OBJECT;
-````
+    unsigned  : 2  Battery;
+    unsigned  : 10 MaximumAllowablePowerIn250mW;
+    unsigned  : 10 MaximumVoltageIn50mV;
+    unsigned  : 10 MinimumVoltageIn50mV;
+  } BatterySupplyPdo;
+} *PUCM_PD_POWER_DATA_OBJECT, UCM_PD_POWER_DATA_OBJECT;
+```
 
 ## Members
 

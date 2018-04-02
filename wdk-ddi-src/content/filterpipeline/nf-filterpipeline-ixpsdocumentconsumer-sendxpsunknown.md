@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SendXpsUnknown method
+# IXpsDocumentConsumer::SendXpsUnknown method
 The <code>SendXpsUnknown</code> method sends an XPS document part that cannot be identified to the filter pipeline.
 
 ## Syntax
 
-````
+```
 HRESULT SendXpsUnknown(
-  [in] IUnknown *pUnknown
+  IUnknown *pUnknown
 );
-````
+```
 
 ## Parameters
 

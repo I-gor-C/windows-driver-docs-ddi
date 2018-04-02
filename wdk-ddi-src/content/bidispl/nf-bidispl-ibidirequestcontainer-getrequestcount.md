@@ -44,16 +44,16 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
-# GetRequestCount method
+# IBidiRequestContainer::GetRequestCount method
 The <b>GetRequestCount</b> method gets the number of requests in the request list.
 
 ## Syntax
 
-````
+```
 HRESULT GetRequestCount(
-  [out] ULONG *puCount
+  ULONG *puCount
 );
-````
+```
 
 ## Parameters
 
@@ -121,8 +121,8 @@ The <b>HRESULT</b> contains an error code corresponding to the last error.
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidirequestcontainer.md">IBidiRequestContainer</a>
-
-
-
 <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schema</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144970">IBidiRequestContainer</a>

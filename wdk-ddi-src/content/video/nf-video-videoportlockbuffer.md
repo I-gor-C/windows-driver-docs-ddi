@@ -7,7 +7,7 @@ old-location: display\videoportlockbuffer.htm
 old-project: display
 ms.assetid: ba65d1b1-a720-4f21-8c6d-af70185c0c24
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortLockBuffer, VideoPortLockBuffer function [Display Devices], VideoPort_Functions_8c96bd4d-b9fc-4ff7-9d81-1087d6527700.xml, display.videoportlockbuffer, video/VideoPortLockBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The <b>VideoPortLockBuffer</b> function probes the specified buffer, makes the b
 
 ## Syntax
 
-````
-PVOID VideoPortLockBuffer(
-  _In_ PVOID             HwDeviceExtension,
-  _In_ PVOID             BaseAddress,
-  _In_ ULONG             Length,
-  _In_ VP_LOCK_OPERATION Operation
+```
+VIDEOPORT_API PVOID VideoPortLockBuffer(
+  IN PVOID             HwDeviceExtension,
+  IN PVOID             BaseAddress,
+  IN ULONG             Length,
+  IN VP_LOCK_OPERATION Operation
 );
-````
+```
 
 ## Parameters
 
@@ -84,7 +84,7 @@ Returns a pointer to a memory descriptor list (<a href="https://msdn.microsoft.c
 
 ## Remarks
 
-To unlock the buffer, the video miniport driver should call <a href="..\video\nf-video-videoportunlockbuffer.md">VideoPortUnlockBuffer</a>.
+To unlock the buffer, the video miniport driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff570373">VideoPortUnlockBuffer</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,4 +98,4 @@ To unlock the buffer, the video miniport driver should call <a href="..\video\nf
 
 ## See Also
 
-<a href="..\video\nf-video-videoportunlockbuffer.md">VideoPortUnlockBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570373">VideoPortUnlockBuffer</a>

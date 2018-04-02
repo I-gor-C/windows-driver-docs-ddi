@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_TotalPages method
+# IPrintJob::get_TotalPages method
 Gets the total number of pages that the document contains.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_TotalPages(
-  [out, retval] ULONG *pulPages
+  ULONG *pulPages
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a>

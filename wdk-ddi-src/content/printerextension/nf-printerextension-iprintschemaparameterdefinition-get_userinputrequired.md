@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_UserInputRequired method
+# IPrintSchemaParameterDefinition::get_UserInputRequired method
 The <b>UserInputRequired</b> property gets the Boolean value that indicates whether or not a user input value is required for the Print Schema parameter.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_UserInputRequired(
-  [out, retval] BOOL *pbIsRequired
+  BOOL *pbIsRequired
 );
-````
+```
 
 ## Parameters
 
@@ -83,4 +83,4 @@ The print dialog can use <b>UserInputRequired</b> to determine whether or not it
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemaparameterdefinition.md">IPrintSchemaParameterDefinition</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn465890">IPrintSchemaParameterDefinition</a>

@@ -55,12 +55,12 @@ The <b>WdfStringGetUnicodeString</b> method retrieves the Unicode string that is
 
 ## Syntax
 
-````
-VOID WdfStringGetUnicodeString(
-  _In_  WDFSTRING       String,
-  _Out_ PUNICODE_STRING UnicodeString
+```
+void WdfStringGetUnicodeString(
+  WDFSTRING       String,
+  PUNICODE_STRING UnicodeString
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A handle to a framework string object.
 
 `UnicodeString`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that receives a pointer to the Unicode string that is currently assigned to the string object that <i>String</i> specifies.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that receives a pointer to the Unicode string that is currently assigned to the string object that <i>String</i> specifies.
 
 
 ## Return Value
@@ -121,8 +121,8 @@ WdfStringGetUnicodeString(
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
 
 
 
-<a href="..\wdfstring\nf-wdfstring-wdfstringcreate.md">WdfStringCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550046">WdfStringCreate</a>

@@ -7,7 +7,7 @@ old-location: display\videoportreleasespinlock.htm
 old-project: display
 ms.assetid: 8ce2006e-e66c-4b2d-8d26-2eba8d8e2864
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortReleaseSpinLock, VideoPortReleaseSpinLock function [Display Devices], VideoPort_Functions_43cceda5-f5eb-4567-97f5-d53d0bf93c0b.xml, display.videoportreleasespinlock, video/VideoPortReleaseSpinLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>VideoPortReleaseSpinLock</b> function releases ownership of a given spin 
 
 ## Syntax
 
-````
-VOID VideoPortReleaseSpinLock(
-  _In_    PVOID      HwDeviceExtension,
-  _Inout_ PSPIN_LOCK SpinLock,
-  _In_    UCHAR      NewIrql
+```
+VIDEOPORT_API VOID VideoPortReleaseSpinLock(
+  PVOID                                                                     HwDeviceExtension,
+  _Requires_lock_held_(*_Curr_)_Releases_lock_(*_Curr_) PSPIN_LOCK SpinLock ,
+  _IRQL_restores_ UCHAR                                                     NewIrql
 );
-````
+```
 
 ## Parameters
 
@@ -79,7 +79,7 @@ None
 
 ## Remarks
 
-This call is the inverse of <a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a>. The <i>NewIrql</i> value must be the same as the value pointed to by <i>OldIrql</i> when <b>VideoPortAcquireSpinLock </b>returned.
+This call is the inverse of <a href="https://msdn.microsoft.com/library/windows/hardware/ff570175">VideoPortAcquireSpinLock</a>. The <i>NewIrql</i> value must be the same as the value pointed to by <i>OldIrql</i> when <b>VideoPortAcquireSpinLock </b>returned.
 
 Callers of <b>VideoPortReleaseSpinLock</b> must be running at IRQL = DISPATCH_LEVEL. On return from this routine, IRQL is restored to the <i>NewIrql</i> value.
 
@@ -95,4 +95,4 @@ Callers of <b>VideoPortReleaseSpinLock</b> must be running at IRQL = DISPATCH_LE
 
 ## See Also
 
-<a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570175">VideoPortAcquireSpinLock</a>

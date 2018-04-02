@@ -7,7 +7,7 @@ old-location: kernel\ioinvalidatedevicerelations.htm
 old-project: kernel
 ms.assetid: f312afec-10b3-4049-a4c1-154c11b4a869
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoInvalidateDeviceRelations, IoInvalidateDeviceRelations routine [Kernel-Mode Driver Architecture], k104_c839e20b-2be6-4586-86c9-57c773bf755f.xml, kernel.ioinvalidatedevicerelations, wdm/IoInvalidateDeviceRelations
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>IoInvalidateDeviceRelations</b> routine notifies the PnP manager that the
 
 ## Syntax
 
-````
-VOID IoInvalidateDeviceRelations(
-  _In_ PDEVICE_OBJECT       DeviceObject,
-  _In_ DEVICE_RELATION_TYPE Type
+```
+NTKERNELAPI VOID IoInvalidateDeviceRelations(
+  PDEVICE_OBJECT       DeviceObject,
+  DEVICE_RELATION_TYPE Type
 );
-````
+```
 
 ## Parameters
 

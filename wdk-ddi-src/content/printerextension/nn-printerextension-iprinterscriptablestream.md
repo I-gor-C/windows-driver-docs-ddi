@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 
 # IPrinterScriptableStream interface
 
-The IPrinterScriptableStream interface builds on <a href="..\printerextension\nn-printerextension-iprinterscriptablesequentialstream.md">IPrinterScriptableSequentialStream</a> and adds IStream-like semantics.
+The IPrinterScriptableStream interface builds on <a href="https://msdn.microsoft.com/85DF7DCB-7AB1-4A46-AD70-6D47D9F98079">IPrinterScriptableSequentialStream</a> and adds IStream-like semantics.
 
 ## Methods
 
@@ -68,7 +68,7 @@ The IPrinterScriptableStream interface builds on <a href="..\printerextension\nn
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973217">IPrinterScriptablePropertyBag</a>
 
 
 
@@ -80,4 +80,4 @@ The IPrinterScriptableStream interface builds on <a href="..\printerextension\nn
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablesequentialstream.md">IPrinterScriptableSequentialStream</a>
+<a href="https://msdn.microsoft.com/85DF7DCB-7AB1-4A46-AD70-6D47D9F98079">IPrinterScriptableSequentialStream</a>

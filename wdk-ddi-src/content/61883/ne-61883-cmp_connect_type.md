@@ -47,12 +47,12 @@ req.typenames: CMP_CONNECT_TYPE
 This enumeration specifies a connection type.
 
 ## Syntax
-````
-typedef enum  { 
-  CMP_Broadcast     = 0,
+```
+typedef enum CMP_CONNECT_TYPE {
+  CMP_Broadcast     ,
   CMP_PointToPoint
-} CMP_CONNECT_TYPE;
-````
+} ;
+```
 
 ## Constants
 

@@ -47,15 +47,15 @@ req.typenames: CMP_CONNECT_VER3, *PCMP_CONNECT_VER3
 This structure contains information for a connection request.
 
 ## Syntax
-````
+```
 typedef struct _CMP_CONNECT_VER3 {
-  HANDLE               hOutputPlug;
-  HANDLE               hInputPlug;
-  CMP_CONNECT_TYPE     Type;
-  CIP_DATA_FORMAT_VER3 Format;
-  HANDLE               hConnect;
-} CMP_CONNECT_VER3, *PCMP_CONNECT_VER3;
-````
+  IN HANDLE               hOutputPlug;
+  IN HANDLE               hInputPlug;
+  IN CMP_CONNECT_TYPE     Type;
+  IN CIP_DATA_FORMAT_VER3 Format;
+  OUT HANDLE              hConnect;
+} *PCMP_CONNECT_VER3, CMP_CONNECT_VER3;
+```
 
 ## Members
 

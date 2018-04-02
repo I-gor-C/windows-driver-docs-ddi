@@ -47,15 +47,15 @@ req.typenames: KS_CompressionCaps
 The KS_CompressionCaps enumeration defines compression capabilities of a device.
 
 ## Syntax
-````
-typedef enum  { 
-  KS_CompressionCaps_CanQuality   = 1,
-  KS_CompressionCaps_CanCrunch    = 2,
-  KS_CompressionCaps_CanKeyFrame  = 4,
-  KS_CompressionCaps_CanBFrame    = 8,
-  KS_CompressionCaps_CanWindow    = 0x10
-} KS_CompressionCaps;
-````
+```
+typedef enum KS_CompressionCaps {
+  KS_CompressionCaps_CanQuality   ,
+  KS_CompressionCaps_CanCrunch    ,
+  KS_CompressionCaps_CanKeyFrame  ,
+  KS_CompressionCaps_CanBFrame    ,
+  KS_CompressionCaps_CanWindow
+} ;
+```
 
 ## Constants
 
@@ -68,7 +68,7 @@ typedef enum  {
             
                 <tr>
                     <td>KS_CompressionCaps_CanCrunch</td>
-                    <td>The video compressor can compress the video to a specified data rate. If a minidriver supports this capability, the <b>dwBitRate</b> member of the <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure specifies the default data rate.</td>
+                    <td>The video compressor can compress the video to a specified data rate. If a minidriver supports this capability, the <b>dwBitRate</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a> structure specifies the default data rate.</td>
                 </tr>
             
                 <tr>
@@ -95,8 +95,8 @@ typedef enum  {
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565979">KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_videocompression_getinfo_s.md">KSPROPERTY_VIDEOCOMPRESSION_GETINFO_S</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a>

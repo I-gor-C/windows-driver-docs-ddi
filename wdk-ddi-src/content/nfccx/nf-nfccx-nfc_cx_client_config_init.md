@@ -46,26 +46,26 @@ req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 
 
 # NFC_CX_CLIENT_CONFIG_INIT function
-The <b>NFC_CX_CLIENT_CONFIG_INIT</b> function initializes the <a href="..\nfccx\ns-nfccx-_nfc_cx_client_config.md">NFC_CX_CLIENT_CONFIG</a> structure.
+The <b>NFC_CX_CLIENT_CONFIG_INIT</b> function initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/dn905540">NFC_CX_CLIENT_CONFIG</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE VOID  NFC_CX_CLIENT_CONFIG_INIT(
-  _Out_ PNFC_CX_CLIENT_CONFIG Config,
-  _In_  NFC_CX_TRANSPORT_TYPE BusType
+```
+void NFC_CX_CLIENT_CONFIG_INIT(
+  PNFC_CX_CLIENT_CONFIG Config,
+  NFC_CX_TRANSPORT_TYPE BusType
 );
-````
+```
 
 ## Parameters
 
 `Config`
 
-A pointer to an <a href="..\nfccx\ns-nfccx-_nfc_cx_client_config.md">NFC_CX_CLIENT_CONFIG</a> structure.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn905540">NFC_CX_CLIENT_CONFIG</a> structure.
 
 `BusType`
 
-An <a href="..\nfccx\ne-nfccx-_nfc_cx_transport_type.md">NFC_CX_TRANSPORT_TYPE</a> enumeration.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/dn905564">NFC_CX_TRANSPORT_TYPE</a> enumeration.
 
 
 ## Return Value

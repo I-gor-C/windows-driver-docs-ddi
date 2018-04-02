@@ -7,7 +7,7 @@ old-location: buses\ufxendpointgetcommandqueue.htm
 old-project: usbref
 ms.assetid: BF84F0E4-3B0D-45B8-AC06-F6F761A37234
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UfxEndpointGetCommandQueue, UfxEndpointGetCommandQueue method [Buses], buses.ufxendpointgetcommandqueue, ufxclient/UfxEndpointGetCommandQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # UfxEndpointGetCommandQueue function
-Returns the command queue previously created by <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.
+Returns the command queue previously created by <a href="https://msdn.microsoft.com/library/windows/hardware/mt187965">UfxEndpointCreate</a>.
 
 ## Syntax
 
-````
+```
 WDFQUEUE UfxEndpointGetCommandQueue(
-  [in] UFXENDPOINT UfxEndpoint
+  UFXENDPOINT UfxEndpoint
 );
-````
+```
 
 ## Parameters
 
 `UfxEndpoint`
 
-A handle to an endpoint object returned from a previous call to <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.
+A handle to an endpoint object returned from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt187965">UfxEndpointCreate</a>.
 
 
 ## Return Value
@@ -69,7 +69,7 @@ A handle to a framework queue object.
 
 ## Remarks
 
-For an code example that shows how to create an endpoint object and initialize its context, see the Remarks section of <a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>.
+For an code example that shows how to create an endpoint object and initialize its context, see the Remarks section of <a href="https://msdn.microsoft.com/library/windows/hardware/mt187965">UfxEndpointCreate</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,4 +81,4 @@ For an code example that shows how to create an endpoint object and initialize i
 
 ## See Also
 
-<a href="..\ufxclient\nf-ufxclient-ufxendpointcreate.md">UfxEndpointCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187965">UfxEndpointCreate</a>

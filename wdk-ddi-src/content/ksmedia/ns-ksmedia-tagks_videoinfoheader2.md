@@ -47,25 +47,25 @@ req.typenames: KS_VIDEOINFOHEADER2, *PKS_VIDEOINFOHEADER2
 The KS_VIDEOINFOHEADER2 structure describes the details of a video stream, including bob or weave settings, copy protection, and pixel aspect ratio.
 
 ## Syntax
-````
+```
 typedef struct tagKS_VIDEOINFOHEADER2 {
-  RECT                rcSource;
-  RECT                rcTarget;
-  DWORD               dwBitRate;
-  DWORD               dwBitErrorRate;
-  REFERENCE_TIME      AvgTimePerFrame;
-  DWORD               dwInterlaceFlags;
-  DWORD               dwCopyProtectFlags;
-  DWORD               dwPictAspectRatioX;
-  DWORD               dwPictAspectRatioY;
+  RECT                rcSource;
+  RECT                rcTarget;
+  DWORD               dwBitRate;
+  DWORD               dwBitErrorRate;
+  REFERENCE_TIME      AvgTimePerFrame;
+  DWORD               dwInterlaceFlags;
+  DWORD               dwCopyProtectFlags;
+  DWORD               dwPictAspectRatioX;
+  DWORD               dwPictAspectRatioY;
   union {
     DWORD dwControlFlags;
     DWORD dwReserved1;
   };
-  DWORD               dwReserved2;
+  DWORD               dwReserved2;
   KS_BITMAPINFOHEADER bmiHeader;
 } KS_VIDEOINFOHEADER2, *PKS_VIDEOINFOHEADER2;
-````
+```
 
 ## Members
 
@@ -249,14 +249,14 @@ Reserved for system use. Must be set to zero or the connection will be rejected.
 
 `bmiHeader`
 
-Indicates a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information for the video image bitmap.
+Indicates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information for the video image bitmap.
 
 ## Remarks
-To describe a video stream without bob or weave settings, use <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>.
+To describe a video stream without bob or weave settings, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a>.
 
 The KS_VIDEOINFOHEADER2 structure is identical to the DirectShow <a href="http://go.microsoft.com/fwlink/p/?linkid=96751">VIDEOINFOHEADER2</a> structure.
 
-Capture minidrivers that produce video fields (instead of frames) must use the <a href="..\ksmedia\ns-ksmedia-tagks_datarange_video2.md">KS_DATARANGE_VIDEO2</a> structure, which contains the KS_VIDEOINFOHEADER2 structure.
+Capture minidrivers that produce video fields (instead of frames) must use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567629">KS_DATARANGE_VIDEO2</a> structure, which contains the KS_VIDEOINFOHEADER2 structure.
 
 A source filter can request that the sink filter take only a section of the video by providing values that effectively define a clipping rectangle in the <b>rcSource</b> member. However, if the sink filter does not check for the clipping rectangle on connection, the sink filter simply renders all of the video, effectively ignoring any clipping information passed from the source filter to the sink filter.
 
@@ -264,7 +264,7 @@ Ideally, a sink filter checks <b>rcSource</b> and if the sink filter does not su
 
 The <b>rcTarget</b> member specifies the destination rectangle for the video. Most source filters set this member to all zeros. A downstream filter can request that the video be placed in a particular area of the buffers that it supplies. In this case, it calls the Win32 function <b>QueryAccept</b> with a nonempty target.
 
-If the AMCONTROL_COLORINFO_PRESENT flag is set in the <b>dwControlFlags</b> member, you can cast the <b>dwControlFlags</b> value to a <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure to access the extended color information. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=96751">VIDEOINFOHEADER2</a>.
+If the AMCONTROL_COLORINFO_PRESENT flag is set in the <b>dwControlFlags</b> member, you can cast the <b>dwControlFlags</b> value to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure to access the extended color information. For more information, see <a href="http://go.microsoft.com/fwlink/p/?linkid=96751">VIDEOINFOHEADER2</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -273,12 +273,12 @@ If the AMCONTROL_COLORINFO_PRESENT flag is set in the <b>dwControlFlags</b> memb
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567629">KS_DATARANGE_VIDEO2</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_datarange_video2.md">KS_DATARANGE_VIDEO2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a>

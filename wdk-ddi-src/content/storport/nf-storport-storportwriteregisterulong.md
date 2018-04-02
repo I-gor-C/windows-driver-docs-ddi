@@ -7,7 +7,7 @@ old-location: storage\storportwriteregisterulong.htm
 old-project: storage
 ms.assetid: 12ed5f88-26af-43a4-82c7-5f36d9388cc8
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortWriteRegisterUlong, StorPortWriteRegisterUlong routine [Storage Devices], storage.storportwriteregisterulong, storport/StorPortWriteRegisterUlong, storprt_64890de0-32e7-4e07-bcbc-35a11acd6896.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,13 +51,13 @@ The <b>StorPortWriteRegisterUlong</b> routine transfers a ULONG value to the ind
 
 ## Syntax
 
-````
-STORPORT_API VOID StorPortWriteRegisterUlong(
-  _In_ PVOID  HwDeviceExtension,
-  _In_ PULONG Register,
-  _In_ ULONG  Value
+```
+void StorPortWriteRegisterUlong(
+   h,
+   r,
+   v
 );
-````
+```
 
 ## Parameters
 
@@ -88,4 +88,4 @@ None
 
 ## See Also
 
-<a href="..\storport\nf-storport-scsiportwriteregisterulong.md">ScsiPortWriteRegisterUlong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564870">ScsiPortWriteRegisterUlong</a>

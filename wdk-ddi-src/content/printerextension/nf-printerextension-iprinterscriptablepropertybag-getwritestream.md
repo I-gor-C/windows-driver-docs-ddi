@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetWriteStream method
+# IPrinterScriptablePropertyBag::GetWriteStream method
 Gets a stream and uses it  to write to a stream property.
 
 ## Syntax
 
-````
+```
 HRESULT GetWriteStream(
-  [in]          BSTR                      bstrName,
-  [out, retval] IPrinterScriptableStream **ppStream
+  BSTR                     bstrName,
+  IPrinterScriptableStream **ppStream
 );
-````
+```
 
 ## Parameters
 
@@ -87,8 +87,8 @@ A call to <b>GetWriteStream</b> will throw an exception, if the specified proper
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973217">IPrinterScriptablePropertyBag</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablestream.md">IPrinterScriptableStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973218">IPrinterScriptableStream</a>

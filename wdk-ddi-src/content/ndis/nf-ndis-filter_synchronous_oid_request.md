@@ -7,7 +7,7 @@ old-location: netvista\filter_synchronous_oid_request.htm
 old-project: netvista
 ms.assetid: AC84B27B-6FBF-429D-A8FA-F3C8F583F738
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FILTER_SYNCHRONOUS_OID_REQUEST, FilterSynchronousOidRequest, FilterSynchronousOidRequest function [Network Drivers Starting with Windows Vista], ndis/FilterSynchronousOidRequest, netvista.filter_synchronous_oid_request
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 
 ## Syntax
 
-````
-NDIS_STATUS FilterSynchronousOidRequest(
-          NDIS_HANDLE      FilterModuleContext,
-  _Inout_ NDIS_OID_REQUEST *OidRequest,
-  _Out_   PVOID            *CallContext
+```
+NDIS_STATUS FILTER_SYNCHRONOUS_OID_REQUEST(
+  NDIS_HANDLE      FilterModuleContext,
+  NDIS_OID_REQUEST *OidRequest,
+  PVOID            *CallContext
 );
-````
+```
 
 ## Parameters
 

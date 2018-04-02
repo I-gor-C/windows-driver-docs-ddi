@@ -7,7 +7,7 @@ old-location: debugger\getscope.htm
 old-project: debugger
 ms.assetid: 59eb490e-66d5-4108-8d00-5503fa56665d
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetScope method [Windows Debugging], GetScope method [Windows Debugging], IDebugSymbols interface, GetScope method [Windows Debugging], IDebugSymbols2 interface, GetScope method [Windows Debugging], IDebugSymbols3 interface, GetScope,IDebugSymbols.GetScope, IDebugSymbols, IDebugSymbols interface [Windows Debugging], GetScope method, IDebugSymbols2 interface [Windows Debugging], GetScope method, IDebugSymbols2::GetScope, IDebugSymbols3 interface [Windows Debugging], GetScope method, IDebugSymbols3::GetScope, IDebugSymbols::GetScope, IDebugSymbols_500f523a-22d9-468e-8d7c-36f49bda089c.xml, dbgeng/IDebugSymbols2::GetScope, dbgeng/IDebugSymbols3::GetScope, dbgeng/IDebugSymbols::GetScope, debugger.getscope
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,19 +46,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetScope method
+# IDebugSymbols::GetScope method
 The <b>GetScope</b> method returns information about the current scope.
 
 ## Syntax
 
-````
+```
 HRESULT GetScope(
-  [out, optional] PULONG64           InstructionOffset,
-  [out, optional] PDEBUG_STACK_FRAME ScopeFrame,
-  [out, optional] PVOID              ScopeContext,
-  [in]            ULONG              ScopeContextSize
+  PULONG64           InstructionOffset,
+  PDEBUG_STACK_FRAME ScopeFrame,
+  PVOID              ScopeContext,
+  ULONG              ScopeContextSize
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ Receives the location in the process's virtual address space of the current scop
 
 `ScopeFrame`
 
-Receives the <a href="..\dbgeng\ns-dbgeng-_debug_stack_frame.md">DEBUG_STACK_FRAME</a> structure representing the current scope's stack frame.
+Receives the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541643">DEBUG_STACK_FRAME</a> structure representing the current scope's stack frame.
 
 `ScopeContext`
 
@@ -124,23 +124,23 @@ For more information about scopes, see <a href="https://msdn.microsoft.com/libra
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
 <a href="https://msdn.microsoft.com/66a5aa3d-fe35-4c30-951f-f25de75dacb0">IDebugControl::GetEffectiveProcessorType</a>
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550856">IDebugSymbols</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550864">IDebugSymbols2</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554577">ResetScope</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
 
 
 

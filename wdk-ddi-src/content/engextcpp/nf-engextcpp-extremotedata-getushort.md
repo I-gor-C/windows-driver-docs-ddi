@@ -7,7 +7,7 @@ old-location: debugger\extremotedata_getushort.htm
 old-project: debugger
 ms.assetid: e5e2061f-5133-4645-8e07-659f08473a51
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_5429785d-2f76-434d-96c6-4fa7298aa32e.xml, ExtRemoteData, ExtRemoteData class [Windows Debugging], GetUshort method, ExtRemoteData::GetUshort, GetUshort method [Windows Debugging], GetUshort method [Windows Debugging], ExtRemoteData class, GetUshort,ExtRemoteData.GetUshort, debugger.extremotedata_getushort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,14 +44,16 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# GetUshort method
-The <b>GetUshort</b> method returns a USHORT version of the <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a> object, which represents the contents of the target's memory.
+# ExtRemoteData::GetUshort method
+The <b>GetUshort</b> method returns a USHORT version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a> object, which represents the contents of the target's memory.
 
 ## Syntax
 
-````
-USHORT GetUshort();
-````
+```
+USHORT  throw() GetUshort(
+
+);
+```
 
 ## Parameters
 
@@ -59,11 +61,11 @@ This function has no parameters.
 
 ## Return Value
 
-<b>GetUshort</b> returns the USHORT version of the <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a> object.
+<b>GetUshort</b> returns the USHORT version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a> object.
 
 ## Remarks
 
-The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a> object must be <code>sizeof(USHORT)</code>.
+The size of the memory represented by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a> object must be <code>sizeof(USHORT)</code>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -73,12 +75,12 @@ The size of the memory represented by the <a href="..\engextcpp\nl-engextcpp-ext
 
 ## See Also
 
-<a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544044">ExtRemoteData::GetShort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544044">ExtRemoteData::GetShort</a>

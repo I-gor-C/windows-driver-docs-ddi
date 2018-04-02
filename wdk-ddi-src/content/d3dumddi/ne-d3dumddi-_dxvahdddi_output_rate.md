@@ -7,7 +7,7 @@ old-location: display\dxvahdddi_output_rate.htm
 old-project: display
 ms.assetid: 61418263-3159-413d-844f-83556ce6baf0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXVA2_Structs_34010924-8e9c-440c-a972-e2ae58124666.xml, DXVAHDDDI_OUTPUT_RATE, DXVAHDDDI_OUTPUT_RATE enumeration [Display Devices], DXVAHDDDI_OUTPUT_RATE_CUSTOM, DXVAHDDDI_OUTPUT_RATE_HALF, DXVAHDDDI_OUTPUT_RATE_NORMAL, _DXVAHDDDI_OUTPUT_RATE, d3dumddi/DXVAHDDDI_OUTPUT_RATE, d3dumddi/DXVAHDDDI_OUTPUT_RATE_CUSTOM, d3dumddi/DXVAHDDDI_OUTPUT_RATE_HALF, d3dumddi/DXVAHDDDI_OUTPUT_RATE_NORMAL, display.dxvahdddi_output_rate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: DXVAHDDDI_OUTPUT_RATE
 The DXVAHDDDI_OUTPUT_RATE enumeration contains values that identify the output rate that the driver should use.
 
 ## Syntax
-````
-typedef enum _DXVAHDDDI_OUTPUT_RATE { 
-  DXVAHDDDI_OUTPUT_RATE_NORMAL  = 0,
-  DXVAHDDDI_OUTPUT_RATE_HALF    = 1,
-  DXVAHDDDI_OUTPUT_RATE_CUSTOM  = 2
+```
+typedef enum _DXVAHDDDI_OUTPUT_RATE {
+  DXVAHDDDI_OUTPUT_RATE_NORMAL  ,
+  DXVAHDDDI_OUTPUT_RATE_HALF    ,
+  DXVAHDDDI_OUTPUT_RATE_CUSTOM
 } DXVAHDDDI_OUTPUT_RATE;
-````
+```
 
 ## Constants
 
@@ -71,13 +71,13 @@ typedef enum _DXVAHDDDI_OUTPUT_RATE {
             
                 <tr>
                     <td>DXVAHDDDI_OUTPUT_RATE_CUSTOM</td>
-                    <td>A value that specifies that the driver should use a custom output rate for the frame rate conversion or the inverse telecine. For more information about custom output rate, see <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a>.</td>
+                    <td>A value that specifies that the driver should use a custom output rate for the frame rate conversion or the inverse telecine. For more information about custom output rate, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563045">DXVAHDDDI_CUSTOM_RATE_DATA</a>.</td>
                 </tr>
 </table>
 
 ## Remarks
 
-For more information about output rate, see <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a> and <a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_data.md">DXVAHDDDI_STREAM_DATA</a>.
+For more information about output rate, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563092">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff563066">DXVAHDDDI_STREAM_DATA</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,12 +87,12 @@ For more information about output rate, see <a href="..\d3dumddi\ns-d3dumddi-_dx
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_data.md">DXVAHDDDI_STREAM_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563045">DXVAHDDDI_CUSTOM_RATE_DATA</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_custom_rate_data.md">DXVAHDDDI_CUSTOM_RATE_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563066">DXVAHDDDI_STREAM_DATA</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvahdddi_stream_state_output_rate_data.md">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563092">DXVAHDDDI_STREAM_STATE_OUTPUT_RATE_DATA</a>

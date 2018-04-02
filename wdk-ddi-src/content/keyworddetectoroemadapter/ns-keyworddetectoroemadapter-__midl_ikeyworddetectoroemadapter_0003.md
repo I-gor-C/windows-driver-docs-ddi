@@ -7,7 +7,7 @@ old-location: audio\keywordselector.htm
 old-project: audio
 ms.assetid: 762A7E36-E0F8-475C-B201-217D8FD8EBD6
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: KEYWORDSELECTOR, KEYWORDSELECTOR structure [Audio Devices], __MIDL_IKeywordDetectorOemAdapter_0003, audio.keywordselector, keyworddetectoroemadapter/KEYWORDSELECTOR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: KEYWORDSELECTOR
 The <b>KEYWORDSELECTOR</b> struct is a triplet of IDs that uniquely select a particular keyword, language, and user combination.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct __MIDL_IKeywordDetectorOemAdapter_0003 {
   KEYWORDID KeywordId;
-  LANGID    LangId;
+  LANGID    LangId;
 } KEYWORDSELECTOR;
-````
+```
 
 ## Members
 

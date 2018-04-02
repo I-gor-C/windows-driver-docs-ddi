@@ -7,7 +7,7 @@ old-location: netvista\ndismreaddmacounter.htm
 old-project: netvista
 ms.assetid: bfce0f28-4cca-48a2-8836-2f77f4b6370a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMReadDmaCounter, NdisMReadDmaCounter function [Network Drivers Starting with Windows Vista], dma_ref_12d2675f-d576-4a5d-9af0-42dfd63fd1da.xml, ndis/NdisMReadDmaCounter, netvista.ndismreaddmacounter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,18 +51,18 @@ The
 
 ## Syntax
 
-````
+```
 ULONG NdisMReadDmaCounter(
-  _In_ NDIS_HANDLE MiniportDmaHandle
+  NDIS_HANDLE MiniportDmaHandle
 );
-````
+```
 
 ## Parameters
 
 `MiniportDmaHandle`
 
 The handle returned when the miniport driver called the 
-     <a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a> function
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563646">NdisMRegisterDmaChannel</a> function
      during initialization.
 
 
@@ -88,4 +88,4 @@ Miniport drivers of devices that use the system DMA controller's auto-initialize
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563646">NdisMRegisterDmaChannel</a>

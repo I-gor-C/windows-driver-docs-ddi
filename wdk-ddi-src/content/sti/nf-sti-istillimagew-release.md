@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Release method
+# IStillImageW::Release method
 The <b>IStillImage::Release</b> method closes the instance of the COM object that was created by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543804">IStillImage::StiCreateInstance</a>, and removes access to the object's interface.
 
 ## Syntax
 
-````
-HRESULT Release();
-````
+```
+ULONG Release(
+
+);
+```
 
 ## Parameters
 

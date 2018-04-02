@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlallocatepoolwithquotatag.htm
 old-project: ifsk
 ms.assetid: 241525fd-c21b-4c24-91a0-6a79df4faea7
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlAllocatePoolWithQuotaTag, FsRtlAllocatePoolWithQuotaTag routine [Installable File System Drivers], fsrtlref_f4d15687-848c-4c31-8f30-48eb69498cc9.xml, ifsk.fsrtlallocatepoolwithquotatag, ntifs/FsRtlAllocatePoolWithQuotaTag
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ The <b>FsRtlAllocatePoolWithQuotaTag</b> routine allocates pool memory, charging
 
 ## Syntax
 
-````
-PVOID FsRtlAllocatePoolWithQuotaTag(
-  _In_ POOL_TYPE PoolType,
-  _In_ ULONG     NumberOfBytes,
-  _In_ ULONG     Tag
+```
+void FsRtlAllocatePoolWithQuotaTag(
+   PoolType,
+   NumberOfBytes,
+   Tag
 );
-````
+```
 
 ## Parameters
 
@@ -109,11 +109,11 @@ Callers of <b>FsRtlAllocatePoolWithQuotaTag</b> must be running at IRQL &lt;= DI
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544513">ExAllocatePoolWithQuotaTag</a>
 
 
 
-<a href="..\wdm\nf-wdm-exallocatepoolwithquotatag.md">ExAllocatePoolWithQuotaTag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a>
 
 
 

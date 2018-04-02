@@ -44,22 +44,22 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsQueryMediums method
+# IKsPin::KsQueryMediums method
 The <b>KsQueryMediums</b> method retrieves mediums that a pin supports.
 
 ## Syntax
 
-````
+```
 HRESULT KsQueryMediums(
-  [out] PKSMULTIPLE_ITEM *MediumList
+  PKSMULTIPLE_ITEM *MediumList
 );
-````
+```
 
 ## Parameters
 
 `MediumList`
 
-Pointer to a buffer that receives a pointer to a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a> structure, followed by a sequence of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a> structures that describe medium types. The KSMULTIPLE_ITEM structure is a header that describes the size of the buffer and the number of entries in the list that follows the header.
+Pointer to a buffer that receives a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563441">KSMULTIPLE_ITEM</a> structure, followed by a sequence of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a> structures that describe medium types. The KSMULTIPLE_ITEM structure is a header that describes the size of the buffer and the number of entries in the list that follows the header.
 
 
 ## Return Value
@@ -80,7 +80,7 @@ Applications call <b>KsQueryMediums</b> to retrieve mediums that pins support in
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563441">KSMULTIPLE_ITEM</a>
 
 
 

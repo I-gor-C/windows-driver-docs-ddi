@@ -50,17 +50,17 @@ The<b> KsPinReleaseProcessingMutex </b>function releases the processing mutex fo
 
 ## Syntax
 
-````
+```
 void KsPinReleaseProcessingMutex(
-  _In_ PKSPIN Pin
+  PKSPIN Pin
 );
-````
+```
 
 ## Parameters
 
 `Pin`
 
-A pointer to a <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure representing the AVStream pin object for which to acquire the processing mutex.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure representing the AVStream pin object for which to acquire the processing mutex.
 
 
 ## Return Value
@@ -82,8 +82,8 @@ Minidrivers that must suspend processing for a long time should not use this mut
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspinacquireprocessingmutex.md">KsPinAcquireProcessingMutex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a>
 
 
 
-<a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563488">KsPinAcquireProcessingMutex</a>

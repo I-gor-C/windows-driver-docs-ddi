@@ -7,7 +7,7 @@ old-location: debugger\outputastype.htm
 old-project: debugger
 ms.assetid: ab8c19c8-73c0-4c70-9a5d-9cf9d182157d
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: ComOther_6805cc12-0d46-4114-a40d-54c7e32b3c7c.xml, IDebugSymbolGroup, IDebugSymbolGroup interface [Windows Debugging], OutputAsType method, IDebugSymbolGroup2 interface [Windows Debugging], OutputAsType method, IDebugSymbolGroup2::OutputAsType, IDebugSymbolGroup::OutputAsType, OutputAsType method [Windows Debugging], OutputAsType method [Windows Debugging], IDebugSymbolGroup interface, OutputAsType method [Windows Debugging], IDebugSymbolGroup2 interface, OutputAsType,IDebugSymbolGroup.OutputAsType, dbgeng/IDebugSymbolGroup2::OutputAsType, dbgeng/IDebugSymbolGroup::OutputAsType, debugger.outputastype
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,17 +45,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# OutputAsType method
+# IDebugSymbolGroup::OutputAsType method
 The <b>OutputAsType</b>  method changes the type of a symbol in a symbol group.  The symbol's entry is updated to represent the new type.
 
 ## Syntax
 
-````
+```
 HRESULT OutputAsType(
-  [in] ULONG Index,
-  [in] PCSTR Type
+  ULONG Index,
+  PCSTR Type
 );
-````
+```
 
 ## Parameters
 
@@ -115,8 +115,8 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550838">IDebugSymbolGroup</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550846">IDebugSymbolGroup2</a>

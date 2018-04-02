@@ -7,7 +7,7 @@ old-location: audio\ksrtaudio_setwritepacket_info.htm
 old-project: audio
 ms.assetid: 641DE2B5-7903-4D25-A280-F2BCCE8B1500
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PKSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO structure [Audio Devices], PKSRTAUDIO_SETWRITEPACKET_INFO, PKSRTAUDIO_SETWRITEPACKET_INFO structure pointer [Audio Devices], audio.ksrtaudio_setwritepacket_info, ksmedia/KSRTAUDIO_SETWRITEPACKET_INFO, ksmedia/PKSRTAUDIO_SETWRITEPACKET_INFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: KSRTAUDIO_SETWRITEPACKET_INFO, *PKSRTAUDIO_SETWRITEPACKET_INFO
 The KSRTAUDIO_SETWRITEPACKET_INFO structure describes information associated with an audio packet.
 
 ## Syntax
-````
-typedef struct _KSRTAUDIO_SETWRITEPACKET_INFO {
+```
+typedef struct KSRTAUDIO_SETWRITEPACKET_INFO {
   ULONG PacketNumber;
-  DWORD Flags ;
+  DWORD Flags;
   ULONG EosPacketLength;
-} KSRTAUDIO_SETWRITEPACKET_INFO, *PKSRTAUDIO_SETWRITEPACKET_INFO;
-````
+} *PKSRTAUDIO_SETWRITEPACKET_INFO, KSRTAUDIO_SETWRITEPACKET_INFO;
+```
 
 ## Members
 

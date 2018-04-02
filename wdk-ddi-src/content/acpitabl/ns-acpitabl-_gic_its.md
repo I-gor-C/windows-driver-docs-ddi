@@ -47,16 +47,16 @@ req.typenames: GIC_ITS
 This topic describes the <b>GIC_ITS</b> structure.
 
 ## Syntax
-````
+```
 typedef struct _GIC_ITS {
-  UCHAR     Type;
-  UCHAR     Length;
-  USHORT    Reserved1;
-  ULONG     Identifier;
+  UCHAR     Type;
+  UCHAR     Length;
+  USHORT    Reserved1;
+  ULONG     Identifier;
   ULONGLONG PhysicalAddress;
-  ULONG     Reserved2;
+  ULONG     Reserved2;
 } GIC_ITS;
-````
+```
 
 ## Members
 

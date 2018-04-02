@@ -50,13 +50,13 @@ This I/O control function checks the device health.
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-Pointer to the input buffer, a <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedposhealthchecklevel.md">UnifiedPosHealthCheckLevel</a> variable.
+Pointer to the input buffer, a <a href="https://msdn.microsoft.com/101a74c8-a0c2-4820-b9a1-41e39ee4cf11">UnifiedPosHealthCheckLevel</a> variable.
 
 ### Input Buffer Length
 Size of the input buffer, in bytes. Set to sizeof(<i>UnifiedPosHealthCheckLevel</i>).
 
 ### Output Buffer
-Pointer to a buffer that receives a <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posstringtype.md">PosStringType</a> followed by the contents of the health string.
+Pointer to a buffer that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/dn772274">PosStringType</a> followed by the contents of the health string.
 
 ### Output Buffer Length
 Size of the output buffer, in bytes. Set to sizeof(<i>PosStringType</i>) + enough room to hold the health string.

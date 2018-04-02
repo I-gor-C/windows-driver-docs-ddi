@@ -7,7 +7,7 @@ old-location: display\d3dddi_flipoverlayflags.htm
 old-project: display
 ms.assetid: 09146e6b-3ac0-422a-addb-831394a15c08
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_FLIPOVERLAYFLAGS, D3DDDI_FLIPOVERLAYFLAGS structure [Display Devices], D3D_other_Structs_a62b399d-d553-4325-9f5a-ceb08287d4f4.xml, _D3DDDI_FLIPOVERLAYFLAGS, d3dumddi/D3DDDI_FLIPOVERLAYFLAGS, display.d3dddi_flipoverlayflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: D3DDDI_FLIPOVERLAYFLAGS
 The D3DDDI_FLIPOVERLAYFLAGS structure identifies how to flip a resource on an overlay.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDI_FLIPOVERLAYFLAGS {
   union {
     struct {
-      UINT Even  :1;
-      UINT Odd  :1;
-      UINT Reserved  :30;
+      UINT  : 1  Even;
+      UINT  : 1  Odd;
+      UINT  : 30 Reserved;
     };
-    UINT   Value;
+    UINT Value;
   };
 } D3DDDI_FLIPOVERLAYFLAGS;
-````
+```
 
 ## Members
 
@@ -72,4 +72,4 @@ typedef struct _D3DDDI_FLIPOVERLAYFLAGS {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_flipoverlay.md">D3DDDIARG_FLIPOVERLAY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543124">D3DDDIARG_FLIPOVERLAY</a>

@@ -50,19 +50,19 @@ The<b> KsFilterRegisterPowerCallbacks </b>function registers power management ca
 
 ## Syntax
 
-````
+```
 void KsFilterRegisterPowerCallbacks(
-  _In_     PKSFILTER        Filter,
-  _In_opt_ PFNKSFILTERPOWER Sleep,
-  _In_opt_ PFNKSFILTERPOWER Wake
+  PKSFILTER        Filter,
+  PFNKSFILTERPOWER Sleep,
+  PFNKSFILTERPOWER Wake
 );
-````
+```
 
 ## Parameters
 
 `Filter`
 
-A pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure for which to register power callbacks. In order to receive power notification messages, <i>Filter</i> must be filter-centric.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure for which to register power callbacks. In order to receive power notification messages, <i>Filter</i> must be filter-centric.
 
 `Sleep`
 
@@ -110,4 +110,4 @@ Also see <a href="https://msdn.microsoft.com/666d6efb-93ec-43f3-87c5-ea1a3983bfd
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspinregisterpowercallbacks.md">KsPinRegisterPowerCallbacks</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563525">KsPinRegisterPowerCallbacks</a>

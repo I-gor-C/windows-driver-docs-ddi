@@ -7,7 +7,7 @@ old-location: debugger\extremotedata_read.htm
 old-project: debugger
 ms.assetid: 3068cbcf-c15b-43e1-bd53-857efea65d83
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_69230a7b-f83c-46fc-88c4-134b506540af.xml, ExtRemoteData, ExtRemoteData class [Windows Debugging], Read method, ExtRemoteData::Read, Read method [Windows Debugging], Read method [Windows Debugging], ExtRemoteData class, Read,ExtRemoteData.Read, debugger.extremotedata_read
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,14 +44,16 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# Read method
-The <b>Read</b> method reads the contents of the target's memory, represented by the <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a> object, and then caches the data.
+# ExtRemoteData::Read method
+The <b>Read</b> method reads the contents of the target's memory, represented by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a> object, and then caches the data.
 
 ## Syntax
 
-````
-void Read();
-````
+```
+void  throw() Read(
+
+);
+```
 
 ## Parameters
 
@@ -75,7 +77,7 @@ The data can be retrieved using <a href="https://msdn.microsoft.com/library/wind
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/a335f881-7b6f-4069-87fe-c036867b0c77">ExtRemoteData::Set(Typed)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a>
 
 
 
@@ -83,12 +85,12 @@ The data can be retrieved using <a href="https://msdn.microsoft.com/library/wind
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
+
+
+
 <a href="https://msdn.microsoft.com/50b4bee4-3a8c-45a1-9a3f-b416aa8a19e5">ExtRemoteData::Set(Offset Bytes)</a>
 
 
 
-<a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544019">ExtRemoteData::GetData</a>
+<a href="https://msdn.microsoft.com/a335f881-7b6f-4069-87fe-c036867b0c77">ExtRemoteData::Set(Typed)</a>

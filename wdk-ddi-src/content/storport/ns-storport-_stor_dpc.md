@@ -7,7 +7,7 @@ old-location: storage\stor_dpc.htm
 old-project: storage
 ms.assetid: bb73217c-b159-4fd8-8cb3-334326a651ba
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTOR_DPC, STOR_DPC, STOR_DPC structure [Storage Devices], _STOR_DPC, storage.stor_dpc, storport/STOR_DPC, structs-general_e1bef2e1-9703-433c-b8a1-daf30db1aaf6.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,8 +66,8 @@ typedef struct _STOR_DPC {
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportissuedpc.md">StorPortIssueDpc</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567110">StorPortInitializeDpc</a>
 
 
 
-<a href="..\storport\nf-storport-storportinitializedpc.md">StorPortInitializeDpc</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567116">StorPortIssueDpc</a>

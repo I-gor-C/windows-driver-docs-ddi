@@ -55,19 +55,19 @@ The <b>WdfUsbInterfaceGetDescriptor</b> method retrieves the USB interface descr
 
 ## Syntax
 
-````
-VOID WdfUsbInterfaceGetDescriptor(
-  _In_  WDFUSBINTERFACE           UsbInterface,
-  _In_  UCHAR                     SettingIndex,
-  _Out_ PUSB_INTERFACE_DESCRIPTOR InterfaceDescriptor
+```
+void WdfUsbInterfaceGetDescriptor(
+  WDFUSBINTERFACE           UsbInterface,
+  UCHAR                     SettingIndex,
+  PUSB_INTERFACE_DESCRIPTOR InterfaceDescriptor
 );
-````
+```
 
 ## Parameters
 
 `UsbInterface`
 
-A handle to a USB interface object that was obtained by calling <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>.
+A handle to a USB interface object that was obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550092">WdfUsbTargetDeviceGetInterface</a>.
 
 `SettingIndex`
 
@@ -75,14 +75,14 @@ An index value that identifies an alternate setting for the interface. For more 
 
 `InterfaceDescriptor`
 
-A pointer to a caller-allocated <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a> structure that the framework fills in.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff540065">USB_INTERFACE_DESCRIPTOR</a> structure that the framework fills in.
 
 
 ## Return Value
 
 None. 
 
-If the <i>SettingIndex</i> value is invalid, the <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a> structure can receive invalid data. 
+If the <i>SettingIndex</i> value is invalid, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540065">USB_INTERFACE_DESCRIPTOR</a> structure can receive invalid data. 
 
 A bug check occurs if the driver supplies an invalid object handle.
 
@@ -130,8 +130,8 @@ WdfUsbInterfaceGetDescriptor(
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540065">USB_INTERFACE_DESCRIPTOR</a>
 
 
 
-<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550092">WdfUsbTargetDeviceGetInterface</a>

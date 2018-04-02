@@ -51,20 +51,20 @@ When the minidriver calls the <b>StreamClassQueryMasterClock</b> routine, the cl
 
 ## Syntax
 
-````
-VOID StreamClassQueryMasterClock(
-  _In_ PHW_STREAM_OBJECT       HwStreamObject,
-  _In_ HANDLE                  MasterClockHandle,
-  _In_ TIME_FUNCTION           TimeFunction,
-  _In_ PHW_QUERY_CLOCK_ROUTINE ClockCallbackRoutine
+```
+void StreamClassQueryMasterClock(
+  PHW_STREAM_OBJECT       HwStreamObject,
+  HANDLE                  MasterClockHandle,
+  TIME_FUNCTION           TimeFunction,
+  PHW_QUERY_CLOCK_ROUTINE ClockCallbackRoutine
 );
-````
+```
 
 ## Parameters
 
 `HwStreamObject`
 
-Pointer to a <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a> indicating the stream that is querying its master clock. The stream may only have one query pending at a time. The class driver passes this value to the callback in the <b>HwStreamObject</b> member of the callback's <i>TimeContext</i> parameter.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559697">HW_STREAM_OBJECT</a> indicating the stream that is querying its master clock. The stream may only have one query pending at a time. The class driver passes this value to the callback in the <b>HwStreamObject</b> member of the callback's <i>TimeContext</i> parameter.
 
 `MasterClockHandle`
 
@@ -72,7 +72,7 @@ Specifies the handle for the master clock that is being queried. The class drive
 
 `TimeFunction`
 
-Specifies what time function to query the master clock for. See <a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a> for the possible values. The class driver passes this value to the callback in the <b>Function</b> member of the <i>TimeContext</i> parameter.
+Specifies what time function to query the master clock for. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff559706">HW_TIME_CONTEXT</a> for the possible values. The class driver passes this value to the callback in the <b>Function</b> member of the <i>TimeContext</i> parameter.
 
 `ClockCallbackRoutine`
 
@@ -96,7 +96,7 @@ None
 
 ## Remarks
 
-The class driver queries the master clock and passes the results in the <i>TimeContext</i> parameter (of type <a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>) of the callback. In particular, it sets the <b>Time</b> member of this structure to the time value requested in the <i>TimeFunction</i> parameter, the current system time in the <b>SystemTime</b> member of the same structure, and the minidriver's device extension in the <b>HwDeviceExtension</b> member of that structure.
+The class driver queries the master clock and passes the results in the <i>TimeContext</i> parameter (of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559706">HW_TIME_CONTEXT</a>) of the callback. In particular, it sets the <b>Time</b> member of this structure to the time value requested in the <i>TimeFunction</i> parameter, the current system time in the <b>SystemTime</b> member of the same structure, and the minidriver's device extension in the <b>HwDeviceExtension</b> member of that structure.
 
 The class driver deallocates the HW_TIME_CONTEXT structure after the clock callback routine terminates, so the callback must store any information the minidriver wishes to maintain. For that purpose, the callback routine may use previously-allocated space in either the minidriver's device extension (<i>TimeContext-</i>&gt;<b>HwDeviceExtension</b>), or the stream extension of the stream that queried its master clock (<i>TimeContext</i>-&gt;<b>HwStreamObject</b>-&gt;<b>HwStreamExtension</b>).
 
@@ -111,7 +111,7 @@ On rare occasions, the graph manager switches the master clock. The class driver
 
 ## See Also
 
-<a href="..\strmini\nf-strmini-streamclassquerymasterclocksync.md">StreamClassQueryMasterClockSync</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559706">HW_TIME_CONTEXT</a>
 
 
 
@@ -119,4 +119,4 @@ On rare occasions, the graph manager switches the master clock. The class driver
 
 
 
-<a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568251">StreamClassQueryMasterClockSync</a>

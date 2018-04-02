@@ -7,7 +7,7 @@ old-location: debugger\getsourceentriesbyline.htm
 old-project: debugger
 ms.assetid: 02ab63fe-0c59-480c-a333-a9b14d83ad68
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetSourceEntriesByLine method [Windows Debugging], GetSourceEntriesByLine method [Windows Debugging], IDebugSymbols3 interface, GetSourceEntriesByLine,IDebugSymbols3.GetSourceEntriesByLine, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSourceEntriesByLine method, IDebugSymbols3::GetSourceEntriesByLine, IDebugSymbols_b750f895-6583-49a6-be03-c373f89808a7.xml, dbgeng/IDebugSymbols3::GetSourceEntriesByLine, debugger.getsourceentriesbyline
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetSourceEntriesByLine method
+# IDebugSymbols3::GetSourceEntriesByLine method
 The <b>GetSourceEntriesByLine</b>  method queries symbol information and returns locations in the target's memory that correspond to lines in a source file.
 
 ## Syntax
 
-````
+```
 HRESULT GetSourceEntriesByLine(
-  [in]            ULONG                      Line,
-  [in]            PCSTR                      File,
-  [in]            ULONG                      Flags,
-  [out, optional] PDEBUG_SYMBOL_SOURCE_ENTRY Entries,
-  [in]            ULONG                      EntriesCount,
-  [out, optional] PULONG                     EntriesAvailable
+  ULONG                      Line,
+  PCSTR                      File,
+  ULONG                      Flags,
+  PDEBUG_SYMBOL_SOURCE_ENTRY Entries,
+  ULONG                      EntriesCount,
+  PULONG                     EntriesAvail
 );
-````
+```
 
 ## Parameters
 
@@ -128,7 +128,7 @@ To use the default set of flags, set <i>Flags</i> to DEBUG_GSEL_DEFAULT.  This h
 
 `Entries`
 
-Receives the locations in the target's memory that correspond to the source lines queried for.  Each entry in this array is of type <a href="..\dbgeng\ns-dbgeng-_debug_symbol_source_entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a> and contains the source line number along with a location in the target's memory.
+Receives the locations in the target's memory that correspond to the source lines queried for.  Each entry in this array is of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541680">DEBUG_SYMBOL_SOURCE_ENTRY</a> and contains the source line number along with a location in the target's memory.
 
 `EntriesCount`
 
@@ -197,12 +197,12 @@ For more information about source files, see <a href="https://msdn.microsoft.com
 
 ## See Also
 
-<a href="..\dbgeng\ns-dbgeng-_debug_symbol_source_entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541680">DEBUG_SYMBOL_SOURCE_ENTRY</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548339">GetSourceFileLineOffsets</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

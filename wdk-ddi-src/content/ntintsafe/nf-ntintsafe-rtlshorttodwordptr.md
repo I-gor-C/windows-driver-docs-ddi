@@ -7,7 +7,7 @@ old-location: kernel\rtlshorttodwordptr.htm
 old-project: kernel
 ms.assetid: 0ABB3DBF-117D-491D-85A3-68E9280CFC6C
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlShortToDWordPtr, RtlShortToDWordPtr function [Kernel-Mode Driver Architecture], kernel.rtlshorttodwordptr, ntintsafe/RtlShortToDWordPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>SHORT</b> to a value of type <b>DWORD_PTR</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlShortToDWordPtr(
-  _In_  SHORT     sOperand,
-  _Out_ DWORD_PTR *pdwResult
+  SHORT     sOperand,
+  DWORD_PTR *pdwResult
 );
-````
+```
 
 ## Parameters
 

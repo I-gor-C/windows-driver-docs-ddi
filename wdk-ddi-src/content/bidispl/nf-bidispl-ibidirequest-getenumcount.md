@@ -44,16 +44,16 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
-# GetEnumCount method
+# IBidiRequest::GetEnumCount method
 The <b>GetEnumCount</b> method gets the number of output results from the bidi request.
 
 ## Syntax
 
-````
+```
 HRESULT GetEnumCount(
-  [out] DWORD *pdwTotal
+  DWORD *pdwTotal
 );
-````
+```
 
 ## Parameters
 
@@ -131,10 +131,6 @@ A single bidi request can have multiple results. After calling <b>GetEnumCount</
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/0757dbc2-850b-4267-9339-b87591f85767">GetOutputData</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
 
 
@@ -143,4 +139,8 @@ A single bidi request can have multiple results. After calling <b>GetEnumCount</
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
+<a href="https://msdn.microsoft.com/0757dbc2-850b-4267-9339-b87591f85767">GetOutputData</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144969">IBidiRequest</a>

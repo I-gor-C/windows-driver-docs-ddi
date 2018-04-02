@@ -44,20 +44,20 @@ req.typenames:
 ---
 
 
-# KsEvent method
+# IKsControl::KsEvent method
 The <b>IKsControl::KsEvent</b> method enables or disables an event, together with any other defined support operations available on an event set.
 
 ## Syntax
 
-````
+```
 NTSTATUS KsEvent(
-   PKSEVENT Event,
-   ULONG    EventLength,
-   PVOID    EventData,
-   ULONG    DataLength,
-   ULONG    BytesReturned
+  PKSEVENT Event,
+  ULONG    EventLength,
+  PVOID    EventData,
+  ULONG    DataLength,
+  ULONG    *BytesReturned
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ Specifies size, in bytes, of the buffer at <i>Event</i> when the event is enable
 
 `EventData`
 
-Pointer to a <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that contains data for the event and buffer space that receives data for the event.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a> structure that contains data for the event and buffer space that receives data for the event.
 
 `DataLength`
 
@@ -88,7 +88,7 @@ The <b>IKsControl::KsEvent</b> method returns the same value that would be retur
 
 ## Remarks
 
-To disable an event, set <i>Event</i> to <b>NULL</b>, <i>EventLength</i> to zero, and <i>EventData</i> to the pointer to the <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that was previously used to enable the event.
+To disable an event, set <i>Event</i> to <b>NULL</b>, <i>EventLength</i> to zero, and <i>EventData</i> to the pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a> structure that was previously used to enable the event.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,4 +102,4 @@ To disable an event, set <i>Event</i> to <b>NULL</b>, <i>EventLength</i> to zero
 
 
 
-<a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a>

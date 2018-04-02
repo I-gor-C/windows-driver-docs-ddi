@@ -50,12 +50,12 @@ This function initializes the sensor in the class extension.
 
 ## Syntax
 
-````
-FORCEINLINE NTSTATUS SensorsCxDeviceInitialize(
-  _In_ WDFDEVICE                 FxDevice,
-  _In_ PSENSOR_CONTROLLER_CONFIG pSensorConfig
+```
+NTSTATUS SensorsCxDeviceInitialize(
+  WDFDEVICE                 FxDevice,
+  PSENSOR_CONTROLLER_CONFIG pSensorConfig
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ A WDFDEVICE handle to the framework device object that represents the sensor.
 
 `pSensorConfig`
 
-A list of functions that the driver implements. For more information, see <a href="..\sensorscx\ns-sensorscx-_sensor_controller_config.md">SENSOR_CONTROLLER_CONFIG</a>.
+A list of functions that the driver implements. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957098">SENSOR_CONTROLLER_CONFIG</a>.
 
 
 ## Return Value
@@ -81,4 +81,4 @@ This function returns STATUS_SUCCESS when completed successfully. When an invali
 
 ## See Also
 
-<a href="..\sensorscx\ns-sensorscx-_sensor_controller_config.md">SENSOR_CONTROLLER_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957098">SENSOR_CONTROLLER_CONFIG</a>

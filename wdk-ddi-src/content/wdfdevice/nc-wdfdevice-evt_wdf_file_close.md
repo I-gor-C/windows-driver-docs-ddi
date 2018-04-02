@@ -65,7 +65,7 @@ void EvtWdfFileClose(
 
 `FileObject`
 
-A handle to a framework file object, which was previously received by the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_file_create.md">EvtDeviceFileCreate</a> callback function.
+A handle to a framework file object, which was previously received by the driver's <a href="https://msdn.microsoft.com/ee44c0bf-1fca-442d-8871-df6079e89ced">EvtDeviceFileCreate</a> callback function.
 
 
 ## Return Value
@@ -78,11 +78,11 @@ The framework calls a driver's <i>EvtFileClose</i> callback function when the la
 
 The device might not be in its working (D0) state.
 
-Before the framework calls a driver's <i>EvtFileClose</i> callback function, it calls the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_cleanup.md">EvtFileCleanup</a> callback function.
+Before the framework calls a driver's <i>EvtFileClose</i> callback function, it calls the driver's <a href="https://msdn.microsoft.com/8ce3d316-3976-4af5-a0ae-af4e93f380a1">EvtFileCleanup</a> callback function.
 
 The <i>EvtFileClose</i> callback function is called synchronously, in an arbitrary thread context. 
 
-To register an <i>EvtFileClose</i> callback function, the driver must call the <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetfileobjectconfig.md">WdfDeviceInitSetFileObjectConfig</a> method.
+To register an <i>EvtFileClose</i> callback function, the driver must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546107">WdfDeviceInitSetFileObjectConfig</a> method.
 
 For more information about framework file objects and the <i>EvtFileClose</i> callback function, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8">Framework File Objects</a>.
 
@@ -133,4 +133,4 @@ The <b>EVT_WDF_FILE_CLOSE</b> function type is defined in the Wdfdevice.h header
 
 ## See Also
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_fileobject_config.md">WDF_FILEOBJECT_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551319">WDF_FILEOBJECT_CONFIG</a>

@@ -47,13 +47,13 @@ req.typenames: KS_DATARANGE_DV_AVC, *PKS_DATARANGE_DV_AVC
 The KS_DATARANGE_DV_AVC structure stores a range of AV/C digital video formats.
 
 ## Syntax
-````
+```
 typedef struct tagKS_DATARANGE_DV_AVC {
-  KSDATARANGE       DataRange;
-  DVINFO            DVVideoInfo;
+  KSDATARANGE       DataRange;
+  DVINFO            DVVideoInfo;
   AVCPRECONNECTINFO ConnectInfo;
-} KS_DATARANGE_DV_AVC, *PKS_DATARANGE_DV_AVC;
-````
+} *PKS_DATARANGE_DV_AVC, KS_DATARANGE_DV_AVC;
+```
 
 ## Members
 
@@ -78,12 +78,12 @@ Specifies the AV/C preconnection info.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554103">AVCPRECONNECTINFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559517">DVINFO</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
-
-
-
-<a href="..\avcstrm\ns-avcstrm-_dvinfo.md">DVINFO</a>
-
-
-
-<a href="..\avc\ns-avc-_avcpreconnectinfo.md">AVCPRECONNECTINFO</a>

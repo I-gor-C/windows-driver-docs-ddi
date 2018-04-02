@@ -55,22 +55,22 @@ The <b>WdfUsbTargetDeviceGetDeviceDescriptor</b> method retrieves the USB device
 
 ## Syntax
 
-````
-VOID WdfUsbTargetDeviceGetDeviceDescriptor(
-  _In_  WDFUSBDEVICE           UsbDevice,
-  _Out_ PUSB_DEVICE_DESCRIPTOR UsbDeviceDescriptor
+```
+void WdfUsbTargetDeviceGetDeviceDescriptor(
+  WDFUSBDEVICE           UsbDevice,
+  PUSB_DEVICE_DESCRIPTOR UsbDeviceDescriptor
 );
-````
+```
 
 ## Parameters
 
 `UsbDevice`
 
-A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.
+A handle to a USB device object that was obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 `UsbDeviceDescriptor`
 
-A pointer to a caller-allocated <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a> structure that receives the USB device descriptor.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a> structure that receives the USB device descriptor.
 
 
 ## Return Value
@@ -119,8 +119,8 @@ WdfUsbTargetDeviceGetDeviceDescriptor(
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a>
 
 
 
-<a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>

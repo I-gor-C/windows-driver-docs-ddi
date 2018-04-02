@@ -7,7 +7,7 @@ old-location: storage\feature_data_disc_control_blocks.htm
 old-project: storage
 ms.assetid: ed39e714-38c5-45cf-b1f0-dd00b4d49895
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PFEATURE_DATA_DISC_CONTROL_BLOCKS, FEATURE_DATA_DISC_CONTROL_BLOCKS, FEATURE_DATA_DISC_CONTROL_BLOCKS structure [Storage Devices], PFEATURE_DATA_DISC_CONTROL_BLOCKS, PFEATURE_DATA_DISC_CONTROL_BLOCKS structure pointer [Storage Devices], _FEATURE_DATA_DISC_CONTROL_BLOCKS, ntddmmc/FEATURE_DATA_DISC_CONTROL_BLOCKS, ntddmmc/PFEATURE_DATA_DISC_CONTROL_BLOCKS, storage.feature_data_disc_control_blocks, structs-CD-ROM_313fa292-b1c4-408d-94e9-491cb3d0aa0f.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,23 +47,23 @@ req.typenames: FEATURE_DATA_DISC_CONTROL_BLOCKS, *PFEATURE_DATA_DISC_CONTROL_BLO
 The FEATURE_DATA_DISC_CONTROL_BLOCKS structure holds an array of the data reported for the Disc Control Block feature.
 
 ## Syntax
-````
+```
 typedef struct _FEATURE_DATA_DISC_CONTROL_BLOCKS {
-  FEATURE_HEADER                      Header;
-  FEATURE_DATA_DISC_CONTROL_BLOCKS_EX Data[];
-} FEATURE_DATA_DISC_CONTROL_BLOCKS, *PFEATURE_DATA_DISC_CONTROL_BLOCKS;
-````
+  FEATURE_HEADER                      Header;
+  FEATURE_DATA_DISC_CONTROL_BLOCKS_EX Data[0];
+} *PFEATURE_DATA_DISC_CONTROL_BLOCKS, FEATURE_DATA_DISC_CONTROL_BLOCKS;
+```
 
 ## Members
 
 
 `Header`
 
-Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
 `Data`
 
-Contains zero, one, or more disk control blocks. Each disk control block is contained in a <a href="..\ntddmmc\ns-ntddmmc-_feature_data_disc_control_blocks_ex.md">FEATURE_DATA_DISC_CONTROL_BLOCKS_EX</a> structure.
+Contains zero, one, or more disk control blocks. Each disk control block is contained in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553783">FEATURE_DATA_DISC_CONTROL_BLOCKS_EX</a> structure.
 
 ## Remarks
 This structure holds data for the feature named "Disc Control Blocks" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature can do reads and writes of disc control blocks.
@@ -75,12 +75,12 @@ This structure holds data for the feature named "Disc Control Blocks" by the <i>
 
 ## See Also
 
-<a href="..\ntddmmc\ns-ntddmmc-_feature_data_disc_control_blocks_ex.md">FEATURE_DATA_DISC_CONTROL_BLOCKS_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553783">FEATURE_DATA_DISC_CONTROL_BLOCKS_EX</a>
 
 
 
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
 
 
 
-<a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>

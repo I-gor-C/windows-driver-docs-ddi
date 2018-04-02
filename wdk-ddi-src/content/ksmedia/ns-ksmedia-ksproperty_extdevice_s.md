@@ -47,18 +47,18 @@ req.typenames: KSPROPERTY_EXTDEVICE_S, *PKSPROPERTY_EXTDEVICE_S
 The KSPROPERTY_EXTDEVICE_S structure describes an external device and its capabilities.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_EXTDEVICE_S {
   KSPROPERTY Property;
   union {
     DEVCAPS Capabilities;
-    ULONG   DevPort;
-    ULONG   PowerState;
-    WCHAR   pawchString[MAX_PATH];
-    DWORD   NodeUniqueID[2];
-  } u;
-} KSPROPERTY_EXTDEVICE_S, *PKSPROPERTY_EXTDEVICE_S;
-````
+    ULONG   DevPort;
+    DWORD   NodeUniqueID[2];
+    WCHAR   pawchString[MAX_PATH];
+    ULONG   PowerState;
+  } u;
+} *PKSPROPERTY_EXTDEVICE_S, KSPROPERTY_EXTDEVICE_S;
+```
 
 ## Members
 
@@ -117,8 +117,8 @@ Any ED_Xxx or DEV_PORT_Xxx tokens are defined in <i>xprtdefs.h</i> in the Micros
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558699">DEVCAPS</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
-
-
-
-<a href="..\ksmedia\ns-ksmedia-tagdevcaps.md">DEVCAPS</a>

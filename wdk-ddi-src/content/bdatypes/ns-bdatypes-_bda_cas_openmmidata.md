@@ -47,15 +47,15 @@ req.typenames: BDA_CAS_OPENMMIDATA, *PBDA_CAS_OPENMMIDATA
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_CAS_OPENMMIDATA {
-  ULONG  ulDialogNumber;
-  ULONG  ulDialogRequest;
-  GUID   uuidDialogType;
+  ULONG  ulDialogNumber;
+  ULONG  ulDialogRequest;
+  GUID   uuidDialogType;
   USHORT usDialogDataLength;
-  BYTE   argbDialogData[MIN_DIMENSION];
+  BYTE   argbDialogData[MIN_DIMENSION];
 } BDA_CAS_OPENMMIDATA, *PBDA_CAS_OPENMMIDATA;
-````
+```
 
 ## Members
 

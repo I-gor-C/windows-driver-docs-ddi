@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_getpitch.htm
 old-project: display
 ms.assetid: 59661cfe-4a1f-4805-9421-7f694e82f8d2
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDIARG_GETPITCH, D3DDDIARG_GETPITCH structure [Display Devices], UMDisplayDriver_param_Structs_02e95329-8eba-41a3-ae4e-d8830b47ada6.xml, _D3DDDIARG_GETPITCH, d3dumddi/D3DDDIARG_GETPITCH, display.d3dddiarg_getpitch
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: D3DDDIARG_GETPITCH
 ---
 
 # _D3DDDIARG_GETPITCH structure
-The D3DDDIARG_GETPITCH structure describes an encrypted surface for which the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getpitch.md">GetPitch</a> function retrieves the pitch.
+The D3DDDIARG_GETPITCH structure describes an encrypted surface for which the <a href="https://msdn.microsoft.com/1a5721a3-c03f-4827-9626-c9b6af5059a1">GetPitch</a> function retrieves the pitch.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDIARG_GETPITCH {
   HANDLE hCryptoSession;
   HANDLE hResource;
-  UINT   SubResourceIndex;
-  UINT   Pitch;
+  UINT   SubResourceIndex;
+  UINT   Pitch;
 } D3DDDIARG_GETPITCH;
-````
+```
 
 ## Members
 
@@ -73,7 +73,7 @@ typedef struct _D3DDDIARG_GETPITCH {
 
 `Pitch`
 
-[out] The pitch, in bytes, of the encrypted surface. The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getpitch.md">GetPitch</a> function returns this pitch value to the Direct3D runtime.
+[out] The pitch, in bytes, of the encrypted surface. The user-mode display driver's <a href="https://msdn.microsoft.com/1a5721a3-c03f-4827-9626-c9b6af5059a1">GetPitch</a> function returns this pitch value to the Direct3D runtime.
 
 
 ## Requirements
@@ -84,4 +84,4 @@ typedef struct _D3DDDIARG_GETPITCH {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_getpitch.md">GetPitch</a>
+<a href="https://msdn.microsoft.com/1a5721a3-c03f-4827-9626-c9b6af5059a1">GetPitch</a>

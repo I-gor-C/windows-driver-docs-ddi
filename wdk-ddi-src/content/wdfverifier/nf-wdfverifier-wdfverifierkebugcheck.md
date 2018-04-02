@@ -55,15 +55,15 @@ The <b>WdfVerifierKeBugCheck</b> function creates a bug check.
 
 ## Syntax
 
-````
-VOID WdfVerifierKeBugCheck(
-  _In_ ULONG     BugCheckCode,
-  _In_ ULONG_PTR BugCheckParameter1,
-  _In_ ULONG_PTR BugCheckParameter2,
-  _In_ ULONG_PTR BugCheckParameter3,
-  _In_ ULONG_PTR BugCheckParameter4
+```
+void WdfVerifierKeBugCheck(
+  ULONG     BugCheckCode,
+  ULONG_PTR BugCheckParameter1,
+  ULONG_PTR BugCheckParameter2,
+  ULONG_PTR BugCheckParameter3,
+  ULONG_PTR BugCheckParameter4
 );
-````
+```
 
 ## Parameters
 
@@ -135,4 +135,4 @@ The following code example creates a bug check that uses the <a href="https://ms
 
 ## See Also
 
-<a href="..\wdfverifier\nf-wdfverifier-wdfverifierdbgbreakpoint.md">WdfVerifierDbgBreakPoint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551164">WdfVerifierDbgBreakPoint</a>

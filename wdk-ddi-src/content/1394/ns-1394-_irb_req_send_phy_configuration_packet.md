@@ -47,11 +47,11 @@ req.typenames: IRB_REQ_SEND_PHY_CONFIGURATION_PACKET
 This structure contains the fields necessary to carry out a SendPhyConfigurationPacket request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_SEND_PHY_CONFIGURATION_PACKET {
   PHY_CONFIGURATION_PACKET PhyConfigurationPacket;
 } IRB_REQ_SEND_PHY_CONFIGURATION_PACKET;
-````
+```
 
 ## Members
 

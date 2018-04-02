@@ -47,11 +47,16 @@ req.typenames: IRB_REQ_ISOCH_FREE_BANDWIDTH
 This structure contains the fields necessary in order for the Bus driver to carry out an <b>IsochFreeBandwidth</b> request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_ISOCH_FREE_BANDWIDTH {
   HANDLE hBandwidth;
+  ULONG  nMaxBytesPerFrameRequested;
+  ULONG  fulSpeed;
+  ULONG  BytesPerFrameAvailable;
+  ULONG  SpeedSelected;
+  ULONG  nBandwidthUnitsRequired;
 } IRB_REQ_ISOCH_FREE_BANDWIDTH;
-````
+```
 
 ## Members
 

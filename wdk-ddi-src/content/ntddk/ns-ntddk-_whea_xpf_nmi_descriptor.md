@@ -47,12 +47,12 @@ req.typenames: WHEA_XPF_NMI_DESCRIPTOR, *PWHEA_XPF_NMI_DESCRIPTOR
 The WHEA_XPF_NMI_DESCRIPTOR structure describes a nonmaskable interrupt (NMI) error source for an x86 or x64 processor.
 
 ## Syntax
-````
+```
 typedef struct _WHEA_XPF_NMI_DESCRIPTOR {
-  USHORT  Type;
+  USHORT  Type;
   BOOLEAN Enabled;
 } WHEA_XPF_NMI_DESCRIPTOR, *PWHEA_XPF_NMI_DESCRIPTOR;
-````
+```
 
 ## Members
 
@@ -66,7 +66,7 @@ The type of error source descriptor. This member is always set to WHEA_ERROR_SOU
 A Boolean value that indicates if the error source is enabled.
 
 ## Remarks
-A WHEA_XPF_NMI_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
+A WHEA_XPF_NMI_DESCRIPTOR structure is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,4 +76,4 @@ A WHEA_XPF_NMI_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a>

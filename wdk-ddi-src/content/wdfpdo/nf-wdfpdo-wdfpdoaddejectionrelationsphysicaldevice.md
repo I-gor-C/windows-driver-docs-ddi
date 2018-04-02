@@ -53,12 +53,12 @@ The <b>WdfPdoAddEjectionRelationsPhysicalDevice</b> method indicates that a spec
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfPdoAddEjectionRelationsPhysicalDevice(
-  _In_ WDFDEVICE      Device,
-  _In_ PDEVICE_OBJECT PhysicalDevice
+  WDFDEVICE      Device,
+  PDEVICE_OBJECT PhysicalDevice
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A handle to a framework device object.
 
 `PhysicalDevice`
 
-A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents a physical device object (PDO).
+A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents a physical device object (PDO).
 
 
 ## Return Value
@@ -149,8 +149,8 @@ status = WdfPdoAddEjectionRelationsPhysicalDevice(
 
 ## See Also
 
-<a href="..\wdfpdo\nf-wdfpdo-wdfpdoclearejectionrelationsdevices.md">WdfPdoClearEjectionRelationsDevices</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548771">WdfPdoClearEjectionRelationsDevices</a>
 
 
 
-<a href="..\wdfpdo\nf-wdfpdo-wdfpdoremoveejectionrelationsphysicaldevice.md">WdfPdoRemoveEjectionRelationsPhysicalDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548814">WdfPdoRemoveEjectionRelationsPhysicalDevice</a>

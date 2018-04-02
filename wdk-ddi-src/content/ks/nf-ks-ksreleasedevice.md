@@ -50,17 +50,17 @@ The<b> KsReleaseDevice</b> function releases the device mutex and exits the crit
 
 ## Syntax
 
-````
+```
 void KsReleaseDevice(
-  _In_ PKSDEVICE Device
+  PKSDEVICE Device
 );
-````
+```
 
 ## Parameters
 
 `Device`
 
-A pointer to a <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> structure representing the AVStream device for which to release synchronous control.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> structure representing the AVStream device for which to release synchronous control.
 
 
 ## Return Value
@@ -69,7 +69,7 @@ None
 
 ## Remarks
 
-<b>KsReleaseDevice </b>is used by a client that has finished accessing the device in a synchronous manner following a previous call to <a href="..\ks\nf-ks-ksacquiredevice.md">KsAcquireDevice</a>.
+<b>KsReleaseDevice </b>is used by a client that has finished accessing the device in a synchronous manner following a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff560911">KsAcquireDevice</a>.
 
 For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
 
@@ -84,8 +84,8 @@ For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a>
 
 
 
-<a href="..\ks\nf-ks-ksacquiredevice.md">KsAcquireDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560911">KsAcquireDevice</a>

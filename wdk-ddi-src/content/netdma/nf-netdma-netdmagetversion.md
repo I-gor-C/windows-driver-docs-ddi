@@ -7,7 +7,7 @@ old-location: netvista\netdmagetversion.htm
 old-project: netvista
 ms.assetid: eec8ba30-0f9e-4487-ba0d-99587d97b44a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NetDmaGetVersion, NetDmaGetVersion function [Network Drivers Starting with Windows Vista], netdma/NetDmaGetVersion, netdma_ref_bb1adf18-d43d-4dc2-b780-1a1322014581.xml, netvista.netdmagetversion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,9 +55,11 @@ The
 
 ## Syntax
 
-````
-UINT NetDmaGetVersion(void);
-````
+```
+NET_DMA_EXPORT UINT NetDmaGetVersion(
+
+);
+```
 
 ## Parameters
 
@@ -106,9 +108,9 @@ NetDMA provider drivers can call the
     NetDMA provider in the 
     <b>MajorVersion</b> and 
     <b>MinorVersion</b> members of the 
-    <a href="..\netdma\ns-netdma-_net_dma_provider_characteristics.md">
+    <a href="https://msdn.microsoft.com/7ec6d449-fdc2-44d8-976b-5a1d23c76e7b">
     NET_DMA_PROVIDER_CHARACTERISTICS</a> structure that it passes to the 
-    <a href="..\netdma\nf-netdma-netdmaregisterprovider.md">
+    <a href="https://msdn.microsoft.com/35d70d0b-c1b9-433f-941d-6cb61ddf0b62">
     NetDmaRegisterProvider</a> function.
 
 <div class="alert"><b>Note</b>  <b>NetDmaGetVersion</b> is not available in NetDMA version 1.0. To avoid using a function import that
@@ -116,7 +118,7 @@ NetDMA provider drivers can call the
     <b>NetDmaGetVersion</b> before it calls 
     <b>NetDmaGetVersion</b>. To call 
     <b>NetDmaGetVersion</b>, first call the 
-    <a href="..\ndis\nf-ndis-ndisgetroutineaddress.md">NdisGetRoutineAddress</a> function to
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562665">NdisGetRoutineAddress</a> function to
     get the entry point and then, if 
     <b>NetDmaGetVersion</b> is available, call 
     <b>NetDmaGetVersion</b> at the entry point that 
@@ -136,13 +138,13 @@ NetDMA provider drivers call
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisgetroutineaddress.md">NdisGetRoutineAddress</a>
-
-
-
-<a href="..\netdma\nf-netdma-netdmaregisterprovider.md">NetDmaRegisterProvider</a>
-
-
-
-<a href="..\netdma\ns-netdma-_net_dma_provider_characteristics.md">
+<a href="https://msdn.microsoft.com/7ec6d449-fdc2-44d8-976b-5a1d23c76e7b">
    NET_DMA_PROVIDER_CHARACTERISTICS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562665">NdisGetRoutineAddress</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568336">NetDmaRegisterProvider</a>

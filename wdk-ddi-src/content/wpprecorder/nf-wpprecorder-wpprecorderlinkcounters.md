@@ -50,11 +50,11 @@ The <b>WppRecorderLinkCounters</b> method  uses a sequence number to merge logs 
 
 ## Syntax
 
-````
-NTSTATUS imp_WppRecorderLinkCounters(
-  _In_ WPP_RECORDER_COUNTER CounterOwner
+```
+void WppRecorderLinkCounters(
+   CounterOwner
 );
-````
+```
 
 ## Parameters
 

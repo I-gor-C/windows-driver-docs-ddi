@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
+```
 typedef struct _PRINTER_NOTIFY_INIT {
   DWORD Size;
   DWORD Reserved;
   DWORD PollTime;
-} PRINTER_NOTIFY_INIT, *PPRINTER_NOTIFY_INIT, *LPPRINTER_NOTIFY_INIT;
-````
+} *PPRINTER_NOTIFY_INIT, PRINTER_NOTIFY_INIT, *LPPRINTER_NOTIFY_INIT;
+```
 
 ## Members
 

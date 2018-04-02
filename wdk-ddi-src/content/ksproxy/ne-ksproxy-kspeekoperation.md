@@ -47,12 +47,12 @@ req.typenames: KSPEEKOPERATION
 
 
 ## Syntax
-````
-typedef enum  { 
-  KsPeekOperation_PeekOnly,
+```
+typedef enum KSPEEKOPERATION {
+  KsPeekOperation_PeekOnly  ,
   KsPeekOperation_AddRef
-} KSPEEKOPERATION;
-````
+} ;
+```
 
 ## Constants
 

@@ -53,11 +53,11 @@ The <b>WdfIoResourceRequirementsListGetCount</b> method returns the number of <a
 
 ## Syntax
 
-````
+```
 ULONG WdfIoResourceRequirementsListGetCount(
-  _In_ WDFIORESREQLIST RequirementsList
+  WDFIORESREQLIST RequirementsList
 );
-````
+```
 
 ## Parameters
 

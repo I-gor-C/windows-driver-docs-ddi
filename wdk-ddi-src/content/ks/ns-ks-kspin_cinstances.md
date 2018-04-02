@@ -47,12 +47,12 @@ req.typenames: KSPIN_CINSTANCES, *PKSPIN_CINSTANCES
 
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPIN_CINSTANCES {
   ULONG PossibleCount;
   ULONG CurrentCount;
-} KSPIN_CINSTANCES, *PKSPIN_CINSTANCES;
-````
+}  *PKSPIN_CINSTANCES;
+```
 
 ## Members
 

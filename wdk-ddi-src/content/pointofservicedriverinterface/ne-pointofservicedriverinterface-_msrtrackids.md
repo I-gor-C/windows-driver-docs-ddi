@@ -47,15 +47,15 @@ req.typenames: MsrTrackIds
 Defines the constants that represent the magnetic stripe reader (MSR) tracks.
 
 ## Syntax
-````
-typedef enum _MsrTrackIds { 
-  MsrTrackIds_None    = 0x0,
-  MsrTrackIds_Track1  = 0x1,
-  MsrTrackIds_Track2  = 0x2,
-  MsrTrackIds_Track3  = 0x3,
-  MsrTrackIds_Track4  = 0x4
+```
+typedef enum _MsrTrackIds {
+  MsrTrackIds_None    ,
+  MsrTrackIds_Track1  ,
+  MsrTrackIds_Track2  ,
+  MsrTrackIds_Track3  ,
+  MsrTrackIds_Track4
 } MsrTrackIds;
-````
+```
 
 ## Constants
 

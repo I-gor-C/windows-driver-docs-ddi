@@ -48,26 +48,26 @@ req.product: Windows 10 or later.
 # WDF_DRIVER_CONFIG_INIT function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
-The WDF_DRIVER_CONFIG_INIT function initializes a driver's <a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_config.md">WDF_DRIVER_CONFIG</a> structure.
+The WDF_DRIVER_CONFIG_INIT function initializes a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551300">WDF_DRIVER_CONFIG</a> structure.
 
 ## Syntax
 
-````
-VOID WDF_DRIVER_CONFIG_INIT(
-  _Out_    PWDF_DRIVER_CONFIG        Config,
-  _In_opt_ PFN_WDF_DRIVER_DEVICE_ADD EvtDriverDeviceAdd
+```
+void WDF_DRIVER_CONFIG_INIT(
+  PWDF_DRIVER_CONFIG        Config,
+  PFN_WDF_DRIVER_DEVICE_ADD EvtDriverDeviceAdd
 );
-````
+```
 
 ## Parameters
 
 `Config`
 
-A pointer to the <a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_config.md">WDF_DRIVER_CONFIG</a> structure that the function will initialize.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551300">WDF_DRIVER_CONFIG</a> structure that the function will initialize.
 
 `EvtDriverDeviceAdd`
 
-A pointer to the driver's <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a">EvtDriverDeviceAdd</a> callback function.
 
 
 ## Return Value
@@ -81,7 +81,7 @@ The WDF_DRIVER_CONFIG_INIT function is available in version 1.0 and later versio
 
 #### Examples
 
-For a code example that uses WDF_DRIVER_CONFIG_INIT, see <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>.
+For a code example that uses WDF_DRIVER_CONFIG_INIT, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a>.
 
 <div class="code"></div>
 
@@ -95,12 +95,12 @@ For a code example that uses WDF_DRIVER_CONFIG_INIT, see <a href="..\wdfdriver\n
 
 ## See Also
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+<a href="https://msdn.microsoft.com/b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a">EvtDriverDeviceAdd</a>
 
 
 
-<a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_config.md">WDF_DRIVER_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551300">WDF_DRIVER_CONFIG</a>
 
 
 
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a>

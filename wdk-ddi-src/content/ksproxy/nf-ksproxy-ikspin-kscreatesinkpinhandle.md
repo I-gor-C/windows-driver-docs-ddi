@@ -44,17 +44,17 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsCreateSinkPinHandle method
+# IKsPin::KsCreateSinkPinHandle method
 The <b>KsCreateSinkPinHandle</b> method creates a pin handle and stores it in the KS pin object.
 
 ## Syntax
 
-````
+```
 HRESULT KsCreateSinkPinHandle(
-  [in] KSPIN_INTERFACE Interface,
-  [in] KSPIN_MEDIUM    Medium
+  KSPIN_INTERFACE & Interface,
+  KSPIN_MEDIUM &    Medium
 );
-````
+```
 
 ## Parameters
 
@@ -87,7 +87,7 @@ This method is for proxy use and is not recommended for application use.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559890">IKsObject::KsGetObjectHandle</a>
 
 
 
@@ -95,4 +95,4 @@ This method is for proxy use and is not recommended for application use.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559890">IKsObject::KsGetObjectHandle</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a>

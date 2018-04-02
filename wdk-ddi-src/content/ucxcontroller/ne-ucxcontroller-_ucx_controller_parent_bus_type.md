@@ -7,7 +7,7 @@ old-location: buses\ucx_controller_parent_bus_type.htm
 old-project: usbref
 ms.assetid: FD78074D-E128-4085-A178-0133C9256E42
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UCX_CONTROLLER_PARENT_BUS_TYPE, UCX_CONTROLLER_PARENT_BUS_TYPE enumeration [Buses], UcxControllerParentBusTypeAcpi, UcxControllerParentBusTypeCustom, UcxControllerParentBusTypePci, _UCX_CONTROLLER_PARENT_BUS_TYPE, buses.ucx_controller_parent_bus_type, ucxcontroller/UCX_CONTROLLER_PARENT_BUS_TYPE, ucxcontroller/UcxControllerParentBusTypeAcpi, ucxcontroller/UcxControllerParentBusTypeCustom, ucxcontroller/UcxControllerParentBusTypePci
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,14 @@ req.product: Windows 10 or later.
 The <b>UCX_CONTROLLER_PARENT_BUS_TYPE</b> enumeration defines the parent bus type.
 
 ## Syntax
-````
-typedef enum _UCX_CONTROLLER_PARENT_BUS_TYPE { 
-  UcxControllerParentBusTypeCustom,
-  UcxControllerParentBusTypePci,
-  UcxControllerParentBusTypeAcpi
+```
+typedef enum _UCX_CONTROLLER_PARENT_BUS_TYPE {
+  UcxControllerParentBusTypeCustom  ,
+  UcxControllerParentBusTypePci     ,
+  UcxControllerParentBusTypeAcpi    ,
+  UcxControllerParentBusTypeMaUsb
 } UCX_CONTROLLER_PARENT_BUS_TYPE;
-````
+```
 
 ## Constants
 
@@ -89,4 +90,4 @@ typedef enum _UCX_CONTROLLER_PARENT_BUS_TYPE {
 
 ## See Also
 
-<a href="..\ucxcontroller\ns-ucxcontroller-_ucx_controller_config.md">UCX_CONTROLLER_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188057">UCX_CONTROLLER_CONFIG</a>

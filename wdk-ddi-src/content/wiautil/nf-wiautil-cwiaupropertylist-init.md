@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Init method
+# CWiauPropertyList::Init method
 The <b>CWiauPropertyList::Init</b> method initializes a property list object.
 
 ## Syntax
 
-````
+```
 HRESULT Init(
-   INT   NumProps
+  INT NumProps
 );
-````
+```
 
 ## Parameters
 
@@ -77,7 +77,7 @@ On success, the <b>CWiauPropertyList::Init</b> method returns S_OK. If the metho
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540391">CWiauPropertyList::DefineProperty</a>
+<a href="https://msdn.microsoft.com/4f11bec0-8ff4-4fa0-824c-71ce9774d5d1">CWiauPropertyList</a>
 
 
 
@@ -85,4 +85,4 @@ On success, the <b>CWiauPropertyList::Init</b> method returns S_OK. If the metho
 
 
 
-<a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540391">CWiauPropertyList::DefineProperty</a>

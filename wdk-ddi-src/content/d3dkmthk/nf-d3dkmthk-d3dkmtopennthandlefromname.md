@@ -7,7 +7,7 @@ old-location: display\d3dkmtopennthandlefromname.htm
 old-project: display
 ms.assetid: bcd33f64-7ad0-4e26-af73-e4f2b1b6e5fb
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTOpenNtHandleFromName, D3DKMTOpenNtHandleFromName callback function [Display Devices], PFND3DKMT_OPENNTHANDLEFROMNAME, d3dkmthk/D3DKMTOpenNtHandleFromName, display.d3dkmtopennthandlefromname
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ From a given graphics adapter name, opens an NT handle to the process.
 
 ## Syntax
 
-````
-EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTOpenNtHandleFromName(
-  _Inout_ D3DKMT_OPENNTHANDLEFROMNAME *pData
+```
+NTSTATUS D3DKMTOpenNtHandleFromName(
+
 );
-````
+```
 
 ## Parameters
 

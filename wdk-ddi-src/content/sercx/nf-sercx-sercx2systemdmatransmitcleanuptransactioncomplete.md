@@ -50,17 +50,17 @@ The <b>SerCx2SystemDmaTransmitCleanupTransactionComplete</b> method notifies ver
 
 ## Syntax
 
-````
-VOID SerCx2SystemDmaTransmitCleanupTransactionComplete(
-  [in] SERCX2SYSTEMDMATRANSMIT SystemDmaTransmit
+```
+void SerCx2SystemDmaTransmitCleanupTransactionComplete(
+  SERCX2SYSTEMDMATRANSMIT SystemDmaTransmit
 );
-````
+```
 
 ## Parameters
 
 `SystemDmaTransmit`
 
-A <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMATRANSMIT</a> handle to a system-DMA-transmit object. The serial controller driver previously called the <a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a> method to create this object.
+A <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMATRANSMIT</a> handle to a system-DMA-transmit object. The serial controller driver previously called the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265288">SerCx2SystemDmaTransmitCreate</a> method to create this object.
 
 
 ## Return Value
@@ -69,7 +69,7 @@ None.
 
 ## Remarks
 
-After a system-DMA-transmit transaction ends, SerCx2 calls the <a href="..\sercx\nc-sercx-evt_sercx2_system_dma_transmit_cleanup_transaction.md">EvtSerCx2SystemDmaTransmitCleanupTransaction</a> event callback function, if it is implemented, to clean up the serial controller state. In response to this call, the driver should do any clean-up work that is needed; then the driver must call <b>SerCx2SystemDmaTransmitCleanupTransactionComplete</b> to notify SerCx2. SerCx2 expects this notification and does not start the next transaction until it is notified.
+After a system-DMA-transmit transaction ends, SerCx2 calls the <a href="https://msdn.microsoft.com/DAC33D61-F85C-43A7-9F4D-AA31F8CA4430">EvtSerCx2SystemDmaTransmitCleanupTransaction</a> event callback function, if it is implemented, to clean up the serial controller state. In response to this call, the driver should do any clean-up work that is needed; then the driver must call <b>SerCx2SystemDmaTransmitCleanupTransactionComplete</b> to notify SerCx2. SerCx2 expects this notification and does not start the next transaction until it is notified.
 
 The serial controller driver must call <b>SerCx2SystemDmaTransmitCleanupTransactionComplete</b> only in response to a call to the <i>EvtSerCx2SystemDmaTransmitCleanupTransaction</i> function.
 
@@ -85,12 +85,12 @@ For more information, see <a href="https://msdn.microsoft.com/8569E76F-CAFF-4A2C
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/DAC33D61-F85C-43A7-9F4D-AA31F8CA4430">EvtSerCx2SystemDmaTransmitCleanupTransaction</a>
+
+
+
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/sercx2-object-handles">SERCX2SYSTEMDMATRANSMIT</a>
 
 
 
-<a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a>
-
-
-
-<a href="..\sercx\nc-sercx-evt_sercx2_system_dma_transmit_cleanup_transaction.md">EvtSerCx2SystemDmaTransmitCleanupTransaction</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265288">SerCx2SystemDmaTransmitCreate</a>

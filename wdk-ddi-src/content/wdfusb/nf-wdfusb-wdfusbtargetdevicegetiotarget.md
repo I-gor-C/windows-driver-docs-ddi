@@ -55,17 +55,17 @@ The <b>WdfUsbTargetDeviceGetIoTarget</b> method returns a handle to the I/O targ
 
 ## Syntax
 
-````
+```
 WDFIOTARGET WdfUsbTargetDeviceGetIoTarget(
-  _In_ WDFUSBDEVICE UsbDevice
+  WDFUSBDEVICE UsbDevice
 );
-````
+```
 
 ## Parameters
 
 `UsbDevice`
 
-A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.
+A handle to a USB device object that was obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 
 ## Return Value
@@ -110,8 +110,8 @@ The following code example creates a request object and verifies that the framew
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipegetiotarget.md">WdfUsbTargetPipeGetIoTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551146">WdfUsbTargetPipeGetIoTarget</a>

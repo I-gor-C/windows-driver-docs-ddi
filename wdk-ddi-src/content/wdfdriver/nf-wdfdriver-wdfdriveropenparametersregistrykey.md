@@ -55,20 +55,20 @@ The <b>WdfDriverOpenParametersRegistryKey</b> method opens the driver's <b>Param
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDriverOpenParametersRegistryKey(
-  _In_     WDFDRIVER              Driver,
-  _In_     ACCESS_MASK            DesiredAccess,
-  _In_opt_ PWDF_OBJECT_ATTRIBUTES KeyAttributes,
-  _Out_    WDFKEY                 *Key
+  WDFDRIVER              Driver,
+  ACCESS_MASK            DesiredAccess,
+  PWDF_OBJECT_ATTRIBUTES KeyAttributes,
+  WDFKEY                 *Key
 );
-````
+```
 
 ## Parameters
 
 `Driver`
 
-A handle to the driver's framework driver object that the driver obtained from a previous call to <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a> or <a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>.
+A handle to the driver's framework driver object that the driver obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff547336">WdfGetDriver</a>.
 
 `DesiredAccess`
 
@@ -82,7 +82,7 @@ As a best practice, ask for only the types of access that your driver needs.
 
 `KeyAttributes`
 
-A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the framework registry-key object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure that specifies object attributes for the framework registry-key object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 `Key`
 
@@ -112,7 +112,7 @@ A pointer to a location that receives a handle to a framework registry-key objec
 </ul>
 
 
-Because the above values are invalid for UMDF drivers, universal flags such as GENERIC_ALL and STANDARD_RIGHTS_ALL also cause <a href="..\wdfdriver\nf-wdfdriver-wdfdriveropenparametersregistrykey.md">WdfDriverOpenParametersRegistryKey</a> to fail with this return value.
+Because the above values are invalid for UMDF drivers, universal flags such as GENERIC_ALL and STANDARD_RIGHTS_ALL also cause <a href="https://msdn.microsoft.com/library/windows/hardware/ff547202">WdfDriverOpenParametersRegistryKey</a> to fail with this return value.
 
 </td>
 </tr>
@@ -129,7 +129,7 @@ A system bug check occurs if a KMDF driver specifies an invalid handle in <i>Dri
 
 The driver's <b>Parameters</b> key is located in the registry's <a href="https://msdn.microsoft.com/library/windows/hardware/dn926947">Services</a> tree. If the driver's <b>Parameters</b> key does not exist, the <b>WdfDriverOpenParametersRegistryKey</b> method creates it. 
 
-When the driver has finished using the <b>Parameters</b> registry key, the driver must call <a href="..\wdfregistry\nf-wdfregistry-wdfregistryclose.md">WdfRegistryClose</a>.
+When the driver has finished using the <b>Parameters</b> registry key, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549914">WdfRegistryClose</a>.
 
 For more information about the registry, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-registry-in-umdf-1-x-drivers">Using the Registry in Framework-Based Drivers</a>.
 
@@ -169,24 +169,24 @@ status = WdfDriverOpenParametersRegistryKey(
 
 ## See Also
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
-
-
-
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
-
-
-
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivergetregistrypath.md">WdfDriverGetRegistryPath</a>
-
-
-
-<a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
-
-
-
-<a href="..\wdfregistry\nf-wdfregistry-wdfregistryclose.md">WdfRegistryClose</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547187">WdfDriverGetRegistryPath</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547336">WdfGetDriver</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549914">WdfRegistryClose</a>

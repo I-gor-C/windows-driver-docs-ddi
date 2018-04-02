@@ -2,7 +2,7 @@
 UID: NA:printoem
 ms.assetid: 379c3ecf-1026-3228-91da-b4a57a86b3ce
 ms.author: windowsdriverdev
-ms.date: 03/13/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -193,7 +193,7 @@ printoem.h contains the following programming interfaces:
 | [OEMIcmDeleteColorTransform](nf-printoem-oemicmdeletecolortransform.md) | The OEMIcmDeleteColorTransform function deletes the specified color transform. |
 | [OEMImageProcessing](nf-printoem-oemimageprocessing.md) | OEMImageProcessing function |
 | [OEMLineTo](nf-printoem-oemlineto.md) | The OEMLineTo function draws a single, solid, integer-only cosmetic line. |
-| [OEMMemoryUsage](nf-printoem-oemmemoryusage.md) | The OEMMEMORYUSAGE structure is used as an input parameter to a rendering plug-in's IPrintOemUni::MemoryUsage method. |
+| [OEMMemoryUsage](nf-printoem-oemmemoryusage.md) | This function is obsolete for Windows XP and later.wcs |
 | [OEMNextBand](nf-printoem-oemnextband.md) | The OEMNextBand function is called by GDI when it has finished drawing a band for a physical page, so that the driver can send the band to the printer. |
 | [OEMOutputCharStr](nf-printoem-oemoutputcharstr.md) | OEMOutputCharStr function |
 | [OEMPaint](nf-printoem-oempaint.md) | The OEMPaint function is obsolete, and is no longer called by GDI in Windows 2000 and later. See DrvPaint. |

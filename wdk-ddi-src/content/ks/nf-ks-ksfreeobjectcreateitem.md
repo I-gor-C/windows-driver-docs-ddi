@@ -50,12 +50,12 @@ Frees the slot for the specified create item.
 
 ## Syntax
 
-````
-NTSTATUS KsFreeObjectCreateItem(
-  _In_ KSDEVICE_HEADER Header,
-  _In_ PUNICODE_STRING CreateItem
+```
+KSDDKAPI NTSTATUS KsFreeObjectCreateItem(
+  KSDEVICE_HEADER Header,
+  PUNICODE_STRING CreateItem
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +85,4 @@ This function does not assume that the caller is serializing multiple changes to
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfreeobjectcreateitemsbycontext.md">KsFreeObjectCreateItemsByContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562564">KsFreeObjectCreateItemsByContext</a>

@@ -47,13 +47,13 @@ req.typenames: GPIO_MASK_INTERRUPT_PARAMETERS, *PGPIO_MASK_INTERRUPT_PARAMETERS
 The <b>GPIO_MASK_INTERRUPT_PARAMETERS</b> structure describes a set of general-purpose I/O (GPIO) interrupt pins to mask.
 
 ## Syntax
-````
+```
 typedef struct _GPIO_MASK_INTERRUPT_PARAMETERS {
   BANK_ID BankId;
   ULONG64 PinMask;
   ULONG64 FailedMask;
 } GPIO_MASK_INTERRUPT_PARAMETERS, *PGPIO_MASK_INTERRUPT_PARAMETERS;
-````
+```
 
 ## Members
 
@@ -83,7 +83,7 @@ GPIO controllers that have memory-mapped registers are expected to always succee
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
 
 
 
@@ -91,4 +91,4 @@ GPIO controllers that have memory-mapped registers are expected to always succee
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>

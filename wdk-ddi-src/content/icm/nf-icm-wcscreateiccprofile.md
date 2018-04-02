@@ -49,12 +49,12 @@ The <code>WcsCreateIccProfile</code> function converts a WCS profile into an ICC
 
 ## Syntax
 
-````
+```
 HPROFILE WcsCreateIccProfile(
-  _In_ HPROFILE hWcsProfile,
-  _In_ DWORD    dwOptions
+  HPROFILE hWcsProfile,
+  DWORD    dwOptions
 );
-````
+```
 
 ## Parameters
 

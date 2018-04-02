@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_pco_status.htm
 old-project: netvista
 ms.assetid: C71187C5-74B6-450A-8461-BB9FDF60DB8D
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_PCO_STATUS, PNDIS_WWAN_PCO_STATUS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_PCO_STATUS, ndiswwan/NDIS_WWAN_PCO_STATUS, ndiswwan/PNDIS_WWAN_PCO_STATUS, netvista.ndis_wwan_pco_status"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: NDIS_WWAN_PCO_STATUS, *PNDIS_WWAN_PCO_STATUS
 The <b>NDIS_WWAN_PCO_STATUS</b> structure represents the Protocol Configuration Option (PCO) status of the modem.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_WWAN_PCO_STATUS {
   NDIS_OBJECT_HEADER Header;
-  WWAN_STATUS        uStatus;
-  WWAN_PCO_VALUE     PcoValue;
-} NDIS_WWAN_PCO_STATUS, *PNDIS_WWAN_PCO_STATUS;
-````
+  WWAN_STATUS        uStatus;
+  WWAN_PCO_VALUE     PcoValue;
+} *PNDIS_WWAN_PCO_STATUS, NDIS_WWAN_PCO_STATUS;
+```
 
 ## Members
 
@@ -106,7 +106,7 @@ sizeof(NDIS_WWAN_PCO_STATUS)
  
 
 For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 `uStatus`
 
@@ -223,7 +223,7 @@ The PCO value failed due to a read failure.
 
 `PcoValue`
 
-A formatted <a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a> structure, which contains the PCO information payload from the network as defined in the 3GPP TS24.008 spec.
+A formatted <a href="https://msdn.microsoft.com/45A499CE-2C9A-4070-BEF8-880E7673FA8E">WWAN_PCO_VALUE</a> structure, which contains the PCO information payload from the network as defined in the 3GPP TS24.008 spec.
 
 
 ## Requirements
@@ -238,11 +238,7 @@ A formatted <a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a> stru
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
-<a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -251,3 +247,7 @@ A formatted <a href="..\wwan\ns-wwan-_wwan_pco_value.md">WWAN_PCO_VALUE</a> stru
 
 
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-pco">OID_WWAN_PCO</a>
+
+
+
+<a href="https://msdn.microsoft.com/45A499CE-2C9A-4070-BEF8-880E7673FA8E">WWAN_PCO_VALUE</a>

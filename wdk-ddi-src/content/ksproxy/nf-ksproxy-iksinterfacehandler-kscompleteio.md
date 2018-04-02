@@ -44,22 +44,22 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsCompleteIo method
+# IKsInterfaceHandler::KsCompleteIo method
 The <b>KsCompleteIo</b> method cleans up extended headers and releases media samples after input and output (I/O) complete.
 
 ## Syntax
 
-````
+```
 HRESULT KsCompleteIo(
-  [in, out] PKSSTREAM_SEGMENT StreamSegment
+  PKSSTREAM_SEGMENT StreamSegment
 );
-````
+```
 
 ## Parameters
 
 `StreamSegment`
 
-Pointer to a <a href="..\ksproxy\ns-ksproxy-_ksstream_segment.md">KSSTREAM_SEGMENT</a> structure that contains header information for a stream segment to complete.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567141">KSSTREAM_SEGMENT</a> structure that contains header information for a stream segment to complete.
 
 
 ## Return Value
@@ -92,12 +92,12 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560710">IKsPin::KsDeliver</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559869">IKsInterfaceHandler::KsProcessMediaSamples</a>
 
 
 
-<a href="..\ksproxy\ns-ksproxy-_ksstream_segment.md">KSSTREAM_SEGMENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560710">IKsPin::KsDeliver</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567141">KSSTREAM_SEGMENT</a>

@@ -7,7 +7,7 @@ old-location: kernel\rtlincrementcorrelationvector.htm
 old-project: kernel
 ms.assetid: bb252dd5-9bf3-41bd-ab46-9524735970c5
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlIncrementCorrelationVector, RtlIncrementCorrelationVector function [Kernel-Mode Driver Architecture], kernel.rtlincrementcorrelationvector, ntddk/RtlIncrementCorrelationVector
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ Increments the specified correlation vector. For
 
 ## Syntax
 
-````
- NTSTATUS  RtlIncrementCorrelationVector(
-  _Inout_ PCORRELATION_VECTOR CorrelationVector
+```
+NTSYSAPI NTSTATUS RtlIncrementCorrelationVector(
+  PCORRELATION_VECTOR CorrelationVector
 );
-````
+```
 
 ## Parameters
 
 `CorrelationVector`
 
-A pointer to a  <a href="..\ntddk\ns-ntddk-correlation_vector.md">CORRELATION_VECTOR</a> structure that represents the correlation vector to be incremented.
+A pointer to a  <a href="https://msdn.microsoft.com/35c1799f-2012-42b0-95e6-6902c818a094">CORRELATION_VECTOR</a> structure that represents the correlation vector to be incremented.
 
 
 ## Return Value

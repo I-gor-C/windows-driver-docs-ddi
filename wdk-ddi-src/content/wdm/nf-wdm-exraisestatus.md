@@ -7,7 +7,7 @@ old-location: kernel\exraisestatus.htm
 old-project: kernel
 ms.assetid: eefbec75-f441-492b-becb-98434253dd62
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExRaiseStatus, ExRaiseStatus routine [Kernel-Mode Driver Architecture], k102_b188a166-f1f1-49bd-8195-aa72f86ca177.xml, kernel.exraisestatus, wdm/ExRaiseStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>ExRaiseStatus</b> routine is called by drivers that supply structured exc
 
 ## Syntax
 
-````
-VOID ExRaiseStatus(
-  _In_ NTSTATUS Status
+```
+NTKERNELAPI DECLSPEC_NORETURN VOID ExRaiseStatus(
+  NTSTATUS Status
 );
-````
+```
 
 ## Parameters
 
@@ -84,16 +84,16 @@ Highest-level drivers, particularly file systems, can call <b>ExRaiseStatus</b>.
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-exraiseaccessviolation.md">ExRaiseAccessViolation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545509">ExRaiseAccessViolation</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-exraisedatatypemisalignment.md">ExRaiseDatatypeMisalignment</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545524">ExRaiseDatatypeMisalignment</a>
 
 
 
-<a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548245">IoAllocateErrorLogEntry</a>
 
 
 
-<a href="..\wdm\nf-wdm-kebugcheckex.md">KeBugCheckEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551961">KeBugCheckEx</a>

@@ -53,12 +53,12 @@ The <b>WdfIoResourceRequirementsListRemoveByIoResList</b> method removes a <a hr
 
 ## Syntax
 
-````
-VOID WdfIoResourceRequirementsListRemoveByIoResList(
-  _In_ WDFIORESREQLIST RequirementsList,
-  _In_ WDFIORESLIST    IoResList
+```
+void WdfIoResourceRequirementsListRemoveByIoResList(
+  WDFIORESREQLIST RequirementsList,
+  WDFIORESLIST    IoResList
 );
-````
+```
 
 ## Parameters
 
@@ -171,24 +171,24 @@ Example_EvtDeviceFilterRemoveResourceRequirements(
 
 ## See Also
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistremove.md">WdfIoResourceRequirementsListRemove</a>
+<a href="https://msdn.microsoft.com/03e3a656-c691-4aff-bcc8-4e0bc8390fd7">IO_RESOURCE_DESCRIPTOR</a>
 
 
 
-<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548506">WdfIoResourceListGetCount</a>
 
 
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistgetdescriptor.md">WdfIoResourceListGetDescriptor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548510">WdfIoResourceListGetDescriptor</a>
 
 
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistgetcount.md">WdfIoResourceListGetCount</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548545">WdfIoResourceRequirementsListGetCount</a>
 
 
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetioreslist.md">WdfIoResourceRequirementsListGetIoResList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548553">WdfIoResourceRequirementsListGetIoResList</a>
 
 
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetcount.md">WdfIoResourceRequirementsListGetCount</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548570">WdfIoResourceRequirementsListRemove</a>

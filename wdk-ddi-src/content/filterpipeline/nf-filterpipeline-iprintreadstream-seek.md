@@ -44,18 +44,18 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# Seek method
+# IPrintReadStream::Seek method
 The <code>Seek</code> method changes the seek pointer to a new location in the stream.
 
 ## Syntax
 
-````
+```
 HRESULT Seek(
-  [in]  LONGLONG  dlibMove,
-  [in]  DWORD     dwOrigin,
-  [out] ULONGLONG *plibNewPosition
+  LONGLONG  dlibMove,
+  DWORD     dwOrigin,
+  ULONGLONG *plibNewPosition
 );
-````
+```
 
 ## Parameters
 

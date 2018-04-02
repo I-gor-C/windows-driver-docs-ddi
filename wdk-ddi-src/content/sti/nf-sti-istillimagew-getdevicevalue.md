@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetDeviceValue method
+# IStillImageW::GetDeviceValue method
 The <b>IStillImage::GetDeviceValue</b> method returns registry information associated with a specified still image device.
 
 ## Syntax
 
-````
+```
 HRESULT GetDeviceValue(
-  [in]      LPWSTR  pwszDeviceName,
-  [in]      LPWSTR  pValueName,
-  [out]     LPDWORD pType,
-  [out]     LPBYTE  pData,
-  [in, out] LPDWORD cbData
+  LPWSTR  pwszDeviceName,
+  LPWSTR  pValueName,
+  LPDWORD pType,
+  LPBYTE  pData,
+  LPDWORD cbData
 );
-````
+```
 
 ## Parameters
 
@@ -103,8 +103,8 @@ Before calling <b>IStillImage::GetDeviceValue</b>, clients of the <b>IStillImage
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/a9ceee48-cbb5-4448-83b4-9c19fe89fcb9">IStillImageW</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543801">IStillImage::SetDeviceValue</a>
+
+
+
+<a href="https://msdn.microsoft.com/a9ceee48-cbb5-4448-83b4-9c19fe89fcb9">IStillImageW</a>

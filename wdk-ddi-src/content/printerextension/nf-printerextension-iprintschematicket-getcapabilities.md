@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetCapabilities method
-Gets an <a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a> object that represents the printer capabilities based on the current settings of this <a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a> object.
+# IPrintSchemaTicket::GetCapabilities method
+Gets an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451256">IPrintSchemaCapabilities</a> object that represents the printer capabilities based on the current settings of this <a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a> object.
 
 ## Syntax
 
-````
+```
 HRESULT GetCapabilities(
-  [out, retval] IPrintSchemaCapabilities **ppPrintCapabilities
+  IPrintSchemaCapabilities **ppCapabilities
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ This method returns an <b>HRESULT</b> value.
 
 ## Remarks
 
-Because this method retrieves a new PrintCapabilities document every time it is invoked, it is recommended that you invoke this method only when the <a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a> object has been modified.
+Because this method retrieves a new PrintCapabilities document every time it is invoked, it is recommended that you invoke this method only when the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a> object has been modified.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -79,15 +79,7 @@ Because this method retrieves a new PrintCapabilities document every time it is 
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
-
-
-
-<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
-
-
-
-<a href="https://msdn.microsoft.com/DF788C8F-DA60-47F1-83DB-2E1947E41142">IPrintSchemaTicket::put_JobCopiesAllDocuments</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451256">IPrintSchemaCapabilities</a>
 
 
 
@@ -96,3 +88,11 @@ Because this method retrieves a new PrintCapabilities document every time it is 
 
 
 <a href="https://msdn.microsoft.com/C22BC037-05D2-4F44-8704-D1D56909B603">IPrintSchemaFeature::SelectedOption</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>
+
+
+
+<a href="https://msdn.microsoft.com/DF788C8F-DA60-47F1-83DB-2E1947E41142">IPrintSchemaTicket::put_JobCopiesAllDocuments</a>

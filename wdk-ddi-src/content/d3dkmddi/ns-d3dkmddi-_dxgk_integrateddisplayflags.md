@@ -7,7 +7,7 @@ old-location: display\dxgk_integrateddisplayflags.htm
 old-project: display
 ms.assetid: 4671B6C1-358A-4CC2-A6FC-0FBA0F26DB07
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PDXGK_INTEGRATEDDISPLAYFLAGS, DXGK_INTEGRATEDDISPLAYFLAGS, DXGK_INTEGRATEDDISPLAYFLAGS union [Display Devices], _DXGK_INTEGRATEDDISPLAYFLAGS, d3dkmddi/DXGK_INTEGRATEDDISPLAYFLAGS, display.dxgk_integrateddisplayflags"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,16 +47,16 @@ req.typenames: DXGK_INTEGRATEDDISPLAYFLAGS, *PDXGK_INTEGRATEDDISPLAYFLAGS
 Flags which describe simple properties of an integrated display.
 
 ## Syntax
-````
-typedef union _DXGK_INTEGRATEDDISPLAYFLAGS {
+```
+typedef struct _DXGK_INTEGRATEDDISPLAYFLAGS {
   struct {
-    DXGK_DISPLAYPANELORIENTATION UndockedOrientation  :2;
-    DXGK_DISPLAYPANELORIENTATION DockedOrientation  :2;
-    UINT                         Reserved  :28;
+    DXGK_DISPLAYPANELORIENTATION  : 2 DockedOrientation;
+    UINT  : 28                        Reserved;
+    DXGK_DISPLAYPANELORIENTATION  : 2 UndockedOrientation;
   };
-  UINT Value;
-} DXGK_INTEGRATEDDISPLAYFLAGS;
-````
+  UINT   Value;
+} *PDXGK_INTEGRATEDDISPLAYFLAGS, DXGK_INTEGRATEDDISPLAYFLAGS;
+```
 
 ## Members
 

@@ -47,13 +47,13 @@ req.typenames: BDA_WMDRM_KEYINFOLIST, *PBDA_WMDRM_KEYINFOLIST
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_WMDRM_KEYINFOLIST {
   PBDARESULT lResult;
-  ULONG      ulKeyuuidBufferLen;
-  GUID       argKeyuuidBuffer[MIN_DIMENSION];
-} BDA_WMDRM_KEYINFOLIST, *PBDA_WMDRM_KEYINFOLIST;
-````
+  ULONG      ulKeyuuidBufferLen;
+  GUID       argKeyuuidBuffer[MIN_DIMENSION];
+} *PBDA_WMDRM_KEYINFOLIST, BDA_WMDRM_KEYINFOLIST;
+```
 
 ## Members
 

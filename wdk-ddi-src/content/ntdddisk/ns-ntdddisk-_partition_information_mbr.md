@@ -7,7 +7,7 @@ old-location: storage\partition_information_mbr.htm
 old-project: storage
 ms.assetid: 846f3a1c-ee0a-42d2-bdf1-7bf09406c955
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PPARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR, PARTITION_INFORMATION_MBR structure [Storage Devices], PPARTITION_INFORMATION_MBR, PPARTITION_INFORMATION_MBR structure pointer [Storage Devices], _PARTITION_INFORMATION_MBR, ntdddisk/PARTITION_INFORMATION_MBR, ntdddisk/PPARTITION_INFORMATION_MBR, storage.partition_information_mbr, structs-disk_c386ea16-c8d7-4a5e-8e61-d8e8ddead136.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,21 +47,22 @@ req.typenames: PARTITION_INFORMATION_MBR, *PPARTITION_INFORMATION_MBR
 PARTITION_INFORMATION_MBR contains information for a Master Boot Record partition that is not held in common with a GUID Partition Table partition.
 
 ## Syntax
-````
+```
 typedef struct _PARTITION_INFORMATION_MBR {
-  UCHAR   PartitionType;
-  BOOLEAN BootIndicator;
-  BOOLEAN RecognizedPartition;
-  ULONG   HiddenSectors;
+  __WRAPPED__ UCHAR   PartitionType;
+  __WRAPPED__ BOOLEAN BootIndicator;
+  __WRAPPED__ BOOLEAN RecognizedPartition;
+  __WRAPPED__ ULONG   HiddenSectors;
+  __WRAPPED__ GUID    PartitionId;
 } PARTITION_INFORMATION_MBR, *PPARTITION_INFORMATION_MBR;
-````
+```
 
 ## Members
 
 
 `PartitionType`
 
-Specifies the partition type. See <a href="..\ntdddisk\ns-ntdddisk-_partition_information.md">PARTITION_INFORMATION</a> for a list of system-defined partition types.
+Specifies the partition type. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff563751">PARTITION_INFORMATION</a> for a list of system-defined partition types.
 
 `BootIndicator`
 
@@ -87,12 +88,12 @@ Contains the number of hidden sectors in the partition.
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_partition_information_ex.md">PARTITION_INFORMATION_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561452">IoReadPartitionTable</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-ioreadpartitiontable.md">IoReadPartitionTable</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563754">PARTITION_INFORMATION_EX</a>
 
 
 
-<a href="..\ntdddisk\ns-ntdddisk-_partition_information_gpt.md">PARTITION_INFORMATION_GPT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563763">PARTITION_INFORMATION_GPT</a>

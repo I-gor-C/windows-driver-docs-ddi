@@ -47,12 +47,12 @@ req.typenames: BDA_USERACTIVITY_INTERVAL, *P_BDA_USERACTIVITY_INTERVAL
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_USERACTIVITY_INTERVAL {
   PBDARESULT lResult;
-  ULONG      ulActivityInterval;
+  ULONG      ulActivityInterval;
 } BDA_USERACTIVITY_INTERVAL, *P_BDA_USERACTIVITY_INTERVAL;
-````
+```
 
 ## Members
 

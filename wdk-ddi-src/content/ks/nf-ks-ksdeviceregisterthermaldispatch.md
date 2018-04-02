@@ -50,18 +50,18 @@ This function is used by the Avstream miniport driver to register callbacks for 
 
 ## Syntax
 
-````
-void KSDDKAPI NTSTATUS NTAPI KsDeviceRegisterThermalDispatch(
-  _In_ PKSDEVICE                  KsDevice,
-  _In_ PKSDEVICE_THERMAL_DISPATCH KsDeviceThermalDispatch
+```
+KSDDKAPI NTSTATUS KsDeviceRegisterThermalDispatch(
+  PKSDEVICE                  KsDevice,
+  PKSDEVICE_THERMAL_DISPATCH KsDeviceThermalDispatch
 );
-````
+```
 
 ## Parameters
 
 `KsDevice`
 
-A KS device object representing the device managed by KS. For more information, see <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>.
+A KS device object representing the device managed by KS. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a>.
 
 `KsDeviceThermalDispatch`
 
@@ -91,4 +91,4 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a>

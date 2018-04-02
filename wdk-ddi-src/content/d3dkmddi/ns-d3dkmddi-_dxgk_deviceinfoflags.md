@@ -7,7 +7,7 @@ old-location: display\dxgk_deviceinfoflags.htm
 old-project: display
 ms.assetid: 26d0aad9-86d0-4d97-978a-1e15285d3369
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_DEVICEINFOFLAGS, DXGK_DEVICEINFOFLAGS structure [Display Devices], DmStructs_69e769da-b68e-4df6-94dd-95e11bc88b0c.xml, _DXGK_DEVICEINFOFLAGS, d3dkmddi/DXGK_DEVICEINFOFLAGS, display.dxgk_deviceinfoflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,17 @@ req.typenames: DXGK_DEVICEINFOFLAGS
 The DXGK_DEVICEINFOFLAGS structure identifies, in bit-field flags, information about a graphics device.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_DEVICEINFOFLAGS {
   union {
     struct {
-      UINT GuaranteedDmaBufferContract  :1;
-      UINT Reserved  :31;
+      UINT  : 1  GuaranteedDmaBufferContract;
+      UINT  : 31 Reserved;
     };
     UINT Value;
   };
 } DXGK_DEVICEINFOFLAGS;
-````
+```
 
 ## Members
 
@@ -71,8 +71,8 @@ typedef struct _DXGK_DEVICEINFOFLAGS {
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561047">DXGK_DEVICEINFO</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_deviceinfo.md">DXGK_DEVICEINFO</a>
+<a href="https://msdn.microsoft.com/a7027735-0ec4-4fad-81fb-1c3aca4ebf2d">DxgkDdiCreateDevice</a>

@@ -7,7 +7,7 @@ old-location: display\d3dddicb_createcontextvirtual.htm
 old-project: display
 ms.assetid: 451D1CE2-A50D-4E42-BD93-879503EDE4B5
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDICB_CREATECONTEXTVIRTUAL, D3DDDICB_CREATECONTEXTVIRTUAL structure [Display Devices], _D3DDDICB_CREATECONTEXTVIRTUAL, d3dumddi/D3DDDICB_CREATECONTEXTVIRTUAL, display.d3dddicb_createcontextvirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: D3DDDICB_CREATECONTEXTVIRTUAL
 ---
 
 # _D3DDDICB_CREATECONTEXTVIRTUAL structure
-<b>D3DDDICB_CREATECONTEXTVIRTUAL</b> is used with <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtualcb.md">pfnCreateContextVirtualCb</a> to create contexts that support virtual addressing.
+<b>D3DDDICB_CREATECONTEXTVIRTUAL</b> is used with <a href="https://msdn.microsoft.com/7787FEDF-E18C-4120-A073-A13933856F57">pfnCreateContextVirtualCb</a> to create contexts that support virtual addressing.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDICB_CREATECONTEXTVIRTUAL {
-  UINT                      NodeOrdinal;
-  UINT                      EngineAffinity;
+  UINT                      NodeOrdinal;
+  UINT                      EngineAffinity;
   D3DDDI_CREATECONTEXTFLAGS Flags;
-  VOID                      *pPrivateDriverData;
-  UINT                      PrivateDriverDataSize;
-  HANDLE                    hContext;
+  VOID                      *pPrivateDriverData;
+  UINT                      PrivateDriverDataSize;
+  HANDLE                    hContext;
 } D3DDDICB_CREATECONTEXTVIRTUAL;
-````
+```
 
 ## Members
 
@@ -71,7 +71,7 @@ typedef struct _D3DDDICB_CREATECONTEXTVIRTUAL {
 
 `Flags`
 
-[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544502">D3DDDI_CREATECONTEXTFLAGS</a> structure that indicates, in bit-field flags, how to create the context.
 
 `pPrivateDriverData`
 
@@ -83,7 +83,7 @@ typedef struct _D3DDDICB_CREATECONTEXTVIRTUAL {
 
 `hContext`
 
-[out] A handle to the context that the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtualcb.md">pfnCreateContextVirtualCb</a> function creates.
+[out] A handle to the context that the <a href="https://msdn.microsoft.com/7787FEDF-E18C-4120-A073-A13933856F57">pfnCreateContextVirtualCb</a> function creates.
 
 
 ## Requirements
@@ -94,8 +94,8 @@ typedef struct _D3DDDICB_CREATECONTEXTVIRTUAL {
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_createcontextflags.md">D3DDDI_CREATECONTEXTFLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544502">D3DDDI_CREATECONTEXTFLAGS</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcontextvirtualcb.md">pfnCreateContextVirtualCb</a>
+<a href="https://msdn.microsoft.com/7787FEDF-E18C-4120-A073-A13933856F57">pfnCreateContextVirtualCb</a>

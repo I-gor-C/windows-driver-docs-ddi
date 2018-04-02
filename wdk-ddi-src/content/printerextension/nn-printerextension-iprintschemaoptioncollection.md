@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 
 # IPrintSchemaOptionCollection interface
 
-Exposes a collection of <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> objects.
+Exposes a collection of <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> objects.
 
 ## Methods
 
@@ -54,7 +54,7 @@ Exposes a collection of <a href="..\printerextension\nn-printerextension-iprints
 
 | Method | Description |
 | ---- |:---- |
-| [IPrintSchemaOptionCollection::get_Count](nf-printerextension-iprintschemaoptioncollection-get_count.md) | Gets a count of the number of IPrinterExtensionContext objects in the collection. |
+| [IPrintSchemaOptionCollection::get_Count](nf-printerextension-iprintschemaoptioncollection-get_count.md) | Gets a count of the number of IPrintSchemaOption objects in the collection. |
 | [IPrintSchemaOptionCollection::GetAt](nf-printerextension-iprintschemaoptioncollection-getat.md) | Gets a pointer to an IPrintSchemaOption object. |
 
 
@@ -71,4 +71,4 @@ Exposes a collection of <a href="..\printerextension\nn-printerextension-iprints
 
 
 
-<a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a>

@@ -47,13 +47,13 @@ req.typenames: KSQUALITY, *PKSQUALITY
 The KSQUALITY structure is used to report QM problems in both kernel and user mode to their respective quality managers.
 
 ## Syntax
-````
-typedef struct {
-  PVOID    Context;
-  ULONG    Proportion;
+```
+typedef struct KSQUALITY {
+  PVOID    Context;
+  ULONG    Proportion;
   LONGLONG DeltaTime;
-} KSQUALITY, *PKSQUALITY;
-````
+}  *PKSQUALITY;
+```
 
 ## Members
 

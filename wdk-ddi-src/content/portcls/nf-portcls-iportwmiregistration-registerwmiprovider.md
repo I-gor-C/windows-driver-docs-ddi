@@ -7,7 +7,7 @@ old-location: audio\iportwmiregistration_registerwmiprovider.htm
 old-project: audio
 ms.assetid: 5c092cbd-ef05-4b3d-ac9f-20f2fbf2c37c
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IPortWMIRegistration, IPortWMIRegistration interface [Audio Devices], RegisterWMIProvider method, IPortWMIRegistration::RegisterWMIProvider, RegisterWMIProvider method [Audio Devices], RegisterWMIProvider method [Audio Devices], IPortWMIRegistration interface, RegisterWMIProvider,IPortWMIRegistration.RegisterWMIProvider, audio.iportwmiregistration_registerwmiprovider, audmp-routines_3a73bed7-3a9f-4be2-8d15-33f707714c94.xml, portcls/IPortWMIRegistration::RegisterWMIProvider
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# RegisterWMIProvider method
+# IPortWMIRegistration::RegisterWMIProvider method
 The <code>RegisterWMIProvider</code> method registers the <a href="https://msdn.microsoft.com/library/windows/hardware/dn938554">Event Tracing for Windows</a> (ETW) capability of the miniport driver with PortCls.
 
 ## Syntax
 
-````
+```
 NTSTATUS RegisterWMIProvider(
-  [in] pDeviceObject      pDeviceObject,
-  [in] MiniportWmiContext MiniportWmiContext
+  PDEVICE_OBJECT ,
+  PVOID          
 );
-````
+```
 
 ## Parameters
 
@@ -85,11 +85,7 @@ For more information about ETW, see <a href="http://go.microsoft.com/fwlink/p/?l
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
-
-
-
-<a href="..\wmilib\ns-wmilib-_wmilib_context.md">WMILIB_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 
 
 
@@ -97,8 +93,12 @@ For more information about ETW, see <a href="http://go.microsoft.com/fwlink/p/?l
 
 
 
-<a href="..\portcls\nn-portcls-iportwmiregistration.md">IPortWMIRegistration</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536935">IPortWMIRegistration</a>
 
 
 
 <a href="http://go.microsoft.com/fwlink/p/?linkid=154129">Improve Debugging And Performance Tuning With ETW</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565813">WMILIB_CONTEXT</a>

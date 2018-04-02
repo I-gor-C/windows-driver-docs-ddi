@@ -50,15 +50,15 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
- WINAPI ReplyPrinterChangeNotificationEx(
-  _In_  HANDLE    hNotify,
-        DWORD     dwColor,
-        DWORD     fdwFlags,
-  _Out_ PDWORD    pdwResult,
-  _In_  PVOID     pPrinterNotifyInfo
+```
+BOOL ReplyPrinterChangeNotificationEx(
+  HANDLE hNotify,
+  DWORD  dwColor,
+  DWORD  fdwFlags,
+  PDWORD pdwResult,
+  PVOID  pPrinterNotifyInfo
 );
-````
+```
 
 ## Parameters
 

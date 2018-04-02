@@ -44,23 +44,23 @@ req.typenames: KS_FRAME_INFO, *PKS_FRAME_INFO
 ---
 
 # tagKS_FRAME_INFO structure
-The <b>KS_FRAME_INFO</b> structure extends the <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structure for video streams.
+The <b>KS_FRAME_INFO</b> structure extends the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a> structure for video streams.
 
 ## Syntax
-````
+```
 typedef struct tagKS_FRAME_INFO {
-  ULONG    ExtendedHeaderSize;
-  DWORD    dwFrameFlags;
+  ULONG    ExtendedHeaderSize;
+  DWORD    dwFrameFlags;
   LONGLONG PictureNumber;
   LONGLONG DropCount;
-  HANDLE   hDirectDraw;
-  HANDLE   hSurfaceHandle;
-  RECT     DirectDrawRect;
+  HANDLE   hDirectDraw;
+  HANDLE   hSurfaceHandle;
+  RECT     DirectDrawRect;
   union {
-    LONG  lSurfacePitch;
+    LONG  lSurfacePitch;
     DWORD Reserved1;
   };
-  DWORD    Reserved2;
+  DWORD    Reserved2;
   union {
     struct {
       DWORD Reserved3;
@@ -68,8 +68,8 @@ typedef struct tagKS_FRAME_INFO {
     };
     ULONGLONG FrameCompletionNumber;
   };
-} KS_FRAME_INFO, *PKS_FRAME_INFO;
-````
+} *PKS_FRAME_INFO, KS_FRAME_INFO;
+```
 
 ## Members
 
@@ -201,4 +201,4 @@ For more information about updating <b>PictureNumber</b> and <b>DropCount</b> se
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a>

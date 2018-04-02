@@ -7,7 +7,7 @@ old-location: audio\iminiportmidistream_setformat.htm
 old-project: audio
 ms.assetid: 35e11004-c716-4c6a-ba0a-be04750afb7a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IMiniportMidiStream, IMiniportMidiStream interface [Audio Devices], SetFormat method, IMiniportMidiStream::SetFormat, SetFormat method [Audio Devices], SetFormat method [Audio Devices], IMiniportMidiStream interface, SetFormat,IMiniportMidiStream.SetFormat, audio.iminiportmidistream_setformat, audmp-routines_9e75b920-4cc0-4acb-83e6-f970524e0587.xml, portcls/IMiniportMidiStream::SetFormat
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# SetFormat method
+# IMiniportMidiStream::SetFormat method
 The <code>SetFormat</code> method sets the KS data format of the MIDI stream.
 
 ## Syntax
 
-````
+```
 NTSTATUS SetFormat(
-  [in] PKSDATAFORMAT DataFormat
+  PKSDATAFORMAT DataFormat
 );
-````
+```
 
 ## Parameters
 
 `DataFormat`
 
-Specifies the new format for the stream. This parameter is a pointer to a structure of type <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>.
+Specifies the new format for the stream. This parameter is a pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>.
 
 
 ## Return Value
@@ -79,8 +79,8 @@ The <code>SetFormat</code> method essentially does nothing because the data form
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536704">IMiniportMidiStream</a>
 
 
 
-<a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>

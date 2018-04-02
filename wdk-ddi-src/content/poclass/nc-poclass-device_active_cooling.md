@@ -7,7 +7,7 @@ old-location: kernel\activecooling.htm
 old-project: kernel
 ms.assetid: ADC0145D-135F-46E6-91C9-B545DBE1D83B
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ActiveCooling, ActiveCooling routine [Kernel-Mode Driver Architecture], DEVICE_ACTIVE_COOLING, kernel.activecooling, poclass/ActiveCooling
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ void DeviceActiveCooling(
 
 `Context`
 
-A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="..\poclass\ns-poclass-_thermal_cooling_interface.md">THERMAL_COOLING_INTERFACE</a> structure that the driver previously supplied to the caller.
+A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh698275">THERMAL_COOLING_INTERFACE</a> structure that the driver previously supplied to the caller.
 
 `Engaged`
 
@@ -96,4 +96,4 @@ For more information about active cooling, see <a href="https://msdn.microsoft.c
 
 ## See Also
 
-<a href="..\poclass\ns-poclass-_thermal_cooling_interface.md">THERMAL_COOLING_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh698275">THERMAL_COOLING_INTERFACE</a>

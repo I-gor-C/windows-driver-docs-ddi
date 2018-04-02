@@ -7,7 +7,7 @@ old-location: dtf\iwdtfaction2_disableobjecterrorlogging.htm
 old-project: dtf
 ms.assetid: fcf279e6-f88f-4895-85bd-1088dd06fd12
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: DisableObjectErrorLogging method [Windows Device Testing Framework], DisableObjectErrorLogging method [Windows Device Testing Framework], IWDTFAction2 interface, DisableObjectErrorLogging,IWDTFAction2.DisableObjectErrorLogging, IWDTFAction2, IWDTFAction2 interface [Windows Device Testing Framework], DisableObjectErrorLogging method, IWDTFAction2::DisableObjectErrorLogging, Microsoft.WDTF.IWDTFAction2.DisableObjectErrorLogging, Microsoft::WDTF::IWDTFAction2::DisableObjectErrorLogging, dtf.iwdtfaction2_disableobjecterrorlogging, wdtf/IWDTFAction2::DisableObjectErrorLogging
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# DisableObjectErrorLogging method
+# IWDTFAction2::DisableObjectErrorLogging method
 Disables object error logging for the action.
 
 ## Syntax
 
-````
-HRESULT DisableObjectErrorLogging();
-````
+```
+HRESULT DisableObjectErrorLogging(
+
+);
+```
 
 ## Parameters
 
@@ -72,4 +74,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtfaction2.md">IWDTFAction2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406311">IWDTFAction2</a>

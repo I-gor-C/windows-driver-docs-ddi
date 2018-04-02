@@ -47,14 +47,14 @@ req.typenames: DriverUnifiedPosHealthCheckLevel
 This enumeration indicates the type of health check to be performed when CheckHealthAsync is called on a POS device.
 
 ## Syntax
-````
-typedef enum _DriverUnifiedPosHealthCheckLevel { 
-  UnknownHealthCheckLevel  = 0,
-  POSInternal              = 1,
-  External                 = 2,
-  Interactive              = 3
-} DriverUnifiedPosHealthCheckLevel;
-````
+```
+typedef enum DriverUnifiedPosHealthCheckLevel {
+  UnknownHealthCheckLevel  ,
+  POSInternal              ,
+  External                 ,
+  Interactive
+} ;
+```
 
 ## Constants
 

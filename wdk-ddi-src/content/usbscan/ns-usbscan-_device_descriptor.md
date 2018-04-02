@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 # _DEVICE_DESCRIPTOR structure
-The DEVICE_DESCRIPTOR structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_get_device_descriptor.md">IOCTL_GET_DEVICE_DESCRIPTOR</a>.
+The DEVICE_DESCRIPTOR structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542856">IOCTL_GET_DEVICE_DESCRIPTOR</a>.
 
 ## Syntax
-````
+```
 typedef struct _DEVICE_DESCRIPTOR {
   USHORT usVendorId;
   USHORT usProductId;
   USHORT usBcdDevice;
   USHORT usLanguageId;
 } DEVICE_DESCRIPTOR, *PDEVICE_DESCRIPTOR;
-````
+```
 
 ## Members
 

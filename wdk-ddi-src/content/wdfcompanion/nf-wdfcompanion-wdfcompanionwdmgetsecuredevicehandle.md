@@ -50,11 +50,11 @@ For internal use only.
 
 ## Syntax
 
-````
+```
 HANDLE WdfCompanionWdmGetSecureDeviceHandle(
-  _In_ WDFCOMPANION Companion
+  WDFCOMPANION Companion
 );
-````
+```
 
 ## Parameters
 

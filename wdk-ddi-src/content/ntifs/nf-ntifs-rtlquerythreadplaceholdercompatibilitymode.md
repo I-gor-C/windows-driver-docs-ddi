@@ -7,7 +7,7 @@ old-location: ifsk\rtlquerythreadplaceholdercompatibilitymode.htm
 old-project: ifsk
 ms.assetid: A38B30F9-D55B-4CC2-9B71-3B597ACCE0EB
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlQueryThreadPlaceholderCompatibilityMode, RtlQueryThreadPlaceholderCompatibilityMode routine [Installable File System Drivers], ifsk.rtlquerythreadplaceholdercompatibilitymode, ntifs/RtlQueryThreadPlaceholderCompatibilityMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ req.typenames: TOKEN_TYPE
 
 ## Syntax
 
-````
-CHAR RtlQueryThreadPlaceholderCompatibilityMode(
-   VOID 
+```
+NTSYSAPI CHAR RtlQueryThreadPlaceholderCompatibilityMode(
+
 );
-````
+```
 
 ## Parameters
 
@@ -104,4 +104,4 @@ Returns the thread's placeholder compatibility mode. If there was an error it re
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlsetthreadplaceholdercompatibilitymode.md">RtlSetThreadPlaceholderCompatibilityMode</a>
+<a href="https://msdn.microsoft.com/0EA209B7-20B9-418F-AD29-83520ED27DAB">RtlSetThreadPlaceholderCompatibilityMode</a>

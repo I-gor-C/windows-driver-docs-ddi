@@ -7,7 +7,7 @@ old-location: debugger\getdebuggercachesize.htm
 old-project: debugger
 ms.assetid: 0365ffe5-575b-44a9-8711-837d499be8bc
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetDebuggerCacheSize, GetDebuggerCacheSize function [Windows Debugging], WdbgExts_Ref_da3c4b36-e7b1-429a-9d63-4f92101a189a.xml, debugger.getdebuggercachesize, wdbgexts/GetDebuggerCacheSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>GetDebuggerCacheSize</b> function returns the size of the cache that is u
 
 ## Syntax
 
-````
-__inline BOOL GetDebuggerCacheSize(
-  _Out_ PULONG64 CacheSize
+```
+BOOL GetDebuggerCacheSize(
+  OUT PULONG64 CacheSize
 );
-````
+```
 
 ## Parameters
 

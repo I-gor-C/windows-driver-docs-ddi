@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_modem_config_info.htm
 old-project: netvista
 ms.assetid: 07C2BAED-157A-459C-B558-115C0091ECE5
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_WWAN_MODEM_CONFIG_INFO, NDIS_WWAN_MODEM_CONFIG_INFO, NDIS_WWAN_MODEM_CONFIG_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_MODEM_CONFIG_INFO, PNDIS_WWAN_MODEM_CONFIG_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/NDIS_WWAN_MODEM_CONFIG_INFO, ndiswwan/PNDIS_WWAN_MODEM_CONFIG_INFO, netvista.ndis_wwan_modem_config_info"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: NDIS_WWAN_MODEM_CONFIG_INFO, *PNDIS_WWAN_MODEM_CONFIG_INFO
 The <b>NDIS_WWAN_MODEM_CONFIG_INFO</b> structure represents the modem's configuration information.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_WWAN_MODEM_CONFIG_INFO {
-  NDIS_OBJECT_HEADER Header;
-  WWAN_STATUS        uStatus;
-                     ModemConfigInfo;
+  NDIS_OBJECT_HEADER     Header;
+  WWAN_STATUS            uStatus;
+  WWAN_MODEM_CONFIG_INFO ModemConfigInfo;
 } NDIS_WWAN_MODEM_CONFIG_INFO, *PNDIS_WWAN_MODEM_CONFIG_INFO;
-````
+```
 
 ## Members
 
@@ -106,7 +106,7 @@ sizeof(NDIS_WWAN_MODEM_CONFIG_INFO)
  
 
 For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 `uStatus`
 
@@ -175,7 +175,7 @@ The operation failed because the device does not support this OID.
 
 `ModemConfigInfo`
 
-A formatted <a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONFIG_INFO</a> structure that represents the modem's configuration information.
+A formatted <a href="https://msdn.microsoft.com/14FBFA51-F4A5-417A-8905-241CEA543774">WWAN_MODEM_CONFIG_INFO</a> structure that represents the modem's configuration information.
 
 
 ## Requirements
@@ -186,11 +186,11 @@ A formatted <a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONF
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONFIG_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-modem-config-info">NDIS_STATUS_WWAN_MODEM_CONFIG_INFO</a>
 
 
 
@@ -198,4 +198,4 @@ A formatted <a href="..\wwan\ns-wwan-_wwan_modem_config_info.md">WWAN_MODEM_CONF
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-modem-config-info">NDIS_STATUS_WWAN_MODEM_CONFIG_INFO</a>
+<a href="https://msdn.microsoft.com/14FBFA51-F4A5-417A-8905-241CEA543774">WWAN_MODEM_CONFIG_INFO</a>

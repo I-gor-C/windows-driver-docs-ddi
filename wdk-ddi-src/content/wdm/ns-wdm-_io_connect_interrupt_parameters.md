@@ -7,7 +7,7 @@ old-location: kernel\io_connect_interrupt_parameters.htm
 old-project: kernel
 ms.assetid: 450c2e2b-56fa-4896-ba81-0f84f7e3051d
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PIO_CONNECT_INTERRUPT_PARAMETERS, IO_CONNECT_INTERRUPT_PARAMETERS, IO_CONNECT_INTERRUPT_PARAMETERS structure [Kernel-Mode Driver Architecture], PIO_CONNECT_INTERRUPT_PARAMETERS, PIO_CONNECT_INTERRUPT_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], _IO_CONNECT_INTERRUPT_PARAMETERS, kernel.io_connect_interrupt_parameters, kstruct_b_c3854cf4-b084-42f4-9f3b-92a96fc741c1.xml, wdm/IO_CONNECT_INTERRUPT_PARAMETERS, wdm/PIO_CONNECT_INTERRUPT_PARAMETERS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,54 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 # _IO_CONNECT_INTERRUPT_PARAMETERS structure
-The <b>IO_CONNECT_INTERRUPT_PARAMETERS</b> structure contains the parameters that a driver supplies to the <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> routine to register an interrupt service routine (ISR).
+The <b>IO_CONNECT_INTERRUPT_PARAMETERS</b> structure contains the parameters that a driver supplies to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548378">IoConnectInterruptEx</a> routine to register an interrupt service routine (ISR).
 
 ## Syntax
-````
+```
 typedef struct _IO_CONNECT_INTERRUPT_PARAMETERS {
   ULONG Version;
   union {
-    struct {
-      PDEVICE_OBJECT    PhysicalDeviceObject;
-      PKINTERRUPT       *InterruptObject;
-      PKSERVICE_ROUTINE ServiceRoutine;
-      PVOID             ServiceContext;
-      PKSPIN_LOCK       SpinLock;
-      KIRQL             SynchronizeIrql;
-      BOOLEAN           FloatingSave;
-      BOOLEAN           ShareVector;
-      ULONG             Vector;
-      KIRQL             Irql;
-      KINTERRUPT_MODE   InterruptMode;
-      KAFFINITY         ProcessorEnableMask;
-      USHORT            Group;
-    } FullySpecified;
-    struct {
-      PDEVICE_OBJECT    PhysicalDeviceObject;
-      PKINTERRUPT       *InterruptObject;
-      PKSERVICE_ROUTINE ServiceRoutine;
-      PVOID             ServiceContext;
-      PKSPIN_LOCK       SpinLock;
-      KIRQL             SynchronizeIrql;
-      BOOLEAN           FloatingSave;
-    } LineBased;
-    struct {
-      PDEVICE_OBJECT            PhysicalDeviceObject;
-      union {
-        PVOID                      *Generic;
-        PIO_INTERRUPT_MESSAGE_INFO *InterruptMessageTable;
-        PKINTERRUPT                *InterruptObject;
-      } ConnectionContext;
-      PKMESSAGE_SERVICE_ROUTINE MessageServiceRoutine;
-      PVOID                     ServiceContext;
-      PKSPIN_LOCK               SpinLock;
-      KIRQL                     SynchronizeIrql;
-      BOOLEAN                   FloatingSave;
-      PKSERVICE_ROUTINE         FallBackServiceRoutine;
-    } MessageBased;
+    IO_CONNECT_INTERRUPT_FULLY_SPECIFIED_PARAMETERS FullySpecified;
+    IO_CONNECT_INTERRUPT_LINE_BASED_PARAMETERS      LineBased;
+    IO_CONNECT_INTERRUPT_MESSAGE_BASED_PARAMETERS   MessageBased;
   };
-} IO_CONNECT_INTERRUPT_PARAMETERS, *PIO_CONNECT_INTERRUPT_PARAMETERS;
-````
+} *PIO_CONNECT_INTERRUPT_PARAMETERS, IO_CONNECT_INTERRUPT_PARAMETERS;
+```
 
 ## Members
 
@@ -179,7 +144,7 @@ The caller specified CONNECT_MESSAGE_BASED and the caller's <i>InterruptMessageS
 </table>
 
 ## Remarks
-The <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> routine takes a single <i>Parameters</i> parameter, which points to an <b>IO_CONNECT_INTERRUPT_PARAMETERS</b> structure that contains all of the parameters of the operation.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff548378">IoConnectInterruptEx</a> routine takes a single <i>Parameters</i> parameter, which points to an <b>IO_CONNECT_INTERRUPT_PARAMETERS</b> structure that contains all of the parameters of the operation.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -188,5 +153,4 @@ The <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> rou
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
-<a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/using-the-connect-message-based-version-of-ioconnectinterruptex">Using the CONNECT_MESSAGE_BASED Version of IoConnectInterruptEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548378">IoConnectInterruptEx</a>

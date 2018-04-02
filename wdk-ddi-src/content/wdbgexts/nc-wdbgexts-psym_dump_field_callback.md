@@ -7,7 +7,7 @@ old-location: debugger\psym_dump_field_callback.htm
 old-project: debugger
 ms.assetid: 3a1d9751-194a-4eb7-86f1-f6e812b52f0c
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: PSYM_DUMP_FIELD_CALLBACK, PSYM_DUMP_FIELD_CALLBACK function pointer [Windows Debugging], WdbgExts_Ref_37493dec-e340-408d-8f7c-bda18057f427.xml, debugger.psym_dump_field_callback, wdbgexts/PSYM_DUMP_FIELD_CALLBACK
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 
 
 # PSYM_DUMP_FIELD_CALLBACK callback function
-The PSYM_DUMP_FIELD_CALLBACK callback function is called by the debugger engine during the <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a> Ioctl operation with information about a member in the specified symbol.
+The PSYM_DUMP_FIELD_CALLBACK callback function is called by the debugger engine during the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a> Ioctl operation with information about a member in the specified symbol.
 
 ## Syntax
 
@@ -64,7 +64,7 @@ ULONG PsymDumpFieldCallback(
 
 `*pField`
 
-Specifies the field for which this callback function is being called.  The debugger engine fills in the contents of this parameter before making the call.  See <a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a> for details about the members of this parameter.
+Specifies the field for which this callback function is being called.  The debugger engine fills in the contents of this parameter before making the call.  See <a href="https://msdn.microsoft.com/library/windows/hardware/ff545316">FIELD_INFO</a> for details about the members of this parameter.
 
 `UserContext`
 
@@ -87,12 +87,12 @@ If you are writing a WdbgExts extension, include wdbgexts.h. If you are writing 
 
 ## See Also
 
-<a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545316">FIELD_INFO</a>
 
 
 
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a>
 
 
 
-<a href="..\wdbgexts\ns-wdbgexts-_field_info.md">FIELD_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551084">Ioctl</a>

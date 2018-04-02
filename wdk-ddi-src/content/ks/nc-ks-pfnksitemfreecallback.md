@@ -62,7 +62,7 @@ void Pfnksitemfreecallback(
 
 `CreateItem`
 
-Specifies a create item that was previously allocated by <a href="..\ks\nf-ks-ksallocateobjectcreateitem.md">KsAllocateObjectCreateItem</a>.
+Specifies a create item that was previously allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff560968">KsAllocateObjectCreateItem</a>.
 
 
 ## Return Value
@@ -71,7 +71,7 @@ Returns STATUS_SUCCESS if the passed in create item was successfully freed, or t
 
 ## Remarks
 
-The <i>Context</i> parameter of the <a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a> structure must contain sufficient information to perform cleanup for the create item.
+The <i>Context</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a> structure must contain sufficient information to perform cleanup for the create item.
 
 The <i>Flags</i> member of the KSOBJECT_CREATE_ITEM structure indicates if it is necessary to flush security descriptor changes.
 
@@ -83,8 +83,8 @@ The <i>Flags</i> member of the KSOBJECT_CREATE_ITEM structure indicates if it is
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a>
 
 
 
-<a href="..\ks\nf-ks-ksallocateobjectcreateitem.md">KsAllocateObjectCreateItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560968">KsAllocateObjectCreateItem</a>

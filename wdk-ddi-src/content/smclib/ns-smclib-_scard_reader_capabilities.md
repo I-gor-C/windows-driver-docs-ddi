@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level (See Remarks section)
+req.irql: 
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -48,36 +48,38 @@ req.product: Windows 10 or later.
 The SCARD_READER_CAPABILITIES structure holds state information about the smart card reader.
 
 ## Syntax
-````
-typedef struct {
-  ULONG  SupportedProtocols;
-  ULONG  ReaderType;
-  ULONG  Reserved;
-  ULONG  MechProperties;
-  ULONG  CurrentState;
-  ULONG  Channel;
+```
+typedef struct _SCARD_READER_CAPABILITIES {
+  ULONG                    SupportedProtocols;
+  ULONG                    Reserved;
+  ULONG                    ReaderType;
+  ULONG                    MechProperties;
+  ULONG                    CurrentState;
+  ULONG                    Channel;
   struct {
     ULONG Default;
     ULONG Max;
-  } CLKFrequency;
+  } CLKFrequency;
   struct {
     ULONG Default;
     ULONG Max;
-  } DataRate;
-  ULONG  MaxIFSD;
-  ULONG  PowerMgmtSupport;
-  ULONG  CardConfiscated;
+  } DataRate;
+  ULONG                    MaxIFSD;
+  ULONG                    PowerMgmtSupport;
+  ULONG                    CardConfiscated;
   struct {
+    UCHAR  Entries;
     PULONG List;
-    UCHAR  Entries;
-  } DataRatesSupported;
+  } DataRatesSupported;
+  _DataRatesSupported      _DataRatesSupported;
   struct {
+    UCHAR  Entries;
     PULONG List;
-    UCHAR  Entries;
-  } CLKFrequenciesSupported;
-  UCHAR  Reserved1[100 - sizeof(ULONG) -  sizeof(struct _DataRatesSupported) - sizeof(struct _CLKFrequenciesSupported)];
+  } CLKFrequenciesSupported;
+  _CLKFrequenciesSupported _CLKFrequenciesSupported;
+  UCHAR                    Reserved1[100 - sizeof(ULONG)- sizeof(struct _DataRatesSupported)- sizeof(struct _CLKFrequenciesSupported)];
 } SCARD_READER_CAPABILITIES, *PSCARD_READER_CAPABILITIES;
-````
+```
 
 ## Members
 
@@ -314,7 +316,7 @@ A smart card is inserted and a protocol has been selected.
 </table>
  
 
-Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="..\smclib\ns-smclib-_smartcard_extension.md">SMARTCARD_EXTENSION</a>.
+Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548974">SMARTCARD_EXTENSION</a>.
 
 `Channel`
 

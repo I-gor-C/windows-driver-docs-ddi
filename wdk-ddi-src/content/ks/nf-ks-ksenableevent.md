@@ -50,16 +50,16 @@ The <b>KsEnableEvent</b> function enables events requested through IOCTL_KS_ENAB
 
 ## Syntax
 
-````
-NTSTATUS KsEnableEvent(
-  _In_           PIRP              Irp,
-  _In_           ULONG             EventSetsCount,
-  _In_     const KSEVENT_SET       *EventSet,
-  _Inout_        PLIST_ENTRY       EventsList,
-  _In_opt_       KSEVENTS_LOCKTYPE EventsFlags,
-  _In_opt_       PVOID             EventsLock
+```
+KSDDKAPI NTSTATUS KsEnableEvent(
+  PIRP              Irp,
+  ULONG             EventSetsCount,
+  const KSEVENT_SET *EventSet,
+  PLIST_ENTRY       EventsList,
+  KSEVENTS_LOCKTYPE EventsFlags,
+  PVOID             EventsLock
 );
-````
+```
 
 ## Parameters
 
@@ -81,7 +81,7 @@ If the enabling event's KSEVENT_SET.AddHandler for the event set is <b>NULL</b>,
 
 `EventsFlags`
 
-Specifies <a href="..\ks\ne-ks-ksevents_locktype.md">KSEVENTS_LOCKTYPE</a> flags specifying the type of exclusion lock to be used in accessing the event list, if any. If no flag is set, then no lock is taken. If a handler is specified already, this parameter is ignored.
+Specifies <a href="https://msdn.microsoft.com/library/windows/hardware/ff561784">KSEVENTS_LOCKTYPE</a> flags specifying the type of exclusion lock to be used in accessing the event list, if any. If no flag is set, then no lock is taken. If a handler is specified already, this parameter is ignored.
 
 `EventsLock`
 
@@ -105,4 +105,4 @@ Minidrivers do not call <b>KsEnableEvent</b>. Only a pure KS driver or a class d
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksdisableevent.md">KsDisableEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561694">KsDisableEvent</a>

@@ -52,16 +52,16 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 BOOL GetJobAttributesEx(
-  _In_  LPWSTR     pPrinterName,
-  _In_  LPDEVMODEW pDevmode,
-  _In_  DWORD      dwLevel,
-  _Out_ LPBYTE     pAttributeInfo,
-  _In_  DWORD      nSize,
-  _In_  DWORD      dwFlags
+  LPWSTR     pPrinterName,
+  LPDEVMODEW pDevmode,
+  DWORD      dwLevel,
+  LPBYTE     pAttributeInfo,
+  DWORD      nSize,
+  DWORD      dwFlags
 );
-````
+```
 
 ## Parameters
 
@@ -89,7 +89,7 @@ Caller-supplied value that indicates the type of structure pointed to by <i>pAtt
 </td>
 <td>
 
-<a href="..\winddiui\ns-winddiui-_attribute_info_1.md">ATTRIBUTE_INFO_1</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545090">ATTRIBUTE_INFO_1</a>
 
 
 </td>
@@ -101,7 +101,7 @@ Caller-supplied value that indicates the type of structure pointed to by <i>pAtt
 </td>
 <td>
 
-<a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545091">ATTRIBUTE_INFO_2</a>
 
 
 </td>
@@ -113,7 +113,7 @@ Caller-supplied value that indicates the type of structure pointed to by <i>pAtt
 </td>
 <td>
 
-<a href="..\winsplp\ns-winsplp-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a>
 
 
 </td>
@@ -125,7 +125,7 @@ Caller-supplied value that indicates the type of structure pointed to by <i>pAtt
 </td>
 <td>
 
-<a href="..\winsplp\ns-winsplp-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>
 
 
 </td>
@@ -134,7 +134,7 @@ Caller-supplied value that indicates the type of structure pointed to by <i>pAtt
 
 `pAttributeInfo`
 
-Caller-supplied pointer to an attribute information structure (<a href="..\winddiui\ns-winddiui-_attribute_info_1.md">ATTRIBUTE_INFO_1</a>, <a href="..\winddiui\ns-winddiui-_attribute_info_2.md">ATTRIBUTE_INFO_2</a>, <a href="..\winsplp\ns-winsplp-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>, or <a href="..\winsplp\ns-winsplp-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>) that receives information about the print job.
+Caller-supplied pointer to an attribute information structure (<a href="https://msdn.microsoft.com/library/windows/hardware/ff545090">ATTRIBUTE_INFO_1</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545091">ATTRIBUTE_INFO_2</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>) that receives information about the print job.
 
 `nSize`
 
@@ -144,7 +144,7 @@ Size of the buffer, in bytes, pointed to by <i>pAttributeInfo</i>.
 
 If set by the caller to FILL_WITH_DEFAULTS, then the spooler will fill <i>pAttributeInfo</i> with default values from level 1 up to the level specified by <i>dwLevel</i>.
 
-For example, if <i>dwLevel</i> is 4 and FILL_WITH_DEFAULTS is specified, <i>pAttributeInfo</i> will be filled with the following default member values of <a href="..\winsplp\ns-winsplp-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>:
+For example, if <i>dwLevel</i> is 4 and FILL_WITH_DEFAULTS is specified, <i>pAttributeInfo</i> will be filled with the following default member values of <a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>:
 
 <b>dwJobNumberOfPagesPerSide</b> = 1
 
@@ -201,7 +201,11 @@ This function first checks whether the driver supports the attribute level that 
 
 ## See Also
 
-<a href="..\winsplp\ns-winsplp-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545096">ATTRIBUTE_INFO_4</a>
 
 
 
@@ -209,8 +213,4 @@ This function first checks whether the driver supports the attribute level that 
 
 
 
-<a href="..\winsplp\ns-winsplp-_attribute_info_4.md">ATTRIBUTE_INFO_4</a>
-
-
-
-<a href="..\winsplp\nf-winsplp-getjobattributes.md">GetJobAttributes</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550456">GetJobAttributes</a>

@@ -50,22 +50,22 @@ The<b> KsFilterGetAndGate </b>function returns <i>Filter</i>'s AND gate.
 
 ## Syntax
 
-````
-PKSGATE KsFilterGetAndGate(
-  _In_ PKSFILTER Filter
+```
+KSDDKAPI PKSGATE KsFilterGetAndGate(
+  PKSFILTER Filter
 );
-````
+```
 
 ## Parameters
 
 `Filter`
 
-A pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure for which to acquire the corresponding AND gate.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure for which to acquire the corresponding AND gate.
 
 
 ## Return Value
 
-<b>KsFilterGetAndGate</b> returns <i>Filter</i>'s AND gate as a pointer to a <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure.
+<b>KsFilterGetAndGate</b> returns <i>Filter</i>'s AND gate as a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a> structure.
 
 ## Remarks
 
@@ -81,24 +81,24 @@ A minidriver can use AND gates on a filter as a processing control mechanism for
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgatecapturethreshold.md">KsGateCaptureThreshold</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a>
 
 
 
-<a href="..\ks\nf-ks-ksgateturninputon.md">KsGateTurnInputOn</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562571">KsGateCaptureThreshold</a>
 
 
 
-<a href="..\ks\nf-ks-kspinattachandgate.md">KsPinAttachAndGate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562589">KsGateTurnInputOff</a>
 
 
 
-<a href="..\ks\nf-ks-ksgateturninputoff.md">KsGateTurnInputOff</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562591">KsGateTurnInputOn</a>
 
 
 
-<a href="..\ks\nf-ks-kspingetandgate.md">KsPinGetAndGate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563491">KsPinAttachAndGate</a>
 
 
 
-<a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563502">KsPinGetAndGate</a>

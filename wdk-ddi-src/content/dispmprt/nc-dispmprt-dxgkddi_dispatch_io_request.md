@@ -7,7 +7,7 @@ old-location: display\dxgkddidispatchiorequest.htm
 old-project: display
 ms.assetid: e1973aca-cbc2-4780-a3b5-7601e1cc6c90
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKDDI_DISPATCH_IO_REQUEST, DmFunctions_17ebc963-6659-4f1b-bd5a-f804c04be8b5.xml, DxgkDdiDispatchIoRequest, DxgkDdiDispatchIoRequest callback function [Display Devices], display.dxgkddidispatchiorequest, dispmprt/DxgkDdiDispatchIoRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ NTSTATUS DxgkddiDispatchIoRequest(
 
 `MiniportDeviceContext`
 
-A handle to a context block associated with a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
+A handle to a context block associated with a display adapter. The display miniport driver's <a href="https://msdn.microsoft.com/5fd4046f-54c3-4dfc-8d51-0d9ebcde0bea">DxgkDdiAddDevice</a> function previously provided this handle to the DirectX graphics kernel subsystem.
 
 `VidPnSourceId`
 
@@ -72,7 +72,7 @@ An integer that identifies the video present source associated with the I/O requ
 
 `VideoRequestPacket`
 
-A pointer to a <a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a> structure that describes the I/O request.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570547">VIDEO_REQUEST_PACKET</a> structure that describes the I/O request.
 
 
 ## Return Value
@@ -93,4 +93,4 @@ The <i>DxgkDdiDispatchIoRequest</i> function should be made pageable.
 
 ## See Also
 
-<a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570547">VIDEO_REQUEST_PACKET</a>

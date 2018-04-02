@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetMyDeviceHandle method
+# IStiDeviceControl::GetMyDeviceHandle method
 This topic describes the <b>GetMyDeviceHandle</b> method.
 
 ## Syntax
 
-````
+```
 HRESULT GetMyDeviceHandle(
-   LPHANDLE lph
+  LPHANDLE lph
 );
-````
+```
 
 ## Parameters
 

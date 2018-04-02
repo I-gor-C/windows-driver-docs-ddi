@@ -49,19 +49,19 @@ The <b>PshedSynchronizeExecution</b> function synchronizes the execution of a gi
 
 ## Syntax
 
-````
-BOOLEAN PshedSynchronizeExecution(
-  _In_ PWHEA_ERROR_SOURCE_DESCRIPTOR ErrorSource,
-  _In_ PKSYNCHRONIZE_ROUTINE         SynchronizeRoutine,
-  _In_ PVOID                         SynchronizeContext
+```
+NTPSHEDAPI BOOLEAN PshedSynchronizeExecution(
+  PWHEA_ERROR_SOURCE_DESCRIPTOR ErrorSource,
+  PKSYNCHRONIZE_ROUTINE         SynchronizeRoutine,
+  PVOID                         SynchronizeContext
 );
-````
+```
 
 ## Parameters
 
 `ErrorSource`
 
-A pointer to a <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure that describes an error source.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure that describes an error source.
 
 `SynchronizeRoutine`
 
@@ -131,4 +131,4 @@ Callers of the <b>PshedSynchronizeExecution</b> function must be running at IRQL
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a>

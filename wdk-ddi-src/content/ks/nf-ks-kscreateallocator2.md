@@ -51,13 +51,13 @@ Supported starting in Windows 8.
 
 ## Syntax
 
-````
- KSDDKAPI HRESULT WINAPI KsCreateAllocator2(
-  _In_  HANDLE               ConnectionHandle,
-  _In_  PKSALLOCATOR_FRAMING AllocatorFraming,
-  _Out_ PHANDLE              AllocatorHandle
+```
+KSDDKAPI HRESULT KsCreateAllocator2(
+  HANDLE               ConnectionHandle,
+  PKSALLOCATOR_FRAMING AllocatorFraming,
+  PHANDLE              AllocatorHandle
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ Specifies the handle to the sink connection on which to create the allocator.
 
 `AllocatorFraming`
 
-A pointer to a <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure that specifies framing for the allocator.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560979">KSALLOCATOR_FRAMING</a> structure that specifies framing for the allocator.
 
 `AllocatorHandle`
 
@@ -80,7 +80,7 @@ Returns <b>NOERROR</b> if successful; otherwise, returns an error code.
 
 ## Remarks
 
-This is a new version of the <a href="..\ks\nf-ks-kscreateallocator.md">KsCreateAllocator</a> function and uses the device broker to create the handle to the kernel streaming object. In addition, the Component Object Model (COM) <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a> function must be called before this function is called.
+This is a new version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561633">KsCreateAllocator</a> function and uses the device broker to create the handle to the kernel streaming object. In addition, the Component Object Model (COM) <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a> function must be called before this function is called.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,12 +92,12 @@ This is a new version of the <a href="..\ks\nf-ks-kscreateallocator.md">KsCreate
 
 ## See Also
 
-<a href="..\ks\nf-ks-kscreateallocator.md">KsCreateAllocator</a>
-
-
-
-<a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
-
-
-
 <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560979">KSALLOCATOR_FRAMING</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561633">KsCreateAllocator</a>

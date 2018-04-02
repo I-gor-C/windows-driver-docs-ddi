@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-DWORD APIENTRY OEMDownloadCharGlyph(
-        PDEVOBJ     pdevobj,
-        PUNIFONTOBJ pUFObj,
-        HGLYPH      hGlyph,
-  _Out_ PDWORD      pdwWidth
+```
+DWORD OEMDownloadCharGlyph(
+  PDEVOBJ     pdevobj,
+  PUNIFONTOBJ pUFObj,
+  HGLYPH      hGlyph,
+  PDWORD      pdwWidth
 );
-````
+```
 
 ## Parameters
 

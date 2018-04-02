@@ -44,17 +44,17 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# AddProperty method
+# IPrintPipelinePropertyBag::AddProperty method
 The <code>AddProperty</code> method adds a property to a property bag.
 
 ## Syntax
 
-````
+```
 HRESULT AddProperty(
-  [in] const wchar_t *pszName,
-  [in] const VARIANT *pVar
+  const wchar_t *pszName,
+  const VARIANT *pVar
 );
-````
+```
 
 ## Parameters
 

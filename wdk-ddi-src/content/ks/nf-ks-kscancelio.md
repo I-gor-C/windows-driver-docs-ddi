@@ -50,12 +50,12 @@ The <b>KsCancelIo</b> function cancels all IRPs on the specified cancel list. If
 
 ## Syntax
 
-````
-void KsCancelIo(
-  _Inout_ PLIST_ENTRY QueueHead,
-  _In_    PKSPIN_LOCK SpinLock
+```
+KSDDKAPI VOID KsCancelIo(
+  PLIST_ENTRY QueueHead,
+  PKSPIN_LOCK SpinLock
 );
-````
+```
 
 ## Parameters
 
@@ -88,4 +88,4 @@ If the IRP being canceled has a driver-supplied cancel routine, the cancel spin 
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksaddirptocancelablequeue.md">KsAddIrpToCancelableQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560934">KsAddIrpToCancelableQueue</a>

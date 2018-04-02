@@ -7,7 +7,7 @@ old-location: ifsk\fltdecodeparameters.htm
 old-project: ifsk
 ms.assetid: c0569a55-7bc0-4c98-80b9-c332c313ca5b
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_a_to_d_0e793d86-f756-4885-8b23-5f74cd50b144.xml, FltDecodeParameters, FltDecodeParameters routine [Installable File System Drivers], fltkernel/FltDecodeParameters, ifsk.fltdecodeparameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,25 +50,25 @@ req.typenames: EXpsFontRestriction
 
 ## Syntax
 
-````
-NTSTATUS FltDecodeParameters(
-  _In_      PFLT_CALLBACK_DATA CallbackData,
-  _Out_     PMDL               **MdlAddressPointer,
-  _Out_     PVOID              **Buffer,
-  _Out_     PULONG             *Length,
-  _Out_opt_ LOCK_OPERATION     *DesiredAccess
+```
+NTSTATUS FLTAPI FltDecodeParameters(
+  PFLT_CALLBACK_DATA CallbackData,
+  PMDL               **MdlAddressPointer,
+  PVOID              **Buffer,
+  PULONG             *Length,
+  LOCK_OPERATION     *DesiredAccess
 );
-````
+```
 
 ## Parameters
 
 `CallbackData`
 
-Pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation.
+Pointer to the callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure for the I/O operation.
 
 `MdlAddressPointer`
 
-Pointer to a caller-supplied variable that receives a pointer to the <b>MdlAddress</b> (or <b>OutputMdlAddress</b>) member of the callback data parameter (<a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>) structure (note that this member is itself a pointer). This parameter is optional and can be <b>NULL</b>. If the I/O operation does not have an MDL field, this parameter receives <b>NULL</b>.
+Pointer to a caller-supplied variable that receives a pointer to the <b>MdlAddress</b> (or <b>OutputMdlAddress</b>) member of the callback data parameter (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544673">FLT_PARAMETERS</a>) structure (note that this member is itself a pointer). This parameter is optional and can be <b>NULL</b>. If the I/O operation does not have an MDL field, this parameter receives <b>NULL</b>.
 
 `Buffer`
 
@@ -99,7 +99,7 @@ Pointer to a caller-supplied variable that receives the type of access that is a
 </dl>
 </td>
 <td width="60%">
-The callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure represents an I/O operation that does not have any buffer parameters. This is an error code. 
+The callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure represents an I/O operation that does not have any buffer parameters. This is an error code. 
 
 </td>
 </tr>
@@ -172,15 +172,11 @@ IoWriteAccess
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltlockuserbuffer.md">FltLockUserBuffer</a>
-
-
-
-<a href="..\fltkernel\ns-fltkernel-_flt_parameters.md">FLT_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a>
 
 
 
@@ -188,8 +184,12 @@ IoWriteAccess
 
 
 
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544673">FLT_PARAMETERS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543371">FltLockUserBuffer</a>

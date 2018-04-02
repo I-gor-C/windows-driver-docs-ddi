@@ -7,7 +7,7 @@ old-location: netvista\ndiscmaddpartycomplete.htm
 old-project: netvista
 ms.assetid: 00833038-1fff-4103-9508-07cb8cbfa846
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisCmAddPartyComplete, NdisCmAddPartyComplete function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_5a60a49b-5bca-48b4-9659-af4e8bdfd032.xml, ndis/NdisCmAddPartyComplete, netvista.ndiscmaddpartycomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,14 +51,14 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 
 ## Syntax
 
-````
-VOID NdisCmAddPartyComplete(
-  _In_     NDIS_STATUS         Status,
-  _In_     NDIS_HANDLE         NdisPartyHandle,
-  _In_opt_ NDIS_HANDLE         CallMgrPartyContext,
-  _In_     PCO_CALL_PARAMETERS CallParameters
+```
+void NdisCmAddPartyComplete(
+  NDIS_STATUS         Status,
+  NDIS_HANDLE         NdisPartyHandle,
+  NDIS_HANDLE         CallMgrPartyContext,
+  PCO_CALL_PARAMETERS CallParameters
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ Specifies the final status of the call manager's add-party operation, either NDI
 `NdisPartyHandle`
 
 Specifies the handle identifying the party. This handle was input to the call manager's 
-     <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function.
+     <a href="https://msdn.microsoft.com/06aa5ff6-974c-43dd-8395-bc1a1a8421d5">ProtocolCmAddParty</a> function.
 
 `CallMgrPartyContext`
 
@@ -92,7 +92,7 @@ None
 ## Remarks
 
 If a stand-alone call manager's 
-    <a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a> function returns
+    <a href="https://msdn.microsoft.com/06aa5ff6-974c-43dd-8395-bc1a1a8421d5">ProtocolCmAddParty</a> function returns
     NDIS_STATUS_PENDING, the CM subsequently must call 
     <b>NdisCmAddPartyComplete</b> to notify the client and NDIS that its attempt to add a party on the
     multipoint VC has completed, whether successfully or with an error.
@@ -125,9 +125,9 @@ Change the traffic parameters for the VC and, for every party currently connecte
 <li>
 Fail the client's attempt to add a party. (This alternative implicitly forces clients to set up
       their traffic parameters for a multipoint VC with 
-      <a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a> and to specify the same
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a> and to specify the same
       traffic parameters at each subsequent call to 
-      <a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a> for the given multipoint
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff561625">NdisClAddParty</a> for the given multipoint
       VC.)
 
 </li>
@@ -143,7 +143,7 @@ If the CM sets
 
 A call to 
     <b>NdisCmAddPartyComplete</b> causes NDIS to call the client's 
-    <a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">
+    <a href="https://msdn.microsoft.com/ea3ebbe9-fd94-44b8-8801-639d099c5158">
     ProtocolClAddPartyComplete</a> function.
 
 Only stand-alone call managers, which register themselves with NDIS as protocol drivers, can call 
@@ -167,21 +167,21 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 
 
 
-<a href="..\ndis\nf-ndis-ndiscladdparty.md">NdisClAddParty</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismcmaddpartycomplete.md">NdisMCmAddPartyComplete</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisallocatefromnpagedlookasidelist.md">
+<a href="https://msdn.microsoft.com/df690a05-359d-44f0-b063-4fc21d6c4d76">
    NdisAllocateFromNPagedLookasideList</a>
 
 
 
-<a href="..\ndis\nc-ndis-protocol_cl_add_party_complete.md">ProtocolClAddPartyComplete</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561625">NdisClAddParty</a>
 
 
 
-<a href="..\ndis\nc-ndis-protocol_cm_add_party.md">ProtocolCmAddParty</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562798">NdisMCmAddPartyComplete</a>
+
+
+
+<a href="https://msdn.microsoft.com/ea3ebbe9-fd94-44b8-8801-639d099c5158">ProtocolClAddPartyComplete</a>
+
+
+
+<a href="https://msdn.microsoft.com/06aa5ff6-974c-43dd-8395-bc1a1a8421d5">ProtocolCmAddParty</a>

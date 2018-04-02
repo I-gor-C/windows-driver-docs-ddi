@@ -47,13 +47,13 @@ req.typenames: SERIAL_LINE_CONTROL, *PSERIAL_LINE_CONTROL
 The <b>SERIAL_LINE_CONTROL</b> structure describes the control settings for the serial line.
 
 ## Syntax
-````
+```
 typedef struct _SERIAL_LINE_CONTROL {
   UCHAR StopBits;
   UCHAR Parity;
   UCHAR WordLength;
-} SERIAL_LINE_CONTROL, *PSERIAL_LINE_CONTROL;
-````
+} *PSERIAL_LINE_CONTROL, SERIAL_LINE_CONTROL;
+```
 
 ## Members
 
@@ -117,7 +117,7 @@ The type of parity checking used for each character that is transmitted or recei
 Data bits per character. This member indicates the number of data bits in each character value that is transmitted or received, and does not include parity bits or stop bits. <b>WordLength</b> values in the range 5 to 8 are typically supported.
 
 ## Remarks
-This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_line_control.md">IOCTL_SERIAL_GET_LINE_CONTROL</a> and <a href="..\ntddser\ni-ntddser-ioctl_serial_set_line_control.md">IOCTL_SERIAL_SET_LINE_CONTROL</a> requests.
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546582">IOCTL_SERIAL_GET_LINE_CONTROL</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff546740">IOCTL_SERIAL_SET_LINE_CONTROL</a> requests.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -126,8 +126,8 @@ This structure is used by the <a href="..\ntddser\ni-ntddser-ioctl_serial_get_li
 
 ## See Also
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_line_control.md">IOCTL_SERIAL_SET_LINE_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546582">IOCTL_SERIAL_GET_LINE_CONTROL</a>
 
 
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_get_line_control.md">IOCTL_SERIAL_GET_LINE_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546740">IOCTL_SERIAL_SET_LINE_CONTROL</a>

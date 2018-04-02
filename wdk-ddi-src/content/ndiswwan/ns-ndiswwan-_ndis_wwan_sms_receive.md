@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_sms_receive.htm
 old-project: netvista
 ms.assetid: 2ff53520-5ba0-47dc-816d-6245924356ee
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_WWAN_SMS_RECEIVE, NDIS_WWAN_SMS_RECEIVE, NDIS_WWAN_SMS_RECEIVE structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_RECEIVE, PNDIS_WWAN_SMS_RECEIVE structure pointer [Network Drivers Starting with Windows Vista], WwanRef_f268c794-63fd-4d7f-afba-67c7b232ea91.xml, _NDIS_WWAN_SMS_RECEIVE, ndiswwan/NDIS_WWAN_SMS_RECEIVE, ndiswwan/PNDIS_WWAN_SMS_RECEIVE, netvista.ndis_wwan_sms_receive"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,13 @@ The NDIS_WWAN_SMS_RECEIVE structure represents a list of received SMS messages a
   messages in the list.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_WWAN_SMS_RECEIVE {
   NDIS_OBJECT_HEADER Header;
-  WWAN_STATUS        uStatus;
-  WWAN_LIST_HEADER   SmsListHeader;
+  WWAN_STATUS        uStatus;
+  WWAN_LIST_HEADER   SmsListHeader;
 } NDIS_WWAN_SMS_RECEIVE, *PNDIS_WWAN_SMS_RECEIVE;
-````
+```
 
 ## Members
 
@@ -107,7 +107,7 @@ sizeof(NDIS_WWAN_SMS_RECEIVE)
  
 
 For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 `uStatus`
 
@@ -116,7 +116,7 @@ The status of the SMS receive operation.
 `SmsListHeader`
 
 A formatted 
-     <a href="..\wwan\ns-wwan-_wwan_list_header.md">WWAN_LIST_HEADER</a> object that represents a
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571208">WWAN_LIST_HEADER</a> object that represents a
      list of received SMS messages and the number of messages in the list.
 
 
@@ -128,8 +128,8 @@ A formatted
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_list_header.md">WWAN_LIST_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571208">WWAN_LIST_HEADER</a>

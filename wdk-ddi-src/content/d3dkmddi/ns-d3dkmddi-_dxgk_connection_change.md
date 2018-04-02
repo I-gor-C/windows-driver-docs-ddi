@@ -7,7 +7,7 @@ old-location: display\dxgk_connection_change.htm
 old-project: display
 ms.assetid: 0B0D640C-3E4B-4DE0-AA11-C751F210C77A
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PDXGK_CONNECTION_CHANGE, DXGK_CONNECTION_CHANGE, DXGK_CONNECTION_CHANGE structure [Display Devices], PDXGK_CONNECTION_CHANGE, PDXGK_CONNECTION_CHANGE structure pointer [Display Devices], _DXGK_CONNECTION_CHANGE, d3dkmddi/DXGK_CONNECTION_CHANGE, d3dkmddi/PDXGK_CONNECTION_CHANGE, display.dxgk_connection_change"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,27 +47,27 @@ req.typenames: DXGK_CONNECTION_CHANGE, *PDXGK_CONNECTION_CHANGE
 Structure to describe the most recently updated status of the link for a target.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_CONNECTION_CHANGE {
-  ULONGLONG                      ConnectionChangeId  :24;
-  D3DDDI_VIDEO_PRESENT_TARGET_ID TargetId  :4;
-  DXGK_CONNECTION_STATUS         ConnectionStatus  :4;
-  ULONG                          Reserved;
+  ULONGLONG                            ConnectionChangeId;
+  D3DDDI_VIDEO_PRESENT_TARGET_ID  : 24 TargetId;
+  DXGK_CONNECTION_STATUS  : 4          ConnectionStatus;
+  UINT  : 4                            Reserved;
   union {
     struct {
-      D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY MonitorConnect.LinkTargetType;
-    } MonitorConnect;
+      D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY LinkTargetType;
+    } MonitorConnect;
     struct {
-      D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY TargetConnect.BaseTargetType;
-      D3DDDI_VIDEO_PRESENT_TARGET_ID  TargetConnect.NewTargetId;
-    } TargetConnect;
+      D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY BaseTargetType;
+      D3DDDI_VIDEO_PRESENT_TARGET_ID  NewTargetId;
+    } TargetConnect;
     struct {
-      D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY TargetJoin.BaseTargetType;
-      D3DDDI_VIDEO_PRESENT_TARGET_ID  TargetJoin.NewTargetId;
-    } TargetJoin;
+      D3DKMDT_VIDEO_OUTPUT_TECHNOLOGY BaseTargetType;
+      D3DDDI_VIDEO_PRESENT_TARGET_ID  NewTargetId;
+    } TargetJoin;
   };
 } DXGK_CONNECTION_CHANGE, *PDXGK_CONNECTION_CHANGE;
-````
+```
 
 ## Members
 

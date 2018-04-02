@@ -55,11 +55,11 @@ The <b>WdfRequestIsFrom32BitProcess</b> method checks whether the originator of 
 
 ## Syntax
 
-````
+```
 BOOLEAN WdfRequestIsFrom32BitProcess(
-  _In_ WDFREQUEST Request
+  WDFREQUEST Request
 );
-````
+```
 
 ## Parameters
 
@@ -78,7 +78,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 Drivers can call <b>WdfRequestIsFrom32BitProcess</b> to determine whether an I/O request is likely to contain data elements that need to be converted, or "thunked," before they can be used in a 64-bit driver.
 
-The specified request handle must have been obtained from one of the driver's I/O queues and not from a call to <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>.
+The specified request handle must have been obtained from one of the driver's I/O queues and not from a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549951">WdfRequestCreate</a>.
 
 
 #### Examples
@@ -125,4 +125,4 @@ MyEvtIoRead(
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcreate.md">WdfRequestCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549951">WdfRequestCreate</a>

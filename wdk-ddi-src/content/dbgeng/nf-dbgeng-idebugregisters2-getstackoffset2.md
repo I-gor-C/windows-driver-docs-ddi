@@ -7,7 +7,7 @@ old-location: debugger\getstackoffset2.htm
 old-project: debugger
 ms.assetid: c90119a8-c93b-4432-b164-b1f4c562ef2d
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetStackOffset2 method [Windows Debugging], GetStackOffset2 method [Windows Debugging], IDebugRegisters2 interface, GetStackOffset2,IDebugRegisters2.GetStackOffset2, IDebugRegisters2, IDebugRegisters2 interface [Windows Debugging], GetStackOffset2 method, IDebugRegisters2::GetStackOffset2, IDebugRegisters_ec4e5846-b785-4b82-9670-04e7087b7d99.xml, dbgeng/IDebugRegisters2::GetStackOffset2, debugger.getstackoffset2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetStackOffset2 method
+# IDebugRegisters2::GetStackOffset2 method
 The <b>GetStackOffset2</b> method returns the current thread's current stack location.
 
 ## Syntax
 
-````
+```
 HRESULT GetStackOffset2(
-  [in]  ULONG    Source,
-  [out] PULONG64 Offset
+  ULONG    Source,
+  PULONG64 Offset
 );
-````
+```
 
 ## Parameters
 
@@ -139,8 +139,8 @@ The method was successful.
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugregisters2.md">IDebugRegisters2</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548403">GetStackOffset</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550835">IDebugRegisters2</a>

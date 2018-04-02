@@ -44,18 +44,18 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsGetAllocatorHandle method
+# IKsAllocator::KsGetAllocatorHandle method
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Retrieves a file handle to an allocator.
 
 ## Syntax
 
-````
-HRESULT KsGetAllocatorHandle(
-    
+```
+HANDLE KsGetAllocatorHandle(
+
 );
-````
+```
 
 ## Parameters
 
@@ -74,4 +74,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-iksallocator.md">IKsAllocator</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559719">IKsAllocator</a>

@@ -7,7 +7,7 @@ old-location: storage\ataportreadportuchar.htm
 old-project: storage
 ms.assetid: 9be74e98-ba68-492c-9660-43b2f76052cd
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortReadPortUchar, AtaPortReadPortUchar routine [Storage Devices], atartns_6ac346ce-b2cd-4c50-b55f-1c952a01e736.xml, irb/AtaPortReadPortUchar, storage.ataportreadportuchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,17 +53,17 @@ The <b>AtaPortReadPortUchar</b> routine reads an unsigned byte value from the HB
 
 ## Syntax
 
-````
+```
 UCHAR AtaPortReadPortUchar(
-  _In_ PUCHAR Port
+  PUCHAR Port
 );
-````
+```
 
 ## Parameters
 
 `Port`
 
-A pointer to the I/O port. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>.
+A pointer to the I/O port. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>.
 
 
 ## Return Value
@@ -80,12 +80,12 @@ A pointer to the I/O port. The address value that is assigned to this parameter 
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>
 
 
 
-<a href="..\irb\nf-irb-ataportreadportulong.md">AtaPortReadPortUlong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550184">AtaPortReadPortUlong</a>
 
 
 
-<a href="..\irb\nf-irb-ataportreadportushort.md">AtaPortReadPortUshort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550185">AtaPortReadPortUshort</a>

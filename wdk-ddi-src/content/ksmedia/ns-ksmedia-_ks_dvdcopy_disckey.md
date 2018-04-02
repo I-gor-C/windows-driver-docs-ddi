@@ -47,11 +47,11 @@ req.typenames: KS_DVDCOPY_DISCKEY, *PKS_DVDCOPY_DISCKEY
 The KS_DVDCOPY_DISCKEY structure is used to describe the disc key information for the DVD copyright protection authentication process.
 
 ## Syntax
-````
+```
 typedef struct _KS_DVDCOPY_DISCKEY {
   BYTE DiscKey[2048];
-} KS_DVDCOPY_DISCKEY, *PKS_DVDCOPY_DISCKEY;
-````
+} *PKS_DVDCOPY_DISCKEY, KS_DVDCOPY_DISCKEY;
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: netvista\ipsec_offload_v2_algorithm_info.htm
 old-project: netvista
 ms.assetid: 787e5a98-ba77-42d4-8624-abcc02fccf53
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PIPSEC_OFFLOAD_V2_ALGORITHM_INFO, IPSEC_OFFLOAD_V2_ALGORITHM_INFO, IPSEC_OFFLOAD_V2_ALGORITHM_INFO structure [Network Drivers Starting with Windows Vista], PIPSEC_OFFLOAD_V2_ALGORITHM_INFO, PIPSEC_OFFLOAD_V2_ALGORITHM_INFO structure pointer [Network Drivers Starting with Windows Vista], _IPSEC_OFFLOAD_V2_ALGORITHM_INFO, ndis/IPSEC_OFFLOAD_V2_ALGORITHM_INFO, ndis/PIPSEC_OFFLOAD_V2_ALGORITHM_INFO, netvista.ipsec_offload_v2_algorithm_info, task_offload_IPsecv2_ref_72dc6155-8044-4b56-b7c7-0587bf82889d.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The IPSEC_OFFLOAD_V2_ALGORITHM_INFO structure specifies an algorithm that is use
   association (SA).
 
 ## Syntax
-````
+```
 typedef struct _IPSEC_OFFLOAD_V2_ALGORITHM_INFO {
   ULONG Identifier;
   ULONG KeyLength;
   ULONG KeyOffsetBytes;
   ULONG AdditionalInfo;
-} IPSEC_OFFLOAD_V2_ALGORITHM_INFO, *PIPSEC_OFFLOAD_V2_ALGORITHM_INFO;
-````
+} *PIPSEC_OFFLOAD_V2_ALGORITHM_INFO, IPSEC_OFFLOAD_V2_ALGORITHM_INFO;
+```
 
 ## Members
 
@@ -184,7 +184,7 @@ Specifies the AES- GMAC 256 algorithm for computing or validating a cryptographi
 
 The length, in bytes, of the key for the algorithm. The key is contained in the array at the 
      <b>KeyData</b> member in the 
-     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">IPSEC_OFFLOAD_V2_ADD_SA</a> structure.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff556977">IPSEC_OFFLOAD_V2_ADD_SA</a> structure.
      
 
 <b>KeyLength</b> indicates the length of the cryptographic algorithm, starting at the offset that is
@@ -201,7 +201,7 @@ If both algorithms (
 
 The offset, in bytes, into in the array at the 
      <b>KeyData</b> member in the 
-     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">
+     <a href="https://msdn.microsoft.com/78c5e765-40e5-47f0-8460-a86124fb43d8">
      IPSEC_OFFLOAD_V2_ADD_SA</a> structure.
 
 `AdditionalInfo`
@@ -214,7 +214,7 @@ Additional information that should be interpreted differently based on the algor
 The IPSEC_OFFLOAD_V2_ALGORITHM_INFO structure specifies algorithm information in the 
     <b>EncryptionAlgorithm</b> and 
     <b>AuthenticationAlgorithm</b> members of the 
-    <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
+    <a href="https://msdn.microsoft.com/b2c5611e-930d-41a5-a07e-7de8f8584283">
     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure.
 
 ## Requirements
@@ -225,9 +225,9 @@ The IPSEC_OFFLOAD_V2_ALGORITHM_INFO structure specifies algorithm information in
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556977">IPSEC_OFFLOAD_V2_ADD_SA</a>
+
+
+
+<a href="https://msdn.microsoft.com/b2c5611e-930d-41a5-a07e-7de8f8584283">
    IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a>
-
-
-
-<a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">IPSEC_OFFLOAD_V2_ADD_SA</a>

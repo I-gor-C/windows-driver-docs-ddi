@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SetPrintTicket method
+# IFixedDocumentSequence::SetPrintTicket method
 The <b>SetPrintTicket</b> method inserts a print ticket into the fixed document sequence.
 
 ## Syntax
 
-````
+```
 HRESULT SetPrintTicket(
-  [in] IPartPrintTicket *pPrintTicket
+  IPartPrintTicket *pPrintTicket
 );
-````
+```
 
 ## Parameters
 

@@ -50,11 +50,11 @@ The <b>KsNullDriverUnload</b> function is a default function a driver can use wh
 
 ## Syntax
 
-````
-VOID KsNullDriverUnload(
-  _In_ PDRIVER_OBJECT DriverObject 
+```
+KSDDKAPI VOID KsNullDriverUnload(
+  PDRIVER_OBJECT DriverObject
 );
-````
+```
 
 ## Parameters
 

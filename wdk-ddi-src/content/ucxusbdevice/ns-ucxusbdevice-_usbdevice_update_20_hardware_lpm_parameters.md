@@ -7,7 +7,7 @@ old-location: buses\_usbdevice_update_20_hardware_lpm_parameters.htm
 old-project: usbref
 ms.assetid: B02CB10F-18C9-4E2C-9F30-042588800EA5
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: P_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, P_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS structure pointer [Buses], USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS structure [Buses], _USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, buses._usbdevice_update_20_hardware_lpm_parameters, ucxusbdevice/P_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, ucxusbdevice/_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 # _USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS structure
-Contains parameters for a request to update USB 2.0 link power management (LPM). UCX passes this structure in the  <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_update.md">EVT_UCX_USBDEVICE_UPDATE</a> callback function.
+Contains parameters for a request to update USB 2.0 link power management (LPM). UCX passes this structure in the  <a href="https://msdn.microsoft.com/library/windows/hardware/mt187846">EVT_UCX_USBDEVICE_UPDATE</a> callback function.
 
 ## Syntax
-````
+```
 typedef struct _USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS {
-  ULONG HardwareLpmEnable  :1;
-  ULONG RemoteWakeEnable  :1;
-  ULONG HostInitiatedResumeDurationMode  :1;
-  ULONG BestEffortServiceLatency  :4;
-  ULONG BestEffortServiceLatencyDeep  :4;
-  ULONG L1Timeout  :8;
-  ULONG Reserved  :13;
-} USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS, *P_USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS;
-````
+  ULONG  : 1  HardwareLpmEnable;
+  ULONG  : 1  RemoteWakeEnable;
+  ULONG  : 1  HostInitiatedResumeDurationMode;
+  ULONG  : 4  BestEffortServiceLatency;
+  ULONG  : 4  BestEffortServiceLatencyDeep;
+  ULONG  : 8  L1Timeout;
+  ULONG  : 13 Reserved;
+} USBDEVICE_UPDATE_20_HARDWARE_LPM_PARAMETERS;
+```
 
 ## Members
 
@@ -99,16 +99,16 @@ Do not use.
 
 ## See Also
 
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_failure_flags.md">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188027">ROOTHUB_20PORT_INFO</a>
 
 
 
-<a href="..\ucxroothub\ns-ucxroothub-_roothub_20port_info.md">ROOTHUB_20PORT_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188080">USBDEVICE_UPDATE</a>
 
 
 
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update_flags.md">USBDEVICE_UPDATE_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188082">USBDEVICE_UPDATE_FAILURE_FLAGS</a>
 
 
 
-<a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_update.md">USBDEVICE_UPDATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188083">USBDEVICE_UPDATE_FLAGS</a>

@@ -7,7 +7,7 @@ old-location: kernel\iosetharderrororverifydevice.htm
 old-project: kernel
 ms.assetid: 67f41d3e-d306-400b-9970-88c62f0f7a7f
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoSetHardErrorOrVerifyDevice, IoSetHardErrorOrVerifyDevice routine [Kernel-Mode Driver Architecture], k104_60c33e0c-64d3-404b-85a3-57e7da269404.xml, kernel.iosetharderrororverifydevice, ntddk/IoSetHardErrorOrVerifyDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Lower-level drivers call the <b>IoSetHardErrorOrVerifyDevice</b> routine to iden
 
 ## Syntax
 
-````
-VOID IoSetHardErrorOrVerifyDevice(
-  _In_ PIRP           Irp,
-  _In_ PDEVICE_OBJECT DeviceObject
+```
+NTKERNELAPI VOID IoSetHardErrorOrVerifyDevice(
+  PIRP           Irp,
+  PDEVICE_OBJECT DeviceObject
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +73,7 @@ None
 
 ## Remarks
 
-Lower-level drivers for removal media devices must call <b>IoSetHardErrorOrVerifyDevice</b> before completing an IRP, if a call to <a href="..\wdm\nf-wdm-ioiserroruserinduced.md">IoIsErrorUserInduced</a> returns <b>TRUE</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563916">Supporting Removable Media</a>.
+Lower-level drivers for removal media devices must call <b>IoSetHardErrorOrVerifyDevice</b> before completing an IRP, if a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549375">IoIsErrorUserInduced</a> returns <b>TRUE</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff563916">Supporting Removable Media</a>.
 
 Subsequently, a file system driver will use information supplied in the specified device object to send a dialog box to the user, who can correct the error and retry the operation or cancel it.
 
@@ -91,12 +91,12 @@ The IRP passed to <b>IoSetHardErrorOrVerifyDevice</b> must be associated with a 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioiserroruserinduced.md">IoIsErrorUserInduced</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549375">IoIsErrorUserInduced</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549482">IoRaiseHardError</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-ioraiseharderror.md">IoRaiseHardError</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549488">IoRaiseInformationalHardError</a>

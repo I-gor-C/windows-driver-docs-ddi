@@ -7,7 +7,7 @@ old-location: kernel\field_offset.htm
 old-project: kernel
 ms.assetid: c792d021-3c64-4341-878c-08a7e163447c
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: FIELD_OFFSET, FIELD_OFFSET function [Kernel-Mode Driver Architecture], k106_d6f0b450-e99c-4dd7-94c5-f428e4b1d642.xml, kernel.field_offset, ntdef/FIELD_OFFSET
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>FIELD_OFFSET</b> macro returns the byte offset of a named field in a know
 
 ## Syntax
 
-````
-LONG FIELD_OFFSET(
-  _In_ TYPE  Type,
-  _In_ PCHAR Field
+```
+void FIELD_OFFSET(
+   type,
+   field
 );
-````
+```
 
 ## Parameters
 

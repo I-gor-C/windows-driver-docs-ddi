@@ -7,7 +7,7 @@ old-location: kernel\zwseteafile.htm
 old-project: kernel
 ms.assetid: e791900a-06a8-4c8b-8ca8-c4e73d94f609
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ZwSetEaFile, ZwSetEaFile routine [Kernel-Mode Driver Architecture], kernel.zwseteafile, ntifs/ZwSetEaFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ The <b>ZwSetEaFile</b> routine sets extended-attribute (EA) values for a file.
 
 ## Syntax
 
-````
+```
 NTSTATUS ZwSetEaFile(
-  _In_  HANDLE           FileHandle,
-  _Out_ PIO_STATUS_BLOCK IoStatusBlock,
-  _In_  PVOID            Buffer,
-  _In_  ULONG            Length
+  HANDLE           FileHandle,
+  PIO_STATUS_BLOCK IoStatusBlock,
+  PVOID            Buffer,
+  ULONG            Length
 );
-````
+```
 
 ## Parameters
 
@@ -66,11 +66,11 @@ The handle for the file on which the operation is to be performed.
 
 `IoStatusBlock`
 
-A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that receives the final completion status and other information about the requested operation.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure that receives the final completion status and other information about the requested operation.
 
 `Buffer`
 
-A pointer to a caller-supplied, <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute values to be set.
+A pointer to a caller-supplied, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute values to be set.
 
 `Length`
 
@@ -113,8 +113,8 @@ The EaList parameter is not formatted correctly. This is an error code.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-zwqueryeafile.md">ZwQueryEaFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a>
 
 
 
-<a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff961907">ZwQueryEaFile</a>

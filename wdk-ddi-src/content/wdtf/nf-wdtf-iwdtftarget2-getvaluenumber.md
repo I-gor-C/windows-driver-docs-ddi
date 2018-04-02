@@ -7,7 +7,7 @@ old-location: dtf\iwdtftarget2_getvaluenumber.htm
 old-project: dtf
 ms.assetid: 16f0e9be-129a-4d7d-94c8-bd27ec010b26
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: GetValueNumber method [Windows Device Testing Framework], GetValueNumber method [Windows Device Testing Framework], IWDTFTarget2 interface, GetValueNumber,IWDTFTarget2.GetValueNumber, IWDTFTarget2, IWDTFTarget2 interface [Windows Device Testing Framework], GetValueNumber method, IWDTFTarget2::GetValueNumber, Microsoft.WDTF.IWDTFTarget2.GetValueNumber, Microsoft::WDTF::IWDTFTarget2::GetValueNumber, dtf.iwdtftarget2_getvaluenumber, wdtf/IWDTFTarget2::GetValueNumber
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetValueNumber method
+# IWDTFTarget2::GetValueNumber method
 Returns a number value from the target that is associated with a specified attribute.
 
 ## Syntax
 
-````
+```
 HRESULT GetValueNumber(
-  [in]          BSTR SDEL,
-  [out, retval] LONG *pValue
+  BSTR SDEL,
+  LONG *pValue
 );
-````
+```
 
 ## Parameters
 
@@ -89,4 +89,4 @@ to work properly.
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439367">IWDTFTarget2</a>

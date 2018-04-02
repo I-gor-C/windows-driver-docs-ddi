@@ -7,7 +7,7 @@ old-location: debugger\readmultibytestringvirtualwide.htm
 old-project: debugger
 ms.assetid: 5429b533-1b85-426e-8540-6c72034d42dd
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugDataSpaces4, IDebugDataSpaces4 interface [Windows Debugging], ReadMultiByteStringVirtualWide method, IDebugDataSpaces4::ReadMultiByteStringVirtualWide, IDebugDataSpaces_c5a99b4a-a468-459e-acc1-f3a4f224f645.xml, ReadMultiByteStringVirtualWide method [Windows Debugging], ReadMultiByteStringVirtualWide method [Windows Debugging], IDebugDataSpaces4 interface, ReadMultiByteStringVirtualWide,IDebugDataSpaces4.ReadMultiByteStringVirtualWide, dbgeng/IDebugDataSpaces4::ReadMultiByteStringVirtualWide, debugger.readmultibytestringvirtualwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# ReadMultiByteStringVirtualWide method
+# IDebugDataSpaces4::ReadMultiByteStringVirtualWide method
 The <b>ReadMultiByteStringVirtualWide</b> method reads a null-terminated, multibyte string from the target and converts it to Unicode.
 
 ## Syntax
 
-````
+```
 HRESULT ReadMultiByteStringVirtualWide(
-  [in]            ULONG64 Offset,
-  [in]            ULONG   MaxBytes,
-  [in]            ULONG   CodePage,
-  [out, optional] PWSTR   Buffer,
-  [in]            ULONG   BufferSize,
-  [out, optional] PULONG  StringBytes
+  ULONG64 Offset,
+  ULONG   MaxBytes,
+  ULONG   CodePage,
+  PWSTR   Buffer,
+  ULONG   BufferSize,
+  PULONG  StringBytes
 );
-````
+```
 
 ## Parameters
 
@@ -146,12 +146,12 @@ Note that even if S_OK is returned, the buffer may not have been large enough to
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554357">ReadUnicodeStringVirtualWide</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugdataspaces4.md">IDebugDataSpaces4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550546">IDebugDataSpaces4</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554300">ReadMultiByteStringVirtual</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554357">ReadUnicodeStringVirtualWide</a>

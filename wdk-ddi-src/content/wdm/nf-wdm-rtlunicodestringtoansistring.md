@@ -7,7 +7,7 @@ old-location: kernel\rtlunicodestringtoansistring.htm
 old-project: kernel
 ms.assetid: d05b366c-0b09-4a82-8727-e5c39b82bf7f
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUnicodeStringToAnsiString, RtlUnicodeStringToAnsiString routine [Kernel-Mode Driver Architecture], k109_50e549a0-61fa-4a0f-b43f-de2f4c6dba31.xml, kernel.rtlunicodestringtoansistring, wdm/RtlUnicodeStringToAnsiString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>RtlUnicodeStringToAnsiString</b> routine converts a given Unicode string 
 
 ## Syntax
 
-````
-NTSTATUS RtlUnicodeStringToAnsiString(
-  _Inout_ PANSI_STRING     DestinationString,
-  _In_    PCUNICODE_STRING SourceString,
-  _In_    BOOLEAN          AllocateDestinationString
+```
+NTSYSAPI NTSTATUS RtlUnicodeStringToAnsiString(
+  PANSI_STRING     DestinationString,
+  PCUNICODE_STRING SourceString,
+  BOOLEAN          AllocateDestinationString
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ Pointer to the Unicode source string to be converted to ANSI.
 
 `AllocateDestinationString`
 
-<b>TRUE</b> if this routine is to allocate the buffer space for the <i>DestinationString</i>. If it does, the buffer must be deallocated by calling <a href="..\wdm\nf-wdm-rtlfreeansistring.md">RtlFreeAnsiString</a>.
+<b>TRUE</b> if this routine is to allocate the buffer space for the <i>DestinationString</i>. If it does, the buffer must be deallocated by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff561899">RtlFreeAnsiString</a>.
 
 
 ## Return Value
@@ -93,16 +93,16 @@ The translation is done in accord with the current system-locale information.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlfreeansistring.md">RtlFreeAnsiString</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540605">ANSI_STRING</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561729">RtlAnsiStringToUnicodeString</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561899">RtlFreeAnsiString</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

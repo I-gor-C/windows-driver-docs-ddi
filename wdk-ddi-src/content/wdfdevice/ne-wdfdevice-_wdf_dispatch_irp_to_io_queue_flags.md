@@ -47,16 +47,16 @@ req.product: Windows 10 or later.
 # _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS Enumeration
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS</b> enumeration type defines flags that the driver can specify when it calls  <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>.
+The <b>WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS</b> enumeration type defines flags that the driver can specify when it calls  <a href="https://msdn.microsoft.com/library/windows/hardware/hh451105">WdfDeviceWdmDispatchIrpToIoQueue</a>.
 
 ## Syntax
-````
-typedef enum _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS { 
-  WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS                     = 0x00000000,
-  WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK  = 0x00000001,
-  WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP             = 0x00000002
+```
+typedef enum _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS {
+  WDF_DISPATCH_IRP_TO_IO_QUEUE_NO_FLAGS                     ,
+  WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK  ,
+  WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP
 } WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS;
-````
+```
 
 ## Constants
 
@@ -69,12 +69,12 @@ typedef enum _WDF_DISPATCH_IRP_TO_IO_QUEUE_FLAGS {
             
                 <tr>
                     <td>WDF_DISPATCH_IRP_TO_IO_QUEUE_INVOKE_INCALLERCTX_CALLBACK</td>
-                    <td>Specifies that the framework should call the <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> callback function before inserting the request into the queue.</td>
+                    <td>Specifies that the framework should call the <a href="https://msdn.microsoft.com/b8bcea29-e404-490e-9d0c-02c96a5690ab">EvtIoInCallerContext</a> callback function before inserting the request into the queue.</td>
                 </tr>
             
                 <tr>
                     <td>WDF_DISPATCH_IRP_TO_IO_QUEUE_PREPROCESSED_IRP</td>
-                    <td>Specifies that the IRP was preprocessed by the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess.md">EvtDeviceWdmIrpPreprocess</a> callback function.  Accordingly, the framework adjusts the IRP's stack location to the next entry before inserting it into the queue.</td>
+                    <td>Specifies that the IRP was preprocessed by the driver's <a href="https://msdn.microsoft.com/aff9cb60-d61b-47a8-aae4-6ffd2a1b7a9a">EvtDeviceWdmIrpPreprocess</a> callback function.  Accordingly, the framework adjusts the IRP's stack location to the next entry before inserting it into the queue.</td>
                 </tr>
 </table>
 
@@ -90,8 +90,8 @@ For more information about specifying queues for IRPs as they arrive, see <a hre
 
 ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdfdevice_wdm_irp_preprocess.md">EvtDeviceWdmIrpPreprocess</a>
+<a href="https://msdn.microsoft.com/aff9cb60-d61b-47a8-aae4-6ffd2a1b7a9a">EvtDeviceWdmIrpPreprocess</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmdispatchirptoioqueue.md">WdfDeviceWdmDispatchIrpToIoQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451105">WdfDeviceWdmDispatchIrpToIoQueue</a>

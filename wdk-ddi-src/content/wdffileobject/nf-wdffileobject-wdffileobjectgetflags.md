@@ -53,11 +53,11 @@ The <b>WdfFileObjectGetFlags</b> method returns the flags that a specified frame
 
 ## Syntax
 
-````
+```
 ULONG WdfFileObjectGetFlags(
-  _In_ WDFFILEOBJECT FileObject
+  WDFFILEOBJECT FileObject
 );
-````
+```
 
 ## Parameters
 

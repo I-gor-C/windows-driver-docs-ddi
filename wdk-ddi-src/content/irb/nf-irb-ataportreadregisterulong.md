@@ -7,7 +7,7 @@ old-location: storage\ataportreadregisterulong.htm
 old-project: storage
 ms.assetid: c824bbbe-0f51-48b4-b7df-aa8a84f1f982
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortReadRegisterUlong, AtaPortReadRegisterUlong routine [Storage Devices], atartns_a5e1a904-214d-45fc-9ade-fc5ad7d56694.xml, irb/AtaPortReadRegisterUlong, storage.ataportreadregisterulong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,17 +53,17 @@ The <b>AtaPortReadRegisterUlong</b> routine reads a ULONG value from the HBA.
 
 ## Syntax
 
-````
+```
 ULONG AtaPortReadRegisterUlong(
-  _In_ PULONG Register
+  PULONG Register
 );
-````
+```
 
 ## Parameters
 
 `Register`
 
-A pointer to the register to read. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>.
+A pointer to the register to read. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>.
 
 
 ## Return Value
@@ -80,12 +80,12 @@ A pointer to the register to read. The address value that is assigned to this pa
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>
 
 
 
-<a href="..\irb\nf-irb-ataportreadregisteruchar.md">AtaPortReadRegisterUchar</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550195">AtaPortReadRegisterUchar</a>
 
 
 
-<a href="..\irb\nf-irb-ataportreadregisterushort.md">AtaPortReadRegisterUshort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550198">AtaPortReadRegisterUshort</a>

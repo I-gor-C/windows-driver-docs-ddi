@@ -49,17 +49,17 @@ The<b> KsGateGetStateUnsafe</b> function returns the state of the given gate (op
 
 ## Syntax
 
-````
-BOOLEAN __inline KsGateGetStateUnsafe(
-  _In_ PKSGATE Gate
+```
+BOOLEAN KsGateGetStateUnsafe(
+  PKSGATE Gate
 );
-````
+```
 
 ## Parameters
 
 `Gate`
 
-A pointer to a <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure representing the gate for which to return the state.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a> structure representing the gate for which to return the state.
 
 
 ## Return Value

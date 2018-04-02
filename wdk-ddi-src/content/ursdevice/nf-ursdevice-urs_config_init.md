@@ -7,7 +7,7 @@ old-location: buses\urs_config_init.htm
 old-project: usbref
 ms.assetid: 72229643-1177-4884-94A9-89920A5488A6
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: URS_CONFIG_INIT, URS_CONFIG_INIT function [Buses], buses.urs_config_init, ursdevice/URS_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,27 +46,27 @@ req.product: Windows 10 or later.
 
 
 # URS_CONFIG_INIT function
-Initializes a <a href="..\ursdevice\ns-ursdevice-_urs_config.md">URS_CONFIG</a> structure.
+Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE void URS_CONFIG_INIT(
-  _Out_ PURS_CONFIG                                 Config,
-  _In_  URS_HOST_INTERFACE_TYPE                     HostInterfaceType,
-  _In_  PFN_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS EvtUrsFilterRemoveResourceRequirements
+```
+void URS_CONFIG_INIT(
+  PURS_CONFIG                                 Config,
+  URS_HOST_INTERFACE_TYPE                     HostInterfaceType,
+  PFN_URS_DEVICE_FILTER_RESOURCE_REQUIREMENTS EvtUrsFilterRemoveResourceRequirements
 );
-````
+```
 
 ## Parameters
 
 `Config`
 
-A pointer to a <a href="..\ursdevice\ns-ursdevice-_urs_config.md">URS_CONFIG</a> structure to initialize.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a> structure to initialize.
 
 `HostInterfaceType`
 
-A <a href="..\urstypes\ne-urstypes-_urs_host_interface_type.md">URS_HOST_INTERFACE_TYPE</a> type value that indicates the type of host controller that the dual-role controller implements.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt628023">URS_HOST_INTERFACE_TYPE</a> type value that indicates the type of host controller that the dual-role controller implements.
 
 `EvtUrsFilterRemoveResourceRequirements`
 
@@ -87,8 +87,8 @@ This function does not return a value.
 
 ## See Also
 
-<a href="..\ursdevice\ns-ursdevice-_urs_config.md">URS_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt628020">URS_CONFIG</a>
 
 
 
-<a href="..\ursdevice\nf-ursdevice-ursdeviceinitialize.md">UrsDeviceInitialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt628012">UrsDeviceInitialize</a>

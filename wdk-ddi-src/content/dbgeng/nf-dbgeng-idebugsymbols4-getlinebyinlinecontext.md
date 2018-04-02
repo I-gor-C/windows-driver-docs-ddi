@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols4_getlinebyinlinecontext.htm
 old-project: debugger
 ms.assetid: AFDB4DB4-3C63-44A0-88D7-C8047ECB2261
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetLineByInlineContext method [Windows Debugging], GetLineByInlineContext method [Windows Debugging], IDebugSymbols4 interface, GetLineByInlineContext,IDebugSymbols4.GetLineByInlineContext, IDebugSymbols4, IDebugSymbols4 interface [Windows Debugging], GetLineByInlineContext method, IDebugSymbols4::GetLineByInlineContext, dbgeng/IDebugSymbols4::GetLineByInlineContext, debugger.idebugsymbols4_getlinebyinlinecontext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetLineByInlineContext method
+# IDebugSymbols4::GetLineByInlineContext method
 Gets a line by inline context.
 
 ## Syntax
 
-````
+```
 HRESULT GetLineByInlineContext(
-  [in]            ULONG64                           Offset,
-  [in]            ULONG                             InlineContext,
-  [out, optional] PULONG                            Line,
-  [out]           _writes_opt_(FileBufferSize) PSTR FileBuffer,
-  [in]            FileBufferSize                    FileBufferSize,
-  [out, optional] PULONG                            FileSize,
-  [out, optional] PULONG64                          Displacement
+  ULONG64  Offset,
+  ULONG    InlineContext,
+  PULONG   Line,
+  PSTR     FileBuffer,
+  ULONG    FileBufferSize,
+  PULONG   FileSize,
+  PULONG64 Displacement
 );
-````
+```
 
 ## Parameters
 
@@ -105,4 +105,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols4.md">IDebugSymbols4</a>
+<a href="https://msdn.microsoft.com/BE2734B5-1E67-4E38-B4DF-0C353BFB1F0B">IDebugSymbols4</a>

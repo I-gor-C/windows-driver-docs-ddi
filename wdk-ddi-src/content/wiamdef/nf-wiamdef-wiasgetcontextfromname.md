@@ -50,14 +50,14 @@ The <b>wiasGetContextFromName</b> function retrieves the item context for an ite
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasGetContextFromName(
-  _In_  BYTE *pWiasContext,
-        LONG lFlags,
-  _In_  BSTR bstrName,
-  _Out_ BYTE **ppWiasContext
+```
+HRESULT wiasGetContextFromName(
+  BYTE *pWiasContext,
+  LONG lFlags,
+  BSTR bstrName,
+  BYTE **ppWiasContext
 );
-````
+```
 
 ## Parameters
 
@@ -99,4 +99,4 @@ This function should be used by minidrivers when they need to move from one appl
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetrootitem.md">wiasGetRootItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549264">wiasGetRootItem</a>

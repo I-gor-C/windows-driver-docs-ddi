@@ -7,7 +7,7 @@ old-location: storage\storportbuildmdlfornonpagedpool.htm
 old-project: storage
 ms.assetid: f22dbf1e-4b40-4294-bca5-3011f0a97644
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortBuildMdlForNonPagedPool, StorPortBuildMdlForNonPagedPool routine [Storage Devices], storage.storportbuildmdlfornonpagedpool, storport/StorPortBuildMdlForNonPagedPool, storprt_98151881-8a9f-4bf9-8365-ec50aecced4f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>StorPortBuildMdlForNonPagedPool</b> routine updates the MDL to describe t
 
 ## Syntax
 
-````
+```
 ULONG StorPortBuildMdlForNonPagedPool(
-  _In_    PVOID HwDeviceExtension,
-  _Inout_ PVOID Mdl
+  PVOID HwDeviceExtension,
+  PVOID Mdl
 );
-````
+```
 
 ## Parameters
 

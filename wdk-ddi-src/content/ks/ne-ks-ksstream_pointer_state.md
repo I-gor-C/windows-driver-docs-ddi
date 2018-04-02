@@ -47,12 +47,12 @@ req.typenames: KSSTREAM_POINTER_STATE
 
 
 ## Syntax
-````
-typedef enum  { 
-  KSSTREAM_POINTER_STATE_UNLOCKED  = 0,
+```
+typedef enum KSSTREAM_POINTER_STATE {
+  KSSTREAM_POINTER_STATE_UNLOCKED  ,
   KSSTREAM_POINTER_STATE_LOCKED
-} KSSTREAM_POINTER_STATE;
-````
+} ;
+```
 
 ## Constants
 

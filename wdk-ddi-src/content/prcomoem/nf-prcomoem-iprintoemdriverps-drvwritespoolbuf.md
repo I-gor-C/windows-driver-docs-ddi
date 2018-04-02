@@ -45,25 +45,25 @@ req.product: Windows 10 or later.
 ---
 
 
-# DrvWriteSpoolBuf method
+# IPrintOemDriverPS::DrvWriteSpoolBuf method
 The <code>IPrintOemDriverPS::DrvWriteSpoolBuf</code> method is provided by the Pscript5 driver so that <a href="https://msdn.microsoft.com/e55ca083-2790-4929-9e5b-6fce49eb0404">rendering plug-ins</a> can send printer data to the spooler.
 
 ## Syntax
 
-````
+```
 HRESULT DrvWriteSpoolBuf(
-        PDEVOBJ pdevobj,
-        PVOID   pBuffer,
-        DWORD   cbSize,
-  [out] DWORD   *pdwResult
+  PDEVOBJ   pdevobj,
+  PVOID     pBuffer,
+  DWORD     cbSize,
+  OUT DWORD *pdwResult
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `pBuffer`
 

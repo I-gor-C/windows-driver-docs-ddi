@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# CreateInstanceOfMSXMLObject method
+# IPrintCoreHelper::CreateInstanceOfMSXMLObject method
 The <b>IPrintCoreHelper::CreateInstanceOfMSXMLObject</b> method creates an instance of an MSXML 6.0 object by using the correct MSXML DLL.
 
 ## Syntax
 
-````
+```
 HRESULT CreateInstanceOfMSXMLObject(
-  [in]  REFCLSID  rclsid,
-  [in]  LPUNKNOWN pUnkOuter,
-  [in]  DWORD     dwClsContext,
-  [in]  REFIID    riid,
-  [out] LPVOID    *ppv
+  IN REFCLSID  rclsid,
+  IN LPUNKNOWN pUnkOuter,
+  IN DWORD     dwClsContext,
+  IN REFIID    riid,
+  OUT LPVOID   *ppv
 );
-````
+```
 
 ## Parameters
 

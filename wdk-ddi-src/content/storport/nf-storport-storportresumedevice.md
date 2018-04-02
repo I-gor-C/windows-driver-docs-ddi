@@ -7,7 +7,7 @@ old-location: storage\storportresumedevice.htm
 old-project: storage
 ms.assetid: 81b979a8-87bb-48f3-b44a-bac9286648fa
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortResumeDevice, StorPortResumeDevice routine [Storage Devices], storage.storportresumedevice, storport/StorPortResumeDevice, storprt_62696d8f-cfb1-43fd-8b23-b14f1ac0d429.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,20 +51,20 @@ The <b>StorPortResumeDevice</b> routine resumes a previously paused logical unit
 
 ## Syntax
 
-````
+```
 STORPORT_API BOOLEAN StorPortResumeDevice(
-  _In_ PVOID HwDeviceExtension,
-  _In_ UCHAR PathId,
-  _In_ UCHAR TargetId,
-  _In_ UCHAR Lun
+  PVOID HwDeviceExtension,
+  UCHAR PathId,
+  UCHAR TargetId,
+  UCHAR Lun
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
+A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 `PathId`
 
@@ -93,4 +93,4 @@ Identifies the logical unit number of the target device.
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportpausedevice.md">StorPortPauseDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567461">StorPortPauseDevice</a>

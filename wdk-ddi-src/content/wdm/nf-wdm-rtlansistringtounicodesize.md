@@ -7,7 +7,7 @@ old-location: kernel\rtlansistringtounicodesize.htm
 old-project: kernel
 ms.assetid: 32687aa7-4e14-40cb-baa3-4a97d834bf86
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlAnsiStringToUnicodeSize, RtlAnsiStringToUnicodeSize routine [Kernel-Mode Driver Architecture], k109_90cc45c4-2e5b-4f11-823d-5dbc52017e15.xml, kernel.rtlansistringtounicodesize, wdm/RtlAnsiStringToUnicodeSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>RtlAnsiStringToUnicodeSize</b> routine returns the number of bytes requir
 
 ## Syntax
 
-````
-ULONG RtlAnsiStringToUnicodeSize(
-  _In_ PANSI_STRING AnsiString
+```
+void RtlAnsiStringToUnicodeSize(
+   STRING
 );
-````
+```
 
 ## Parameters
 
@@ -85,8 +85,8 @@ Callers of <b>RtlAnsiStringToUnicodeSize</b> must be running at IRQL = PASSIVE_L
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlxansistringtounicodesize.md">RtlxAnsiStringToUnicodeSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561729">RtlAnsiStringToUnicodeString</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563601">RtlxAnsiStringToUnicodeSize</a>

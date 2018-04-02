@@ -40,7 +40,7 @@ api_name:
 -	READ_REGISTER_ULONG64
 product: Windows
 targetos: Windows
-req.typenames: PO_FX_PERF_STATE_UNIT, *PPO_FX_PERF_STATE_UNIT
+req.typenames: WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE
 req.product: Windows 10 or later.
 ---
 
@@ -52,12 +52,11 @@ The <b>READ_REGISTER_ULONG64</b> function reads a ULONG64 value from the specifi
 
 ## Syntax
 
-````
+```
 ULONG64 READ_REGISTER_ULONG64(
-  _In_ IWDFDevice3 *pDevice,
-  _In_ PULONG64    Register
+  ULONG64 *Register
 );
-````
+```
 
 ## Parameters
 

@@ -44,26 +44,26 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsProcessMediaSamples method
+# IKsInterfaceHandler::KsProcessMediaSamples method
 The <b>KsProcessMediaSamples</b> method processes media samples.
 
 ## Syntax
 
-````
+```
 HRESULT KsProcessMediaSamples(
-  [in]      IKsDataTypeHandler *KsDataTypeHandler,
-  [in]      IMediaSample       **SampleList,
-  [in, out] PLONG              SampleCount,
-  [in]      KSIOOPERATION      IoOperation,
-  [out]     PKSSTREAM_SEGMENT  *StreamSegment
+  IKsDataTypeHandler *KsDataTypeHandler,
+  IMediaSample       **SampleList,
+  PLONG              SampleCount,
+  KSIOOPERATION      IoOperation,
+  PKSSTREAM_SEGMENT  *StreamSegment
 );
-````
+```
 
 ## Parameters
 
 `KsDataTypeHandler`
 
-Pointer to the <a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a> interface for the data type handler that handles the type of media listed at <i>SampleList</i>. This data type handler has specific information about the media type being streamed.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559807">IKsDataTypeHandler</a> interface for the data type handler that handles the type of media listed at <i>SampleList</i>. This data type handler has specific information about the media type being streamed.
 
 `SampleList`
 
@@ -106,7 +106,7 @@ Read data from stream.
 
 `StreamSegment`
 
-Pointer to a buffer that receives a pointer to a <a href="..\ksproxy\ns-ksproxy-_ksstream_segment.md">KSSTREAM_SEGMENT</a> structure that contains header information for a stream segment that is sent to the kernel-mode pin.
+Pointer to a buffer that receives a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567141">KSSTREAM_SEGMENT</a> structure that contains header information for a stream segment that is sent to the kernel-mode pin.
 
 
 ## Return Value
@@ -117,7 +117,7 @@ Returns NOERROR if successful; otherwise, returns an error code.
 
 The <b>KsProcessMediaSamples</b> method moves samples from or to a previously assigned filter pin. A stream header is initialized to represent each media sample in the stream segment. The input and output (I/O) are then performed, the count of wait items is incremented, and the proxy I/O thread waits for completion.
 
-The <b>KsProcessMediaSamples</b> method calls the <a href="https://msdn.microsoft.com/14d03e6f-d02c-4b39-8f21-b339c65fb036">KsQueryExtendedSize</a> method of the received <a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a> interface to retrieve the size of the extended header. If an extended header size is not specified, <b>KsProcessMediaSamples</b> discards the pointer to the <b>IKsDataTypeHandler</b> interface. If an extended header size is specified, <b>KsProcessMediaSamples</b> holds the pointer to the <b>IKsDataTypeHandler</b> interface until processing of the media samples is complete. The <b>KsProcessMediaSamples</b> method then allocates the stream headers with the appropriate header sizes. For each media sample, <b>KsProcessMediaSamples</b> initializes the header, copies data pointers, sets time stamps, and so on. Each sample is then added to the sample list. If it is a write operation, the sample is held by incrementing the reference count. 
+The <b>KsProcessMediaSamples</b> method calls the <a href="https://msdn.microsoft.com/14d03e6f-d02c-4b39-8f21-b339c65fb036">KsQueryExtendedSize</a> method of the received <a href="https://msdn.microsoft.com/library/windows/hardware/ff559807">IKsDataTypeHandler</a> interface to retrieve the size of the extended header. If an extended header size is not specified, <b>KsProcessMediaSamples</b> discards the pointer to the <b>IKsDataTypeHandler</b> interface. If an extended header size is specified, <b>KsProcessMediaSamples</b> holds the pointer to the <b>IKsDataTypeHandler</b> interface until processing of the media samples is complete. The <b>KsProcessMediaSamples</b> method then allocates the stream headers with the appropriate header sizes. For each media sample, <b>KsProcessMediaSamples</b> initializes the header, copies data pointers, sets time stamps, and so on. Each sample is then added to the sample list. If it is a write operation, the sample is held by incrementing the reference count. 
 
 For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK documentation.
 
@@ -129,12 +129,12 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559807">IKsDataTypeHandler</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559836">IKsDataTypeHandler::KsQueryExtendedSize</a>
 
 
 
-<a href="..\ksproxy\ns-ksproxy-_ksstream_segment.md">KSSTREAM_SEGMENT</a>
-
-
-
-<a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567141">KSSTREAM_SEGMENT</a>

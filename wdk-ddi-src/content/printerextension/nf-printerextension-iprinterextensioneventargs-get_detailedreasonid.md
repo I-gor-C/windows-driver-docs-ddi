@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_DetailedReasonId method
+# IPrinterExtensionEventArgs::get_DetailedReasonId method
 Gets a more detailed activation reason than what can be retrieved from  <a href="https://msdn.microsoft.com/library/windows/hardware/hh973210">ReasonId</a>.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_DetailedReasonId(
-  [out, retval] GUID *pDetailedReasonId
+  GUID *pDetailedReasonId
 );
-````
+```
 
 ## Parameters
 
@@ -83,7 +83,7 @@ The value of <b>DetailedReasonId</b> is always {5D5A1704-DFD1-4181-8EEE-815C86ED
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioneventargs.md">IPrinterExtensionEventArgs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973207">IPrinterExtensionEventArgs</a>
 
 
 

@@ -7,7 +7,7 @@ old-location: ifsk\rtlxoemstringtounicodesize.htm
 old-project: ifsk
 ms.assetid: 933c46fe-f760-4782-8ab4-7d1d0431df9f
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlxOemStringToUnicodeSize, RtlxOemStringToUnicodeSize function [Installable File System Drivers], ifsk.rtlxoemstringtounicodesize, ntifs/RtlxOemStringToUnicodeSize, rtlref_87da05b9-0bd7-415d-b6fd-aa7a6f77cbfb.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,15 +45,15 @@ req.typenames: TOKEN_TYPE
 
 
 # RtlxOemStringToUnicodeSize function
-The <b>RtlxOemStringToUnicodeSize</b> routine is reserved for system use - use <a href="..\ntifs\nf-ntifs-rtloemstringtounicodesize.md">RtlOemStringToUnicodeSize</a> instead.
+The <b>RtlxOemStringToUnicodeSize</b> routine is reserved for system use - use <a href="https://msdn.microsoft.com/library/windows/hardware/ff553147">RtlOemStringToUnicodeSize</a> instead.
 
 ## Syntax
 
-````
-  RtlxOemStringToUnicodeSize(
-    
+```
+NTSYSAPI ULONG RtlxOemStringToUnicodeSize(
+  PCOEM_STRING OemString
 );
-````
+```
 
 ## Parameters
 

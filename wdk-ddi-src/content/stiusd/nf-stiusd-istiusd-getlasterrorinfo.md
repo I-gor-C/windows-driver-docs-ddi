@@ -45,22 +45,22 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetLastErrorInfo method
+# IStiUSD::GetLastErrorInfo method
 A still image minidriver's <b>IStiUSD::GetLastErrorInfo</b> method returns information about the last known error associated with a still image device.
 
 ## Syntax
 
-````
+```
 HRESULT GetLastErrorInfo(
-   STI_ERROR_INFO *pLastErrorInfo
+  STI_ERROR_INFO *pLastErrorInfo
 );
-````
+```
 
 ## Parameters
 
 `pLastErrorInfo`
 
-Caller-supplied pointer to an <a href="..\sti\ns-sti-_error_infow.md">STI_ERROR_INFO</a> structure to receive error information.
+Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548396">STI_ERROR_INFO</a> structure to receive error information.
 
 
 ## Return Value
@@ -69,7 +69,7 @@ If the operation succeeds, the method should return S_OK. Otherwise, it should r
 
 ## Remarks
 
-The method should fill in the received <a href="..\sti\ns-sti-_error_infow.md">STI_ERROR_INFO</a> structure.
+The method should fill in the received <a href="https://msdn.microsoft.com/library/windows/hardware/ff548396">STI_ERROR_INFO</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |

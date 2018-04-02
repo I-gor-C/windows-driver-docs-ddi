@@ -2,7 +2,7 @@
 UID: NA:usbfnattach
 ms.assetid: f153fba1-6817-3150-8868-0ae60962b0ac
 ms.author: windowsdriverdev
-ms.date: 03/13/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,7 +55,7 @@ usbfnattach.h contains the following programming interfaces:
 | ---- |:---- |
 | [USBFN_GET_ATTACH_ACTION](nc-usbfnattach-usbfn_get_attach_action.md) | The filter driver's implementation that gets invoked when charger is attached to the port. |
 | [USBFN_GET_ATTACH_ACTION_ABORT](nc-usbfnattach-usbfn_get_attach_action_abort.md) | The filter driver's implementation to abort an attach-detect operation. |
-| [USBFN_SET_DEVICE_STATE](nc-usbfnattach-usbfn_set_device_state.md) | The filter driver's implementation to set the device state and operating bus speed. |
+| [USBFN_SET_DEVICE_STATE](nc-usbfnattach-usbfn_set_device_state.md) | The filter driver's implementation to abort an attach-detect operation. |
 
 
 ## Structures

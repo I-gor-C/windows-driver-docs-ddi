@@ -50,15 +50,15 @@ A printer interface DLL's <b>DrvConvertDevMode</b> function converts a printer's
 
 ## Syntax
 
-````
+```
 BOOL DrvConvertDevMode(
-  _In_    LPTSTR   pPrinterName,
-  _In_    PDEVMODE pdmIn,
-  _Out_   PDEVMODE pdmOut,
-  _Inout_ PLONG    pcbNeeded,
-  _In_    DWORD    fMode
+  LPTSTR   pPrinterName,
+  PDEVMODE pdmIn,
+  PDEVMODE pdmOut,
+  PLONG    pcbNeeded,
+  DWORD    fMode
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: storage\ataportwriteregisterbufferulong.htm
 old-project: storage
 ms.assetid: 95f1e2c2-2b70-4a98-b075-e582b6a56e9d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortWriteRegisterBufferUlong, AtaPortWriteRegisterBufferUlong routine [Storage Devices], atartns_678d25ba-ba41-4a94-b689-5f19a89ace7f.xml, irb/AtaPortWriteRegisterBufferUlong, storage.ataportwriteregisterbufferulong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,19 +53,19 @@ The <b>AtaPortWriteRegisterBufferUlong</b> routine transfers the indicated numbe
 
 ## Syntax
 
-````
-VOID AtaPortWriteRegisterBufferUlong(
-  _In_ PULONG Register,
-  _In_ PULONG Buffer,
-  _In_ ULONG  Count
+```
+void AtaPortWriteRegisterBufferUlong(
+  PULONG Register,
+  PULONG Buffer,
+  ULONG  Count
 );
-````
+```
 
 ## Parameters
 
 `Register`
 
-Contains the destination register address where the transfer should begin. This address value must be within the range of mapped I/O space addresses at are obtained by a call to <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>.
+Contains the destination register address where the transfer should begin. This address value must be within the range of mapped I/O space addresses at are obtained by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>.
 
 `Buffer`
 
@@ -90,12 +90,12 @@ None
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>
 
 
 
-<a href="..\irb\nf-irb-ataportwriteregisterbufferuchar.md">AtaPortWriteRegisterBufferUchar</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550264">AtaPortWriteRegisterBufferUchar</a>
 
 
 
-<a href="..\irb\nf-irb-ataportwriteregisterbufferushort.md">AtaPortWriteRegisterBufferUshort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550273">AtaPortWriteRegisterBufferUshort</a>

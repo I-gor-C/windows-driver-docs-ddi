@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# SendToWia method
+# CWiauPropertyList::SendToWia method
 The <b>CWiauPropertyList::SendToWia</b> method calls the WIA service to define all of the properties currently contained in the property list object.
 
 ## Syntax
 
-````
+```
 HRESULT SendToWia(
-       BYTE   *pWiasContext
+  BYTE *pWiasContext
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ The <b>CWiauPropertyList::SendToWia</b> method should be called only after all p
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/4f11bec0-8ff4-4fa0-824c-71ce9774d5d1">CWiauPropertyList</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544989">IWiaMiniDrv::drvInitItemProperties</a>
-
-
-
-<a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>

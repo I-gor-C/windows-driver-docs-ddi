@@ -50,16 +50,16 @@ The <b>KdChangeOption</b> routine accesses and changes state in the kernel that 
 
 ## Syntax
 
-````
+```
 NTSTATUS KdChangeOption(
-  _In_      KD_OPTION Option,
-  _In_opt_  ULONG     InBufferBytes,
-  _In_      PVOID     InBuffer,
-  _In_opt_  ULONG     OutBufferBytes,
-  _Out_     PVOID     OutBuffer,
-  _Out_opt_ PULONG    OutBufferNeeded
+  KD_OPTION              Option,
+  ULONG InBufferBytes    OPTIONAL,
+  PVOID                  InBuffer,
+  ULONG OutBufferBytes   OPTIONAL,
+  PVOID                  OutBuffer,
+  PULONG OutBufferNeeded OPTIONAL
 );
-````
+```
 
 ## Parameters
 

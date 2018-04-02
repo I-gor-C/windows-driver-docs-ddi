@@ -7,7 +7,7 @@ old-location: storage\changergetstatus.htm
 old-project: storage
 ms.assetid: f5719dfa-e48a-4f81-8344-31b349fadb48
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ChangerGetStatus, ChangerGetStatus function [Storage Devices], chgrmini_8975ca0f-d42c-40d0-a16c-a2ec5d2a2f66.xml, mcd/ChangerGetStatus, storage.changergetstatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,16 +45,16 @@ req.typenames: LAMP_INTENSITY_WHITE
 
 
 # ChangerGetStatus function
-<b>ChangerGetStatus</b> handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_status.md">IOCTL_CHANGER_GET_STATUS</a>.
+<b>ChangerGetStatus</b> handles the device-specific aspects of a device-control IRP with the IOCTL code <a href="https://msdn.microsoft.com/library/windows/hardware/ff559405">IOCTL_CHANGER_GET_STATUS</a>.
 
 ## Syntax
 
-````
+```
 NTSTATUS ChangerGetStatus(
-  _In_ PDEVICE_OBJECT DeviceObject,
-  _In_ PIRP           Irp
+  PDEVICE_OBJECT DeviceObject,
+  PIRP           Irp
 );
-````
+```
 
 ## Parameters
 
@@ -88,8 +88,8 @@ This routine is required.
 
 ## See Also
 
-<a href="..\ntddchgr\ni-ntddchgr-ioctl_changer_get_status.md">IOCTL_CHANGER_GET_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551424">ChangerGetElementStatus</a>
 
 
 
-<a href="..\mcd\nf-mcd-changergetelementstatus.md">ChangerGetElementStatus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559405">IOCTL_CHANGER_GET_STATUS</a>

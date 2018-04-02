@@ -7,7 +7,7 @@ old-location: netvista\ndisfreenetbuffer.htm
 old-project: netvista
 ms.assetid: 9b5fe91b-29ae-4c83-b405-4a90e4375b4a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisFreeNetBuffer, NdisFreeNetBuffer function [Network Drivers Starting with Windows Vista], ndis/NdisFreeNetBuffer, ndis_netbuf_functions_ref_623498b1-25e0-48ae-831e-8c1240106bd4.xml, netvista.ndisfreenetbuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,17 +48,17 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisFreeNetBuffer function
 Call the 
   <b>NdisFreeNetBuffer</b> function to free a 
-  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure that was previously allocated
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure that was previously allocated
   from a NET_BUFFER structure pool with the 
-  <a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a> function.
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff561607">NdisAllocateNetBuffer</a> function.
 
 ## Syntax
 
-````
-VOID NdisFreeNetBuffer(
-  _In_ PNET_BUFFER NetBuffer
+```
+void NdisFreeNetBuffer(
+  __drv_freesMem(mem)PNET_BUFFER NetBuffer
 );
-````
+```
 
 ## Parameters
 
@@ -85,8 +85,8 @@ None
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisallocatenetbuffer.md">NdisAllocateNetBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561607">NdisAllocateNetBuffer</a>

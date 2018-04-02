@@ -48,16 +48,16 @@ req.product: Windows 10 or later.
 # WdfDeviceGetHardwareRegisterMappedAddress function
 <p class="CCE_Message">[Applies to UMDF only]
 
-A driver calls <b>WdfDeviceGetHardwareRegisterMappedAddress</b> to get the user-mode mapped address of the memory resource it mapped previously using <a href="..\wdfdevice\nf-wdfdevice-wdfdevicemapiospace.md">WdfDeviceMapIoSpace</a>.
+A driver calls <b>WdfDeviceGetHardwareRegisterMappedAddress</b> to get the user-mode mapped address of the memory resource it mapped previously using <a href="https://msdn.microsoft.com/library/windows/hardware/dn265605">WdfDeviceMapIoSpace</a>.
 
 ## Syntax
 
-````
+```
 PVOID WdfDeviceGetHardwareRegisterMappedAddress(
-  _In_ WDFDEVICE Device,
-  _In_ PVOID     PseudoBaseAddress
+  WDFDEVICE Device,
+  PVOID     PseudoBaseAddress
 );
-````
+```
 
 ## Parameters
 
@@ -72,7 +72,7 @@ The address of a location that receives a pointer to the pseudo base address.
 
 ## Return Value
 
-User-mode base address of the resources mapped earlier using <a href="..\wdfdevice\nf-wdfdevice-wdfdevicemapiospace.md">WdfDeviceMapIoSpace</a>.
+User-mode base address of the resources mapped earlier using <a href="https://msdn.microsoft.com/library/windows/hardware/dn265605">WdfDeviceMapIoSpace</a>.
 
 ## Remarks
 
@@ -104,4 +104,4 @@ If you do use <b>WdfDeviceGetHardwareRegisterMappedAddress</b>, you must set the
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicemapiospace.md">WdfDeviceMapIoSpace</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265605">WdfDeviceMapIoSpace</a>

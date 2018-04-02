@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# Close method
+# IPrintWriteStream::Close method
 The <code>Close</code> method closes a stream and ends the writing to that stream. This method is mandatory. You must call this method when the filter is done writing.
 
 ## Syntax
 
-````
-void STDMETHODCALLTYPE Close(
-    None
+```
+void Close(
+
 );
-````
+```
 
 ## Parameters
 

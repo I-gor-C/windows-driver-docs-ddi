@@ -7,7 +7,7 @@ old-location: kernel\rtluintptradd.htm
 old-project: kernel
 ms.assetid: 9106CE96-A26F-4358-9668-2C0E331BB793
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUIntPtrAdd, RtlUIntPtrAdd function [Kernel-Mode Driver Architecture], kernel.rtluintptradd, ntintsafe/RtlUIntPtrAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ Adds two values of type <b>UINT_PTR</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlUIntPtrAdd(
-  _In_  UINT_PTR uAugend,
-  _In_  UINT_PTR uAddend,
-  _Out_ UINT_PTR *puResult
+  UINT_PTR uAugend,
+  UINT_PTR uAddend,
+  UINT_PTR *puResult
 );
-````
+```
 
 ## Parameters
 

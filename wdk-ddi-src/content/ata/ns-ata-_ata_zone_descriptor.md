@@ -7,7 +7,7 @@ old-location: storage\ata_zone_descriptor.htm
 old-project: storage
 ms.assetid: 2e027ac5-7b5d-43cc-8d37-c0a3e77e68c9
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PATA_ZONE_DESCRIPTOR, ATA_ZONE_DESCRIPTOR, ATA_ZONE_DESCRIPTOR structure [Storage Devices], PATA_ZONE_DESCRIPTOR, PATA_ZONE_DESCRIPTOR structure pointer [Storage Devices], _ATA_ZONE_DESCRIPTOR, ata/ATA_ZONE_DESCRIPTOR, ata/PATA_ZONE_DESCRIPTOR, storage.ata_zone_descriptor"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,24 +47,24 @@ req.typenames: ATA_ZONE_DESCRIPTOR, *PATA_ZONE_DESCRIPTOR
 This structure is for internal use only and should not be called from your code.
 
 ## Syntax
-````
+```
 typedef struct _ATA_ZONE_DESCRIPTOR {
-  UCHAR     ZoneType  : 4;
-  UCHAR     Reserved0  : 4;
-  UCHAR     Reset  : 1;
-  UCHAR     NonSeq : 1;
-  UCHAR     Reserved1  : 2;
-  UCHAR     ZoneCondition  : 4;
-  UCHAR     Reserved2[6];
-  ULONGLONG ZoneLength  : 48;
-  ULONGLONG Reserved3  : 16;
-  ULONGLONG ZoneStartLBA  : 48;
-  ULONGLONG Reserved4  : 16;
-  ULONGLONG WritePointerLBA  : 48;
-  ULONGLONG Reserved5  : 16;
-  UCHAR     Reserved6[32];
+  UCHAR  : 4      ZoneType;
+  UCHAR  : 4      Reserved0;
+  UCHAR  : 1      Reset;
+  UCHAR  : 1      NonSeq;
+  UCHAR  : 2      Reserved1;
+  UCHAR  : 4      ZoneCondition;
+  UCHAR           Reserved2[6];
+  ULONGLONG  : 48 ZoneLength;
+  ULONGLONG  : 16 Reserved3;
+  ULONGLONG  : 48 ZoneStartLBA;
+  ULONGLONG  : 16 Reserved4;
+  ULONGLONG  : 48 WritePointerLBA;
+  ULONGLONG  : 16 Reserved5;
+  UCHAR           Reserved6[32];
 } ATA_ZONE_DESCRIPTOR, *PATA_ZONE_DESCRIPTOR;
-````
+```
 
 ## Members
 

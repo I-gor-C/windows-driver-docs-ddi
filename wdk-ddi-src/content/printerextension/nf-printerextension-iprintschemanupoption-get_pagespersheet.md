@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_PagesPerSheet method
+# IPrintSchemaNUpOption::get_PagesPerSheet method
 Gets the number of pages per sheet.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_PagesPerSheet(
-  [out, retval] ULONG *pulPagesPerSheet
+  ULONG *pulPagesPerSheet
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemanupoption.md">IPrintSchemaNUpOption</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451302">IPrintSchemaNUpOption</a>

@@ -7,7 +7,7 @@ old-location: audio\iminiportmidistream_write.htm
 old-project: audio
 ms.assetid: 6ff4e4d7-3ba4-4e4b-98fa-62f269aee69f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IMiniportMidiStream, IMiniportMidiStream interface [Audio Devices], Write method, IMiniportMidiStream::Write, Write method [Audio Devices], Write method [Audio Devices], IMiniportMidiStream interface, Write,IMiniportMidiStream.Write, audio.iminiportmidistream_write, audmp-routines_523fd287-5380-4259-ba2c-4d9adef4fe4b.xml, portcls/IMiniportMidiStream::Write
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# Write method
+# IMiniportMidiStream::Write method
 The <code>Write</code> method writes data to an outgoing MIDI stream.
 
 ## Syntax
 
-````
+```
 NTSTATUS Write(
-  [in]  PVOID  BufferAddress,
-  [in]  ULONG  BytesToWrite,
-  [out] PULONG BytesWritten
+  PVOID  BufferAddress,
+  ULONG  BytesToWrite,
+  PULONG BytesWritten
 );
-````
+```
 
 ## Parameters
 
@@ -133,8 +133,8 @@ Zero. This value indicates that the device is too busy to write any of the calle
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536704">IMiniportMidiStream</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536705">IMiniportMidiStream::Read</a>
-
-
-
-<a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>

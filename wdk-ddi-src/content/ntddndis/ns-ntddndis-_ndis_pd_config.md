@@ -7,7 +7,7 @@ old-location: netvista\ndis_pd_config.htm
 old-project: netvista
 ms.assetid: 2B010641-4CFA-40B6-AB77-BE9F85347134
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDIS_PD_CONFIG, NDIS_PD_CONFIG structure [Network Drivers Starting with Windows Vista], _NDIS_PD_CONFIG, netvista.ndis_pd_config, ntddndis/NDIS_PD_CONFIG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,22 +47,22 @@ req.typenames: NDIS_PD_CONFIG
 This structure holds configuration data for the PD provider.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_PD_CONFIG {
   NDIS_OBJECT_HEADER Header;
-  ULONG              Flags;
-  BOOLEAN            Enabled;
-  ULONG              CapabilitiesOffset;
-                     CapabilitiesSize;
+  ULONG              Flags;
+  BOOLEAN            Enabled;
+  ULONG              CapabilitiesOffset;
+  ULONG              CapabilitiesSize;
 } NDIS_PD_CONFIG;
-````
+```
 
 ## Members
 
 
 `Header`
 
-The <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_CONFIG</b> structure. Set the members of this structure as follows:
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the <b>NDIS_PD_CONFIG</b> structure. Set the members of this structure as follows:
 
 <ul>
 <li><b>Type</b> = <b>NDIS_OBJECT_TYPE_DEFAULT</b></li>
@@ -80,11 +80,11 @@ A <b>BOOLEAN</b> value that is set to <b>TRUE</b> if the PDPI provider's  Packet
 
 `CapabilitiesOffset`
 
-If the <b>CapabilitiesSize</b> member is greater than zero, this is a <b>ULONG</b>-aligned pointer to an <a href="..\ntddndis\ns-ntddndis-_ndis_pd_capabilities.md">NDIS_PD_CAPABILITIES</a> structure.
+If the <b>CapabilitiesSize</b> member is greater than zero, this is a <b>ULONG</b>-aligned pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn931833">NDIS_PD_CAPABILITIES</a> structure.
 
 `CapabilitiesSize`
 
-If this member is greater than zero, it contains the size of the <a href="..\ntddndis\ns-ntddndis-_ndis_pd_capabilities.md">NDIS_PD_CAPABILITIES</a> structure that the <b>CapabilitiesOffset</b> member points to.
+If this member is greater than zero, it contains the size of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn931833">NDIS_PD_CAPABILITIES</a> structure that the <b>CapabilitiesOffset</b> member points to.
 
 ## Remarks
 This structure must be aligned on an 8-byte boundary.
@@ -97,4 +97,4 @@ This structure must be aligned on an 8-byte boundary.
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>

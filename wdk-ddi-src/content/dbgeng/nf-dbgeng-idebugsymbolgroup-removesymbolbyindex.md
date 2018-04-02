@@ -7,7 +7,7 @@ old-location: debugger\removesymbolbyindex.htm
 old-project: debugger
 ms.assetid: 1903d454-02d1-4528-9b8f-3c2eab8c6a6a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: ComOther_d532b37e-11c9-4cff-a619-0b9dffef0af1.xml, IDebugSymbolGroup, IDebugSymbolGroup interface [Windows Debugging], RemoveSymbolByIndex method, IDebugSymbolGroup2 interface [Windows Debugging], RemoveSymbolByIndex method, IDebugSymbolGroup2::RemoveSymbolByIndex, IDebugSymbolGroup::RemoveSymbolByIndex, RemoveSymbolByIndex method [Windows Debugging], RemoveSymbolByIndex method [Windows Debugging], IDebugSymbolGroup interface, RemoveSymbolByIndex method [Windows Debugging], IDebugSymbolGroup2 interface, RemoveSymbolByIndex,IDebugSymbolGroup.RemoveSymbolByIndex, dbgeng/IDebugSymbolGroup2::RemoveSymbolByIndex, dbgeng/IDebugSymbolGroup::RemoveSymbolByIndex, debugger.removesymbolbyindex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,16 +45,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# RemoveSymbolByIndex method
+# IDebugSymbolGroup::RemoveSymbolByIndex method
 The <b>RemoveSymbolByIndex</b> method removes the specified symbol from a symbol group.
 
 ## Syntax
 
-````
+```
 HRESULT RemoveSymbolByIndex(
-  [in] ULONG Index
+  ULONG Index
 );
-````
+```
 
 ## Parameters
 
@@ -102,20 +102,20 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537925">AddSymbol</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547975">GetNumberSymbols</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550838">IDebugSymbolGroup</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550846">IDebugSymbolGroup2</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554518">RemoveSymbolByName</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537925">AddSymbol</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndiscopyfromnetbuffertonetbuffer.htm
 old-project: netvista
 ms.assetid: b760e176-3ef7-4495-89c7-ec6b8bb3ed30
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisCopyFromNetBufferToNetBuffer, NdisCopyFromNetBufferToNetBuffer function [Network Drivers Starting with Windows Vista], ndis/NdisCopyFromNetBufferToNetBuffer, ndis_netbuf_functions_ref_28d10afe-d78a-49ef-8c9c-f90b87d4eeb1.xml, netvista.ndiscopyfromnetbuffertonetbuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,21 +48,21 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisCopyFromNetBufferToNetBuffer function
 Call the 
   <b>NdisCopyFromNetBufferToNetBuffer</b> function to copy data from a source 
-  <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure to a destination NET_BUFFER
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure to a destination NET_BUFFER
   structure.
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisCopyFromNetBufferToNetBuffer(
-  _In_  PNET_BUFFER Destination,
-  _In_  ULONG       DestinationOffset,
-  _In_  ULONG       BytesToCopy,
-  _In_  PNET_BUFFER Source,
-  _In_  ULONG       SourceOffset,
-  _Out_ PULONG      BytesCopied
+  PNET_BUFFER Destination,
+  ULONG       DestinationOffset,
+  ULONG       BytesToCopy,
+  PNET_BUFFER Source,
+  ULONG       SourceOffset,
+  PULONG      BytesCopied
 );
-````
+```
 
 ## Parameters
 
@@ -134,7 +134,7 @@ The copy operation failed because of insufficient resources.
 
 The caller of 
     <b>NdisCopyFromNetBufferToNetBuffer</b> allocates the destination 
-    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structure and possibly the source
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structure and possibly the source
     NET_BUFFER structure as well. The MDLs of the destination NET_BUFFER structure should have enough space
     to receive the data.
 
@@ -146,7 +146,7 @@ If the source NET_BUFFER structure runs out of data or the destination NET_BUFFE
 The caller must ensure that 
     <b>CurrentMdlOffset</b> and 
     <b>CurrentMdl</b> values are correct in the source and destination 
-    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures. NDIS does not change the
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures. NDIS does not change the
     members in the destination NET_BUFFER. The caller must update the 
     <b>DataLength</b>, 
     <b>DataOffset</b>, and 
@@ -179,4 +179,4 @@ NDIS uses the offsets in the
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>

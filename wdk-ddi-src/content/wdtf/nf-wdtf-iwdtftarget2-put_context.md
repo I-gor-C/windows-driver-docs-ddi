@@ -7,7 +7,7 @@ old-location: dtf\iwdtftarget2_context.htm
 old-project: dtf
 ms.assetid: e7a19b73-3393-4ab4-a967-c00b46f81a9e
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: Context property [Windows Device Testing Framework], Context property [Windows Device Testing Framework], IWDTFTarget2 interface, IWDTFTarget2, IWDTFTarget2 interface [Windows Device Testing Framework], Context property, IWDTFTarget2.Context, IWDTFTarget2::get_Context, IWDTFTarget2::put_Context, Microsoft.WDTF.IWDTFTarget2.Context, Microsoft::WDTF::IWDTFTarget2::Context, dtf.iwdtftarget2_context, ntddk/IWDTFTarget2::Context, ntddk/IWDTFTarget2::get_Context, ntddk/IWDTFTarget2::put_Context, put_Context,IWDTFTarget2.put_Context
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,24 +47,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# put_Context method
+# IWDTFTarget2::put_Context method
 Gets and sets a name-value pair that represents user data for the target.
 
 This property is read/write.
 
 ## Syntax
 
-````
+```
 HRESULT put_Context(
-  [in]          BSTR    Tag,
-  [in]          VARIANT newVal
+  BSTR    Tag,
+  VARIANT newVal
 );
-
-HRESULT get_Context(
-  [in]          BSTR    Tag,
-  [out, retval] VARIANT *pVal
-);
-````
+```
 
 ## Parameters
 
@@ -86,7 +81,7 @@ None
 The <b>Context</b> property is parameterized with the 
 <b>BSTR </b><i>Tag </i>parameter. This parameterization 
 enables you to attach many different named values to an instance of the 
-<a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a> interface. 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439367">IWDTFTarget2</a> interface. 
 You can then retrieve these same values by name at a later time. 
 
 Each value is stored as a <b>VARIANT</b>, which correctly 
@@ -105,4 +100,4 @@ see <a href="https://msdn.microsoft.com/f9e3de20-28be-40c6-802c-f4637b3f6c20">Cr
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439367">IWDTFTarget2</a>

@@ -44,52 +44,52 @@ req.typenames: PIPE_STATE
 ---
 
 
-# Get method
+# IKsPropertySet::Get method
 The <b>Get</b> method retrieves a property identified by a property-set GUID and a property identifier.
 
 ## Syntax
 
-````
+```
 HRESULT Get(
-  [in]  REFGUID PropSet,
-  [in]  ULONG   Id,
-  [in]  LPVOID  InstanceData,
-  [in]  ULONG   InstanceLength,
-  [out] LPVOID  PropertyData,
-  [in]  ULONG   DataLength,
-  [out] ULONG   *BytesReturned
+  REFGUID PropSet,
+  ULONG   Id,
+  LPVOID  InstanceData,
+  ULONG   InstanceLength,
+  LPVOID  PropertyData,
+  ULONG   DataLength,
+  ULONG   *BytesReturned
 );
-````
+```
 
 ## Parameters
 
 `PropSet`
 
-GUID that identifies the property set.
+
 
 `Id`
 
-Identifier of the property within the property set.
+
 
 `InstanceData`
 
-Pointer to instance data for the property.
+
 
 `InstanceLength`
 
-Size, in bytes, of the buffer at <i>InstanceData</i>.
+
 
 `PropertyData`
 
-Pointer to a buffer that receives the value of the property.
+
 
 `DataLength`
 
-Size, in bytes, of the buffer at <i>PropertyData</i>.
+
 
 `BytesReturned`
 
-Pointer to a variable that receives the size, in bytes, of the data that <b>Get</b> stores in the buffer at <i>PropertyData</i>.
+
 
 
 ## Return Value

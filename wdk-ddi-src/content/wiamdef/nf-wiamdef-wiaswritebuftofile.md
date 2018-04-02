@@ -50,12 +50,12 @@ The <b>wiasWriteBufToFile</b> function writes from a specified buffer to an imag
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasWriteBufToFile(
-       LONG                      lFlags,
-  _In_ PMINIDRV_TRANSFER_CONTEXT pmdtc
+```
+HRESULT wiasWriteBufToFile(
+  LONG                      lFlags,
+  PMINIDRV_TRANSFER_CONTEXT pmdtc
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ Specifies a set of operation flags. This parameter should be set to 0.
 
 `pmdtc`
 
-Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a> structure.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a> structure.
 
 
 ## Return Value
@@ -74,7 +74,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## Remarks
 
-A WIA minidriver uses this function to write a buffer to any type of image file. A driver that intends to write a page of purely image data to a multipage TIFF file, delegating the addition of the appropriate tags, image file directory (IFD) entries, and other nonimage data to the WIA service, should use <a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftofile.md">wiasWritePageBufToFile</a>.
+A WIA minidriver uses this function to write a buffer to any type of image file. A driver that intends to write a page of purely image data to a multipage TIFF file, delegating the addition of the appropriate tags, image file directory (IFD) entries, and other nonimage data to the WIA service, should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff549484">wiasWritePageBufToFile</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,12 +87,12 @@ A WIA minidriver uses this function to write a buffer to any type of image file.
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftostream.md">wiasWritePageBufToStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftofile.md">wiasWritePageBufToFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549484">wiasWritePageBufToFile</a>
 
 
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549495">wiasWritePageBufToStream</a>

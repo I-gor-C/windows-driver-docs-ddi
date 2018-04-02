@@ -7,7 +7,7 @@ old-location: display\videoportwriteregisterbufferushort.htm
 old-project: display
 ms.assetid: 52bc00d5-313c-444d-91d9-8f95640e7d81
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortWriteRegisterBufferUshort, VideoPortWriteRegisterBufferUshort function [Display Devices], VideoPort_Functions_f385c5d4-bc63-4aae-b021-b503f6a5336f.xml, display.videoportwriteregisterbufferushort, video/VideoPortWriteRegisterBufferUshort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,19 +50,19 @@ The <b>VideoPortWriteRegisterBufferUshort</b> function writes a number of USHORT
 
 ## Syntax
 
-````
-VOID VideoPortWriteRegisterBufferUshort(
-       PUSHORT Register,
-  _In_ PUSHORT Buffer,
-       ULONG   Count
+```
+VIDEOPORT_API VOID VideoPortWriteRegisterBufferUshort(
+  PUSHORT Register,
+  PUSHORT Buffer,
+  ULONG   Count
 );
-````
+```
 
 ## Parameters
 
 `Register`
 
-Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.
+Pointer to the register. The given <i>Register</i> must be in a mapped memory-space range returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a>.
 
 `Buffer`
 
@@ -79,7 +79,7 @@ None
 
 ## Remarks
 
-A miniport driver's <a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a> function can call <b>VideoPortWriteRegisterBufferUshort</b>.
+A miniport driver's <a href="https://msdn.microsoft.com/523471e3-cf1e-48d2-b5f0-2f8d19ad71e0">HwVidInterrupt</a> or <a href="https://msdn.microsoft.com/04e3bac6-c905-4c95-bd1b-e85b46c4296d">HwVidSynchronizeExecutionCallback</a> function can call <b>VideoPortWriteRegisterBufferUshort</b>.
 
 Callers of <b>VideoPortWriteRegisterBufferUshort</b>can be running at any IRQL, provided that the memory pointed to by the <i>Buffer</i> parameter is resident and that pointed to by the <i>Register</i> parameter is resident, mapped device memory.
 
@@ -95,4 +95,4 @@ Callers of <b>VideoPortWriteRegisterBufferUshort</b>can be running at any IRQL, 
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a>

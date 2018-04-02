@@ -7,7 +7,7 @@ old-location: display\dxgk_miracast_caps.htm
 old-project: display
 ms.assetid: 63ED28D9-654F-45CC-BFDC-89C9E73DCF95
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS structure [Display Devices], PDXGK_MIRACAST_CAPS, PDXGK_MIRACAST_CAPS structure pointer [Display Devices], _DXGK_MIRACAST_CAPS, display.dxgk_miracast_caps, dispmprt/DXGK_MIRACAST_CAPS, dispmprt/PDXGK_MIRACAST_CAPS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,25 +47,25 @@ req.typenames: DXGK_MIRACAST_CAPS, *PDXGK_MIRACAST_CAPS
 Used by a display miniport driver to identify capabilities of a Miracast device.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_MIRACAST_CAPS {
   ULONG MaxChunkPrivateDriverDataSize;
   union {
-    struct {
-      UINT HdcpSupport  :1;
-      UINT Reserved  :31;
-    };
     UINT Value;
-  } Flags;
-} DXGK_MIRACAST_CAPS, *PDXGK_MIRACAST_CAPS;
-````
+    struct {
+      UINT  : 1  HdcpSupport;
+      UINT  : 31 Reserved;
+    };
+  } Flags;
+} *PDXGK_MIRACAST_CAPS, DXGK_MIRACAST_CAPS;
+```
 
 ## Members
 
 
 `MaxChunkPrivateDriverDataSize`
 
-The maximum size, in bytes, of the private data that the display miniport driver will pass when it reports a <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a> interrupt type of <b>DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE</b>.
+The maximum size, in bytes, of the private data that the display miniport driver will pass when it reports a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561136">DXGK_INTERRUPT_TYPE</a> interrupt type of <b>DXGK_INTERRUPT_MICACAST_CHUNK_PROCESSING_COMPLETE</b>.
 
 `Flags`
 
@@ -82,4 +82,4 @@ Holds a 32-bit value that identifies the capabilities of the Miracast device.
 
 ## See Also
 
-<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561136">DXGK_INTERRUPT_TYPE</a>

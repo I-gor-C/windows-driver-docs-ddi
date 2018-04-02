@@ -46,17 +46,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnClientSubscribeToEvents method
+# ISensorDriver::OnClientSubscribeToEvents method
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545589">ISensorDriver::OnClientSubscribeToEvents</a> method notifies the sensor driver that an authorized client application is requesting event notifications.
 
 ## Syntax
 
-````
+```
 HRESULT OnClientSubscribeToEvents(
-   IWDFFile * pClientFile,
-   LPWSTR     pwszSensorID
+  IWDFFile *pClientFile,
+  LPWSTR   pwszSensorID
 );
-````
+```
 
 ## Parameters
 

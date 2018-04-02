@@ -50,13 +50,13 @@ For internal use only.
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfCompanionCreate(
-  _Inout_  PWDFDEVICE_INIT        *DeviceInit,
-  _In_opt_ PWDF_OBJECT_ATTRIBUTES DeviceAttributes,
-  _Out_    WDFCOMPANION           *Companion
+  PWDFDEVICE_INIT        *DeviceInit,
+  PWDF_OBJECT_ATTRIBUTES DeviceAttributes,
+  WDFCOMPANION           *Companion
 );
-````
+```
 
 ## Parameters
 

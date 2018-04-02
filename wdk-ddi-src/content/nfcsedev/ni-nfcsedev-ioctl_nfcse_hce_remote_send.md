@@ -50,7 +50,7 @@ Transmits response APDU from DeviceHost NFCEE to remote device. The caller must 
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-Pointer to buffer containing <a href="..\nfcsedev\ns-nfcsedev-_secure_element_hce_data_packet.md">SECURE_ELEMENT_HCE_DATA_PACKET</a> structure.
+Pointer to buffer containing <a href="https://msdn.microsoft.com/library/windows/hardware/dn905624">SECURE_ELEMENT_HCE_DATA_PACKET</a> structure.
 
 ### Input Buffer Length
 sizeof(SECURE_ELEMENT_HCE_DATA_PACKET)

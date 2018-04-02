@@ -44,16 +44,16 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsRemoveAggregate method
-The <b>KsRemoveAggregate</b> method removes a previously added COM server aggregate provider from the list of interface providers for the KS object that exposes the <a href="..\ksproxy\nn-ksproxy-iksaggregatecontrol.md">IKsAggregateControl</a> interface.
+# IKsAggregateControl::KsRemoveAggregate method
+The <b>KsRemoveAggregate</b> method removes a previously added COM server aggregate provider from the list of interface providers for the KS object that exposes the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559709">IKsAggregateControl</a> interface.
 
 ## Syntax
 
-````
+```
 HRESULT KsRemoveAggregate(
-  [in] REFGUID AggregateClass
+  REFGUID AggregateClass
 );
-````
+```
 
 ## Parameters
 
@@ -75,8 +75,8 @@ Returns NOERROR if successful; otherwise, returns an error code.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559709">IKsAggregateControl</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559713">IKsAggregateControl::KsAddAggregate</a>
-
-
-
-<a href="..\ksproxy\nn-ksproxy-iksaggregatecontrol.md">IKsAggregateControl</a>

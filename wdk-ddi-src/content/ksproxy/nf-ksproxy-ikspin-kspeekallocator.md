@@ -44,16 +44,16 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsPeekAllocator method
+# IKsPin::KsPeekAllocator method
 The <b>KsPeekAllocator</b> method returns a pointer to an <b>IMemAllocator</b> interface for a pin's assigned allocator.
 
 ## Syntax
 
-````
-IMemAllocator* KsPeekAllocator(
-  [in] KSPEEKOPERATION Operation
+```
+IMemAllocator * KsPeekAllocator(
+  KSPEEKOPERATION Operation
 );
-````
+```
 
 ## Parameters
 
@@ -107,4 +107,4 @@ This method is for proxy use and is not recommended for application use.
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-ikspin.md">IKsPin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559896">IKsPin</a>

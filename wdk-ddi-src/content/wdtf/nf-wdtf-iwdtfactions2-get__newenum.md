@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: Microsoft.WDTF
 req.assembly: WDTF.Interop.metadata_dll
 req.type-library: 
-req.lib: 
+req.lib: wdtf.h
 req.dll: 
 req.irql: 
 topic_type:
@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# get__NewEnum method
+# IWDTFActions2::get__NewEnum method
 Gets a new iteration variable that the <b>For Each</b> 
 loop structure implicitly uses.
 
@@ -86,6 +86,7 @@ For more information about how ATL implements this functionality, see the
 | **Windows version** | Windows XP Professional Windows Server 2008 |
 | **Target Platform** | Windows |
 | **Header** | wdtf.h |
+| **Library** | wdtf.h |
 
 ## See Also
 

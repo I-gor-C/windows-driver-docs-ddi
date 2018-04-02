@@ -7,7 +7,7 @@ old-location: netvista\wwan_lte_serving_cell_info.htm
 old-project: netvista
 ms.assetid: 17A78DC7-A89D-405A-983E-FC0DC469A4B0
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWWAN_LTE_SERVING_CELL_INFO, PWWAN_LTE_SERVING_CELL_INFO, PWWAN_LTE_SERVING_CELL_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_LTE_SERVING_CELL_INFO, WWAN_LTE_SERVING_CELL_INFO structure [Network Drivers Starting with Windows Vista], _WWAN_LTE_SERVING_CELL_INFO, netvista.wwan_lte_serving_cell_info, wwan/PWWAN_LTE_SERVING_CELL_INFO, wwan/WWAN_LTE_SERVING_CELL_INFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 The <b>WWAN_LTE_SERVING_CELL_INFO</b> structure represents information about the LTE serving cell.
 
 ## Syntax
-````
+```
 typedef struct _WWAN_LTE_SERVING_CELL_INFO {
   ULONG ProviderIdOffset;
   ULONG ProviderIdSize;
@@ -59,9 +59,9 @@ typedef struct _WWAN_LTE_SERVING_CELL_INFO {
   ULONG RSRP;
   ULONG RSRQ;
   ULONG TimingAdvance;
-  BYTE  Data[ANYSIZE_ARRAY];
-} WWAN_LTE_SERVING_CELL_INFO, *PWWAN_LTE_SERVING_CELL_INFO;
-````
+  BYTE  Data[ANYSIZE_ARRAY];
+} *PWWAN_LTE_SERVING_CELL_INFO, WWAN_LTE_SERVING_CELL_INFO;
+```
 
 ## Members
 
@@ -115,16 +115,16 @@ The Timing Advance (0-255). Use 0xFFFFFFFF when this information is not availabl
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_lte_mrl_info.md">WWAN_LTE_MRL_INFO</a>
-
-
-
-<a href="..\wwan\ns-wwan-_wwan_lte_mrl.md">WWAN_LTE_MRL</a>
-
-
-
-<a href="..\wwan\ns-wwan-_wwan_base_stations_info.md">WWAN_BASE_STATIONS_INFO</a>
-
-
-
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
+
+
+
+<a href="https://msdn.microsoft.com/66460B28-C2B4-4F05-A133-31A753AF9489">WWAN_BASE_STATIONS_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/5959B7A7-147D-4F20-82CC-EC1DEAAE3494">WWAN_LTE_MRL</a>
+
+
+
+<a href="https://msdn.microsoft.com/49C3D862-EB78-4C44-A7B7-CE15E79EB021">WWAN_LTE_MRL_INFO</a>

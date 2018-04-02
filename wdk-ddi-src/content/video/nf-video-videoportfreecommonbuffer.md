@@ -7,7 +7,7 @@ old-location: display\videoportfreecommonbuffer.htm
 old-project: display
 ms.assetid: 8725868e-00bc-45fe-ab9d-c192abd1a059
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortFreeCommonBuffer, VideoPortFreeCommonBuffer function [Display Devices], VideoPort_Functions_0f1acebf-0fdf-4152-ad91-2cafed40296c.xml, display.videoportfreecommonbuffer, video/VideoPortFreeCommonBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # VideoPortFreeCommonBuffer function
-The <b>VideoPortFreeCommonBuffer</b> function is <b>obsolete</b> and is supported only for backward compatibility with existing drivers. In its place, driver writers should use <a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>.
+The <b>VideoPortFreeCommonBuffer</b> function is <b>obsolete</b> and is supported only for backward compatibility with existing drivers. In its place, driver writers should use <a href="https://msdn.microsoft.com/library/windows/hardware/ff570355">VideoPortReleaseCommonBuffer</a>.
 
-<b>VideoPortFreeCommonBuffer</b> deallocates system memory that was allocated by a call to <a href="..\video\nf-video-videoportgetcommonbuffer.md">VideoPortGetCommonBuffer</a>.
+<b>VideoPortFreeCommonBuffer</b> deallocates system memory that was allocated by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570308">VideoPortGetCommonBuffer</a>.
 
 ## Syntax
 
-````
-VOID VideoPortFreeCommonBuffer(
-  _In_ PVOID            HwDeviceExtension,
-  _In_ ULONG            Length,
-  _In_ PVOID            VirtualAddress,
-  _In_ PHYSICAL_ADDRESS LogicalAddress,
-  _In_ BOOLEAN          CacheEnabled
+```
+VIDEOPORT_API VOID VideoPortFreeCommonBuffer(
+  IN PVOID            HwDeviceExtension,
+  IN ULONG            Length,
+  IN PVOID            VirtualAddress,
+  IN PHYSICAL_ADDRESS LogicalAddress,
+  IN BOOLEAN          CacheEnabled
 );
-````
+```
 
 ## Parameters
 
@@ -91,7 +91,7 @@ None
 
 ## Remarks
 
-Except for <a href="..\video\nf-video-videoportgetcommonbuffer.md">VideoPortGetCommonBuffer's </a><i>Alignment</i> parameter, all of the parameters used in a call to <b>VideoPortFreeCommonBuffer</b> must have the same values as those used in the previous call to <b>VideoPortGetCommonBuffer</b>.
+Except for <a href="https://msdn.microsoft.com/c8329d26-fb6f-46f1-aacd-ba78ee4ea5d5">VideoPortGetCommonBuffer's </a><i>Alignment</i> parameter, all of the parameters used in a call to <b>VideoPortFreeCommonBuffer</b> must have the same values as those used in the previous call to <b>VideoPortGetCommonBuffer</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,8 +105,8 @@ Except for <a href="..\video\nf-video-videoportgetcommonbuffer.md">VideoPortGetC
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetcommonbuffer.md">VideoPortGetCommonBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570308">VideoPortGetCommonBuffer</a>
 
 
 
-<a href="..\video\nf-video-videoportreleasecommonbuffer.md">VideoPortReleaseCommonBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570355">VideoPortReleaseCommonBuffer</a>

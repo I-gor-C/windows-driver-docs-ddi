@@ -50,38 +50,38 @@ req.product: Windows 10 or later.
 The <b>WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</b> structure describes a state change within a device's power policy state machine.
 
 ## Syntax
-````
+```
 typedef struct _WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA {
   WDF_STATE_NOTIFICATION_TYPE Type;
   union {
     struct {
       WDF_DEVICE_POWER_POLICY_STATE CurrentState;
       WDF_DEVICE_POWER_POLICY_STATE NewState;
-    } EnterState;
+    } EnterState;
     struct {
       WDF_DEVICE_POWER_POLICY_STATE CurrentState;
-    } PostProcessState;
+    } PostProcessState;
     struct {
       WDF_DEVICE_POWER_POLICY_STATE CurrentState;
       WDF_DEVICE_POWER_POLICY_STATE NewState;
-    } LeaveState;
-  } Data;
+    } LeaveState;
+  } Data;
 } WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA;
-````
+```
 
 ## Members
 
 
 `Type`
 
-A <a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notification_type.md">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerator that identifies the type of state change that is being reported.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552513">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerator that identifies the type of state change that is being reported.
 
 `Data`
 
 
 
 ## Remarks
-The <b>WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</b> structure is an input argument to a driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_power_policy_state_change_notification.md">EvtDevicePowerPolicyStateChange</a> callback function.
+The <b>WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</b> structure is an input argument to a driver's <a href="https://msdn.microsoft.com/91432773-3255-4feb-a6f4-c24da4486703">EvtDevicePowerPolicyStateChange</a> callback function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,4 +91,4 @@ The <b>WDF_DEVICE_POWER_POLICY_NOTIFICATION_DATA</b> structure is an input argum
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitregisterpowerpolicystatechangecallback.md">WdfDeviceInitRegisterPowerPolicyStateChangeCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546066">WdfDeviceInitRegisterPowerPolicyStateChangeCallback</a>

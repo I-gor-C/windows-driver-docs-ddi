@@ -7,7 +7,7 @@ old-location: storage\storportwriteregisterbufferulong.htm
 old-project: storage
 ms.assetid: a610f6c5-6627-406e-9b33-f321c6d55a89
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortWriteRegisterBufferUlong, StorPortWriteRegisterBufferUlong routine [Storage Devices], storage.storportwriteregisterbufferulong, storport/StorPortWriteRegisterBufferUlong, storprt_f43e38af-b5f2-4727-990c-dc0cb79bbc09.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,14 +51,14 @@ The <b>StorPortWriteRegisterBufferUlong</b> routine transfers a given number of 
 
 ## Syntax
 
-````
-STORPORT_API VOID StorPortWriteRegisterBufferUlong(
-  _In_ PVOID  HwDeviceExtension,
-  _In_ PULONG Register,
-  _In_ PULONG Buffer,
-  _In_ ULONG  Count
+```
+void StorPortWriteRegisterBufferUlong(
+   h,
+   r,
+   b,
+   c
 );
-````
+```
 
 ## Parameters
 
@@ -93,4 +93,4 @@ None
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportwriteregisterbufferulong.md">StorPortWriteRegisterBufferUlong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567531">StorPortWriteRegisterBufferUlong</a>

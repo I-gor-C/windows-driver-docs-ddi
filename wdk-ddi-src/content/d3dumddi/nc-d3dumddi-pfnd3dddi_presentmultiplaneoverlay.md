@@ -7,7 +7,7 @@ old-location: display\pfnpresentmultiplaneoverlay__d3d_.htm
 old-project: display
 ms.assetid: 3AC47977-A5F3-44A6-8F89-A1EA5E0BB6E4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3DDDI_PRESENTMULTIPLANEOVERLAY, d3dumddi/pfnPresentMultiPlaneOverlay, display.pfnpresentmultiplaneoverlay__d3d_, pfnPresentMultiPlaneOverlay, pfnPresentMultiPlaneOverlay callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -87,7 +87,7 @@ When the user-mode display driver successfully completes its processing of a cal
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_presentmultiplaneoverlay.md">D3DDDIARG_PRESENTMULTIPLANEOVERLAY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh780230">D3DDDIARG_PRESENTMULTIPLANEOVERLAY</a>
 
 
 

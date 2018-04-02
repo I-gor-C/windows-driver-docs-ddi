@@ -7,7 +7,7 @@ old-location: display\getvideodecoderconfigcount.htm
 old-project: display
 ms.assetid: 5b4cc185-8579-4c13-932f-23065697c4ee
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3D11_1DDI_GETVIDEODECODERCONFIGCOUNT, d3d10umddi/pfnGetVideoDecoderConfigCount, display.getvideodecoderconfigcount, pfnGetVideoDecoderConfigCount, pfnGetVideoDecoderConfigCount callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -92,4 +92,4 @@ The Microsoft Direct3D runtime verifies that the <i>pDecodeDesc</i>  parameter d
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_desc.md">D3D11_1DDI_VIDEO_DECODER_DESC</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450951">D3D11_1DDI_VIDEO_DECODER_DESC</a>

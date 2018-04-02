@@ -55,12 +55,12 @@ The <b>WdfIoQueueRetrieveNextRequest</b> method retrieves the next available I/O
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfIoQueueRetrieveNextRequest(
-  _In_  WDFQUEUE   Queue,
-  _Out_ WDFREQUEST *OutRequest
+  WDFQUEUE   Queue,
+  WDFREQUEST *OutRequest
 );
-````
+```
 
 ## Parameters
 
@@ -176,8 +176,8 @@ status = WdfIoQueueRetrieveNextRequest(
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueueretrievefoundrequest.md">WdfIoQueueRetrieveFoundRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh975099">WdfIoQueueRetrieveFoundRequest</a>
 
 
 
-<a href="..\wdfio\nf-wdfio-wdfioqueueretrieverequestbyfileobject.md">WdfIoQueueRetrieveRequestByFileObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548470">WdfIoQueueRetrieveRequestByFileObject</a>

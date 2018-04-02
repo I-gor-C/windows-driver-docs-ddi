@@ -53,17 +53,17 @@ Instead, use the <a href="https://msdn.microsoft.com/library/windows/hardware/dn
 
 ## Syntax
 
-````
+```
 void WdfDeviceWriteToHardware(
-  _In_     WDFDEVICE                       Device,
-  _In_     WDF_DEVICE_HWACCESS_TARGET_TYPE Type,
-  _In_     WDF_DEVICE_HWACCESS_TARGET_SIZE Size,
-  _In_     PVOID                           TargetAddress,
-  _In_     SIZE_T                          Value,
-  _In_opt_ PVOID                           Buffer,
-  _In_opt_ ULONG                           Count
+  WDFDEVICE                       Device,
+  WDF_DEVICE_HWACCESS_TARGET_TYPE Type,
+  WDF_DEVICE_HWACCESS_TARGET_SIZE Size,
+  PVOID                           TargetAddress,
+  SIZE_T                          Value,
+  PVOID                           Buffer,
+  ULONG                           Count
 );
-````
+```
 
 ## Parameters
 

@@ -47,13 +47,13 @@ req.typenames: DOT4_DC_OPEN_DATA, *PDOT4_DC_OPEN_DATA
 This topic describes the <b>DOT4_DC_OPEN_DATA</b> structure.
 
 ## Syntax
-````
+```
 typedef struct _DOT4_DC_OPEN_DATA {
-  unsigned char  bHsid;
-  fAddActivity   unsigned char;
+  unsigned char  bHsid;
+  unsigned char  fAddActivity;
   CHANNEL_HANDLE hChannelHandle;
-} DOT4_DC_OPEN_DATA, *PDOT4_DC_OPEN_DATA;
-````
+} *PDOT4_DC_OPEN_DATA, DOT4_DC_OPEN_DATA;
+```
 
 ## Members
 

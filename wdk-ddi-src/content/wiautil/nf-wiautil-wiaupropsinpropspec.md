@@ -50,14 +50,14 @@ The <b>wiauPropsInPropSpec</b> function determines whether any of a list of prop
 
 ## Syntax
 
-````
-BOOL _stdcall wiauPropsInPropSpec(
-             LONG     NumPropSpecs,
-  _In_ const PROPSPEC *pPropSpecs,
-             int      NumProps,
-  _In_       PROPID   *pProps
+```
+BOOL wiauPropsInPropSpec(
+  LONG           NumPropSpecs,
+  const PROPSPEC *pPropSpecs,
+  int            NumProps,
+  PROPID         *pProps
 );
-````
+```
 
 ## Parameters
 
@@ -84,7 +84,7 @@ This function returns <b>TRUE</b> as soon as it finds one of the property specif
 
 ## Remarks
 
-The <b>wiauPropsInPropSpec</b> function finds one or more property specification IDs within an array of property specification IDs. A related function, <a href="..\wiautil\nf-wiautil-wiaupropinpropspec.md">wiauPropInPropSpec</a>, can be used to find a single property specification ID within such an array.
+The <b>wiauPropsInPropSpec</b> function finds one or more property specification IDs within an array of property specification IDs. A related function, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550171">wiauPropInPropSpec</a>, can be used to find a single property specification ID within such an array.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,4 +95,4 @@ The <b>wiauPropsInPropSpec</b> function finds one or more property specification
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaupropinpropspec.md">wiauPropInPropSpec</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550171">wiauPropInPropSpec</a>

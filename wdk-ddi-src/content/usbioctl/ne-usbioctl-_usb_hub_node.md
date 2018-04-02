@@ -7,7 +7,7 @@ old-location: buses\usb_hub_node.htm
 old-project: usbref
 ms.assetid: fdd69121-2b3c-4394-b67e-c29f43daf113
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: USB_HUB_NODE, USB_HUB_NODE enumeration [Buses], UsbHub, UsbMIParent, _USB_HUB_NODE, buses.usb_hub_node, usbioctl/USB_HUB_NODE, usbioctl/UsbHub, usbioctl/UsbMIParent, usbstrct_9dadc1ba-6775-48d3-8ebf-fa42ad6992bf.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The <b>USB_HUB_NODE</b> enumerator indicates whether a device is a hub or a composite device.
 
 ## Syntax
-````
-typedef enum _USB_HUB_NODE { 
-  UsbHub       = 0,
-  UsbMIParent  = 1
+```
+typedef enum _USB_HUB_NODE {
+  UsbHub       ,
+  UsbMIParent
 } USB_HUB_NODE;
-````
+```
 
 ## Constants
 
@@ -81,8 +81,8 @@ Composite devices are devices that have multiple interfaces. Windows loads the U
 
 ## See Also
 
-<a href="..\usbioctl\ns-usbioctl-_usb_node_information.md">USB_NODE_INFORMATION</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540110">USB_NODE_INFORMATION</a>

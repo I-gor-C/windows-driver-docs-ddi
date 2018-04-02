@@ -7,7 +7,7 @@ old-location: debugger\getkernelconnectionoptionswide.htm
 old-project: debugger
 ms.assetid: f85ef2cf-704a-4a7c-aeeb-483a7b1fdc8f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetKernelConnectionOptionsWide method [Windows Debugging], GetKernelConnectionOptionsWide method [Windows Debugging], IDebugClient5 interface, GetKernelConnectionOptionsWide,IDebugClient5.GetKernelConnectionOptionsWide, IDebugClient5, IDebugClient5 interface [Windows Debugging], GetKernelConnectionOptionsWide method, IDebugClient5::GetKernelConnectionOptionsWide, dbgeng/IDebugClient5::GetKernelConnectionOptionsWide, debugger.getkernelconnectionoptionswide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetKernelConnectionOptionsWide method
+# IDebugClient5::GetKernelConnectionOptionsWide method
 The <b>GetKernelConnectionOptionsWide</b> method returns the connection options for the current kernel target.
 
 ## Syntax
 
-````
+```
 HRESULT GetKernelConnectionOptionsWide(
-  [out, optional] PWSTR  Buffer,
-  [in]            ULONG  BufferSize,
-  [out, optional] PULONG OptionsSize
+  PWSTR  Buffer,
+  ULONG  BufferSize,
+  PULONG OptionsSize
 );
-````
+```
 
 ## Parameters
 
@@ -136,4 +136,4 @@ For more information about connecting to live kernel-mode targets, see <a href="
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>

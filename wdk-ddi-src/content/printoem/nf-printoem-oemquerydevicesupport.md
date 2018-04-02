@@ -50,18 +50,18 @@ The <code>OEMQueryDeviceSupport</code> function returns requested device-specifi
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMQueryDeviceSupport(
-        SURFOBJ                     *pso,
-        XLATEOBJ                    *pxlo,
-        XFORMOBJ                    *pxo,
-        ULONG                       iType,
-        ULONG                       cjIn,
-  _In_  _reads_bytes_(cjIn) PVOID   pvIn,
-        ULONG                       cjOut,
-  _Out_ _writes_bytes_(cjOut) PVOID pvOut
+```
+BOOL OEMQueryDeviceSupport(
+  SURFOBJ  *pso,
+  XLATEOBJ *pxlo,
+  XFORMOBJ *pxo,
+  ULONG    iType,
+  ULONG    cjIn,
+  PVOID    pvIn,
+  ULONG    cjOut,
+  PVOID    pvOut
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: debugger\idebugclient_setoutputlineprefix.htm
 old-project: debugger
 ms.assetid: 59A3FD7D-153D-4580-84C1-2408A485F684
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugClient, IDebugClient interface [Windows Debugging], SetOutputLinePrefix method, IDebugClient::SetOutputLinePrefix, SetOutputLinePrefix method [Windows Debugging], SetOutputLinePrefix method [Windows Debugging], IDebugClient interface, SetOutputLinePrefix,IDebugClient.SetOutputLinePrefix, dbgeng/IDebugClient::SetOutputLinePrefix, debugger.idebugclient_setoutputlineprefix
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# SetOutputLinePrefix method
+# IDebugClient::SetOutputLinePrefix method
 Sets a prefix for multiple lines of output.
 
 ## Syntax
 
-````
+```
 HRESULT SetOutputLinePrefix(
-  [in, optional] PCSTR Prefix
+  PCSTR Prefix
 );
-````
+```
 
 ## Parameters
 
@@ -101,4 +101,4 @@ Some of the engine commands produce
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549827">IDebugClient</a>

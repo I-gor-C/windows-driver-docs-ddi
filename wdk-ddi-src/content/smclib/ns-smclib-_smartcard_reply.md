@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level (See Remarks section)
+req.irql: 
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 Describes the reply buffer received from the smart card.
 
 ## Syntax
-````
+```
 typedef struct _SMARTCARD_REPLY {
-  PUCHAR 	Buffer;
-  ULONG  BufferSize;
-  ULONG  BufferLength;
+  PUCHAR Buffer;
+  ULONG  BufferSize;
+  ULONG  BufferLength;
 } SMARTCARD_REPLY, *PSMARTCARD_REPLY;
-````
+```
 
 ## Members
 

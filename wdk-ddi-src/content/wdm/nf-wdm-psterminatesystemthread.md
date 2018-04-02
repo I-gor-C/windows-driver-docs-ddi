@@ -7,7 +7,7 @@ old-location: kernel\psterminatesystemthread.htm
 old-project: kernel
 ms.assetid: 04f9f699-0ca1-4b22-b66f-04fcf53935c4
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsTerminateSystemThread, PsTerminateSystemThread routine [Kernel-Mode Driver Architecture], k108_a8e19a60-578c-42a6-b77a-cf6c4098c815.xml, kernel.psterminatesystemthread, wdm/PsTerminateSystemThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>PsTerminateSystemThread</b> routine terminates the current system thread.
 
 ## Syntax
 
-````
-NTSTATUS PsTerminateSystemThread(
-  _In_ NTSTATUS ExitStatus
+```
+NTKERNELAPI NTSTATUS PsTerminateSystemThread(
+  NTSTATUS ExitStatus
 );
-````
+```
 
 ## Parameters
 
@@ -84,4 +84,4 @@ A system thread calls <b>PsTerminateSystemThread</b> to terminate itself. A driv
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pscreatesystemthread.md">PsCreateSystemThread</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559932">PsCreateSystemThread</a>

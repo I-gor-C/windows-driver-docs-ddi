@@ -50,16 +50,16 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL WINAPI PlayGdiScriptOnPrinterIC(
-  _In_  HANDLE   hPrinterIC,
-  _In_  LPBYTE   pIn,
-  _In_  DWORD    cIn,
-  _Out_ LPBYTE   pOut,
-  _In_  DWORD    cOut,
-  _In_  DWORD    ul
+```
+BOOL PlayGdiScriptOnPrinterIC(
+  HANDLE hPrinterIC,
+  LPBYTE pIn,
+  DWORD  cIn,
+  LPBYTE pOut,
+  DWORD  cOut,
+  DWORD  ul
 );
-````
+```
 
 ## Parameters
 

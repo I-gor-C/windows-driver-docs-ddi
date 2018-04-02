@@ -47,16 +47,16 @@ req.typenames: KSM_PIN, *PKSM_PIN
 The KSM_PIN structure describes a method request to create or delete a pin factory for a filter.
 
 ## Syntax
-````
+```
 typedef struct _KSM_PIN {
   KSMETHOD Method;
   union {
     ULONG PinId;
     ULONG PinType;
   };
-  ULONG    Reserved;
+  ULONG    Reserved;
 } KSM_PIN, *PKSM_PIN;
-````
+```
 
 ## Members
 

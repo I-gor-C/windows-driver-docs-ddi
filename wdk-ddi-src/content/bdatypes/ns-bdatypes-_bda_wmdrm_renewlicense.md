@@ -47,14 +47,14 @@ req.typenames: BDA_WMDRM_RENEWLICENSE, *PBDA_WMDRM_RENEWLICENSE
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_WMDRM_RENEWLICENSE {
   PBDARESULT lResult;
-  ULONG      ulDescrambleStatus;
-  ULONG      ulXmrLicenseOutputLength;
-  BYTE       argbXmrLicenceOutputBuffer[MIN_DIMENSION];
-} BDA_WMDRM_RENEWLICENSE, *PBDA_WMDRM_RENEWLICENSE;
-````
+  ULONG      ulDescrambleStatus;
+  ULONG      ulXmrLicenseOutputLength;
+  BYTE       argbXmrLicenceOutputBuffer[MIN_DIMENSION];
+} *PBDA_WMDRM_RENEWLICENSE, BDA_WMDRM_RENEWLICENSE;
+```
 
 ## Members
 

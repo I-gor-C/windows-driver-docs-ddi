@@ -7,7 +7,7 @@ old-location: storage\ataportreadregisterbufferuchar.htm
 old-project: storage
 ms.assetid: adc6724b-f3dc-4605-8ee1-198c88bc3fcd
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortReadRegisterBufferUchar, AtaPortReadRegisterBufferUchar routine [Storage Devices], atartns_5c57e652-3b37-4673-b5cf-fbcdf38853ad.xml, irb/AtaPortReadRegisterBufferUchar, storage.ataportreadregisterbufferuchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,19 +53,19 @@ The <b>AtaPortReadRegisterBufferUchar</b> routine transfers a specified number o
 
 ## Syntax
 
-````
-VOID AtaPortReadRegisterBufferUchar(
-  _In_ PUCHAR Register,
-  _In_ PUCHAR Buffer,
-  _In_ ULONG  Count
+```
+void AtaPortReadRegisterBufferUchar(
+  PUCHAR Register,
+  PUCHAR Buffer,
+  ULONG  Count
 );
-````
+```
 
 ## Parameters
 
 `Register`
 
-Contains the register address where the transfer should begin. This address value must be within the range of mapped I/O space addresses that are obtained by a call to <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>.
+Contains the register address where the transfer should begin. This address value must be within the range of mapped I/O space addresses that are obtained by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>.
 
 `Buffer`
 
@@ -90,12 +90,12 @@ None
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportreadregisterbufferulong.md">AtaPortReadRegisterBufferUlong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>
 
 
 
-<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550190">AtaPortReadRegisterBufferUlong</a>
 
 
 
-<a href="..\irb\nf-irb-ataportreadregisterbufferushort.md">AtaPortReadRegisterBufferUshort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550192">AtaPortReadRegisterBufferUshort</a>

@@ -7,7 +7,7 @@ old-location: ifsk\rtlcapturecontext.htm
 old-project: ifsk
 ms.assetid: c3edd10c-ea4f-4e2d-96f2-3d1cb3804512
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlCaptureContext, RtlCaptureContext function [Installable File System Drivers], ifsk.rtlcapturecontext, ntifs/RtlCaptureContext, rtlref_efe764ec-89fb-43bc-945d-7fee4594c284.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>RtlCaptureContext </b>function retrieves a context record in the context 
 
 ## Syntax
 
-````
-VOID RtlCaptureContext(
-  _Out_ PCONTEXT ContextRecord
+```
+NTSYSAPI VOID RtlCaptureContext(
+  PCONTEXT ContextRecord
 );
-````
+```
 
 ## Parameters
 

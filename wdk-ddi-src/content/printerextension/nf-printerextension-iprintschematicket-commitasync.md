@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# CommitAsync method
+# IPrintSchemaTicket::CommitAsync method
 Gets an  asynchronous PrintTicket commit operation context.
 
 ## Syntax
 
-````
+```
 HRESULT CommitAsync(
-  [in]  IPrintSchemaTicket         *pPrintTicketCommit,
-  [out] IPrintSchemaAsyncOperation **ppAsyncOperation
+  IPrintSchemaTicket         *pPrintTicketCommit,
+  IPrintSchemaAsyncOperation **ppAsyncOperation
 );
-````
+```
 
 ## Parameters
 
@@ -84,12 +84,12 @@ To perform the commit operation, call the <a href="https://msdn.microsoft.com/8A
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
-
-
-
 <a href="https://msdn.microsoft.com/8AEA34AA-1A5E-43F6-8EE1-B1A078B6AEA3">IPrintSchemaAsyncOperation::Start</a>
 
 
 
 <a href="https://msdn.microsoft.com/B1599F21-D6DD-497D-9CD8-6C637ABAA33A">IPrintSchemaAsyncOperationEvent::Completed</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>

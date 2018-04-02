@@ -53,17 +53,17 @@ The <b>WdfWmiInstanceGetDevice</b> method returns a handle to the framework devi
 
 ## Syntax
 
-````
+```
 WDFDEVICE WdfWmiInstanceGetDevice(
-  _In_ WDFWMIINSTANCE WmiInstance
+  WDFWMIINSTANCE WmiInstance
 );
-````
+```
 
 ## Parameters
 
 `WmiInstance`
 
-A handle to a WMI instance object that the driver obtained from a previous call to <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>.
+A handle to a WMI instance object that the driver obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff551178">WdfWmiInstanceCreate</a>.
 
 
 ## Return Value
@@ -85,4 +85,4 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## See Also
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancecreate.md">WdfWmiInstanceCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551178">WdfWmiInstanceCreate</a>

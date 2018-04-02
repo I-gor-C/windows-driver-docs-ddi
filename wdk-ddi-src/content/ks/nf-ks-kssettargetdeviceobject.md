@@ -50,18 +50,18 @@ The <b>KsSetTargetDeviceObject</b> function sets the target device object of an 
 
 ## Syntax
 
-````
-VOID KsSetTargetDeviceObject(
-  _In_     KSOBJECT_HEADER Header,
-  _In_opt_ PDEVICE_OBJECT  TargetDevice
+```
+KSDDKAPI VOID KsSetTargetDeviceObject(
+  KSOBJECT_HEADER Header,
+  PDEVICE_OBJECT  TargetDevice
 );
-````
+```
 
 ## Parameters
 
 `Header`
 
-Points to a header previously allocated by <a href="..\ks\nf-ks-ksallocateobjectheader.md">KsAllocateObjectHeader</a>.
+Points to a header previously allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff560972">KsAllocateObjectHeader</a>.
 
 `TargetDevice`
 
@@ -87,16 +87,16 @@ If <b>KsSetDevicePnpAndBaseObject</b> is also used to assign the PnP object stac
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksrecalculatestackdepth.md">KsRecalculateStackDepth</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560958">KsAllocateDeviceHeader</a>
 
 
 
-<a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560972">KsAllocateObjectHeader</a>
 
 
 
-<a href="..\ks\nf-ks-kssetdevicepnpandbaseobject.md">KsSetDevicePnpAndBaseObject</a>
+<a href="https://msdn.microsoft.com/0b8f23a5-af8a-4b99-8f17-092076523914">KsRecalculateStackDepth</a>
 
 
 
-<a href="..\ks\nf-ks-ksallocateobjectheader.md">KsAllocateObjectHeader</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566831">KsSetDevicePnpAndBaseObject</a>

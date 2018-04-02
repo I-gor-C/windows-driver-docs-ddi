@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level (See Remarks section)
+req.irql: 
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The T0_DATA structure is used by the smart card driver library to process T0 I/O.
 
 ## Syntax
-````
+```
 typedef struct _T0_DATA {
   ULONG Lc;
   ULONG Le;
 } T0_DATA, *PT0_DATA;
-````
+```
 
 ## Members
 

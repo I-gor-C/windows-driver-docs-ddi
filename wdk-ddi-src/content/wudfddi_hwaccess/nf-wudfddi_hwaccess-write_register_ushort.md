@@ -52,19 +52,19 @@ The <b>WRITE_REGISTER_USHORT</b> routine writes a USHORT value to the specified 
 
 ## Syntax
 
-````
+```
 void WRITE_REGISTER_USHORT(
-  _In_ IWDFDevice3 *pDevice,
-  _In_ PUSHORT     Register,
-  _In_ ULONG       Value
+  IWDFDevice3 *pDevice,
+  PUSHORT     Register,
+  USHORT      Value
 );
-````
+```
 
 ## Parameters
 
 `pDevice`
 
-Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.
+Specifies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface for the device object of the device to access.
 
 `Register`
 

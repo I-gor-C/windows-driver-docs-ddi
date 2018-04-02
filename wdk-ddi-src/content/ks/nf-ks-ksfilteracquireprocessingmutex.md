@@ -50,17 +50,17 @@ The<b> KsFilterAcquireProcessingMutex </b>function acquires the processing mutex
 
 ## Syntax
 
-````
+```
 void KsFilterAcquireProcessingMutex(
-  _In_ PKSFILTER Filter
+  PKSFILTER Filter
 );
-````
+```
 
 ## Parameters
 
 `Filter`
 
-A pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure representing the AVStream filter for which to acquire the processing mutex.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure representing the AVStream filter for which to acquire the processing mutex.
 
 
 ## Return Value
@@ -84,7 +84,7 @@ A minidriver that must suspend processing for a long period of time should not u
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspinacquireprocessingmutex.md">KsPinAcquireProcessingMutex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562527">KsFilterAttemptProcessing</a>
 
 
 
@@ -92,12 +92,12 @@ A minidriver that must suspend processing for a long period of time should not u
 
 
 
-<a href="..\ks\nf-ks-ksfilterattemptprocessing.md">KsFilterAttemptProcessing</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563488">KsPinAcquireProcessingMutex</a>
 
 
 
-<a href="..\ks\nf-ks-kspingetandgate.md">KsPinGetAndGate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563502">KsPinGetAndGate</a>
 
 
 
-<a href="..\ks\nf-ks-kspinreleaseprocessingmutex.md">KsPinReleaseProcessingMutex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563527">KsPinReleaseProcessingMutex</a>

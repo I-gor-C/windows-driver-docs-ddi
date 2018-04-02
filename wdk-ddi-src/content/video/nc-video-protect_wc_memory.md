@@ -7,7 +7,7 @@ old-location: display\videoportprotectwcmemory.htm
 old-project: display
 ms.assetid: 0cee4f4d-4d9c-44be-94ad-459000f2adb1
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PROTECT_WC_MEMORY, VideoPortProtectWCMemory, VideoPortProtectWCMemory callback function [Display Devices], VideoPort_Functions_5aead504-6c27-4b86-95e0-b4ec1b2b3e7d.xml, display.videoportprotectwcmemory, video/VideoPortProtectWCMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ VP_STATUS ProtectWcMemory(
 
 `Context`
 
-Pointer to a caller-determined context parameter to be passed to the <i>CallbackRoutine</i>. It typically points to the <a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a> buffer.
+Pointer to a caller-determined context parameter to be passed to the <i>CallbackRoutine</i>. It typically points to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a> buffer.
 
 `HwDeviceExtension`
 
@@ -77,9 +77,9 @@ Pointer to the miniport driver's hardware device extension.
 
 ## Remarks
 
-After <i>VideoPortProtectWCMemory</i> is called, the CPU cannot write to Write Combined (WC) memory until the <a href="..\video\nc-video-restore_wc_memory.md">VideoPortRestoreWCMemory</a> callback routine is called.
+After <i>VideoPortProtectWCMemory</i> is called, the CPU cannot write to Write Combined (WC) memory until the <a href="https://msdn.microsoft.com/8fa0be0c-04ce-41ab-93dd-6dc9e8daa356">VideoPortRestoreWCMemory</a> callback routine is called.
 
-When WC memory protection is no longer required, the display miniport driver should call <a href="..\video\nc-video-restore_wc_memory.md">VideoPortRestoreWCMemory</a> to restore CPU access to WC memory.
+When WC memory protection is no longer required, the display miniport driver should call <a href="https://msdn.microsoft.com/8fa0be0c-04ce-41ab-93dd-6dc9e8daa356">VideoPortRestoreWCMemory</a> to restore CPU access to WC memory.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,8 +90,8 @@ When WC memory protection is no longer required, the display miniport driver sho
 
 ## See Also
 
-<a href="..\video\nc-video-restore_wc_memory.md">VideoPortRestoreWCMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570531">VIDEO_PORT_CONFIG_INFO</a>
 
 
 
-<a href="..\video\ns-video-_video_port_config_info.md">VIDEO_PORT_CONFIG_INFO</a>
+<a href="https://msdn.microsoft.com/8fa0be0c-04ce-41ab-93dd-6dc9e8daa356">VideoPortRestoreWCMemory</a>

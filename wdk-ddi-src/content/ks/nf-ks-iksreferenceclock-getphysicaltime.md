@@ -44,14 +44,16 @@ req.typenames:
 ---
 
 
-# GetPhysicalTime method
+# IKsReferenceClock::GetPhysicalTime method
 The <b>IKsReferenceClock::GetPhysicalTime</b> method queries the associated reference clock for the current physical time.
 
 ## Syntax
 
-````
-LONGLONG GetPhysicalTime();
-````
+```
+LONGLONG GetPhysicalTime(
+
+);
+```
 
 ## Parameters
 
@@ -81,4 +83,4 @@ AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563517">KsPinGetReferenceClockInterface</a>

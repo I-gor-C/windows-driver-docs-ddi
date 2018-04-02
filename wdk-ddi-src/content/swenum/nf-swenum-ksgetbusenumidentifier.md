@@ -53,11 +53,11 @@ The <b>KsGetBusEnumIdentifier</b> function retrieves the software bus enumerator
 
 ## Syntax
 
-````
-NTSTATUS KsGetBusEnumIdentifier(
-  _Inout_ PIRP Irp
+```
+KSDDKAPI NTSTATUS KsGetBusEnumIdentifier(
+  PIRP Irp
 );
-````
+```
 
 ## Parameters
 

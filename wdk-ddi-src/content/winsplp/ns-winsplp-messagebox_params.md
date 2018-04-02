@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 # MESSAGEBOX_PARAMS structure
-The MESSAGEBOX_PARAMS structure is used by the <a href="..\winsplp\nf-winsplp-splpromptuiinuserssession.md">SplPromptUIInUsersSession</a> function to hold information about the appearance and behavior of a message box.
+The MESSAGEBOX_PARAMS structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562679">SplPromptUIInUsersSession</a> function to hold information about the appearance and behavior of a message box.
 
 ## Syntax
-````
-typedef struct {
-  DWORD  cbSize;
+```
+typedef struct MESSAGEBOX_PARAMS {
+  DWORD  cbSize;
   LPWSTR pTitle;
   LPWSTR pMessage;
-  DWORD  Style;
-  DWORD  dwTimeout;
-  BOOL   bWait;
-} MESSAGEBOX_PARAMS, *PMESSAGEBOX_PARAMS;
-````
+  DWORD  Style;
+  DWORD  dwTimeout;
+  BOOL   bWait;
+} *PMESSAGEBOX_PARAMS, MESSAGEBOX_PARAMS;
+```
 
 ## Members
 
@@ -87,7 +87,7 @@ Specifies the time, in seconds, to wait for the user's response, provided that t
 Specifies whether the <b>SplPromptUIInUsersSession</b> function should wait for a user's response. If <b>bWait</b> is <b>TRUE</b>, <b>SplPromptUIInUsersSession</b> does not return until either the user responds or the time-out interval elapses. If <b>dwTimeout</b> is zero, <b>SplPromptUIInUsersSession</b> does not return until the user responds. If <b>bWait</b> is <b>FALSE</b>, the function returns immediately with *<i>pResponse</i> set to IDASYNC.
 
 ## Remarks
-One member of the <a href="..\winsplp\ns-winsplp-showuiparams.md">SHOWUIPARAMS</a> structure is a MESSAGEBOX_PARAMS structure.
+One member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562645">SHOWUIPARAMS</a> structure is a MESSAGEBOX_PARAMS structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,8 +97,8 @@ One member of the <a href="..\winsplp\ns-winsplp-showuiparams.md">SHOWUIPARAMS</
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-splpromptuiinuserssession.md">SplPromptUIInUsersSession</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562645">SHOWUIPARAMS</a>
 
 
 
-<a href="..\winsplp\ns-winsplp-showuiparams.md">SHOWUIPARAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562679">SplPromptUIInUsersSession</a>

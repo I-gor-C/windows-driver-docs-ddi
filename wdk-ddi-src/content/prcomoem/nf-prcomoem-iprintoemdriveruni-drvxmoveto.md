@@ -45,25 +45,25 @@ req.product: Windows 10 or later.
 ---
 
 
-# DrvXMoveTo method
+# IPrintOemDriverUni::DrvXMoveTo method
 The <code>IPrintOemDriverUni::DrvXMoveTo</code> method is provided by the Unidrv driver so that a <a href="https://msdn.microsoft.com/e55ca083-2790-4929-9e5b-6fce49eb0404">rendering plug-in</a> can notify the driver of cursor x-position changes.
 
 ## Syntax
 
-````
+```
 HRESULT DrvXMoveTo(
-        PDEVOBJ pdevobj,
-        INT     x,
-        DWORD   dwFlags,
-  [out] INT     *piResult
+  PDEVOBJ pdevobj,
+  INT     x,
+  DWORD   dwFlags,
+  OUT INT *piResult
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `x`
 

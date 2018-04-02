@@ -51,13 +51,13 @@ The IOCTL_BIOMETRIC_UPDATE_FIRMWARE IOCTL tells the driver to update the firmwar
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_update_firmware.md">WINBIO_UPDATE_FIRMWARE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536479">WINBIO_UPDATE_FIRMWARE</a>
 
 ### Input Buffer Length
-Length of a <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_update_firmware.md">WINBIO_UPDATE_FIRMWARE</a> structure.
+Length of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff536479">WINBIO_UPDATE_FIRMWARE</a> structure.
 
 ### Output Buffer
-The AssociatedIrp.SystemBuffer member points to a buffer that contains a <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_blank_payload.md">WINBIO_BLANK_PAYLOAD</a> structure.
+The AssociatedIrp.SystemBuffer member points to a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff536464">WINBIO_BLANK_PAYLOAD</a> structure.
 
 ### Output Buffer Length
 The smallest valid output buffer size is the size of DWORD.  If the driver receives an DWORD-sized output buffer, the driver should return the buffer size necessary for the requested operation.

@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# EnumOptions method
+# IPrintCoreHelper::EnumOptions method
 The <b>IPrintCoreHelper::EnumOptions</b> method gets a list of available options for the given feature.
 
 ## Syntax
 
-````
-STDMETHOD EnumOptions(
-  [in]  PCSTR pszFeatureKeyword,
-  [out] PCSTR *pOptionList[],
-  [out] DWORD *pdwNumOptions
+```
+HRESULT EnumOptions(
+  PCSTR      pszFeatureKeyword,
+  PCSTR * [] pOptionList,
+  DWORD      *pdwNumOptions
 );
-````
+```
 
 ## Parameters
 
@@ -89,7 +89,7 @@ When <b>IPrintCoreHelper::EnumOptions</b> returns, the option list contains all 
 
 ## See Also
 
-<a href="..\prcomoem\nn-prcomoem-iprintcorehelper.md">IPrintCoreHelper</a>
+<a href="https://msdn.microsoft.com/db13410f-e4cb-4077-bb4b-7963e97b435c">IPrintCoreHelper</a>
 
 
 

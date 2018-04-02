@@ -7,7 +7,7 @@ old-location: kernel\io_error_log_packet.htm
 old-project: kernel
 ms.assetid: 4bf54017-d142-4534-8a5a-c7f267a1554b
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PIO_ERROR_LOG_PACKET, IO_ERROR_LOG_PACKET, IO_ERROR_LOG_PACKET structure [Kernel-Mode Driver Architecture], PIO_ERROR_LOG_PACKET, PIO_ERROR_LOG_PACKET structure pointer [Kernel-Mode Driver Architecture], _IO_ERROR_LOG_PACKET, kernel.io_error_log_packet, kstruct_b_04c24dbc-a479-437c-adc2-b29294596564.xml, wdm/IO_ERROR_LOG_PACKET, wdm/PIO_ERROR_LOG_PACKET"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,23 +48,23 @@ req.product: Windows 10 or later.
 The <b>IO_ERROR_LOG_PACKET</b> structure serves as the header for an error log entry.
 
 ## Syntax
-````
+```
 typedef struct _IO_ERROR_LOG_PACKET {
-  UCHAR         MajorFunctionCode;
-  UCHAR         RetryCount;
-  USHORT        DumpDataSize;
-  USHORT        NumberOfStrings;
-  USHORT        StringOffset;
-  USHORT        EventCategory;
-  NTSTATUS      ErrorCode;
-  ULONG         UniqueErrorValue;
-  NTSTATUS      FinalStatus;
-  ULONG         SequenceNumber;
-  ULONG         IoControlCode;
+  UCHAR         MajorFunctionCode;
+  UCHAR         RetryCount;
+  USHORT        DumpDataSize;
+  USHORT        NumberOfStrings;
+  USHORT        StringOffset;
+  USHORT        EventCategory;
+  NTSTATUS      ErrorCode;
+  ULONG         UniqueErrorValue;
+  NTSTATUS      FinalStatus;
+  ULONG         SequenceNumber;
+  ULONG         IoControlCode;
   LARGE_INTEGER DeviceOffset;
-  ULONG         DumpData[1];
+  ULONG         DumpData[1];
 } IO_ERROR_LOG_PACKET, *PIO_ERROR_LOG_PACKET;
-````
+```
 
 ## Members
 
@@ -126,7 +126,7 @@ Specifies the driver-specified offset into the device where the error occurred. 
 A variable-size array that can be used to store driver-specific binary data, such as register values or any other information useful in identifying the cause of the error. Drivers must specify the size, in bytes, of the array in the <b>DumpDataSize</b> member of this structure.
 
 ## Remarks
-Drivers use the <a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a> routine to allocate an error log entry. The <b>IO_ERROR_LOG_PACKET</b> structure serves as the header for the returned buffer. It is followed in memory by any insertion strings for the log entry.
+Drivers use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548245">IoAllocateErrorLogEntry</a> routine to allocate an error log entry. The <b>IO_ERROR_LOG_PACKET</b> structure serves as the header for the returned buffer. It is followed in memory by any insertion strings for the log entry.
 
 Note that the I/O manager itself inserts some information into the system error log, such as the name of the device and driver. The I/O manager reserves 80 bytes to hold this information. If the size of this information exceeds 80 bytes, then the I/O manager truncates the driver's insertion strings as necessary.
 
@@ -143,16 +143,16 @@ For more information about how to use this structure, see <a href="https://msdn.
 
 
 
-<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550766">IRP_MJ_INTERNAL_DEVICE_CONTROL</a>
 
 
 
-<a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548245">IoAllocateErrorLogEntry</a>
 
 
 
-<a href="..\wdm\nf-wdm-iofreeerrorlogentry.md">IoFreeErrorLogEntry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549107">IoFreeErrorLogEntry</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550527">IoWriteErrorLogEntry</a>

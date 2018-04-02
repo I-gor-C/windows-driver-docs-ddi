@@ -7,7 +7,7 @@ old-location: buses\evt_ucx_endpoint_set_characteristic.htm
 old-project: usbref
 ms.assetid: 4FA3F175-52E4-472D-A9B3-B3B4B37E1701
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: EVT_UCX_ENDPOINT_SET_CHARACTERISTIC, EvtUcxEndpointSetCharacteristic, EvtUcxEndpointSetCharacteristic callback function [Buses], buses.evt_ucx_endpoint_set_characteristic, ucxendpoint/EvtUcxEndpointSetCharacteristic
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ void EvtUcxEndpointSetCharacteristic(
 
 `UcxEndpointCharacteristic`
 
-A pointer to a <a href="..\ucxendpoint\ns-ucxendpoint-_ucx_endpoint_characteristic.md">UCX_ENDPOINT_CHARACTERISTIC</a> structure that contains endpoint characteristics.
+A pointer to a <a href="https://msdn.microsoft.com/4785D94B-271C-4F8E-B95B-87401E32CE42">UCX_ENDPOINT_CHARACTERISTIC</a> structure that contains endpoint characteristics.
 
 
 ## Return Value
@@ -77,7 +77,7 @@ This callback function does not return a value.
 
 ## Remarks
 
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>
  method.
 
 ## Requirements

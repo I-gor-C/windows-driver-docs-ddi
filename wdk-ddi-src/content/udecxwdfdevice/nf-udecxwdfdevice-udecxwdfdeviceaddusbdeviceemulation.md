@@ -7,7 +7,7 @@ old-location: buses\udecxwdfdeviceaddusbdeviceemulation.htm
 old-project: usbref
 ms.assetid: EE7644A9-AA57-4C53-9FA5-F844F2BFB0D7
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UdecxWdfDeviceAddUsbDeviceEmulation, UdecxWdfDeviceAddUsbDeviceEmulation function [Buses], buses.udecxwdfdeviceaddusbdeviceemulation, udecxwdfdevice/UdecxWdfDeviceAddUsbDeviceEmulation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ Initializes a framework device object to support operations related to a host co
 
 ## Syntax
 
-````
-FORCEINLINE NTSTATUS UdecxWdfDeviceAddUsbDeviceEmulation(
-  _In_ WDFDEVICE                Device,
-  _In_ PUDECX_WDF_DEVICE_CONFIG Config
+```
+NTSTATUS UdecxWdfDeviceAddUsbDeviceEmulation(
+  WDFDEVICE                WdfDevice,
+  PUDECX_WDF_DEVICE_CONFIG Config
 );
-````
+```
 
 ## Parameters
 
@@ -66,7 +66,7 @@ TBD
 
 `Config`
 
-A pointer to a <a href="..\udecxwdfdevice\ns-udecxwdfdevice-_udecx_wdf_device_config.md">UDECX_WDF_DEVICE_CONFIG</a> structure that the client driver initialized by calling <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecx_wdf_device_config_init.md">UDECX_WDF_DEVICE_CONFIG_INIT</a>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628008">UDECX_WDF_DEVICE_CONFIG</a> structure that the client driver initialized by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt628010">UDECX_WDF_DEVICE_CONFIG_INIT</a>.
 
 
 ## Return Value
@@ -75,9 +75,9 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 ## Remarks
 
-The UDE client driver for the emulated host controller and the USB device must call this method after the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. 
+The UDE client driver for the emulated host controller and the USB device must call this method after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> call. 
 
-During this call, the client driver-supplied event callback implementations are also registered. Supply function  pointers to those functions by call setting appropriate members of <a href="..\udecxwdfdevice\ns-udecxwdfdevice-_udecx_wdf_device_config.md">UDECX_WDF_DEVICE_CONFIG</a>. 
+During this call, the client driver-supplied event callback implementations are also registered. Supply function  pointers to those functions by call setting appropriate members of <a href="https://msdn.microsoft.com/library/windows/hardware/mt628008">UDECX_WDF_DEVICE_CONFIG</a>. 
 
 The method makes the framework device object capable of performing operations related to a controller and its root hub, such as handling various queues required to process IOCTL requests sent to the attached USB device.
 
@@ -93,8 +93,8 @@ The method makes the framework device object capable of performing operations re
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>

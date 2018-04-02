@@ -50,13 +50,13 @@ The <b>wiasSetPropChanged </b>function modifies a property context to indicate t
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasSetPropChanged(
-       PROPID               propid,
-  _In_ WIA_PROPERTY_CONTEXT *pContext,
-       BOOL                 bChanged
+```
+HRESULT wiasSetPropChanged(
+  PROPID               propid,
+  WIA_PROPERTY_CONTEXT *pContext,
+  BOOL                 bChanged
 );
-````
+```
 
 ## Parameters
 
@@ -66,7 +66,7 @@ Specifies the property identifier of the property being changed.
 
 `pContext`
 
-Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a> structure that contains the current property context.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure that contains the current property context.
 
 `bChanged`
 
@@ -79,7 +79,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## Remarks
 
-The <b>pChanged</b> member of the <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a> structure points to an array of BOOL values that indicate whether a particular property will be changed. This function sets one element in that array for the specified property in the property context. This function should be used whenever a driver changes a property that has dependent properties in validation. For example, by changing "Current Intent", the "Horizontal Resolution" is changed and should be marked as changed, so that validation of "X Resolution" (<a href="https://msdn.microsoft.com/library/windows/hardware/ff552665">WIA_IPS_XRES</a>)and its dependents still takes place.
+The <b>pChanged</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure points to an array of BOOL values that indicate whether a particular property will be changed. This function sets one element in that array for the specified property in the property context. This function should be used whenever a driver changes a property that has dependent properties in validation. For example, by changing "Current Intent", the "Horizontal Resolution" is changed and should be marked as changed, so that validation of "X Resolution" (<a href="https://msdn.microsoft.com/library/windows/hardware/ff552665">WIA_IPS_XRES</a>)and its dependents still takes place.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,8 +92,8 @@ The <b>pChanged</b> member of the <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_pr
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasispropchanged.md">wiasIsPropChanged</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a>
 
 
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549271">wiasIsPropChanged</a>

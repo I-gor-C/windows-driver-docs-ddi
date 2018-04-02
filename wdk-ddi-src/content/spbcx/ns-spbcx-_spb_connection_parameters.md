@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The <b>SPB_CONNECTION_PARAMETERS</b> structure contains the connection parameters for a target device on a <a href="https://msdn.microsoft.com/2c660e14-5b27-4610-a328-735b07ed0773">simple peripheral bus</a>.
 
 ## Syntax
-````
-typedef struct SPB_CONNECTION_PARAMETERS {
+```
+typedef struct _SPB_CONNECTION_PARAMETERS {
   USHORT Size;
   PCWSTR ConnectionTag;
-  PVOID  ConnectionParameters;
-} SPB_CONNECTION_PARAMETERS, *PSPB_CONNECTION_PARAMETERS;
-````
+  PVOID  ConnectionParameters;
+} *PSPB_CONNECTION_PARAMETERS, SPB_CONNECTION_PARAMETERS;
+```
 
 ## Members
 
@@ -95,7 +95,7 @@ To open a connection on behalf of a client (peripheral driver), the SPB framewor
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406205">SPB_CONNECTION_PARAMETERS_INIT</a>
+<a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a>
 
 
 
@@ -103,12 +103,12 @@ To open a connection on behalf of a client (peripheral driver), the SPB framewor
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450926">SpbTargetGetConnectionParameters</a>
-
-
-
-<a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj938063">RH_QUERY_CONNECTION_PROPERTIES_OUTPUT_BUFFER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406205">SPB_CONNECTION_PARAMETERS_INIT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450926">SpbTargetGetConnectionParameters</a>

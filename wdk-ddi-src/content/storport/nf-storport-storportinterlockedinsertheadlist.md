@@ -7,7 +7,7 @@ old-location: storage\storportinterlockedinsertheadlist.htm
 old-project: storage
 ms.assetid: 13874D19-4835-41B4-B58C-2B25D619607C
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortInterlockedInsertHeadList, StorPortInterlockedInsertHeadList routine [Storage Devices], storage.storportinterlockedinsertheadlist, storport/StorPortInterlockedInsertHeadList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,15 +52,15 @@ The StorPortInterlockedInsertHeadList routine atomically inserts an entry at the
 
 ## Syntax
 
-````
+```
 ULONG StorPortInterlockedInsertHeadList(
-  _In_    PVOID            HwDeviceExtension,
-  _Inout_ PSTOR_LIST_ENTRY ListHead,
-  _Inout_ PSTOR_LIST_ENTRY ListEntry,
-  _Inout_ PSTOR_LIST_ENTRY *Result,
-  _Inout_ PSTOR_KSPIN_LOCK Lock
+  PVOID            HwDeviceExtension,
+  PSTOR_LIST_ENTRY ListHead,
+  PSTOR_LIST_ENTRY ListEntry,
+  PSTOR_LIST_ENTRY *Result,
+  PSTOR_KSPIN_LOCK Lock
 );
-````
+```
 
 ## Parameters
 
@@ -140,19 +140,19 @@ A pointer in <i>ListHead</i> or <i>Result</i> is <b>NULL</b>.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547799">InitializeListHead</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547820">InsertHeadList</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt790427">StorPortInitializeSpinLock</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt790429">StorPortInterlockedInsertTailList</a>
-
-
-
-<a href="..\wudfwdm\nf-wudfwdm-insertheadlist.md">InsertHeadList</a>
-
-
-
-<a href="..\wudfwdm\nf-wudfwdm-initializelisthead.md">InitializeListHead</a>
 
 
 

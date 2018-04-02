@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# ValidateAsync method
+# IPrintSchemaTicket::ValidateAsync method
 Gets an asynchronous PrintTicket validation operation context.
 
 ## Syntax
 
-````
+```
 HRESULT ValidateAsync(
-  [out] IPrintSchemaAsyncOperation **ppAsyncOperation
+  IPrintSchemaAsyncOperation **ppAsyncOperation
 );
-````
+```
 
 ## Parameters
 
@@ -79,7 +79,7 @@ To perform the validation operation, call the <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemaasyncoperation.md">IPrintSchemaAsyncOperation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451224">IPrintSchemaAsyncOperation</a>
 
 
 
@@ -87,8 +87,8 @@ To perform the validation operation, call the <a href="https://msdn.microsoft.co
 
 
 
-<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
-
-
-
 <a href="https://msdn.microsoft.com/B1599F21-D6DD-497D-9CD8-6C637ABAA33A">IPrintSchemaAsyncOperationEvent::Completed</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>

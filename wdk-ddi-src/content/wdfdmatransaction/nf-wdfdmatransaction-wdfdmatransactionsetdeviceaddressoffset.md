@@ -55,12 +55,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 void WdfDmaTransactionSetDeviceAddressOffset(
-  _In_ WDFDMATRANSACTION DmaTransaction,
-  _In_ ULONG             Offset
+  WDFDMATRANSACTION DmaTransaction,
+  ULONG             Offset
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A handle to a DMA transaction object that specifies the transaction to modify.
 
 `Offset`
 
-The offset of the register, from the <b>DeviceAddress</b> specified in <a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_system_profile_config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>, to or from which DMA should be performed.
+The offset of the register, from the <b>DeviceAddress</b> specified in <a href="https://msdn.microsoft.com/library/windows/hardware/hh439495">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>, to or from which DMA should be performed.
 
 
 ## Return Value
@@ -158,4 +158,4 @@ WdfDmaTransactionRelease(
 
 ## See Also
 
-<a href="..\wdfdmaenabler\ns-wdfdmaenabler-_wdf_dma_system_profile_config.md">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439495">WDF_DMA_SYSTEM_PROFILE_CONFIG</a>

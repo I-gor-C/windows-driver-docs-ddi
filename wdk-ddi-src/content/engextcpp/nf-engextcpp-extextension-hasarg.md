@@ -7,7 +7,7 @@ old-location: debugger\hasarg.htm
 old-project: debugger
 ms.assetid: c71aa196-a25a-4d5c-a464-426d14a6aa72
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_a4d457bf-6e64-46d7-892a-5ddda81c7f9d.xml, ExtExtension, ExtExtension class [Windows Debugging], HasArg method, ExtExtension::HasArg, HasArg method [Windows Debugging], HasArg method [Windows Debugging], ExtExtension class, HasArg,ExtExtension.HasArg, debugger.hasarg
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# HasArg method
+# ExtExtension~r1::HasArg method
 The <b>HasArg</b> method indicates whether a specified named argument is present in the command line used to invoke the current extension command.
 
 ## Syntax
 
-````
-bool HasArg(
-  [in] PCSTR Name
+```
+Platform::Boolean HasArg(
+  PCSTR Name
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ Specifies the name of the argument.
 
 This method will work for all types of named arguments.  In particular, it can be used to detect the presence of a named argument of Boolean type.
 
-If the name of the argument is a single character, the convenience method <a href="..\engextcpp\nf-engextcpp-extextension-haschararg.md">HasCharArg</a> can be used instead.
+If the name of the argument is a single character, the convenience method <a href="https://msdn.microsoft.com/library/windows/hardware/ff549727">HasCharArg</a> can be used instead.
 
 For an overview of argument parsing in the EngExtCpp extensions framework, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff553340">Parsing Extension Arguments</a>.
 
@@ -84,8 +84,8 @@ This method should only be called during the execution of an extension command p
 
 ## See Also
 
-<a href="..\engextcpp\nf-engextcpp-extextension-haschararg.md">HasCharArg</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543981">ExtExtension</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549727">HasCharArg</a>

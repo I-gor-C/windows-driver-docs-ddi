@@ -7,7 +7,7 @@ old-location: buses\ucmconnectortypecdetach.htm
 old-project: usbref
 ms.assetid: E89DC8B6-9379-4FE2-BF4C-897DA9DFA11C
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UcmConnectorTypeCDetach, UcmConnectorTypeCDetach method [Buses], buses.ucmconnectortypecdetach, ucmmanager/UcmConnectorTypeCDetach
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ Notifies the USB connector manager framework extension (UcmCx) when the partner 
 
 ## Syntax
 
-````
+```
 NTSTATUS UcmConnectorTypeCDetach(
-  [in] UCMCONNECTOR  Connector
+  UCMCONNECTOR Connector
 );
-````
+```
 
 ## Parameters
 
 `Connector`
 
-Handle to the connector object that the client driver received in the previous call to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>.
+Handle to the connector object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>.
 
 
 ## Return Value
@@ -82,4 +82,4 @@ Handle to the connector object that the client driver received in the previous c
 
 ## See Also
 
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187915">UcmConnectorTypeCAttach</a>

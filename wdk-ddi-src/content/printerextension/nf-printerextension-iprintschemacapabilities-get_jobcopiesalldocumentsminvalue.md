@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_JobCopiesAllDocumentsMinValue method
+# IPrintSchemaCapabilities::get_JobCopiesAllDocumentsMinValue method
 Gets the <b>JobCopiesAllDocuments</b> parameter minimum value.
 
 This is the copy count minimum.
@@ -55,11 +55,11 @@ This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_JobCopiesAllDocumentsMinValue(
-  [out, retval] ULONG *pulJobCopiesAllDocumentsMinValue 
+  ULONG *pulJobCopiesAllDocumentsMinValue
 );
-````
+```
 
 ## Parameters
 
@@ -82,4 +82,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451256">IPrintSchemaCapabilities</a>

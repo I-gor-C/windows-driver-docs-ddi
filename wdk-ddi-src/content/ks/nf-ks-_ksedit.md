@@ -50,15 +50,15 @@ The <b>_KsEdit</b> function guarantees that a given item is dynamically allocate
 
 ## Syntax
 
-````
-NTSTATUS _KsEdit(
-  _In_    KSOBJECT_BAG ObjectBag,
-  _Inout_ PVOID        *PointerToPointerToItem,
-  _In_    ULONG        NewSize,
-  _In_    ULONG        OldSize,
-  _In_    ULONG        Tag
+```
+KSDDKAPI NTSTATUS _KsEdit(
+  KSOBJECT_BAG ObjectBag,
+  PVOID        *PointerToPointerToItem,
+  ULONG        NewSize,
+  ULONG        OldSize,
+  ULONG        Tag
 );
-````
+```
 
 ## Parameters
 

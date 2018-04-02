@@ -7,7 +7,7 @@ old-location: display\dxgkcbupdatecontextallocation.htm
 old-project: display
 ms.assetid: 708A33C2-9620-4259-845A-2F862B6F209B
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKCB_UPDATECONTEXTALLOCATION, DxgkCbUpdateContextAllocation, DxgkCbUpdateContextAllocation callback function [Display Devices], d3dkmddi/DxgkCbUpdateContextAllocation, display.dxgkcbupdatecontextallocation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ A handle to the display adapter.
 
 `pArgs`
 
-The <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_updatecontextallocation.md">DXGKARGCB_UPDATECONTEXTALLOCATION</a> structure that describes the operation.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/dn906820">DXGKARGCB_UPDATECONTEXTALLOCATION</a> structure that describes the operation.
 
 
 ## Return Value
@@ -86,8 +86,8 @@ Returns <b>STATUS_SUCCESS</b> if it succeeds. Otherwise, it returns one of the e
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_updatecontextallocation.md">DXGKARGCB_UPDATECONTEXTALLOCATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906820">DXGKARGCB_UPDATECONTEXTALLOCATION</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_updatecontextallocation.md">DxgkCbUpdateContextAllocation</a>
+<a href="https://msdn.microsoft.com/708A33C2-9620-4259-845A-2F862B6F209B">DxgkCbUpdateContextAllocation</a>

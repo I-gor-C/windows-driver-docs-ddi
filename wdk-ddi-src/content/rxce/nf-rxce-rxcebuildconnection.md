@@ -7,7 +7,7 @@ old-location: ifsk\rxcebuildconnection.htm
 old-project: ifsk
 ms.assetid: 3d4c2e69-7cdc-4eee-b56c-b1485768e942
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxCeBuildConnection, RxCeBuildConnection function [Installable File System Drivers], ifsk.rxcebuildconnection, rxce/RxCeBuildConnection, rxref_cc87c9dd-c8e4-4283-96a8-bc2ec15be773.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,16 +50,16 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 NTSTATUS RxCeBuildConnection(
-  _In_    PRXCE_ADDRESS                  pAddress,
-  _In_    PRXCE_CONNECTION_INFORMATION   pConnectionInformation,
-  _In_    PRXCE_CONNECTION_EVENT_HANDLER pHandler,
-  _In_    PVOID                          pEventContext,
-  _Inout_ PRXCE_CONNECTION               pConnection,
-  _Inout_ PRXCE_VC                       pVc
+  IN PRXCE_ADDRESS                  pLocalAddress,
+  IN PRXCE_CONNECTION_INFORMATION   pConnectionInformation,
+  IN PRXCE_CONNECTION_EVENT_HANDLER pHandler,
+  IN PVOID                          pEventContext,
+  IN OUT PRXCE_CONNECTION           pConnection,
+  IN OUT PRXCE_VC                   pVc
 );
-````
+```
 
 ## Parameters
 
@@ -138,7 +138,7 @@ When <b>RxCeBuildConnection</b> is successful, the data members in the RXCE_CONN
 
 ## See Also
 
-<a href="..\rxce\nf-rxce-rxceteardownconnection.md">RxCeTearDownConnection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554321">RxCeTearDownConnection</a>
 
 
 

@@ -7,7 +7,7 @@ old-location: debugger\getlinebyoffsetwide.htm
 old-project: debugger
 ms.assetid: e780be4b-ac62-43c2-9767-7745ff1c7dbb
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetLineByOffsetWide method [Windows Debugging], GetLineByOffsetWide method [Windows Debugging], IDebugSymbols3 interface, GetLineByOffsetWide,IDebugSymbols3.GetLineByOffsetWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetLineByOffsetWide method, IDebugSymbols3::GetLineByOffsetWide, dbgeng/IDebugSymbols3::GetLineByOffsetWide, debugger.getlinebyoffsetwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetLineByOffsetWide method
+# IDebugSymbols3::GetLineByOffsetWide method
 The <b>GetLineByOffsetWide</b>  method returns the source filename and the line number within the source file of an instruction in the target.
 
 ## Syntax
 
-````
+```
 HRESULT GetLineByOffsetWide(
-  [in]            ULONG64  Offset,
-  [out, optional] PULONG   Line,
-  [out, optional] PWSTR    FileBuffer,
-  [in]            ULONG    FileBufferSize,
-  [out, optional] PULONG   FileSize,
-  [out, optional] PULONG64 Displacement
+  ULONG64  Offset,
+  PULONG   Line,
+  PWSTR    FileBuffer,
+  ULONG    FileBufferSize,
+  PULONG   FileSize,
+  PULONG64 Displacement
 );
-````
+```
 
 ## Parameters
 
@@ -132,8 +132,8 @@ For more information about source files, see <a href="https://msdn.microsoft.com
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548022">GetOffsetByLine</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

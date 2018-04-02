@@ -47,7 +47,7 @@ req.typenames: KS_VBIINFOHEADER, *PKS_VBIINFOHEADER
 The KS_VBIINFOHEADER structure describes raw vertical blanking interval (VBI) streams.
 
 ## Syntax
-````
+```
 typedef struct tagKS_VBIINFOHEADER {
   ULONG StartLine;
   ULONG EndLine;
@@ -61,7 +61,7 @@ typedef struct tagKS_VBIINFOHEADER {
   ULONG StrideInBytes;
   ULONG BufferSize;
 } KS_VBIINFOHEADER, *PKS_VBIINFOHEADER;
-````
+```
 
 ## Members
 
@@ -96,7 +96,7 @@ Specifies the actual ending point for VBI digitization from the leading edge of 
 
 `VideoStandard`
 
-Specifies one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a> enumeration.
+Specifies one or more (logically ORed) values from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567297">KS_AnalogVideoStandard</a> enumeration.
 
 `SamplesPerLine`
 
@@ -120,4 +120,4 @@ VBI streams are usually converted to NABTS, CC, and WST streams by downstream fi
 
 ## See Also
 
-<a href="..\ksmedia\ne-ksmedia-ks_analogvideostandard.md">KS_AnalogVideoStandard</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567297">KS_AnalogVideoStandard</a>

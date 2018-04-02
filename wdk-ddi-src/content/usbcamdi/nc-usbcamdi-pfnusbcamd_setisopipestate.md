@@ -160,4 +160,4 @@ Using this function does not enable you to change the alternate setting within t
 
 ## See Also
 
-<a href="..\usbcamdi\ns-usbcamdi-usbcamd_interface.md">USBCAMD_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568605">USBCAMD_INTERFACE</a>

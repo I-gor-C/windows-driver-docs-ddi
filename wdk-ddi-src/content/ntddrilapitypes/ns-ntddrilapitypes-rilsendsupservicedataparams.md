@@ -7,7 +7,7 @@ old-location: netvista\rilsendsupservicedataparams.htm
 old-project: netvista
 ms.assetid: a48c9543-602f-4f3c-876e-9acc76ca1a6b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*LPRILSENDSUPSERVICEDATAPARAMS, RILSENDSUPSERVICEDATAPARAMS, RILSENDSUPSERVICEDATAPARAMS structure [Network Drivers Starting with Windows Vista], netvista.rilsendsupservicedataparams, ntddrilapitypes/RILSENDSUPSERVICEDATAPARAMS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: RILSENDSUPSERVICEDATAPARAMS, *LPRILSENDSUPSERVICEDATAPARAMS
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef struct _RILSENDSUPSERVICEDATAPARAMS {
-  DWORD     dwExecutor;
-  DWORD     dwDataSize;
-  WCHAR [1] wszData;
-} RILSENDSUPSERVICEDATAPARAMS, RILSENDSUPSERVICEDATAPARAMS;
-````
+```
+typedef struct RILSENDSUPSERVICEDATAPARAMS {
+  DWORD dwExecutor;
+  DWORD dwDataSize;
+  WCHAR wszData[1];
+}  *LPRILSENDSUPSERVICEDATAPARAMS;
+```
 
 ## Members
 

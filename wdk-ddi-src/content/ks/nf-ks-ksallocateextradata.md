@@ -50,13 +50,13 @@ The <b>KsAllocateExtraData</b> function is used with streaming IRPs to allocate 
 
 ## Syntax
 
-````
-NTSTATUS KsAllocateExtraData(
-  _Inout_ PIRP  Irp ,
-  _In_    ULONG ExtraSize ,
-  _Out_   PVOID *ExtraBuffer 
+```
+KSDDKAPI NTSTATUS KsAllocateExtraData(
+  PIRP  Irp,
+  ULONG ExtraSize,
+  PVOID *ExtraBuffer
 );
-````
+```
 
 ## Parameters
 

@@ -50,15 +50,15 @@ The <b>wiasReadPropLong </b>function retrieves a long integer property value fro
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasReadPropLong(
-  _In_      BYTE   *pWiasContext,
-            PROPID propid,
-  _Out_     LONG   *plVal,
-  _Out_opt_ LONG   *plValOld,
-            BOOL   bMustExist
+```
+HRESULT wiasReadPropLong(
+  BYTE   *pWiasContext,
+  PROPID propid,
+  LONG   *plVal,
+  LONG   *plValOld,
+  BOOL   bMustExist
 );
-````
+```
 
 ## Parameters
 
@@ -99,20 +99,20 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropguid.md">wiasReadPropGuid</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549308">wiasReadPropBin</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropfloat.md">wiasReadPropFloat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549320">wiasReadPropFloat</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswriteproplong.md">wiasWritePropLong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549325">wiasReadPropGuid</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropstr.md">wiasReadPropStr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549341">wiasReadPropStr</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropbin.md">wiasReadPropBin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549515">wiasWritePropLong</a>

@@ -50,13 +50,13 @@ The<b> KsRemoveItemFromObjectBag </b>function removes an item from an object bag
 
 ## Syntax
 
-````
-ULONG KsRemoveItemFromObjectBag(
-  _In_ KSOBJECT_BAG ObjectBag,
-  _In_ PVOID        Item,
-  _In_ BOOLEAN      Free
+```
+KSDDKAPI ULONG KsRemoveItemFromObjectBag(
+  KSOBJECT_BAG ObjectBag,
+  PVOID        Item,
+  BOOLEAN      Free
 );
-````
+```
 
 ## Parameters
 
@@ -102,24 +102,24 @@ Note that the mutex associated with the bag must be held. For more  information,
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksallocateobjectbag.md">KsAllocateObjectBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560941">KsAddItemToObjectBag</a>
 
 
 
-<a href="..\ks\nf-ks-ksfreeobjectbag.md">KsFreeObjectBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560965">KsAllocateObjectBag</a>
 
 
 
-<a href="..\ks\nf-ks-ksmergeautomationtables.md">KsMergeAutomationTables</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561031">KsCopyObjectBagItems</a>
 
 
 
-<a href="..\ks\nf-ks-ksadditemtoobjectbag.md">KsAddItemToObjectBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561695">KsDiscard</a>
 
 
 
-<a href="..\ks\nf-ks-kscopyobjectbagitems.md">KsCopyObjectBagItems</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562562">KsFreeObjectBag</a>
 
 
 
-<a href="..\ks\nf-ks-ksdiscard.md">KsDiscard</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563395">KsMergeAutomationTables</a>

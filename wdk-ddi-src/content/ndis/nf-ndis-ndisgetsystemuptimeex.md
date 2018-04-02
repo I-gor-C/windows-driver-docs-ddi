@@ -7,7 +7,7 @@ old-location: netvista\ndisgetsystemuptimeex.htm
 old-project: netvista
 ms.assetid: a52087b5-81de-4945-9d1e-bea67915ced4
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisGetSystemUpTimeEx, NdisGetSystemUpTimeEx function [Network Drivers Starting with Windows Vista], ndis/NdisGetSystemUpTimeEx, ndis_timer_ref_d487ece6-5ab0-4386-bd6e-1eaecbabf903.xml, netvista.ndisgetsystemuptimeex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The
 
 ## Syntax
 
-````
-VOID NdisGetSystemUpTimeEx(
-  _Out_ PLARGE_INTEGER pSystemUpTime
+```
+void NdisGetSystemUpTimeEx(
+  PLARGE_INTEGER pSystemUpTime
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: buses\evt_ucx_endpoint_get_isoch_transfer_path_delays_.htm
 old-project: usbref
 ms.assetid: E400CCAE-8F0F-4814-8B63-EB4E116543A2
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: EVT_UCX_ENDPOINT_GET_ISOCH_TRANSFER_PATH_DELAYS, EvtUcxEndpointGetIsochTransferPathDelays, EvtUcxEndpointGetIsochTransferPathDelays callback function [Buses], buses.evt_ucx_endpoint_get_isoch_transfer_path_delays_, ucxendpoint/EvtUcxEndpointGetIsochTransferPathDelays
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ NTSTATUS EvtUcxEndpointGetIsochTransferPathDelays(
 
 `UcxEndpointTransferPathDelays`
 
-A pointer to a <a href="..\ucxendpoint\ns-ucxendpoint-_ucx_endpoint_isoch_transfer_path_delays.md">UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS</a> structure that contains transfer path delay values.
+A pointer to a <a href="https://msdn.microsoft.com/5001C27B-EA5F-43C4-AD59-84B42041262E">UCX_ENDPOINT_ISOCH_TRANSFER_PATH_DELAYS</a> structure that contains transfer path delay values.
 
 
 ## Return Value
@@ -77,7 +77,7 @@ If the operation is successful, the callback function must return STATUS_SUCCESS
 
 ## Remarks
 
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>
  method.
 
 ## Requirements
@@ -92,8 +92,8 @@ The UCX client driver registers this callback function with the USB host control
 
 ## See Also
 
-<a href="..\usb\ns-usb-_urb_get_isoch_pipe_transfer_path_delays.md">_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS</a>
-
-
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-client-drivers-for-ma-usb">USB client drivers for Media-Agnostic (MA-USB)</a>
+
+
+
+<a href="https://msdn.microsoft.com/70B74088-C537-4104-A535-F41A24BB72A5">_URB_GET_ISOCH_PIPE_TRANSFER_PATH_DELAYS</a>

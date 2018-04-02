@@ -7,7 +7,7 @@ old-location: storage\ataportregistrychannelsubkeyread.htm
 old-project: storage
 ms.assetid: 50fc7a8c-64ee-4a0c-9106-a071a7cefc34
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortRegistryChannelSubkeyRead, AtaPortRegistryChannelSubkeyRead routine [Storage Devices], atartns_35b220a8-6f27-43c3-90b7-fc0ef628b270.xml, irb/AtaPortRegistryChannelSubkeyRead, storage.ataportregistrychannelsubkeyread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,16 +50,16 @@ The <b>AtaPortRegistryChannelSubKeyRead</b> routine reads the data that is assoc
 
 ## Syntax
 
-````
-BOOLEAN __inline AtaPortRegistryChannelSubkeyRead(
-  _In_      PVOID  ChannelExtension,
-  _In_      UCHAR  ControllerNumber,
-  _In_      PCHAR  ValueName,
-  _In_      UCHAR  ValueType,
-  _Out_opt_ PUCHAR Buffer,
-  _Inout_   PULONG Length
+```
+_IRQL_requires_same_ BOOLEAN AtaPortRegistryChannelSubkeyRead(
+  PVOID  ChannelExtension,
+  UCHAR  ControllerNumber,
+  PCHAR  ValueName,
+  UCHAR  ValueType,
+  PUCHAR Buffer,
+  PULONG BufferLength
 );
-````
+```
 
 ## Parameters
 
@@ -131,7 +131,7 @@ TBD
 
 ## Remarks
 
-The buffer that is pointed to by <i>Buffer </i>must be allocated by using <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>. 
+The buffer that is pointed to by <i>Buffer </i>must be allocated by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550200">AtaPortRegistryAllocateBuffer</a>. 
 
 The miniport driver must call <b>AtaPortRegistryChannelSubKeyRead</b> either during the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a> routine or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a> routine or it will return <b>FALSE</b>. Additionally, the miniport driver can only call <b>AtaPortRegistryChannelSubKeyRead</b> from its <b><i>IdeHwControl</i></b> routine if its <b><i>IdeHwControl</i></b> routine was called and had a value of either <b>StartChannel </b>or <b>StopChannel</b> in its <i>ControlAction </i>parameter.
 
@@ -147,11 +147,11 @@ The miniport driver must call <b>AtaPortRegistryChannelSubKeyRead</b> either dur
 
 
 
-<a href="..\irb\nf-irb-ataportregistrychannelsubkeywrite.md">AtaPortRegistryChannelSubKeyWrite</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550200">AtaPortRegistryAllocateBuffer</a>
 
 
 
-<a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550204">AtaPortRegistryChannelSubKeyWrite</a>
 
 
 

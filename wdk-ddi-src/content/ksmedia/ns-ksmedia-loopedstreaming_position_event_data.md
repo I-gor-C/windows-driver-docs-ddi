@@ -7,7 +7,7 @@ old-location: audio\loopedstreaming_position_event_data.htm
 old-project: audio
 ms.assetid: c9ce4ff9-1c69-40c4-8d82-d1ec4e134f34
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PLOOPEDSTREAMING_POSITION_EVENT_DATA, LOOPEDSTREAMING_POSITION_EVENT_DATA, LOOPEDSTREAMING_POSITION_EVENT_DATA structure [Audio Devices], PLOOPEDSTREAMING_POSITION_EVENT_DATA, PLOOPEDSTREAMING_POSITION_EVENT_DATA structure pointer [Audio Devices], aud-prop_637593e4-087a-4856-95e2-cb99f9df3d0c.xml, audio.loopedstreaming_position_event_data, ksmedia/LOOPEDSTREAMING_POSITION_EVENT_DATA, ksmedia/PLOOPEDSTREAMING_POSITION_EVENT_DATA"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,20 +47,20 @@ req.typenames: LOOPEDSTREAMING_POSITION_EVENT_DATA, *PLOOPEDSTREAMING_POSITION_E
 The LOOPEDSTREAMING_POSITION_EVENT_DATA structure describes a position event in a looped buffer.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct LOOPEDSTREAMING_POSITION_EVENT_DATA {
   KSEVENTDATA KsEventData;
-  ULONGLONG   Position;
-  DWORDLONG   Position;
-} LOOPEDSTREAMING_POSITION_EVENT_DATA, *PLOOPEDSTREAMING_POSITION_EVENT_DATA;
-````
+  ULONGLONG   Position;
+  DWORDLONG   Position;
+} *PLOOPEDSTREAMING_POSITION_EVENT_DATA, LOOPEDSTREAMING_POSITION_EVENT_DATA;
+```
 
 ## Members
 
 
 `KsEventData`
 
-Specifies the type of notification that the system will send to the client when the event occurs. For more information, see <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>.
+Specifies the type of notification that the system will send to the client when the event occurs. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a>.
 
 ## Remarks
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537131">KSEVENT_LOOPEDSTREAMING_POSITION</a> event uses the LOOPEDSTREAMING_POSITION_EVENT_DATA structure. This type of event occurs only in looped buffers. A looped buffer is a data buffer for an audio stream of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff563381">KSINTERFACE_STANDARD_LOOPED_STREAMING</a>.
@@ -78,7 +78,7 @@ For more information about looped buffers, buffer positions, and play and record
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537131">KSEVENT_LOOPEDSTREAMING_POSITION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a>
 
 
 
@@ -86,7 +86,7 @@ For more information about looped buffers, buffer positions, and play and record
 
 
 
-<a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537131">KSEVENT_LOOPEDSTREAMING_POSITION</a>
 
 
 

@@ -44,17 +44,17 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
-# SendRecv method
+# IBidiSpl::SendRecv method
 The <b>SendRecv</b> method sends a bidi request to the printer.
 
 ## Syntax
 
-````
+```
 HRESULT SendRecv(
-  [in] const LPCWSTR      pszAction,
-  [in]       IBidiRequest *pRequest
+  const LPCWSTR pszAction,
+  IBidiRequest  *pRequest
 );
-````
+```
 
 ## Parameters
 
@@ -168,4 +168,4 @@ The BIDI_ACTION_* values are case insensitive strings.
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144980">IBidiSpl</a>

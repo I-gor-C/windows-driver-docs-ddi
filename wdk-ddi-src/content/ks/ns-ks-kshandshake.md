@@ -47,13 +47,13 @@ req.typenames: KSHANDSHAKE, *PKSHANDSHAKE
 The KSHANDSHAKE structure is used to pass information back and forth while pins are handshaking in an attempt to negotiate a private interface.
 
 ## Syntax
-````
-typedef struct {
-  GUID  ProtocolId;
+```
+typedef struct KSHANDSHAKE {
+  GUID  ProtocolId;
   PVOID Argument1;
   PVOID Argument2;
-} KSHANDSHAKE, *PKSHANDSHAKE;
-````
+}  *PKSHANDSHAKE;
+```
 
 ## Members
 
@@ -71,7 +71,7 @@ A pointer to an interface-dependent argument. Most often, this is used to pass b
 A pointer to an interface-dependent argument.
 
 ## Remarks
-See <a href="..\ks\nf-ks-kspinhandshake.md">KsPinHandshake</a> for more information about negotiating private interfaces between AVStream pins.
+See <a href="https://msdn.microsoft.com/library/windows/hardware/ff563519">KsPinHandshake</a> for more information about negotiating private interfaces between AVStream pins.
 
 Pin handshaking is a concept that is usable only between two pins that support IOCTL_KS_HANDSHAKE. Currently, only AVStream pins support this interface; thus this is only useful for negotiating private interfaces between two AVStream pins. Currently, connections between AVStream pins are negotiated via this mechanism.
 
@@ -83,8 +83,8 @@ Pin handshaking is a concept that is usable only between two pins that support I
 
 ## See Also
 
-<a href="..\ks\ni-ks-ioctl_ks_handshake.md">IOCTL_KS_HANDSHAKE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560813">IOCTL_KS_HANDSHAKE</a>
 
 
 
-<a href="..\ks\nf-ks-kspinhandshake.md">KsPinHandshake</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563519">KsPinHandshake</a>

@@ -47,7 +47,7 @@ req.typenames: TRANSPORTSTATUS, *PTRANSPORTSTATUS
 The TRANSPORTSTATUS structure describes the current transport status.
 
 ## Syntax
-````
+```
 typedef struct tagTRANSPORTSTATUS {
   LONG Mode;
   LONG LastError;
@@ -62,8 +62,8 @@ typedef struct tagTRANSPORTSTATUS {
   LONG MediaType;
   LONG LinkMode;
   LONG NotifyOn;
-} TRANSPORTSTATUS, *PTRANSPORTSTATUS;
-````
+} *PTRANSPORTSTATUS, TRANSPORTSTATUS;
+```
 
 ## Members
 

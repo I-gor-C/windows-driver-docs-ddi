@@ -52,12 +52,12 @@ PosCxCleanupEvents is called to clean up all pending events for a given
 
 ## Syntax
 
-````
-VOID PosCxCleanupEvents(
-  _In_ WDFDEVICE     device,
-  _In_ WDFFILEOBJECT fileObject
+```
+void PosCxCleanupEvents(
+  WDFDEVICE     device,
+  WDFFILEOBJECT fileObject
 );
-````
+```
 
 ## Parameters
 

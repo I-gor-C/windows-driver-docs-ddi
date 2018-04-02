@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+req.irql: 
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -48,16 +48,16 @@ req.product: Windows 10 or later.
 The <b>SPB_TRANSFER_BUFFER_FORMAT</b> enumeration specifies the format of the buffer that is described by an <a href="https://msdn.microsoft.com/library/windows/hardware/hh406215">SPB_TRANSFER_BUFFER</a> structure.
 
 ## Syntax
-````
-typedef enum  { 
-  SpbTransferBufferFormatInvalid,
-  SpbTransferBufferFormatSimple,
-  SpbTransferBufferFormatList,
-  SpbTransferBufferFormatSimpleNonPaged,
-  SpbTransferBufferFormatMdl,
+```
+typedef enum SPB_TRANSFER_BUFFER_FORMAT {
+  SpbTransferBufferFormatInvalid         ,
+  SpbTransferBufferFormatSimple          ,
+  SpbTransferBufferFormatList            ,
+  SpbTransferBufferFormatSimpleNonPaged  ,
+  SpbTransferBufferFormatMdl             ,
   SpbTransferBufferFormatMax
-} SPB_TRANSFER_BUFFER_FORMAT;
-````
+}  *PSPB_TRANSFER_BUFFER_FORMAT;
+```
 
 ## Constants
 

@@ -7,7 +7,7 @@ old-location: kernel\io_session_connect_info.htm
 old-project: kernel
 ms.assetid: f9d7ffae-aa9e-44d6-b659-cb5a9068f1d7
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PIO_SESSION_CONNECT_INFO, IO_SESSION_CONNECT_INFO, IO_SESSION_CONNECT_INFO structure [Kernel-Mode Driver Architecture], PIO_SESSION_CONNECT_INFO, PIO_SESSION_CONNECT_INFO structure pointer [Kernel-Mode Driver Architecture], _IO_SESSION_CONNECT_INFO, kernel.io_session_connect_info, kstruct_b_ef736de7-23b2-4d43-837f-ea879d963ef8.xml, wdm/IO_SESSION_CONNECT_INFO, wdm/PIO_SESSION_CONNECT_INFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The <b>IO_SESSION_CONNECT_INFO</b> structure provides information about a user session.
 
 ## Syntax
-````
+```
 typedef struct _IO_SESSION_CONNECT_INFO {
-  ULONG   SessionId;
+  ULONG   SessionId;
   BOOLEAN LocalSession;
 } IO_SESSION_CONNECT_INFO, *PIO_SESSION_CONNECT_INFO;
-````
+```
 
 ## Members
 
@@ -67,7 +67,7 @@ Session ID. This member contains the <a href="http://go.microsoft.com/fwlink/p/?
 Indicates whether the user session is a local session or a remote session. If <b>TRUE</b>, the user is logged on locally. If <b>FALSE</b>, the user is logged on remotely.
 
 ## Remarks
-If a driver is registered to receive notifications of events in a user session, and if this session enters the <i>connected</i> state, the I/O manager calls the driver's <a href="..\wdm\nc-wdm-io_session_notification_function.md">IO_SESSION_NOTIFICATION_FUNCTION</a> function. For this call, the I/O manager sets the function's <i>Event</i> parameter to <b>IoSessionEventConnected</b>. Additionally, the I/O manager sets the function's <i>NotificationPayload</i> parameter to point to an <b>IO_SESSION_CONNECT_INFO</b> structure that contains information about the user session. For more information about <b>IoSessionEventConnected</b>, see <a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>.
+If a driver is registered to receive notifications of events in a user session, and if this session enters the <i>connected</i> state, the I/O manager calls the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff550626">IO_SESSION_NOTIFICATION_FUNCTION</a> function. For this call, the I/O manager sets the function's <i>Event</i> parameter to <b>IoSessionEventConnected</b>. Additionally, the I/O manager sets the function's <i>NotificationPayload</i> parameter to point to an <b>IO_SESSION_CONNECT_INFO</b> structure that contains information about the user session. For more information about <b>IoSessionEventConnected</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550623">IO_SESSION_EVENT</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,8 +77,8 @@ If a driver is registered to receive notifications of events in a user session, 
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-io_session_notification_function.md">IO_SESSION_NOTIFICATION_FUNCTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550623">IO_SESSION_EVENT</a>
 
 
 
-<a href="..\wdm\ne-wdm-_io_session_event.md">IO_SESSION_EVENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550626">IO_SESSION_NOTIFICATION_FUNCTION</a>

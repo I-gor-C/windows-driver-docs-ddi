@@ -52,12 +52,12 @@ The <b>WDF_READ_PORT_UCHAR</b>  function reads a byte from the specified port ad
 
 ## Syntax
 
-````
+```
 UCHAR WDF_READ_PORT_UCHAR(
-  _In_ WDFDEVICE Device,
-  _In_ PUCHAR    Port
+  WDFDEVICE Device,
+  PUCHAR    Port
 );
-````
+```
 
 ## Parameters
 

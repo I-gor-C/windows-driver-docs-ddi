@@ -47,13 +47,13 @@ req.typenames: KSCAMERA_PERFRAMESETTING_CAP_HEADER, *PKSCAMERA_PERFRAMESETTING_C
 This structure contains the header information for the per frame settings capabilities.
 
 ## Syntax
-````
-typedef struct {
-  ULONG     Size;
-  ULONG     ItemCount;
+```
+typedef struct KSCAMERA_PERFRAMESETTING_CAP_HEADER {
+  ULONG     Size;
+  ULONG     ItemCount;
   ULONGLONG Flags;
-} KSCAMERA_PERFRAMESETTING_CAP_HEADER, *PKSCAMERA_PERFRAMESETTING_CAP_HEADER;
-````
+} *PKSCAMERA_PERFRAMESETTING_CAP_HEADER, KSCAMERA_PERFRAMESETTING_CAP_HEADER;
+```
 
 ## Members
 

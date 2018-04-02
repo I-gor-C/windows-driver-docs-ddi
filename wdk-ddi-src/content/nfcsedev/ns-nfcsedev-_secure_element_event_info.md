@@ -47,15 +47,14 @@ req.typenames: SECURE_ELEMENT_EVENT_INFO, *PSECURE_ELEMENT_EVENT_INFO
 This structure provides information about a secure element event.
 
 ## Syntax
-````
+```
 typedef struct _SECURE_ELEMENT_EVENT_INFO {
-  GUID                                     guidSecureElementId;
-  SECURE_ELEMENT_EVENT_TYPE                eEventType;
-  DWORD                                    cbEventData;
-  _Field_size_bytes_(cbEventData)
-    BYTE pbEventData[ANYSIZE_ARRAY];
-} SECURE_ELEMENT_EVENT_INFO, *PSECURE_ELEMENT_EVENT_INFO;
-````
+  GUID                      guidSecureElementId;
+  SECURE_ELEMENT_EVENT_TYPE eEventType;
+  DWORD                     cbEventData;
+  BYTE                      pbEventData[ANYSIZE_ARRAY];
+} *PSECURE_ELEMENT_EVENT_INFO, SECURE_ELEMENT_EVENT_INFO;
+```
 
 ## Members
 
@@ -66,7 +65,7 @@ This is a unique identifier for the secure element.
 
 `eEventType`
 
-This is an event type. For more information about the types, see the <a href="..\nfcsedev\ne-nfcsedev-_secure_element_event_type.md">SECURE_ELEMENT_EVENT_TYPE</a> enumeration topic.
+This is an event type. For more information about the types, see the <a href="https://msdn.microsoft.com/library/windows/hardware/dn905623">SECURE_ELEMENT_EVENT_TYPE</a> enumeration topic.
 
 `cbEventData`
 

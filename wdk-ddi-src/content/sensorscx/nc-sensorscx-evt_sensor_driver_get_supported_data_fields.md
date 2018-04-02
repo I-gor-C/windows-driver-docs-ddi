@@ -71,7 +71,7 @@ A reference to a sensor object.
 
 `pDataFields`
 
-A list of data fields that are supported by the given <b>Sensor</b>. For more information, see <a href="..\sensorsdef\ns-sensorsdef-sensor_property_list.md">SENSOR_PROPERTY_LIST</a>.
+A list of data fields that are supported by the given <b>Sensor</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn946699">SENSOR_PROPERTY_LIST</a>.
 
 `pSize`
 
@@ -97,8 +97,8 @@ This function must be implemented by the driver and is called by the class exten
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946699">SENSOR_PROPERTY_LIST</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn946691">Sensor data fields</a>
-
-
-
-<a href="..\sensorsdef\ns-sensorsdef-sensor_property_list.md">SENSOR_PROPERTY_LIST</a>

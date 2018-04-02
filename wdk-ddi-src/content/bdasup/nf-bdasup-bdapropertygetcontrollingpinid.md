@@ -50,13 +50,13 @@ The <b>BdaPropertyGetControllingPinId</b> function retrieves the identifier of a
 
 ## Syntax
 
-````
+```
 NTSTATUS BdaPropertyGetControllingPinId(
-  _In_      PIRP              Irp,
-  _In_      PKSP_BDA_NODE_PIN pProperty,
-  _Out_opt_ PULONG            pulControllingPinId
+  PIRP              Irp,
+  PKSP_BDA_NODE_PIN Property,
+  PULONG            pulControllingPinId
 );
-````
+```
 
 ## Parameters
 
@@ -100,4 +100,4 @@ A BDA minidriver calls the <b>BdaPropertyGetControllingPinId</b> function to ret
 
 
 
-<a href="..\bdamedia\ns-bdamedia-_ksp_bda_node_pin.md">KSP_BDA_NODE_PIN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566716">KSP_BDA_NODE_PIN</a>

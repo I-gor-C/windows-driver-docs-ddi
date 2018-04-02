@@ -133,4 +133,4 @@ If there is no intersection.
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspindataintersection.md">KsPinDataIntersection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563496">KsPinDataIntersection</a>

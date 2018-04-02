@@ -3,12 +3,12 @@ UID: NS:gnssdriver.GNSS_NI_REQUEST_PARAM
 title: GNSS_NI_REQUEST_PARAM
 author: windows-driver-content
 description: This structure contains the NI request parameters.
-old-location: gnss\gnss_ni_request_param.htm
-old-project: gnss
+old-location: sensors\gnss_ni_request_param.htm
+old-project: sensors
 ms.assetid: 0528EEE6-31D6-4CF6-8192-3557C28B4D10
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: "*PGNSS_NI_REQUEST_PARAM, GNSS_NI_REQUEST_PARAM, GNSS_NI_REQUEST_PARAM structure [Sensor Devices], PGNSS_NI_REQUEST_PARAM, PGNSS_NI_REQUEST_PARAM structure pointer [Sensor Devices], gnss.gnss_ni_request_param, gnssdriver/GNSS_NI_REQUEST_PARAM, gnssdriver/PGNSS_NI_REQUEST_PARAM"
+ms.date: 2/22/2018
+ms.keywords: "*PGNSS_NI_REQUEST_PARAM, GNSS_NI_REQUEST_PARAM, GNSS_NI_REQUEST_PARAM structure [Sensor Devices], PGNSS_NI_REQUEST_PARAM, PGNSS_NI_REQUEST_PARAM structure pointer [Sensor Devices], gnssdriver/GNSS_NI_REQUEST_PARAM, gnssdriver/PGNSS_NI_REQUEST_PARAM, sensors.gnss_ni_request_param"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -47,23 +47,23 @@ req.typenames: GNSS_NI_REQUEST_PARAM, *PGNSS_NI_REQUEST_PARAM
 This structure contains the NI request parameters.
 
 ## Syntax
-````
-typedef struct {
-  ULONG                     Size;
-  ULONG                     Version;
-  ULONG                     RequestId;
-  GNSS_NI_REQUEST_TYPE      RequestType;
+```
+typedef struct GNSS_NI_REQUEST_PARAM {
+  ULONG                     Size;
+  ULONG                     Version;
+  ULONG                     RequestId;
+  GNSS_NI_REQUEST_TYPE      RequestType;
   GNSS_NI_NOTIFICATION_TYPE NotificationType;
-  GNSS_NI_PLANE_TYPE        RequestPlaneType;
+  GNSS_NI_PLANE_TYPE        RequestPlaneType;
   union {
-    GNSS_SUPL_NI_INFO  SuplNiInfo;
-    GNSS_CP_NI_INFO    CpNiInfo;
+    GNSS_CP_NI_INFO    CpNiInfo;
+    GNSS_SUPL_NI_INFO  SuplNiInfo;
     GNSS_V2UPL_NI_INFO V2UplNiInfo;
   };
-  ULONG                     ResponseTimeInSec;
-  ULONG                     EmergencyLocation;
-} GNSS_NI_REQUEST_PARAM, *PGNSS_NI_REQUEST_PARAM;
-````
+  ULONG                     ResponseTimeInSec;
+  BOOL                      EmergencyLocation;
+}  *PGNSS_NI_REQUEST_PARAM;
+```
 
 ## Members
 
@@ -82,15 +82,15 @@ The ID that uniquely identifies the NI request. It is used later by the NI respo
 
 `RequestType`
 
-A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_request_type.md">GNSS_NI_REQUEST_TYPE</a> enumeration value that specifies the request type.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/dn925194">GNSS_NI_REQUEST_TYPE</a> enumeration value that specifies the request type.
 
 `NotificationType`
 
-A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_notification_type.md">GNSS_NI_NOTIFICATION_TYPE</a> enumeration value that specifies the notification type.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/dn925185">GNSS_NI_NOTIFICATION_TYPE</a> enumeration value that specifies the notification type.
 
 `RequestPlaneType`
 
-A <a href="..\gnssdriver\ne-gnssdriver-gnss_ni_plane_type.md">GNSS_NI_PLANE_TYPE</a> enumeration value that specifies the plane type.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/dn925188">GNSS_NI_PLANE_TYPE</a> enumeration value that specifies the plane type.
 
 `ResponseTimeInSec`
 

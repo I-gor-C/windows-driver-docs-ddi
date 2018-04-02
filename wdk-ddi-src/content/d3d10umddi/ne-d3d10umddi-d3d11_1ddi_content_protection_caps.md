@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_content_protection_caps.htm
 old-project: display
 ms.assetid: de2d5e08-1c8f-4c67-91e0-db7552b0b883
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D11_1DDI_CONTENT_PROTECTION_CAPS, D3D11_1DDI_CONTENT_PROTECTION_CAPS enumeration [Display Devices], D3D11_1DDI_CONTENT_PROTECTION_CAPS_CONTENT_KEY, D3D11_1DDI_CONTENT_PROTECTION_CAPS_DECRYPTION_BLT, D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK, D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK_KEY, D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPT_SLICEDATA_ONLY, D3D11_1DDI_CONTENT_PROTECTION_CAPS_FRESHEN_SESSION_KEY, D3D11_1DDI_CONTENT_PROTECTION_CAPS_HARDWARE, D3D11_1DDI_CONTENT_PROTECTION_CAPS_PARTIAL_DECRYPTION, D3D11_1DDI_CONTENT_PROTECTION_CAPS_PROTECTION_ALWAYS_ON, D3D11_1DDI_CONTENT_PROTECTION_CAPS_SEQUENTIAL_CTR_IV, D3D11_1DDI_CONTENT_PROTECTION_CAPS_SOFTWARE, D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_DRM_COMMUNICATION, D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_PAGEABLE, D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_TRANSITION, D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECT_UNCOMPRESSED, D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_TEARDOWN, d3d10umddi/, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS_CONTENT_KEY, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS_DECRYPTION_BLT, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK_KEY, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPT_SLICEDATA_ONLY, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS_FRESHEN_SESSION_KEY, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS_HARDWARE, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS_PARTIAL_DECRYPTION, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS_PROTECTION_ALWAYS_ON, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS_SEQUENTIAL_CTR_IV, d3d10umddi/D3D11_1DDI_CONTENT_PROTECTION_CAPS_SOFTWARE, d3d10umddi/D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_DRM_COMMUNICATION, d3d10umddi/D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_PAGEABLE, d3d10umddi/D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_TRANSITION, d3d10umddi/D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECT_UNCOMPRESSED, d3d10umddi/D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_TEARDOWN, display.d3d11_1ddi_content_protection_caps
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,29 +47,26 @@ req.typenames: D3D11_1DDI_CONTENT_PROTECTION_CAPS
 Describes content-protection capabilities.
 
 ## Syntax
-````
-typedef enum D3D11_1DDI_CONTENT_PROTECTION_CAPS { 
-  D3D11_1DDI_CONTENT_PROTECTION_CAPS_SOFTWARE                                 = 0x00000001,
-  D3D11_1DDI_CONTENT_PROTECTION_CAPS_HARDWARE                                 = 0x00000002,
-  D3D11_1DDI_CONTENT_PROTECTION_CAPS_PROTECTION_ALWAYS_ON                     = 0x00000004,
-  D3D11_1DDI_CONTENT_PROTECTION_CAPS_PARTIAL_DECRYPTION                       = 0x00000008,
-  D3D11_1DDI_CONTENT_PROTECTION_CAPS_CONTENT_KEY                              = 0x00000010,
-  D3D11_1DDI_CONTENT_PROTECTION_CAPS_FRESHEN_SESSION_KEY                      = 0x00000020,
-  D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK                      = 0x00000040,
-  D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK_KEY                  = 0x00000080,
-  D3D11_1DDI_CONTENT_PROTECTION_CAPS_SEQUENTIAL_CTR_IV                        = 0x00000100,
-  D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPT_SLICEDATA_ONLY                   = 0x00000200,
-  D3D11_1DDI_CONTENT_PROTECTION_CAPS_DECRYPTION_BLT                           = 0x00000400,
-#if D3D11DDI_MINOR_HEADER_VERSION >= 5
-  D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECT_UNCOMPRESSED         = 0x00000800,
-  D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_PAGEABLE    = 0x00001000,
-  D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_TRANSITION  = 0x00002000,
-  D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_TEARDOWN                     = 0x00004000,
-  D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_DRM_COMMUNICATION            = 0x00008000,
-#endif 
-  
-} D3D11_1DDI_CONTENT_PROTECTION_CAPS;
-````
+```
+typedef enum D3D11_1DDI_CONTENT_PROTECTION_CAPS {
+  D3D11_1DDI_CONTENT_PROTECTION_CAPS_SOFTWARE                                 ,
+  D3D11_1DDI_CONTENT_PROTECTION_CAPS_HARDWARE                                 ,
+  D3D11_1DDI_CONTENT_PROTECTION_CAPS_PROTECTION_ALWAYS_ON                     ,
+  D3D11_1DDI_CONTENT_PROTECTION_CAPS_PARTIAL_DECRYPTION                       ,
+  D3D11_1DDI_CONTENT_PROTECTION_CAPS_CONTENT_KEY                              ,
+  D3D11_1DDI_CONTENT_PROTECTION_CAPS_FRESHEN_SESSION_KEY                      ,
+  D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK                      ,
+  D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK_KEY                  ,
+  D3D11_1DDI_CONTENT_PROTECTION_CAPS_SEQUENTIAL_CTR_IV                        ,
+  D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPT_SLICEDATA_ONLY                   ,
+  D3D11_1DDI_CONTENT_PROTECTION_CAPS_DECRYPTION_BLT                           ,
+  D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECT_UNCOMPRESSED         ,
+  D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_PAGEABLE    ,
+  D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_TRANSITION  ,
+  D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_TEARDOWN                     ,
+  D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_DRM_COMMUNICATION
+} ;
+```
 
 ## Constants
 
@@ -107,7 +104,7 @@ typedef enum D3D11_1DDI_CONTENT_PROTECTION_CAPS {
             
                 <tr>
                     <td>D3D11_1DDI_CONTENT_PROTECTION_CAPS_ENCRYPTED_READ_BACK</td>
-                    <td>The driver can read back encrypted data from a protected surface. For more information, see <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_encryptionblt.md">EncryptionBlt(D3D11_1)</a>.</td>
+                    <td>The driver can read back encrypted data from a protected surface. For more information, see <a href="https://msdn.microsoft.com/ea6f1b8c-d65a-4d6d-a7ae-998374bf5bfb">EncryptionBlt(D3D11_1)</a>.</td>
                 </tr>
             
                 <tr>
@@ -117,7 +114,7 @@ typedef enum D3D11_1DDI_CONTENT_PROTECTION_CAPS {
             
                 <tr>
                     <td>D3D11_1DDI_CONTENT_PROTECTION_CAPS_SEQUENTIAL_CTR_IV</td>
-                    <td>If the encryption type is <b>D3D11_1DDI_CRYPTO_TYPE_AES128_CTR</b>, the application must use a sequential count in the <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv.md">D3D11_1DDI_AES_CTR_IV</a> structure. For more information, see the Remarks for the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_encryptionblt.md">EncryptionBlt(D3D11_1)</a> function.</td>
+                    <td>If the encryption type is <b>D3D11_1DDI_CRYPTO_TYPE_AES128_CTR</b>, the application must use a sequential count in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406334">D3D11_1DDI_AES_CTR_IV</a> structure. For more information, see the Remarks for the <a href="https://msdn.microsoft.com/ea6f1b8c-d65a-4d6d-a7ae-998374bf5bfb">EncryptionBlt(D3D11_1)</a> function.</td>
                 </tr>
             
                 <tr>
@@ -127,7 +124,7 @@ typedef enum D3D11_1DDI_CONTENT_PROTECTION_CAPS {
             
                 <tr>
                     <td>D3D11_1DDI_CONTENT_PROTECTION_CAPS_DECRYPTION_BLT</td>
-                    <td>The driver supports calls to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_decryptionblt.md">DecryptionBlt(D3D11_1)</a> function.</td>
+                    <td>The driver supports calls to the <a href="https://msdn.microsoft.com/36aeb826-251e-404e-8ce3-6b2246ff07bc">DecryptionBlt(D3D11_1)</a> function.</td>
                 </tr>
             
                 <tr>
@@ -150,7 +147,7 @@ Supported starting with Windows 10.</td>
             
                 <tr>
                     <td>D3DWDDM2_0DDI_CONTENT_PROTECTION_CAPS_HARDWARE_PROTECTED_MEMORY_TRANSITION</td>
-                    <td>The hardware or driver can transition allocations between protected and unprotected states by calling <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm2_0ddi_sethardwareprotection.md">SetHardwareProtection</a>  without requiring the allocation to be re-created.
+                    <td>The hardware or driver can transition allocations between protected and unprotected states by calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn906369">SetHardwareProtection</a>  without requiring the allocation to be re-created.
 
 Supported starting with Windows 10.</td>
                 </tr>
@@ -179,16 +176,16 @@ Supported starting with Windows 10.</td>
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_decryptionblt.md">DecryptionBlt(D3D11_1)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406334">D3D11_1DDI_AES_CTR_IV</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_encryptionblt.md">EncryptionBlt(D3D11_1)</a>
+<a href="https://msdn.microsoft.com/36aeb826-251e-404e-8ce3-6b2246ff07bc">DecryptionBlt(D3D11_1)</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm2_0ddi_sethardwareprotection.md">SetHardwareProtection</a>
+<a href="https://msdn.microsoft.com/ea6f1b8c-d65a-4d6d-a7ae-998374bf5bfb">EncryptionBlt(D3D11_1)</a>
 
 
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_aes_ctr_iv.md">D3D11_1DDI_AES_CTR_IV</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906369">SetHardwareProtection</a>

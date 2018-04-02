@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvReadItemProperties method
+# IWiaMiniDrv::drvReadItemProperties method
 The <b>IWiaMiniDrv::drvReadItemProperties</b> method reads the driver item properties that need to be updated.
 
 ## Syntax
 
-````
+```
 HRESULT drvReadItemProperties(
-  [in]        BYTE     *pWiasContext,
-  [in]        LONG     lFlags,
-  [in]        ULONG    nPropSpec,
-  [in]  const PROPSPEC *pPropSpec,
-  [out]       LONG     *plDevErrVal
+  BYTE           *__MIDL__IWiaMiniDrv0025,
+  LONG           __MIDL__IWiaMiniDrv0026,
+  ULONG          __MIDL__IWiaMiniDrv0027,
+  const PROPSPEC *__MIDL__IWiaMiniDrv0028,
+  LONG           *__MIDL__IWiaMiniDrv0029
 );
-````
+```
 
 ## Parameters
 
@@ -102,19 +102,7 @@ In this method, the minidriver should read the requested properties from the dev
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-
-
-
-<a href="..\wiamdef\nf-wiamdef-wiaswritemultiple.md">wiasWriteMultiple</a>
-
-
-
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropguid.md">wiasWritePropGuid</a>
-
-
-
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropstr.md">wiasWritePropStr</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 
@@ -122,16 +110,28 @@ In this method, the minidriver should read the requested properties from the dev
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswriteproplong.md">wiasWritePropLong</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545020">IWiaMiniDrv::drvWriteItemProperties</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropfloat.md">wiasWritePropFloat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549475">wiasWriteMultiple</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropbin.md">wiasWritePropBin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549500">wiasWritePropBin</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549507">wiasWritePropFloat</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549512">wiasWritePropGuid</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549515">wiasWritePropLong</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549525">wiasWritePropStr</a>

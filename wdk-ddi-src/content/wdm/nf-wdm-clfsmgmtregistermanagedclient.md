@@ -7,7 +7,7 @@ old-location: kernel\clfsmgmtregistermanagedclient.htm
 old-project: kernel
 ms.assetid: 6f450117-9bd2-4021-b8f1-393db5784136
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsMgmtRegisterManagedClient, ClfsMgmtRegisterManagedClient routine [Kernel-Mode Driver Architecture], Clfs_management_9cd62567-e8c0-4a27-a3fd-153f0cdc9516.xml, kernel.clfsmgmtregistermanagedclient, wdm/ClfsMgmtRegisterManagedClient
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,13 +51,13 @@ The <b>ClfsMgmtRegisterManagedClient</b> routine creates a client that will mana
 
 ## Syntax
 
-````
-NTSTATUS ClfsMgmtRegisterManagedClient(
-  _In_  PLOG_FILE_OBJECT               LogFile,
-  _In_  PCLFS_MGMT_CLIENT_REGISTRATION RegistrationData,
-  _Out_ PCLFS_MGMT_CLIENT              Client
+```
+CLFSUSER_API NTSTATUS ClfsMgmtRegisterManagedClient(
+  PLOG_FILE_OBJECT               LogFile,
+  PCLFS_MGMT_CLIENT_REGISTRATION RegistrationData,
+  PCLFS_MGMT_CLIENT              ClientCookie
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff55
 
 `RegistrationData`
 
-An instance of the <a href="..\wdm\ns-wdm-_clfs_mgmt_client_registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a> structure that contains the functions that will be used to manage the log.
+An instance of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541841">CLFS_MGMT_CLIENT_REGISTRATION</a> structure that contains the functions that will be used to manage the log.
 
 `ClientCookie`
 
@@ -152,8 +152,8 @@ More than one client can register with a log stream.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541841">CLFS_MGMT_CLIENT_REGISTRATION</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554316">LOG_FILE_OBJECT</a>
-
-
-
-<a href="..\wdm\ns-wdm-_clfs_mgmt_client_registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a>

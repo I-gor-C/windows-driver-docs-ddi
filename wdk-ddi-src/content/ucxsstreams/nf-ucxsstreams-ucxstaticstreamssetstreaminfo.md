@@ -7,7 +7,7 @@ old-location: buses\_ucxstaticstreamssetstreaminfo.htm
 old-project: usbref
 ms.assetid: 40AE9327-ABB7-4A63-AC90-494E2BC26C08
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UcxStaticStreamsSetStreamInfo, UcxStaticStreamsSetStreamInfo method [Buses], buses._ucxstaticstreamssetstreaminfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ Sets stream information for each stream enabled by the client driver.
 
 ## Syntax
 
-````
-inline void UcxStaticStreamsSetStreamInfo(
-  [in] UCXSSTREAMS  StaticStreams,
-  [in] PSTREAM_INFO StreamInfo
+```
+void UcxStaticStreamsSetStreamInfo(
+  UCXSSTREAMS  StaticStreams,
+  PSTREAM_INFO StreamInfo
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ The handle to the Static Streams object just been created.
 
 `StreamInfo`
 
-A pointer to a <a href="..\ucxsstreams\ns-ucxsstreams-_stream_info.md">STREAM_INFO</a> structure that contains static stream-related information.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188032">STREAM_INFO</a> structure that contains static stream-related information.
 
 
 ## Return Value
@@ -74,10 +74,10 @@ This method does not return a value.
 
 ## Remarks
 
-The client driver must call this method from its implementation of the <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_add.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a> event callback . 
+The client driver must call this method from its implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187830">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a> event callback . 
     This method must be called for the number of streams on the endpoint. 
 
-For a code example, see <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_static_streams_add.md">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a>.
+For a code example, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt187830">EVT_UCX_ENDPOINT_STATIC_STREAMS_ADD</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,4 +90,4 @@ For a code example, see <a href="..\ucxendpoint\nc-ucxendpoint-evt_ucx_endpoint_
 
 ## See Also
 
-<a href="..\ucxendpoint\nf-ucxendpoint-ucxendpointcreate.md">UcxEndpointCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188039">UcxEndpointCreate</a>

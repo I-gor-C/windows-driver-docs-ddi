@@ -50,20 +50,20 @@ The <code>OEMTextOut</code> function calls for the driver to render a set of gly
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMTextOut(
-   SURFOBJ  *pso,
-   STROBJ   *pstro,
-   FONTOBJ  *pfo,
-   CLIPOBJ  *pco,
-   RECTL    *prclExtra,
-   RECTL    *prclOpaque,
-   BRUSHOBJ *pboFore,
-   BRUSHOBJ *pboOpaque,
-   POINTL   *pptlOrg,
-   MIX      mix
+```
+BOOL OEMTextOut(
+  SURFOBJ  *pso,
+  STROBJ   *pstro,
+  FONTOBJ  *pfo,
+  CLIPOBJ  *pco,
+  RECTL    *prclExtra,
+  RECTL    *prclOpaque,
+  BRUSHOBJ *pboFore,
+  BRUSHOBJ *pboOpaque,
+  POINTL   *pptlOrg,
+  MIX      mix
 );
-````
+```
 
 ## Parameters
 

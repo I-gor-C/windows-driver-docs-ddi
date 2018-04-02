@@ -7,7 +7,7 @@ old-location: display\dxgkddicheckmultiplaneoverlaysupport2.htm
 old-project: display
 ms.assetid: A453B59F-0DD1-4FFF-A0E6-09494211780F
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKDDI_CHECKMULTIPLANEOVERLAYSUPPORT2, DxgkDdiCheckMultiPlaneOverlaySupport2, DxgkDdiCheckMultiPlaneOverlaySupport2 callback function [Display Devices], d3dkmddi/DxgkDdiCheckMultiPlaneOverlaySupport2, display.dxgkddicheckmultiplaneoverlaysupport2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -88,4 +88,4 @@ The kernel mode driver reports whether the specified configuration is supported.
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_checkmultiplaneoverlaysupport2.md">DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn914469">DXGKARG_CHECKMULTIPLANEOVERLAYSUPPORT2</a>

@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols3_ismanagedmodule.htm
 old-project: debugger
 ms.assetid: AECBA6E8-B030-4418-A561-9E48B4880D15
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], IsManagedModule method, IDebugSymbols3::IsManagedModule, IsManagedModule method [Windows Debugging], IsManagedModule method [Windows Debugging], IDebugSymbols3 interface, IsManagedModule,IDebugSymbols3.IsManagedModule, dbgeng/IDebugSymbols3::IsManagedModule, debugger.idebugsymbols3_ismanagedmodule
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# IsManagedModule method
+# IDebugSymbols3::IsManagedModule method
 Checks whether the engine is using managed
     debugging support when it retrieves information
     for a module.
 
 ## Syntax
 
-````
+```
 HRESULT IsManagedModule(
-  [in] ULONG   Index,
-  [in] ULONG64 Base
+  ULONG   Index,
+  ULONG64 Base
 );
-````
+```
 
 ## Parameters
 
@@ -87,4 +87,4 @@ It can be expensive to run this check.
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

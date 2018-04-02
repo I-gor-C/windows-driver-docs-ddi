@@ -49,20 +49,20 @@ The<b> KsGateInitialize</b> function initializes a gate for use.
 
 ## Syntax
 
-````
-void __inline KsGateInitialize(
-  _In_     PKSGATE Gate,
-  _In_     LONG    InitialCount,
-  _In_opt_ PKSGATE NextGate,
-  _In_     BOOLEAN StateToPropagate
+```
+void KsGateInitialize(
+  PKSGATE Gate,
+  LONG    InitialCount,
+  PKSGATE NextGate,
+  BOOLEAN StateToPropagate
 );
-````
+```
 
 ## Parameters
 
 `Gate`
 
-A pointer to the <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure to initialize.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a> structure to initialize.
 
 `InitialCount`
 
@@ -70,7 +70,7 @@ This parameter specifies the initial count to place on the gate. Fills in <i>Gat
 
 `NextGate`
 
-A pointer to a <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure to which <i>Gate</i> should attach its output for state transitions. If this optional parameter is unspecified, <i>Gate</i> is not be attached to a subsequent gate.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a> structure to which <i>Gate</i> should attach its output for state transitions. If this optional parameter is unspecified, <i>Gate</i> is not be attached to a subsequent gate.
 
 `StateToPropagate`
 
@@ -83,11 +83,11 @@ None
 
 ## Remarks
 
-Minidrivers should not call <b>KsGateInitialize</b> directly, but should instead use <a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a> or <a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>.
+Minidrivers should not call <b>KsGateInitialize</b> directly, but should instead use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562574">KsGateInitializeAnd</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff562576">KsGateInitializeOr</a>.
 
 AND and OR gates are conceptualizations of the gating mechanism. AVStream does not distinguish between them in the implementation of the common gate functions. The gate functions specific to AND and OR gates are inline calls to the common gate functions.
 
-To learn more about the gate construct in AVStream, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>, <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>.
+To learn more about the gate construct in AVStream, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -99,16 +99,16 @@ To learn more about the gate construct in AVStream, see <a href="https://msdn.mi
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562574">KsGateInitializeAnd</a>
 
 
 
-<a href="..\ks\nf-ks-ksgateterminateor.md">KsGateTerminateOr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562576">KsGateInitializeOr</a>
 
 
 
-<a href="..\ks\nf-ks-ksgateinitializeor.md">KsGateInitializeOr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562586">KsGateTerminateAnd</a>
 
 
 
-<a href="..\ks\nf-ks-ksgateterminateand.md">KsGateTerminateAnd</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562588">KsGateTerminateOr</a>

@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMUpgradeRegistry(
-   DWORD                         dwLevel,
-   PBYTE                         pDriverUpgradeInfo,
-   PFN_DrvUpgradeRegistrySetting pfnUpgrade
+```
+BOOL OEMUpgradeRegistry(
+  DWORD                         dwLevel,
+  PBYTE                         pDriverUpgradeInfo,
+  PFN_DrvUpgradeRegistrySetting pfnUpgrade
 );
-````
+```
 
 ## Parameters
 
@@ -86,4 +86,4 @@ None
 
 ## See Also
 
-<a href="..\printoem\nc-printoem-pfn_drvupgraderegistrysetting.md">DrvUpgradeRegistrySetting</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548652">DrvUpgradeRegistrySetting</a>

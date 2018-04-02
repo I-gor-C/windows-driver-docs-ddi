@@ -7,7 +7,7 @@ old-location: netvista\fwpscalloutunregisterbykey0.htm
 old-project: netvista
 ms.assetid: 24254e56-c7f5-4424-98b5-3b99bf210d5b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsCalloutUnregisterByKey0, FwpsCalloutUnregisterByKey0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsCalloutUnregisterByKey0, netvista.fwpscalloutunregisterbykey0, wfp_ref_2_funct_3_fwps_C_e5a98dbf-23ee-4383-96d5-d8ce8a85614e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The
 
 ## Syntax
 
-````
-NTSTATUS NTAPI FwpsCalloutUnregisterByKey0(
-  _In_ const GUID *calloutKey
+```
+NTSTATUS FwpsCalloutUnregisterByKey0(
+  const GUID *calloutKey
 );
-````
+```
 
 ## Parameters
 
@@ -65,8 +65,8 @@ NTSTATUS NTAPI FwpsCalloutUnregisterByKey0(
 A pointer to a GUID that uniquely identifies the callout that is being unregistered from the
      filter engine. This must be a pointer to the same GUID that was specified when the callout driver called
      either the 
-     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a> or 
-     <a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a> functions to
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551140">FwpsCalloutRegister0</a> or 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a> functions to
      register the callout with the filter engine.
 
 
@@ -100,7 +100,7 @@ The callout was successfully unregistered from the filter engine.
 <td width="60%">
 There are one or more data flows being processed by the callout that have an outstanding context
        associated with the data flow. A callout driver must call the 
-       <a href="..\fwpsk\nf-fwpsk-fwpsflowremovecontext0.md">FwpsFlowRemoveContext0</a> function
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff551169">FwpsFlowRemoveContext0</a> function
        for each of these data flows to remove the associated context. After the context has been successfully
        removed from each of these data flows, the callout driver must call the 
        <b>FwpsCalloutUnregisterByKey0</b> function again to finish unregistering the callout from the filter
@@ -169,20 +169,20 @@ A callout driver cannot be unloaded until all of the callouts that were previous
 
 ## See Also
 
-<a href="..\fwpsk\nf-fwpsk-fwpscalloutunregisterbyid0.md">FwpsCalloutUnregisterById0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551140">FwpsCalloutRegister0</a>
 
 
 
-<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister1.md">FwpsCalloutRegister1</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551143">FwpsCalloutRegister1</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551144">FwpsCalloutUnregisterById0</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551169">FwpsFlowRemoveContext0</a>
 
 
 
 <a href="https://msdn.microsoft.com/d9539403-7657-4e95-8791-309673d1207d">Types of Callouts</a>
-
-
-
-<a href="..\fwpsk\nf-fwpsk-fwpsflowremovecontext0.md">FwpsFlowRemoveContext0</a>
-
-
-
-<a href="..\fwpsk\nf-fwpsk-fwpscalloutregister0.md">FwpsCalloutRegister0</a>

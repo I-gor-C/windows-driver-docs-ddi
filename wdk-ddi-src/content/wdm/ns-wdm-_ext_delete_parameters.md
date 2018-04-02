@@ -7,7 +7,7 @@ old-location: kernel\ext_delete_parameters.htm
 old-project: kernel
 ms.assetid: B2EADC0E-837A-4231-8794-43933DAA69E7
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PEXT_DELETE_PARAMETERS, EXT_DELETE_PARAMETERS, EXT_DELETE_PARAMETERS structure [Kernel-Mode Driver Architecture], PEXT_DELETE_PARAMETERS, PEXT_DELETE_PARAMETERS structure pointer [Kernel-Mode Driver Architecture], _EXT_DELETE_PARAMETERS, kernel.ext_delete_parameters, wdm/EXT_DELETE_PARAMETERS, wdm/PEXT_DELETE_PARAMETERS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,24 +45,24 @@ req.product: Windows 10 or later.
 ---
 
 # _EXT_DELETE_PARAMETERS structure
-The <b>EXT_DELETE_PARAMETERS</b> structure contains an extended set of parameters for the <a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a> routine.
+The <b>EXT_DELETE_PARAMETERS</b> structure contains an extended set of parameters for the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265181">ExDeleteTimer</a> routine.
 
 ## Syntax
-````
+```
 typedef struct _EXT_DELETE_PARAMETERS {
-  ULONG                Version;
-  ULONG                Reserved;
+  ULONG                Version;
+  ULONG                Reserved;
   PEXT_DELETE_CALLBACK DeleteCallback;
-  PVOID                DeleteContext;
+  PVOID                DeleteContext;
 } EXT_DELETE_PARAMETERS, *PEXT_DELETE_PARAMETERS;
-````
+```
 
 ## Members
 
 
 `Version`
 
-The version number of this <b>EXT_DELETE_PARAMETERS</b> structure. The <a href="..\wdm\nf-wdm-exinitializedeletetimerparameters.md">ExInitializeDeleteTimerParameters</a> routine sets this member to the correct version number.
+The version number of this <b>EXT_DELETE_PARAMETERS</b> structure. The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265182">ExInitializeDeleteTimerParameters</a> routine sets this member to the correct version number.
 
 `Reserved`
 
@@ -81,7 +81,7 @@ A context value for the timer-deletion callback routine. The operating system pa
 The <b>ExInitializeDeleteTimerParameters</b> routine sets this member to <b>NULL</b>.
 
 ## Remarks
-The <i>Parameters</i> parameter of the <a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a> routine is a pointer to an <b>EXT_DELETE_PARAMETERS</b> structure. Before passing an <b>EXT_DELETE_PARAMETERS</b> structure to this routine, call the <a href="..\wdm\nf-wdm-exinitializedeletetimerparameters.md">ExInitializeDeleteTimerParameters</a> routine to initialize the structure.
+The <i>Parameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265181">ExDeleteTimer</a> routine is a pointer to an <b>EXT_DELETE_PARAMETERS</b> structure. Before passing an <b>EXT_DELETE_PARAMETERS</b> structure to this routine, call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265182">ExInitializeDeleteTimerParameters</a> routine to initialize the structure.
 
 Your driver can use an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265192">ExTimerDeleteCallback</a> callback routine to free any storage or other system resources that the driver might have previously allocated to use with the timer object that is being deleted. For example, the driver's context value might point to a caller-allocated structure that needs to be freed if the timer object is to be deleted. The operating system calls the <i>ExTimerDeleteCallback</i> routine only after the timer object has been disabled to prevent further timer operations and any pending timer operation on the timer object is canceled or completed.
 
@@ -93,12 +93,12 @@ Your driver can use an <a href="https://msdn.microsoft.com/library/windows/hardw
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exdeletetimer.md">ExDeleteTimer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265181">ExDeleteTimer</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265182">ExInitializeDeleteTimerParameters</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265192">ExTimerDeleteCallback</a>
-
-
-
-<a href="..\wdm\nf-wdm-exinitializedeletetimerparameters.md">ExInitializeDeleteTimerParameters</a>

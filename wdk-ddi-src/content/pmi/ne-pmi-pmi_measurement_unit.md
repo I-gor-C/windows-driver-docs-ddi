@@ -47,12 +47,12 @@ req.typenames: PMI_MEASUREMENT_UNIT
 The PMI_MEASUREMENT_UNIT enumeration defines the units of the PMI measurement data.
 
 ## Syntax
-````
-typedef enum  { 
-  PmiMeasurementUnitMilliWatt,
+```
+typedef enum PMI_MEASUREMENT_UNIT {
+  PmiMeasurementUnitMilliWatt  ,
   PmiMeasurementUnitMax
-} PMI_MEASUREMENT_UNIT;
-````
+} ;
+```
 
 ## Constants
 
@@ -71,7 +71,7 @@ typedef enum  {
 
 ## Remarks
 
-The <b>MeasurementUnit</b> member of the <a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a> structure contains information about the measurement units of the data that is contained within the structure. This structure is returned through a successful completion of an <a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a> request.
+The <b>MeasurementUnit</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543902">PMI_REPORTED_CAPABILITIES</a> structure contains information about the measurement units of the data that is contained within the structure. This structure is returned through a successful completion of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543837">IOCTL_PMI_GET_CAPABILITIES</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,8 +81,8 @@ The <b>MeasurementUnit</b> member of the <a href="..\pmi\ns-pmi-_pmi_reported_ca
 
 ## See Also
 
-<a href="..\pmi\ns-pmi-_pmi_reported_capabilities.md">PMI_REPORTED_CAPABILITIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543837">IOCTL_PMI_GET_CAPABILITIES</a>
 
 
 
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_capabilities.md">IOCTL_PMI_GET_CAPABILITIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543902">PMI_REPORTED_CAPABILITIES</a>

@@ -44,16 +44,15 @@ req.typenames: SECURE_ELEMENT_ENDPOINT_LIST, *PSECURE_ELEMENT_ENDPOINT_LIST
 ---
 
 # _SECURE_ELEMENT_ENDPOINT_LIST structure
-The output parameter for <a href="..\nfcsedev\ni-nfcsedev-ioctl_nfcse_enum_endpoints.md">IOCTL_NFCSE_ENUM_ENDPOINTS</a>.
+The output parameter for <a href="https://msdn.microsoft.com/library/windows/hardware/dn905506">IOCTL_NFCSE_ENUM_ENDPOINTS</a>.
 
 ## Syntax
-````
+```
 typedef struct _SECURE_ELEMENT_ENDPOINT_LIST {
-  DWORD                                                            NumberOfEndpoints;
-  _Field_size_(NumberOfEndpoints)
-    SECURE_ELEMENT_ENDPOINT_INFO EndpointList[ANYSIZE_ARRAY];
-} SECURE_ELEMENT_ENDPOINT_LIST, *P_SECURE_ELEMENT_ENDPOINT_LIST;
-````
+  DWORD                        NumberOfEndpoints;
+  SECURE_ELEMENT_ENDPOINT_INFO EndpointList[ANYSIZE_ARRAY];
+} *PSECURE_ELEMENT_ENDPOINT_LIST, SECURE_ELEMENT_ENDPOINT_LIST;
+```
 
 ## Members
 

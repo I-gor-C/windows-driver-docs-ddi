@@ -47,13 +47,13 @@ req.typenames: VIDEOENCODER_BITRATE_MODE
 The VIDEOENCODER_BITRATE_MODE enumeration describes the bit rate encoding modes supported by the device.
 
 ## Syntax
-````
-typedef enum  { 
-  ConstantBitRate         = 0,
-  VariableBitRateAverage  = 1,
-  VariableBitRatePeak     = 2
-} VIDEOENCODER_BITRATE_MODE;
-````
+```
+typedef enum VIDEOENCODER_BITRATE_MODE {
+  ConstantBitRate         ,
+  VariableBitRateAverage  ,
+  VariableBitRatePeak
+} ;
+```
 
 ## Constants
 
@@ -92,8 +92,8 @@ When <b>VariableBitRatePeak</b> mode is used, the <a href="https://msdn.microsof
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559529">ENCAPIPARAM_PEAK_BITRATE</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559524">ENCAPIPARAM_BITRATE_MODE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559529">ENCAPIPARAM_PEAK_BITRATE</a>

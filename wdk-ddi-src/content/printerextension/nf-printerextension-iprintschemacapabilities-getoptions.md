@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetOptions method
+# IPrintSchemaCapabilities::GetOptions method
 Gets all the options of a feature.
 
 ## Syntax
 
-````
+```
 HRESULT GetOptions(
-  [in]          IPrintSchemaFeature          *pFeature,
-  [out, retval] IPrintSchemaOptionCollection **ppOptions
+  IPrintSchemaFeature          *pFeature,
+  IPrintSchemaOptionCollection **ppOptionCollection
 );
-````
+```
 
 ## Parameters
 
@@ -82,8 +82,8 @@ This method returns an <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemaoptioncollection.md">IPrintSchemaOptionCollection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451256">IPrintSchemaCapabilities</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprintschemacapabilities.md">IPrintSchemaCapabilities</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh846198">IPrintSchemaOptionCollection</a>

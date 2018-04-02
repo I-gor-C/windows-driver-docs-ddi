@@ -50,18 +50,18 @@ The <b>KsReadFile</b> function performs a read against the specified file object
 
 ## Syntax
 
-````
-NTSTATUS KsReadFile(
-  _In_     PFILE_OBJECT     FileObject,
-  _In_opt_ PKEVENT          Event,
-  _In_opt_ PVOID            PortContext,
-  _Out_    PIO_STATUS_BLOCK IoStatusBlock,
-  _Out_    PVOID            Buffer,
-  _In_     ULONG            Length,
-  _In_opt_ ULONG            Key,
-  _In_     KPROCESSOR_MODE  RequestorMode
+```
+KSDDKAPI NTSTATUS KsReadFile(
+  PFILE_OBJECT     FileObject,
+  PKEVENT          Event,
+  PVOID            PortContext,
+  PIO_STATUS_BLOCK IoStatusBlock,
+  PVOID            Buffer,
+  ULONG            Length,
+  ULONG Key        OPTIONAL,
+  KPROCESSOR_MODE  RequestorMode
 );
-````
+```
 
 ## Parameters
 

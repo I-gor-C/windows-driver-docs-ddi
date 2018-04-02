@@ -50,14 +50,14 @@ The <code>OEMQueryFont</code> function is used by GDI to get the <a href="https:
 
 ## Syntax
 
-````
-PIFIMETRICS APIENTRY OEMQueryFont(
-   DHPDEV    dhpdev,
-   ULONG_PTR iFile,
-   ULONG     iFace,
-   ULONG_PTR *pid
+```
+PIFIMETRICS OEMQueryFont(
+  DHPDEV    dhpdev,
+  ULONG_PTR iFile,
+  ULONG     iFace,
+  ULONG_PTR *pid
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: ifsk\seaudithardlinkcreation.htm
 old-project: ifsk
 ms.assetid: f032afe5-da68-4763-a4f0-6e61869223e1
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: SeAuditHardLinkCreation, SeAuditHardLinkCreation function [Installable File System Drivers], ifsk.seaudithardlinkcreation, ntifs/SeAuditHardLinkCreation, seref_da710638-38e7-4305-9102-7cfbc4299f94.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,13 @@ This routine is reserved for system use.
 
 ## Syntax
 
-````
-  SeAuditHardLinkCreation(
-    
+```
+NTKERNELAPI VOID SeAuditHardLinkCreation(
+  PUNICODE_STRING FileName,
+  PUNICODE_STRING LinkName,
+  BOOLEAN         bSuccess
 );
-````
+```
 
 ## Parameters
 

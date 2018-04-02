@@ -47,12 +47,12 @@ req.typenames: KSINTERVAL, *PKSINTERVAL
 The KSINTERVAL structure specifies a base time and time interval for recurring events.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSINTERVAL {
   LONGLONG TimeBase;
   LONGLONG Interval;
-} KSINTERVAL, *PKSINTERVAL;
-````
+} *PKSINTERVAL, KSINTERVAL;
+```
 
 ## Members
 
@@ -73,8 +73,8 @@ Specifies a recurrence interval, also 64-bit.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561811">KSEVENT_CLOCK_POSITION_MARK</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561805">KSEVENT_CLOCK_INTERVAL_MARK</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561811">KSEVENT_CLOCK_POSITION_MARK</a>

@@ -50,16 +50,16 @@ Copies (loads) a resource from the given image.
 
 ## Syntax
 
-````
-NTSTATUS KsLoadResource(
-  _In_      PVOID     ImageBase,
-  _In_      POOL_TYPE PoolType,
-  _In_      ULONG_PTR ResourceName,
-  _In_      ULONG     ResourceType,
-  _Out_     PVOID     *Resource,
-  _Out_opt_ PULONG    ResourceSize
+```
+KSDDKAPI NTSTATUS KsLoadResource(
+  PVOID     ImageBase,
+  POOL_TYPE PoolType,
+  ULONG_PTR ResourceName,
+  ULONG     ResourceType,
+  PVOID     *Resource,
+  PULONG    ResourceSize
 );
-````
+```
 
 ## Parameters
 

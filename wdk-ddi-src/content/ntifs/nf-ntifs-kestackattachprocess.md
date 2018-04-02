@@ -7,7 +7,7 @@ old-location: ifsk\kestackattachprocess.htm
 old-project: ifsk
 ms.assetid: 52ac1410-8f8f-405a-9c81-a534c3cfbf51
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: KeStackAttachProcess, KeStackAttachProcess routine [Installable File System Drivers], ifsk.kestackattachprocess, keref_de4fc228-753f-4077-8372-e5330c96d317.xml, ntifs/KeStackAttachProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>KeStackAttachProcess</b> routine attaches the current thread to the addre
 
 ## Syntax
 
-````
-VOID KeStackAttachProcess(
-  _Inout_ PRKPROCESS   Process,
-  _Out_   PRKAPC_STATE ApcState
+```
+NTKERNELAPI VOID KeStackAttachProcess(
+  PRKPROCESS   PROCESS,
+  PRKAPC_STATE ApcState
 );
-````
+```
 
 ## Parameters
 
@@ -76,14 +76,14 @@ None
 
 <b>KeStackAttachProcess</b> attaches the current thread to the address space of the process pointed to by the <i>Process</i> parameter. If the current thread was already attached to another process, the <i>ApcState</i> parameter receives the current APC state before <b>KeStackAttachProcess</b> attaches to the new process. 
 
-Every call to <b>KeStackAttachProcess</b> must be matched by a subsequent call to <a href="..\ntifs\nf-ntifs-keunstackdetachprocess.md">KeUnstackDetachProcess</a>. 
+Every call to <b>KeStackAttachProcess</b> must be matched by a subsequent call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549677">KeUnstackDetachProcess</a>. 
 
 
 <div class="alert"><b>Note</b>  
      Attaching a thread to a different process can prevent asynchronous I/O operations from completing and can potentially cause deadlocks. In general, the lines of code between the call to 
      <b>KeStackAttachProcess</b>
       and the call to 
-     <a href="..\ntifs\nf-ntifs-keunstackdetachprocess.md">KeUnstackDetachProcess</a>
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff549677">KeUnstackDetachProcess</a>
       should be very simple and should not call complex routines or send IRPs to other drivers. 
     </div>
 <div> </div>
@@ -103,32 +103,32 @@ For more information about using system threads and managing synchronization wit
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549177">IoGetCurrentProcess</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548385">IoGetRequestorProcess</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548549">IoThreadToProcess</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552054">KeGetCurrentIrql</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552084">KeGetCurrentThread</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549677">KeUnstackDetachProcess</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559933">PsGetCurrentProcess</a>
 
 
 
-<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-iogetrequestorprocess.md">IoGetRequestorProcess</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-keunstackdetachprocess.md">KeUnstackDetachProcess</a>
-
-
-
-<a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-iothreadtoprocess.md">IoThreadToProcess</a>
-
-
-
-<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
-
-
-
-<a href="..\wdm\nf-wdm-iogetcurrentprocess.md">IoGetCurrentProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559936">PsGetCurrentThread</a>

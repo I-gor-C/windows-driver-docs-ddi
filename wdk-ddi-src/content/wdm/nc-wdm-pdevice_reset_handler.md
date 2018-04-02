@@ -7,7 +7,7 @@ old-location: kernel\devicereset.htm
 old-project: kernel
 ms.assetid: A5AA5E73-3DC1-4977-9B64-9E0FB3E6609E
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PDEVICE_RESET_HANDLER, ResetDevice, ResetDevice routine [Kernel-Mode Driver Architecture], kernel.devicereset, wdm/ResetDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -66,11 +66,11 @@ NTSTATUS PdeviceResetHandler(
 
 `InterfaceContext`
 
-A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="..\wdm\ns-wdm-_device_reset_interface_standard.md">DEVICE_RESET_INTERFACE_STANDARD</a> structure for the interface.
+A pointer to interface-specific context information. The caller passes the value that is passed as the <b>Context</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939397">DEVICE_RESET_INTERFACE_STANDARD</a> structure for the interface.
 
 `ResetType`
 
-The type of reset being  requested. Set this parameter to one of the following <a href="..\wdm\ne-wdm-_device_reset_type.md">DEVICE_RESET_TYPE</a> enumeration values.
+The type of reset being  requested. Set this parameter to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/dn939400">DEVICE_RESET_TYPE</a> enumeration values.
 
 <ul>
 <li><b>FunctionLevelDeviceReset</b>. Specify this value to request a function-level reset, which is restricted to a specific device.</li>
@@ -84,7 +84,7 @@ Set to 0. Currently, no flags are defined for this routine.
 
 `ResetParameters`
 
-If the caller is requesting a  function-level device reset, this optional parameter can point to a <a href="..\wdm\ns-wdm-_function_level_device_reset_parameters.md">FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS</a> structure that specifies a callback routine that is called when the reset is completed.
+If the caller is requesting a  function-level device reset, this optional parameter can point to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn939576">FUNCTION_LEVEL_DEVICE_RESET_PARAMETERS</a> structure that specifies a callback routine that is called when the reset is completed.
 
 
 ## Return Value

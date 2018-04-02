@@ -81,7 +81,7 @@ Returns STATUS_SUCCESS if the pin supports the requested protocol. Otherwise, it
 
 ## Remarks
 
-The minidriver specifies this routine's address in the <i>Handshake</i> parameter of a call to <a href="..\ks\nf-ks-kspinregisterhandshakecallback.md">KsPinRegisterHandshakeCallback</a>.
+The minidriver specifies this routine's address in the <i>Handshake</i> parameter of a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff563523">KsPinRegisterHandshakeCallback</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,12 +92,12 @@ The minidriver specifies this routine's address in the <i>Handshake</i> paramete
 
 ## See Also
 
-<a href="..\ks\ns-ks-kshandshake.md">KSHANDSHAKE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562673">KSHANDSHAKE</a>
 
 
 
-<a href="..\ks\ns-ks-ksidentifier.md">KSIDENTIFIER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562676">KSIDENTIFIER</a>
 
 
 
-<a href="..\ks\nf-ks-kspinregisterhandshakecallback.md">KsPinRegisterHandshakeCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563523">KsPinRegisterHandshakeCallback</a>

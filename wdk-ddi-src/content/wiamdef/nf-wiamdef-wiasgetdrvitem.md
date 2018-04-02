@@ -50,12 +50,12 @@ The <b>wiasGetDrvItem </b>function retrieves a driver item.
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasGetDrvItem(
-  _In_  BYTE        *pWiasContext,
-  _Out_ IWiaDrvItem **ppDrvItem
+```
+HRESULT wiasGetDrvItem(
+  BYTE        *pWiasContext,
+  IWiaDrvItem **ppIWiaDrvItem
 );
-````
+```
 
 ## Parameters
 
@@ -84,8 +84,8 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549160">wiasCreateDrvItem</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetrootitem.md">wiasGetRootItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549264">wiasGetRootItem</a>

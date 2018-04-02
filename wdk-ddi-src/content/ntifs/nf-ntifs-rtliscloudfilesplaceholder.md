@@ -7,7 +7,7 @@ old-location: ifsk\rtliscloudfilesplaceholder.htm
 old-project: ifsk
 ms.assetid: 9FF2EC69-0844-4FD7-A2BC-F16C42922212
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlIsCloudFilesPlaceholder, RtlIsCloudFilesPlaceholder routine [Installable File System Drivers], ifsk.rtliscloudfilesplaceholder, ntifs/RtlIsCloudFilesPlaceholder
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>RtlIsCloudFilesPlaceholder</b> routine determines if a file or a director
 
 ## Syntax
 
-````
-BOOLEAN RtlIsCloudFilesPlaceholder(
-  _In_ ULONG FileAttributes,
-  _In_ ULONG ReparseTag
+```
+NTSYSAPI BOOLEAN RtlIsCloudFilesPlaceholder(
+  ULONG FileAttributes,
+  ULONG ReparseTag
 );
-````
+```
 
 ## Parameters
 
@@ -84,4 +84,4 @@ This function returns <b>TRUE</b> if the file or directory is a CloudFiles parti
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlispartialplaceholder.md">RtlIsPartialPlaceholder</a>
+<a href="https://msdn.microsoft.com/FB47F5BE-76B4-4A99-A15F-DE3E11D1DA2B">RtlIsPartialPlaceholder</a>

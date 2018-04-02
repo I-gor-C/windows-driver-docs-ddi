@@ -7,7 +7,7 @@ old-location: ifsk\rxcebuildconnectionovermultipletransports.htm
 old-project: ifsk
 ms.assetid: 9ef9a5a5-e0ad-46c0-8193-8d2a18a21ea0
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxCeBuildConnectionOverMultipleTransports, RxCeBuildConnectionOverMultipleTransports routine [Installable File System Drivers], ifsk.rxcebuildconnectionovermultipletransports, rxce/RxCeBuildConnectionOverMultipleTransports, rxref_813ee01b-f378-4598-813a-4f2f3c47189f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,20 +50,20 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 NTSTATUS RxCeBuildConnectionOverMultipleTransports(
-  _Inout_ PRDBSS_DEVICE_OBJECT                pMiniRedirectorDeviceObject,
-  _In_    RXCE_CONNECTION_CREATE_OPTIONS      CreateOptions,
-  _In_    ULONG                               NumberOfAddresses,
-  _In_    PRXCE_ADDRESS                       *pLocalAddressPointers,
-  _In_    PUNICODE_STRING                     pServerName,
-  _In_    PRXCE_CONNECTION_INFORMATION        pConnectionInformation,
-  _In_    PRXCE_CONNECTION_EVENT_HANDLER      pHandler,
-  _In_    PVOID                               pEventContext,
-  _In_    PRXCE_CONNECTION_COMPLETION_ROUTINE pCompletionRoutine,
-  _Inout_ PRXCE_CONNECTION_COMPLETION_CONTEXT pCompletionContext
+  IN OUT PRDBSS_DEVICE_OBJECT                pMiniRedirectorDeviceObject,
+  IN RXCE_CONNECTION_CREATE_OPTIONS          CreateOption,
+  IN ULONG                                   NumberOfAddresses,
+  IN PRXCE_ADDRESS                           *pLocalAddressPointers,
+  IN PUNICODE_STRING                         pServerName,
+  IN PRXCE_CONNECTION_INFORMATION            pConnectionInformation,
+  IN PRXCE_CONNECTION_EVENT_HANDLER          pHandler,
+  IN PVOID                                   pEventContext,
+  IN PRXCE_CONNECTION_COMPLETION_ROUTINE     pCompletionRoutine,
+  IN OUT PRXCE_CONNECTION_COMPLETION_CONTEXT pCompletionContext
 );
-````
+```
 
 ## Parameters
 
@@ -182,12 +182,12 @@ When <b>RxCeBuildConnectionOverMultipleTransports</b> is successful, the virtual
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553417">RxCeBuildConnection</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554321">RxCeTearDownConnection</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565085">TDI_CONNECTION_INFORMATION</a>
-
-
-
-<a href="..\rxce\nf-rxce-rxceteardownconnection.md">RxCeTearDownConnection</a>
-
-
-
-<a href="..\rxce\nf-rxce-rxcebuildconnection.md">RxCeBuildConnection</a>

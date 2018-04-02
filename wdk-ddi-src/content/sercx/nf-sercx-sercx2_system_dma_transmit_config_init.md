@@ -46,41 +46,41 @@ req.product: Windows 10 or later.
 
 
 # SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT function
-The <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT</b> function initializes a <a href="..\sercx\ns-sercx-_sercx2_system_dma_transmit_config.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a> structure.
+The <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265344">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a> structure.
 
 ## Syntax
 
-````
-VOID SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT(
-  _Out_ SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG *Config,
-  _In_  size_t                            MaximumTransferLength,
-  _In_  PHYSICAL_ADDRESS                  Address,
-  _In_  DMA_WIDTH                         DmaWidth,
-  _In_  PCM_PARTIAL_RESOURCE_DESCRIPTOR   DmaDescriptor
+```
+void SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT(
+  SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG *Config,
+  size_t                            MaximumTransferLength,
+  PHYSICAL_ADDRESS                  Address,
+  DMA_WIDTH                         DmaWidth,
+  PCM_PARTIAL_RESOURCE_DESCRIPTOR   DmaDescriptor
 );
-````
+```
 
 ## Parameters
 
 `Config`
 
-A pointer to the <a href="..\sercx\ns-sercx-_sercx2_system_dma_transmit_config.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a> structure that is to be initialized.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265344">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a> structure that is to be initialized.
 
 `MaximumTransferLength`
 
-The value to load into the <b>MaximumTransferLength</b> member of the <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx-_sercx2_system_dma_transmit_config.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a>.
+The value to load into the <b>MaximumTransferLength</b> member of the <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="https://msdn.microsoft.com/library/windows/hardware/dn265344">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a>.
 
 `Address`
 
-The value to load into the <b>DeviceAddress</b> member of the <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx-_sercx2_system_dma_transmit_config.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a>.
+The value to load into the <b>DeviceAddress</b> member of the <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="https://msdn.microsoft.com/library/windows/hardware/dn265344">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a>.
 
 `DmaWidth`
 
-The value to load into the <b>DmaWidth</b> member of the <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx-_sercx2_system_dma_transmit_config.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a>.
+The value to load into the <b>DmaWidth</b> member of the <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="https://msdn.microsoft.com/library/windows/hardware/dn265344">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a>.
 
 `DmaDescriptor`
 
-The value to load into the <b>DmaDescriptor</b> member of the <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="..\sercx\ns-sercx-_sercx2_system_dma_transmit_config.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a>.
+The value to load into the <b>DmaDescriptor</b> member of the <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b> structure. For more information, see the description of this member in <a href="https://msdn.microsoft.com/library/windows/hardware/dn265344">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a>.
 
 
 ## Return Value
@@ -89,7 +89,7 @@ None.
 
 ## Remarks
 
-Your serial controller driver must use this function to initialize a <a href="..\sercx\ns-sercx-_sercx2_system_dma_transmit_config.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a> method.
+Your serial controller driver must use this function to initialize a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265344">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a> structure before passing a pointer to this structure as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265288">SerCx2SystemDmaTransmitCreate</a> method.
 
 <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT</b> sets the <b>Size</b> member of the structure to <b>sizeof</b>(<b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</b>), and sets four additional members of the structure to the values supplied as input parameters to the function. The function sets the other members of the structure to zero. The driver can, if necessary, explicitly set these other members to nonzero values after the <b>SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG_INIT</b> call.
 
@@ -103,8 +103,8 @@ Your serial controller driver must use this function to initialize a <a href="..
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercx2systemdmatransmitcreate.md">SerCx2SystemDmaTransmitCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265344">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a>
 
 
 
-<a href="..\sercx\ns-sercx-_sercx2_system_dma_transmit_config.md">SERCX2_SYSTEM_DMA_TRANSMIT_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265288">SerCx2SystemDmaTransmitCreate</a>

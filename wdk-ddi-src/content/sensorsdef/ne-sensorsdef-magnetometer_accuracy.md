@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 This enumeration represents the accuracy states of the magnetometer.
 
 ## Syntax
-````
-typedef enum _MAGNETOMETER_ACCURACY { 
-  MagnetometerAccuracy_Unknown      = 0,
-  MagnetometerAccuracy_Unreliable,
-  MagnetometerAccuracy_Approximate,
+```
+typedef enum MAGNETOMETER_ACCURACY {
+  MagnetometerAccuracy_Unknown      ,
+  MagnetometerAccuracy_Unreliable   ,
+  MagnetometerAccuracy_Approximate  ,
   MagnetometerAccuracy_High
-} MAGNETOMETER_ACCURACY;
-````
+} ;
+```
 
 ## Constants
 

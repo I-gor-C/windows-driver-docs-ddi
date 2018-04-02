@@ -7,7 +7,7 @@ old-location: netvista\ipsec_offload_v2_security_association.htm
 old-project: netvista
 ms.assetid: b2c5611e-930d-41a5-a07e-7de8f8584283
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure [Network Drivers Starting with Windows Vista], PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure pointer [Network Drivers Starting with Windows Vista], _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, ndis/IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, ndis/PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, netvista.ipsec_offload_v2_security_association, task_offload_IPsecv2_ref_ccf0a55c-3609-4e15-928a-e46113b96df0.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,16 +50,16 @@ The IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure specifies a single security 
   (SA).
 
 ## Syntax
-````
+```
 typedef struct _IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION {
-  ULONG                           Flags;
-  IPSEC_OFFLOAD_V2_OPERATION      Operation;
-  IPSEC_OFFLOAD_V2_SPI_TYPE       Spi;
+  ULONG                           Flags;
+  IPSEC_OFFLOAD_V2_OPERATION      Operation;
+  IPSEC_OFFLOAD_V2_SPI_TYPE       Spi;
   IPSEC_OFFLOAD_V2_ALGORITHM_INFO AuthenticationAlgorithm;
   IPSEC_OFFLOAD_V2_ALGORITHM_INFO EncryptionAlgorithm;
-  ULONG                           SequenceNumberHighOrder;
-} IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, *PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION;
-````
+  ULONG                           SequenceNumberHighOrder;
+} *PIPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION, IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION;
+```
 
 ## Members
 
@@ -81,7 +81,7 @@ Specifies ESN SA.
 `Operation`
 
 The IPsec operation for which the SA is to be used. The 
-     <a href="..\ndis\ne-ndis-_ipsec_offload_v2_operation.md">
+     <a href="https://msdn.microsoft.com/bb26c8af-1564-4cf8-ab40-b50b4811466d">
      IPSEC_OFFLOAD_V2_OPERATION</a> enumeration defines the supported operations.
 
 `Spi`
@@ -91,7 +91,7 @@ A 32 bit security parameters index (SPI) for the SA.
 `AuthenticationAlgorithm`
 
 The integrity (authentication) algorithm for the SA, formatted as an 
-     <a href="..\ndis\ns-ndis-_ipsec_offload_v2_algorithm_info.md">
+     <a href="https://msdn.microsoft.com/787e5a98-ba77-42d4-8624-abcc02fccf53">
      IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a> structure.
 
 `EncryptionAlgorithm`
@@ -115,7 +115,7 @@ The sequence number high-order extension. This sequence number high-order extens
 ## Remarks
 The IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure is an element in the 
     <b>SecAssoc</b> variable-length array in the 
-    <a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">IPSEC_OFFLOAD_V2_ADD_SA</a> structure.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff556977">IPSEC_OFFLOAD_V2_ADD_SA</a> structure.
     The number of SAs in the IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION structure is specified in the 
     <b>NumExtHdrs</b> member of IPSEC_OFFLOAD_V2_ADD_SA.
 
@@ -149,13 +149,13 @@ A
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ipsec_offload_v2_add_sa.md">IPSEC_OFFLOAD_V2_ADD_SA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556977">IPSEC_OFFLOAD_V2_ADD_SA</a>
 
 
 
-<a href="..\ndis\ns-ndis-_ipsec_offload_v2_algorithm_info.md">
+<a href="https://msdn.microsoft.com/787e5a98-ba77-42d4-8624-abcc02fccf53">
    IPSEC_OFFLOAD_V2_ALGORITHM_INFO</a>
 
 
 
-<a href="..\ndis\ne-ndis-_ipsec_offload_v2_operation.md">IPSEC_OFFLOAD_V2_OPERATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556984">IPSEC_OFFLOAD_V2_OPERATION</a>

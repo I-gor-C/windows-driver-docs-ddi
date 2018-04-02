@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlquerykerneleafile.htm
 old-project: ifsk
 ms.assetid: B57BC3A4-6116-48EA-905A-CFA7AC0A5E8F
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlQueryKernelEaFile, FsRtlQueryKernelEaFile routine [Installable File System Drivers], ifsk.fsrtlquerykerneleafile, ntifs/FsRtlQueryKernelEaFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,19 +51,19 @@ The routine <b>FsRtlQueryKernelEaFile</b> is used to build an explicit QueryEA r
 
 ## Syntax
 
-````
+```
 NTSTATUS FsRtlQueryKernelEaFile(
-  _In_      PFILE_OBJECT                              FileObject,
-  _Out_     bcount_part(Length,*LengthReturned) PVOID ReturnedEaData,
-  _In_      ULONG                                     Length,
-  _In_      BOOLEAN                                   ReturnSingleEntry,
-  _In_      bcount_opt(EaListLength) PVOID            EaList,
-  _In_      ULONG                                     EaListLength,
-  _In_opt_  PULONG                                    EaIndex,
-  _In_      BOOLEAN                                   RestartScan,
-  _Out_opt_ PULONG                                    LengthReturned
+  PFILE_OBJECT FileObject,
+  PVOID        ReturnedEaData,
+  ULONG        Length,
+  BOOLEAN      ReturnSingleEntry,
+  PVOID        EaList,
+  ULONG        EaListLength,
+  PULONG       EaIndex,
+  BOOLEAN      RestartScan,
+  PULONG       LengthReturned
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +73,7 @@ A pointer to a <b>FileObject</b> to send the QueryEA request to.
 
 `ReturnedEaData`
 
-A pointer to a caller-supplied <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured output buffer, where the extended attribute values are to be returned.
+A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a>-structured output buffer, where the extended attribute values are to be returned.
 
 `Length`
 
@@ -86,7 +86,7 @@ Specifies whether only a single entry should be returned
 
 `EaList`
 
-A pointer to a caller-supplied <a href="..\ntifs\ns-ntifs-_file_get_ea_information.md">FILE_GET_EA_INFORMATION</a>-structured input buffer, which specifies the extended attributes to be queried. This parameter is optional and can be<b> NULL</b>.
+A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff540295">FILE_GET_EA_INFORMATION</a>-structured input buffer, which specifies the extended attributes to be queried. This parameter is optional and can be<b> NULL</b>.
 
 `EaListLength`
 
@@ -177,12 +177,12 @@ This routine <b>FsRtlQueryKernelEaFile </b>assumes all passed in buffers are fro
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-zwqueryeafile.md">ZwQueryEaFile</a>
+<a href="https://msdn.microsoft.com/E5EA2E40-2CC3-4C7B-8BCC-4793F76ECBAD">FsRtlSetKernelEaFile</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff961907">ZwQueryEaFile</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff961908">ZwSetEaFile</a>
-
-
-
-<a href="https://msdn.microsoft.com/E5EA2E40-2CC3-4C7B-8BCC-4793F76ECBAD">FsRtlSetKernelEaFile</a>

@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SetPrintTicket method
+# IFixedPage::SetPrintTicket method
 The <b>SetPrintTicket</b> method associates a print ticket with the page.
 
 ## Syntax
 
-````
+```
 HRESULT SetPrintTicket(
-  [in] IPartPrintTicket *pPrintTicket
+  IPartPrintTicket *ppPrintTicket
 );
-````
+```
 
 ## Parameters
 

@@ -69,7 +69,7 @@ void PfnscoIndicationCallback(
 For incoming remote connection request indications, this is the context specified by the profile
      driver in the 
      <b>IndicationCallbackContext</b> member of the 
-     <a href="..\bthddi\ns-bthddi-_brb_sco_register_server.md">_BRB_SCO_REGISTER_SERVER</a> structure
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536871">_BRB_SCO_REGISTER_SERVER</a> structure
      when the profile driver registered the callback function. For changes to existing SCO connections, this
      is the 
      <b>CallbackContext</b> member specified by the profile driver when it built and sent a 
@@ -78,13 +78,13 @@ For incoming remote connection request indications, this is the context specifie
 `Indication`
 
 A 
-     <a href="..\bthddi\ne-bthddi-_sco_indication_code.md">SCO_INDICATION_CODE</a> value that indicates
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536776">SCO_INDICATION_CODE</a> value that indicates
      the type of SCO event.
 
 `Parameters`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">
+     <a href="https://msdn.microsoft.com/2d3ae219-8a40-476c-b8eb-94f4c0566527">
      SCO_INDICATION_PARAMETERS</a> structure that contains parameter information based on the value passed
      to the 
      <i>Indication</i> parameter.
@@ -106,7 +106,7 @@ The
 In the first case, the profile driver acts as a server and must register this callback function
     through the 
     <b>IndicationCallback</b> member of the 
-    <a href="..\bthddi\ns-bthddi-_brb_sco_register_server.md">_BRB_SCO_REGISTER_SERVER</a> structure.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536871">_BRB_SCO_REGISTER_SERVER</a> structure.
     The Bluetooth driver stack can then call this function to notify the profile driver when a remote device
     attempts to contact it.
 
@@ -114,9 +114,9 @@ In the second case, the profile driver acts as a client and attempts to connect 
     using the <b>BRB_SCO_OPEN_CHANNEL</b> BRB. The 
     <i>PFNSCO_INDICATION_CALLBACK</i> callback function is registered through the 
     <b>Callback</b> member of the 
-    <a href="..\bthddi\ns-bthddi-_brb_sco_open_channel.md">_BRB_SCO_OPEN_CHANNEL</a> structure passed
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536870">_BRB_SCO_OPEN_CHANNEL</a> structure passed
     with the specified BRB when one of them is submitted through 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">
+    <a href="https://msdn.microsoft.com/60e4ee90-81d4-47a1-aed4-ee39b9fe3174">
     IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>.
 
 After it is registered, the callback function is only associated with the channel that the BRB opened,
@@ -144,16 +144,16 @@ The SCO_INDICATION_PARAMETERS structure held in the
 
 
 
-<a href="..\bthddi\ns-bthddi-_sco_indication_parameters.md">SCO_INDICATION_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536751">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
 
 
 
-<a href="..\bthddi\ne-bthddi-_sco_indication_code.md">SCO_INDICATION_CODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536776">SCO_INDICATION_CODE</a>
 
 
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">IOCTL_INTERNAL_BTH_SUBMIT_BRB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536779">SCO_INDICATION_PARAMETERS</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_register_server.md">_BRB_SCO_REGISTER_SERVER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536871">_BRB_SCO_REGISTER_SERVER</a>

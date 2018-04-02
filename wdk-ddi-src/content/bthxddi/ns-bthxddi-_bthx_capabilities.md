@@ -47,15 +47,15 @@ req.typenames: BTHX_CAPABILITIES, *PBTHX_CAPABILITIES
 The BTHX_CAPABILITIES structure describes the capabilities of the Bluetooth Extensible Transport Driver.
 
 ## Syntax
-````
+```
 typedef struct _BTHX_CAPABILITIES {
-  ULONG            MaxAclTransferInSize;
+  ULONG            MaxAclTransferInSize;
   BTHX_SCO_SUPPORT ScoSupport;
-  ULONG            MaxScoChannels;
-  BOOLEAN          IsDeviceIdleCapable;
-  BOOLEAN          IsDeviceWakeCapable;
+  ULONG            MaxScoChannels;
+  BOOLEAN          IsDeviceIdleCapable;
+  BOOLEAN          IsDeviceWakeCapable;
 } BTHX_CAPABILITIES, *PBTHX_CAPABILITIES;
-````
+```
 
 ## Members
 

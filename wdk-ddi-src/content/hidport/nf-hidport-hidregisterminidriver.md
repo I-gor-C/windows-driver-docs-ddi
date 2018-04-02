@@ -50,17 +50,17 @@ The <b>HidRegisterMinidriver</b> routine is called by HID minidrivers, during th
 
 ## Syntax
 
-````
+```
 NTSTATUS HidRegisterMinidriver(
-  _In_ PHID_MINIDRIVER_REGISTRATION MinidriverRegistration
+  PHID_MINIDRIVER_REGISTRATION MinidriverRegistration
 );
-````
+```
 
 ## Parameters
 
 `MinidriverRegistration`
 
-Pointer to a caller-allocated buffer that contains an initialized <a href="..\hidport\ns-hidport-_hid_minidriver_registration.md">HID_MINIDRIVER_REGISTRATION</a> structure for the minidriver.
+Pointer to a caller-allocated buffer that contains an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff539929">HID_MINIDRIVER_REGISTRATION</a> structure for the minidriver.
 
 
 ## Return Value
@@ -109,7 +109,7 @@ Indicates that the HID revision number provided in <i>MinidriverRegistration-&gt
 
 ## Remarks
 
-Before calling this routine, HID minidrivers must initialize all members of the HID_MINIDRIVER_REGISTRATION structure that is provided at <i>MinidriverRegistration</i>. For information about these members, see <a href="..\hidport\ns-hidport-_hid_minidriver_registration.md">HID_MINIDRIVER_REGISTRATION</a>.
+Before calling this routine, HID minidrivers must initialize all members of the HID_MINIDRIVER_REGISTRATION structure that is provided at <i>MinidriverRegistration</i>. For information about these members, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539929">HID_MINIDRIVER_REGISTRATION</a>.
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>.
 
@@ -124,4 +124,4 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<a href="..\hidport\ns-hidport-_hid_minidriver_registration.md">HID_MINIDRIVER_REGISTRATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539929">HID_MINIDRIVER_REGISTRATION</a>

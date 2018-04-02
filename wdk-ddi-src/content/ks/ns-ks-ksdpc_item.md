@@ -47,13 +47,13 @@ req.typenames: KSDPC_ITEM, *PKSDPC_ITEM
 The KSDPC_ITEM structure is used to store information related to any internal DPCs that might be used to generate event notification from a raised IRQL.
 
 ## Syntax
-````
-typedef struct {
-  KDPC       Dpc;
-  ULONG      ReferenceCount;
+```
+typedef struct KSDPC_ITEM {
+  KDPC       Dpc;
+  ULONG      ReferenceCount;
   KSPIN_LOCK AccessLock;
-} KSDPC_ITEM, *PKSDPC_ITEM;
-````
+}  *PKSDPC_ITEM;
+```
 
 ## Members
 

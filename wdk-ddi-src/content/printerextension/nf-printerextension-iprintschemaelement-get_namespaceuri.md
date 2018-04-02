@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_NamespaceUri method
+# IPrintSchemaElement::get_NamespaceUri method
 Gets the namespace URI  value of the "name" attribute of this node.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_NamespaceUri(
-  [out, retval] BSTR *pbstrNamespaceUri
+  BSTR *pbstrNamespaceUri
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemaelement.md">IPrintSchemaElement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451270">IPrintSchemaElement</a>

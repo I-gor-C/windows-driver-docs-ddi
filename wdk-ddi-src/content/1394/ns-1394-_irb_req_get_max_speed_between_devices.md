@@ -48,14 +48,14 @@ This structure contains the fields necessary in order for the Bus driver to carr
 <b>GetMaxSpeedBetweenDevices</b> request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES {
-  ULONG          fulFlags;
-  ULONG          ulNumberOfDestinations;
+  ULONG          fulFlags;
+  ULONG          ulNumberOfDestinations;
   PDEVICE_OBJECT hDestinationDeviceObjects[64];
-  ULONG          fulSpeed;
+  ULONG          fulSpeed;
 } IRB_REQ_GET_MAX_SPEED_BETWEEN_DEVICES;
-````
+```
 
 ## Members
 

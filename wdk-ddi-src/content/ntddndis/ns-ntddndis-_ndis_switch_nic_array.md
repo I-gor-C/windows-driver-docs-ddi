@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_nic_array.htm
 old-project: netvista
 ms.assetid: 3509a177-d974-45fb-9387-21780483cbe7
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_SWITCH_NIC_ARRAY, NDIS_SWITCH_NIC_ARRAY, NDIS_SWITCH_NIC_ARRAY structure [Network Drivers Starting with Windows Vista], PNDIS_SWITCH_NIC_ARRAY, PNDIS_SWITCH_NIC_ARRAY structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_NIC_ARRAY, netvista.ndis_switch_nic_array, ntddndis/NDIS_SWITCH_NIC_ARRAY, ntddndis/PNDIS_SWITCH_NIC_ARRAY"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,25 +44,25 @@ req.typenames: NDIS_SWITCH_NIC_ARRAY, *PNDIS_SWITCH_NIC_ARRAY
 ---
 
 # _NDIS_SWITCH_NIC_ARRAY structure
-The <b>NDIS_SWITCH_NIC_ARRAY</b> structure specifies an array of  network adapter configuration parameters. Each element in the array specifies the parameters for a  network adapter that is connected to a port on a Hyper-V extensible switch. Each element is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a> structure.
+The <b>NDIS_SWITCH_NIC_ARRAY</b> structure specifies an array of  network adapter configuration parameters. Each element in the array specifies the parameters for a  network adapter that is connected to a port on a Hyper-V extensible switch. Each element is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/hh598215">NDIS_SWITCH_NIC_PARAMETERS</a> structure.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_SWITCH_NIC_ARRAY {
   NDIS_OBJECT_HEADER Header;
-  ULONG              Flags;
-  USHORT             FirstElementOffset;
-  ULONG              NumElements;
-  ULONG              ElementSize;
-} NDIS_SWITCH_NIC_ARRAY, *PNDIS_SWITCH_NIC_ARRAY;
-````
+  ULONG              Flags;
+  USHORT             FirstElementOffset;
+  ULONG              NumElements;
+  ULONG              ElementSize;
+} *PNDIS_SWITCH_NIC_ARRAY, NDIS_SWITCH_NIC_ARRAY;
+```
 
 ## Members
 
 
 `Header`
 
-The type, revision, and size of the <b>NDIS_SWITCH_NIC_ARRAY</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SWITCH_NIC_ARRAY</b> structure. This member is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.
 
 The <b>Type</b> member of <b>Header</b> must be set to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SWITCH_NIC_ARRAY</b> structure, the <b>Revision</b> member of <b>Header</b> must be set to the following value: 
 
@@ -82,7 +82,7 @@ A ULONG value that contains a bitwise <b>OR</b> of flags. This member is reserve
 
 `FirstElementOffset`
 
-A USHORT value that specifies the offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_SWITCH_NIC_ARRAY</b> structure up to the beginning of the first element. Each element in the array is an <a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a> structure.
+A USHORT value that specifies the offset, in bytes, to the first element in an array of elements that follow this structure. The offset is measured from the start of the <b>NDIS_SWITCH_NIC_ARRAY</b> structure up to the beginning of the first element. Each element in the array is an <a href="https://msdn.microsoft.com/library/windows/hardware/hh598215">NDIS_SWITCH_NIC_PARAMETERS</a> structure.
 
 
 
@@ -91,16 +91,16 @@ A USHORT value that specifies the offset, in bytes, to the first element in an a
 
 `NumElements`
 
-A ULONG value that specifies the number of <a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a> elements that follow the <b>NDIS_SWITCH_NIC_ARRAY</b> structure.
+A ULONG value that specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/hh598215">NDIS_SWITCH_NIC_PARAMETERS</a> elements that follow the <b>NDIS_SWITCH_NIC_ARRAY</b> structure.
 
 `ElementSize`
 
-A ULONG value that specifies the size, in bytes, of the <a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a> elements that follows the <b>NDIS_SWITCH_NIC_ARRAY</b> structure.
+A ULONG value that specifies the size, in bytes, of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598215">NDIS_SWITCH_NIC_PARAMETERS</a> elements that follows the <b>NDIS_SWITCH_NIC_ARRAY</b> structure.
 
 ## Remarks
-The <b>NDIS_SWITCH_NIC_ARRAY</b> structure is returned in OID query requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh598261">OID_SWITCH_NIC_ARRAY</a>. An array of <a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a> structures follows the <b>NDIS_SWITCH_NIC_ARRAY</b> structure in the information buffer that is associated with the OID query request. The <b>InformationBuffer</b> member of the <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure contains a pointer to this information buffer.
+The <b>NDIS_SWITCH_NIC_ARRAY</b> structure is returned in OID query requests of <a href="https://msdn.microsoft.com/library/windows/hardware/hh598261">OID_SWITCH_NIC_ARRAY</a>. An array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh598215">NDIS_SWITCH_NIC_PARAMETERS</a> structures follows the <b>NDIS_SWITCH_NIC_ARRAY</b> structure in the information buffer that is associated with the OID query request. The <b>InformationBuffer</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure contains a pointer to this information buffer.
 
-Extensible switch extensions can access individual <a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a> structures inside an <b>NDIS_SWITCH_NIC_ARRAY</b> structure by using the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598213">NDIS_SWITCH_NIC_AT_ARRAY_INDEX</a> macro.
+Extensible switch extensions can access individual <a href="https://msdn.microsoft.com/library/windows/hardware/hh598215">NDIS_SWITCH_NIC_PARAMETERS</a> structures inside an <b>NDIS_SWITCH_NIC_ARRAY</b> structure by using the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598213">NDIS_SWITCH_NIC_AT_ARRAY_INDEX</a> macro.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -110,11 +110,11 @@ Extensible switch extensions can access individual <a href="..\ntddndis\ns-ntddn
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a>
+<b></b>
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -122,8 +122,8 @@ Extensible switch extensions can access individual <a href="..\ntddndis\ns-ntddn
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598215">NDIS_SWITCH_NIC_PARAMETERS</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh598261">OID_SWITCH_NIC_ARRAY</a>
-
-
-
-<b></b>

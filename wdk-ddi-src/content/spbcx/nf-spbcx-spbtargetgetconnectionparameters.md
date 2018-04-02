@@ -51,12 +51,12 @@ The <b>SpbTargetGetConnectionParameters</b> method retrieves the connection para
 
 ## Syntax
 
-````
-VOID SpbTargetGetConnectionParameters(
-  _In_  SPBTARGET                 Target,
-  _Out_ SPB_CONNECTION_PARAMETERS *ConnectionParameters
+```
+void SpbTargetGetConnectionParameters(
+  SPBTARGET                 Target,
+  SPB_CONNECTION_PARAMETERS *ConnectionParameters
 );
-````
+```
 
 ## Parameters
 
@@ -94,7 +94,7 @@ The SPB framework extension (SpbCx) calls your controller driver's <a href="http
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406205">SPB_CONNECTION_PARAMETERS_INIT</a>
+<a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a>
 
 
 
@@ -110,4 +110,4 @@ The SPB framework extension (SpbCx) calls your controller driver's <a href="http
 
 
 
-<a href="https://msdn.microsoft.com/D90DD169-A989-4D08-B1B8-BDE7EC9B7A82">EvtSpbTargetConnect</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406205">SPB_CONNECTION_PARAMETERS_INIT</a>

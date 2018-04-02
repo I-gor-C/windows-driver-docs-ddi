@@ -47,27 +47,70 @@ req.typenames: PosDeviceControlType
 This enumeration defines values for the IOCTLs of the scanner driver and magnetic stripe reader (MSR) driver.
 
 ## Syntax
-````
-typedef enum _PosDeviceControlType { 
-  Invalid                          = 0,
-  GetProperty                      = 1,
-  SetProperty                      = 2,
-  ClaimDevice                      = 3,
-  ReleaseDevice                    = 4,
-  RetainDevice                     = 5,
-  RetrieveStatistics               = 6,
-  ResetStatistics                  = 7,
-  UpdateStatistics                 = 8,
-  CheckHealth                      = 9,
-  GetDeviceBasics                  = 10,
-  BarcodeScannerInjectEvent        = 11,
-  MsrRetrieveDeviceAuthentication  = 12,
-  MsrAuthenticateDevice            = 13,
-  MsrDeAuthenticateDevice          = 14,
-  MsrUpdateKey                     = 15,
-  _MaxDeviceControlType            = 16
+```
+typedef enum _PosDeviceControlType {
+  _MinDeviceControlType                 ,
+  Invalid                               ,
+  GetProperty                           ,
+  SetProperty                           ,
+  ClaimDevice                           ,
+  ReleaseDevice                         ,
+  RetainDevice                          ,
+  RetrieveStatistics                    ,
+  ResetStatistics                       ,
+  UpdateStatistics                      ,
+  CheckHealth                           ,
+  GetDeviceBasics                       ,
+  BarcodeScannerInjectEvent             ,
+  MsrRetrieveDeviceAuthentication       ,
+  MsrAuthenticateDevice                 ,
+  MsrDeAuthenticateDevice               ,
+  MsrUpdateKey                          ,
+  StartBarcodeScannerSoftwareTrigger    ,
+  StopBarcodeScannerSoftwareTrigger     ,
+  PrinterClearOutput                    ,
+  PrinterSlipWaitForPaperInserted       ,
+  PrinterSlipWaitForPaperRemoved        ,
+  PrinterChangePrintSide                ,
+  PrinterCutPaper                       ,
+  PrinterDrawRuledLine                  ,
+  PrinterSlipOpenJaws                   ,
+  PrinterSlipCloseJaws                  ,
+  PrinterMarkFeed                       ,
+  PrinterPageModePrint                  ,
+  PrinterPrintBarcode                   ,
+  PrinterPrintMemoryBitmapStart         ,
+  PrinterPrintMemoryBitmapFill          ,
+  PrinterPrintNormal                    ,
+  PrinterRotatePrint                    ,
+  PrinterSetBitmapStart                 ,
+  PrinterSetBitmapFill                  ,
+  PrinterTransactionPrint               ,
+  PrinterValidateData                   ,
+  PrinterPrintSavedBitmap               ,
+  CashDrawerOpenDrawer                  ,
+  CashDrawerCreateDrawerCloseAlarm      ,
+  CashDrawerCancelWait                  ,
+  ConnectRemotePosDevice                ,
+  PrinterWaitForJobComplete             ,
+  LineDisplayCreateWindow               ,
+  LineDisplayDestroyWindow              ,
+  LineDisplayRefreshWindow              ,
+  LineDisplayWindowDisplayText          ,
+  LineDisplayWindowDisplayTextAt        ,
+  LineDisplayWindowScrollText           ,
+  LineDisplayWindowClearText            ,
+  LineDisplayWindowDisplayBitmap        ,
+  LineDisplaySetBitmap                  ,
+  LineDisplaySetDescriptor              ,
+  LineDisplayClearDescriptors           ,
+  LineDisplayDefineGlyph                ,
+  LineDisplayReadCharacterAtCursor      ,
+  BarcodeScannerGetSymbologyAttributes  ,
+  BarcodeScannerSetSymbologyAttributes  ,
+  _MaxDeviceControlType
 } PosDeviceControlType;
-````
+```
 
 ## Constants
 
@@ -85,52 +128,52 @@ typedef enum _PosDeviceControlType {
             
                 <tr>
                     <td>GetProperty</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_get_property.md">IOCTL_POINT_OF_SERVICE_GET_PROPERTY</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772098">IOCTL_POINT_OF_SERVICE_GET_PROPERTY</a>.</td>
                 </tr>
             
                 <tr>
                     <td>SetProperty</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_set_property.md">IOCTL_POINT_OF_SERVICE_SET_PROPERTY</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772123">IOCTL_POINT_OF_SERVICE_SET_PROPERTY</a>.</td>
                 </tr>
             
                 <tr>
                     <td>ClaimDevice</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_claim_device.md">IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772093">IOCTL_POINT_OF_SERVICE_CLAIM_DEVICE</a>.</td>
                 </tr>
             
                 <tr>
                     <td>ReleaseDevice</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_release_device.md">IOCTL_POINT_OF_SERVICE_RELEASE_DEVICE</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772112">IOCTL_POINT_OF_SERVICE_RELEASE_DEVICE</a>.</td>
                 </tr>
             
                 <tr>
                     <td>RetainDevice</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_retain_device.md">IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772117">IOCTL_POINT_OF_SERVICE_RETAIN_DEVICE</a>.</td>
                 </tr>
             
                 <tr>
                     <td>RetrieveStatistics</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_retrieve_statistics.md">IOCTL_POINT_OF_SERVICE_RETRIEVE_STATISTICS</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772120">IOCTL_POINT_OF_SERVICE_RETRIEVE_STATISTICS</a>.</td>
                 </tr>
             
                 <tr>
                     <td>ResetStatistics</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_reset_statistics.md">IOCTL_POINT_OF_SERVICE_RESET_STATISTICS</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772114">IOCTL_POINT_OF_SERVICE_RESET_STATISTICS</a>.</td>
                 </tr>
             
                 <tr>
                     <td>UpdateStatistics</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_update_statistics.md">IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772126">IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS</a>.</td>
                 </tr>
             
                 <tr>
                     <td>CheckHealth</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_check_health.md">IOCTL_POINT_OF_SERVICE_CHECK_HEALTH</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772091">IOCTL_POINT_OF_SERVICE_CHECK_HEALTH</a>.</td>
                 </tr>
             
                 <tr>
                     <td>GetDeviceBasics</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_get_device_basics.md">IOCTL_POINT_OF_SERVICE_GET_DEVICE_BASICS</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772097">IOCTL_POINT_OF_SERVICE_GET_DEVICE_BASICS</a>.</td>
                 </tr>
             
                 <tr>
@@ -140,22 +183,22 @@ typedef enum _PosDeviceControlType {
             
                 <tr>
                     <td>MsrRetrieveDeviceAuthentication</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_msr_retrieve_device_authentication.md">IOCTL_POINT_OF_SERVICE_MSR_RETRIEVE_DEVICE_AUTHENTICATION</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772107">IOCTL_POINT_OF_SERVICE_MSR_RETRIEVE_DEVICE_AUTHENTICATION</a>.</td>
                 </tr>
             
                 <tr>
                     <td>MsrAuthenticateDevice</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_msr_authenticate_device.md">IOCTL_POINT_OF_SERVICE_MSR_AUTHENTICATE_DEVICE</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772101">IOCTL_POINT_OF_SERVICE_MSR_AUTHENTICATE_DEVICE</a>.</td>
                 </tr>
             
                 <tr>
                     <td>MsrDeAuthenticateDevice</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_msr_deauthenticate_device.md">IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772102">IOCTL_POINT_OF_SERVICE_MSR_DEAUTHENTICATE_DEVICE</a>.</td>
                 </tr>
             
                 <tr>
                     <td>MsrUpdateKey</td>
-                    <td>Represents <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_msr_update_key.md">IOCTL_POINT_OF_SERVICE_MSR_UPDATE_KEY</a>.</td>
+                    <td>Represents <a href="https://msdn.microsoft.com/library/windows/hardware/dn772108">IOCTL_POINT_OF_SERVICE_MSR_UPDATE_KEY</a>.</td>
                 </tr>
             
                 <tr>

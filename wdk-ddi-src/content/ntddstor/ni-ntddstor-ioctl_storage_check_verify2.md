@@ -7,7 +7,7 @@ old-location: storage\ioctl_storage_check_verify2.htm
 old-project: storage
 ms.assetid: bac1e5ec-0e0c-4d7a-b260-2e73addd0abf
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_STORAGE_CHECK_VERIFY2, IOCTL_STORAGE_CHECK_VERIFY2 control code [Storage Devices], k307_81e9c9dd-6905-4d07-9da0-f54997bc8640.xml, ntddstor/IOCTL_STORAGE_CHECK_VERIFY2, storage.ioctl_storage_check_verify2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,16 +50,16 @@ Determines whether the media has changed on a removable-media device - the calle
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-Input is identical to the input for <a href="..\ntddstor\ni-ntddstor-ioctl_storage_check_verify.md">IOCTL_STORAGE_CHECK_VERIFY</a>.
+Input is identical to the input for <a href="https://msdn.microsoft.com/library/windows/hardware/ff560535">IOCTL_STORAGE_CHECK_VERIFY</a>.
 
 ### Input Buffer Length
-Input length is identical to input length for <a href="..\ntddstor\ni-ntddstor-ioctl_storage_check_verify.md">IOCTL_STORAGE_CHECK_VERIFY</a>.
+Input length is identical to input length for <a href="https://msdn.microsoft.com/library/windows/hardware/ff560535">IOCTL_STORAGE_CHECK_VERIFY</a>.
 
 ### Output Buffer
-Output is identical to the output for <a href="..\ntddstor\ni-ntddstor-ioctl_storage_check_verify.md">IOCTL_STORAGE_CHECK_VERIFY</a>.
+Output is identical to the output for <a href="https://msdn.microsoft.com/library/windows/hardware/ff560535">IOCTL_STORAGE_CHECK_VERIFY</a>.
 
 ### Output Buffer Length
-Output length is identical to output length for <a href="..\ntddstor\ni-ntddstor-ioctl_storage_check_verify.md">IOCTL_STORAGE_CHECK_VERIFY</a>.
+Output length is identical to output length for <a href="https://msdn.microsoft.com/library/windows/hardware/ff560535">IOCTL_STORAGE_CHECK_VERIFY</a>.
 
 ### Input / Output Buffer
 <text></text>
@@ -68,7 +68,7 @@ Output length is identical to output length for <a href="..\ntddstor\ni-ntddstor
 <text></text>
 
 ### Status Block
-I/O status is identical to the I/O status for <a href="..\ntddstor\ni-ntddstor-ioctl_storage_check_verify.md">IOCTL_STORAGE_CHECK_VERIFY</a>.
+I/O status is identical to the I/O status for <a href="https://msdn.microsoft.com/library/windows/hardware/ff560535">IOCTL_STORAGE_CHECK_VERIFY</a>.
 
 
 ## Requirements
@@ -78,4 +78,4 @@ I/O status is identical to the I/O status for <a href="..\ntddstor\ni-ntddstor-i
 
 ## See Also
 
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_check_verify.md">IOCTL_STORAGE_CHECK_VERIFY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560535">IOCTL_STORAGE_CHECK_VERIFY</a>

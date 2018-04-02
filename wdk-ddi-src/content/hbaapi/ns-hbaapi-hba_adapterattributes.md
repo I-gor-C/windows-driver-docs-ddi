@@ -7,7 +7,7 @@ old-location: storage\hba_adapterattributes.htm
 old-project: storage
 ms.assetid: d86a5810-7014-41d5-bd88-3a1bd50032da
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PHBA_ADAPTERATTRIBUTES, HBA_ADAPTERATTRIBUTES, HBA_ADAPTERATTRIBUTES structure [Storage Devices], HBA_AdapterAttributes, HBA_AdapterAttributes structure [Storage Devices], PHBA_ADAPTERATTRIBUTES, PHBA_ADAPTERATTRIBUTES structure pointer [Storage Devices], hbaapi/HBA_AdapterAttributes, hbaapi/PHBA_ADAPTERATTRIBUTES, storage.hba_adapterattributes, structs-Fibre_364bd5e8-0276-425b-a1f9-9659aabecd19.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,26 +44,26 @@ req.typenames: HBA_ADAPTERATTRIBUTES, *PHBA_ADAPTERATTRIBUTES
 ---
 
 # HBA_AdapterAttributes structure
-The HBA_AdapterAttributes structure is used in conjunction with the <a href="..\hbaapi\nf-hbaapi-hba_getadapterattributes.md">HBA_GetAdapterAttributes</a> routine to report the attributes of an HBA.
+The HBA_AdapterAttributes structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556078">HBA_GetAdapterAttributes</a> routine to report the attributes of an HBA.
 
 ## Syntax
-````
+```
 typedef struct HBA_AdapterAttributes {
-  char       Manufacturer[64];
-  char       SerialNumber[64];
-  char       Model[256];
-  char       ModelDescription[256];
-  HBA_WWN    NodeWWN;
-  char       NodeSymbolicName[256];
-  char       HardwareVersion[256];
-  char       DriverVersion[256];
-  char       OptionROMVersion[256];
-  char       FirmwareVersion[256];
+  char       Manufacturer[64];
+  char       SerialNumber[64];
+  char       Model[256];
+  char       ModelDescription[256];
+  HBA_WWN    NodeWWN;
+  char       NodeSymbolicName[256];
+  char       HardwareVersion[256];
+  char       DriverVersion[256];
+  char       OptionROMVersion[256];
+  char       FirmwareVersion[256];
   HBA_UINT32 VendorSpecificID;
   HBA_UINT32 NumberOfPorts;
-  char       DriverName[256];
-} HBA_ADAPTERATTRIBUTES, *PHBA_ADAPTERATTRIBUTES;
-````
+  char       DriverName[256];
+} *PHBA_ADAPTERATTRIBUTES, HBA_ADAPTERATTRIBUTES;
+```
 
 ## Members
 
@@ -128,4 +128,4 @@ Contains a string not exceeding 256 bytes in length that indicates name of the f
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_getadapterattributes.md">HBA_GetAdapterAttributes</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556078">HBA_GetAdapterAttributes</a>

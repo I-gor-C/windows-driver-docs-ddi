@@ -52,12 +52,12 @@ The function can only be called at PASSIVE_LEVEL.
 
 ## Syntax
 
-````
-NTSTATUS KsDispatchSpecificMethod(
-  _In_ PIRP         Irp,
-  _In_ PFNKSHANDLER Handler
+```
+KSDDKAPI NTSTATUS KsDispatchSpecificMethod(
+  PIRP         Irp,
+  PFNKSHANDLER Handler
 );
-````
+```
 
 ## Parameters
 
@@ -87,4 +87,4 @@ The <b>KsDispatchSpecificMethod</b> function is intended for additional processi
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksmethodhandler.md">KsMethodHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563399">KsMethodHandler</a>

@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SetThumbnailContent method
+# IPartThumbnail::SetThumbnailContent method
 The <b>SetThumbnailContent</b> method sets the thumbnail content for the part.
 
 ## Syntax
 
-````
+```
 HRESULT SetThumbnailContent(
-  [in] const wchar_t *contentType
+  const wchar_t *pContentType
 );
-````
+```
 
 ## Parameters
 

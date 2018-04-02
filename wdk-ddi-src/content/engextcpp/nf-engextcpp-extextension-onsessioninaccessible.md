@@ -7,7 +7,7 @@ old-location: debugger\onsessioninaccessible.htm
 old-project: debugger
 ms.assetid: ba2c158a-11be-40fe-971e-f58f19a9c1b6
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_3b2329d1-7a01-42d7-951c-777d9b93faa7.xml, ExtExtension, ExtExtension::OnSessionInaccessible, OnSessionInaccessible method [Windows Debugging], OnSessionInaccessible,ExtExtension.OnSessionInaccessible, debugger.onsessioninaccessible
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# OnSessionInaccessible method
+# ExtExtension~r1::OnSessionInaccessible method
 The <b>OnSessionInaccessible</b> method is called by the engine to inform the EngExtCpp extension library when the debugging session becomes inaccessible.
 
 ## Syntax
 
-````
-virtual void OnSessionInaccessible(
-  [in] ULONG64 Argument
+```
+void OnSessionInaccessible(
+  ULONG64 Argument
 );
-````
+```
 
 ## Parameters
 
@@ -84,4 +84,4 @@ This method is called when a target starts executing.
 
 
 
-<a href="..\engextcpp\nf-engextcpp-extextension-onsessionaccessible.md">OnSessionAccessible</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552310">OnSessionAccessible</a>

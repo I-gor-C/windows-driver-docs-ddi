@@ -45,21 +45,21 @@ req.product: Windows 10 or later.
 ---
 
 
-# AdjustDPI method
+# IPrintOemUIMXDC::AdjustDPI method
 The <code>IPrintOemUIMXDC::AdjustDPI</code> method enables an XPS filter pipeline driver to use UnidrvUI.dll or PS5UI.dll to support configuration of image resolution.
 
 ## Syntax
 
-````
+```
 HRESULT AdjustDPI(
-         HANDLE   hPrinter,
-         DWORD    cbDevMode,
-   const PDEVMODE pDevMode,
-         DWORD    cbOEMDM,
-   const PVOID    pOEMDM,
-         PLONG    pDPI
+  HANDLE         hPrinter,
+  DWORD          cbDevMode,
+  CONST PDEVMODE pDevMode,
+  DWORD          cbOEMDM,
+  CONST PVOID    pOEMDM,
+  PLONG          pDPI
 );
-````
+```
 
 ## Parameters
 

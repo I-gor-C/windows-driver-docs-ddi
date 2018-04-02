@@ -44,16 +44,16 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsSetPhysicalTime method
+# IKsClockPropertySet::KsSetPhysicalTime method
 The <b>KsSetPhysicalTime</b> method sets the physical time on the underlying clock.
 
 ## Syntax
 
-````
+```
 HRESULT KsSetPhysicalTime(
-  [in] LONGLONG Time
+  LONGLONG Time
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ The proxy uses the <a href="https://msdn.microsoft.com/library/windows/hardware/
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565088">KSPROPERTY_CLOCK_PHYSICALTIME</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559742">IKsClockPropertySet::KsGetPhysicalTime</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565088">KSPROPERTY_CLOCK_PHYSICALTIME</a>

@@ -50,11 +50,11 @@ The<b> KsGetDevice</b> function returns the AVStream device structure to which <
 
 ## Syntax
 
-````
-PKSDEVICE KsGetDevice(
-  _In_ PVOID Object
+```
+KSDDKAPI PKSDEVICE KsGetDevice(
+  PVOID Object
 );
-````
+```
 
 ## Parameters
 
@@ -65,13 +65,13 @@ The object to query for the device to which it belongs.
 
 ## Return Value
 
-<b>KsGetDevice</b> returns a pointer to a <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> structure that is the AVStream device to which <i>Object</i> belongs.
+<b>KsGetDevice</b> returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> structure that is the AVStream device to which <i>Object</i> belongs.
 
 ## Remarks
 
 <i>Object</i> should be one of: PKSPIN, PKSFILTER, or PKSFILTERFACTORY. Callers must perform appropriate typecasting to PVOID.
 
-Minidrivers typically do not call this function directly. There are a number of functions that perform inline calls to <b>KsGetDevice</b> and that perform typecasting automatically: <a href="..\ks\nf-ks-ksfilterfactorygetdevice.md">KsFilterFactoryGetDevice</a>, <a href="..\ks\nf-ks-ksfiltergetdevice.md">KsFilterGetDevice</a>, and <a href="..\ks\nf-ks-kspingetdevice.md">KsPinGetDevice</a>.
+Minidrivers typically do not call this function directly. There are a number of functions that perform inline calls to <b>KsGetDevice</b> and that perform typecasting automatically: <a href="https://msdn.microsoft.com/library/windows/hardware/ff562532">KsFilterFactoryGetDevice</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff562544">KsFilterGetDevice</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff563511">KsPinGetDevice</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,28 +84,28 @@ Minidrivers typically do not call this function directly. There are a number of 
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a>
 
 
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>
 
 
 
-<a href="..\ks\nf-ks-kspingetdevice.md">KsPinGetDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a>
 
 
 
-<a href="..\ks\nf-ks-ksfilterfactorygetdevice.md">KsFilterFactoryGetDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562532">KsFilterFactoryGetDevice</a>
 
 
 
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562544">KsFilterGetDevice</a>
 
 
 
-<a href="..\ks\nf-ks-ksfiltergetdevice.md">KsFilterGetDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563511">KsPinGetDevice</a>

@@ -7,7 +7,7 @@ old-location: display\dxgk_pagetableupdatemode.htm
 old-project: display
 ms.assetid: E7C823B1-457E-4B86-B44B-DC5BD48CF98E
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_PAGETABLEUPDATEMODE, DXGK_PAGETABLEUPDATEMODE enumeration [Display Devices], DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, _DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATEMODE, d3dkmddi/DXGK_PAGETABLEUPDATE_CPU_VIRTUAL, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_PHYSICAL, d3dkmddi/DXGK_PAGETABLEUPDATE_GPU_VIRTUAL, display.dxgk_pagetableupdatemode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DXGK_PAGETABLEUPDATEMODE
 ---
 
 # _DXGK_PAGETABLEUPDATEMODE Enumeration
-<b>DXGK_PAGETABLEUPDATEMODE</b> is used as part of a <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a> operation to indicate which member of the related <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a> structure contains the address of the page table to update.
+<b>DXGK_PAGETABLEUPDATEMODE</b> is used as part of a <a href="https://msdn.microsoft.com/d315ff53-4a9f-46a3-ad74-d65a5eb72de1">DxgkDdiBuildPagingBuffer</a> operation to indicate which member of the related <a href="https://msdn.microsoft.com/library/windows/hardware/dn914480">DXGK_PAGETABLEUPDATEADDRESS</a> structure contains the address of the page table to update.
 
 ## Syntax
-````
-typedef enum _DXGK_PAGETABLEUPDATEMODE { 
-  DXGK_PAGETABLEUPDATE_CPU_VIRTUAL,
-  DXGK_PAGETABLEUPDATE_GPU_VIRTUAL,
+```
+typedef enum _DXGK_PAGETABLEUPDATEMODE {
+  DXGK_PAGETABLEUPDATE_CPU_VIRTUAL   ,
+  DXGK_PAGETABLEUPDATE_GPU_VIRTUAL   ,
   DXGK_PAGETABLEUPDATE_GPU_PHYSICAL
 } DXGK_PAGETABLEUPDATEMODE;
-````
+```
 
 ## Constants
 
@@ -61,17 +61,17 @@ typedef enum _DXGK_PAGETABLEUPDATEMODE {
             
                 <tr>
                     <td>DXGK_PAGETABLEUPDATE_CPU_VIRTUAL</td>
-                    <td>Indicates that the address of the page table to update is in the <b>CpuVirtual</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</td>
+                    <td>Indicates that the address of the page table to update is in the <b>CpuVirtual</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914480">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</td>
                 </tr>
             
                 <tr>
                     <td>DXGK_PAGETABLEUPDATE_GPU_VIRTUAL</td>
-                    <td>Indicates that the address of the page table to update is in the <b>GpuVirtual</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</td>
+                    <td>Indicates that the address of the page table to update is in the <b>GpuVirtual</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914480">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</td>
                 </tr>
             
                 <tr>
                     <td>DXGK_PAGETABLEUPDATE_GPU_PHYSICAL</td>
-                    <td>Indicates that the address of the page table to update is in the <b>GpuPhysical</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</td>
+                    <td>Indicates that the address of the page table to update is in the <b>GpuPhysical</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914480">DXGK_PAGETABLEUPDATEADDRESS</a> structure.</td>
                 </tr>
 </table>
 
@@ -84,8 +84,8 @@ typedef enum _DXGK_PAGETABLEUPDATEMODE {
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_pagetableupdateaddress.md">DXGK_PAGETABLEUPDATEADDRESS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn914480">DXGK_PAGETABLEUPDATEADDRESS</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
+<a href="https://msdn.microsoft.com/d315ff53-4a9f-46a3-ad74-d65a5eb72de1">DxgkDdiBuildPagingBuffer</a>

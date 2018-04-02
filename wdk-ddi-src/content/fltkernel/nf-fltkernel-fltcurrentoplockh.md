@@ -7,7 +7,7 @@ old-location: ifsk\fltcurrentoplockh.htm
 old-project: ifsk
 ms.assetid: ee066013-99fb-4a43-82f9-edbad7b5a8e9
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_a_to_d_0abdd89d-fe36-4546-a3bd-87d7d132f73e.xml, FltCurrentOplockH, FltCurrentOplockH routine [Installable File System Drivers], fltkernel/FltCurrentOplockH, ifsk.fltcurrentoplockh
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,17 +50,17 @@ A minifilter driver calls the <b>FltCurrentOplockH</b> routine to determine whet
 
 ## Syntax
 
-````
-BOOLEAN FltCurrentOplockH(
-  _In_ POPLOCK Oplock
+```
+BOOLEAN FLTAPI FltCurrentOplockH(
+  POPLOCK Oplock
 );
-````
+```
 
 ## Parameters
 
 `Oplock`
 
-An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>.
+An opaque oplock pointer for the file. This pointer must have been initialized by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543289">FltInitializeOplock</a>.
 
 
 ## Return Value
@@ -84,8 +84,8 @@ For more information about opportunistic locks, see the Microsoft Windows SDK do
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltinitializeoplock.md">FltInitializeOplock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543289">FltInitializeOplock</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlcurrentoplockh.md">FsRtlCurrentOplockH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545837">FsRtlCurrentOplockH</a>

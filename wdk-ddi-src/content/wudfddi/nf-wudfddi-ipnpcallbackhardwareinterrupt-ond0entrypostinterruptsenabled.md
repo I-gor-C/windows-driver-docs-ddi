@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnD0EntryPostInterruptsEnabled method
+# IPnpCallbackHardwareInterrupt::OnD0EntryPostInterruptsEnabled method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 A driver's <b>OnD0EntryPostInterruptsEnabled</b> event callback function performs device-specific operations that are required when the driver enables the device's hardware interrupts.
 
 ## Syntax
 
-````
+```
 HRESULT OnD0EntryPostInterruptsEnabled(
-  [in] IWDFDevice3            *pInterrupt,
-  [in] WDF_POWER_DEVICE_STATE PreviousState
+  IWDFDevice3            *pDevice,
+  WDF_POWER_DEVICE_STATE PreviousState
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ HRESULT OnD0EntryPostInterruptsEnabled(
 
 `PreviousState`
 
-A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_power_device_state.md">WDF_POWER_DEVICE_STATE</a>-typed enumerator that identifies the previous device power state.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552421">WDF_POWER_DEVICE_STATE</a>-typed enumerator that identifies the previous device power state.
 
 
 ## Return Value
@@ -88,8 +88,8 @@ For more information, see <a href="https://msdn.microsoft.com/432907e7-05a3-4a99
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439744">IPnpCallbackHardwareInterrupt</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439755">OnD0ExitPreInterruptsDisabled</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-ipnpcallbackhardwareinterrupt.md">IPnpCallbackHardwareInterrupt</a>

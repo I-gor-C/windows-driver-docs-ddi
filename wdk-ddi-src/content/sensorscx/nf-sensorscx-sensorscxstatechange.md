@@ -50,12 +50,12 @@ Used to initialize a state change.
 
 ## Syntax
 
-````
-FORCEINLINE VOID SensorsCxStateChange(
-  _In_ SENSOROBJECT Sensor,
-  _In_ SENSOR_STATE State
+```
+void SensorsCxStateChange(
+  SENSOROBJECT Sensor,
+  SENSOR_STATE State
 );
-````
+```
 
 ## Parameters
 

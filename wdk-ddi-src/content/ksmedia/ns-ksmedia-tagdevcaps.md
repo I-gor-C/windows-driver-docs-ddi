@@ -47,7 +47,7 @@ req.typenames: DEVCAPS, *PDEVCAPS
 The DEVCAPS structure describes the capabilities of an external device.
 
 ## Syntax
-````
+```
 typedef struct tagDEVCAPS {
   LONG CanRecord;
   LONG CanRecordStrobe;
@@ -73,7 +73,7 @@ typedef struct tagDEVCAPS {
   LONG SeekType;
   LONG SimulatedHardware;
 } DEVCAPS, *PDEVCAPS;
-````
+```
 
 ## Members
 
@@ -288,8 +288,8 @@ The <b>DeviceType</b> member can be used by an application to detect the device 
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-_timecode.md">TIMECODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565156">KSPROPERTY_EXTDEVICE_S</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_extdevice_s.md">KSPROPERTY_EXTDEVICE_S</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568520">TIMECODE</a>

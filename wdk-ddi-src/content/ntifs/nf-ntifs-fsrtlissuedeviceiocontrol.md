@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlissuedeviceiocontrol.htm
 old-project: ifsk
 ms.assetid: 3BB31389-EB1B-4443-9FCF-70B420D71126
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlIssueDeviceIoControl, FsRtlIssueDeviceIoControl routine [Installable File System Drivers], ifsk.fsrtlissuedeviceiocontrol, ntifs/FsRtlIssueDeviceIoControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,18 +50,18 @@ The <b>FsRtlIssueDeviceIoControl</b> routine sends a synchronous device I/O cont
 
 ## Syntax
 
-````
+```
 NTSTATUS FsRtlIssueDeviceIoControl(
-  _In_      PDEVICE_OBJECT DeviceObject,
-  _In_      ULONG          IoCtl,
-  _In_      ULONG          IrpFlags,
-  _In_opt_  ULONG          InputBuffer,
-  _In_      ULONG          InputBufferLength,
-  _Out_opt_ ULONG          OutputBuffer,
-  _In_      ULONG          OutputBufferLength,
-  _In_      PULONG_PTR     IosbInformation
+  PDEVICE_OBJECT DeviceObject,
+  ULONG          IoCtl,
+  UCHAR          Flags,
+  PVOID          InputBuffer,
+  ULONG          InputBufferLength,
+  PVOID          OutputBuffer,
+  ULONG          OutputBufferLength,
+  PULONG_PTR     IosbInformation
 );
-````
+```
 
 ## Parameters
 
@@ -114,4 +114,4 @@ A pointer to a <b>ULONG</b> status value to receive the information field value 
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltdeviceiocontrolfile.md">FltDeviceIoControlFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542046">FltDeviceIoControlFile</a>

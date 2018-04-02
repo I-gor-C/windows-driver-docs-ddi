@@ -7,7 +7,7 @@ old-location: debugger\geteventfiltercommandwide.htm
 old-project: debugger
 ms.assetid: a565627a-4a70-4255-9a88-c39a3db11d25
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetEventFilterCommandWide method [Windows Debugging], GetEventFilterCommandWide method [Windows Debugging], IDebugControl4 interface, GetEventFilterCommandWide,IDebugControl4.GetEventFilterCommandWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetEventFilterCommandWide method, IDebugControl4::GetEventFilterCommandWide, dbgeng/IDebugControl4::GetEventFilterCommandWide, debugger.geteventfiltercommandwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetEventFilterCommandWide method
+# IDebugControl4::GetEventFilterCommandWide method
 The <b>GetEventFilterCommandWide</b>  method returns the debugger command that the engine will execute when a specified event occurs.
 
 ## Syntax
 
-````
+```
 HRESULT GetEventFilterCommandWide(
-  [in]            ULONG  Index,
-  [out, optional] PWSTR  Buffer,
-  [in]            ULONG  BufferSize,
-  [out, optional] PULONG CommandSize
+  ULONG  Index,
+  PWSTR  Buffer,
+  ULONG  BufferSize,
+  PULONG CommandSize
 );
-````
+```
 
 ## Parameters
 
@@ -111,15 +111,15 @@ For more information about event filters, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546653">GetExceptionFilterSecondCommand</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556678">SetEventFilterCommand</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546653">GetExceptionFilterSecondCommand</a>
 
 
 

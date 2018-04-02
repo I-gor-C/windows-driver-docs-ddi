@@ -7,7 +7,7 @@ old-location: display\d3dddi_openresourceflags.htm
 old-project: display
 ms.assetid: f65fda13-3d05-4e1b-b0c7-01e43a9bf09e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_OPENRESOURCEFLAGS, D3DDDI_OPENRESOURCEFLAGS structure [Display Devices], D3D_other_Structs_918a41c9-09de-4916-a0d6-fd69f7c431c2.xml, _D3DDDI_OPENRESOURCEFLAGS, d3dumddi/D3DDDI_OPENRESOURCEFLAGS, display.d3dddi_openresourceflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: D3DDDI_OPENRESOURCEFLAGS
 The D3DDDI_OPENRESOURCEFLAGS structure identifies the type of resource to open.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDI_OPENRESOURCEFLAGS {
   union {
     struct {
-      UINT Fullscreen  :1;
-      UINT AlphaOverride  :1;
-      UINT Reserved  :30;
+      UINT  : 1  Fullscreen;
+      UINT  : 1  AlphaOverride;
+      UINT  : 30 Reserved;
     };
-    UINT   Value;
+    UINT Value;
   };
 } D3DDDI_OPENRESOURCEFLAGS;
-````
+```
 
 ## Members
 
@@ -72,4 +72,4 @@ typedef struct _D3DDDI_OPENRESOURCEFLAGS {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_openresource.md">D3DDDIARG_OPENRESOURCE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543232">D3DDDIARG_OPENRESOURCE</a>

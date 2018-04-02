@@ -7,7 +7,7 @@ old-location: ifsk\psgetprocessexittime.htm
 old-project: ifsk
 ms.assetid: 2d98e2f5-0dc4-4490-a039-eb57f0e5fa87
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: PsGetProcessExitTime, PsGetProcessExitTime routine [Installable File System Drivers], ifsk.psgetprocessexittime, ntifs/PsGetProcessExitTime, psref_a3867d14-4a6b-4560-a580-cdc00075b185.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>PsGetProcessExitTime</b> routine returns the exit time for the current pr
 
 ## Syntax
 
-````
-LARGE_INTEGER PsGetProcessExitTime(
-   VOID 
+```
+NTKERNELAPI LARGE_INTEGER PsGetProcessExitTime(
+
 );
-````
+```
 
 ## Parameters
 
@@ -80,12 +80,12 @@ For more information about converting time values, see <a href="https://msdn.mic
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exsystemtimetolocaltime.md">ExSystemTimeToLocalTime</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545622">ExSystemTimeToLocalTime</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-psisthreadterminating.md">PsIsThreadTerminating</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553068">KeQuerySystemTime</a>
 
 
 
-<a href="..\wdm\nf-wdm-kequerysystemtime.md">KeQuerySystemTime</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551915">PsIsThreadTerminating</a>

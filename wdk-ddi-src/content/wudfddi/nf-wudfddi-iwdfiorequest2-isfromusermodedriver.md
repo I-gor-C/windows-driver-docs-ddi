@@ -45,16 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# IsFromUserModeDriver method
+# IWDFIoRequest2::IsFromUserModeDriver method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>IsFromUserModeDriver</b> method indicates whether an I/O request came from a user-mode driver or an application.
 
 ## Syntax
 
-````
-BOOL IsFromUserModeDriver();
-````
+```
+BOOL IsFromUserModeDriver(
+
+);
+```
 
 ## Parameters
 
@@ -68,7 +70,7 @@ A Boolean value that, if <b>TRUE</b>, indicates that the current I/O request is 
 
 If your driver supports <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/supporting-kernel-mode-clients-in-umdf-1-x-drivers">kernel-mode clients</a>, it should call <b>IsFromUserModeDriver</b> only if <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a> returns <b>WdfUserMode</b>.
 
-The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdfrequestisfromusermodedriver.md">WdfRequestIsFromUserModeDriver</a>.
+The UMDF 2 equivalent of this method is <a href="https://msdn.microsoft.com/library/windows/hardware/dn265620">WdfRequestIsFromUserModeDriver</a>.
 
 
 #### Examples
@@ -88,12 +90,12 @@ For a code example that uses <b>IsFromUserModeDriver</b>, see the example at <a 
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558988">IWDFIoRequest2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559002">IWDFIoRequest2::GetRequestorMode</a>
 
 
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestisfromusermodedriver.md">WdfRequestIsFromUserModeDriver</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265620">WdfRequestIsFromUserModeDriver</a>

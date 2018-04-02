@@ -7,7 +7,7 @@ old-location: ifsk\iocheckdesiredaccess.htm
 old-project: ifsk
 ms.assetid: ab90ab40-7b45-4658-b11b-cf46f91f8699
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: IoCheckDesiredAccess, IoCheckDesiredAccess function [Installable File System Drivers], ifsk.iocheckdesiredaccess, ioref_f8879d66-0bad-4c92-b2a3-853b7eb65ac6.xml, ntifs/IoCheckDesiredAccess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,15 +45,16 @@ req.typenames: TOKEN_TYPE
 
 
 # IoCheckDesiredAccess function
-The <b>IoCheckDesiredAccess</b> routine is reserved for system use. See <a href="..\wdm\nf-wdm-seaccesscheck.md">SeAccessCheck</a>.
+The <b>IoCheckDesiredAccess</b> routine is reserved for system use. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff563674">SeAccessCheck</a>.
 
 ## Syntax
 
-````
-  IoCheckDesiredAccess(
-    
+```
+NTKERNELAPI NTSTATUS IoCheckDesiredAccess(
+  PACCESS_MASK DesiredAccess,
+  ACCESS_MASK  GrantedAccess
 );
-````
+```
 
 ## Parameters
 

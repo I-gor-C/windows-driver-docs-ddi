@@ -7,7 +7,7 @@ old-location: kernel\pep_device_power_state.htm
 old-project: kernel
 ms.assetid: F5E66C33-F727-4631-89C6-413C24995A04
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPEP_DEVICE_POWER_STATE, PEP_DEVICE_POWER_STATE, PEP_DEVICE_POWER_STATE structure [Kernel-Mode Driver Architecture], PPEP_DEVICE_POWER_STATE, PPEP_DEVICE_POWER_STATE structure pointer [Kernel-Mode Driver Architecture], _PEP_DEVICE_POWER_STATE, kernel.pep_device_power_state, pepfx/PEP_DEVICE_POWER_STATE, pepfx/PPEP_DEVICE_POWER_STATE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: PEP_DEVICE_POWER_STATE, *PPEP_DEVICE_POWER_STATE
 The <b>PEP_DEVICE_POWER_STATE</b> structure indicates the status of a transition to a new D<i>x</i> (device power) state.
 
 ## Syntax
-````
+```
 typedef struct _PEP_DEVICE_POWER_STATE {
-  PEPHANDLE          DeviceHandle;
+  PEPHANDLE          DeviceHandle;
   DEVICE_POWER_STATE PowerState;
-  BOOLEAN            Complete;
-  BOOLEAN            SystemTransition;
+  BOOLEAN            Complete;
+  BOOLEAN            SystemTransition;
 } PEP_DEVICE_POWER_STATE, *PPEP_DEVICE_POWER_STATE;
-````
+```
 
 ## Members
 
@@ -65,11 +65,11 @@ typedef struct _PEP_DEVICE_POWER_STATE {
 
 `PowerState`
 
-[in] A <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a> enumeration value that specifies the new device power state.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff554628">DEVICE_POWER_STATE</a> enumeration value that specifies the new device power state.
 
 `Complete`
 
-[in] Whether the transition to the new device power state has just been initiated or has just completed. If TRUE, the transition to the target device power state has completed. If FALSE, the power policy owner (PPO) has initiated the transition by calling the <a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a> routine, but the Windows power manager has not yet issued the D<i>x</i> IRP (an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> request of type <b>DevicePowerState</b>) to the device's driver stack.
+[in] Whether the transition to the new device power state has just been initiated or has just completed. If TRUE, the transition to the target device power state has completed. If FALSE, the power policy owner (PPO) has initiated the transition by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559734">PoRequestPowerIrp</a> routine, but the Windows power manager has not yet issued the D<i>x</i> IRP (an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a> request of type <b>DevicePowerState</b>) to the device's driver stack.
 
 `SystemTransition`
 
@@ -86,11 +86,11 @@ This structure is used by the <a href="https://docs.microsoft.com/en-us/windows-
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554628">DEVICE_POWER_STATE</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551744">IRP_MN_SET_POWER</a>
-
-
-
-<a href="..\wdm\nf-wdm-porequestpowerirp.md">PoRequestPowerIrp</a>
 
 
 
@@ -98,8 +98,8 @@ This structure is used by the <a href="https://docs.microsoft.com/en-us/windows-
 
 
 
-<a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
-
-
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186849">PEP_DPM_REGISTER_DEVICE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559734">PoRequestPowerIrp</a>

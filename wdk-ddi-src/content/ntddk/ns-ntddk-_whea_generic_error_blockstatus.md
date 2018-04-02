@@ -47,19 +47,19 @@ req.typenames: WHEA_GENERIC_ERROR_BLOCKSTATUS, *PWHEA_GENERIC_ERROR_BLOCKSTATUS
 The WHEA_GENERIC_ERROR_BLOCKSTATUS union indicates what kind of error data is reported in a generic error status block.
 
 ## Syntax
-````
-typedef union _WHEA_GENERIC_ERROR_BLOCKSTATUS {
+```
+typedef struct _WHEA_GENERIC_ERROR_BLOCKSTATUS {
   struct {
-    ULONG UncorrectableError  :1;
-    ULONG CorrectableError  :1;
-    ULONG MultipleUncorrectableErrors  :1;
-    ULONG MultipleCorrectableErrors  :1;
-    ULONG ErrorDataEntryCount  :10;
-    ULONG Reserved  :18;
-  };
-  ULONG  AsULONG;
-} WHEA_GENERIC_ERROR_BLOCKSTATUS, *PWHEA_GENERIC_ERROR_BLOCKSTATUS;
-````
+    ULONG  : 1  CorrectableError;
+    ULONG  : 10 ErrorDataEntryCount;
+    ULONG  : 1  MultipleCorrectableErrors;
+    ULONG  : 1  MultipleUncorrectableErrors;
+    ULONG  : 18 Reserved;
+    ULONG  : 1  UncorrectableError;
+  } DUMMYSTRUCTNAME;
+  ULONG  AsULONG;
+} *PWHEA_GENERIC_ERROR_BLOCKSTATUS, WHEA_GENERIC_ERROR_BLOCKSTATUS;
+```
 
 ## Members
 
@@ -73,7 +73,7 @@ typedef union _WHEA_GENERIC_ERROR_BLOCKSTATUS {
 A ULONG representation of the contents of the WHEA_GENERIC_ERROR_BLOCKSTATUS union.
 
 ## Remarks
-A WHEA_GENERIC_ERROR_BLOCKSTATUS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure.
+A WHEA_GENERIC_ERROR_BLOCKSTATUS union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560524">WHEA_GENERIC_ERROR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,8 +83,8 @@ A WHEA_GENERIC_ERROR_BLOCKSTATUS union is contained within the <a href="..\ntddk
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560524">WHEA_GENERIC_ERROR</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error_data_entry_v2.md">WHEA_GENERIC_ERROR_DATA_ENTRY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560529">WHEA_GENERIC_ERROR_DATA_ENTRY</a>

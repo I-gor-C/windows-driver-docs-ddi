@@ -7,7 +7,7 @@ old-location: netvista\miniportwdirxreturnframes.htm
 old-project: netvista
 ms.assetid: BF2DB7C6-97F9-454B-8DED-E8CC21A4F07F
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: MINIPORT_WDI_RX_RETURN_FRAMES, MiniportWdiRxReturnFrames, MiniportWdiRxReturnFrames callback function [Network Drivers Starting with Windows Vista], dot11wdi/MiniportWdiRxReturnFrames, netvista.miniportwdirxreturnframes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,9 +46,9 @@ req.typenames: SYNTH_STATS, *PSYNTH_STATS
 
 # MINIPORT_WDI_RX_RETURN_FRAMES callback function
 The 
-  MiniportWdiRxReturnFrames handler function returns a <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure (and associated data buffers) to the TAL.
+  MiniportWdiRxReturnFrames handler function returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure (and associated data buffers) to the TAL.
 
-This is a WDI miniport handler inside <a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_wdi_data_handlers.md">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>.
+This is a WDI miniport handler inside <a href="https://msdn.microsoft.com/library/windows/hardware/mt297618">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>.
 <div class="alert"><b>Note</b>  You must declare the function by using the <b>MINIPORT_WDI_RX_RETURN_FRAMES</b> type. For more
    information, see the following Examples section.</div><div> </div>
 
@@ -68,11 +68,11 @@ void MiniportWdiRxReturnFrames(
 
 `MiniportTalTxRxContext`
 
-TAL device handle returned by the IHV miniport in <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_initialize.md">MiniportWdiTalTxRxInitialize</a>.
+TAL device handle returned by the IHV miniport in <a href="https://msdn.microsoft.com/C297D681-D43F-4105-9E08-7FF42807E9A0">MiniportWdiTalTxRxInitialize</a>.
 
 `pNBL`
 
-Pointer to the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> chain being returned to the IHV miniport.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> chain being returned to the IHV miniport.
 
 
 ## Return Value
@@ -89,11 +89,11 @@ This callback function does not return a value.
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt297618">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>
 
 
 
-<a href="..\dot11wdi\ns-dot11wdi-_ndis_miniport_wdi_data_handlers.md">NDIS_MINIPORT_WDI_DATA_HANDLERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
 
 
 

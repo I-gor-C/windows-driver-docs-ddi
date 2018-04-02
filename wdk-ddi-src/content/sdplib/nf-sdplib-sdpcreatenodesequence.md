@@ -51,11 +51,11 @@ The Bluetooth
 
 ## Syntax
 
-````
-PSDP_NODE SdpCreateNodeSequence(
-  _In_ ULONG tag
+```
+_IRQL_requires_same_ PSDP_NODE SdpCreateNodeSequence(
+  ULONG tag
 );
-````
+```
 
 ## Parameters
 
@@ -67,19 +67,19 @@ A profile driver defined tag to associate with the node.
 ## Return Value
 
 If successful, this function returns a pointer to the newly allocated 
-     <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a> structure. If not successful, this
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a> structure. If not successful, this
      function returns <b>NULL</b>.
 
 ## Remarks
 
 After a sequence node is created by calling the 
     <b>SdpCreateNodeSequence</b> function, Bluetooth drivers can call the 
-    <a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">
+    <a href="https://msdn.microsoft.com/beec5516-6191-4b70-8c80-ddbaedbad5c0">
     SdpAppendNodeToContainerNode</a> function to insert other nodes into the sequence node or to add the
     new sequence node to another sequence node.
 
 A sequence node can be added as a top-level attribute of an SDP record by calling the 
-    <a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a> function.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536784">SdpAddAttributeToTree</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,12 +91,12 @@ A sequence node can be added as a top-level attribute of an SDP record by callin
 
 ## See Also
 
-<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a>
 
 
 
-<a href="..\sdplib\nf-sdplib-sdpappendnodetocontainernode.md">SdpAppendNodeToContainerNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536784">SdpAddAttributeToTree</a>
 
 
 
-<a href="..\sdplib\nf-sdplib-sdpaddattributetotree.md">SdpAddAttributeToTree</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536786">SdpAppendNodeToContainerNode</a>

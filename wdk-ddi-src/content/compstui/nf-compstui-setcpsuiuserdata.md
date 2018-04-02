@@ -49,12 +49,12 @@ CPSUI's <code>SetCPSUIUserData</code> function allows CPSUI applications (includ
 
 ## Syntax
 
-````
+```
 BOOL SetCPSUIUserData(
-   HWND      hDlg,
-   ULONG_PTR CPSUIUserData
+  HWND      hDlg,
+  ULONG_PTR CPSUIUserData
 );
-````
+```
 
 ## Parameters
 
@@ -73,9 +73,9 @@ The  function returns <b>TRUE</b> if it is successful in associating the nondisp
 
 ## Remarks
 
-The <code>SetCPSUIUserData</code> function should be called only from within a dialog box procedure that has been associated with a dialog box by using a <a href="..\compstui\ns-compstui-_dlgpage.md">DLGPAGE</a> or an <a href="..\compstui\ns-compstui-_extpush.md">EXTPUSH</a> structure.
+The <code>SetCPSUIUserData</code> function should be called only from within a dialog box procedure that has been associated with a dialog box by using a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547607">DLGPAGE</a> or an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548795">EXTPUSH</a> structure.
 
-A value that is stored by calling <code>SetCPSUIUserData</code> can be later retrieved by calling <a href="..\compstui\nf-compstui-getcpsuiuserdata.md">GetCPSUIUserData</a>.
+A value that is stored by calling <code>SetCPSUIUserData</code> can be later retrieved by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549922">GetCPSUIUserData</a>.
 
 The handle specified for <i>hDlg</i> must be the handle received as input to the dialog box procedure. (Dialog box procedures are described in the Microsoft Windows SDK documentation.)
 

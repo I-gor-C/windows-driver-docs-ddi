@@ -7,7 +7,7 @@ old-location: display\dxgk_timed_operation_interface.htm
 old-project: display
 ms.assetid: 85b3764d-00b5-4e1d-bedc-c59a6b182735
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PDXGK_TIMED_OPERATION_INTERFACE, DXGK_TIMED_OPERATION_INTERFACE, DXGK_TIMED_OPERATION_INTERFACE structure [Display Devices], DmStructs_024c0974-7f10-4251-b08e-c68307fc62d9.xml, PDXGK_TIMED_OPERATION_INTERFACE, PDXGK_TIMED_OPERATION_INTERFACE structure pointer [Display Devices], _DXGK_TIMED_OPERATION_INTERFACE, display.dxgk_timed_operation_interface, dispmprt/DXGK_TIMED_OPERATION_INTERFACE, dispmprt/PDXGK_TIMED_OPERATION_INTERFACE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,31 +47,18 @@ req.typenames: DXGK_TIMED_OPERATION_INTERFACE, *PDXGK_TIMED_OPERATION_INTERFACE
 The DXGK_TIMED_OPERATION_INTERFACE structure contains pointers to functions in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>, which is implemented by the display port driver.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_TIMED_OPERATION_INTERFACE {
-  USHORT                 Size;
-  USHORT                 Version;
-  PVOID                  Context;
-  PINTERFACE_REFERENCE   InterfaceReference;
+  USHORT                 Size;
+  USHORT                 Version;
+  PVOID                  Context;
+  PINTERFACE_REFERENCE   InterfaceReference;
   PINTERFACE_DEREFERENCE InterfaceDereference;
-  NTSTATUS               (*TimedOperationStart)(
-      _Out_ DXGK_TIMED_OPERATION *Op, 
-      _In_ const LARGE_INTEGER *Timeout, 
-      _In_ BOOLEAN OsHandled);
-  NTSTATUS               (*TimedOperationDelay)(
-      _Inout_ DXGK_TIMED_OPERATION *Op, 
-      _In_ KPROCESSOR_MODE WaitMode, 
-      _In_ BOOLEAN Alertable, 
-      _In_opt_ const LARGE_INTEGER *Interval);
-  NTSTATUS               (*TimedOperationWaitForSingleObject)(
-      _Inout_ DXGK_TIMED_OPERATION *Op, 
-      _In_ PVOID Object, 
-      _In_ KWAIT_REASON WaitReason, 
-      _In_ KPROCESSOR_MODE WaitMode, 
-      _In_ BOOLEAN Alertable, 
-      _In_opt_ const LARGE_INTEGER *Timeout);
+  NTSTATUS((DXGK_TIMED_OPERATION *Op, const LARGE_INTEGER *Timeout,BOOLEAN OsHandled)              * )TimedOperationStart;
+  NTSTATUS((DXGK_TIMED_OPERATION *Op,KPROCESSOR_MODE WaitMode,BOOLEAN Alertable, const LARGE_INTEGER *Interval)              * )TimedOperationDelay;
+  NTSTATUS((DXGK_TIMED_OPERATION *Op,PVOID Object,KWAIT_REASON WaitReason,KPROCESSOR_MODE WaitMode,BOOLEAN Alertable, const LARGE_INTEGER *Timeout)              * )TimedOperationWaitForSingleObject;
 } DXGK_TIMED_OPERATION_INTERFACE, *PDXGK_TIMED_OPERATION_INTERFACE;
-````
+```
 
 ## Members
 
@@ -100,13 +87,13 @@ A pointer to an interface dereference function that is implemented by the displa
 
 The <b>TimedOperationStart</b> function starts or restarts a timed operation.
 
-The driver should preset the <b>Size</b> member of the <a href="..\dispmprt\ns-dispmprt-_dxgk_timed_operation.md">DXGK_TIMED_OPERATION</a> structure that is pointed to by the <i>Op</i> parameter to <b>sizeof</b>(DXGK_TIMED_OPERATION).
+The driver should preset the <b>Size</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562062">DXGK_TIMED_OPERATION</a> structure that is pointed to by the <i>Op</i> parameter to <b>sizeof</b>(DXGK_TIMED_OPERATION).
 
 
 
 #### Op
 
-[out] A pointer to a <a href="..\dispmprt\ns-dispmprt-_dxgk_timed_operation.md">DXGK_TIMED_OPERATION</a> structure that describes the timed operation to start or restart.
+[out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562062">DXGK_TIMED_OPERATION</a> structure that describes the timed operation to start or restart.
 
 
 
@@ -128,7 +115,7 @@ The <b>TimedOperationDelay</b> function puts the current thread into an alertabl
 
 #### Op
 
-[in/out] A pointer to a <a href="..\dispmprt\ns-dispmprt-_dxgk_timed_operation.md">DXGK_TIMED_OPERATION</a> structure that describes the timed operation to delay. This timed operation was started by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570084">TimedOperationStart</a> function.
+[in/out] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562062">DXGK_TIMED_OPERATION</a> structure that describes the timed operation to delay. This timed operation was started by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570084">TimedOperationStart</a> function.
 
 
 
@@ -156,7 +143,7 @@ The <b>TimedOperationWaitForSingleObject</b> function puts the current thread in
 
 #### Op
 
-[in] A pointer to a <a href="..\dispmprt\ns-dispmprt-_dxgk_timed_operation.md">DXGK_TIMED_OPERATION</a> structure that describes the timed operation to put into a wait state. This timed operation was started by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570084">TimedOperationStart</a> function.
+[in] A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562062">DXGK_TIMED_OPERATION</a> structure that describes the timed operation to put into a wait state. This timed operation was started by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570084">TimedOperationStart</a> function.
 
 
 
@@ -189,7 +176,7 @@ A Boolean value that specifies whether the wait is alertable. A value of <b>TRUE
 A pointer to variable that contains the relative time, in 100-nanoseconds units, for the wait to be completed. The sign of the value is ignored.
 
 ## Remarks
-The display miniport driver supplies the <b>Size</b> and <b>Version</b> members of this structure, and then calls <a href="..\dispmprt\nc-dispmprt-dxgkcb_query_services.md">DxgkCbQueryServices</a>, which fills in the remaining members of this structure.
+The display miniport driver supplies the <b>Size</b> and <b>Version</b> members of this structure, and then calls <a href="https://msdn.microsoft.com/0ce5df90-2019-4a92-97d6-0218acc8b1e8">DxgkCbQueryServices</a>, which fills in the remaining members of this structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -199,11 +186,11 @@ The display miniport driver supplies the <b>Size</b> and <b>Version</b> members 
 
 ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkcb_query_services.md">DxgkCbQueryServices</a>
+<a href="https://msdn.microsoft.com/0ce5df90-2019-4a92-97d6-0218acc8b1e8">DxgkCbQueryServices</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570085">TimedOperationWaitForSingleObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>
 
 
 
@@ -215,4 +202,4 @@ The display miniport driver supplies the <b>Size</b> and <b>Version</b> members 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff570086">Timed Operation Interface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570085">TimedOperationWaitForSingleObject</a>

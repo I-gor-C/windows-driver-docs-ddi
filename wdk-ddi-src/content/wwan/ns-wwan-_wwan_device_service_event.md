@@ -7,7 +7,7 @@ old-location: netvista\wwan_device_service_event.htm
 old-project: netvista
 ms.assetid: 7E02DDE0-7D55-4FBD-879E-EFBA6A517D86
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWWAN_DEVICE_SERVICE_EVENT, PWWAN_DEVICE_SERVICE_EVENT, PWWAN_DEVICE_SERVICE_EVENT structure pointer [Network Drivers Starting with Windows Vista], WWAN_DEVICE_SERVICE_EVENT, WWAN_DEVICE_SERVICE_EVENT structure [Network Drivers Starting with Windows Vista], _WWAN_DEVICE_SERVICE_EVENT, netvista.wwan_device_service_event, wwan/PWWAN_DEVICE_SERVICE_EVENT, wwan/WWAN_DEVICE_SERVICE_EVENT"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The WWAN_DEVICE_SERVICE_EVENT structure represents an unsolicited device service event.
 
 ## Syntax
-````
+```
 typedef struct _WWAN_DEVICE_SERVICE_EVENT {
-  GUID  DeviceServiceGuid;
+  GUID  DeviceServiceGuid;
   ULONG EventID;
   ULONG uDataSize;
 } WWAN_DEVICE_SERVICE_EVENT, *PWWAN_DEVICE_SERVICE_EVENT;
-````
+```
 
 ## Members
 
@@ -69,7 +69,7 @@ The ID for the event.
 
 `uDataSize`
 
-The size, in bytes, of the device service event data that follows the structure instance in memory. This value should not exceed the value of the <b>uMaxCommandDataSize</b> member of the <a href="..\wwan\ns-wwan-_wwan_supported_device_services.md">WWAN_SUPPORTED_DEVICE_SERVICES</a> structure.
+The size, in bytes, of the device service event data that follows the structure instance in memory. This value should not exceed the value of the <b>uMaxCommandDataSize</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh831880">WWAN_SUPPORTED_DEVICE_SERVICES</a> structure.
 
 
 ## Requirements
@@ -80,4 +80,4 @@ The size, in bytes, of the device service event data that follows the structure 
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_supported_device_services.md">WWAN_SUPPORTED_DEVICE_SERVICES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh831880">WWAN_SUPPORTED_DEVICE_SERVICES</a>

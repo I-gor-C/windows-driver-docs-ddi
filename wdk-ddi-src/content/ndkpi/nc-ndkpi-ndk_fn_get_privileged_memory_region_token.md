@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_get_privileged_memory_region_token.htm
 old-project: netvista
 ms.assetid: A6295FEE-3633-42E7-A2EA-BA0D3C9E4101
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_FN_GET_PRIVILEGED_MEMORY_REGION_TOKEN, NdkGetPrivilegedMemoryRegionToken, NdkGetPrivilegedMemoryRegionToken callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkGetPrivilegedMemoryRegionToken, netvista.ndk_fn_get_privileged_memory_region_token
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ void NdkFnGetPrivilegedMemoryRegionToken(
 
 `*pNdkPd`
 
-A pointer to an NDK protection domain (PD) object (<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>).
+A pointer to an NDK protection domain (PD) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439931">NDK_PD</a>).
 
 `*pToken`
 
@@ -88,4 +88,4 @@ None
 
 ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439931">NDK_PD</a>

@@ -7,7 +7,7 @@ old-location: kernel\key_set_information_class.htm
 old-project: kernel
 ms.assetid: 95a8f683-642c-4f33-9536-08f497567f87
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KEY_SET_INFORMATION_CLASS, KEY_SET_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], KeyControlFlagsInformation, KeySetDebugInformation, KeySetHandleTagsInformation, KeySetVirtualizationInformation, KeyWow64FlagsInformation, KeyWriteTimeInformation, MaxKeySetInfoClass, _KEY_SET_INFORMATION_CLASS, kernel.key_set_information_class, sysenum_b2121228-e221-424c-8e84-cd213d91716b.xml, wdm/KEY_SET_INFORMATION_CLASS, wdm/KeyControlFlagsInformation, wdm/KeySetDebugInformation, wdm/KeySetHandleTagsInformation, wdm/KeySetVirtualizationInformation, wdm/KeyWow64FlagsInformation, wdm/KeyWriteTimeInformation, wdm/MaxKeySetInfoClass
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,17 +48,18 @@ req.product: Windows 10 or later.
 The <b>KEY_SET_INFORMATION_CLASS</b> enumeration type represents the type of information to set for a registry key.
 
 ## Syntax
-````
-typedef enum _KEY_SET_INFORMATION_CLASS { 
-  KeyWriteTimeInformation,
-  KeyWow64FlagsInformation,
-  KeyControlFlagsInformation,
-  KeySetVirtualizationInformation,
-  KeySetDebugInformation,
-  KeySetHandleTagsInformation,
+```
+typedef enum _KEY_SET_INFORMATION_CLASS {
+  KeyWriteTimeInformation          ,
+  KeyWow64FlagsInformation         ,
+  KeyControlFlagsInformation       ,
+  KeySetVirtualizationInformation  ,
+  KeySetDebugInformation           ,
+  KeySetHandleTagsInformation      ,
+  KeySetLayerInformation           ,
   MaxKeySetInfoClass
 } KEY_SET_INFORMATION_CLASS;
-````
+```
 
 ## Constants
 
@@ -66,7 +67,7 @@ typedef enum _KEY_SET_INFORMATION_CLASS {
             
                 <tr>
                     <td>KeyWriteTimeInformation</td>
-                    <td>Indicates that a <a href="..\wdm\ns-wdm-_key_write_time_information.md">KEY_WRITE_TIME_INFORMATION</a> structure is supplied.</td>
+                    <td>Indicates that a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554226">KEY_WRITE_TIME_INFORMATION</a> structure is supplied.</td>
                 </tr>
             
                 <tr>
@@ -117,7 +118,7 @@ A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">Registr
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_key_write_time_information.md">KEY_WRITE_TIME_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554226">KEY_WRITE_TIME_INFORMATION</a>
 
 
 

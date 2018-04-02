@@ -7,7 +7,7 @@ old-location: storage\ioctl_aacs_end_session.htm
 old-project: storage
 ms.assetid: 5a86c871-ed6e-4c96-bc12-03b3a900953d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_AACS_END_SESSION, IOCTL_AACS_END_SESSION control code [Storage Devices], k307_608ddec6-9661-433b-8b82-22ce3b06267d.xml, ntddcdvd/IOCTL_AACS_END_SESSION, storage.ioctl_aacs_end_session
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,7 +44,7 @@ req.typenames: DVD_STRUCTURE_FORMAT, *PDVD_STRUCTURE_FORMAT
 ---
 
 # IOCTL_AACS_END_SESSION IOCTL
-Releases the Authentication Grant Identifier (AGID) that was obtained by <a href="..\ntddcdvd\ni-ntddcdvd-ioctl_aacs_start_session.md">IOCTL_AACS_START_SESSION</a>.
+Releases the Authentication Grant Identifier (AGID) that was obtained by <a href="https://msdn.microsoft.com/library/windows/hardware/ff559307">IOCTL_AACS_START_SESSION</a>.
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")

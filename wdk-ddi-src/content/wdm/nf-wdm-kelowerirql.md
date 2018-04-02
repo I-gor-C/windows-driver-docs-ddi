@@ -7,7 +7,7 @@ old-location: kernel\kelowerirql.htm
 old-project: kernel
 ms.assetid: 95598654-71dd-41cc-a663-b0bcaee77687
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeLowerIrql, KeLowerIrql routine [Kernel-Mode Driver Architecture], k105_06c56235-3b9e-4413-aadb-91e86898121d.xml, kernel.kelowerirql, wdm/KeLowerIrql
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,11 +51,11 @@ The <b>KeLowerIrql</b> routine restores the IRQL on the current processor to its
 
 ## Syntax
 
-````
- VOID KeLowerIrql(
-  _In_ KIRQL NewIrql
+```
+void KeLowerIrql(
+   a
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ None
 
 ## Remarks
 
-It is a fatal error to call <b>KeLowerIrql</b> using an input <i>NewIrql</i> that was not returned by the immediately preceding call to <b>KeRaiseIrql</b> or <a href="..\wdm\nf-wdm-keraiseirqltodpclevel.md">KeRaiseIrqlToDpcLevel</a>.
+It is a fatal error to call <b>KeLowerIrql</b> using an input <i>NewIrql</i> that was not returned by the immediately preceding call to <b>KeRaiseIrql</b> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff553084">KeRaiseIrqlToDpcLevel</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,12 +84,12 @@ It is a fatal error to call <b>KeLowerIrql</b> using an input <i>NewIrql</i> tha
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keraiseirqltodpclevel.md">KeRaiseIrqlToDpcLevel</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552054">KeGetCurrentIrql</a>
 
 
 
-<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553079">KeRaiseIrql</a>
 
 
 
-<a href="..\wdm\nf-wdm-keraiseirql.md">KeRaiseIrql</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553084">KeRaiseIrqlToDpcLevel</a>

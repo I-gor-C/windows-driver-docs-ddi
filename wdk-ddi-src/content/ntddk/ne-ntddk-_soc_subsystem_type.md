@@ -46,7 +46,7 @@ req.typenames: SOC_SUBSYSTEM_TYPE, *PSOC_SUBSYSTEM_TYPE
 # _SOC_SUBSYSTEM_TYPE Enumeration
 The <b>SOC_SYBSYSTEM_TYPE</b> enumeration defines different types of System on a Chip (SoC) subsystems.
 
-The <b>SybsysType</b> member of the <a href="..\ntddk\ns-ntddk-_soc_subsystem_failure_details.md">SOC_SUBSYSTEM_FAILURE_DETAILS</a> structure is a value from this enumeration. The <b>SOC_SUBSYSTEM_FAILURE_DETAILS</b> structure is used by these bug codes:
+The <b>SybsysType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn376404">SOC_SUBSYSTEM_FAILURE_DETAILS</a> structure is a value from this enumeration. The <b>SOC_SUBSYSTEM_FAILURE_DETAILS</b> structure is used by these bug codes:
 <ul>
 <li>
 <a href="https://msdn.microsoft.com/CC42D634-90CE-43F1-8552-E5DE711D2117">Bug Check 0x14B SOC_SUBSYSTEM_FAILURE</a>
@@ -57,15 +57,15 @@ The <b>SybsysType</b> member of the <a href="..\ntddk\ns-ntddk-_soc_subsystem_fa
 </ul>
 
 ## Syntax
-````
-typedef enum _SOC_SUBSYSTEM_TYPE { 
-  SOC_SUBSYSTEM_WIRELESS_MODEM     = 0,
-  SOC_SUBSYS_AUDIO_DSP             = 1,
-  SOC_SUBSYS_WIRELSS_CONNECTIVITY  = 2,
-  SOC_SUBSYS_SENSORS               = 3,
-  SOC_SUBSYS_VENDOR_DEFINED        = 0x10000
-} SOC_SUBSYSTEM_TYPE;
-````
+```
+typedef enum _SOC_SUBSYSTEM_TYPE {
+  SOC_SUBSYS_WIRELESS_MODEM        ,
+  SOC_SUBSYS_AUDIO_DSP             ,
+  SOC_SUBSYS_WIRELSS_CONNECTIVITY  ,
+  SOC_SUBSYS_SENSORS               ,
+  SOC_SUBSYS_VENDOR_DEFINED
+} SOC_SUBSYSTEM_TYPE, *PSOC_SUBSYSTEM_TYPE;
+```
 
 ## Constants
 

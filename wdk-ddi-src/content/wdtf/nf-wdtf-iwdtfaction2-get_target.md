@@ -7,7 +7,7 @@ old-location: dtf\iwdtfaction2_target.htm
 old-project: dtf
 ms.assetid: 9713c1c8-2bfc-4ac4-82f1-b223d3fe2511
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFAction2, IWDTFAction2 interface [Windows Device Testing Framework], Target property, IWDTFAction2.Target, IWDTFAction2::get_Target, Microsoft.WDTF.IWDTFAction2.Target, Microsoft::WDTF::IWDTFAction2::Target, Target property [Windows Device Testing Framework], Target property [Windows Device Testing Framework], IWDTFAction2 interface, dtf.iwdtfaction2_target, get_Target,IWDTFAction2.get_Target, wdtf/IWDTFAction2::Target, wdtf/IWDTFAction2::get_Target
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Target method
+# IWDTFAction2::get_Target method
 Gets the target to which this action refers.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_Target(
-  [out, retval] IWDTFTarget2 **ppTarget
+  IWDTFTarget2 **ppTarget
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtfaction2.md">IWDTFAction2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406311">IWDTFAction2</a>

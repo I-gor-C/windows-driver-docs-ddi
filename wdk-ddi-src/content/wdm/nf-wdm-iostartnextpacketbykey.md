@@ -7,7 +7,7 @@ old-location: kernel\iostartnextpacketbykey.htm
 old-project: kernel
 ms.assetid: 25cf9026-fd5d-4998-b7ff-f7be048ef2a1
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoStartNextPacketByKey, IoStartNextPacketByKey routine [Kernel-Mode Driver Architecture], k104_f2248acf-8071-43a6-b5f9-bc3bc178469b.xml, kernel.iostartnextpacketbykey, wdm/IoStartNextPacketByKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>IoStartNextPacketByKey</b> routine dequeues the next I/O request packet f
 
 ## Syntax
 
-````
-VOID IoStartNextPacketByKey(
-  _In_ PDEVICE_OBJECT DeviceObject,
-  _In_ BOOLEAN        Cancelable,
-  _In_ ULONG          Key
+```
+NTKERNELAPI VOID IoStartNextPacketByKey(
+  PDEVICE_OBJECT DeviceObject,
+  BOOLEAN        Cancelable,
+  ULONG          Key
 );
-````
+```
 
 ## Parameters
 
@@ -99,12 +99,12 @@ Callers of <b>IoStartNextPacketByKey</b> must be running at IRQL &lt;= DISPATCH_
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iostartpacket.md">IoStartPacket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 
 
 
-<a href="..\wdm\nf-wdm-iostartnextpacket.md">IoStartNextPacket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550358">IoStartNextPacket</a>
 
 
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550370">IoStartPacket</a>

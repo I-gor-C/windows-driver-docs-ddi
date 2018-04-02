@@ -7,7 +7,7 @@ old-location: kernel\clfs_mgmt_client_registration.htm
 old-project: kernel
 ms.assetid: 4f4f7ece-efe4-49f7-a6ce-bc131d1c1968
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PCLFS_MGMT_CLIENT_REGISTRATION, CLFS_MGMT_CLIENT_REGISTRATION, CLFS_MGMT_CLIENT_REGISTRATION structure [Kernel-Mode Driver Architecture], PCLFS_MGMT_CLIENT_REGISTRATION, PCLFS_MGMT_CLIENT_REGISTRATION structure pointer [Kernel-Mode Driver Architecture], _CLFS_MGMT_CLIENT_REGISTRATION, kernel.clfs_mgmt_client_registration, kstruct_a_b4089ae7-0e80-4da0-b062-cda3d5aa65f4.xml, wdm/CLFS_MGMT_CLIENT_REGISTRATION, wdm/PCLFS_MGMT_CLIENT_REGISTRATION"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,17 +48,17 @@ req.product: Windows 10 or later.
 The <b>CLFS_MGMT_CLIENT_REGISTRATION</b> structure is given to CLFS management by clients who manage their own logs.
 
 ## Syntax
-````
+```
 typedef struct _CLFS_MGMT_CLIENT_REGISTRATION {
-  ULONG                                      Version;
-  PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK         AdvanceTailCallback;
-  PVOID                                      AdvanceTailCallbackData;
+  ULONG                                      Version;
+  PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK         AdvanceTailCallback;
+  PVOID                                      AdvanceTailCallbackData;
   PCLFS_CLIENT_LFF_HANDLER_COMPLETE_CALLBACK LogGrowthCompleteCallback;
-  PVOID                                      LogGrowthCompleteCallbackData;
-  PCLFS_CLIENT_LOG_UNPINNED_CALLBACK         LogUnpinnedCallback;
-  PVOID                                      LogUnpinnedCallbackData;
-} CLFS_MGMT_CLIENT_REGISTRATION, *PCLFS_MGMT_CLIENT_REGISTRATION;
-````
+  PVOID                                      LogGrowthCompleteCallbackData;
+  PCLFS_CLIENT_LOG_UNPINNED_CALLBACK         LogUnpinnedCallback;
+  PVOID                                      LogUnpinnedCallbackData;
+} *PCLFS_MGMT_CLIENT_REGISTRATION, CLFS_MGMT_CLIENT_REGISTRATION;
+```
 
 ## Members
 
@@ -69,7 +69,7 @@ The version of the <b>CLFS_MGMT_CLIENT_REGISTRATION</b> structure. Set this to <
 
 `AdvanceTailCallback`
 
-A pointer to the log's <a href="..\wdm\nc-wdm-pclfs_client_advance_tail_callback.md">ClfsAdvanceTailCallback</a> function.
+A pointer to the log's <a href="https://msdn.microsoft.com/library/windows/hardware/ff540776">ClfsAdvanceTailCallback</a> function.
 
 `AdvanceTailCallbackData`
 
@@ -77,7 +77,7 @@ A pointer to user-defined data that will be supplied to the <i>ClfsAdvanceTailCa
 
 `LogGrowthCompleteCallback`
 
-A pointer to the log's <a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a> function.
+A pointer to the log's <a href="https://msdn.microsoft.com/library/windows/hardware/ff541562">ClfsLogGrowthCompleteCallback</a> function.
 
 `LogGrowthCompleteCallbackData`
 
@@ -85,7 +85,7 @@ A pointer to user-defined data that will be supplied to the <i>ClfsLogGrowthComp
 
 `LogUnpinnedCallback`
 
-A pointer to the log's <a href="..\wdm\nc-wdm-pclfs_client_log_unpinned_callback.md">ClfsLogUnpinnedCallback</a> function.
+A pointer to the log's <a href="https://msdn.microsoft.com/library/windows/hardware/ff541565">ClfsLogUnpinnedCallback</a> function.
 
 `LogUnpinnedCallbackData`
 
@@ -99,12 +99,12 @@ A pointer to user-defined data that will be supplied to the <i>ClfsLogUnpinnedCa
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-pclfs_client_advance_tail_callback.md">ClfsAdvanceTailCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540776">ClfsAdvanceTailCallback</a>
 
 
 
-<a href="..\wdm\nc-wdm-pclfs_client_log_unpinned_callback.md">ClfsLogUnpinnedCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541562">ClfsLogGrowthCompleteCallback</a>
 
 
 
-<a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541565">ClfsLogUnpinnedCallback</a>

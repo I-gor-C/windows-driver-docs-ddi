@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
-typedef enum  { 
-  TIME_GET_STREAM_TIME,
-  TIME_READ_ONBOARD_CLOCK,
+```
+typedef enum TIME_FUNCTION {
+  TIME_GET_STREAM_TIME     ,
+  TIME_READ_ONBOARD_CLOCK  ,
   TIME_SET_ONBOARD_CLOCK
-} TIME_FUNCTION;
-````
+} ;
+```
 
 ## Constants
 

@@ -50,13 +50,13 @@ The <b>wiasGetChildrenContexts</b> function retrieves an array of item contexts 
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasGetChildrenContexts(
-  _In_  BYTE  *pParentContext,
-  _Out_ ULONG *pulNumChildren,
-  _Out_ BYTE  ***pppChildren
+```
+HRESULT wiasGetChildrenContexts(
+  BYTE  *pParentContext,
+  ULONG *pulNumChildren,
+  BYTE  ***pppChildren
 );
-````
+```
 
 ## Parameters
 

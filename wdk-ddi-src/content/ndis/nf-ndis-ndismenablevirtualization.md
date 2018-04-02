@@ -7,7 +7,7 @@ old-location: netvista\ndismenablevirtualization.htm
 old-project: netvista
 ms.assetid: 5a82dfe6-8844-4b18-8f54-7bf143fcd2ff
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMEnableVirtualization, NdisMEnableVirtualization function [Network Drivers Starting with Windows Vista], ndis/NdisMEnableVirtualization, netvista.ndismenablevirtualization
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,15 +51,15 @@ A miniport driver calls the <b>NdisMEnableVirtualization</b> function during the
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisMEnableVirtualization(
-  _In_ NDIS_HANDLE NdisMiniportHandle,
-  _In_ USHORT      NumVFs,
-  _In_ BOOLEAN     EnableVFMigration,
-  _In_ BOOLEAN     EnableMigrationInterrupt,
-  _In_ BOOLEAN     EnableVirtualization
+  NDIS_HANDLE NdisMiniportHandle,
+  USHORT      NumVFs,
+  BOOLEAN     EnableVFMigration,
+  BOOLEAN     EnableMigrationInterrupt,
+  BOOLEAN     EnableVirtualization
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ NDIS_STATUS NdisMEnableVirtualization(
 
 The network adapter handle that NDIS passed to the 
      <i>MiniportAdapterHandle</i> parameter of 
-     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>.
+     <a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>.
 
 `NumVFs`
 
@@ -234,11 +234,11 @@ The VBD that runs in the Hyper-V parent partition's management operating system 
 
 ## See Also
 
+<b></b>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451005">EnableVirtualization</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451817">OID_NIC_SWITCH_DELETE_SWITCH</a>
 
 
 
@@ -250,4 +250,4 @@ The VBD that runs in the Hyper-V parent partition's management operating system 
 
 
 
-<b></b>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451817">OID_NIC_SWITCH_DELETE_SWITCH</a>

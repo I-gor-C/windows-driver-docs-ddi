@@ -7,7 +7,7 @@ old-location: display\d3dkmt_brightness_info.htm
 old-project: display
 ms.assetid: a620b0b2-85ce-4373-a50c-299d8ce7a91c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_BRIGHTNESS_INFO, D3DKMT_BRIGHTNESS_INFO structure [Display Devices], _D3DKMT_BRIGHTNESS_INFO, d3dkmthk/D3DKMT_BRIGHTNESS_INFO, display.d3dkmt_brightness_info
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,27 +47,27 @@ req.typenames: D3DKMT_BRIGHTNESS_INFO
 Contains information about the brightness of an integrated display panel.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_BRIGHTNESS_INFO {
   D3DKMT_BRIGHTNESS_INFO_TYPE Type;
   union {
-    D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS PossibleLevels;
-    UCHAR                             Brightness;
-    DXGK_BRIGHTNESS_CAPS              BrightnessCaps;
-    DXGK_BRIGHTNESS_STATE             BrightnessState;
+    UCHAR                             Brightness;
+    DXGK_BRIGHTNESS_CAPS              BrightnessCaps;
+    DXGK_BRIGHTNESS_STATE             BrightnessState;
     DXGK_BACKLIGHT_OPTIMIZATION_LEVEL OptimizationLevel;
-    DXGK_BACKLIGHT_INFO               ReductionInfo;
-    BOOLEAN                           VerboseLogging;
+    D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS PossibleLevels;
+    DXGK_BACKLIGHT_INFO               ReductionInfo;
+    BOOLEAN                           VerboseLogging;
   };
 } D3DKMT_BRIGHTNESS_INFO;
-````
+```
 
 ## Members
 
 
 `Type`
 
-A value of type <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_brightness_info_type.md">D3DKMT_BRIGHTNESS_INFO_TYPE</a> that  indicates the type of brightness information to retrieve or set.
+A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/jj128342">D3DKMT_BRIGHTNESS_INFO_TYPE</a> that  indicates the type of brightness information to retrieve or set.
 
 
 ## Requirements
@@ -78,24 +78,24 @@ A value of type <a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_brightness_info_type.md
 
 ## See Also
 
-<a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_brightness_caps.md">DXGK_BRIGHTNESS_CAPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj128342">D3DKMT_BRIGHTNESS_INFO_TYPE</a>
 
 
 
-<a href="..\d3dkmthk\ne-d3dkmthk-_d3dkmt_brightness_info_type.md">D3DKMT_BRIGHTNESS_INFO_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj128343">D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS</a>
 
 
 
-<a href="..\d3dkmdt\ne-d3dkmdt-dxgk_backlight_optimization_level.md">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj128357">DXGK_BACKLIGHT_INFO</a>
 
 
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_brightness_possible_levels.md">D3DKMT_BRIGHTNESS_POSSIBLE_LEVELS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj128358">DXGK_BACKLIGHT_OPTIMIZATION_LEVEL</a>
 
 
 
-<a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_backlight_info.md">DXGK_BACKLIGHT_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj128359">DXGK_BRIGHTNESS_CAPS</a>
 
 
 
-<a href="..\d3dkmdt\ns-d3dkmdt-_dxgk_brightness_state.md">DXGK_BRIGHTNESS_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj128361">DXGK_BRIGHTNESS_STATE</a>

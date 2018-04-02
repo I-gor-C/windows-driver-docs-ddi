@@ -7,7 +7,7 @@ old-location: buses\usbfn_power_filter_state.htm
 old-project: usbref
 ms.assetid: D5C7DC47-37F7-4727-AFB6-137F67786001
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSBFN_POWER_FILTER_STATE, PUSBFN_POWER_FILTER_STATE, PUSBFN_POWER_FILTER_STATE structure pointer [Buses], USBFN_POWER_FILTER_STATE, USBFN_POWER_FILTER_STATE structure [Buses], _USBFN_POWER_FILTER_STATE, buses.usbfn_power_filter_state, usbfnioctl/PUSBFN_POWER_FILTER_STATE, usbfnioctl/USBFN_POWER_FILTER_STATE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 Reserved. Do not use.
 
 ## Syntax
-````
+```
 typedef struct _USBFN_POWER_FILTER_STATE {
   USBFN_DEVICE_STATE DeviceState;
   union {
@@ -56,7 +56,7 @@ typedef struct _USBFN_POWER_FILTER_STATE {
     ULONG Reserved;
   };
 } USBFN_POWER_FILTER_STATE, *PUSBFN_POWER_FILTER_STATE;
-````
+```
 
 ## Members
 
@@ -73,8 +73,8 @@ Describes the USB device states for the device/controller.  These states corresp
 
 ## See Also
 
-<a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_set_power_filter_state.md">IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187902">IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM</a>
 
 
 
-<a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_set_power_filter_exit_lpm.md">IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_EXIT_LPM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187903">IOCTL_INTERNAL_USBFN_SET_POWER_FILTER_STATE</a>

@@ -47,13 +47,13 @@ req.typenames: BDA_TUNER_TUNERSTATE, *PBDA_TUNER_TUNERSTATE
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_TUNER_TUNERSTATE {
   PBDARESULT lResult;
-  ULONG      ulTuneLength;
-  BYTE       argbTuneData[MIN_DIMENSION];
-} BDA_TUNER_TUNERSTATE, *PBDA_TUNER_TUNERSTATE;
-````
+  ULONG      ulTuneLength;
+  BYTE       argbTuneData[MIN_DIMENSION];
+} *PBDA_TUNER_TUNERSTATE, BDA_TUNER_TUNERSTATE;
+```
 
 ## Members
 

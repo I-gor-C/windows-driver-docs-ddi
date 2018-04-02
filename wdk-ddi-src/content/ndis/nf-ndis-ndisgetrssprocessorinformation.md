@@ -7,7 +7,7 @@ old-location: netvista\ndisgetrssprocessorinformation.htm
 old-project: netvista
 ms.assetid: 0da022d5-7294-4780-bab8-119ff6385abf
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisGetRssProcessorInformation, NdisGetRssProcessorInformation function [Network Drivers Starting with Windows Vista], ndis/NdisGetRssProcessorInformation, ndis_processor_group_ref_167a091b-01dd-4e5d-bee8-01f5aa9f56fd.xml, netvista.ndisgetrssprocessorinformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,13 +52,13 @@ The
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisGetRssProcessorInformation(
-  _In_      NDIS_HANDLE              NdisHandle,
-  _Out_opt_ PNDIS_RSS_PROCESSOR_INFO RssProcessorInfo,
-  _Inout_   PSIZE_T                  Size
+  NDIS_HANDLE              NdisHandle,
+  PNDIS_RSS_PROCESSOR_INFO RssProcessorInfo,
+  PSIZE_T                  Size
 );
-````
+```
 
 ## Parameters
 
@@ -69,18 +69,18 @@ An NDIS instance handle that was obtained during caller initialization. NDIS dri
      
 
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
 
 `RssProcessorInfo`
 
 A pointer to a caller-allocated buffer where NDIS puts the 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor_info.md">NDIS_RSS_PROCESSOR_INFO</a> structure
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567274">NDIS_RSS_PROCESSOR_INFO</a> structure
      and an array of 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a> structures that
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567271">NDIS_RSS_PROCESSOR</a> structures that
      contain information about the RSS processor set. The caller provides the length of the buffer in the 
      <i>Size</i> parameter.
 
@@ -156,16 +156,16 @@ RSS-capable miniport drivers that support MSI-X call
 
 
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor_info.md">NDIS_RSS_PROCESSOR_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567271">NDIS_RSS_PROCESSOR</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567274">NDIS_RSS_PROCESSOR_INFO</a>
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_rss_processor.md">NDIS_RSS_PROCESSOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>

@@ -47,14 +47,14 @@ req.typenames: KS_MPEGAUDIOINFO, *PKS_MPEGAUDIOINFO
 The KS_MPEGAUDIOINFO structure describes an MPEG audio stream.
 
 ## Syntax
-````
+```
 typedef struct tagKS_MPEAUDIOINFO {
   DWORD dwFlags;
   DWORD dwReserved1;
   DWORD dwReserved2;
   DWORD dwReserved3;
 } KS_MPEGAUDIOINFO, *PKS_MPEGAUDIOINFO;
-````
+```
 
 ## Members
 

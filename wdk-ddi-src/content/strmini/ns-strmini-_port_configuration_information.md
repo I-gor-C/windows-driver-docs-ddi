@@ -2,18 +2,18 @@
 UID: NS:strmini._PORT_CONFIGURATION_INFORMATION
 title: "_PORT_CONFIGURATION_INFORMATION"
 author: windows-driver-content
-description: PORT_CONFIGURATION_INFORMATION (SCSI) contains configuration information for an HBA.
-old-location: storage\port_configuration_information__scsi_.htm
-old-project: storage
-ms.assetid: f3c9d851-d30d-4757-82a3-225ee67528c1
+description: PORT_CONFIGURATION_INFORMATION describes the hardware settings of a streaming minidriver's device. The class driver fills in most members with information provided by the operating system.
+old-location: stream\port_configuration_information.htm
+old-project: stream
+ms.assetid: fa990867-4e2f-4940-b6fc-310ec7fc2b68
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
-ms.keywords: "*PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION structure [Storage Devices], PPORT_CONFIGURATION_INFORMATION, PPORT_CONFIGURATION_INFORMATION structure pointer [Storage Devices], _PORT_CONFIGURATION_INFORMATION, _PORT_CONFIGURATION_INFORMATION structure [Storage Devices], srb/PPORT_CONFIGURATION_INFORMATION, srb/_PORT_CONFIGURATION_INFORMATION, storage.port_configuration_information__scsi_, structs-scsiport_1a472219-5839-443c-a3a1-26c9708b3b18.xml"
+ms.date: 2/23/2018
+ms.keywords: "*PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION structure [Streaming Media Devices], PPORT_CONFIGURATION_INFORMATION, PPORT_CONFIGURATION_INFORMATION structure pointer [Streaming Media Devices], _PORT_CONFIGURATION_INFORMATION, _PORT_CONFIGURATION_INFORMATION structure [Streaming Media Devices], strclass-struct_5cfaddef-5c60-406e-b938-697f36b6c8e1.xml, stream.port_configuration_information, strmini/PORT_CONFIGURATION_INFORMATION, strmini/PPORT_CONFIGURATION_INFORMATION"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
 req.header: strmini.h
-req.include-header: Srb.h, Storport.h, Strmini.h
+req.include-header: Strmini.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -35,7 +35,7 @@ topic_type:
 api_type:
 -	HeaderDef
 api_location:
--	srb.h
+-	strmini.h
 api_name:
 -	PORT_CONFIGURATION_INFORMATION
 product: Windows
@@ -45,191 +45,111 @@ req.product: Windows 10 or later.
 ---
 
 # _PORT_CONFIGURATION_INFORMATION structure
-PORT_CONFIGURATION_INFORMATION (SCSI) contains configuration information for an HBA. The OS-specific port driver allocates and initializes this structure, supplies as much HBA-specific configuration information as possible, and passes the structure to the miniport driver's <i>HwScsiFindAdapter</i> routine. The port driver gets some of the information for this structure from the miniport driver's HW_INITIALIZATION_DATA structure. The miniport driver's <i>HwScsiFindAdapter</i> routine is responsible for determining whether the miniport driver can support the HBA and, if so, for filling in the pertinent remaining information in the PORT_CONFIGURATION_INFORMATION structure.
-<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
+PORT_CONFIGURATION_INFORMATION describes the hardware settings of a streaming minidriver's device. The class driver fills in most members with information provided by the operating system.
 
 ## Syntax
-````
+```
 typedef struct _PORT_CONFIGURATION_INFORMATION {
-  ULONG           Length;
-  ULONG           SystemIoBusNumber;
-  INTERFACE_TYPE  AdapterInterfaceType;
-  ULONG           BusInterruptLevel;
-  ULONG           BusInterruptVector;
+  ULONG           SizeOfThisPacket;
+  PVOID           HwDeviceExtension;
+  PDEVICE_OBJECT  ClassDeviceObject;
+  PDEVICE_OBJECT  PhysicalDeviceObject;
+  ULONG           SystemIoBusNumber;
+  INTERFACE_TYPE  AdapterInterfaceType;
+  ULONG           BusInterruptLevel;
+  ULONG           BusInterruptVector;
   KINTERRUPT_MODE InterruptMode;
-  ULONG           MaximumTransferLength;
-  ULONG           NumberOfPhysicalBreaks;
-  ULONG           DmaChannel;
-  ULONG           DmaPort;
-  DMA_WIDTH       DmaWidth;
-  DMA_SPEED       DmaSpeed;
-  ULONG           AlignmentMask;
-  ULONG           NumberOfAccessRanges;
-  ACCESS_RANGE    (*AccessRanges)[];
-  PVOID           Reserved;
-  UCHAR           NumberOfBuses;
-  UCHAR           InitiatorBusId[8];
-  BOOLEAN         ScatterGather;
-  BOOLEAN         Master;
-  BOOLEAN         CachesData;
-  BOOLEAN         AdapterScansDown;
-  BOOLEAN         AtdiskPrimaryClaimed;
-  BOOLEAN         AtdiskSecondaryClaimed;
-  BOOLEAN         Dma32BitAddresses;
-  BOOLEAN         DemandMode;
-  BOOLEAN         MapBuffers;
-  BOOLEAN         NeedPhysicalAddresses;
-  BOOLEAN         TaggedQueuing;
-  BOOLEAN         AutoRequestSense;
-  BOOLEAN         MultipleRequestPerLu;
-  BOOLEAN         ReceiveEvent;
-  BOOLEAN         RealModeInitialized;
-  BOOLEAN         BufferAccessScsiPortControlled;
-  UCHAR           MaximumNumberOfTargets;
-  UCHAR           ReservedUchars[2];
-  ULONG           SlotNumber;
-  ULONG           BusInterruptLevel2;
-  ULONG           BusInterruptVector2;
-  KINTERRUPT_MODE InterruptMode2;
-  ULONG           DmaChannel2;
-  ULONG           DmaPort2;
-  DMA_WIDTH       DmaWidth2;
-  DMA_SPEED       DmaSpeed2;
-  ULONG           DeviceExtensionSize;
-  ULONG           SpecificLuExtensionSize;
-  ULONG           SrbExtensionSize;
-  UCHAR           Dma64BitAddresses;
-  BOOLEAN         ResetTargetSupported;
-  UCHAR           MaximumNumberOfLogicalUnits;
-  BOOLEAN         WmiDataProvider;
-} PORT_CONFIGURATION_INFORMATION, *PPORT_CONFIGURATION_INFORMATION;
-````
+  ULONG           DmaChannel;
+  ULONG           NumberOfAccessRanges;
+  PACCESS_RANGE   AccessRanges;
+  ULONG           StreamDescriptorSize;
+  PIRP            Irp;
+  PKINTERRUPT     InterruptObject;
+  PADAPTER_OBJECT DmaAdapterObject;
+  PDEVICE_OBJECT  RealPhysicalDeviceObject;
+  ULONG           Reserved[1];
+} *PPORT_CONFIGURATION_INFORMATION, PORT_CONFIGURATION_INFORMATION;
+```
 
 ## Members
 
 
 `SizeOfThisPacket`
 
-
+The size of this structure, in bytes. The class driver fills in this member.
 
 `HwDeviceExtension`
 
-
+Pointer to the minidriver's device extension. The minidriver may use this buffer to record private information global to the minidriver. The minidriver sets the size of this buffer in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>. The class driver also passes pointers to this buffer in the <b>HwDeviceExtension</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559697">HW_STREAM_OBJECT</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559702">HW_STREAM_REQUEST_BLOCK</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff559706">HW_TIME_CONTEXT</a> structures it passes to the minidriver.
 
 `ClassDeviceObject`
 
-
+Points to the class-driver-provided functional device object (FDO) for the driver's device.
 
 `PhysicalDeviceObject`
 
-
+Points to the device object for the driver at the top of the driver stack when the class driver attaches to the driver stack. Drivers use this member when calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff548336">IoCallDriver</a> to communicate with the driver stack. The <b>RealPhysicalDeviceObject</b> member points to the actual PDO for the driver's device.
 
 `SystemIoBusNumber`
 
-Specifies the system-assigned number of the I/O bus to which the HBA is connected. The OS-specific port driver always initializes this member. Its value is system-assigned because the platform might have several I/O buses of the given <b>AdapterInterfaceType</b>.
+The class driver fills in this member with the system bus ID number of the device. Bus 0 is the primary system bus.
 
 `AdapterInterfaceType`
 
-Identifies the I/O bus interface. The OS-specific port driver always sets this member to the value specified by the miniport driver in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a> structure.
+Specifies the type of system bus the device is connected to. Possible values include <b>Isa</b>, <b>Eisa</b>, <b>MicroChannel</b>, <b>PCIBus</b>, and <b>PCMCIABus</b>.
 
 `BusInterruptLevel`
 
-Specifies the bus-relative interrupt request level. The OS-specific port driver makes no assumptions about the HBA's interrupt usage, so the default value is zero. Depending on the given <b>AdapterInterfaceType</b> and HBA, the value set for this member can correspond to the IRQL for the bus, such as for <b>Isa</b> and <b>MicroChannel</b> type buses. Drivers of <b>Eisa</b> HBAs must set this value to the bus-relative IRQL for the HBA if the adapter is configured for level-sensitive interrupts.
+The class driver fills in this member with the IRQL for interrupts on this bus.
 
 `BusInterruptVector`
 
-Specifies the bus-relative vector returned by the HBA. The OS-specific port driver makes no assumptions about the HBA's interrupt usage, so the default value is zero. This member is irrelevant to drivers that set up the <b>BusInterruptLevel</b> member for their HBAs. It is pertinent for HBAs on types of I/O buses that use interrupt vectors, such as <b>PCIBus</b>.
+The class driver fills in this member with the interrupt vector used by the device.
 
 `InterruptMode`
 
-Specifies whether the HBA uses <b>LevelSensitive</b> or <b>Latched</b> (sometimes called "edge-triggered") interrupts. The OS-specific port driver initializes this member to an appropriate value for the bus and the device--for example, <b>LevelSensitive</b> for <b>PCIBus</b>. Drivers of <b>Eisa</b> HBAs must reset this value if the adapter is configured for level-sensitive interrupts, as must drivers of HBAs on I/O buses that use level-sensitive interrupts, such as <b>MicroChannel</b> type buses.
+The class driver fills in this member with the interrupt mode, either Latched or LevelSensitive.
 
 `DmaChannel`
 
-Specifies the DMA channel used by a subordinate HBA. By default, the value of this member is SP_UNINITIALIZED_VALUE. If the HBA uses a system DMA controller and the given <b>AdapterInterfaceType</b> is any value except <b>MicroChannel</b>, the miniport driver must reset this member.
+If the device connects to the ISA bus, the class driver fills in this member with the DMA channel of the device.
 
 `NumberOfAccessRanges`
 
-Specifies the number of <b>AccessRanges</b> elements in the array, described next. The OS-specific port driver always sets this member to the value passed in the HW_INITIALIZATION_DATA structure when the miniport driver called <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>.
+The number of entries in the <b>AccessRanges</b> array.
 
 `AccessRanges`
 
-
+The number of entries in the <b>AccessRanges</b> array.
 
 `StreamDescriptorSize`
 
-
+The minidriver fills in this member with the size of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff559686">HW_STREAM_DESCRIPTOR</a> structure.
 
 `Irp`
 
-
+Pointer to the PnP device start IRP that triggered this SRB_INITIALIZE_DEVICE request.
 
 `InterruptObject`
 
-
+If the device uses interrupts, the class driver fills in this member with a pointer to the associated Interrupt object.
 
 `DmaAdapterObject`
 
-
+If the device uses DMA, the class driver fills in this member with a pointer to the associated DmaAdapter object.
 
 `RealPhysicalDeviceObject`
 
-
+Pointer to the PDO for the driver's device.
 
 `Reserved`
 
-Reserved for system use and not available for use by miniport drivers.
+Reserved for system use. Do not use.
 
 ## Remarks
-The specific members initialized depend on the HBA miniport driver and on the configuration information available to the OS-specific port driver. The OS-specific port driver sets default values in all members for which it cannot supply configuration information to the miniport driver's <i>HwScsiFindAdapter</i> routine.
-
-All HBA miniport drivers should have at least one set of defaults to use for relevant members if the OS-specific port driver does not pass in all initialized values. 
-
-The <i>HwScsiFindAdapter</i> routine must update all members relevant to an HBA that the driver supports.
-
-Windows NT storage class drivers, which load later than miniport drivers, depend on the information supplied by each miniport driver's <i>HwScsiFindAdapter</i> routine to set up their subsequent I/O requests. For example, the <b>MaximumTransferLength </b>and <b>NumberOfPhysicalBreaks</b> values supplied by each miniport driver control whether a class driver must split large transfer requests into a set of partial transfers to suit the limits of the HBA.
-
-Prior to Windows 2000, both the PORT_CONFIGURATION_INFORMATION and the HW_INITIALIZATION_DATA structures had a member called <b>Dma64BitAddresses</b>. In Windows 2000, <b>Dma64BitAddresses</b> has been eliminated from the HW_INITIALIZATION_DATA structure, and its definition has changed somewhat in PORT_CONFIGURATION_INFORMATION. The port driver no longer consults HW_INITIALIZATION_DATA in order to initialize <b>Dma64BitAddresses</b> in PORT_CONFIGURATION_INFORMATION.
-
-The <b>Dma64BitAddresses</b> member of PORT_CONFIGURATION_INFORMATION should no longer be thought of as a BOOLEAN value. A value of SCSI_DMA64_SYSTEM_SUPPORTED indicates that the port/miniport driver is required to support 64-bit addressing, but the <b>ScsiPortGetUncachedExtension</b> routine still interprets any nonzero value of <b>Dma64BitAddresses</b> as indicating that 64-bit support is required. This means that <b>ScsiPortGetUncachedExtension</b> still functions properly when called by a legacy driver that assigns BOOLEAN values to <b>Dma64BitAddresses</b>.  
-
-In addition to <b>Dma64BitAddresses</b>, both PORT_CONFIGURATION_INFORMATION and HW_INITIALIZATION_DATA have a pair of members called <b>SpecificLuExtensionSize</b> and <b>SrbExtensionSize</b> whose values must now be handled differently. The miniport driver must calculate the initial values of <b>SpecificLuExtensionSize</b> and <b>SrbExtensionSize</b> in HW_INITIALIZATION_DATA based on the assumption that the HBA is capable of receiving 32-bit addresses, regardless of what the controller can actually support. The default values for <b>SpecificLuExtensionSize</b> and <b>SrbExtensionSize </b>in PORT_CONFIGURATION_INFORMATION will also be based on an assumption of 32-bit addressing, since the values in PORT_CONFIGURATION_INFORMATION are derived from the values in HW_INITIALIZATION_DATA.
-
-This means that if the miniport driver needs additional space in either the LUN extension or the SRB extension in order to handle 64 bit physical addresses, it must modify the values for <b>SpecificLuExtensionSize</b> and <b>SrbExtensionSize</b> in PORT_CONFIGURATION_INFORMATION to account for this before passing PORT_CONFIGURATION_INFORMATION to <b>ScsiPortGetUncachedExtension</b>.
+Most of the members of PORT_CONFIGURATION_INFORMATION provide information to the minidriver about its use of hardware resources, such as its interrupt vector and the IRQL for its interrupts.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | strmini.h (include Srb.h, Storport.h, Strmini.h) |
-
-## See Also
-
-<a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA (SCSI)</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
-
-
-
-<a href="..\srb\nc-srb-phw_find_adapter.md">HwScsiFindAdapter</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportvalidaterange.md">ScsiPortValidateRange</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportgetuncachedextension.md">ScsiPortGetUncachedExtension</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
-
-
-
-<a href="..\strmini\ns-strmini-_access_range.md">ACCESS_RANGE</a>
+| **Header** | strmini.h (include Strmini.h) |

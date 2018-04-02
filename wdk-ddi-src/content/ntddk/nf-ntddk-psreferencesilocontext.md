@@ -7,7 +7,7 @@ old-location: kernel\psreferencesilocontext.htm
 old-project: kernel
 ms.assetid: 04867D53-DB36-482A-93BF-C91D13998B3F
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsReferenceSiloContext, PsReferenceSiloContext routine [Kernel-Mode Driver Architecture], kernel.psreferencesilocontext, ntddk/PsReferenceSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ This routine increments the reference count on the object.
 
 ## Syntax
 
-````
-void PsReferenceSiloContext(
-  _In_ PVOID SiloContext
+```
+NTKERNELAPI VOID PsReferenceSiloContext(
+  PVOID SiloContext
 );
-````
+```
 
 ## Parameters
 
 `SiloContext`
 
-A pointer to the object created by the <a href="..\ntddk\nf-ntddk-pscreatesilocontext.md">PsCreateSiloContext</a> routine. This parameter is required and it cannot be <b>NULL</b>.
+A pointer to the object created by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt735058">PsCreateSiloContext</a> routine. This parameter is required and it cannot be <b>NULL</b>.
 
 
 ## Return Value
@@ -77,4 +77,4 @@ This routine does not return a value.
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-pscreatesilocontext.md">PsCreateSiloContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt735058">PsCreateSiloContext</a>

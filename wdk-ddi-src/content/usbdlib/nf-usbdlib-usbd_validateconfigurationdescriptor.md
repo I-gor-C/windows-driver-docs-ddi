@@ -7,7 +7,7 @@ old-location: buses\usbd_validateconfigurationdescriptor.htm
 old-project: usbref
 ms.assetid: 2fbe08ca-a9eb-4e3b-aa28-1ff34ad22a46
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: USBD_ValidateConfigurationDescriptor, USBD_ValidateConfigurationDescriptor routine [Buses], buses.usbd_validateconfigurationdescriptor, usbdlib/USBD_ValidateConfigurationDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,15 +51,15 @@ The <b>USBD_ValidateConfigurationDescriptor</b> routine validates all descriptor
 
 ## Syntax
 
-````
-USBD_STATUS USBD_ValidateConfigurationDescriptor(
-  _In_     PUSB_CONFIGURATION_DESCRIPTOR ConfigDesc,
-  _In_     ULONG                         BufferLength,
-  _In_     USHORT                        Level,
-  _Out_    PUCHAR                        *Offset,
-  _In_opt_ ULONG                         Tag
+```
+DECLSPEC_IMPORT USBD_STATUS USBD_ValidateConfigurationDescriptor(
+  PUSB_CONFIGURATION_DESCRIPTOR ConfigDesc,
+  ULONG                         BufferLength,
+  USHORT                        Level,
+  PUCHAR                        *Offset,
+  ULONG                         Tag
 );
-````
+```
 
 ## Parameters
 

@@ -50,11 +50,11 @@ The <code>IPrintTicketProvider::QueryDeviceNamespace</code> method queries the d
 
 ## Syntax
 
-````
+```
 HRESULT QueryDeviceNamespace(
-  [out] BSTR *pDefaultNamespace
+  OUT BSTR *pDefaultNamespace
 );
-````
+```
 
 ## Parameters
 

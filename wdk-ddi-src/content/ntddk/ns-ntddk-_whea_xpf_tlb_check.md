@@ -47,31 +47,31 @@ req.typenames: WHEA_XPF_TLB_CHECK, *PWHEA_XPF_TLB_CHECK
 The WHEA_XPF_TLB_CHECK union describes translation lookaside buffer (TLB) error information for an x86 or x64 processor.
 
 ## Syntax
-````
-typedef union _WHEA_XPF_TLB_CHECK {
+```
+typedef struct _WHEA_XPF_TLB_CHECK {
   struct {
-    ULONGLONG TransactionTypeValid  :1;
-    ULONGLONG OperationValid  :1;
-    ULONGLONG LevelValid  :1;
-    ULONGLONG ProcessorContextCorruptValid  :1;
-    ULONGLONG UncorrectedValid  :1;
-    ULONGLONG PreciseIPValid  :1;
-    ULONGLONG RestartableIPValid  :1;
-    ULONGLONG OverflowValid  :1;
-    ULONGLONG ReservedValid  :8;
-    ULONGLONG TransactionType  :2;
-    ULONGLONG Operation  :4;
-    ULONGLONG Level  :3;
-    ULONGLONG ProcessorContextCorrupt  :1;
-    ULONGLONG Uncorrected  :1;
-    ULONGLONG PreciseIP  :1;
-    ULONGLONG RestartableIP  :1;
-    ULONGLONG Overflow  :1;
-    ULONGLONG Reserved  :34;
-  };
+    ULONGLONG  : 3  Level;
+    ULONGLONG  : 1  LevelValid;
+    ULONGLONG  : 4  Operation;
+    ULONGLONG  : 1  OperationValid;
+    ULONGLONG  : 1  Overflow;
+    ULONGLONG  : 1  OverflowValid;
+    ULONGLONG  : 1  PreciseIP;
+    ULONGLONG  : 1  PreciseIPValid;
+    ULONGLONG  : 1  ProcessorContextCorrupt;
+    ULONGLONG  : 1  ProcessorContextCorruptValid;
+    ULONGLONG  : 34 Reserved;
+    ULONGLONG  : 8  ReservedValid;
+    ULONGLONG  : 1  RestartableIP;
+    ULONGLONG  : 1  RestartableIPValid;
+    ULONGLONG  : 2  TransactionType;
+    ULONGLONG  : 1  TransactionTypeValid;
+    ULONGLONG  : 1  Uncorrected;
+    ULONGLONG  : 1  UncorrectedValid;
+  } DUMMYSTRUCTNAME;
   ULONGLONG XpfTLBCheck;
 } WHEA_XPF_TLB_CHECK, *PWHEA_XPF_TLB_CHECK;
-````
+```
 
 ## Members
 
@@ -85,7 +85,7 @@ typedef union _WHEA_XPF_TLB_CHECK {
 A ULONGLONG representation of the contents of the WHEA_XPF_TLB_CHECK union.
 
 ## Remarks
-If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure contains WHEA_TLBCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_TLB_CHECK union.
+If the <b>CheckInfoId</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560661">WHEA_XPF_PROCINFO</a> structure contains WHEA_TLBCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_TLB_CHECK union.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,4 +95,4 @@ If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_proci
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560661">WHEA_XPF_PROCINFO</a>

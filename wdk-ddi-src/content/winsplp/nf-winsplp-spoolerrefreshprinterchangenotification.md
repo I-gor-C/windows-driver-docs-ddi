@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL WINAPI SpoolerRefreshPrinterChangeNotification(
-  _In_        HANDLE                    hPrinter,
-  _In_        DWORD                     dwColor,
-  _In_        PPRINTER_NOTIFY_OPTIONS   pOptions,
-  _Inout_opt_ PPRINTER_NOTIFY_INFO      ppInfo
+```
+BOOL SpoolerRefreshPrinterChangeNotification(
+  HANDLE                  hPrinter,
+  DWORD                   dwColor,
+  PPRINTER_NOTIFY_OPTIONS pOptions,
+  PPRINTER_NOTIFY_INFO    *ppInfo
 );
-````
+```
 
 ## Parameters
 

@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetBytes method
+# IPrinterScriptablePropertyBag::GetBytes method
 Gets a byte array property.
 
 ## Syntax
 
-````
+```
 HRESULT GetBytes(
-  [in]          BSTR      bstrName,
-  [out, retval] IDispatch **ppdispArray
+  BSTR      bstrName,
+  IDispatch **ppArray
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +85,4 @@ A call to <b>GetBytes</b> will throw an exception, if the specified property is 
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973217">IPrinterScriptablePropertyBag</a>

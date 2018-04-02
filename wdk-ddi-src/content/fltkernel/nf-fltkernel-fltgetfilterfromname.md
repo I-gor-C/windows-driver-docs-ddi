@@ -7,7 +7,7 @@ old-location: ifsk\fltgetfilterfromname.htm
 old-project: ifsk
 ms.assetid: 95224198-e86e-4005-b50f-6775e6b8b749
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_e_to_o_f0bda010-8549-4e0d-b86a-ce200745ac5a.xml, FltGetFilterFromName, FltGetFilterFromName routine [Installable File System Drivers], fltkernel/FltGetFilterFromName, ifsk.fltgetfilterfromname
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,18 +49,18 @@ The <b>FltGetFilterFromName</b> routine returns an opaque filter pointer for a r
 
 ## Syntax
 
-````
-NTSTATUS FltGetFilterFromName(
-  _In_  PCUNICODE_STRING FilterName,
-  _Out_ PFLT_FILTER      *RetFilter
+```
+NTSTATUS FLTAPI FltGetFilterFromName(
+  PCUNICODE_STRING FilterName,
+  PFLT_FILTER      *RetFilter
 );
-````
+```
 
 ## Parameters
 
 `FilterName`
 
-Pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure containing the minifilter driver name. (The name comparison is case-insensitive.)
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure containing the minifilter driver name. (The name comparison is case-insensitive.)
 
 `RetFilter`
 
@@ -102,9 +102,9 @@ No matching minifilter driver was found. This is an error code.
 
 ## Remarks
 
-<b>FltGetFilterFromName</b> adds a rundown reference to the opaque filter pointer returned in the <i>RetFilter</i> parameter. When this pointer is no longer needed, the caller must release it by calling <a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>. Thus every successful call to <b>FltGetFilterFromName</b> must be matched by a subsequent call to <b>FltObjectDereference</b>. 
+<b>FltGetFilterFromName</b> adds a rundown reference to the opaque filter pointer returned in the <i>RetFilter</i> parameter. When this pointer is no longer needed, the caller must release it by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff543378">FltObjectDereference</a>. Thus every successful call to <b>FltGetFilterFromName</b> must be matched by a subsequent call to <b>FltObjectDereference</b>. 
 
-To register a minifilter driver with the Filter Manager, call <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>.
+To register a minifilter driver with the Filter Manager, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -117,12 +117,12 @@ To register a minifilter driver with the Filter Manager, call <a href="..\fltker
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543378">FltObjectDereference</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltobjectdereference.md">FltObjectDereference</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

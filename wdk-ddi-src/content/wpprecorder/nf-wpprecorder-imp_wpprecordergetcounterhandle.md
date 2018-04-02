@@ -50,9 +50,11 @@ The <b>WppRecorderGetCounterHandle</b> method gets the ID of the counter whose c
 
 ## Syntax
 
-````
-WPP_RECORDER_COUNTER imp_WppRecorderGetCounterHandle(void);
-````
+```
+WPP_RECORDER_COUNTER imp_WppRecorderGetCounterHandle(
+  PVOID WppCb
+);
+```
 
 ## Parameters
 

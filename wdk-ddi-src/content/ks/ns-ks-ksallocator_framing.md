@@ -47,19 +47,23 @@ req.typenames: KSALLOCATOR_FRAMING, *PKSALLOCATOR_FRAMING
 The KSALLOCATOR_FRAMING structure is used to query framing requirements and submit allocator creation requests.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSALLOCATOR_FRAMING {
   union {
     ULONG OptionsFlags;
     ULONG RequirementsFlags;
   };
-  ULONG PoolType;
-  ULONG Frames;
-  ULONG FrameSize;
-  ULONG FileAlignment;
-  ULONG Reserved;
-} KSALLOCATOR_FRAMING, *PKSALLOCATOR_FRAMING;
-````
+  POOL_TYPE PoolType;
+  ULONG     PoolType;
+  ULONG     Frames;
+  ULONG     FrameSize;
+  union {
+    ULONG FileAlignment;
+    LONG  FramePitch;
+  };
+  ULONG     Reserved;
+}  *PKSALLOCATOR_FRAMING;
+```
 
 ## Members
 
@@ -88,4 +92,4 @@ When you specify a value for the <b>FileAlignment</b> member, the smallest alloc
 
 ## See Also
 
-<a href="..\ks\nf-ks-kscreateallocator.md">KsCreateAllocator</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561633">KsCreateAllocator</a>

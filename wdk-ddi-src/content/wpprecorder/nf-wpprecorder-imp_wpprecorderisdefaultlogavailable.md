@@ -50,9 +50,11 @@ The <b>WppRecorderIsDefaultLogAvailable</b> method determines whether the defaul
 
 ## Syntax
 
-````
-BOOLEAN imp_WppRecorderIsDefaultLogAvailable(void);
-````
+```
+BOOLEAN imp_WppRecorderIsDefaultLogAvailable(
+  PVOID WppCb
+);
+```
 
 ## Parameters
 

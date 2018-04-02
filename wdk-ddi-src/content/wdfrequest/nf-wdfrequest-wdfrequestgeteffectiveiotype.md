@@ -52,11 +52,11 @@ The <b>WdfRequestGetEffectiveIoType</b> method returns the buffer access method 
 
 ## Syntax
 
-````
+```
 WDF_DEVICE_IO_TYPE WdfRequestGetEffectiveIoType(
-  _In_ WDFREQUEST Request
+  WDFREQUEST Request
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ A handle to a framework request object.
 
 ## Return Value
 
-<b>WdfRequestGetEffectiveIoType</b> returns a <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed value that identifies the buffer access method that UMDF is using for the I/O request's data buffers.
+<b>WdfRequestGetEffectiveIoType</b> returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>-typed value that identifies the buffer access method that UMDF is using for the I/O request's data buffers.
 
 ## Remarks
 
@@ -76,7 +76,7 @@ For more information, see <a href="https://msdn.microsoft.com/BDB78BCD-1964-431B
 
 #### Examples
 
-The following code example shows how an <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_write.md">EvtIoWrite</a> callback function can determine the buffer access method for the specified write request.
+The following code example shows how an <a href="https://msdn.microsoft.com/5a0fa3b4-d020-4664-afa4-352573d4f079">EvtIoWrite</a> callback function can determine the buffer access method for the specified write request.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -119,4 +119,4 @@ MyDrvEvtIoWrite(
 
 ## See Also
 
-<a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>

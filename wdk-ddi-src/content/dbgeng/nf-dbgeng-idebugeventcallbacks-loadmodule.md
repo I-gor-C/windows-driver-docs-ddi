@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbacks_loadmodule.htm
 old-project: debugger
 ms.assetid: f4efcbf3-f78a-4e0e-9741-4f9b68814e5b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: ComCallbacks_3d8f0501-0915-425e-a940-aa5f41bad734.xml, IDebugEventCallbacks, IDebugEventCallbacks interface [Windows Debugging], LoadModule method, IDebugEventCallbacks::LoadModule, LoadModule method [Windows Debugging], LoadModule method [Windows Debugging], IDebugEventCallbacks interface, LoadModule,IDebugEventCallbacks.LoadModule, dbgeng/IDebugEventCallbacks::LoadModule, debugger.idebugeventcallbacks_loadmodule
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# LoadModule method
+# IDebugEventCallbacks::LoadModule method
 The <b>LoadModule</b> callback method is called by the engine when a module-load debugging event occurs in the target.
 
 ## Syntax
 
-````
+```
 HRESULT LoadModule(
-  [in]           ULONG64 ImageFileHandle,
-  [in]           ULONG64 BaseOffset,
-  [in]           ULONG   ModuleSize,
-  [in, optional] PCSTR   ModuleName,
-  [in, optional] PCSTR   ImageName,
-  [in]           ULONG   CheckSum,
-  [in]           ULONG   TimeDateStamp
+  ULONG64 ImageFileHandle,
+  ULONG64 BaseOffset,
+  ULONG   ModuleSize,
+  PCSTR   ModuleName,
+  PCSTR   ImageName,
+  ULONG   CheckSum,
+  ULONG   TimeDateStamp
 );
-````
+```
 
 ## Parameters
 

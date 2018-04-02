@@ -7,7 +7,7 @@ old-location: kernel\mdl.htm
 old-project: kernel
 ms.assetid: 71524333-dd5d-4f0b-8dd3-034ea926bc93
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PMDLX, MDL, MDL structure [Kernel-Mode Driver Architecture], PMDL, _MDL, kernel.mdl, kstruct_c_2c589a9a-d775-4fa6-8a37-37212798a215.xml, wdm/MDL"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,11 +48,20 @@ req.product: Windows 10 or later.
 An <b>MDL</b> structure is a partially opaque structure that represents a memory descriptor list (MDL).
 
 ## Syntax
-````
-struct MDL {
-  PMDL Next;
-};
-````
+```
+typedef struct _MDL {
+  _MDL      *Next;
+  struct    _MDL;
+  CSHORT    Size;
+  CSHORT    MdlFlags;
+  _EPROCESS *Process;
+  struct    _EPROCESS;
+  PVOID     MappedSystemVa;
+  PVOID     StartVa;
+  ULONG     ByteCount;
+  ULONG     ByteOffset;
+} PMDL, MDL;
+```
 
 ## Members
 
@@ -99,19 +108,19 @@ An MDL describes the layout of a virtual memory buffer in physical memory. For m
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548263">IoAllocateMdl</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554530">MmGetMdlByteCount</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554533">MmGetMdlByteOffset</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554537">MmGetMdlPfnArray</a>
-
-
-
-<a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
-
-
-
-<a href="..\wdm\nf-wdm-mmgetmdlbytecount.md">MmGetMdlByteCount</a>
 
 
 

@@ -50,13 +50,13 @@ The <b>wiasWritePropGuid </b>function writes a single GUID property value to a W
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasWritePropGuid(
-  _In_ BYTE   *pWiasContext,
-       PROPID propid,
-       GUID   gVal
+```
+HRESULT wiasWritePropGuid(
+  BYTE   *pWiasContext,
+  PROPID propid,
+  GUID   guidVal
 );
-````
+```
 
 ## Parameters
 
@@ -89,20 +89,20 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropbin.md">wiasWritePropBin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549325">wiasReadPropGuid</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropstr.md">wiasWritePropStr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549500">wiasWritePropBin</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropguid.md">wiasReadPropGuid</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549507">wiasWritePropFloat</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswriteproplong.md">wiasWritePropLong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549515">wiasWritePropLong</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropfloat.md">wiasWritePropFloat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549525">wiasWritePropStr</a>

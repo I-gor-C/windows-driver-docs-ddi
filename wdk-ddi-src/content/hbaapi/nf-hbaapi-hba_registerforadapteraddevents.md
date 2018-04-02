@@ -7,7 +7,7 @@ old-location: storage\hba_registerforadapteraddevents.htm
 old-project: storage
 ms.assetid: 7395ccb8-2608-46ae-a378-987bd757761b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_RegisterForAdapterAddEvents, HBA_RegisterForAdapterAddEvents routine [Storage Devices], fibreHBA_rtns_d44e8303-9d14-4f36-830e-bca76a494dfd.xml, hbaapi/HBA_RegisterForAdapterAddEvents, storage.hba_registerforadapteraddevents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ The <b>HBA_RegisterForAdapterAddEvents</b> routine registers the indicated user 
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_RegisterForAdapterAddEvents(
-  _In_ void       callback,
-       HBA_WWN    userData,
-       HBA_UINT32 callbackHandle
+  IN void(* )(void *pData,HBA_WWN PortWWN,HBA_UINT32 eventType) callback,
+  IN void                                                       *pUserData,
+  OUT HBA_CALLBACKHANDLE                                        *pCallbackHandle
 );
-````
+```
 
 ## Parameters
 
@@ -119,12 +119,12 @@ When a new adapter is added to the system, an event of type HBA_EVENT_ADAPTER_AD
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556045">HBA_ADAPTER_CALLBACK</a>
 
 
 
-<a href="..\hbaapi\nf-hbaapi-hba_removecallback.md">HBA_RemoveCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>

@@ -7,7 +7,7 @@ old-location: display\dxgkargcb_updatecontextallocation.htm
 old-project: display
 ms.assetid: 07BFCA6C-4E75-4BB5-9F6A-22E1FFAFFF6F
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKARGCB_UPDATECONTEXTALLOCATION, DXGKARGCB_UPDATECONTEXTALLOCATION structure [Display Devices], _DXGKARGCB_UPDATECONTEXTALLOCATION, d3dkmddi/DXGKARGCB_UPDATECONTEXTALLOCATION, display.dxgkargcb_updatecontextallocation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DXGKARGCB_UPDATECONTEXTALLOCATION
 ---
 
 # _DXGKARGCB_UPDATECONTEXTALLOCATION structure
-<b>DXGKARGCB_UPDATECONTEXTALLOCATION</b> contains the data used to call <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_updatecontextallocation.md">DxgkCbUpdateContextAllocation</a>.
+<b>DXGKARGCB_UPDATECONTEXTALLOCATION</b> contains the data used to call <a href="https://msdn.microsoft.com/708A33C2-9620-4259-845A-2F862B6F209B">DxgkCbUpdateContextAllocation</a>.
 
 ## Syntax
-````
+```
 typedef struct _DXGKARGCB_UPDATECONTEXTALLOCATION {
   HANDLE hAllocation;
-  PVOID  pPrivateDriverData;
-  UINT   PrivateDriverDataSize;
+  PVOID  pPrivateDriverData;
+  UINT   PrivateDriverDataSize;
 } DXGKARGCB_UPDATECONTEXTALLOCATION;
-````
+```
 
 ## Members
 
@@ -64,7 +64,7 @@ Handle to the context allocation being updated. The allocation defines a physica
 
 `pPrivateDriverData`
 
-Pointer to a private driver data buffer to be passed to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_updatecontextallocation.md">DxgkCbUpdateContextAllocation</a> paging operation.
+Pointer to a private driver data buffer to be passed to the <a href="https://msdn.microsoft.com/708A33C2-9620-4259-845A-2F862B6F209B">DxgkCbUpdateContextAllocation</a> paging operation.
 
 `PrivateDriverDataSize`
 
@@ -79,4 +79,4 @@ Specify the size of the driver private data.
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_updatecontextallocation.md">DxgkCbUpdateContextAllocation</a>
+<a href="https://msdn.microsoft.com/708A33C2-9620-4259-845A-2F862B6F209B">DxgkCbUpdateContextAllocation</a>

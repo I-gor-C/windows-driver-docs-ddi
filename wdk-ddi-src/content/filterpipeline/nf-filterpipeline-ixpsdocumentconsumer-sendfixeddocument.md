@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SendFixedDocument method
+# IXpsDocumentConsumer::SendFixedDocument method
 The <code>SendFixedDocument</code> method sends a fixed document object to the pipeline.
 
 ## Syntax
 
-````
+```
 HRESULT SendFixedDocument(
-  [in] IFixedDocument *pIFixedDocument
+  IFixedDocument *pIFixedDocument
 );
-````
+```
 
 ## Parameters
 

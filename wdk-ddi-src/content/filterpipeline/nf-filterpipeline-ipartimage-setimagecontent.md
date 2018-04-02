@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SetImageContent method
+# IPartImage::SetImageContent method
 The <b>SetImageContent</b> method sets an image property that is based on the content type.
 
 ## Syntax
 
-````
+```
 HRESULT SetImageContent(
-  [in] const wchar_t *contentType
+  const wchar_t *pContentType
 );
-````
+```
 
 ## Parameters
 

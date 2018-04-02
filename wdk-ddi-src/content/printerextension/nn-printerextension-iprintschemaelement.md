@@ -54,7 +54,7 @@ Provides access to the underlying XML node and "name" attribute information  for
 
 | Method | Description |
 | ---- |:---- |
-| [IPrintSchemaElement::get_Name](nf-printerextension-iprintschemaelement-get_name.md) | Gets the name of the printer for this print queue. |
+| [IPrintSchemaElement::get_Name](nf-printerextension-iprintschemaelement-get_name.md) | Gets the base value of the &#0034;name&#0034; attribute of this node. |
 | [IPrintSchemaElement::get_NamespaceUri](nf-printerextension-iprintschemaelement-get_namespaceuri.md) | Gets the namespace URI value of the &#0034;name&#0034; attribute of this node. |
 | [IPrintSchemaElement::get_XmlNode](nf-printerextension-iprintschemaelement-get_xmlnode.md) | Gets the IXMLDOMNode object associated with this item. |
 

@@ -47,11 +47,11 @@ req.typenames: IRB_REQ_BUS_RESET
 This structure contains the fields necessary for the 1394 bus driver to create a bus reset request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_BUS_RESET {
   ULONG fulFlags;
 } IRB_REQ_BUS_RESET;
-````
+```
 
 ## Members
 

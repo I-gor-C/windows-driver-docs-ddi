@@ -7,7 +7,7 @@ old-location: storage\ataportreadregisteruchar.htm
 old-project: storage
 ms.assetid: 1baa8d01-b889-4f2b-ad9e-f35078f7b3d8
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortReadRegisterUchar, AtaPortReadRegisterUchar routine [Storage Devices], atartns_63ee26b2-b436-4dc6-a3aa-5a13691e85dd.xml, irb/AtaPortReadRegisterUchar, storage.ataportreadregisteruchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,17 +53,17 @@ The <b>AtaPortReadRegisterUchar</b> routine reads an unsigned byte value from th
 
 ## Syntax
 
-````
+```
 UCHAR AtaPortReadRegisterUchar(
-  _In_ PUCHAR Register
+  PUCHAR Register
 );
-````
+```
 
 ## Parameters
 
 `Register`
 
-A pointer to the register to read. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>.
+A pointer to the register to read. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>.
 
 
 ## Return Value
@@ -80,12 +80,12 @@ A pointer to the register to read. The address value that is assigned to this pa
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>
 
 
 
-<a href="..\irb\nf-irb-ataportreadregisterulong.md">AtaPortReadRegisterUlong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550196">AtaPortReadRegisterUlong</a>
 
 
 
-<a href="..\irb\nf-irb-ataportreadregisterushort.md">AtaPortReadRegisterUshort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550198">AtaPortReadRegisterUshort</a>

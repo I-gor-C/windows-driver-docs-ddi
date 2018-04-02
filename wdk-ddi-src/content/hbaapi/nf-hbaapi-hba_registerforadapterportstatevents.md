@@ -7,7 +7,7 @@ old-location: storage\hba_registerforadapterportstatevents.htm
 old-project: storage
 ms.assetid: 82598ba4-6e01-44eb-9359-4b85e8f7980c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_RegisterForAdapterPortStatEvents, HBA_RegisterForAdapterPortStatEvents routine [Storage Devices], fibreHBA_rtns_38f8ecc4-4c08-4707-98f1-076602ecae27.xml, hbaapi/HBA_RegisterForAdapterPortStatEvents, storage.hba_registerforadapterportstatevents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ The <b>HBA_RegisterForAdapterPortStatEvents</b> routine registers the indicated 
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_RegisterForAdapterPortStatEvents(
-   HBA_PORTSTAT_CALLBACK callback,
-   void                  *userData,
-   HBA_HANDLE            handle,
-   HBA_WWN               PortWWN,
-   PHBA_PORTSTATISTICS   stats,
-   HBA_UINT32            statType,
-   HBA_CALLBACKHANDLE    *callbackHandle
+  IN void(* )(void *pData,HBA_WWN PortWWN,HBA_UINT32 eventType) callback,
+  IN void                                                       *pUserData,
+  IN HBA_HANDLE                                                 Handle,
+  IN HBA_WWN                                                    PortWWN,
+  IN HBA_PORTSTATISTICS                                         stats,
+  IN HBA_UINT32                                                 statType,
+  OUT HBA_CALLBACKHANDLE                                        *pCallbackHandle
 );
-````
+```
 
 ## Parameters
 
@@ -81,7 +81,7 @@ Contains a 64-bit worldwide name (WWN) that uniquely identifies the HBA port fro
 
 `stats`
 
-Pointer to a structure of type <a href="..\hbaapi\ns-hbaapi-hba_portstatistics.md">HBA_PortStatistics</a> that, on input, holds the statistical levels that determine when port statistics events are generated. On output, this member holds statistical data gathered for the port referenced by <i>PortWWN. </i>
+Pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff557110">HBA_PortStatistics</a> that, on input, holds the statistical levels that determine when port statistics events are generated. On output, this member holds statistical data gathered for the port referenced by <i>PortWWN. </i>
 
 `statType`
 
@@ -160,15 +160,15 @@ Returned if an unspecified error occurred that prevented the registration of the
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557117">HBA_PORTSTAT_CALLBACK</a>
 
 
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-
-
-
-<a href="..\hbaapi\ns-hbaapi-hba_portstatistics.md">HBA_PortStatistics</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557110">HBA_PortStatistics</a>
 
 
 

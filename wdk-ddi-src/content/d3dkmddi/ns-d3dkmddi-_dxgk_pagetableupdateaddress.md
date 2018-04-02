@@ -7,7 +7,7 @@ old-location: display\dxgk_pagetableupdateaddress.htm
 old-project: display
 ms.assetid: 39013276-C76A-4E31-80DD-26C17A020BD6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_PAGETABLEUPDATEADDRESS, DXGK_PAGETABLEUPDATEADDRESS structure [Display Devices], _DXGK_PAGETABLEUPDATEADDRESS, d3dkmddi/DXGK_PAGETABLEUPDATEADDRESS, display.dxgk_pagetableupdateaddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DXGK_PAGETABLEUPDATEADDRESS
 ---
 
 # _DXGK_PAGETABLEUPDATEADDRESS structure
-<b>DXGK_PAGETABLEUPDATEADDRESS</b> contains the address of a page table to update. The member containing the address is defined as part of a <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a> operation in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_buildpagingbuffer_updatepagetable.md">DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE</a> structure.
+<b>DXGK_PAGETABLEUPDATEADDRESS</b> contains the address of a page table to update. The member containing the address is defined as part of a <a href="https://msdn.microsoft.com/d315ff53-4a9f-46a3-ad74-d65a5eb72de1">DxgkDdiBuildPagingBuffer</a> operation in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn894171">DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE</a> structure.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_PAGETABLEUPDATEADDRESS {
   union {
-    PVOID                   CpuVirtual;
+    PVOID                   CpuVirtual;
     D3DGPU_PHYSICAL_ADDRESS GpuPhysical;
-    D3DGPU_VIRTUAL_ADDRESS  GpuVirtual;
+    D3DGPU_VIRTUAL_ADDRESS  GpuVirtual;
   };
 } DXGK_PAGETABLEUPDATEADDRESS;
-````
+```
 
 ## Members
 
@@ -69,8 +69,8 @@ typedef struct _DXGK_PAGETABLEUPDATEADDRESS {
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_buildpagingbuffer_updatepagetable.md">DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn894171">DXGK_BUILDPAGINGBUFFER_UPDATEPAGETABLE</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
+<a href="https://msdn.microsoft.com/d315ff53-4a9f-46a3-ad74-d65a5eb72de1">DxgkDdiBuildPagingBuffer</a>

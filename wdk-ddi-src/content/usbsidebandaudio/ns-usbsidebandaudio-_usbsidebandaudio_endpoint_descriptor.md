@@ -7,7 +7,7 @@ old-location: audio\usbsidebandaudio_endpoint_descriptor.htm
 old-project: audio
 ms.assetid: 552986F7-AEE9-4CBF-A932-629885F99487
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure pointer [Audio Devices], USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR structure [Audio Devices], _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, audio.usbsidebandaudio_endpoint_descriptor, usbsidebandaudio/PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, usbsidebandaudio/USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ req.product: Windows 10 or later.
 TBD
 
 ## Syntax
-````
+```
 typedef struct _USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR {
-  ULONG                                   Reserved 0;
-  GUID                                    Reserved 1;
-  KSPIN_DATAFLOW                          Reserved 2;
-   USBSIDEBANDAUDIO_ENDPOINT_CAPABILITIES Reserved 3;
-  UNICODE_STRING                          Reserved 4;
-  ULONG                                   Reserved 5;
-  ULONG                                   Reserved 6;
+  ULONG                                  CbSize;
+  GUID                                   Category;
+  KSPIN_DATAFLOW                         Direction;
+  USBSIDEBANDAUDIO_ENDPOINT_CAPABILITIES Capabilities;
+  UNICODE_STRING                         FriendlyName;
+  ULONG                                  VolumePropertyValuesSize;
+  ULONG                                  SidetoneVolumePropertyValueSize;
 } USBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR, *PUSBSIDEBANDAUDIO_ENDPOINT_DESCRIPTOR;
-````
+```
 
 ## Members
 

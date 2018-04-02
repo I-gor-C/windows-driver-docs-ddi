@@ -47,16 +47,16 @@ req.typenames: OPTCOMBO, *POPTCOMBO
 
 
 ## Syntax
-````
+```
 typedef struct _OPTCOMBO {
-  WORD      cbSize;
-  BYTE      Flags;
-  WORD      cListItem;
+  WORD      cbSize;
+  BYTE      Flags;
+  WORD      cListItem;
   POPTPARAM pListItem;
-  LONG      Sel;
-  LONG      dwReserved[3];
+  LONG      Sel;
+  DWORD     dwReserved[3];
 } OPTCOMBO, *POPTCOMBO;
-````
+```
 
 ## Members
 

@@ -47,13 +47,13 @@ req.typenames: BDA_BUFFER, *PBDA_BUFFER
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_BUFFER {
   PBDARESULT lResult;
-  ULONG      ulKeyuuidBufferLen;
-  GUID       argKeyuuidBuffer[MIN_DIMENSION];
-} BDA_BUFFER, *PBDA_BUFFER;
-````
+  ULONG      ulBufferSize;
+  BYTE       argbBuffer[MIN_DIMENSION];
+} *PBDA_BUFFER, BDA_BUFFER;
+```
 
 ## Members
 

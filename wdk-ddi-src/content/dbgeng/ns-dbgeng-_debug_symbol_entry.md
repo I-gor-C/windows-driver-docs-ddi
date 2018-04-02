@@ -7,7 +7,7 @@ old-location: debugger\debug_symbol_entry.htm
 old-project: debugger
 ms.assetid: 31ffab25-ec34-42ff-bdde-c98fef003bfc
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PDEBUG_SYMBOL_ENTRY, DEBUG_SYMBOL_ENTRY, DEBUG_SYMBOL_ENTRY structure [Windows Debugging], PDEBUG_SYMBOL_ENTRY, PDEBUG_SYMBOL_ENTRY structure pointer [Windows Debugging], Structures_5673550e-274a-429f-9a31-88e401bca68e.xml, _DEBUG_SYMBOL_ENTRY, dbgeng/DEBUG_SYMBOL_ENTRY, dbgeng/PDEBUG_SYMBOL_ENTRY, debugger.debug_symbol_entry"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,22 +47,22 @@ req.typenames: DEBUG_SYMBOL_ENTRY, *PDEBUG_SYMBOL_ENTRY
 The DEBUG_SYMBOL_ENTRY structure describes a symbol in a symbol group.
 
 ## Syntax
-````
+```
 typedef struct _DEBUG_SYMBOL_ENTRY {
   ULONG64 ModuleBase;
   ULONG64 Offset;
   ULONG64 Id;
   ULONG64 Arg64;
-  ULONG   Size;
-  ULONG   Flags;
-  ULONG   TypeId;
-  ULONG   NameSize;
-  ULONG   Token;
-  ULONG   Tag;
-  ULONG   Arg32;
-  ULONG   Reserved;
-}  DEBUG_SYMBOL_ENTRY, *PDEBUG_SYMBOL_ENTRY;
-````
+  ULONG   Size;
+  ULONG   Flags;
+  ULONG   TypeId;
+  ULONG   NameSize;
+  ULONG   Token;
+  ULONG   Tag;
+  ULONG   Arg32;
+  ULONG   Reserved;
+} DEBUG_SYMBOL_ENTRY, *PDEBUG_SYMBOL_ENTRY;
+```
 
 ## Members
 

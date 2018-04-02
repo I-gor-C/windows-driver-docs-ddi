@@ -47,20 +47,20 @@ req.typenames: KSAUTOMATION_TABLE, *PKSAUTOMATION_TABLE
 The KSAUTOMATION_TABLE structure defines a structure that combines tables for properties, methods, and events.
 
 ## Syntax
-````
+```
 typedef struct KSAUTOMATION_TABLE_ {
-  ULONG                PropertySetsCount;
-  ULONG                PropertyItemSize;
+  ULONG                PropertySetsCount;
+  ULONG                PropertyItemSize;
   const KSPROPERTY_SET *PropertySets;
-  ULONG                MethodSetsCount;
-  ULONG                MethodItemSize;
-  const KSMETHOD_SET   *MethodSets;
-  ULONG                EventSetsCount;
-  ULONG                EventItemSize;
-  const KSEVENT_SET    *EventSets;
-  PVOID                Alignment;
+  ULONG                MethodSetsCount;
+  ULONG                MethodItemSize;
+  const KSMETHOD_SET   *MethodSets;
+  ULONG                EventSetsCount;
+  ULONG                EventItemSize;
+  const KSEVENT_SET    *EventSets;
+  PVOID                Alignment;
 } KSAUTOMATION_TABLE, *PKSAUTOMATION_TABLE;
-````
+```
 
 ## Members
 
@@ -75,7 +75,7 @@ This member specifies size in bytes of property items in this table.
 
 `PropertySets`
 
-A pointer to an array of <a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a> objects (<b>PropertySetsCount</b> in length) defining the property sets in this automation table.  Each set contains a specific number of items of size <b>PropertyItemSize</b>.
+A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff565617">KSPROPERTY_SET</a> objects (<b>PropertySetsCount</b> in length) defining the property sets in this automation table.  Each set contains a specific number of items of size <b>PropertyItemSize</b>.
 
 `MethodSetsCount`
 
@@ -87,7 +87,7 @@ This member specifies the size in bytes of method items in this table.
 
 `MethodSets`
 
-An array of <a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a> objects (<b>MethodSetsCount</b> in length) defining the method sets in this automation table.  Each set has a specific number of items in it of size <b>MethodItemSize</b>.
+An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563423">KSMETHOD_SET</a> objects (<b>MethodSetsCount</b> in length) defining the method sets in this automation table.  Each set has a specific number of items in it of size <b>MethodItemSize</b>.
 
 `EventSetsCount`
 
@@ -99,7 +99,7 @@ This member specifies the size in bytes of event items in this table.
 
 `EventSets`
 
-An array of <a href="..\ks\ns-ks-ksevent_set.md">KSEVENT_SET</a> objects (<b>EventSetsCount</b> in length) defining the event sets in this automation table.  Each set has a specific number of items in it of size <b>EventItemSize</b>.
+An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561867">KSEVENT_SET</a> objects (<b>EventSetsCount</b> in length) defining the event sets in this automation table.  Each set has a specific number of items in it of size <b>EventItemSize</b>.
 
 `Alignment`
 
@@ -149,24 +149,24 @@ DEFINE_KSAUTOMATION_EVENTS (MyEventTable)</pre>
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561862">KSEVENT_ITEM</a>
 
 
 
-<a href="..\ks\ns-ks-ksevent_set.md">KSEVENT_SET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561867">KSEVENT_SET</a>
 
 
 
-<a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563420">KSMETHOD_ITEM</a>
 
 
 
-<a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563423">KSMETHOD_SET</a>
 
 
 
-<a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565176">KSPROPERTY_ITEM</a>
 
 
 
-<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565617">KSPROPERTY_SET</a>

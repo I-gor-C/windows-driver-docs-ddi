@@ -50,12 +50,12 @@ The <b>KsDispatchInvalidDeviceRequest</b> function is used in KSDISPATCH_TABLE e
 
 ## Syntax
 
-````
-NTSTATUS KsDispatchInvalidDeviceRequest(
-  _In_ PDEVICE_OBJECT DeviceObject,
-  _In_ PIRP           Irp
+```
+KSDDKAPI NTSTATUS KsDispatchInvalidDeviceRequest(
+  PDEVICE_OBJECT DeviceObject,
+  PIRP           Irp
 );
-````
+```
 
 ## Parameters
 
@@ -85,12 +85,12 @@ The <b>KsDispatchInvalidDeviceRequest</b> function is needed because the dispatc
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561699">KsDispatchFastIoDeviceControlFailure</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561703">KsDispatchFastReadFailure</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561706">KsDispatchFastWriteFailure</a>
-
-
-
-<a href="..\ks\nf-ks-ksdispatchfastiodevicecontrolfailure.md">KsDispatchFastIoDeviceControlFailure</a>
-
-
-
-<a href="..\ks\nf-ks-ksdispatchfastreadfailure.md">KsDispatchFastReadFailure</a>

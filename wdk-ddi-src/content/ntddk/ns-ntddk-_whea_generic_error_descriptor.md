@@ -47,21 +47,21 @@ req.typenames: WHEA_GENERIC_ERROR_DESCRIPTOR, *PWHEA_GENERIC_ERROR_DESCRIPTOR
 The WHEA_GENERIC_ERROR_DESCRIPTOR structure describes a generic error source.
 
 ## Syntax
-````
+```
 typedef struct _WHEA_GENERIC_ERROR_DESCRIPTOR {
-  USHORT                       Type;
-  UCHAR                        Reserved;
-  UCHAR                        Enabled;
-  ULONG                        ErrStatusBlockLength;
-  ULONG                        RelatedErrorSourceId;
-  UCHAR                        ErrStatusAddressSpaceID;
-  UCHAR                        ErrStatusAddressBitWidth;
-  UCHAR                        ErrStatusAddressBitOffset;
-  UCHAR                        ErrStatusAddressAccessSize;
-  WHEA_PHYSICAL_ADDRESS        ErrStatusAddress;
+  USHORT                       Type;
+  UCHAR                        Reserved;
+  UCHAR                        Enabled;
+  ULONG                        ErrStatusBlockLength;
+  ULONG                        RelatedErrorSourceId;
+  UCHAR                        ErrStatusAddressSpaceID;
+  UCHAR                        ErrStatusAddressBitWidth;
+  UCHAR                        ErrStatusAddressBitOffset;
+  UCHAR                        ErrStatusAddressAccessSize;
+  WHEA_PHYSICAL_ADDRESS        ErrStatusAddress;
   WHEA_NOTIFICATION_DESCRIPTOR Notify;
-} WHEA_GENERIC_ERROR_DESCRIPTOR, *PWHEA_GENERIC_ERROR_DESCRIPTOR;
-````
+} *PWHEA_GENERIC_ERROR_DESCRIPTOR, WHEA_GENERIC_ERROR_DESCRIPTOR;
+```
 
 ## Members
 
@@ -192,14 +192,14 @@ Quad word access
 
 `ErrStatusAddress`
 
-The 64-bit address of a register that contains the physical address of a block of memory that contains the error status data for the error source. This block of memory must reside in firmware reserved memory so that it is not reclaimed by the operating system's memory manager. The error status data contained in this block of memory is described by a <a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a> structure.
+The 64-bit address of a register that contains the physical address of a block of memory that contains the error status data for the error source. This block of memory must reside in firmware reserved memory so that it is not reclaimed by the operating system's memory manager. The error status data contained in this block of memory is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560524">WHEA_GENERIC_ERROR</a> structure.
 
 `Notify`
 
-A <a href="..\ntddk\ns-ntddk-_whea_notification_descriptor.md">WHEA_NOTIFICATION_DESCRIPTOR</a> structure that describes the notification mechanism that is used by the error source.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560574">WHEA_NOTIFICATION_DESCRIPTOR</a> structure that describes the notification mechanism that is used by the error source.
 
 ## Remarks
-A WHEA_GENERIC_ERROR_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
+A WHEA_GENERIC_ERROR_DESCRIPTOR structure is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -209,12 +209,12 @@ A WHEA_GENERIC_ERROR_DESCRIPTOR structure is contained within the <a href="..\nt
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_notification_descriptor.md">WHEA_NOTIFICATION_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error.md">WHEA_GENERIC_ERROR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560524">WHEA_GENERIC_ERROR</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560574">WHEA_NOTIFICATION_DESCRIPTOR</a>

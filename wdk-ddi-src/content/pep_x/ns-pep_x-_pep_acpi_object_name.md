@@ -7,7 +7,7 @@ old-location: kernel\pep_acpi_object_name.htm
 old-project: kernel
 ms.assetid: 55D8A977-DA91-4CB5-8549-E1CB1731256C
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPEP_ACPI_OBJECT_NAME, PEP_ACPI_OBJECT_NAME, PEP_ACPI_OBJECT_NAME union [Kernel-Mode Driver Architecture], _PEP_ACPI_OBJECT_NAME, kernel.pep_acpi_object_name, pepfx/PEP_ACPI_OBJECT_NAME"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: PEP_ACPI_OBJECT_NAME, *PPEP_ACPI_OBJECT_NAME, PEP_ACPI_OBJECT_NAM
 The <b>PEP_ACPI_OBJECT_NAME</b> union contains the four-character name of an ACPI object.
 
 ## Syntax
-````
-typedef union _PEP_ACPI_OBJECT_NAME {
-  UCHAR ObjectName[4];
-  ULONG ObjectNameAsUlong;
-} PEP_ACPI_OBJECT_NAME;
-````
+```
+typedef struct _PEP_ACPI_OBJECT_NAME {
+  UCHAR Name[4];
+  ULONG NameAsUlong;
+} PEP_ACPI_OBJECT_NAME, *PPEP_ACPI_OBJECT_NAME;
+```
 
 ## Members
 
@@ -66,7 +66,7 @@ typedef union _PEP_ACPI_OBJECT_NAME {
 
 
 ## Remarks
-The <i>Name</i> member of the <a href="..\pepfx\ns-pepfx-_pep_acpi_object_name_with_type.md">PEP_ACPI_OBJECT_NAME_WITH_TYPE</a> structure is a <b>PEP_ACPI_OBJECT_NAME</b> union. Also, the <i>Name</i> member of the <a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_information.md">PEP_ACPI_QUERY_OBJECT_INFORMATION</a> structure is a <b>PEP_ACPI_OBJECT_NAME</b> union.
+The <i>Name</i> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186684">PEP_ACPI_OBJECT_NAME_WITH_TYPE</a> structure is a <b>PEP_ACPI_OBJECT_NAME</b> union. Also, the <i>Name</i> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186688">PEP_ACPI_QUERY_OBJECT_INFORMATION</a> structure is a <b>PEP_ACPI_OBJECT_NAME</b> union.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,8 +76,8 @@ The <i>Name</i> member of the <a href="..\pepfx\ns-pepfx-_pep_acpi_object_name_w
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_acpi_object_name_with_type.md">PEP_ACPI_OBJECT_NAME_WITH_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186684">PEP_ACPI_OBJECT_NAME_WITH_TYPE</a>
 
 
 
-<a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_information.md">PEP_ACPI_QUERY_OBJECT_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186688">PEP_ACPI_QUERY_OBJECT_INFORMATION</a>

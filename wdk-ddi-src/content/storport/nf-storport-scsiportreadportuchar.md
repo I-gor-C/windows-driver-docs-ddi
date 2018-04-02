@@ -7,7 +7,7 @@ old-location: storage\scsiportreadportuchar.htm
 old-project: storage
 ms.assetid: aaf7e821-4f60-4018-b0ee-d0f3995482c4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortReadPortUchar, ScsiPortReadPortUchar routine [Storage Devices], scsiprt_bdc335c6-bee2-47f6-ad8e-61bece6f7c15.xml, srb/ScsiPortReadPortUchar, storage.scsiportreadportuchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>ScsiPortReadPortUchar</b> routine reads an unsigned byte value from the H
 
 ## Syntax
 
-````
-UCHAR ScsiPortReadPortUchar(
-  _In_ PUCHAR Port
+```
+void ScsiPortReadPortUchar(
+   Port
 );
-````
+```
 
 ## Parameters
 
@@ -82,4 +82,4 @@ None
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>

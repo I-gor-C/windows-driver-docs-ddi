@@ -2,13 +2,13 @@
 UID: NE:wudfddi_types._WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS
 title: "_WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS"
 author: windows-driver-content
-description: The WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS enumeration is reserved for internal use.
-old-location: wdf\wdf_power_policy_idle_timeout_constants.htm
+description: WDF_CALLBACK_CONSTRAINT enumeration
+old-location: wdf\wdf_callback_constraint.htm
 old-project: wdf
-ms.assetid: a707c7b9-2fc9-48c8-9492-b911c126668b
+ms.assetid: 118a9dcc-8dd4-454a-bab2-1558821781a7
 ms.author: windowsdriverdev
 ms.date: 2/26/2018
-ms.keywords: IdleTimeoutDefaultConstant, WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS enumeration, _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, wdf.wdf_power_policy_idle_timeout_constants, wdfdevice/IdleTimeoutDefaultConstant, wdfdevice/WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, wudfddi_types/IdleTimeoutDefaultConstant, wudfddi_types/WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS
+ms.keywords: None, WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS enumeration, WdfDeviceLevel, WdfLevelReserved, _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, wdf.wdf_callback_constraint, wudfddi_types/None, wudfddi_types/WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS, wudfddi_types/WdfDeviceLevel, wudfddi_types/WdfLevelReserved
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: enum
@@ -17,7 +17,7 @@ req.include-header: Wdf.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
-req.kmdf-ver: 1.0
+req.kmdf-ver: 
 req.umdf-ver: 1.9
 req.ddi-compliance: 
 req.unicode-ansi: 
@@ -35,10 +35,9 @@ topic_type:
 api_type:
 -	HeaderDef
 api_location:
--	wdfdevice.h
 -	wudfddi_types.h
 api_name:
--	WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS
+-	WDF_CALLBACK_CONSTRAINT
 product: Windows
 targetos: Windows
 req.typenames: WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS
@@ -46,16 +45,14 @@ req.product: Windows 10 or later.
 ---
 
 # _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS Enumeration
-<p class="CCE_Message">[Applies to KMDF and UMDF]
 
-The <b>WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS</b> enumeration is reserved for internal use.
 
 ## Syntax
-````
-typedef enum _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS { 
-  IdleTimeoutDefaultConstant  = 0
+```
+typedef enum _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS {
+  IdleTimeoutDefaultConstant
 } WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS;
-````
+```
 
 ## Constants
 
@@ -63,14 +60,16 @@ typedef enum _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS {
             
                 <tr>
                     <td>IdleTimeoutDefaultConstant</td>
-                    <td>For internal use only.</td>
+                    <td></td>
                 </tr>
 </table>
 
+## Remarks
+
+Note that the above locking models apply only for I/O (that is, open, read, write, and device I/O control) operations and not for Plug and Play (PnP) and power management notifications.
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Minimum KMDF version** | 1.0 |
 | **Minimum UMDF version** | 1.9 |
 | **Header** | wudfddi_types.h (include Wdf.h) |

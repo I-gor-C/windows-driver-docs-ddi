@@ -47,12 +47,12 @@ req.typenames: BDA_PID_UNMAP, *PBDA_PID_UNMAP
 The BDA_PID_UNMAP structure describes packet types to stop filtering from the input stream of a packet identifier (PID) filter. These packet types are identified with PIDs.
 
 ## Syntax
-````
+```
 typedef struct _BDA_PID_UNMAP {
   ULONG ulcPIDs;
   ULONG aulPIDs[MIN_DIMENSION];
-} BDA_PID_UNMAP, *PBDA_PID_UNMAP;
-````
+} *PBDA_PID_UNMAP, BDA_PID_UNMAP;
+```
 
 ## Members
 
@@ -73,11 +73,11 @@ Array of PIDs that identify packets to unmap from the output of a PID filter.
 
 ## See Also
 
-<a href="..\bdatypes\ns-bdatypes-pid_map.md">PID_MAP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556534">BDA_PID_MAP</a>
 
 
 
-<a href="..\bdatypes\ns-bdatypes-_bda_pid_map.md">BDA_PID_MAP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566551">KSPROPSETID_BdaPIDFilter</a>
 
 
 
@@ -85,4 +85,4 @@ Array of PIDs that identify packets to unmap from the output of a PID filter.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566551">KSPROPSETID_BdaPIDFilter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567763">PID_MAP</a>

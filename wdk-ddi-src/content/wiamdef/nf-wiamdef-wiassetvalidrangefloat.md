@@ -50,16 +50,16 @@ The <b>wiasSetValidRangeFloat </b>function specifies the range of valid values f
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasSetValidRangeFloat(
-  _In_ BYTE   *pWiasContext,
-       PROPID propid,
-       FLOAT  fMin,
-       FLOAT  fNom,
-       FLOAT  fMax,
-       FLOAT  fStep
+```
+HRESULT wiasSetValidRangeFloat(
+  BYTE   *pWiasContext,
+  PROPID propid,
+  FLOAT  fMin,
+  FLOAT  fNom,
+  FLOAT  fMax,
+  FLOAT  fStep
 );
-````
+```
 
 ## Parameters
 
@@ -104,24 +104,24 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiassetvalidlistfloat.md">wiasSetValidListFloat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549390">wiasSetValidFlag</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiassetvalidliststr.md">wiasSetValidListStr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549399">wiasSetValidListFloat</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiassetvalidrangelong.md">wiasSetValidRangeLong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549409">wiasSetValidListGuid</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiassetvalidlistlong.md">wiasSetValidListLong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549414">wiasSetValidListLong</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiassetvalidflag.md">wiasSetValidFlag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549421">wiasSetValidListStr</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiassetvalidlistguid.md">wiasSetValidListGuid</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549434">wiasSetValidRangeLong</a>

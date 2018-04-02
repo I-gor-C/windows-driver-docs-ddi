@@ -7,7 +7,7 @@ old-location: buses\usb_bus_information_level_0.htm
 old-project: usbref
 ms.assetid: b590493d-59a0-460d-b025-8fac63e62f6a
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSB_BUS_INFORMATION_LEVEL_0, PUSB_BUS_INFORMATION_LEVEL_0, PUSB_BUS_INFORMATION_LEVEL_0 structure pointer [Buses], USB_BUS_INFORMATION_LEVEL_0, USB_BUS_INFORMATION_LEVEL_0 structure [Buses], _USB_BUS_INFORMATION_LEVEL_0, buses.usb_bus_information_level_0, usbbusif/PUSB_BUS_INFORMATION_LEVEL_0, usbbusif/USB_BUS_INFORMATION_LEVEL_0, usbstrct_19a2e4ab-663a-4cb9-b21c-182d1de11b68.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The <b>USB_BUS_INFORMATION_LEVEL_0</b> structure is used in conjunction with the <a href="https://msdn.microsoft.com/cc03ae88-89ba-44ff-bfe7-6255f2a2ec5c">QueryBusInformation</a> interface routine to report information about the bus.
 
 ## Syntax
-````
+```
 typedef struct _USB_BUS_INFORMATION_LEVEL_0 {
   ULONG TotalBandwidth;
   ULONG ConsumedBandwidth;
 } USB_BUS_INFORMATION_LEVEL_0, *PUSB_BUS_INFORMATION_LEVEL_0;
-````
+```
 
 ## Members
 
@@ -79,8 +79,8 @@ For more information about how to obtain the proper level of USB interface, see 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
-
-
-
 <a href="https://msdn.microsoft.com/cc03ae88-89ba-44ff-bfe7-6255f2a2ec5c">QueryBusInformation</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>

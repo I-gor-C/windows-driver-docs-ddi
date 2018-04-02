@@ -7,7 +7,7 @@ old-location: buses\_usbdevice_address.htm
 old-project: usbref
 ms.assetid: 2CD37F1E-B96A-4D18-A756-2B9E3CB8613B
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSBDEVICE_ADDRESS, P_USBDEVICE_ADDRESS, P_USBDEVICE_ADDRESS structure pointer [Buses], USBDEVICE_ADDRESS, USBDEVICE_ADDRESS structure [Buses], _USBDEVICE_ADDRESS, buses._usbdevice_address, ucxusbdevice/P_USBDEVICE_ADDRESS, ucxusbdevice/_USBDEVICE_ADDRESS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,27 +45,23 @@ req.product: Windows 10 or later.
 ---
 
 # _USBDEVICE_ADDRESS structure
-Contains parameters for a request to transition the specified device to the Addressed state. This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_address.md">EVT_UCX_USBDEVICE_ADDRESS</a> callback function.
+Contains parameters for a request to transition the specified device to the Addressed state. This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187838">EVT_UCX_USBDEVICE_ADDRESS</a> callback function.
 
 ## Syntax
-````
+```
 typedef struct _USBDEVICE_ADDRESS {
-#if _cplusplus
   USBDEVICE_MGMT_HEADER Header;
-#else 
-  USBDEVICE_MGMT_HEADER ;
-#endif 
-  ULONG                 Reserved;
-  ULONG                 Address;
-} USBDEVICE_ADDRESS, *P_USBDEVICE_ADDRESS;
-````
+  ULONG                 Reserved;
+  ULONG                 Address;
+} USBDEVICE_ADDRESS, *PUSBDEVICE_ADDRESS;
+```
 
 ## Members
 
 
 `Header`
 
-A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188075">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
 
 `Reserved`
 
@@ -83,4 +79,4 @@ The address of the specified the USB hub or device.
 
 ## See Also
 
-<a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_address.md">EVT_UCX_USBDEVICE_ADDRESS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187838">EVT_UCX_USBDEVICE_ADDRESS</a>

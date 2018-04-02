@@ -7,7 +7,7 @@ old-location: kernel\ioattachdevicetodevicestack.htm
 old-project: kernel
 ms.assetid: 6377f980-dd56-4bef-91e7-7557866132d6
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoAttachDeviceToDeviceStack, IoAttachDeviceToDeviceStack routine [Kernel-Mode Driver Architecture], k104_18c6aeef-4362-49f9-88a3-6d2a970eb0d7.xml, kernel.ioattachdevicetodevicestack, wdm/IoAttachDeviceToDeviceStack
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>IoAttachDeviceToDeviceStack</b> routine attaches the caller's device obje
 
 ## Syntax
 
-````
-PDEVICE_OBJECT IoAttachDeviceToDeviceStack(
-  _In_ PDEVICE_OBJECT SourceDevice,
-  _In_ PDEVICE_OBJECT TargetDevice
+```
+NTKERNELAPI PDEVICE_OBJECT IoAttachDeviceToDeviceStack(
+  PDEVICE_OBJECT SourceDevice,
+  PDEVICE_OBJECT TargetDevice
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ Pointer to the caller-created device object.
 
 `TargetDevice`
 
-Pointer to another driver's device object, such as a pointer returned by a preceding call to <a href="..\wdm\nf-wdm-iogetdeviceobjectpointer.md">IoGetDeviceObjectPointer</a>.
+Pointer to another driver's device object, such as a pointer returned by a preceding call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549198">IoGetDeviceObjectPointer</a>.
 
 
 ## Return Value
@@ -84,7 +84,7 @@ This routine sets the <b>AlignmentRequirement</b> in <i>SourceDevice</i>  to the
 
 A driver writer must take care to call this routine <u>before</u> any drivers that must layer on top of their driver. <b>IoAttachDeviceToDeviceStack</b> attaches <i>SourceDevice</i> to the highest device object currently layered in the chain and has no way to determine whether drivers are being layered in the correct order.
 
-A driver that acquired a pointer to the target device by calling <a href="..\wdm\nf-wdm-iogetdeviceobjectpointer.md">IoGetDeviceObjectPointer</a> should call <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> with the file object pointer that was returned by <b>IoGetDeviceObjectPointer</b> to release its reference to the file object before it detaches its own device object, for example, when such a higher-level driver is unloaded.
+A driver that acquired a pointer to the target device by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549198">IoGetDeviceObjectPointer</a> should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a> with the file object pointer that was returned by <b>IoGetDeviceObjectPointer</b> to release its reference to the file object before it detaches its own device object, for example, when such a higher-level driver is unloaded.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -99,16 +99,16 @@ A driver that acquired a pointer to the target device by calling <a href="..\wdm
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548294">IoAttachDevice</a>
 
 
 
-<a href="..\wdm\nf-wdm-iogetdeviceobjectpointer.md">IoGetDeviceObjectPointer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549087">IoDetachDevice</a>
 
 
 
-<a href="..\wdm\nf-wdm-ioattachdevice.md">IoAttachDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549198">IoGetDeviceObjectPointer</a>
 
 
 
-<a href="..\wdm\nf-wdm-iodetachdevice.md">IoDetachDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a>

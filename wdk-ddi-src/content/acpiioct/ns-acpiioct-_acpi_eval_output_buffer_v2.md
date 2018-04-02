@@ -47,14 +47,14 @@ req.typenames: ACPI_EVAL_OUTPUT_BUFFER_V2
 This topic describes the  <b>ACPI_EVAL_OUTPUT_BUFFER_V2</b> structure.
 
 ## Syntax
-````
+```
 typedef struct _ACPI_EVAL_OUTPUT_BUFFER_V2 {
-  ULONG                                                                                                           Signature;
-  ULONG                                                                                                           Length;
-  ULONG                                                                                                           Count;
-  _Field_size_bytes_(Length - FIELD_OFFSET(struct _ACPI_EVAL_OUTPUT_BUFFER_V2, Argument)) ACPI_METHOD_ARGUMENT_V2 Argument[ANYSIZE_ARRAY];
+  ULONG                   Signature;
+  ULONG                   Length;
+  ULONG                   Count;
+  ACPI_METHOD_ARGUMENT_V2 Argument[ANYSIZE_ARRAY];
 } ACPI_EVAL_OUTPUT_BUFFER_V2;
-````
+```
 
 ## Members
 

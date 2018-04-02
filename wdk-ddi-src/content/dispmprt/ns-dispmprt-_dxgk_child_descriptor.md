@@ -7,7 +7,7 @@ old-location: display\dxgk_child_descriptor.htm
 old-project: display
 ms.assetid: a814da0c-3712-4e7b-9349-a446d7b32c90
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PDXGK_CHILD_DESCRIPTOR, DXGK_CHILD_DESCRIPTOR, DXGK_CHILD_DESCRIPTOR structure [Display Devices], DmStructs_711f63dc-7ad9-49d8-b83b-5e375764a762.xml, PDXGK_CHILD_DESCRIPTOR, PDXGK_CHILD_DESCRIPTOR structure pointer [Display Devices], _DXGK_CHILD_DESCRIPTOR, display.dxgk_child_descriptor, dispmprt/DXGK_CHILD_DESCRIPTOR, dispmprt/PDXGK_CHILD_DESCRIPTOR"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,25 +47,25 @@ req.typenames: DXGK_CHILD_DESCRIPTOR, *PDXGK_CHILD_DESCRIPTOR
 The DXGK_CHILD_DESCRIPTOR structure holds identification and capability information for an individual child device of the display adapter.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_CHILD_DESCRIPTOR {
-  DXGK_CHILD_DEVICE_TYPE  ChildDeviceType;
+  DXGK_CHILD_DEVICE_TYPE  ChildDeviceType;
   DXGK_CHILD_CAPABILITIES ChildCapabilities;
-  ULONG                   AcpiUid;
-  ULONG                   ChildUid;
-} DXGK_CHILD_DESCRIPTOR, *PDXGK_CHILD_DESCRIPTOR;
-````
+  ULONG                   AcpiUid;
+  ULONG                   ChildUid;
+} *PDXGK_CHILD_DESCRIPTOR, DXGK_CHILD_DESCRIPTOR;
+```
 
 ## Members
 
 
 `ChildDeviceType`
 
-A member of the <a href="..\dispmprt\ne-dispmprt-_dxgk_child_device_type.md">DXGK_CHILD_DEVICE_TYPE</a> enumeration that indicates the type of the child device.
+A member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561008">DXGK_CHILD_DEVICE_TYPE</a> enumeration that indicates the type of the child device.
 
 `ChildCapabilities`
 
-A <a href="..\dispmprt\ns-dispmprt-_dxgk_child_capabilities.md">DXGK_CHILD_CAPABILITIES</a> structure that describes the capabilities of the child device.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560995">DXGK_CHILD_CAPABILITIES</a> structure that describes the capabilities of the child device.
 
 `AcpiUid`
 
@@ -76,9 +76,9 @@ If the child device is an ACPI device, this member contains the unique ACPI iden
 A unique identifier, created by the display miniport driver, that identifies the child device.
 
 ## Remarks
-The <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a> function, implemented by the display miniport driver, fills in an array of DXGK_CHILD_DESCRIPTOR structures, one for each child device of the display adapter.
+The <a href="https://msdn.microsoft.com/eb1a0df0-6239-4d82-8477-7dd015f80b6e">DxgkDdiQueryChildRelations</a> function, implemented by the display miniport driver, fills in an array of DXGK_CHILD_DESCRIPTOR structures, one for each child device of the display adapter.
 
-Each child device of type <b>TypeVideoOutput</b> is associated with a video present target, and the <b>ChildUid</b> member of this structure is used as the identifier for that video present target. Several functions implemented by the video present network (VidPN) manager receive a video present target identifier. For an example, see the <i>VidPnTargetId</i> parameter of the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpn_acquiretargetmodeset.md">pfnAcquireTargetModeSet</a> function.
+Each child device of type <b>TypeVideoOutput</b> is associated with a video present target, and the <b>ChildUid</b> member of this structure is used as the identifier for that video present target. Several functions implemented by the video present network (VidPN) manager receive a video present target identifier. For an example, see the <i>VidPnTargetId</i> parameter of the <a href="https://msdn.microsoft.com/1b91c472-21eb-4aa8-91e3-c9eb70556d9f">pfnAcquireTargetModeSet</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,16 +88,16 @@ Each child device of type <b>TypeVideoOutput</b> is associated with a video pres
 
 ## See Also
 
-<a href="..\dispmprt\ne-dispmprt-_dxgk_child_device_type.md">DXGK_CHILD_DEVICE_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560995">DXGK_CHILD_CAPABILITIES</a>
 
 
 
-<a href="..\dispmprt\ns-dispmprt-_dxgk_child_capabilities.md">DXGK_CHILD_CAPABILITIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561008">DXGK_CHILD_DEVICE_TYPE</a>
 
 
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_status.md">DxgkDdiQueryChildStatus</a>
+<a href="https://msdn.microsoft.com/eb1a0df0-6239-4d82-8477-7dd015f80b6e">DxgkDdiQueryChildRelations</a>
 
 
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_query_child_relations.md">DxgkDdiQueryChildRelations</a>
+<a href="https://msdn.microsoft.com/478e0c52-4324-4062-8e1e-381808b0f481">DxgkDdiQueryChildStatus</a>

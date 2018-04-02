@@ -7,7 +7,7 @@ old-location: display\calcprivatedevicesize.htm
 old-project: display
 ms.assetid: 8221a99a-1b46-48ba-8930-ac973e009eee
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: CalcPrivateDeviceSize, CalcPrivateDeviceSize callback function [Display Devices], PFND3D10DDI_CALCPRIVATEDEVICESIZE, UserModeDisplayDriverDx10_Functions_0de51abc-5fe3-4d65-bd0a-cc4f32f08d81.xml, d3d10umddi/CalcPrivateDeviceSize, display.calcprivatedevicesize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,4 +84,4 @@ SIZE_T Pfnd3d10ddiCalcprivatedevicesize(
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_calcprivatedevicesize.md">D3D10DDIARG_CALCPRIVATEDEVICESIZE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541649">D3D10DDIARG_CALCPRIVATEDEVICESIZE</a>

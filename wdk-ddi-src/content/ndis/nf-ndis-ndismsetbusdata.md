@@ -7,7 +7,7 @@ old-location: netvista\ndismsetbusdata.htm
 old-project: netvista
 ms.assetid: 0b9153b3-f379-40c4-87f6-1fa380070e65
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMSetBusData, NdisMSetBusData function [Network Drivers Starting with Windows Vista], hardware_configuration_ref_4fd9608c-60b9-4a86-9aa3-02d6ec17da92.xml, ndis/NdisMSetBusData, netvista.ndismsetbusdata
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,15 +51,15 @@ NDIS drivers call the
 
 ## Syntax
 
-````
+```
 ULONG NdisMSetBusData(
-  _In_ NDIS_HANDLE MiniportAdapterHandle,
-  _In_ ULONG       WhichSpace,
-  _In_ ULONG       Offset,
-  _In_ PVOID       Buffer,
-  _In_ ULONG       Length
+  IN NDIS_HANDLE NdisMiniportHandle,
+  IN ULONG       WhichSpace,
+  IN ULONG       Offset,
+  IN PVOID       Buffer,
+  IN ULONG       Length
 );
-````
+```
 
 ## Parameters
 
@@ -113,8 +113,8 @@ This function replaces the NDIS 5.1
 
 
 
-<a href="..\ndis\nf-ndis-ndismgetbusdata.md">NdisMGetBusData</a>
+<a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563591">NdisMGetBusData</a>

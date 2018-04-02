@@ -7,7 +7,7 @@ old-location: kernel\powercontrolcallback.htm
 old-project: kernel
 ms.assetid: 110DAD1A-606B-4973-8724-03B531B2AEA9
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PO_FX_POWER_CONTROL_CALLBACK, PowerControlCallback, PowerControlCallback routine [Kernel-Mode Driver Architecture], kernel.powercontrolcallback, wdm/PowerControlCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -106,9 +106,9 @@ PoFx calls this routine to send a power control request directly to the device d
 
 This routine is optional. A device driver that does not support power control operations is not required to implement a <i>PowerControlCallback</i> routine.
 
-The device driver can call the <a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a> routine to send a power control request to PoFx.
+The device driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439518">PoFxPowerControl</a> routine to send a power control request to PoFx.
 
-For more information about power control requests, see <a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a>.
+For more information about power control requests, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh439518">PoFxPowerControl</a>.
 
 
 #### Examples
@@ -166,8 +166,8 @@ The PO_FX_POWER_CONTROL_CALLBACK function type is defined in the Wdm.h header fi
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_po_fx_device_v1.md">PO_FX_DEVICE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439585">PO_FX_DEVICE</a>
 
 
 
-<a href="..\wdm\nf-wdm-pofxpowercontrol.md">PoFxPowerControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439518">PoFxPowerControl</a>

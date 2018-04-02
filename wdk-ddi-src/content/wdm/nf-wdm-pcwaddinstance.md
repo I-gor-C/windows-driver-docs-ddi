@@ -50,15 +50,15 @@ The <b>PcwAddInstance</b> function adds the specified instance of the counter se
 
 ## Syntax
 
-````
+```
 NTSTATUS PcwAddInstance(
-  _In_ PPCW_BUFFER      Buffer,
-  _In_ PCUNICODE_STRING Name,
-  _In_ ULONG            Id,
-  _In_ ULONG            Count,
-  _In_ PPCW_DATA        Data
+  PPCW_BUFFER      Buffer,
+  PCUNICODE_STRING Name,
+  ULONG            Id,
+  ULONG            Count,
+  PPCW_DATA        Data
 );
-````
+```
 
 ## Parameters
 
@@ -110,7 +110,7 @@ The instance was successfully added to the buffer.
 </dl>
 </td>
 <td width="60%">
-One of the provider data blocks is too small. For example, suppose that during the call to <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>, the provider specifies that counter <i>X</i> is at offset 100 of the first data block of size 4 bytes. If the call to <b>PcwAddInstance</b> specifies that the first data block is 50 bytes, this error status is returned.
+One of the provider data blocks is too small. For example, suppose that during the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a>, the provider specifies that counter <i>X</i> is at offset 100 of the first data block of size 4 bytes. If the call to <b>PcwAddInstance</b> specifies that the first data block is 50 bytes, this error status is returned.
 
 </td>
 </tr>
@@ -118,7 +118,7 @@ One of the provider data blocks is too small. For example, suppose that during t
 
 ## Remarks
 
-The <b>PcwAddInstance</b> function either adds an instance or collects data depending on the purpose of the buffer. The purpose of the buffer is defined by the type of callback. The <b>PcwAddInstance</b> function is called from a <a href="..\wdm\nc-wdm-pcw_callback.md">PcwCallback</a> routine when the reason is either to collect data or to enumerate instances. You can get the <i>Buffer</i> from the <i>Info</i> parameter for the <i>PcwCallback</i> routine
+The <b>PcwAddInstance</b> function either adds an instance or collects data depending on the purpose of the buffer. The purpose of the buffer is defined by the type of callback. The <b>PcwAddInstance</b> function is called from a <a href="https://msdn.microsoft.com/5058fc17-1016-45bc-a6ea-5e2458824e7b">PcwCallback</a> routine when the reason is either to collect data or to enumerate instances. You can get the <i>Buffer</i> from the <i>Info</i> parameter for the <i>PcwCallback</i> routine
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -132,4 +132,4 @@ The <b>PcwAddInstance</b> function either adds an instance or collects data depe
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-pcw_callback.md">PcwCallback</a>
+<a href="https://msdn.microsoft.com/5058fc17-1016-45bc-a6ea-5e2458824e7b">PcwCallback</a>

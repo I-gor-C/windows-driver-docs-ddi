@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlmupgetprovideridfromname.htm
 old-project: ifsk
 ms.assetid: a572398c-1755-4fc6-844b-85059d4d02cb
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlMupGetProviderIdFromName, FsRtlMupGetProviderIdFromName routine [Installable File System Drivers], fsrtlref_40c084cd-454c-4e09-afc1-fca3a78bf614.xml, ifsk.fsrtlmupgetprovideridfromname, ntifs/FsRtlMupGetProviderIdFromName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>FsRtlMupGetProviderIdFromName</b> routine gets the provider identifier of
 
 ## Syntax
 
-````
-NTSTATUS FsRtlMupGetProviderIdFromName(
-  _In_  PUNICODE_STRING pProviderName,
-  _Out_ PULONG32        pProviderId
+```
+NTKERNELAPI NTSTATUS FsRtlMupGetProviderIdFromName(
+  PCUNICODE_STRING pProviderName,
+  PULONG32         pProviderId
 );
-````
+```
 
 ## Parameters
 
@@ -117,7 +117,7 @@ A file system filter driver can call the <b>FsRtlMupGetProviderIdFromName</b> ro
 
 The value of the provider identifier for a particular network redirector remains the same if the network redirector is unloaded from the system and then reloaded back into the system.
 
-To get the provider identifier of a network redirector from a file object, a file system filter driver can call the <a href="..\ntifs\nf-ntifs-fsrtlmupgetproviderinfofromfileobject.md">FsRtlMupGetProviderInfoFromFileObject</a> routine.
+To get the provider identifier of a network redirector from a file object, a file system filter driver can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546981">FsRtlMupGetProviderInfoFromFileObject</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -131,4 +131,4 @@ To get the provider identifier of a network redirector from a file object, a fil
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-fsrtlmupgetproviderinfofromfileobject.md">FsRtlMupGetProviderInfoFromFileObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546981">FsRtlMupGetProviderInfoFromFileObject</a>

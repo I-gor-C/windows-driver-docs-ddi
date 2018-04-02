@@ -7,7 +7,7 @@ old-location: display\videoprocessorsetstreamextension.htm
 old-project: display
 ms.assetid: 380f7fbd-34aa-401b-a7dc-5d8b521f7948
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMEXTENSION, d3d10umddi/pfnVideoProcessorSetStreamExtension, display.videoprocessorsetstreamextension, pfnVideoProcessorSetStreamExtension, pfnVideoProcessorSetStreamExtension callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -158,4 +158,4 @@ Parameters were validated and determined to be incorrect.
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
+<a href="https://msdn.microsoft.com/741045a2-0a91-490a-907d-5f4900a4a0ae">CreateVideoProcessor</a>

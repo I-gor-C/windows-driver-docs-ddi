@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_flush.htm
 old-project: netvista
 ms.assetid: 8C5F62DD-36CB-4EBC-9113-BB5BF19C0D45
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_FN_FLUSH, NdkFlush, NdkFlush callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkFlush, netvista.ndk_fn_flush
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ void NdkFnFlush(
 
 `*pNdkQp`
 
-A pointer to an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>).
+A pointer to an NDK queue pair (QP) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439933">NDK_QP</a>).
 
 
 ## Return Value
@@ -85,4 +85,4 @@ If the  NDK consumer wants to verify that all of the requests are flushed after 
 
 ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439933">NDK_QP</a>

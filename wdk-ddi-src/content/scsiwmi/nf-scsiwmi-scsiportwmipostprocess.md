@@ -7,7 +7,7 @@ old-location: storage\scsiportwmipostprocess.htm
 old-project: storage
 ms.assetid: da1770bc-2233-47ef-afab-cfcb34edb4b9
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortWmiPostProcess, ScsiPortWmiPostProcess routine [Storage Devices], scsiprt_e10d02e1-18d2-4152-ac11-83bdcbb2ce49.xml, scsiwmi/ScsiPortWmiPostProcess, storage.scsiportwmipostprocess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,13 +51,13 @@ The <b>ScsiPortWmiPostProcess</b> routine updates a request context for a WMI SR
 
 ## Syntax
 
-````
-VOID ScsiPortWmiPostProcess(
-  _In_ PSCSIWMI_REQUEST_CONTEXT RequestContext,
-  _In_ UCHAR                    SrbStatus,
-  _In_ ULONG                    BufferUsed
+```
+void ScsiPortWmiPostProcess(
+  PSCSIWMI_REQUEST_CONTEXT RequestContext,
+  UCHAR                    SrbStatus,
+  ULONG                    BufferUsed
 );
-````
+```
 
 ## Parameters
 
@@ -96,16 +96,16 @@ If a miniport driver sets <i>SrbStatus</i> to SRB_STATUS_DATA_OVERRUN and sets <
 
 ## See Also
 
-<a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564946">SCSIWMI_REQUEST_CONTEXT</a>
 
 
 
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnstatus.md">ScsiPortWmiGetReturnStatus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564766">ScsiPortWmiDispatchFunction</a>
 
 
 
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmidispatchfunction.md">ScsiPortWmiDispatchFunction</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564789">ScsiPortWmiGetReturnSize</a>
 
 
 
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnsize.md">ScsiPortWmiGetReturnSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564791">ScsiPortWmiGetReturnStatus</a>

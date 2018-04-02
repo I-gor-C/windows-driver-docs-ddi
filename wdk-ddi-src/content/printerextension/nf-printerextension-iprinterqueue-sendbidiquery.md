@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# SendBidiQuery method
+# IPrinterQueue::SendBidiQuery method
 Performs an asynchronous refresh operation with the specified query, and invokes the <a href="https://msdn.microsoft.com/D0CD9950-DF73-4D46-B901-FA45BA88D3CF">IPrinterQueueEvent::OnBidiResponseReceived</a> method.
 
 ## Syntax
 
-````
+```
 HRESULT SendBidiQuery(
-  [in] BSTR bstrBidiQuery
+  BSTR bstrBidiQuery
 );
-````
+```
 
 ## Parameters
 
@@ -101,12 +101,12 @@ All standard Bidi values (as defined by the port monitor’s embedded Bidi files
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/D0CD9950-DF73-4D46-B901-FA45BA88D3CF">IPrinterQueueEvent::OnBidiResponseReceived</a>
-
-
-
 <a href="http://msdn.microsoft.com/en-us/library/dd183365(v=vs.85)">Bidi Communication Interfaces</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>
+
+
+
+<a href="https://msdn.microsoft.com/D0CD9950-DF73-4D46-B901-FA45BA88D3CF">IPrinterQueueEvent::OnBidiResponseReceived</a>

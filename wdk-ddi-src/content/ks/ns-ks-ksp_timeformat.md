@@ -47,14 +47,14 @@ req.typenames: KSP_TIMEFORMAT, *PKSP_TIMEFORMAT
 The KSP_TIMEFORMAT structure corresponds to <a href="https://msdn.microsoft.com/library/windows/hardware/ff565181">KSPROPERTY_MEDIASEEKING_CONVERTTIMEFORMAT</a>.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSP_TIMEFORMAT {
   KSPROPERTY Property;
-  GUID       SourceFormat;
-  GUID       TargetFormat;
-  LONGLONG   Time;
-} KSP_TIMEFORMAT, *PKSP_TIMEFORMAT;
-````
+  GUID       SourceFormat;
+  GUID       TargetFormat;
+  LONGLONG   Time;
+}  *PKSP_TIMEFORMAT;
+```
 
 ## Members
 

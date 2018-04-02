@@ -7,7 +7,7 @@ old-location: kernel\rtlintptrtoulongptr.htm
 old-project: kernel
 ms.assetid: DE6CD62F-0792-490A-9DDD-A979CAC0565A
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlIntPtrToULongPtr, RtlIntPtrToULongPtr function [Kernel-Mode Driver Architecture], kernel.rtlintptrtoulongptr, ntintsafe/RtlIntPtrToULongPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>INT_PTR</b> to a value of type <b>ULONG_PTR</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlIntPtrToULongPtr(
-  _In_  INT_PTR   iOperand,
-  _Out_ ULONG_PTR *pulResult
+  INT_PTR   iOperand,
+  ULONG_PTR *pulResult
 );
-````
+```
 
 ## Parameters
 

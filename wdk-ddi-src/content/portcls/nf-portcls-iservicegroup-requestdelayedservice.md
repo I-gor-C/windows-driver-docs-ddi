@@ -7,7 +7,7 @@ old-location: audio\iservicegroup_requestdelayedservice.htm
 old-project: audio
 ms.assetid: 045a6c20-2e4e-4669-953d-f8648bf2d718
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IServiceGroup, IServiceGroup interface [Audio Devices], RequestDelayedService method, IServiceGroup::RequestDelayedService, RequestDelayedService method [Audio Devices], RequestDelayedService method [Audio Devices], IServiceGroup interface, RequestDelayedService,IServiceGroup.RequestDelayedService, audio.iservicegroup_requestdelayedservice, audmp-routines_2f9be34c-bff3-46d4-a490-595c8f4311b9.xml, portcls/IServiceGroup::RequestDelayedService
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# RequestDelayedService method
+# IServiceGroup::RequestDelayedService method
 The <code>RequestDelayedService</code> method requests service after the specified delay.
 
 ## Syntax
 
-````
+```
 void RequestDelayedService(
-  [in] ULONGLONG ulDelay
+  ULONGLONG ullDelay
 );
-````
+```
 
 ## Parameters
 
@@ -79,8 +79,8 @@ Before calling <code>RequestDelayedService</code> to request a timer delay, init
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536994">IServiceGroup</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537004">IServiceGroup::SupportDelayedService</a>
-
-
-
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>

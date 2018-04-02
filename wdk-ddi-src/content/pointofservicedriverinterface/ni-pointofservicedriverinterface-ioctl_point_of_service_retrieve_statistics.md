@@ -56,7 +56,7 @@ This I/O control function returns unified point of service (UPOS) standard infor
 Not used with this operation; set to <b>0</b> (zero).
 
 ### Output Buffer
-Pointer to the <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posstatisticsheader.md">PosStatisticsHeader</a> structure that contains the statistics.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn772241">PosStatisticsHeader</a> structure that contains the statistics.
 
 ### Output Buffer Length
 Size of the output buffer in bytes. Set to sizeof(<i>PosStatisticsHeader</i>).

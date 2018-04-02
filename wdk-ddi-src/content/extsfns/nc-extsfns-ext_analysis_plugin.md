@@ -7,7 +7,7 @@ old-location: debugger\_efn_analyze.htm
 old-project: debugger
 ms.assetid: 8D7FB040-871F-4F31-83E3-BAD7584C0589
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/26/2018
 ms.keywords: EXT_ANALYSIS_PLUGIN, _EFN_Analyze, _EFN_Analyze callback function [Windows Debugging], debugger._efn_analyze, extsfns/_EFN_Analyze
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,11 +64,11 @@ HRESULT ExtAnalysisPlugin(
 
 `Client`
 
-A pointer to an <a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a> interface.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550494">IDebugClient4</a> interface.
 
 `CallPhase`
 
-A value in the <a href="..\extsfns\ne-extsfns-_fa_extension_plugin_phase.md">FA_EXTENSION_PLUGIN_PHASE</a> enumeration that specifies which phase of the analysis is currently in progress. Analysis phases include initialization, stack analysis, prebucketing, and post bucketing.
+A value in the <a href="https://msdn.microsoft.com/library/windows/hardware/jj983403">FA_EXTENSION_PLUGIN_PHASE</a> enumeration that specifies which phase of the analysis is currently in progress. Analysis phases include initialization, stack analysis, prebucketing, and post bucketing.
 
 `pAnalysis`
 
@@ -88,8 +88,8 @@ If the function succeeds, return <b>S_OK</b>.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
-
-
-
 <a href="https://msdn.microsoft.com/45D4E287-ACDB-4479-892F-FCE2287758BA">Writing Custom Analysis Debugger Extension</a>
+
+
+
+<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>

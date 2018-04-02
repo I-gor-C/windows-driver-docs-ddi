@@ -44,26 +44,26 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsProperty method
+# IKsControl::KsProperty method
 The <b>KsProperty</b> method sets a property or retrieves property information, along with any other defined support operations available on a property set.
 
 ## Syntax
 
-````
+```
 HRESULT KsProperty(
-  [in]      PKSPROPERTY Property,
-  [in]      ULONG       PropertyLength,
-  [in, out] LPVOID      PropertyData,
-  [in]      ULONG       DataLength,
-  [in, out] ULONG       *BytesReturned
+  PKSPROPERTY Property,
+  ULONG       PropertyLength,
+  LPVOID      PropertyData,
+  ULONG       DataLength,
+  ULONG       *BytesReturned
 );
-````
+```
 
 ## Parameters
 
 `Property`
 
-Pointer to a structure that describes a property and the request type of the property request. This structure must be either a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> or a structure that contains a <b>KSPROPERTY</b> structure as its first member. An example of a structure that can be pointed to by this member is the <a href="..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_s.md">KSPROPERTY_VIDEOPROCAMP_S</a> structure.
+Pointer to a structure that describes a property and the request type of the property request. This structure must be either a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> or a structure that contains a <b>KSPROPERTY</b> structure as its first member. An example of a structure that can be pointed to by this member is the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566089">KSPROPERTY_VIDEOPROCAMP_S</a> structure.
 
 `PropertyLength`
 
@@ -102,4 +102,4 @@ To determine the buffer size that is required for a specific property request, y
 
 
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_s.md">KSPROPERTY_VIDEOPROCAMP_S</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566089">KSPROPERTY_VIDEOPROCAMP_S</a>

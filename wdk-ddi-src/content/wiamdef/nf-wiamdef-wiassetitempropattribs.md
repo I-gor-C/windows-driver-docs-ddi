@@ -50,14 +50,14 @@ The <b>wiasSetItemPropAttribs </b>function sets the access flags and valid value
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasSetItemPropAttribs(
-  _In_ BYTE               *pWiasContext,
-       LONG               cPropSpec,
-  _In_ PROPSPEC           *pPropSpec,
-  _In_ PWIA_PROPERTY_INFO pwpi
+```
+HRESULT wiasSetItemPropAttribs(
+  BYTE               *pWiasContext,
+  LONG               cPropSpec,
+  PROPSPEC           *pPropSpec,
+  PWIA_PROPERTY_INFO pwpi
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ Pointer to the first element of an array of PROPSPEC structures (defined in the 
 
 `pwpi`
 
-Pointer to the first element of an array of <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_info.md">WIA_PROPERTY_INFO</a> structures that contain the property values to be written.
+Pointer to the first element of an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552751">WIA_PROPERTY_INFO</a> structures that contain the property values to be written.
 
 
 ## Return Value
@@ -124,7 +124,7 @@ VT_UI1, VT_UI2, VT_UI4, VT_UI8, VT_I1, VT_I2, VT_I4, ,VT_I8, VT_R4, VT_R8, VT_BS
 </table>
  
 
-Minidrivers should initialize complex properties using the <a href="..\wiamdef\nf-wiamdef-wiassetpropertyattributes.md">wiasSetPropertyAttributes</a> function.
+Minidrivers should initialize complex properties using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549381">wiasSetPropertyAttributes</a> function.
 
 The minidriver can set the WIA_PROP_CACHEABLE flag on a property that does not change over time. By setting this flag on a property, the minidriver indicates that the WIA service can cache the property value. See the Windows SDK documentation for a list of all property attributes.
 
@@ -147,12 +147,12 @@ Reboot the system and repeat the steps necessary to produce this error. There wi
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiassetitempropnames.md">wiasSetItemPropNames</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552751">WIA_PROPERTY_INFO</a>
 
 
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_info.md">WIA_PROPERTY_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549369">wiasSetItemPropNames</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiassetpropertyattributes.md">wiasSetPropertyAttributes</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549381">wiasSetPropertyAttributes</a>

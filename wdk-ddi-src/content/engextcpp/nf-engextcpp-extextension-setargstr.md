@@ -7,7 +7,7 @@ old-location: debugger\setargstr.htm
 old-project: debugger
 ms.assetid: a133cc3d-7d28-436a-b2f7-0f6171ed379f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_768f449e-fa81-4759-a16d-a8dfe1d3bf61.xml, ExtExtension, ExtExtension class [Windows Debugging], SetArgStr method, ExtExtension::SetArgStr, SetArgStr method [Windows Debugging], SetArgStr method [Windows Debugging], ExtExtension class, SetArgStr,ExtExtension.SetArgStr, debugger.setargstr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,24 +44,24 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# SetArgStr method
+# ExtExtension~r1::SetArgStr method
 The <b>SetArgStr</b> method sets a named string argument for the current expression command.
 
 ## Syntax
 
-````
-bool SetArgStr(
-  [in] PCSTR Name,
-  [in] PCSTR Arg,
-  [in] bool  OnlyIfUnset
+```
+bool  throw() SetArgStr(
+  PCSTR Name,
+  PCSTR Arg,
+  bool  OnlyIfUnset
 );
-````
+```
 
 ## Parameters
 
 `Name`
 
-Specifies the name of the argument.  The command-line description used in <a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a> must specify that the type of this argument is string.
+Specifies the name of the argument.  The command-line description used in <a href="https://msdn.microsoft.com/library/windows/hardware/ff544514">EXT_COMMAND</a> must specify that the type of this argument is string.
 
 `Arg`
 
@@ -90,7 +90,7 @@ This method should only be called during the execution of an extension command p
 
 ## See Also
 
-<a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544514">EXT_COMMAND</a>
 
 
 

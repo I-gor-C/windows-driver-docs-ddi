@@ -47,14 +47,14 @@ req.typenames: SPEED_MAP, *PSPEED_MAP
 The SPEED_MAP structure is stores a IEEE 1394 bus speed map.
 
 ## Syntax
-````
+```
 typedef struct _SPEED_MAP {
   USHORT SPD_Length;
   USHORT SPD_CRC;
-  ULONG  SPD_Generation;
-  UCHAR  SPD_Speed_Code[4032];
+  ULONG  SPD_Generation;
+  UCHAR  SPD_Speed_Code[4032];
 } SPEED_MAP, *PSPEED_MAP;
-````
+```
 
 ## Members
 

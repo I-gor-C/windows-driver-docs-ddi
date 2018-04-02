@@ -50,13 +50,13 @@ The <b>wiauGetDrvItemContext</b> function gets the driver item context, and opti
 
 ## Syntax
 
-````
-HRESULT _stdcall wiauGetDrvItemContext(
-  _In_    BYTE                  *pWiasContext,
-  _Inout_ VOID                  **ppItemCtx,
-  _Inout_ IWiaDrvItem ppDrvItem **ppDrvItem
+```
+HRESULT wiauGetDrvItemContext(
+  BYTE        *pWiasContext,
+  VOID        **ppItemCtx,
+  IWiaDrvItem **ppDrvItem
 );
-````
+```
 
 ## Parameters
 

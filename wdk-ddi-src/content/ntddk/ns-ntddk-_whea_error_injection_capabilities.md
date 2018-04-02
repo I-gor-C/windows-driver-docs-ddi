@@ -47,31 +47,31 @@ req.typenames: WHEA_ERROR_INJECTION_CAPABILITIES, *PWHEA_ERROR_INJECTION_CAPABIL
 The WHEA_ERROR_INJECTION_CAPABILITIES union describes the types of hardware errors that can be injected into a hardware platform.
 
 ## Syntax
-````
-typedef union _WHEA_ERROR_INJECTION_CAPABILITIES {
+```
+typedef struct _WHEA_ERROR_INJECTION_CAPABILITIES {
   struct {
-    ULONG ProcessorCorrectable  :1;
-    ULONG ProcessorUncorrectableNonFatal  :1;
-    ULONG ProcessorUncorrectableFatal  :1;
-    ULONG MemoryCorrectable  :1;
-    ULONG MemoryUncorrectableNonFatal  :1;
-    ULONG MemoryUncorrectableFatal  :1;
-    ULONG PCIExpressCorrectable  :1;
-    ULONG PCIExpressUncorrectableNonFatal  :1;
-    ULONG PCIExpressUncorrectableFatal  :1;
-    ULONG PlatformCorrectable  :1;
-    ULONG PlatformUncorrectableNonFatal  :1;
-    ULONG PlatformUncorrectableFatal  :1;
-    ULONG IA64Corrected  :1;
-    ULONG IA64Recoverable  :1;
-    ULONG IA64Fatal  :1;
-    ULONG IA64RecoverableCache  :1;
-    ULONG IA64RecoverableRegFile  :1;
-    ULONG Reserved  :15;
-  };
-  ULONG  AsULONG;
-} WHEA_ERROR_INJECTION_CAPABILITIES, *PWHEA_ERROR_INJECTION_CAPABILITIES;
-````
+    ULONG  : 1  IA64Corrected;
+    ULONG  : 1  IA64Fatal;
+    ULONG  : 1  IA64Recoverable;
+    ULONG  : 1  IA64RecoverableCache;
+    ULONG  : 1  IA64RecoverableRegFile;
+    ULONG  : 1  MemoryCorrectable;
+    ULONG  : 1  MemoryUncorrectableFatal;
+    ULONG  : 1  MemoryUncorrectableNonFatal;
+    ULONG  : 1  PCIExpressCorrectable;
+    ULONG  : 1  PCIExpressUncorrectableFatal;
+    ULONG  : 1  PCIExpressUncorrectableNonFatal;
+    ULONG  : 1  PlatformCorrectable;
+    ULONG  : 1  PlatformUncorrectableFatal;
+    ULONG  : 1  PlatformUncorrectableNonFatal;
+    ULONG  : 1  ProcessorCorrectable;
+    ULONG  : 1  ProcessorUncorrectableFatal;
+    ULONG  : 1  ProcessorUncorrectableNonFatal;
+    ULONG  : 15 Reserved;
+  } DUMMYSTRUCTNAME;
+  ULONG  AsULONG;
+} *PWHEA_ERROR_INJECTION_CAPABILITIES, WHEA_ERROR_INJECTION_CAPABILITIES;
+```
 
 ## Members
 
@@ -85,7 +85,7 @@ typedef union _WHEA_ERROR_INJECTION_CAPABILITIES {
 A ULONG representation of the contents of the WHEA_ERROR_INJECTION_CAPABILITIES union.
 
 ## Remarks
-A user-mode WHEA management application calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559516">WHEAErrorInjectionMethods::GetErrorInjectionCapabilitiesRtn</a> method to retrieve a WHEA_ERROR_INJECTION_CAPABILITIES union that describes the types of hardware errors that can be injected into the hardware platform. If a PSHED plug-in is registered to participate in error injection, the PSHED plug-in's <a href="..\ntddk\nc-ntddk-pshed_pi_get_injection_capabilities.md">GetInjectionCapabilities</a> callback function is called to provide this information back to the calling application. The application uses this information when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559518">WHEAErrorInjectionMethods::InjectErrorRtn</a> method to inject a hardware error into the hardware platform.
+A user-mode WHEA management application calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559516">WHEAErrorInjectionMethods::GetErrorInjectionCapabilitiesRtn</a> method to retrieve a WHEA_ERROR_INJECTION_CAPABILITIES union that describes the types of hardware errors that can be injected into the hardware platform. If a PSHED plug-in is registered to participate in error injection, the PSHED plug-in's <a href="https://msdn.microsoft.com/8cb19677-11b8-4594-b4dd-ebd00fae07d4">GetInjectionCapabilities</a> callback function is called to provide this information back to the calling application. The application uses this information when it calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559518">WHEAErrorInjectionMethods::InjectErrorRtn</a> method to inject a hardware error into the hardware platform.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,7 +95,7 @@ A user-mode WHEA management application calls the <a href="https://msdn.microsof
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559518">WHEAErrorInjectionMethods::InjectErrorRtn</a>
+<a href="https://msdn.microsoft.com/8cb19677-11b8-4594-b4dd-ebd00fae07d4">GetInjectionCapabilities</a>
 
 
 
@@ -103,4 +103,4 @@ A user-mode WHEA management application calls the <a href="https://msdn.microsof
 
 
 
-<a href="..\ntddk\nc-ntddk-pshed_pi_get_injection_capabilities.md">GetInjectionCapabilities</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559518">WHEAErrorInjectionMethods::InjectErrorRtn</a>

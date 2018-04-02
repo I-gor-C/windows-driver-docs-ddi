@@ -51,13 +51,13 @@ The request sends an FCP response to the device. The  request is used in conjunc
 If the protocol driver is being used to control a physical device, the 1394 bus driver determines the node address dynamically, and <b>NodeAddress</b> is not used.
 
 ## Syntax
-````
+```
 typedef struct _FCP_SEND_RESPONSE {
-  NODE_ADDRESS NodeAddress;
-  ULONG        Length;
-  PFCP_FRAME   Frame;
+  IN NODE_ADDRESS NodeAddress;
+  IN ULONG        Length;
+  IN PFCP_FRAME   Frame;
 } FCP_SEND_RESPONSE, *PFCP_SEND_RESPONSE;
-````
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: buses\usb_node_connection_driverkey_name.htm
 old-project: usbref
 ms.assetid: b5939a5b-2856-494c-9673-d32e2fc93384
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSB_NODE_CONNECTION_DRIVERKEY_NAME, PUSB_NODE_CONNECTION_DRIVERKEY_NAME, PUSB_NODE_CONNECTION_DRIVERKEY_NAME structure pointer [Buses], USB_NODE_CONNECTION_DRIVERKEY_NAME, USB_NODE_CONNECTION_DRIVERKEY_NAME structure [Buses], _USB_NODE_CONNECTION_DRIVERKEY_NAME, buses.usb_node_connection_driverkey_name, usbioctl/PUSB_NODE_CONNECTION_DRIVERKEY_NAME, usbioctl/USB_NODE_CONNECTION_DRIVERKEY_NAME, usbstrct_561b9eb1-d580-48c5-ac16-c87647f7a342.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 # _USB_NODE_CONNECTION_DRIVERKEY_NAME structure
-The <b>USB_NODE_CONNECTION_DRIVERKEY_NAME</b> structure is used with the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_driverkey_name.md">IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</a> I/O control request to retrieve the driver key name for the device that is connected to the indicated port.
+The <b>USB_NODE_CONNECTION_DRIVERKEY_NAME</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537317">IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</a> I/O control request to retrieve the driver key name for the device that is connected to the indicated port.
 
 ## Syntax
-````
+```
 typedef struct _USB_NODE_CONNECTION_DRIVERKEY_NAME {
   ULONG ConnectionIndex;
   ULONG ActualLength;
   WCHAR DriverKeyName[1];
 } USB_NODE_CONNECTION_DRIVERKEY_NAME, *PUSB_NODE_CONNECTION_DRIVERKEY_NAME;
-````
+```
 
 ## Members
 
@@ -79,7 +79,7 @@ On output, the driver key name for the device that is attached to the port that 
 
 ## See Also
 
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_driverkey_name.md">IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537317">IOCTL_USB_GET_NODE_CONNECTION_DRIVERKEY_NAME</a>
 
 
 

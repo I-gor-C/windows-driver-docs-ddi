@@ -2,13 +2,13 @@
 UID: NF:storport.StorPortRegistryWriteAdapterKey
 title: StorPortRegistryWriteAdapterKey function
 author: windows-driver-content
-description: The StorPortRegistryWriteAdapterKey routine is called by the miniport driver to write the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/...
-old-location: storage\storportregistrywriteadapterkey.htm
+description: The StorPortRegistryReadAdapterKey routine is called by the miniport driver to read the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/...
+old-location: storage\storportregistryreadadapterkey.htm
 old-project: storage
-ms.assetid: D995FB36-177A-44BF-9326-EB2820DB0962
+ms.assetid: 85D43276-53A1-4CEE-99FE-23ED8BECB316
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
-ms.keywords: StorPortRegistryWriteAdapterKey, StorPortRegistryWriteAdapterKey routine [Storage Devices], storage.storportregistrywriteadapterkey, storport/StorPortRegistryWriteAdapterKey
+ms.date: 3/29/2018
+ms.keywords: StorPortRegistryWriteAdapterKey, StorPortRegistryWriteAdapterKey routine [Storage Devices], storage.storportregistryreadadapterkey, storport/StorPortRegistryWriteAdapterKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: function
@@ -47,26 +47,26 @@ req.product: Windows 10 or later.
 
 
 # StorPortRegistryWriteAdapterKey function
-The <b>StorPortRegistryWriteAdapterKey</b> routine is called by the miniport driver to write the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/... these keys are written at in the <a href="https://msdn.microsoft.com/417a4ab0-9723-4b3b-aa8c-342598874d61">INF DDInstall.HW Section</a>.
+The <b>StorPortRegistryReadAdapterKey</b> routine is called by the miniport driver to read the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/... these keys are read from in the <a href="https://msdn.microsoft.com/417a4ab0-9723-4b3b-aa8c-342598874d61">INF DDInstall.HW Section</a>.
 
 ## Syntax
 
-````
-STORPORT_STATUS StorPortRegistryWriteAdapterKey(
-  _In_     PVOID  HwDeviceExtension,
-  _In_opt_ PCWSTR SubKeyName,
-  _In_     PCWSTR ValueName,
-  _In_     ULONG  ValueType,
-  _In_     PVOID  ValueData,
-  _In_     ULONG  ValueDataLength
+```
+ULONG StorPortRegistryWriteAdapterKey(
+  PVOID  HwDeviceExtension,
+  PUCHAR SubKeyName,
+  PUCHAR ValueName,
+  ULONG  ValueType,
+  PVOID  ValueData,
+  ULONG  ValueDataLength
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. The miniport driver must be running at IRQL PASSIVE_LEVEL when it calls this routine.
+A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device. The miniport driver must be running at IRQL PASSIVE_LEVEL when it calls this routine.
 
 `SubKeyName`
 
@@ -219,7 +219,7 @@ REG_QWORD_LITTLE_ENDIAN
 
 `ValueData`
 
-Pointer to a the data that contains the registry data to be written. The data is converted from UNICODE to a NULL-terminated ASCII string.
+Pointer to a the data that contains the registry data to be read. The data is converted from UNICODE to a NULL-terminated ASCII string.
 
 `ValueDataLength`
 
@@ -241,4 +241,4 @@ Returns STOR_STATUS_SUCCESS when the operation is successful, otherwise the appr
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>

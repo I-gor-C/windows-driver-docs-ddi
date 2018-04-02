@@ -7,7 +7,7 @@ old-location: netvista\ndissetevent.htm
 old-project: netvista
 ms.assetid: 3f45b8d0-2d5b-4601-a307-48257cdcb4ba
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisSetEvent, NdisSetEvent function [Network Drivers Starting with Windows Vista], ndis/NdisSetEvent, ndis_event_ref_3abf6ebc-6dcf-4b3e-8e39-2902b9b00adf.xml, netvista.ndissetevent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,11 +51,11 @@ The
 
 ## Syntax
 
-````
-VOID NdisSetEvent(
-  _In_ PNDIS_EVENT Event
+```
+void NdisSetEvent(
+  PNDIS_EVENT Event
 );
-````
+```
 
 ## Parameters
 
@@ -77,7 +77,7 @@ When an event attains the
 After a call to 
     <b>NdisSetEvent</b>, the event remains in the 
     <i>signaled</i> state until the driver calls the 
-    <a href="..\ndis\nf-ndis-ndisresetevent.md">NdisResetEvent</a> function.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564526">NdisResetEvent</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,12 +91,12 @@ After a call to
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisresetevent.md">NdisResetEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562732">NdisInitializeEvent</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisinitializeevent.md">NdisInitializeEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564526">NdisResetEvent</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndiswaitevent.md">NdisWaitEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564651">NdisWaitEvent</a>

@@ -52,13 +52,13 @@ This optional method provides value if the driver implements multiple device int
 
 ## Syntax
 
-````
+```
 NTSTATUS PosCxMarkPosApp(
-  _In_ WDFDEVICE     device,
-  _In_ WDFFILEOBJECT fileObject,
-  _In_ BOOLEAN       isPosApp
+  WDFDEVICE     device,
+  WDFFILEOBJECT fileObject,
+  BOOLEAN       isPosApp
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A handle to a framework device object that represents the device.
 
 `fileObject`
 
-A handle to a framework file object that identifies the caller, usually acquired with <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetfileobject.md">WdfRequestGetFileObject</a>.
+A handle to a framework file object that identifies the caller, usually acquired with <a href="https://msdn.microsoft.com/library/windows/hardware/ff549963">WdfRequestGetFileObject</a>.
 
 `isPosApp`
 

@@ -48,12 +48,12 @@ The _BRB_ACL_ENTER_ACTIVE_MODE structure specifies the remote device to be place
   mode.
 
 ## Syntax
-````
+```
 struct _BRB_ACL_ENTER_ACTIVE_MODE {
   BRB_HEADER Hdr;
-  BTH_ADDR   BtAddress;
+  BTH_ADDR   BtAddress;
 };
-````
+```
 
 ## Members
 
@@ -61,7 +61,7 @@ struct _BRB_ACL_ENTER_ACTIVE_MODE {
 `Hdr`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 `BtAddress`
@@ -82,8 +82,8 @@ To place a remote device into active mode, profile drivers should
 
 ## See Also
 
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-
-
-
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536854">BRB_ACL_ENTER_ACTIVE_MODE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a>

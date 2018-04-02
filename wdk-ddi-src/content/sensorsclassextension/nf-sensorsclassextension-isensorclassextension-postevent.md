@@ -46,17 +46,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# PostEvent method
+# ISensorClassExtension::PostEvent method
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545519">ISensorClassExtension::PostEvent</a> method raises one or more driver events in the sensor class extension.
 
 ## Syntax
 
-````
+```
 HRESULT PostEvent(
-   LPWSTR                            pwszSensorID,
-   IPortableDeviceValuesCollection * pEventCollection
+  LPWSTR                          pwszSensorID,
+  IPortableDeviceValuesCollection *pEventCollection
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: netvista\ndisqueryadapterinstancename.htm
 old-project: netvista
 ms.assetid: bd6fade6-9b9b-4b38-8e53-c70c40c1165f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisQueryAdapterInstanceName, NdisQueryAdapterInstanceName function [Network Drivers Starting with Windows Vista], ndis/NdisQueryAdapterInstanceName, netvista.ndisqueryadapterinstancename, protocol_ndis_functions_ref_e9e2070d-3b82-43a6-8964-92296de4c896.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,12 +52,12 @@ The
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisQueryAdapterInstanceName(
-  _Out_ PNDIS_STRING AdapterInstanceName,
-  _In_  NDIS_HANDLE  NdisBindingHandle
+  PNDIS_STRING pAdapterInstanceName,
+  NDIS_HANDLE  NdisBindingHandle
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ TBD
 A handle that identifies the binding to the target physical NIC or virtual adapter of the
      next-lower driver to which the caller is bound. Typically, 
      <i>NdisBindingHandle</i> was returned by the 
-     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function.
 
 
 ## Return Value
@@ -86,12 +86,12 @@ A protocol driver uses
     to which the protocol driver is bound. The protocol driver specifies the handle to such a NIC or virtual
     adapter in 
     <i>NdisBindingHandle</i> . The protocol driver calls the 
-    <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function to retrieve
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function to retrieve
     this handle.
 
 <b>NdisQueryAdapterInstanceName</b> allocates memory for the string that specifies the friendly name.
     After the caller finishes using this memory, the caller must call the 
-    <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a> function to release the
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562577">NdisFreeMemory</a> function to release the
     memory.
 
 Friendly names are intended to help the user quickly and accurately identify a physical NIC or virtual
@@ -110,12 +110,12 @@ Friendly names are intended to help the user quickly and accurately identify a p
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562577">NdisFreeMemory</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

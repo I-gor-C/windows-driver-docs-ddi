@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# ExpandIntentOptions method
+# IPrintOemPrintTicketProvider::ExpandIntentOptions method
 The <code>IPrintOemPrintTicketProvider::ExpandIntentOptions</code> method enables the plug-in to expand printer options (such as photo printing) into individual feature settings in the print ticket.
 
 ## Syntax
 
-````
+```
 HRESULT ExpandIntentOptions(
-  [in, out] IXMLDOMDocument2 *pPrintTicket
+  IXMLDOMDocument2 *pPrintTicket
 );
-````
+```
 
 ## Parameters
 

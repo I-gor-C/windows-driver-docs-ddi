@@ -7,7 +7,7 @@ old-location: kernel\psstartsilomonitor.htm
 old-project: kernel
 ms.assetid: 65828926-FDA7-4F65-AD55-B7E03639FA27
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsStartSiloMonitor, PsStartSiloMonitor routine [Kernel-Mode Driver Architecture], kernel.psstartsilomonitor, ntddk/PsStartSiloMonitor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ This routine tries to start the server silo monitor.
 
 ## Syntax
 
-````
-NTSTATUS PsStartSiloMonitor(
-  _In_ PSILO_MONITOR Monitor
+```
+NTKERNELAPI NTSTATUS PsStartSiloMonitor(
+  PSILO_MONITOR Monitor
 );
-````
+```
 
 ## Parameters
 

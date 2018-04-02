@@ -7,7 +7,7 @@ old-location: buses\udecxusbdeviceplugin.htm
 old-project: usbref
 ms.assetid: 6F1A1545-5B64-4481-B795-0B6433304C06
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UdecxUsbDevicePlugIn, UdecxUsbDevicePlugIn function [Buses], buses.udecxusbdeviceplugin, udecxusbdevice/UdecxUsbDevicePlugIn
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,22 +51,22 @@ Notifies the USB device emulation class extension (UdeCx) that the USB device ha
 
 ## Syntax
 
-````
-FORCEINLINE NTSTATUS UdecxUsbDevicePlugIn(
-  _In_ UDECXUSBDEVICE                    UdecxUsbDevice,
-  _In_ PUDECX_USB_DEVICE_PLUG_IN_OPTIONS Options
+```
+NTSTATUS UdecxUsbDevicePlugIn(
+  UDECXUSBDEVICE                    UdecxUsbDevice,
+  PUDECX_USB_DEVICE_PLUG_IN_OPTIONS Options
 );
-````
+```
 
 ## Parameters
 
 `UdecxUsbDevice`
 
-A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>.
+A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>.
 
 `Options`
 
-A <a href="..\udecxusbdevice\ns-udecxusbdevice-_udecx_usb_device_plug_in_options.md">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a>-type value that indicates the port to which the device is plugged. At most one of Usb20PortNumber, Usb30PortNumber can be non-zero. NULL disables plug-in options (use defaults).
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt627998">UDECX_USB_DEVICE_PLUG_IN_OPTIONS</a>-type value that indicates the port to which the device is plugged. At most one of Usb20PortNumber, Usb30PortNumber can be non-zero. NULL disables plug-in options (use defaults).
 
 
 ## Return Value
@@ -89,8 +89,8 @@ After the client driver calls this method, the class extension sends I/O request
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>

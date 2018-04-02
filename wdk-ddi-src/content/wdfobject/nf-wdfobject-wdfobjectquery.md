@@ -52,14 +52,14 @@ The <b>WdfObjectQuery</b> method is not implemented.
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfObjectQuery(
-  _In_  WDFOBJECT  Object,
-  _In_  CONST GUID *Guid,
-  _In_  ULONG      QueryBufferLength,
-  _Out_ PVOID      QueryBuffer
+  WDFOBJECT  Object,
+  CONST GUID *Guid,
+  ULONG      QueryBufferLength,
+  PVOID      QueryBuffer
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: audio\pcforwardirpsynchronous.htm
 old-project: audio
 ms.assetid: 29f69d26-6788-4c52-b6a4-ef96991ea238
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: PcForwardIrpSynchronous, PcForwardIrpSynchronous function [Audio Devices], audio.pcforwardirpsynchronous, audpc-routines_9ecb1bfa-c318-424c-8f65-3777136c5f65.xml, portcls/PcForwardIrpSynchronous
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,22 +50,22 @@ The <b>PcForwardIrpSynchronous</b> function is used by IRP handlers to forward P
 
 ## Syntax
 
-````
-NTSTATUS PcForwardIrpSynchronous(
-  _In_ PDEVICE_OBJECT DeviceObject,
-  _In_ PIRP           Irp
+```
+PORTCLASSAPI NTSTATUS PcForwardIrpSynchronous(
+  PDEVICE_OBJECT DeviceObject,
+  PIRP           Irp
 );
-````
+```
 
 ## Parameters
 
 `DeviceObject`
 
-Pointer to the audio device's device object. This parameter must point to a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>.
+Pointer to the audio device's device object. This parameter must point to a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 `Irp`
 
-Pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> that is to be forwarded
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> that is to be forwarded
 
 
 ## Return Value
@@ -76,7 +76,7 @@ Pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> that is to be forwarded
 
 <b>PcForwardIrpSynchronous</b> causes the next PDO to receive the IRP and block until the IRP has been completed by the physical device driver. At that point, <b>PcForwardIrpSynchronous</b> unblocks and returns to the caller. The caller (an IRP handler) should eventually return--possibly with a status of STATUS_PENDING. In general, any IRP handler that calls this function must specify the action IRP_ACTION_FINISH upon returning. Any other action would result in the IRP being forwarded to the physical device a second time.
 
-The <a href="..\portcls\nf-portcls-pccompleteirp.md">PcCompleteIrp</a> function is used when an IRP handler returns STATUS_PENDING and the IRP must be completed later.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff537686">PcCompleteIrp</a> function is used when an IRP handler returns STATUS_PENDING and the IRP must be completed later.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -89,12 +89,12 @@ The <a href="..\portcls\nf-portcls-pccompleteirp.md">PcCompleteIrp</a> function 
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 
 
 
-<a href="..\portcls\nf-portcls-pccompleteirp.md">PcCompleteIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
 
 
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537686">PcCompleteIrp</a>

@@ -50,13 +50,13 @@ The <b>KsUnserializeObjectPropertiesFromRegistry</b> function, when given a dest
 
 ## Syntax
 
-````
-NTSTATUS KsUnserializeObjectPropertiesFromRegistry(
-  _In_     PFILE_OBJECT    FileObject ,
-  _In_opt_ HANDLE          ParentKey ,
-  _In_opt_ PUNICODE_STRING RegistryPath 
+```
+KSDDKAPI NTSTATUS KsUnserializeObjectPropertiesFromRegistry(
+  PFILE_OBJECT    FileObject,
+  HANDLE          ParentKey,
+  PUNICODE_STRING RegistryPath
 );
-````
+```
 
 ## Parameters
 

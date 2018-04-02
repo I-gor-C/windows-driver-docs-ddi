@@ -52,12 +52,12 @@ The <b>WDF_READ_REGISTER_USHORT</b> function reads a USHORT value from the speci
 
 ## Syntax
 
-````
+```
 USHORT WDF_READ_REGISTER_USHORT(
-  _In_ WDFDEVICE Device,
-  _In_ PUSHORT   Register
+  WDFDEVICE Device,
+  PUSHORT   Register
 );
-````
+```
 
 ## Parameters
 

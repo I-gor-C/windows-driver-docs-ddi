@@ -7,7 +7,7 @@ old-location: ifsk\rtlcompresschunks.htm
 old-project: ifsk
 ms.assetid: d67ad000-0f9e-4b08-a5d7-04743a3a3007
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlCompressChunks, RtlCompressChunks function [Installable File System Drivers], ifsk.rtlcompresschunks, ntifs/RtlCompressChunks, rtlref_5a8506ad-e74c-410f-9da3-18d3812601c3.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,17 @@ The <b>RtlCompressChunks</b> routine is reserved for system use.
 
 ## Syntax
 
-````
-  RtlCompressChunks(
-    
+```
+NTSYSAPI NTSTATUS RtlCompressChunks(
+  PUCHAR                UncompressedBuffer,
+  ULONG                 UncompressedBufferSize,
+  PUCHAR                CompressedBuffer,
+  ULONG                 CompressedBufferSize,
+  PCOMPRESSED_DATA_INFO CompressedDataInfo,
+  ULONG                 CompressedDataInfoLength,
+  PVOID                 WorkSpace
 );
-````
+```
 
 ## Parameters
 

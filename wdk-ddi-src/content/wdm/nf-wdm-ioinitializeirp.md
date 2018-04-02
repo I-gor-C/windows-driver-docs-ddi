@@ -7,7 +7,7 @@ old-location: kernel\ioinitializeirp.htm
 old-project: kernel
 ms.assetid: 3b5cc1af-ab3b-4583-9ef9-39132789e74f
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoInitializeIrp, IoInitializeIrp routine [Kernel-Mode Driver Architecture], k104_5c9dc7a8-747c-4832-a31b-5936e2d3361d.xml, kernel.ioinitializeirp, wdm/IoInitializeIrp
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>IoInitializeIrp</b> routine initializes a given IRP that was allocated by
 
 ## Syntax
 
-````
-VOID IoInitializeIrp(
-  _Inout_ PIRP   Irp,
-  _In_    USHORT PacketSize,
-  _In_    CCHAR  StackSize
+```
+NTKERNELAPI VOID IoInitializeIrp(
+  PIRP   Irp,
+  USHORT PacketSize,
+  CCHAR  StackSize
 );
-````
+```
 
 ## Parameters
 
@@ -100,36 +100,36 @@ An intermediate or highest-level driver also can call <b>IoBuildDeviceIoControlR
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iosizeofirp.md">IoSizeOfIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
 
 
 
-<a href="..\wdm\nf-wdm-iofreeirp.md">IoFreeIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548257">IoAllocateIrp</a>
 
 
 
-<a href="..\wdm\nf-wdm-ioallocatemdl.md">IoAllocateMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548263">IoAllocateMdl</a>
 
 
 
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548324">IoBuildPartialMdl</a>
 
 
 
-<a href="..\wdm\nf-wdm-iosetnextirpstacklocation.md">IoSetNextIrpStackLocation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh454223">IoFreeIrp</a>
 
 
 
-<a href="..\wdm\nf-wdm-ioallocateirp.md">IoAllocateIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549126">IoFreeMdl</a>
 
 
 
-<a href="..\wdm\nf-wdm-iofreemdl.md">IoFreeMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549661">IoReuseIrp</a>
 
 
 
-<a href="..\wdm\nf-wdm-iobuildpartialmdl.md">IoBuildPartialMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550321">IoSetNextIrpStackLocation</a>
 
 
 
-<a href="..\wdm\nf-wdm-ioreuseirp.md">IoReuseIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550349">IoSizeOfIrp</a>

@@ -46,7 +46,7 @@ req.typenames: SD_REQUEST_FUNCTION
 # IOCTL_SERIAL_CLEAR_STATS IOCTL
 The <b>IOCTL_SERIAL_CLEAR_STATS</b> request clears the performance statistics for a serial device.
 
-To obtain the performance statistics, a client can use an <a href="..\ntddser\ni-ntddser-ioctl_serial_get_stats.md">IOCTL_SERIAL_GET_STATS</a> request.
+To obtain the performance statistics, a client can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff546600">IOCTL_SERIAL_GET_STATS</a> request.
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -82,4 +82,4 @@ The <b>Status</b> field is set to one of the <a href="https://docs.microsoft.com
 
 ## See Also
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_get_stats.md">IOCTL_SERIAL_GET_STATS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546600">IOCTL_SERIAL_GET_STATS</a>

@@ -48,12 +48,12 @@ The CHANNEL_CONFIG_RESULTS structure contains configuration parameters and the b
   extra options for the inbound and outbound directions of a L2CAP channel.
 
 ## Syntax
-````
+```
 typedef struct _CHANNEL_CONFIG_RESULTS {
   CHANNEL_CONFIG_PARAMETERS Params;
-  ULONG                     ExtraOptionsBufferSize;
-} CHANNEL_CONFIG_RESULTS, *PCHANNEL_CONFIG_RESULTS;
-````
+  ULONG                     ExtraOptionsBufferSize;
+} *PCHANNEL_CONFIG_RESULTS, CHANNEL_CONFIG_RESULTS;
+```
 
 ## Members
 
@@ -61,7 +61,7 @@ typedef struct _CHANNEL_CONFIG_RESULTS {
 `Params`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">
+     <a href="https://msdn.microsoft.com/c2201e3c-c680-4a22-adf5-5131fb138066">
      CHANNEL_CONFIG_PARAMETERS</a> structure that contains the parameters for the specified direction of
      the channel.
 
@@ -74,7 +74,7 @@ The size, in bytes, required in the buffer to retrieve the current extra options
 The CHANNEL_CONFIG_RESULTS structure is passed in the 
     <b>InResults</b> and 
     <b>OutResults</b> members of the 
-    <a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a> structure.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536860">_BRB_L2CA_OPEN_CHANNEL</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,8 +84,8 @@ The CHANNEL_CONFIG_RESULTS structure is passed in the
 
 ## See Also
 
-<a href="..\bthddi\ns-bthddi-_channel_config_parameters.md">CHANNEL_CONFIG_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536659">CHANNEL_CONFIG_PARAMETERS</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536860">_BRB_L2CA_OPEN_CHANNEL</a>

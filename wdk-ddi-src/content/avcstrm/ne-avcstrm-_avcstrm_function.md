@@ -47,19 +47,19 @@ req.typenames: AVCSTRM_FUNCTION
 The AVCSTRM_FUNCTION enumeration defines the functionality exposed by the <i>avcstrm.sys</i> driver.
 
 ## Syntax
-````
-typedef enum _AVCSTRM_FUNCTION { 
-  AVCSTRM_READ             = 0,
-  AVCSTRM_WRITE            = 1,
-  AVCSTRM_ABORT_STREAMING  = 2,
-  AVCSTRM_OPEN             = 0x100,
-  AVCSTRM_CLOSE            = 0x101,
-  AVCSTRM_GET_STATE        = 0x102,
-  AVCSTRM_SET_STATE        = 0x103,
-  AVCSTRM_GET_PROPERTY     = 0x104,
-  AVCSTRM_SET_PROPERTY     = 0x105
+```
+typedef enum _AVCSTRM_FUNCTION {
+  AVCSTRM_READ             ,
+  AVCSTRM_WRITE            ,
+  AVCSTRM_ABORT_STREAMING  ,
+  AVCSTRM_OPEN             ,
+  AVCSTRM_CLOSE            ,
+  AVCSTRM_GET_STATE        ,
+  AVCSTRM_SET_STATE        ,
+  AVCSTRM_GET_PROPERTY     ,
+  AVCSTRM_SET_PROPERTY
 } AVCSTRM_FUNCTION;
-````
+```
 
 ## Constants
 
@@ -77,7 +77,7 @@ typedef enum _AVCSTRM_FUNCTION {
             
                 <tr>
                     <td>AVCSTRM_ABORT_STREAMING</td>
-                    <td>Abort streaming. This cancels <i>all</i> streaming IRPs. To cancel an individual IRP, use <a href="..\wdm\nf-wdm-iocancelirp.md">IoCancelIrp</a>.</td>
+                    <td>Abort streaming. This cancels <i>all</i> streaming IRPs. To cancel an individual IRP, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff548338">IoCancelIrp</a>.</td>
                 </tr>
             
                 <tr>
@@ -119,15 +119,15 @@ typedef enum _AVCSTRM_FUNCTION {
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554107">AVCSTRM_ABORT_STREAMING</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554110">AVCSTRM_CLOSE</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554135">AVCSTRM_WRITE</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554130">AVCSTRM_READ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554121">AVCSTRM_GET_PROPERTY</a>
 
 
 
@@ -135,7 +135,11 @@ typedef enum _AVCSTRM_FUNCTION {
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554107">AVCSTRM_ABORT_STREAMING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554125">AVCSTRM_OPEN</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554130">AVCSTRM_READ</a>
 
 
 
@@ -143,12 +147,8 @@ typedef enum _AVCSTRM_FUNCTION {
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554125">AVCSTRM_OPEN</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554134">AVCSTRM_SET_STATE</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554121">AVCSTRM_GET_PROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554135">AVCSTRM_WRITE</a>

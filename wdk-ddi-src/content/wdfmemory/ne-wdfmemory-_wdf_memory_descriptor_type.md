@@ -47,17 +47,17 @@ req.product: Windows 10 or later.
 # _WDF_MEMORY_DESCRIPTOR_TYPE Enumeration
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
-The <b>WDF_MEMORY_DESCRIPTOR_TYPE</b> enumeration identifies the types of memory descriptions that a <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure can specify.
+The <b>WDF_MEMORY_DESCRIPTOR_TYPE</b> enumeration identifies the types of memory descriptions that a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552392">WDF_MEMORY_DESCRIPTOR</a> structure can specify.
 
 ## Syntax
-````
-typedef enum _WDF_MEMORY_DESCRIPTOR_TYPE { 
-  WdfMemoryDescriptorTypeInvalid  = 0,
-  WdfMemoryDescriptorTypeBuffer   = 1,
-  WdfMemoryDescriptorTypeMdl      = 2,
-  WdfMemoryDescriptorTypeHandle   = 3
+```
+typedef enum _WDF_MEMORY_DESCRIPTOR_TYPE {
+  WdfMemoryDescriptorTypeInvalid  ,
+  WdfMemoryDescriptorTypeBuffer   ,
+  WdfMemoryDescriptorTypeMdl      ,
+  WdfMemoryDescriptorTypeHandle
 } WDF_MEMORY_DESCRIPTOR_TYPE;
-````
+```
 
 ## Constants
 
@@ -70,17 +70,17 @@ typedef enum _WDF_MEMORY_DESCRIPTOR_TYPE {
             
                 <tr>
                     <td>WdfMemoryDescriptorTypeBuffer</td>
-                    <td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a buffer description.</td>
+                    <td>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552392">WDF_MEMORY_DESCRIPTOR</a> structure contains a buffer description.</td>
                 </tr>
             
                 <tr>
                     <td>WdfMemoryDescriptorTypeMdl</td>
-                    <td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a memory descriptor list (MDL).</td>
+                    <td>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552392">WDF_MEMORY_DESCRIPTOR</a> structure contains a memory descriptor list (MDL).</td>
                 </tr>
             
                 <tr>
                     <td>WdfMemoryDescriptorTypeHandle</td>
-                    <td>The <a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a> structure contains a handle to a memory object.</td>
+                    <td>The <a href="https://msdn.microsoft.com/library/windows/hardware/ff552392">WDF_MEMORY_DESCRIPTOR</a> structure contains a handle to a memory object.</td>
                 </tr>
 </table>
 
@@ -94,4 +94,4 @@ typedef enum _WDF_MEMORY_DESCRIPTOR_TYPE {
 
 ## See Also
 
-<a href="..\wdfmemory\ns-wdfmemory-_wdf_memory_descriptor.md">WDF_MEMORY_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552392">WDF_MEMORY_DESCRIPTOR</a>

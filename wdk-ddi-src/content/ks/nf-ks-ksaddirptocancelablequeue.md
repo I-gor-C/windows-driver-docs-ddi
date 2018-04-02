@@ -50,15 +50,15 @@ The <b>KsAddIrpToCancelableQueue</b> function adds an IRP to a queue of cancelab
 
 ## Syntax
 
-````
-VOID KsAddIrpToCancelableQueue(
-  _Inout_  PLIST_ENTRY           QueueHead,
-  _In_     PKSPIN_LOCK           SpinLock,
-  _In_     PIRP                  Irp,
-  _In_     KSLIST_ENTRY_LOCATION ListLocation,
-  _In_opt_ PDRIVER_CANCEL        DriverCancel
+```
+KSDDKAPI VOID KsAddIrpToCancelableQueue(
+  PLIST_ENTRY           QueueHead,
+  PKSPIN_LOCK           SpinLock,
+  PIRP                  Irp,
+  KSLIST_ENTRY_LOCATION ListLocation,
+  PDRIVER_CANCEL        DriverCancel
 );
-````
+```
 
 ## Parameters
 

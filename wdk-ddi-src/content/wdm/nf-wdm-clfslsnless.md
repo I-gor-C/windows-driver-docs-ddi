@@ -7,7 +7,7 @@ old-location: kernel\clfslsnless.htm
 old-project: kernel
 ms.assetid: fbdf6e86-35a1-48a8-966a-0e5472466da2
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsLsnLess, ClfsLsnLess routine [Kernel-Mode Driver Architecture], Clfs_5e0196f1-8244-4cf9-aa36-7359e52ff43b.xml, kernel.clfslsnless, wdm/ClfsLsnLess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,22 +51,22 @@ The <b>ClfsLsnLess</b> routine determines whether one LSN is less than another L
 
 ## Syntax
 
-````
-BOOLEAN ClfsLsnLess(
-  _In_ const CLFS_LSN *plsn1,
-  _In_ const CLFS_LSN *plsn2
+```
+CLFSUSER_API BOOLEAN ClfsLsnLess(
+  const CLFS_LSN *plsn1,
+  const CLFS_LSN *plsn2
 );
-````
+```
 
 ## Parameters
 
 `plsn1`
 
-A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that supplies one of the LSNs to be compared.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a> structure that supplies one of the LSNs to be compared.
 
 `plsn2`
 
-A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that supplies the other LSN to be compared.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a> structure that supplies the other LSN to be compared.
 
 
 ## Return Value
@@ -77,7 +77,7 @@ A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that s
 
 CLFS_LSN_NULL (the smallest LSN) and CLFS_LSN_INVALID (larger than any valid LSN) are valid arguments to <b>ClfsLsnLess</b>. 
 
-LSNs from different streams are not comparable. Do not use <a href="..\wdm\nf-wdm-clfslsnequal.md">ClfsLsnEqual</a>, <b>ClfsLsnLess</b> and the like to compare LSNs from different streams.
+LSNs from different streams are not comparable. Do not use <a href="https://msdn.microsoft.com/library/windows/hardware/ff541590">ClfsLsnEqual</a>, <b>ClfsLsnLess</b> and the like to compare LSNs from different streams.
 
 For an explanation of CLFS concepts and terminology, see <a href="https://msdn.microsoft.com/a9685648-b08c-48ca-b020-e683068f2ea2">Common Log File System</a>.
 
@@ -93,12 +93,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfslsngreater.md">ClfsLsnGreater</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541590">ClfsLsnEqual</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfslsnequal.md">ClfsLsnEqual</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541595">ClfsLsnGreater</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfslsnnull.md">ClfsLsnNull</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541609">ClfsLsnNull</a>

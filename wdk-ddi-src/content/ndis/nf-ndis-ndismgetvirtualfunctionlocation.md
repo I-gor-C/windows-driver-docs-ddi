@@ -7,7 +7,7 @@ old-location: netvista\ndismgetvirtualfunctionlocation.htm
 old-project: netvista
 ms.assetid: 772A7763-67C0-4218-8C5F-23972475D2C9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMGetVirtualFunctionLocation, NdisMGetVirtualFunctionLocation function [Network Drivers Starting with Windows Vista], ndis/NdisMGetVirtualFunctionLocation, netvista.ndismgetvirtualfunctionlocation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,15 +51,15 @@ A miniport driver calls the <b>NdisMGetVirtualFunctionLocation</b> function to q
 
 ## Syntax
 
-````
-VOID NdisMGetVirtualFunctionLocation(
-  _In_  NDIS_HANDLE            NdisMiniportHandle,
-  _In_  NDIS_SRIOV_FUNCTION_ID VFId,
-  _Out_ PUSHORT                SegmentNumber,
-  _Out_ PUCHAR                 BusNumber,
-  _Out_ PUCHAR                 FunctionNumber
+```
+void NdisMGetVirtualFunctionLocation(
+  NDIS_HANDLE            NdisMiniportHandle,
+  NDIS_SRIOV_FUNCTION_ID VFId,
+  PUSHORT                SegmentNumber,
+  PUCHAR                 BusNumber,
+  PUCHAR                 FunctionNumber
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ VOID NdisMGetVirtualFunctionLocation(
 
 The network adapter handle that NDIS passed to the 
      <i>MiniportAdapterHandle</i> parameter of 
-     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>.
+     <a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>.
 
 `VFId`
 
@@ -124,11 +124,7 @@ The VBD that runs in the Hyper-V parent partition's management operating system 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451128">GetLocation</a>
+<b></b>
 
 
 
@@ -136,8 +132,12 @@ The VBD that runs in the Hyper-V parent partition's management operating system 
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451128">GetLocation</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451557">NDIS_MAKE_RID</a>
 
 
 
-<b></b>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451814">OID_NIC_SWITCH_ALLOCATE_VF</a>

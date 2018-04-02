@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSSCATTER_GATHER {
   PHYSICAL_ADDRESS PhysicalAddress;
-  ULONG            Length;
-} KSSCATTER_GATHER, *PKSSCATTER_GATHER;
-````
+  ULONG            Length;
+} *PKSSCATTER_GATHER, KSSCATTER_GATHER;
+```
 
 ## Members
 

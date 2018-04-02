@@ -45,15 +45,15 @@ req.product: Windows 10 or later.
 ---
 
 # _WINBIO_BIR_DATA structure
-The WINBIO_BIR_DATA structure contains the location and size of a block in a BIR. The offset is measured from the beginning of the <a href="..\winbio_types\ns-winbio_types-_winbio_bir.md">WINBIO_BIR</a> structure.
+The WINBIO_BIR_DATA structure contains the location and size of a block in a BIR. The offset is measured from the beginning of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536459">WINBIO_BIR</a> structure.
 
 ## Syntax
-````
+```
 typedef struct _WINBIO_BIR_DATA {
   ULONG Size;
   ULONG Offset;
-} WINBIO_BIR_DATA, *PWINBIO_BIR_DATA;
-````
+} WINBIO_BIR_DATA;
+```
 
 ## Members
 
@@ -75,12 +75,12 @@ Specifies the offset, in bytes, of the block within the BIR.
 
 ## See Also
 
-<a href="..\winbio_types\ns-winbio_types-_winbio_bir_header.md">WINBIO_BIR_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536462">WINBIO_BIR_HEADER</a>
 
 
 
-<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_capture_data.md">WINBIO_CAPTURE_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536467">WINBIO_CAPTURE_DATA</a>
 
 
 
-<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_data.md">WINBIO_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536469">WINBIO_DATA</a>

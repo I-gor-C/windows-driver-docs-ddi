@@ -50,9 +50,11 @@ The <b>KdDisableDebugger</b> routine disables the kernel debugger.
 
 ## Syntax
 
-````
-NTSTATUS KdDisableDebugger(void);
-````
+```
+NTKERNELAPI NTSTATUS KdDisableDebugger(
+
+);
+```
 
 ## Parameters
 
@@ -72,7 +74,7 @@ If the operating system was booted with no debug controls, <b>KdDisableDebugger<
 
 If the kernel debugger is blocked (that is, the <b>KdBlockEnable</b> system variable is set to a value other than <b>FALSE</b>), <b>KdDisableDebugger</b> returns STATUS_ACCESS_DENIED. 
 
-After a caller calls <b>KdDisableDebugger</b> to disable the kernel debugger, the caller can call the <a href="..\wdm\nf-wdm-kdenabledebugger.md">KdEnableDebugger</a> routine to re-enable the kernel debugger.
+After a caller calls <b>KdDisableDebugger</b> to disable the kernel debugger, the caller can call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548085">KdEnableDebugger</a> routine to re-enable the kernel debugger.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,4 +88,4 @@ After a caller calls <b>KdDisableDebugger</b> to disable the kernel debugger, th
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kdenabledebugger.md">KdEnableDebugger</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548085">KdEnableDebugger</a>

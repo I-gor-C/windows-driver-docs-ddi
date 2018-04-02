@@ -7,7 +7,7 @@ old-location: buses\udecxusbdeviceinitsetspeed.htm
 old-project: usbref
 ms.assetid: D7EF9B82-5156-4F27-AA52-94C113C81D3A
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UdecxUsbDeviceInitSetSpeed, UdecxUsbDeviceInitSetSpeed function [Buses], buses.udecxusbdeviceinitsetspeed, udecxusbdevice/UdecxUsbDeviceInitSetSpeed
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,22 +51,22 @@ Sets the USB speed of the virtual USB device to create.
 
 ## Syntax
 
-````
-FORCEINLINE void UdecxUsbDeviceInitSetSpeed(
-  _Inout_ PUDECXUSBDEVICE_INIT   UdecxUsbDeviceInit,
-  _In_    UDECX_USB_DEVICE_SPEED UsbDeviceSpeed
+```
+void UdecxUsbDeviceInitSetSpeed(
+  PUDECXUSBDEVICE_INIT   UdecxUsbDeviceInit,
+  UDECX_USB_DEVICE_SPEED UsbDeviceSpeed
 );
-````
+```
 
 ## Parameters
 
 `UdecxUsbDeviceInit`
 
-A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>.
+A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627968">UdecxUsbDeviceInitAllocate</a>.
 
 `UsbDeviceSpeed`
 
-A <a href="..\udecxusbdevice\ne-udecxusbdevice-_udecx_usb_device_speed.md">UDECX_USB_DEVICE_SPEED</a>-type value that indicates the USB speed to set.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt628002">UDECX_USB_DEVICE_SPEED</a>-type value that indicates the USB speed to set.
 
 
 ## Return Value
@@ -89,8 +89,8 @@ After the client driver sets the USB speed of the device, it only operates in th
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>

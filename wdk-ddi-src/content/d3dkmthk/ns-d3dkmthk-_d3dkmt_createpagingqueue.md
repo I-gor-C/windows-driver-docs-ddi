@@ -7,7 +7,7 @@ old-location: display\d3dkmt_createpagingqueue.htm
 old-project: display
 ms.assetid: F7C2847F-D095-4A79-ADBB-DA0745E3192A
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_CREATEPAGINGQUEUE, D3DKMT_CREATEPAGINGQUEUE structure [Display Devices], _D3DKMT_CREATEPAGINGQUEUE, d3dkmthk/D3DKMT_CREATEPAGINGQUEUE, display.d3dkmt_createpagingqueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: D3DKMT_CREATEPAGINGQUEUE
 ---
 
 # _D3DKMT_CREATEPAGINGQUEUE structure
-<b>D3DKMT_CREATEPAGINGQUEUE</b> is used with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatepagingqueue.md">D3DKMTCreatePagingQueue</a> to create a device paging queue that can be used to synchronize with video memory management operations for the device, such as making the device resource resident.
+<b>D3DKMT_CREATEPAGINGQUEUE</b> is used with <a href="https://msdn.microsoft.com/library/windows/hardware/dn906771">D3DKMTCreatePagingQueue</a> to create a device paging queue that can be used to synchronize with video memory management operations for the device, such as making the device resource resident.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_CREATEPAGINGQUEUE {
-  D3DKMT_HANDLE               hDevice;
+  D3DKMT_HANDLE               hDevice;
   D3DDDI_PAGINGQUEUE_PRIORITY Priority;
-  D3DKMT_HANDLE               hPagingQueue;
-  D3DKMT_HANDLE               hSyncObject;
-  VOID                        *FenceValueCPUVirtualAddress;
-  UINT                        PhysicalAdapterIndex;
+  D3DKMT_HANDLE               hPagingQueue;
+  D3DKMT_HANDLE               hSyncObject;
+  VOID                        *FenceValueCPUVirtualAddress;
+  UINT                        PhysicalAdapterIndex;
 } D3DKMT_CREATEPAGINGQUEUE;
-````
+```
 
 ## Members
 
@@ -86,7 +86,7 @@ typedef struct _D3DKMT_CREATEPAGINGQUEUE {
 [in] Physical adapter index (engine ordinal) for the queue.
 
 ## Remarks
-A device can have multiple paging queues created for it. Paging queues can be destroyed either explicitly by calling <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroypagingqueue.md">D3DKMTDestroyPagingQueue</a>, or by implicitly destroying the device they belong to. After the latter, paging queue handles will become invalid.
+A device can have multiple paging queues created for it. Paging queues can be destroyed either explicitly by calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn906773">D3DKMTDestroyPagingQueue</a>, or by implicitly destroying the device they belong to. After the latter, paging queue handles will become invalid.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,8 +96,8 @@ A device can have multiple paging queues created for it. Paging queues can be de
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatepagingqueue.md">D3DKMTCreatePagingQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906771">D3DKMTCreatePagingQueue</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtdestroypagingqueue.md">D3DKMTDestroyPagingQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906773">D3DKMTDestroyPagingQueue</a>

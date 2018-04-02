@@ -7,7 +7,7 @@ old-location: netvista\wdi_rx_indication_level.htm
 old-project: netvista
 ms.assetid: 73ad8d04-c245-4a3c-92ff-4729737ede92
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC, WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC_WITH_LOW_RESSOURCES, WDI_RX_INDICATION_DISPATCH_GENERAL, WDI_RX_INDICATION_DISPATCH_GENERAL_WITH_LOW_RESOURCES, WDI_RX_INDICATION_FLAG_RESOURCES, WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES, WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES_WITH_LOW_RESOURCES, WDI_RX_INDICATION_LEVEL, WDI_RX_INDICATION_LEVEL enumeration [Network Drivers Starting with Windows Vista], WDI_RX_INDICATION_PASSIVE, WDI_RX_INDICATION_PASSIVE_WITH_LOW_RESOURCES, _WDI_RX_INDICATION_LEVEL, dot11wdi/WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC, dot11wdi/WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC_WITH_LOW_RESSOURCES, dot11wdi/WDI_RX_INDICATION_DISPATCH_GENERAL, dot11wdi/WDI_RX_INDICATION_DISPATCH_GENERAL_WITH_LOW_RESOURCES, dot11wdi/WDI_RX_INDICATION_FLAG_RESOURCES, dot11wdi/WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES, dot11wdi/WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES_WITH_LOW_RESOURCES, dot11wdi/WDI_RX_INDICATION_LEVEL, dot11wdi/WDI_RX_INDICATION_PASSIVE, dot11wdi/WDI_RX_INDICATION_PASSIVE_WITH_LOW_RESOURCES, netvista.wdi_rx_indication_level, netvista.wifi_rx_indication_level
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,19 +47,19 @@ req.typenames: WDI_RX_INDICATION_LEVEL
 The WDI_RX_INDICATION_LEVEL enumeration defines the RX indication levels.
 
 ## Syntax
-````
-typedef enum _WDI_RX_INDICATION_LEVEL { 
-  WDI_RX_INDICATION_DISPATCH_GENERAL                           = 0,
-  WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC                      = 1,
-  WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES                      = 2,
-  WDI_RX_INDICATION_PASSIVE                                    = 3,
-  WDI_RX_INDICATION_FLAG_RESOURCES                             = 0x80000000,
-  WDI_RX_INDICATION_DISPATCH_GENERAL_WITH_LOW_RESOURCES        = WDI_RX_INDICATION_FLAG_RESOURCES | WDI_RX_INDICATION_DISPATCH_GENERAL,
-  WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC_WITH_LOW_RESSOURCES  = WDI_RX_INDICATION_FLAG_RESOURCES | WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC,
-  WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES_WITH_LOW_RESOURCES   = WDI_RX_INDICATION_FLAG_RESOURCES | WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES,
-  WDI_RX_INDICATION_PASSIVE_WITH_LOW_RESOURCES                 = WDI_RX_INDICATION_FLAG_RESOURCES | WDI_RX_INDICATION_PASSIVE
+```
+typedef enum _WDI_RX_INDICATION_LEVEL {
+  WDI_RX_INDICATION_DISPATCH_GENERAL                           ,
+  WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC                      ,
+  WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES                      ,
+  WDI_RX_INDICATION_PASSIVE                                    ,
+  WDI_RX_INDICATION_FLAG_RESOURCES                             ,
+  WDI_RX_INDICATION_DISPATCH_GENERAL_WITH_LOW_RESOURCES        ,
+  WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC_WITH_LOW_RESSOURCES  ,
+  WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES_WITH_LOW_RESOURCES   ,
+  WDI_RX_INDICATION_PASSIVE_WITH_LOW_RESOURCES
 } WDI_RX_INDICATION_LEVEL;
-````
+```
 
 ## Constants
 
@@ -72,12 +72,12 @@ typedef enum _WDI_RX_INDICATION_LEVEL {
             
                 <tr>
                     <td>WDI_RX_INDICATION_DISPATCH_FIRST_OF_DPC</td>
-                    <td>Used for the first data indication (<a href="..\dot11wdi\nc-dot11wdi-ndis_wdi_rx_inorder_data_ind.md">NdisWdiRxInorderDataIndication</a>) of a DPC.</td>
+                    <td>Used for the first data indication (<a href="https://msdn.microsoft.com/F2F92DAE-6C13-4EE6-9DE7-B77F5FAFAE60">NdisWdiRxInorderDataIndication</a>) of a DPC.</td>
                 </tr>
             
                 <tr>
                     <td>WDI_RX_INDICATION_FROM_RX_RESUME_FRAMES</td>
-                    <td>Used when making data indications in the context of <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_rx_resume.md">MiniportWdiRxResume</a>.</td>
+                    <td>Used when making data indications in the context of <a href="https://msdn.microsoft.com/483C59C3-8F9C-48A5-B5E4-34A60BAE1B1A">MiniportWdiRxResume</a>.</td>
                 </tr>
             
                 <tr>

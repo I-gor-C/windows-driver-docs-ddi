@@ -7,7 +7,7 @@ old-location: storage\scsiportreadportbufferushort.htm
 old-project: storage
 ms.assetid: b218785c-170e-4a30-99c9-0db8705b7f5d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortReadPortBufferUshort, ScsiPortReadPortBufferUshort routine [Storage Devices], scsiprt_27acea07-f416-4fa1-894d-6bb38c020f6b.xml, srb/ScsiPortReadPortBufferUshort, storage.scsiportreadportbufferushort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,13 +52,13 @@ The <b>ScsiPortReadPortBufferUshort</b> routine transfers a given number of USHO
 
 ## Syntax
 
-````
-VOID ScsiPortReadPortBufferUshort(
-  _In_ PUSHORT Port,
-  _In_ PUSHORT Buffer,
-  _In_ ULONG   Count
+```
+void ScsiPortReadPortBufferUshort(
+   Port,
+   Buffer,
+   Count
 );
-````
+```
 
 ## Parameters
 
@@ -92,4 +92,4 @@ None
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>

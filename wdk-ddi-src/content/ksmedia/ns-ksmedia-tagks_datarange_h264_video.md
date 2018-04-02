@@ -47,17 +47,17 @@ req.typenames: KS_DATARANGE_H264_VIDEO, *PKS_DATARANGE_H264_VIDEO
 The KS_DATARANGE_H264_VIDEO structure describes the range of MPEG-2 video formats available for a stream.
 
 ## Syntax
-````
-typedef struct _KS_DATARANGE_H264_VIDEO {
-  KSDATARANGE                 DataRange;
-  BOOL                        bFixedSizeSamples;
-  BOOL                        bTemporalCompression;
-  DWORD                       StreamDescriptionFlags;
-  DWORD                       MemoryAllocationFlags;
+```
+typedef struct tagKS_DATARANGE_H264_VIDEO {
+  KSDATARANGE                 DataRange;
+  BOOL                        bFixedSizeSamples;
+  BOOL                        bTemporalCompression;
+  DWORD                       StreamDescriptionFlags;
+  DWORD                       MemoryAllocationFlags;
   KS_VIDEO_STREAM_CONFIG_CAPS ConfigCaps;
-  KS_H264VIDEOINFO            VideoInfoHeader;
-} KS_DATARANGE_H264_VIDEO, *PKS_DATARANGE_H264_VIDEO;
-````
+  KS_H264VIDEOINFO            VideoInfoHeader;
+} *PKS_DATARANGE_H264_VIDEO, KS_DATARANGE_H264_VIDEO;
+```
 
 ## Members
 
@@ -99,12 +99,12 @@ Specifies the details of the video stream.
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md">KS_VIDEO_STREAM_CONFIG_CAPS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_h264videoinfo.md">KS_H264VIDEOINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh464008">KS_H264VIDEOINFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567706">KS_VIDEO_STREAM_CONFIG_CAPS</a>

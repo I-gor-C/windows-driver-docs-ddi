@@ -44,22 +44,22 @@ req.typenames: PROPSHEETUI_INFO_HEADER, *PPROPSHEETUI_INFO_HEADER
 ---
 
 # _PROPSHEETUI_INFO_HEADER structure
-The PROPSHEETUI_INFO_HEADER structure is used as an input parameter to an application's <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_INFO_HEADER.
+The PROPSHEETUI_INFO_HEADER structure is used as an input parameter to an application's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a>-typed function, when the function is called with a reason value of PROPSHEETUI_REASON_GET_INFO_HEADER.
 
 ## Syntax
-````
+```
 typedef struct _PROPSHEETUI_INFO_HEADER {
-  WORD      cbSize;
-  WORD      Flags;
-  LPTSTR    pTitle;
-  HWND      hWndParent;
+  WORD      cbSize;
+  WORD      Flags;
+  LPTSTR    pTitle;
+  HWND      hWndParent;
   HINSTANCE hInst;
   union {
-    HICON     hIcon;
+    HICON     hIcon;
     ULONG_PTR IconID;
-  };
+  } DUMMYUNIONNAME;
 } PROPSHEETUI_INFO_HEADER, *PPROPSHEETUI_INFO_HEADER;
-````
+```
 
 ## Members
 

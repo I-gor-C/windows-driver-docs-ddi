@@ -7,7 +7,7 @@ old-location: display\d3dkmt_signalsynchronizationobjectfromgpu.htm
 old-project: display
 ms.assetid: 09190DCC-5F88-4C49-89B3-9063707E3F15
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU structure [Display Devices], _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, d3dkmthk/D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU, display.d3dkmt_signalsynchronizationobjectfromgpu
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,20 +44,20 @@ req.typenames: D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU
 ---
 
 # _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU structure
-<b>D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU</b> is used with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobjectfromgpu.md">D3DKMTSignalSynchronizationObjectFromGpu</a> to signal a monitored fence.
+<b>D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU</b> is used with <a href="https://msdn.microsoft.com/library/windows/hardware/dn906784">D3DKMTSignalSynchronizationObjectFromGpu</a> to signal a monitored fence.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU {
-  HANDLE              hContext;
-  UINT                ObjectCount;
+  D3DKMT_HANDLE       hContext;
+  UINT                ObjectCount;
   const D3DKMT_HANDLE *ObjectHandleArray;
   union {
     const UINT64 *MonitoredFenceValueArray;
-    UINT64       Reserved[8];
+    UINT64       Reserved[8];
   };
 } D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU;
-````
+```
 
 ## Members
 
@@ -83,4 +83,4 @@ typedef struct _D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMGPU {
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsignalsynchronizationobjectfromgpu.md">D3DKMTSignalSynchronizationObjectFromGpu</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906784">D3DKMTSignalSynchronizationObjectFromGpu</a>

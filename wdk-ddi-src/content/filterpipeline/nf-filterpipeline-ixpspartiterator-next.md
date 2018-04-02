@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# Next method
+# IXpsPartIterator::Next method
 The <code>Next</code> method advances the iterator to the next part.
 
 ## Syntax
 
-````
-void STDMETHODCALLTYPE Next(
-    None
+```
+void Next(
+
 );
-````
+```
 
 ## Parameters
 

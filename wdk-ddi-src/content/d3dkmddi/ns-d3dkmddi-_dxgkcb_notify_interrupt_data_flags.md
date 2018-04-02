@@ -7,7 +7,7 @@ old-location: display\dxgkcb_notify_interrupt_data_flags.htm
 old-project: display
 ms.assetid: 69554ec0-3d5e-4a53-8b45-2f821ddbfd3c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS, DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure [Display Devices], DmStructs_bfff264e-44a2-458c-ab0d-c103d4b76f71.xml, _DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS, d3dkmddi/DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS, display.dxgkcb_notify_interrupt_data_flags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,22 @@ req.typenames: DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS
 ---
 
 # _DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure
-The DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure indicates whether the display miniport driver provides a physical adapter mask in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> function.
+The DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS structure indicates whether the display miniport driver provides a physical adapter mask in a call to the <a href="https://msdn.microsoft.com/7968d26d-0195-463d-8954-e7ebef4f9dea">DxgkCbNotifyInterrupt</a> function.
 
 ## Syntax
-````
+```
 typedef struct _DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS {
   union {
     struct {
-      UINT ValidPhysicalAdapterMask  :1;
-      UINT HsyncFlipCompletion  :1;
-      UINT Reserved  :30;
+      UINT  : 1  ValidPhysicalAdapterMask;
+      UINT  : 1  HsyncFlipCompletion;
+      UINT  : 30 Reserved;
+      UINT  : 31 Reserved;
     };
     UINT Value;
   };
 } DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS;
-````
+```
 
 ## Members
 
@@ -72,8 +73,8 @@ typedef struct _DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS {
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557538">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
+<a href="https://msdn.microsoft.com/7968d26d-0195-463d-8954-e7ebef4f9dea">DxgkCbNotifyInterrupt</a>

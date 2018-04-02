@@ -50,11 +50,11 @@ The <b>KsUnregisterWorker</b> function allows clients to unregister a worker. Th
 
 ## Syntax
 
-````
-VOID KsUnregisterWorker(
-  _In_ PKSWORKER Worker
+```
+KSDDKAPI VOID KsUnregisterWorker(
+  PKSWORKER Worker
 );
-````
+```
 
 ## Parameters
 

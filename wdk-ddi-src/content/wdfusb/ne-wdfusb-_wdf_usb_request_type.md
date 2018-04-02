@@ -50,20 +50,20 @@ req.product: Windows 10 or later.
 The <b>WDF_USB_REQUEST_TYPE</b> enumeration identifies the types of USB requests that a framework-based driver can send to a USB I/O target.
 
 ## Syntax
-````
-typedef enum _WDF_USB_REQUEST_TYPE { 
-  WdfUsbRequestTypeInvalid                = 0,
-  WdfUsbRequestTypeNoFormat               = 1,
-  WdfUsbRequestTypeDeviceString           = 2,
-  WdfUsbRequestTypeDeviceControlTransfer  = 3,
-  WdfUsbRequestTypeDeviceUrb              = 4,
-  WdfUsbRequestTypePipeWrite              = 5,
-  WdfUsbRequestTypePipeRead               = 6,
-  WdfUsbRequestTypePipeAbort              = 7,
-  WdfUsbRequestTypePipeReset              = 8,
-  WdfUsbRequestTypePipeUrb                = 9
+```
+typedef enum _WDF_USB_REQUEST_TYPE {
+  WdfUsbRequestTypeInvalid                ,
+  WdfUsbRequestTypeNoFormat               ,
+  WdfUsbRequestTypeDeviceString           ,
+  WdfUsbRequestTypeDeviceControlTransfer  ,
+  WdfUsbRequestTypeDeviceUrb              ,
+  WdfUsbRequestTypePipeWrite              ,
+  WdfUsbRequestTypePipeRead               ,
+  WdfUsbRequestTypePipeAbort              ,
+  WdfUsbRequestTypePipeReset              ,
+  WdfUsbRequestTypePipeUrb
 } WDF_USB_REQUEST_TYPE, *PWDF_USB_REQUEST_TYPE;
-````
+```
 
 ## Constants
 
@@ -122,7 +122,7 @@ typedef enum _WDF_USB_REQUEST_TYPE {
 
 ## Remarks
 
-The <b>WDF_USB_REQUEST_TYPE</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_request_completion_params.md">WDF_USB_REQUEST_COMPLETION_PARAMS</a> structure.
+The <b>WDF_USB_REQUEST_TYPE</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553049">WDF_USB_REQUEST_COMPLETION_PARAMS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -133,4 +133,4 @@ The <b>WDF_USB_REQUEST_TYPE</b> enumeration is used in the <a href="..\wdfusb\ns
 
 ## See Also
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_request_completion_params.md">WDF_USB_REQUEST_COMPLETION_PARAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553049">WDF_USB_REQUEST_COMPLETION_PARAMS</a>

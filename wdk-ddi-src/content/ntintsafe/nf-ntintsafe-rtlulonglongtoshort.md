@@ -7,7 +7,7 @@ old-location: kernel\rtlulonglongtoshort.htm
 old-project: kernel
 ms.assetid: AACFF147-43FE-4DBD-A809-E68E4EB89AC5
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlULongLongToShort, RtlULongLongToShort function [Kernel-Mode Driver Architecture], kernel.rtlulonglongtoshort, ntintsafe/RtlULongLongToShort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>ULONGLONG</b> to a value of type <b>SHORT</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlULongLongToShort(
-  _In_  ULONGLONG ullOperand,
-  _Out_ SHORT     *psResult
+  ULONGLONG ullOperand,
+  SHORT     *psResult
 );
-````
+```
 
 ## Parameters
 

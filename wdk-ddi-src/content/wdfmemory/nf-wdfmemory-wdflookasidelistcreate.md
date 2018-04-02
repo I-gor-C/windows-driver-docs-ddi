@@ -53,22 +53,22 @@ The <b>WdfLookasideListCreate</b> method creates a lookaside-list object, from w
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfLookasideListCreate(
-  _In_opt_ PWDF_OBJECT_ATTRIBUTES LookasideAttributes,
-  _In_     size_t                 BufferSize,
-  _In_     POOL_TYPE              PoolType,
-  _In_opt_ PWDF_OBJECT_ATTRIBUTES MemoryAttributes,
-  _In_opt_ ULONG                  PoolTag,
-  _Out_    WDFLOOKASIDE           *Lookaside
+  PWDF_OBJECT_ATTRIBUTES        LookasideAttributes,
+  size_t                        BufferSize,
+  _Strict_type_match_ POOL_TYPE PoolType,
+  PWDF_OBJECT_ATTRIBUTES        MemoryAttributes,
+  ULONG                         PoolTag,
+  WDFLOOKASIDE                  *Lookaside
 );
-````
+```
 
 ## Parameters
 
 `LookasideAttributes`
 
-A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for the new lookaside-list object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for the new lookaside-list object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 `BufferSize`
 
@@ -76,11 +76,11 @@ The nonzero size, in bytes, of the buffer that the framework will allocate for e
 
 `PoolType`
 
-A <a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a>-typed value that specifies the type of memory to be allocated.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a>-typed value that specifies the type of memory to be allocated.
 
 `MemoryAttributes`
 
-A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for each memory object that the driver obtains from the lookaside list. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure that contains object attributes for each memory object that the driver obtains from the lookaside list. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 `PoolTag`
 
@@ -88,7 +88,7 @@ A driver-defined pool tag for each memory object's buffer. Debuggers display thi
 
 If <i>PoolTag</i> is zero, the framework provides a default pool tag that uses the first four characters of your driver's kernel-mode service name. If the service name begins with "WDF" (the name is not case sensitive and does not include the quotation marks), the next four characters are used. If fewer than four characters are available, "FxDr" is used.
 
-For KMDF versions 1.5 and later, your driver can use the <b>DriverPoolTag</b> member of the <a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_config.md">WDF_DRIVER_CONFIG</a> structure to specify a default pool tag.
+For KMDF versions 1.5 and later, your driver can use the <b>DriverPoolTag</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551300">WDF_DRIVER_CONFIG</a> structure to specify a default pool tag.
 
 `Lookaside`
 
@@ -137,9 +137,9 @@ This method also might return other <a href="https://msdn.microsoft.com/library/
 
 ## Remarks
 
-After your driver calls <b>WdfLookasideListCreate</b> to create a lookaside-list object, the driver can call <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatefromlookaside.md">WdfMemoryCreateFromLookaside</a> to obtain a buffer from the lookaside list. 
+After your driver calls <b>WdfLookasideListCreate</b> to create a lookaside-list object, the driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548709">WdfMemoryCreateFromLookaside</a> to obtain a buffer from the lookaside list. 
 
-By default, the new lookaside-list object's parent is the framework driver object that the <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a> method creates. You can use the <b>ParentObject</b> member of the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure to specify a different parent. The framework deletes the lookaside-list object when it deletes the parent object. If your driver does not change the default parent, the driver should delete the lookaside-list object when it has finished using the object; otherwise, the lookaside-list object will remain until the I/O manager unloads your driver. 
+By default, the new lookaside-list object's parent is the framework driver object that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a> method creates. You can use the <b>ParentObject</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure to specify a different parent. The framework deletes the lookaside-list object when it deletes the parent object. If your driver does not change the default parent, the driver should delete the lookaside-list object when it has finished using the object; otherwise, the lookaside-list object will remain until the I/O manager unloads your driver. 
 
 If your driver supplies a WDF_OBJECT_ATTRIBUTES structure for both the <i>LookasideAttributes</i> and the <i>MemoryAttributes</i> parameters, and if both structures specify a device object as the parent object, the device object handles must be the same. 
 
@@ -150,7 +150,7 @@ If your driver specifies <b>PagedPool</b> for the <i>PoolType</i> parameter, the
 
 #### Examples
 
-For a code example that uses <b>WdfLookasideListCreate</b>, see <a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatefromlookaside.md">WdfMemoryCreateFromLookaside</a>.
+For a code example that uses <b>WdfLookasideListCreate</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548709">WdfMemoryCreateFromLookaside</a>.
 
 <div class="code"></div>
 
@@ -166,12 +166,12 @@ For a code example that uses <b>WdfLookasideListCreate</b>, see <a href="..\wdfm
 
 ## See Also
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a>
 
 
 
-<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycreatefromlookaside.md">WdfMemoryCreateFromLookaside</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a>
 
 
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548709">WdfMemoryCreateFromLookaside</a>

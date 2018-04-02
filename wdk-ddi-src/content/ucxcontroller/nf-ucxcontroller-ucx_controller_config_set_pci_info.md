@@ -7,7 +7,7 @@ old-location: buses\_ucx_controller_config_set_pci_info.htm
 old-project: usbref
 ms.assetid: 493B8E5B-D2CC-453E-8202-69337FAC85ED
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UCX_CONTROLLER_CONFIG_SET_PCI_INFO, UCX_CONTROLLER_CONFIG_SET_PCI_INFO function [Buses], buses._ucx_controller_config_set_pci_info, ucxcontroller/UCX_CONTROLLER_CONFIG_SET_PCI_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,28 +46,27 @@ req.product: Windows 10 or later.
 
 
 # UCX_CONTROLLER_CONFIG_SET_PCI_INFO function
-Initializes a <a href="..\ucxcontroller\ns-ucxcontroller-_ucx_controller_config.md">UCX_CONTROLLER_CONFIG</a> structure with the specified values for the controller with PCI as the parent bus type.
+Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188057">UCX_CONTROLLER_CONFIG</a> structure with the specified values for the controller with PCI as the parent bus type.
 
 ## Syntax
 
-````
-__inline
+```
 void UCX_CONTROLLER_CONFIG_SET_PCI_INFO(
-  _In_ PUCX_CONTROLLER_CONFIG Config,
-  _In_ ULONG                  VendorId,
-  _In_ ULONG                  DeviceId,
-  _In_ USHORT                 RevisionId,
-  _In_ ULONG                  BusNumber,
-  _In_ ULONG                  DeviceNumber,
-  _In_ ULONG                  FunctionNumber
+  PUCX_CONTROLLER_CONFIG Config,
+  ULONG                  VendorId,
+  ULONG                  DeviceId,
+  USHORT                 RevisionId,
+  ULONG                  BusNumber,
+  ULONG                  DeviceNumber,
+  ULONG                  FunctionNumber
 );
-````
+```
 
 ## Parameters
 
 `Config`
 
-A pointer to a <a href="..\ucxcontroller\ns-ucxcontroller-_ucx_controller_config.md">UCX_CONTROLLER_CONFIG</a> structure to initialize.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt188057">UCX_CONTROLLER_CONFIG</a> structure to initialize.
 
 `VendorId`
 
@@ -108,8 +107,8 @@ This function does not return a value.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188057">UCX_CONTROLLER_CONFIG</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt188033">UcxControllerCreate</a>
-
-
-
-<a href="..\ucxcontroller\ns-ucxcontroller-_ucx_controller_config.md">UCX_CONTROLLER_CONFIG</a>

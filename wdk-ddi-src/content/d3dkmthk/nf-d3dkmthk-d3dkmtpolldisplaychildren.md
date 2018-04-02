@@ -7,7 +7,7 @@ old-location: display\d3dkmtpolldisplaychildren.htm
 old-project: display
 ms.assetid: 463831c1-d9b2-404d-91f3-78f495668fdf
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTPollDisplayChildren, D3DKMTPollDisplayChildren function [Display Devices], OpenGL_Functions_dc39afab-758a-423a-9058-9d9ec091d4b2.xml, d3dkmthk/D3DKMTPollDisplayChildren, display.d3dkmtpolldisplaychildren
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>D3DKMTPollDisplayChildren</b> function queries for connectivity status of
 
 ## Syntax
 
-````
-NTSTATUS APIENTRY D3DKMTPollDisplayChildren(
-  _In_ const D3DKMT_POLLDISPLAYCHILDREN *pData
+```
+NTSTATUS D3DKMTPollDisplayChildren(
+  CONST *D3DKMT_POLLDISPLAYCHILDREN
 );
-````
+```
 
 ## Parameters
 
@@ -103,7 +103,7 @@ This function might also return other NTSTATUS values.
 
 ## Remarks
 
-The OpenGL installable client driver (ICD) calls <b>D3DKMTPollDisplayChildren</b> to query for connectivity status of all of the adapter's child devices. The ICD sets the <b>NonDestructiveOnly</b> member of <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_polldisplaychildren.md">D3DKMT_POLLDISPLAYCHILDREN</a> to indicate whether <b>D3DKMTPollDisplayChildren</b> should be destructive (that is, cause visual artifacts). For typical polling, the ICD should set <b>NonDestructiveOnly</b> to <b>TRUE</b> to prevent the screen from flickering.
+The OpenGL installable client driver (ICD) calls <b>D3DKMTPollDisplayChildren</b> to query for connectivity status of all of the adapter's child devices. The ICD sets the <b>NonDestructiveOnly</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548161">D3DKMT_POLLDISPLAYCHILDREN</a> to indicate whether <b>D3DKMTPollDisplayChildren</b> should be destructive (that is, cause visual artifacts). For typical polling, the ICD should set <b>NonDestructiveOnly</b> to <b>TRUE</b> to prevent the screen from flickering.
 
 New child devices are enumerated to the Plug and Play (PnP) manager when PnP detects them. The devices are then listed in the device manager. If PnP determines that a child device was removed, the device is reported as a surprise removal.
 
@@ -118,4 +118,4 @@ New child devices are enumerated to the Plug and Play (PnP) manager when PnP det
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_polldisplaychildren.md">D3DKMT_POLLDISPLAYCHILDREN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548161">D3DKMT_POLLDISPLAYCHILDREN</a>

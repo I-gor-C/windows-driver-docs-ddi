@@ -7,7 +7,7 @@ old-location: storage\hba_getadapterattributes.htm
 old-project: storage
 ms.assetid: a172f53c-9993-4d52-ae3f-35a8ab5745f6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_GetAdapterAttributes, HBA_GetAdapterAttributes routine [Storage Devices], fibreHBA_rtns_f7675f0c-2f71-428e-871b-90c51a1b5bc4.xml, hbaapi/HBA_GetAdapterAttributes, storage.hba_getadapterattributes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>HBA_GetAdapterAttributes</b> routine retrieves the attributes for an HBA.
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_GetAdapterAttributes(
-  _In_  HBA_HANDLE            HbaHandle,
-  _Out_ HBA_ADAPTERATTRIBUTES *HbaAdapterAttributes
+  IN HBA_HANDLE             Handle,
+  OUT HBA_ADAPTERATTRIBUTES *HbaAttributes
 );
-````
+```
 
 ## Parameters
 
@@ -82,8 +82,8 @@ The <b>HBA_GetAdapterAttributes</b> routine returns a value of type <a href="htt
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556044">HBA_AdapterAttributes</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\ns-hbaapi-hba_adapterattributes.md">HBA_AdapterAttributes</a>

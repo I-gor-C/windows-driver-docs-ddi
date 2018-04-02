@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-INT_PTR APIENTRY OEMFontInstallerDlgProc(
-   HWND   hWnd,
-   UINT   usMsg,
-   WPARAM wParam,
-   LPARAM lParam
+```
+INT_PTR OEMFontInstallerDlgProc(
+  HWND   hWnd,
+  UINT   usMsg,
+  WPARAM wParam,
+  LPARAM lParam
 );
-````
+```
 
 ## Parameters
 

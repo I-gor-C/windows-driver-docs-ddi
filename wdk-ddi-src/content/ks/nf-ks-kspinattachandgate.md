@@ -50,22 +50,22 @@ The<b> KsPinAttachAndGate</b> function connects <i>Pin</i> as an input to a prev
 
 ## Syntax
 
-````
+```
 void KsPinAttachAndGate(
-  _In_     PKSPIN  Pin,
-  _In_opt_ PKSGATE AndGate
+  PKSPIN  Pin,
+  PKSGATE AndGate
 );
-````
+```
 
 ## Parameters
 
 `Pin`
 
-A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure to use an input to the AND gate.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure to use an input to the AND gate.
 
 `AndGate`
 
-A pointer to a <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> structure that is the previously initialized AND gate to connect to the relevant filter's AND gate. If this optional parameter is <b>NULL</b>, any <b>KSGATE</b> currently attached to the pin is detached.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a> structure that is the previously initialized AND gate to connect to the relevant filter's AND gate. If this optional parameter is <b>NULL</b>, any <b>KSGATE</b> currently attached to the pin is detached.
 
 
 ## Return Value
@@ -74,7 +74,7 @@ None
 
 ## Remarks
 
-To insert the gate, first call <a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>. Then call <b>KsPinAttachAndGate</b>. For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.
+To insert the gate, first call <a href="https://msdn.microsoft.com/library/windows/hardware/ff562574">KsGateInitializeAnd</a>. Then call <b>KsPinAttachAndGate</b>. For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3-afe0-60fcf917a443">Flow Control Gates in AVStream</a>.
 
 <b>KsPinAttachAndGate </b>must be called at IRQL = PASSIVE_LEVEL before the pin in question leaves KSSTATE_STOP.
 
@@ -89,12 +89,12 @@ To insert the gate, first call <a href="..\ks\nf-ks-ksgateinitializeand.md">KsGa
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgateinitializeand.md">KsGateInitializeAnd</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a>
 
 
 
-<a href="..\ks\nf-ks-kspinattachorgate.md">KsPinAttachOrGate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562574">KsGateInitializeAnd</a>
 
 
 
-<a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563492">KsPinAttachOrGate</a>

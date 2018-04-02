@@ -55,22 +55,22 @@ The <b>WdfUsbTargetPipeGetInformation</b> method retrieves information about a U
 
 ## Syntax
 
-````
-VOID WdfUsbTargetPipeGetInformation(
-  _In_  WDFUSBPIPE                Pipe,
-  _Out_ PWDF_USB_PIPE_INFORMATION PipeInformation
+```
+void WdfUsbTargetPipeGetInformation(
+  WDFUSBPIPE                Pipe,
+  PWDF_USB_PIPE_INFORMATION PipeInformation
 );
-````
+```
 
 ## Parameters
 
 `Pipe`
 
-A handle to a framework pipe object that was obtained by calling <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>.
+A handle to a framework pipe object that was obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550057">WdfUsbInterfaceGetConfiguredPipe</a>.
 
 `PipeInformation`
 
-A pointer to a caller-allocated <a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a> structure that receives information about the pipe and endpoint.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff553037">WDF_USB_PIPE_INFORMATION</a> structure that receives information about the pipe and endpoint.
 
 
 ## Return Value
@@ -86,7 +86,7 @@ For more information about the <b>WdfUsbTargetPipeGetInformation</b> method and 
 
 #### Examples
 
-The following code example initializes a <a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a> structure and calls <b>WdfUsbTargetPipeGetInformation</b>.
+The following code example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553037">WDF_USB_PIPE_INFORMATION</a> structure and calls <b>WdfUsbTargetPipeGetInformation</b>.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -118,12 +118,12 @@ WdfUsbTargetPipeGetInformation(
 
 ## See Also
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_pipe_information.md">WDF_USB_PIPE_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553037">WDF_USB_PIPE_INFORMATION</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_information_init.md">WDF_USB_PIPE_INFORMATION_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553040">WDF_USB_PIPE_INFORMATION_INIT</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550057">WdfUsbInterfaceGetConfiguredPipe</a>

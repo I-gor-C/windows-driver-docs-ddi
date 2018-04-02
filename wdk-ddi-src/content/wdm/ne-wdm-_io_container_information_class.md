@@ -7,7 +7,7 @@ old-location: kernel\io_container_information_class.htm
 old-project: kernel
 ms.assetid: 359ed0d2-91b1-46d1-a358-babe7cb993fb
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IO_CONTAINER_INFORMATION_CLASS, IO_CONTAINER_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], IoMaxContainerInformationClass, IoSessionStateInformation, _IO_CONTAINER_INFORMATION_CLASS, kernel.io_container_information_class, sysenum_f1533e86-b529-4ef0-b603-e57f4863b740.xml, wdm/IO_CONTAINER_INFORMATION_CLASS, wdm/IoMaxContainerInformationClass, wdm/IoSessionStateInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The <b>IO_CONTAINER_INFORMATION_CLASS</b> enumeration contains constants that indicate the classes of system information that a kernel-mode driver can request.
 
 ## Syntax
-````
-typedef enum _IO_CONTAINER_INFORMATION_CLASS { 
-  IoSessionStateInformation       = 0,
-  IoMaxContainerInformationClass  = 1
+```
+typedef enum _IO_CONTAINER_INFORMATION_CLASS {
+  IoSessionStateInformation       ,
+  IoMaxContainerInformationClass
 } IO_CONTAINER_INFORMATION_CLASS;
-````
+```
 
 ## Constants
 
@@ -72,7 +72,7 @@ typedef enum _IO_CONTAINER_INFORMATION_CLASS {
 
 ## Remarks
 
-To request system information, a driver calls the <a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a> routine and sets this routine's <i>InformationClass</i> parameter to an <b>IO_CONTAINER_NOTIFICATION_CLASS</b> constant (other than <b>IoMaxContainerInformationClass</b>). Currently, <b>IoGetContainerInformation</b> supports only <i>InformationClass</i> = <b>IoSessionStateInformation</b>.
+To request system information, a driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549164">IoGetContainerInformation</a> routine and sets this routine's <i>InformationClass</i> parameter to an <b>IO_CONTAINER_NOTIFICATION_CLASS</b> constant (other than <b>IoMaxContainerInformationClass</b>). Currently, <b>IoGetContainerInformation</b> supports only <i>InformationClass</i> = <b>IoSessionStateInformation</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,4 +82,4 @@ To request system information, a driver calls the <a href="..\wdm\nf-wdm-iogetco
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iogetcontainerinformation.md">IoGetContainerInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549164">IoGetContainerInformation</a>

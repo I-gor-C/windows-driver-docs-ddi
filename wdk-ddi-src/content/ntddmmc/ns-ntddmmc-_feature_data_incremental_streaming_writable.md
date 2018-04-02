@@ -7,7 +7,7 @@ old-location: storage\feature_data_incremental_streaming_writable.htm
 old-project: storage
 ms.assetid: 5e3918a4-8cc6-45b9-acb1-3a2b2088d4b9
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure [Storage Devices], PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure pointer [Storage Devices], _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, ntddmmc/FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, ntddmmc/PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, storage.feature_data_incremental_streaming_writable, structs-CD-ROM_ad0cd0d4-fa5d-4ad4-82d9-7945eaa2a2cd.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,25 +47,25 @@ req.typenames: FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, *PFEATURE_DATA_INCRE
 The FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE structure contains information about the Incremental Streaming Writable feature.
 
 ## Syntax
-````
+```
 typedef struct _FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE {
   FEATURE_HEADER Header;
-  UCHAR          DataTypeSupported[2];
-  UCHAR          BufferUnderrunFree  :1;
-  UCHAR          AddressModeReservation  :1;
-  UCHAR          TrackRessourceInformation  :1;
-  UCHAR          Reserved01  :5;
-  UCHAR          NumberOfLinkSizes;
-  UCHAR          LinkSize[];
-} FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, *PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE;
-````
+  UCHAR          DataTypeSupported[2];
+  UCHAR  : 1     BufferUnderrunFree;
+  UCHAR  : 1     AddressModeReservation;
+  UCHAR  : 1     TrackRessourceInformation;
+  UCHAR  : 5     Reserved01;
+  UCHAR          NumberOfLinkSizes;
+  UCHAR          LinkSize[0];
+} *PFEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE, FEATURE_DATA_INCREMENTAL_STREAMING_WRITABLE;
+```
 
 ## Members
 
 
 `Header`
 
-Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
 `DataTypeSupported`
 
@@ -105,8 +105,8 @@ This structure holds data for the feature named "Incremental Streaming Writable"
 
 ## See Also
 
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
 
 
 
-<a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>

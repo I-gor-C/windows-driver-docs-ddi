@@ -7,7 +7,7 @@ old-location: storage\stor_pofx_component_idle_state.htm
 old-project: storage
 ms.assetid: 2600405F-AE07-4284-84AD-D19EEE2058BF
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTOR_POFX_COMPONENT_IDLE_STATE, PSTOR_POFX_COMPONENT_IDLE_STATE, PSTOR_POFX_COMPONENT_IDLE_STATE structure pointer [Storage Devices], STOR_POFX_COMPONENT_IDLE_STATE, STOR_POFX_COMPONENT_IDLE_STATE structure [Storage Devices], _STOR_POFX_COMPONENT_IDLE_STATE, storage.stor_pofx_component_idle_state, storport/PSTOR_POFX_COMPONENT_IDLE_STATE, storport/STOR_POFX_COMPONENT_IDLE_STATE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,15 +48,15 @@ req.product: Windows 10 or later.
 The <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structure specifies the attributes of an functional power state (F-state) of a component in a storage device.
 
 ## Syntax
-````
+```
 typedef struct _STOR_POFX_COMPONENT_IDLE_STATE {
-  USHORT    Version;
-  USHORT    Size;
+  ULONG     Version;
+  ULONG     Size;
   ULONGLONG TransitionLatency;
   ULONGLONG ResidencyRequirement;
-  ULONG     NominalPower;
-} STOR_POFX_COMPONENT_IDLE_STATE, *PSTOR_POFX_COMPONENT_IDLE_STATE;
-````
+  ULONG     NominalPower;
+} *PSTOR_POFX_COMPONENT_IDLE_STATE, STOR_POFX_COMPONENT_IDLE_STATE;
+```
 
 ## Members
 
@@ -82,9 +82,9 @@ The residency requirement. The residency requirement is the minimum amount of ti
 The power, in microwatts, that the component consumes in this F-state. Set this member to STOR_PO_FX_UNKNOWN_POWER to indicate that PoFx should ignore (treat as negligible) the component's internal power consumption in this F-state when PoFx evaluates which power state to switch to when the component is idle.
 
 ## Remarks
-The <a href="..\storport\ns-storport-_stor_pofx_component.md">STOR_POFX_COMPONENT</a> structure contains an array of <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structures. Each array element specifies the attributes of an F-state. Element 0 describes F0, element 1 describes F1, and so on.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/hh920427">STOR_POFX_COMPONENT</a> structure contains an array of <b>STOR_POFX_COMPONENT_IDLE_STATE</b> structures. Each array element specifies the attributes of an F-state. Element 0 describes F0, element 1 describes F1, and so on.
 
-When the miniport driver registers a device with the Storport power management framework, the driver supplies an array of <a href="..\storport\ns-storport-_stor_pofx_component.md">STOR_POFX_COMPONENT</a> structures. Each array element describes the power attributes of a component in the device.
+When the miniport driver registers a device with the Storport power management framework, the driver supplies an array of <a href="https://msdn.microsoft.com/library/windows/hardware/hh920427">STOR_POFX_COMPONENT</a> structures. Each array element describes the power attributes of a component in the device.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -94,4 +94,4 @@ When the miniport driver registers a device with the Storport power management f
 
 ## See Also
 
-<a href="..\storport\ns-storport-_stor_pofx_component.md">STOR_POFX_COMPONENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh920427">STOR_POFX_COMPONENT</a>

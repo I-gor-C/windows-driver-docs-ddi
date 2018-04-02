@@ -7,7 +7,7 @@ old-location: debugger\setexceptionfiltersecondcommandwide.htm
 old-project: debugger
 ms.assetid: cbc0e98b-eac7-441d-b2b5-512725403210
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugControl4, IDebugControl4 interface [Windows Debugging], SetExceptionFilterSecondCommandWide method, IDebugControl4::SetExceptionFilterSecondCommandWide, SetExceptionFilterSecondCommandWide method [Windows Debugging], SetExceptionFilterSecondCommandWide method [Windows Debugging], IDebugControl4 interface, SetExceptionFilterSecondCommandWide,IDebugControl4.SetExceptionFilterSecondCommandWide, dbgeng/IDebugControl4::SetExceptionFilterSecondCommandWide, debugger.setexceptionfiltersecondcommandwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# SetExceptionFilterSecondCommandWide method
+# IDebugControl4::SetExceptionFilterSecondCommandWide method
 The <b>SetExceptionFilterSecondCommandWide</b>  method sets the command that will be executed by the <a href="https://msdn.microsoft.com/fa52a1f0-9397-48a5-acbd-ce5347c0baef">debugger engine</a> on the second chance of a specified <a href="https://msdn.microsoft.com/0dd010e7-3e10-422a-adcb-8fe7df9e29ab">exception</a>.
 
 ## Syntax
 
-````
+```
 HRESULT SetExceptionFilterSecondCommandWide(
-  [in] ULONG  Index,
-  [in] PCWSTR Command
+  ULONG  Index,
+  PCWSTR Command
 );
-````
+```
 
 ## Parameters
 
@@ -101,15 +101,15 @@ For more information about <a href="https://msdn.microsoft.com/library/windows/h
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546653">GetExceptionFilterSecondCommand</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556678">SetEventFilterCommand</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546653">GetExceptionFilterSecondCommand</a>
 
 
 

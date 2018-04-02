@@ -50,17 +50,17 @@ A print processor's <b>EnumPrintProcessorDatatypes</b> function enumerates the d
 
 ## Syntax
 
-````
-BOOL EnumPrintProcessorDatatypes(
-  _In_opt_  LPTSTR  pName,
-  _In_      LPTSTR  pPrintProcessorName,
-            DWORD   Level,
-  _Out_opt_ LPBYTE  pDatatypes,
-            DWORD   cbBuf,
-  _Out_     LPDWORD pcbNeeded,
-  _Out_     LPDWORD pcReturned
+```
+BOOL EnumPrintProcessorDatatypesA(
+  LPSTR   pName,
+  LPSTR   pPrintProcessorName,
+  DWORD   Level,
+  LPBYTE  pDatatypes,
+  DWORD   cbBuf,
+  LPDWORD pcbNeeded,
+  LPDWORD pcReturned
 );
-````
+```
 
 ## Parameters
 

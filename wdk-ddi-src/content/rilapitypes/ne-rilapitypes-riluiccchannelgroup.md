@@ -7,7 +7,7 @@ old-location: netvista\riluiccchannelgroup.htm
 old-project: netvista
 ms.assetid: 72a75d88-1694-4acf-8775-8586e37e412d
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: RILUICCCHANNELGROUP, RILUICCCHANNELGROUP enumeration [Network Drivers Starting with Windows Vista], netvista.riluiccchannelgroup, ntddrilapitypes/RILUICCCHANNELGROUP
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,10 +48,11 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef enum _RILUICCCHANNELGROUP { 
-} RILUICCCHANNELGROUP;
-````
+```
+typedef enum RILUICCCHANNELGROUP {
+  RIL_UICCCHANNELGROUP_NFC
+} ;
+```
 
 ## Constants
 

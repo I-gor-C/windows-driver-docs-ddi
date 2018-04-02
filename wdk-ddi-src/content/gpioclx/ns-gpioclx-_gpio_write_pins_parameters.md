@@ -47,16 +47,16 @@ req.typenames: GPIO_WRITE_PINS_PARAMETERS, *PGPIO_WRITE_PINS_PARAMETERS
 The <b>GPIO_WRITE_PINS_PARAMETERS</b> structure describes a write operation on a group of general-purpose I/O (GPIO) pins.
 
 ## Syntax
-````
+```
 typedef struct _GPIO_WRITE_PINS_PARAMETERS {
-  BANK_ID               BankId;
-  PPIN_NUMBER           PinNumberTable;
-  ULONG                 PinCount;
-  PVOID                 Buffer;
+  BANK_ID               BankId;
+  PPIN_NUMBER           PinNumberTable;
+  ULONG                 PinCount;
+  PVOID                 Buffer;
   GPIO_WRITE_PINS_FLAGS Flags;
-  PVOID                 Reserved;
+  PVOID                 Reserved;
 } GPIO_WRITE_PINS_PARAMETERS, *PGPIO_WRITE_PINS_PARAMETERS;
-````
+```
 
 ## Members
 
@@ -96,7 +96,7 @@ The <i>WriteParameters</i> parameter of the <a href="https://msdn.microsoft.com/
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439439">CLIENT_WriteGpioPins</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
 
 
 
@@ -104,4 +104,4 @@ The <i>WriteParameters</i> parameter of the <a href="https://msdn.microsoft.com/
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439439">CLIENT_WriteGpioPins</a>

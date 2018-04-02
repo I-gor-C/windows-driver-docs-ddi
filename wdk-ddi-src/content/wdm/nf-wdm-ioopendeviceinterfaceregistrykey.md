@@ -7,7 +7,7 @@ old-location: kernel\ioopendeviceinterfaceregistrykey.htm
 old-project: kernel
 ms.assetid: d9ca4b9d-dacc-4164-9198-a71a771b145b
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoOpenDeviceInterfaceRegistryKey, IoOpenDeviceInterfaceRegistryKey routine [Kernel-Mode Driver Architecture], k104_39651647-aa61-4670-b09d-7aaabaae4603.xml, kernel.ioopendeviceinterfaceregistrykey, wdm/IoOpenDeviceInterfaceRegistryKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,23 +50,23 @@ The <b>IoOpenDeviceInterfaceRegistryKey</b> routine returns a handle to a regist
 
 ## Syntax
 
-````
-NTSTATUS IoOpenDeviceInterfaceRegistryKey(
-  _In_  PUNICODE_STRING SymbolicLinkName,
-  _In_  ACCESS_MASK     DesiredAccess,
-  _Out_ PHANDLE         DeviceInterfaceKey
+```
+NTKERNELAPI NTSTATUS IoOpenDeviceInterfaceRegistryKey(
+  PUNICODE_STRING SymbolicLinkName,
+  ACCESS_MASK     DesiredAccess,
+  PHANDLE         DeviceInterfaceKey
 );
-````
+```
 
 ## Parameters
 
 `SymbolicLinkName`
 
-Pointer to a string identifying the device interface instance. This string was obtained from a previous call to <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>, <a href="..\wdm\nf-wdm-iogetdeviceinterfacealias.md">IoGetDeviceInterfaceAlias</a>, or <a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>.
+Pointer to a string identifying the device interface instance. This string was obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549186">IoGetDeviceInterfaces</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549180">IoGetDeviceInterfaceAlias</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff549506">IoRegisterDeviceInterface</a>.
 
 `DesiredAccess`
 
-Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the access the caller requires to the key, such as KEY_READ, KEY_WRITE, or KEY_ALL_ACCESS. See <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> for a description of each KEY_<i>XXX</i> access right.
+Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the access the caller requires to the key, such as KEY_READ, KEY_WRITE, or KEY_ALL_ACCESS. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff566425">ZwCreateKey</a> for a description of each KEY_<i>XXX</i> access right.
 
 `DeviceInterfaceKey`
 
@@ -121,7 +121,7 @@ Possibly indicates an error in the <i>SymbolicLinkName</i>.
 
 <b>IoOpenDeviceInterfaceRegistryKey</b> opens a nonvolatile subkey of the registry key for the device interface instance specified by <i>SymbolicLinkName</i>. Drivers can store information in this subkey that is specific to this instance of the device interface, such as the default resolution for a camera. User-mode applications can access this subkey using <b>SetupDi<i>Xxx</i></b> routines.
 
-The driver must call <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> to close the handle returned from this routine when access is no longer required.
+The driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a> to close the handle returned from this routine when access is no longer required.
 
 Callers of <b>IoOpenDeviceInterfaceRegistryKey</b> must be running at IRQL = PASSIVE_LEVEL in the context of a system thread.
 
@@ -138,20 +138,20 @@ Callers of <b>IoOpenDeviceInterfaceRegistryKey</b> must be running at IRQL = PAS
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
 
 
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549180">IoGetDeviceInterfaceAlias</a>
 
 
 
-<a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549186">IoGetDeviceInterfaces</a>
 
 
 
-<a href="..\wdm\nf-wdm-iogetdeviceinterfacealias.md">IoGetDeviceInterfaceAlias</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549506">IoRegisterDeviceInterface</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a>

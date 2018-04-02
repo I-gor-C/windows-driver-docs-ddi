@@ -45,25 +45,25 @@ req.product: Windows 10 or later.
 ---
 
 
-# ConfigureContinuousReader method
+# IWDFUsbTargetPipe2::ConfigureContinuousReader method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>ConfigureContinuousReader</b> method configures the framework to continuously read from a USB pipe.
 
 ## Syntax
 
-````
+```
 HRESULT ConfigureContinuousReader(
-  [in]           SIZE_T                                              TransferLength,
-  [in]           SIZE_T                                              HeaderLength,
-  [in]           SIZE_T                                              TrailerLength,
-  [in]           UCHAR                                               NumPendingReads,
-  [in, optional] IUnknown                                            *pMemoryCleanupCallbackInterface,
-  [in]           IUsbTargetPipeContinuousReaderCallbackReadComplete  *pOnCompletion,
-  [in, optional] PVOID                                               pCompletionContext,
-  [in, optional] IUsbTargetPipeContinuousReaderCallbackReadersFailed *pOnFailure
+  SIZE_T                                              TransferLength,
+  SIZE_T                                              HeaderLength,
+  SIZE_T                                              TrailerLength,
+  UCHAR                                               NumPendingReads,
+  IUnknown                                            *pMemoryCleanupCallbackInterface,
+  IUsbTargetPipeContinuousReaderCallbackReadComplete  *pOnCompletion,
+  PVOID                                               pCompletionContext,
+  IUsbTargetPipeContinuousReaderCallbackReadersFailed *pOnFailure
 );
-````
+```
 
 ## Parameters
 
@@ -89,7 +89,7 @@ A pointer to a driver-supplied <b>IUnkown</b> interface that the framework uses 
 
 `pOnCompletion`
 
-A pointer to a driver-supplied <a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadcomplete.md">IUsbTargetPipeContinuousReaderCallbackReadComplete</a> interface that provides an <a href="https://msdn.microsoft.com/946e0206-7609-4dc7-91c2-a6aadad91751">OnReaderCompletion</a> callback function.
+A pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556908">IUsbTargetPipeContinuousReaderCallbackReadComplete</a> interface that provides an <a href="https://msdn.microsoft.com/946e0206-7609-4dc7-91c2-a6aadad91751">OnReaderCompletion</a> callback function.
 
 `pCompletionContext`
 
@@ -97,7 +97,7 @@ An untyped pointer to driver-defined context information that the framework pass
 
 `pOnFailure`
 
-A pointer to a driver-supplied <a href="..\wudfusb\nn-wudfusb-iusbtargetpipecontinuousreadercallbackreadersfailed.md">IUsbTargetPipeContinuousReaderCallbackReadersFailed</a> interface that provides an <a href="https://msdn.microsoft.com/ad91208e-e57a-4b80-b1a1-13b9f7eb1119">OnReaderFailure</a> callback function.
+A pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff556914">IUsbTargetPipeContinuousReaderCallbackReadersFailed</a> interface that provides an <a href="https://msdn.microsoft.com/ad91208e-e57a-4b80-b1a1-13b9f7eb1119">OnReaderFailure</a> callback function.
 
 
 ## Return Value
@@ -242,23 +242,15 @@ hr = pIUsbInterruptPipe2-&gt;ConfigureContinuousReader(
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetpipe2.md">IWDFUsbTargetPipe2</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556766">IPnpCallbackHardware::OnPrepareHardware</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556799">IPnpCallback::OnD0Entry</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559217">IWDFIoTargetStateManagement::Stop</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556803">IPnpCallback::OnD0Exit</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556766">IPnpCallbackHardware::OnPrepareHardware</a>
 
 
 
@@ -271,3 +263,11 @@ hr = pIUsbInterruptPipe2-&gt;ConfigureContinuousReader(
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559213">IWDFIoTargetStateManagement::Start</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559217">IWDFIoTargetStateManagement::Stop</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560394">IWDFUsbTargetPipe2</a>

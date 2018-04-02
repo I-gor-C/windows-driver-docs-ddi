@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# LockDevice method
+# IStiDevice::LockDevice method
 The <b>IStiDevice::LockDevice </b>method locks a device for exclusive use by the caller.
 
 ## Syntax
 
-````
+```
 HRESULT LockDevice(
-  [in] DWORD dwTimeOut
+  DWORD dwTimeOut
 );
-````
+```
 
 ## Parameters
 

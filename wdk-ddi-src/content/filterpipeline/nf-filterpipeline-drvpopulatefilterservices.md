@@ -49,11 +49,11 @@ The <b>DrvPopulateFilterServices</b> function is called by the XPSDrv filter pip
 
 ## Syntax
 
-````
-HRESULT WINAPI DrvPopulateFilterServices(
-  _In_ IPrintPipelinePropertyBag *pPropertyBag
+```
+HRESULT DrvPopulateFilterServices(
+  IPrintPipelinePropertyBag *pPropertyBag
 );
-````
+```
 
 ## Parameters
 
@@ -78,7 +78,7 @@ The <a href="https://msdn.microsoft.com/7567c514-3034-4db0-9622-31d14eb3772e">XP
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/7567c514-3034-4db0-9622-31d14eb3772e">XPSDrv printer driver</a>
+<a href="https://msdn.microsoft.com/586247bd-6d06-4728-a5f0-ee3fe1d09321">Filter pipeline configuration file</a>
 
 
 
@@ -86,4 +86,4 @@ The <a href="https://msdn.microsoft.com/7567c514-3034-4db0-9622-31d14eb3772e">XP
 
 
 
-<a href="https://msdn.microsoft.com/586247bd-6d06-4728-a5f0-ee3fe1d09321">Filter pipeline configuration file</a>
+<a href="https://msdn.microsoft.com/7567c514-3034-4db0-9622-31d14eb3772e">XPSDrv printer driver</a>

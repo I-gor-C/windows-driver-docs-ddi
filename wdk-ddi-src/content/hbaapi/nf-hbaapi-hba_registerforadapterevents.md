@@ -7,7 +7,7 @@ old-location: storage\hba_registerforadapterevents.htm
 old-project: storage
 ms.assetid: b5e671dc-0583-4e5f-b537-3257b3f25479
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_RegisterForAdapterEvents, HBA_RegisterForAdapterEvents routine [Storage Devices], fibreHBA_rtns_8ab64c5b-ffac-4e2a-90db-5f3cbc640f14.xml, hbaapi/HBA_RegisterForAdapterEvents, storage.hba_registerforadapterevents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ The <b>HBA_RegisterForAdapterEvents</b> routine registers the indicated user cal
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_RegisterForAdapterEvents(
-   HBA_ADAPTER_CALLBACK callback,
-   void                 *userData,
-   HBA_HANDLE           handle,
-   HBA_CALLBACKHANDLE   *callbackHandle
+  IN void(* )(void *pData,HBA_WWN PortWWN,HBA_UINT32 eventType) callback,
+  IN void                                                       *pUserData,
+  IN HBA_HANDLE                                                 Handle,
+  OUT HBA_CALLBACKHANDLE                                        *pCallbackHandle
 );
-````
+```
 
 ## Parameters
 
@@ -126,16 +126,16 @@ If the configuration of the HBA referenced by <i>handle </i>is changed, the call
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556045">HBA_ADAPTER_CALLBACK</a>
 
 
 
-<a href="..\hbaapi\nf-hbaapi-hba_removecallback.md">HBA_RemoveCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>

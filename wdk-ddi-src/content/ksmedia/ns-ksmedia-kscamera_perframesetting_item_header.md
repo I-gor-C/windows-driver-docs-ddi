@@ -47,13 +47,13 @@ req.typenames: KSCAMERA_PERFRAMESETTING_ITEM_HEADER, *PKSCAMERA_PERFRAMESETTING_
 This structure contains the header information for a per-frame settings item.
 
 ## Syntax
-````
-typedef struct {
-  ULONG     Size;
-  ULONG     Type;
+```
+typedef struct KSCAMERA_PERFRAMESETTING_ITEM_HEADER {
+  ULONG     Size;
+  ULONG     Type;
   ULONGLONG Flags;
-} KSCAMERA_PERFRAMESETTING_ITEM_HEADER, *PKSCAMERA_PERFRAMESETTING_ITEM_HEADER;
-````
+}  *PKSCAMERA_PERFRAMESETTING_ITEM_HEADER;
+```
 
 ## Members
 
@@ -64,11 +64,11 @@ The size of this header and the item payload that follows.
 
 `Type`
 
-This contains a <a href="..\ksmedia\ne-ksmedia-kscamera_perframesetting_item_type.md">KSCAMERA_PERFRAMESETTING_ITEM_TYPE</a> structure.
+This contains a <a href="https://msdn.microsoft.com/library/windows/hardware/dn925212">KSCAMERA_PERFRAMESETTING_ITEM_TYPE</a> structure.
 
 `Flags`
 
-This is any one of the capability flags reported in the <a href="..\ksmedia\ns-ksmedia-kscamera_perframesetting_cap_item_header.md">KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER</a> Flags field.
+This is any one of the capability flags reported in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925193">KSCAMERA_PERFRAMESETTING_CAP_ITEM_HEADER</a> Flags field.
 
 
 ## Requirements

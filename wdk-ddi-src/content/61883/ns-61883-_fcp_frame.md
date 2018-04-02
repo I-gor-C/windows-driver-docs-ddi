@@ -47,13 +47,13 @@ req.typenames: FCP_FRAME, *PFCP_FRAME
 The FCP_FRAME structure describes a function control protocol (FCP) request.
 
 ## Syntax
-````
+```
 typedef struct _FCP_FRAME {
-  UCHAR ctype  :4;
-  UCHAR cts  :4;
-  UCHAR payload[511];
+  UCHAR  : 4 ctype;
+  UCHAR  : 4 cts;
+  UCHAR      payload[511];
 } FCP_FRAME, *PFCP_FRAME;
-````
+```
 
 ## Members
 
@@ -86,8 +86,8 @@ The FCP request for this frame.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536989">Av61883_SendFcpRequest</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536992">Av61883_SendFcpResponse</a>

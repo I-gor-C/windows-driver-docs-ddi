@@ -53,12 +53,12 @@ The <b>WdfCmResourceListRemoveByDescriptor</b> method removes a specified resour
 
 ## Syntax
 
-````
-VOID WdfCmResourceListRemoveByDescriptor(
-  _In_ WDFCMRESLIST                    List,
-  _In_ PCM_PARTIAL_RESOURCE_DESCRIPTOR Descriptor
+```
+void WdfCmResourceListRemoveByDescriptor(
+  WDFCMRESLIST                    List,
+  PCM_PARTIAL_RESOURCE_DESCRIPTOR Descriptor
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A handle to a framework resource-list object that represents a list of hardware 
 
 `Descriptor`
 
-A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
+A pointer to an <a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
 
 
 ## Return Value
@@ -154,8 +154,8 @@ MyEvtDeviceRemoveAddedResources(
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 
 
 
-<a href="..\wdfresource\nf-wdfresource-wdfcmresourcelistremove.md">WdfCmResourceListRemove</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545704">WdfCmResourceListRemove</a>

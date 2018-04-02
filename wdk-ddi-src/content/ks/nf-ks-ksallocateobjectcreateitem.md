@@ -50,14 +50,14 @@ The <b>KsAllocateObjectCreateItem</b> function allocates a slot for the specifie
 
 ## Syntax
 
-````
-NTSTATUS KsAllocateObjectCreateItem(
-  _In_     KSDEVICE_HEADER       Header,
-  _In_     PKSOBJECT_CREATE_ITEM CreateItem,
-  _In_     BOOLEAN               AllocateEntry,
-  _In_opt_ PFNKSITEMFREECALLBACK ItemFreeCallback
+```
+KSDDKAPI NTSTATUS KsAllocateObjectCreateItem(
+  KSDEVICE_HEADER       Header,
+  PKSOBJECT_CREATE_ITEM CreateItem,
+  BOOLEAN               AllocateEntry,
+  PFNKSITEMFREECALLBACK ItemFreeCallback
 );
-````
+```
 
 ## Parameters
 

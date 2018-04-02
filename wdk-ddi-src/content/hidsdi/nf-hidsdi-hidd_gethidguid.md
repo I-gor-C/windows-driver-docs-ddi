@@ -49,11 +49,11 @@ The <b>HidD_GetHidGuid</b> routine returns the <a href="https://msdn.microsoft.c
 
 ## Syntax
 
-````
-void __stdcall HidD_GetHidGuid(
-  _Out_ LPGUID HidGuid
+```
+void HidD_GetHidGuid(
+  LPGUID HidGuid
 );
-````
+```
 
 ## Parameters
 
@@ -83,4 +83,4 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549186">IoGetDeviceInterfaces</a>

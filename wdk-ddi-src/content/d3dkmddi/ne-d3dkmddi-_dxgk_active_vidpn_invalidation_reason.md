@@ -7,7 +7,7 @@ old-location: display\dxgk_active_vidpn_invalidation_reason.htm
 old-project: display
 ms.assetid: e1f33307-1bb0-4cdd-aa47-954f6e551582
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_ACTIVE_VIDPN_INVALIDATION_REASON, DXGK_ACTIVE_VIDPN_INVALIDATION_REASON enumeration [Display Devices], DXGK_AVIR_HOTKEY, DXGK_AVIR_UNINITIALIZED, DXGK_AVIR_USERMODE, DmEnums_9a263431-3cae-4e33-a2f0-310ec88c1343.xml, _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON, d3dkmddi/DXGK_ACTIVE_VIDPN_INVALIDATION_REASON, d3dkmddi/DXGK_AVIR_HOTKEY, d3dkmddi/DXGK_AVIR_UNINITIALIZED, d3dkmddi/DXGK_AVIR_USERMODE, display.dxgk_active_vidpn_invalidation_reason
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: DXGK_ACTIVE_VIDPN_INVALIDATION_REASON
 The DXGK_ACTIVE_VIDPN_INVALIDATION_REASON enumeration is used to indicate the reason why an active VidPN is invalidated and a new VidPN is requested.
 
 ## Syntax
-````
-typedef enum _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON { 
-  DXGK_AVIR_UNINITIALIZED  = DXGK_RFVR_UNINITIALIZED,
-  DXGK_AVIR_HOTKEY         = DXGK_RFVR_HOTKEY,
-  DXGK_AVIR_USERMODE       = DXGK_RFVR_USERMODE
+```
+typedef enum _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON {
+  DXGK_AVIR_UNINITIALIZED  ,
+  DXGK_AVIR_HOTKEY         ,
+  DXGK_AVIR_USERMODE
 } DXGK_ACTIVE_VIDPN_INVALIDATION_REASON;
-````
+```
 
 ## Constants
 
@@ -71,7 +71,7 @@ typedef enum _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON {
             
                 <tr>
                     <td>DXGK_AVIR_USERMODE</td>
-                    <td>Indicates that a call to the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtinvalidateactivevidpn.md">D3DKMTInvalidateActiveVidPn</a> function has been made in user mode.</td>
+                    <td>Indicates that a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547023">D3DKMTInvalidateActiveVidPn</a> function has been made in user mode.</td>
                 </tr>
 </table>
 
@@ -84,4 +84,4 @@ typedef enum _DXGK_ACTIVE_VIDPN_INVALIDATION_REASON {
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtinvalidateactivevidpn.md">D3DKMTInvalidateActiveVidPN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547023">D3DKMTInvalidateActiveVidPN</a>

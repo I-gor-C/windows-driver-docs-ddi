@@ -47,12 +47,12 @@ req.typenames: CMP_PLUG_LOCATION
 This enumeration specifies the location of a plug.
 
 ## Syntax
-````
-typedef enum  { 
-  CMP_PlugLocal   = 0,
+```
+typedef enum CMP_PLUG_LOCATION {
+  CMP_PlugLocal   ,
   CMP_PlugRemote
-} CMP_PLUG_LOCATION;
-````
+} ;
+```
 
 ## Constants
 

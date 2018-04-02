@@ -7,7 +7,7 @@ old-location: netvista\ndisifregisterinterface.htm
 old-project: netvista
 ms.assetid: d0b0ada7-afb1-4cb7-ada6-7c5c7abe7d19
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisIfRegisterInterface, NdisIfRegisterInterface function [Network Drivers Starting with Windows Vista], ndis/NdisIfRegisterInterface, net_if_functions_ref_baca325c-667d-4472-9c91-dbc8fd41d033.xml, netvista.ndisifregisterinterface
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,15 +51,15 @@ The
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisIfRegisterInterface(
-  _In_  NDIS_HANDLE         NdisProviderHandle,
-  _In_  NET_LUID            NetLuid,
-  _In_  NDIS_HANDLE         ProviderIfContext,
-  _In_  PNET_IF_INFORMATION pIfInfo,
-  _Out_ PNET_IFINDEX        pIfIndex
+  NDIS_HANDLE         NdisProviderHandle,
+  NET_LUID            NetLuid,
+  NDIS_HANDLE         ProviderIfContext,
+  PNET_IF_INFORMATION pIfInfo,
+  PNET_IFINDEX        pfIndex
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ NDIS_STATUS NdisIfRegisterInterface(
 
 A handle that identifies the network interface provider that is registering the interface. The
      caller obtained this handle from a previous call to the 
-     <a href="..\ndis\nf-ndis-ndisifregisterprovider.md">
+     <a href="https://msdn.microsoft.com/1624426b-9e67-4aa2-83d8-f1e6fa484858">
      NdisIfRegisterProvider</a> function.
 
 `NetLuid`
@@ -89,7 +89,7 @@ A handle to a caller-allocated context area that is associated with the interfac
 `pIfInfo`
 
 A pointer to a caller-allocated 
-     <a href="..\ndis\ns-ndis-_net_if_information.md">NET_IF_INFORMATION</a> structure that
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568743">NET_IF_INFORMATION</a> structure that
      provides information about the interface. This structure contains information that remains constant
      while the interface exists.
 
@@ -170,7 +170,7 @@ Whenever a computer restarts, NDIS starts with an empty list of registered netwo
 The method for detecting or starting an interface is application dependent. For example, if an LBFO
     MUX intermediate driver is an interface provider, that driver might register an internal interface when
     NDIS calls the driver's 
-    <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a> function
+    <a href="https://msdn.microsoft.com/1958722e-012e-4110-a82c-751744bcf9b5">ProtocolBindAdapterEx</a> function
     for the first underlying miniport adapter.
 
 An interface provider can put information about an interface in persistent storage and restore the
@@ -193,7 +193,7 @@ NDIS might not return the same interface index every time a provider registers a
 
 To indicate that an interface should be removed from the list of known interfaces on the computer, an
     interface provider calls the 
-    <a href="..\ndis\nf-ndis-ndisifderegisterinterface.md">
+    <a href="https://msdn.microsoft.com/696d0870-966e-44ac-859e-d530dd6c76b8">
     NdisIfDeregisterInterface</a> function, for example, because the interface has been uninstalled. .
 
 ## Requirements
@@ -208,24 +208,24 @@ To indicate that an interface should be removed from the list of known interface
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisifregisterprovider.md">NdisIfRegisterProvider</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisifderegisterinterface.md">NdisIfDeregisterInterface</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565890">NDIS_MAKE_NET_LUID</a>
 
 
 
-<a href="..\ndis\ns-ndis-_net_if_information.md">NET_IF_INFORMATION</a>
-
-
-
-<a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568743">NET_IF_INFORMATION</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562700">NdisIfDeregisterInterface</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562716">NdisIfRegisterProvider</a>
+
+
+
+<a href="https://msdn.microsoft.com/1958722e-012e-4110-a82c-751744bcf9b5">ProtocolBindAdapterEx</a>

@@ -7,7 +7,7 @@ old-location: display\dxgk_recommendvidpntopology_reason.htm
 old-project: display
 ms.assetid: 2a67a119-863b-4cde-9308-e4862823bad1
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, DXGK_RECOMMENDVIDPNTOPOLOGY_REASON enumeration [Display Devices], DXGK_RVT_AUGMENTATION_LKGOVERRIDE, DXGK_RVT_AUGMENTATION_NOLKG, DXGK_RVT_INITIALIZATION_LKGOVERRIDE, DXGK_RVT_INITIALIZATION_NOLKG, DXGK_RVT_UNINITIALIZED, DmEnums_b03f6fe2-5501-45ef-b841-48c6c3cc729a.xml, _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, d3dkmddi/DXGK_RECOMMENDVIDPNTOPOLOGY_REASON, d3dkmddi/DXGK_RVT_AUGMENTATION_LKGOVERRIDE, d3dkmddi/DXGK_RVT_AUGMENTATION_NOLKG, d3dkmddi/DXGK_RVT_INITIALIZATION_LKGOVERRIDE, d3dkmddi/DXGK_RVT_INITIALIZATION_NOLKG, d3dkmddi/DXGK_RVT_UNINITIALIZED, display.dxgk_recommendvidpntopology_reason
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DXGK_RECOMMENDVIDPNTOPOLOGY_REASON
 ---
 
 # _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON Enumeration
-The <b>DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</b> enumeration indicates the reason for calling the display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_recommendvidpntopology.md">DxgkDdiRecommendVidPnTopology</a> function.
+The <b>DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</b> enumeration indicates the reason for calling the display miniport driver's <a href="https://msdn.microsoft.com/a7c31d2c-3893-4d25-837d-d4650aeb1cd1">DxgkDdiRecommendVidPnTopology</a> function.
 
 ## Syntax
-````
-typedef enum _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON { 
-  DXGK_RVT_UNINITIALIZED               = 0,
-  DXGK_RVT_INITIALIZATION_NOLKG        = 1,
-  DXGK_RVT_AUGMENTATION_NOLKG          = 2,
-  DXGK_RVT_AUGMENTATION_LKGOVERRIDE    = 3,
-  DXGK_RVT_INITIALIZATION_LKGOVERRIDE  = 4
+```
+typedef enum _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON {
+  DXGK_RVT_UNINITIALIZED               ,
+  DXGK_RVT_INITIALIZATION_NOLKG        ,
+  DXGK_RVT_AUGMENTATION_NOLKG          ,
+  DXGK_RVT_AUGMENTATION_LKGOVERRIDE    ,
+  DXGK_RVT_INITIALIZATION_LKGOVERRIDE
 } DXGK_RECOMMENDVIDPNTOPOLOGY_REASON;
-````
+```
 
 ## Constants
 
@@ -63,7 +63,7 @@ typedef enum _DXGK_RECOMMENDVIDPNTOPOLOGY_REASON {
             
                 <tr>
                     <td>DXGK_RVT_UNINITIALIZED</td>
-                    <td>Indicates that a variable of type <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_recommendvidpntopology_reason.md">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a> has not yet been assigned a meaningful value.</td>
+                    <td>Indicates that a variable of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562023">DXGK_RECOMMENDVIDPNTOPOLOGY_REASON</a> has not yet been assigned a meaningful value.</td>
                 </tr>
             
                 <tr>

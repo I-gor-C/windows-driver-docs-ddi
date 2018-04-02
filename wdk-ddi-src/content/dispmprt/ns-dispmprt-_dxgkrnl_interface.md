@@ -7,7 +7,7 @@ old-location: display\dxgkrnl_interface2.htm
 old-project: display
 ms.assetid: d97d3ec6-aaa5-4f4a-a39f-42c09473b18e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PDXGKRNL_INTERFACE, DXGKDDI_INTERFACE_VERSION_VISTA, DXGKDDI_INTERFACE_VERSION_VISTA_SP1, DXGKDDI_INTERFACE_VERSION_VISTA_WIN7, DXGKDDI_INTERFACE_VERSION_WIN8, DXGKRNL_INTERFACE, DXGKRNL_INTERFACE structure [Display Devices], DmStructs_86ab8b5f-f30b-4ad3-ac4d-34fc3a864f27.xml, PDXGKRNL_INTERFACE, PDXGKRNL_INTERFACE structure pointer [Display Devices], _DXGKRNL_INTERFACE, display.dxgkrnl_interface2, dispmprt/DXGKRNL_INTERFACE, dispmprt/PDXGKRNL_INTERFACE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,51 +44,60 @@ req.typenames: DXGKRNL_INTERFACE, *PDXGKRNL_INTERFACE
 ---
 
 # _DXGKRNL_INTERFACE structure
-The <b>DXGKRNL_INTERFACE</b> structure contains a handle to a display adapter and  a set of function pointers. The functions are implemented by the display port driver and called by the display miniport driver. The display port driver provides the display miniport driver with the handle and function pointers by passing a <b>DXGKRNL_INTERFACE</b> structure to <a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>.
+The <b>DXGKRNL_INTERFACE</b> structure contains a handle to a display adapter and  a set of function pointers. The functions are implemented by the display port driver and called by the display miniport driver. The display port driver provides the display miniport driver with the handle and function pointers by passing a <b>DXGKRNL_INTERFACE</b> structure to <a href="https://msdn.microsoft.com/ffacbb39-2581-4207-841d-28ce57fbc64d">DxgkDdiStartDevice</a>.
 
 ## Syntax
-````
+```
 typedef struct _DXGKRNL_INTERFACE {
-  ULONG                                 Size;
-  ULONG                                 Version;
-  HANDLE                                DeviceHandle;
-  DXGKCB_EVAL_ACPI_METHOD               DxgkCbEvalAcpiMethod;
-  DXGKCB_GET_DEVICE_INFORMATION         DxgkCbGetDeviceInformation;
-  DXGKCB_INDICATE_CHILD_STATUS          DxgkCbIndicateChildStatus;
-  DXGKCB_MAP_MEMORY                     DxgkCbMapMemory;
-  DXGKCB_QUEUE_DPC                      DxgkCbQueueDpc;
-  DXGKCB_QUERY_SERVICES                 DxgkCbQueryServices;
-  DXGKCB_READ_DEVICE_SPACE              DxgkCbReadDeviceSpace;
-  DXGKCB_SYNCHRONIZE_EXECUTION          DxgkCbSynchronizeExecution;
-  DXGKCB_UNMAP_MEMORY                   DxgkCbUnmapMemory;
-  DXGKCB_WRITE_DEVICE_SPACE             DxgkCbWriteDeviceSpace;
-  DXGKCB_IS_DEVICE_PRESENT              DxgkCbIsDevicePresent;
-  DXGKCB_GETHANDLEDATA                  DxgkCbGetHandleData;
-  DXGKCB_GETHANDLEPARENT                DxgkCbGetHandleParent;
-  DXGKCB_ENUMHANDLECHILDREN             DxgkCbEnumHandleChildren;
-  DXGKCB_NOTIFY_INTERRUPT               DxgkCbNotifyInterrupt;
-  DXGKCB_NOTIFY_DPC                     DxgkCbNotifyDpc;
-  DXGKCB_QUERYVIDPNINTERFACE            DxgkCbQueryVidPnInterface;
-  DXGKCB_QUERYMONITORINTERFACE          DxgkCbQueryMonitorInterface;
-  DXGKCB_GETCAPTUREADDRESS              DxgkCbGetCaptureAddress;
-  DXGKCB_LOG_ETW_EVENT                  DxgkCbLogEtwEvent;
-  DXGKCB_EXCLUDE_ADAPTER_ACCESS         DxgkCbExcludeAdapterAccess;
-#if DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WIN8)
-  DXGKCB_CREATECONTEXTALLOCATION        DxgkCbCreateContextAllocation;
-  DXGKCB_DESTROYCONTEXTALLOCATION       DxgkCbDestroyContextAllocation;
-  DXGKCB_SETPOWERCOMPONENTACTIVE        DxgkCbSetPowerComponentActive;
-  DXGKCB_SETPOWERCOMPONENTIDLE          DxgkCbSetPowerComponentIdle;
-  DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP DxgkCbAcquirePostDisplayOwnership;
-  DXGKCB_POWERRUNTIMECONTROLREQUEST     DxgkCbPowerRuntimeControlRequest;
-  DXGKCB_SETPOWERCOMPONENTLATENCY       DxgkCbSetPowerComponentLatency;
-  DXGKCB_SETPOWERCOMPONENTRESIDENCY     DxgkCbSetPowerComponentResidency;
-  DXGKCB_COMPLETEFSTATETRANSITION       DxgkCbCompleteFStateTransition;
-#endif 
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3_M1)
-  DXGKCB_COMPLETEPSTATETRANSITION       DxgkCbCompletePStateTransition;
-#endif 
+  ULONG                                    Size;
+  ULONG                                    Version;
+  HANDLE                                   DeviceHandle;
+  DXGKCB_EVAL_ACPI_METHOD                  DxgkCbEvalAcpiMethod;
+  DXGKCB_GET_DEVICE_INFORMATION            DxgkCbGetDeviceInformation;
+  DXGKCB_INDICATE_CHILD_STATUS             DxgkCbIndicateChildStatus;
+  DXGKCB_MAP_MEMORY                        DxgkCbMapMemory;
+  DXGKCB_QUEUE_DPC                         DxgkCbQueueDpc;
+  DXGKCB_QUERY_SERVICES                    DxgkCbQueryServices;
+  DXGKCB_READ_DEVICE_SPACE                 DxgkCbReadDeviceSpace;
+  DXGKCB_SYNCHRONIZE_EXECUTION             DxgkCbSynchronizeExecution;
+  DXGKCB_UNMAP_MEMORY                      DxgkCbUnmapMemory;
+  DXGKCB_WRITE_DEVICE_SPACE                DxgkCbWriteDeviceSpace;
+  DXGKCB_IS_DEVICE_PRESENT                 DxgkCbIsDevicePresent;
+  DXGKCB_GETHANDLEDATA                     DxgkCbGetHandleData;
+  DXGKCB_GETHANDLEPARENT                   DxgkCbGetHandleParent;
+  DXGKCB_ENUMHANDLECHILDREN                DxgkCbEnumHandleChildren;
+  DXGKCB_NOTIFY_INTERRUPT                  DxgkCbNotifyInterrupt;
+  DXGKCB_NOTIFY_DPC                        DxgkCbNotifyDpc;
+  DXGKCB_QUERYVIDPNINTERFACE               DxgkCbQueryVidPnInterface;
+  DXGKCB_QUERYMONITORINTERFACE             DxgkCbQueryMonitorInterface;
+  DXGKCB_GETCAPTUREADDRESS                 DxgkCbGetCaptureAddress;
+  DXGKCB_LOG_ETW_EVENT                     DxgkCbLogEtwEvent;
+  DXGKCB_EXCLUDE_ADAPTER_ACCESS            DxgkCbExcludeAdapterAccess;
+  DXGKCB_CREATECONTEXTALLOCATION           DxgkCbCreateContextAllocation;
+  DXGKCB_DESTROYCONTEXTALLOCATION          DxgkCbDestroyContextAllocation;
+  DXGKCB_SETPOWERCOMPONENTACTIVE           DxgkCbSetPowerComponentActive;
+  DXGKCB_SETPOWERCOMPONENTIDLE             DxgkCbSetPowerComponentIdle;
+  DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP    DxgkCbAcquirePostDisplayOwnership;
+  DXGKCB_POWERRUNTIMECONTROLREQUEST        DxgkCbPowerRuntimeControlRequest;
+  DXGKCB_SETPOWERCOMPONENTLATENCY          DxgkCbSetPowerComponentLatency;
+  DXGKCB_SETPOWERCOMPONENTRESIDENCY        DxgkCbSetPowerComponentResidency;
+  DXGKCB_COMPLETEFSTATETRANSITION          DxgkCbCompleteFStateTransition;
+  DXGKCB_COMPLETEPSTATETRANSITION          DxgkCbCompletePStateTransition;
+  DXGKCB_MAPCONTEXTALLOCATION              DxgkCbMapContextAllocation;
+  DXGKCB_UPDATECONTEXTALLOCATION           DxgkCbUpdateContextAllocation;
+  DXGKCB_RESERVEGPUVIRTUALADDRESSRANGE     DxgkCbReserveGpuVirtualAddressRange;
+  DXGKCB_ACQUIREHANDLEDATA                 DxgkCbAcquireHandleData;
+  DXGKCB_RELEASEHANDLEDATA                 DxgkCbReleaseHandleData;
+  DXGKCB_HARDWARECONTENTPROTECTIONTEARDOWN DxgkCbHardwareContentProtectionTeardown;
+  DXGKCB_MULTIPLANEOVERLAYDISABLED         DxgkCbMultiPlaneOverlayDisabled;
+  DXGKCB_DXGKCB_MITIGATEDRANGEUPDATE       DxgkCbMitigatedRangeUpdate;
+  DXGKCB_INVALIDATEHWCONTEXT               DxgkCbInvalidateHwContext;
+  DXGKCB_INDICATE_CONNECTOR_CHANGE         DxgkCbIndicateConnectorChange;
+  DXGKCB_UNBLOCKUEFIFRAMEBUFFERRANGES      DxgkCbUnblockUEFIFrameBufferRanges;
+  DXGKCB_ACQUIRE_POST_DISPLAY_OWNERSHIP2   DxgkCbAcquirePostDisplayOwnership2;
+  DXGKCB_SETPROTECTEDSESSIONSTATUS         DxgkCbSetProtectedSessionStatus;
 } DXGKRNL_INTERFACE, *PDXGKRNL_INTERFACE;
-````
+```
 
 ## Members
 
@@ -159,109 +168,109 @@ A handle, generated by the display port driver, that represents a display adapte
 
 `DxgkCbEvalAcpiMethod`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_eval_acpi_method.md">DxgkCbEvalAcpiMethod</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/ce54cf4e-5b50-4142-b3c7-ff29b7bdbb35">DxgkCbEvalAcpiMethod</a> function.
 
 `DxgkCbGetDeviceInformation`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_get_device_information.md">DxgkCbGetDeviceInformation</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/cb627eab-93b9-49c5-bd35-4a57220366e7">DxgkCbGetDeviceInformation</a> function.
 
 `DxgkCbIndicateChildStatus`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_indicate_child_status.md">DxgkCbIndicateChildStatus</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/780a8867-bba1-4b1b-a941-b55bfe087b7b">DxgkCbIndicateChildStatus</a> function.
 
 `DxgkCbMapMemory`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_map_memory.md">DxgkCbMapMemory</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/916a4d1d-0c40-4125-89ae-488251b04810">DxgkCbMapMemory</a> function.
 
 `DxgkCbQueueDpc`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_queue_dpc.md">DxgkCbQueueDpc</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/c8c26675-8b87-4818-ad51-4e0a341965d0">DxgkCbQueueDpc</a> function.
 
 `DxgkCbQueryServices`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_query_services.md">DxgkCbQueryServices</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/0ce5df90-2019-4a92-97d6-0218acc8b1e8">DxgkCbQueryServices</a> function.
 
 `DxgkCbReadDeviceSpace`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_read_device_space.md">DxgkCbReadDeviceSpace</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/118ea0b9-6463-4050-9f33-192a3d42fdce">DxgkCbReadDeviceSpace</a> function.
 
 `DxgkCbSynchronizeExecution`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_synchronize_execution.md">DxgkCbSynchronizeExecution</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/9c659319-d0a5-43a7-b9a9-9fad18397a09">DxgkCbSynchronizeExecution</a> function.
 
 `DxgkCbUnmapMemory`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_unmap_memory.md">DxgkCbUnmapMemory</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/71e8eb0e-599b-44cf-955b-828f6667edf6">DxgkCbUnmapMemory</a> function.
 
 `DxgkCbWriteDeviceSpace`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_write_device_space.md">DxgkCbWriteDeviceSpace</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/797d6b0c-91a4-4923-ad40-937cfde50067">DxgkCbWriteDeviceSpace</a> function.
 
 `DxgkCbIsDevicePresent`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_is_device_present.md">DxgkCbIsDevicePresent</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/82716a1a-e361-40ad-b3cd-bdcd3abc75f8">DxgkCbIsDevicePresent</a> function.
 
 `DxgkCbGetHandleData`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_gethandledata.md">DxgkCbGetHandleData</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/144429e5-34e6-4416-980e-2838e8f9e415">DxgkCbGetHandleData</a> function.
 
 `DxgkCbGetHandleParent`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_gethandleparent.md">DxgkCbGetHandleParent</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/db8e7a91-d62a-4d2f-ac21-266e365a352c">DxgkCbGetHandleParent</a> function.
 
 `DxgkCbEnumHandleChildren`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_enumhandlechildren.md">DxgkCbEnumHandleChildren</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/36307e63-9e94-4441-92c6-fd4293ea8fa9">DxgkCbEnumHandleChildren</a> function.
 
 `DxgkCbNotifyInterrupt`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/7968d26d-0195-463d-8954-e7ebef4f9dea">DxgkCbNotifyInterrupt</a> function.
 
 `DxgkCbNotifyDpc`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_dpc.md">DxgkCbNotifyDpc</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/3df3f7d4-3721-46f5-b9e3-19bd3d870292">DxgkCbNotifyDpc</a> function.
 
 `DxgkCbQueryVidPnInterface`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_queryvidpninterface.md">DxgkCbQueryVidPnInterface</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/649ce7fc-6852-43f3-b944-b2b64fcba874">DxgkCbQueryVidPnInterface</a> function.
 
 `DxgkCbQueryMonitorInterface`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_querymonitorinterface.md">DxgkCbQueryMonitorInterface</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/0c23e72d-3eb9-4511-a386-1dcc2f4910b7">DxgkCbQueryMonitorInterface</a> function.
 
 `DxgkCbGetCaptureAddress`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_getcaptureaddress.md">DxgkCbGetCaptureAddress</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/f87a5a5f-20d3-48cb-93f0-114eafe7238b">DxgkCbGetCaptureAddress</a> function.
 
 `DxgkCbLogEtwEvent`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_log_etw_event.md">DxgkCbLogEtwEvent</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/d869f933-4316-440e-899a-d46d72a0d10f">DxgkCbLogEtwEvent</a> function.
 
 `DxgkCbExcludeAdapterAccess`
 
-A pointer to the display port driver's <a href="..\dispmprt\nc-dispmprt-dxgkcb_exclude_adapter_access.md">DxgkCbExcludeAdapterAccess</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/e74e79fe-3b36-427e-ae0b-4072a0438c4e">DxgkCbExcludeAdapterAccess</a> function.
 
 `DxgkCbCreateContextAllocation`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/b6b142a4-20eb-4368-bd7f-8a25f4fe48ca">DxgkCbCreateContextAllocation</a> function.
 
 Supported starting with Windows 8.
 
 `DxgkCbDestroyContextAllocation`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_destroycontextallocation.md">DxgkCbDestroyContextAllocation</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/f613e019-0b6d-43fc-a802-a6cd3803a00d">DxgkCbDestroyContextAllocation</a> function.
 
 Supported starting with Windows 8.
 
 `DxgkCbSetPowerComponentActive`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentactive.md">DxgkCbSetPowerComponentActive</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/12008d80-8bcb-4289-97ea-d3325731a95f">DxgkCbSetPowerComponentActive</a> function.
 
 Supported starting with Windows 8.
 
 `DxgkCbSetPowerComponentIdle`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentidle.md">DxgkCbSetPowerComponentIdle</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/7746d09a-7fb6-4e5d-926c-4ded6830b06d">DxgkCbSetPowerComponentIdle</a> function.
 
 Supported starting with Windows 8.
 
@@ -273,25 +282,25 @@ Supported starting with Windows 8.
 
 `DxgkCbPowerRuntimeControlRequest`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_powerruntimecontrolrequest.md">DxgkCbPowerRuntimeControlRequest</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/28984c89-a1d9-4720-8c4c-2b2ce34e0899">DxgkCbPowerRuntimeControlRequest</a> function.
 
 Supported starting with Windows 8.
 
 `DxgkCbSetPowerComponentLatency`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentlatency.md">DxgkCbSetPowerComponentLatency</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/8FF86746-15A2-4BDF-98AF-23B5F9960DB9">DxgkCbSetPowerComponentLatency</a> function.
 
 Supported starting with Windows 8.
 
 `DxgkCbSetPowerComponentResidency`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_setpowercomponentresidency.md">DxgkCbSetPowerComponentResidency</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/9D567380-2E77-4A63-8674-E19A13C7B8BC">DxgkCbSetPowerComponentResidency</a> function.
 
 Supported starting with Windows 8.
 
 `DxgkCbCompleteFStateTransition`
 
-A pointer to the display port driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_completefstatetransition.md">DxgkCbCompleteFStateTransition</a> function.
+A pointer to the display port driver's <a href="https://msdn.microsoft.com/69a6d9bc-44a9-4204-988e-e11c80f67f28">DxgkCbCompleteFStateTransition</a> function.
 
 Supported starting with Windows 8.
 
@@ -362,12 +371,12 @@ Supported starting with Windows 8.1.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560940">Dxgkrnl Interface</a>
-
-
-
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_start_device.md">DxgkDdiStartDevice</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556157">DriverEntry of Display Miniport Driver</a>
+
+
+
+<a href="https://msdn.microsoft.com/ffacbb39-2581-4207-841d-28ce57fbc64d">DxgkDdiStartDevice</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560940">Dxgkrnl Interface</a>

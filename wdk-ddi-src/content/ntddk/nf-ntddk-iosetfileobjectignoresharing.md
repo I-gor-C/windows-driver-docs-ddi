@@ -7,7 +7,7 @@ old-location: ifsk\iosetfileobjectignoresharing.htm
 old-project: ifsk
 ms.assetid: 14863379-0639-4D24-AFA4-AE2196328B87
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: IoSetFileObjectIgnoreSharing, IoSetFileObjectIgnoreSharing routine [Installable File System Drivers], ifsk.iosetfileobjectignoresharing, ntddk/IoSetFileObjectIgnoreSharing
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>IoSetFileObjectIgnoreSharing</b> routine sets a file object to ignore fil
 
 ## Syntax
 
-````
+```
 NTSTATUS IoSetFileObjectIgnoreSharing(
-   PFILE_OBJECT FileObject
+  PFILE_OBJECT FileObject
 );
-````
+```
 
 ## Parameters
 
@@ -108,4 +108,4 @@ The option information was not created for <i>FileObject</i>. The status of shar
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-ioisfileobjectignoringsharing.md">IoIsFileObjectIgnoringSharing</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj126226">IoIsFileObjectIgnoringSharing</a>

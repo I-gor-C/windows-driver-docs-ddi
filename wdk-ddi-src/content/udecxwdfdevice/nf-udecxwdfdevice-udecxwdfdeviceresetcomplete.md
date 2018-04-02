@@ -7,7 +7,7 @@ old-location: buses\udecxwdfdeviceresetcomplete.htm
 old-project: usbref
 ms.assetid: B5873B19-17EF-4DF8-A3E7-7E7F6440A2B7
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UdecxWdfDeviceResetComplete, UdecxWdfDeviceResetComplete function [Buses], buses.udecxwdfdeviceresetcomplete, udecxwdfdevice/UdecxWdfDeviceResetComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,11 +51,11 @@ Informs the  USB device emulation  class extension (UdeCx) that the reset operat
 
 ## Syntax
 
-````
+```
 void UdecxWdfDeviceResetComplete(
-  _In_ WDFDEVICE Device
+  WDFDEVICE UdeWdfDevice
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ This function does not return a value.
 
 ## Remarks
 
-When the class extension calls the  <a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md">EVT_UDECX_WDF_DEVICE_RESET</a> callback function, that call is asynchronous. The client driver must call  <b>UdecxWdfDeviceResetComplete</b> to notify the class extension when the reset operation is complete with appropriate status information.
+When the class extension calls the  <a href="https://msdn.microsoft.com/library/windows/hardware/mt595920">EVT_UDECX_WDF_DEVICE_RESET</a> callback function, that call is asynchronous. The client driver must call  <b>UdecxWdfDeviceResetComplete</b> to notify the class extension when the reset operation is complete with appropriate status information.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,12 +84,12 @@ When the class extension calls the  <a href="..\udecxwdfdevice\nc-udecxwdfdevice
 
 ## See Also
 
-<a href="..\udecxwdfdevice\nc-udecxwdfdevice-evt_udecx_wdf_device_reset.md">EVT_UDECX_WDF_DEVICE_RESET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595920">EVT_UDECX_WDF_DEVICE_RESET</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>

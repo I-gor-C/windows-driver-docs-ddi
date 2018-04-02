@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# DisableEvents method
+# IPrinterExtensionManager::DisableEvents method
 Disallows events to be generated.
 
 ## Syntax
 
-````
+```
 HRESULT DisableEvents(
-    Void
+
 );
-````
+```
 
 ## Parameters
 
@@ -74,8 +74,8 @@ This method returns an <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensionmanager.md">IPrinterExtensionManager</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406706">EnableEvents</a>
+
+
+
+<a href="https://msdn.microsoft.com/918AE3F6-2AC4-42AD-9581-E87AD7E79BAD">IPrinterExtensionManager</a>

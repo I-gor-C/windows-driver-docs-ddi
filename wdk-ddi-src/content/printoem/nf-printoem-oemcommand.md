@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-DWORD APIENTRY OEMCommand(
-       PDEVOBJ                         pdevobj,
-       DWORD                           dwIndex,
-  _In_ _reads_bytes_opt_(cbSize) PVOID pData,
-       DWORD                           cbSize
+```
+DWORD OEMCommand(
+  PDEVOBJ pdevobj,
+  DWORD   dwIndex,
+  PVOID   pData,
+  DWORD   cbSize
 );
-````
+```
 
 ## Parameters
 

@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetFullItemName method
+# IWiaDrvItem::GetFullItemName method
 The <b>IWiaDrvItem::GetFullItemName</b> method gets the item's full name, including path information.
 
 ## Syntax
 
-````
+```
 HRESULT GetFullItemName(
-  [out, optional] BSTR *pbstrFullItemName
+  BSTR *__MIDL__IWiaDrvItem0002
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ If the method succeeds, it stores a pointer to the item's full name, including p
 
 If there is enough memory available, this method allocates a string containing the current item's full name including path information. The method returns a pointer to the string in <i>pbstrFullItemName</i>. The minidriver must deallocate the memory used by the string by calling the <b>SysFreeString</b> function, which is documented in the Microsoft Windows SDK documentation. 
 
-The name returned in <i>pbstrFullItemName </i>is the name associated with the item when the item was first created by the driver services library function <a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>.
+The name returned in <i>pbstrFullItemName </i>is the name associated with the item when the item was first created by the driver services library function <a href="https://msdn.microsoft.com/library/windows/hardware/ff549160">wiasCreateDrvItem</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,8 +82,8 @@ The name returned in <i>pbstrFullItemName </i>is the name associated with the it
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
+<a href="https://msdn.microsoft.com/0609e1b2-48df-413c-90bd-d7ddea26510a">IWiaDrvItem</a>
 
 
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549160">wiasCreateDrvItem</a>

@@ -7,7 +7,7 @@ old-location: buses\ioctl_usb_get_hub_capabilities.htm
 old-project: usbref
 ms.assetid: 2275b197-6298-470f-bb96-91088d763160
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_USB_GET_HUB_CAPABILITIES, IOCTL_USB_GET_HUB_CAPABILITIES control code [Buses], buses.ioctl_usb_get_hub_capabilities, usbioctl/IOCTL_USB_GET_HUB_CAPABILITIES, usbirp_0db4e801-763f-4d2f-aedf-2e3798fb191c.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 # IOCTL_USB_GET_HUB_CAPABILITIES IOCTL
-The <b>IOCTL_USB_GET_HUB_CAPABILITIES</b> I/O control request retrieves the capabilities of a USB hub. <b>Note</b>  This request is replaced by <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_hub_capabilities_ex.md">IOCTL_USB_GET_HUB_CAPABILITIES_EX</a> in Windows Vista.
+The <b>IOCTL_USB_GET_HUB_CAPABILITIES</b> I/O control request retrieves the capabilities of a USB hub. <b>Note</b>  This request is replaced by <a href="https://msdn.microsoft.com/library/windows/hardware/ff537314">IOCTL_USB_GET_HUB_CAPABILITIES_EX</a> in Windows Vista.
 
 
 
@@ -61,7 +61,7 @@ None.
 None.
 
 ### Output Buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a user-allocated <a href="..\usbioctl\ns-usbioctl-_usb_hub_capabilities.md">USB_HUB_CAPABILITIES</a> structure that describes the hub capabilities.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a user-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff539326">USB_HUB_CAPABILITIES</a> structure that describes the hub capabilities.
 
 ### Output Buffer Length
 The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member indicates the size, in bytes, of the output buffer in <b>SystemBuffer</b>. The output buffer size must be <code>&gt;= sizeof(USB_HUB_CAPABILITIES)</code>.
@@ -83,8 +83,8 @@ The USB stack sets <b>Irp-&gt;IoStatus.Status</b> to STATUS_SUCCESS if the reque
 
 ## See Also
 
-<a href="..\usbioctl\ns-usbioctl-_usb_hub_capabilities.md">USB_HUB_CAPABILITIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537314">IOCTL_USB_GET_HUB_CAPABILITIES_EX</a>
 
 
 
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_hub_capabilities_ex.md">IOCTL_USB_GET_HUB_CAPABILITIES_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539326">USB_HUB_CAPABILITIES</a>

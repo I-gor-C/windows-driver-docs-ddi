@@ -49,18 +49,18 @@ The <b>KsPinDataIntersectionEx</b> function handles the <a href="https://msdn.mi
 
 ## Syntax
 
-````
-NTSTATUS KsPinDataIntersectionEx(
-  _In_           PIRP                    Irp,
-  _In_           PKSP_PIN                Pin,
-  _Out_          PVOID                   Data,
-  _In_           ULONG                   DescriptorsCount,
-  _In_     const KSPIN_DESCRIPTOR        *Descriptor,
-  _In_           ULONG                   DescriptorSize,
-  _In_opt_       PFNKSINTERSECTHANDLEREX IntersectHandler,
-  _In_opt_       PVOID                   HandlerContext
+```
+KSDDKAPI NTSTATUS KsPinDataIntersectionEx(
+  PIRP                    Irp,
+  PKSP_PIN                Pin,
+  PVOID                   Data,
+  ULONG                   DescriptorsCount,
+  const KSPIN_DESCRIPTOR  *Descriptor,
+  ULONG                   DescriptorSize,
+  PFNKSINTERSECTHANDLEREX IntersectHandler,
+  PVOID                   HandlerContext
 );
-````
+```
 
 ## Parameters
 
@@ -90,7 +90,7 @@ Size of the descriptor structures, in bytes.
 
 `IntersectHandler`
 
-Contains the optional minidriver-defined <a href="..\ks\nc-ks-pfnksintersecthandlerex.md">KStrIntersectHandlerEx</a> callback function to compare data ranges.
+Contains the optional minidriver-defined <a href="https://msdn.microsoft.com/library/windows/hardware/ff567185">KStrIntersectHandlerEx</a> callback function to compare data ranges.
 
 `HandlerContext`
 
@@ -137,4 +137,4 @@ These differences excepted, <b>KsPinDataIntersection</b> and <b>KsPinDataInterse
 
 ## See Also
 
-<a href="..\ks\nc-ks-pfnksintersecthandlerex.md">KStrIntersectHandlerEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567185">KStrIntersectHandlerEx</a>

@@ -7,7 +7,7 @@ old-location: debugger\idebugregisters2.htm
 old-project: debugger
 ms.assetid: f92a75a9-6578-4bbf-8d80-680493b4d284
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugRegisters2, IDebugRegisters2 interface [Windows Debugging], IDebugRegisters2 interface [Windows Debugging], described, dbgeng/IDebugRegisters2, debugger.idebugregisters2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,4 +89,4 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugregisters.md">IDebugRegisters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550825">IDebugRegisters</a>

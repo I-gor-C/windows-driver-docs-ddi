@@ -7,7 +7,7 @@ old-location: debugger\disassemblewide.htm
 old-project: debugger
 ms.assetid: 7df1f9e5-dac2-490b-9eed-28f8bc4e677a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: DisassembleWide method [Windows Debugging], DisassembleWide method [Windows Debugging], IDebugControl4 interface, DisassembleWide,IDebugControl4.DisassembleWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], DisassembleWide method, IDebugControl4::DisassembleWide, dbgeng/IDebugControl4::DisassembleWide, debugger.disassemblewide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# DisassembleWide method
+# IDebugControl4::DisassembleWide method
 The <b>DisassembleWide</b>  method disassembles a processor instruction in the target's memory.
 
 ## Syntax
 
-````
+```
 HRESULT DisassembleWide(
-  [in]            ULONG64  Offset,
-  [in]            ULONG    Flags,
-  [out, optional] PWSTR    Buffer,
-  [in]            ULONG    BufferSize,
-  [out, optional] PULONG   DisassemblySize,
-  [out]           PULONG64 EndOffset
+  ULONG64  Offset,
+  ULONG    Flags,
+  PWSTR    Buffer,
+  ULONG    BufferSize,
+  PULONG   DisassemblySize,
+  PULONG64 EndOffset
 );
-````
+```
 
 ## Parameters
 
@@ -136,16 +136,16 @@ For an overview of using assembly in debugger applications, see <a href="https:/
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/933a308c-61d1-4ca4-89c1-5749ba1b41c1">u (Unassemble)</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff538121">Assemble</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545605">GetAssemblyOptions</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
+
+
+
+<a href="https://msdn.microsoft.com/933a308c-61d1-4ca4-89c1-5749ba1b41c1">u (Unassemble)</a>

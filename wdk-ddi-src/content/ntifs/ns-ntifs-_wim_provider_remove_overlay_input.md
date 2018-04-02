@@ -7,7 +7,7 @@ old-location: ifsk\wim_provider_remove_overlay_input.htm
 old-project: ifsk
 ms.assetid: 8E228EA7-06ED-4BFB-AB15-E86334B9B0E8
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: "*PWIM_PROVIDER_REMOVE_OVERLAY_INPUT, PWIM_PROVIDER_ADD_OVERLAY_INPUT, PWIM_PROVIDER_ADD_OVERLAY_INPUT structure pointer [Installable File System Drivers], WIM_PROVIDER_ADD_OVERLAY_INPUT, WIM_PROVIDER_ADD_OVERLAY_INPUT structure [Installable File System Drivers], WIM_PROVIDER_REMOVE_OVERLAY_INPUT, WIM_PROVIDER_REMOVE_OVERLAY_INPUT structure [Installable File System Drivers], _WIM_PROVIDER_REMOVE_OVERLAY_INPUT, ifsk.wim_provider_remove_overlay_input, ntifs/PWIM_PROVIDER_ADD_OVERLAY_INPUT, ntifs/WIM_PROVIDER_REMOVE_OVERLAY_INPUT"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,11 +47,11 @@ req.typenames: WIM_PROVIDER_REMOVE_OVERLAY_INPUT, *PWIM_PROVIDER_REMOVE_OVERLAY_
 A Windows Image File (WIM) data source to remove from the WIM provider is specified in the <b>WIM_PROVIDER_REMOVE_OVERLAY_INPUT</b> structure.
 
 ## Syntax
-````
-typedef struct _WIM_PROVIDER_ADD_OVERLAY_INPUT {
+```
+typedef struct _WIM_PROVIDER_REMOVE_OVERLAY_INPUT {
   LARGE_INTEGER DataSourceId;
-} WIM_PROVIDER_ADD_OVERLAY_INPUT, *PWIM_PROVIDER_ADD_OVERLAY_INPUT;
-````
+} WIM_PROVIDER_REMOVE_OVERLAY_INPUT, *PWIM_PROVIDER_REMOVE_OVERLAY_INPUT;
+```
 
 ## Members
 
@@ -71,7 +71,7 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/dn632442">FSCTL
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632445">FSCTL_UPDATE_OVERLAY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn632437">FSCTL_ADD_OVERLAY</a>
 
 
 
@@ -83,4 +83,4 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/dn632442">FSCTL
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn632437">FSCTL_ADD_OVERLAY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn632445">FSCTL_UPDATE_OVERLAY</a>

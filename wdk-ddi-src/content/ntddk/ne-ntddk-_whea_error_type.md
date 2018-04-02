@@ -47,17 +47,17 @@ req.typenames: WHEA_ERROR_TYPE, *PWHEA_ERROR_TYPE
 The WHEA_ERROR_TYPE enumeration defines the different types of hardware components that can report a hardware error.
 
 ## Syntax
-````
-typedef enum _WHEA_ERROR_TYPE { 
-  WheaErrTypeProcessor   = 0,
-  WheaErrTypeMemory,
-  WheaErrTypePCIExpress,
-  WheaErrTypeNMI,
-  WheaErrTypePCIXBus,
-  WheaErrTypePCIXDevice,
+```
+typedef enum _WHEA_ERROR_TYPE {
+  WheaErrTypeProcessor   ,
+  WheaErrTypeMemory      ,
+  WheaErrTypePCIExpress  ,
+  WheaErrTypeNMI         ,
+  WheaErrTypePCIXBus     ,
+  WheaErrTypePCIXDevice  ,
   WheaErrTypeGeneric
 } WHEA_ERROR_TYPE, *PWHEA_ERROR_TYPE;
-````
+```
 
 ## Constants
 

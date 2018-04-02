@@ -7,7 +7,7 @@ old-location: audio\iminiportaudioenginenode_getdeviceformat.htm
 old-project: audio
 ms.assetid: 6EA01AE7-E5D5-4182-862D-2901185C2BF8
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: GetDeviceFormat method [Audio Devices], GetDeviceFormat method [Audio Devices], IMiniportAudioEngineNode interface, GetDeviceFormat,IMiniportAudioEngineNode.GetDeviceFormat, IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], GetDeviceFormat method, IMiniportAudioEngineNode::GetDeviceFormat, audio.iminiportaudioenginenode_getdeviceformat, portcls/IMiniportAudioEngineNode::GetDeviceFormat
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# GetDeviceFormat method
+# IMiniportAudioEngineNode::GetDeviceFormat method
 Gets the audio data format for an audio device.
 
 ## Syntax
 
-````
+```
 NTSTATUS GetDeviceFormat(
-  [in]  ULONG                     ulNodeId,
-  [out] KSDATAFORMAT_WAVEFORMATEX *pFormat,
-  [in]  ULONG                     ulBufferSize
+  ULONG                     ulNodeId,
+  KSDATAFORMAT_WAVEFORMATEX *pFormat,
+  ULONG                     ulBufferSize
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ The ID of the device node.
 
 `pFormat`
 
-A structure of type  <a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVEFORMATEX</a> that represents the audio data format for the device.
+A structure of type  <a href="https://msdn.microsoft.com/library/windows/hardware/ff537095">KSDATAFORMAT_WAVEFORMATEX</a> that represents the audio data format for the device.
 
 `ulBufferSize`
 
@@ -88,8 +88,8 @@ returns an appropriate error code.
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVEFORMATEX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302040">IMiniportAudioEngineNode</a>
 
 
 
-<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537095">KSDATAFORMAT_WAVEFORMATEX</a>

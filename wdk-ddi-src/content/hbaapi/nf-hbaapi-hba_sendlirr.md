@@ -7,7 +7,7 @@ old-location: storage\hba_sendlirr.htm
 old-project: storage
 ms.assetid: 2e38d297-1e26-4605-a242-3f0180ac0360
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_SendLIRR, HBA_SendLIRR routine [Storage Devices], fibreHBA_rtns_c9e05691-f605-4946-bb8c-ab317464523a.xml, hbaapi/HBA_SendLIRR, storage.hba_sendlirr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,23 +49,23 @@ The <b>HBA_SendLIRR</b> routine registers or de-registers a local (source) port 
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_SendLIRR(
-  _In_    HBA_HANDLE Handle,
-  _In_    HBA_WWN    SourceWWN,
-  _In_    HBA_WWN    DestWWN,
-  _In_    HBA_UINT8  Function,
-  _In_    HBA_UINT8  Type,
-  _Out_   void       *pRspBuffer,
-  _Inout_ HBA_UINT32 *RspBufferSize
+  IN HBA_HANDLE     Handle,
+  IN HBA_WWN        SourceWWN,
+  IN HBA_WWN        DestWWN,
+  IN HBA_UINT8      Function,
+  IN HBA_UINT8      Type,
+  OUT void          *pRspBuffer,
+  IN OUT HBA_UINT32 *pRspBufferSize
 );
-````
+```
 
 ## Parameters
 
 `Handle`
 
-Contains a value returned by the routine <a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a> that identifies the HBA through which to send the LIR request.
+Contains a value returned by the routine <a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a> that identifies the HBA through which to send the LIR request.
 
 `SourceWWN`
 
@@ -231,8 +231,8 @@ Returned if an unspecified error occurred that prevented the execution of the LI
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>

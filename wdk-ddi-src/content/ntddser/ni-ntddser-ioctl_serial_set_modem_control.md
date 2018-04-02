@@ -46,7 +46,7 @@ req.typenames: SD_REQUEST_FUNCTION
 # IOCTL_SERIAL_SET_MODEM_CONTROL IOCTL
 The <b>IOCTL_SERIAL_SET_MODEM_CONTROL</b> request sets the modem control register (MCR) in the UART. No parameter checking is done on the client-supplied register settings.
 
-To obtain the value of the MCR, a client can use an <a href="..\ntddser\ni-ntddser-ioctl_serial_get_modem_control.md">IOCTL_SERIAL_GET_MODEM_CONTROL</a> request.
+To obtain the value of the MCR, a client can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff546591">IOCTL_SERIAL_GET_MODEM_CONTROL</a> request.
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -86,4 +86,4 @@ For an example layout of an MCR, see the definition of the MCR bits (SERIAL_MCR_
 
 ## See Also
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_get_modem_control.md">IOCTL_SERIAL_GET_MODEM_CONTROL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546591">IOCTL_SERIAL_GET_MODEM_CONTROL</a>

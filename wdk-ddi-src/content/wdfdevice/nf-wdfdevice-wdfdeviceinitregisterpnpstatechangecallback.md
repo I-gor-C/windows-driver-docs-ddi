@@ -53,14 +53,14 @@ The <b>WdfDeviceInitRegisterPnpStateChangeCallback</b> method registers a driver
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDeviceInitRegisterPnpStateChangeCallback(
-  _In_ PWDFDEVICE_INIT                              DeviceInit,
-  _In_ WDF_DEVICE_PNP_STATE                         PnpState,
-  _In_ PFN_WDF_DEVICE_PNP_STATE_CHANGE_NOTIFICATION EvtDevicePnpStateChange,
-  _In_ ULONG                                        CallbackTypes
+  PWDFDEVICE_INIT                              DeviceInit,
+  WDF_DEVICE_PNP_STATE                         PnpState,
+  PFN_WDF_DEVICE_PNP_STATE_CHANGE_NOTIFICATION EvtDevicePnpStateChange,
+  ULONG                                        CallbackTypes
 );
-````
+```
 
 ## Parameters
 
@@ -70,15 +70,15 @@ A caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windo
 
 `PnpState`
 
-A <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_pnp_state.md">WDF_DEVICE_PNP_STATE</a> enumerator that identifies the Plug and Play machine state for which the driver is requesting notification.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551262">WDF_DEVICE_PNP_STATE</a> enumerator that identifies the Plug and Play machine state for which the driver is requesting notification.
 
 `EvtDevicePnpStateChange`
 
-A caller-supplied pointer to the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_pnp_state_change_notification.md">EvtDevicePnpStateChange</a> event callback function.
+A caller-supplied pointer to the driver's <a href="https://msdn.microsoft.com/5f08d331-0e58-45a3-93a3-b5e9a40b5af3">EvtDevicePnpStateChange</a> event callback function.
 
 `CallbackTypes`
 
-An ORed combination of <a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notification_type.md">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerators.
+An ORed combination of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552513">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerators.
 
 
 ## Return Value
@@ -116,7 +116,7 @@ There is insufficient memory to complete the operation.
 
 ## Remarks
 
-If your driver calls <b>WdfDeviceInitRegisterPnpStateChangeCallback</b>, it must do so before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.
+If your driver calls <b>WdfDeviceInitRegisterPnpStateChangeCallback</b>, it must do so before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.
 
 For more information about <b>WdfDeviceInitRegisterPnpStateChangeCallback</b>, see <a href="https://msdn.microsoft.com/5ef307c6-0310-4a83-a63f-3a6d96782013">State Machines in the Framework</a>.
 
@@ -153,7 +153,7 @@ The following code example registers an event callback function that the framewo
 
 ## See Also
 
-<a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notification_type.md">WDF_STATE_NOTIFICATION_TYPE</a>
+<a href="https://msdn.microsoft.com/5f08d331-0e58-45a3-93a3-b5e9a40b5af3">EvtDevicePnpStateChange</a>
 
 
 
@@ -161,8 +161,8 @@ The following code example registers an event callback function that the framewo
 
 
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_pnp_state_change_notification.md">EvtDevicePnpStateChange</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551262">WDF_DEVICE_PNP_STATE</a>
 
 
 
-<a href="..\wdfdevice\ne-wdfdevice-_wdf_device_pnp_state.md">WDF_DEVICE_PNP_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552513">WDF_STATE_NOTIFICATION_TYPE</a>

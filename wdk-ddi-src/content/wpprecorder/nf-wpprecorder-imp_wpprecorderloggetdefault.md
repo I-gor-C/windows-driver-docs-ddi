@@ -50,9 +50,11 @@ The <b>WppRecorderLogGetDefault</b> method gets a handle to the default recorder
 
 ## Syntax
 
-````
-RECORDER_LOG imp_WppRecorderLogGetDefault(void);
-````
+```
+RECORDER_LOG imp_WppRecorderLogGetDefault(
+  PVOID WppCb
+);
+```
 
 ## Parameters
 
@@ -74,4 +76,4 @@ An opaque handle to the default log.
 
 ## See Also
 
-<a href="..\wpprecorder\nf-wpprecorder-imp_wpprecorderisdefaultlogavailable.md">WppRecorderIsDefaultLogAvailable</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn914614">WppRecorderIsDefaultLogAvailable</a>

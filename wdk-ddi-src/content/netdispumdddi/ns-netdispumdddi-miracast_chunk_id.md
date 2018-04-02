@@ -7,7 +7,7 @@ old-location: display\miracast_chunk_id.htm
 old-project: display
 ms.assetid: 30140530-63B6-4FE4-98A4-C6950D7D4D9A
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: MIRACAST_CHUNK_ID, MIRACAST_CHUNK_ID union [Display Devices], display.miracast_chunk_id, netdispumdddi/MIRACAST_CHUNK_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: MIRACAST_CHUNK_ID
 Stores info that identifies a wireless display (Miracast) encode chunk.
 
 ## Syntax
-````
-typedef union {
+```
+typedef struct MIRACAST_CHUNK_ID {
   struct {
-    UINT64 FrameNumber  :40;
-    UINT64 PartNumber  :24;
+    UINT64  : 40 FrameNumber;
+    UINT64  : 24 PartNumber;
   };
   UINT64 Value;
-} MIRACAST_CHUNK_ID;
-````
+};
+```
 
 ## Members
 

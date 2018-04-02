@@ -47,12 +47,12 @@ req.typenames: GET_LOCAL_HOST_INFO5, *PGET_LOCAL_HOST_INFO5
 The GET_LOCAL_HOST_INFO5 structure contains the data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> request using <b>u.GetLocalHostInformation.nLevel</b> = GET_HOST_CONFIG_ROM.
 
 ## Syntax
-````
+```
 typedef struct _GET_LOCAL_HOST_INFO5 {
   PVOID ConfigRom;
   ULONG ConfigRomLength;
 } GET_LOCAL_HOST_INFO5, *PGET_LOCAL_HOST_INFO5;
-````
+```
 
 ## Members
 

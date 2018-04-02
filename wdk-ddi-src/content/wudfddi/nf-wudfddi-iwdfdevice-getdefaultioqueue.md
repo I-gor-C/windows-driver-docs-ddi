@@ -45,24 +45,24 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetDefaultIoQueue method
+# IWDFDevice::GetDefaultIoQueue method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>GetDefaultIoQueue</b> method retrieves the interface of the default I/O queue for a device.
 
 ## Syntax
 
-````
+```
 void GetDefaultIoQueue(
-  [out] IWDFIoQueue **ppWdfIoQueue
+  IWDFIoQueue **ppWdfIoQueue
 );
-````
+```
 
 ## Parameters
 
 `ppWdfIoQueue`
 
-A pointer to a variable that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a> interface for the default I/O queue object.
+A pointer to a variable that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558943">IWDFIoQueue</a> interface for the default I/O queue object.
 
 
 ## Return Value
@@ -84,8 +84,8 @@ For more information about queue objects, see <a href="https://docs.microsoft.co
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfioqueue.md">IWDFIoQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556917">IWDFDevice</a>
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558943">IWDFIoQueue</a>

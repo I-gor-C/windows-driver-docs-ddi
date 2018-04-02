@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 The <b>SPB_TRANSFER_LIST</b> structure describes an <a href="https://msdn.microsoft.com/7415DB28-5E93-4F47-B169-7C652969D4C7">I/O transfer sequence</a>.
 
 ## Syntax
-````
-typedef struct _SPB_TRANSFER_LIST {
-  ULONG                   Size;
-  ULONG                   Reserved;
-  ULONG                   TransferCount;
+```
+typedef struct SPB_TRANSFER_LIST {
+  ULONG                   Size;
+  ULONG                   Reserved;
+  ULONG                   TransferCount;
   SPB_TRANSFER_LIST_ENTRY Transfers[1];
-} SPB_TRANSFER_LIST, *PSPB_TRANSFER_LIST;
-````
+} *PSPB_TRANSFER_LIST, SPB_TRANSFER_LIST;
+```
 
 ## Members
 
@@ -95,8 +95,8 @@ If your SPB controller driver supports custom I/O control (IOCTL) requests that 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh974774">IOCTL_SPB_FULL_DUPLEX</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406223">SPB_TRANSFER_LIST_ENTRY</a>

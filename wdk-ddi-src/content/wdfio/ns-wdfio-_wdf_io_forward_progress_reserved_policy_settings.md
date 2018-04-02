@@ -50,15 +50,15 @@ req.product: Windows 10 or later.
 The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS</b> structure contains information about specific actions that the framework can take when it receives an I/O request for your driver, if a low-memory situation exists.
 
 ## Syntax
-````
+```
 typedef struct _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS {
   union {
     struct {
       PFN_WDF_IO_WDM_IRP_FOR_FORWARD_PROGRESS EvtIoWdmIrpForForwardProgress;
-    } ExaminePolicy;
-  } Policy;
+    } ExaminePolicy;
+  } Policy;
 } WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS;
-````
+```
 
 ## Members
 
@@ -68,7 +68,7 @@ typedef struct _WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS {
 
 
 ## Remarks
-The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS</b> structure is used as a member type in the <a href="..\wdfio\ns-wdfio-_wdf_io_queue_forward_progress_policy.md">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.
+The <b>WDF_IO_FORWARD_PROGRESS_RESERVED_POLICY_SETTINGS</b> structure is used as a member type in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552364">WDF_IO_QUEUE_FORWARD_PROGRESS_POLICY</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlfastlock.htm
 old-project: ifsk
 ms.assetid: c3e209b5-9925-4911-8c42-0f15c1c710be
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlFastLock, FsRtlFastLock function [Installable File System Drivers], fsrtlref_c60db87b-ac5a-4c60-83f2-7381e0156806.xml, ifsk.fsrtlfastlock, ntifs/FsRtlFastLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,21 +49,21 @@ The <b>FsRtlFastLock</b> macro is used by file systems and filter drivers to req
 
 ## Syntax
 
-````
-BOOLEAN FsRtlFastLock(
-  _In_  PFILE_LOCK       FileLock,
-  _In_  PFILE_OBJECT     FileObject,
-  _In_  PLARGE_INTEGER   FileOffset,
-  _In_  PLARGE_INTEGER   Length,
-  _In_  PEPROCESS        ProcessId,
-  _In_  ULONG            Key,
-  _In_  BOOLEAN          FailImmediately,
-  _In_  BOOLEAN          ExclusiveLock,
-  _Out_ PIO_STATUS_BLOCK Iosb,
-  _In_  PVOID            Context,
-  _In_  BOOLEAN          AlreadySynchronized
+```
+void FsRtlFastLock(
+   A1,
+   A2,
+   A3,
+   A4,
+   A5,
+   A6,
+   A7,
+   A8,
+   A9,
+   A10,
+   A11
 );
-````
+```
 
 ## Parameters
 
@@ -131,8 +131,8 @@ A return value of <b>TRUE</b> indicates that the IO_STATUS_BLOCK structure point
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlinitializefilelock~r2.md">FsRtlInitializeFileLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545640">FsRtlAllocateFileLock</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlallocatefilelock~r1.md">FsRtlAllocateFileLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546122">FsRtlInitializeFileLock</a>

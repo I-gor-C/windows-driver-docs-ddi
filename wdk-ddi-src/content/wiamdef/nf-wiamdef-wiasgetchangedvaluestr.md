@@ -50,15 +50,15 @@ The <b>wiasGetChangedValueStr</b> function determines whether a property with a 
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasGetChangedValueStr(
-  _In_  BYTE                    *pWiasContext,
-  _In_  WIA_PROPERTY_CONTEXT    *pContext,
-        BOOL                    bNoValidation,
-        PROPID                  propID,
-  _Out_ WIAS_CHANGED_VALUE_INFO *pValInfo
+```
+HRESULT wiasGetChangedValueStr(
+  BYTE                    *pWiasContext,
+  WIA_PROPERTY_CONTEXT    *pContext,
+  BOOL                    bNoValidation,
+  PROPID                  propID,
+  WIAS_CHANGED_VALUE_INFO *pInfo
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ Pointer to a WIA item context.
 
 `pContext`
 
-Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a> structure that contains the current property context.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure that contains the current property context.
 
 `bNoValidation`
 
@@ -102,20 +102,20 @@ The driver should validate the property only after the driver has updated the va
 
 ## See Also
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_changed_value_info.md">WIAS_CHANGED_VALUE_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549535">WIAS_CHANGED_VALUE_INFO</a>
 
 
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvalueguid.md">wiasGetChangedValueGuid</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549200">wiasGetChangedValueFloat</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluefloat.md">wiasGetChangedValueFloat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549211">wiasGetChangedValueGuid</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluelong.md">wiasGetChangedValueLong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549214">wiasGetChangedValueLong</a>

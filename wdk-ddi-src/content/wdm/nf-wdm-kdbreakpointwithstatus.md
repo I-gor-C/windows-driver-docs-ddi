@@ -50,12 +50,11 @@ The <b>KdBreakPointWithStatus</b> macro breaks into the kernel debugger and send
 
 ## Syntax
 
-````
-NTSYSAPI VOID
-NTAPI KdBreakPointWithStatus(
-  _In_ ULONG Status
+```
+void KdBreakPointWithStatus(
+   s
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +69,7 @@ None
 
 ## Remarks
 
-<b>KdBreakPointWithStatus</b> is identical to the <a href="..\wdm\nf-wdm-dbgbreakpointwithstatus.md">DbgBreakPointWithStatus</a> routine in code that is compiled for a debug configuration. This routine has no effect if compiled in a release configuration.
+<b>KdBreakPointWithStatus</b> is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543629">DbgBreakPointWithStatus</a> routine in code that is compiled for a debug configuration. This routine has no effect if compiled in a release configuration.
 
 On x86 computers, the <i>Status</i> parameter is stored in the <b>eax</b> register. On computers that have register calling conventions, <i>Status</i> is stored in the first argument register.
 
@@ -87,15 +86,15 @@ In kernel mode, a break exception that is not handled will cause a bug check. Yo
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543626">DbgBreakPoint</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543629">DbgBreakPointWithStatus</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548063">KdBreakPoint</a>
-
-
-
-<a href="..\wdm\nf-wdm-dbgbreakpointwithstatus.md">DbgBreakPointWithStatus</a>
-
-
-
-<a href="..\wdm\nf-wdm-dbgbreakpoint.md">DbgBreakPoint</a>
 
 
 

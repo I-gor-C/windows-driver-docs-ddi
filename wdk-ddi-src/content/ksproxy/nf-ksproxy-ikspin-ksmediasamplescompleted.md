@@ -44,22 +44,22 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsMediaSamplesCompleted method
+# IKsPin::KsMediaSamplesCompleted method
 The <b>KsMediaSamplesCompleted</b> method informs a pin that a stream segment completed.
 
 ## Syntax
 
-````
+```
 HRESULT KsMediaSamplesCompleted(
-  [in] PKSSTREAM_SEGMENT StreamSegment
+  PKSSTREAM_SEGMENT StreamSegment
 );
-````
+```
 
 ## Parameters
 
 `StreamSegment`
 
-Pointer to a <a href="..\ksproxy\ns-ksproxy-_ksstream_segment.md">KSSTREAM_SEGMENT</a> structure that contains header information for a completed stream segment.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567141">KSSTREAM_SEGMENT</a> structure that contains header information for a completed stream segment.
 
 
 ## Return Value
@@ -80,7 +80,7 @@ When a client calls the <a href="https://msdn.microsoft.com/library/windows/hard
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>
 
 
 
@@ -88,4 +88,4 @@ When a client calls the <a href="https://msdn.microsoft.com/library/windows/hard
 
 
 
-<a href="..\ksproxy\ns-ksproxy-_ksstream_segment.md">KSSTREAM_SEGMENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567141">KSSTREAM_SEGMENT</a>

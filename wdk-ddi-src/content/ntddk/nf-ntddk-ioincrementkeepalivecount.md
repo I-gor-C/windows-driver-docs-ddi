@@ -7,7 +7,7 @@ old-location: kernel\ioincrementkeepalivecount.htm
 old-project: kernel
 ms.assetid: A80754BD-0F23-4EE9-898F-30743AA82C72
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoIncrementKeepAliveCount, IoIncrementKeepAliveCount routine [Kernel-Mode Driver Architecture], kernel.ioincrementkeepalivecount, ntddk/IoIncrementKeepAliveCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>IoIncrementKeepAliveCount</b> routine increments a reference count associ
 
 ## Syntax
 
-````
-NTSTATUS IoIncrementKeepAliveCount(
-  _Inout_ PFILE_OBJECT FileObject,
-  _Inout_ PEPROCESS    Process
+```
+NTKERNELAPI NTSTATUS IoIncrementKeepAliveCount(
+  PFILE_OBJECT FileObject,
+  PEPROCESS    Process
 );
-````
+```
 
 ## Parameters
 
@@ -83,4 +83,4 @@ This routine returns <b>STATUS_SUCCESS</b> on success, or the appropriate <b>NTS
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-iodecrementkeepalivecount.md">IoDecrementKeepAliveCount</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh780273">IoDecrementKeepAliveCount</a>

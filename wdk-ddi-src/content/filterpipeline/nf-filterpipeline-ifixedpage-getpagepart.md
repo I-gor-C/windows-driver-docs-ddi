@@ -44,17 +44,17 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetPagePart method
+# IFixedPage::GetPagePart method
 The <b>GetPagePart</b> method gets the images, thumbnails, fonts, and so on in a page by using the URI.
 
 ## Syntax
 
-````
+```
 HRESULT GetPagePart(
-  [in]  const wchar_t  *uri,
-  [out]       IUnknown **ppUnk
+  const wchar_t *uri,
+  IUnknown      **ppUnk
 );
-````
+```
 
 ## Parameters
 

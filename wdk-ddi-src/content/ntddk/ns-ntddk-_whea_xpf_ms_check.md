@@ -47,27 +47,27 @@ req.typenames: WHEA_XPF_MS_CHECK, *PWHEA_XPF_MS_CHECK
 The WHEA_XPF_MS_CHECK union describes microarchitecture-specific error information for an x86 or x64 processor.
 
 ## Syntax
-````
-typedef union _WHEA_XPF_MS_CHECK {
+```
+typedef struct _WHEA_XPF_MS_CHECK {
   struct {
-    ULONGLONG ErrorTypeValid  :1;
-    ULONGLONG ProcessorContextCorruptValid  :1;
-    ULONGLONG UncorrectedValid  :1;
-    ULONGLONG PreciseIPValid  :1;
-    ULONGLONG RestartableIPValid  :1;
-    ULONGLONG OverflowValid  :1;
-    ULONGLONG ReservedValid  :10;
-    ULONGLONG ErrorType  :3;
-    ULONGLONG ProcessorContextCorrupt  :1;
-    ULONGLONG Uncorrected  :1;
-    ULONGLONG PreciseIP  :1;
-    ULONGLONG RestartableIP  :1;
-    ULONGLONG Overflow  :1;
-    ULONGLONG Reserved  :40;
-  };
+    ULONGLONG  : 3  ErrorType;
+    ULONGLONG  : 1  ErrorTypeValid;
+    ULONGLONG  : 1  Overflow;
+    ULONGLONG  : 1  OverflowValid;
+    ULONGLONG  : 1  PreciseIP;
+    ULONGLONG  : 1  PreciseIPValid;
+    ULONGLONG  : 1  ProcessorContextCorrupt;
+    ULONGLONG  : 1  ProcessorContextCorruptValid;
+    ULONGLONG  : 40 Reserved;
+    ULONGLONG  : 10 ReservedValue;
+    ULONGLONG  : 1  RestartableIP;
+    ULONGLONG  : 1  RestartableIPValid;
+    ULONGLONG  : 1  Uncorrected;
+    ULONGLONG  : 1  UncorrectedValid;
+  } DUMMYSTRUCTNAME;
   ULONGLONG XpfMsCheck;
-} WHEA_XPF_MS_CHECK, *PWHEA_XPF_MS_CHECK;
-````
+} *PWHEA_XPF_MS_CHECK, WHEA_XPF_MS_CHECK;
+```
 
 ## Members
 
@@ -81,7 +81,7 @@ typedef union _WHEA_XPF_MS_CHECK {
 A ULONGLONG representation of the contents of the WHEA_XPF_MS_CHECK union.
 
 ## Remarks
-If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a> structure contains WHEA_MSCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_MS_CHECK union.
+If the <b>CheckInfoId</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560661">WHEA_XPF_PROCINFO</a> structure contains WHEA_MSCHECK_GUID, the <b>CheckInfo</b> member of the WHEA_XPF_PROCINFO structure contains a WHEA_XPF_MS_CHECK union.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,4 +91,4 @@ If the <b>CheckInfoId</b> member of a <a href="..\ntddk\ns-ntddk-_whea_xpf_proci
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_xpf_procinfo.md">WHEA_XPF_PROCINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560661">WHEA_XPF_PROCINFO</a>

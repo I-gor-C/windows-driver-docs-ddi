@@ -50,13 +50,13 @@ The <b>KsGenerateDataEvent</b> function generates one of the standard event noti
 
 ## Syntax
 
-````
-NTSTATUS KsGenerateDataEvent(
-  _In_ PKSEVENT_ENTRY EventEntry,
-  _In_ ULONG          DataSize,
-  _In_ PVOID          Data
+```
+KSDDKAPI NTSTATUS KsGenerateDataEvent(
+  PKSEVENT_ENTRY EventEntry,
+  ULONG          DataSize,
+  PVOID          Data
 );
-````
+```
 
 ## Parameters
 
@@ -92,4 +92,4 @@ This function is specifically for events that pass data back through a callback 
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksbuffer_item.md">KSBUFFER_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560992">KSBUFFER_ITEM</a>

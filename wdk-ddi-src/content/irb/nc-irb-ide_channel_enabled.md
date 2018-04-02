@@ -7,7 +7,7 @@ old-location: storage\atacontrollerchannelenabled.htm
 old-project: storage
 ms.assetid: 67713537-6a5b-4108-8af9-fb5d16844b03
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaControllerChannelEnabled, AtaControllerChannelEnabled routine [Storage Devices], IDE_CHANNEL_ENABLED, atartns_4beac2ec-b776-4af2-9acc-b236e0adc364.xml, irb/AtaControllerChannelEnabled, storage.atacontrollerchannelenabled
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ api_name:
 -	AtaControllerChannelEnabled
 product: Windows
 targetos: Windows
-req.typenames: LUID
+req.typenames: IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS
 ---
 
 
@@ -73,7 +73,7 @@ A pointer to the controller extension.
 
 ## Return Value
 
-<b><i>AtaControllerChannelEnabled</i></b> returns an enumerator value of type <a href="..\irb\ne-irb-ata_channel_state.md">ATA_CHANNEL_STATE</a>, which can have any of the following values:
+<b><i>AtaControllerChannelEnabled</i></b> returns an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551308">ATA_CHANNEL_STATE</a>, which can have any of the following values:
 
 <table>
 <tr>
@@ -125,7 +125,7 @@ The port driver calls the miniport driver's <b><i>AtaAdapterControl</i></b> rout
 
 </li>
 <li>
-While the miniport driver processes the <b><i>AtaAdapterControl</i></b> routine with control action <b>IdeStart</b>, it initializes the <b>NumberOfChannels</b> member of <a href="..\irb\ns-irb-_ide_controller_configuration.md">IDE_CONTROLLER_CONFIGURATION</a> to indicate the number of channels that are enabled. 
+While the miniport driver processes the <b><i>AtaAdapterControl</i></b> routine with control action <b>IdeStart</b>, it initializes the <b>NumberOfChannels</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559036">IDE_CONTROLLER_CONFIGURATION</a> to indicate the number of channels that are enabled. 
 
 </li>
 <li>
@@ -145,4 +145,4 @@ This routine should not have steps that are critical to the operation of the con
 
 ## See Also
 
-<a href="..\irb\ns-irb-_ide_controller_configuration.md">IDE_CONTROLLER_CONFIGURATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559036">IDE_CONTROLLER_CONFIGURATION</a>

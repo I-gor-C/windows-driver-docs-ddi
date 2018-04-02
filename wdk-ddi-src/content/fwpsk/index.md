@@ -2,7 +2,7 @@
 UID: NA:fwpsk
 ms.assetid: 00f1dfc4-856a-3863-bd1f-7de65b87a71b
 ms.author: windowsdriverdev
-ms.date: 03/13/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -185,7 +185,7 @@ fwpsk.h contains the following programming interfaces:
 | [FwpsInjectionHandleCreate0](nf-fwpsk-fwpsinjectionhandlecreate0.md) | The FwpsInjectionHandleCreate0 function creates a handle that can be used by packet injection functions to inject packet or stream data into the TCP/IP network stack and by the FwpsQueryPacketInjectionState0 function to query the packet injection state.Note  FwpsInjectionHandleCreate0 is a specific version of FwpsInjectionHandleCreate. See WFP Version-Independent Names and Targeting Specific Versions of Windows for more information. |
 | [FwpsInjectionHandleDestroy0](nf-fwpsk-fwpsinjectionhandledestroy0.md) | The FwpsInjectionHandleDestroy0 function destroys an injection handle that was previously created by calling the FwpsInjectionHandleCreate0 function.Note  FwpsInjectionHandleDestroy0 is a specific version of FwpsInjectionHandleDestroy. |
 | [FwpsInjectMacReceiveAsync0](nf-fwpsk-fwpsinjectmacreceiveasync0.md) | The FwpsInjectMacReceiveAsync0 function can reinject a previously absorbed media access control (MAC) frame (or a clone of the frame) back to the layer 2 inbound data path it was intercepted from, or inject an invented MAC frame. |
-| [FwpsInjectMacSendAsync0](nf-fwpsk-fwpsinjectmacsendasync0.md) | The FwpsInjectMacSendAsync0 function can reinject a previously absorbed media access control (MAC) frame (or a clone of the frame) back to the layer 2 outbound data path it was intercepted from, or inject an invented MAC frame. |
+| [FwpsInjectMacSendAsync0](nf-fwpsk-fwpsinjectmacsendasync0.md) | The FwpsInjectMacReceiveAsync0 function can reinject a previously absorbed media access control (MAC) frame (or a clone of the frame) back to the layer 2 inbound data path it was intercepted from, or inject an invented MAC frame. |
 | [FwpsInjectNetworkReceiveAsync0](nf-fwpsk-fwpsinjectnetworkreceiveasync0.md) | The FwpsInjectNetworkReceiveAsync0 function injects packet data into the receive data path.Note  FwpsInjectNetworkReceiveAsync0 is a specific version of FwpsInjectNetworkReceiveAsync. |
 | [FwpsInjectNetworkSendAsync0](nf-fwpsk-fwpsinjectnetworksendasync0.md) | The FwpsInjectNetworkSendAsync0 function injects packet data into the send data path.Note  FwpsInjectNetworkSendAsync0 is a specific version of FwpsInjectNetworkSendAsync. |
 | [FwpsInjectTransportReceiveAsync0](nf-fwpsk-fwpsinjecttransportreceiveasync0.md) | The FwpsInjectTransportReceiveAsync0 function injects packet data from the transport, datagram data, or ICMP error layers into the receive data path.Note  FwpsInjectTransportReceiveAsync0 is a specific version of FwpsInjectTransportReceiveAsync. |

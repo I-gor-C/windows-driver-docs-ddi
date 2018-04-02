@@ -44,22 +44,22 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsSetCorrelatedPhysicalTime method
+# IKsClockPropertySet::KsSetCorrelatedPhysicalTime method
 The <b>KsSetCorrelatedPhysicalTime</b> method sets the physical time with the correlated system time on the underlying clock.
 
 ## Syntax
 
-````
+```
 HRESULT KsSetCorrelatedPhysicalTime(
-  [in] KSCORRELATED_TIME *CorrelatedTime
+  KSCORRELATED_TIME *CorrelatedTime
 );
-````
+```
 
 ## Parameters
 
 `CorrelatedTime`
 
-Pointer to a <a href="..\ks\ns-ks-kscorrelated_time.md">KSCORRELATED_TIME</a> structure that contains the physical clock time along with the correlated system time to which to set the underlying clock.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561033">KSCORRELATED_TIME</a> structure that contains the physical clock time along with the correlated system time to which to set the underlying clock.
 
 
 ## Return Value
@@ -78,12 +78,12 @@ The proxy uses the <a href="https://msdn.microsoft.com/library/windows/hardware/
 
 ## See Also
 
-<a href="..\ks\ns-ks-kscorrelated_time.md">KSCORRELATED_TIME</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559733">IKsClockPropertySet::KsGetCorrelatedPhysicalTime</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561033">KSCORRELATED_TIME</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564461">KSPROPERTY_CLOCK_CORRELATEDPHYSICALTIME</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559733">IKsClockPropertySet::KsGetCorrelatedPhysicalTime</a>

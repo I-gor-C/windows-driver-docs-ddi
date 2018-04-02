@@ -49,12 +49,12 @@ Called by the client driver to configure the LLCP parameters.
 
 ## Syntax
 
-````
+```
 NTSTATUS NfcCxSetLlcpConfig(
-   WDFDEVICE            Device,
-   PCNFC_CX_LLCP_CONFIG Config
+  WDFDEVICE            Device,
+  PCNFC_CX_LLCP_CONFIG Config
 );
-````
+```
 
 ## Parameters
 
@@ -64,7 +64,7 @@ A handle to a framework device object.
 
 `Config`
 
-A pointer to an <a href="..\nfccx\ns-nfccx-_nfc_cx_llcp_config.md">NFC_CX_LLCP_CONFIG</a> structure.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn905545">NFC_CX_LLCP_CONFIG</a> structure.
 
 
 ## Return Value

@@ -7,7 +7,7 @@ old-location: storage\ataportsetbusdata.htm
 old-project: storage
 ms.assetid: 5cc65ef9-7447-4775-bf5d-6dadd78f166c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortSetBusData, AtaPortSetBusData routine [Storage Devices], atartns_85424997-1f6e-4f48-98f0-e92a7312e62a.xml, irb/AtaPortSetBusData, storage.ataportsetbusdata
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,15 +51,14 @@ The <b>AtaPortSetBusData</b> routine stores the data at <i>Buffer </i>in the ind
 
 ## Syntax
 
-````
-ULONG AtaPortSetBusData(
-   IN PVOID ControllerExtension,
-   IN PVOID Buffer,
-   IN PVOID DataMask,
-   IN ULONG ConfigDataOffset,
-   IN ULONG BufferLength
+```
+_IRQL_requires_same_ ULONG AtaPortSetBusData(
+  PVOID ControllerExtension,
+  PVOID Buffer,
+  ULONG ConfigDataOffset,
+  ULONG BufferLength
 );
-````
+```
 
 ## Parameters
 
@@ -110,4 +109,4 @@ Specifies the length, in bytes, of the buffer.
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportgetbusdata.md">AtaPortGetBusData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550158">AtaPortGetBusData</a>

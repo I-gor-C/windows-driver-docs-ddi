@@ -47,12 +47,12 @@ req.typenames: ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER, *PACPI_MANIPULATE_GLOBAL_LOCK
 This topic describes the  <b>ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER</b> structure.
 
 ## Syntax
-````
+```
 typedef struct _ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER {
   ULONG Signature;
   PVOID LockObject;
 } ACPI_MANIPULATE_GLOBAL_LOCK_BUFFER, *PACPI_MANIPULATE_GLOBAL_LOCK_BUFFER;
-````
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: display\d3dddi_overlayinfoflags.htm
 old-project: display
 ms.assetid: ebf31c28-857b-4885-a910-16da5a011ce1
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_OVERLAYINFOFLAGS, D3DDDI_OVERLAYINFOFLAGS structure [Display Devices], D3D_other_Structs_3c20db45-e3b5-4e0e-96a6-d2171dbf309a.xml, _D3DDDI_OVERLAYINFOFLAGS, d3dumddi/D3DDDI_OVERLAYINFOFLAGS, display.d3dddi_overlayinfoflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,28 +47,28 @@ req.typenames: D3DDDI_OVERLAYINFOFLAGS
 The D3DDDI_OVERLAYINFOFLAGS structure identifies the type of overlay operation to perform.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDI_OVERLAYINFOFLAGS {
   union {
     struct {
-      UINT DstColorKey  :1;
-      UINT DstColorKeyRange  :1;
-      UINT SrcColorKey  :1;
-      UINT SrcColorKeyRange  :1;
-      UINT Bob  :1;
-      UINT Interleaved  :1;
-      UINT MirrorLeftRight  :1;
-      UINT MirrorUpDown  :1;
-      UINT Deinterlace  :1;
-      UINT LimitedRGB  :1;
-      UINT YCbCrBT709  :1;
-      UINT YCbCrxvYCC  :1;
-      UINT Reserved  :20;
+      UINT  : 1  DstColorKey;
+      UINT  : 1  DstColorKeyRange;
+      UINT  : 1  SrcColorKey;
+      UINT  : 1  SrcColorKeyRange;
+      UINT  : 1  Bob;
+      UINT  : 1  Interleaved;
+      UINT  : 1  MirrorLeftRight;
+      UINT  : 1  MirrorUpDown;
+      UINT  : 1  Deinterlace;
+      UINT  : 1  LimitedRGB;
+      UINT  : 1  YCbCrBT709;
+      UINT  : 1  YCbCrxvYCC;
+      UINT  : 20 Reserved;
     };
-    UINT   Value;
+    UINT Value;
   };
 } D3DDDI_OVERLAYINFOFLAGS;
-````
+```
 
 ## Members
 
@@ -82,4 +82,4 @@ typedef struct _D3DDDI_OVERLAYINFOFLAGS {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_overlayinfo.md">D3DDDI_OVERLAYINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544621">D3DDDI_OVERLAYINFO</a>

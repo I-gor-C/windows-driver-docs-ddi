@@ -55,12 +55,12 @@ The <b>WdfDeviceGetDeviceState</b> method retrieves the device state for a speci
 
 ## Syntax
 
-````
-VOID WdfDeviceGetDeviceState(
-  _In_  WDFDEVICE         Device,
-  _Out_ PWDF_DEVICE_STATE DeviceState
+```
+void WdfDeviceGetDeviceState(
+  WDFDEVICE         Device,
+  PWDF_DEVICE_STATE DeviceState
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A handle to a framework device object.
 
 `DeviceState`
 
-A pointer to a caller-allocated <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_state.md">WDF_DEVICE_STATE</a> structure that receives the device's state information.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff551284">WDF_DEVICE_STATE</a> structure that receives the device's state information.
 
 
 ## Return Value
@@ -93,4 +93,4 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_device_state_init.md">WDF_DEVICE_STATE_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551286">WDF_DEVICE_STATE_INIT</a>

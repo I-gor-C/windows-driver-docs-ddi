@@ -50,7 +50,7 @@ This I/O control function resets the specified statistic's value to zero.
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-<a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posstringtype.md">PosStringType</a> that names the statistic to reset to zero.
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn772274">PosStringType</a> that names the statistic to reset to zero.
 
 ### Input Buffer Length
 Size of the string passed in <i>lpInBuffer</i>. Set to sizeof(<i>PosStringType</i>) + the size of the string in bytes.

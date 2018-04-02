@@ -44,20 +44,20 @@ req.typenames: WHEA_ERROR_RECORD_HEADER_VALIDBITS, *PWHEA_ERROR_RECORD_HEADER_VA
 ---
 
 # _WHEA_ERROR_RECORD_HEADER_VALIDBITS structure
-The WHEA_ERROR_RECORD_HEADER_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure contain valid data.
+The WHEA_ERROR_RECORD_HEADER_VALIDBITS union describes which members of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a> structure contain valid data.
 
 ## Syntax
-````
-typedef union _WHEA_ERROR_RECORD_HEADER_VALIDBITS {
+```
+typedef struct _WHEA_ERROR_RECORD_HEADER_VALIDBITS {
   struct {
-    ULONG PlatformId  :1;
-    ULONG Timestamp  :1;
-    ULONG PartitionId  :1;
-    ULONG Reserved  :29;
-  };
-  ULONG  AsULONG;
-} WHEA_ERROR_RECORD_HEADER_VALIDBITS, *PWHEA_ERROR_RECORD_HEADER_VALIDBITS;
-````
+    ULONG  : 1  PartitionId;
+    ULONG  : 1  PlatformId;
+    ULONG  : 29 Reserved;
+    ULONG  : 1  Timestamp;
+  } DUMMYSTRUCTNAME;
+  ULONG  AsULONG;
+} *PWHEA_ERROR_RECORD_HEADER_VALIDBITS, WHEA_ERROR_RECORD_HEADER_VALIDBITS;
+```
 
 ## Members
 
@@ -71,7 +71,7 @@ typedef union _WHEA_ERROR_RECORD_HEADER_VALIDBITS {
 A ULONG representation of the contents of the WHEA_ERROR_RECORD_HEADER_VALIDBITS union.
 
 ## Remarks
-A WHEA_ERROR_RECORD_HEADER_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure.
+A WHEA_ERROR_RECORD_HEADER_VALIDBITS union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a> structure.
 
 <div class="alert"><b>Important</b>  After the release of Windows Server 2008, it was discovered that the <b>Timestamp</b> and <b>PlatformId</b> members of the WHEA_ERROR_RECORD_HEADER_VALIDBITS union are defined in the incorrect order. This topic now defines the correct order for these members.<p class="note">If you build your <a href="https://msdn.microsoft.com/fb559ac3-1f8d-48b7-8ebe-018623ab8d09">Windows hardware error architecture (WHEA) user-mode application</a> or <a href="https://msdn.microsoft.com/473d9206-9db2-4bc7-bc76-6be2fb77b20b">platform-specific hardware error driver (PSHED) plug-in</a> with the header files from the Windows Server 2008 version of the WDK or Windows SDK, you will have trouble only if your application or PSHED plug-in accesses the <b>Timestamp</b> and <b>PlatformId</b> members directly when it processes the contents of a WHEA_ERROR_RECORD_HEADER structure. When you test these bits in the <b>AsULONG </b>member through the bitfield constants that are described in the following list, you will always produce the correct results.
 
@@ -89,4 +89,4 @@ The following bitfield constants can be used to test the bits in the <b>AsULONG 
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a>

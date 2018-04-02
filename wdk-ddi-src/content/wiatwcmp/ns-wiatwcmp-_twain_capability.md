@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 The TWAIN_CAPABILITY structure holds information used when a TWAIN-compatible application communicates with a WIA driver.
 
 ## Syntax
-````
+```
 typedef struct _TWAIN_CAPABILITY {
   LONG lSize;
   LONG lMSG;
@@ -58,8 +58,8 @@ typedef struct _TWAIN_CAPABILITY {
   LONG lCC;
   LONG lDataSize;
   BYTE Data[1];
-} TWAIN_CAPABILITY, *PTWAIN_CAPABILITY;
-````
+} *PTWAIN_CAPABILITY, TWAIN_CAPABILITY;
+```
 
 ## Members
 

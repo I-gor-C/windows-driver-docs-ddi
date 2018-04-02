@@ -45,27 +45,27 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetBandSize method
+# IPrintOemUni3::SetBandSize method
 The <code>IPrintOemUni3::SetBandSize</code> method can be used with Unidrv-supported printers to specify the desired band size on the printed output.
 
 ## Syntax
 
-````
+```
 HRESULT SetBandSize(
-  [in] PDEVOBJ pdevobj,
-  [in] INT     iFormat,
-  [in] DWORD   dwPageWidthBytes,
-  [in] DWORD   dwPageHeight,
-  [in] DWORD   dwMaxHeight,
-  [in] PDWORD  pdwRequiredHeight
+  PDEVOBJ pdevobj,
+  INT     iFormat,
+  DWORD   dwPageWidthBytes,
+  DWORD   dwPageHeight,
+  DWORD   dwMaxHeight,
+  PDWORD  pdwRequiredHeight
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-A caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+A caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `iFormat`
 

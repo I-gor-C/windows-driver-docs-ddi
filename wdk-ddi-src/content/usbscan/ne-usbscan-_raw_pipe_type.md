@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 The RAW_PIPE_TYPE data type is used to specify the type of a USB pipe. The values are defined as follows:
 
 ## Syntax
-````
-typedef enum _RAW_PIPE_TYPE { 
-  USBSCAN_PIPE_CONTROL      = 0,
-  USBSCAN_PIPE_ISOCHRONOUS  = 1,
-  USBSCAN_PIPE_BULK         = 2,
-  USBSCAN_PIPE_INTERRUPT    = 3
+```
+typedef enum _RAW_PIPE_TYPE {
+  USBSCAN_PIPE_CONTROL      ,
+  USBSCAN_PIPE_ISOCHRONOUS  ,
+  USBSCAN_PIPE_BULK         ,
+  USBSCAN_PIPE_INTERRUPT
 } RAW_PIPE_TYPE;
-````
+```
 
 ## Constants
 

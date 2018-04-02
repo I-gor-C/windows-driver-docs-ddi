@@ -7,7 +7,7 @@ old-location: kernel\kequeryauxiliarycounterfrequency.htm
 old-project: kernel
 ms.assetid: E7F9549D-F222-42BF-B82B-B0DA0F6BC60F
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeQueryAuxiliaryCounterFrequency, KeQueryAuxiliaryCounterFrequency routine [Kernel-Mode Driver Architecture], kernel.kequeryauxiliarycounterfrequency, wdm/KeQueryAuxiliaryCounterFrequency
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>KeQueryAuxiliaryCounterFrequency</b> routine returns frequency of the aux
 
 ## Syntax
 
-````
+```
 NTSTATUS KeQueryAuxiliaryCounterFrequency(
-  _Out_opt_ PULONG64 AuxiliaryCounterFrequency
+  PULONG64 AuxiliaryCounterFrequency
 );
-````
+```
 
 ## Parameters
 
@@ -112,8 +112,8 @@ Call this routine to programmatically determine whether auxiliary counter is sup
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keconvertperformancecountertoauxiliarycounter.md">KeConvertPerformanceCounterToAuxiliaryCounter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt146560">KeConvertAuxiliaryCounterToPerformanceCounter</a>
 
 
 
-<a href="..\wdm\nf-wdm-keconvertauxiliarycountertoperformancecounter.md">KeConvertAuxiliaryCounterToPerformanceCounter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt146561">KeConvertPerformanceCounterToAuxiliaryCounter</a>

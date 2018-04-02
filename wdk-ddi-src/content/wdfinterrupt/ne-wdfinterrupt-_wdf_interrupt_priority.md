@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 The <b>WDF_INTERRUPT_PRIORITY</b> enumeration type identifies relative priorities for device interrupts.
 
 ## Syntax
-````
-typedef enum _WDF_INTERRUPT_PRIORITY { 
-  WdfIrqPriorityUndefined  = 0,
-  WdfIrqPriorityLow        = 1,
-  WdfIrqPriorityNormal     = 2,
-  WdfIrqPriorityHigh       = 3
+```
+typedef enum _WDF_INTERRUPT_PRIORITY {
+  WdfIrqPriorityUndefined  ,
+  WdfIrqPriorityLow        ,
+  WdfIrqPriorityNormal     ,
+  WdfIrqPriorityHigh
 } WDF_INTERRUPT_PRIORITY, *PWDF_INTERRUPT_PRIORITY;
-````
+```
 
 ## Constants
 
@@ -86,7 +86,7 @@ typedef enum _WDF_INTERRUPT_PRIORITY {
 
 ## Remarks
 
-The <b>WDF_INTERRUPT_PRIORITY</b> enumeration type is used as input to the <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetpolicy.md">WdfInterruptSetPolicy</a> method.
+The <b>WDF_INTERRUPT_PRIORITY</b> enumeration type is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547387">WdfInterruptSetPolicy</a> method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -97,4 +97,4 @@ The <b>WDF_INTERRUPT_PRIORITY</b> enumeration type is used as input to the <a hr
 
 ## See Also
 
-<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptsetpolicy.md">WdfInterruptSetPolicy</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547387">WdfInterruptSetPolicy</a>

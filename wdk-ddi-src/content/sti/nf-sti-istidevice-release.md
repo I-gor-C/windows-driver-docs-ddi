@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Release method
+# IStiDevice::Release method
 The <b>IStiDevice::Release</b> method closes the instance of the COM object that was created by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543778">IStillImage::CreateDevice</a>, and removes access to the object's interface.
 
 ## Syntax
 
-````
-HRESULT Release();
-````
+```
+ULONG Release(
+
+);
+```
 
 ## Parameters
 

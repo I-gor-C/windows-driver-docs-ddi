@@ -44,22 +44,22 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SetPartCompression method
+# IPartBase::SetPartCompression method
 The <b>SetPartCompression</b> method sets the compression of the part.
 
 ## Syntax
 
-````
+```
 HRESULT SetPartCompression(
-  [in] EXpsCompressionOptions compression
+  EXpsCompressionOptions compression
 );
-````
+```
 
 ## Parameters
 
 `compression`
 
-A <a href="..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0001.md">ExpsCompressionOptions</a>-typed value that describes the compression option for the part.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548772">ExpsCompressionOptions</a>-typed value that describes the compression option for the part.
 
 
 ## Return Value

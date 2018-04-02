@@ -47,12 +47,12 @@ req.typenames: IRB_REQ_SET_DEVICE_XMIT_PROPERTIES
 This structure contains the fields necessary to carry out a SetDeviceXmitProperties request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_SET_DEVICE_XMIT_PROPERTIES {
   ULONG fulSpeed;
   ULONG fulPriority;
 } IRB_REQ_SET_DEVICE_XMIT_PROPERTIES;
-````
+```
 
 ## Members
 

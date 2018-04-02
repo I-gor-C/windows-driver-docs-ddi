@@ -47,12 +47,12 @@ req.typenames: SERIAL_QUEUE_SIZE, *PSERIAL_QUEUE_SIZE
 The <b>SERIAL_QUEUE_SIZE</b> structure is used to resize the input buffer that the serial controller driver uses for serial receive operations.
 
 ## Syntax
-````
+```
 typedef struct _SERIAL_QUEUE_SIZE {
   ULONG InSize;
   ULONG OutSize;
 } SERIAL_QUEUE_SIZE, *PSERIAL_QUEUE_SIZE;
-````
+```
 
 ## Members
 
@@ -66,7 +66,7 @@ Number of bytes requested for the input buffer. For more information, see Remark
 Not used. Set to zero.
 
 ## Remarks
-This structure is used by <a href="..\ntddser\ni-ntddser-ioctl_serial_set_queue_size.md">IOCTL_SERIAL_SET_QUEUE_SIZE</a> requests to specify the size requested for the new input buffer. This buffer is used internally by the serial controller driver to hold data received from the serial controller until the data can be copied to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> request packet. If the requested buffer size is greater than the current receive buffer size, a new receive buffer is created. Otherwise, the receive buffer is not changed.
+This structure is used by <a href="https://msdn.microsoft.com/library/windows/hardware/ff546754">IOCTL_SERIAL_SET_QUEUE_SIZE</a> requests to specify the size requested for the new input buffer. This buffer is used internally by the serial controller driver to hold data received from the serial controller until the data can be copied to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> request packet. If the requested buffer size is greater than the current receive buffer size, a new receive buffer is created. Otherwise, the receive buffer is not changed.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,7 +75,7 @@ This structure is used by <a href="..\ntddser\ni-ntddser-ioctl_serial_set_queue_
 
 ## See Also
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_queue_size.md">IOCTL_SERIAL_SET_QUEUE_SIZE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546754">IOCTL_SERIAL_SET_QUEUE_SIZE</a>
 
 
 

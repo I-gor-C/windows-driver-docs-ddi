@@ -7,7 +7,7 @@ old-location: debugger\getextensionbypathwide.htm
 old-project: debugger
 ms.assetid: 85257190-2b39-487d-ada6-4c8cd0b1450f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetExtensionByPathWide method [Windows Debugging], GetExtensionByPathWide method [Windows Debugging], IDebugControl4 interface, GetExtensionByPathWide,IDebugControl4.GetExtensionByPathWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetExtensionByPathWide method, IDebugControl4::GetExtensionByPathWide, dbgeng/IDebugControl4::GetExtensionByPathWide, debugger.getextensionbypathwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetExtensionByPathWide method
+# IDebugControl4::GetExtensionByPathWide method
 The <b>GetExtensionByPathWide</b>  method returns the handle for an already loaded extension library.
 
 ## Syntax
 
-````
+```
 HRESULT GetExtensionByPathWide(
-  [in]  PCWSTR   Path,
-  [out] PULONG64 Handle
+  PCWSTR   Path,
+  PULONG64 Handle
 );
-````
+```
 
 ## Parameters
 
@@ -103,8 +103,8 @@ For more information on using extension libraries, see <a href="https://msdn.mic
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537892">AddExtension</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>

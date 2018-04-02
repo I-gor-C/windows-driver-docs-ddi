@@ -7,7 +7,7 @@ old-location: ifsk\mmforcesectionclosed.htm
 old-project: ifsk
 ms.assetid: aa598c4b-e840-41cb-81a3-719a5b1ee48b
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: MmForceSectionClosed, MmForceSectionClosed routine [Installable File System Drivers], ifsk.mmforcesectionclosed, mmref_d2466446-15b8-4152-a7ff-3ebe1f05cd68.xml, ntifs/MmForceSectionClosed
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>MmForceSectionClosed</b> routine deletes the data and image sections for 
 
 ## Syntax
 
-````
-BOOLEAN MmForceSectionClosed(
-  _In_ PSECTION_OBJECT_POINTERS SectionObjectPointer,
-  _In_ BOOLEAN                  DelayClose
+```
+NTKERNELAPI BOOLEAN MmForceSectionClosed(
+  PSECTION_OBJECT_POINTERS SectionObjectPointer,
+  BOOLEAN                  DelayClose
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ A Boolean value that specifies whether the section is subsequently deleted if <b
 
 <b>MmForceSectionClosed</b> returns <b>TRUE</b> if the sections were successfully deleted or no sections were found, <b>FALSE</b> otherwise.
 
-<div class="alert"><b>Note</b>  If there are one or more outstanding write probes on the file's data section, <a href="..\ntifs\nf-ntifs-mmflushimagesection.md">MmFlushImageSection</a> returns <b>FALSE</b>.</div>
+<div class="alert"><b>Note</b>  If there are one or more outstanding write probes on the file's data section, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549808">MmFlushImageSection</a> returns <b>FALSE</b>.</div>
 <div> </div>
 
 ## Remarks
@@ -93,8 +93,8 @@ For more information about creating mapped sections and views of memory, see <a 
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-mmflushimagesection.md">MmFlushImageSection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539188">CcPurgeCacheSection</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549808">MmFlushImageSection</a>

@@ -7,7 +7,7 @@ old-location: display\d3dkmtevict.htm
 old-project: display
 ms.assetid: 010F7CB0-F930-47FF-91DF-D95B21FC76A0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTEvict, D3DKMTEvict function [Display Devices], d3dkmthk/D3DKMTEvict, display.d3dkmtevict
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ req.typenames: D3DKMT_DRIVERVERSION
 
 ## Syntax
 
-````
-EXTERN_C _Check_return_ NTSTATUS APIENTRY D3DKMTEvict(
-  _Inout_ D3DKMT_EVICT *pData
+```
+NTSTATUS D3DKMTEvict(
+
 );
-````
+```
 
 ## Parameters
 
@@ -114,4 +114,4 @@ Once the eviction request is queued, it is illegal to access the underlying allo
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_evict.md">D3DKMT_EVICT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906794">D3DKMT_EVICT</a>

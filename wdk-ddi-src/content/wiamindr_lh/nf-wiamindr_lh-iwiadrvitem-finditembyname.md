@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# FindItemByName method
+# IWiaDrvItem::FindItemByName method
 The<b> IWiaDrvItem::FindItemByName</b> method locates an item in a driver item tree by the item's full name.
 
 ## Syntax
 
-````
+```
 HRESULT FindItemByName(
-  [in]            LONG        lFlags,
-  [in]            BSTR        bstrFullItemName,
-  [out, optional] IWiaDrvItem **ppItem
+  LONG        __MIDL__IWiaDrvItem0007,
+  BSTR        __MIDL__IWiaDrvItem0008,
+  IWiaDrvItem **__MIDL__IWiaDrvItem0009
 );
-````
+```
 
 ## Parameters
 
@@ -92,7 +92,7 @@ This method starts the search for the specified item at the root item in the dri
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>
+<a href="https://msdn.microsoft.com/0609e1b2-48df-413c-90bd-d7ddea26510a">IWiaDrvItem</a>
 
 
 
@@ -100,4 +100,4 @@ This method starts the search for the specified item at the root item in the dri
 
 
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>

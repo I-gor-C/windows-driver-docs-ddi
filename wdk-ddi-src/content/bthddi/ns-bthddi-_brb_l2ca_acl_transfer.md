@@ -48,19 +48,19 @@ The _BRB_L2CA_ACL_TRANSFER structure describes a buffer to read asynchronous dat
   asynchronous data to a L2CAP channel.
 
 ## Syntax
-````
+```
 struct _BRB_L2CA_ACL_TRANSFER {
-  BRB_HEADER           Hdr;
-  BTH_ADDR             BtAddress;
+  BRB_HEADER           Hdr;
+  BTH_ADDR             BtAddress;
   L2CAP_CHANNEL_HANDLE ChannelHandle;
-  ULONG                TransferFlags;
-  ULONG                BufferSize;
-  PVOID                Buffer;
-  PMDL                 BufferMDL;
-  LONGLONG             Timeout;
-  ULONG                RemainingBufferSize;
+  ULONG                TransferFlags;
+  ULONG                BufferSize;
+  PVOID                Buffer;
+  PMDL                 BufferMDL;
+  LONGLONG             Timeout;
+  ULONG                RemainingBufferSize;
 };
-````
+```
 
 ## Members
 
@@ -68,7 +68,7 @@ struct _BRB_L2CA_ACL_TRANSFER {
 `Hdr`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 `BtAddress`
@@ -189,6 +189,10 @@ If the ACL_TRANSFER_TIMEOUT flag is set in the
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536613">BRB_L2CA_ACL_TRANSFER</a>
 
 
@@ -199,7 +203,3 @@ If the ACL_TRANSFER_TIMEOUT flag is set in the
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536616">
    BRB_L2CA_OPEN_CHANNEL_RESPONSE</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>

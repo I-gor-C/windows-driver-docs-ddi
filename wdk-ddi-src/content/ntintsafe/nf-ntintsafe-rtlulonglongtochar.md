@@ -7,7 +7,7 @@ old-location: kernel\rtlulonglongtochar.htm
 old-project: kernel
 ms.assetid: 8C6356A2-9E4A-4654-9FB3-EC11894A24AB
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlULongLongToChar, RtlULongLongToChar function [Kernel-Mode Driver Architecture], kernel.rtlulonglongtochar, ntintsafe/RtlULongLongToChar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>ULONGLONG</b> to a value of type <b>CHAR</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlULongLongToChar(
-  _In_  ULONGLONG ullOperand,
-  _Out_ CHAR      *pch
+  ULONGLONG ullOperand,
+  CHAR      *pch
 );
-````
+```
 
 ## Parameters
 

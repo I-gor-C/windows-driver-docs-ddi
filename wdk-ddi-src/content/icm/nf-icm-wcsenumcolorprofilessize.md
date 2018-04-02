@@ -45,17 +45,17 @@ req.typenames: WCS_PROFILE_MANAGEMENT_SCOPE
 
 
 # WcsEnumColorProfilesSize function
-The <code>WcsEnumColorProfilesSize</code> function returns the size, in bytes, of the buffer required by the <a href="..\icm\nf-icm-wcsenumcolorprofiles.md">WcsEnumColorProfiles</a> function to enumerate color profiles.
+The <code>WcsEnumColorProfilesSize</code> function returns the size, in bytes, of the buffer required by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563720">WcsEnumColorProfiles</a> function to enumerate color profiles.
 
 ## Syntax
 
-````
+```
 BOOL WcsEnumColorProfilesSize(
-  _In_  WCS_PROFILE_MANAGEMENT_SCOPE profileManagementScope,
-  _In_  PENUMTYPEW                   pEnumRecord,
-  _Out_ PDWORD                       pdwSize
+  WCS_PROFILE_MANAGEMENT_SCOPE scope,
+  PENUMTYPEW                   pEnumRecord,
+  PDWORD                       pdwSize
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ A pointer to a structure that specifies the enumeration criteria.
 
 `pdwSize`
 
-A pointer to a variable that receives the size of the buffer that is required to receive all enumerated profile names. This value is used by the <i>dwSize</i> parameter of the <a href="..\icm\nf-icm-wcsenumcolorprofiles.md">WcsEnumColorProfiles</a> function.
+A pointer to a variable that receives the size of the buffer that is required to receive all enumerated profile names. This value is used by the <i>dwSize</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563720">WcsEnumColorProfiles</a> function.
 
 
 ## Return Value
@@ -91,8 +91,8 @@ This function is executable in Least-Privileged User Account (LUA) context.
 
 ## See Also
 
-<a href="..\icm\ne-icm-wcs_profile_management_scope.md">WCS_PROFILE_MANAGEMENT_SCOPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563752">WCS_PROFILE_MANAGEMENT_SCOPE</a>
 
 
 
-<a href="..\icm\nf-icm-wcsenumcolorprofiles.md">WcsEnumColorProfiles</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563720">WcsEnumColorProfiles</a>

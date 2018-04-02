@@ -7,7 +7,7 @@ old-location: audio\iminiportmidistream_read.htm
 old-project: audio
 ms.assetid: 448dc408-c47f-4c8b-8baf-a831c69c3020
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IMiniportMidiStream, IMiniportMidiStream interface [Audio Devices], Read method, IMiniportMidiStream::Read, Read method [Audio Devices], Read method [Audio Devices], IMiniportMidiStream interface, Read,IMiniportMidiStream.Read, audio.iminiportmidistream_read, audmp-routines_35ce63a1-ab31-4758-887a-9043e1f65915.xml, portcls/IMiniportMidiStream::Read
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# Read method
+# IMiniportMidiStream::Read method
 The <code>Read</code> method reads data from an incoming MIDI stream.
 
 ## Syntax
 
-````
+```
 NTSTATUS Read(
-  [in]  PVOID  BufferAddress,
-  [in]  ULONG  BufferLength,
-  [out] PULONG BytesRead
+  PVOID  BufferAddress,
+  ULONG  BufferLength,
+  PULONG BytesRead
 );
-````
+```
 
 ## Parameters
 
@@ -109,12 +109,12 @@ The <code>Read</code> method returns STATUS_SUCCESS and a <i>BytesRead</i> count
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536704">IMiniportMidiStream</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536708">IMiniportMidiStream::Write</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536893">IPortMidi::Notify</a>
-
-
-
-<a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>

@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 # _DOCEVENT_CREATEDCPRE structure
-The DOCEVENT_CREATEDCPRE structure contains a set of values used in certain calls to <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>.
+The DOCEVENT_CREATEDCPRE structure contains a set of values used in certain calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548544">DrvDocumentEvent</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>.
 
 ## Syntax
-````
+```
 typedef struct _DOCEVENT_CREATEDCPRE {
-  PWSTR     pszDriver;
-  PWSTR     pszDevice;
+  PWSTR     pszDriver;
+  PWSTR     pszDevice;
   PDEVMODEW pdm;
-  BOOL      bIC;
-} DOCEVENT_CREATEDCPRE, *PDCEVENT_CREATEDCPRE;
-````
+  BOOL      bIC;
+} *PDCEVENT_CREATEDCPRE, DOCEVENT_CREATEDCPRE;
+```
 
 ## Members
 
@@ -79,7 +79,7 @@ Specifies whether the DEVMODEW structure pointed to by the <b>pdm</b> member is 
 ## Remarks
 The DOCEVENT_CREATEDCPRE structure is defined for Windows XP and later.
 
-This structure is used in conjunction with a call to <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>, in which the <i>iEsc</i> parameter is set to DOCUMENTEVENT_CREATEDCPRE. Before calling either of these functions, the caller must fill in the members of this structure.
+This structure is used in conjunction with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548544">DrvDocumentEvent</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>, in which the <i>iEsc</i> parameter is set to DOCUMENTEVENT_CREATEDCPRE. Before calling either of these functions, the caller must fill in the members of this structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,8 +88,8 @@ This structure is used in conjunction with a call to <a href="..\winddiui\nf-win
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548544">DrvDocumentEvent</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>
-
-
-
-<a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a>

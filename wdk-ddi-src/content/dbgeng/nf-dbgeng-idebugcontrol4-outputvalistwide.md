@@ -7,7 +7,7 @@ old-location: debugger\outputvalistwide.htm
 old-project: debugger
 ms.assetid: 34d25938-5640-4e32-949f-94605ac38fa0
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugControl4, IDebugControl4 interface [Windows Debugging], OutputVaListWide method, IDebugControl4::OutputVaListWide, OutputVaListWide method [Windows Debugging], OutputVaListWide method [Windows Debugging], IDebugControl4 interface, OutputVaListWide,IDebugControl4.OutputVaListWide, dbgeng/IDebugControl4::OutputVaListWide, debugger.outputvalistwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# OutputVaListWide method
+# IDebugControl4::OutputVaListWide method
 The <b>OutputVaListWide</b>  method formats a string and sends the result to the <a href="https://msdn.microsoft.com/7a23ee09-0314-400a-8152-eef49a225427">output callbacks</a> that are registered with the engine's clients.
 
 ## Syntax
 
-````
+```
 HRESULT OutputVaListWide(
-  [in] ULONG   Mask,
-  [in] PCWSTR  Format,
-  [in] va_list Args
+  ULONG   Mask,
+  PCWSTR  Format,
+  va_list Args
 );
-````
+```
 
 ## Parameters
 
@@ -279,11 +279,11 @@ When generating very large output strings, it is possible to reach the limits of
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539252">ControlledOutputVaList</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
 
 
 
@@ -291,4 +291,4 @@ When generating very large output strings, it is possible to reach the limits of
 
 
 
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_output_routine.md">dprintf</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542750">dprintf</a>

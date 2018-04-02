@@ -47,14 +47,14 @@ req.product: Windows 10 or later.
 # _WDF_REMOVE_LOCK_OPTIONS_FLAGS Enumeration
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WDF_REMOVE_LOCK_OPTIONS_FLAGS</b> enumeration type defines flags that are used in a driver's <a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_lock_options.md">WDF_REMOVE_LOCK_OPTIONS</a> structure.
+The <b>WDF_REMOVE_LOCK_OPTIONS_FLAGS</b> enumeration type defines flags that are used in a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh406495">WDF_REMOVE_LOCK_OPTIONS</a> structure.
 
 ## Syntax
-````
-typedef enum _WDF_REMOVE_LOCK_OPTIONS_FLAGS { 
-  WDF_REMOVE_LOCK_OPTION_ACQUIRE_FOR_IO  = 1
+```
+typedef enum _WDF_REMOVE_LOCK_OPTIONS_FLAGS {
+  WDF_REMOVE_LOCK_OPTION_ACQUIRE_FOR_IO
 } WDF_REMOVE_LOCK_OPTIONS_FLAGS;
-````
+```
 
 ## Constants
 
@@ -68,7 +68,7 @@ typedef enum _WDF_REMOVE_LOCK_OPTIONS_FLAGS {
 
 ## Remarks
 
-For more information about using remove locks in a framework-based driver, see <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetremovelockoptions.md">WdfDeviceInitSetRemoveLockOptions</a>.
+For more information about using remove locks in a framework-based driver, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451095">WdfDeviceInitSetRemoveLockOptions</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -78,12 +78,12 @@ For more information about using remove locks in a framework-based driver, see <
 
 ## See Also
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_remove_lock_options.md">WDF_REMOVE_LOCK_OPTIONS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406495">WDF_REMOVE_LOCK_OPTIONS</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetremovelockoptions.md">WdfDeviceInitSetRemoveLockOptions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406501">WDF_REMOVE_LOCK_OPTIONS_INIT</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_remove_lock_options_init.md">WDF_REMOVE_LOCK_OPTIONS_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451095">WdfDeviceInitSetRemoveLockOptions</a>

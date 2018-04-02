@@ -47,20 +47,20 @@ req.typenames: KSSTREAMALLOCATOR_STATUS, *PKSSTREAMALLOCATOR_STATUS
 The KSSTREAMALLOCATOR_STATUS structure describes framing requirements and current number of allocated frames for a specific allocator.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSSTREAMALLOCATOR_STATUS {
   KSALLOCATOR_FRAMING Framing;
-  ULONG               AllocatedFrames;
-  ULONG               Reserved;
-} KSSTREAMALLOCATOR_STATUS, *PKSSTREAMALLOCATOR_STATUS;
-````
+  ULONG               AllocatedFrames;
+  ULONG               Reserved;
+}  *PKSSTREAMALLOCATOR_STATUS;
+```
 
 ## Members
 
 
 `Framing`
 
-A <a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a> structure that contains the framing specified when the allocator was created.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560979">KSALLOCATOR_FRAMING</a> structure that contains the framing specified when the allocator was created.
 
 `AllocatedFrames`
 
@@ -80,7 +80,7 @@ Clients can query allocator status by providing a KSSTREAMALLOCATOR_STATUS struc
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560979">KSALLOCATOR_FRAMING</a>
 
 
 

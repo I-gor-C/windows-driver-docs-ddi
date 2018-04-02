@@ -7,7 +7,7 @@ old-location: netvista\filtercanceldirectoidrequest.htm
 old-project: netvista
 ms.assetid: 3587c5dc-3b4c-4aab-8c2d-cc9988373a56
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FILTER_CANCEL_DIRECT_OID_REQUEST, FilterCancelDirectOidRequest, FilterCancelDirectOidRequest callback function [Network Drivers Starting with Windows Vista], ndis/FilterCancelDirectOidRequest, ndis_request_direct_ref_e9bd9db7-8a50-485e-9592-e43461963137.xml, netvista.filtercanceldirectoidrequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,14 +68,14 @@ void FilterCancelDirectOidRequest(
 
 A handle to the context area for the filter module that is the target of this request. The filter
      driver created and initialized this context area in the 
-     <a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a> function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a> function.
 
 `RequestId`
 
 A cancellation identifier for the request. This identifier specifies the direct OID requests that
      match this value in the 
      <b>RequestId</b> member of the 
-     <a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a> structure.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a> structure.
 
 
 ## Return Value
@@ -86,12 +86,12 @@ None
 
 <i>FilterCancelDirectOidRequest</i> is an optional function. If a filter driver does
     not use direct OID requests, it can set the entry point for this function to <b>NULL</b> when it calls the 
-    <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
+    <a href="https://msdn.microsoft.com/14381de2-36d9-4ec8-9d4e-7af3e6d8ecf3">
     NdisFRegisterFilterDriver</a> function.
 
 When NDIS calls 
     <i>FilterCancelDirectOidRequest</i>, the filter driver should attempt to call 
-    <a href="..\ndis\nf-ndis-ndisfdirectoidrequestcomplete.md">
+    <a href="https://msdn.microsoft.com/b6b4d4f4-63d5-496c-9082-f2e8d1a174ec">
     NdisFDirectOidRequestComplete</a> function as soon as possible.
 
 If a filter driver does not queue direct OID requests, the driver is not required to provide a 
@@ -108,7 +108,7 @@ If the request processing is still not complete in a filter driver, the driver c
 
 If the filter driver forwarded the request to an underlying driver and the processing is still not
     complete, the filter driver calls the 
-    <a href="..\ndis\nf-ndis-ndisfcanceldirectoidrequest.md">
+    <a href="https://msdn.microsoft.com/05cbeca1-7420-41c6-8868-980b265523db">
     NdisFCancelDirectOidRequest</a> function with the 
     <i>OidRequest</i> parameter set to the value that it sent to the underlying
     driver.
@@ -163,21 +163,21 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisfcanceldirectoidrequest.md">NdisFCancelDirectOidRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540442">FilterAttach</a>
 
 
 
-<a href="..\ndis\nc-ndis-filter_attach.md">FilterAttach</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566710">NDIS_OID_REQUEST</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561788">NdisFCancelDirectOidRequest</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisfdirectoidrequestcomplete.md">
+<a href="https://msdn.microsoft.com/b6b4d4f4-63d5-496c-9082-f2e8d1a174ec">
    NdisFDirectOidRequestComplete</a>
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_oid_request.md">NDIS_OID_REQUEST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562608">NdisFRegisterFilterDriver</a>

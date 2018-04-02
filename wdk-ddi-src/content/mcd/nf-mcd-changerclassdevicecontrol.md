@@ -7,7 +7,7 @@ old-location: storage\changerclassdevicecontrol.htm
 old-project: storage
 ms.assetid: 9107fa7b-b061-4505-aef7-be04587a4199
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ChangerClassDeviceControl, ChangerClassDeviceControl routine [Storage Devices], chgrclas_0338541c-8796-485d-aa1c-20335ea4c6c5.xml, mcd/ChangerClassDeviceControl, storage.changerclassdevicecontrol
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>ChangerClassDeviceControl</b> routine is called by a changer minidriver t
 
 ## Syntax
 
-````
+```
 NTSTATUS ChangerClassDeviceControl(
-  _In_ PDEVICE_OBJECT DeviceObject,
-  _In_ PIRP           Irp
+  PDEVICE_OBJECT DeviceObject,
+  PIRP           Irp
 );
-````
+```
 
 ## Parameters
 

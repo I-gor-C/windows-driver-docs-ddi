@@ -50,16 +50,16 @@ PosCxClose is called to delete an opened PosCx library instance. This function r
 
       and cancels pending requests. It should be called from 
 
-      the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_file_close.md">EVT_WDF_FILE_CLOSE</a> callback.
+      the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff541702">EVT_WDF_FILE_CLOSE</a> callback.
 
 ## Syntax
 
-````
+```
 NTSTATUS PosCxClose(
-  _In_ WDFDEVICE     device,
-  _In_ WDFFILEOBJECT fileObject
+  WDFDEVICE     device,
+  WDFFILEOBJECT fileObject
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: display\pfnlock2cb.htm
 old-project: display
 ms.assetid: C046F34A-4304-4B96-8D7A-7A951016437F
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3DDDI_LOCK2CB, d3dumddi/pfnLock2Cb, display.pfnlock2cb, pfnLock2Cb, pfnLock2Cb callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -99,4 +99,4 @@ Synchronization of other lock types (not no-overwrite or discard)
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock2.md">D3DDDICB_LOCK2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn894601">D3DDDICB_LOCK2</a>

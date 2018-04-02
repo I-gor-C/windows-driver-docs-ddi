@@ -7,7 +7,7 @@ old-location: buses\udecx_usb_endpoint_callbacks_init.htm
 old-project: usbref
 ms.assetid: AE0DA609-90E5-452F-B24E-0902C5E868A8
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UDECX_USB_ENDPOINT_CALLBACKS_INIT, UDECX_USB_ENDPOINT_CALLBACKS_INIT method [Buses], buses.udecx_usb_endpoint_callbacks_init, udecxusbendpoint/UDECX_USB_ENDPOINT_CALLBACKS_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,21 +47,22 @@ req.product: Windows 10 or later.
 
 
 # UDECX_USB_ENDPOINT_CALLBACKS_INIT function
-Initializes a <a href="..\udecxusbendpoint\ns-udecxusbendpoint-_udecx_usb_endpoint_callbacks.md">UDECX_USB_ENDPOINT_CALLBACKS</a> structure before a <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a> call.
+Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628005">UDECX_USB_ENDPOINT_CALLBACKS</a> structure before a <a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a> call.
 
 ## Syntax
 
-````
-FORCEINLINE void UDECX_USB_ENDPOINT_CALLBACKS_INIT(
-  _Out_ PUDECX_USB_ENDPOINT_CALLBACKS Callbacks
+```
+void UDECX_USB_ENDPOINT_CALLBACKS_INIT(
+  PUDECX_USB_ENDPOINT_CALLBACKS Callbacks,
+  PFN_UDECX_USB_ENDPOINT_RESET  EvtUsbEndpointReset
 );
-````
+```
 
 ## Parameters
 
 `Callbacks`
 
-A pointer to a <a href="..\udecxusbendpoint\ns-udecxusbendpoint-_udecx_usb_endpoint_callbacks.md">UDECX_USB_ENDPOINT_CALLBACKS</a> to initialize.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt628005">UDECX_USB_ENDPOINT_CALLBACKS</a> to initialize.
 
 `EvtUsbEndpointReset`
 
@@ -85,4 +86,4 @@ This method does not return a value.
 
 ## See Also
 
-<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a>

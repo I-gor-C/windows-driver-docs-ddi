@@ -50,11 +50,12 @@ The <b>wiauDbgLegacyTrace</b> function logs a trace message.
 
 ## Syntax
 
-````
-inline void __stdcall wiauDbgLegacyTrace(
-   LPCSTR   fmt, ...
+```
+void wiauDbgLegacyTrace(
+  LPCSTR fmt,
+  ...    
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +74,7 @@ None
 
 ## Remarks
 
-The <b>wiauDbgLegacyTrace</b> function is identical to the <a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.
+The <b>wiauDbgLegacyTrace</b> function is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550161">wiauDbgTrace</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,4 +85,4 @@ The <b>wiauDbgLegacyTrace</b> function is identical to the <a href="..\wiautil\n
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550161">wiauDbgTrace</a>

@@ -52,11 +52,11 @@ The <b>KoDeviceInitialize</b> function adds a kernel COM create-item entry to th
 
 ## Syntax
 
-````
-NTSTATUS KoDeviceInitialize(
-  _In_ PDEVICE_OBJECT DeviceObject
+```
+COMDDKAPI NTSTATUS KoDeviceInitialize(
+  PDEVICE_OBJECT DeviceObject
 );
-````
+```
 
 ## Parameters
 

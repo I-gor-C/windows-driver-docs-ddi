@@ -7,7 +7,7 @@ old-location: kernel\keinitializeguardedmutex.htm
 old-project: kernel
 ms.assetid: 28d45b36-c20d-40a5-bdf9-5fb754e36e74
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeInitializeGuardedMutex, KeInitializeGuardedMutex routine [Kernel-Mode Driver Architecture], k105_e9686411-583c-43bb-b7e6-b5248bed72f8.xml, kernel.keinitializeguardedmutex, wdm/KeInitializeGuardedMutex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>KeInitializeGuardedMutex</b> routine initializes a guarded mutex.
 
 ## Syntax
 
-````
-VOID KeInitializeGuardedMutex(
-  _Out_ PKGUARDED_MUTEX Mutex
+```
+NTKERNELAPI VOID KeInitializeGuardedMutex(
+  PKGUARDED_MUTEX Mutex
 );
-````
+```
 
 ## Parameters
 

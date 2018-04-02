@@ -7,7 +7,7 @@ old-location: kernel\pep_unmasked_interrupt_flags.htm
 old-project: kernel
 ms.assetid: A385FBF9-2222-49E0-A708-1638C0D2FF7A
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS union [Kernel-Mode Driver Architecture], _PEP_UNMASKED_INTERRUPT_FLAGS, kernel.pep_unmasked_interrupt_flags, pepfx/PEP_UNMASKED_INTERRUPT_FLAGS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: PEP_UNMASKED_INTERRUPT_FLAGS, *PPEP_UNMASKED_INTERRUPT_FLAGS, PEP
 The <b>PEP_UNMASKED_INTERRUPT_FLAGS</b> union indicates whether an unmasked interrupt source is a primary interrupt or a secondary interrupt.
 
 ## Syntax
-````
-typedef union _PEP_UNMASKED_INTERRUPT_FLAGS {
+```
+typedef struct _PEP_UNMASKED_INTERRUPT_FLAGS {
   struct {
-    USHORT SecondaryInterrupt  :1;
-    USHORT Reserved  :15;
+    USHORT  : 15 Reserved;
+    USHORT  : 1  SecondaryInterrupt;
   };
   USHORT AsUSHORT;
-} PEP_UNMASKED_INTERRUPT_FLAGS;
-````
+} *PPEP_UNMASKED_INTERRUPT_FLAGS, PEP_UNMASKED_INTERRUPT_FLAGS;
+```
 
 ## Members
 
@@ -65,7 +65,7 @@ typedef union _PEP_UNMASKED_INTERRUPT_FLAGS {
 A USHORT value that contains all of the unmasked interrupt flags.
 
 ## Remarks
-The <b>Flags</b> member of the <a href="..\pepfx\ns-pepfx-_pep_unmasked_interrupt_information.md">PEP_UNMASKED_INTERRUPT_INFORMATION</a> structure is a <b>PEP_UNMASKED_INTERRUPT_FLAGS</b> union.
+The <b>Flags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186857">PEP_UNMASKED_INTERRUPT_INFORMATION</a> structure is a <b>PEP_UNMASKED_INTERRUPT_FLAGS</b> union.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,4 +75,4 @@ The <b>Flags</b> member of the <a href="..\pepfx\ns-pepfx-_pep_unmasked_interrup
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_unmasked_interrupt_information.md">PEP_UNMASKED_INTERRUPT_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186857">PEP_UNMASKED_INTERRUPT_INFORMATION</a>

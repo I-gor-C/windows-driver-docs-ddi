@@ -7,7 +7,7 @@ old-location: buses\udecx_usb_endpoint_callbacks.htm
 old-project: usbref
 ms.assetid: 5AAB4474-9FDF-4ACF-AC38-F84D2682B5E0
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUDECX_USB_ENDPOINT_CALLBACKS, PUDECX_USB_ENDPOINT_CALLBACKS, PUDECX_USB_ENDPOINT_CALLBACKS structure pointer [Buses], UDECX_USB_ENDPOINT_CALLBACKS, UDECX_USB_ENDPOINT_CALLBACKS structure [Buses], _UDECX_USB_ENDPOINT_CALLBACKS, buses.udecx_usb_endpoint_callbacks, udecxusbendpoint/PUDECX_USB_ENDPOINT_CALLBACKS, udecxusbendpoint/UDECX_USB_ENDPOINT_CALLBACKS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 # _UDECX_USB_ENDPOINT_CALLBACKS structure
-Contains function pointers to endpoint callback functions implemented by the UDE client driver. Initialize this structure by calling <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecx_usb_endpoint_callbacks_init.md">UDECX_USB_ENDPOINT_CALLBACKS_INIT</a>.
+Contains function pointers to endpoint callback functions implemented by the UDE client driver. Initialize this structure by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt628006">UDECX_USB_ENDPOINT_CALLBACKS_INIT</a>.
 
 ## Syntax
-````
+```
 typedef struct _UDECX_USB_ENDPOINT_CALLBACKS {
-  ULONG                        Size;
+  ULONG                        Size;
   PFN_UDECX_USB_ENDPOINT_RESET EvtUsbEndpointReset;
-  EVT_UDECX_USB_ENDPOINT_START EvtUsbEndpointStart;
-  EVT_UDECX_USB_ENDPOINT_PURGE EvtUsbEndpointPurge;
+  PFN_UDECX_USB_ENDPOINT_START EvtUsbEndpointStart;
+  PFN_UDECX_USB_ENDPOINT_PURGE EvtUsbEndpointPurge;
 } UDECX_USB_ENDPOINT_CALLBACKS, *PUDECX_USB_ENDPOINT_CALLBACKS;
-````
+```
 
 ## Members
 
@@ -66,15 +66,15 @@ The size of this structure.
 
 `EvtUsbEndpointReset`
 
-Required. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_reset.md">EVT_UDECX_USB_ENDPOINT_RESET</a> callback function implemented by a UDE client driver.
+Required. A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595917">EVT_UDECX_USB_ENDPOINT_RESET</a> callback function implemented by a UDE client driver.
 
 `EvtUsbEndpointStart`
 
-Optional. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_start.md">EVT_UDECX_USB_ENDPOINT_START</a> callback function implemented by a UDE client driver.
+Optional. A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595918">EVT_UDECX_USB_ENDPOINT_START</a> callback function implemented by a UDE client driver.
 
 `EvtUsbEndpointPurge`
 
-Optional. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt_udecx_usb_endpoint_purge.md">EVT_UDECX_USB_ENDPOINT_PURGE</a> callback function implemented by a UDE client driver.
+Optional. A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/mt595916">EVT_UDECX_USB_ENDPOINT_PURGE</a> callback function implemented by a UDE client driver.
 
 
 ## Requirements
@@ -84,8 +84,8 @@ Optional. A pointer to an <a href="..\udecxusbendpoint\nc-udecxusbendpoint-evt_u
 
 ## See Also
 
-<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointinitsetcallbacks.md">UdecxUsbEndpointInitSetCallbacks</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a>
 
 
 
-<a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt627985">UdecxUsbEndpointInitSetCallbacks</a>

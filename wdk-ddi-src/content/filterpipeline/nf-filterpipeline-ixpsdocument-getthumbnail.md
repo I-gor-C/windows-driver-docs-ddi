@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetThumbnail method
+# IXpsDocument::GetThumbnail method
 The <code>GetThumbnail</code> method gets the document thumbnail object.
 
 ## Syntax
 
-````
+```
 HRESULT GetThumbnail(
-  [out] IPartThumbnail **ppThumbnail
+  IPartThumbnail **ppThumbnail
 );
-````
+```
 
 ## Parameters
 

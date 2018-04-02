@@ -7,7 +7,7 @@ old-location: display\iddcxmonitorsetuphardwarecursor.htm
 old-project: display
 ms.assetid: 6182898d-d7c0-4ff2-b222-d83bd00cd1ec
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IddCxMonitorSetupHardwareCursor, IddCxMonitorSetupHardwareCursor method [Display Devices], display.iddcxmonitorsetuphardwarecursor, iddcx/IddCxMonitorSetupHardwareCursor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ An OS callback function the driver calls when it wants to setup hardware cursor 
 
 ## Syntax
 
-````
+```
 NTSTATUS IddCxMonitorSetupHardwareCursor(
-  _In_       IDDCX_MONITOR            MonitorObject,
-  _In_ const IDARG_IN_SETUP_HWCURSOR* pInArgs
+  IDDCX_MONITOR                 MonitorObject,
+  CONST IDARG_IN_SETUP_HWCURSOR *pInArgs
 );
-````
+```
 
 ## Parameters
 

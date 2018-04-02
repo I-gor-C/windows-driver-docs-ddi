@@ -7,7 +7,7 @@ old-location: audio\pcgetphysicaldeviceobject.htm
 old-project: audio
 ms.assetid: A7917082-4C3F-445A-AD26-32DE670754E5
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: PcGetPhysicalDeviceObject, PcGetPhysicalDeviceObject function [Audio Devices], audio.pcgetphysicaldeviceobject, portcls/PcGetPhysicalDeviceObject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>PcGetPhysicalDeviceObject</b> function enables audio miniport drivers to 
 
 ## Syntax
 
-````
-PORTCLASSAPI NTSTATUS NTAPI PcGetPhysicalDeviceObject(
-  _In_  PDEVICE_OBJECT pDeviceObject,
-  _Out_ PDEVICE_OBJECT ppPhysicalObject
+```
+PORTCLASSAPI NTSTATUS PcGetPhysicalDeviceObject(
+  IN PDEVICE_OBJECT  pDeviceObject,
+  OUT PDEVICE_OBJECT *ppPhysicalObject
 );
-````
+```
 
 ## Parameters
 

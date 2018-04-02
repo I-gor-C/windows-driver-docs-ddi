@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The UNI_GLYPHSEDATA structure is one of the structures used to define the contents of <a href="https://msdn.microsoft.com/6e643703-ace1-4660-990c-3a9ca735829d">glyph translation table files</a> (.gtt files).
 
 ## Syntax
-````
+```
 typedef struct _UNI_GLYPHSETDATA {
   DWORD dwSize;
   DWORD dwVersion;
   DWORD dwFlags;
-  LONG  lPredefinedID;
+  LONG  lPredefinedID;
   DWORD dwGlyphCount;
   DWORD dwRunCount;
   DWORD loRunOffset;
@@ -62,7 +62,7 @@ typedef struct _UNI_GLYPHSETDATA {
   DWORD loMapTableOffset;
   DWORD dwReserved[2];
 } UNI_GLYPHSETDATA, *PUNI_GLYPHSETDATA;
-````
+```
 
 ## Members
 
@@ -89,23 +89,23 @@ Specifies the number of glyphs provided by this font.
 
 `dwRunCount`
 
-Specifies the number of <a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a> structures in the array pointed to by <b>loRunOffset</b>.
+Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550544">GLYPHRUN</a> structures in the array pointed to by <b>loRunOffset</b>.
 
 `loRunOffset`
 
-Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a> structures.
+Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550544">GLYPHRUN</a> structures.
 
 `dwCodePageCount`
 
-Specifies the number of <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a> structures in the array pointed to by <b>loCodePageOffset</b>.
+Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a> structures in the array pointed to by <b>loCodePageOffset</b>.
 
 `loCodePageOffset`
 
-Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a> structures.
+Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a> structures.
 
 `loMapTableOffset`
 
-Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of a <a href="..\prntfont\ns-prntfont-_maptable.md">MAPTABLE</a> structure.
+Specifies the byte offset from the beginning of the UNI_GLYPHSETDATA structure to the beginning of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff556509">MAPTABLE</a> structure.
 
 `dwReserved`
 
@@ -121,12 +121,12 @@ A UNI_GLYPHSETDATA structure must be the first structure contained in a .gtt fil
 
 ## See Also
 
-<a href="..\prntfont\ns-prntfont-_maptable.md">MAPTABLE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550544">GLYPHRUN</a>
 
 
 
-<a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556509">MAPTABLE</a>
 
 
 
-<a href="..\prntfont\ns-prntfont-_glyphrun.md">GLYPHRUN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a>

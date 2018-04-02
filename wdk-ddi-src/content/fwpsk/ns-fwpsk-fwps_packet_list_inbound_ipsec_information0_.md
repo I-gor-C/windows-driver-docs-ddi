@@ -7,7 +7,7 @@ old-location: netvista\fwps_packet_list_inbound_ipsec_information0.htm
 old-project: netvista
 ms.assetid: ac5994a7-411c-47f2-ba1d-2d49c727de8d
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0, FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0 structure [Network Drivers Starting with Windows Vista], FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0_, fwpsk/FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0, netvista.fwps_packet_list_inbound_ipsec_information0, wfp_ref_3_struct_3_fwps_P-Z_3acc4a2d-78ef-418a-ab15-a9e306110baf.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,16 +49,16 @@ The <b>FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0</b> structure defines IPsec i
 <div class="alert"><b>Note</b>  <b>FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0</b> is a specific version of <b>FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION</b>. See <a href="https://msdn.microsoft.com/FBDF53E5-F7DE-4DEB-AC18-6D2BB59FE670">WFP Version-Independent Names and Targeting Specific Versions of Windows</a> for more information.</div><div> </div>
 
 ## Syntax
-````
+```
 typedef struct FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0_ {
-  unsigned isSecure  :1;
-  unsigned isTransportMode  :1;
-  unsigned isTunnelMode  :1;
-  unsigned isTransportModeVerified  :1;
-  unsigned isTunnelModeVerified  :1;
-  unsigned isDeTunneled  :1;
+  unsigned  : 1 isSecure;
+  unsigned  : 1 isTransportMode;
+  unsigned  : 1 isTunnelMode;
+  unsigned  : 1 isTransportModeVerified;
+  unsigned  : 1 isTunnelModeVerified;
+  unsigned  : 1 isDeTunneled;
 } FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0;
-````
+```
 
 ## Members
 
@@ -94,7 +94,7 @@ A value that indicates whether the packet list has been detunneled by IPsec.
 
 ## Remarks
 An FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0 structure is included as a member of the 
-    <a href="..\fwpsk\ns-fwpsk-fwps_packet_list_ipsec_information0_.md">
+    <a href="https://msdn.microsoft.com/bd005dd9-887a-4323-9816-e4a3b96ca53d">
     FWPS_PACKET_LIST_IPSEC_INFORMATION0</a> structure.
 
 ## Requirements
@@ -105,5 +105,5 @@ An FWPS_PACKET_LIST_INBOUND_IPSEC_INFORMATION0 structure is included as a member
 
 ## See Also
 
-<a href="..\fwpsk\ns-fwpsk-fwps_packet_list_ipsec_information0_.md">
+<a href="https://msdn.microsoft.com/bd005dd9-887a-4323-9816-e4a3b96ca53d">
    FWPS_PACKET_LIST_IPSEC_INFORMATION0</a>

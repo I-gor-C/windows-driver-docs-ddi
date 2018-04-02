@@ -47,15 +47,15 @@ req.typenames: KS_ANALOGVIDEOINFO, *PKS_ANALOGVIDEOINFO
 The KS_ANALOGVIDEOINFO structure describes an analog video stream.
 
 ## Syntax
-````
+```
 typedef struct tagKS_AnalogVideoInfo {
-  RECT           rcSource;
-  RECT           rcTarget;
-  DWORD          dwActiveWidth;
-  DWORD          dwActiveHeight;
+  RECT           rcSource;
+  RECT           rcTarget;
+  DWORD          dwActiveWidth;
+  DWORD          dwActiveHeight;
   REFERENCE_TIME AvgTimePerFrame;
-} KS_ANALOGVIDEOINFO, *PKS_ANALOGVIDEOINFO;
-````
+} *PKS_ANALOGVIDEOINFO, KS_ANALOGVIDEOINFO;
+```
 
 ## Members
 

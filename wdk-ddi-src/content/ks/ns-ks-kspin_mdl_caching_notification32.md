@@ -47,12 +47,12 @@ req.typenames: KSPIN_MDL_CACHING_NOTIFICATION32, *PKSPIN_MDL_CACHING_NOTIFICATIO
 This structure is used internally by the operating system.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPIN_MDL_CACHING_NOTIFICATION32 {
   KSPIN_MDL_CACHING_EVENT Event;
-  ULONG                   Buffer;
-} KSPIN_MDL_CACHING_NOTIFICATION32, *PKSPIN_MDL_CACHING_NOTIFICATION32;
-````
+  ULONG                   Buffer;
+} *PKSPIN_MDL_CACHING_NOTIFICATION32, KSPIN_MDL_CACHING_NOTIFICATION32;
+```
 
 ## Members
 

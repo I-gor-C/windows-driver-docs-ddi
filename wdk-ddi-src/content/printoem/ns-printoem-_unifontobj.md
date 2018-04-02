@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 The UNIFONTOBJ structure is used as an input parameter to font functions in rendering plug-ins.
 
 ## Syntax
-````
+```
 typedef struct _UNIFONTOBJ {
-  ULONG      ulFontID;
-  DWORD      dwFlags;
+  ULONG      ulFontID;
+  DWORD      dwFlags;
   IFIMETRICS *pIFIMetrics;
   PFNGETINFO pfnGetInfo;
 } UNIFONTOBJ, *PUNIFONTOBJ;
-````
+```
 
 ## Members
 
@@ -165,8 +165,8 @@ Pointer to Unidrv's <a href="https://msdn.microsoft.com/library/windows/hardware
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567418">IFIMETRICS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>

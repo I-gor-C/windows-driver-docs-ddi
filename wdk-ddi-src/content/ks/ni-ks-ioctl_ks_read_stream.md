@@ -44,13 +44,13 @@ req.typenames:
 ---
 
 # IOCTL_KS_READ_STREAM IOCTL
-An application can use IOCTL_KS_READ_STREAM to read data from a pin. The application passes IOCTL_KS_READ_STREAM with the parameters described below to the <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a> function.
+An application can use IOCTL_KS_READ_STREAM to read data from a pin. The application passes IOCTL_KS_READ_STREAM with the parameters described below to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567142">KsSynchronousDeviceControl</a> function.
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-The application places a pointer to an array of <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structures in the <b>InBuffer</b> parameter. Each describes a packet of data to be read. The headers can also contain the presentation time and duration.
+The application places a pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a> structures in the <b>InBuffer</b> parameter. Each describes a packet of data to be read. The headers can also contain the presentation time and duration.
 
 ### Input Buffer Length
 The <b>InLength</b> parameter specifies the size, in bytes, of the input buffer contents.
@@ -78,8 +78,8 @@ If the request is successful, the Status member is set to STATUS_SUCCESS.
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksprobestreamirp.md">KsProbeStreamIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560838">IOCTL_KS_WRITE_STREAM</a>
 
 
 
-<a href="..\ks\ni-ks-ioctl_ks_write_stream.md">IOCTL_KS_WRITE_STREAM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564252">KsProbeStreamIrp</a>

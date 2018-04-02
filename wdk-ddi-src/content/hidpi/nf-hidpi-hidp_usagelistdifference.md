@@ -50,15 +50,15 @@ The <b>HidP_UsageListDifference</b> routine returns the differences between two 
 
 ## Syntax
 
-````
-NTSTATUS __stdcall HidP_UsageListDifference(
-  _In_  PUSAGE PreviousUsageList,
-  _In_  PUSAGE CurrentUsageList,
-  _Out_ PUSAGE BreakUsageList,
-  _Out_ PUSAGE MakeUsageList,
-  _In_  ULONG  UsageListLength
+```
+NTSTATUS HidP_UsageListDifference(
+  PUSAGE PreviousUsageList,
+  PUSAGE CurrentUsageList,
+  PUSAGE BreakUsageList,
+  PUSAGE MakeUsageList,
+  ULONG  UsageListLength
 );
-````
+```
 
 ## Parameters
 
@@ -108,4 +108,4 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<a href="..\hidpi\nf-hidpi-hidp_usageandpagelistdifference.md">HidP_UsageAndPageListDifference</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539824">HidP_UsageAndPageListDifference</a>

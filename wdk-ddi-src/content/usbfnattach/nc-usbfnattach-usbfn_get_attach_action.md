@@ -7,7 +7,7 @@ old-location: buses\usbfn_get_attach_action.htm
 old-project: usbref
 ms.assetid: D951D5A0-3A93-4B67-B25A-31EE61C0A065
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: PFN_USBFN_GET_ATTACH_ACTION, PFN_USBFN_GET_ATTACH_ACTION callback function pointer [Buses], USBFN_GET_ATTACH_ACTION, UsbFnGetAttachAction, UsbFnGetAttachAction callback function [Buses], buses.usbfn_get_attach_action, usbfnattach/UsbFnGetAttachAction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ A pointer to a driver-defined context.
 
 `OnAttach`
 
-A pointer to a caller-allocated <a href="..\usbfnattach\ns-usbfnattach-_usbfn_on_attach.md">USBFN_ON_ATTACH</a> structure that the driver populates with the type of attach and port.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt188002">USBFN_ON_ATTACH</a> structure that the driver populates with the type of attach and port.
 
 
 ## Return Value

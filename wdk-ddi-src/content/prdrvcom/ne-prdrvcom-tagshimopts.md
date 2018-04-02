@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
-typedef enum tagSHIMOPTS { 
-  PTSHIM_DEFAULT     = 0,
-  PTSHIM_NOSNAPSHOT  = 0x1
-} SHIMOPTS, *PSHIMOPTS;
-````
+```
+typedef enum tagSHIMOPTS {
+  PTSHIM_DEFAULT     ,
+  PTSHIM_NOSNAPSHOT
+} *PSHIMOPTS, SHIMOPTS;
+```
 
 ## Constants
 

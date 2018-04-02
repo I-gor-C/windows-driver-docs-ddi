@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# TransferCallback method
+# IWiaTransferCallback::TransferCallback method
 The <b>IWiaTransferCallback::TransferCallback</b> method is implemented by an image processing filter. It is called by the WIA service as a result of an application calling <b>IWiaTransfer::Download</b> or the preview component's <b>IWiaPreview::GetNewPreview</b>.
 
 ## Syntax
 
-````
+```
 HRESULT TransferCallback(
-  [in] LONG              lFlags,
-  [in] WiaTransferParams *WiaTransferParams
+  LONG              lFlags,
+  WiaTransferParams *pWiaTransferParams
 );
-````
+```
 
 ## Parameters
 

@@ -46,19 +46,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnGetProperties method
+# ISensorDriver::OnGetProperties method
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545610">ISensorDriver::OnGetProperties</a> method retrieves values for the specified properties from the specified sensor.
 
 ## Syntax
 
-````
+```
 HRESULT OnGetProperties(
-   IWDFFile *                     pClientFile,
-   LPWSTR                         pwszSensorID,
-   IPortableDeviceKeyCollection * pProperties,
-   IPortableDeviceValues **       ppPropertyValues
+  IWDFFile                     *pClientFile,
+  LPWSTR                       pwszSensorID,
+  IPortableDeviceKeyCollection *pProperties,
+  IPortableDeviceValues        **ppPropertyValues
 );
-````
+```
 
 ## Parameters
 

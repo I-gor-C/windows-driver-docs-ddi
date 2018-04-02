@@ -52,13 +52,13 @@ The <b>WDF_WRITE_REGISTER_USHORT</b> routine writes a USHORT value to the specif
 
 ## Syntax
 
-````
+```
 void WDF_WRITE_REGISTER_USHORT(
-  _In_ WDFDEVICE Device,
-  _In_ PUSHORT   Register,
-  _In_ ULONG     Value
+  WDFDEVICE Device,
+  PUSHORT   Register,
+  USHORT    Value
 );
-````
+```
 
 ## Parameters
 

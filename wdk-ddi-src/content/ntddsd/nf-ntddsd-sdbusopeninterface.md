@@ -49,14 +49,14 @@ The <b>SdBusOpenInterface</b> routine obtains an interface from the Secure Digit
 
 ## Syntax
 
-````
+```
 NTSTATUS SdBusOpenInterface(
-  _In_  PDEVICE_OBJECT            Pdo,
-  _Out_ PSDBUS_INTERFACE_STANDARD InterfaceStandard,
-  _In_  USHORT                    Size,
-  _In_  USHORT                    Version
+  PDEVICE_OBJECT            Pdo,
+  PSDBUS_INTERFACE_STANDARD InterfaceStandard,
+  USHORT                    Size,
+  USHORT                    Version
 );
-````
+```
 
 ## Parameters
 
@@ -96,8 +96,8 @@ SD card drivers must call this routine to establish communication with the bus d
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/92b8762d-8af3-493c-aa1d-bc245b0cbd83">SDBUS_INTERFACE_STANDARD</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
+
+
+
+<a href="https://msdn.microsoft.com/92b8762d-8af3-493c-aa1d-bc245b0cbd83">SDBUS_INTERFACE_STANDARD</a>

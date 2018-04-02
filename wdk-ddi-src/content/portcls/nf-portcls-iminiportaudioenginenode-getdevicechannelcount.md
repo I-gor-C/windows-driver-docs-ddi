@@ -7,7 +7,7 @@ old-location: audio\iminiportaudioenginenode_getdevicechannelcount.htm
 old-project: audio
 ms.assetid: 978193AE-55CD-4255-8722-A1E008E98F08
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: GetDeviceChannelCount method [Audio Devices], GetDeviceChannelCount method [Audio Devices], IMiniportAudioEngineNode interface, GetDeviceChannelCount,IMiniportAudioEngineNode.GetDeviceChannelCount, IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelCount method, IMiniportAudioEngineNode::GetDeviceChannelCount, audio.iminiportaudioenginenode_getdevicechannelcount, portcls/IMiniportAudioEngineNode::GetDeviceChannelCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# GetDeviceChannelCount method
+# IMiniportAudioEngineNode::GetDeviceChannelCount method
 Gets a count of the number of channels supported by the audio device.
 
 ## Syntax
 
-````
+```
 NTSTATUS GetDeviceChannelCount(
-  [in]  ULONG              ulNodeId,
-  [in]  eChannelTargetType targetType,
-  [out] UINT32             *pulChannelCount
+  ULONG              ulNodeId,
+  eChannelTargetType targetType,
+  UINT32             *pulChannelCount
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ The ID of the node that represents the audio device.
 
 `targetType`
 
-An <a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a> enumerated value that specifies the types of target nodes in the channels. For example, there could be Volume, Mute or PeakMeter nodes.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/dn302034">eChannelTargetType</a> enumerated value that specifies the types of target nodes in the channels. For example, there could be Volume, Mute or PeakMeter nodes.
 
 `pulChannelCount`
 
@@ -88,8 +88,8 @@ returns an appropriate error code.
 
 ## See Also
 
-<a href="..\portcls\ne-portcls-echanneltargettype.md">eChannelTargetType</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302040">IMiniportAudioEngineNode</a>
 
 
 
-<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302034">eChannelTargetType</a>

@@ -7,7 +7,7 @@ old-location: buses\ufxendpointnotifysetup.htm
 old-project: usbref
 ms.assetid: 147CE46A-315D-4B75-B345-A7C0B01B2078
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UfxEndpointNotifySetup, UfxEndpointNotifySetup method [Buses], buses.ufxendpointnotifysetup, ufxclient/UfxEndpointNotifySetup
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ Notifies UFX when the client driver receives a setup packet from the host.
 
 ## Syntax
 
-````
-VOID UfxEndpointNotifySetup(
-  [in] UFXDEVICE                      UfxDevice,
-  [in] PUSB_DEFAULT_PIPE_SETUP_PACKET SetupInfo
+```
+void UfxEndpointNotifySetup(
+  UFXENDPOINT                    UfxEndpoint,
+  PUSB_DEFAULT_PIPE_SETUP_PACKET SetupInfo
 );
-````
+```
 
 ## Parameters
 

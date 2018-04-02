@@ -47,16 +47,16 @@ req.typenames: KSCOMPONENTID, *PKSCOMPONENTID
 The KSCOMPONENTID structure contains unique identifiers that describe an individual kernel streaming object.
 
 ## Syntax
-````
-typedef struct {
-  GUID  Manufacturer;
-  GUID  Product;
-  GUID  Component;
-  GUID  Name;
+```
+typedef struct KSCOMPONENTID {
+  GUID  Manufacturer;
+  GUID  Product;
+  GUID  Component;
+  GUID  Name;
   ULONG Version;
   ULONG Revision;
-} KSCOMPONENTID, *PKSCOMPONENTID;
-````
+} *PKSCOMPONENTID, KSCOMPONENTID;
+```
 
 ## Members
 

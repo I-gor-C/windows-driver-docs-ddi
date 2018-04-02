@@ -51,22 +51,22 @@ The HID source driver calls this method to submit a HID Read (Input) Report to V
 
 ## Syntax
 
-````
+```
 NTSTATUS VhfReadReportSubmit(
-  [in] VHFHANDLE        VhfHandle,
-  [in] PHID_XFER_PACKET HidTransferPacket
+  VHFHANDLE        VhfHandle,
+  PHID_XFER_PACKET HidTransferPacket
 );
-````
+```
 
 ## Parameters
 
 `VhfHandle`
 
-A handle to a virtual HID device that your HID source driver received in the previous call to <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a>.
+A handle to a virtual HID device that your HID source driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/dn925036">VhfCreate</a>.
 
 `HidTransferPacket`
 
-A pointer to a <a href="..\vhf\ns-vhf-_hid_xfer_packet.md">HID_XFER_PACKET</a> structure that describes the HID report.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539949">HID_XFER_PACKET</a> structure that describes the HID report.
 
 
 ## Return Value
@@ -77,9 +77,9 @@ If the <b>VhfReadReportSubmit</b> call succeeds, the method returns STATUS_SUCCE
 
 The HID source driver can choose to implement its buffering policy or let Virtual HID Framework (VHF) handle buffering. 
 
-If the driver uses its own buffering policy, then it must implement and register an <a href="..\vhf\nc-vhf-evt_vhf_ready_for_next_read_report.md">EvtVhfReadyForNextReadReport</a> callback function in its call to <a href="..\vhf\nf-vhf-vhfcreate.md">VhfCreate</a>. It must call <i>VhfReadReportSubmit</i> only once after VHF has invoked <i>EvtVhfReadyForNextReadReport</i>. After the callback has been invoked, the driver can reuse the transfer buffer pointed to by <i>HidTransferPacket</i>. The driver must wait for the next time that VHF invokes <i>EvtVhfReadyForNextReadReport</i> before calling this method again. 
+If the driver uses its own buffering policy, then it must implement and register an <a href="https://msdn.microsoft.com/02DDBE00-C342-474B-8D06-FBB929BA4760">EvtVhfReadyForNextReadReport</a> callback function in its call to <a href="https://msdn.microsoft.com/library/windows/hardware/dn925036">VhfCreate</a>. It must call <i>VhfReadReportSubmit</i> only once after VHF has invoked <i>EvtVhfReadyForNextReadReport</i>. After the callback has been invoked, the driver can reuse the transfer buffer pointed to by <i>HidTransferPacket</i>. The driver must wait for the next time that VHF invokes <i>EvtVhfReadyForNextReadReport</i> before calling this method again. 
 
-If the HID source driver does not implement the <a href="..\vhf\nc-vhf-evt_vhf_ready_for_next_read_report.md">EvtVhfReadyForNextReadReport</a> callback, then there are no restrictions on calling this method. VHF uses the default buffering policy. The driver can reuse the transfer buffer after the call returns.
+If the HID source driver does not implement the <a href="https://msdn.microsoft.com/02DDBE00-C342-474B-8D06-FBB929BA4760">EvtVhfReadyForNextReadReport</a> callback, then there are no restrictions on calling this method. VHF uses the default buffering policy. The driver can reuse the transfer buffer after the call returns.
 
 ## Requirements
 | &nbsp; | &nbsp; |

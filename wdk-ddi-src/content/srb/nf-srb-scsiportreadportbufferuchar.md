@@ -7,7 +7,7 @@ old-location: storage\scsiportreadportbufferuchar.htm
 old-project: storage
 ms.assetid: 9444670d-5b9f-4d77-b867-ac5608c24e02
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortReadPortBufferUchar, ScsiPortReadPortBufferUchar routine [Storage Devices], scsiprt_db25989e-3b44-4f45-b768-b1b11c2ed25a.xml, srb/ScsiPortReadPortBufferUchar, storage.scsiportreadportbufferuchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,13 +52,13 @@ The <b>ScsiPortReadPortBufferUchar</b> routine transfers a given number of unsig
 
 ## Syntax
 
-````
-VOID ScsiPortReadPortBufferUchar(
-  _In_ PUCHAR Port,
-  _In_ PUCHAR Buffer,
-  _In_ ULONG  Count
+```
+SCSIPORT_API VOID ScsiPortReadPortBufferUchar(
+  PUCHAR Port,
+  PUCHAR Buffer,
+  ULONG  Count
 );
-````
+```
 
 ## Parameters
 
@@ -92,4 +92,4 @@ None
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>

@@ -44,15 +44,15 @@ req.typenames: SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO, *PSECURE_ELEMENT_EVENT_SU
 ---
 
 # _SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO structure
-The SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO structure is an input parameter to <a href="..\nfcsedev\ni-nfcsedev-ioctl_nfcse_subscribe_for_event.md">IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT</a>.
+The SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO structure is an input parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/dn905514">IOCTL_NFCSE_SUBSCRIBE_FOR_EVENT</a>.
 
 ## Syntax
-````
+```
 typedef struct _SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO {
-  GUID                      guidSecureElementId;
+  GUID                      guidSecureElementId;
   SECURE_ELEMENT_EVENT_TYPE eEventType;
-} SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO, *PSECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO;
-````
+} *PSECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO, SECURE_ELEMENT_EVENT_SUBSCRIPTION_INFO;
+```
 
 ## Members
 

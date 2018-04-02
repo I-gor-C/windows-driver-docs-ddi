@@ -7,7 +7,7 @@ old-location: netvista\rilrttdata.htm
 old-project: netvista
 ms.assetid: 037831c7-d0ef-4cbc-a414-a77010e228a5
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*LPRILRTTDATA, RILRTTDATA, RILRTTDATA structure [Network Drivers Starting with Windows Vista], netvista.rilrttdata, ntddrilapitypes/RILRTTDATA"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef struct _RILRTTDATA {
-  DWORD       cbSize;
-  DWORD       dwID;
-  DWORD       dwExecutor;
-  WCHAR [127] wszRTTData;
-} RILRTTDATA, RILRTTDATA;
-````
+```
+typedef struct RILRTTDATA {
+  DWORD cbSize;
+  DWORD dwID;
+  DWORD dwExecutor;
+  WCHAR wszRTTData[127];
+}  *LPRILRTTDATA;
+```
 
 ## Members
 

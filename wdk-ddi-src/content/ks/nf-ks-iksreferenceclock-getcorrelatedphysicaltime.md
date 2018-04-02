@@ -44,16 +44,16 @@ req.typenames:
 ---
 
 
-# GetCorrelatedPhysicalTime method
+# IKsReferenceClock::GetCorrelatedPhysicalTime method
 The <b>IKsReferenceClock::GetCorrelatedPhysicalTime</b> method queries the associated reference clock for the current physical time and retrieves the correlated system time.
 
 ## Syntax
 
-````
+```
 LONGLONG GetCorrelatedPhysicalTime(
-  [out] PLONGLONG SystemTime
+  PLONGLONG SystemTime
 );
-````
+```
 
 ## Parameters
 
@@ -82,4 +82,4 @@ AVStream uses the <a href="https://msdn.microsoft.com/library/windows/hardware/f
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingetreferenceclockinterface.md">KsPinGetReferenceClockInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563517">KsPinGetReferenceClockInterface</a>

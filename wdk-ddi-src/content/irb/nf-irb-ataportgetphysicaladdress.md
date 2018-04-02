@@ -7,7 +7,7 @@ old-location: storage\ataportgetphysicaladdress.htm
 old-project: storage
 ms.assetid: f6c595f2-a493-453a-a744-7ce6577ae29e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortGetPhysicalAddress, AtaPortGetPhysicalAddress routine [Storage Devices], atartns_8067117e-f163-4fe9-a3f4-24b32b5bcf63.xml, irb/AtaPortGetPhysicalAddress, storage.ataportgetphysicaladdress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,14 +53,14 @@ The <b>AtaPortGetPhysicalAddress</b> routine converts the virtual address range 
 
 ## Syntax
 
-````
-IDE_PHYSICAL_ADDRESS AtaPortGetPhysicalAddress(
-  _In_      PVOID              ChannelExtension,
-  _In_opt_  PIDE_REQUEST_BLOCK Irb,
-  _In_opt_  PVOID              VirtualAddress,
-  _Out_opt_ ULONG              *Length
+```
+_IRQL_requires_same_ IDE_PHYSICAL_ADDRESS AtaPortGetPhysicalAddress(
+  PVOID              ChannelExtension,
+  PIDE_REQUEST_BLOCK Irb,
+  PVOID              VirtualAddress,
+  ULONG              *Length
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A pointer to the channel extension.
 
 `Irb`
 
-A pointer to a structure of type <a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which the address range is converted.
+A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which the address range is converted.
 
 `VirtualAddress`
 
@@ -95,4 +95,4 @@ Returns the number of mapped bytes starting at the returned physical address.
 
 ## See Also
 
-<a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a>

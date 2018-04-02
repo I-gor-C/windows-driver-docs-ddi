@@ -7,7 +7,7 @@ old-location: ifsk\ccistheredirtydata.htm
 old-project: ifsk
 ms.assetid: 592c7f8d-0a39-45af-a9b8-14ddd55e2835
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: CcIsThereDirtyData, CcIsThereDirtyData routine [Installable File System Drivers], ccref_86c4a327-a13e-49b3-89d1-abf976973000.xml, ifsk.ccistheredirtydata, ntifs/CcIsThereDirtyData
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>CcIsThereDirtyData</b> routine determines whether a mounted volume contai
 
 ## Syntax
 
-````
-BOOLEAN CcIsThereDirtyData(
-  _In_ PVPB Vpb
+```
+NTKERNELAPI BOOLEAN CcIsThereDirtyData(
+  PVPB Vpb
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ Pointer to a volume parameter block (VPB) for the volume.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539082">CcFlushCache</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-ccflushcache.md">CcFlushCache</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539188">CcPurgeCacheSection</a>

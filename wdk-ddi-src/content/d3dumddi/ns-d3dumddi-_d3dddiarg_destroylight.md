@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_destroylight.htm
 old-project: display
 ms.assetid: d019a940-5735-4b35-af99-3aac3dc4270b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDIARG_DESTROYLIGHT, D3DDDIARG_DESTROYLIGHT structure [Display Devices], UMDisplayDriver_param_Structs_497b7bc8-b2ca-4ead-9c3e-365673b2058f.xml, _D3DDDIARG_DESTROYLIGHT, d3dumddi/D3DDDIARG_DESTROYLIGHT, display.d3dddiarg_destroylight
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,11 +47,11 @@ req.typenames: D3DDDIARG_DESTROYLIGHT
 The D3DDDIARG_DESTROYLIGHT structure contains the index into a light array for the light to destroy.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDIARG_DESTROYLIGHT {
   UINT Index;
 } D3DDDIARG_DESTROYLIGHT;
-````
+```
 
 ## Members
 
@@ -69,4 +69,4 @@ typedef struct _D3DDDIARG_DESTROYLIGHT {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_destroylight.md">DestroyLight</a>
+<a href="https://msdn.microsoft.com/dbc86e4d-a002-4270-a3c4-02d16972c921">DestroyLight</a>

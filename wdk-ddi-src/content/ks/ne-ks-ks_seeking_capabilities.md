@@ -47,17 +47,17 @@ req.typenames: KS_SEEKING_CAPABILITIES
 
 
 ## Syntax
-````
-typedef enum  { 
-  KS_SEEKING_CanSeekAbsolute   = 0x1,
-  KS_SEEKING_CanSeekForwards   = 0x2,
-  KS_SEEKING_CanSeekBackwards  = 0x4,
-  KS_SEEKING_CanGetCurrentPos  = 0x8,
-  KS_SEEKING_CanGetStopPos     = 0x10,
-  KS_SEEKING_CanGetDuration    = 0x20,
-  KS_SEEKING_CanPlayBackwards  = 0x40
-} KS_SEEKING_CAPABILITIES;
-````
+```
+typedef enum KS_SEEKING_CAPABILITIES {
+  KS_SEEKING_CanSeekAbsolute   ,
+  KS_SEEKING_CanSeekForwards   ,
+  KS_SEEKING_CanSeekBackwards  ,
+  KS_SEEKING_CanGetCurrentPos  ,
+  KS_SEEKING_CanGetStopPos     ,
+  KS_SEEKING_CanGetDuration    ,
+  KS_SEEKING_CanPlayBackwards
+} ;
+```
 
 ## Constants
 

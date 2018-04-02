@@ -46,17 +46,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# PostStateChange method
+# ISensorClassExtension::PostStateChange method
 The <b>ISensorClassExtension::PostStateChange</b> method notifies the sensor class extension about a change in the operational state of the sensor.
 
 ## Syntax
 
-````
+```
 HRESULT PostStateChange(
-  [in] LPWSTR      pwszSensorID,
-  [in] SensorState State
+  LPWSTR      pwszSensorID,
+  SensorState state
 );
-````
+```
 
 ## Parameters
 
@@ -164,8 +164,8 @@ The following example code demonstrates a function that posts a state-changed ev
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545598">ISensorDriver::OnClientUnsubscribeFromEvents</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545589">ISensorDriver::OnClientSubscribeToEvents</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545598">ISensorDriver::OnClientUnsubscribeFromEvents</a>

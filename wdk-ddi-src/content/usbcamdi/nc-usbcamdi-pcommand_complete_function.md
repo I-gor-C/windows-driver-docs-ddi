@@ -102,7 +102,7 @@ USBCAMD_WaitOnDeviceEvent.
 
 
 
-<a href="..\usbcamdi\nf-usbcamdi-usbcamd_controlvendorcommand.md">USBCAMD_ControlVendorCommand</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568581">USBCAMD_ControlVendorCommand</a>
 
 
 

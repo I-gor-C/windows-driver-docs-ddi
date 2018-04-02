@@ -7,7 +7,7 @@ old-location: kernel\pep_acpi_initialize_interrupt_resource.htm
 old-project: kernel
 ms.assetid: A89AB86B-4DC9-43ED-9EE6-1D4B693DAB91
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE, PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE function [Kernel-Mode Driver Architecture], kernel.pep_acpi_initialize_interrupt_resource, pepfx/PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,22 +45,22 @@ req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
 
 
 # PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE function
-The <b>PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="..\pepfx\ns-pepfx-_pep_acpi_interrupt_resource.md">PEP_ACPI_INTERRUPT_RESOURCE</a> structure.
+The <b>PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="https://msdn.microsoft.com/library/windows/hardware/mt186682">PEP_ACPI_INTERRUPT_RESOURCE</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE VOID PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE(
-  _In_  BOOLEAN             ResourceUsage,
-  _In_  KINTERRUPT_MODE     EdgeLevel,
-  _In_  KINTERRUPT_POLARITY InterruptLevel,
-  _In_  BOOLEAN             ShareType,
-  _In_  BOOLEAN             Wake,
-  _In_  PULONG              PinTable,
-  _In_  UCHAR               PinCount,
-  _Out_ PPEP_ACPI_RESOURCE  Resource
+```
+void PEP_ACPI_INITIALIZE_INTERRUPT_RESOURCE(
+  BOOLEAN             ResourceUsage,
+  KINTERRUPT_MODE     EdgeLevel,
+  KINTERRUPT_POLARITY InterruptLevel,
+  BOOLEAN             ShareType,
+  BOOLEAN             Wake,
+  PULONG              PinTable,
+  UCHAR               PinCount,
+  PPEP_ACPI_RESOURCE  Resource
 );
-````
+```
 
 ## Parameters
 
@@ -70,11 +70,11 @@ Indicates if this device is in use.
 
 `EdgeLevel`
 
-A <a href="..\wudfwdm\ne-wudfwdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff554239">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.
 
 `InterruptLevel`
 
-A <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff554243">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.
 
 `ShareType`
 
@@ -94,7 +94,7 @@ The number of pins described by the <i>PinTable</i> parameter.
 
 `Resource`
 
-A pointer to the resource. The structure behind the pointer is of type <a href="..\pepfx\ns-pepfx-_pep_acpi_interrupt_resource.md">PEP_ACPI_INTERRUPT_RESOURCE</a>.
+A pointer to the resource. The structure behind the pointer is of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt186682">PEP_ACPI_INTERRUPT_RESOURCE</a>.
 
 
 ## Return Value
@@ -111,4 +111,4 @@ This function does not return a value.
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_acpi_interrupt_resource.md">PEP_ACPI_INTERRUPT_RESOURCE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186682">PEP_ACPI_INTERRUPT_RESOURCE</a>

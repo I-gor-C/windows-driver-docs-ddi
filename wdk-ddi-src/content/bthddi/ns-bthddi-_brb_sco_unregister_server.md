@@ -48,13 +48,13 @@ A profile driver uses the _BRB_SCO_UNREGISTER_SERVER structure to unregister its
   capable of receiving SCO connections from remote Bluetooth devices.
 
 ## Syntax
-````
+```
 struct _BRB_SCO_UNREGISTER_SERVER {
   BRB_HEADER Hdr;
-  BTH_ADDR   BtAddress;
-  PVOID      ServerHandle;
+  BTH_ADDR   BtAddress;
+  PVOID      ServerHandle;
 };
-````
+```
 
 ## Members
 
@@ -62,7 +62,7 @@ struct _BRB_SCO_UNREGISTER_SERVER {
 `Hdr`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 `BtAddress`
@@ -88,8 +88,8 @@ To unregister itself as a SCO server, a profile driver should
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a>
+
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536630">BRB_SCO_UNREGISTER_SERVER</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>

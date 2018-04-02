@@ -50,18 +50,18 @@ The <b>KsSynchronousIoControlDevice</b> function performs a synchronous device I
 
 ## Syntax
 
-````
-NTSTATUS KsSynchronousIoControlDevice(
-  _In_  PFILE_OBJECT    FileObject,
-  _In_  KPROCESSOR_MODE RequesorMode,
-  _In_  ULONG           IoControl,
-  _In_  PVOID           InBuffer,
-  _In_  ULONG           InSize,
-  _Out_ PVOID           OutBuffer,
-  _In_  ULONG           OutSize,
-  _Out_ PULONG          BytesReturned
+```
+KSDDKAPI NTSTATUS KsSynchronousIoControlDevice(
+  PFILE_OBJECT    FileObject,
+  KPROCESSOR_MODE RequestorMode,
+  ULONG           IoControl,
+  PVOID           InBuffer,
+  ULONG           InSize,
+  PVOID           OutBuffer,
+  ULONG           OutSize,
+  PULONG          BytesReturned
 );
-````
+```
 
 ## Parameters
 

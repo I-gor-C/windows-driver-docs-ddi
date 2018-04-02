@@ -48,21 +48,21 @@ req.product: Windows 10 or later.
 # WDF_DEVICE_STATE_INIT function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
-The <b>WDF_DEVICE_STATE_INIT</b> function initializes a driver's <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_state.md">WDF_DEVICE_STATE</a> structure.
+The <b>WDF_DEVICE_STATE_INIT</b> function initializes a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551284">WDF_DEVICE_STATE</a> structure.
 
 ## Syntax
 
-````
-VOID WDF_DEVICE_STATE_INIT(
-  _Out_ PWDF_DEVICE_STATE PnpDeviceState
+```
+void WDF_DEVICE_STATE_INIT(
+  PWDF_DEVICE_STATE PnpDeviceState
 );
-````
+```
 
 ## Parameters
 
 `PnpDeviceState`
 
-A pointer to a driver-allocated <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_state.md">WDF_DEVICE_STATE</a> structure.
+A pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff551284">WDF_DEVICE_STATE</a> structure.
 
 
 ## Return Value
@@ -71,12 +71,12 @@ None
 
 ## Remarks
 
-The <b>WDF_DEVICE_STATE_INIT</b> function initializes all of the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_state.md">WDF_DEVICE_STATE</a> structure's <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_tri_state.md">WDF_TRI_STATE</a>-typed members to <b>WdfUseDefault</b>.
+The <b>WDF_DEVICE_STATE_INIT</b> function initializes all of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551284">WDF_DEVICE_STATE</a> structure's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552533">WDF_TRI_STATE</a>-typed members to <b>WdfUseDefault</b>.
 
 
 #### Examples
 
-For a code example that uses <b>WDF_DEVICE_STATE_INIT</b>, see <a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetdevicestate.md">WdfDeviceSetDeviceState</a>.
+For a code example that uses <b>WDF_DEVICE_STATE_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff546884">WdfDeviceSetDeviceState</a>.
 
 <div class="code"></div>
 
@@ -90,4 +90,4 @@ For a code example that uses <b>WDF_DEVICE_STATE_INIT</b>, see <a href="..\wdfde
 
 ## See Also
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_state.md">WDF_DEVICE_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551284">WDF_DEVICE_STATE</a>

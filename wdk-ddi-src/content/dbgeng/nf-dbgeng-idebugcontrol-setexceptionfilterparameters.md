@@ -7,7 +7,7 @@ old-location: debugger\setexceptionfilterparameters.htm
 old-project: debugger
 ms.assetid: b749f96d-d04a-48f2-9012-b7c853e0de14
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugControl, IDebugControl interface [Windows Debugging], SetExceptionFilterParameters method, IDebugControl2 interface [Windows Debugging], SetExceptionFilterParameters method, IDebugControl2::SetExceptionFilterParameters, IDebugControl3 interface [Windows Debugging], SetExceptionFilterParameters method, IDebugControl3::SetExceptionFilterParameters, IDebugControl::SetExceptionFilterParameters, IDebugControl_4e60bce4-e40d-46b6-83ad-55559b97fbad.xml, SetExceptionFilterParameters method [Windows Debugging], SetExceptionFilterParameters method [Windows Debugging], IDebugControl interface, SetExceptionFilterParameters method [Windows Debugging], IDebugControl2 interface, SetExceptionFilterParameters method [Windows Debugging], IDebugControl3 interface, SetExceptionFilterParameters,IDebugControl.SetExceptionFilterParameters, dbgeng/IDebugControl2::SetExceptionFilterParameters, dbgeng/IDebugControl3::SetExceptionFilterParameters, dbgeng/IDebugControl::SetExceptionFilterParameters, debugger.setexceptionfilterparameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,17 +46,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# SetExceptionFilterParameters method
+# IDebugControl::SetExceptionFilterParameters method
 The <b>SetExceptionFilterParameters</b> method changes the <a href="https://msdn.microsoft.com/1f8f738b-7b2b-419a-949e-b71f937de02d">break status</a> and <a href="https://msdn.microsoft.com/1f8f738b-7b2b-419a-949e-b71f937de02d">handling status</a> for some exception filters.
 
 ## Syntax
 
-````
+```
 HRESULT SetExceptionFilterParameters(
-  [in] ULONG                              Count,
-  [in] PDEBUG_EXCEPTION_FILTER_PARAMETERS Params
+  ULONG                              Count,
+  PDEBUG_EXCEPTION_FILTER_PARAMETERS Params
 );
-````
+```
 
 ## Parameters
 
@@ -66,7 +66,7 @@ Specifies the number of exception filters to change the parameters for.
 
 `Params`
 
-Specifies an array of exception filter parameters of type <a href="..\dbgeng\ns-dbgeng-_debug_exception_filter_parameters.md">DEBUG_EXCEPTION_FILTER_PARAMETERS</a>.  Only the <b>ExecutionOption</b>, <b>ContinueOption</b>, and <b>ExceptionCode</b> fields of these parameters are used.  The <b>ExceptionCode</b> field is used to identify the <a href="https://msdn.microsoft.com/0dd010e7-3e10-422a-adcb-8fe7df9e29ab">exception</a> whose exception filter will be changed.  <b>ExceptionOption</b> specifies the new break status and <b>ContinueOption</b> specifies the new handling status.
+Specifies an array of exception filter parameters of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff541485">DEBUG_EXCEPTION_FILTER_PARAMETERS</a>.  Only the <b>ExecutionOption</b>, <b>ContinueOption</b>, and <b>ExceptionCode</b> fields of these parameters are used.  The <b>ExceptionCode</b> field is used to identify the <a href="https://msdn.microsoft.com/0dd010e7-3e10-422a-adcb-8fe7df9e29ab">exception</a> whose exception filter will be changed.  <b>ExceptionOption</b> specifies the new break status and <b>ContinueOption</b> specifies the new handling status.
 
 If the value of the <b>ExceptionOption</b> field is DEBUG_FILTER_REMOVE and the exception filter is an arbitrary exception filter, the exception filter will be removed.
 
@@ -120,15 +120,19 @@ For more information about <a href="https://msdn.microsoft.com/library/windows/h
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546650">GetExceptionFilterParameters</a>
 
 
 
-<a href="https://msdn.microsoft.com/fdb5059f-e7d9-4e14-aa3d-030e72c30732">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550508">IDebugControl</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550512">IDebugControl2</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550519">IDebugControl3</a>
 
 
 
@@ -136,8 +140,4 @@ For more information about <a href="https://msdn.microsoft.com/library/windows/h
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff546650">GetExceptionFilterParameters</a>
+<a href="https://msdn.microsoft.com/fdb5059f-e7d9-4e14-aa3d-030e72c30732">sx, sxd, sxe, sxi, sxn (Set Exceptions)</a>

@@ -48,35 +48,35 @@ req.product: Windows 10 or later.
 The DRIVER_INFO_8 structure contains printer driver information.
 
 ## Syntax
-````
-typedef struct _DRIVER_INFO_8 {
-  DWORD     cVersion;
-  LPTSTR    pName;
-  LPTSTR    pEnvironment;
-  LPTSTR    pDriverPath;
-  LPTSTR    pDataFile;
-  LPTSTR    pConfigFile;
-  LPTSTR    pHelpFile;
-  LPTSTR    pDependentFiles;
-  LPTSTR    pMonitorName;
-  LPTSTR    pDefaultDataType;
-  LPTSTR    pszzPreviousNames;
-  FILETIME  ftDriverDate;
+```
+typedef struct _DRIVER_INFO_8A {
+  DWORD     cVersion;
+  LPSTR     pName;
+  LPSTR     pEnvironment;
+  LPSTR     pDriverPath;
+  LPSTR     pDataFile;
+  LPSTR     pConfigFile;
+  LPSTR     pHelpFile;
+  LPSTR     pDependentFiles;
+  LPSTR     pMonitorName;
+  LPSTR     pDefaultDataType;
+  LPSTR     pszzPreviousNames;
+  FILETIME  ftDriverDate;
   DWORDLONG dwlDriverVersion;
-  LPTSTR    pszMfgName;
-  LPTSTR    pszOEMUrl;
-  LPTSTR    pszHardwareID;
-  LPTSTR    pszProvider;
-  LPTSTR    pszPrintProcessor;
-  LPTSTR    pszVendorSetup;
-  LPTSTR    pszzColorProfiles;
-  LPTSTR    pszInfPath;
-  DWORD     dwPrinterDriverAttributes;
-  LPTSTR    pszzCoreDriverDependencies;
-  FILETIME  ftMinInboxDriverVerDate;
+  LPSTR     pszMfgName;
+  LPSTR     pszOEMUrl;
+  LPSTR     pszHardwareID;
+  LPSTR     pszProvider;
+  LPSTR     pszPrintProcessor;
+  LPSTR     pszVendorSetup;
+  LPSTR     pszzColorProfiles;
+  LPSTR     pszInfPath;
+  DWORD     dwPrinterDriverAttributes;
+  LPSTR     pszzCoreDriverDependencies;
+  FILETIME  ftMinInboxDriverVerDate;
   DWORDLONG dwlMinInboxDriverVerVersion;
-} DRIVER_INFO_8, *PDRIVER_INFO_8, *LPDRIVER_INFO_8;
-````
+} *PDRIVER_INFO_8A, *LPDRIVER_INFO_8A, DRIVER_INFO_8A;
+```
 
 ## Members
 

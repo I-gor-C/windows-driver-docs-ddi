@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SetPagePart method
+# IFixedPage::SetPagePart method
 The <b>SetPagePart</b> method associates a new part with the page.
 
 ## Syntax
 
-````
+```
 HRESULT SetPagePart(
-  [in] IUnknown *pUnk
+  IUnknown *pUnk
 );
-````
+```
 
 ## Parameters
 

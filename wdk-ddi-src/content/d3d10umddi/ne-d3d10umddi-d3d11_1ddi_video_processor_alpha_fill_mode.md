@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_alpha_fill_mode.htm
 old-project: display
 ms.assetid: 22b50f49-821a-407e-89c0-fe7d637664fa
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE, D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE enumeration [Display Devices], D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND, D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_DESTINATION, D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_OPAQUE, D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_DESTINATION, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_OPAQUE, d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM, display.d3d11_1ddi_video_processor_alpha_fill_mode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE
 Specifies the alpha fill mode for video processing.
 
 ## Syntax
-````
-typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE { 
-  D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_OPAQUE         = 0,
-  D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND     = 1,
-  D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_DESTINATION    = 2,
-  D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM  = 3
-} D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE;
-````
+```
+typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE {
+  D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_OPAQUE         ,
+  D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND     ,
+  D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_DESTINATION    ,
+  D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM
+} ;
+```
 
 ## Constants
 
@@ -67,7 +67,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE {
             
                 <tr>
                     <td>D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_BACKGROUND</td>
-                    <td>Alpha values inside the target rectangle are set to the alpha value specified in the background color. To set the background color, call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetoutputbackgroundcolor.md">VideoProcessorSetOutputBackgroundColor</a> function.</td>
+                    <td>Alpha values inside the target rectangle are set to the alpha value specified in the background color. To set the background color, call the <a href="https://msdn.microsoft.com/library/windows/hardware/dn459003">VideoProcessorSetOutputBackgroundColor</a> function.</td>
                 </tr>
             
                 <tr>
@@ -77,7 +77,7 @@ typedef enum D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE {
             
                 <tr>
                     <td>D3D11_1DDI_VIDEO_PROCESSOR_ALPHA_FILL_MODE_SOURCE_STREAM</td>
-                    <td>Alpha values are taken from an input stream, scaled, and copied to the corresponding destination rectangle for that stream. The input stream is specified in the <i>StreamIndex</i> parameter of the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetoutputalphafillmode.md">VideoProcessorSetOutputAlphaFillMode</a> function.
+                    <td>Alpha values are taken from an input stream, scaled, and copied to the corresponding destination rectangle for that stream. The input stream is specified in the <i>StreamIndex</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439778">VideoProcessorSetOutputAlphaFillMode</a> function.
 
 If the input stream does not have alpha data, the video processor sets the alpha values in the target rectangle to opaque. If the input stream is disabled or the source rectangle is empty, the alpha values in the target rectangle are not modified.</td>
                 </tr>
@@ -92,8 +92,8 @@ If the input stream does not have alpha data, the video processor sets the alpha
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetoutputalphafillmode.md">VideoProcessorSetOutputAlphaFillMode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439778">VideoProcessorSetOutputAlphaFillMode</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_videoprocessorsetoutputbackgroundcolor.md">VideoProcessorSetOutputBackgroundColor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn459003">VideoProcessorSetOutputBackgroundColor</a>

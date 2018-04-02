@@ -47,16 +47,16 @@ req.typenames: MF_MDL_SHARED_PAYLOAD_KEY, *PMF_MDL_SHARED_PAYLOAD_KEY
 This union is used internally by the operating system.
 
 ## Syntax
-````
-typedef union _MF_MDL_SHARED_PAYLOAD_KEY {
+```
+typedef struct _MF_MDL_SHARED_PAYLOAD_KEY {
   struct {
-    ULONG   pHandle;
-    ULONG   fHandle;
+    ULONG   fHandle;
+    ULONG   pHandle;
     ULONG64 uPayload;
-  } combined;
-  GUID   GMDLHandle;
-} MF_MDL_SHARED_PAYLOAD_KEY, PMF_MDL_SHARED_PAYLOAD_KEY;
-````
+  } combined;
+  GUID   GMDLHandle;
+} MF_MDL_SHARED_PAYLOAD_KEY, *PMF_MDL_SHARED_PAYLOAD_KEY;
+```
 
 ## Members
 

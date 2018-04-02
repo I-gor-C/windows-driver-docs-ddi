@@ -50,16 +50,16 @@ The <b>DrvQueryColorProfile</b> function allows a printer interface DLL to speci
 
 ## Syntax
 
-````
+```
 BOOL DrvQueryColorProfile(
-        HANDLE    hPrinter,
-  _In_  PDEVMODEW pdevmode,
-        ULONG     ulQueryMode,
-  _Out_ VOID      *pvProfileData,
-  _Out_ ULONG     *pcbProfileData,
-  _Out_ FLONG     *pflProfileData
+  HANDLE    hPrinter,
+  PDEVMODEW pdevmode,
+  ULONG     ulQueryMode,
+  VOID      *pvProfileData,
+  ULONG     *pcbProfileData,
+  FLONG     *pflProfileData
 );
-````
+```
 
 ## Parameters
 

@@ -45,30 +45,30 @@ req.product: Windows 10 or later.
 ---
 
 
-# Impersonate method
+# IWDFIoRequest::Impersonate method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>Impersonate</b> method registers the interface for the method that the framework should call for impersonation.
 
 ## Syntax
 
-````
+```
 HRESULT Impersonate(
-  [in]           SECURITY_IMPERSONATION_LEVEL ImpersonationLevel,
-  [in]           IImpersonateCallback         *pCallback,
-  [in, optional] void                         *pvCallbackContext
+  SECURITY_IMPERSONATION_LEVEL ImpersonationLevel,
+  IImpersonateCallback         *pCallback,
+  void                         *pvCallbackContext
 );
-````
+```
 
 ## Parameters
 
 `ImpersonationLevel`
 
-A <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>-typed value that identifies the level of impersonation.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff556631">SECURITY_IMPERSONATION_LEVEL</a>-typed value that identifies the level of impersonation.
 
 `pCallback`
 
-A pointer to the <a href="..\wudfddi\nn-wudfddi-iimpersonatecallback.md">IImpersonateCallback</a> interface whose method the framework calls for impersonation.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554912">IImpersonateCallback</a> interface whose method the framework calls for impersonation.
 
 `pvCallbackContext`
 
@@ -94,11 +94,7 @@ For information about how UMDF and UMDF drivers handle impersonation, see <a hre
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
-
-
-
-<a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554912">IImpersonateCallback</a>
 
 
 
@@ -106,4 +102,8 @@ For information about how UMDF and UMDF drivers handle impersonation, see <a hre
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iimpersonatecallback.md">IImpersonateCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558985">IWDFIoRequest</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556631">SECURITY_IMPERSONATION_LEVEL</a>

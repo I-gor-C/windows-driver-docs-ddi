@@ -7,7 +7,7 @@ old-location: netvista\ndk_object_type.htm
 old-project: netvista
 ms.assetid: 8CB39DF6-00DA-4480-A44E-62CAF1DB35CE
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_OBJECT_TYPE, NDK_OBJECT_TYPE enumeration [Network Drivers Starting with Windows Vista], NdkObjectTypeAdapter, NdkObjectTypeConnector, NdkObjectTypeCq, NdkObjectTypeListener, NdkObjectTypeMax, NdkObjectTypeMr, NdkObjectTypeMw, NdkObjectTypePd, NdkObjectTypeQp, NdkObjectTypeSharedEndpoint, NdkObjectTypeSrq, NdkObjectTypeUndefined, _NDK_OBJECT_TYPE, ndkpi/NDK_OBJECT_TYPE, ndkpi/NdkObjectTypeAdapter, ndkpi/NdkObjectTypeConnector, ndkpi/NdkObjectTypeCq, ndkpi/NdkObjectTypeListener, ndkpi/NdkObjectTypeMax, ndkpi/NdkObjectTypeMr, ndkpi/NdkObjectTypeMw, ndkpi/NdkObjectTypePd, ndkpi/NdkObjectTypeQp, ndkpi/NdkObjectTypeSharedEndpoint, ndkpi/NdkObjectTypeSrq, ndkpi/NdkObjectTypeUndefined, netvista.ndk_object_type
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,22 +47,22 @@ req.typenames: NDK_OBJECT_TYPE
 The <b>NDK_OBJECT_TYPE</b> enumeration defines  types of Network Direct Kernel (NDK) objects.
 
 ## Syntax
-````
-typedef enum _NDK_OBJECT_TYPE { 
-  NdkObjectTypeUndefined       = 0,
-  NdkObjectTypeAdapter         = 1,
-  NdkObjectTypeQp              = 2,
-  NdkObjectTypeCq              = 3,
-  NdkObjectTypeMr              = 4,
-  NdkObjectTypeMw              = 5,
-  NdkObjectTypePd              = 6,
-  NdkObjectTypeSharedEndpoint  = 7,
-  NdkObjectTypeConnector       = 8,
-  NdkObjectTypeListener        = 9,
-  NdkObjectTypeSrq             = 10,
-  NdkObjectTypeMax             = 11
+```
+typedef enum _NDK_OBJECT_TYPE {
+  NdkObjectTypeUndefined       ,
+  NdkObjectTypeAdapter         ,
+  NdkObjectTypeQp              ,
+  NdkObjectTypeCq              ,
+  NdkObjectTypeMr              ,
+  NdkObjectTypeMw              ,
+  NdkObjectTypePd              ,
+  NdkObjectTypeSharedEndpoint  ,
+  NdkObjectTypeConnector       ,
+  NdkObjectTypeListener        ,
+  NdkObjectTypeSrq             ,
+  NdkObjectTypeMax
 } NDK_OBJECT_TYPE;
-````
+```
 
 ## Constants
 
@@ -75,52 +75,52 @@ typedef enum _NDK_OBJECT_TYPE {
             
                 <tr>
                     <td>NdkObjectTypeAdapter</td>
-                    <td>Specifies an NDK adapter object (<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>).</td>
+                    <td>Specifies an NDK adapter object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439848">NDK_ADAPTER</a>).</td>
                 </tr>
             
                 <tr>
                     <td>NdkObjectTypeQp</td>
-                    <td>Specifies an NDK queue pair (QP) object (<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>).</td>
+                    <td>Specifies an NDK queue pair (QP) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439933">NDK_QP</a>).</td>
                 </tr>
             
                 <tr>
                     <td>NdkObjectTypeCq</td>
-                    <td>Specifies an NDK completion queue (CQ) object (<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>).</td>
+                    <td>Specifies an NDK completion queue (CQ) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439854">NDK_CQ</a>).</td>
                 </tr>
             
                 <tr>
                     <td>NdkObjectTypeMr</td>
-                    <td>Specifies an NDK memory region (MR) object (<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>).</td>
+                    <td>Specifies an NDK memory region (MR) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439922">NDK_MR</a>).</td>
                 </tr>
             
                 <tr>
                     <td>NdkObjectTypeMw</td>
-                    <td>Specifies an NDK memory window (MW) object (<a href="..\ndkpi\ns-ndkpi-_ndk_mw.md">NDK_MW</a>).</td>
+                    <td>Specifies an NDK memory window (MW) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439926">NDK_MW</a>).</td>
                 </tr>
             
                 <tr>
                     <td>NdkObjectTypePd</td>
-                    <td>Specifies an NDK protection domain (PD) object (<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>).</td>
+                    <td>Specifies an NDK protection domain (PD) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439931">NDK_PD</a>).</td>
                 </tr>
             
                 <tr>
                     <td>NdkObjectTypeSharedEndpoint</td>
-                    <td>Specifies an NDK shared endpoint object (<a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>).</td>
+                    <td>Specifies an NDK shared endpoint object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439937">NDK_SHARED_ENDPOINT</a>).</td>
                 </tr>
             
                 <tr>
                     <td>NdkObjectTypeConnector</td>
-                    <td>Specifies an NDK connector object (<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>).</td>
+                    <td>Specifies an NDK connector object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439852">NDK_CONNECTOR</a>).</td>
                 </tr>
             
                 <tr>
                     <td>NdkObjectTypeListener</td>
-                    <td>Specifies an NDK listener object (<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>).</td>
+                    <td>Specifies an NDK listener object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439918">NDK_LISTENER</a>).</td>
                 </tr>
             
                 <tr>
                     <td>NdkObjectTypeSrq</td>
-                    <td>Specifies an NDK shared receive queue (SRQ) object (<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>).</td>
+                    <td>Specifies an NDK shared receive queue (SRQ) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439939">NDK_SRQ</a>).</td>
                 </tr>
             
                 <tr>
@@ -131,7 +131,7 @@ typedef enum _NDK_OBJECT_TYPE {
 
 ## Remarks
 
-NDK objects include an <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a> structure that packages the object type,  version, and other information.
+NDK objects include an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a> structure that packages the object type,  version, and other information.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -141,44 +141,44 @@ NDK objects include an <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJ
 
 ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_connector.md">NDK_CONNECTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439848">NDK_ADAPTER</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_pd.md">NDK_PD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439852">NDK_CONNECTOR</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_mw.md">NDK_MW</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439854">NDK_CQ</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_mr.md">NDK_MR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439918">NDK_LISTENER</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439922">NDK_MR</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439926">NDK_MW</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_qp.md">NDK_QP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_adapter.md">NDK_ADAPTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439931">NDK_PD</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439933">NDK_QP</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439937">NDK_SHARED_ENDPOINT</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439939">NDK_SRQ</a>

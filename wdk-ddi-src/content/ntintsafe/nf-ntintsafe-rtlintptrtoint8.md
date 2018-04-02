@@ -7,7 +7,7 @@ old-location: kernel\rtlintptrtoint8.htm
 old-project: kernel
 ms.assetid: 3AF29469-C376-4EF7-B8A0-88ADCA8FEE4F
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlIntPtrToInt8, RtlIntPtrToInt8 function [Kernel-Mode Driver Architecture], kernel.rtlintptrtoint8, ntintsafe/RtlIntPtrToInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>INT_PTR</b> to a value of type <b>INT8</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlIntPtrToInt8(
-  _In_  INT_PTR iOperand,
-  _Out_ INT8    *pi8Result
+  INT_PTR iOperand,
+  INT8    *pi8Result
 );
-````
+```
 
 ## Parameters
 

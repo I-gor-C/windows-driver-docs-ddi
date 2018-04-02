@@ -47,13 +47,13 @@ req.typenames: KS_TUNER_STRATEGY
 The KS_TUNER_STRATEGY enumeration defines tuning method strategies.
 
 ## Syntax
-````
-typedef enum  { 
-  KS_TUNER_STRATEGY_PLL              = 0X01,
-  KS_TUNER_STRATEGY_SIGNAL_STRENGTH  = 0X02,
-  KS_TUNER_STRATEGY_DRIVER_TUNES     = 0X04
-} KS_TUNER_STRATEGY;
-````
+```
+typedef enum KS_TUNER_STRATEGY {
+  KS_TUNER_STRATEGY_PLL              ,
+  KS_TUNER_STRATEGY_SIGNAL_STRENGTH  ,
+  KS_TUNER_STRATEGY_DRIVER_TUNES
+} ;
+```
 
 ## Constants
 
@@ -83,4 +83,4 @@ typedef enum  {
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_tuner_mode_caps_s.md">KSPROPERTY_TUNER_MODE_CAPS_S</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565872">KSPROPERTY_TUNER_MODE_CAPS_S</a>

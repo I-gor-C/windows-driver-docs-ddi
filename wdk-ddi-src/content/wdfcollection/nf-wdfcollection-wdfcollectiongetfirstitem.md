@@ -55,11 +55,11 @@ The <b>WdfCollectionGetFirstItem</b> method returns a handle to the first object
 
 ## Syntax
 
-````
+```
 WDFOBJECT WdfCollectionGetFirstItem(
-  _In_ WDFCOLLECTION Collection
+  WDFCOLLECTION Collection
 );
-````
+```
 
 ## Parameters
 
@@ -113,8 +113,8 @@ The following code example removes each item from a collection and deletes each 
 
 ## See Also
 
-<a href="..\wdfcollection\nf-wdfcollection-wdfcollectiongetlastitem.md">WdfCollectionGetLastItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545770">WdfCollectionGetItem</a>
 
 
 
-<a href="..\wdfcollection\nf-wdfcollection-wdfcollectiongetitem.md">WdfCollectionGetItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545775">WdfCollectionGetLastItem</a>

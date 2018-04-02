@@ -49,20 +49,20 @@ The <code>WcsTranslateColors</code> function translates an array of colors from 
 
 ## Syntax
 
-````
+```
 BOOL WcsTranslateColors(
-  _In_  HTRANSFORM    hColorTransform,
-  _In_  DWORD         nColors,
-  _In_  DWORD         nInputChannels,
-  _In_  COLORDATATYPE cdtInput,
-  _In_  DWORD         cbInput,
-  _In_  PVOID         pInputData,
-  _In_  DWORD         nOutputChannels,
-  _In_  COLORDATATYPE cdtOutput,
-  _In_  DWORD         cbOutput,
-  _Out_ PVOID         pOutputData
+  HTRANSFORM    hColorTransform,
+  DWORD         nColors,
+  DWORD         nInputChannels,
+  COLORDATATYPE cdtInput,
+  DWORD         cbInput,
+  PVOID         pInputData,
+  DWORD         nOutputChannels,
+  COLORDATATYPE cdtOutput,
+  DWORD         cbOutput,
+  PVOID         pOutputData
 );
-````
+```
 
 ## Parameters
 
@@ -80,7 +80,7 @@ The number of channels per element in the array pointed to by <i>pInputData</i>.
 
 `cdtInput`
 
-The input <a href="..\icm\ne-icm-colordatatype.md">COLORDATATYPE</a> color data type.
+The input <a href="https://msdn.microsoft.com/library/windows/hardware/ff546006">COLORDATATYPE</a> color data type.
 
 `cbInput`
 
@@ -96,7 +96,7 @@ The number of channels per element in the array pointed to by <i>pOutputData</i>
 
 `cdtOutput`
 
-The output <a href="..\icm\ne-icm-colordatatype.md">COLORDATATYPE</a> color data type.
+The output <a href="https://msdn.microsoft.com/library/windows/hardware/ff546006">COLORDATATYPE</a> color data type.
 
 `cbOutput`
 
@@ -126,4 +126,4 @@ If the input and the output color data types are not compatible with the color t
 
 ## See Also
 
-<a href="..\icm\ne-icm-colordatatype.md">COLORDATATYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546006">COLORDATATYPE</a>

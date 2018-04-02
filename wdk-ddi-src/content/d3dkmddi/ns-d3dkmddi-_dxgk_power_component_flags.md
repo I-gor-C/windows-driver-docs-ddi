@@ -7,7 +7,7 @@ old-location: display\dxgk_power_component_flags.htm
 old-project: display
 ms.assetid: aa8cce5b-d582-4c5b-99e2-fad1f0e80128
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_POWER_COMPONENT_FLAGS, DXGK_POWER_COMPONENT_FLAGS structure [Display Devices], _DXGK_POWER_COMPONENT_FLAGS, d3dkmddi/DXGK_POWER_COMPONENT_FLAGS, display.dxgk_power_component_flags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,19 +47,22 @@ req.typenames: DXGK_POWER_COMPONENT_FLAGS
 Describes state transition information about a power component.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_POWER_COMPONENT_FLAGS {
   union {
     struct {
-      UINT Reserved0  :1;
-      UINT DriverCompletesFStateTransition  :1;
-      UINT TransitionTo_F0_OnDx  :1;
-      UINT Reserved  :29;
+      UINT  : 1  Reserved0;
+      UINT  : 1  DriverCompletesFStateTransition;
+      UINT  : 1  TransitionTo_F0_OnDx;
+      UINT  : 1  NoDebounce;
+      UINT  : 1  ActiveInD3;
+      UINT  : 27 Reserved;
+      UINT  : 29 Reserved;
     };
     UINT Value;
   };
 } DXGK_POWER_COMPONENT_FLAGS;
-````
+```
 
 ## Members
 
@@ -73,4 +76,4 @@ typedef struct _DXGK_POWER_COMPONENT_FLAGS {
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_completefstatetransition.md">DxgkCbCompleteFStateTransition</a>
+<a href="https://msdn.microsoft.com/69a6d9bc-44a9-4204-988e-e11c80f67f28">DxgkCbCompleteFStateTransition</a>

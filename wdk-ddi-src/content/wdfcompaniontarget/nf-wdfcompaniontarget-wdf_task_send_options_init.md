@@ -50,12 +50,12 @@ For internal use only.
 
 ## Syntax
 
-````
-FORCEINLINE VOID WDF_TASK_SEND_OPTIONS_INIT(
-  _Out_ PWDF_TASK_SEND_OPTIONS Options,
-  _In_  ULONG                  Flags
+```
+void WDF_TASK_SEND_OPTIONS_INIT(
+  PWDF_TASK_SEND_OPTIONS Options,
+  ULONG                  Flags
 );
-````
+```
 
 ## Parameters
 

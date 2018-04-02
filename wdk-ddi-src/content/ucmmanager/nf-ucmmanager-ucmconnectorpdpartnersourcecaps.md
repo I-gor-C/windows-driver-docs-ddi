@@ -7,7 +7,7 @@ old-location: buses\ucmconnectorpdportpartnersourcecaps.htm
 old-project: usbref
 ms.assetid: 282E12E2-F16F-4399-BC8C-78BD64F05F13
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UcmConnectorPdPartnerSourceCaps, UcmConnectorPdPartnerSourceCaps method [Buses], buses.ucmconnectorpdportpartnersourcecaps, ucmmanager/UcmConnectorPdPartnerSourceCaps
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,19 +51,19 @@ Notifies the USB connector manager framework extension (UcmCx) with the power so
 
 ## Syntax
 
-````
+```
 NTSTATUS UcmConnectorPdPartnerSourceCaps(
-  [in] UCMCONNECTOR              Connector,
-  [in] UCM_PD_POWER_DATA_OBJECT  Pdos[],
-  [in] UCHAR                     PdoCount
+  UCMCONNECTOR                Connector,
+  UCM_PD_POWER_DATA_OBJECT [] Pdos,
+  UCHAR                       PdoCount
 );
-````
+```
 
 ## Parameters
 
 `Connector`
 
-Handle to the connector object that the client driver received in the previous call to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>.
+Handle to the connector object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>.
 
 `Pdos`
 
@@ -130,4 +130,4 @@ If the partner connector is the power sink, the local connector port must query 
 
 ## See Also
 
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>

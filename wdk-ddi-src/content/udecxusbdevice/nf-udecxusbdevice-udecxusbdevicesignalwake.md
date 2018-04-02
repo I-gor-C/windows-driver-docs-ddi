@@ -7,7 +7,7 @@ old-location: buses\udecxusbdevicesignalwake.htm
 old-project: usbref
 ms.assetid: BF8C1D85-6C88-4F4C-ADDB-CCE603D420F2
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UdecxUsbDeviceSignalWake, UdecxUsbDeviceSignalWake function [Buses], buses.udecxusbdevicesignalwake, udecxusbdevice/UdecxUsbDeviceSignalWake
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ Initiates wake up from a low link power state for a virtual USB 2.0 device.
 
 ## Syntax
 
-````
+```
 void UdecxUsbDeviceSignalWake(
-  _In_ UDECXUSBDEVICE UdecxUsbDevice
+  UDECXUSBDEVICE UdecxUsbDevice
 );
-````
+```
 
 ## Parameters
 
 `UdecxUsbDevice`
 
-A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdevicecreate.md">UdecxUsbDeviceCreate</a>.
+A handle to UDE device object. The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt595959">UdecxUsbDeviceCreate</a>.
 
 
 ## Return Value
@@ -70,7 +70,7 @@ This function does not return a value.
 
 ## Remarks
 
-The client driver for the device must have enabled wake capability in the most recent <a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a> call.
+The client driver for the device must have enabled wake capability in the most recent <a href="https://msdn.microsoft.com/library/windows/hardware/mt595911">EVT_UDECX_USB_DEVICE_D0_EXIT</a> call.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,12 +84,12 @@ The client driver for the device must have enabled wake capability in the most r
 
 ## See Also
 
-<a href="..\udecxusbdevice\nc-udecxusbdevice-evt_udecx_usb_device_d0_exit.md">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595911">EVT_UDECX_USB_DEVICE_D0_EXIT</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>

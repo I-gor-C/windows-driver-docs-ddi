@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelpause.htm
 old-project: netvista
 ms.assetid: 434CA5F7-24D4-40E7-AE77-C0732D3FBBFF
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VmbChannelPause, VmbChannelPause function [Network Drivers Starting with Windows Vista], netvista.vmbchannelpause, vmbuskernelmodeclientlibapi/VmbChannelPause
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,11 +53,11 @@ The <b>VmbChannelPause</b>  function moves a channel into the paused state, whic
 
 ## Syntax
 
-````
-VOID VmbChannelPause(
-  _In_ VMBCHANNEL Channel
+```
+void VmbChannelPause(
+  VMBCHANNEL Channel
 );
-````
+```
 
 ## Parameters
 

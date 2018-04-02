@@ -47,12 +47,12 @@ req.typenames: IRB_REQ_ISOCH_STOP
 This structure contains the field necessary to carry out a IsochStop request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_ISOCH_STOP {
   HANDLE hResource;
-  ULONG  fulFlags;
+  ULONG  fulFlags;
 } IRB_REQ_ISOCH_STOP;
-````
+```
 
 ## Members
 

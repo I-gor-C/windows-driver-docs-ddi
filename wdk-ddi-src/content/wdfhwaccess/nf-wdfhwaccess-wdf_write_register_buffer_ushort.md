@@ -52,14 +52,14 @@ The <b>WDF_WRITE_REGISTER_BUFFER_USHORT</b> routine writes a number of USHORT va
 
 ## Syntax
 
-````
+```
 void WDF_WRITE_REGISTER_BUFFER_USHORT(
-  _In_ WDFDEVICE Device,
-  _In_ PUSHORT   Register,
-  _In_ PUSHORT   Buffer,
-  _In_ ULONG     Count 
+  WDFDEVICE Device,
+  PUSHORT   Register,
+  PUSHORT   Buffer,
+  ULONG     Count
 );
-````
+```
 
 ## Parameters
 

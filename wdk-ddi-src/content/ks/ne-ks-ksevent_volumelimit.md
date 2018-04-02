@@ -47,12 +47,11 @@ req.typenames: KSEVENT_VOLUMELIMIT
 
 
 ## Syntax
-````
-typedef enum  { 
+```
+typedef enum KSEVENT_VOLUMELIMIT {
   KSEVENT_VOLUMELIMIT_CHANGED
-
-} KSEVENT_VOLUMELIMIT;
-````
+} ;
+```
 
 ## Constants
 

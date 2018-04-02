@@ -7,7 +7,7 @@ old-location: netvista\ndisunmapfile.htm
 old-project: netvista
 ms.assetid: 20ba1eef-2377-4e17-a2ff-002f1bbe15f0
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisUnmapFile, NdisUnmapFile function [Network Drivers Starting with Windows Vista], ndis/NdisUnmapFile, ndis_file_ref_5be88800-5866-4969-8534-2d76953bf4de.xml, netvista.ndisunmapfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,22 +48,22 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisUnmapFile function
 The
   <b>NdisUnmapFile</b> function releases a virtual address mapping of a file previously set up with the 
-  <a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a> function.
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff562785">NdisMapFile</a> function.
 
 ## Syntax
 
-````
-VOID NdisUnmapFile(
-  _In_ NDIS_HANDLE FileHandle
+```
+void NdisUnmapFile(
+  NDIS_HANDLE FileHandle
 );
-````
+```
 
 ## Parameters
 
 `FileHandle`
 
 The handle that was returned by the 
-     <a href="..\ndis\nf-ndis-ndisopenfile.md">NdisOpenFile</a> function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563728">NdisOpenFile</a> function.
 
 
 ## Return Value
@@ -77,7 +77,7 @@ To reduce resource usage, a miniport driver should always call
     Such a driver can map and unmap the file as necessary, using alternating calls to 
     <b>NdisMapFile</b> and 
     <b>NdisUnmapFile</b> until it releases the file handle with the 
-    <a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a> function.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561645">NdisCloseFile</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,16 +91,16 @@ To reduce resource usage, a miniport driver should always call
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
+<a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismapfile.md">NdisMapFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561645">NdisCloseFile</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisopenfile.md">NdisOpenFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562785">NdisMapFile</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563728">NdisOpenFile</a>

@@ -47,17 +47,17 @@ req.typenames: KS_DATARANGE_VIDEO_PALETTE, *PKS_DATARANGE_VIDEO_PALETTE
 The KS_DATARANGE_VIDEO_PALETTE structure describes a stream and its color capabilities.
 
 ## Syntax
-````
+```
 typedef struct tagKS_DATARANGE_VIDEO_PALETTE {
-  KSDATARANGE                 DataRange;
-  BOOL                        bFixedSizeSamples;
-  BOOL                        bTemporalCompression;
-  DWORD                       StreamDescriptionFlags;
-  DWORD                       MemoryAllocationFlags;
+  KSDATARANGE                 DataRange;
+  BOOL                        bFixedSizeSamples;
+  BOOL                        bTemporalCompression;
+  DWORD                       StreamDescriptionFlags;
+  DWORD                       MemoryAllocationFlags;
   KS_VIDEO_STREAM_CONFIG_CAPS ConfigCaps;
-  KS_VIDEOINFO                VideoInfo;
-} KS_DATARANGE_VIDEO_PALETTE, *PKS_DATARANGE_VIDEO_PALETTE;
-````
+  KS_VIDEOINFO                VideoInfo;
+} *PKS_DATARANGE_VIDEO_PALETTE, KS_DATARANGE_VIDEO_PALETTE;
+```
 
 ## Members
 
@@ -98,12 +98,12 @@ Specifies the details of the video stream.
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md">KS_VIDEO_STREAM_CONFIG_CAPS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_videoinfo.md">KS_VIDEOINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567698">KS_VIDEOINFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567706">KS_VIDEO_STREAM_CONFIG_CAPS</a>

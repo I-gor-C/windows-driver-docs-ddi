@@ -51,15 +51,15 @@ The <b>USBCAMD_GetRegistryKeyValue</b> function retrieves the device-instance-sp
 
 ## Syntax
 
-````
+```
 NTSTATUS USBCAMD_GetRegistryKeyValue(
-  _In_ HANDLE Handle,
-  _In_ PWCHAR KeyNameString,
-  _In_ ULONG  KeyNameStringLength,
-  _In_ PVOID  Data,
-  _In_ ULONG  DataLength
+  HANDLE Handle,
+  PWCHAR KeyNameString,
+  ULONG  KeyNameStringLength,
+  PVOID  Data,
+  ULONG  DataLength
 );
-````
+```
 
 ## Parameters
 

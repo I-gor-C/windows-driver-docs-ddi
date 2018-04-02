@@ -48,15 +48,15 @@ req.product: Windows 10 or later.
 The PTP_VENDOR_DATA_OUT structure contains information that the device sends to an application, in response to a command the application issued to the device.
 
 ## Syntax
-````
+```
 typedef struct _PTP_VENDOR_DATA_OUT {
-  WORD  ResponseCode;
+  WORD  ResponseCode;
   DWORD SessionId;
   DWORD TransactionId;
   DWORD Params[PTP_MAX_PARAMS];
-  BYTE  VendorReadData[1];
+  BYTE  VendorReadData[1];
 } PTP_VENDOR_DATA_OUT, *PPTP_VENDOR_DATA_OUT;
-````
+```
 
 ## Members
 
@@ -94,4 +94,4 @@ For more information about the response codes used in the <b>ResponseCode</b> me
 
 ## See Also
 
-<a href="..\ptpusd\ns-ptpusd-_ptp_vendor_data_in.md">PTP_VENDOR_DATA_IN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546450">PTP_VENDOR_DATA_IN</a>

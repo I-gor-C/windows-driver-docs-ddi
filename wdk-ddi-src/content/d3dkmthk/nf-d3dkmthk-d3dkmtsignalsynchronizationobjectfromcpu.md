@@ -7,7 +7,7 @@ old-location: display\d3dkmtsignalsynchronizationobjectfromcpu.htm
 old-project: display
 ms.assetid: 23DC5EB1-E606-499D-B78A-AFF95E6B00A3
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTSignalSynchronizationObjectFromCpu, D3DKMTSignalSynchronizationObjectFromCpu function [Display Devices], d3dkmthk/D3DKMTSignalSynchronizationObjectFromCpu, display.d3dkmtsignalsynchronizationobjectfromcpu
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ req.typenames: D3DKMT_DRIVERVERSION
 
 ## Syntax
 
-````
-HRESULT APIENTRY D3DKMTSignalSynchronizationObjectFromCpu(
-  _In_ const D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU *pData
+```
+NTSTATUS D3DKMTSignalSynchronizationObjectFromCpu(
+  CONST *D3DKMT_SIGNALSYNCHRONIZATIONOBJECTFROMCPU
 );
-````
+```
 
 ## Parameters
 

@@ -50,13 +50,13 @@ The <b>KsCreateAllocator</b> function creates a handle to an allocator for the g
 
 ## Syntax
 
-````
-NTSTATUS KsCreateAllocator(
-  _In_  HANDLE               ConnectionHandle,
-  _In_  PKSALLOCATOR_FRAMING AllocatorFraming,
-  _Out_ PHANDLE              AllocatorHandle
+```
+KSDDKAPI NTSTATUS KsCreateAllocator(
+  HANDLE               ConnectionHandle,
+  PKSALLOCATOR_FRAMING AllocatorFraming,
+  PHANDLE              AllocatorHandle
 );
-````
+```
 
 ## Parameters
 
@@ -91,4 +91,4 @@ There are two versions of the <b>KsCreateAllocator</b> function: one for user-mo
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560979">KSALLOCATOR_FRAMING</a>

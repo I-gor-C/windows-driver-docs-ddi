@@ -7,7 +7,7 @@ old-location: kernel\ioallocatecontroller.htm
 old-project: kernel
 ms.assetid: bfeec8b1-48fb-420e-b602-699a5f2d659a
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoAllocateController, IoAllocateController routine [Kernel-Mode Driver Architecture], k104_b550c6ff-9d5c-4497-98bb-6781b4e6abd8.xml, kernel.ioallocatecontroller, ntddk/IoAllocateController
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ The <b>IoAllocateController</b> routine sets up the call to a driver-supplied <a
 
 ## Syntax
 
-````
-VOID IoAllocateController(
-  _In_     PCONTROLLER_OBJECT ControllerObject,
-  _In_     PDEVICE_OBJECT     DeviceObject,
-  _In_     PDRIVER_CONTROL    ExecutionRoutine,
-  _In_opt_ PVOID              Context
+```
+NTKERNELAPI VOID IoAllocateController(
+  PCONTROLLER_OBJECT ControllerObject,
+  PDEVICE_OBJECT     DeviceObject,
+  PDRIVER_CONTROL    ExecutionRoutine,
+  PVOID              Context
 );
-````
+```
 
 ## Parameters
 
@@ -100,16 +100,16 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff542049">Contr
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-iofreecontroller.md">IoFreeController</a>
-
-
-
-<a href="..\ntddk\nf-ntddk-iodeletecontroller.md">IoDeleteController</a>
-
-
-
-<a href="..\ntddk\nf-ntddk-iocreatecontroller.md">IoCreateController</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542049">ControllerControl</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548395">IoCreateController</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549078">IoDeleteController</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549104">IoFreeController</a>

@@ -47,20 +47,20 @@ req.typenames: GET_UNIT_IDS, *PGET_UNIT_IDS
 The GET_UNIT_CAPABILITIES structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536983">Av61883_GetUnitInfo</a> request to retrieve device identifiers.
 
 ## Syntax
-````
+```
 typedef struct _GET_UNIT_IDS {
-  LARGE_INTEGER UniqueID;
-  ULONG         VendorID;
-  ULONG         ModelID;
-  ULONG         ulVendorLength;
-  PWSTR         VendorText;
-  ULONG         ulModelLength;
-  PWSTR         ModelText;
-  ULONG         UnitModelID;
-  ULONG         ulUnitModelLength;
-  PWSTR         UnitModelText;
-} GET_UNIT_IDS, *PGET_UNIT_IDS;
-````
+  OUT LARGE_INTEGER UniqueID;
+  OUT ULONG         VendorID;
+  OUT ULONG         ModelID;
+  OUT ULONG         ulVendorLength;
+  OUT PWSTR         VendorText;
+  OUT ULONG         ulModelLength;
+  OUT PWSTR         ModelText;
+  OUT ULONG         UnitModelID;
+  OUT ULONG         ulUnitModelLength;
+  OUT PWSTR         UnitModelText;
+} *PGET_UNIT_IDS, GET_UNIT_IDS;
+```
 
 ## Members
 

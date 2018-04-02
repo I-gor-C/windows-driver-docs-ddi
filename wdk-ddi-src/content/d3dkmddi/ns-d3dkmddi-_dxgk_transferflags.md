@@ -7,7 +7,7 @@ old-location: display\dxgk_transferflags.htm
 old-project: display
 ms.assetid: b56657ac-98ff-482a-a2af-ffbfb8602248
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_TRANSFERFLAGS, DXGK_TRANSFERFLAGS structure [Display Devices], DmStructs_91973ccf-775f-4e97-bb1a-17cd1343a4f8.xml, _DXGK_TRANSFERFLAGS, d3dkmddi/DXGK_TRANSFERFLAGS, display.dxgk_transferflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,24 +44,24 @@ req.typenames: DXGK_TRANSFERFLAGS
 ---
 
 # _DXGK_TRANSFERFLAGS structure
-The DXGK_TRANSFERFLAGS structure identifies the type of transfer operation to set up in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a> function.
+The DXGK_TRANSFERFLAGS structure identifies the type of transfer operation to set up in a call to the <a href="https://msdn.microsoft.com/d315ff53-4a9f-46a3-ad74-d65a5eb72de1">DxgkDdiBuildPagingBuffer</a> function.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_TRANSFERFLAGS {
   union {
     struct {
-      UINT Swizzle  :1;
-      UINT Unswizzle  :1;
-      UINT AllocationIsIdle  :1;
-      UINT TransferStart  :1;
-      UINT TransferEnd  :1;
-      UINT Reserved  :27;
+      UINT  : 1  Swizzle;
+      UINT  : 1  Unswizzle;
+      UINT  : 1  AllocationIsIdle;
+      UINT  : 1  TransferStart;
+      UINT  : 1  TransferEnd;
+      UINT  : 27 Reserved;
     };
     UINT Value;
   };
 } DXGK_TRANSFERFLAGS;
-````
+```
 
 ## Members
 
@@ -77,8 +77,8 @@ You can set the transfer-operation type by setting bits in the 32-bit <b>Value</
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557540">DXGKARG_BUILDPAGINGBUFFER</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
+<a href="https://msdn.microsoft.com/d315ff53-4a9f-46a3-ad74-d65a5eb72de1">DxgkDdiBuildPagingBuffer</a>

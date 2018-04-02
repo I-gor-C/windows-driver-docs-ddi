@@ -47,19 +47,20 @@ req.typenames: HID_DESCRIPTOR, *PHID_DESCRIPTOR
 The HID_DESCRIPTOR structure represents a HID descriptor for a HIDClass device.
 
 ## Syntax
-````
+```
 typedef struct _HID_DESCRIPTOR {
-  UCHAR  bLength;
-  UCHAR  bDescriptorType;
-  USHORT bcdHID;
-  UCHAR  bCountry;
-  UCHAR  bNumDescriptors;
+  UCHAR                     bLength;
+  UCHAR                     bDescriptorType;
+  USHORT                    bcdHID;
+  UCHAR                     bCountry;
+  UCHAR                     bNumDescriptors;
   struct {
-    UCHAR  bReportType;
+    UCHAR  bReportType;
     USHORT wReportLength;
-  } DescriptorList [1];
-} HID_DESCRIPTOR, *PHID_DESCRIPTOR;
-````
+  } _HID_DESCRIPTOR_DESC_LIST;
+  _HID_DESCRIPTOR_DESC_LIST DescriptorList[1];
+} *PHID_DESCRIPTOR, HID_DESCRIPTOR;
+```
 
 ## Members
 
@@ -93,7 +94,7 @@ typedef struct _HID_DESCRIPTOR {
 
 
 ## Remarks
-The HID class driver uses an <a href="..\hidport\ni-hidport-ioctl_hid_get_device_descriptor.md">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a> request to obtain a device's HID descriptor from a HID minidriver.
+The HID class driver uses an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439622">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a> request to obtain a device's HID descriptor from a HID minidriver.
 
 For information about HID descriptors, see the Universal Serial Bus (USB) standard<i> Device Class Definition for Human Interface Devices (HID)</i> located at the <a href="http://www.usb.org/home">USB Implementers Forum website</a>.
 
@@ -104,4 +105,4 @@ For information about HID descriptors, see the Universal Serial Bus (USB) standa
 
 ## See Also
 
-<a href="..\hidport\ni-hidport-ioctl_hid_get_device_descriptor.md">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439622">IOCTL_HID_GET_DEVICE_DESCRIPTOR</a>

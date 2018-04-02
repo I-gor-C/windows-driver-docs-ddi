@@ -50,11 +50,12 @@ Obsolete. Do not use.
 
 ## Syntax
 
-````
-  StreamClassFilterReenumerateStreams(
-    
+```
+DECLSPEC_DEPRECATED_DDK VOID STREAMAPI StreamClassFilterReenumerateStreams(
+  PVOID HwInstanceExtension,
+  ULONG StreamDescriptorSize
 );
-````
+```
 
 ## Parameters
 

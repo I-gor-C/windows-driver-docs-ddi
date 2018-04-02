@@ -7,7 +7,7 @@ old-location: display\d3drenderstatetype.htm
 old-project: display
 ms.assetid: 82978b22-1538-4da0-bcf2-c4c52d2e3429
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DRENDERSTATETYPE, D3DRENDERSTATE_EVICTMANAGEDTEXTURES, D3DRENDERSTATE_SCENECAPTURE, D3DRS_DELETERTPATCH, D3DRS_MAXPIXELSHADERINST, D3DRS_MAXVERTEXSHADERINST, _D3DRENDERSTATETYPE, d3d9types/, d3d9types/D3DRENDERSTATE_EVICTMANAGEDTEXTURES, d3d9types/D3DRENDERSTATE_SCENECAPTURE, d3d9types/D3DRS_DELETERTPATCH, d3d9types/D3DRS_MAXPIXELSHADERINST, d3d9types/D3DRS_MAXVERTEXSHADERINST, d3denum_6b8d96f8-ff88-43c3-9850-a213d84d548f.xml, display.d3drenderstatetype, enumeration [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,16 +48,114 @@ The D3DRENDERSTATETYPE enumerated type lists a variety of attributes, or render 
   The enumerators of D3DRENDERSTATETYPE that are used exclusively by drivers can specify either rendering information or a texture attribute. The following render states are used by display drivers:
 
 ## Syntax
-````
-enum  {
-  D3DRENDERSTATE_EVICTMANAGEDTEXTURES  = 61, 
-  D3DRENDERSTATE_SCENECAPTURE          = 62, 
-  D3DRS_DELETERTPATCH                  = 169, 
-  D3DRS_MAXVERTEXSHADERINST            = 196, 
-  D3DRS_MAXPIXELSHADERINST             = 197 
-
-};
-````
+```
+typedef enum _D3DRENDERSTATETYPE {
+  D3DRS_ZENABLE                     ,
+  D3DRS_FILLMODE                    ,
+  D3DRS_SHADEMODE                   ,
+  D3DRS_ZWRITEENABLE                ,
+  D3DRS_ALPHATESTENABLE             ,
+  D3DRS_LASTPIXEL                   ,
+  D3DRS_SRCBLEND                    ,
+  D3DRS_DESTBLEND                   ,
+  D3DRS_CULLMODE                    ,
+  D3DRS_ZFUNC                       ,
+  D3DRS_ALPHAREF                    ,
+  D3DRS_ALPHAFUNC                   ,
+  D3DRS_DITHERENABLE                ,
+  D3DRS_ALPHABLENDENABLE            ,
+  D3DRS_FOGENABLE                   ,
+  D3DRS_SPECULARENABLE              ,
+  D3DRS_FOGCOLOR                    ,
+  D3DRS_FOGTABLEMODE                ,
+  D3DRS_FOGSTART                    ,
+  D3DRS_FOGEND                      ,
+  D3DRS_FOGDENSITY                  ,
+  D3DRS_RANGEFOGENABLE              ,
+  D3DRS_STENCILENABLE               ,
+  D3DRS_STENCILFAIL                 ,
+  D3DRS_STENCILZFAIL                ,
+  D3DRS_STENCILPASS                 ,
+  D3DRS_STENCILFUNC                 ,
+  D3DRS_STENCILREF                  ,
+  D3DRS_STENCILMASK                 ,
+  D3DRS_STENCILWRITEMASK            ,
+  D3DRS_TEXTUREFACTOR               ,
+  D3DRS_WRAP0                       ,
+  D3DRS_WRAP1                       ,
+  D3DRS_WRAP2                       ,
+  D3DRS_WRAP3                       ,
+  D3DRS_WRAP4                       ,
+  D3DRS_WRAP5                       ,
+  D3DRS_WRAP6                       ,
+  D3DRS_WRAP7                       ,
+  D3DRS_CLIPPING                    ,
+  D3DRS_LIGHTING                    ,
+  D3DRS_AMBIENT                     ,
+  D3DRS_FOGVERTEXMODE               ,
+  D3DRS_COLORVERTEX                 ,
+  D3DRS_LOCALVIEWER                 ,
+  D3DRS_NORMALIZENORMALS            ,
+  D3DRS_DIFFUSEMATERIALSOURCE       ,
+  D3DRS_SPECULARMATERIALSOURCE      ,
+  D3DRS_AMBIENTMATERIALSOURCE       ,
+  D3DRS_EMISSIVEMATERIALSOURCE      ,
+  D3DRS_VERTEXBLEND                 ,
+  D3DRS_CLIPPLANEENABLE             ,
+  D3DRS_POINTSIZE                   ,
+  D3DRS_POINTSIZE_MIN               ,
+  D3DRS_POINTSPRITEENABLE           ,
+  D3DRS_POINTSCALEENABLE            ,
+  D3DRS_POINTSCALE_A                ,
+  D3DRS_POINTSCALE_B                ,
+  D3DRS_POINTSCALE_C                ,
+  D3DRS_MULTISAMPLEANTIALIAS        ,
+  D3DRS_MULTISAMPLEMASK             ,
+  D3DRS_PATCHEDGESTYLE              ,
+  D3DRS_DEBUGMONITORTOKEN           ,
+  D3DRS_POINTSIZE_MAX               ,
+  D3DRS_INDEXEDVERTEXBLENDENABLE    ,
+  D3DRS_COLORWRITEENABLE            ,
+  D3DRS_TWEENFACTOR                 ,
+  D3DRS_BLENDOP                     ,
+  D3DRS_POSITIONDEGREE              ,
+  D3DRS_NORMALDEGREE                ,
+  D3DRS_SCISSORTESTENABLE           ,
+  D3DRS_SLOPESCALEDEPTHBIAS         ,
+  D3DRS_ANTIALIASEDLINEENABLE       ,
+  D3DRS_MINTESSELLATIONLEVEL        ,
+  D3DRS_MAXTESSELLATIONLEVEL        ,
+  D3DRS_ADAPTIVETESS_X              ,
+  D3DRS_ADAPTIVETESS_Y              ,
+  D3DRS_ADAPTIVETESS_Z              ,
+  D3DRS_ADAPTIVETESS_W              ,
+  D3DRS_ENABLEADAPTIVETESSELLATION  ,
+  D3DRS_TWOSIDEDSTENCILMODE         ,
+  D3DRS_CCW_STENCILFAIL             ,
+  D3DRS_CCW_STENCILZFAIL            ,
+  D3DRS_CCW_STENCILPASS             ,
+  D3DRS_CCW_STENCILFUNC             ,
+  D3DRS_COLORWRITEENABLE1           ,
+  D3DRS_COLORWRITEENABLE2           ,
+  D3DRS_COLORWRITEENABLE3           ,
+  D3DRS_BLENDFACTOR                 ,
+  D3DRS_SRGBWRITEENABLE             ,
+  D3DRS_DEPTHBIAS                   ,
+  D3DRS_WRAP8                       ,
+  D3DRS_WRAP9                       ,
+  D3DRS_WRAP10                      ,
+  D3DRS_WRAP11                      ,
+  D3DRS_WRAP12                      ,
+  D3DRS_WRAP13                      ,
+  D3DRS_WRAP14                      ,
+  D3DRS_WRAP15                      ,
+  D3DRS_SEPARATEALPHABLENDENABLE    ,
+  D3DRS_SRCBLENDALPHA               ,
+  D3DRS_DESTBLENDALPHA              ,
+  D3DRS_BLENDOPALPHA                ,
+  D3DRS_FORCE_DWORD
+} D3DRENDERSTATETYPE;
+```
 
 ## Constants
 
@@ -588,7 +686,7 @@ enum  {
 
 The driver uses these render states when it performs graphics rendering. Only render states that are specific to drivers are included in the Windows Driver Kit (WDK) documentation. The render states accessible to DirectX applications are included in the DirectX SDK documentation. These application-level render states include such characteristics as whether alpha blending is enabled, whether dithering is enabled, whether Direct3D lighting is used, and the type of shading to be used. 
 
-To update a particular render state, Direct3D stores information about the render state, and then calls the driver's <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a> callback routine. The information provided to the driver enables it to:
+To update a particular render state, Direct3D stores information about the render state, and then calls the driver's <a href="https://msdn.microsoft.com/6128ff7a-0d2c-48df-8b5e-cab33c5a74f5">D3dDrawPrimitives2</a> callback routine. The information provided to the driver enables it to:
 
 <ul>
 <li>
@@ -602,9 +700,9 @@ Identify which render states to update, and what the new render state values sho
 </ul>
 Note that for certain render states to be honored, the driver must have previously set capability flags in the relevant member of the D3DPRIMCAPS structure.
 
-In order to indicate a specific render state update, Direct3D inserts a <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a> structure into the command buffer, setting the <b>bCommand</b> member of this structure to D3DDP2OP_RENDERSTATE (see the description for D3DDP2OP_RENDERSTATE in <a href="..\d3dhal\ne-d3dhal-_d3dhal_dp2operation.md">D3DHAL_DP2OPERATION</a>), and setting the <b>wStateCount</b> member of the same structure to the number of render states to be updated.
+In order to indicate a specific render state update, Direct3D inserts a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structure into the command buffer, setting the <b>bCommand</b> member of this structure to D3DDP2OP_RENDERSTATE (see the description for D3DDP2OP_RENDERSTATE in <a href="https://msdn.microsoft.com/library/windows/hardware/ff545678">D3DHAL_DP2OPERATION</a>), and setting the <b>wStateCount</b> member of the same structure to the number of render states to be updated.
 
-Immediately following the <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a> structure, Direct3D inserts one <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2renderstate.md">D3DHAL_DP2RENDERSTATE</a> structure into the command buffer for each render state to be updated. The <b>RenderState</b> member of this structure identifies the render state to be changed; the new value of this render state is specified in either the <b>dwState</b> member (for DWORD values) or the <b>fState</b> member (for D3DVALUE values).
+Immediately following the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structure, Direct3D inserts one <a href="https://msdn.microsoft.com/library/windows/hardware/ff545705">D3DHAL_DP2RENDERSTATE</a> structure into the command buffer for each render state to be updated. The <b>RenderState</b> member of this structure identifies the render state to be changed; the new value of this render state is specified in either the <b>dwState</b> member (for DWORD values) or the <b>fState</b> member (for D3DVALUE values).
 
 The following figure shows a portion of the command buffer containing a D3DDP2OP_RENDERSTATE command and two D3DHAL_DP2RENDERSTATE structures. The first of the three structures indicates that two render states are to be updated. The second structure indicates that the D3DRENDERSTATE_FILLMODE render state is to be changed to D3DFILL_SOLID. The third structure indicates that the D3DRENDERSTATE_SHADEMODE render state should be updated to D3DSHADE_GOURAUD.
 

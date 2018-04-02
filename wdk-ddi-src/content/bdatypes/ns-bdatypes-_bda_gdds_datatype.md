@@ -47,12 +47,12 @@ req.typenames: BDA_GDDS_DATATYPE, *P_BDA_GDDS_DATATYPE
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_GDDS_DATATYPE {
   PBDARESULT lResult;
-  GUID       uuidDataType;
+  GUID       uuidDataType;
 } BDA_GDDS_DATATYPE, *P_BDA_GDDS_DATATYPE;
-````
+```
 
 ## Members
 

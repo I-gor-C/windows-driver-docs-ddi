@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_nic_type.htm
 old-project: netvista
 ms.assetid: 0ff7a803-9de4-4b2f-ab5f-3eb5107d5b64
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDIS_SWITCH_NIC_TYPE, NDIS_SWITCH_NIC_TYPE enumeration [Network Drivers Starting with Windows Vista], NdisSwitchNicTypeEmulated, NdisSwitchNicTypeExternal, NdisSwitchNicTypeInternal, NdisSwitchNicTypeSynthetic, PNDIS_SWITCH_NIC_TYPE, PNDIS_SWITCH_NIC_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_NIC_TYPE, netvista.ndis_switch_nic_type, ntddndis/NDIS_SWITCH_NIC_TYPE, ntddndis/NdisSwitchNicTypeEmulated, ntddndis/NdisSwitchNicTypeExternal, ntddndis/NdisSwitchNicTypeInternal, ntddndis/NdisSwitchNicTypeSynthetic, ntddndis/PNDIS_SWITCH_NIC_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: NDIS_SWITCH_NIC_TYPE
 The <b>NDIS_SWITCH_NIC_TYPE</b> enumeration specifies the type of the virtual network adapter that is attached to a Hyper-V extensible switch port.
 
 ## Syntax
-````
-typedef enum _NDIS_SWITCH_NIC_TYPE { 
-  NdisSwitchNicTypeExternal   = 0,
-  NdisSwitchNicTypeSynthetic  = 1,
-  NdisSwitchNicTypeEmulated   = 2,
-  NdisSwitchNicTypeInternal   = 3
-} NDIS_SWITCH_NIC_TYPE, *PNDIS_SWITCH_NIC_TYPE;
-````
+```
+typedef enum _NDIS_SWITCH_NIC_TYPE {
+  NdisSwitchNicTypeExternal   ,
+  NdisSwitchNicTypeSynthetic  ,
+  NdisSwitchNicTypeEmulated   ,
+  NdisSwitchNicTypeInternal
+} NDIS_SWITCH_NIC_TYPE;
+```
 
 ## Constants
 
@@ -95,7 +95,7 @@ typedef enum _NDIS_SWITCH_NIC_TYPE {
 
 ## Remarks
 
-The <b>NicType</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a> structure is an <b>NDIS_SWITCH_NIC_TYPE</b> enumeration data type. 
+The <b>NicType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh598215">NDIS_SWITCH_NIC_PARAMETERS</a> structure is an <b>NDIS_SWITCH_NIC_TYPE</b> enumeration data type. 
 
 
 
@@ -109,8 +109,8 @@ For more information on the types of network adapters that connect to extensible
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_nic_parameters.md">NDIS_SWITCH_NIC_PARAMETERS</a>
-
-
-
 <b></b>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598215">NDIS_SWITCH_NIC_PARAMETERS</a>

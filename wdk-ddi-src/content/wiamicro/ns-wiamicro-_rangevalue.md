@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The RANGEVALUE structure is used by a microdriver to communicate to the WIA Flatbed driver the legal values for a microdriver function parameter.
 
 ## Syntax
-````
+```
 typedef struct _RANGEVALUE {
   LONG lMin;
   LONG lMax;
   LONG lStep;
 } RANGEVALUE, *PRANGEVALUE;
-````
+```
 
 ## Members
 

@@ -50,11 +50,11 @@ The <b>SPB_TRANSFER_DESCRIPTOR_INIT</b> function initializes an  <a href="https:
 
 ## Syntax
 
-````
-VOID SPB_TRANSFER_DESCRIPTOR_INIT(
-  _Out_ SPB_TRANSFER_DESCRIPTOR *Descriptor
+```
+void SPB_TRANSFER_DESCRIPTOR_INIT(
+  SPB_TRANSFER_DESCRIPTOR *Descriptor
 );
-````
+```
 
 ## Parameters
 

@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Cancel method
+# IPrintSchemaAsyncOperation::Cancel method
 Cancels the asynchronous PrintSchema operation.
 
 ## Syntax
 
-````
+```
 HRESULT Cancel(
-    Void
+
 );
-````
+```
 
 ## Parameters
 
@@ -74,4 +74,4 @@ This method returns an <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemaasyncoperation.md">IPrintSchemaAsyncOperation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451224">IPrintSchemaAsyncOperation</a>

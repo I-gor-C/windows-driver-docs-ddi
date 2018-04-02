@@ -7,7 +7,7 @@ old-location: netvista\protocolcmmakecall.htm
 old-project: netvista
 ms.assetid: ede0a18a-cd3b-4fbb-a16b-e7493940d633
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: PROTOCOL_CM_MAKE_CALL, ProtocolCmMakeCall, ProtocolCmMakeCall callback function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_4f72c0f7-470b-496c-adbb-ea465246fb48.xml, ndis/ProtocolCmMakeCall, netvista.protocolcmmakecall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -71,7 +71,7 @@ NDIS_STATUS ProtocolCmMakeCall(
 
 Specifies the handle to a call manager-allocated context area in which the call managers maintains
      its per-VC state. The call manager supplied this handle to NDIS from its 
-     <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> function.
+     <a href="https://msdn.microsoft.com/b086dd24-74f5-474a-8684-09bf92ac731b">ProtocolCoCreateVc</a> function.
 
 `CallParameters`
 
@@ -122,7 +122,7 @@ Indicates that the call manager successfully allocated the necessary resources t
 <td width="60%">
 Indicates that the call manager will complete the request to make a call asynchronously. When
        the call manager has completed all operations for making a call, it must call 
-       <a href="..\ndis\nf-ndis-ndiscmmakecallcomplete.md">NdisCmMakeCallComplete</a> to signal
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff561677">NdisCmMakeCallComplete</a> to signal
        NDIS that this call has been completed.
 
 </td>
@@ -173,15 +173,15 @@ If
 
 If a call manager is required to communication with networking hardware (such as a networking switch)
     it should use a virtual connection to the network control device that it established in its 
-    <a href="..\ndis\nc-ndis-protocol_bind_adapter_ex.md">ProtocolBindAdapterEx</a> function.
+    <a href="https://msdn.microsoft.com/1958722e-012e-4110-a82c-751744bcf9b5">ProtocolBindAdapterEx</a> function.
     Call managers communicate with their network hardware through the miniport driver by calling 
-    <a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561728">NdisCoSendNetBufferLists</a>.
     Miniport drivers with integrated call-management support will not call 
     <b>NdisCoSendNetBufferLists</b>, but rather will transmit the data themselves.
 
 After a call manager has done all necessary communication with its networking hardware as required by
     its medium, call managers must call 
-    <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561649">NdisCmActivateVc</a>.
 
 If this call was a multipoint call, after the call manager has communicated with the networking
     hardware, verified call parameters, and allocated and initialized its per-party state data, the address
@@ -263,16 +263,16 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561635">NdisClMakeCall</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561649">NdisCmActivateVc</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisclmakecall.md">NdisClMakeCall</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561677">NdisCmMakeCallComplete</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndiscmmakecallcomplete.md">NdisCmMakeCallComplete</a>
+<a href="https://msdn.microsoft.com/b086dd24-74f5-474a-8684-09bf92ac731b">ProtocolCoCreateVc</a>

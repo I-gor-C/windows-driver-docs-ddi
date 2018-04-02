@@ -7,7 +7,7 @@ old-location: display\dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters.htm
 old-project: display
 ms.assetid: e4151e72-e0a6-4873-a2e8-c3321941cfd4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure [Display Devices], DmStructs_64a3857d-3c66-4653-980b-72df307eba0f.xml, _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, d3dkmdt/DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS, display.dxgkmdt_opm_set_acp_and_cgmsa_signaling_parameters
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,7 +47,7 @@ req.typenames: DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS
 The DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS structure contains parameters to set Analog Content Protection (ACP) and Content Generation Management System Analog (CGMS-A) signaling for a protected output.
 
 ## Syntax
-````
+```
 typedef struct _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
   ULONG ulNewTVProtectionStandard;
   ULONG ulAspectRatioChangeMask1;
@@ -60,14 +60,14 @@ typedef struct _DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS {
   ULONG ulReserved2[4];
   ULONG ulReserved3;
 } DXGKMDT_OPM_SET_ACP_AND_CGMSA_SIGNALING_PARAMETERS;
-````
+```
 
 ## Members
 
 
 `ulNewTVProtectionStandard`
 
-A <a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>-typed value that indicates the type of television signal to set ACP and CGMS-A signaling for on the protected output.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560894">DXGKMDT_OPM_PROTECTION_STANDARD</a>-typed value that indicates the type of television signal to set ACP and CGMS-A signaling for on the protected output.
 
 `ulAspectRatioChangeMask1`
 
@@ -114,4 +114,4 @@ Reserved. Must be set to zero.
 
 ## See Also
 
-<a href="..\d3dkmdt\ne-d3dkmdt-_dxgkmdt_opm_protection_standard.md">DXGKMDT_OPM_PROTECTION_STANDARD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560894">DXGKMDT_OPM_PROTECTION_STANDARD</a>

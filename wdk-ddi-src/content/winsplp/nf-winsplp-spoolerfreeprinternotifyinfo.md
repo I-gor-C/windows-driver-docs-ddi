@@ -50,11 +50,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-VOID WINAPI SpoolerFreePrinterNotifyInfo(
-  _In_ PPRINTER_NOTIFY_INFO     pInfo
+```
+void SpoolerFreePrinterNotifyInfo(
+  PPRINTER_NOTIFY_INFO pInfo
 );
-````
+```
 
 ## Parameters
 

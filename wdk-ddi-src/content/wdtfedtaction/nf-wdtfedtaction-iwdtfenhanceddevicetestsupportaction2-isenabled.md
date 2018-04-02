@@ -7,7 +7,7 @@ old-location: dtf\iwdtfenhanceddevicetestsupportaction2_isenabled.htm
 old-project: dtf
 ms.assetid: 7d75d8e7-1416-4075-bc75-b4d2cd4f65a5
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFEnhancedDeviceTestSupportAction2, IWDTFEnhancedDeviceTestSupportAction2 interface [Windows Device Testing Framework], IsEnabled method, IWDTFEnhancedDeviceTestSupportAction2::IsEnabled, IsEnabled method [Windows Device Testing Framework], IsEnabled method [Windows Device Testing Framework], IWDTFEnhancedDeviceTestSupportAction2 interface, IsEnabled,IWDTFEnhancedDeviceTestSupportAction2.IsEnabled, Microsoft.WDTF.IWDTFEnhancedDeviceTestSupportAction2.IsEnabled, Microsoft::WDTF::IWDTFEnhancedDeviceTestSupportAction2::IsEnabled, dtf.iwdtfenhanceddevicetestsupportaction2_isenabled, wdtfedtaction/IWDTFEnhancedDeviceTestSupportAction2::IsEnabled
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# IsEnabled method
+# IWDTFEnhancedDeviceTestSupportAction2::IsEnabled method
 Gets a value that indicates whether the Enhanced Device Test (EDT) filter driver is enabled 
 on the target device.
 
 ## Syntax
 
-````
+```
 HRESULT IsEnabled(
-  [out, retval] VARIANT_BOOL *pbEnabled
+  VARIANT_BOOL *pbEnabled
 );
-````
+```
 
 ## Parameters
 
@@ -78,4 +78,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\wdtfedtaction\nn-wdtfedtaction-iwdtfenhanceddevicetestsupportaction2.md">IWDTFEnhancedDeviceTestSupportAction2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450969">IWDTFEnhancedDeviceTestSupportAction2</a>

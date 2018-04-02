@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 This structure defines a container for one or more <a href="https://docs.microsoft.com/en-us/dotnet/core/rid-catalog">BranchOfficeJobData</a> structures to sent to a server.
 
 ## Syntax
-````
-typedef struct {
-  DWORD               cJobDataEntries;
+```
+typedef struct BranchOfficeJobDataContainer {
+  DWORD               cJobDataEntries;
   BranchOfficeJobData JobData[1];
-} BranchOfficeJobDataContainer, *PBranchOfficeJobDataContainer, *LPBranchOfficeJobDataContainer;
-````
+} *LPBranchOfficeJobDataContainer, BranchOfficeJobDataContainer, *PBranchOfficeJobDataContainer;
+```
 
 ## Members
 

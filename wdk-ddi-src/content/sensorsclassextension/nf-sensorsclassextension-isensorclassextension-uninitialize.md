@@ -46,14 +46,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Uninitialize method
+# ISensorClassExtension::Uninitialize method
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545547">ISensorClassExtension::Uninitialize</a> method uninitializes the sensor class extension object.
 
 ## Syntax
 
-````
-HRESULT Uninitialize();
-````
+```
+HRESULT Uninitialize(
+
+);
+```
 
 ## Parameters
 

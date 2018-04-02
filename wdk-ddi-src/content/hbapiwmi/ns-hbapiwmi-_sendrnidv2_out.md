@@ -7,7 +7,7 @@ old-location: storage\sendrnidv2_out.htm
 old-project: storage
 ms.assetid: 2d8f1b49-5add-4dd9-998f-d0c1e79f3e7d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSendRNIDV2_OUT, PSendRNIDV2_OUT, PSendRNIDV2_OUT structure pointer [Storage Devices], SendRNIDV2_OUT, SendRNIDV2_OUT structure [Storage Devices], _SendRNIDV2_OUT, hbapiwmi/PSendRNIDV2_OUT, hbapiwmi/SendRNIDV2_OUT, storage.sendrnidv2_out, structs-Fibre_78855dda-228d-432f-8189-8be83df6d2ea.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: SendRNIDV2_OUT, *PSendRNIDV2_OUT
 The SendRNIDV2_OUT structure is used to report the output parameter data of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565463">SendRNIDV2</a> WMI method to the WMI client.
 
 ## Syntax
-````
+```
 typedef struct _SendRNIDV2_OUT {
   ULONG HBAStatus;
   ULONG TotalRspBufferSize;
   ULONG ActualRspBufferSize;
   UCHAR RspBuffer[1];
-} SendRNIDV2_OUT, *PSendRNIDV2_OUT;
-````
+} *PSendRNIDV2_OUT, SendRNIDV2_OUT;
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: storage\tapeclassphysicalblocktologicalblock.htm
 old-project: storage
 ms.assetid: fc95f5c8-2892-479d-ac25-32c07e9c7aab
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: TapeClassPhysicalBlockToLogicalBlock, TapeClassPhysicalBlockToLogicalBlock routine [Storage Devices], minitape/TapeClassPhysicalBlockToLogicalBlock, storage.tapeclassphysicalblocktologicalblock, tapeclas_94d20234-ee4d-4096-b856-f5196b606e2d.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The <b>TapeClassPhysicalBlockToLogicalBlock</b> routine translates a physical bl
 
 ## Syntax
 
-````
+```
 ULONG TapeClassPhysicalBlockToLogicalBlock(
-  _In_ UCHAR   DensityCode,
-  _In_ ULONG   PhysicalBlockAddress,
-  _In_ ULONG   BlockLength,
-  _In_ BOOLEAN FromBOT
+  UCHAR   DensityCode,
+  ULONG   PhysicalBlockAddress,
+  ULONG   BlockLength,
+  BOOLEAN FromBOT
 );
-````
+```
 
 ## Parameters
 
@@ -97,4 +97,4 @@ If a tape miniclass driver calls this routine with an unsupported tape density c
 
 ## See Also
 
-<a href="..\minitape\nf-minitape-tapeclasslogicalblocktophysicalblock.md">TapeClassLogicalBlockToPhysicalBlock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567623">TapeClassLogicalBlockToPhysicalBlock</a>

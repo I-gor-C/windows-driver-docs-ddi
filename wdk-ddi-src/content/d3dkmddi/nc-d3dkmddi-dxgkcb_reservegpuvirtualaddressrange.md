@@ -7,7 +7,7 @@ old-location: display\dxgkcbreservegpuvirtualaddressrange.htm
 old-project: display
 ms.assetid: 26A827F1-1094-4A7D-9C63-758925EE6273
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKCB_RESERVEGPUVIRTUALADDRESSRANGE, DxgkCbReserveGpuVirtualAddressRange, DxgkCbReserveGpuVirtualAddressRange callback function [Display Devices], d3dkmddi/DxgkCbReserveGpuVirtualAddressRange, display.dxgkcbreservegpuvirtualaddressrange, dispmprt/DxgkCbReserveGpuVirtualAddressRange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,7 +46,7 @@ req.typenames: DD_MULTISAMPLEQUALITYLEVELSDATA
 
 
 # DXGKCB_RESERVEGPUVIRTUALADDRESSRANGE callback function
-<b>DxgkCbReserveGpuVirtualAddressRange</b> allows the kernel mode driver to reserve a graphics processing unit (GPU) virtual address range during creation of a process. Reserving the GPU virtual address range is only possible during process creation (i.e. within the call to <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>) and is invalid at any other time.
+<b>DxgkCbReserveGpuVirtualAddressRange</b> allows the kernel mode driver to reserve a graphics processing unit (GPU) virtual address range during creation of a process. Reserving the GPU virtual address range is only possible during process creation (i.e. within the call to <a href="https://msdn.microsoft.com/E5AAEEB1-C29E-4AA7-9F8E-2C2DCFADED81">DxgkDdiCreateProcess</a>) and is invalid at any other time.
 
 Reservation is possible on both regular process as well as the system process where the system device and context lives.
 
@@ -73,7 +73,7 @@ A handle to the display adapter.
 
 `pArgs`
 
-The <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_reservegpuvirtualaddressrange.md">DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE</a> structure that describes the operation.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/dn906819">DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE</a> structure that describes the operation.
 
 
 ## Return Value
@@ -90,8 +90,8 @@ Returns <b>STATUS_SUCCESS</b> if it succeeds. Otherwise, it returns one of the e
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createprocess.md">DxgkDdiCreateProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906819">DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_reservegpuvirtualaddressrange.md">DXGKARGCB_RESERVEGPUVIRTUALADDRESSRANGE</a>
+<a href="https://msdn.microsoft.com/E5AAEEB1-C29E-4AA7-9F8E-2C2DCFADED81">DxgkDdiCreateProcess</a>

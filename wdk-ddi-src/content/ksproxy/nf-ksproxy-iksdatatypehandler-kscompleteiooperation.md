@@ -44,19 +44,19 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsCompleteIoOperation method
+# IKsDataTypeHandler::KsCompleteIoOperation method
 The <b>KsCompleteIoOperation</b> method cleans up the extended header and completes the input and output (I/O) operation.
 
 ## Syntax
 
-````
+```
 HRESULT KsCompleteIoOperation(
-  [in, out] IMediaSample  *Sample,
-  [in, out] PVOID         StreamHeader,
-  [in]      KSIOOPERATION IoOperation,
-  [in]      BOOL          Cancelled
+  IMediaSample  *Sample,
+  PVOID         StreamHeader,
+  KSIOOPERATION IoOperation,
+  BOOL          Cancelled
 );
-````
+```
 
 ## Parameters
 

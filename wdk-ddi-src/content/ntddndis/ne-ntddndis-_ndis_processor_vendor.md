@@ -7,7 +7,7 @@ old-location: netvista\ndis_processor_vendor.htm
 old-project: netvista
 ms.assetid: c2d1b967-32fb-437a-a0bd-e0028acee022
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_PROCESSOR_VENDOR, NDIS_PROCESSOR_VENDOR, NDIS_PROCESSOR_VENDOR enumeration [Network Drivers Starting with Windows Vista], NdisProcessorVendorAuthenticAMD, NdisProcessorVendorGenuinIntel, NdisProcessorVendorUnknown, PNDIS_PROCESSOR_VENDOR, PNDIS_PROCESSOR_VENDOR enumeration pointer [Network Drivers Starting with Windows Vista], _NDIS_PROCESSOR_VENDOR, ndis_sysinfo_ref_7037b548-2ccc-4f39-9b34-33002f811bf1.xml, netvista.ndis_processor_vendor, ntddndis/NDIS_PROCESSOR_VENDOR, ntddndis/NdisProcessorVendorAuthenticAMD, ntddndis/NdisProcessorVendorGenuinIntel, ntddndis/NdisProcessorVendorUnknown, ntddndis/PNDIS_PROCESSOR_VENDOR"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,14 @@ req.typenames: NDIS_PROCESSOR_VENDOR, *PNDIS_PROCESSOR_VENDOR
 The NDIS_PROCESSOR_VENDOR enumeration identifies a processor vendor.
 
 ## Syntax
-````
-typedef enum _NDIS_PROCESSOR_VENDOR { 
-  NdisProcessorVendorUnknown,
-  NdisProcessorVendorGenuinIntel,
+```
+typedef enum _NDIS_PROCESSOR_VENDOR {
+  NdisProcessorVendorUnknown       ,
+  NdisProcessorVendorGenuinIntel   ,
+  NdisProcessorVendorGenuineIntel  ,
   NdisProcessorVendorAuthenticAMD
-} NDIS_PROCESSOR_VENDOR, *PNDIS_PROCESSOR_VENDOR;
-````
+} *PNDIS_PROCESSOR_VENDOR, NDIS_PROCESSOR_VENDOR;
+```
 
 ## Constants
 
@@ -83,7 +84,7 @@ typedef enum _NDIS_PROCESSOR_VENDOR {
 ## Remarks
 
 The NDIS_PROCESSOR_VENDOR enumeration is used in the 
-    <a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">
+    <a href="https://msdn.microsoft.com/f59b9394-7742-423d-9a6e-3a429ccb0740">
     NDIS_SYSTEM_PROCESSOR_INFO</a> structure.
 
 ## Requirements
@@ -94,4 +95,4 @@ The NDIS_PROCESSOR_VENDOR enumeration is used in the
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ndis_system_processor_info.md">NDIS_SYSTEM_PROCESSOR_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567871">NDIS_SYSTEM_PROCESSOR_INFO</a>

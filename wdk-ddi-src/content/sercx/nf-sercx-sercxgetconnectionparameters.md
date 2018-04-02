@@ -50,12 +50,12 @@ The <b>SerCxGetConnectionParameters</b> method retrieves the connection paramete
 
 ## Syntax
 
-````
-VOID SerCxGetConnectionParameters(
-  [in]  WDFDEVICE Device,
-  [out] PVOID     *ConnectionParameters
+```
+void SerCxGetConnectionParameters(
+  WDFDEVICE Device,
+  PVOID     *ConnectionParameters
 );
-````
+```
 
 ## Parameters
 
@@ -76,7 +76,7 @@ None.
 
 The serial framework extension (SerCx) obtains the connection parameters for the peripheral device from the ACPI resource descriptors in the platform firmware.
 
-For more information about the data format of the connection parameters, see <a href="..\sercx\nc-sercx-evt_sercx_apply_config.md">EvtSerCxApplyConfig</a>.
+For more information about the data format of the connection parameters, see <a href="https://msdn.microsoft.com/DC0AB4E3-AA73-4DD5-B91D-95F9D3792321">EvtSerCxApplyConfig</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,4 +88,4 @@ For more information about the data format of the connection parameters, see <a 
 
 ## See Also
 
-<a href="..\sercx\nc-sercx-evt_sercx_apply_config.md">EvtSerCxApplyConfig</a>
+<a href="https://msdn.microsoft.com/DC0AB4E3-AA73-4DD5-B91D-95F9D3792321">EvtSerCxApplyConfig</a>

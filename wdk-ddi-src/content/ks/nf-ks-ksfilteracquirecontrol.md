@@ -49,17 +49,17 @@ The<b> KsFilterAcquireControl </b>function acquires the filter control mutex for
 
 ## Syntax
 
-````
-void __inline KsFilterAcquireControl(
-  _In_ PKSFILTER Filter
+```
+void KsFilterAcquireControl(
+  PKSFILTER Filter
 );
-````
+```
 
 ## Parameters
 
 `Filter`
 
-The <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> for which to acquire the control mutex.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> for which to acquire the control mutex.
 
 
 ## Return Value
@@ -68,7 +68,7 @@ None
 
 ## Remarks
 
-This function is an inline call to <a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a> with the appropriate typecasting. Minidrivers that manipulate the filter control mutex should call this function instead of calling <b>KsAcquireControl </b>directly. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
+This function is an inline call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff560908">KsAcquireControl</a> with the appropriate typecasting. Minidrivers that manipulate the filter control mutex should call this function instead of calling <b>KsAcquireControl </b>directly. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,12 +80,12 @@ This function is an inline call to <a href="..\ks\nf-ks-ksacquirecontrol.md">KsA
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>
 
 
 
-<a href="..\ks\nf-ks-ksfilterreleasecontrol.md">KsFilterReleaseControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560908">KsAcquireControl</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562551">KsFilterReleaseControl</a>

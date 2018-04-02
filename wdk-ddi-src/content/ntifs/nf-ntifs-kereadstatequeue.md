@@ -7,7 +7,7 @@ old-location: ifsk\kereadstatequeue.htm
 old-project: ifsk
 ms.assetid: 02bcc901-91f4-40fc-ab4b-de958e00f862
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: KeReadStateQueue, KeReadStateQueue function [Installable File System Drivers], ifsk.kereadstatequeue, keref_ae112949-4020-4501-8403-da1075d854c6.xml, ntifs/KeReadStateQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>KeReadStateQueue</b> routine is reserved for system use.
 
 ## Syntax
 
-````
-  KeReadStateQueue(
-    
+```
+NTKERNELAPI LONG KeReadStateQueue(
+  PRKQUEUE Queue
 );
-````
+```
 
 ## Parameters
 

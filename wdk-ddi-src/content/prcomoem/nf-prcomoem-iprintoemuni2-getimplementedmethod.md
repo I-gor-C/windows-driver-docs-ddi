@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetImplementedMethod method
+# IPrintOemUni2::GetImplementedMethod method
 The <code>IPrintOemUni2::GetImplementedMethod</code> method is used by Unidrv to determine which <b>IPrintOemUni2</b> interface methods a rendering plug-in has implemented.
 
 ## Syntax
 
-````
-STDMETHOD GetImplementedMethod(
-   PSTR pMethodName
+```
+HRESULT GetImplementedMethod(
+  PSTR pMethodName
 );
-````
+```
 
 ## Parameters
 

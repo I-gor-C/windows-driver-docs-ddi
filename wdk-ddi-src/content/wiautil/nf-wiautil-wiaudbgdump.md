@@ -50,12 +50,13 @@ The <b>wiauDbgDump</b> function logs a message containing one or more data value
 
 ## Syntax
 
-````
-inline void __stdcall wiauDbgDump(
-   LPCSTR   fname,
-   LPCSTR   fmt, ...
+```
+void wiauDbgDump(
+  LPCSTR fname,
+  LPCSTR fmt,
+  ...    
 );
-````
+```
 
 ## Parameters
 
@@ -101,16 +102,16 @@ This example, which would be placed in a function named <i>SetBuffer</i>, causes
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549633">wiauDbgError</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549637">wiauDbgErrorHr</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550161">wiauDbgTrace</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550163">wiauDbgWarning</a>

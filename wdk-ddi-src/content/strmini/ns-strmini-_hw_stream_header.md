@@ -45,29 +45,31 @@ req.product: Windows 10 or later.
 ---
 
 # _HW_STREAM_HEADER structure
-The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a <a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.
+The HW_STREAM_HEADER structure describes the kernel streaming semantics supported by the minidriver as a whole, as part of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559686">HW_STREAM_DESCRIPTOR</a> structure.
 
 ## Syntax
-````
+```
 typedef struct _HW_STREAM_HEADER {
-  ULONG             NumberOfStreams;
-  ULONG             SizeOfHwStreamInformation;
-  ULONG             NumDevPropArrayEntries;
-  PKSPROPERTY_SET   DevicePropertiesArray;
-  ULONG             NumDevEventArrayEntries;
-  PKSEVENT_SET      DeviceEventsArray;
-  PKSTOPOLOGY       Topology;
+  ULONG             NumberOfStreams;
+  ULONG             SizeOfHwStreamInformation;
+  ULONG             NumDevPropArrayEntries;
+  PKSPROPERTY_SET   DevicePropertiesArray;
+  ULONG             NumDevEventArrayEntries;
+  PKSEVENT_SET      DeviceEventsArray;
+  PKSTOPOLOGY       Topology;
   PHW_EVENT_ROUTINE DeviceEventRoutine;
-  ULONG             Reserved[2];
+  LONG              NumDevMethodArrayEntries;
+  PKSMETHOD_SET     DeviceMethodsArray;
+  ULONG             Reserved[2];
 } HW_STREAM_HEADER, *PHW_STREAM_HEADER;
-````
+```
 
 ## Members
 
 
 `NumberOfStreams`
 
-The number of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures that follow this header.
+The number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559692">HW_STREAM_INFORMATION</a> structures that follow this header.
 
 `SizeOfHwStreamInformation`
 
@@ -79,7 +81,7 @@ The number of entries in the array pointed to by <b>DevicePropertiesArray</b>.
 
 `DevicePropertiesArray`
 
-Pointer to the beginning of the array of property sets that the minidriver as a whole supports. (Property sets supported by individual streams can be found in the <b>StreamPropertiesArray</b> member of the stream's <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structure.)
+Pointer to the beginning of the array of property sets that the minidriver as a whole supports. (Property sets supported by individual streams can be found in the <b>StreamPropertiesArray</b> member of the stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559692">HW_STREAM_INFORMATION</a> structure.)
 
 `NumDevEventArrayEntries`
 
@@ -91,7 +93,7 @@ Pointer to the beginning of the array of event sets supported by the minidriver.
 
 `Topology`
 
-Pointer to the <a href="..\ks\ns-ks-kstopology.md">KSTOPOLOGY</a> structure that describes the minidriver's internal topology of nodes and pins. The class driver uses this to handle the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566598">KSPROPSETID_Topology</a> property set for the minidriver.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567146">KSTOPOLOGY</a> structure that describes the minidriver's internal topology of nodes and pins. The class driver uses this to handle the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566598">KSPROPSETID_Topology</a> property set for the minidriver.
 
 `DeviceEventRoutine`
 
@@ -117,8 +119,8 @@ Reserved for system use. Do not use.
 
 ## See Also
 
-<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559686">HW_STREAM_DESCRIPTOR</a>
 
 
 
-<a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559692">HW_STREAM_INFORMATION</a>

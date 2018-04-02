@@ -7,7 +7,7 @@ old-location: display\pfnwaitforsynchronizationobjectcb.htm
 old-project: display
 ms.assetid: d33ca665-897d-4e99-b9a6-b794127fecfd
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3Druntime_Functions_14f8a273-a662-41d3-b79b-1c779c5853a1.xml, PFND3DDDI_WAITFORSYNCHRONIZATIONOBJECTCB, d3dumddi/pfnWaitForSynchronizationObjectCb, display.pfnwaitforsynchronizationobjectcb, pfnWaitForSynchronizationObjectCb, pfnWaitForSynchronizationObjectCb callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -112,7 +112,7 @@ This function might also return other HRESULT values.
 
 
 
-For a code example of how to use the <b>pfnWaitForSynchronizationObjectCb</b> function, see <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_signalsynchronizationobjectcb.md">pfnSignalSynchronizationObjectCb</a>.
+For a code example of how to use the <b>pfnWaitForSynchronizationObjectCb</b> function, see <a href="https://msdn.microsoft.com/12ffa230-2c26-4cd3-ae83-f753a0b6ba38">pfnSignalSynchronizationObjectCb</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -123,4 +123,4 @@ For a code example of how to use the <b>pfnWaitForSynchronizationObjectCb</b> fu
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_waitforsynchronizationobject.md">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544287">D3DDDICB_WAITFORSYNCHRONIZATIONOBJECT</a>

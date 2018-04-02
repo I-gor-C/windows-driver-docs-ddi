@@ -47,11 +47,11 @@ req.typenames: KSPPROPERTY_ALLOCATOR_MDLCACHING
 This enumeration is used internally by the operating system.
 
 ## Syntax
-````
-typedef enum  { 
-  KSPROPERTY_ALLOCATOR_CLEANUP_CACHEDMDLPAGES  = 1
-} KSPPROPERTY_ALLOCATOR_MDLCACHING;
-````
+```
+typedef enum KSPPROPERTY_ALLOCATOR_MDLCACHING {
+  KSPROPERTY_ALLOCATOR_CLEANUP_CACHEDMDLPAGES
+} ;
+```
 
 ## Constants
 

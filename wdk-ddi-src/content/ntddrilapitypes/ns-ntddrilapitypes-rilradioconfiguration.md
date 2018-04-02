@@ -7,7 +7,7 @@ old-location: netvista\rilradioconfiguration.htm
 old-project: netvista
 ms.assetid: 24ff04b3-aec2-4bce-aa85-e33f3dbffa22
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*LPRILRADIOCONFIGURATION, RILRADIOCONFIGURATION, RILRADIOCONFIGURATION structure [Network Drivers Starting with Windows Vista], netvista.rilradioconfiguration, ntddrilapitypes/RILRADIOCONFIGURATION"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: RILRADIOCONFIGURATION, *LPRILRADIOCONFIGURATION
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef struct _RILRADIOCONFIGURATION {
-  DWORD                           dwConfigId;
-  RILRADIOCONFIGURATIONRADIOTYPE  dwRadioType;
-  DWORD [2]                       dwSystemTypes;
-} RILRADIOCONFIGURATION, RILRADIOCONFIGURATION;
-````
+```
+typedef struct RILRADIOCONFIGURATION {
+  DWORD                          dwConfigId;
+  RILRADIOCONFIGURATIONRADIOTYPE dwRadioType;
+  DWORD                          dwSystemTypes[2];
+}  *LPRILRADIOCONFIGURATION;
+```
 
 ## Members
 

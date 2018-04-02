@@ -47,17 +47,17 @@ req.product: Windows 10 or later.
 
 # PosCxReleaseDevice function
 PosCxReleaseDevice is called to release a device that was previously claimed with
-      <a href="..\poscx\nf-poscx-poscxclaimdevice.md">PosCxClaimDevice</a>.
+      <a href="https://msdn.microsoft.com/library/windows/hardware/mt593119">PosCxClaimDevice</a>.
       Once the device is released, the next pending claim requester is promoted.
 
 ## Syntax
 
-````
+```
 NTSTATUS PosCxReleaseDevice(
-  _In_ WDFDEVICE     device,
-  _In_ WDFFILEOBJECT fileObject
+  WDFDEVICE     device,
+  WDFFILEOBJECT fileObject
 );
-````
+```
 
 ## Parameters
 
@@ -102,4 +102,4 @@ Possible return values are:
 
 ## See Also
 
-<a href="..\poscx\nf-poscx-poscxclaimdevice.md">PosCxClaimDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt593119">PosCxClaimDevice</a>

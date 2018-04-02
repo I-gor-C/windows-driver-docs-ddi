@@ -49,12 +49,12 @@ The <b>HidD_GetAttributes</b> routine returns the attributes of a specified <a h
 
 ## Syntax
 
-````
-BOOLEAN __stdcall HidD_GetAttributes(
-  _In_  HANDLE           HidDeviceObject,
-  _Out_ PHIDD_ATTRIBUTES Attributes
+```
+BOOLEAN HidD_GetAttributes(
+  HANDLE           HidDeviceObject,
+  PHIDD_ATTRIBUTES Attributes
 );
-````
+```
 
 ## Parameters
 
@@ -64,7 +64,7 @@ Specifies an open handle to a top-level collection.
 
 `Attributes`
 
-Pointer to a caller-allocated <a href="..\hidsdi\ns-hidsdi-_hidd_attributes.md">HIDD_ATTRIBUTES</a> structure that returns the attributes of the collection specified by <i>HidDeviceObject</i>.
+Pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff538868">HIDD_ATTRIBUTES</a> structure that returns the attributes of the collection specified by <i>HidDeviceObject</i>.
 
 
 ## Return Value
@@ -73,7 +73,7 @@ Pointer to a caller-allocated <a href="..\hidsdi\ns-hidsdi-_hidd_attributes.md">
 
 ## Remarks
 
-Only user-mode applications can call <b>HidD_GetAttributes</b>. Kernel-mode drivers can use <a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>.
+Only user-mode applications can call <b>HidD_GetAttributes</b>. Kernel-mode drivers can use <a href="https://msdn.microsoft.com/library/windows/hardware/ff541092">IOCTL_HID_GET_COLLECTION_INFORMATION</a>.
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>.
 
@@ -88,8 +88,8 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538868">HIDD_ATTRIBUTES</a>
 
 
 
-<a href="..\hidsdi\ns-hidsdi-_hidd_attributes.md">HIDD_ATTRIBUTES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541092">IOCTL_HID_GET_COLLECTION_INFORMATION</a>

@@ -47,11 +47,11 @@ req.typenames: KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY
 Used to identify whether the camera's image pin and record pin are mutually exclusive. If they are mutually exclusive, then when the record pin is active, the image pin cannot be active, and vice-versa.
 
 ## Syntax
-````
-typedef enum _KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY { 
-  KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY_ID  = 0
-} KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY;
-````
+```
+typedef enum KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY {
+  KSPROPERTY_CAMERACONTROL_IMAGE_PIN_CAPABILITY_PROPERTY_ID
+} ;
+```
 
 ## Constants
 

@@ -7,7 +7,7 @@ old-location: storage\ioctl_storage_set_read_ahead.htm
 old-project: storage
 ms.assetid: a7ed65f3-40a9-4b08-b59d-7c65c250d5cb
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_STORAGE_SET_READ_AHEAD, IOCTL_STORAGE_SET_READ_AHEAD control code [Storage Devices], k307_0112afc4-1b4b-47c1-9ace-1d82a41b120f.xml, ntddcdvd/IOCTL_STORAGE_SET_READ_AHEAD, storage.ioctl_storage_set_read_ahead
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,10 +50,10 @@ Causes the device to skip to the given target address when the device reaches a 
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\ntddcdvd\ns-ntddcdvd-_storage_set_read_ahead.md">STORAGE_SET_READ_AHEAD</a> structure that indicates the trigger and target addresses.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567004">STORAGE_SET_READ_AHEAD</a> structure that indicates the trigger and target addresses.
 
 ### Input Buffer Length
-The length of a <a href="..\ntddcdvd\ns-ntddcdvd-_storage_set_read_ahead.md">STORAGE_SET_READ_AHEAD</a> structure.
+The length of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567004">STORAGE_SET_READ_AHEAD</a> structure.
 
 ### Output Buffer
 None.
@@ -78,4 +78,4 @@ The <b>Information</b> field is set to zero. The <b>Status</b> field is set to S
 
 ## See Also
 
-<a href="..\ntddcdvd\ns-ntddcdvd-_storage_set_read_ahead.md">STORAGE_SET_READ_AHEAD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567004">STORAGE_SET_READ_AHEAD</a>

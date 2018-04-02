@@ -45,22 +45,22 @@ req.product: Windows 10 or later.
 ---
 
 
-# RetrieveDescriptor method
+# IWDFUsbTargetDevice::RetrieveDescriptor method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>RetrieveDescriptor</b> method retrieves a USB descriptor, which can describe a device, configuration, or string.
 
 ## Syntax
 
-````
+```
 HRESULT RetrieveDescriptor(
-  [in]      UCHAR  DescriptorType,
-  [in]      UCHAR  Index,
-  [in]      USHORT LanguageID,
-  [in, out] ULONG  *BufferLength,
-  [out]     PVOID  Buffer
+  UCHAR  DescriptorType,
+  UCHAR  Index,
+  USHORT LanguageID,
+  ULONG  *BufferLength,
+  PVOID  Buffer
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ HRESULT RetrieveDescriptor(
 
 A value that specifies the type of descriptor to return. This parameter corresponds to the <b>bDescriptorType</b> field of a standard device descriptor, whose values are described in the <i>Universal Serial Bus</i> specification. (This resource may not be available in some languages 
 
-and countries.) Some of these values are listed in the description of the DescriptorType member of the <a href="..\usb\ns-usb-_urb_control_descriptor_request.md">_URB_CONTROL_DESCRIPTOR_REQUEST</a> structure.
+and countries.) Some of these values are listed in the description of the DescriptorType member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540357">_URB_CONTROL_DESCRIPTOR_REQUEST</a> structure.
 
 `Index`
 
@@ -201,7 +201,7 @@ CUmdfHidDevice::RetrieveConfigDescriptor(
 
 ## See Also
 
-<a href="..\wudfusb\nn-wudfusb-iwdfusbtargetdevice.md">IWDFUsbTargetDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560362">IWDFUsbTargetDevice</a>
 
 
 

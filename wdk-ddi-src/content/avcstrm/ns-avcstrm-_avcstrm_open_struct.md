@@ -47,14 +47,14 @@ req.typenames: AVCSTRM_OPEN_STRUCT, *PAVCSTRM_OPEN_STRUCT
 The AVCSTRM_OPEN_STRUCT structure describes a data stream to be opened.
 
 ## Syntax
-````
+```
 typedef struct _AVCSTRM_OPEN_STRUCT {
-  KSPIN_DATAFLOW       DataFlow;
+  KSPIN_DATAFLOW       DataFlow;
   PAVCSTRM_FORMAT_INFO AVCFormatInfo;
-  PVOID                AVCStreamContext;
-  HANDLE               hPlugLocal;
+  PVOID                AVCStreamContext;
+  HANDLE               hPlugLocal;
 } AVCSTRM_OPEN_STRUCT, *PAVCSTRM_OPEN_STRUCT;
-````
+```
 
 ## Members
 
@@ -87,8 +87,8 @@ This value can then be used in subsequent <i>avcstrm.sys</i> operations by placi
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554117">AVCSTRM_FORMAT_INFO</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554125">AVCSTRM_OPEN</a>
-
-
-
-<a href="..\avcstrm\ns-avcstrm-_avcstrm_format_info.md">AVCSTRM_FORMAT_INFO</a>

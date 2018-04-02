@@ -7,7 +7,7 @@ old-location: kernel\getlasttransitionstatus.htm
 old-project: kernel
 ms.assetid: 2ED5A28B-8668-411D-9462-8D6ED2F08B35
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: GET_D3COLD_LAST_TRANSITION_STATUS, GetLastTransitionStatus, GetLastTransitionStatus routine [Kernel-Mode Driver Architecture], kernel.getlasttransitionstatus, wdm/GetLastTransitionStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,11 +64,11 @@ void GetD3coldLastTransitionStatus(
 
 `Context`
 
-A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.
+A pointer to interface-specific context information. The caller sets this parameter to the value of the <b>Context</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh967706">D3COLD_SUPPORT_INTERFACE</a> structure for the interface.
 
 `LastTransitionStatus`
 
-A pointer to a variable into which the routine writes one of the following <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.md">D3COLD_LAST_TRANSITION_STATUS</a> enumeration values:
+A pointer to a variable into which the routine writes one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/hh967705">D3COLD_LAST_TRANSITION_STATUS</a> enumeration values:
 
 <ul>
 <li><b>LastDStateTransitionStatusUnknown</b></li>
@@ -86,7 +86,7 @@ None.
 
 This routine tries to get the information needed to answer the caller's query from the parent bus driver and platform firmware. If this information is not available, the routine writes the value <b>LastDStateTransitionStatusUnknown</b> to the location pointed to by <i>the LastTransitionStatus</i> parameter.
 
-For more information, see <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.md">D3COLD_LAST_TRANSITION_STATUS</a>.
+For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh967705">D3COLD_LAST_TRANSITION_STATUS</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -98,8 +98,8 @@ For more information, see <a href="..\wdm\ne-wdm-_d3cold_last_transition_status.
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_d3cold_support_interface.md">D3COLD_SUPPORT_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967705">D3COLD_LAST_TRANSITION_STATUS</a>
 
 
 
-<a href="..\wdm\ne-wdm-_d3cold_last_transition_status.md">D3COLD_LAST_TRANSITION_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967706">D3COLD_SUPPORT_INTERFACE</a>

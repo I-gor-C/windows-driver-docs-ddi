@@ -7,7 +7,7 @@ old-location: kernel\tmpreparecomplete.htm
 old-project: kernel
 ms.assetid: b09fac2c-a563-4caa-b2a3-6b9bcb1353ac
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: TmPrepareComplete, TmPrepareComplete routine [Kernel-Mode Driver Architecture], kernel.tmpreparecomplete, ktm_ref_e0ecfef3-989f-43c4-b4a6-6a2406e8aaa5.xml, wdm/TmPrepareComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,18 +52,18 @@ The <b>TmPrepareComplete</b> routine notifies KTM that the calling resource mana
 
 ## Syntax
 
-````
-NTSTATUS TmPrepareComplete(
-  _In_ PKENLISTMENT   Enlistment,
-  _In_ PLARGE_INTEGER TmVirtualClock
+```
+NTKERNELAPI NTSTATUS TmPrepareComplete(
+  PKENLISTMENT   Enlistment,
+  PLARGE_INTEGER TmVirtualClock
 );
-````
+```
 
 ## Parameters
 
 `Enlistment`
 
-A pointer to an <a href="https://msdn.microsoft.com/80e61475-4bb7-4eaa-b9f1-ff95eac9bc77">enlistment object</a>. Your component can receive this pointer as input to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a> callback routine. Alternatively, your component can call <a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>, <a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>, or <a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a> provided.
+A pointer to an <a href="https://msdn.microsoft.com/80e61475-4bb7-4eaa-b9f1-ff95eac9bc77">enlistment object</a>. Your component can receive this pointer as input to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a> callback routine. Alternatively, your component can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff558679">ObReferenceObjectByHandle</a> and supply the object handle that a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff566422">ZwCreateEnlistment</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff564669">TmCreateEnlistment</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff567008">ZwOpenEnlistment</a> provided.
 
 `TmVirtualClock`
 
@@ -97,7 +97,7 @@ The routine might return other <a href="https://msdn.microsoft.com/library/windo
 
 ## Remarks
 
-The <b>TmPrepareComplete</b> routine is a pointer-based version of the <a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a> routine.
+The <b>TmPrepareComplete</b> routine is a pointer-based version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567037">ZwPrepareComplete</a> routine.
 
 For information about when to use KTM's <b>Tm<i>Xxx</i></b> routines instead of <b>Zw<i>Xxx</i></b> routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565567">Using TmXxx Routines</a>.
 
@@ -113,24 +113,24 @@ For information about when to use KTM's <b>Tm<i>Xxx</i></b> routines instead of 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-tmcreateenlistment.md">TmCreateEnlistment</a>
-
-
-
-<a href="..\wdm\nf-wdm-zwcreateenlistment.md">ZwCreateEnlistment</a>
-
-
-
-<a href="..\wdm\nf-wdm-obreferenceobjectbyhandle.md">ObReferenceObjectByHandle</a>
-
-
-
-<a href="..\wdm\nf-wdm-zwopenenlistment.md">ZwOpenEnlistment</a>
-
-
-
-<a href="..\wdm\nf-wdm-zwpreparecomplete.md">ZwPrepareComplete</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558679">ObReferenceObjectByHandle</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561077">ResourceManagerNotification</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564669">TmCreateEnlistment</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566422">ZwCreateEnlistment</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567008">ZwOpenEnlistment</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567037">ZwPrepareComplete</a>

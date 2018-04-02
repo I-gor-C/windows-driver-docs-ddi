@@ -7,7 +7,7 @@ old-location: kernel\rtlinttoshort.htm
 old-project: kernel
 ms.assetid: E8E05F9B-2F83-4537-979E-024E8412D733
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlIntToShort, RtlIntToShort function [Kernel-Mode Driver Architecture], kernel.rtlinttoshort, ntintsafe/RtlIntToShort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>INT</b> to a value of type <b>SHORT</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlIntToShort(
-  _In_  INT   iOperand,
-  _Out_ SHORT *psResult
+  INT   iOperand,
+  SHORT *psResult
 );
-````
+```
 
 ## Parameters
 

@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# AddRef method
+# IStiDeviceControl::AddRef method
 The <b>IStiDeviceControl::AddRef</b> method increments the reference count for the <b>IStiDeviceControl</b> interface.
 
 ## Syntax
 
-````
-HRESULT AddRef();
-````
+```
+ULONG AddRef(
+
+);
+```
 
 ## Parameters
 

@@ -55,13 +55,13 @@ The <b>WdfIoQueueGetState</b> method returns the status of a specified I/O queue
 
 ## Syntax
 
-````
+```
 WDF_IO_QUEUE_STATE WdfIoQueueGetState(
-  _In_      WDFQUEUE Queue,
-  _Out_opt_ PULONG   QueueRequests,
-  _Out_opt_ PULONG   DriverRequests
+  WDFQUEUE Queue,
+  PULONG   QueueRequests,
+  PULONG   DriverRequests
 );
-````
+```
 
 ## Parameters
 
@@ -80,7 +80,7 @@ A pointer to a location that receives the number of I/O requests that have been 
 
 ## Return Value
 
-<b>WdfIoQueueGetState</b> returns a <a href="..\wdfio\ne-wdfio-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>-typed value, which can contain the bitwise OR of several <b>WDF_IO_QUEUE_STATE</b> enumerators. 
+<b>WdfIoQueueGetState</b> returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561417">WDF_IO_QUEUE_STATE</a>-typed value, which can contain the bitwise OR of several <b>WDF_IO_QUEUE_STATE</b> enumerators. 
 
 A bug check occurs if the driver supplies an invalid object handle.
 
@@ -91,27 +91,27 @@ After calling <b>WdfIoQueueGetState</b>, your driver can pass the received state
 <ul>
 <li>
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_drained.md">WDF_IO_QUEUE_DRAINED</a>, which returns <b>TRUE</b> if the queue is drained.
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552363">WDF_IO_QUEUE_DRAINED</a>, which returns <b>TRUE</b> if the queue is drained.
 
 </li>
 <li>
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_idle.md">WDF_IO_QUEUE_IDLE</a>, which returns <b>TRUE</b> if the queue is idle.
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552368">WDF_IO_QUEUE_IDLE</a>, which returns <b>TRUE</b> if the queue is idle.
 
 </li>
 <li>
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_purged.md">WDF_IO_QUEUE_PURGED</a>, which returns <b>TRUE</b> if the queue is purged.
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552369">WDF_IO_QUEUE_PURGED</a>, which returns <b>TRUE</b> if the queue is purged.
 
 </li>
 <li>
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_ready.md">WDF_IO_QUEUE_READY</a>, which returns <b>TRUE</b> if the queue is ready.
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552371">WDF_IO_QUEUE_READY</a>, which returns <b>TRUE</b> if the queue is ready.
 
 </li>
 <li>
 
-<a href="..\wdfio\nf-wdfio-wdf_io_queue_stopped.md">WDF_IO_QUEUE_STOPPED</a>, which returns <b>TRUE</b> if the queue is stopped.
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552375">WDF_IO_QUEUE_STOPPED</a>, which returns <b>TRUE</b> if the queue is stopped.
 
 </li>
 </ul>
@@ -160,8 +160,8 @@ IsQueueIdle(
 
 ## See Also
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a>
+<a href="https://msdn.microsoft.com/14999036-c137-4056-b6f7-53a8476fd385">EvtIoQueueState</a>
 
 
 
-<a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_state.md">EvtIoQueueState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561417">WDF_IO_QUEUE_STATE</a>

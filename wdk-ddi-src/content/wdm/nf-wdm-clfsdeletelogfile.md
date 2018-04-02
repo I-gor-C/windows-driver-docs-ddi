@@ -7,7 +7,7 @@ old-location: kernel\clfsdeletelogfile.htm
 old-project: kernel
 ms.assetid: a8c90199-e938-45bb-9356-48591e127eed
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsDeleteLogFile, ClfsDeleteLogFile routine [Kernel-Mode Driver Architecture], Clfs_0b23f7ac-c175-4eaf-b6c9-9b23b6ebe7e3.xml, kernel.clfsdeletelogfile, wdm/ClfsDeleteLogFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,21 +51,21 @@ The <b>ClfsDeleteLogFile</b> routine marks a CLFS stream for deletion.
 
 ## Syntax
 
-````
-NTSTATUS ClfsDeleteLogFile(
-  _In_     PUNICODE_STRING puszLogFileName,
-  _In_opt_ PVOID           psdLogFile,
-  _In_     ULONG           fLogOptionFlag,
-  _In_opt_ PVOID           pvContext,
-  _In_     ULONG           cbContext
+```
+CLFSUSER_API NTSTATUS ClfsDeleteLogFile(
+  PUNICODE_STRING puszLogFileName,
+  PVOID           pvReserved,
+  ULONG           fLogOptionFlag,
+  PVOID           pvContext,
+  ULONG           cbContext
 );
-````
+```
 
 ## Parameters
 
 `puszLogFileName`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that supplies the name of the CLFS stream to be deleted. 
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that supplies the name of the CLFS stream to be deleted. 
 
 If the stream to be deleted is the only stream of a dedicated log, the name has the form log:<i>physical log name</i>, where <i>physical log name</i> is the path name of the physical log on the underlying file system.
 
@@ -94,13 +94,13 @@ The size, in bytes, of the context pointed to by <i>pvContex</i>t. If <i>pvConte
 
 ## Remarks
 
-The Common Log File System (CLFS) uses the LOG_FILE_OBJECT structure to represent logs. The <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a> function returns a pointer to LOG_FILE_OBJECT, which clients then pass to other CLFS functions.
+The Common Log File System (CLFS) uses the LOG_FILE_OBJECT structure to represent logs. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff540792">ClfsCreateLogFile</a> function returns a pointer to LOG_FILE_OBJECT, which clients then pass to other CLFS functions.
 
-CLFS clients do not directly access the members of a LOG_FILE_OBJECT structure. For information about the members, see <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>.
+CLFS clients do not directly access the members of a LOG_FILE_OBJECT structure. For information about the members, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a>.
 
 
 
-<b>ClfsDeleteLogFile</b> marks a stream for deletion but does not close any log file objects that are currently open. To close a log file object, call <a href="..\wdm\nf-wdm-clfscloselogfileobject.md">ClfsCloseLogFileObject</a>. A stream marked for deletion is deleted after all log file objects associated with the stream are closed.
+<b>ClfsDeleteLogFile</b> marks a stream for deletion but does not close any log file objects that are currently open. To close a log file object, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff540789">ClfsCloseLogFileObject</a>. A stream marked for deletion is deleted after all log file objects associated with the stream are closed.
 
 A CLFS stream marked for deletion will refuse subsequent requests to open the stream.
 
@@ -120,16 +120,16 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfscloseandresetlogfile.md">ClfsCloseAndResetLogFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540787">ClfsCloseAndResetLogFile</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfsdeletelogbypointer.md">ClfsDeleteLogByPointer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540789">ClfsCloseLogFileObject</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540792">ClfsCreateLogFile</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfscloselogfileobject.md">ClfsCloseLogFileObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541529">ClfsDeleteLogByPointer</a>

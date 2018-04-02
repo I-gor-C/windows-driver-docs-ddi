@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvFreeDrvItemContext method
+# IWiaMiniDrv::drvFreeDrvItemContext method
 The <b>IWiaMiniDrv::drvFreeDrvItemContext</b> method frees a device-specific context.
 
 ## Syntax
 
-````
+```
 HRESULT drvFreeDrvItemContext(
-  [in]  LONG lFlags,
-  [in]  BYTE *pSpecContext,
-  [out] LONG *plDevErrVal
+  LONG __MIDL__IWiaMiniDrv0056,
+  BYTE *__MIDL__IWiaMiniDrv0057,
+  LONG *__MIDL__IWiaMiniDrv0058
 );
-````
+```
 
 ## Parameters
 
@@ -92,7 +92,7 @@ When a driver item is deleted, the WIA service frees the driver item context. Th
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 

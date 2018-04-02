@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 For internal use only.
 
 ## Syntax
-````
-typedef enum _WDF_TASK_QUEUE_DISPATCH_TYPE { 
-  WdfTaskQueueDispatchInvalid     = 0,
-  WdfTaskQueueDispatchSequential,
-  WdfTaskQueueDispatchParallel,
+```
+typedef enum _WDF_TASK_QUEUE_DISPATCH_TYPE {
+  WdfTaskQueueDispatchInvalid     ,
+  WdfTaskQueueDispatchSequential  ,
+  WdfTaskQueueDispatchParallel    ,
   WdfTaskQueueDispatchMax
 } WDF_TASK_QUEUE_DISPATCH_TYPE;
-````
+```
 
 ## Constants
 

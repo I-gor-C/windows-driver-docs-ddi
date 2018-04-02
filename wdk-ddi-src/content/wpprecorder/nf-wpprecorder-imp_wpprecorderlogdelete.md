@@ -46,15 +46,16 @@ req.product: Windows 10 or later.
 
 
 # imp_WppRecorderLogDelete function
-The <a href="..\wpprecorder\nf-wpprecorder-imp_wpprecorderlogdelete.md">WppRecorderLogDelete</a> method deletes the specified recorder log.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/dn914616">WppRecorderLogDelete</a> method deletes the specified recorder log.
 
 ## Syntax
 
-````
-NTSTATUS imp_WppRecorderLogDelete(
-   NULL RecorderLog
+```
+void imp_WppRecorderLogDelete(
+  PVOID        WppCb,
+  RECORDER_LOG RecorderLog
 );
-````
+```
 
 ## Parameters
 

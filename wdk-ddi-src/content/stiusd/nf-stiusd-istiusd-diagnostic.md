@@ -45,22 +45,22 @@ req.product: Windows 10 or later.
 ---
 
 
-# Diagnostic method
+# IStiUSD::Diagnostic method
 A still image minidriver's <b>IStiUSD::Diagnostic</b> method runs diagnostic tests on a still image device.
 
 ## Syntax
 
-````
+```
 HRESULT Diagnostic(
-   LPSTI_DIAG pBuffer
+  LPSTI_DIAG pBuffer
 );
-````
+```
 
 ## Parameters
 
 `pBuffer`
 
-Caller-supplied pointer to an <a href="..\sti\ns-sti-_sti_diag.md">STI_DIAG</a> structure to receive testing status information.
+Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548383">STI_DIAG</a> structure to receive testing status information.
 
 
 ## Return Value
@@ -79,8 +79,8 @@ The <b>IStiUSD::Diagnostic</b> method is called when a user clicks on the Scanne
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/62740263-5bbb-48e1-be3d-9ee9cb37d6b9">IStiUSD</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543736">IStiDevice::Diagnostic</a>
+
+
+
+<a href="https://msdn.microsoft.com/62740263-5bbb-48e1-be3d-9ee9cb37d6b9">IStiUSD</a>

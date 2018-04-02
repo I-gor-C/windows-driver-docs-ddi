@@ -7,7 +7,7 @@ old-location: ifsk\rtlsplay.htm
 old-project: ifsk
 ms.assetid: b62834ec-6100-429a-b62f-7e30c58b13e5
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlSplay, RtlSplay routine [Installable File System Drivers], ifsk.rtlsplay, ntddk/RtlSplay, rtlref_e44a955e-57eb-46f9-be07-9f658b8fd6db.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>RtlSplay</b> routine rebalances, or "splays," a splay link tree around th
 
 ## Syntax
 
-````
-PRTL_SPLAY_LINKS RtlSplay(
-  _Inout_ PRTL_SPLAY_LINKS Links
+```
+NTSYSAPI PRTL_SPLAY_LINKS RtlSplay(
+  PRTL_SPLAY_LINKS Links
 );
-````
+```
 
 ## Parameters
 
@@ -86,16 +86,16 @@ Callers of <b>RtlSplay</b> must be running at IRQL &lt;= DISPATCH_LEVEL if the t
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552201">RtlDelete</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-rtldelete.md">RtlDelete</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553010">RtlInitializeSplayLinks</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlinsertasleftchild.md">RtlInsertAsLeftChild</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553017">RtlInsertAsLeftChild</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlinsertasrightchild.md">RtlInsertAsRightChild</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553022">RtlInsertAsRightChild</a>

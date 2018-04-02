@@ -55,11 +55,11 @@ The <b>WdfDeviceGetSystemPowerAction</b> method returns the <a href="https://msd
 
 ## Syntax
 
-````
+```
 POWER_ACTION WdfDeviceGetSystemPowerAction(
-  _In_ WDFDEVICE Device
+  WDFDEVICE Device
 );
-````
+```
 
 ## Parameters
 

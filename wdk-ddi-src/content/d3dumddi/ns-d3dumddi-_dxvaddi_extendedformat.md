@@ -7,7 +7,7 @@ old-location: display\dxvaddi_extendedformat.htm
 old-project: display
 ms.assetid: e4f863bd-12ec-489d-a6e0-6b9242fbb0b0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXVA2_Structs_31dd9223-b889-4db9-acc0-520c8f16410a.xml, DXVADDI_EXTENDEDFORMAT, DXVADDI_EXTENDEDFORMAT structure [Display Devices], _DXVADDI_EXTENDEDFORMAT, d3dumddi/DXVADDI_EXTENDEDFORMAT, display.dxvaddi_extendedformat
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,22 +47,22 @@ req.typenames: DXVADDI_EXTENDEDFORMAT
 The DXVADDI_EXTENDEDFORMAT structure describes the extended format of the video frame.
 
 ## Syntax
-````
+```
 typedef struct _DXVADDI_EXTENDEDFORMAT {
   union {
     struct {
-      UINT SampleFormat  :8;
-      UINT VideoChromaSubsampling  :4;
-      UINT NominalRange  :3;
-      UINT VideoTransferMatrix  :3;
-      UINT VideoLighting  :4;
-      UINT VideoPrimaries  :5;
-      UINT VideoTransferFunction  :5;
+      UINT  : 8 SampleFormat;
+      UINT  : 4 VideoChromaSubsampling;
+      UINT  : 3 NominalRange;
+      UINT  : 3 VideoTransferMatrix;
+      UINT  : 4 VideoLighting;
+      UINT  : 5 VideoPrimaries;
+      UINT  : 5 VideoTransferFunction;
     };
-    UINT   Value;
+    UINT Value;
   };
 } DXVADDI_EXTENDEDFORMAT;
-````
+```
 
 ## Members
 
@@ -76,4 +76,4 @@ typedef struct _DXVADDI_EXTENDEDFORMAT {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_videodesc.md">DXVADDI_VIDEODESC</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562944">DXVADDI_VIDEODESC</a>

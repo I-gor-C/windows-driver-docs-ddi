@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SetThumbnail method
+# IXpsDocument::SetThumbnail method
 The <code>SetThumbnail</code> method removes the current thumbnail object from the document and inserts a new one.
 
 ## Syntax
 
-````
+```
 HRESULT SetThumbnail(
-  [in] IPartThumbnail *pThumbnail
+  IPartThumbnail *pThumbnail
 );
-````
+```
 
 ## Parameters
 

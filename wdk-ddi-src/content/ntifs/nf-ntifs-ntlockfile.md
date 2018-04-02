@@ -7,7 +7,7 @@ old-location: kernel\zwlockfile.htm
 old-project: kernel
 ms.assetid: d5d4d13c-93d9-4531-85ff-d3fa0e52ecc1
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: NtLockFile, ZwLockFile, ZwLockFile routine [Kernel-Mode Driver Architecture], k111_267331a3-5339-46ce-a0b6-d7b2e0aba68f.xml, kernel.zwlockfile, ntifs/NtLockFile, ntifs/ZwLockFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,20 +50,20 @@ The <b>ZwLockFile</b> routine requests a byte-range lock for the specified file.
 
 ## Syntax
 
-````
-NTSTATUS ZwLockFile(
-  _In_     HANDLE           FileHandle,
-  _In_opt_ HANDLE           Event,
-  _In_opt_ PIO_APC_ROUTINE  ApcRoutine,
-  _In_opt_ PVOID            ApcContext,
-  _Out_    PIO_STATUS_BLOCK IoStatusBlock,
-  _In_     PLARGE_INTEGER   ByteOffset,
-  _In_     PLARGE_INTEGER   Length,
-  _In_     ULONG            Key,
-  _In_     BOOLEAN          FailImmediately,
-  _In_     BOOLEAN          ExclusiveLock
+```
+__kernel_entry NTSYSCALLAPI NTSTATUS NtLockFile(
+  HANDLE           FileHandle,
+  HANDLE           Event,
+  PIO_APC_ROUTINE  ApcRoutine,
+  PVOID            ApcContext,
+  PIO_STATUS_BLOCK IoStatusBlock,
+  PLARGE_INTEGER   ByteOffset,
+  PLARGE_INTEGER   Length,
+  ULONG            Key,
+  BOOLEAN          FailImmediately,
+  BOOLEAN          ExclusiveLock
 );
-````
+```
 
 ## Parameters
 
@@ -85,7 +85,7 @@ A pointer to a caller-specified context for the APC routine. This value is passe
 
 `IoStatusBlock`
 
-A pointer to an <a href="..\wudfwdm\ns-wudfwdm-_io_status_block.md">IO_STATUS_BLOCK</a> structure that contains the final status.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff550671">IO_STATUS_BLOCK</a> structure that contains the final status.
 
 `ByteOffset`
 
@@ -162,8 +162,8 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-zwunlockfile.md">ZwUnlockFile</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567118">ZwUnlockFile</a>

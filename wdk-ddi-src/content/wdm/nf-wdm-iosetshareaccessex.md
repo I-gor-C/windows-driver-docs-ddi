@@ -7,7 +7,7 @@ old-location: kernel\iosetshareaccessex.htm
 old-project: kernel
 ms.assetid: 4DCC4A37-0099-4C6F-B00D-B6CAA7D1EC68
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoSetShareAccessEx, IoSetShareAccessEx routine [Kernel-Mode Driver Architecture], kernel.iosetshareaccessex, wdm/IoSetShareAccessEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,21 +51,21 @@ The <b>IoSetShareAccessEx</b> routine sets the access rights for sharing the spe
 
 ## Syntax
 
-````
-VOID IoSetShareAccessEx(
-  _In_     ACCESS_MASK   DesiredAccess,
-  _In_     ULONG         DesiredShareAccess,
-  _Inout_  PFILE_OBJECT  FileObject,
-  _Out_    PSHARE_ACCESS ShareAccess,
-  _In_opt_ PBOOLEAN      WritePermission 
+```
+NTKERNELAPI VOID IoSetShareAccessEx(
+  ACCESS_MASK   DesiredAccess,
+  ULONG         DesiredShareAccess,
+  PFILE_OBJECT  FileObject,
+  PSHARE_ACCESS ShareAccess,
+  PBOOLEAN      WritePermission
 );
-````
+```
 
 ## Parameters
 
 `DesiredAccess`
 
-Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the type of access requested for the file object. See <a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a> for a complete list of system-defined <i>DesiredAccess</i> flags.
+Specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the type of access requested for the file object. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff548418">IoCreateFile</a> for a complete list of system-defined <i>DesiredAccess</i> flags.
 
 `DesiredShareAccess`
 
@@ -105,8 +105,8 @@ None.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iocreatefile.md">IoCreateFile</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548418">IoCreateFile</a>

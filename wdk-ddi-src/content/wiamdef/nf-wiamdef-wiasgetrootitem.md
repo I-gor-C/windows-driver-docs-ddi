@@ -50,12 +50,12 @@ The <b>wiasGetRootItem</b> function retrieves the root item context of a specifi
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasGetRootItem(
-  _In_  BYTE *pWiasContext,
-  _Out_ BYTE **ppWiasContext
+```
+HRESULT wiasGetRootItem(
+  BYTE *pWiasContext,
+  BYTE **ppWiasContext
 );
-````
+```
 
 ## Parameters
 
@@ -84,4 +84,4 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetdrvitem.md">wiasGetDrvItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549243">wiasGetDrvItem</a>

@@ -47,11 +47,11 @@ req.typenames:
 This enumeration is not implemented.
 
 ## Syntax
-````
-typedef enum _LineDisplayBitmapWidth { 
-    = 
-} LineDisplayBitmapWidth;
-````
+```
+typedef enum LineDisplayBitmapWidth {
+  AsIs
+} ;
+```
 
 ## Constants
 

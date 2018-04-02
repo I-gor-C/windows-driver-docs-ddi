@@ -7,7 +7,7 @@ old-location: kernel\rtllongtointptr.htm
 old-project: kernel
 ms.assetid: E583418C-7A23-4F88-A3D2-E2BA11578079
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlLongToIntPtr, RtlLongToIntPtr function [Kernel-Mode Driver Architecture], kernel.rtllongtointptr, ntintsafe/RtlLongToIntPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>LONG</b> to a value of type <b>INT_PTR</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlLongToIntPtr(
-  _In_  LONG    lOperand,
-  _Out_ INT_PTR *piResult
+  LONG    lOperand,
+  INT_PTR *piResult
 );
-````
+```
 
 ## Parameters
 

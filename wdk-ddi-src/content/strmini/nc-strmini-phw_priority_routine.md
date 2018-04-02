@@ -63,7 +63,7 @@ void PhwPriorityRoutine(
 
 `Context`
 
-Pointer to a minidriver-allocated buffer. The minidriver provides a pointer to this buffer in the Context parameter of its call to <a href="..\strmini\nf-strmini-streamclasscallatnewpriority.md">StreamClassCallAtNewPriority</a>.
+Pointer to a minidriver-allocated buffer. The minidriver provides a pointer to this buffer in the Context parameter of its call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff568230">StreamClassCallAtNewPriority</a>.
 
 
 ## Return Value
@@ -72,7 +72,7 @@ None
 
 ## Remarks
 
-The minidriver provides a pointer to this routine in the <b>Priority</b> parameter of a call to <a href="..\strmini\nf-strmini-streamclasscallatnewpriority.md">StreamClassCallAtNewPriority</a>.
+The minidriver provides a pointer to this routine in the <b>Priority</b> parameter of a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff568230">StreamClassCallAtNewPriority</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,4 +82,4 @@ The minidriver provides a pointer to this routine in the <b>Priority</b> paramet
 
 ## See Also
 
-<a href="..\strmini\nf-strmini-streamclasscallatnewpriority.md">StreamClassCallAtNewPriority</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568230">StreamClassCallAtNewPriority</a>

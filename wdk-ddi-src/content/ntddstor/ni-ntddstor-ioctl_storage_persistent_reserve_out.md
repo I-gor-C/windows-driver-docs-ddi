@@ -7,7 +7,7 @@ old-location: storage\ioctl_storage_persistent_reserve_out.htm
 old-project: storage
 ms.assetid: a9863ac9-46e2-4888-879e-7d56e9260142
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_STORAGE_PERSISTENT_RESERVE_OUT, IOCTL_STORAGE_PERSISTENT_RESERVE_OUT control code [Storage Devices], k307_664b87a0-88f2-42ac-851e-b1fbbf36c66a.xml, ntddstor/IOCTL_STORAGE_PERSISTENT_RESERVE_OUT, storage.ioctl_storage_persistent_reserve_out
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,7 +50,7 @@ The generic storage class driver (<i>classpnp.sys</i>) exposes an I/O control (I
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure. You must allocate the buffer from nonpaged pool and must align it correctly for the  target device and adapter.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563851">PERSISTENT_RESERVE_COMMAND</a> structure. You must allocate the buffer from nonpaged pool and must align it correctly for the  target device and adapter.
 
 PR_OUT.ServiceAction can be one of the following:
 
@@ -116,10 +116,10 @@ RESERVATION_TYPE_EXCLUSIVE_REGISTRANTS
 
 </li>
 </ul>
-PR_OUT.ParameterList is used to hold the <a href="..\storport\ns-storport-pro_parameter_list.md">PRO_PARAMETER_LIST</a> structure. This structure is required and must be contiguous with the rest of the <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure.
+PR_OUT.ParameterList is used to hold the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563940">PRO_PARAMETER_LIST</a> structure. This structure is required and must be contiguous with the rest of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563851">PERSISTENT_RESERVE_COMMAND</a> structure.
 
 ### Input Buffer Length
-The length of a <a href="..\ntddstor\ns-ntddstor-_persistent_reserve_command.md">PERSISTENT_RESERVE_COMMAND</a> structure.
+The length of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563851">PERSISTENT_RESERVE_COMMAND</a> structure.
 
 ### Output Buffer
 None.

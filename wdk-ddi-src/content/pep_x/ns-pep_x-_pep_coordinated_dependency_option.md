@@ -7,7 +7,7 @@ old-location: kernel\pep_coordinated_dependency_option.htm
 old-project: kernel
 ms.assetid: DE95A3E9-3542-49EE-AA62-3430A6B2D7C7
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPEP_COORDINATED_DEPENDENCY_OPTION, PEP_COORDINATED_DEPENDENCY_OPTION, PEP_COORDINATED_DEPENDENCY_OPTION structure [Kernel-Mode Driver Architecture], PPEP_COORDINATED_DEPENDENCY_OPTION, PPEP_COORDINATED_DEPENDENCY_OPTION structure pointer [Kernel-Mode Driver Architecture], _PEP_COORDINATED_DEPENDENCY_OPTION, kernel.pep_coordinated_dependency_option, pepfx/PEP_COORDINATED_DEPENDENCY_OPTION, pepfx/PPEP_COORDINATED_DEPENDENCY_OPTION"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: PEP_COORDINATED_DEPENDENCY_OPTION, *PPEP_COORDINATED_DEPENDENCY_O
 The <b>PEP_COORIDNATED_DEPENDENCY_OPTION</b> structure describes a coordinated idle stateâ€™s dependency to the OS.
 
 ## Syntax
-````
+```
 typedef struct _PEP_COORDINATED_DEPENDENCY_OPTION {
-  UCHAR   ExpectedStateIndex;
+  UCHAR   ExpectedStateIndex;
   BOOLEAN LooseDependency;
   BOOLEAN InitiatingState;
   BOOLEAN DependentState;
-} PEP_COORDINATED_DEPENDENCY_OPTION, *PPEP_COORDINATED_DEPENDENCY_OPTION;
-````
+} *PPEP_COORDINATED_DEPENDENCY_OPTION, PEP_COORDINATED_DEPENDENCY_OPTION;
+```
 
 ## Members
 
@@ -87,8 +87,8 @@ Indicates if this state is a valid state for a dependent processor to be in.
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_ppm_query_coordinated_dependency.md">PEP_PPM_QUERY_COORDINATED_DEPENDENCY</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt186775">PEP_NOTIFY_PPM_QUERY_COORDINATED_DEPENDENCY notification</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186821">PEP_PPM_QUERY_COORDINATED_DEPENDENCY</a>

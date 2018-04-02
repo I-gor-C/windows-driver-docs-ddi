@@ -7,7 +7,7 @@ old-location: netvista\ndismcosendnetbufferlistscomplete.htm
 old-project: netvista
 ms.assetid: c4978122-6d13-4e9b-8eb7-d06cd7372268
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMCoSendNetBufferListsComplete, NdisMCoSendNetBufferListsComplete function [Network Drivers Starting with Windows Vista], condis_sendrcv_ref_49470611-47cb-4778-8723-4acc2ebbfb81.xml, ndis/NdisMCoSendNetBufferListsComplete, netvista.ndismcosendnetbufferlistscomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,18 +48,18 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisMCoSendNetBufferListsComplete function
 The 
   <b>NdisMCoSendNetBufferListsComplete</b> function returns a linked list of 
-  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures to an overlying
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures to an overlying
   driver and returns the final status of a CoNDIS send request.
 
 ## Syntax
 
-````
-VOID NdisMCoSendNetBufferListsComplete(
-  _In_ NDIS_HANDLE      NdisVcHandle,
-  _In_ PNET_BUFFER_LIST NetBufferLists,
-  _In_ ULONG            SendCompleteFlags
+```
+void NdisMCoSendNetBufferListsComplete(
+  IN NDIS_HANDLE      NdisVcHandle,
+  IN PNET_BUFFER_LIST NetBufferLists,
+  IN ULONG            SendCompleteFlags
 );
-````
+```
 
 ## Parameters
 
@@ -67,16 +67,16 @@ VOID NdisMCoSendNetBufferListsComplete(
 
 A handle that identifies a virtual connection (VC). The miniport driver obtained this handle as an
      input parameter to its 
-     <a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a> function, either
+     <a href="https://msdn.microsoft.com/99eaba29-ce17-4e79-878e-5fdf7411e56c">MiniportCoCreateVc</a> function, either
      when a client set up an outgoing call or when the call manager created a VC for a client-registered
      service access point (SAP) to indicate an incoming-call notification on.
 
 `NetBufferLists`
 
 A pointer to a linked list of 
-     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures. The miniport
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures. The miniport
      driver received the NET_BUFFER_LIST structures in previous calls to its 
-     <a href="..\ndis\nc-ndis-miniport_co_send_net_buffer_lists.md">
+     <a href="https://msdn.microsoft.com/4a717842-6d71-488e-a56a-57c6e6e0c5d7">
      MiniportCoSendNetBufferLists</a> function.
 
 `SendCompleteFlags`
@@ -97,9 +97,9 @@ None
 
 A miniport driver calls 
     <b>NdisMCoSendNetBufferListsComplete</b> to complete send requests that NDIS made to the driver's 
-    <a href="..\ndis\nc-ndis-miniport_co_send_net_buffer_lists.md">
+    <a href="https://msdn.microsoft.com/4a717842-6d71-488e-a56a-57c6e6e0c5d7">
     MiniportCoSendNetBufferLists</a> function. The miniport driver specifies a linked list of 
-    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structures that are
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structures that are
     associated with the completed send requests.
 
 While the status of the send requests is pending, the miniport driver retains ownership of the
@@ -138,21 +138,21 @@ A miniport driver's call to
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-miniport_cancel_send.md">MiniportCancelSend</a>
+<a href="https://msdn.microsoft.com/17111aa3-c02f-494a-af97-5ab34c152451">MiniportCancelSend</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_co_send_net_buffer_lists.md">
+<a href="https://msdn.microsoft.com/99eaba29-ce17-4e79-878e-5fdf7411e56c">MiniportCoCreateVc</a>
+
+
+
+<a href="https://msdn.microsoft.com/4a717842-6d71-488e-a56a-57c6e6e0c5d7">
    MiniportCoSendNetBufferLists</a>
 
 
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_co_create_vc.md">MiniportCoCreateVc</a>
-
-
-
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>

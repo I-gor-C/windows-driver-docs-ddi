@@ -52,12 +52,12 @@ The <b>WDF_READ_REGISTER_ULONG</b> function reads a ULONG value from the specifi
 
 ## Syntax
 
-````
+```
 ULONG WDF_READ_REGISTER_ULONG(
-  _In_ WDFDEVICE Device,
-  _In_ PULONG    Register
+  WDFDEVICE Device,
+  PULONG    Register
 );
-````
+```
 
 ## Parameters
 

@@ -45,24 +45,24 @@ req.product: Windows 10 or later.
 ---
 
 
-# IsVersionAvailable method
+# IWDFDriver::IsVersionAvailable method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>IsVersionAvailable</b> method determines whether the specified version of the framework is available.
 
 ## Syntax
 
-````
+```
 BOOL IsVersionAvailable(
-  [in] UMDF_VERSION_DATA *pMinimumVersion
+  UMDF_VERSION_DATA *pMinimumVersion
 );
-````
+```
 
 ## Parameters
 
 `pMinimumVersion`
 
-A pointer to a <a href="..\wudfddi_types\ns-wudfddi_types-umdf_version_data.md">UMDF_VERSION_DATA</a> structure that describes the minimum version of the framework that the driver supports.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561352">UMDF_VERSION_DATA</a> structure that describes the minimum version of the framework that the driver supports.
 
 
 ## Return Value
@@ -81,8 +81,8 @@ A pointer to a <a href="..\wudfddi_types\ns-wudfddi_types-umdf_version_data.md">
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558893">IWDFDriver</a>
 
 
 
-<a href="..\wudfddi_types\ns-wudfddi_types-umdf_version_data.md">UMDF_VERSION_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561352">UMDF_VERSION_DATA</a>

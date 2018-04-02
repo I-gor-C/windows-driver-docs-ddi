@@ -7,7 +7,7 @@ old-location: display\d3dkmtcreatecontextvirtual.htm
 old-project: display
 ms.assetid: 1E95228E-7513-46D2-8402-28CA6D26F3EB
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTCreateContextVirtual, D3DKMTCreateContextVirtual function [Display Devices], d3dkmthk/D3DKMTCreateContextVirtual, display.d3dkmtcreatecontextvirtual
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>D3DKMTCreateContextVirtual</b> function creates a kernel mode device cont
 
 ## Syntax
 
-````
-NTSTATUS APIENTRY D3DKMTCreateContextVirtual(
-  _In_ D3DKMT_CREATECONTEXTVIRTUAL *pData
+```
+NTSTATUS D3DKMTCreateContextVirtual(
+
 );
-````
+```
 
 ## Parameters
 
@@ -130,4 +130,4 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createcontextvirtual.md">D3DKMT_CREATECONTEXTVIRTUAL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906791">D3DKMT_CREATECONTEXTVIRTUAL</a>

@@ -47,18 +47,18 @@ req.typenames: KS_DVDCOPY_SET_COPY_STATE, *PKS_DVDCOPY_SET_COPY_STATE
 The KS_DVDCOPY_SET_COPY_STATE structure is used to specify the copyright protection state of the DVD decoder stream.
 
 ## Syntax
-````
+```
 typedef struct _KS_DVDCOPY_SET_COPY_STATE {
   ULONG DVDCopyState;
-} KS_DVDCOPY_SET_COPY_STATE, *PKS_DVDCOPY_SET_COPY_STATE;
-````
+} *PKS_DVDCOPY_SET_COPY_STATE, KS_DVDCOPY_SET_COPY_STATE;
+```
 
 ## Members
 
 
 `DVDCopyState`
 
-Indicates the progress of the copyright protection initialization, authentication and key negotiation sequence. This must be one of the values from the <a href="..\ksmedia\ne-ksmedia-ks_dvdcopystate.md">KS_DVDCOPYSTATE</a> enumeration.
+Indicates the progress of the copyright protection initialization, authentication and key negotiation sequence. This must be one of the values from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567634">KS_DVDCOPYSTATE</a> enumeration.
 
 ## Remarks
 This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565147">KSPROPERTY_DVDCOPY_SET_COPY_STATE</a> property.
@@ -76,4 +76,4 @@ For more information, see <a href="https://msdn.microsoft.com/ff9cf8c8-7c8f-485c
 
 
 
-<a href="..\ksmedia\ne-ksmedia-ks_dvdcopystate.md">KS_DVDCOPYSTATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567634">KS_DVDCOPYSTATE</a>

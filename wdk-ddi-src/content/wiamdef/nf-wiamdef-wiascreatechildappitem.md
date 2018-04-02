@@ -50,15 +50,15 @@ The <b>wiasCreateChildAppItem</b> function creates a new application item and in
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasCreateChildAppItem(
-  _In_  BYTE *pParentWiasContext,
-        LONG lFlags,
-  _In_  BSTR bstrItemName,
-  _In_  BSTR bstrFullItemName,
-  _Out_ BYTE **ppWiasChildContext
+```
+HRESULT wiasCreateChildAppItem(
+  BYTE *pParentWiasContext,
+  LONG lFlags,
+  BSTR bstrItemName,
+  BSTR bstrFullItemName,
+  BYTE **ppWiasChildContext
 );
-````
+```
 
 ## Parameters
 
@@ -99,4 +99,4 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiascreatedrvitem.md">wiasCreateDrvItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549160">wiasCreateDrvItem</a>

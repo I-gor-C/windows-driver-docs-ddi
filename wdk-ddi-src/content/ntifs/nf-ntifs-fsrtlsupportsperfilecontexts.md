@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlsupportsperfilecontexts.htm
 old-project: ifsk
 ms.assetid: 28f0e98f-1f7b-4dcf-8151-e13981634617
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlSupportsPerFileContexts, FsRtlSupportsPerFileContexts function [Installable File System Drivers], fsrtlref_98e99a7a-c80d-43d5-a0f6-3eea35a8d20a.xml, ifsk.fsrtlsupportsperfilecontexts, ntifs/FsRtlSupportsPerFileContexts
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,15 +45,15 @@ req.typenames: TOKEN_TYPE
 
 
 # FsRtlSupportsPerFileContexts function
-The <b>FsRtlSupportsPerFileContexts</b> macro checks if per file context information is supported by the file system that is associated with a specified <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>.
+The <b>FsRtlSupportsPerFileContexts</b> macro checks if per file context information is supported by the file system that is associated with a specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a>.
 
 ## Syntax
 
-````
-BOOLEAN FsRtlSupportsPerFileContexts(
-   FILE_OBJECT FileObject
+```
+void FsRtlSupportsPerFileContexts(
+   _fo
 );
-````
+```
 
 ## Parameters
 
@@ -80,7 +80,7 @@ None
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a>
 
 
 

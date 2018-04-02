@@ -7,7 +7,7 @@ old-location: kernel\pep_processor_feedback_counter.htm
 old-project: kernel
 ms.assetid: 275AE285-6309-4A03-A02C-DBE8D44727CE
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPEP_PROCESSOR_FEEDBACK_COUNTER, PEP_PROCESSOR_FEEDBACK_COUNTER, PEP_PROCESSOR_FEEDBACK_COUNTER structure [Kernel-Mode Driver Architecture], PPEP_PROCESSOR_FEEDBACK_COUNTER, PPEP_PROCESSOR_FEEDBACK_COUNTER structure pointer [Kernel-Mode Driver Architecture], PROCESSOR_FEEDBACK_COUNTER_FREQUENCY, PROCESSOR_FEEDBACK_COUNTER_PERFORMANCE, PROCESSOR_FEEDBACK_TYPE_INSTANTANEOUS, PROCESSOR_FEEDBACK_TYPE_RELATIVE, _PEP_PROCESSOR_FEEDBACK_COUNTER, kernel.pep_processor_feedback_counter, pepfx/PEP_PROCESSOR_FEEDBACK_COUNTER, pepfx/PPEP_PROCESSOR_FEEDBACK_COUNTER"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,18 @@ req.typenames: PEP_PROCESSOR_FEEDBACK_COUNTER, *PPEP_PROCESSOR_FEEDBACK_COUNTER,
 The <b>PEP_PROCESSOR_FEEDBACK_COUNTER</b> structure describes a feedback counter to the operating system.
 
 ## Syntax
-````
+```
 typedef struct _PEP_PROCESSOR_FEEDBACK_COUNTER {
   struct {
-    ULONG Affinitized  :1;
-    ULONG Type  :2;
-    ULONG Counter  :4;
-    ULONG Reserved  :25;
+    ULONG  : 1  Affinitized;
+    ULONG  : 4  Counter;
+    ULONG  : 1  DiscountIdle;
+    ULONG  : 24 Reserved;
+    ULONG  : 2  Type;
   };
-  ULONG  NominalRate;
+  ULONG  NominalRate;
 } PEP_PROCESSOR_FEEDBACK_COUNTER, *PPEP_PROCESSOR_FEEDBACK_COUNTER;
-````
+```
 
 ## Members
 

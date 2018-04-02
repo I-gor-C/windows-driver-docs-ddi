@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# RawWriteCommand method
+# IStiDevice::RawWriteCommand method
 The <b>IStiDevice::RawWriteCommand</b> method sends command information to a still image device.
 
 ## Syntax
 
-````
+```
 HRESULT RawWriteCommand(
-  [in]           LPVOID       lpBuffer,
-                 DWORD        nNumberOfBytes,
-  [in, optional] LPOVERLAPPED lpOverlapped
+  LPVOID       lpBuffer,
+  DWORD        nNumberOfBytes,
+  LPOVERLAPPED lpOverlapped
 );
-````
+```
 
 ## Parameters
 

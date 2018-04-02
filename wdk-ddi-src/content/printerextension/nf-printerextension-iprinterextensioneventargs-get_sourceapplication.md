@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_SourceApplication method
+# IPrinterExtensionEventArgs::get_SourceApplication method
 Gets the name of the application that invoked the printer extension.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_SourceApplication(
-  [out, retval] BSTR *pbstrApplication
+  BSTR *pbstrApplication
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioneventargs.md">IPrinterExtensionEventArgs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973207">IPrinterExtensionEventArgs</a>

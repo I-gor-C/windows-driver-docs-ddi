@@ -7,7 +7,7 @@ old-location: kernel\cm_partial_resource_descriptor.htm
 old-project: kernel
 ms.assetid: 96bf7bab-b8f5-439c-8717-ea6956ed0213
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PCM_PARTIAL_RESOURCE_DESCRIPTOR, CM_PARTIAL_RESOURCE_DESCRIPTOR, CM_PARTIAL_RESOURCE_DESCRIPTOR structure [Kernel-Mode Driver Architecture], CM_RESOURCE_CONNECTION_CLASS_GPIO, CM_RESOURCE_CONNECTION_CLASS_SERIAL, CM_RESOURCE_CONNECTION_TYPE_GPIO_IO, CM_RESOURCE_CONNECTION_TYPE_SERIAL_I2C, CM_RESOURCE_CONNECTION_TYPE_SERIAL_SPI, CM_RESOURCE_CONNECTION_TYPE_SERIAL_UART, CmResourceShareDeviceExclusive, CmResourceShareDriverExclusive, CmResourceShareShared, PCM_PARTIAL_RESOURCE_DESCRIPTOR, PCM_PARTIAL_RESOURCE_DESCRIPTOR structure pointer [Kernel-Mode Driver Architecture], _CM_PARTIAL_RESOURCE_DESCRIPTOR, kernel.cm_partial_resource_descriptor, kstruct_a_2a821975-e3b8-4ce0-9dd5-8afe348001d8.xml, wdm/CM_PARTIAL_RESOURCE_DESCRIPTOR, wdm/PCM_PARTIAL_RESOURCE_DESCRIPTOR"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,66 +45,57 @@ req.product: Windows 10 or later.
 ---
 
 # _CM_PARTIAL_RESOURCE_DESCRIPTOR structure
-The <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure specifies one or more system hardware resources, of a single type, assigned to a device. This structure is used to create an array within a <a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_list.md">CM_PARTIAL_RESOURCE_LIST</a> structure.
+The <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure specifies one or more system hardware resources, of a single type, assigned to a device. This structure is used to create an array within a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541981">CM_PARTIAL_RESOURCE_LIST</a> structure.
 
 ## Syntax
-````
+```
 typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
-  UCHAR  Type;
-  UCHAR  ShareDisposition;
+  UCHAR  Type;
+  UCHAR  ShareDisposition;
   USHORT Flags;
   union {
     struct {
       PHYSICAL_ADDRESS Start;
-      ULONG            Length;
-    } Generic;
+      ULONG            Length;
+    } Generic;
     struct {
       PHYSICAL_ADDRESS Start;
-      ULONG            Length;
-    } Port;
+      ULONG            Length;
+    } Port;
     struct {
-#if defined(NT_PROCESSOR_GROUPS)
-      USHORT    Level;
-      USHORT    Group;
-#else 
-      ULONG     Level;
-#endif 
-      ULONG     Vector;
+      USHORT    Level;
+      USHORT    Group;
+      ULONG     Level;
+      ULONG     Vector;
       KAFFINITY Affinity;
-    } Interrupt;
+    } Interrupt;
     struct {
       union {
         struct {
-#if defined(NT_PROCESSOR_GROUPS)
-          USHORT    Group;
-#else 
-          USHORT    Reserved;
-#endif 
-          USHORT    MessageCount;
-          ULONG     Vector;
+          USHORT    Group;
+          USHORT    Reserved;
+          USHORT    MessageCount;
+          ULONG     Vector;
           KAFFINITY Affinity;
-        } Raw;
+        } Raw;
         struct {
-#if defined(NT_PROCESSOR_GROUPS)
-          USHORT    Level;
-          USHORT    Group;
-#else 
-          ULONG     Level;
-#endif 
-          ULONG     Vector;
+          USHORT    Level;
+          USHORT    Group;
+          ULONG     Level;
+          ULONG     Vector;
           KAFFINITY Affinity;
-        } Translated;
-      };
-    } MessageInterrupt;
+        } Translated;
+      } DUMMYUNIONNAME;
+    } MessageInterrupt;
     struct {
       PHYSICAL_ADDRESS Start;
-      ULONG            Length;
-    } Memory;
+      ULONG            Length;
+    } Memory;
     struct {
       ULONG Channel;
       ULONG Port;
       ULONG Reserved1;
-    } Dma;
+    } Dma;
     struct {
       ULONG Channel;
       ULONG RequestLine;
@@ -112,32 +103,32 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
       UCHAR Reserved1;
       UCHAR Reserved2;
       UCHAR Reserved3;
-    } DmaV3;
+    } DmaV3;
     struct {
       ULONG Data[3];
-    } DevicePrivate;
+    } DevicePrivate;
     struct {
       ULONG Start;
       ULONG Length;
       ULONG Reserved;
-    } BusNumber;
+    } BusNumber;
     struct {
       ULONG DataSize;
       ULONG Reserved1;
       ULONG Reserved2;
-    } DeviceSpecificData;
+    } DeviceSpecificData;
     struct {
       PHYSICAL_ADDRESS Start;
-      ULONG            Length40;
-    } Memory40;
+      ULONG            Length40;
+    } Memory40;
     struct {
       PHYSICAL_ADDRESS Start;
-      ULONG            Length48;
-    } Memory48;
+      ULONG            Length48;
+    } Memory48;
     struct {
       PHYSICAL_ADDRESS Start;
-      ULONG            Length64;
-    } Memory64;
+      ULONG            Length64;
+    } Memory64;
     struct {
       UCHAR Class;
       UCHAR Type;
@@ -145,17 +136,17 @@ typedef struct _CM_PARTIAL_RESOURCE_DESCRIPTOR {
       UCHAR Reserved2;
       ULONG IdLowPart;
       ULONG IdHighPart;
-    } Connection;
-  } u;
+    } Connection;
+  } u;
 } CM_PARTIAL_RESOURCE_DESCRIPTOR, *PCM_PARTIAL_RESOURCE_DESCRIPTOR;
-````
+```
 
 ## Members
 
 
 `Type`
 
-Identifies the resource type. The constant value specified for <b>Type</b> indicates which structure within the <b>u</b> union is valid, as indicated in the following table. (These flags are used within both <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> and <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structures, except where noted.)
+Identifies the resource type. The constant value specified for <b>Type</b> indicates which structure within the <b>u</b> union is valid, as indicated in the following table. (These flags are used within both <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> and <a href="https://msdn.microsoft.com/03e3a656-c691-4aff-bcc8-4e0bc8390fd7">IO_RESOURCE_DESCRIPTOR</a> structures, except where noted.)
 
 <table>
 <tr>
@@ -485,7 +476,7 @@ CM_RESOURCE_INTERRUPT_POLICY_INCLUDED
 
 </td>
 <td>
-Not used with the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure. For more information about this flag, see <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>.
+Not used with the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure. For more information about this flag, see <a href="https://msdn.microsoft.com/03e3a656-c691-4aff-bcc8-4e0bc8390fd7">IO_RESOURCE_DESCRIPTOR</a>.
 
 </td>
 </tr>
@@ -754,27 +745,39 @@ A <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure can describe either a raw (bus
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541947">CM_FLOPPY_DEVICE_DATA</a>
 
 
 
-<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541954">CM_FULL_RESOURCE_DESCRIPTOR</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541967">CM_KEYBOARD_DEVICE_DATA</a>
 
 
 
-<a href="..\wdm\ns-wdm-_cm_keyboard_device_data.md">CM_KEYBOARD_DEVICE_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541981">CM_PARTIAL_RESOURCE_LIST</a>
 
 
 
-<a href="..\wdm\ns-wdm-_cm_floppy_device_data.md">CM_FLOPPY_DEVICE_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541994">CM_RESOURCE_LIST</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-ioreportresourcefordetection.md">IoReportResourceForDetection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541998">CM_SCSI_DEVICE_DATA</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542003">CM_SERIAL_DEVICE_DATA</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544071">DMA_OPERATIONS</a>
+
+
+
+<a href="https://msdn.microsoft.com/03e3a656-c691-4aff-bcc8-4e0bc8390fd7">IO_RESOURCE_DESCRIPTOR</a>
 
 
 
@@ -782,36 +785,24 @@ A <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure can describe either a raw (bus
 
 
 
-<a href="..\wdm\ns-wdm-_cm_scsi_device_data.md">CM_SCSI_DEVICE_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548371">IoConnectInterrupt</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlcmdecodememioresource.md">RtlCmDecodeMemIoResource</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549203">IoGetDeviceProperty</a>
 
 
 
-<a href="..\wdm\nf-wdm-iogetdeviceproperty.md">IoGetDeviceProperty</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549608">IoReportResourceForDetection</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_list.md">CM_PARTIAL_RESOURCE_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551830">KAFFINITY</a>
 
 
 
-<a href="..\wdm\ns-wdm-_cm_serial_device_data.md">CM_SERIAL_DEVICE_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561768">RtlCmDecodeMemIoResource</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a>
-
-
-
-<a href="..\wudfwdm\ns-wudfwdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>
-
-
-
-<a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
-
-
-
-<a href="..\wudfwdm\ns-wudfwdm-_cm_full_resource_descriptor.md">CM_FULL_RESOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561774">RtlCmEncodeMemIoResource</a>

@@ -47,20 +47,20 @@ req.typenames: KSPROPERTY_SERIAL, *PKSPROPERTY_SERIAL
 The KSPROPERTY_SERIAL structure is a header that is included for each property that follows a KSPROPERTY_SERIALHDR structure.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_SERIAL {
   KSIDENTIFIER PropTypeSet;
-  ULONG        Id;
-  ULONG        PropertyLength;
-} KSPROPERTY_SERIAL, *PKSPROPERTY_SERIAL;
-````
+  ULONG        Id;
+  ULONG        PropertyLength;
+} *PKSPROPERTY_SERIAL, KSPROPERTY_SERIAL;
+```
 
 ## Members
 
 
 `PropTypeSet`
 
-A structure of type <a href="..\ks\ns-ks-ksidentifier.md">KSIDENTIFIER</a> that specifies the type of property data. This is the same information obtained from querying Basic Support.
+A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562676">KSIDENTIFIER</a> that specifies the type of property data. This is the same information obtained from querying Basic Support.
 
 `Id`
 
@@ -80,4 +80,4 @@ A KSPROPERTY_SERIAL structure is followed by the property data, with the start o
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksproperty_serialhdr.md">KSPROPERTY_SERIALHDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565614">KSPROPERTY_SERIALHDR</a>

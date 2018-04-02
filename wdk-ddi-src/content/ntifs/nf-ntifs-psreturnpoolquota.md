@@ -7,7 +7,7 @@ old-location: ifsk\psreturnpoolquota.htm
 old-project: ifsk
 ms.assetid: 12ceb592-97ca-41c9-89d0-26fd2dc87981
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: PsReturnPoolQuota, PsReturnPoolQuota routine [Installable File System Drivers], ifsk.psreturnpoolquota, ntifs/PsReturnPoolQuota, psref_7dc67879-8f0e-41a1-96cf-018dcf60afcd.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ The <b>PsReturnPoolQuota</b> routine returns pool quota of the specified pool ty
 
 ## Syntax
 
-````
-VOID PsReturnPoolQuota(
-  _In_ PEPROCESS Process,
-  _In_ POOL_TYPE PoolType,
-  _In_ ULONG_PTR Amount
+```
+NTKERNELAPI VOID PsReturnPoolQuota(
+  PEPROCESS Process,
+  POOL_TYPE PoolType,
+  ULONG_PTR Amount
 );
-````
+```
 
 ## Parameters
 
@@ -105,4 +105,4 @@ For more information about memory management, see <a href="https://msdn.microsof
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-pschargepoolquota.md">PsChargePoolQuota</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551889">PsChargePoolQuota</a>

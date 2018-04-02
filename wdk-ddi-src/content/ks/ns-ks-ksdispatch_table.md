@@ -47,20 +47,20 @@ req.typenames: KSDISPATCH_TABLE, *PKSDISPATCH_TABLE
 The KSDISPATCH_TABLE structure contains pointers to minidriver implemented IRP dispatch routines.
 
 ## Syntax
-````
-typedef struct {
-  PDRIVER_DISPATCH        DeviceIoControl;
-  PDRIVER_DISPATCH        Read;
-  PDRIVER_DISPATCH        Write;
-  PDRIVER_DISPATCH        Flush;
-  PDRIVER_DISPATCH        Close;
-  PDRIVER_DISPATCH        QuerySecurity;
-  PDRIVER_DISPATCH        SetSecurity;
+```
+typedef struct KSDISPATCH_TABLE {
+  PDRIVER_DISPATCH        DeviceIoControl;
+  PDRIVER_DISPATCH        Read;
+  PDRIVER_DISPATCH        Write;
+  PDRIVER_DISPATCH        Flush;
+  PDRIVER_DISPATCH        Close;
+  PDRIVER_DISPATCH        QuerySecurity;
+  PDRIVER_DISPATCH        SetSecurity;
   PFAST_IO_DEVICE_CONTROL FastDeviceIoControl;
-  PFAST_IO_READ           FastRead;
-  PFAST_IO_WRITE          FastWrite;
-} KSDISPATCH_TABLE, *PKSDISPATCH_TABLE;
-````
+  PFAST_IO_READ           FastRead;
+  PFAST_IO_WRITE          FastWrite;
+} *PKSDISPATCH_TABLE, KSDISPATCH_TABLE;
+```
 
 ## Members
 
@@ -108,7 +108,7 @@ Specifies the minidriver's routine to dispatch fast write requests to.
 ## Remarks
 A pointer to a dispatch table is contained in the opaque object header that is the first element of data pointed to by the file object's <b>FsContext</b> field.
 
-For more information about minidriver implemented IRP dispatch routines, see <a href="..\ks\nf-ks-kssetmajorfunctionhandler.md">KsSetMajorFunctionHandler</a>, and <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>.
+For more information about minidriver implemented IRP dispatch routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff566840">KsSetMajorFunctionHandler</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -117,8 +117,8 @@ For more information about minidriver implemented IRP dispatch routines, see <a 
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>
 
 
 
-<a href="..\ks\nf-ks-kssetmajorfunctionhandler.md">KsSetMajorFunctionHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566840">KsSetMajorFunctionHandler</a>

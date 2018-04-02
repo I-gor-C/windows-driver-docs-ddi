@@ -7,7 +7,7 @@ old-location: netvista\ndiswditxabortconfirm.htm
 old-project: netvista
 ms.assetid: 1619BF14-DDEE-48CB-8E31-0CC17C8A4C6A
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDIS_WDI_TX_ABORT_CONFIRM, NdisWdiTxAbortConfirm, NdisWdiTxAbortConfirm callback function [Network Drivers Starting with Windows Vista], dot11wdi/NdisWdiTxAbortConfirm, netvista.ndiswditxabortconfirm
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,9 +45,9 @@ req.typenames: SYNTH_STATS, *PSYNTH_STATS
 
 
 # NDIS_WDI_TX_ABORT_CONFIRM callback function
-The NdisWdiTxAbortConfirm callback function  indicates an asynchronous confirmation of a <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tx_abort.md">MiniportWdiTxAbort</a> from WDI.
+The NdisWdiTxAbortConfirm callback function  indicates an asynchronous confirmation of a <a href="https://msdn.microsoft.com/FA6BEAE9-5D48-463E-A398-518737D78867">MiniportWdiTxAbort</a> from WDI.
 
-This is a callback inside <a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_data_api.md">NDIS_WDI_DATA_API</a>.
+This is a callback inside <a href="https://msdn.microsoft.com/library/windows/hardware/mt297620">NDIS_WDI_DATA_API</a>.
 
 ## Syntax
 
@@ -64,7 +64,7 @@ void NdisWdiTxAbortConfirm(
 
 `NdisMiniportDataPathHandle`
 
-The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_tal_txrx_initialize.md">MiniportWdiTalTxRxInitialize</a>.
+The NdisMiniportDataPathHandle passed to the IHV miniport in <a href="https://msdn.microsoft.com/C297D681-D43F-4105-9E08-7FF42807E9A0">MiniportWdiTalTxRxInitialize</a>.
 
 
 ## Return Value
@@ -81,4 +81,4 @@ This callback function does not return a value.
 
 ## See Also
 
-<a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_data_api.md">NDIS_WDI_DATA_API</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt297620">NDIS_WDI_DATA_API</a>

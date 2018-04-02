@@ -46,17 +46,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# Initialize method
+# ISensorClassExtension::Initialize method
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545514">ISensorClassExtension::Initialize</a> method initializes the sensor class extension object.
 
 ## Syntax
 
-````
+```
 HRESULT Initialize(
-   IUnknown * pWdfDeviceUnknown,
-   IUnknown * pSensorDriverUnknown
+  IUnknown *pWdfDeviceUnknown,
+  IUnknown *pSensorDriverUnknown
 );
-````
+```
 
 ## Parameters
 
@@ -96,7 +96,7 @@ The method succeeded.
 </dl>
 </td>
 <td width="60%">
-The argument was <b>NULL</b> or the <a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a> interface is missing..
+The argument was <b>NULL</b> or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556917">IWDFDevice</a> interface is missing..
 
 </td>
 </tr>

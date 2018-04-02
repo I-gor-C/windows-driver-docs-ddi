@@ -50,13 +50,13 @@ The <b>KsOpenDefaultDevice</b> function opens a handle to the first device that 
 
 ## Syntax
 
-````
-HRESULT KsOpenDefaultDevice(
-  _In_  REFGUID     Category,
-  _In_  ACCESS_MASK Access,
-  _Out_ PHANDLE     DeviceHandle
+```
+KSDDKAPI HRESULT KsOpenDefaultDevice(
+  REFGUID     Category,
+  ACCESS_MASK Access,
+  PHANDLE     DeviceHandle
 );
-````
+```
 
 ## Parameters
 

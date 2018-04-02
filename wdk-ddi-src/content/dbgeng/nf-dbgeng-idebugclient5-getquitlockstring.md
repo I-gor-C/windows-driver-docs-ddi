@@ -7,7 +7,7 @@ old-location: debugger\idebugclient5_getquitlockstring.htm
 old-project: debugger
 ms.assetid: 986C866E-D5AC-47CD-A666-EDF739E91761
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetQuitLockString method [Windows Debugging], GetQuitLockString method [Windows Debugging], IDebugClient5 interface, GetQuitLockString,IDebugClient5.GetQuitLockString, IDebugClient5, IDebugClient5 interface [Windows Debugging], GetQuitLockString method, IDebugClient5::GetQuitLockString, dbgeng/IDebugClient5::GetQuitLockString, debugger.idebugclient5_getquitlockstring
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetQuitLockString method
+# IDebugClient5::GetQuitLockString method
 Gets a quit lock string.
 
 ## Syntax
 
-````
+```
 HRESULT GetQuitLockString(
-  [out]           writes_opt_(BufferSize) PSTR Buffer,
-  [in]            ULONG                        BufferSize,
-  [out, optional] PULONG                       StringSize
+  PSTR   Buffer,
+  ULONG  BufferSize,
+  PULONG StringSize
 );
-````
+```
 
 ## Parameters
 
@@ -92,4 +92,4 @@ The quit lock string
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>

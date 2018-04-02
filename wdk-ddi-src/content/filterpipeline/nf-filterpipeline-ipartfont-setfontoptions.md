@@ -44,22 +44,22 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SetFontOptions method
+# IPartFont::SetFontOptions method
 The <b>SetFontOptions</b> method sets the options for the font.
 
 ## Syntax
 
-````
+```
 HRESULT SetFontOptions(
-  [in] EXpsFontOptions options
+  EXpsFontOptions options
 );
-````
+```
 
 ## Parameters
 
 `options`
 
-An <a href="..\filterpipeline\ne-filterpipeline-__midl___midl_itf_filterpipeline_0000_0000_0002.md">ExpsFontOptions</a>-typed value that describes the options for the font.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/ff548775">ExpsFontOptions</a>-typed value that describes the options for the font.
 
 
 ## Return Value

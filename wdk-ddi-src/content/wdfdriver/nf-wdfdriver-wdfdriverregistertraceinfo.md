@@ -52,13 +52,13 @@ The <b>WdfDriverRegisterTraceInfo</b> method is reserved for internal use only.
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDriverRegisterTraceInfo(
-  _In_ PDRIVER_OBJECT         DriverObject,
-  _In_ PFN_WDF_TRACE_CALLBACK EvtTraceCallback,
-  _In_ PVOID                  ControlBlock
+  PDRIVER_OBJECT         DriverObject,
+  PFN_WDF_TRACE_CALLBACK EvtTraceCallback,
+  PVOID                  ControlBlock
 );
-````
+```
 
 ## Parameters
 

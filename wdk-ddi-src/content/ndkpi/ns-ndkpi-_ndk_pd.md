@@ -7,7 +7,7 @@ old-location: netvista\ndk_pd.htm
 old-project: netvista
 ms.assetid: 77D3503A-8544-4E73-AD17-56F9C8603068
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_PD, NDK_PD structure [Network Drivers Starting with Windows Vista], PNDK_PD, PNDK_PD structure pointer [Network Drivers Starting with Windows Vista], _NDK_PD, ndkpi/NDK_PD, ndkpi/PNDK_PD, netvista.ndk_pd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,26 +47,26 @@ req.typenames: NDK_PD, NDK_PD
 The <b>NDK_PD</b> structure specifies the attributes of an NDK protection domain (PD) object.
 
 ## Syntax
-````
+```
 typedef struct _NDK_PD {
-  NDK_OBJECT_HEADER     Header;
+  NDK_OBJECT_HEADER     Header;
   CONST NDK_PD_DISPATCH *Dispatch;
-} NDK_PD, *PNDK_PD;
-````
+} NDK_PD;
+```
 
 ## Members
 
 
 `Header`
 
-The <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a> structure for the <b>NDK_PD</b> structure. Set the <b>ObjectType</b> member of the structure that <b>Header</b> specifies to <b>NdkObjectTypePd</b>.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a> structure for the <b>NDK_PD</b> structure. Set the <b>ObjectType</b> member of the structure that <b>Header</b> specifies to <b>NdkObjectTypePd</b>.
 
 `Dispatch`
 
-A pointer to an <a href="..\ndkpi\ns-ndkpi-_ndk_pd_dispatch.md">NDK_PD_DISPATCH</a> structure that defines dispatch functions for the NDK PD object.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh439932">NDK_PD_DISPATCH</a> structure that defines dispatch functions for the NDK PD object.
 
 ## Remarks
-An NDK provider must set the <b>Dispatch</b> member to point to its  <a href="..\ndkpi\ns-ndkpi-_ndk_pd_dispatch.md">NDK_PD_DISPATCH</a> table before returning the  created PD object. Also, the NDK provider must not use the <b>Dispatch</b> member after setting it because the NDK consumer can change the <b>Dispatch</b> member to some other value.
+An NDK provider must set the <b>Dispatch</b> member to point to its  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439932">NDK_PD_DISPATCH</a> table before returning the  created PD object. Also, the NDK provider must not use the <b>Dispatch</b> member after setting it because the NDK consumer can change the <b>Dispatch</b> member to some other value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,24 +76,24 @@ An NDK provider must set the <b>Dispatch</b> member to point to its  <a href="..
 
 ## See Also
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_completion.md">NDK_FN_CREATE_COMPLETION</a>
-
-
-
-<a href="..\ndkpi\ns-ndkpi-_ndk_pd_dispatch.md">NDK_PD_DISPATCH</a>
-
-
-
 <a href="https://msdn.microsoft.com/94993523-D0D7-441E-B95C-417800840BAC">NDKPI Object Lifetime Requirements</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439863">NDK_FN_CLOSE_OBJECT</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_create_pd.md">NDK_FN_CREATE_PD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439871">NDK_FN_CREATE_COMPLETION</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439877">NDK_FN_CREATE_PD</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439932">NDK_PD_DISPATCH</a>

@@ -48,16 +48,17 @@ req.product: Windows 10 or later.
 The GETINFO_STDVAR structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.
 
 ## Syntax
-````
+```
 typedef struct _GETINFO_STDVAR {
-  DWORD  dwSize;
-  DWORD  dwNumOfVariable;
+  DWORD                   dwSize;
+  DWORD                   dwNumOfVariable;
   struct {
     DWORD dwStdVarID;
-    LONG  lStdVariable;
-  } StdVar[1];
-} GETINFO_STDVAR, *PGETINFO_STDVAR;
-````
+    LONG  lStdVariable;
+  };
+  __unnamed_struct_0b5c_3 StdVar[1];
+} *PGETINFO_STDVAR, GETINFO_STDVAR;
+```
 
 ## Members
 

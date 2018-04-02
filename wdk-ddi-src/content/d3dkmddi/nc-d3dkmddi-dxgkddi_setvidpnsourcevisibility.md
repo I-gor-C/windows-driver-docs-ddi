@@ -7,7 +7,7 @@ old-location: display\dxgkddisetvidpnsourcevisibility.htm
 old-project: display
 ms.assetid: c94473b4-b898-456d-944d-8879adea16d1
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKDDI_SETVIDPNSOURCEVISIBILITY, DmFunctions_6a3bb1aa-8bc1-4672-8028-ea3299809a37.xml, DxgkDdiSetVidPnSourceVisibility, DxgkDdiSetVidPnSourceVisibility callback function [Display Devices], d3dkmddi/DxgkDdiSetVidPnSourceVisibility, display.dxgkddisetvidpnsourcevisibility
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,11 +63,11 @@ NTSTATUS DxgkddiSetvidpnsourcevisibility(
 
 `hAdapter`
 
-A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function.
+A handle to a context block that is associated with a display adapter. The display miniport driver previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <i>MiniportDeviceContext</i> output parameter of the <a href="https://msdn.microsoft.com/5fd4046f-54c3-4dfc-8d51-0d9ebcde0bea">DxgkDdiAddDevice</a> function.
 
 `pSetVidPnSourceVisibility`
 
-A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_setvidpnsourcevisibility.md">DXGKARG_SETVIDPNSOURCEVISIBILITY</a> structure that contains function arguments.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559486">DXGKARG_SETVIDPNSOURCEVISIBILITY</a> structure that contains function arguments.
 
 
 ## Return Value

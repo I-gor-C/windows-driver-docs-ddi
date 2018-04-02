@@ -46,14 +46,14 @@ req.typenames: BTH_SDP_DISCONNECT, *PBTH_SDP_DISCONNECT
 # _BTH_SDP_DISCONNECT structure
 The BTH_SDP_DISCONNECT structure contains input information about a connection handle to the remote
   SDP connection to terminate. This structure is passed as the input buffer of 
-  <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_disconnect.md">IOCTL_BTH_SDP_DISCONNECT</a>.
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff536689">IOCTL_BTH_SDP_DISCONNECT</a>.
 
 ## Syntax
-````
+```
 typedef struct _BTH_SDP_DISCONNECT {
-  HANDLE_SDP hConnection;
+  HANDLE_SDP_TYPE HANDLE_SDP_FIELD_NAME;
 } BTH_SDP_DISCONNECT, *PBTH_SDP_DISCONNECT;
-````
+```
 
 ## Members
 
@@ -70,12 +70,12 @@ typedef struct _BTH_SDP_DISCONNECT {
 
 ## See Also
 
-<a href="..\bthioctl\ns-bthioctl-_bth_sdp_connect.md">BTH_SDP_CONNECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536648">BTH_SDP_CONNECT</a>
 
 
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_connect.md">IOCTL_BTH_SDP_CONNECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536688">IOCTL_BTH_SDP_CONNECT</a>
 
 
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_disconnect.md">IOCTL_BTH_SDP_DISCONNECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536689">IOCTL_BTH_SDP_DISCONNECT</a>

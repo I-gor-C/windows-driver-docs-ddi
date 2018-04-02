@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Handle method
+# IPrinterQueue::get_Handle method
 Gets the underlying native handle for this print queue.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_Handle(
-  [out, retval] HANDLE *phPrinter
+  HANDLE *phPrinter
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>

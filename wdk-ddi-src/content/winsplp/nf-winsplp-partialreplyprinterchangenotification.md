@@ -50,12 +50,12 @@ The print spooler's <code>PartialReplyPrinterChangeNotification</code> function 
 
 ## Syntax
 
-````
+```
 BOOL PartialReplyPrinterChangeNotification(
-  _In_     HANDLE                    hNotify,
-  _In_opt_ PPRINTER_NOTIFY_INFO_DATA pInfoDataSrc
+  HANDLE                    hPrinter,
+  PPRINTER_NOTIFY_INFO_DATA pDataSrc
 );
-````
+```
 
 ## Parameters
 
@@ -76,7 +76,7 @@ If the operation succeeds, the function returns <b>TRUE</b>. Otherwise the funct
 
 For the specified notification handle, the spooler's <code>PartialReplyPrinterChangeNotification</code> function adds the contents of the specified PRINTER_NOTIFY_INFO_DATA structure to the array within the spooler's stored PRINTER_NOTIFY_INFO structure. (These structures are described in the Windows SDK documentation.)
 
-Calling <code>PartialReplyPrinterChangeNotification</code> does not cause the spooler to notify the application that changes have occurred. If the print provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548837">FindFirstPrinterChangeNotification</a> function did not set the PRINTER_NOTIFY_STATUS_POLL flag, the provider must call <a href="..\winsplp\nf-winsplp-replyprinterchangenotification.md">ReplyPrinterChangeNotification</a> to cause the application to be notified.
+Calling <code>PartialReplyPrinterChangeNotification</code> does not cause the spooler to notify the application that changes have occurred. If the print provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548837">FindFirstPrinterChangeNotification</a> function did not set the PRINTER_NOTIFY_STATUS_POLL flag, the provider must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff561959">ReplyPrinterChangeNotification</a> to cause the application to be notified.
 
 If <i>pInfoDataSrc</i> is <b>NULL</b>, all stored information associated with the specified handle is deleted from the spooler. The function accomplishes this deletion by freeing all buffers associated with <i>pBuf</i> members of PRINTER_NOTIFY_INFO_DATA structures belonging to the specified handle. The function then sets the PRINTER_NOTIFY_INFO_DISCARDED flag in the stored PRINTER_NOTIFY_INFO structure.
 
@@ -92,8 +92,8 @@ For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9ce
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-replyprinterchangenotification.md">ReplyPrinterChangeNotification</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548837">FindFirstPrinterChangeNotification</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561959">ReplyPrinterChangeNotification</a>

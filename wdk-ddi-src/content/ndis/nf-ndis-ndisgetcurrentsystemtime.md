@@ -7,7 +7,7 @@ old-location: netvista\ndisgetcurrentsystemtime.htm
 old-project: netvista
 ms.assetid: eef32784-ea27-42c0-9a7a-74ce3d76665d
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisGetCurrentSystemTime, NdisGetCurrentSystemTime macro [Network Drivers Starting with Windows Vista], ndis/NdisGetCurrentSystemTime, ndis_sysinfo_ref_cfd2358c-a52a-43d9-a07b-c64abb3e28b1.xml, netvista.ndisgetcurrentsystemtime
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The
 
 ## Syntax
 
-````
-VOID NdisGetCurrentSystemTime(
-  [in] PLARGE_INTEGER pSystemTime
+```
+void NdisGetCurrentSystemTime(
+   _pSystemTime
 );
-````
+```
 
 ## Parameters
 
@@ -77,7 +77,7 @@ An NDIS driver might also call
     particular interval to tune its performance dynamically. For example, a miniport driver could call 
     <b>NdisGetCurrentSystemTime</b> for each receive interrupt to determine periods of high network traffic,
     when the driver might disable one or more types of interrupts on the NIC and enable a polling 
-    <a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a> function to process
+    <a href="https://msdn.microsoft.com/76e59376-58a4-4e35-bac4-ec5938c88cd7">NetTimerCallback</a> function to process
     receive indications or send requests.
 
 ## Requirements
@@ -91,4 +91,4 @@ An NDIS driver might also call
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-ndis_timer_function.md">NetTimerCallback</a>
+<a href="https://msdn.microsoft.com/76e59376-58a4-4e35-bac4-ec5938c88cd7">NetTimerCallback</a>

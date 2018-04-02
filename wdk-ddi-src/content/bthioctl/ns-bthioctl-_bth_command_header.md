@@ -48,12 +48,12 @@ The BTH_COMMAND_HEADER structure specifies header information for a vendor-speci
   command.
 
 ## Syntax
-````
+```
 typedef struct _BTH_COMMAND_HEADER {
   USHORT OpCode;
-  UCHAR  TotalParameterLength;
+  UCHAR  TotalParameterLength;
 } BTH_COMMAND_HEADER, *PBTH_COMMAND_HEADER;
-````
+```
 
 ## Members
 
@@ -70,10 +70,10 @@ The size, in bytes, of the command payload, which is the data that follows the B
 ## Remarks
 The BTH_COMMAND_HEADER structure specifies header information in the 
     <b>HciHeader</b> member of the 
-    <a href="..\bthioctl\ns-bthioctl-_bth_vendor_specific_command.md">
+    <a href="https://msdn.microsoft.com/c37844d9-206a-4060-8b46-9afe691fe8f9">
     BTH_VENDOR_SPECIFIC_COMMAND</a> structure. It also provides the header information for the output of
     the 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_bth_hci_vendor_command.md">
+    <a href="https://msdn.microsoft.com/3b182835-ca62-482c-b82a-28c59f23fb55">
     IOCTL_BTH_HCI_VENDOR_COMMAND</a> IOCTL.
 
 ## Requirements
@@ -84,8 +84,8 @@ The BTH_COMMAND_HEADER structure specifies header information in the
 
 ## See Also
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_hci_vendor_command.md">IOCTL_BTH_HCI_VENDOR_COMMAND</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536656">BTH_VENDOR_SPECIFIC_COMMAND</a>
 
 
 
-<a href="..\bthioctl\ns-bthioctl-_bth_vendor_specific_command.md">BTH_VENDOR_SPECIFIC_COMMAND</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536686">IOCTL_BTH_HCI_VENDOR_COMMAND</a>

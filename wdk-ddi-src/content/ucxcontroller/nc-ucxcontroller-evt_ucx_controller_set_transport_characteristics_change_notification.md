@@ -7,7 +7,7 @@ old-location: buses\evt_ucx_controller_set_transport_characteristics_change_noti
 old-project: usbref
 ms.assetid: 559D2215-B78C-41EA-9E2C-6E67AE5276BE
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PFN_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, *PFN_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION callback function pointer [Buses], EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION, EvUcxControllerSetTransportCharacteristicsChangeNotification, EvUcxControllerSetTransportCharacteristicsChangeNotification callback function [Buses], buses.evt_ucx_controller_set_transport_characteristics_change_notification, ucxcontroller/EvUcxControllerSetTransportCharacteristicsChangeNotification"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,7 +68,7 @@ A handle to the UCX controller that the client driver received in a previous cal
 
 `ChangeNotificationFlags`
 
-A bitwise option of flags that indicate the type transport characteristics in which UCX is interested. The flags are defined in <a href="..\ucxcontroller\ns-ucxcontroller-_ucx_controller_transport_characteristics_change_flags.md">UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS</a>.
+A bitwise option of flags that indicate the type transport characteristics in which UCX is interested. The flags are defined in <a href="https://msdn.microsoft.com/B5D6BBE4-2FFF-41CB-B747-AA3C6CE9064E">UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS</a>.
 
 
 ## Return Value

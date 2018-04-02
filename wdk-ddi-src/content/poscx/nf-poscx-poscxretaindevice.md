@@ -50,12 +50,12 @@ PosCxRetainDevice is called to extend the ownership of the device.
 
 ## Syntax
 
-````
+```
 NTSTATUS PosCxRetainDevice(
-  _In_ WDFDEVICE  device,
-  _In_ WDFREQUEST request
+  WDFDEVICE  device,
+  WDFREQUEST request
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: ifsk\rtlupcaseunicodetooemn.htm
 old-project: ifsk
 ms.assetid: d4d802c1-66e9-4342-ba7d-d9e5a464362e
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlUpcaseUnicodeToOemN, RtlUpcaseUnicodeToOemN routine [Installable File System Drivers], ifsk.rtlupcaseunicodetooemn, ntifs/RtlUpcaseUnicodeToOemN, rtlref_b1fcf08b-c13f-4b60-a570-f4bffe730ba4.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,15 +49,15 @@ The <b>RtlUpcaseUnicodeToOemN</b> routine translates a given Unicode string into
 
 ## Syntax
 
-````
-NTSTATUS RtlUpcaseUnicodeToOemN(
-  _Out_     PCHAR  OemString,
-  _In_      ULONG  MaxBytesInOemString,
-  _Out_opt_ PULONG BytesInOemString,
-  _In_      PCWCH  UnicodeString,
-  _In_      ULONG  BytesInUnicodeString
+```
+NTSYSAPI NTSTATUS RtlUpcaseUnicodeToOemN(
+  PCHAR  OemString,
+  ULONG  MaxBytesInOemString,
+  PULONG BytesInOemString,
+  PCWCH  UnicodeString,
+  ULONG  BytesInUnicodeString
 );
-````
+```
 
 ## Parameters
 
@@ -107,16 +107,16 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlupcaseunicodestringtooemstring.md">RtlUpcaseUnicodeStringToOemString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553254">RtlUnicodeStringToOemSize</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlunicodetooemn.md">RtlUnicodeToOemN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553272">RtlUnicodeToOemN</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlupcaseunicodestringtocountedoemstring.md">RtlUpcaseUnicodeStringToCountedOemString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553277">RtlUpcaseUnicodeStringToCountedOemString</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlunicodestringtooemsize.md">RtlUnicodeStringToOemSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553282">RtlUpcaseUnicodeStringToOemString</a>

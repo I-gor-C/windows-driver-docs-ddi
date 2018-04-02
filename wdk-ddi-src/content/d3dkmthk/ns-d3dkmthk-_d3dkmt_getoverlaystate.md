@@ -7,7 +7,7 @@ old-location: display\d3dkmt_getoverlaystate.htm
 old-project: display
 ms.assetid: fe3443e7-0dc9-4c91-88ab-b05bac19516d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_GETOVERLAYSTATE, D3DKMT_GETOVERLAYSTATE structure [Display Devices], OpenGL_Structs_c9bee52b-d6ba-45ee-9af6-b795685715bb.xml, _D3DKMT_GETOVERLAYSTATE, d3dkmthk/D3DKMT_GETOVERLAYSTATE, display.d3dkmt_getoverlaystate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: D3DKMT_GETOVERLAYSTATE
 ---
 
 # _D3DKMT_GETOVERLAYSTATE structure
-The D3DKMT_GETOVERLAYSTATE structure describes parameters that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetoverlaystate.md">D3DKMTGetOverlayState</a> function uses to retrieve status about an overlay.
+The D3DKMT_GETOVERLAYSTATE structure describes parameters that the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546977">D3DKMTGetOverlayState</a> function uses to retrieve status about an overlay.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_GETOVERLAYSTATE {
   D3DKMT_HANDLE hDevice;
   D3DKMT_HANDLE hOverlay;
-  BOOLEAN       OverlayEnabled;
+  BOOLEAN       OverlayEnabled;
 } D3DKMT_GETOVERLAYSTATE;
-````
+```
 
 ## Members
 
@@ -79,4 +79,4 @@ typedef struct _D3DKMT_GETOVERLAYSTATE {
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetoverlaystate.md">D3DKMTGetOverlayState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546977">D3DKMTGetOverlayState</a>

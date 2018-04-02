@@ -7,7 +7,7 @@ old-location: dtf\iwdtfpnpaction2_edtcancelstopdevice.htm
 old-project: dtf
 ms.assetid: 5ddce998-2f64-4711-b820-5baa88096d99
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: EDTCancelStopDevice method [Windows Device Testing Framework], EDTCancelStopDevice method [Windows Device Testing Framework], IWDTFPNPAction2 interface, EDTCancelStopDevice,IWDTFPNPAction2.EDTCancelStopDevice, IWDTFPNPAction2, IWDTFPNPAction2 interface [Windows Device Testing Framework], EDTCancelStopDevice method, IWDTFPNPAction2::EDTCancelStopDevice, Microsoft.WDTF.IWDTFPNPAction2.EDTCancelStopDevice, Microsoft::WDTF::IWDTFPNPAction2::EDTCancelStopDevice, dtf.iwdtfpnpaction2_edtcancelstopdevice, wdtfpnpaction/IWDTFPNPAction2::EDTCancelStopDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# EDTCancelStopDevice method
+# IWDTFPNPAction2::EDTCancelStopDevice method
 Sends an IRP_MN_CANCEL_STOP_DEVICE event to the target device.
 
 ## Syntax
 
-````
+```
 HRESULT EDTCancelStopDevice(
-  [out, retval] VARIANT_BOOL *pbSuccess
+  VARIANT_BOOL *pbSuccess
 );
-````
+```
 
 ## Parameters
 
@@ -89,4 +89,4 @@ by setting EDTRS_QueryStopVetoed in ppResult.
 
 ## See Also
 
-<a href="..\wdtfpnpaction\nn-wdtfpnpaction-iwdtfpnpaction2.md">IWDTFPNPAction2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451065">IWDTFPNPAction2</a>

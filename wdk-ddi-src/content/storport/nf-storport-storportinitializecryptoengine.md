@@ -7,7 +7,7 @@ old-location: storage\storportinitializecryptoengine.htm
 old-project: storage
 ms.assetid: 49F4EEA1-BFA6-4A91-8306-E25569C679A6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortInitializeCryptoEngine, StorPortInitializeCryptoEngine routine [Storage Devices], storage.storportinitializecryptoengine, storport/StorPortInitializeCryptoEngine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,12 @@ Reserved for system use.
 
 ## Syntax
 
-````
- StorPortInitializeCryptoEngine(
-    
+```
+ULONG StorPortInitializeCryptoEngine(
+  PVOID                          HwDeviceExtension,
+  PSTOR_CRYPTO_CAPABILITIES_DATA CryptoCapabilitiesData
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: ifsk\rtlconvertsidtounicodestring.htm
 old-project: ifsk
 ms.assetid: 5dea6764-9ca0-4d38-9900-174637c4f648
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlConvertSidToUnicodeString, RtlConvertSidToUnicodeString routine [Installable File System Drivers], ifsk.rtlconvertsidtounicodestring, ntifs/RtlConvertSidToUnicodeString, rtlref_4b2b8867-c248-49e9-9b38-de3f9449a504.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,23 +45,23 @@ req.typenames: TOKEN_TYPE
 
 
 # RtlConvertSidToUnicodeString function
-The <b>RtlConvertSidToUnicodeString</b> routine generates a printable Unicode string representation of a security identifier (<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>).
+The <b>RtlConvertSidToUnicodeString</b> routine generates a printable Unicode string representation of a security identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>).
 
 ## Syntax
 
-````
-NTSTATUS RtlConvertSidToUnicodeString(
-  _Inout_ PUNICODE_STRING UnicodeString,
-  _In_    PSID            Sid,
-  _In_    BOOLEAN         AllocateDestinationString
+```
+NTSYSAPI NTSTATUS RtlConvertSidToUnicodeString(
+  PUNICODE_STRING UnicodeString,
+  PSID            Sid,
+  BOOLEAN         AllocateDestinationString
 );
-````
+```
 
 ## Parameters
 
 `UnicodeString`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure to contain the generated Unicode string.  The <i>UnicodeString-&gt;MaximumLength</i> member is set only if <i>AllocateDestinationString</i> is <b>TRUE</b>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure to contain the generated Unicode string.  The <i>UnicodeString-&gt;MaximumLength</i> member is set only if <i>AllocateDestinationString</i> is <b>TRUE</b>.
 
 `Sid`
 
@@ -155,7 +155,7 @@ Otherwise the IdentifierAuthority will be generated as hexadecimal. For example,
 </table></span></div>
 All other members in the <i>SID</i> will be generated as decimal.
 
-If <i>AllocateDestinationString</i> is <b>TRUE</b>, the allocated buffer must be deallocated by using <a href="..\wudfwdm\nf-wudfwdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>.
+If <i>AllocateDestinationString</i> is <b>TRUE</b>, the allocated buffer must be deallocated by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -169,12 +169,12 @@ If <i>AllocateDestinationString</i> is <b>TRUE</b>, the allocated buffer must be
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
 
 
 
-<a href="..\wudfwdm\nf-wudfwdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

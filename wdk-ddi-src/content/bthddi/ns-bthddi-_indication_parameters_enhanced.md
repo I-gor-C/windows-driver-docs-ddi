@@ -44,50 +44,50 @@ req.typenames: "*PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED
 ---
 
 # _INDICATION_PARAMETERS_ENHANCED structure
-The INDICATION_PARAMETERS_ENHANCED structure is passed as the Parameters parameter to a profile driver's <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback_enhanced.md">enhanced L2CAP Callback Function</a>
+The INDICATION_PARAMETERS_ENHANCED structure is passed as the Parameters parameter to a profile driver's <a href="https://msdn.microsoft.com/1C08937A-2B0C-4A6C-ACDF-1A751BF0D6F6">enhanced L2CAP Callback Function</a>
 
 ## Syntax
-````
+```
 typedef struct _INDICATION_PARAMETERS_ENHANCED {
   L2CAP_CHANNEL_HANDLE ConnectionHandle;
-  BTH_ADDR             BtAddress;
+  IN BTH_ADDR          BtAddress;
   union {
     struct {
       struct {
-        USHORT PSM;
-      } Request;
-    } Connect;
+        OUT USHORT PSM;
+      } Request;
+    } Connect;
+    PVOID Reserved;
     struct {
       CHANNEL_CONFIG_PARAMETERS_ENHANCED CurrentParams;
       CHANNEL_CONFIG_PARAMETERS_ENHANCED RequestedParams;
       CHANNEL_CONFIG_PARAMETERS_ENHANCED ResponseParams;
-      USHORT                             Response;
-    } ConfigRequest;
+      USHORT                             Response;
+    } ConfigRequest;
     struct {
       CHANNEL_CONFIG_PARAMETERS_ENHANCED CurrentParams;
       CHANNEL_CONFIG_PARAMETERS_ENHANCED RequestedParams;
       CHANNEL_CONFIG_PARAMETERS_ENHANCED RejectedParams;
-      PCO_TYPE                           UnknownTypes;
-      ULONG                              NumUnknownTypes;
+      PCO_TYPE                           UnknownTypes;
+      ULONG                              NumUnknownTypes;
       CHANNEL_CONFIG_PARAMETERS_ENHANCED NewRequestParams;
-      USHORT                             Response;
-    } ConfigResponse;
+      USHORT                             Response;
+    } ConfigResponse;
     struct {
-      ULONG                NumExtraOptions;
+      ULONG                NumExtraOptions;
       PL2CAP_CONFIG_OPTION ExtraOptions;
-    } FreeExtraOptions;
+    } FreeExtraOptions;
     struct {
       L2CAP_DISCONNECT_REASON Reason;
-      BOOLEAN                 CloseNow;
-    } Disconnect;
+      BOOLEAN                 CloseNow;
+    } Disconnect;
     struct {
       ULONG PacketLength;
       ULONG TotalQueueLength;
-    } RecvPacket;
-    PVOID  Reserved;
-  } Parameters;
-} INDICATION_PARAMETERS_ENHANCED, *PINDICATION_PARAMETERS_ENHANCED;
-````
+    } RecvPacket;
+  } Parameters;
+} *PINDICATION_PARAMETERS_ENHANCED, INDICATION_PARAMETERS_ENHANCED;
+```
 
 ## Members
 

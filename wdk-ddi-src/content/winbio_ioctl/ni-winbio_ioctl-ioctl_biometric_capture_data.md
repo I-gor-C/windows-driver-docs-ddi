@@ -51,14 +51,14 @@ The IOCTL_BIOMETRIC_CAPTURE_DATA IOCTL directs the driver to retrieve the next s
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_capture_parameters.md">WINBIO_CAPTURE_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536468">WINBIO_CAPTURE_PARAMETERS</a>
 
 ### Input Buffer Length
-The length of a <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_capture_parameters.md">WINBIO_CAPTURE_PARAMETERS</a>
+The length of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff536468">WINBIO_CAPTURE_PARAMETERS</a>
        structure.
 
 ### Output Buffer
-The <b>AssociatedIrp</b>.<b>SystemBuffer</b> member points to a buffer that contains a <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_capture_data.md">WINBIO_CAPTURE_DATA</a> structure.
+The <b>AssociatedIrp</b>.<b>SystemBuffer</b> member points to a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff536467">WINBIO_CAPTURE_DATA</a> structure.
 
 The vendor-specific data in the WINBIO_BIR structure can be in any format the vendor would like to collect from the driver.  Vendors can choose to process data in the WBDI driver or in the engine adapter, but the data must be passed in one structure.
 

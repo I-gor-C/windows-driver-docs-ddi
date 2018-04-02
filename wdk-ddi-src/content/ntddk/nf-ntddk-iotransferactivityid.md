@@ -7,7 +7,7 @@ old-location: kernel\iotransferactivityid.htm
 old-project: kernel
 ms.assetid: BA6EBD60-B7D8-4EDE-A655-2F18F27E6299
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoTransferActivityId, IoTransferActivityId routine [Kernel-Mode Driver Architecture], kernel.iotransferactivityid, ntddk/IoTransferActivityId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The IoTransferActivityId routine logs an ETW transfer event using the I/O tracin
 
 ## Syntax
 
-````
+```
 void IoTransferActivityId(
-  _In_ LPCGUID ActivityId,
-  _In_ LPCGUID RelatedActivityId
+  LPCGUID ActivityId,
+  LPCGUID RelatedActivityId
 );
-````
+```
 
 ## Parameters
 

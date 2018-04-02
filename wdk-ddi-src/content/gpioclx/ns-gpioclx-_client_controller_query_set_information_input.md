@@ -47,29 +47,29 @@ req.typenames: CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, *PCLIENT_CONTROLLE
 The <b>CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT</b> structure contains a request for the hardware attributes of the general-purpose I/O (GPIO) controller.
 
 ## Syntax
-````
+```
 typedef struct _CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT {
   CLIENT_CONTROLLER_QUERY_SET_REQUEST_TYPE RequestType;
-  USHORT                                   Size;
-  ULONG                                    Flags;
+  USHORT                                   Size;
+  ULONG                                    Flags;
   union {
     struct {
       BANK_ID BankId;
-    } BankPowerInformation;
+    } BankPowerInformation;
     struct {
       WDFCMRESLIST ResourcesTranslated;
       WDFCMRESLIST ResourcesRaw;
-      USHORT       TotalBanks;
-    } BankInterruptBinding;
+      USHORT       TotalBanks;
+    } BankInterruptBinding;
     struct {
-      PVOID  InputBuffer;
+      PVOID  InputBuffer;
       SIZE_T InputBufferSize;
       SIZE_T OutputBufferSize;
       USHORT TotalBanks;
-    } ControllerFunctionBankMapping;
+    } ControllerFunctionBankMapping;
   };
-} CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, *PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT;
-````
+} *PCLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT, CLIENT_CONTROLLER_QUERY_SET_INFORMATION_INPUT;
+```
 
 ## Members
 
@@ -97,11 +97,7 @@ The <i>InputBuffer</i> parameter of the <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh698241">CLIENT_QuerySetControllerInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
 
 
 
@@ -109,4 +105,8 @@ The <i>InputBuffer</i> parameter of the <a href="https://msdn.microsoft.com/libr
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh698241">CLIENT_QuerySetControllerInformation</a>

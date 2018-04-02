@@ -7,7 +7,7 @@ old-location: kernel\power_state_type.htm
 old-project: kernel
 ms.assetid: d0e97474-4119-4359-a9f9-644c82df7fab
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPOWER_STATE_TYPE, DevicePowerState, POWER_STATE_TYPE, POWER_STATE_TYPE enumeration [Kernel-Mode Driver Architecture], PPOWER_STATE_TYPE, PPOWER_STATE_TYPE enumeration pointer [Kernel-Mode Driver Architecture], SystemPowerState, _POWER_STATE_TYPE, kernel.power_state_type, sysenum_bdfdaea1-ec64-4b74-96d0-95641797ebb4.xml, wdm/DevicePowerState, wdm/POWER_STATE_TYPE, wdm/PPOWER_STATE_TYPE, wdm/SystemPowerState"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: POWER_STATE_TYPE, *PPOWER_STATE_TYPE
 The <b>POWER_STATE_TYPE</b> enumeration type indicates that a power state value is a system power state or a device power state.
 
 ## Syntax
-````
-typedef enum _POWER_STATE_TYPE { 
-  SystemPowerState  = 0,
-  DevicePowerState  = 1
-} POWER_STATE_TYPE, *PPOWER_STATE_TYPE;
-````
+```
+typedef enum _POWER_STATE_TYPE {
+  SystemPowerState  ,
+  DevicePowerState
+} *PPOWER_STATE_TYPE, POWER_STATE_TYPE;
+```
 
 ## Constants
 
@@ -60,18 +60,18 @@ typedef enum _POWER_STATE_TYPE {
             
                 <tr>
                     <td>SystemPowerState</td>
-                    <td>Indicates a <a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a> value.</td>
+                    <td>Indicates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564565">SYSTEM_POWER_STATE</a> value.</td>
                 </tr>
             
                 <tr>
                     <td>DevicePowerState</td>
-                    <td>Indicates a <a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a> value.</td>
+                    <td>Indicates a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554628">DEVICE_POWER_STATE</a> value.</td>
                 </tr>
 </table>
 
 ## Remarks
 
-The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value of type <a href="..\wdm\ns-wdm-_power_state.md">POWER_STATE</a> to indicate that the power state value is a system power state value or a device power state value. For an example, see <a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>.
+The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559842">POWER_STATE</a> to indicate that the power state value is a system power state value or a device power state value. For an example, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff559765">PoSetPowerState</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,16 +80,16 @@ The <b>POWER_STATE_TYPE</b> enumeration type is used in conjunction with a value
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_power_state.md">POWER_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554628">DEVICE_POWER_STATE</a>
 
 
 
-<a href="..\wudfddi\ne-wudfddi-_device_power_state.md">DEVICE_POWER_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559842">POWER_STATE</a>
 
 
 
-<a href="..\wdm\nf-wdm-posetpowerstate.md">PoSetPowerState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559765">PoSetPowerState</a>
 
 
 
-<a href="..\wdm\ne-wdm-_system_power_state.md">SYSTEM_POWER_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564565">SYSTEM_POWER_STATE</a>

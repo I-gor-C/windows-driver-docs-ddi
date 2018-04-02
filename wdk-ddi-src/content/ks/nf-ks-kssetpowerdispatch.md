@@ -52,13 +52,13 @@ This has the effect of adding this object header to a list of object headers tha
 
 ## Syntax
 
-````
-VOID KsSetPowerDispatch(
-  _In_     KSOBJECT_HEADER       Header,
-  _In_opt_ PFNKSCONTEXT_DISPATCH PowerDispatch ,
-  _In_opt_ PVOID                 PowerContext 
+```
+KSDDKAPI VOID KsSetPowerDispatch(
+  KSOBJECT_HEADER       Header,
+  PFNKSCONTEXT_DISPATCH PowerDispatch,
+  PVOID                 PowerContext
 );
-````
+```
 
 ## Parameters
 

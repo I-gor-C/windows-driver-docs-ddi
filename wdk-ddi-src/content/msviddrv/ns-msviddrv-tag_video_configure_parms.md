@@ -47,15 +47,15 @@ req.typenames: VIDEOCONFIGPARMS, *LPVIDEOCONFIGPARMS
 
 
 ## Syntax
-````
+```
 typedef struct tag_video_configure_parms {
   LPDWORD lpdwReturn;
-  LPVOID  lpData1;
-  DWORD   dwSize1;
-  LPVOID  lpData2;
-  DWORD   dwSize2;
-} VIDEOCONFIGPARMS, *LPVIDEOCONFIGPARMS;
-````
+  LPVOID  lpData1;
+  DWORD   dwSize1;
+  LPVOID  lpData2;
+  DWORD   dwSize2;
+} *LPVIDEOCONFIGPARMS, VIDEOCONFIGPARMS;
+```
 
 ## Members
 

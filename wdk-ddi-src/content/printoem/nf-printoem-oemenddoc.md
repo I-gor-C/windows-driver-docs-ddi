@@ -50,12 +50,12 @@ The <code>OEMEndDoc</code> function is called by the GDI when it has finished se
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMEndDoc(
-   SURFOBJ *pso,
-   FLONG   fl
+```
+BOOL OEMEndDoc(
+  SURFOBJ *pso,
+  FLONG   fl
 );
-````
+```
 
 ## Parameters
 

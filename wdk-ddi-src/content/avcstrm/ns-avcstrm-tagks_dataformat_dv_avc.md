@@ -47,13 +47,13 @@ req.typenames: KS_DATAFORMAT_DV_AVC, *PKS_DATAFORMAT_DV_AVC
 The KS_DATAFORMAT_DV_AVC structure stores the data format for an AV/C digital video connection.
 
 ## Syntax
-````
+```
 typedef struct tagKS_DATAFORMAT_DV_AVC {
-  KSDATAFORMAT   DataFormat;
-  DVINFO         DVVideoInfo;
+  KSDATAFORMAT   DataFormat;
+  DVINFO         DVVideoInfo;
   AVCCONNECTINFO ConnectInfo;
-} KS_DATAFORMAT_DV_AVC, *PKS_DATAFORMAT_DV_AVC;
-````
+} *PKS_DATAFORMAT_DV_AVC, KS_DATAFORMAT_DV_AVC;
+```
 
 ## Members
 
@@ -78,12 +78,12 @@ Specifies the AV/C connection information.
 
 ## See Also
 
-<a href="..\avc\ns-avc-_avcconnectinfo.md">AVCCONNECTINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554101">AVCCONNECTINFO</a>
 
 
 
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559517">DVINFO</a>
 
 
 
-<a href="..\avcstrm\ns-avcstrm-_dvinfo.md">DVINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>

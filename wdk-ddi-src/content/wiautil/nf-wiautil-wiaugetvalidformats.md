@@ -50,15 +50,15 @@ The <b>wiauGetValidFormats</b> function calls the <a href="https://msdn.microsof
 
 ## Syntax
 
-````
-HRESULT _stdcall wiauGetValidFormats(
-  _In_  IWiaMiniDrv *pDrv,
-  _In_  BYTE        *pWiasContext,
-        LONG        TymedValue,
-  _Out_ int         *pNumFormats,
-  _Out_ GUID        **ppFormatArray
+```
+HRESULT wiauGetValidFormats(
+  IWiaMiniDrv *pDrv,
+  BYTE        *pWiasContext,
+  LONG        TymedValue,
+  int         *pNumFormats,
+  GUID        **ppFormatArray
 );
-````
+```
 
 ## Parameters
 

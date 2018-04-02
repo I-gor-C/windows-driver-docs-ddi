@@ -76,4 +76,4 @@ The <b>IBidiSpl</b> interface allows an application or other objects to send a s
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidirequestcontainer.md">IBidiSpl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144980">IBidiSpl</a>

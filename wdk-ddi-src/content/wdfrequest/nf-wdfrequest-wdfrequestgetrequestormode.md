@@ -55,11 +55,11 @@ The <b>WdfRequestGetRequestorMode</b> method returns the processor access mode o
 
 ## Syntax
 
-````
+```
 KPROCESSOR_MODE WdfRequestGetRequestorMode(
-  _In_ WDFREQUEST Request
+  WDFREQUEST Request
 );
-````
+```
 
 ## Parameters
 

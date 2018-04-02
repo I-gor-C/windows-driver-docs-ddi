@@ -55,22 +55,22 @@ The <b>WdfDriverRetrieveVersionString</b> method retrieves a Unicode string that
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDriverRetrieveVersionString(
-  _In_ WDFDRIVER Driver,
-  _In_ WDFSTRING String
+  WDFDRIVER Driver,
+  WDFSTRING String
 );
-````
+```
 
 ## Parameters
 
 `Driver`
 
-A handle to the driver's framework driver object that the driver obtained from a previous call to <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a> or <a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>.
+A handle to the driver's framework driver object that the driver obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff547336">WdfGetDriver</a>.
 
 `String`
 
-A handle to a framework string object that the driver obtained from a previous call to <a href="..\wdfstring\nf-wdfstring-wdfstringcreate.md">WdfStringCreate</a>. The framework assigns the version string to the string object.
+A handle to a framework string object that the driver obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550046">WdfStringCreate</a>. The framework assigns the version string to the string object.
 
 
 ## Return Value
@@ -159,24 +159,24 @@ if (NT_SUCCESS(status)) {
 
 ## See Also
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a>
 
 
 
-<a href="..\wdfstring\nf-wdfstring-wdfstringgetunicodestring.md">WdfStringGetUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547190">WdfDriverIsVersionAvailable</a>
 
 
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547336">WdfGetDriver</a>
 
 
 
-<a href="..\wdfobject\nf-wdfobject-wdfobjectdelete.md">WdfObjectDelete</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548734">WdfObjectDelete</a>
 
 
 
-<a href="..\wdfstring\nf-wdfstring-wdfstringcreate.md">WdfStringCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550046">WdfStringCreate</a>
 
 
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdriverisversionavailable.md">WdfDriverIsVersionAvailable</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550049">WdfStringGetUnicodeString</a>

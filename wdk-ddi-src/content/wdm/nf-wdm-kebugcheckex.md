@@ -7,7 +7,7 @@ old-location: kernel\kebugcheckex.htm
 old-project: kernel
 ms.assetid: 2330fda2-71f5-4a8b-8124-775a40926bc1
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeBugCheckEx, KeBugCheckEx routine [Kernel-Mode Driver Architecture], k105_17af10bb-b21d-408e-bf73-421ce705d117.xml, kernel.kebugcheckex, wdm/KeBugCheckEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,15 +50,15 @@ The <b>KeBugCheckEx</b> routine brings down the system in a controlled manner wh
 
 ## Syntax
 
-````
-VOID  KeBugCheckEx(
-  _In_ ULONG     BugCheckCode,
-  _In_ ULONG_PTR BugCheckParameter1,
-  _In_ ULONG_PTR BugCheckParameter2,
-  _In_ ULONG_PTR BugCheckParameter3,
-  _In_ ULONG_PTR BugCheckParameter4
+```
+NTKERNELAPI DECLSPEC_NORETURN VOID KeBugCheckEx(
+  ULONG     BugCheckCode,
+  ULONG_PTR BugCheckParameter1,
+  ULONG_PTR BugCheckParameter2,
+  ULONG_PTR BugCheckParameter3,
+  ULONG_PTR BugCheckParameter4
 );
-````
+```
 
 ## Parameters
 
@@ -111,20 +111,20 @@ However, even during driver development, this routine is of only limited utility
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iowriteerrorlogentry.md">IoWriteErrorLogEntry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548245">IoAllocateErrorLogEntry</a>
 
 
 
-<a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550527">IoWriteErrorLogEntry</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-kebugcheck.md">KeBugCheck</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551948">KeBugCheck</a>
 
 
 
-<a href="..\wdm\nf-wdm-ioallocateerrorlogentry.md">IoAllocateErrorLogEntry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553105">KeRegisterBugCheckCallback</a>
 
 
 
-<a href="..\wdm\nf-wdm-keregisterbugcheckreasoncallback.md">KeRegisterBugCheckReasonCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553110">KeRegisterBugCheckReasonCallback</a>

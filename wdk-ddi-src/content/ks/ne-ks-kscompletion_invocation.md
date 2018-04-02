@@ -47,13 +47,13 @@ req.typenames: KSCOMPLETION_INVOCATION
 
 
 ## Syntax
-````
-typedef enum  { 
-  KsInvokeOnSuccess  = 1,
-  KsInvokeOnError    = 2,
-  KsInvokeOnCancel   = 4
-} KSCOMPLETION_INVOCATION;
-````
+```
+typedef enum KSCOMPLETION_INVOCATION {
+  KsInvokeOnSuccess  ,
+  KsInvokeOnError    ,
+  KsInvokeOnCancel
+} ;
+```
 
 ## Constants
 

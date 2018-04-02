@@ -53,11 +53,11 @@ The <b>WdfPdoClearEjectionRelationsDevices</b> method removes all devices from t
 
 ## Syntax
 
-````
-VOID WdfPdoClearEjectionRelationsDevices(
-  _In_ WDFDEVICE Device
+```
+void WdfPdoClearEjectionRelationsDevices(
+  WDFDEVICE Device
 );
-````
+```
 
 ## Parameters
 
@@ -104,8 +104,8 @@ The following code example clears the specified device's list of ejection relati
 
 ## See Also
 
-<a href="..\wdfpdo\nf-wdfpdo-wdfpdoaddejectionrelationsphysicaldevice.md">WdfPdoAddEjectionRelationsPhysicalDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548770">WdfPdoAddEjectionRelationsPhysicalDevice</a>
 
 
 
-<a href="..\wdfpdo\nf-wdfpdo-wdfpdoremoveejectionrelationsphysicaldevice.md">WdfPdoRemoveEjectionRelationsPhysicalDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548814">WdfPdoRemoveEjectionRelationsPhysicalDevice</a>

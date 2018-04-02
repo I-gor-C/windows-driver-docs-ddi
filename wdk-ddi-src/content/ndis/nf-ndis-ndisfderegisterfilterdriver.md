@@ -7,7 +7,7 @@ old-location: netvista\ndisfderegisterfilterdriver.htm
 old-project: netvista
 ms.assetid: f97ecce3-73b9-4c51-b4a4-e114420af2c9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisFDeregisterFilterDriver, NdisFDeregisterFilterDriver function [Network Drivers Starting with Windows Vista], filter_ndis_functions_ref_d158c9c1-1e83-464f-b00a-421b658c8c32.xml, ndis/NdisFDeregisterFilterDriver, netvista.ndisfderegisterfilterdriver
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,16 +48,16 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisFDeregisterFilterDriver function
 A filter drivers calls the
   <b>NdisFDeregisterFilterDriver</b> function to release resources that it previously allocated with the 
-  <a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">
+  <a href="https://msdn.microsoft.com/14381de2-36d9-4ec8-9d4e-7af3e6d8ecf3">
   NdisFRegisterFilterDriver</a> function.
 
 ## Syntax
 
-````
-VOID NdisFDeregisterFilterDriver(
-  _In_ NDIS_HANDLE NdisFilterDriverHandle
+```
+void NdisFDeregisterFilterDriver(
+  NDIS_HANDLE NdisFilterDriverHandle
 );
-````
+```
 
 ## Parameters
 
@@ -90,8 +90,8 @@ A filter driver must call
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisfregisterfilterdriver.md">NdisFRegisterFilterDriver</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549936">FilterDriverUnload</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562608">NdisFRegisterFilterDriver</a>

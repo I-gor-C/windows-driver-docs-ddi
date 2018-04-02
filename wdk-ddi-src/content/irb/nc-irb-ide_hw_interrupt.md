@@ -7,7 +7,7 @@ old-location: storage\idehwinterrupt.htm
 old-project: storage
 ms.assetid: a061d993-78fc-45d8-857b-7269c3593847
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IDE_HW_INTERRUPT, IdeHwInterrupt, IdeHwInterrupt routine [Storage Devices], atartns_6568f61d-e6f7-4d16-98ed-72c13aac0fe7.xml, irb/IdeHwInterrupt, storage.idehwinterrupt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -40,7 +40,7 @@ api_name:
 -	IdeHwInterrupt
 product: Windows
 targetos: Windows
-req.typenames: LUID
+req.typenames: IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS, IDD_DRIVER_GLOBALS, *PIDD_DRIVER_GLOBALS
 ---
 
 
@@ -88,7 +88,7 @@ Disable interrupts on the channel that is indicated by the <i>ChannelExtension</
 
 </li>
 <li>
-Request a worker routine by using <a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>. 
+Request a worker routine by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550229">AtaPortRequestWorkerRoutine</a>. 
 
 </li>
 <li>
@@ -105,13 +105,13 @@ The following ATA port routines must not be called from the <b><i>IdeHwInterrupt
 <ul>
 <li>
 
-<a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550146">AtaPortCompleteAllActiveRequests</a>
 
 
 </li>
 <li>
 
-<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550155">AtaPortDeviceBusy</a>
 
 
 </li>
@@ -128,12 +128,12 @@ The worker routine must clear the interrupt on the HBA before it returns <b>TRUE
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportrequestworkerroutine.md">AtaPortRequestWorkerRoutine</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550146">AtaPortCompleteAllActiveRequests</a>
 
 
 
-<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550155">AtaPortDeviceBusy</a>
 
 
 
-<a href="..\irb\nf-irb-ataportcompleteallactiverequests.md">AtaPortCompleteAllActiveRequests</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550229">AtaPortRequestWorkerRoutine</a>

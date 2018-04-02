@@ -7,7 +7,7 @@ old-location: display\d3dkmt_present.htm
 old-project: display
 ms.assetid: 959d17f1-588b-4b65-a3ea-e4609aa84eed
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_PRESENT, D3DKMT_PRESENT structure [Display Devices], OpenGL_Structs_f3a9c661-7b2d-4f75-864f-c5f2a3c591ad.xml, _D3DKMT_PRESENT, d3dkmthk/D3DKMT_PRESENT, display.d3dkmt_present
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,33 +47,41 @@ req.typenames: D3DKMT_PRESENT
 The D3DKMT_PRESENT structure describes the present operation.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_PRESENT {
   union {
-    D3DKMT_HANDLE hDevice;
     D3DKMT_HANDLE hContext;
+    D3DKMT_HANDLE hDevice;
   };
-  HWND                           hWindow;
+  HWND                           hWindow;
   D3DDDI_VIDEO_PRESENT_SOURCE_ID VidPnSourceId;
-  D3DKMT_HANDLE                  hSource;
-  D3DKMT_HANDLE                  hDestination;
-  UINT                           Color;
-  RECT                           DstRect;
-  RECT                           SrcRect;
-  UINT                           SubRectCnt;
-  const RECT                     *pSrcSubRects;
-  UINT                           PresentCount;
-  D3DDDI_FLIPINTERVAL_TYPE       FlipInterval;
-  D3DKMT_PRESENTFLAGS            Flags;
-  ULONG                          BroadcastContextCount;
-  D3DKMT_HANDLE                  BroadcastContext[D3DDDI_MAX_BROADCAST_CONTEXT];
-  HANDLE                         PresentLimitSemaphore;
-  D3DKMT_PRESENTHISTORYTOKEN     PresentHistoryToken;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WIN8)
-  D3DKMT_PRESENT_RGNS            *pPresentRegions;
-#endif 
+  D3DKMT_HANDLE                  hSource;
+  D3DKMT_HANDLE                  hDestination;
+  UINT                           Color;
+  RECT                           DstRect;
+  RECT                           SrcRect;
+  UINT                           SubRectCnt;
+  CONST RECT                     *pSrcSubRects;
+  UINT                           PresentCount;
+  D3DDDI_FLIPINTERVAL_TYPE       FlipInterval;
+  D3DKMT_PRESENTFLAGS            Flags;
+  ULONG                          BroadcastContextCount;
+  D3DKMT_HANDLE                  BroadcastContext[D3DDDI_MAX_BROADCAST_CONTEXT];
+  HANDLE                         PresentLimitSemaphore;
+  D3DKMT_PRESENTHISTORYTOKEN     PresentHistoryToken;
+  D3DKMT_PRESENT_RGNS            *pPresentRegions;
+  union {
+    D3DKMT_HANDLE hAdapter;
+    D3DKMT_HANDLE hIndirectContext;
+  };
+  UINT                           Duration;
+  D3DKMT_HANDLE                  *BroadcastSrcAllocation;
+  D3DKMT_HANDLE                  *BroadcastDstAllocation;
+  UINT                           PrivateDriverDataSize;
+  PVOID                          pPrivateDriverData;
+  BOOLEAN                        bOptimizeForComposition;
 } D3DKMT_PRESENT;
-````
+```
 
 ## Members
 
@@ -102,7 +110,7 @@ If the handle in the <b>hDestination</b> member is nonzero, the <b>hDestination<
 
 `Color`
 
-[in] The ARGB 32-bit (see the <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a> enumeration) color-fill or color-key value . A value for color fill is set when the <b>ColorFill</b> bit-field flag is set in the <b>Flags</b> member. A value for color key is set when either the <b>SrcColorKey</b> or <b>DstColorKey</b> bit-field flag is set in the <b>Flags</b> member. Note that only one of the <b>ColorFill</b>, <b>SrcColorKey</b>, and <b>DstColorKey</b> bit-field flags is set at any time. 
+[in] The ARGB 32-bit (see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a> enumeration) color-fill or color-key value . A value for color fill is set when the <b>ColorFill</b> bit-field flag is set in the <b>Flags</b> member. A value for color key is set when either the <b>SrcColorKey</b> or <b>DstColorKey</b> bit-field flag is set in the <b>Flags</b> member. Note that only one of the <b>ColorFill</b>, <b>SrcColorKey</b>, and <b>DstColorKey</b> bit-field flags is set at any time. 
 
 If the primary format is palettized RGB, <b>Color</b> contains the palette index rather than the D3DDDIFMT_A8R8G8B8 value from D3DDDIFORMAT.
 
@@ -128,11 +136,11 @@ If the primary format is palettized RGB, <b>Color</b> contains the palette index
 
 `FlipInterval`
 
-[in] A <a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_flipinterval_type.md">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544549">D3DDDI_FLIPINTERVAL_TYPE</a>-typed value that indicates the flip interval (that is, if the flip occurs after zero, one, two, three, or four vertical syncs).
 
 `Flags`
 
-[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_presentflags.md">D3DKMT_PRESENTFLAGS</a> structure that identifies, in bit-field flags, how to display. Note that the <b>ColorFill</b>, <b>SrcColorKey</b>, and <b>DstColorKey</b> bit-field flags are mutually exclusive.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548179">D3DKMT_PRESENTFLAGS</a> structure that identifies, in bit-field flags, how to display. Note that the <b>ColorFill</b>, <b>SrcColorKey</b>, and <b>DstColorKey</b> bit-field flags are mutually exclusive.
 
 `BroadcastContextCount`
 
@@ -142,7 +150,7 @@ If the primary format is palettized RGB, <b>Color</b> contains the palette index
 
 [in] An array of D3DKMT_HANDLE data types that represent kernel-mode handles to the additional contexts to broadcast the current present operation to. The D3DDDI_MAX_BROADCAST_CONTEXT constant, which is defined as 64, defines the maximum number of contexts that the OpenGL ICD can broadcast the current present operation to.
 
-Broadcasting is supported only for flip operations. To broadcast a flip operation, the display miniport driver must support memory mapped I/O (MMIO)-based flips. To indicate support of MMIO flips, the display miniport driver sets the <b>FlipOnVSyncMmIo</b> bit-field flag in the <b>FlipCaps</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a> structure when its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> function is called.
+Broadcasting is supported only for flip operations. To broadcast a flip operation, the display miniport driver must support memory mapped I/O (MMIO)-based flips. To indicate support of MMIO flips, the display miniport driver sets the <b>FlipOnVSyncMmIo</b> bit-field flag in the <b>FlipCaps</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a> structure when its <a href="https://msdn.microsoft.com/f2f4c54c-7413-48e5-a165-d71f35642b6c">DxgkDdiQueryAdapterInfo</a> function is called.
 
 The original context that the <b>hContext</b> member specifies and that the OpenGL ICD presents to is not an element in the <b>BroadcastContext</b> array. For example, if the <b>BroadcastContext</b> array contains one element, the OpenGL ICD sends the present operation to the owning context (<b>hContext</b>) and broadcasts to that one additional context.
 
@@ -154,13 +162,13 @@ Supported starting with Windows 7.
 
 `PresentHistoryToken`
 
-[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a> structure that identifies the type of present operation.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff548188">D3DKMT_PRESENTHISTORYTOKEN</a> structure that identifies the type of present operation.
 
 Supported starting with Windows 7.
 
 `pPresentRegions`
 
-A pointer to a <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_present_rgns.md">D3DKMT_PRESENT_RGNS</a> structure that identifies dirty and move regions.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406550">D3DKMT_PRESENT_RGNS</a> structure that identifies dirty and move regions.
 
 Supported starting with Windows 8.
 
@@ -197,23 +205,23 @@ Supported starting with Windows 8.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_presentflags.md">D3DKMT_PRESENTFLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544312">D3DDDIFORMAT</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtpresent.md">D3DKMTPresent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547091">D3DKMTPresent</a>
 
 
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_presenthistorytoken.md">D3DKMT_PRESENTHISTORYTOKEN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548179">D3DKMT_PRESENTFLAGS</a>
 
 
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_present_rgns.md">D3DKMT_PRESENT_RGNS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548188">D3DKMT_PRESENTHISTORYTOKEN</a>
 
 
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddiformat.md">D3DDDIFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406550">D3DKMT_PRESENT_RGNS</a>
 
 
 

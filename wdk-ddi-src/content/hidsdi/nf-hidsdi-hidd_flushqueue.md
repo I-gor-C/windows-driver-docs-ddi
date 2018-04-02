@@ -49,11 +49,11 @@ The <b>HidD_FlushQueue</b> routine deletes all pending input reports in a <a hre
 
 ## Syntax
 
-````
-BOOLEAN __stdcall HidD_FlushQueue(
-  _In_ HANDLE HidDeviceObject
+```
+BOOLEAN HidD_FlushQueue(
+  HANDLE HidDeviceObject
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ Specifies an open handle to the top-level collection whose input queue is flushe
 
 ## Remarks
 
-Only user-mode applications can call <b>HidD_FlushQueue</b>. Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl_hid_flush_queue.md">IOCTL_HID_FLUSH_QUEUE</a> request.
+Only user-mode applications can call <b>HidD_FlushQueue</b>. Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541083">IOCTL_HID_FLUSH_QUEUE</a> request.
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>.
 
@@ -83,4 +83,4 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<a href="..\hidclass\ni-hidclass-ioctl_hid_flush_queue.md">IOCTL_HID_FLUSH_QUEUE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541083">IOCTL_HID_FLUSH_QUEUE</a>

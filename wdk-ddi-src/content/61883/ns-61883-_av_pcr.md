@@ -47,15 +47,15 @@ req.typenames: AV_PCR, *PAV_PCR
 The AV_PCR structure specifies settings for an input or output plug.
 
 ## Syntax
-````
+```
 typedef struct _AV_PCR {
   union {
-    OPCR  oPCR;
-    IPCR  iPCR;
+    IPCR  iPCR;
+    OPCR  oPCR;
     ULONG ulongData;
   };
 } AV_PCR, *PAV_PCR;
-````
+```
 
 ## Members
 

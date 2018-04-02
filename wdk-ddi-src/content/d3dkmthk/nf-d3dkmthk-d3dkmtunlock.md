@@ -7,7 +7,7 @@ old-location: display\d3dkmtunlock.htm
 old-project: display
 ms.assetid: d672d99a-973f-46b3-b46c-cb0a82a85ede
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTUnlock, D3DKMTUnlock function [Display Devices], OpenGL_Functions_6741960d-1f19-4000-948c-aeb71330eb1e.xml, d3dkmthk/D3DKMTUnlock, display.d3dkmtunlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>D3DKMTUnlock</b> function unlocks a list of allocations.
 
 ## Syntax
 
-````
-NTSTATUS APIENTRY D3DKMTUnlock(
-  _In_ const D3DKMT_UNLOCK *pData
+```
+NTSTATUS D3DKMTUnlock(
+  CONST *D3DKMT_UNLOCK
 );
-````
+```
 
 ## Parameters
 
@@ -152,4 +152,4 @@ The following code examples demonstrates how an OpenGL ICD can use <b>D3DKMTUnlo
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_unlock.md">D3DKMT_UNLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548393">D3DKMT_UNLOCK</a>

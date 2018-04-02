@@ -44,18 +44,18 @@ req.typenames: KSPIN_CONNECT, *PKSPIN_CONNECT
 ---
 
 # KSPIN_CONNECT structure
-Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a <a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a> call.
+Clients use the KSPIN_CONNECT structure to describe the connection they request from a driver in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561652">KsCreatePin</a> call.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPIN_CONNECT {
   KSPIN_INTERFACE Interface;
-  KSPIN_MEDIUM    Medium;
-  ULONG           PinId;
-  HANDLE          PinToHandle;
-  KSPRIORITY      Priority;
-} KSPIN_CONNECT, *PKSPIN_CONNECT;
-````
+  KSPIN_MEDIUM    Medium;
+  ULONG           PinId;
+  HANDLE          PinToHandle;
+  KSPRIORITY      Priority;
+}  *PKSPIN_CONNECT;
+```
 
 ## Members
 
@@ -78,7 +78,7 @@ Specifies what type of destination pin the create is intended for, and in the ca
 
 `Priority`
 
-A structure of type <a href="..\ks\ns-ks-kspriority.md">KSPRIORITY</a> that specifies the priority for the connection, usually KSPRIORITY_NORMAL. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a> property for details.
+A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff564250">KSPRIORITY</a> that specifies the priority for the connection, usually KSPRIORITY_NORMAL. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a> property for details.
 
 ## Remarks
 If the KSPIN_CONNECT.PinToHandle element is not <b>NULL</b>, IRP_MJ_CREATE instructs the device to connect the source KSPIN_CONNECT.PinId pin to the KSPIN_CONNECT.PinToHandle pin instance. Otherwise, this is a request from a client for connection to the KSPIN_CONNECT.PinId pin using the KSPIN_CONNECT.Medium method and a specific data format specified after the connection structure. In either case, the device driver may fail this request if this connection cannot be accepted.
@@ -90,12 +90,12 @@ If the KSPIN_CONNECT.PinToHandle element is not <b>NULL</b>, IRP_MJ_CREATE instr
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565104">KSPROPERTY_CONNECTION_PRIORITY</a>
 
 
 
-<a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561652">KsCreatePin</a>

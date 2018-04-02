@@ -7,7 +7,7 @@ old-location: netvista\fwpsqueryconnectionredirectstate0.htm
 old-project: netvista
 ms.assetid: 6db0a5ac-edab-4e84-b378-30ed0c23cd4b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsQueryConnectionRedirectState0, FwpsQueryConnectionRedirectState0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsQueryConnectionRedirectState0, netvista.fwpsqueryconnectionredirectstate0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,13 +51,13 @@ The <b>FwpsQueryConnectionRedirectState0</b> function returns the connection red
 
 ## Syntax
 
-````
-FWPS_CONNECTION_REDIRECT_STATE NTAPI FwpsQueryConnectionRedirectState0(
-   _In_ HANDLE                    redirectRecords,
-   _In_ HANDLE                    redirectHandle,
-   _Outptr_result_maybenull_ void **redirectContext
+```
+FWPS_CONNECTION_REDIRECT_STATE FwpsQueryConnectionRedirectState0(
+  HANDLE redirectRecords,
+  HANDLE redirectHandle,
+  void   **redirectContext
 );
-````
+```
 
 ## Parameters
 
@@ -68,13 +68,13 @@ The redirect records handle  indicated to ALE_CONNECT_REDIRECT callout by the cl
 `redirectHandle`
 
 A redirect handle that was previously created by a call to the 
-     <a href="..\fwpsk\nf-fwpsk-fwpsredirecthandlecreate0.md">FwpsRedirectHandleCreate0</a> function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/hh439681">FwpsRedirectHandleCreate0</a> function.
 
 `redirectContext`
 
 An optional handle to the redirect context. If the pointer is specified, and if the connection
      redirect state 
-     <a href="..\fwpsk\ne-fwpsk-fwps_connection_redirect_state_.md">FWPS_CONNECTION_REDIRECT_STATE</a> associated with the injection handle is FWPS_CONNECTION_REDIRECTED_BY_SELF
+     <a href="https://msdn.microsoft.com/library/windows/hardware/hh439704">FWPS_CONNECTION_REDIRECT_STATE</a> associated with the injection handle is FWPS_CONNECTION_REDIRECTED_BY_SELF
      or FWPS_CONNECTION_PREVIOUSLY_REDIRECTED_BY_SELF, the redirect context supplied when the connection was redirected
      will be returned.
 
@@ -82,7 +82,7 @@ An optional handle to the redirect context. If the pointer is specified, and if 
 ## Return Value
 
 The 
-     <b>FwpsQueryConnectionRedirectState0</b> function returns one of the states that are specified in the <a href="..\fwpsk\ne-fwpsk-fwps_connection_redirect_state_.md">FWPS_CONNECTION_REDIRECT_STATE</a> enumeration.
+     <b>FwpsQueryConnectionRedirectState0</b> function returns one of the states that are specified in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439704">FWPS_CONNECTION_REDIRECT_STATE</a> enumeration.
 
 ## Remarks
 
@@ -113,8 +113,8 @@ If the redirect status is FWPS_CONNECTION_PREVIOUSLY_REDIRECTED_BY_SELF, the ALE
 
 ## See Also
 
-<a href="..\fwpsk\nf-fwpsk-fwpsredirecthandlecreate0.md">FwpsRedirectHandleCreate0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439704">FWPS_CONNECTION_REDIRECT_STATE</a>
 
 
 
-<a href="..\fwpsk\ne-fwpsk-fwps_connection_redirect_state_.md">FWPS_CONNECTION_REDIRECT_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439681">FwpsRedirectHandleCreate0</a>

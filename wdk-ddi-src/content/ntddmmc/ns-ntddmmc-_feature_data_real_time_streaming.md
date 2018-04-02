@@ -7,7 +7,7 @@ old-location: storage\feature_data_real_time_streaming.htm
 old-project: storage
 ms.assetid: 3b1b54cc-52a5-48ce-a637-70e289c1944e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PFEATURE_DATA_REAL_TIME_STREAMING, FEATURE_DATA_REAL_TIME_STREAMING, FEATURE_DATA_REAL_TIME_STREAMING structure [Storage Devices], PFEATURE_DATA_REAL_TIME_STREAMING, PFEATURE_DATA_REAL_TIME_STREAMING structure pointer [Storage Devices], _FEATURE_DATA_REAL_TIME_STREAMING, ntddmmc/FEATURE_DATA_REAL_TIME_STREAMING, ntddmmc/PFEATURE_DATA_REAL_TIME_STREAMING, storage.feature_data_real_time_streaming, structs-CD-ROM_2bd0a42c-a5b8-4a5b-958e-56e1a47a6499.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,25 +47,25 @@ req.typenames: FEATURE_DATA_REAL_TIME_STREAMING, *PFEATURE_DATA_REAL_TIME_STREAM
 The FEATURE_DATA_REAL_TIME_STREAMING structure holds information about the Real Time Streaming feature.
 
 ## Syntax
-````
+```
 typedef struct _FEATURE_DATA_REAL_TIME_STREAMING {
   FEATURE_HEADER Header;
-  UCHAR          StreamRecording  :1;
-  UCHAR          WriteSpeedInGetPerf  :1;
-  UCHAR          WriteSpeedInMP2A  :1;
-  UCHAR          SetCDSpeed  :1;
-  UCHAR          ReadBufferCapacityBlock  :1;
-  UCHAR          Reserved1  :3;
-  UCHAR          Reserved2[3];
-} FEATURE_DATA_REAL_TIME_STREAMING, *PFEATURE_DATA_REAL_TIME_STREAMING;
-````
+  UCHAR  : 1     StreamRecording;
+  UCHAR  : 1     WriteSpeedInGetPerf;
+  UCHAR  : 1     WriteSpeedInMP2A;
+  UCHAR  : 1     SetCDSpeed;
+  UCHAR  : 1     ReadBufferCapacityBlock;
+  UCHAR  : 3     Reserved1;
+  UCHAR          Reserved2[3];
+} *PFEATURE_DATA_REAL_TIME_STREAMING, FEATURE_DATA_REAL_TIME_STREAMING;
+```
 
 ## Members
 
 
 `Header`
 
-Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
 `StreamRecording`
 
@@ -98,7 +98,7 @@ Reserved.
 ## Remarks
 This structure holds data for the feature named "Real Time Streaming" by the <i>SCSI Multimedia - 4 (MMC-4)</i> specification. Devices that support this feature allow the initiator to specify the performance level of the device within certain limits allowed by the device. These devices must also indicate to the initiator whether they support stream playback operations. 
 
-When queried, devices supporting this feature must return the information indicated in <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>. No other feature-specific information is required.
+When queried, devices supporting this feature must return the information indicated in <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>. No other feature-specific information is required.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,8 +107,8 @@ When queried, devices supporting this feature must return the information indica
 
 ## See Also
 
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
 
 
 
-<a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>

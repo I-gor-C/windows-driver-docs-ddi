@@ -50,14 +50,14 @@ The <b>wiauRegGetStr</b> function gets a string value from the <b>DeviceData</b>
 
 ## Syntax
 
-````
-HRESULT _stdcall wiauRegGetStr(
-  _In_    HKEY   hkKey,
-  _In_    PCTSTR pwszValueName,
-  _Out_   PWSTR  pwszValue,
-  _Inout_ DWORD  *pdwLength
+```
+HRESULT wiauRegGetStrW(
+  HKEY   hkKey,
+  PCWSTR pwszValueName,
+  PWSTR  pwszValue,
+  WORD   *pdwLength
 );
-````
+```
 
 ## Parameters
 
@@ -92,8 +92,8 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550179">wiauRegOpenData</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550176">wiauRegGetDword</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550179">wiauRegOpenData</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_receive_hash_parameters.htm
 old-project: netvista
 ms.assetid: 02c333d3-9ea7-4d24-9e09-32943c00d6a5
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_RECEIVE_HASH_PARAMETERS, NDIS_RECEIVE_HASH_PARAMETERS, NDIS_RECEIVE_HASH_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_RECEIVE_HASH_PARAMETERS, PNDIS_RECEIVE_HASH_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RECEIVE_HASH_PARAMETERS, netvista.ndis_receive_hash_parameters, ntddndis/NDIS_RECEIVE_HASH_PARAMETERS, ntddndis/PNDIS_RECEIVE_HASH_PARAMETERS, receive_scaling_structures_ref_80a59146-35c0-44f9-9001-142356cdccdf.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,15 +48,15 @@ The NDIS_RECEIVE_HASH_PARAMETERS structure specifies the receive hash parameters
   adapter that supports receive hash calculations.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
   NDIS_OBJECT_HEADER Header;
-  ULONG              Flags;
-  ULONG              HashInformation;
-  USHORT             HashSecretKeySize;
-  ULONG              HashSecretKeyOffset;
-} NDIS_RECEIVE_HASH_PARAMETERS, *PNDIS_RECEIVE_HASH_PARAMETERS;
-````
+  ULONG              Flags;
+  ULONG              HashInformation;
+  USHORT             HashSecretKeySize;
+  ULONG              HashSecretKeyOffset;
+} *PNDIS_RECEIVE_HASH_PARAMETERS, NDIS_RECEIVE_HASH_PARAMETERS;
+```
 
 ## Members
 
@@ -64,7 +64,7 @@ typedef struct _NDIS_RECEIVE_HASH_PARAMETERS {
 `Header`
 
 The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_RECEIVE_HASH_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -176,12 +176,7 @@ The NDIS_RECEIVE_HASH_PARAMETERS structure defines the hash parameters for the
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
-
-
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567266">
-   NDIS_RSS_HASH_TYPE_FROM_HASH_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 
 
 
@@ -190,12 +185,17 @@ The NDIS_RECEIVE_HASH_PARAMETERS structure defines the hash parameters for the
 
 
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567266">
+   NDIS_RSS_HASH_INFO_FROM_TYPE_AND_FUNC</a>
 
 
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff567266">
-   NDIS_RSS_HASH_INFO_FROM_TYPE_AND_FUNC</a>
+   NDIS_RSS_HASH_TYPE_FROM_HASH_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
 
 
 

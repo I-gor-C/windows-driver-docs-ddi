@@ -48,33 +48,33 @@ req.product: Windows 10 or later.
 The BUS_INTERFACE_SWENUM structure describes the demand-load bus enumerator object's interface.
 
 ## Syntax
-````
+```
 typedef struct _BUS_INTERFACE_SWENUM {
-  INTERFACE                  Interface;
-  PFNREFERENCEDEVICEOBJECT   ReferenceDeviceObject;
+  INTERFACE                  Interface;
+  PFNREFERENCEDEVICEOBJECT   ReferenceDeviceObject;
   PFNDEREFERENCEDEVICEOBJECT DereferenceDeviceObject;
-  PFNQUERYREFERENCESTRING    QueryReferenceString;
+  PFNQUERYREFERENCESTRING    QueryReferenceString;
 } BUS_INTERFACE_SWENUM, *PBUS_INTERFACE_SWENUM;
-````
+```
 
 ## Members
 
 
 `Interface`
 
-Specifies the exported <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>.
+Specifies the exported <a href="https://msdn.microsoft.com/library/windows/hardware/dn895657">INTERFACE</a>.
 
 `ReferenceDeviceObject`
 
-Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksreferencesoftwarebusobject.md">KsReferenceSoftwareBusObject</a> routine.
+Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff566763">KsReferenceSoftwareBusObject</a> routine.
 
 `DereferenceDeviceObject`
 
-Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksdereferencesoftwarebusobject.md">KsDereferenceSoftwareBusObject</a> routine.
+Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff561678">KsDereferenceSoftwareBusObject</a> routine.
 
 `QueryReferenceString`
 
-Pointer to a driver-supplied <a href="..\swenum\nf-swenum-ksquerysoftwarebusinterface.md">KsQuerySoftwareBusInterface</a> routine.
+Pointer to a driver-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff566749">KsQuerySoftwareBusInterface</a> routine.
 
 ## Remarks
 A driver obtains a BUS_INTERFACE_SWENUM interface by creating and sending an IRP_MJ_PNP request that specifies an <a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a> minor function code. To do this, the driver should:

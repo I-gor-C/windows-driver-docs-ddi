@@ -7,7 +7,7 @@ old-location: ifsk\flt_parameters.htm
 old-project: ifsk
 ms.assetid: 62aa20b7-ce5c-4d42-bce2-1d76a98887ed
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: "*PFLT_PARAMETERS, FLT_PARAMETERS, FLT_PARAMETERS union [Installable File System Drivers], FltSystemStructures_2ebb0ec7-76cc-49a3-b2ec-186f67369bbb.xml, PFLT_PARAMETERS, PFLT_PARAMETERS union pointer [Installable File System Drivers], _FLT_PARAMETERS, fltkernel/FLT_PARAMETERS, fltkernel/PFLT_PARAMETERS, ifsk.flt_parameters"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,328 @@ req.typenames: FLT_PARAMETERS, *PFLT_PARAMETERS
 The FLT_PARAMETERS union defines the request-type-specific parameters associated with an I/O operation.
 
 ## Syntax
-````
-typedef union _FLT_PARAMETERS {
-  ...
-} FLT_PARAMETERS, *PFLT_PARAMETERS;
-````
+```
+typedef struct _FLT_PARAMETERS {
+  struct {
+    LARGE_INTEGER            AllocationSize;
+    PVOID                    EaBuffer;
+    ULONG POINTER_ALIGNMENT  EaLength;
+    USHORT POINTER_ALIGNMENT FileAttributes;
+    ULONG                    Options;
+    PIO_SECURITY_CONTEXT     SecurityContext;
+    USHORT                   ShareAccess;
+  } Create;
+  struct {
+    ULONG                    Options;
+    PVOID                    Parameters;
+    USHORT POINTER_ALIGNMENT Reserved;
+    PIO_SECURITY_CONTEXT     SecurityContext;
+    USHORT                   ShareAccess;
+  } CreatePipe;
+  struct {
+    ULONG                    Options;
+    PVOID                    Parameters;
+    USHORT POINTER_ALIGNMENT Reserved;
+    PIO_SECURITY_CONTEXT     SecurityContext;
+    USHORT                   ShareAccess;
+  } CreateMailslot;
+  struct {
+    LARGE_INTEGER           ByteOffset;
+    ULONG POINTER_ALIGNMENT Key;
+    ULONG                   Length;
+    PMDL                    MdlAddress;
+    PVOID                   ReadBuffer;
+  } Read;
+  struct {
+    LARGE_INTEGER           ByteOffset;
+    ULONG POINTER_ALIGNMENT Key;
+    ULONG                   Length;
+    PMDL                    MdlAddress;
+    PVOID                   WriteBuffer;
+  } Write;
+  struct {
+    FILE_INFORMATION_CLASS POINTER_ALIGNMENT FileInformationClass;
+    PVOID                                    InfoBuffer;
+    ULONG                                    Length;
+  } QueryFileInformation;
+  struct {
+    FILE_INFORMATION_CLASS POINTER_ALIGNMENT FileInformationClass;
+    PVOID                                    InfoBuffer;
+    ULONG                                    Length;
+    PFILE_OBJECT                             ParentOfTarget;
+    struct {
+      struct {
+        BOOLEAN AdvanceOnly;
+        BOOLEAN ReplaceIfExists;
+      };
+      ULONG  ClusterCount;
+      HANDLE DeleteHandle;
+    };
+  } SetFileInformation;
+  struct {
+    PVOID                   EaBuffer;
+    ULONG POINTER_ALIGNMENT EaIndex;
+    PVOID                   EaList;
+    ULONG                   EaListLength;
+    ULONG                   Length;
+    PMDL                    MdlAddress;
+  } QueryEa;
+  struct {
+    PVOID EaBuffer;
+    ULONG Length;
+    PMDL  MdlAddress;
+  } SetEa;
+  struct {
+    FS_INFORMATION_CLASS POINTER_ALIGNMENT FsInformationClass;
+    ULONG                                  Length;
+    PVOID                                  VolumeBuffer;
+  } QueryVolumeInformation;
+  struct {
+    FS_INFORMATION_CLASS POINTER_ALIGNMENT FsInformationClass;
+    ULONG                                  Length;
+    PVOID                                  VolumeBuffer;
+  } SetVolumeInformation;
+  union {
+    struct {
+      ULONG                   Length;
+      PUNICODE_STRING         FileName;
+      FILE_INFORMATION_CLASS  FileInformationClass;
+      ULONG POINTER_ALIGNMENT FileIndex;
+      PVOID                   DirectoryBuffer;
+      PMDL                    MdlAddress;
+    } QueryDirectory;
+    struct {
+      ULONG                   Length;
+      ULONG POINTER_ALIGNMENT CompletionFilter;
+      ULONG POINTER_ALIGNMENT Spare1;
+      ULONG POINTER_ALIGNMENT Spare2;
+      PVOID                   DirectoryBuffer;
+      PMDL                    MdlAddress;
+    } NotifyDirectory;
+    struct {
+      ULONG                                                Length;
+      ULONG POINTER_ALIGNMENT                              CompletionFilter;
+      DIRECTORY_NOTIFY_INFORMATION_CLASS POINTER_ALIGNMENT DirectoryNotifyInformationClass;
+      ULONG POINTER_ALIGNMENT                              Spare2;
+      PVOID                                                DirectoryBuffer;
+      PMDL                                                 MdlAddress;
+    } NotifyDirectoryEx;
+  } DirectoryControl;
+  union {
+    struct {
+      PVPB           Vpb;
+      PDEVICE_OBJECT DeviceObject;
+    } VerifyVolume;
+    struct {
+      ULONG                   OutputBufferLength;
+      ULONG POINTER_ALIGNMENT InputBufferLength;
+      ULONG POINTER_ALIGNMENT FsControlCode;
+    } Common;
+    struct {
+      ULONG                   OutputBufferLength;
+      ULONG POINTER_ALIGNMENT InputBufferLength;
+      ULONG POINTER_ALIGNMENT FsControlCode;
+      PVOID                   InputBuffer;
+      PVOID                   OutputBuffer;
+      PMDL                    OutputMdlAddress;
+    } Neither;
+    struct {
+      ULONG                   OutputBufferLength;
+      ULONG POINTER_ALIGNMENT InputBufferLength;
+      ULONG POINTER_ALIGNMENT FsControlCode;
+      PVOID                   SystemBuffer;
+    } Buffered;
+    struct {
+      ULONG                   OutputBufferLength;
+      ULONG POINTER_ALIGNMENT InputBufferLength;
+      ULONG POINTER_ALIGNMENT FsControlCode;
+      PVOID                   InputSystemBuffer;
+      PVOID                   OutputBuffer;
+      PMDL                    OutputMdlAddress;
+    } Direct;
+  } FileSystemControl;
+  union {
+    struct {
+      ULONG                   OutputBufferLength;
+      ULONG POINTER_ALIGNMENT InputBufferLength;
+      ULONG POINTER_ALIGNMENT IoControlCode;
+    } Common;
+    struct {
+      ULONG                   OutputBufferLength;
+      ULONG POINTER_ALIGNMENT InputBufferLength;
+      ULONG POINTER_ALIGNMENT IoControlCode;
+      PVOID                   InputBuffer;
+      PVOID                   OutputBuffer;
+      PMDL                    OutputMdlAddress;
+    } Neither;
+    struct {
+      ULONG                   OutputBufferLength;
+      ULONG POINTER_ALIGNMENT InputBufferLength;
+      ULONG POINTER_ALIGNMENT IoControlCode;
+      PVOID                   SystemBuffer;
+    } Buffered;
+    struct {
+      ULONG                   OutputBufferLength;
+      ULONG POINTER_ALIGNMENT InputBufferLength;
+      ULONG POINTER_ALIGNMENT IoControlCode;
+      PVOID                   InputSystemBuffer;
+      PVOID                   OutputBuffer;
+      PMDL                    OutputMdlAddress;
+    } Direct;
+    struct {
+      ULONG                   OutputBufferLength;
+      ULONG POINTER_ALIGNMENT InputBufferLength;
+      ULONG POINTER_ALIGNMENT IoControlCode;
+      PVOID                   InputBuffer;
+      PVOID                   OutputBuffer;
+    } FastIo;
+  } DeviceIoControl;
+  struct {
+    LARGE_INTEGER           ByteOffset;
+    BOOLEAN                 ExclusiveLock;
+    BOOLEAN                 FailImmediately;
+    ULONG POINTER_ALIGNMENT Key;
+    PLARGE_INTEGER          Length;
+    PEPROCESS               ProcessId;
+  } LockControl;
+  struct {
+    ULONG POINTER_ALIGNMENT Length;
+    PMDL                    MdlAddress;
+    PVOID                   SecurityBuffer;
+    SECURITY_INFORMATION    SecurityInformation;
+  } QuerySecurity;
+  struct {
+    PSECURITY_DESCRIPTOR SecurityDescriptor;
+    SECURITY_INFORMATION SecurityInformation;
+  } SetSecurity;
+  struct {
+    PVOID     Buffer;
+    ULONG     BufferSize;
+    PVOID     DataPath;
+    ULONG_PTR ProviderId;
+  } WMI;
+  struct {
+    ULONG                       Length;
+    PMDL                        MdlAddress;
+    PVOID                       QuotaBuffer;
+    PFILE_GET_QUOTA_INFORMATION SidList;
+    ULONG                       SidListLength;
+    PSID                        StartSid;
+  } QueryQuota;
+  struct {
+    ULONG Length;
+    PMDL  MdlAddress;
+    PVOID QuotaBuffer;
+  } SetQuota;
+  union {
+    struct {
+      PCM_RESOURCE_LIST AllocatedResources;
+      PCM_RESOURCE_LIST AllocatedResourcesTranslated;
+    } StartDevice;
+    struct {
+      DEVICE_RELATION_TYPE Type;
+    } QueryDeviceRelations;
+    struct {
+      CONST GUID *InterfaceType;
+      USHORT     Size;
+      USHORT     Version;
+      PINTERFACE Interface;
+      PVOID      InterfaceSpecificData;
+    } QueryInterface;
+    struct {
+      PDEVICE_CAPABILITIES Capabilities;
+    } DeviceCapabilities;
+    struct {
+      PIO_RESOURCE_REQUIREMENTS_LIST IoResourceRequirementList;
+    } FilterResourceRequirements;
+    struct {
+      ULONG                   WhichSpace;
+      PVOID                   Buffer;
+      ULONG                   Offset;
+      ULONG POINTER_ALIGNMENT Length;
+    } ReadWriteConfig;
+    struct {
+      BOOLEAN Lock;
+    } SetLock;
+    struct {
+      BUS_QUERY_ID_TYPE IdType;
+    } QueryId;
+    struct {
+      DEVICE_TEXT_TYPE       DeviceTextType;
+      LCID POINTER_ALIGNMENT LocaleId;
+    } QueryDeviceText;
+    struct {
+      BOOLEAN                                          InPath;
+      BOOLEAN                                          Reserved[3];
+      DEVICE_USAGE_NOTIFICATION_TYPE POINTER_ALIGNMENT Type;
+    } UsageNotification;
+  } Pnp;
+  struct {
+    PFS_FILTER_SECTION_SYNC_OUTPUT OutputInformation;
+    ULONG                          PageProtection;
+    FS_FILTER_SECTION_SYNC_TYPE    SyncType;
+  } AcquireForSectionSynchronization;
+  struct {
+    PLARGE_INTEGER EndingOffset;
+    PERESOURCE     *ResourceToRelease;
+  } AcquireForModifiedPageWriter;
+  struct {
+    PERESOURCE ResourceToRelease;
+  } ReleaseForModifiedPageWriter;
+  struct {
+    PVOID                  FileInformation;
+    FILE_INFORMATION_CLASS FileInformationClass;
+    PIRP                   Irp;
+    PULONG                 Length;
+  } QueryOpen;
+  struct {
+    BOOLEAN POINTER_ALIGNMENT CheckForReadOperation;
+    LARGE_INTEGER             FileOffset;
+    ULONG                     Length;
+    ULONG POINTER_ALIGNMENT   LockKey;
+  } FastIoCheckIfPossible;
+  struct {
+    PIRP                           Irp;
+    PFILE_NETWORK_OPEN_INFORMATION NetworkInformation;
+  } NetworkQueryOpen;
+  struct {
+    LARGE_INTEGER           FileOffset;
+    ULONG POINTER_ALIGNMENT Key;
+    ULONG POINTER_ALIGNMENT Length;
+    PMDL                    *MdlChain;
+  } MdlRead;
+  struct {
+    PMDL MdlChain;
+  } MdlReadComplete;
+  struct {
+    LARGE_INTEGER           FileOffset;
+    ULONG POINTER_ALIGNMENT Key;
+    ULONG POINTER_ALIGNMENT Length;
+    PMDL                    *MdlChain;
+  } PrepareMdlWrite;
+  struct {
+    LARGE_INTEGER FileOffset;
+    PMDL          MdlChain;
+  } MdlWriteComplete;
+  struct {
+    ULONG DeviceType;
+  } MountVolume;
+  struct {
+    PVOID         Argument1;
+    PVOID         Argument2;
+    PVOID         Argument3;
+    PVOID         Argument4;
+    PVOID         Argument5;
+    LARGE_INTEGER Argument6;
+  } Others;
+} *PFLT_PARAMETERS, FLT_PARAMETERS;
+```
 
 ## Members
 
 
 ## Remarks
-This structure is stored in the <b>Parameters</b> field of the <a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a> structure for the operation. (A pointer to the FLT_IO_PARAMETER_BLOCK structure is stored in the <b>Iopb</b> field of the <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a> structure for the operation.) 
+This structure is stored in the <b>Parameters</b> field of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544638">FLT_IO_PARAMETER_BLOCK</a> structure for the operation. (A pointer to the FLT_IO_PARAMETER_BLOCK structure is stored in the <b>Iopb</b> field of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a> structure for the operation.) 
 
 For the specific FLT_PARAMETERS union component used in each type of I/O operation, see the following reference entries. 
 
@@ -193,12 +504,12 @@ The following I/O operations do not have parameters:
 
 ## See Also
 
-<a href="..\fltkernel\ns-fltkernel-_flt_io_parameter_block.md">FLT_IO_PARAMETER_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
 
 
 
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544638">FLT_IO_PARAMETER_BLOCK</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltsetcallbackdatadirty.md">FltSetCallbackDataDirty</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544383">FltSetCallbackDataDirty</a>

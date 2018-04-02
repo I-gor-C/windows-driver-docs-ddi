@@ -50,12 +50,12 @@ The <b>wiauDbgLegacyHresult2</b> function logs a default message containing an H
 
 ## Syntax
 
-````
-inline void __stdcall wiauDbgLegacyHresult2(
-  _In_ HINSTANCE hInstance,
-       HRESULT   hr
+```
+void wiauDbgLegacyHresult2(
+  HINSTANCE hInstance,
+  HRESULT   hr
 );
-````
+```
 
 ## Parameters
 
@@ -74,7 +74,7 @@ None
 
 ## Remarks
 
-A call to the <b>wiauDbgLegacyHresult2</b> function is equivalent to the following call to the <a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a> function:
+A call to the <b>wiauDbgLegacyHresult2</b> function is equivalent to the following call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549637">wiauDbgErrorHr</a> function:
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -108,4 +108,4 @@ That is, only one line is output to the log file and/or debugger. The line has t
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaudbgerrorhr.md">wiauDbgErrorHr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549637">wiauDbgErrorHr</a>

@@ -48,15 +48,15 @@ req.product: Windows 10 or later.
 The SD_TRANSFER_TYPE enumeration specifies the type of a Secure Digital (SD) data transfer.
 
 ## Syntax
-````
-typedef enum  { 
-  SDTT_UNSPECIFIED           = 0,
-  SDTT_CMD_ONLY              = 1,
-  SDTT_SINGLE_BLOCK          = 2,
-  SDTT_MULTI_BLOCK           = 3,
-  SDTT_MULTI_BLOCK_NO_CMD12  = 4
-} SD_TRANSFER_TYPE;
-````
+```
+typedef enum SD_TRANSFER_TYPE {
+  SDTT_UNSPECIFIED           ,
+  SDTT_CMD_ONLY              ,
+  SDTT_SINGLE_BLOCK          ,
+  SDTT_MULTI_BLOCK           ,
+  SDTT_MULTI_BLOCK_NO_CMD12
+} ;
+```
 
 ## Constants
 

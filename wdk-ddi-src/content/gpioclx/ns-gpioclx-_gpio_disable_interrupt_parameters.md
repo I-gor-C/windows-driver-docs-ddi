@@ -47,13 +47,13 @@ req.typenames: GPIO_DISABLE_INTERRUPT_PARAMETERS, *PGPIO_DISABLE_INTERRUPT_PARAM
 The <b>GPIO_DISABLE_INTERRUPT_PARAMETERS</b> structure describes a general-purpose I/O (GPIO) interrupt pin to disable.
 
 ## Syntax
-````
+```
 typedef struct _GPIO_DISABLE_INTERRUPT_PARAMETERS {
-  BANK_ID                      BankId;
-  PIN_NUMBER                   PinNumber;
+  BANK_ID                      BankId;
+  PIN_NUMBER                   PinNumber;
   GPIO_DISABLE_INTERRUPT_FLAGS Flags;
-} GPIO_DISABLE_INTERRUPT_PARAMETERS, *PGPIO_DISABLE_INTERRUPT_PARAMETERS;
-````
+} *PGPIO_DISABLE_INTERRUPT_PARAMETERS, GPIO_DISABLE_INTERRUPT_PARAMETERS;
+```
 
 ## Members
 
@@ -85,7 +85,7 @@ After a <i>CLIENT_DisableInterrupt</i> call fails, GpioClx might retry the call 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
 
 
 
@@ -93,4 +93,4 @@ After a <i>CLIENT_DisableInterrupt</i> call fails, GpioClx might retry the call 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>

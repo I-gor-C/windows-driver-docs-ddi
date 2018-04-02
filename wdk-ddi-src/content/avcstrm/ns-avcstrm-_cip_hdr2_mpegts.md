@@ -47,14 +47,14 @@ req.typenames: CIP_HDR2_MPEGTS, *PCIP_HDR2_MPEGTS
 The CIP_HDR2_MPEGTS structure describes the second quadlet of a CIP header pair for an MPEGTS format stream.
 
 ## Syntax
-````
+```
 typedef struct _CIP_HDR2_MPEGTS {
-  ULONG TSF  :1;
-  ULONG RSV23bit  :23;
-  ULONG FMT  :6;
-  ULONG Bit10  :2;
+  ULONG  : 1  TSF;
+  ULONG  : 23 RSV23bit;
+  ULONG  : 6  FMT;
+  ULONG  : 2  Bit10;
 } CIP_HDR2_MPEGTS, *PCIP_HDR2_MPEGTS;
-````
+```
 
 ## Members
 
@@ -83,4 +83,4 @@ Must be set to 1:0
 
 ## See Also
 
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557668">CIP_HDR1</a>

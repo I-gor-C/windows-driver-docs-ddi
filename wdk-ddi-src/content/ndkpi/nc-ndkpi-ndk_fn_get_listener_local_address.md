@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_get_listener_local_address.htm
 old-project: netvista
 ms.assetid: 7BF5322F-5283-445D-AC3F-19382CB28E2B
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_FN_GET_LISTENER_LOCAL_ADDRESS, NdkGetListenerLocalAddress, NdkGetListenerLocalAddress callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkGetListenerLocalAddress, netvista.ndk_fn_get_listener_local_address
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ NTSTATUS NdkFnGetListenerLocalAddress(
 
 `*pNdkListener`
 
-A pointer to an NDK listener object (<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>).
+A pointer to an NDK listener object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439918">NDK_LISTENER</a>).
 
 `pAddress`
 
@@ -134,8 +134,8 @@ An error occurred.
 
 ## See Also
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_listen.md">NDK_FN_LISTEN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439902">NDK_FN_LISTEN</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_listener.md">NDK_LISTENER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439918">NDK_LISTENER</a>

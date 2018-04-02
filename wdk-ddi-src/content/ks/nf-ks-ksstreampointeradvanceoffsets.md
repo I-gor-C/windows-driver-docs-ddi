@@ -50,20 +50,20 @@ The<b> KsStreamPointerAdvanceOffsets</b> function advances the offsets of <i>Str
 
 ## Syntax
 
-````
-NTSTATUS KsStreamPointerAdvanceOffsets(
-  _In_ PKSSTREAM_POINTER StreamPointer,
-  _In_ ULONG             InUsed,
-  _In_ ULONG             OutUsed,
-  _In_ BOOLEAN           Eject
+```
+KSDDKAPI NTSTATUS KsStreamPointerAdvanceOffsets(
+  PKSSTREAM_POINTER StreamPointer,
+  ULONG             InUsed,
+  ULONG             OutUsed,
+  BOOLEAN           Eject
 );
-````
+```
 
 ## Parameters
 
 `StreamPointer`
 
-A pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer for which to advance the offsets. <i>StreamPointer</i> should be in the locked state when this function is called.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a> structure representing the stream pointer for which to advance the offsets. <i>StreamPointer</i> should be in the locked state when this function is called.
 
 `InUsed`
 
@@ -105,16 +105,16 @@ Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksstreampointeradvanceoffsetsandunlock.md">KsStreamPointerAdvanceOffsetsAndUnlock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567125">KsStreamPointerAdvance</a>
 
 
 
-<a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567127">KsStreamPointerAdvanceOffsetsAndUnlock</a>
 
 
 
-<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn892390">KsStreamPointerLock</a>
 
 
 
-<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567137">KsStreamPointerUnlock</a>

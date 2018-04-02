@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The GETINFO_GLYPHBITMAP structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.
 
 ## Syntax
-````
+```
 typedef struct _GETINFO_GLYPHBITMAP {
-  DWORD     dwSize;
-  HGLYPH    hGlyph;
+  DWORD     dwSize;
+  HGLYPH    hGlyph;
   GLYPHDATA *pGlyphData;
 } GETINFO_GLYPHBITMAP, *PGETINFO_GLYPHBITMAP;
-````
+```
 
 ## Members
 
@@ -83,11 +83,11 @@ The value that a rendering plug-in specifies for the <b>hGlyph</b> member must h
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554241">IPrintOemUni::DownloadCharGlyph</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566819">GLYPHDATA</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554241">IPrintOemUni::DownloadCharGlyph</a>
 
 
 

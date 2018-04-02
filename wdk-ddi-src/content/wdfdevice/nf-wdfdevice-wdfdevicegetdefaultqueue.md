@@ -55,11 +55,11 @@ The <b>WdfDeviceGetDefaultQueue</b> method returns a handle to a device's defaul
 
 ## Syntax
 
-````
+```
 WDFQUEUE WdfDeviceGetDefaultQueue(
-  _In_ WDFDEVICE Device
+  WDFDEVICE Device
 );
-````
+```
 
 ## Parameters
 

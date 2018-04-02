@@ -7,7 +7,7 @@ old-location: audio\ksaudio_mix_caps.htm
 old-project: audio
 ms.assetid: d201fdce-ae56-4ba5-a947-e3e0cecc6e17
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PKSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS, KSAUDIO_MIX_CAPS structure [Audio Devices], PKSAUDIO_MIX_CAPS, PKSAUDIO_MIX_CAPS structure pointer [Audio Devices], aud-prop_5468df9e-d7f4-4449-a59f-694100f2f825.xml, audio.ksaudio_mix_caps, ksmedia/KSAUDIO_MIX_CAPS, ksmedia/PKSAUDIO_MIX_CAPS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,20 +44,20 @@ req.typenames: KSAUDIO_MIX_CAPS, *PKSAUDIO_MIX_CAPS
 ---
 
 # KSAUDIO_MIX_CAPS structure
-The KSAUDIO_MIX_CAPS structure specifies the mixing capabilities of a particular data path from one input channel of a supermixer node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff537198">KSNODETYPE_SUPERMIX</a>) to an output channel of the same node. An array of these structures is used by a <a href="..\ksmedia\ns-ksmedia-ksaudio_mixcap_table.md">KSAUDIO_MIXCAP_TABLE</a> structure to specify the mixing capabilities for all such paths through a supermixer node.
+The KSAUDIO_MIX_CAPS structure specifies the mixing capabilities of a particular data path from one input channel of a supermixer node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff537198">KSNODETYPE_SUPERMIX</a>) to an output channel of the same node. An array of these structures is used by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537088">KSAUDIO_MIXCAP_TABLE</a> structure to specify the mixing capabilities for all such paths through a supermixer node.
 
 ## Syntax
-````
-typedef struct {
-  BOOL  Mute;
-  LONG  Minimum;
-  LONG  Maximum;
+```
+typedef struct KSAUDIO_MIX_CAPS {
+  BOOL  Mute;
+  LONG  Minimum;
+  LONG  Maximum;
   union {
     LONG Reset;
     LONG Resolution;
   };
-} KSAUDIO_MIX_CAPS, *PKSAUDIO_MIX_CAPS;
-````
+}  *PKSAUDIO_MIX_CAPS;
+```
 
 ## Members
 
@@ -94,16 +94,16 @@ This scale has a resolution of 1/65536 decibel.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537088">KSAUDIO_MIXCAP_TABLE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537198">KSNODETYPE_SUPERMIX</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537291">KSPROPERTY_AUDIO_MIX_LEVEL_CAPS</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537292">KSPROPERTY_AUDIO_MIX_LEVEL_TABLE</a>
-
-
-
-<a href="..\ksmedia\ns-ksmedia-ksaudio_mixcap_table.md">KSAUDIO_MIXCAP_TABLE</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537198">KSNODETYPE_SUPERMIX</a>

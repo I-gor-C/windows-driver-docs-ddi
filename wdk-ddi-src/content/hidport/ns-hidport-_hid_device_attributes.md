@@ -47,22 +47,22 @@ req.typenames: HID_DEVICE_ATTRIBUTES, *PHID_DEVICE_ATTRIBUTES
 The HID_DEVICE_ATTRIBUTES structure contains information about a HIDClass device.
 
 ## Syntax
-````
+```
 typedef struct _HID_DEVICE_ATTRIBUTES {
-  ULONG  Size;
+  ULONG  Size;
   USHORT VendorID;
   USHORT ProductID;
   USHORT VersionNumber;
   USHORT Reserved[11];
 } HID_DEVICE_ATTRIBUTES, *PHID_DEVICE_ATTRIBUTES;
-````
+```
 
 ## Members
 
 
 `Size`
 
-Specifies the size of the structure. This member should be treated as read-only when a HID minidriver uses this structure to complete an <a href="..\hidport\ni-hidport-ioctl_hid_get_device_attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request.
+Specifies the size of the structure. This member should be treated as read-only when a HID minidriver uses this structure to complete an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541093">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request.
 
 `VendorID`
 
@@ -81,7 +81,7 @@ Specifies the manufacturer's revision number for a HID device.
 Reserved for internal system use.
 
 ## Remarks
-The HID class driver uses this structure to obtain device attributes when it sends an <a href="..\hidport\ni-hidport-ioctl_hid_get_device_attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request to a HID minidriver.
+The HID class driver uses this structure to obtain device attributes when it sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541093">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a> request to a HID minidriver.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,4 +90,4 @@ The HID class driver uses this structure to obtain device attributes when it sen
 
 ## See Also
 
-<a href="..\hidport\ni-hidport-ioctl_hid_get_device_attributes.md">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541093">IOCTL_HID_GET_DEVICE_ATTRIBUTES</a>

@@ -7,7 +7,7 @@ old-location: storage\scsiportreadportbufferulong.htm
 old-project: storage
 ms.assetid: 719210f5-22d6-425d-aff0-aefbebfbfca2
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortReadPortBufferUlong, ScsiPortReadPortBufferUlong routine [Storage Devices], scsiprt_5da99f27-5758-4e1b-af45-0d9069b55af7.xml, srb/ScsiPortReadPortBufferUlong, storage.scsiportreadportbufferulong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,13 +52,13 @@ The <b>ScsiPortReadPortBufferUlong</b> routine transfers a given number of ULONG
 
 ## Syntax
 
-````
-VOID ScsiPortReadPortBufferUlong(
-  _In_ PULONG Port,
-  _In_ PULONG Buffer,
-  _In_ ULONG  Count
+```
+SCSIPORT_API VOID ScsiPortReadPortBufferUlong(
+  PULONG Port,
+  PULONG Buffer,
+  ULONG  Count
 );
-````
+```
 
 ## Parameters
 
@@ -92,4 +92,4 @@ None
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>

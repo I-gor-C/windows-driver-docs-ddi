@@ -7,7 +7,7 @@ old-location: display\dxgk_submitcommandflags.htm
 old-project: display
 ms.assetid: b73e49d1-3e71-4c36-b628-3d5a3975e5fa
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_SUBMITCOMMANDFLAGS, DXGK_SUBMITCOMMANDFLAGS structure [Display Devices], DmStructs_c3c77059-3e18-4fe7-a845-b59bb117ba30.xml, _DXGK_SUBMITCOMMANDFLAGS, d3dkmddi/DXGK_SUBMITCOMMANDFLAGS, display.dxgk_submitcommandflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,32 +47,33 @@ req.typenames: DXGK_SUBMITCOMMANDFLAGS
 The DXGK_SUBMITCOMMANDFLAGS structure identifies, in bit-field flags, information about a direct memory access (DMA) buffer to submit to the graphics processing unit (GPU).
 
 ## Syntax
-````
+```
 typedef struct _DXGK_SUBMITCOMMANDFLAGS {
   union {
     struct {
-      UINT Paging  :1;
-      UINT Present  :1;
-      UINT RedirectedPresent  :1;
-      UINT NullRendering  :1;
-      UINT Flip  :1;
-      UINT FlipWithNoWait  :1;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WIN8)
-      UINT ContextSwitch  :1;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM2_0)
-      UINT Resubmission  :1;
-      UINT Reserved  :24;
-#else 
-      UINT Reserved  :25;
-#endif 
-#else 
-      UINT Reserved  :26;
-#endif 
+      UINT  : 1  Paging;
+      UINT  : 1  Present;
+      UINT  : 1  RedirectedPresent;
+      UINT  : 1  NullRendering;
+      UINT  : 1  Flip;
+      UINT  : 1  FlipWithNoWait;
+      UINT  : 1  ContextSwitch;
+      UINT  : 1  Resubmission;
+      UINT  : 1  VirtualMachineData;
+#if ...
+      UINT  : 23 Reserved;
+#elif
+      UINT  : 24 Reserved;
+#elif
+      UINT  : 25 Reserved;
+#else
+      UINT  : 26 Reserved;
+#endif
     };
     UINT Value;
   };
 } DXGK_SUBMITCOMMANDFLAGS;
-````
+```
 
 ## Members
 
@@ -86,8 +87,8 @@ typedef struct _DXGK_SUBMITCOMMANDFLAGS {
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559490">DXGKARG_SUBMITCOMMAND</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_submitcommand.md">DXGKARG_SUBMITCOMMAND</a>
+<a href="https://msdn.microsoft.com/de1925ab-e444-4cf6-acd9-8fdab26afcec">DxgkDdiSubmitCommand</a>

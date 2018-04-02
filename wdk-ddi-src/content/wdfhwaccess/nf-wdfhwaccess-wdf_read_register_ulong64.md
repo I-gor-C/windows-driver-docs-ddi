@@ -52,12 +52,12 @@ The <b>WDF_READ_REGISTER_ULONG64</b> function reads a ULONG64 value from the spe
 
 ## Syntax
 
-````
+```
 ULONG64 WDF_READ_REGISTER_ULONG64(
-  _In_ WDFDEVICE Device,
-  _In_ PULONG64  Register
+  WDFDEVICE Device,
+  PULONG64  Register
 );
-````
+```
 
 ## Parameters
 

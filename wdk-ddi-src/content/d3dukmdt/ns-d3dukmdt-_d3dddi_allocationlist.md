@@ -7,7 +7,7 @@ old-location: display\d3dddi_allocationlist.htm
 old-project: display
 ms.assetid: 167ceb16-d7b9-4657-84cd-f3b9de5e5267
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_ALLOCATIONLIST, D3DDDI_ALLOCATIONLIST structure [Display Devices], D3D_other_Structs_0e766b30-b39d-4107-8739-0b9290e7d489.xml, _D3DDDI_ALLOCATIONLIST, d3dukmdt/D3DDDI_ALLOCATIONLIST, display.d3dddi_allocationlist
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,33 +47,28 @@ req.typenames: D3DDDI_ALLOCATIONLIST
 The <b>D3DDDI_ALLOCATIONLIST</b> structure describes information about an allocation specification that is used in direct memory access (DMA) buffering.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDI_ALLOCATIONLIST {
   D3DKMT_HANDLE hAllocation;
   union {
     struct {
-      UINT WriteOperation  :1;
-      UINT DoNotRetireInstance  :1;
-#if ((DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WIN8) || \
-     (D3D_UMD_INTERFACE_VERSION >= D3D_UMD_INTERFACE_VERSION_WIN8))
-
-      UINT OfferPriority  :3;
-#else 
-      UINT Reserved  :27;
-#endif 
-      UINT Reserved  :30;
+      UINT  : 1  WriteOperation;
+      UINT  : 1  DoNotRetireInstance;
+      UINT  : 3  OfferPriority;
+      UINT  : 27 Reserved;
+      UINT  : 30 Reserved;
     };
     UINT Value;
   };
 } D3DDDI_ALLOCATIONLIST;
-````
+```
 
 ## Members
 
 
 `hAllocation`
 
-[in] The allocation handle returned by the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenresource.md">D3DKMTOpenResource</a> function in the <b>hAllocation</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a>   structure, or by the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateallocation.md">D3DKMTCreateAllocation</a> function in the <b>hAllocation</b> member of the <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationinfo.md">D3DDDI_ALLOCATIONINFO</a> structure.
+[in] The allocation handle returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547065">D3DKMTOpenResource</a> function in the <b>hAllocation</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544599">D3DDDI_OPENALLOCATIONINFO</a>   structure, or by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546807">D3DKMTCreateAllocation</a> function in the <b>hAllocation</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544364">D3DDDI_ALLOCATIONINFO</a> structure.
 
 
 ## Requirements
@@ -84,20 +79,20 @@ typedef struct _D3DDDI_ALLOCATIONLIST {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_createdevice.md">D3DDDIARG_CREATEDEVICE</a>
+<a href="https://msdn.microsoft.com/ce35bdac-af90-471f-af93-0e665be6c7f6">CreateDevice</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createdevice.md">CreateDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542931">D3DDDIARG_CREATEDEVICE</a>
 
 
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544241">D3DDDICB_RENDER</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439275">D3DDDI_OFFER_PRIORITY</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_render.md">D3DDDICB_RENDER</a>
+<a href="https://msdn.microsoft.com/f242162e-6237-469c-b178-5a51dcf69e32">pfnRenderCb</a>

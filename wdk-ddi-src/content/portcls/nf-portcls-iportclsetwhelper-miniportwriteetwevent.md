@@ -7,7 +7,7 @@ old-location: audio\iportclsetwhelper_miniportwriteetwevent.htm
 old-project: audio
 ms.assetid: 7E0C1140-35AA-424F-8229-21B4F4E1EBDF
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IPortClsEtwHelper, IPortClsEtwHelper interface [Audio Devices], MiniportWriteEtwEvent method, IPortClsEtwHelper::MiniportWriteEtwEvent, MiniportWriteEtwEvent method [Audio Devices], MiniportWriteEtwEvent method [Audio Devices], IPortClsEtwHelper interface, MiniportWriteEtwEvent,IPortClsEtwHelper.MiniportWriteEtwEvent, audio.iportclsetwhelper_miniportwriteetwevent, portcls/IPortClsEtwHelper::MiniportWriteEtwEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,26 +44,26 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# MiniportWriteEtwEvent method
+# IPortClsEtwHelper::MiniportWriteEtwEvent method
 The <code>MiniportWriteEtwEvent</code> method is used by an audio miniport driver for providing the information about an Event Tracing for Windows (ETW) event.
 
 ## Syntax
 
-````
+```
 NTSTATUS MiniportWriteEtwEvent(
-  [in] EPcMiniportEngineEvent miniportEventType,
-  [in] ULONGLONG              pvData1,
-  [in] ULONGLONG              pvData2,
-  [in] ULONGLONG              ulData3,
-  [in] ULONGLONG              ulData4
+  EPcMiniportEngineEvent miniportEventType,
+  ULONGLONG              pvData1,
+  ULONGLONG              pvData2,
+  ULONGLONG              ulData3,
+  ULONGLONG              ulData4
 );
-````
+```
 
 ## Parameters
 
 `miniportEventType`
 
-An <a href="..\portcls\ne-portcls-epcminiportengineevent.md">EPcMiniportEngineEvent</a> enumerated value that provides additional error information for reporting glitching errors.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/dn302036">EPcMiniportEngineEvent</a> enumerated value that provides additional error information for reporting glitching errors.
 
 `pvData1`
 
@@ -96,8 +96,8 @@ Data parameter.
 
 ## See Also
 
-<a href="..\portcls\ne-portcls-epcminiportengineevent.md">EPcMiniportEngineEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302036">EPcMiniportEngineEvent</a>
 
 
 
-<a href="..\portcls\nn-portcls-iportclsetwhelper.md">IPortClsEtwHelper</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265123">IPortClsEtwHelper</a>

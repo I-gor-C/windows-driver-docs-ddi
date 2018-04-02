@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # SENSOR_CONFIG_INIT function
-This function initializes a <a href="..\sensorscx\ns-sensorscx-_sensor_config.md">SENSOR_CONFIG</a> structure.
+This function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/dn957096">SENSOR_CONFIG</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE VOID SENSOR_CONFIG_INIT(
-  _Out_ PSENSOR_CONFIG pConfig
+```
+void SENSOR_CONFIG_INIT(
+  PSENSOR_CONFIG pConfig
 );
-````
+```
 
 ## Parameters
 
 `pConfig`
 
-A pointer to a new <a href="..\sensorscx\ns-sensorscx-_sensor_config.md">SENSOR_CONFIG</a> structure.
+A pointer to a new <a href="https://msdn.microsoft.com/library/windows/hardware/dn957096">SENSOR_CONFIG</a> structure.
 
 
 ## Return Value
@@ -76,4 +76,4 @@ This function does not return a value.
 
 ## See Also
 
-<a href="..\sensorscx\ns-sensorscx-_sensor_config.md">SENSOR_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957096">SENSOR_CONFIG</a>

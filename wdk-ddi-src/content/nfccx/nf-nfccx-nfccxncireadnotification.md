@@ -49,12 +49,12 @@ Called by the client driver when a read packet is available. The WDFMEMORY can b
 
 ## Syntax
 
-````
+```
 NTSTATUS NfcCxNciReadNotification(
-   WDFDEVICE Device,
-   WDFMEMORY Memory
+  WDFDEVICE Device,
+  WDFMEMORY Memory
 );
-````
+```
 
 ## Parameters
 

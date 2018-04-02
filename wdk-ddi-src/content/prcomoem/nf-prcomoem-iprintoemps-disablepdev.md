@@ -45,22 +45,22 @@ req.product: Windows 10 or later.
 ---
 
 
-# DisablePDEV method
+# IPrintOemPS::DisablePDEV method
 The <code>IPrintOemPS::DisablePDEV</code> method allows a rendering plug-in for Pscript5 to delete the private PDEV structure that was allocated by its <a href="https://msdn.microsoft.com/library/windows/hardware/ff553215">IPrintOemPS::EnablePDEV</a> method.
 
 ## Syntax
 
-````
-STDMETHOD DisablePDEV(
-   PDEVOBJ pdevobj
+```
+HRESULT DisablePDEV(
+  PDEVOBJ pdevobj
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 
 ## Return Value

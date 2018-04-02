@@ -7,7 +7,7 @@ old-location: netvista\ndisifquerybindingifindex.htm
 old-project: netvista
 ms.assetid: 08f31584-b3ea-4e6e-b8ce-17813ca7c06b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisIfQueryBindingIfIndex, NdisIfQueryBindingIfIndex function [Network Drivers Starting with Windows Vista], ndis/NdisIfQueryBindingIfIndex, net_if_functions_ref_eacdb959-2a12-4688-9e83-7454c579e2d3.xml, netvista.ndisifquerybindingifindex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,15 +53,15 @@ The
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisIfQueryBindingIfIndex(
-  _In_  NDIS_HANDLE  NdisBindingHandle,
-  _Out_ PNET_IFINDEX pBoundIfIndex,
-  _Out_ PNET_LUID    pBoundIfNetLuid,
-  _Out_ PNET_IFINDEX pLowestIfIndex,
-  _Out_ PNET_LUID    pLowestIfNetLuid
+  NDIS_HANDLE  NdisBindingHandle,
+  PNET_IFINDEX pBoundIfIndex,
+  PNET_LUID    pBoundIfNetLuid,
+  PNET_IFINDEX pLowestIfIndex,
+  PNET_LUID    pLowestIfNetLuid
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ A handle that identifies the binding for which NDIS should obtain the
      <a href="https://msdn.microsoft.com/library/windows/hardware/ff568747">NET_LUID</a> values and network interface indexes.
      NDIS provided this handle at the 
      <i>NdisBindingHandle</i> parameter of the 
-     <a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a> function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a> function.
 
 `pBoundIfIndex`
 
@@ -149,7 +149,7 @@ NDIS protocol drivers can call the
 
 Protocol drivers can also obtain the interface index and NET_LUID of the highest and the lowest
     interfaces in a driver stack in the 
-    <a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a> structure.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -163,7 +163,7 @@ Protocol drivers can also obtain the interface index and NET_LUID of the highest
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisopenadapterex.md">NdisOpenAdapterEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564832">NDIS_BIND_PARAMETERS</a>
 
 
 
@@ -171,4 +171,4 @@ Protocol drivers can also obtain the interface index and NET_LUID of the highest
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_bind_parameters.md">NDIS_BIND_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563715">NdisOpenAdapterEx</a>

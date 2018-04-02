@@ -46,23 +46,23 @@ req.product: Windows 10 or later.
 
 
 # RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER function
-The <b>RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER</b> method initializes the <a href="..\wpprecorder\ns-wpprecorder-_recorder_log_create_params.md">RECORDER_LOG_CREATE_PARAMS</a> with the pointer to link logs.
+The <b>RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER</b> method initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/dn914608">RECORDER_LOG_CREATE_PARAMS</a> with the pointer to link logs.
 
 ## Syntax
 
-````
-FORCEINLINE void RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER(
-  _Out_    PRECORDER_LOG_CREATE_PARAMS Params,
-  _In_opt_ PSTR                        LogIdentifier,
-  _In_     PVOID                       LogIdentifierAppendPointer
+```
+void RECORDER_LOG_CREATE_PARAMS_INIT_APPEND_POINTER(
+  PRECORDER_LOG_CREATE_PARAMS Params,
+  PSTR                        LogIdentifier,
+  PVOID                       LogIdentifierAppendPointer
 );
-````
+```
 
 ## Parameters
 
 `Params`
 
-A pointer to a <a href="..\wpprecorder\ns-wpprecorder-_recorder_log_create_params.md">RECORDER_LOG_CREATE_PARAMS</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn914608">RECORDER_LOG_CREATE_PARAMS</a> structure.
 
 `LogIdentifier`
 

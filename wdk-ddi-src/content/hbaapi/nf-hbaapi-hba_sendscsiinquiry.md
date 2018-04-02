@@ -7,7 +7,7 @@ old-location: storage\hba_sendscsiinquiry.htm
 old-project: storage
 ms.assetid: 6239f9b5-99e9-4ed7-b2a8-863c1784692b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_SendScsiInquiry, HBA_SendScsiInquiry routine [Storage Devices], fibreHBA_rtns_7a60c4a4-d9d4-408f-b5c9-6cb593f510fb.xml, hbaapi/HBA_SendScsiInquiry, storage.hba_sendscsiinquiry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,19 +49,19 @@ The <b>HBA_SendScsiInquiry</b> routine sends a SCSI inquiry command to the indic
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_SendScsiInquiry(
-  _In_  HBA_HANDLE handle,
-  _In_  HBA_WWN    portWWN,
-  _In_  HBA_UINT64 fcLUN,
-  _In_  HBA_UINT8  EVPD,
-  _In_  HBA_UINT32 PageCode,
-  _Out_ void       *pRspBuffer,
-  _In_  HBA_UINT32 pRespBufferSize,
-  _Out_ void       *pSenseBuffer,
-  _In_  HBA_UINT32 SenseBufferSize
+  IN HBA_HANDLE Handle,
+  IN HBA_WWN    PortWWN,
+  IN HBA_UINT64 FcLUN,
+  IN HBA_UINT8  EVPD,
+  IN HBA_UINT32 PageCode,
+  OUT void      *pRspBuffer,
+  IN HBA_UINT32 RspBufferSize,
+  OUT void      *pSenseBuffer,
+  IN HBA_UINT32 SenseBufferSize
 );
-````
+```
 
 ## Parameters
 
@@ -179,8 +179,8 @@ Returned if an unspecified error occurred that prevented the execution of the SC
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>

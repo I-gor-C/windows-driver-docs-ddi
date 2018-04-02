@@ -7,7 +7,7 @@ old-location: buses\usbbuildinterruptorbulktransferrequest.htm
 old-project: usbref
 ms.assetid: 2500fa22-b3f9-419d-9e37-5060b83403fb
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UsbBuildInterruptOrBulkTransferRequest, UsbBuildInterruptOrBulkTransferRequest routine [Buses], buses.usbbuildinterruptorbulktransferrequest, usbdlib/UsbBuildInterruptOrBulkTransferRequest, usbfunc_ecc1d157-942d-4d0e-9c07-9fef00cd5faf.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,32 +46,32 @@ req.product: Windows 10 or later.
 
 
 # UsbBuildInterruptOrBulkTransferRequest function
-The <b>UsbBuildInterruptOrBulkTransferRequest</b> macro formats an <a href="..\usb\ns-usb-_urb.md">URB</a> to send or receive data on a bulk pipe, or to receive data from an interrupt pipe.
+The <b>UsbBuildInterruptOrBulkTransferRequest</b> macro formats an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to send or receive data on a bulk pipe, or to receive data from an interrupt pipe.
 
 ## Syntax
 
-````
+```
 void UsbBuildInterruptOrBulkTransferRequest(
-  _Inout_  PURB             urb,
-  _In_     USHORT           length,
-  _In_     USBD_PIPE_HANDLE pipeHandle,
-  _In_opt_ PVOID            transferBuffer,
-  _In_opt_ PMDL             transferBufferMDL,
-  _In_     ULONG            transferBufferLength,
-  _In_     ULONG            transferFlags,
-  _In_     PURB             link
+   urb,
+   length,
+   pipeHandle,
+   transferBuffer,
+   transferBufferMDL,
+   transferBufferLength,
+   transferFlags,
+   link
 );
-````
+```
 
 ## Parameters
 
 `urb`
 
-Pointer to an <a href="..\usb\ns-usb-_urb.md">URB</a> to be formatted as an interrupt or bulk transfer request.
+Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> to be formatted as an interrupt or bulk transfer request.
 
 `length`
 
-Specifies the size, in bytes, of the <a href="..\usb\ns-usb-_urb.md">URB</a>.
+Specifies the size, in bytes, of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>.
 
 `pipeHandle`
 
@@ -125,7 +125,7 @@ None
 
 ## See Also
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
 
 
 
@@ -133,4 +133,4 @@ None
 
 
 
-<a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a>

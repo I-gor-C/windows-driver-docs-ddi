@@ -55,17 +55,17 @@ The <b>WdfUsbTargetPipeIsOutEndpoint</b> method determines whether a specified U
 
 ## Syntax
 
-````
+```
 BOOLEAN WdfUsbTargetPipeIsOutEndpoint(
-  _In_ WDFUSBPIPE Pipe
+  WDFUSBPIPE Pipe
 );
-````
+```
 
 ## Parameters
 
 `Pipe`
 
-A handle to a framework pipe object that represents a bulk pipe or interrupt pipe and was obtained by calling <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>.
+A handle to a framework pipe object that represents a bulk pipe or interrupt pipe and was obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550057">WdfUsbInterfaceGetConfiguredPipe</a>.
 
 
 ## Return Value
@@ -109,12 +109,12 @@ isOutEndPoint = WdfUsbTargetPipeIsOutEndpoint(usbPipe);</pre>
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_direction_out.md">WDF_USB_PIPE_DIRECTION_OUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553032">WDF_USB_PIPE_DIRECTION_OUT</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550057">WdfUsbInterfaceGetConfiguredPipe</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeisinendpoint.md">WdfUsbTargetPipeIsInEndpoint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551151">WdfUsbTargetPipeIsInEndpoint</a>

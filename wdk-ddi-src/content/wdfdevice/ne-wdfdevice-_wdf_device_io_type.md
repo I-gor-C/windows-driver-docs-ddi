@@ -50,15 +50,16 @@ req.product: Windows 10 or later.
 The <b>WDF_DEVICE_IO_TYPE</b> enumeration is used to specify a <a href="https://msdn.microsoft.com/f95a0aec-65f9-44c9-8ae5-11bb4d832752">method for accessing data buffers</a>.
 
 ## Syntax
-````
-typedef enum _WDF_DEVICE_IO_TYPE { 
-  WdfDeviceIoUndefined         = 0,
-  WdfDeviceIoNeither           = 1,
-  WdfDeviceIoBuffered          = 2,
-  WdfDeviceIoDirect            = 3,
-  WdfDeviceIoBufferedOrDirect  = 4
+```
+typedef enum _WDF_DEVICE_IO_TYPE {
+  WdfDeviceIoUndefined         ,
+  WdfDeviceIoNeither           ,
+  WdfDeviceIoBuffered          ,
+  WdfDeviceIoDirect            ,
+  WdfDeviceIoBufferedOrDirect  ,
+  WdfDeviceIoMaximum
 } WDF_DEVICE_IO_TYPE, *PWDF_DEVICE_IO_TYPE;
-````
+```
 
 ## Constants
 
@@ -101,9 +102,9 @@ typedef enum _WDF_DEVICE_IO_TYPE {
 
 ## Remarks
 
-The <b>WDF_DEVICE_IO_TYPE</b> enumeration is used to specify buffer access method types in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a> structure.
+The <b>WDF_DEVICE_IO_TYPE</b> enumeration is used to specify buffer access method types in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265642">WDF_IO_TYPE_CONFIG</a> structure.
 
-The <a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a> structure is used  as input to <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a> and <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotype.md">WdfDeviceInitSetIoType</a>.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/dn265642">WDF_IO_TYPE_CONFIG</a> structure is used  as input to <a href="https://msdn.microsoft.com/library/windows/hardware/dn265604">WdfDeviceInitSetIoTypeEx</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff546128">WdfDeviceInitSetIoType</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -114,12 +115,12 @@ The <a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFI
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265642">WDF_IO_TYPE_CONFIG</a>
 
 
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546128">WdfDeviceInitSetIoType</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotype.md">WdfDeviceInitSetIoType</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265604">WdfDeviceInitSetIoTypeEx</a>

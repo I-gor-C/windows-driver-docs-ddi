@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level (See Remarks section)
+req.irql: 
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -45,32 +45,32 @@ req.product: Windows 10 or later.
 ---
 
 # _VENDOR_ATTR structure
-The VENDOR_ATTR structure defines the data that is stored in the <b>VendorAttr</b> member of the <a href="..\smclib\ns-smclib-_smartcard_extension.md">SMARTCARD_EXTENSION</a> structure. VENDOR_ATTR also holds information that identifies the smart card reader, such as the vendor name, unit number, and serial number.
+The VENDOR_ATTR structure defines the data that is stored in the <b>VendorAttr</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548974">SMARTCARD_EXTENSION</a> structure. VENDOR_ATTR also holds information that identifies the smart card reader, such as the vendor name, unit number, and serial number.
 
 ## Syntax
-````
+```
 typedef struct _VENDOR_ATTR {
   struct {
+    UCHAR  Buffer[MAXIMUM_ATTR_STRING_LENGTH];
     USHORT Length;
-    UCHAR  Buffer[MAXIMUM_ATTR_STRING_LENGTH];
-  } VendorName;
+  } VendorName;
   struct {
+    UCHAR  Buffer[MAXIMUM_ATTR_STRING_LENGTH];
     USHORT Length;
-    UCHAR  Buffer[MAXIMUM_ATTR_STRING_LENGTH];
-  } IfdType;
-  ULONG  UnitNo;
+  } IfdType;
+  ULONG  UnitNo;
   struct {
     USHORT BuildNumber;
-    UCHAR  VersionMinor;
-    UCHAR  VersionMajor;
-  } IfdVersion;
+    UCHAR  VersionMajor;
+    UCHAR  VersionMinor;
+  } IfdVersion;
   struct {
+    UCHAR  Buffer[MAXIMUM_ATTR_STRING_LENGTH];
     USHORT Length;
-    UCHAR  Buffer[MAXIMUM_ATTR_STRING_LENGTH];
-  } IfdSerialNo;
-  ULONG  Reserved[25];
-} VENDOR_ATTR, *PVENDOR_ATTR;
-````
+  } IfdSerialNo;
+  ULONG  Reserved[25];
+} *PVENDOR_ATTR, VENDOR_ATTR;
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: kernel\clfsmgmtquerypolicy.htm
 old-project: kernel
 ms.assetid: c9cc9124-ee15-40df-b149-a9f3b26d7c24
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsMgmtQueryPolicy, ClfsMgmtQueryPolicy routine [Kernel-Mode Driver Architecture], Clfs_management_6f3ccba5-05e5-4022-9849-220aeefbde77.xml, kernel.clfsmgmtquerypolicy, wdm/ClfsMgmtQueryPolicy
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.product: Windows 10 or later.
 
 
 # ClfsMgmtQueryPolicy function
-The <b>ClfsMgmtQueryPolicy</b> routine retrieves a specific <a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a> structure for a log.
+The <b>ClfsMgmtQueryPolicy</b> routine retrieves a specific <a href="https://msdn.microsoft.com/library/windows/hardware/ff541842">CLFS_MGMT_POLICY</a> structure for a log.
 
 ## Syntax
 
-````
-NTSTATUS ClfsMgmtQueryPolicy(
-  _In_  PLOG_FILE_OBJECT      LogFile,
-  _In_  CLFS_MGMT_POLICY_TYPE PolicyType,
-  _Out_ PCLFS_MGMT_POLICY     Policy,
-  _Out_ PULONG                PolicyLength
+```
+CLFSUSER_API NTSTATUS ClfsMgmtQueryPolicy(
+  PLOG_FILE_OBJECT      LogFile,
+  CLFS_MGMT_POLICY_TYPE PolicyType,
+  PCLFS_MGMT_POLICY     Policy,
+  PULONG                PolicyLength
 );
-````
+```
 
 ## Parameters
 
@@ -68,11 +68,11 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff55
 
 `PolicyType`
 
-A value of the <a href="..\wdm\ne-wdm-_clfs_mgmt_policy_type.md">CLFS_MGMT_POLICY_TYPE</a> enumeration that identifies the type of policy to be retrieved.
+A value of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541849">CLFS_MGMT_POLICY_TYPE</a> enumeration that identifies the type of policy to be retrieved.
 
 `Policy`
 
-An instance of the <a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a> structure that contains the policy.
+An instance of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541842">CLFS_MGMT_POLICY</a> structure that contains the policy.
 
 `PolicyLength`
 
@@ -183,8 +183,8 @@ This routine might also return other <a href="https://msdn.microsoft.com/library
 
 ## See Also
 
-<a href="..\wdm\ne-wdm-_clfs_mgmt_policy_type.md">CLFS_MGMT_POLICY_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541842">CLFS_MGMT_POLICY</a>
 
 
 
-<a href="..\wdm\ns-wdm-_clfs_mgmt_policy.md">CLFS_MGMT_POLICY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541849">CLFS_MGMT_POLICY_TYPE</a>

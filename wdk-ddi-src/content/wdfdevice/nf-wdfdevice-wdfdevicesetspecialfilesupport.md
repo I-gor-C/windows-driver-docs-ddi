@@ -53,13 +53,13 @@ The <b>WdfDeviceSetSpecialFileSupport</b> method enables or disables a function 
 
 ## Syntax
 
-````
-VOID WdfDeviceSetSpecialFileSupport(
-  _In_ WDFDEVICE             Device,
-  _In_ WDF_SPECIAL_FILE_TYPE FileType,
-  _In_ BOOLEAN               FileTypeIsSupported
+```
+void WdfDeviceSetSpecialFileSupport(
+  WDFDEVICE             Device,
+  WDF_SPECIAL_FILE_TYPE FileType,
+  BOOLEAN               FileTypeIsSupported
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ A handle to a framework device object.
 
 `FileType`
 
-A <a href="..\wdfdevice\ne-wdfdevice-_wdf_special_file_type.md">WDF_SPECIAL_FILE_TYPE</a>-typed enumerator that identifies the type of special file that the driver supports.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552509">WDF_SPECIAL_FILE_TYPE</a>-typed enumerator that identifies the type of special file that the driver supports.
 
 `FileTypeIsSupported`
 
@@ -84,7 +84,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## Remarks
 
-A function driver typically calls <b>WdfDeviceSetSpecialFileSupport</b> from within its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> callback function.
+A function driver typically calls <b>WdfDeviceSetSpecialFileSupport</b> from within its <a href="https://msdn.microsoft.com/b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a">EvtDriverDeviceAdd</a> callback function.
 
 Each driver's support for special files is initially disabled until the driver calls <b>WdfDeviceSetSpecialFileSupport</b>.
 
@@ -132,8 +132,8 @@ WdfDeviceSetSpecialFileSupport(
 
 ## See Also
 
-<a href="..\wdfdevice\ne-wdfdevice-_wdf_special_file_type.md">WDF_SPECIAL_FILE_TYPE</a>
+<a href="https://msdn.microsoft.com/b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a">EvtDriverDeviceAdd</a>
 
 
 
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552509">WDF_SPECIAL_FILE_TYPE</a>

@@ -50,20 +50,20 @@ The<b> KsStreamPointerAdvanceOffsetsAndUnlock</b> function advances <i>StreamPoi
 
 ## Syntax
 
-````
+```
 void KsStreamPointerAdvanceOffsetsAndUnlock(
-  _In_ PKSSTREAM_POINTER StreamPointer,
-  _In_ ULONG             InUsed,
-  _In_ ULONG             OutUsed,
-  _In_ BOOLEAN           Eject
+  PKSSTREAM_POINTER StreamPointer,
+  ULONG             InUsed,
+  ULONG             OutUsed,
+  BOOLEAN           Eject
 );
-````
+```
 
 ## Parameters
 
 `StreamPointer`
 
-A pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer to advance and unlock.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a> structure representing the stream pointer to advance and unlock.
 
 `InUsed`
 
@@ -97,20 +97,20 @@ If using the specified number of bytes in the stream pointer results in zero rem
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksstreampointerlock.md">KsStreamPointerLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567125">KsStreamPointerAdvance</a>
 
 
 
-<a href="..\ks\nf-ks-ksstreampointerdelete.md">KsStreamPointerDelete</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn892389">KsStreamPointerClone</a>
 
 
 
-<a href="..\ks\nf-ks-ksstreampointeradvance.md">KsStreamPointerAdvance</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567130">KsStreamPointerDelete</a>
 
 
 
-<a href="..\ks\nf-ks-ksstreampointerclone.md">KsStreamPointerClone</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn892390">KsStreamPointerLock</a>
 
 
 
-<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567137">KsStreamPointerUnlock</a>

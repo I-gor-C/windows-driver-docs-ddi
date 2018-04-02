@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 The <b>WDF_INTERRUPT_POLARITY</b> enumeration type is used to specify an interrupt signal's polarity.
 
 ## Syntax
-````
-typedef enum _WDF_INTERRUPT_POLARITY { 
-  WdfInterruptPolarityUnknown  = 0,
-  WdfInterruptActiveHigh       = 1,
-  WdfInterruptActiveLow        = 2
-} WDF_INTERRUPT_POLARITY, *PWDF_INTERRUPT_POLARITY;
-````
+```
+typedef enum _WDF_INTERRUPT_POLARITY {
+  WdfInterruptPolarityUnknown  ,
+  WdfInterruptActiveHigh       ,
+  WdfInterruptActiveLow
+} *PWDF_INTERRUPT_POLARITY, WDF_INTERRUPT_POLARITY;
+```
 
 ## Constants
 
@@ -80,7 +80,7 @@ typedef enum _WDF_INTERRUPT_POLARITY {
 
 ## Remarks
 
-The <b>WDF_INTERRUPT_POLARITY</b> enumeration type is used to specify a member of the <a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a> structure.
+The <b>WDF_INTERRUPT_POLARITY</b> enumeration type is used to specify a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh464020">WDF_INTERRUPT_INFO</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,4 +91,4 @@ The <b>WDF_INTERRUPT_POLARITY</b> enumeration type is used to specify a member o
 
 ## See Also
 
-<a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh464020">WDF_INTERRUPT_INFO</a>

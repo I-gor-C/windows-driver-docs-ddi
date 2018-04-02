@@ -7,7 +7,7 @@ old-location: buses\ucm_pd_power_data_object_init_ulong.htm
 old-project: usbref
 ms.assetid: F5520F9F-159E-42D9-A7F4-426CB935D29D
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UCM_PD_POWER_DATA_OBJECT_INIT_ULONG, UCM_PD_POWER_DATA_OBJECT_INIT_ULONG function [Buses], buses.ucm_pd_power_data_object_init_ulong, ucmtypes/UCM_PD_POWER_DATA_OBJECT_INIT_ULONG
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,26 +46,26 @@ req.product: Windows 10 or later.
 
 
 # UCM_PD_POWER_DATA_OBJECT_INIT_ULONG function
-Initializes a <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a>  structure by interpreting Power Data Object values and sets each field correctly.
+Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a>  structure by interpreting Power Data Object values and sets each field correctly.
 
 ## Syntax
 
-````
-FORCEINLINE void UCM_PD_POWER_DATA_OBJECT_INIT_ULONG(
-  _Out_ PUCM_PD_POWER_DATA_OBJECT Pdo,
-  _In_  ULONG                     UlongInLittleEndian
+```
+void UCM_PD_POWER_DATA_OBJECT_INIT_ULONG(
+  PUCM_PD_POWER_DATA_OBJECT Pdo,
+  ULONG                     UlongInLittleEndian
 );
-````
+```
 
 ## Parameters
 
 `Pdo`
 
-A pointer to a <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> structure.
 
 `UlongInLittleEndian`
 
-The ULONG value to set in the <b>Ul</b> member of   <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a>.
+The ULONG value to set in the <b>Ul</b> member of   <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a>.
 
 
 ## Return Value
@@ -74,11 +74,11 @@ This function does not return a value.
 
 ## Remarks
 
-A Power Data Object, as defined by the Power Delivery specification,  is a 32-bit value. The hardware is expected to retrieve the Power Data Objects as 32-bit values. This utility function initializes a <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a>  structure by interpreting those values and setting each field correctly.
+A Power Data Object, as defined by the Power Delivery specification,  is a 32-bit value. The hardware is expected to retrieve the Power Data Objects as 32-bit values. This utility function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a>  structure by interpreting those values and setting each field correctly.
 
 
 The 4 byte value is expected to be in little-endian format.
-The  structure is 4 bytes and the client driver can memcopy the Power Data Objects from the hardware into an array of <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a> structures.
+The  structure is 4 bytes and the client driver can memcopy the Power Data Objects from the hardware into an array of <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,4 +91,4 @@ The  structure is 4 bytes and the client driver can memcopy the Power Data Objec
 
 ## See Also
 
-<a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a>

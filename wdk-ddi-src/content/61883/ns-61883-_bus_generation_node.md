@@ -47,13 +47,13 @@ req.typenames: BUS_GENERATION_NODE, *PBUS_GENERATION_NODE
 The BUS_GENERATION_NODE structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536983">Av61883_GetUnitInfo</a> request to retrieve bus characteristics.
 
 ## Syntax
-````
+```
 typedef struct _BUS_GENERATION_NODE {
-  ULONG        GenerationCount;
-  NODE_ADDRESS LocalNodeAddress;
-  NODE_ADDRESS DeviceNodeAddress;
+  OUT ULONG        GenerationCount;
+  OUT NODE_ADDRESS LocalNodeAddress;
+  OUT NODE_ADDRESS DeviceNodeAddress;
 } BUS_GENERATION_NODE, *PBUS_GENERATION_NODE;
-````
+```
 
 ## Members
 

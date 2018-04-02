@@ -7,7 +7,7 @@ old-location: kernel\rtlulonglongtolong.htm
 old-project: kernel
 ms.assetid: DC1784C6-0775-46E9-A439-B522713C297C
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlULongLongToLong, RtlULongLongToLong function [Kernel-Mode Driver Architecture], kernel.rtlulonglongtolong, ntintsafe/RtlULongLongToLong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>ULONGLONG</b> to a value of type <b>LONG</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlULongLongToLong(
-  _In_  ULONGLONG ullOperand,
-  _Out_ LONG      *plResult
+  ULONGLONG ullOperand,
+  LONG      *plResult
 );
-````
+```
 
 ## Parameters
 

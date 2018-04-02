@@ -49,17 +49,17 @@ The <b>HidD_FreePreparsedData</b> routine releases the resources that the HID cl
 
 ## Syntax
 
-````
-BOOLEAN __stdcall HidD_FreePreparsedData(
-  _In_ PHIDP_PREPARSED_DATA PreparsedData
+```
+BOOLEAN HidD_FreePreparsedData(
+  __drv_freesMem(Mem)PHIDP_PREPARSED_DATA PreparsedData
 );
-````
+```
 
 ## Parameters
 
 `PreparsedData`
 
-Pointer to the buffer, returned by <a href="..\hidsdi\nf-hidsdi-hidd_getpreparseddata.md">HidD_GetPreparsedData</a>, that is freed.
+Pointer to the buffer, returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff539679">HidD_GetPreparsedData</a>, that is freed.
 
 
 ## Return Value
@@ -70,7 +70,7 @@ Pointer to the buffer, returned by <a href="..\hidsdi\nf-hidsdi-hidd_getpreparse
 
 Only user-mode applications can call <b>HidD_FreePreparsedData</b>.
 
-To obtain a collection's preparsed data, use <a href="..\hidsdi\nf-hidsdi-hidd_getpreparseddata.md">HidD_GetPreparsedData</a>.
+To obtain a collection's preparsed data, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539679">HidD_GetPreparsedData</a>.
 
 For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db-8cff-9fac30209952">HID Collections</a>.
 
@@ -85,8 +85,8 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539679">HidD_GetPreparsedData</a>
+
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-
-
-
-<a href="..\hidsdi\nf-hidsdi-hidd_getpreparseddata.md">HidD_GetPreparsedData</a>

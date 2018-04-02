@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 The <b>WDF_PROPERTY_STORE_DISPOSITION</b> enumeration contains values that indicate whether a registry value was created or already existed when a driver obtained a property store interface.
 
 ## Syntax
-````
-typedef enum _WDF_PROPERTY_STORE_DISPOSITION { 
-  CreatedNewStore      = 0x1,
-  OpenedExistingStore  = 0x2
+```
+typedef enum _WDF_PROPERTY_STORE_DISPOSITION {
+  CreatedNewStore      ,
+  OpenedExistingStore
 } WDF_PROPERTY_STORE_DISPOSITION;
-````
+```
 
 ## Constants
 
@@ -83,7 +83,7 @@ The <b>WDF_PROPERTY_STORE_DISPOSITION</b> enumeration is used as output from the
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
 
 
 
@@ -91,4 +91,4 @@ The <b>WDF_PROPERTY_STORE_DISPOSITION</b> enumeration is used as output from the
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558842">IWDFDevice::RetrieveDevicePropertyStore</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560228">IWDFPropertyStoreFactory::RetrieveDevicePropertyStore</a>

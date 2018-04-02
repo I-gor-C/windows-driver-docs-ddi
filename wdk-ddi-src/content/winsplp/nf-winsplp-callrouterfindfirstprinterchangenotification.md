@@ -50,15 +50,15 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-DWORD WINAPI CallRouterFindFirstPrinterChangeNotification(
-  _In_ HANDLE                  hPrinterRPC,
-       DWORD                   fdwFilterFlags,
-       DWORD                   fdwOptions,
-  _In_ HANDLE                  hNotify,
-  _In_ PPRINTER_NOTIFY_OPTIONS pPrinterNotifyOptions
+```
+DWORD CallRouterFindFirstPrinterChangeNotification(
+  HANDLE                  hPrinterRPC,
+  DWORD                   fdwFilterFlags,
+  DWORD                   fdwOptions,
+  HANDLE                  hNotify,
+  PPRINTER_NOTIFY_OPTIONS pPrinterNotifyOptions
 );
-````
+```
 
 ## Parameters
 

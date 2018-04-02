@@ -47,12 +47,12 @@ req.typenames: KS_DATARANGE_ANALOGVIDEO, *PKS_DATARANGE_ANALOGVIDEO
 The KS_DATARANGE_ANALOGVIDEO structure describes an analog video stream.
 
 ## Syntax
-````
+```
 typedef struct tagKS_DATARANGE_ANALOGVIDEO {
-  KSDATARANGE        DataRange;
+  KSDATARANGE        DataRange;
   KS_ANALOGVIDEOINFO AnalogVideoInfo;
 } KS_DATARANGE_ANALOGVIDEO, *PKS_DATARANGE_ANALOGVIDEO;
-````
+```
 
 ## Members
 
@@ -73,8 +73,8 @@ Specifies the details of the analog video stream.
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_analogvideoinfo.md">KS_ANALOGVIDEOINFO</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567295">KS_ANALOGVIDEOINFO</a>

@@ -7,7 +7,7 @@ old-location: kernel\rtlarebitsset.htm
 old-project: kernel
 ms.assetid: 7343f619-cf89-4768-b488-fe95f1da749d
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlAreBitsSet, RtlAreBitsSet routine [Kernel-Mode Driver Architecture], k109_8d2248d2-13e9-4f90-8d09-a3ea51579da8.xml, kernel.rtlarebitsset, wdm/RtlAreBitsSet
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,19 +50,19 @@ The <b>RtlAreBitsSet</b> routine determines whether a given range of bits within
 
 ## Syntax
 
-````
-BOOLEAN RtlAreBitsSet(
-  _In_ PRTL_BITMAP BitMapHeader,
-  _In_ ULONG       StartingIndex,
-  _In_ ULONG       Length
+```
+NTSYSAPI BOOLEAN RtlAreBitsSet(
+  PRTL_BITMAP BitMapHeader,
+  ULONG       StartingIndex,
+  ULONG       Length
 );
-````
+```
 
 ## Parameters
 
 `BitMapHeader`
 
-A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a> routine.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563614">RTL_BITMAP</a> structure that describes the bitmap. This structure must have been initialized by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561925">RtlInitializeBitMap</a> routine.
 
 `StartingIndex`
 
@@ -97,20 +97,20 @@ Callers of <b>RtlAreBitsSet</b> must be running at IRQL &lt;= APC_LEVEL if the m
 
 
 
-<a href="..\wdm\nf-wdm-rtlinitializebitmap.md">RtlInitializeBitMap</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561742">RtlAreBitsClear</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlsetallbits.md">RtlSetAllBits</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561751">RtlCheckBit</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlarebitsclear.md">RtlAreBitsClear</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561890">RtlFindSetBits</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlfindsetbits.md">RtlFindSetBits</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561925">RtlInitializeBitMap</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlcheckbit.md">RtlCheckBit</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562770">RtlSetAllBits</a>

@@ -47,16 +47,16 @@ req.typenames: CMP_CREATE_PLUG, *PCMP_CREATE_PLUG
 This structure is used to create a plug. The request creates an input or output plug control register (iPCR or oPCR) on the local host. A driver is responsible for deleting all of the plugs it has created before the system unloads the driver.
 
 ## Syntax
-````
+```
 typedef struct _CMP_CREATE_PLUG {
-  CMP_PLUG_TYPE       PlugType;
-  AV_PCR              Pcr;
-  PCMP_NOTIFY_ROUTINE pfnNotify;
-  PVOID               Context;
-  ULONG               PlugNum;
-  HANDLE              hPlug;
-} CMP_CREATE_PLUG, *PCMP_CREATE_PLUG;
-````
+  IN CMP_PLUG_TYPE       PlugType;
+  IN AV_PCR              Pcr;
+  IN PCMP_NOTIFY_ROUTINE pfnNotify;
+  IN PVOID               Context;
+  OUT ULONG              PlugNum;
+  OUT HANDLE             hPlug;
+} *PCMP_CREATE_PLUG, CMP_CREATE_PLUG;
+```
 
 ## Members
 

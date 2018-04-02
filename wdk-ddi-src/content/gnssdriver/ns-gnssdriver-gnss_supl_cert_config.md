@@ -3,12 +3,12 @@ UID: NS:gnssdriver.GNSS_SUPL_CERT_CONFIG
 title: GNSS_SUPL_CERT_CONFIG
 author: windows-driver-content
 description: This structure contains SUPL certificate information.
-old-location: gnss\gnss_supl_cert_config.htm
-old-project: gnss
+old-location: sensors\gnss_supl_cert_config.htm
+old-project: sensors
 ms.assetid: F974D5E2-7230-4F85-9C1A-7CE7E240DBE1
 ms.author: windowsdriverdev
-ms.date: 2/15/2018
-ms.keywords: "*PGNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG structure [Sensor Devices], PGNSS_SUPL_CERT_CONFIG, PGNSS_SUPL_CERT_CONFIG structure pointer [Sensor Devices], gnss.gnss_supl_cert_config, gnssdriver/GNSS_SUPL_CERT_CONFIG, gnssdriver/PGNSS_SUPL_CERT_CONFIG"
+ms.date: 2/22/2018
+ms.keywords: "*PGNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG structure [Sensor Devices], PGNSS_SUPL_CERT_CONFIG, PGNSS_SUPL_CERT_CONFIG structure pointer [Sensor Devices], gnssdriver/GNSS_SUPL_CERT_CONFIG, gnssdriver/PGNSS_SUPL_CERT_CONFIG, sensors.gnss_supl_cert_config"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
@@ -47,18 +47,17 @@ req.typenames: GNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG
 This structure contains SUPL certificate information.
 
 ## Syntax
-````
-typedef struct {
-  ULONG                 Size;
-  ULONG                 Version;
+```
+typedef struct GNSS_SUPL_CERT_CONFIG {
+  ULONG                 Size;
+  ULONG                 Version;
   GNSS_SUPL_CERT_ACTION CertAction;
-  WCHAR                 SuplCertName[MAX_PATH];
-  BOOL                  IsRoot;
-  ULONG                 CertSize;
-  BYTE                  Unused[512];
-  BYTE                  CertData[ANYSIZE_ARRAY];
-} GNSS_SUPL_CERT_CONFIG, *PGNSS_SUPL_CERT_CONFIG;
-````
+  CHAR                  SuplCertName[MAX_PATH];
+  ULONG                 CertSize;
+  BYTE                  Unused[512];
+  BYTE                  CertData[ANYSIZE_ARRAY];
+} *PGNSS_SUPL_CERT_CONFIG, GNSS_SUPL_CERT_CONFIG;
+```
 
 ## Members
 
@@ -73,7 +72,7 @@ Version number.
 
 `CertAction`
 
-A <a href="..\gnssdriver\ne-gnssdriver-gnss_supl_cert_action.md">GNSS_SUPL_CERT_ACTION</a> enumeration value that specifies the action to take on the certificate.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/dn925225">GNSS_SUPL_CERT_ACTION</a> enumeration value that specifies the action to take on the certificate.
 
 <table></table>
  

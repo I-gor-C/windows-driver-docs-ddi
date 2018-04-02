@@ -7,7 +7,7 @@ old-location: kernel\objectprecallback.htm
 old-project: kernel
 ms.assetid: 257c6c7d-be79-43bf-b2cd-f561e1741f90
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: DrvrRtns_8ccbcf60-457d-4bd7-b059-423a47a44374.xml, ObjectPreCallback, ObjectPreCallback callback function [Kernel-Mode Driver Architecture], POB_PRE_OPERATION_CALLBACK, kernel.objectprecallback, wdm/ObjectPreCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,11 +64,11 @@ OB_PREOP_CALLBACK_STATUS PobPreOperationCallback(
 
 `RegistrationContext`
 
-The context that the driver specifies as the <i>CallBackRegistration</i>-&gt;<b>RegistrationContext</b> parameter of the <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a> routine. The meaning of this value is driver-defined.
+The context that the driver specifies as the <i>CallBackRegistration</i>-&gt;<b>RegistrationContext</b> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558692">ObRegisterCallbacks</a> routine. The meaning of this value is driver-defined.
 
 `OperationInformation`
 
-A pointer to an <a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_OPERATION_INFORMATION</a> structure that specifies the parameters of the handle operation.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff558729">OB_PRE_OPERATION_INFORMATION</a> structure that specifies the parameters of the handle operation.
 
 
 ## Return Value
@@ -77,7 +77,7 @@ A pointer to an <a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_
 
 ## Remarks
 
-Use the <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a> routine to register an <i>ObjectPreCallback</i> routine, and use the <a href="..\wdm\nf-wdm-obunregistercallbacks.md">ObUnRegisterCallbacks</a> routine to unregister the routine.
+Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558692">ObRegisterCallbacks</a> routine to register an <i>ObjectPreCallback</i> routine, and use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558712">ObUnRegisterCallbacks</a> routine to unregister the routine.
 
 This routine is called at PASSIVE_LEVEL in an arbitrary thread context with normal kernel APCs disabled. Special kernel APCs are not disabled. For more information about APCs, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564853">Types of APCs</a>.
 
@@ -91,16 +91,16 @@ This routine is called at PASSIVE_LEVEL in an arbitrary thread context with norm
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-obunregistercallbacks.md">ObUnRegisterCallbacks</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558729">OB_PRE_OPERATION_INFORMATION</a>
 
 
 
-<a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558692">ObRegisterCallbacks</a>
 
 
 
-<a href="..\wdm\nc-wdm-pob_post_operation_callback.md">ObjectPostCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558712">ObUnRegisterCallbacks</a>
 
 
 
-<a href="..\wdm\ns-wdm-_ob_pre_operation_information.md">OB_PRE_OPERATION_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557741">ObjectPostCallback</a>

@@ -7,7 +7,7 @@ old-location: netvista\wwan_emergency_mode.htm
 old-project: netvista
 ms.assetid: d901e763-5e1c-443d-ba9c-9d1e4413bd47
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWWAN_EMERGENCY_MODE, PWWAN_EMERGENCY_MODE, PWWAN_EMERGENCY_MODE enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_EMERGENCY_MODE, WWAN_EMERGENCY_MODE enumeration [Network Drivers Starting with Windows Vista], WwanEmergencyModeMax, WwanEmergencyModeOff, WwanEmergencyModeOn, WwanRef_8b2029ff-7d10-4f36-a4c0-6b41f464b726.xml, _WWAN_EMERGENCY_MODE, netvista.wwan_emergency_mode, wwan/PWWAN_EMERGENCY_MODE, wwan/WWAN_EMERGENCY_MODE, wwan/WwanEmergencyModeMax, wwan/WwanEmergencyModeOff, wwan/WwanEmergencyModeOn"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ The WWAN_EMERGENCY_MODE enumeration lists the different types of emergency modes
   by the MB device.
 
 ## Syntax
-````
-typedef enum _WWAN_EMERGENCY_MODE { 
-  WwanEmergencyModeOff  = 0,
-  WwanEmergencyModeOn,
+```
+typedef enum _WWAN_EMERGENCY_MODE {
+  WwanEmergencyModeOff  ,
+  WwanEmergencyModeOn   ,
   WwanEmergencyModeMax
 } WWAN_EMERGENCY_MODE, *PWWAN_EMERGENCY_MODE;
-````
+```
 
 ## Constants
 
@@ -86,4 +86,4 @@ typedef enum _WWAN_EMERGENCY_MODE {
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_ready_info.md">WWAN_READY_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571226">WWAN_READY_INFO</a>

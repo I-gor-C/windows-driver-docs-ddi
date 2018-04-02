@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_device_service_session_read.htm
 old-project: netvista
 ms.assetid: 6417E9B6-FDF9-4353-A966-1AFCB14A2735
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_WWAN_DEVICE_SERVICE_SESSION_READ, NDIS_WWAN_DEVICE_SERVICE_SESSION_READ, NDIS_WWAN_DEVICE_SERVICE_SESSION_READ structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_DEVICE_SERVICE_SESSION_READ, PNDIS_WWAN_DEVICE_SERVICE_SESSION_READ structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_DEVICE_SERVICE_SESSION_READ, ndiswwan/NDIS_WWAN_DEVICE_SERVICE_SESSION_READ, ndiswwan/PNDIS_WWAN_DEVICE_SERVICE_SESSION_READ, netvista.ndis_wwan_device_service_session_read"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: NDIS_WWAN_DEVICE_SERVICE_SESSION_READ, *PNDIS_WWAN_DEVICE_SERVICE
 The NDIS_WWAN_DEVICE_SERVICE_SESSION_READ structure represents device service session data that has been read by the miniport driver from the MB device.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_WWAN_DEVICE_SERVICE_SESSION_READ {
-  NDIS_OBJECT_HEADER               Header;
+  NDIS_OBJECT_HEADER               Header;
   WWAN_DEVICE_SERVICE_SESSION_READ ReadData;
-} NDIS_WWAN_DEVICE_SERVICE_SESSION_READ, *PNDIS_WWAN_DEVICE_SERVICE_SESSION_READ;
-````
+} *PNDIS_WWAN_DEVICE_SERVICE_SESSION_READ, NDIS_WWAN_DEVICE_SERVICE_SESSION_READ;
+```
 
 ## Members
 
@@ -105,7 +105,7 @@ sizeof(NDIS_WWAN_DEVICE_SERVICE_SESSION_READ)
  
 
 For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 `ReadData`
 
@@ -120,4 +120,4 @@ The data that has been read from a device service session.
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_device_service_session_read.md">WWAN_DEVICE_SERVICE_SESSION_READ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh831875">WWAN_DEVICE_SERVICE_SESSION_READ</a>

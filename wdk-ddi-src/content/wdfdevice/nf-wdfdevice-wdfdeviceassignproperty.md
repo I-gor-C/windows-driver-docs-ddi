@@ -55,15 +55,15 @@ The <b>WdfDeviceAssignProperty</b> method modifies the current setting of a devi
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDeviceAssignProperty(
-  _In_     WDFDEVICE                 Device,
-  _In_     PWDF_DEVICE_PROPERTY_DATA DeviceProperty,
-  _In_     DEVPROPTYPE               Type,
-  _In_     ULONG                     Size,
-  _In_opt_ PVOID                     Data
+  WDFDEVICE                 Device,
+  PWDF_DEVICE_PROPERTY_DATA DeviceProperty,
+  DEVPROPTYPE               Type,
+  ULONG                     Size,
+  PVOID                     Data
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +73,7 @@ A handle to a framework device object.
 
 `DeviceProperty`
 
-A pointer to a <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_property_data.md">WDF_DEVICE_PROPERTY_DATA</a> structure that identifies the device property to modify.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265632">WDF_DEVICE_PROPERTY_DATA</a> structure that identifies the device property to modify.
 
 `Type`
 
@@ -133,4 +133,4 @@ For information about related methods, see <a href="https://msdn.microsoft.com/C
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigninterfaceproperty.md">WdfDeviceAssignInterfaceProperty</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265600">WdfDeviceAssignInterfaceProperty</a>

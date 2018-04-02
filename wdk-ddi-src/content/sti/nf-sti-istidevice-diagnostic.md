@@ -45,22 +45,22 @@ req.product: Windows 10 or later.
 ---
 
 
-# Diagnostic method
+# IStiDevice::Diagnostic method
 The <b>IStiDevice::Diagnostic</b> method executes diagnostic tests on a still image device.
 
 ## Syntax
 
-````
+```
 HRESULT Diagnostic(
-  [in, out] LPSTI_DIAG pBuffer
+  LPSTI_DIAG pBuffer
 );
-````
+```
 
 ## Parameters
 
 `pBuffer`
 
-Caller-supplied pointer to an <a href="..\sti\ns-sti-_sti_diag.md">STI_DIAG</a> structure specifying the type of tests to be run. On return, the structure contains status information.
+Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548383">STI_DIAG</a> structure specifying the type of tests to be run. On return, the structure contains status information.
 
 
 ## Return Value

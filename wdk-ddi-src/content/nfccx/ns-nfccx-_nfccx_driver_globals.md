@@ -47,11 +47,11 @@ req.typenames: NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS
 
 
 ## Syntax
-````
+```
 typedef struct _NFCCX_DRIVER_GLOBALS {
   ULONG Reserved;
 } NFCCX_DRIVER_GLOBALS, *PNFCCX_DRIVER_GLOBALS;
-````
+```
 
 ## Members
 

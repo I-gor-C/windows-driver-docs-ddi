@@ -7,7 +7,7 @@ old-location: kernel\exreleasespinlockexclusive_.htm
 old-project: kernel
 ms.assetid: D10C65A6-96E7-4BE0-BDD5-EFD129DC424C
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExReleaseSpinLockExclusive, ExReleaseSpinLockExclusive routine [Kernel-Mode Driver Architecture], kernel.exreleasespinlockexclusive_, wdm/ExReleaseSpinLockExclusive
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>ExReleaseSpinLockExclusive</b> routine releases a <a href="https://msdn.m
 
 ## Syntax
 
-````
-VOID ExReleaseSpinLockExclusive (
-  _Inout_ PEX_SPIN_LOCK SpinLock,
-  _In_    KIRQL         OldIrql
+```
+NTKERNELAPI VOID ExReleaseSpinLockExclusive(
+  _Requires_lock_held_(*_Curr_)_Releases_lock_(*_Curr_) PEX_SPIN_LOCK SpinLock ,
+  _IRQL_restores_ KIRQL                                                        OldIrql
 );
-````
+```
 
 ## Parameters
 

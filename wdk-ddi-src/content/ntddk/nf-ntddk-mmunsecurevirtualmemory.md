@@ -7,7 +7,7 @@ old-location: kernel\mmunsecurevirtualmemory.htm
 old-project: kernel
 ms.assetid: 979eef24-e53b-476c-b9db-e56c43630913
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: MmUnsecureVirtualMemory, MmUnsecureVirtualMemory routine [Kernel-Mode Driver Architecture], k106_0bfc6e9e-a4e9-4868-b1fb-da6714146dbf.xml, kernel.mmunsecurevirtualmemory, ntddk/MmUnsecureVirtualMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,21 +45,21 @@ req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 
 
 # MmUnsecureVirtualMemory function
-The <b>MmUnsecureVirtualMemory</b> routine unsecures a memory address range secured by the <a href="..\ntddk\nf-ntddk-mmsecurevirtualmemory.md">MmSecureVirtualMemory</a> routine.
+The <b>MmUnsecureVirtualMemory</b> routine unsecures a memory address range secured by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556374">MmSecureVirtualMemory</a> routine.
 
 ## Syntax
 
-````
-VOID MmUnsecureVirtualMemory(
-  _In_ HANDLE SecureHandle
+```
+NTKERNELAPI VOID MmUnsecureVirtualMemory(
+  HANDLE SecureHandle
 );
-````
+```
 
 ## Parameters
 
 `SecureHandle`
 
-Specifies the value returned by <a href="..\ntddk\nf-ntddk-mmsecurevirtualmemory.md">MmSecureVirtualMemory</a> for the memory address range.
+Specifies the value returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff556374">MmSecureVirtualMemory</a> for the memory address range.
 
 
 ## Return Value
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-mmsecurevirtualmemory.md">MmSecureVirtualMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556374">MmSecureVirtualMemory</a>

@@ -7,7 +7,7 @@ old-location: display\miracast_statistic_data.htm
 old-project: display
 ms.assetid: 94D5C260-4076-4DB7-8ED3-E0549A872FEE
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: MIRACAST_STATISTIC_DATA, MIRACAST_STATISTIC_DATA structure [Display Devices], display.miracast_statistic_data, netdispumdddi/MIRACAST_STATISTIC_DATA
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,29 +47,29 @@ req.typenames: MIRACAST_STATISTIC_DATA
 Contains Miracast statistics data that the user-mode display driver reports to the operating system.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct MIRACAST_STATISTIC_DATA {
   MIRACAST_STATISTIC_TYPE StatisticType;
   union {
     struct {
       MIRACAST_CHUNK_INFO ChunkInfo;
-    } EncodeComplete;
+    } EncodeComplete;
     struct {
       MIRACAST_CHUNK_ID ChunkId;
-    } ChunkSent;
+    } ChunkSent;
     struct {
       MIRACAST_PROTOCOL_EVENT Event;
-    } ProtocolEvent;
+    } ProtocolEvent;
   };
-} MIRACAST_STATISTIC_DATA;
-````
+};
+```
 
 ## Members
 
 
 `StatisticType`
 
-The type of statistics data from the <a href="..\netdispumdddi\ne-netdispumdddi-miracast_statistic_type.md">MIRACAST_STATISTIC_TYPE</a> enumeration.
+The type of statistics data from the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265480">MIRACAST_STATISTIC_TYPE</a> enumeration.
 
 
 ## Requirements
@@ -80,16 +80,16 @@ The type of statistics data from the <a href="..\netdispumdddi\ne-netdispumdddi-
 
 ## See Also
 
-<a href="..\netdispumdddi\ne-netdispumdddi-miracast_protocol_event.md">MIRACAST_PROTOCOL_EVENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265472">MIRACAST_CHUNK_ID</a>
 
 
 
-<a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_info.md">MIRACAST_CHUNK_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265473">MIRACAST_CHUNK_INFO</a>
 
 
 
-<a href="..\netdispumdddi\ne-netdispumdddi-miracast_statistic_type.md">MIRACAST_STATISTIC_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265477">MIRACAST_PROTOCOL_EVENT</a>
 
 
 
-<a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_id.md">MIRACAST_CHUNK_ID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265480">MIRACAST_STATISTIC_TYPE</a>

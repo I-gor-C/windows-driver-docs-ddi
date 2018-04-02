@@ -50,13 +50,13 @@ The <b>BdaPropertyNodeEvents</b> function retrieves a list of events that a node
 
 ## Syntax
 
-````
+```
 NTSTATUS BdaPropertyNodeEvents(
-  _In_      PIRP      Irp,
-  _In_      PKSP_NODE pKSProperty,
-  _Out_opt_ GUID      *pguidProperty
+  PIRP      pIrp,
+  PKSP_NODE pKSProperty,
+  GUID      *pguidProperty
 );
-````
+```
 
 ## Parameters
 
@@ -96,8 +96,8 @@ A BDA minidriver calls the <b>BdaPropertyNodeEvents</b> function to retrieve the
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564326">KSPROPERTY_BDA_NODE_EVENTS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>

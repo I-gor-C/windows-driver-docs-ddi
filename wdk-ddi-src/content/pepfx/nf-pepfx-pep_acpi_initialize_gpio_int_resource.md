@@ -7,7 +7,7 @@ old-location: kernel\pep_acpi_initialize_gpio_int_resource.htm
 old-project: kernel
 ms.assetid: EF8E3D1D-9C87-4083-A022-FD888D370B20
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE, PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE function [Kernel-Mode Driver Architecture], kernel.pep_acpi_initialize_gpio_int_resource, pepfx/PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,38 +45,38 @@ req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
 
 
 # PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE function
-The <b>PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="..\pepfx\ns-pepfx-_pep_acpi_gpio_resource.md">PEP_ACPI_GPIO_RESOURCE</a> structure.
+The <b>PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="https://msdn.microsoft.com/library/windows/hardware/mt186671">PEP_ACPI_GPIO_RESOURCE</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE VOID PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE(
-  _In_  KINTERRUPT_MODE      InterruptType,
-  _In_  KINTERRUPT_POLARITY  LevelType,
-  _In_  BOOLEAN              Shareable,
-  _In_  BOOLEAN              CanWake,
-  _In_  GPIO_PIN_CONFIG_TYPE PinConfig,
-  _In_  USHORT               DebounceTimeout,
-  _In_  UCHAR                ResourceSourceIndex,
-  _In_  PUNICODE_STRING      ResourceSourceName,
-  _In_  BOOLEAN              ResourceUsage,
-  _In_  PUCHAR               VendorData,
-  _In_  USHORT               VendorDataLength,
-  _In_  PUSHORT              PinTable,
-  _In_  UCHAR                PinCount,
-  _Out_ PPEP_ACPI_RESOURCE   Resource
+```
+void PEP_ACPI_INITIALIZE_GPIO_INT_RESOURCE(
+  KINTERRUPT_MODE      InterruptType,
+  KINTERRUPT_POLARITY  LevelType,
+  BOOLEAN              Shareable,
+  BOOLEAN              CanWake,
+  GPIO_PIN_CONFIG_TYPE PinConfig,
+  USHORT               DebounceTimeout,
+  UCHAR                ResourceSourceIndex,
+  PUNICODE_STRING      ResourceSourceName,
+  BOOLEAN              ResourceUsage,
+  PUCHAR               VendorData,
+  USHORT               VendorDataLength,
+  PUSHORT              PinTable,
+  UCHAR                PinCount,
+  PPEP_ACPI_RESOURCE   Resource
 );
-````
+```
 
 ## Parameters
 
 `InterruptType`
 
-A <a href="..\wudfwdm\ne-wudfwdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff554239">KINTERRUPT_MODE</a> enumeration value that identifies the interrupt type.
 
 `LevelType`
 
-A <a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff554243">KINTERRUPT_POLARITY</a> enumeration value that identifies how a device signals an interrupt request on an interrupt line.
 
 `Shareable`
 
@@ -88,7 +88,7 @@ Indicates if the device can be woken from a low-power state.
 
 `PinConfig`
 
-A <a href="..\pepfx\ne-pepfx-_gpio_pin_config_type.md">GPIO_PIN_CONFIG_TYPE</a> enumeration value that identifies the GPIO pin configuration type.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt186634">GPIO_PIN_CONFIG_TYPE</a> enumeration value that identifies the GPIO pin configuration type.
 
 `DebounceTimeout`
 
@@ -124,7 +124,7 @@ The number of pins described by the <i>PinTable</i> parameter.
 
 `Resource`
 
-A pointer to the resource. The structure behind the pointer is of type <a href="..\pepfx\ns-pepfx-_pep_acpi_gpio_resource.md">PEP_ACPI_GPIO_RESOURCE</a>.
+A pointer to the resource. The structure behind the pointer is of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt186671">PEP_ACPI_GPIO_RESOURCE</a>.
 
 
 ## Return Value
@@ -141,16 +141,16 @@ This function does not return a value.
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_acpi_gpio_resource.md">PEP_ACPI_GPIO_RESOURCE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186634">GPIO_PIN_CONFIG_TYPE</a>
 
 
 
-<a href="..\wudfwdm\ne-wudfwdm-_kinterrupt_mode.md">KINTERRUPT_MODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554239">KINTERRUPT_MODE</a>
 
 
 
-<a href="..\wdm\ne-wdm-_kinterrupt_polarity.md">KINTERRUPT_POLARITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554243">KINTERRUPT_POLARITY</a>
 
 
 
-<a href="..\pepfx\ne-pepfx-_gpio_pin_config_type.md">GPIO_PIN_CONFIG_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186671">PEP_ACPI_GPIO_RESOURCE</a>

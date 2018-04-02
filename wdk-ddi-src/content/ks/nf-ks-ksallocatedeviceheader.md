@@ -50,13 +50,13 @@ The <b>KsAllocateDeviceHeader</b> function allocates and initializes the require
 
 ## Syntax
 
-````
-NTSTATUS KsAllocateDeviceHeader(
-  _Out_    KSDEVICE_HEADER       *Header,
-  _In_     ULONG                 ItemsCount,
-  _In_opt_ PKSOBJECT_CREATE_ITEM ItemsList
+```
+KSDDKAPI NTSTATUS KsAllocateDeviceHeader(
+  KSDEVICE_HEADER       *Header,
+  ULONG                 ItemsCount,
+  PKSOBJECT_CREATE_ITEM ItemsList
 );
-````
+```
 
 ## Parameters
 
@@ -111,8 +111,8 @@ Drivers must not free the memory allocated for the subobject KSOBJECT_CREATE_ITE
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfreedeviceheader.md">KsFreeDeviceHeader</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563479">KSOBJECT_CREATE_ITEM</a>
 
 
 
-<a href="..\ks\ns-ks-ksobject_create_item.md">KSOBJECT_CREATE_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562560">KsFreeDeviceHeader</a>

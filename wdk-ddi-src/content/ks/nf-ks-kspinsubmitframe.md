@@ -46,25 +46,25 @@ req.typenames:
 
 
 # KsPinSubmitFrame function
-If a pin has been placed into injection mode by a call to <a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>, the <b>KsPinSubmitFrame</b> function submits a frame directly into the transport circuit.
+If a pin has been placed into injection mode by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff563522">KsPinRegisterFrameReturnCallback</a>, the <b>KsPinSubmitFrame</b> function submits a frame directly into the transport circuit.
 
 ## Syntax
 
-````
-NTSTATUS KsPinSubmitFrame(
-  _In_     PKSPIN           Pin,
-  _In_opt_ PVOID            Data,
-  _In_opt_ ULONG            Size,
-  _In_opt_ PKSSTREAM_HEADER StreamHeader,
-  _In_opt_ PVOID            Context
+```
+KSDDKAPI NTSTATUS KsPinSubmitFrame(
+  PKSPIN           Pin,
+  PVOID            Data,
+  ULONG Size       OPTIONAL,
+  PKSSTREAM_HEADER StreamHeader,
+  PVOID            Context
 );
-````
+```
 
 ## Parameters
 
 `Pin`
 
-A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure on which to submit a frame.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure on which to submit a frame.
 
 `Data`
 
@@ -76,11 +76,11 @@ TBD
 
 `StreamHeader`
 
-A pointer to a <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structure. The stream header is copied if this parameter is supplied. Optional.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a> structure. The stream header is copied if this parameter is supplied. Optional.
 
 `Context`
 
-A pointer to a caller-allocated buffer. AVStream provides this pointer to the frame return callback registered through a call to <a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>. Optional.
+A pointer to a caller-allocated buffer. AVStream provides this pointer to the frame return callback registered through a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff563522">KsPinRegisterFrameReturnCallback</a>. Optional.
 
 
 ## Return Value
@@ -99,8 +99,8 @@ Returns STATUS_SUCCESS if frame submission is successful. Otherwise returns an a
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspinregisterframereturncallback.md">KsPinRegisterFrameReturnCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563522">KsPinRegisterFrameReturnCallback</a>
 
 
 
-<a href="..\ks\nf-ks-kspinsubmitframemdl.md">KsPinSubmitFrameMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563530">KsPinSubmitFrameMdl</a>

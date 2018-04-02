@@ -7,7 +7,7 @@ old-location: audio\ipositionnotify_positionnotify.htm
 old-project: audio
 ms.assetid: 1C29A0B4-E50D-4EA2-95A4-4845BD14C88A
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IPositionNotify, IPositionNotify interface [Audio Devices], PositionNotify method, IPositionNotify::PositionNotify, PositionNotify method [Audio Devices], PositionNotify method [Audio Devices], IPositionNotify interface, PositionNotify,IPositionNotify.PositionNotify, audio.ipositionnotify_positionnotify, dmusicks/IPositionNotify::PositionNotify
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DMUS_STREAM_TYPE
 ---
 
 
-# PositionNotify method
+# IPositionNotify::PositionNotify method
 Byte position notify for MXF graph.
 
 ## Syntax
 
-````
-HRESULT PositionNotify(
-  [in] ULONGLONG bytePosition
+```
+void PositionNotify(
+  ULONGLONG bytePosition
 );
-````
+```
 
 ## Parameters
 
@@ -75,4 +75,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dmusicks\nn-dmusicks-ipositionnotify.md">IPositionNotify</a>
+<a href="https://msdn.microsoft.com/DB18BD9D-4BAA-48D8-BA30-E4F7EF4CDEE5">IPositionNotify</a>

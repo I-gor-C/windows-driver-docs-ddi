@@ -7,7 +7,7 @@ old-location: netvista\ndismcloselog.htm
 old-project: netvista
 ms.assetid: a4b2bf1a-f15d-409f-bd5f-84dbf8dadc09
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMCloseLog, NdisMCloseLog function [Network Drivers Starting with Windows Vista], miniport_logging_ref_ad3e4ea9-60c4-46b7-ac68-84517df279e0.xml, ndis/NdisMCloseLog, netvista.ndismcloselog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,18 +50,18 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 
 ## Syntax
 
-````
-VOID NdisMCloseLog(
-  _In_ NDIS_HANDLE LogHandle
+```
+void NdisMCloseLog(
+  NDIS_HANDLE LogHandle
 );
-````
+```
 
 ## Parameters
 
 `LogHandle`
 
 Specifies the handle returned by 
-     <a href="..\ndis\nf-ndis-ndismcreatelog.md">NdisMCreateLog</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563572">NdisMCreateLog</a>.
 
 
 ## Return Value
@@ -85,16 +85,16 @@ None
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismwritelogdata.md">NdisMWriteLogData</a>
+<a href="https://msdn.microsoft.com/b8d452b4-bef3-4991-87cf-fac15bedfde4">MiniportHaltEx</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismflushlog.md">NdisMFlushLog</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563572">NdisMCreateLog</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismcreatelog.md">NdisMCreateLog</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563584">NdisMFlushLog</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_halt.md">MiniportHaltEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563695">NdisMWriteLogData</a>

@@ -7,7 +7,7 @@ old-location: kernel\rtlintptrmult.htm
 old-project: kernel
 ms.assetid: F40C5DBB-8E52-471E-B010-A5EDFACDF773
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlIntPtrMult, RtlIntPtrMult function [Kernel-Mode Driver Architecture], kernel.rtlintptrmult, ntintsafe/RtlIntPtrMult
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ Multiplies one value of type <b>INT_PTR</b> by another.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlIntPtrMult(
-  _In_  INT_PTR iMultiplicand,
-  _In_  INT_PTR iMultiplier,
-  _Out_ INT_PTR *piResult
+  INT_PTR iMultiplicand,
+  INT_PTR iMultiplier,
+  INT_PTR *piResult
 );
-````
+```
 
 ## Parameters
 

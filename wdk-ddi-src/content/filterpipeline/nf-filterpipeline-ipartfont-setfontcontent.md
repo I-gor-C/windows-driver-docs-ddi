@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SetFontContent method
+# IPartFont::SetFontContent method
 The <b>SetFontContent</b> method sets the content of the font.
 
 ## Syntax
 
-````
+```
 HRESULT SetFontContent(
-  [in] const wchar_t *contentType
+  const wchar_t *pContentType
 );
-````
+```
 
 ## Parameters
 

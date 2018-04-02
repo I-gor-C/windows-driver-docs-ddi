@@ -47,39 +47,39 @@ req.typenames: AV_61883_REQUEST, *PAV_61883_REQUEST
 The AV_61883_REQUEST structure is used to pass requests to the IEC-61883 protocol driver.
 
 ## Syntax
-````
+```
 typedef struct _AV_61883_REQUEST {
   ULONG Function;
   ULONG Version;
   ULONG Flags;
   union {
-    GET_UNIT_INFO       GetUnitInfo;
-    SET_UNIT_INFO       SetUnitInfo;
+    CIP_ATTACH_FRAME    AttachFrame;
+    BUS_RESET_NOTIFY    BusResetNotify;
+    CIP_CANCEL_FRAME    CancelFrame;
+    CMP_CONNECT         Connect;
+    CMP_CREATE_PLUG     CreatePlug;
+    CMP_DELETE_PLUG     DeletePlug;
+    CMP_DISCONNECT      Disconnect;
     CMP_GET_PLUG_HANDLE GetPlugHandle;
-    CMP_GET_PLUG_STATE  GetPlugState;
-    CMP_CONNECT         Connect;
-    CMP_DISCONNECT      Disconnect;
-    CIP_ATTACH_FRAME    AttachFrame;
-    CIP_CANCEL_FRAME    CancelFrame;
-    CIP_TALK            Talk;
-    CIP_LISTEN          Listen;
-    CIP_STOP            Stop;
-    FCP_REQUEST         Request;
-    FCP_RESPONSE        Response;
-    FCP_SEND_REQUEST    SendRequest;
-    FCP_GET_RESPONSE    GetResponse;
-    FCP_GET_REQUEST     GetRequest;
-    FCP_SEND_RESPONSE   SendResponse;
-    SET_FCP_NOTIFY      SetFcpNotify;
-    CMP_CREATE_PLUG     CreatePlug;
-    CMP_DELETE_PLUG     DeletePlug;
-    CMP_SET_PLUG        SetPlug;
-    BUS_RESET_NOTIFY    BusResetNotify;
-    SET_UNIT_DIRECTORY  SetUnitDirectory;
-    CMP_MONITOR_PLUGS   MonitorPlugs;
+    CMP_GET_PLUG_STATE  GetPlugState;
+    FCP_GET_REQUEST     GetRequest;
+    FCP_GET_RESPONSE    GetResponse;
+    GET_UNIT_INFO       GetUnitInfo;
+    CIP_LISTEN          Listen;
+    CMP_MONITOR_PLUGS   MonitorPlugs;
+    FCP_REQUEST         Request;
+    FCP_RESPONSE        Response;
+    FCP_SEND_REQUEST    SendRequest;
+    FCP_SEND_RESPONSE   SendResponse;
+    SET_FCP_NOTIFY      SetFcpNotify;
+    CMP_SET_PLUG        SetPlug;
+    SET_UNIT_DIRECTORY  SetUnitDirectory;
+    SET_UNIT_INFO       SetUnitInfo;
+    CIP_STOP            Stop;
+    CIP_TALK            Talk;
   };
-} AV_61883_REQUEST, *PAV_61883_REQUEST;
-````
+} *PAV_61883_REQUEST, AV_61883_REQUEST;
+```
 
 ## Members
 

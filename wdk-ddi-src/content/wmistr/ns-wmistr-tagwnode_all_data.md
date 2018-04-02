@@ -7,7 +7,7 @@ old-location: kernel\wnode_all_data.htm
 old-project: kernel
 ms.assetid: 15582270-6cc4-43d4-b9e6-dceab3bc092d
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PWNODE_ALL_DATA, PWNODE_ALL_DATA, PWNODE_ALL_DATA structure pointer [Kernel-Mode Driver Architecture], WNODE_ALL_DATA, WNODE_ALL_DATA structure [Kernel-Mode Driver Architecture], kernel.wnode_all_data, kstruct_d_f0048b24-6d54-40c6-bb6a-8ed796a226d8.xml, tagWNODE_ALL_DATA, wmistr/PWNODE_ALL_DATA, wmistr/WNODE_ALL_DATA"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,25 +48,26 @@ req.product: Windows 10 or later.
 The <b>WNODE_ALL_DATA</b> structure contains data for all instances of a data block or event block.
 
 ## Syntax
-````
+```
 typedef struct tagWNODE_ALL_DATA {
-  struct _WNODE_HEADER  WnodeHeader;
-  ULONG                DataBlockOffset;
-  ULONG                InstanceCount;
-  ULONG                OffsetInstanceNameOffsets;
+  _WNODE_HEADER WnodeHeader;
+  struct        _WNODE_HEADER;
+  ULONG         DataBlockOffset;
+  ULONG         InstanceCount;
+  ULONG         OffsetInstanceNameOffsets;
   union {
-    ULONG                       FixedInstanceSize;
+    ULONG                       FixedInstanceSize;
     OFFSETINSTANCEDATAANDLENGTH OffsetInstanceDataAndLength[];
-  };
+  } DUMMYUNIONNAME;
 } WNODE_ALL_DATA, *PWNODE_ALL_DATA;
-````
+```
 
 ## Members
 
 
 `WnodeHeader`
 
-Specifies a <a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566375">WNODE_HEADER</a> structure that contains information common to all <b>WNODE_<i>XXX</i></b> structures, such as the buffer size, the GUID that represents a data block associated with a request, and flags that provide information about the <b>WNODE_<i>XXX</i></b> data being passed or returned.
 
 `DataBlockOffset`
 
@@ -98,12 +99,12 @@ Instance names must be USHORT aligned. Instance data must be QUADWORD aligned.
 
 ## See Also
 
-<a href="..\wmistr\ns-wmistr-_wnode_header.md">WNODE_HEADER</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551650">IRP_MN_QUERY_ALL_DATA</a>
 
 
 
-<a href="..\wmistr\ns-wmistr-tagwnode_event_item.md">WNODE_EVENT_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566373">WNODE_EVENT_ITEM</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566375">WNODE_HEADER</a>

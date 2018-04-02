@@ -47,12 +47,12 @@ req.typenames: BDA_CAS_CLOSE_MMIDIALOG, *PBDA_CAS_CLOSE_MMIDIALOG
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_CAS_CLOSE_MMIDIALOG {
   PBDARESULT lResult;
-  ULONG      ulDescrambleStatus;
+  ULONG      SessionResult;
 } BDA_CAS_CLOSE_MMIDIALOG, *PBDA_CAS_CLOSE_MMIDIALOG;
-````
+```
 
 ## Members
 

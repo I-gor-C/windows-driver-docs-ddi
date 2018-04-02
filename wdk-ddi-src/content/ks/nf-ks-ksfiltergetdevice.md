@@ -49,26 +49,26 @@ The<b> KsFilterGetDevice </b>function returns the AVStream device to which <i>Fi
 
 ## Syntax
 
-````
-PKSDEVICE __inline KsFilterGetDevice(
-  _In_ PKSFILTER Filter
+```
+PKSDEVICE KsFilterGetDevice(
+  PKSFILTER Filter
 );
-````
+```
 
 ## Parameters
 
 `Filter`
 
-A pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure for which to find the owning AVStream device.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure for which to find the owning AVStream device.
 
 
 ## Return Value
 
-<b>KsFilterGetDevice</b> returns a pointer to the AVStream <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> structure to which <i>Filter</i> belongs.
+<b>KsFilterGetDevice</b> returns a pointer to the AVStream <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> structure to which <i>Filter</i> belongs.
 
 ## Remarks
 
-This call is an inline function call to <a href="..\ks\nf-ks-ksgetdevice.md">KsGetDevice</a>.
+This call is an inline function call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562615">KsGetDevice</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,12 +80,12 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetdevice.md">KsG
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>
 
 
 
-<a href="..\ks\nf-ks-ksgetdevice.md">KsGetDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562615">KsGetDevice</a>

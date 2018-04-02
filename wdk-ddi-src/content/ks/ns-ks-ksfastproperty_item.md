@@ -47,20 +47,20 @@ req.typenames: KSFASTPROPERTY_ITEM, *PKSFASTPROPERTY_ITEM
 The KSFASTPROPERTY_ITEM structure is used with items for fast I/O dispatching.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSFASTPROPERTY_ITEM {
   ULONG PropertyId;
   union {
     PFNKSFASTHANDLER GetPropertyHandler;
-    BOOLEAN          GetSupported;
+    BOOLEAN          GetSupported;
   };
   union {
     PFNKSFASTHANDLER SetPropertyHandler;
-    BOOLEAN          SetSupported;
+    BOOLEAN          SetSupported;
   };
   ULONG Reserved;
-} KSFASTPROPERTY_ITEM, *PKSFASTPROPERTY_ITEM;
-````
+}  *PKSFASTPROPERTY_ITEM;
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: display\d3dkmt_openresourcefromnthandle.htm
 old-project: display
 ms.assetid: 3f595816-29b5-4efc-a00c-77597dd9fa48
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_OPENRESOURCEFROMNTHANDLE, D3DKMT_OPENRESOURCEFROMNTHANDLE structure [Display Devices], _D3DKMT_OPENRESOURCEFROMNTHANDLE, d3dkmthk/D3DKMT_OPENRESOURCEFROMNTHANDLE, display.d3dkmt_openresourcefromnthandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,25 +47,25 @@ req.typenames: D3DKMT_OPENRESOURCEFROMNTHANDLE
 Describes information that is required to open a shared resource from an NT handle to the process. The shared resource can be a set of allocations, a keyed mutex, or a synchronization object.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_OPENRESOURCEFROMNTHANDLE {
-  D3DKMT_HANDLE              hDevice;
-  HANDLE                     hNtHandle;
-  UINT                       NumAllocations;
+  D3DKMT_HANDLE              hDevice;
+  HANDLE                     hNtHandle;
+  UINT                       NumAllocations;
   D3DDDI_OPENALLOCATIONINFO2 *pOpenAllocationInfo2;
-  UINT                       PrivateRuntimeDataSize;
-  VOID                       *pPrivateRuntimeData;
-  UINT                       ResourcePrivateDriverDataSize;
-  VOID                       *pResourcePrivateDriverData;
-  UINT                       TotalPrivateDriverDataBufferSize;
-  VOID                       *pTotalPrivateDriverDataBuffer;
-  D3DKMT_HANDLE              hResource;
-  D3DKMT_HANDLE              hKeyedMutex;
-  VOID                       *pKeyedMutexPrivateRuntimeData;
-  UINT                       KeyedMutexPrivateRuntimeDataSize;
-  D3DKMT_HANDLE              hSyncObject;
+  UINT                       PrivateRuntimeDataSize;
+  VOID                       *pPrivateRuntimeData;
+  UINT                       ResourcePrivateDriverDataSize;
+  VOID                       *pResourcePrivateDriverData;
+  UINT                       TotalPrivateDriverDataBufferSize;
+  VOID                       *pTotalPrivateDriverDataBuffer;
+  D3DKMT_HANDLE              hResource;
+  D3DKMT_HANDLE              hKeyedMutex;
+  VOID                       *pKeyedMutexPrivateRuntimeData;
+  UINT                       KeyedMutexPrivateRuntimeDataSize;
+  D3DKMT_HANDLE              hSyncObject;
 } D3DKMT_OPENRESOURCEFROMNTHANDLE;
-````
+```
 
 ## Members
 
@@ -149,8 +149,8 @@ If this member has a value of <b>NULL</b>, the value of the <b>KeyedMutexPrivate
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtshareobjects.md">D3DKMTShareObjects</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439409">D3DKMTOpenNtHandleFromName</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopennthandlefromname.md">D3DKMTOpenNtHandleFromName</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh780251">D3DKMTShareObjects</a>

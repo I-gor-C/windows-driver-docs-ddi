@@ -47,16 +47,16 @@ req.typenames: KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S, *PKSPROPERTY_VIDEOCO
 The KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S structure describes actual frame rate information in response to KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE property requests.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S {
   KSPROPERTY Property;
-  ULONG      StreamIndex;
-  ULONG      RangeIndex;
-  SIZE       Dimensions;
-  LONGLONG   CurrentActualFrameRate;
-  LONGLONG   CurrentMaxAvailableFrameRate;
-} KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S, *PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S;
-````
+  ULONG      StreamIndex;
+  ULONG      RangeIndex;
+  SIZE       Dimensions;
+  LONGLONG   CurrentActualFrameRate;
+  LONGLONG   CurrentMaxAvailableFrameRate;
+}  *PKSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE_S;
+```
 
 ## Members
 
@@ -95,12 +95,12 @@ The minidriver should return STATUS_NOT_SUPPORTED if the pin is not open.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566024">KSPROPERTY_VIDEOCONTROL_ACTUAL_FRAME_RATE</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568120">PROPSETID_VIDCAP_VIDEOCONTROL</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>

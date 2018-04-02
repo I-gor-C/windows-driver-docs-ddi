@@ -47,18 +47,18 @@ req.typenames: KSTOPOLOGY, *PKSTOPOLOGY
 The KSTOPOLOGY structure describes the topology of pins and nodes.
 
 ## Syntax
-````
-typedef struct {
-  ULONG                       CategoriesCount;
-  const GUID                  *Categories;
-  ULONG                       TopologyNodesCount;
-  const GUID                  *TopologyNodes;
-  ULONG                       TopologyConnectionsCount;
+```
+typedef struct KSTOPOLOGY {
+  ULONG                       CategoriesCount;
+  const GUID                  *Categories;
+  ULONG                       TopologyNodesCount;
+  const GUID                  *TopologyNodes;
+  ULONG                       TopologyConnectionsCount;
   const KSTOPOLOGY_CONNECTION *TopologyConnections;
-  const GUID                  *TopologyNodesNames;
-  ULONG                       Reserved;
-} KSTOPOLOGY, *PKSTOPOLOGY;
-````
+  const GUID                  *TopologyNodesNames;
+  ULONG                       Reserved;
+} *PKSTOPOLOGY, KSTOPOLOGY;
+```
 
 ## Members
 
@@ -81,7 +81,7 @@ Points to the beginning of the array of GUIDs that describe the type of each nod
 
 `TopologyConnectionsCount`
 
-Specifies the number of entries in the array pointed to by <b>TopologyConnections</b>. The node numbers of each entry must correspond to the array offset of the node within <b>TopologyNodes</b>. When this structure is a part of a streaming minidriver's <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>, the pin numbers must correspond to the offsets within the array of <a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a> structures in the minidriver's <a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a> structure.
+Specifies the number of entries in the array pointed to by <b>TopologyConnections</b>. The node numbers of each entry must correspond to the array offset of the node within <b>TopologyNodes</b>. When this structure is a part of a streaming minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559690">HW_STREAM_HEADER</a>, the pin numbers must correspond to the offsets within the array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559692">HW_STREAM_INFORMATION</a> structures in the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559686">HW_STREAM_DESCRIPTOR</a> structure.
 
 `TopologyConnections`
 
@@ -96,7 +96,7 @@ Specifies the GUID of the localized Unicode string name for the node, stored in 
 Reserved for system use. Drivers should set this to zero.
 
 ## Remarks
-A stream class minidriver creates and passes this structure as part of its <a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a> structure. The class driver uses this structure to process topology property requests. The property data that the class driver returns is determined from the KSTOPOLOGY structure as follows:
+A stream class minidriver creates and passes this structure as part of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff559690">HW_STREAM_HEADER</a> structure. The class driver uses this structure to process topology property requests. The property data that the class driver returns is determined from the KSTOPOLOGY structure as follows:
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,16 +105,16 @@ A stream class minidriver creates and passes this structure as part of its <a hr
 
 ## See Also
 
-<a href="..\strmini\ns-strmini-_hw_stream_header.md">HW_STREAM_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559686">HW_STREAM_DESCRIPTOR</a>
 
 
 
-<a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559690">HW_STREAM_HEADER</a>
 
 
 
-<a href="..\strmini\ns-strmini-_hw_stream_information.md">HW_STREAM_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559692">HW_STREAM_INFORMATION</a>
 
 
 
-<a href="..\strmini\ns-strmini-_hw_stream_descriptor.md">HW_STREAM_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567148">KSTOPOLOGY_CONNECTION</a>

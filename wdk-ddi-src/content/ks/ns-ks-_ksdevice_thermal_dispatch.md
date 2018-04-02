@@ -47,12 +47,12 @@ req.typenames: KSDEVICE_THERMAL_DISPATCH, *PKSDEVICE_THERMAL_DISPATCH
 The <b>KSDEVICE_THERMAL_DISPATCH</b> structure is used by the miniport driver in the API call to register thermal notification callbacks. This structure contains the callback function pointers for active and passive cooling interfaces.
 
 ## Syntax
-````
+```
 typedef struct _KSDEVICE_THERMAL_DISPATCH {
-  PFNKSDEVICETHERMALACTIVECOOLING  ActiveCooling;
+  PFNKSDEVICETHERMALACTIVECOOLING  ActiveCooling;
   PFNKSDEVICETHERMALPASSIVECOOLING PassiveCooling;
 } KSDEVICE_THERMAL_DISPATCH, *PKSDEVICE_THERMAL_DISPATCH;
-````
+```
 
 ## Members
 
@@ -82,7 +82,7 @@ void
 
 #### KsDevice
 
-[in] A <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> object representing the device managed by KS.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> object representing the device managed by KS.
 
 
 
@@ -94,7 +94,7 @@ void
 
 #### DeviceThermalState
 
-[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the <a href="..\poclass\nc-poclass-device_active_cooling.md">ActiveCooling</a> routine.
+[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/hh698235">ActiveCooling</a> routine.
 
 `PassiveCooling`
 
@@ -121,7 +121,7 @@ void
 
 #### KsDevice
 
-[in] A <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> object representing the device managed by KS.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> object representing the device managed by KS.
 
 
 
@@ -133,7 +133,7 @@ void
 
 #### DeviceThermalState
 
-[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the  <a href="..\poclass\nc-poclass-device_passive_cooling.md">PassiveCooling</a> routine.
+[out] Return value: Avstream-determined thermal state. If the state changes the pipeline is notified of the change. The pipeline notifies any app registered for thermal notifications. For more information, see the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh698270">PassiveCooling</a> routine.
 
 
 ## Requirements

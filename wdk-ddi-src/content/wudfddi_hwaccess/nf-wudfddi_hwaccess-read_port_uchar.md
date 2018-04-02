@@ -52,18 +52,18 @@ The <b>READ_PORT_UCHAR</b>  function reads a byte from the specified port addres
 
 ## Syntax
 
-````
+```
 UCHAR READ_PORT_UCHAR(
-  _In_ IWDFDevice3 *pDevice,
-  _In_ PUCHAR      Port
+  IWDFDevice3 *pDevice,
+  PUCHAR      Port
 );
-````
+```
 
 ## Parameters
 
 `pDevice`
 
-Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.
+Specifies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface for the device object of the device to access.
 
 `Port`
 

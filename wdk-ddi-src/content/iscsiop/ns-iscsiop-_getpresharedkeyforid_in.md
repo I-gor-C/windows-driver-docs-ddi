@@ -7,7 +7,7 @@ old-location: storage\getpresharedkeyforid_in.htm
 old-project: storage
 ms.assetid: 4b3d3c5d-c34c-4ed8-bf62-1d885442ee1e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PGetPresharedKeyForId_IN, GetPresharedKeyForId_IN, GetPresharedKeyForId_IN structure [Storage Devices], PGetPresharedKeyForId_IN, PGetPresharedKeyForId_IN structure pointer [Storage Devices], _GetPresharedKeyForId_IN, iscsiop/GetPresharedKeyForId_IN, iscsiop/PGetPresharedKeyForId_IN, storage.getpresharedkeyforid_in, structs-iSCSI_2bdada81-7b98-40cd-bc44-e23e53118c60.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: GetPresharedKeyForId_IN, *PGetPresharedKeyForId_IN
 The GetPresharedKeyForId_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a> method. This method is required if the initiator supports Internet Key Exchange (IKE). It can help to determine whether IKE identification payload is configured with a preshared key.
 
 ## Syntax
-````
+```
 typedef struct _GetPresharedKeyForId_IN {
   ULONG PortNumber;
   UCHAR IdType;
   ULONG IdSize;
   UCHAR Id[1];
 } GetPresharedKeyForId_IN, *PGetPresharedKeyForId_IN;
-````
+```
 
 ## Members
 
@@ -132,12 +132,12 @@ You must implement this method if the initiator supports IKE.
 
 ## See Also
 
-<a href="..\iscsiop\ns-iscsiop-_getpresharedkeyforid_out.md">GetPresharedKeyForId_OUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554975">GetPresharedKeyForId_OUT</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563135">MSiSCSI_SecurityConfigOperations WMI Class</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>

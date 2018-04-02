@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 The BMP_IMAGE_INFO structure contains information about a BMP image.
 
 ## Syntax
-````
+```
 typedef struct _BMP_IMAGE_INFO {
   INT Width;
   INT Height;
   INT ByteWidth;
   INT Size;
-} BMP_IMAGE_INFO, *PBMP_IMAGE_INFO;
-````
+} *PBMP_IMAGE_INFO, BMP_IMAGE_INFO;
+```
 
 ## Members
 

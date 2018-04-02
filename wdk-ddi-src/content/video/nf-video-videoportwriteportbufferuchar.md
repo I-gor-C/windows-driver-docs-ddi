@@ -7,7 +7,7 @@ old-location: display\videoportwriteportbufferuchar.htm
 old-project: display
 ms.assetid: b07cd86b-a980-478b-832b-484a1b0ca981
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortWritePortBufferUchar, VideoPortWritePortBufferUchar function [Display Devices], VideoPort_Functions_c7f29624-d08d-437f-8b03-6f6f3b1f27b9.xml, display.videoportwriteportbufferuchar, video/VideoPortWritePortBufferUchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,19 +50,19 @@ The <b>VideoPortWritePortBufferUchar</b> function writes a number of bytes to a 
 
 ## Syntax
 
-````
-VOID VideoPortWritePortBufferUchar(
-       PUCHAR Port,
-  _In_ PUCHAR Buffer,
-       ULONG  Count
+```
+VIDEOPORT_API VOID VideoPortWritePortBufferUchar(
+  PUCHAR Port,
+  PUCHAR Buffer,
+  ULONG  Count
 );
-````
+```
 
 ## Parameters
 
 `Port`
 
-Pointer to the port. The given <i>Port</i> must be in a mapped I/O-space range returned by <a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>.
+Pointer to the port. The given <i>Port</i> must be in a mapped I/O-space range returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a>.
 
 `Buffer`
 
@@ -79,7 +79,7 @@ None
 
 ## Remarks
 
-A miniport driver's <a href="..\video\nc-video-pvideo_hw_interrupt.md">HwVidInterrupt</a> or <a href="..\video\nc-video-pminiport_synchronize_routine.md">HwVidSynchronizeExecutionCallback</a> function can call <b>VideoPortWritePortBufferUchar</b>.
+A miniport driver's <a href="https://msdn.microsoft.com/523471e3-cf1e-48d2-b5f0-2f8d19ad71e0">HwVidInterrupt</a> or <a href="https://msdn.microsoft.com/04e3bac6-c905-4c95-bd1b-e85b46c4296d">HwVidSynchronizeExecutionCallback</a> function can call <b>VideoPortWritePortBufferUchar</b>.
 
 Callers of <b>VideoPortWritePortBufferUchar</b> can be running at any IRQL, provided that the memory pointed to by the <i>Buffer</i> parameter is resident and that pointed to by the <i>Port</i> parameter is resident, mapped device memory.
 
@@ -95,4 +95,4 @@ Callers of <b>VideoPortWritePortBufferUchar</b> can be running at any IRQL, prov
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a>

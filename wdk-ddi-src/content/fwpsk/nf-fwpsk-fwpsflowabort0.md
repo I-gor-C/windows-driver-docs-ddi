@@ -7,7 +7,7 @@ old-location: netvista\fwpsflowabort0.htm
 old-project: netvista
 ms.assetid: 029dd387-498f-4402-9e61-a46688294949
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsFlowAbort0, FwpsFlowAbort0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsFlowAbort0, netvista.fwpsflowabort0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,11 +51,11 @@ The <b>FwpsFlowAbort0</b> function aborts a data flow.<div class="alert"><b>Note
 
 ## Syntax
 
-````
-NTSTATUS NTAPI FwpsFlowAbort0(
-  _In_ UINT64 flowId
+```
+NTSTATUS FwpsFlowAbort0(
+  UINT64 flowId
 );
-````
+```
 
 ## Parameters
 
@@ -102,7 +102,7 @@ An error occurred.
 
 A callout driver can call the <b>FwpsFlowAbort0</b> function to abort a data flow. 
    The filter engine calls the 
-    <a href="..\fwpsk\nc-fwpsk-fwps_callout_flow_delete_notify_fn0.md">flowDeleteFn</a> callout function when the flow is terminated so that the callout driver can clean up
+    <a href="https://msdn.microsoft.com/65449a23-da5d-4884-b98e-030461eb019a">flowDeleteFn</a> callout function when the flow is terminated so that the callout driver can clean up
     the context associated with the flow.
 
 ## Requirements
@@ -116,8 +116,8 @@ A callout driver can call the <b>FwpsFlowAbort0</b> function to abort a data flo
 
 ## See Also
 
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>
 
 
 
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_flow_delete_notify_fn0.md">flowDeleteFn</a>
+<a href="https://msdn.microsoft.com/65449a23-da5d-4884-b98e-030461eb019a">flowDeleteFn</a>

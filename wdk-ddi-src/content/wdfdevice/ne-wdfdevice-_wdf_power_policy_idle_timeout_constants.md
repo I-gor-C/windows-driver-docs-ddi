@@ -51,11 +51,11 @@ req.product: Windows 10 or later.
 The <b>WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS</b> enumeration is reserved for internal use.
 
 ## Syntax
-````
-typedef enum _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS { 
-  IdleTimeoutDefaultConstant  = 0
+```
+typedef enum _WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS {
+  IdleTimeoutDefaultConstant
 } WDF_POWER_POLICY_IDLE_TIMEOUT_CONSTANTS;
-````
+```
 
 ## Constants
 

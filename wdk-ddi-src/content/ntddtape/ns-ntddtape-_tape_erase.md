@@ -7,7 +7,7 @@ old-location: storage\tape_erase.htm
 old-project: storage
 ms.assetid: dc17efe6-9183-4908-8ca5-69c6ae38db6d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PTAPE_ERASE, PTAPE_ERASE, PTAPE_ERASE structure pointer [Storage Devices], TAPE_ERASE, TAPE_ERASE structure [Storage Devices], _TAPE_ERASE, ntddtape/PTAPE_ERASE, ntddtape/TAPE_ERASE, storage.tape_erase, structs-tape_56c14eca-358e-438f-9ff4-06345d2b2434.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,15 +44,15 @@ req.typenames: TAPE_ERASE, *PTAPE_ERASE
 ---
 
 # _TAPE_ERASE structure
-The TAPE_ERASE structure is used in conjunction with the <a href="..\ntddtape\ni-ntddtape-ioctl_tape_erase.md">IOCTL_TAPE_ERASE</a> request to erase the current tape partition.
+The TAPE_ERASE structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560615">IOCTL_TAPE_ERASE</a> request to erase the current tape partition.
 
 ## Syntax
-````
+```
 typedef struct _TAPE_ERASE {
-  ULONG   Type;
+  ULONG   Type;
   BOOLEAN Immediate;
 } TAPE_ERASE, *PTAPE_ERASE;
-````
+```
 
 ## Members
 
@@ -73,4 +73,4 @@ Indicates that the target device should return status immediately, when set to <
 
 ## See Also
 
-<a href="..\ntddtape\ni-ntddtape-ioctl_tape_erase.md">IOCTL_TAPE_ERASE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560615">IOCTL_TAPE_ERASE</a>

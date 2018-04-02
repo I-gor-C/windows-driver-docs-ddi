@@ -49,12 +49,12 @@ Called by the client driver during device shutdown to unregister for the previou
 
 ## Syntax
 
-````
+```
 NTSTATUS NfcCxUnregisterSequenceHandler(
-   WDFDEVICE       Device,
-   NFC_CX_SEQUENCE Sequence
+  WDFDEVICE       Device,
+  NFC_CX_SEQUENCE Sequence
 );
-````
+```
 
 ## Parameters
 
@@ -64,7 +64,7 @@ A handle to a framework device object.
 
 `Sequence`
 
-An <a href="..\nfccx\ne-nfccx-_nfc_cx_sequence.md">NFC_CX_SEQUENCE</a>-typed enumerator.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/dn905563">NFC_CX_SEQUENCE</a>-typed enumerator.
 
 
 ## Return Value

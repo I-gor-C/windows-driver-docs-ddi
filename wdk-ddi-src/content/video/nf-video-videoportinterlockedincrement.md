@@ -7,7 +7,7 @@ old-location: display\videoportinterlockedincrement.htm
 old-project: display
 ms.assetid: d3507214-82bc-4d73-8562-2843d7876137
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortInterlockedIncrement, VideoPortInterlockedIncrement function [Display Devices], VideoPort_Functions_ae59ee02-e3b2-43f6-8b93-8fe6bcedf248.xml, display.videoportinterlockedincrement, video/VideoPortInterlockedIncrement
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>VideoPortInterlockedIncrement</b> function increments a caller-supplied v
 
 ## Syntax
 
-````
-LONG FASTCALL VideoPortInterlockedIncrement(
-  _In_ PLONG Addend
+```
+VIDEOPORT_API LONG VideoPortInterlockedIncrement(
+  IN PLONG Addend
 );
-````
+```
 
 ## Parameters
 
@@ -85,8 +85,8 @@ This function is atomic only with respect to other <b>VideoPortInterlocked</b><i
 
 ## See Also
 
-<a href="..\video\nf-video-videoportinterlockeddecrement.md">VideoPortInterlockedDecrement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570322">VideoPortInterlockedDecrement</a>
 
 
 
-<a href="..\video\nf-video-videoportinterlockedexchange.md">VideoPortInterlockedExchange</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570323">VideoPortInterlockedExchange</a>

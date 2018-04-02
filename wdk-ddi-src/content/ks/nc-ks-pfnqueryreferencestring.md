@@ -45,7 +45,7 @@ req.typenames: SOUNDDETECTOR_PATTERNHEADER
 
 
 # PFNQUERYREFERENCESTRING callback function
-This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using <a href="..\wdm\nf-wdm-exfreepool.md">ExFreePool</a>.
+This routine creates a buffer from the paged pool and copies the reference string associated with the PDO into this buffer. It is the caller's responsibility to free the buffer using <a href="https://msdn.microsoft.com/library/windows/hardware/ff544590">ExFreePool</a>.
 
 ## Syntax
 
@@ -76,7 +76,7 @@ None.
 
 ## Remarks
 
-The driver can access this method through the <b>QueryReferenceString</b> member of the <a href="..\ks\ns-ks-bus_interface_reference.md">BUS_INTERFACE_REFERENCE</a> structure.
+The driver can access this method through the <b>QueryReferenceString</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557584">BUS_INTERFACE_REFERENCE</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |

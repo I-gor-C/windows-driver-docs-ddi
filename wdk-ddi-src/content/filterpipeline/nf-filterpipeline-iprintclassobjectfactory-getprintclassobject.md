@@ -44,18 +44,18 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetPrintClassObject method
+# IPrintClassObjectFactory::GetPrintClassObject method
 The <b>GetPrintClassObject</b> method creates a print filter-related object for a specified printer by using the IID of the interface object to create.
 
 ## Syntax
 
-````
+```
 HRESULT GetPrintClassObject(
-  [in]  const wchar_t *pszPrinterName,
-  [in]        REFIID  riid,
-  [out]       void    **ppNewObject
+  const wchar_t *pszPrinterName,
+  REFIID        riid,
+  void          **ppNewObject
 );
-````
+```
 
 ## Parameters
 

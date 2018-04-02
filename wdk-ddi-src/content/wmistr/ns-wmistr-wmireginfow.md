@@ -7,7 +7,7 @@ old-location: kernel\wmireginfo.htm
 old-project: kernel
 ms.assetid: 7331b30f-f61c-445c-ac0f-07c887ae92d7
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PWMIREGINFOW, PWMIREGINFOW, PWMIREGINFOW structure pointer [Kernel-Mode Driver Architecture], WMIREGINFO, WMIREGINFOW, WMIREGINFOW structure [Kernel-Mode Driver Architecture], kernel.wmireginfo, kstruct_d_2c5c2f97-d385-4cd6-8b0f-c27d4b21ea11.xml, wmistr/PWMIREGINFOW, wmistr/WMIREGINFOW"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,16 +48,16 @@ req.product: Windows 10 or later.
 The <b>WMIREGINFO</b> structure contains information provided by a driver to register or update its data blocks and event blocks.
 
 ## Syntax
-````
-typedef struct {
-  ULONG       BufferSize;
-  ULONG       NextWmiRegInfo;
-  ULONG       RegistryPath;
-  ULONG       MofResourceName;
-  ULONG       GuidCount;
+```
+typedef struct WMIREGINFOW {
+  ULONG       BufferSize;
+  ULONG       NextWmiRegInfo;
+  ULONG       RegistryPath;
+  ULONG       MofResourceName;
+  ULONG       GuidCount;
   WMIREGGUIDW WmiRegGuid[];
-} WMIREGINFOW, *PWMIREGINFOW;
-````
+} *PWMIREGINFOW, WMIREGINFOW;
+```
 
 ## Members
 
@@ -72,7 +72,7 @@ If a driver handles WMI requests on behalf of another driver, as a class driver 
 
 `RegistryPath`
 
-Indicates the offset in bytes from the beginning of this structure to a counted Unicode string that specifies the registry path passed to the driver's <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine. The string must be aligned on a USHORT boundary. This member should be set only in response to a WMI registration request (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a> with <b>Parameters.WMI.DataPath</b> set to WMIREGISTER).
+Indicates the offset in bytes from the beginning of this structure to a counted Unicode string that specifies the registry path passed to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> routine. The string must be aligned on a USHORT boundary. This member should be set only in response to a WMI registration request (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a> with <b>Parameters.WMI.DataPath</b> set to WMIREGISTER).
 
 `MofResourceName`
 
@@ -80,11 +80,11 @@ Indicates the offset in bytes from the beginning of this structure to a counted 
 
 `GuidCount`
 
-Indicates the number of <a href="..\wmistr\ns-wmistr-wmiregguidw.md">WMIREGGUID</a> structures in the array at <b>WmiRegGuid</b>.
+Indicates the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff565827">WMIREGGUID</a> structures in the array at <b>WmiRegGuid</b>.
 
 `WmiRegGuid`
 
-Is an array of <b>GuidCount </b><a href="..\wmistr\ns-wmistr-wmiregguidw.md">WMIREGGUID</a> structures.
+Is an array of <b>GuidCount </b><a href="https://msdn.microsoft.com/library/windows/hardware/ff565827">WMIREGGUID</a> structures.
 
 ## Remarks
 In response to a registration request (<a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a> with <b>Parameters.WMI.DataPath </b>set to WMIREGISTER), a driver builds at least one <b>WMIREGINFO</b> structure and writes the <b>WMIREGINFO</b> structure to the buffer at <b>IrpStack-&gt;Parameters.WMI.Buffer</b>. The <b>WMIREGINFO</b> structure contains an array of <b>WMIREGGUID</b> structures, one for each data block or event block exposed by the driver.
@@ -100,16 +100,16 @@ A driver can use the same <b>WMIREGINFO</b> structure(s) to remove or update blo
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a>
-
-
-
-<a href="..\wmistr\ns-wmistr-wmiregguidw.md">WMIREGGUID</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551731">IRP_MN_REGINFO</a>
 
 
 
-<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551734">IRP_MN_REGINFO_EX</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548343">IoCompleteRequest</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565827">WMIREGGUID</a>

@@ -7,7 +7,7 @@ old-location: netvista\fwpscompleteoperation0.htm
 old-project: netvista
 ms.assetid: e0d584c4-ec58-4d5f-bddf-86bcfbfa6b97
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsCompleteOperation0, FwpsCompleteOperation0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsCompleteOperation0, netvista.fwpscompleteoperation0, wfp_ref_2_funct_3_fwps_C_bfabbf4d-812a-411f-b9ef-c2e6f145404d.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,24 +53,24 @@ The
 
 ## Syntax
 
-````
-void NTAPI FwpsCompleteOperation0(
-  _In_     HANDLE           completionContext,
-  _In_opt_ PNET_BUFFER_LIST netBufferList
+```
+void FwpsCompleteOperation0(
+  HANDLE           completionContext,
+  PNET_BUFFER_LIST netBufferList
 );
-````
+```
 
 ## Parameters
 
 `completionContext`
 
 A completion context handle that was previously created by a call to the 
-     <a href="..\fwpsk\nf-fwpsk-fwpspendoperation0.md">FwpsPendOperation0</a> function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551199">FwpsPendOperation0</a> function.
 
 `netBufferList`
 
 A pointer to a 
-     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that describes
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that describes
      the packet data for which processing has been suspended pending completion of another operation.
 
 
@@ -82,7 +82,7 @@ None.
 
 When the callout is ready to resume packet processing after operations on the packet were suspended by
     a call to 
-    <a href="..\fwpsk\nf-fwpsk-fwpspendoperation0.md">FwpsPendOperation0</a>, the callout should
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff551199">FwpsPendOperation0</a>, the callout should
     call the 
     <b>FwpsCompleteOperation0</b> function, passing it the 
     <i>completionContext</i> parameter value from 
@@ -113,8 +113,8 @@ Pended connections are authenticated again after the
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551199">FwpsPendOperation0</a>
 
 
 
-<a href="..\fwpsk\nf-fwpsk-fwpspendoperation0.md">FwpsPendOperation0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>

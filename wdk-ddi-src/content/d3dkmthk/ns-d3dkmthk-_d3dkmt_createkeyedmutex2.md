@@ -7,7 +7,7 @@ old-location: display\d3dkmt_createkeyedmutex2.htm
 old-project: display
 ms.assetid: 6c4c07ff-5e37-4094-9dc3-57082dec8edf
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_CREATEKEYEDMUTEX2, D3DKMT_CREATEKEYEDMUTEX2 structure [Display Devices], _D3DKMT_CREATEKEYEDMUTEX2, d3dkmthk/D3DKMT_CREATEKEYEDMUTEX2, display.d3dkmt_createkeyedmutex2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: D3DKMT_CREATEKEYEDMUTEX2
 ---
 
 # _D3DKMT_CREATEKEYEDMUTEX2 structure
-Describes a keyed mutex that the <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatekeyedmutex2.md">D3DKMTCreateKeyedMutex2</a> function creates that includes private data.
+Describes a keyed mutex that the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439345">D3DKMTCreateKeyedMutex2</a> function creates that includes private data.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
-  UINT64                         InitialValue;
-  D3DKMT_HANDLE                  hSharedHandle;
-  D3DKMT_HANDLE                  hKeyedMutex;
-  VOID                           *pPrivateRuntimeData;
-  UINT                           PrivateRuntimeDataSize;
+  UINT64                         InitialValue;
+  D3DKMT_HANDLE                  hSharedHandle;
+  D3DKMT_HANDLE                  hKeyedMutex;
+  VOID                           *pPrivateRuntimeData;
+  UINT                           PrivateRuntimeDataSize;
   D3DKMT_CREATEKEYEDMUTEX2_FLAGS Flags;
 } D3DKMT_CREATEKEYEDMUTEX2;
-````
+```
 
 ## Members
 
@@ -83,7 +83,7 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 
 `Flags`
 
-[in] A <a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a> structure that indicates how to specify a handle to a keyed mutex object.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/hh780254">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a> structure that indicates how to specify a handle to a keyed mutex object.
 
 
 ## Requirements
@@ -94,8 +94,8 @@ typedef struct _D3DKMT_CREATEKEYEDMUTEX2 {
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_createkeyedmutex2_flags.md">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439345">D3DKMTCreateKeyedMutex2</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreatekeyedmutex2.md">D3DKMTCreateKeyedMutex2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh780254">D3DKMT_CREATEKEYEDMUTEX2_FLAGS</a>

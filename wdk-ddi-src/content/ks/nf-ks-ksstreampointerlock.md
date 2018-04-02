@@ -50,17 +50,17 @@ The<b> KsStreamPointerLock </b>function attempts to lock the specified stream po
 
 ## Syntax
 
-````
-NTSTATUS KsStreamPointerLock(
-  _In_ PKSSTREAM_POINTER StreamPointer
+```
+KSDDKAPI NTSTATUS KsStreamPointerLock(
+  PKSSTREAM_POINTER StreamPointer
 );
-````
+```
 
 ## Parameters
 
 `StreamPointer`
 
-A pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure representing the stream pointer to attempt to lock.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a> structure representing the stream pointer to attempt to lock.
 
 
 ## Return Value
@@ -86,4 +86,4 @@ Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksstreampointerunlock.md">KsStreamPointerUnlock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567137">KsStreamPointerUnlock</a>

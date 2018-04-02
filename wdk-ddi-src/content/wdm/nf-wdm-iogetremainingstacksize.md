@@ -7,7 +7,7 @@ old-location: kernel\iogetremainingstacksize.htm
 old-project: kernel
 ms.assetid: 5e257b72-fe16-49a0-9232-9c791a88e903
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoGetRemainingStackSize, IoGetRemainingStackSize routine [Kernel-Mode Driver Architecture], k104_bc84d6dd-0874-440d-8f73-b403d18aa660.xml, kernel.iogetremainingstacksize, wdm/IoGetRemainingStackSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,9 +50,11 @@ The <b>IoGetRemainingStackSize</b> routine returns the current amount of availab
 
 ## Syntax
 
-````
-ULONG_PTR IoGetRemainingStackSize(void);
-````
+```
+ULONG_PTR IoGetRemainingStackSize(
+
+);
+```
 
 ## Parameters
 
@@ -78,8 +80,8 @@ For Windows Server 2003 Service Pack 1 (SP1) and later versions of Windows, call
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iogetstacklimits.md">IoGetStackLimits</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549247">IoGetInitialStack</a>
 
 
 
-<a href="..\wdm\nf-wdm-iogetinitialstack.md">IoGetInitialStack</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549299">IoGetStackLimits</a>

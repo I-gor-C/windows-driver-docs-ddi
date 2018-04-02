@@ -44,7 +44,7 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetFieldOffset method
+# IDebugSymbols5::GetFieldOffset method
 The <b>GetFieldOffset</b> function returns the offset of a member from the beginning of a structure.
 
 ## Syntax

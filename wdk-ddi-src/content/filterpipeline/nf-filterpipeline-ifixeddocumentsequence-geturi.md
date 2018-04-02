@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetUri method
+# IFixedDocumentSequence::GetUri method
 The <b>GetUri</b> method gets the URI of the fixed document sequence.
 
 ## Syntax
 
-````
+```
 HRESULT GetUri(
-  [out] BSTR *uri
+  BSTR *uri
 );
-````
+```
 
 ## Parameters
 

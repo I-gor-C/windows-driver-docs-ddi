@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-DWORD APIENTRY OEMDownloadFontHeader(
-   PDEVOBJ     pdevobj,
-   PUNIFONTOBJ pUFObj
+```
+DWORD OEMDownloadFontHeader(
+  PDEVOBJ     pdevobj,
+  PUNIFONTOBJ pUFObj
 );
-````
+```
 
 ## Parameters
 

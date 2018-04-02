@@ -47,12 +47,12 @@ req.typenames: KSPROPERTY_TUNER_MODE_S, *PKSPROPERTY_TUNER_MODE_S
 The KSPROPERTY_TUNER_MODE_S structure describes the mode of a TV or radio tuner device.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_TUNER_MODE_S {
   KSPROPERTY Property;
-  ULONG      Mode;
-} KSPROPERTY_TUNER_MODE_S, *PKSPROPERTY_TUNER_MODE_S;
-````
+  ULONG      Mode;
+}  *PKSPROPERTY_TUNER_MODE_S;
+```
 
 ## Members
 

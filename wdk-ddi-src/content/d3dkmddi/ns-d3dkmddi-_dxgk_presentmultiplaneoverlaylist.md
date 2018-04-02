@@ -7,7 +7,7 @@ old-location: display\dxgk_presentmultiplaneoverlaylist.htm
 old-project: display
 ms.assetid: 970b3155-9e81-4725-90ee-079339c1d5c5
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_PRESENTMULTIPLANEOVERLAYLIST, DXGK_PRESENTMULTIPLANEOVERLAYLIST structure [Display Devices], _DXGK_PRESENTMULTIPLANEOVERLAYLIST, d3dkmddi/DXGK_PRESENTMULTIPLANEOVERLAYLIST, display.dxgk_presentmultiplaneoverlaylist
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: DXGK_PRESENTMULTIPLANEOVERLAYLIST
 ---
 
 # _DXGK_PRESENTMULTIPLANEOVERLAYLIST structure
-Specifies an overlay plane to display in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a> function.
+Specifies an overlay plane to display in a call to the <a href="https://msdn.microsoft.com/1a46b129-1e78-44e6-a609-59eab206692b">DxgkDdiPresent</a> function.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_PRESENTMULTIPLANEOVERLAYLIST {
-  UINT             LayerIndex;
-  BOOL             Enabled;
-  HANDLE           hDeviceSpecificAllocation;
+  UINT             LayerIndex;
+  BOOL             Enabled;
+  HANDLE           hDeviceSpecificAllocation;
   struct {
-    UINT SegmentId  :5;
-    UINT Reserved  :27;
+    UINT  : 27 Reserved;
+    UINT  : 5  SegmentId;
   };
   PHYSICAL_ADDRESS PhysicalAddress;
 } DXGK_PRESENTMULTIPLANEOVERLAYLIST;
-````
+```
 
 ## Members
 
@@ -88,4 +88,4 @@ A handle to the device-specific allocation that corresponds to the non device-sp
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
+<a href="https://msdn.microsoft.com/1a46b129-1e78-44e6-a609-59eab206692b">DxgkDdiPresent</a>

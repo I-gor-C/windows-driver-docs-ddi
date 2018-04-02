@@ -7,7 +7,7 @@ old-location: debugger\seteventfiltercommandwide.htm
 old-project: debugger
 ms.assetid: e0e14c8b-0b11-482f-93e2-31c522235110
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugControl4, IDebugControl4 interface [Windows Debugging], SetEventFilterCommandWide method, IDebugControl4::SetEventFilterCommandWide, SetEventFilterCommandWide method [Windows Debugging], SetEventFilterCommandWide method [Windows Debugging], IDebugControl4 interface, SetEventFilterCommandWide,IDebugControl4.SetEventFilterCommandWide, dbgeng/IDebugControl4::SetEventFilterCommandWide, debugger.seteventfiltercommandwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# SetEventFilterCommandWide method
+# IDebugControl4::SetEventFilterCommandWide method
 The <b>SetEventFilterCommandWide</b>  method sets a debugger command for the engine to execute when a specified event occurs.
 
 ## Syntax
 
-````
+```
 HRESULT SetEventFilterCommandWide(
-  [in] ULONG  Index,
-  [in] PCWSTR Command
+  ULONG  Index,
+  PCWSTR Command
 );
-````
+```
 
 ## Parameters
 
@@ -101,15 +101,15 @@ For more information about event filters, see <a href="https://msdn.microsoft.co
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556687">SetExceptionFilterSecondCommand</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546611">GetEventFilterCommand</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556687">SetExceptionFilterSecondCommand</a>
 
 
 

@@ -7,7 +7,7 @@ old-location: debugger\debug_processor_identification_ia64.htm
 old-project: debugger
 ms.assetid: 8827D989-EB59-4474-97D8-9CD9BF24FCC1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PDEBUG_PROCESSOR_IDENTIFICATION_IA64, DEBUG_PROCESSOR_IDENTIFICATION_IA64, DEBUG_PROCESSOR_IDENTIFICATION_IA64 structure [Windows Debugging], PDEBUG_PROCESSOR_IDENTIFICATION_IA64, PDEBUG_PROCESSOR_IDENTIFICATION_IA64 structure pointer [Windows Debugging], _DEBUG_PROCESSOR_IDENTIFICATION_IA64, dbgeng/DEBUG_PROCESSOR_IDENTIFICATION_IA64, dbgeng/PDEBUG_PROCESSOR_IDENTIFICATION_IA64, debugger.debug_processor_identification_ia64"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: DEBUG_PROCESSOR_IDENTIFICATION_IA64, *PDEBUG_PROCESSOR_IDENTIFICA
 Identifies an Intel Itanium  architecture (IA64) processor.
 
 ## Syntax
-````
+```
 typedef struct _DEBUG_PROCESSOR_IDENTIFICATION_IA64 {
   ULONG Model;
   ULONG Revision;
   ULONG Family;
   ULONG ArchRev;
-  CHAR  VendorString[16];
+  CHAR  VendorString[16];
 } DEBUG_PROCESSOR_IDENTIFICATION_IA64, *PDEBUG_PROCESSOR_IDENTIFICATION_IA64;
-````
+```
 
 ## Members
 
@@ -88,4 +88,4 @@ A vendor specified string.
 
 ## See Also
 
-<a href="..\dbgeng\ns-dbgeng-_debug_processor_identification_all.md">DEBUG_PROCESSOR_IDENTIFICATION_ALL</a>
+<a href="https://msdn.microsoft.com/2C4C03BC-0D84-4151-B1A1-FE76F0355CD6">DEBUG_PROCESSOR_IDENTIFICATION_ALL</a>

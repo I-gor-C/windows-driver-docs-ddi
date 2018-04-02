@@ -47,31 +47,31 @@ req.typenames: KSPROCESSPIN, *PKSPROCESSPIN
 The KSPROCESSPIN structure describes the process state of a specific pin.
 
 ## Syntax
-````
+```
 typedef struct _KSPROCESSPIN {
-  PKSPIN            Pin;
+  PKSPIN            Pin;
   PKSSTREAM_POINTER StreamPointer;
-  PKSPROCESSPIN     InPlaceCounterpart;
-  PKSPROCESSPIN     DelegateBranch;
-  PKSPROCESSPIN     CopySource;
-  PVOID             Data;
-  ULONG             BytesAvailable;
-  ULONG             BytesUsed;
-  ULONG             Flags;
-  BOOLEAN           Terminate;
+  PKSPROCESSPIN     InPlaceCounterpart;
+  PKSPROCESSPIN     DelegateBranch;
+  PKSPROCESSPIN     CopySource;
+  PVOID             Data;
+  ULONG             BytesAvailable;
+  ULONG             BytesUsed;
+  ULONG             Flags;
+  BOOLEAN           Terminate;
 } KSPROCESSPIN, *PKSPROCESSPIN;
-````
+```
 
 ## Members
 
 
 `Pin`
 
-A pointer to a <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure that the KSPROCESSPIN structure is describing. Everything in the structure refers to this KSPIN.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure that the KSPROCESSPIN structure is describing. Everything in the structure refers to this KSPIN.
 
 `StreamPointer`
 
-A pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure that points into the input stream at the current input location or into the output stream at the current output location. This can be used, for example, by output pins to stamp information onto the associated <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> (ProcessPin-&gt;StreamPointer-&gt;StreamHeader-&gt;Flags=...).
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a> structure that points into the input stream at the current input location or into the output stream at the current output location. This can be used, for example, by output pins to stamp information onto the associated <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a> (ProcessPin-&gt;StreamPointer-&gt;StreamHeader-&gt;Flags=...).
 
 `InPlaceCounterpart`
 
@@ -99,7 +99,7 @@ This member specifies how many bytes of this data frame have been used by the pr
 
 `Flags`
 
-This member contains a copy of the flags from the relevant <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structure, if this KSPROCESSPIN is an input pin.
+This member contains a copy of the flags from the relevant <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a> structure, if this KSPROCESSPIN is an input pin.
 
 `Terminate`
 
@@ -120,16 +120,16 @@ Most clients are concerned with the members <b>Pin</b>, <b>Data</b>, <b>BytesAva
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a>
 
 
 
-<a href="..\ks\ns-ks-_ksprocesspin_indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564260">KSPROCESSPIN_INDEXENTRY</a>
 
 
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a>
 
 
 
-<a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a>

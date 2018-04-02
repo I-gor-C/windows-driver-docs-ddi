@@ -55,22 +55,22 @@ The <b>WdfDriverIsVersionAvailable</b> method returns a Boolean value that indic
 
 ## Syntax
 
-````
+```
 BOOLEAN WdfDriverIsVersionAvailable(
-  _In_ WDFDRIVER                            Driver,
-  _In_ PWDF_DRIVER_VERSION_AVAILABLE_PARAMS VersionAvailableParams
+  WDFDRIVER                            Driver,
+  PWDF_DRIVER_VERSION_AVAILABLE_PARAMS VersionAvailableParams
 );
-````
+```
 
 ## Parameters
 
 `Driver`
 
-A handle to the driver's framework driver object that the driver obtained from a previous call to <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a> or <a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>.
+A handle to the driver's framework driver object that the driver obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff547336">WdfGetDriver</a>.
 
 `VersionAvailableParams`
 
-A pointer to a <a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_version_available_params.md">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a> structure that identifies a version of the framework library.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551306">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a> structure that identifies a version of the framework library.
 
 
 ## Return Value
@@ -122,16 +122,16 @@ if (!WdfDriverIsVersionAvailable(
 
 ## See Also
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551306">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a>
 
 
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdriverretrieveversionstring.md">WdfDriverRetrieveVersionString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a>
 
 
 
-<a href="..\wdfdriver\ns-wdfdriver-_wdf_driver_version_available_params.md">WDF_DRIVER_VERSION_AVAILABLE_PARAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547211">WdfDriverRetrieveVersionString</a>
 
 
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfgetdriver.md">WdfGetDriver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547336">WdfGetDriver</a>

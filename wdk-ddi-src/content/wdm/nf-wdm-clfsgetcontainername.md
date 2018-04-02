@@ -7,7 +7,7 @@ old-location: kernel\clfsgetcontainername.htm
 old-project: kernel
 ms.assetid: 727b2e29-9e2d-4386-a30b-5727e1261fad
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsGetContainerName, ClfsGetContainerName routine [Kernel-Mode Driver Architecture], Clfs_dce31248-386b-4f6d-8e88-55ef9d70fe84.xml, kernel.clfsgetcontainername, wdm/ClfsGetContainerName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,20 +51,20 @@ The <b>ClfsGetContainerName</b> routine returns the path name of a specified con
 
 ## Syntax
 
-````
-NTSTATUS ClfsGetContainerName(
-  _In_      PLOG_FILE_OBJECT  plfoLog,
-  _In_      CLFS_CONTAINER_ID cidLogicalContainer,
-  _Out_     PUNICODE_STRING   puszContainerName,
-  _Out_opt_ PULONG            pcActualLenContainerName
+```
+CLFSUSER_API NTSTATUS ClfsGetContainerName(
+  PLOG_FILE_OBJECT  plfoLog,
+  CLFS_CONTAINER_ID cidLogicalContainer,
+  PUNICODE_STRING   puszContainerName,
+  PULONG            pcActualLenContainerName
 );
-````
+```
 
 ## Parameters
 
 `plfoLog`
 
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554316">LOG_FILE_OBJECT</a> structure that represents a CLFS log. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554316">LOG_FILE_OBJECT</a> structure that represents a CLFS log. The caller previously obtained this pointer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff540792">ClfsCreateLogFile</a>.
 
 `cidLogicalContainer`
 
@@ -72,7 +72,7 @@ The logical identifier of a container in the CLFS log.
 
 `puszContainerName`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure. The <b>Buffer</b> member of <i>puszContainerName</i> must point to a caller-allocated buffer that receives the path name of the container. The <b>MaximumLength</b> member must supply the size of the buffer.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure. The <b>Buffer</b> member of <i>puszContainerName</i> must point to a caller-allocated buffer that receives the path name of the container. The <b>MaximumLength</b> member must supply the size of the buffer.
 
 `pcActualLenContainerName`
 
@@ -139,8 +139,8 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsremovelogcontainer.md">ClfsRemoveLogContainer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540768">ClfsAddLogContainer</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfsaddlogcontainer.md">ClfsAddLogContainer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541715">ClfsRemoveLogContainer</a>

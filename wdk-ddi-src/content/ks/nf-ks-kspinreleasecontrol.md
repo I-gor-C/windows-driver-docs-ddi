@@ -49,17 +49,17 @@ The<b> KsPinReleaseControl </b>function releases the control mutex for the AVStr
 
 ## Syntax
 
-````
-void __inline KsPinReleaseControl(
-  _In_ PKSPIN Pin
+```
+void KsPinReleaseControl(
+  PKSPIN Pin
 );
-````
+```
 
 ## Parameters
 
 `Pin`
 
-A pointer to a <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure representing the pin for which to release the control mutex.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure representing the pin for which to release the control mutex.
 
 
 ## Return Value
@@ -70,7 +70,7 @@ None
 
 The pin control mutex is the same mutex that is used by <i>Pin</i>'s parent. In other words, the pin control mutex <i>is</i> the filter control mutex of <i>Pin</i>'s parent. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
 
-Note that this function is an inline call to <a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>. Minidrivers manipulating a pin should call this function instead of calling <b>KsReleaseControl</b> directly.
+Note that this function is an inline call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff566780">KsReleaseControl</a>. Minidrivers manipulating a pin should call this function instead of calling <b>KsReleaseControl</b> directly.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,12 +82,12 @@ Note that this function is an inline call to <a href="..\ks\nf-ks-ksreleasecontr
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksreleasecontrol.md">KsReleaseControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560908">KsAcquireControl</a>
 
 
 
-<a href="..\ks\nf-ks-ksacquirecontrol.md">KsAcquireControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563485">KsPinAcquireControl</a>
 
 
 
-<a href="..\ks\nf-ks-kspinacquirecontrol.md">KsPinAcquireControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566780">KsReleaseControl</a>

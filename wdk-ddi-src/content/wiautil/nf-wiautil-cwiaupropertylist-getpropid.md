@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetPropId method
+# CWiauPropertyList::GetPropId method
 The <b>CWiauPropertyList::GetPropId</b> method finds the property ID for a property, given its index in the property list.
 
 ## Syntax
 
-````
+```
 PROPID GetPropId(
-   INT  index
+  INT index
 );
-````
+```
 
 ## Parameters
 
@@ -77,7 +77,7 @@ The <b>CWiauPropertyList::GetPropId</b> method returns the property ID for the p
 
 ## See Also
 
-<a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>
+<a href="https://msdn.microsoft.com/4f11bec0-8ff4-4fa0-824c-71ce9774d5d1">CWiauPropertyList</a>
 
 
 

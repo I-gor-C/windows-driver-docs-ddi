@@ -7,7 +7,7 @@ old-location: display\dxgk_createcontextallocationflags.htm
 old-project: display
 ms.assetid: e80a314d-cef1-4289-84db-0a6b6531ae5f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_CREATECONTEXTALLOCATIONFLAGS, DXGK_CREATECONTEXTALLOCATIONFLAGS structure [Display Devices], _DXGK_CREATECONTEXTALLOCATIONFLAGS, d3dkmddi/DXGK_CREATECONTEXTALLOCATIONFLAGS, display.dxgk_createcontextallocationflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,25 +47,27 @@ req.typenames: DXGK_CREATECONTEXTALLOCATIONFLAGS
 Specifies the properties of the context to be allocated.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_CREATECONTEXTALLOCATIONFLAGS {
   union {
     struct {
-      UINT SharedAcrossContexts  :1;
-      UINT Reserved  :31;
+      UINT  : 1  SharedAcrossContexts;
+      UINT  : 1  MapGpuVirtualAddress;
+      UINT  : 30 Reserved;
+      UINT  : 31 Reserved;
     };
     UINT Value;
   };
 } DXGK_CREATECONTEXTALLOCATIONFLAGS;
-````
+```
 
 ## Members
 
 
 ## Remarks
-The display miniport driver allocates GPU contexts or device-specific contexts by calling <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>.
+The display miniport driver allocates GPU contexts or device-specific contexts by calling <a href="https://msdn.microsoft.com/b6b142a4-20eb-4368-bd7f-8a25f4fe48ca">DxgkCbCreateContextAllocation</a>.
 
-The <b>ContextAllocationFlags</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_createcontextallocation.md">DXGKARGCB_CREATECONTEXTALLOCATION</a> structure is an <b>DXGK_CREATECONTEXTALLOCATIONFLAGS</b> data type.
+The <b>ContextAllocationFlags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451242">DXGKARGCB_CREATECONTEXTALLOCATION</a> structure is an <b>DXGK_CREATECONTEXTALLOCATIONFLAGS</b> data type.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,8 +77,8 @@ The <b>ContextAllocationFlags</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_createcontextallocation.md">DXGKARGCB_CREATECONTEXTALLOCATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451242">DXGKARGCB_CREATECONTEXTALLOCATION</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_createcontextallocation.md">DxgkCbCreateContextAllocation</a>
+<a href="https://msdn.microsoft.com/b6b142a4-20eb-4368-bd7f-8a25f4fe48ca">DxgkCbCreateContextAllocation</a>

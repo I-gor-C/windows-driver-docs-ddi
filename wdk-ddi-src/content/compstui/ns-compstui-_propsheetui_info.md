@@ -44,22 +44,22 @@ req.typenames: PROPSHEETUI_INFO, *PPROPSHEETUI_INFO
 ---
 
 # _PROPSHEETUI_INFO structure
-The PROPSHEETUI_INFO structure is used as an input parameter to <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed functions.
+The PROPSHEETUI_INFO structure is used as an input parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a>-typed functions.
 
 ## Syntax
-````
+```
 typedef struct _PROPSHEETUI_INFO {
-  WORD            cbSize;
-  WORD            Version;
-  WORD            Flags;
-  WORD            Reason;
-  HANDLE          hComPropSheet;
+  WORD            cbSize;
+  WORD            Version;
+  WORD            Flags;
+  WORD            Reason;
+  HANDLE          hComPropSheet;
   PFNCOMPROPSHEET pfnComPropSheet;
-  LPARAM          lParamInit;
-  ULONG_PTR       UserData;
-  ULONG_PTR       Result;
-} PROPSHEETUI_INFO, *PPROPSHEETUI_INFO;
-````
+  LPARAM          lParamInit;
+  ULONG_PTR       UserData;
+  ULONG_PTR       Result;
+} *PPROPSHEETUI_INFO, PROPSHEETUI_INFO;
+```
 
 ## Members
 
@@ -95,7 +95,7 @@ If set, the calling application uses Unicode characters.
 
 `Reason`
 
-CPSUI-supplied constant specifying the action to be performed on the property sheet by the <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed function to which the PROPSHEETUI_INFO structure was passed. One of the following constants will be supplied:
+CPSUI-supplied constant specifying the action to be performed on the property sheet by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a>-typed function to which the PROPSHEETUI_INFO structure was passed. One of the following constants will be supplied:
 
 <ul>
 <li>
@@ -119,7 +119,7 @@ PROPSHEETUI_REASON_SET_RESULT
 
 </li>
 </ul>
-For information about the meaning of each constant, see the Remarks section of the <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a> description.
+For information about the meaning of each constant, see the Remarks section of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a> description.
 
 `hComPropSheet`
 
@@ -131,17 +131,17 @@ Address of CPSUI's <a href="https://msdn.microsoft.com/library/windows/hardware/
 
 `lParamInit`
 
-Value received as the <i>lParam</i> parameter for the associated PFNPROPSHEETUI-typed function, when the function was first called with a <b>Reason</b> of PROPSHEETUI_REASON_INIT. For information about what this value can be, see the description of <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>.
+Value received as the <i>lParam</i> parameter for the associated PFNPROPSHEETUI-typed function, when the function was first called with a <b>Reason</b> of PROPSHEETUI_REASON_INIT. For information about what this value can be, see the description of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a>.
 
 This value is supplied by CPSUI, and is valid for all <b>Reason</b> values.
 
 `UserData`
 
-Optional, private value or pointer supplied by the associated <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed function, initially set to zero by CPSUI. If the function stores a value in <b>UserData</b>, then for subsequent calls to the function, the stored value or pointer is unchanged unless changed by the function.
+Optional, private value or pointer supplied by the associated <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a>-typed function, initially set to zero by CPSUI. If the function stores a value in <b>UserData</b>, then for subsequent calls to the function, the stored value or pointer is unchanged unless changed by the function.
 
 `Result`
 
-Result value supplied by the associated <a href="..\compstui\nc-compstui-pfnpropsheetui.md">PFNPROPSHEETUI</a>-typed function, initially set to zero by CPSUI. If the function stores a result value in <b>Result</b>, then for subsequent calls to the function, the stored value is unchanged unless changed by the function.
+Result value supplied by the associated <a href="https://msdn.microsoft.com/library/windows/hardware/ff559812">PFNPROPSHEETUI</a>-typed function, initially set to zero by CPSUI. If the function stores a result value in <b>Result</b>, then for subsequent calls to the function, the stored value is unchanged unless changed by the function.
 
 If the PFNPROPSHEETUI-typed function's address was specified as an argument to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546148">CommonPropertySheetUI</a>, the last value stored in <b>Result</b> is returned to <b>CommonPropertySheetUI</b> in the location pointed to by its <i>pResult</i> argument.
 

@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelsizeofpacket.htm
 old-project: netvista
 ms.assetid: 3E7EE060-4B1F-4B28-A617-5B1393CEE936
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VmbChannelSizeofPacket, VmbChannelSizeofPacket function [Network Drivers Starting with Windows Vista], netvista.vmbchannelsizeofpacket, vmbuskernelmodeclientlibapi/VmbChannelSizeofPacket
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,15 +50,15 @@ req.product: Windows 10 or later.
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 The <b>VmbChannelSizeofPacket</b> function calculates the necessary size for buffers to be used with
-the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketinitialize.md">VmbPacketInitialize</a> function.
+the <a href="https://msdn.microsoft.com/D5D8D994-0BB6-44FC-A696-F2E0264445C1">VmbPacketInitialize</a> function.
 
 ## Syntax
 
-````
+```
 UINT32 VmbChannelSizeofPacket(
-  _In_ VMBCHANNEL Channel
+  VMBCHANNEL Channel
 );
-````
+```
 
 ## Parameters
 
@@ -84,4 +84,4 @@ The necessary buffer size, in bytes.
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketinitialize.md">VmbPacketInitialize</a>
+<a href="https://msdn.microsoft.com/D5D8D994-0BB6-44FC-A696-F2E0264445C1">VmbPacketInitialize</a>

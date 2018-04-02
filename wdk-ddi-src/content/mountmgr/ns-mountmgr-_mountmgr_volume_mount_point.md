@@ -7,7 +7,7 @@ old-location: storage\mountmgr_volume_mount_point.htm
 old-project: storage
 ms.assetid: 2a267992-b4d3-49e1-bb80-3849220f0d1f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PMOUNTMGR_VOLUME_MOUNT_POINT, MOUNTMGR_VOLUME_MOUNT_POINT, MOUNTMGR_VOLUME_MOUNT_POINT structure [Storage Devices], PMOUNTMGR_VOLUME_MOUNT_POINT, PMOUNTMGR_VOLUME_MOUNT_POINT structure pointer [Storage Devices], _MOUNTMGR_VOLUME_MOUNT_POINT, mountmgr/MOUNTMGR_VOLUME_MOUNT_POINT, mountmgr/PMOUNTMGR_VOLUME_MOUNT_POINT, storage.mountmgr_volume_mount_point, structs-mntmgr_afa5831e-a33d-4fb6-a67b-b0b4f459e19b.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: MOUNTMGR_VOLUME_MOUNT_POINT, *PMOUNTMGR_VOLUME_MOUNT_POINT
 ---
 
 # _MOUNTMGR_VOLUME_MOUNT_POINT structure
-The MOUNTMGR_VOLUME_MOUNT_POINT structure is used in conjunction with the <a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_volume_mount_point_created.md">IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED</a> request to inform the mount manager that a volume mount point has been created.
+The MOUNTMGR_VOLUME_MOUNT_POINT structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560485">IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED</a> request to inform the mount manager that a volume mount point has been created.
 
 ## Syntax
-````
+```
 typedef struct _MOUNTMGR_VOLUME_MOUNT_POINT {
   USHORT SourceVolumeNameOffset;
   USHORT SourceVolumeNameLength;
   USHORT TargetVolumeNameOffset;
   USHORT TargetVolumeNameLength;
-} MOUNTMGR_VOLUME_MOUNT_POINT, *PMOUNTMGR_VOLUME_MOUNT_POINT;
-````
+} *PMOUNTMGR_VOLUME_MOUNT_POINT, MOUNTMGR_VOLUME_MOUNT_POINT;
+```
 
 ## Members
 
@@ -85,4 +85,4 @@ Mount point names must contain the full path of a mount point object name in the
 
 ## See Also
 
-<a href="..\mountmgr\ni-mountmgr-ioctl_mountmgr_volume_mount_point_created.md">IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560485">IOCTL_MOUNTMGR_VOLUME_MOUNT_POINT_CREATED</a>

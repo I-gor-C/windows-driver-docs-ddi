@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetString method
+# IPrinterPropertyBag::SetString method
 Writes a string property.
 
 ## Syntax
 
-````
+```
 HRESULT SetString(
-  [in] BSTR bstrName,
-  [in] BSTR bstrValue
+  BSTR bstrName,
+  BSTR bstrValue
 );
-````
+```
 
 ## Parameters
 
@@ -90,4 +90,4 @@ A call to set a property on a queue property bag will fail with ERROR_ACCESS_DEN
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>

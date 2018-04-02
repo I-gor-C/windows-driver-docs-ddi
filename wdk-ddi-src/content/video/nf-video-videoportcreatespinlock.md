@@ -7,7 +7,7 @@ old-location: display\videoportcreatespinlock.htm
 old-project: display
 ms.assetid: bb5f3b3e-3358-4181-9c4d-1871be1a7b7b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortCreateSpinLock, VideoPortCreateSpinLock function [Display Devices], VideoPort_Functions_64ab2562-155d-4cec-8612-42aca51d909b.xml, display.videoportcreatespinlock, video/VideoPortCreateSpinLock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>VideoPortCreateSpinLock</b> function creates a spin lock.
 
 ## Syntax
 
-````
-VP_STATUS VideoPortCreateSpinLock(
-  _In_  PVOID      HwDeviceExtension,
-  _Out_ PSPIN_LOCK *SpinLock
+```
+VIDEOPORT_API VP_STATUS VideoPortCreateSpinLock(
+  IN PVOID       HwDeviceExtension,
+  OUT PSPIN_LOCK *SpinLock
 );
-````
+```
 
 ## Parameters
 
@@ -74,7 +74,7 @@ On success the function returns NO_ERROR. If an error occurs, the function retur
 
 ## Remarks
 
-This routine must be called before an initial call to <a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a> or to any other support routine that requires a spin lock as an argument.
+This routine must be called before an initial call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570175">VideoPortAcquireSpinLock</a> or to any other support routine that requires a spin lock as an argument.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,8 +88,8 @@ This routine must be called before an initial call to <a href="..\video\nf-video
 
 ## See Also
 
-<a href="..\video\nf-video-videoportdeletespinlock.md">VideoPortDeleteSpinLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570175">VideoPortAcquireSpinLock</a>
 
 
 
-<a href="..\video\nf-video-videoportacquirespinlock.md">VideoPortAcquireSpinLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570293">VideoPortDeleteSpinLock</a>

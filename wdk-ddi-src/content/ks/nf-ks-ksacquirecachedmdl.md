@@ -50,16 +50,16 @@ This function is used to acquire the MDL cached by the KS port driver. The funct
 
 ## Syntax
 
-````
-void _Must_inspect_result_ _IRQL_requires_max_(PASSIVE_LEVEL) KSDDKAPI NTSTATUS WINAPI KsAcquireCachedMdl(
-   _In_                      PIRP                 Irp,
-   _In_                      REFGUID              Guid,
-   _In_                      PFNKSCANCELPINNEDMDL CancelRoutine,
-   _In_                      PVOID                CancelContext,
-   _Outptr_result_maybenull_ PMDL                 *MdlAddr,
-   _Outptr_result_maybenull_ PVOID*               ReleaseContext
+```
+KSDDKAPI NTSTATUS KsAcquireCachedMdl(
+  PIRP                 Irp,
+  REFGUID              Guid,
+  PFNKSCANCELPINNEDMDL CancelRoutine,
+  PVOID                CancelContext,
+  PMDL                 *MdlAddr,
+  PVOID                *ReleaseContext
 );
-````
+```
 
 ## Parameters
 

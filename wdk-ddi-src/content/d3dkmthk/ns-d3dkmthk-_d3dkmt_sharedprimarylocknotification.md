@@ -7,7 +7,7 @@ old-location: display\d3dkmt_sharedprimarylocknotification.htm
 old-project: display
 ms.assetid: 4e7766bb-eb5b-4f79-b9b8-89f7dcb98569
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION, D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION structure [Display Devices], OpenGL_Structs_4ec11480-30cb-45a1-a31c-e7432ec45abf.xml, _D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION, d3dkmthk/D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION, display.d3dkmt_sharedprimarylocknotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,20 +47,20 @@ req.typenames: D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION
 The D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION structure describes the shared primary surface that an application is about to lock.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION {
-  LUID                           AdapterLuid;
+  LUID                           AdapterLuid;
   D3DDDI_VIDEO_PRESENT_SOURCE_ID VidPnSourceId;
-  RECTL                          LockRect;
+  RECTL                          LockRect;
 } D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION;
-````
+```
 
 ## Members
 
 
 `AdapterLuid`
 
-[in] The locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) of the graphics adapter on which the GDI shared primary surface exists.
+[in] The locally unique identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>) of the graphics adapter on which the GDI shared primary surface exists.
 
 `VidPnSourceId`
 
@@ -79,7 +79,7 @@ typedef struct _D3DKMT_SHAREDPRIMARYLOCKNOTIFICATION {
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtsharedprimarylocknotification.md">D3DKMTSharedPrimaryLockNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547208">D3DKMTSharedPrimaryLockNotification</a>
 
 
 

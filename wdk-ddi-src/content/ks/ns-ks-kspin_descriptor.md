@@ -47,27 +47,27 @@ req.typenames: KSPIN_DESCRIPTOR, *PKSPIN_DESCRIPTOR
 The KSPIN_DESCRIPTOR structure describes the basic <a href="https://msdn.microsoft.com/library/windows/hardware/ff566584">KSPROPSETID_Pin</a> properties of a pin type.
 
 ## Syntax
-````
-typedef struct {
-  ULONG                 InterfacesCount;
+```
+typedef struct KSPIN_DESCRIPTOR {
+  ULONG                 InterfacesCount;
   const KSPIN_INTERFACE *Interfaces;
-  ULONG                 MediumsCount;
-  const KSPIN_MEDIUM    *Mediums;
-  ULONG                 DataRangesCount;
-  const PKSDATARANGE    *DataRanges;
-  KSPIN_DATAFLOW        DataFlow;
-  KSPIN_COMMUNICATION   Communication;
-  const GUID            *Category;
-  const GUID            *Name;
+  ULONG                 MediumsCount;
+  const KSPIN_MEDIUM    *Mediums;
+  ULONG                 DataRangesCount;
+  const PKSDATARANGE    *DataRanges;
+  KSPIN_DATAFLOW        DataFlow;
+  KSPIN_COMMUNICATION   Communication;
+  const GUID            *Category;
+  const GUID            *Name;
   union {
     LONGLONG Reserved;
     struct {
-      ULONG        ConstrainedDataRangesCount;
+      ULONG        ConstrainedDataRangesCount;
       PKSDATARANGE *ConstrainedDataRanges;
     };
   };
-} KSPIN_DESCRIPTOR, *PKSPIN_DESCRIPTOR;
-````
+} *PKSPIN_DESCRIPTOR, KSPIN_DESCRIPTOR;
+```
 
 ## Members
 
@@ -122,7 +122,15 @@ Drivers typically define one KSPIN_DESCRIPTOR structure for each pin type they s
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565194">KSPROPERTY_PIN_COMMUNICATION</a>
 
 
 
@@ -131,11 +139,3 @@ Drivers typically define one KSPIN_DESCRIPTOR structure for each pin type they s
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566584">KSPROPSETID_Pin</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565194">KSPROPERTY_PIN_COMMUNICATION</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>

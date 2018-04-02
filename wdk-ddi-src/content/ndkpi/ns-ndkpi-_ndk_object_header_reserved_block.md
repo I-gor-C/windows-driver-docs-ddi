@@ -7,7 +7,7 @@ old-location: netvista\ndk_object_header_reserved_block.htm
 old-project: netvista
 ms.assetid: 39D3265C-ED32-420F-9216-EFD0EDC27C84
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_OBJECT_HEADER_RESERVED_BLOCK, NDK_OBJECT_HEADER_RESERVED_BLOCK structure [Network Drivers Starting with Windows Vista], PNDK_OBJECT_HEADER_RESERVED_BLOCK, PNDK_OBJECT_HEADER_RESERVED_BLOCK structure pointer [Network Drivers Starting with Windows Vista], _NDK_OBJECT_HEADER_RESERVED_BLOCK, ndkpi/NDK_OBJECT_HEADER_RESERVED_BLOCK, ndkpi/PNDK_OBJECT_HEADER_RESERVED_BLOCK, netvista.ndk_object_header_reserved_block
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,11 +47,11 @@ req.typenames: NDK_OBJECT_HEADER_RESERVED_BLOCK
 The <b>NDK_OBJECT_HEADER_RESERVED_BLOCK</b> structure specifies reserved information in an NDK object.
 
 ## Syntax
-````
+```
 typedef struct _NDK_OBJECT_HEADER_RESERVED_BLOCK {
   PVOID rf[4];
-} NDK_OBJECT_HEADER_RESERVED_BLOCK, *PNDK_OBJECT_HEADER_RESERVED_BLOCK;
-````
+} NDK_OBJECT_HEADER_RESERVED_BLOCK;
+```
 
 ## Members
 
@@ -61,7 +61,7 @@ typedef struct _NDK_OBJECT_HEADER_RESERVED_BLOCK {
 Reserved.
 
 ## Remarks
-The <b>NDK_OBJECT_HEADER_RESERVED_BLOCK</b> structure is used in the <a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a> structure.
+The <b>NDK_OBJECT_HEADER_RESERVED_BLOCK</b> structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -71,4 +71,4 @@ The <b>NDK_OBJECT_HEADER_RESERVED_BLOCK</b> structure is used in the <a href="..
 
 ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_object_header.md">NDK_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439928">NDK_OBJECT_HEADER</a>

@@ -45,22 +45,22 @@ req.typenames:
 
 
 # KsDeviceRegisterAggregatedClientUnknown function
-This inline function is a wrapper for <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>.
+This inline function is a wrapper for <a href="https://msdn.microsoft.com/library/windows/hardware/ff566767">KsRegisterAggregatedClientUnknown</a>.
 
 ## Syntax
 
-````
-PUNKNOWN __inline KsDeviceRegisterAggregatedClientUnknown(
-  _In_ PKSDEVICE Device,
-  _In_ PUNKNOWN  ClientUnknown
+```
+PUNKNOWN KsDeviceRegisterAggregatedClientUnknown(
+  PKSDEVICE Device,
+  PUNKNOWN  ClientUnknown
 );
-````
+```
 
 ## Parameters
 
 `Device`
 
-A pointer to a <a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a> structure representing the specified AVStream device.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a> structure representing the specified AVStream device.
 
 `ClientUnknown`
 
@@ -73,7 +73,7 @@ Returns the newly created aggregate object.
 
 ## Remarks
 
-This inline function performs a typecast and then calls <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>.
+This inline function performs a typecast and then calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff566767">KsRegisterAggregatedClientUnknown</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,4 +84,4 @@ This inline function performs a typecast and then calls <a href="..\ks\nf-ks-ksr
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566767">KsRegisterAggregatedClientUnknown</a>

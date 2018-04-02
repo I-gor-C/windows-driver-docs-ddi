@@ -47,11 +47,11 @@ req.typenames: KSINTERFACE_FILEIO
 
 
 ## Syntax
-````
-typedef enum  { 
+```
+typedef enum KSINTERFACE_FILEIO {
   KSINTERFACE_FILEIO_STREAMING
-} KSINTERFACE_FILEIO;
-````
+} ;
+```
 
 ## Constants
 

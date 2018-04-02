@@ -53,11 +53,11 @@ This macro is reserved for internal use only.
 
 ## Syntax
 
-````
+```
 void WDF_TYPE_NAME_POINTER_TYPE(
-    _contexttype
+   _contexttype
 );
-````
+```
 
 ## Parameters
 

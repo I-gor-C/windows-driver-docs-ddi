@@ -7,7 +7,7 @@ old-location: audio\iservicegroup_canceldelayedservice.htm
 old-project: audio
 ms.assetid: 4caffdad-569d-4038-9a11-8827c8439189
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: CancelDelayedService method [Audio Devices], CancelDelayedService method [Audio Devices], IServiceGroup interface, CancelDelayedService,IServiceGroup.CancelDelayedService, IServiceGroup, IServiceGroup interface [Audio Devices], CancelDelayedService method, IServiceGroup::CancelDelayedService, audio.iservicegroup_canceldelayedservice, audmp-routines_7d31f9ff-5b00-4f74-ad2a-08f901db81ff.xml, portcls/IServiceGroup::CancelDelayedService
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# CancelDelayedService method
+# IServiceGroup::CancelDelayedService method
 The <code>CancelDelayedService</code> method cancels the previously requested delayed service.
 
 ## Syntax
 
-````
-VOID CancelDelayedService(
-    None
+```
+void CancelDelayedService(
+
 );
-````
+```
 
 ## Parameters
 
@@ -73,8 +73,8 @@ None
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536994">IServiceGroup</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537003">IServiceGroup::RequestDelayedService</a>
-
-
-
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>

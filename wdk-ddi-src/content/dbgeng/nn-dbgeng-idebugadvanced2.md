@@ -7,7 +7,7 @@ old-location: debugger\idebugadvanced2.htm
 old-project: debugger
 ms.assetid: 9b5f73db-1fb8-4e07-8053-67cb5020505e
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugAdvanced2, IDebugAdvanced2 interface [Windows Debugging], IDebugAdvanced2 interface [Windows Debugging], described, dbgeng/IDebugAdvanced2, debugger.idebugadvanced2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,8 +70,8 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugadvanced.md">IDebugAdvanced</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549798">IDebugAdvanced</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugadvanced3.md">IDebugAdvanced3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549807">IDebugAdvanced3</a>

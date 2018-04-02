@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Constrained method
+# IPrintSchemaOption::get_Constrained method
 Gets  the constraint setting type for the schema option.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_Constrained(
-  [out, retval] PrintSchemaConstrainedSetting *pSetting
+  PrintSchemaConstrainedSetting *pSetting
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a>
 
 
 
-<a href="..\printerextension\ne-printerextension-tagprintschemaconstrainedsetting.md">PrintSchemaConstrainedSetting</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh463985">PrintSchemaConstrainedSetting</a>

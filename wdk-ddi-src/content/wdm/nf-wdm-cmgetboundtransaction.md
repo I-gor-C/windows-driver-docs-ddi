@@ -7,7 +7,7 @@ old-location: kernel\cmgetboundtransaction.htm
 old-project: kernel
 ms.assetid: f38a5ad6-6816-4b27-98ea-51ac1453d90f
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: CmGetBoundTransaction, CmGetBoundTransaction routine [Kernel-Mode Driver Architecture], ConfigMgrRef_bf8b79d4-04cf-4cd2-b25c-4e59c63f0b86.xml, kernel.cmgetboundtransaction, wdm/CmGetBoundTransaction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,18 +50,18 @@ The <b>CmGetBoundTransaction</b> routine returns a pointer to the transaction ob
 
 ## Syntax
 
-````
-PVOID CmGetBoundTransaction(
-  _In_ PLARGE_INTEGER Cookie,
-  _In_ PVOID          Object
+```
+NTKERNELAPI PVOID CmGetBoundTransaction(
+  PLARGE_INTEGER Cookie,
+  PVOID          Object
 );
-````
+```
 
 ## Parameters
 
 `Cookie`
 
-The cookie value that the driver previously obtain by calling <a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a> or <a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>.
+The cookie value that the driver previously obtain by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541918">CmRegisterCallback</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff541921">CmRegisterCallbackEx</a>.
 
 `Object`
 
@@ -92,12 +92,12 @@ For more information about transactions, see <a href="https://msdn.microsoft.com
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-cmregistercallbackex.md">CmRegisterCallbackEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541918">CmRegisterCallback</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541921">CmRegisterCallbackEx</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff560903">RegistryCallback</a>
-
-
-
-<a href="..\wdm\nf-wdm-cmregistercallback.md">CmRegisterCallback</a>

@@ -7,7 +7,7 @@ old-location: kernel\iogetbootdiskinformation.htm
 old-project: kernel
 ms.assetid: 744d5eae-2bdf-46b0-9412-f73e55939d8b
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoGetBootDiskInformation, IoGetBootDiskInformation routine [Kernel-Mode Driver Architecture], k104_11afe919-6902-4f53-9006-57cc4be126f1.xml, kernel.iogetbootdiskinformation, wdm/IoGetBootDiskInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,18 +50,18 @@ The <b>IoGetBootDiskInformation</b> routine returns information describing the b
 
 ## Syntax
 
-````
-NTSTATUS IoGetBootDiskInformation(
-  _Inout_ PBOOTDISK_INFORMATION BootDiskInformation,
-  _In_    ULONG                 Size
+```
+NTKERNELAPI NTSTATUS IoGetBootDiskInformation(
+  PBOOTDISK_INFORMATION BootDiskInformation,
+  ULONG                 Size
 );
-````
+```
 
 ## Parameters
 
 `BootDiskInformation`
 
-Pointer to a caller-allocated buffer that the routine uses to return information about the boot and system disks. The routine fills this buffer in with either a <a href="..\wdm\ns-wdm-_bootdisk_information.md">BOOTDISK_INFORMATION</a> or a <a href="..\wdm\ns-wdm-_bootdisk_information_ex.md">BOOTDISK_INFORMATION_EX</a> structure.
+Pointer to a caller-allocated buffer that the routine uses to return information about the boot and system disks. The routine fills this buffer in with either a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540652">BOOTDISK_INFORMATION</a> or a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540653">BOOTDISK_INFORMATION_EX</a> structure.
 
 `Size`
 
@@ -106,7 +106,7 @@ The value of <i>Size</i> is less than the size, in bytes, of a <b>BOOTDISK_INFOR
 </dl>
 </td>
 <td width="60%">
-The driver called the routine after the system has already booted. Only boot and system drivers can call <b>IoGetBootDiskInformation</b>, and then only in their <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routines.
+The driver called the routine after the system has already booted. Only boot and system drivers can call <b>IoGetBootDiskInformation</b>, and then only in their <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a> routines.
 
 </td>
 </tr>
@@ -114,9 +114,9 @@ The driver called the routine after the system has already booted. Only boot and
 
 ## Remarks
 
-<b>IoGetBootDiskInformation</b> can be called only by a boot driver. This driver should call <b>IoGetBootDiskInformation</b> in a <a href="..\ntddk\nc-ntddk-driver_reinitialize.md">Reinitialize</a> callback routine that the driver registers by calling the <a href="..\ntddk\nf-ntddk-ioregisterbootdriverreinitialization.md">IoRegisterBootDriverReinitialization</a> routine.
+<b>IoGetBootDiskInformation</b> can be called only by a boot driver. This driver should call <b>IoGetBootDiskInformation</b> in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561022">Reinitialize</a> callback routine that the driver registers by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549494">IoRegisterBootDriverReinitialization</a> routine.
 
-On Windows XP and later versions of Windows, if the <i>Size</i> parameter is <b>sizeof</b>(<b>BOOTDISK_INFORMATION_EX</b>) or larger, the routine returns a <a href="..\wdm\ns-wdm-_bootdisk_information_ex.md">BOOTDISK_INFORMATION_EX</a> structure in the <i>BootDiskInformation</i> buffer. Otherwise, if <i>Size</i> is at least <b>sizeof</b>(<b>BOOTDISK_INFORMATION</b>), the routine returns a <a href="..\wdm\ns-wdm-_bootdisk_information.md">BOOTDISK_INFORMATION</a> structure.
+On Windows XP and later versions of Windows, if the <i>Size</i> parameter is <b>sizeof</b>(<b>BOOTDISK_INFORMATION_EX</b>) or larger, the routine returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540653">BOOTDISK_INFORMATION_EX</a> structure in the <i>BootDiskInformation</i> buffer. Otherwise, if <i>Size</i> is at least <b>sizeof</b>(<b>BOOTDISK_INFORMATION</b>), the routine returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540652">BOOTDISK_INFORMATION</a> structure.
 
 On Windows 2000, the routine returns only the <b>BOOTDISK_INFORMATION</b> structure.
 
@@ -132,16 +132,16 @@ On Windows 2000, the routine returns only the <b>BOOTDISK_INFORMATION</b> struct
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-ioregisterbootdriverreinitialization.md">IoRegisterBootDriverReinitialization</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540652">BOOTDISK_INFORMATION</a>
 
 
 
-<a href="..\wdm\ns-wdm-_bootdisk_information_ex.md">BOOTDISK_INFORMATION_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540653">BOOTDISK_INFORMATION_EX</a>
 
 
 
-<a href="..\wdm\ns-wdm-_bootdisk_information.md">BOOTDISK_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549494">IoRegisterBootDriverReinitialization</a>
 
 
 
-<a href="..\ntddk\nc-ntddk-driver_reinitialize.md">Reinitialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561022">Reinitialize</a>

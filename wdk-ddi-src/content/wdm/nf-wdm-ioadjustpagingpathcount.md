@@ -7,7 +7,7 @@ old-location: kernel\ioadjustpagingpathcount.htm
 old-project: kernel
 ms.assetid: be353d10-1d8a-4fea-a415-e1729184e451
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoAdjustPagingPathCount, IoAdjustPagingPathCount routine [Kernel-Mode Driver Architecture], k104_f52acd6d-f3f6-43c2-a339-3060a12a6298.xml, kernel.ioadjustpagingpathcount, wdm/IoAdjustPagingPathCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>IoAdjustPagingPathCount</b> routine increments or decrements a caller-sup
 
 ## Syntax
 
-````
-VOID IoAdjustPagingPathCount(
-  _In_ PLONG   Count,
-  _In_ BOOLEAN Increment
+```
+void IoAdjustPagingPathCount(
+   _count_,
+   _paging_
 );
-````
+```
 
 ## Parameters
 
@@ -88,8 +88,8 @@ This routine can be used for other counters, such as counters for hibernation fi
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550841">IRP_MN_DEVICE_USAGE_NOTIFICATION</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549268">IRP_MJ_PNP</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550841">IRP_MN_DEVICE_USAGE_NOTIFICATION</a>

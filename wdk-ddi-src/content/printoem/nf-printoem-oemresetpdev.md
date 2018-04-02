@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMResetPDEV(
-   PDEVOBJ pdevobjOld,
-   PDEVOBJ pdevobjNew
+```
+BOOL OEMResetPDEV(
+  PDEVOBJ pdevobjOld,
+  PDEVOBJ pdevobjNew
 );
-````
+```
 
 ## Parameters
 

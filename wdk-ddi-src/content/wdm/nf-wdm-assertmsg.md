@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-VOID ASSERTMSG(
-    Message,
-    Expression
+```
+void ASSERTMSG(
+   msg,
+   exp
 );
-````
+```
 
 ## Parameters
 

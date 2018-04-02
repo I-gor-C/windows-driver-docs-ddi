@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMCommonUIProp(
-   DWORD         dwMode,
-   POEMCUIPPARAM pOemCUIPParam
+```
+BOOL OEMCommonUIProp(
+  DWORD         dwMode,
+  POEMCUIPPARAM pOemCUIPParam
 );
-````
+```
 
 ## Parameters
 

@@ -44,47 +44,47 @@ req.typenames: PIPE_STATE
 ---
 
 
-# Set method
+# IKsPropertySet::Set method
 The <b>Set</b> method sets a property identified by a property-set GUID and a property identifier.
 
 ## Syntax
 
-````
+```
 HRESULT Set(
-  [in] REFGUID PropSet,
-  [in] ULONG   Id,
-  [in] LPVOID  InstanceData,
-  [in] ULONG   InstanceLength,
-  [in] LPVOID  PropertyData,
-  [in] ULONG   DataLength
+  REFGUID PropSet,
+  ULONG   Id,
+  LPVOID  InstanceData,
+  ULONG   InstanceLength,
+  LPVOID  PropertyData,
+  ULONG   DataLength
 );
-````
+```
 
 ## Parameters
 
 `PropSet`
 
-GUID that identifies the property set.
+
 
 `Id`
 
-Identifier of the property within the property set.
+
 
 `InstanceData`
 
-Pointer to instance data for the property.
+
 
 `InstanceLength`
 
-Size, in bytes, of the buffer at <i>InstanceData</i>.
+
 
 `PropertyData`
 
-Pointer to a buffer that contains the value of the property to set.
+
 
 `DataLength`
 
-Size, in bytes, of the buffer at <i>PropertyData</i>.
+
 
 
 ## Return Value

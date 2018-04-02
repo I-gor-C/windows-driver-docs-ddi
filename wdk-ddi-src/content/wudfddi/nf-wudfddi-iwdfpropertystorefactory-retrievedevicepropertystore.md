@@ -45,33 +45,33 @@ req.product: Windows 10 or later.
 ---
 
 
-# RetrieveDevicePropertyStore method
+# IWDFPropertyStoreFactory::RetrieveDevicePropertyStore method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <a href="https://msdn.microsoft.com/be47a1f0-03ff-432c-a3ef-5978c9b48183">RetrieveDevicePropertyStore</a> method retrieves a property store interface that drivers can use to access the registry.
 
 ## Syntax
 
-````
+```
 HRESULT RetrieveDevicePropertyStore(
-  [in]  PWDF_PROPERTY_STORE_ROOT          RootSpecifier,
-  [in]  WDF_PROPERTY_STORE_RETRIEVE_FLAGS Flags,
-  [in]  REGSAM                            DesiredAccess,
-  [in]  PCWSTR                            SubkeyPath,
-  [out] IWDFNamedPropertyStore2           **PropertyStore,
-  [out] WDF_PROPERTY_STORE_DISPOSITION    *Disposition
+  PWDF_PROPERTY_STORE_ROOT          RootSpecifier,
+  WDF_PROPERTY_STORE_RETRIEVE_FLAGS Flags,
+  REGSAM                            DesiredAccess,
+  PCWSTR                            SubkeyPath,
+  IWDFNamedPropertyStore2           **PropertyStore,
+  WDF_PROPERTY_STORE_DISPOSITION    *Disposition
 );
-````
+```
 
 ## Parameters
 
 `RootSpecifier`
 
-The address of a driver-allocated <a href="..\wudfddi_types\ns-wudfddi_types-_wdf_property_store_root.md">WDF_PROPERTY_STORE_ROOT</a> structure. The driver fills in this structure to identify the property store that <a href="https://msdn.microsoft.com/be47a1f0-03ff-432c-a3ef-5978c9b48183">RetrieveDevicePropertyStore</a> retrieves.
+The address of a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff561453">WDF_PROPERTY_STORE_ROOT</a> structure. The driver fills in this structure to identify the property store that <a href="https://msdn.microsoft.com/be47a1f0-03ff-432c-a3ef-5978c9b48183">RetrieveDevicePropertyStore</a> retrieves.
 
 `Flags`
 
-A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_property_store_retrieve_flags.md">WDF_PROPERTY_STORE_RETRIEVE_FLAGS</a>-typed flag that specifies whether UMDF should create a specified registry entry if it does not exist, and whether the new entry should be deleted when Windows restarts.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561449">WDF_PROPERTY_STORE_RETRIEVE_FLAGS</a>-typed flag that specifies whether UMDF should create a specified registry entry if it does not exist, and whether the new entry should be deleted when Windows restarts.
 
 `DesiredAccess`
 
@@ -83,11 +83,11 @@ A pointer to a caller-supplied character string that represents the name of a su
 
 `PropertyStore`
 
-The address of a location that receives a pointer to an <a href="..\wudfddi\nn-wudfddi-iwdfnamedpropertystore2.md">IWDFNamedPropertyStore2</a> interface. The driver uses this interface to access values in the registry.
+The address of a location that receives a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560168">IWDFNamedPropertyStore2</a> interface. The driver uses this interface to access values in the registry.
 
 `Disposition`
 
-The address of a location that receives a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_property_store_disposition.md">WDF_PROPERTY_STORE_DISPOSITION</a>-typed value.
+The address of a location that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561440">WDF_PROPERTY_STORE_DISPOSITION</a>-typed value.
 
 
 ## Return Value
@@ -226,4 +226,4 @@ Exit:
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iwdfpropertystorefactory.md">IWDFPropertyStoreFactory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560223">IWDFPropertyStoreFactory</a>

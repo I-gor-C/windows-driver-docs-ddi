@@ -50,17 +50,17 @@ The <code>OEMFillPath</code> function handles the filling of closed paths.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMEscape(
-   SURFOBJ  *pso,
-   PATHOBJ  *ppo,
-   CLIPOBJ  *pco,
-   BRUSHOBJ *pbo,
-   POINTL   *pptlBrushOrg,
-   MIX      mix,
-   FLONG    flOptions
+```
+BOOL OEMFillPath(
+  SURFOBJ  *pso,
+  PATHOBJ  *ppo,
+  CLIPOBJ  *pco,
+  BRUSHOBJ *pbo,
+  POINTL   *pptlBrushOrg,
+  MIX      mix,
+  FLONG    flOptions
 );
-````
+```
 
 ## Parameters
 

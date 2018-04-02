@@ -7,7 +7,7 @@ old-location: storage\ataportbuildrequestsenseirb.htm
 old-project: storage
 ms.assetid: f5083841-a6d7-4437-9941-bd7dca2f1771
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortBuildRequestSenseIrb, AtaPortBuildRequestSenseIrb routine [Storage Devices], atartns_82b5c3cd-1956-47a0-9c05-cd18dbb2e2b6.xml, irb/AtaPortBuildRequestSenseIrb, storage.ataportbuildrequestsenseirb
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,12 +53,12 @@ The <b>AtaPortBuildRequestSenseIrb</b> routine builds and returns an IRB for ope
 
 ## Syntax
 
-````
-PIDE_REQUEST_BLOCK AtaPortBuildRequestSenseIrb(
-  _In_ PVOID              ChannelExtension,
-  _In_ PIDE_REQUEST_BLOCK Irb
+```
+_IRQL_requires_same_ PIDE_REQUEST_BLOCK AtaPortBuildRequestSenseIrb(
+  PVOID              ChannelExtension,
+  PIDE_REQUEST_BLOCK Irb
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A pointer to the channel extension.
 
 `Irb`
 
-A pointer to a structure of type <a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a> that defines the failed IDE request block (IRB) for which the request sense will be issued.
+A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a> that defines the failed IDE request block (IRB) for which the request sense will be issued.
 
 
 ## Return Value
@@ -92,4 +92,4 @@ The miniport driver can have only one outstanding request sense IRB per logical 
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportreleaserequestsenseirb.md">AtaPortReleaseRequestSenseIrb</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550217">AtaPortReleaseRequestSenseIrb</a>

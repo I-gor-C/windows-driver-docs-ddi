@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetDeviceValue method
+# IStillImageW::SetDeviceValue method
 The <b>IStillImage::SetDeviceValue</b> method sets registry information for a specified still image device.
 
 ## Syntax
 
-````
+```
 HRESULT SetDeviceValue(
-  [in] LPWSTR pwszDeviceName,
-  [in] LPWSTR pValueName,
-       DWORD  Type,
-  [in] LPBYTE pData,
-       DWORD  cbData
+  LPWSTR pwszDeviceName,
+  LPWSTR pValueName,
+  DWORD  Type,
+  LPBYTE pData,
+  DWORD  cbData
 );
-````
+```
 
 ## Parameters
 
@@ -101,8 +101,8 @@ Before calling <b>IStillImage::SetDeviceValue</b>, clients of the <b>IStillImage
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/a9ceee48-cbb5-4448-83b4-9c19fe89fcb9">IStillImageW</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543786">IStillImage::GetDeviceValue</a>
+
+
+
+<a href="https://msdn.microsoft.com/a9ceee48-cbb5-4448-83b4-9c19fe89fcb9">IStillImageW</a>

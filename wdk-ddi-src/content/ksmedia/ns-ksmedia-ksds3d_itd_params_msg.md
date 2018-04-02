@@ -7,7 +7,7 @@ old-location: audio\ksds3d_itd_params_msg.htm
 old-project: audio
 ms.assetid: cc580766-54ca-47b2-93dd-2f234afa73ff
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PKSDS3D_ITD_PARAMS_MSG, KSDS3D_ITD_PARAMS_MSG, KSDS3D_ITD_PARAMS_MSG structure [Audio Devices], PKSDS3D_ITD_PARAMS_MSG, PKSDS3D_ITD_PARAMS_MSG structure pointer [Audio Devices], aud-prop_af31be2f-c153-4430-9634-6d29b05208dd.xml, audio.ksds3d_itd_params_msg, ksmedia/KSDS3D_ITD_PARAMS_MSG, ksmedia/PKSDS3D_ITD_PARAMS_MSG"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: KSDS3D_ITD_PARAMS_MSG, *PKSDS3D_ITD_PARAMS_MSG
 The KSDS3D_ITD_PARAMS_MSG structure specifies the parameters used by the interaural time delay (ITD) algorithm in a 3D node (<a href="https://msdn.microsoft.com/library/windows/hardware/ff537148">KSNODETYPE_3D_EFFECTS</a>).
 
 ## Syntax
-````
-typedef struct {
-  ULONG             Enabled;
+```
+typedef struct KSDS3D_ITD_PARAMS_MSG {
+  ULONG             Enabled;
   KSDS3D_ITD_PARAMS LeftParams;
   KSDS3D_ITD_PARAMS RightParams;
-  ULONG             Reserved;
-} KSDS3D_ITD_PARAMS_MSG, *PKSDS3D_ITD_PARAMS_MSG;
-````
+  ULONG             Reserved;
+} *PKSDS3D_ITD_PARAMS_MSG, KSDS3D_ITD_PARAMS_MSG;
+```
 
 ## Members
 
@@ -65,7 +65,7 @@ Specifies whether to enable the ITD algorithm. A nonzero value enables the algor
 
 `LeftParams`
 
-Specifies the ITD parameters for the left channel (channel 0). This parameter is a structure of type <a href="..\ksmedia\ns-ksmedia-ksds3d_itd_params.md">KSDS3D_ITD_PARAMS</a>.
+Specifies the ITD parameters for the left channel (channel 0). This parameter is a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537110">KSDS3D_ITD_PARAMS</a>.
 
 `RightParams`
 
@@ -87,12 +87,12 @@ The <i>Enabled</i> parameter should track the DirectSound buffer's 3D mode: Disa
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksds3d_itd_params.md">KSDS3D_ITD_PARAMS</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537358">KSPROPERTY_ITD3D_PARAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537110">KSDS3D_ITD_PARAMS</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537148">KSNODETYPE_3D_EFFECTS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537358">KSPROPERTY_ITD3D_PARAMS</a>

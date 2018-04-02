@@ -7,7 +7,7 @@ old-location: storage\storportgetdatainbuffersystemaddress.htm
 old-project: storage
 ms.assetid: 3FA48004-E96A-4ED7-935F-B7F58A74FB1F
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortGetDataInBufferSystemAddress, StorPortGetDataInBufferSystemAddress routine [Storage Devices], storage.storportgetdatainbuffersystemaddress, storport/StorPortGetDataInBufferSystemAddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,13 +51,13 @@ Returns the system address for the input data buffer  of a SCSI request block (S
 
 ## Syntax
 
-````
+```
 ULONG StorPortGetDataInBufferSystemAddress(
-  _In_  PVOID               HwDeviceExtension,
-  _In_  PSCSI_REQUEST_BLOCK Srb,
-  _Out_ PVOID               *SystemAddress
+  PVOID               HwDeviceExtension,
+  PSCSI_REQUEST_BLOCK Srb,
+  PVOID               *SystemAddress
 );
-````
+```
 
 ## Parameters
 
@@ -141,8 +141,8 @@ A system address can not be assigned.
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportgetdatainbuffermdl.md">StorPortGetDataInBufferMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj553718">StorPortGetDataInBufferMdl</a>
 
 
 
-<a href="..\storport\nf-storport-storportgetdatainbufferscattergatherlist.md">StorPortGetDataInBufferScatterGatherList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj553719">StorPortGetDataInBufferScatterGatherList</a>

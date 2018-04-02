@@ -7,7 +7,7 @@ old-location: debugger\idebugeventcallbackswide_exitthread.htm
 old-project: debugger
 ms.assetid: 77933fa9-ff30-45cf-894d-83a425802e25
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: ExitThread method [Windows Debugging], ExitThread method [Windows Debugging], IDebugEventCallbacksWide interface, ExitThread,IDebugEventCallbacksWide.ExitThread, IDebugEventCallbacksWide, IDebugEventCallbacksWide interface [Windows Debugging], ExitThread method, IDebugEventCallbacksWide::ExitThread, dbgeng/IDebugEventCallbacksWide::ExitThread, debugger.idebugeventcallbackswide_exitthread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# ExitThread method
+# IDebugEventCallbacksWide::ExitThread method
 The <b>ExitThread</b> callback method is called by the engine when an exit-threaddebugging event occurs in the target.
 
 ## Syntax
 
-````
-HRESULT ExitThread(
-  [in] ULONG ExitCode
+```
+_Analysis_noreturn_ HRESULT ExitThread(
+  ULONG ExitCode
 );
-````
+```
 
 ## Parameters
 

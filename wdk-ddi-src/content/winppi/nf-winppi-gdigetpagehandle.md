@@ -52,19 +52,19 @@ The <b>GdiGetPageHandle</b> function returns a handle to the specified page with
 
 ## Syntax
 
-````
+```
 HANDLE GdiGetPageHandle(
-   HANDLE  SpoolFileHandle,
-   DWORD   Page,
-   LPDWORD pdwPageType
+  HANDLE  SpoolFileHandle,
+  DWORD   Page,
+  LPDWORD pdwPageType
 );
-````
+```
 
 ## Parameters
 
 `SpoolFileHandle`
 
-Caller-supplied spool file handle, obtained by a previous call to <a href="..\winppi\nf-winppi-gdigetspoolfilehandle.md">GdiGetSpoolFileHandle</a>.
+Caller-supplied spool file handle, obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549517">GdiGetSpoolFileHandle</a>.
 
 `Page`
 
@@ -108,9 +108,9 @@ If the operation succeeds, the function returns <b>TRUE</b>. Otherwise the funct
 
 ## Remarks
 
-The <b>GdiGetPageHandle</b> function is exported by gdi32.dll for use within a print processor's <a href="..\winsplp\nf-winsplp-printdocumentonprintprocessor.md">PrintDocumentOnPrintProcessor</a> function.
+The <b>GdiGetPageHandle</b> function is exported by gdi32.dll for use within a print processor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff560724">PrintDocumentOnPrintProcessor</a> function.
 
-Print processors must obtain a page handle before calling <a href="..\winppi\nf-winppi-gdiplaypageemf.md">GdiPlayPageEMF</a> to draw a page. If a Page value is specified that is too large, the function returns ERROR_NO_MORE_ITEMS.
+Print processors must obtain a page handle before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff549524">GdiPlayPageEMF</a> to draw a page. If a Page value is specified that is too large, the function returns ERROR_NO_MORE_ITEMS.
 
 For additional information, see <a href="https://msdn.microsoft.com/2ad62308-ab42-4475-ac42-f753d5091251">Using GDI Functions in Print Processors</a>.
 

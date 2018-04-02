@@ -49,17 +49,17 @@ The <code>WcsCheckColors</code> function determines whether the colors in an arr
 
 ## Syntax
 
-````
+```
 BOOL WcsCheckColors(
-  _In_  HTRANSFORM    hColorTransform,
-  _In_  DWORD         nColors,
-  _In_  DWORD         nInputChannels,
-  _In_  COLORDATATYPE cdtInput,
-  _In_  DWORD         cbInput,
-  _In_  PVOID         pInputData,
-  _Out_ PBYTE         paResult
+  HTRANSFORM    hColorTransform,
+  DWORD         nColors,
+  DWORD         nInputChannels,
+  COLORDATATYPE cdtInput,
+  DWORD         cbInput,
+  PVOID         pInputData,
+  PBYTE         paResult
 );
-````
+```
 
 ## Parameters
 

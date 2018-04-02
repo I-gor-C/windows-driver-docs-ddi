@@ -7,7 +7,7 @@ old-location: audio\iminiportaudioenginenode_getdevicechannelmute.htm
 old-project: audio
 ms.assetid: 60CEBF40-25D3-49F0-A4BF-40440E1A3EE6
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: GetDeviceChannelMute method [Audio Devices], GetDeviceChannelMute method [Audio Devices], IMiniportAudioEngineNode interface, GetDeviceChannelMute,IMiniportAudioEngineNode.GetDeviceChannelMute, IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], GetDeviceChannelMute method, IMiniportAudioEngineNode::GetDeviceChannelMute, audio.iminiportaudioenginenode_getdevicechannelmute, portcls/IMiniportAudioEngineNode::GetDeviceChannelMute
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# GetDeviceChannelMute method
+# IMiniportAudioEngineNode::GetDeviceChannelMute method
 Gets the state of the Mute node for the audio device channel.
 
 ## Syntax
 
-````
+```
 NTSTATUS GetDeviceChannelMute(
-  [in]  ULONG  ulNodeId,
-  [in]  UINT32 ulChannel,
-  [out] BOOL   *pbMute
+  ULONG  ulNodeId,
+  UINT32 ulChannel,
+  BOOL   *pbMute
 );
-````
+```
 
 ## Parameters
 
@@ -88,4 +88,4 @@ code.
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302040">IMiniportAudioEngineNode</a>

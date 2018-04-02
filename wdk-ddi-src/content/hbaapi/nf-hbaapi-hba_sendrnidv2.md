@@ -7,7 +7,7 @@ old-location: storage\hba_sendrnidv2.htm
 old-project: storage
 ms.assetid: c46aee6e-f31d-4b8d-8244-3c364aa79ae4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_SendRNIDV2, HBA_SendRNIDV2 routine [Storage Devices], fibreHBA_rtns_8e5796fe-6cfa-42e8-9855-9ab89752bfec.xml, hbaapi/HBA_SendRNIDV2, storage.hba_sendrnidv2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ The <b>HBA_SendRNIDV2</b> routine sends a request for node identification data (
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_SendRNIDV2(
-  _In_    HBA_HANDLE handle,
-  _In_    HBA_WWN    hbaPortWWN,
-  _In_    HBA_WWN    destWWN,
-  _In_    HBA_UINT32 destFCID,
-  _In_    HBA_UINT32 NodeIdDataFormat,
-  _Out_   void       *pRspBuffer,
-  _Inout_ HBA_UINT32 *RspBufferSize
+  IN HBA_HANDLE     Handle,
+  IN HBA_WWN        HbaPortWWN,
+  IN HBA_WWN        DestWWN,
+  IN HBA_UINT32     DestFCID,
+  IN HBA_UINT32     NodeIdDataFormat,
+  OUT void          *pRspBuffer,
+  IN OUT HBA_UINT32 *pRspBufferSize
 );
-````
+```
 
 ## Parameters
 
@@ -112,11 +112,11 @@ The <b>HBA_SendRNIDV2</b> library routine serves a purpose very similar to the <
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_sendrnid.md">HBA_SendRNID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
 
 
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557216">HBA_SendRNID</a>
 
 
 

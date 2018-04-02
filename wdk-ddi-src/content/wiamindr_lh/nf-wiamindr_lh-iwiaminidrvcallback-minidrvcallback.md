@@ -45,22 +45,22 @@ req.product: Windows 10 or later.
 ---
 
 
-# MiniDrvCallback method
+# IWiaMiniDrvCallBack::MiniDrvCallback method
 The <b>MiniDrvCallback</b> method provides a callback method for WIA minidrivers to use during a callback data transfer.
 
 ## Syntax
 
-````
+```
 HRESULT MiniDrvCallback(
-  [in] LONG                      lReason,
-  [in] LONG                      lStatus,
-  [in] LONG                      lPercentComplete,
-  [in] LONG                      lOffset,
-  [in] LONG                      lLength,
-  [in] PMINIDRV_TRANSFER_CONTEXT pTranCtx,
-  [in] LONG                      lReserved
+  LONG                      lReason,
+  LONG                      lStatus,
+  LONG                      lPercentComplete,
+  LONG                      lOffset,
+  LONG                      lLength,
+  PMINIDRV_TRANSFER_CONTEXT pTranCtx,
+  LONG                      lReserved
 );
-````
+```
 
 ## Parameters
 
@@ -210,7 +210,7 @@ Specifies the number of bytes contained in the transfer.
 
 `pTranCtx`
 
-Points to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a> structure containing the data transfer values.
+Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a> structure containing the data transfer values.
 
 `lReserved`
 
@@ -236,8 +236,8 @@ IT_MSG_FILE_PREVIEW_DATA_HEADER  is for out-of-band-data. This allows the applic
 
 ## See Also
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
+<a href="https://msdn.microsoft.com/cf2460c5-325f-43c3-a1fe-5b6982234194">IWiaMiniDrvCallBack</a>
 
 
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrvcallback.md">IWiaMiniDrvCallBack</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a>

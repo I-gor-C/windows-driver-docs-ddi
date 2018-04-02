@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_caps.htm
 old-project: display
 ms.assetid: d825a0d1-fa58-4525-bf90-eb7eaee0cfba
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_CAPS, D3D11_1DDI_VIDEO_PROCESSOR_CAPS structure [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_CAPS, display.d3d11_1ddi_video_processor_caps
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,7 +47,7 @@ req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_CAPS
 Describes the capabilities of a Microsoft Direct3D 11 video processor.
 
 ## Syntax
-````
+```
 typedef struct D3D11_1DDI_VIDEO_PROCESSOR_CAPS {
   UINT DeviceCaps;
   UINT FeatureCaps;
@@ -58,39 +58,39 @@ typedef struct D3D11_1DDI_VIDEO_PROCESSOR_CAPS {
   UINT RateConversionCapsCount;
   UINT MaxInputStreams;
   UINT MaxStreamStates;
-} D3D11_1DDI_VIDEO_PROCESSOR_CAPS;
-````
+};
+```
 
 ## Members
 
 
 `DeviceCaps`
 
-A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_device_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS</a> enumeration.
+A bitwise <b>OR</b> of zero or more flags from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450978">D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS</a> enumeration.
 
 `FeatureCaps`
 
-A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_feature_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS</a> enumeration.
+A bitwise <b>OR</b> of zero or more flags from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450980">D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS</a> enumeration.
 
 `FilterCaps`
 
-A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_filter_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS</a> enumeration.
+A bitwise <b>OR</b> of zero or more flags from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450983">D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS</a> enumeration.
 
 `InputFormatCaps`
 
-A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_format_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS</a> enumeration.
+A bitwise <b>OR</b> of zero or more flags from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450986">D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS</a> enumeration.
 
 `AutoStreamCaps`
 
-A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_auto_stream_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS</a> enumeration.
+A bitwise <b>OR</b> of zero or more flags from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450966">D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS</a> enumeration.
 
 `StereoCaps`
 
-A bitwise <b>OR</b> of zero or more flags from the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_stereo_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS</a> enumeration.
+A bitwise <b>OR</b> of zero or more flags from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451023">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS</a> enumeration.
 
 `RateConversionCapsCount`
 
-The number of frame-rate conversion capabilities. To enumerate the frame-rate conversion capabilities, call the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorrateconversioncaps.md">GetVideoProcessorRateConversionCaps</a> function.
+The number of frame-rate conversion capabilities. To enumerate the frame-rate conversion capabilities, call the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451690">GetVideoProcessorRateConversionCaps</a> function.
 
 `MaxInputStreams`
 
@@ -113,28 +113,28 @@ The <b>MaxStreamStates</b> member gives the maximum number of stream states that
 
 ## See Also
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_stereo_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450966">D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS</a>
 
 
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_device_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450978">D3D11_1DDI_VIDEO_PROCESSOR_DEVICE_CAPS</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorrateconversioncaps.md">GetVideoProcessorRateConversionCaps</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450980">D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS</a>
 
 
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_feature_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FEATURE_CAPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450983">D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS</a>
 
 
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_format_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450986">D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_CAPS</a>
 
 
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_auto_stream_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_AUTO_STREAM_CAPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451023">D3D11_1DDI_VIDEO_PROCESSOR_STEREO_CAPS</a>
 
 
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_filter_caps.md">D3D11_1DDI_VIDEO_PROCESSOR_FILTER_CAPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451690">GetVideoProcessorRateConversionCaps</a>

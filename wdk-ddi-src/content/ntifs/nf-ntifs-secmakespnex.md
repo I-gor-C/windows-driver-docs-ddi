@@ -7,7 +7,7 @@ old-location: ifsk\secmakespnex.htm
 old-project: ifsk
 ms.assetid: 5000be89-144c-405c-93ea-3e9372e0a677
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: SecMakeSPNEx, SecMakeSPNEx function [Installable File System Drivers], ifsk.secmakespnex, ksecddref_3c4441b9-ed78-473f-ac3c-35a644018499.xml, ntifs/SecMakeSPNEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,19 +50,19 @@ req.typenames: TOKEN_TYPE
 
 ## Syntax
 
-````
-NTSTATUS SecMakeSPNEx(
-  _In_    PUNICODE_STRING ServiceClass,
-  _In_    PUNICODE_STRING ServiceName,
-  _In_    PUNICODE_STRING InstanceName,
-  _In_    USHORT          InstancePort,
-  _In_    PUNICODE_STRING Referrer,
-  _In_    PUNICODE_STRING TargetInfo,
-  _Inout_ PUNICODE_STRING Spn,
-  _Out_   PULONG          Length,
-  _In_    BOOLEAN         Allocate
+```
+KSECDDDECLSPEC NTSTATUS SecMakeSPNEx(
+  IN PUNICODE_STRING              ServiceClass,
+  IN PUNICODE_STRING              ServiceName,
+  IN PUNICODE_STRING InstanceName OPTIONAL,
+  IN USHORT InstancePort          OPTIONAL,
+  IN PUNICODE_STRING Referrer     OPTIONAL,
+  IN PUNICODE_STRING TargetInfo   OPTIONAL,
+  IN OUT PUNICODE_STRING          Spn,
+  OUT PULONG Length               OPTIONAL,
+  IN BOOLEAN                      Allocate
 );
-````
+```
 
 ## Parameters
 
@@ -166,8 +166,8 @@ The <i>Allocate</i> parameter was set to true, but the memory allocation request
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-secmakespn.md">SecMakeSPN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556584">SecMakeSPN</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-secmakespnex2.md">SecMakeSPNEx2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556592">SecMakeSPNEx2</a>

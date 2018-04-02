@@ -7,7 +7,7 @@ old-location: ifsk\rtlflushnonvolatilememoryranges.htm
 old-project: ifsk
 ms.assetid: 169C5F41-B372-4056-AAC5-53DD0582A563
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlFlushNonVolatileMemoryRanges, RtlFlushNonVolatileMemoryRanges routine [Installable File System Drivers], ifsk.rtlflushnonvolatilememoryranges, ntddk/RtlFlushNonVolatileMemoryRanges
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,21 +49,21 @@ The routine <b>RtlFlushNonVolatileMemoryRanges</b> optimally flushes the given n
 
 ## Syntax
 
-````
-NTSTATUS RtlFlushNonVolatileMemoryRanges(
-   _In_ PVOID                               NvToken,
-   _In_reads_(TotalRanges) PNV_MEMORY_RANGE NvRanges,
-   _In_ SIZE_T                              TotalRanges,
-   _In_ ULONG                               Flags
+```
+NTSYSAPI NTSTATUS RtlFlushNonVolatileMemoryRanges(
+  PVOID            NvToken,
+  PNV_MEMORY_RANGE NvRanges,
+  SIZE_T           NumRanges,
+  ULONG            Flags
 );
-````
+```
 
 ## Parameters
 
 `NvToken`
 
 A pointer to an opaque structure that has
-        information about various properties of the non-volatile memory region which <a href="..\ntddk\nf-ntddk-rtlgetnonvolatiletoken.md">RtlGetNonVolatileToken</a> had returned.
+        information about various properties of the non-volatile memory region which <a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a> had returned.
 
 `NvRanges`
 
@@ -75,7 +75,7 @@ TBD
 
 `Flags`
 
-For flags specified, refer <a href="..\ntddk\nf-ntddk-rtlflushnonvolatilememory.md">RtlFlushNonVolatileMemory</a> as this routine also honors the flags apart from passing it to <b>RtlFlushNonVolatileMemory</b>.
+For flags specified, refer <a href="https://msdn.microsoft.com/759CDFAA-D939-44E7-AE03-E3ED90F8E09D">RtlFlushNonVolatileMemory</a> as this routine also honors the flags apart from passing it to <b>RtlFlushNonVolatileMemory</b>.
 
 
 ## Return Value
@@ -124,10 +124,6 @@ This routine is currently not supported for Windows Server until the next major 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>
-
-
-
 <a href="https://msdn.microsoft.com/EA1C2DF3-591C-407A-ABBF-DE615466A498">RtlDrainNonVolatileFlush</a>
 
 
@@ -138,6 +134,10 @@ RtlFlushNonVolatileMemory</a>
 
 
 <a href="https://msdn.microsoft.com/8E083814-7408-47D2-A811-2DCBDCD13097">RtlFreeNonVolatileToken</a>
+
+
+
+<a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>
 
 
 

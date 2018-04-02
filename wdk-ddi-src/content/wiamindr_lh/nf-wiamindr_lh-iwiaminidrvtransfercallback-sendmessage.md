@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# SendMessage method
+# IWiaMiniDrvTransferCallback::SendMessage method
 Periodically called by the WIA mini-driver during a data transfer, to update the WIA application client about the progress and status of the transfer.
 
 For more information about the progress data that is transferred, see <a href="http://msdn.microsoft.com/library/windows/desktop/ms629867(v=vs.85).aspx">WiaTransferParams</a>.
 
 ## Syntax
 
-````
+```
 HRESULT SendMessage(
-  [in] LONG              lFlags,
-  [in] WiaTransferParams *pWiaTransferParams
+  LONG              lFlags,
+  WiaTransferParams *pWiaTransferParams
 );
-````
+```
 
 ## Parameters
 
@@ -91,8 +91,8 @@ When the current transfer sequence is cancelled, the <b>SendMessage</b> method r
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj151550">IWiaMiniDrvTransferCallback</a>
+
+
+
 <a href="http://msdn.microsoft.com/library/windows/desktop/ms629867(v=vs.85).aspx">WiaTransferParams</a>
-
-
-
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrvtransfercallback.md">IWiaMiniDrvTransferCallback</a>

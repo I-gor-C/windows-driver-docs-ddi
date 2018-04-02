@@ -48,15 +48,14 @@ req.product: Windows 10 or later.
 TD
 
 ## Syntax
-````
-typedef enum _STREAM_PRIORITY { 
-  High,
-  Dispatch,
-  Low,
-  LowToHigh                   
-} STREAM_PRIORITY, *PSTREAM_PRIORITY
-;
-````
+```
+typedef enum _STREAM_PRIORITY {
+  High       ,
+  Dispatch   ,
+  Low        ,
+  LowToHigh
+} STREAM_PRIORITY, *PSTREAM_PRIORITY;
+```
 
 ## Constants
 

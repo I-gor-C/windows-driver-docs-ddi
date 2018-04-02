@@ -47,12 +47,12 @@ req.typenames: BDA_RATING_PINRESET, *PBDA_RATING_PINRESET
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_RATING_PINRESET {
   BYTE bPinLength;
   BYTE argbNewPin[MIN_DIMENSION];
 } BDA_RATING_PINRESET, *PBDA_RATING_PINRESET;
-````
+```
 
 ## Members
 

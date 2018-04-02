@@ -7,7 +7,7 @@ old-location: storage\storportpofxpowercontrol.htm
 old-project: storage
 ms.assetid: 1EBEBD5D-E0E5-48A3-8CDA-C336575E53C6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortPoFxPowerControl, StorPortPoFxPowerControl routine [Storage Devices], storage.storportpofxpowercontrol, storport/StorPortPoFxPowerControl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,23 +51,24 @@ The <b>StorPortPoFxPowerControl</b> routine sends a power control request to the
 
 ## Syntax
 
-````
+```
 ULONG StorPortPoFxPowerControl(
-  _In_      PVOID   HwDeviceExtension,
-  _In_      LPCGUID PowerControlCode,
-  _In_opt_  PVOID   InBuffer,
-  _In_      SIZE_T  InBufferSize,
-  _Out_opt_ PVOID   OutBuffer,
-  _In_      SIZE_T  OutBufferSize,
-  _Out_opt_ PSIZE_T BytesReturned
+  PVOID         HwDeviceExtension,
+  PSTOR_ADDRESS Address,
+  LPCGUID       PowerControlCode,
+  PVOID         InBuffer,
+  SIZE_T        InBufferSize,
+  PVOID         OutBuffer,
+  SIZE_T        OutBufferSize,
+  PSIZE_T       BytesReturned
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-A pointer to the hardware device extension for the host bus adapter (HBA). This is the device extension used to register the device in a prior call to <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>.
+A pointer to the hardware device extension for the host bus adapter (HBA). This is the device extension used to register the device in a prior call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh920421">StorPortInitializePoFxPower</a>.
 
 `Address`
 
@@ -176,7 +177,7 @@ The power control operation was unsuccessful.
 
 A minport driver calls this routine to send a power control request directly to the PEP. A power control request is similar to an I/O control request (IOCTL). Unlike an IOCTL, however, a power control request is sent directly to PEP and is not observed by other device drivers in the device stack. During a <b>StorPortPoFxPowerControl</b> call, the PEP synchronously performs the requested operation.
 
-Similarly, The PEP can send a power control request directly to the miniport. The miniport driver handles this request in its <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a> and <a href="..\storport\nc-storport-hw_unit_control.md">HwStorUnitControl</a> routines. The <i>ControlType</i> parameter receives the <b>ScsiAdapterPoFxPowerControl</b> type in the <b>HwStorAdapterControl</b> routine and the <b>ScsiUnitPoFxPowerControl</b> in the <b>HwStorUnitControl</b> routine.
+Similarly, The PEP can send a power control request directly to the miniport. The miniport driver handles this request in its <a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh920398">HwStorUnitControl</a> routines. The <i>ControlType</i> parameter receives the <b>ScsiAdapterPoFxPowerControl</b> type in the <b>HwStorAdapterControl</b> routine and the <b>ScsiUnitPoFxPowerControl</b> in the <b>HwStorUnitControl</b> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -189,8 +190,8 @@ Similarly, The PEP can send a power control request directly to the miniport. Th
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_unit_control.md">HwStorUnitControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a>
 
 
 
-<a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh920398">HwStorUnitControl</a>

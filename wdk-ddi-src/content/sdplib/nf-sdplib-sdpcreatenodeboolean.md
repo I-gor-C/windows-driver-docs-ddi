@@ -48,16 +48,16 @@ req.product: Windows 10 or later.
 # SdpCreateNodeBoolean function
 The Bluetooth 
   <b>SdpCreateNodeBoolean</b> function is used to allocate and initialize an 
-  <a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a> structure to a Boolean type.
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a> structure to a Boolean type.
 
 ## Syntax
 
-````
-PSDP_NODE SdpCreateNodeBoolean(
-  _In_ SDP_BOOLEAN bVal,
-  _In_ ULONG       tag
+```
+_IRQL_requires_same_ PSDP_NODE SdpCreateNodeBoolean(
+  SDP_BOOLEAN bVal,
+  ULONG       tag
 );
-````
+```
 
 ## Parameters
 
@@ -82,7 +82,7 @@ The data associated with the
     time.
 
 Bluetooth profile drivers can obtain a pointer to this function through the 
-    <a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536635">BTHDDI_SDP_NODE_INTERFACE</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -94,8 +94,8 @@ Bluetooth profile drivers can obtain a pointer to this function through the
 
 ## See Also
 
-<a href="..\sdpnode\ns-sdpnode-_sdp_node.md">SDP_NODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536635">BTHDDI_SDP_NODE_INTERFACE</a>
 
 
 
-<a href="..\bthsdpddi\ns-bthsdpddi-_bthddi_sdp_node_interface.md">BTHDDI_SDP_NODE_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536848">SDP_NODE</a>

@@ -7,7 +7,7 @@ old-location: netvista\wsklisten.htm
 old-project: netvista
 ms.assetid: 854C2DA1-1763-4354-8B9D-9AE0C60D8F31
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: PFN_WSK_LISTEN, WskListen, WskListen callback function [Network Drivers Starting with Windows Vista], netvista.wsklisten, wsk/WskListen
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -65,8 +65,8 @@ NTSTATUS PfnWskListen(
 `Socket`
 
 A pointer to a 
-     <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that specifies the socket
-     object for the stream socket that is listening for an incoming connection. This socket must have previously been bound to a local transport address by calling <a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a> structure that specifies the socket
+     object for the stream socket that is listening for an incoming connection. This socket must have previously been bound to a local transport address by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff571121">WskBind</a>.
 
 `Irp`
 
@@ -118,7 +118,7 @@ The IRP has been queued by the WSK subsystem, which is waiting for an incoming c
 <td width="60%">
 The socket is no longer functional. The IRP will be completed with failure status. The WSK
        application must call the 
-       <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a> function to close the
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a> function to close the
        socket as soon as possible.
 
 </td>
@@ -138,7 +138,7 @@ An error occurred. The IRP will be completed with failure status.
 
 ## Remarks
 
-A WSK application can call the <b>WskListen</b> function only on a stream socket that the application previously bound to a local transport address by calling the <a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a> function. Once <b>WskListen</b> is successfully called on a stream socket, the socket is committed to a listening socket flow and can no longer call connection-oriented socket functions.
+A WSK application can call the <b>WskListen</b> function only on a stream socket that the application previously bound to a local transport address by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff571121">WskBind</a> function. Once <b>WskListen</b> is successfully called on a stream socket, the socket is committed to a listening socket flow and can no longer call connection-oriented socket functions.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -150,20 +150,20 @@ A WSK application can call the <b>WskListen</b> function only on a stream socket
 
 ## See Also
 
-<a href="..\wsk\nc-wsk-pfn_wsk_bind.md">WskBind</a>
+<a href="https://msdn.microsoft.com/A10B901E-9987-40E9-976B-4CD9455E0AEE">WSK_PROVIDER_STREAM_DISPATCH</a>
 
 
 
-<a href="..\wsk\nc-wsk-pfn_wsk_accept.md">WskAccept</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a>
 
 
 
-<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571109">WskAccept</a>
 
 
 
-<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571121">WskBind</a>
 
 
 
-<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a>

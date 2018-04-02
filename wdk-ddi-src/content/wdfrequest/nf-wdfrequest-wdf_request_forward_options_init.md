@@ -48,21 +48,21 @@ req.product: Windows 10 or later.
 # WDF_REQUEST_FORWARD_OPTIONS_INIT function
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WDF_REQUEST_FORWARD_OPTIONS_INIT</b> function initializes a <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_forward_options.md">WDF_REQUEST_FORWARD_OPTIONS</a> structure.
+The <b>WDF_REQUEST_FORWARD_OPTIONS_INIT</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552459">WDF_REQUEST_FORWARD_OPTIONS</a> structure.
 
 ## Syntax
 
-````
-VOID WDF_REQUEST_FORWARD_OPTIONS_INIT(
-  _Out_ PWDF_REQUEST_FORWARD_OPTIONS ForwardOptions
+```
+void WDF_REQUEST_FORWARD_OPTIONS_INIT(
+  PWDF_REQUEST_FORWARD_OPTIONS ForwardOptions
 );
-````
+```
 
 ## Parameters
 
 `ForwardOptions`
 
-A pointer to a <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_forward_options.md">WDF_REQUEST_FORWARD_OPTIONS</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552459">WDF_REQUEST_FORWARD_OPTIONS</a> structure.
 
 
 ## Return Value
@@ -71,11 +71,11 @@ None.
 
 ## Remarks
 
-Before a driver calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>, it must call <b>WDF_REQUEST_FORWARD_OPTIONS_INIT</b> to initialize a <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_forward_options.md">WDF_REQUEST_FORWARD_OPTIONS</a> structure.
+Before a driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549959">WdfRequestForwardToParentDeviceIoQueue</a>, it must call <b>WDF_REQUEST_FORWARD_OPTIONS_INIT</b> to initialize a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552459">WDF_REQUEST_FORWARD_OPTIONS</a> structure.
 
-The <b>WDF_REQUEST_FORWARD_OPTIONS_INIT</b> function zeros the specified <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_forward_options.md">WDF_REQUEST_FORWARD_OPTIONS</a> structure and sets the structure's <b>Size</b> member. Then the function sets the <a href="..\wdfrequest\ne-wdfrequest-_wdf_request_forward_options_flags.md">WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET</a> flag.
+The <b>WDF_REQUEST_FORWARD_OPTIONS_INIT</b> function zeros the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff552459">WDF_REQUEST_FORWARD_OPTIONS</a> structure and sets the structure's <b>Size</b> member. Then the function sets the <a href="https://msdn.microsoft.com/6161bfd3-482c-4571-bd88-2e25d32b34a0">WDF_REQUEST_FORWARD_OPTION_SEND_AND_FORGET</a> flag.
 
-For a code example that uses <b>WDF_REQUEST_FORWARD_OPTIONS_INIT</b>, see <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>.
+For a code example that uses <b>WDF_REQUEST_FORWARD_OPTIONS_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549959">WdfRequestForwardToParentDeviceIoQueue</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,8 +86,8 @@ For a code example that uses <b>WDF_REQUEST_FORWARD_OPTIONS_INIT</b>, see <a hre
 
 ## See Also
 
-<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_forward_options.md">WDF_REQUEST_FORWARD_OPTIONS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552459">WDF_REQUEST_FORWARD_OPTIONS</a>
 
 
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549959">WdfRequestForwardToParentDeviceIoQueue</a>

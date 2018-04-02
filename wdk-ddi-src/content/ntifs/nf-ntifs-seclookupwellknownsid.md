@@ -7,7 +7,7 @@ old-location: ifsk\seclookupwellknownsid.htm
 old-project: ifsk
 ms.assetid: fbf06a28-d6f8-424c-95e0-ce24653cac64
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: SecLookupWellKnownSid, SecLookupWellKnownSid function [Installable File System Drivers], ifsk.seclookupwellknownsid, ksecddref_4c0053b3-cdaa-4cdc-a4d3-6329ccf64f98.xml, ntifs/SecLookupWellKnownSid
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ req.typenames: TOKEN_TYPE
 
 ## Syntax
 
-````
-NTSTATUS SecLookupWellKnownSid(
-  _In_    WELL_KNOWN_SID_TYPE SidType,
-  _Out_   PSID                Sid,
-  _In_    ULONG               SidBufferSize,
-  _Inout_ PULONG              SidSize
+```
+KSECDDDECLSPEC NTSTATUS SEC_ENTRY SecLookupWellKnownSid(
+  WELL_KNOWN_SID_TYPE SidType,
+  PSID                Sid,
+  ULONG               SidBufferSize,
+  PULONG SidSize      OPTIONAL
 );
-````
+```
 
 ## Parameters
 
@@ -539,12 +539,12 @@ If the function cannot find the well known SID for the <i>SidType</i> specified,
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-seclookupaccountsid.md">SecLookupAccountSid</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554795">SecLookupAccountName</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-seclookupaccountname.md">SecLookupAccountName</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556579">SecLookupAccountSid</a>

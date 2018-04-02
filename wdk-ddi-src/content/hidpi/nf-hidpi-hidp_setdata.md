@@ -50,26 +50,26 @@ The <b>HidP_SetData</b> routine sets a specified set of HID control button and v
 
 ## Syntax
 
-````
-NTSTATUS __stdcall HidP_SetData(
-  _In_    HIDP_REPORT_TYPE     ReportType,
-  _Inout_ PHIDP_DATA           DataList,
-  _Inout_ PULONG               DataLength,
-  _In_    PHIDP_PREPARSED_DATA PreparsedData,
-  _In_    PCHAR                Report,
-  _In_    ULONG                ReportLength
+```
+NTSTATUS HidP_SetData(
+  HIDP_REPORT_TYPE     ReportType,
+  PHIDP_DATA           DataList,
+  PULONG               DataLength,
+  PHIDP_PREPARSED_DATA PreparsedData,
+  PCHAR                Report,
+  ULONG                ReportLength
 );
-````
+```
 
 ## Parameters
 
 `ReportType`
 
-Specifies a <a href="..\hidpi\ne-hidpi-_hidp_report_type.md">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539774">HIDP_REPORT_TYPE</a> enumerator value that indicates the type of HID report located at <i>Report</i>.
 
 `DataList`
 
-Pointer to a caller-allocated array of <a href="..\hidpi\ns-hidpi-_hidp_data.md">HIDP_DATA</a> structures that specify which buttons and usage values to set.
+Pointer to a caller-allocated array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539699">HIDP_DATA</a> structures that specify which buttons and usage values to set.
 
 `DataLength`
 
@@ -85,7 +85,7 @@ Pointer to a HID report.
 
 `ReportLength`
 
-Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a> returns in a collection's <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure.
+Specifies the size, in bytes, of the HID report located at <i>Report</i>, which must be equal to the report length for the specified report type that <a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a> returns in a collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.
 
 
 ## Return Value
@@ -117,7 +117,7 @@ The preparsed data specified by <i>PreparsedData</i> is not valid.
 </dl>
 </td>
 <td width="60%">
-The size, in bytes, of the HID report is not equal to the length specified in the collection's <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure for the specified report type.
+The size, in bytes, of the HID report is not equal to the length specified in the collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure for the specified report type.
 
 </td>
 </tr>
@@ -215,7 +215,7 @@ A data index specifies a <a href="https://msdn.microsoft.com/d447dda6-a1e5-4e57-
 
 ## Remarks
 
-Except for usage value arrays, a user-mode application or kernel-mode driver can use <b>HidP_SetData</b> to set buttons and usage values in a report. To set a usage value array, an application or driver must use <a href="..\hidpi\nf-hidpi-hidp_setusagevaluearray.md">HidP_SetUsageValueArray</a>.
+Except for usage value arrays, a user-mode application or kernel-mode driver can use <b>HidP_SetData</b> to set buttons and usage values in a report. To set a usage value array, an application or driver must use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539801">HidP_SetUsageValueArray</a>.
 
 <b>HidP_SetData</b> sets the output value of <i>DataLength</i> as follows:
 
@@ -234,23 +234,23 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
-<a href="..\hidpi\nf-hidpi-hidp_getdata.md">HidP_GetData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539699">HIDP_DATA</a>
 
 
 
-<a href="..\hidpi\nf-hidpi-hidp_unsetusages.md">HidP_UnsetUsages</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539718">HidP_GetData</a>
 
 
 
-<a href="..\hidpi\nf-hidpi-hidp_setusages.md">HidP_SetUsages</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
 
 
 
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539801">HidP_SetUsageValueArray</a>
 
 
 
-<a href="..\hidpi\ns-hidpi-_hidp_data.md">HIDP_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539792">HidP_SetUsages</a>
 
 
 
@@ -258,8 +258,8 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 
 
-<a href="..\hidpi\nf-hidpi-hidp_setusagevaluearray.md">HidP_SetUsageValueArray</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539819">HidP_UnsetUsages</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff539779">HidP_SetButtons</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>

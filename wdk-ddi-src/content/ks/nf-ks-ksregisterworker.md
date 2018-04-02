@@ -60,9 +60,12 @@ The <b>KsRegisterWorker</b> function handles clients registering for use of a th
 
 ## Syntax
 
-````
-typedef PVOID PKSWORKER; 
-````
+```
+KSDDKAPI NTSTATUS KsRegisterWorker(
+  WORK_QUEUE_TYPE WorkQueueType,
+  PKSWORKER       *Worker
+);
+```
 
 ## Parameters
 

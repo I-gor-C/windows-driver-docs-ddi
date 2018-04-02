@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# Log method
+# IWiaLog::Log method
 The <b>IWiaLog</b> interface is obsolete for Windows XP and later, and is no longer supported. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540599">Diagnostic Log Macros</a> instead.The <b>IWiaLog::Log</b> method writes a diagnostic log message to <i>Wiaservc.log</i>.
 
 ## Syntax
 
-````
+```
 HRESULT Log(
-  [in] LONG lFlags,
-  [in] LONG lResId,
-  [in] LONG lDetail,
-  [in] BSTR bstrText
+  LONG lFlags,
+  LONG lResID,
+  LONG lDetail,
+  BSTR bstrText
 );
-````
+```
 
 ## Parameters
 

@@ -53,13 +53,13 @@ The <b>WdfRequestCompleteWithPriorityBoost</b> method completes a specified I/O 
 
 ## Syntax
 
-````
-VOID WdfRequestCompleteWithPriorityBoost(
-  _In_ WDFREQUEST Request,
-  _In_ NTSTATUS   Status,
-  _In_ CCHAR      PriorityBoost
+```
+void WdfRequestCompleteWithPriorityBoost(
+  WDFREQUEST Request,
+  NTSTATUS   Status,
+  CCHAR      PriorityBoost
 );
-````
+```
 
 ## Parameters
 
@@ -113,7 +113,7 @@ For more information about calling <b>WdfRequestCompleteWithPriorityBoost</b>, s
 
 #### Examples
 
-The following code example shows how the example at <a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a> can use <b>WdfRequestCompleteWithPriorityBoost</b> instead of <b>WdfRequestComplete</b>.
+The following code example shows how the example at <a href="https://msdn.microsoft.com/library/windows/hardware/ff549945">WdfRequestComplete</a> can use <b>WdfRequestCompleteWithPriorityBoost</b> instead of <b>WdfRequestComplete</b>.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -154,12 +154,12 @@ The following code example shows how the example at <a href="..\wdfrequest\nf-wd
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcompletewithinformation.md">WdfRequestCompleteWithInformation</a>
-
-
-
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestcomplete.md">WdfRequestComplete</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548758">WdfObjectReference</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549945">WdfRequestComplete</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549948">WdfRequestCompleteWithInformation</a>

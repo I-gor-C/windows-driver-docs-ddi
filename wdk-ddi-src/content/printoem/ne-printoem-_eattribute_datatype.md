@@ -48,21 +48,21 @@ req.product: Windows 10 or later.
 The EATTRIBUTE_DATATYPE enumerates the possible data types for a global attribute, feature attribute or option attribute.
 
 ## Syntax
-````
-typedef enum _EATTRIBUTE_DATATYPE { 
-  kADT_UNKNOWN           = 0,
-  kADT_BOOL              = 1,
-  kADT_INT               = 2,
-  kADT_LONG              = 3,
-  kADT_DWORD             = 4,
-  kADT_ASCII             = 5,
-  kADT_UNICODE           = 6,
-  kADT_BINARY            = 7,
-  kADT_SIZE              = 8,
-  kADT_RECT              = 9,
-  kADT_CUSTOMSIZEPARAMS  = 10
+```
+typedef enum _EATTRIBUTE_DATATYPE {
+  kADT_UNKNOWN           ,
+  kADT_BOOL              ,
+  kADT_INT               ,
+  kADT_LONG              ,
+  kADT_DWORD             ,
+  kADT_ASCII             ,
+  kADT_UNICODE           ,
+  kADT_BINARY            ,
+  kADT_SIZE              ,
+  kADT_RECT              ,
+  kADT_CUSTOMSIZEPARAMS
 } EATTRIBUTE_DATATYPE;
-````
+```
 
 ## Constants
 
@@ -120,7 +120,7 @@ typedef enum _EATTRIBUTE_DATATYPE {
             
                 <tr>
                     <td>kADT_CUSTOMSIZEPARAMS</td>
-                    <td>The attribute is an array containing CUSTOMPARAM_MAX (a constant defined in printoem.h) elements. Each element is a <a href="..\printoem\ns-printoem-_customsizeparam.md">CUSTOMSIZEPARAM</a> structure.</td>
+                    <td>The attribute is an array containing CUSTOMPARAM_MAX (a constant defined in printoem.h) elements. Each element is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547337">CUSTOMSIZEPARAM</a> structure.</td>
                 </tr>
 </table>
 
@@ -132,4 +132,4 @@ typedef enum _EATTRIBUTE_DATATYPE {
 
 ## See Also
 
-<a href="..\printoem\ns-printoem-_customsizeparam.md">CUSTOMSIZEPARAM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547337">CUSTOMSIZEPARAM</a>

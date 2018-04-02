@@ -7,7 +7,7 @@ old-location: storage\setgrouppresharedkey_out.htm
 old-project: storage
 ms.assetid: 4ea5e428-783c-4a28-bec5-42106425ee1f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSetGroupPresharedKey_OUT, PSetGroupPresharedKey_OUT, PSetGroupPresharedKey_OUT structure pointer [Storage Devices], SetGroupPresharedKey_OUT, SetGroupPresharedKey_OUT structure [Storage Devices], _SetGroupPresharedKey_OUT, iscsiop/PSetGroupPresharedKey_OUT, iscsiop/SetGroupPresharedKey_OUT, storage.setgrouppresharedkey_out, structs-iSCSI_81186f6a-bf08-42eb-a3d8-ae195cdd8135.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,11 +47,11 @@ req.typenames: SetGroupPresharedKey_OUT, *PSetGroupPresharedKey_OUT
 The SetGroupPresharedKey_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565693">SetGroupPresharedKey</a> method.
 
 ## Syntax
-````
+```
 typedef struct _SetGroupPresharedKey_OUT {
   ULONG Status;
-} SetGroupPresharedKey_OUT, *PSetGroupPresharedKey_OUT;
-````
+} *PSetGroupPresharedKey_OUT, SetGroupPresharedKey_OUT;
+```
 
 ## Members
 
@@ -70,12 +70,12 @@ You must implement this method.
 
 ## See Also
 
-<a href="..\iscsiop\ns-iscsiop-_setgrouppresharedkey_in.md">SetGroupPresharedKey_IN</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565693">SetGroupPresharedKey</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565695">SetGroupPresharedKey_IN</a>

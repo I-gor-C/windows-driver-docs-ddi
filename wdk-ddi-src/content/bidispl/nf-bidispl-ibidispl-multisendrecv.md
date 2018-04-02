@@ -44,17 +44,17 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
-# MultiSendRecv method
+# IBidiSpl::MultiSendRecv method
 The <b>MultiSendRecv</b> method sends a list of bidi requests.
 
 ## Syntax
 
-````
+```
 HRESULT MultiSendRecv(
-  [in] const LPCWSTR               pszAction,
-  [in]       IBidiRequestContainer *pRequestContainer
+  const LPCWSTR         pszAction,
+  IBidiRequestContainer *pRequestContainer
 );
-````
+```
 
 ## Parameters
 
@@ -164,4 +164,4 @@ The BIDI_ACTION_* values are case insensitive strings.
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144980">IBidiSpl</a>

@@ -48,16 +48,16 @@ req.product: Windows 10 or later.
 The <b>SPB_REQUEST_SEQUENCE_POSITION</b> enumeration indicates the position of an I/O request in the list of transfers for an <a href="https://msdn.microsoft.com/7415DB28-5E93-4F47-B169-7C652969D4C7">I/O transfer sequence</a>.
 
 ## Syntax
-````
-typedef enum  { 
-  SpbRequestSequencePositionInvalid   = 0,
-  SpbRequestSequencePositionSingle,
-  SpbRequestSequencePositionFirst,
-  SpbRequestSequencePositionContinue,
-  SpbRequestSequencePositionLast,
+```
+typedef enum _SPB_REQUEST_SEQUENCE_POSITION {
+  SpbRequestSequencePositionInvalid   ,
+  SpbRequestSequencePositionSingle    ,
+  SpbRequestSequencePositionFirst     ,
+  SpbRequestSequencePositionContinue  ,
+  SpbRequestSequencePositionLast      ,
   SpbRequestSequencePositionMax
-} SPB_REQUEST_SEQUENCE_POSITION;
-````
+} SPB_REQUEST_SEQUENCE_POSITION, *PSPB_REQUEST_SEQUENCE_POSITION;
+```
 
 ## Constants
 
@@ -136,11 +136,7 @@ For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbReque
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450859">IOCTL_SPB_UNLOCK_CONTROLLER</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a>
+<a href="https://msdn.microsoft.com/C56F1528-5FDA-4BC9-AB32-7882FB0F7713">EvtSpbControllerIoSequence</a>
 
 
 
@@ -148,11 +144,11 @@ For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbReque
 
 
 
-<a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450859">IOCTL_SPB_UNLOCK_CONTROLLER</a>
 
 
 
-<a href="https://msdn.microsoft.com/C56F1528-5FDA-4BC9-AB32-7882FB0F7713">EvtSpbControllerIoSequence</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
 
 
 
@@ -160,8 +156,12 @@ For position values of <b>SpbRequestSequencePositionContinue</b> and <b>SpbReque
 
 
 
+<a href="https://msdn.microsoft.com/91A5C504-7072-4B64-86F1-2BDE616CCA31">SPB_REQUEST_PARAMETERS</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh406220">SPB_TRANSFER_DIRECTION</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a>

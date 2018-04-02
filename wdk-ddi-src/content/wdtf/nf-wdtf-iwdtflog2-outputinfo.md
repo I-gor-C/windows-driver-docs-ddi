@@ -7,7 +7,7 @@ old-location: dtf\iwdtflog2_outputinfo.htm
 old-project: dtf
 ms.assetid: bd98186f-5681-4611-9c27-eabfe4412df7
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFLOG2, IWDTFLOG2 interface [Windows Device Testing Framework], OutputInfo method, IWDTFLOG2::OutputInfo, Microsoft.WDTF.IWDTFLOG2.OutputInfo, Microsoft::WDTF::IWDTFLOG2::OutputInfo, OutputInfo method [Windows Device Testing Framework], OutputInfo method [Windows Device Testing Framework], IWDTFLOG2 interface, OutputInfo,IWDTFLOG2.OutputInfo, dtf.iwdtflog2_outputinfo, wdtf/IWDTFLOG2::OutputInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# OutputInfo method
+# IWDTFLOG2::OutputInfo method
 Writes an informational entry to the test case log.
 
 ## Syntax
 
-````
+```
 HRESULT OutputInfo(
-  [in] BSTR sInfoString
+  BSTR sInfoString
 );
-````
+```
 
 ## Parameters
 
@@ -77,4 +77,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtflog2.md">IWDTFLOG2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451011">IWDTFLOG2</a>

@@ -47,13 +47,13 @@ req.typenames: IRB_REQ_ISOCH_DETACH_BUFFERS
 This structure contains the fields required to carry out a IsochDetachBuffers request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_ISOCH_DETACH_BUFFERS {
-  HANDLE            hResource;
-  ULONG             nNumberOfDescriptors;
+  HANDLE            hResource;
+  ULONG             nNumberOfDescriptors;
   PISOCH_DESCRIPTOR pIsochDescriptor;
 } IRB_REQ_ISOCH_DETACH_BUFFERS;
-````
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: display\dxva_videodesc.htm
 old-project: display
 ms.assetid: 5623ed85-e78a-48f2-ab21-e6364da86b2a
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*LPDXVA_VideoDesc, DXVA_VideoDesc, DXVA_VideoDesc structure [Display Devices], LPDXVA_VideoDesc, LPDXVA_VideoDesc structure pointer [Display Devices], _DXVA_VideoDesc, display.dxva_videodesc, dxva/DXVA_VideoDesc, dxva/LPDXVA_VideoDesc, dxvaref_1b9d87d3-06b4-4a61-9cb1-9752c55ef865.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,17 @@ req.typenames: DXVA_VideoDesc, *LPDXVA_VideoDesc
 The DXVA_VideoDesc structure is sent by the renderer to the driver to specify a description of the video stream on which the deinterlacing or frame-rate conversion operation is to be performed.
 
 ## Syntax
-````
+```
 typedef struct _DXVA_VideoDesc {
-  DWORD          Size;
-  DWORD          SampleWidth;
-  DWORD          SampleHeight;
-  DWORD          SampleFormat;
-  D3DFORMAT      d3dFormat;
+  DWORD          Size;
+  DWORD          SampleWidth;
+  DWORD          SampleHeight;
+  DWORD          SampleFormat;
+  D3DFORMAT      d3dFormat;
   DXVA_Frequency InputSampleFreq;
   DXVA_Frequency OutputFrameFreq;
 } DXVA_VideoDesc, *LPDXVA_VideoDesc;
-````
+```
 
 ## Members
 
@@ -76,7 +76,7 @@ Specifies the height of the sample, in pixels.
 
 `SampleFormat`
 
-Specifies the format of the sample defined by the <a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a> structure.
+Specifies the format of the sample defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564045">DXVA_SampleFormat</a> structure.
 
 `d3dFormat`
 
@@ -84,11 +84,11 @@ Specifies the Direct3D surface format of the sample.
 
 `InputSampleFreq`
 
-Specifies the frequency of incoming video defined by the <a href="..\dxva\ns-dxva-_dxva_frequency.md">DXVA_Frequency</a> structure.
+Specifies the frequency of incoming video defined by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563969">DXVA_Frequency</a> structure.
 
 `OutputFrameFreq`
 
-Specifies the desired frame rate of output video as defined by <a href="..\dxva\ns-dxva-_dxva_frequency.md">DXVA_Frequency</a>.
+Specifies the desired frame rate of output video as defined by <a href="https://msdn.microsoft.com/library/windows/hardware/ff563969">DXVA_Frequency</a>.
 
 ## Remarks
 For examples showing structure member values for deinterlacing or converting different types of content, see <a href="https://msdn.microsoft.com/be721bde-3c72-4942-9f33-5ea1bf2d187c">DeinterlaceQueryAvailableModes</a>.
@@ -100,8 +100,8 @@ For examples showing structure member values for deinterlacing or converting dif
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_frequency.md">DXVA_Frequency</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563969">DXVA_Frequency</a>
 
 
 
-<a href="..\dxva\ne-dxva-_dxva_sampleformat.md">DXVA_SampleFormat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564045">DXVA_SampleFormat</a>

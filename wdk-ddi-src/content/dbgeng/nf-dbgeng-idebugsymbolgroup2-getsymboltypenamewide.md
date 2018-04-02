@@ -7,7 +7,7 @@ old-location: debugger\getsymboltypenamewide.htm
 old-project: debugger
 ms.assetid: 1e5b71cf-98c4-42bc-984d-6278ff30e8c1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetSymbolTypeNameWide method [Windows Debugging], GetSymbolTypeNameWide method [Windows Debugging], IDebugSymbolGroup2 interface, GetSymbolTypeNameWide,IDebugSymbolGroup2.GetSymbolTypeNameWide, IDebugSymbolGroup2, IDebugSymbolGroup2 interface [Windows Debugging], GetSymbolTypeNameWide method, IDebugSymbolGroup2::GetSymbolTypeNameWide, dbgeng/IDebugSymbolGroup2::GetSymbolTypeNameWide, debugger.getsymboltypenamewide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetSymbolTypeNameWide method
+# IDebugSymbolGroup2::GetSymbolTypeNameWide method
 The <b>GetSymbolTypeNameWide</b> method returns the name of the specified symbol's type.
 
 ## Syntax
 
-````
+```
 HRESULT GetSymbolTypeNameWide(
-  [in]            ULONG  Index,
-  [out, optional] PWSTR  Buffer,
-  [in]            ULONG  BufferSize,
-  [out, optional] PULONG NameSize
+  ULONG  Index,
+  PWSTR  Buffer,
+  ULONG  BufferSize,
+  PULONG NameSize
 );
-````
+```
 
 ## Parameters
 
@@ -127,8 +127,8 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550846">IDebugSymbolGroup2</a>
+
+
+
 <a href="https://msdn.microsoft.com/09aa3ba9-d5b6-4c08-93f1-f7beca9350a1">IDebugSymbols::GetTypeName</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>

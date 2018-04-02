@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_create_pipeline_state_0021.htm
 old-project: display
 ms.assetid: 08C19E55-7DD7-4BDF-8C9A-A2E1B973AFEC
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3D12DDI_CREATE_PIPELINE_STATE_0021, d3d12umddi/pfnCreatePipelineState, display.pfnd3d12ddi_create_pipeline_state_0021, pfnCreatePipelineState, pfnCreatePipelineState callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -86,7 +86,7 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 ## Remarks
 
-Access this function by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_device_funcs_core_0021.md">D3D12DDI_DEVICE_FUNCS_CORE_0021</a> structure.
+Access this function by using the <a href="https://msdn.microsoft.com/4E4C3DB3-9C4C-4BBC-82C4-C5C41C0B818C">D3D12DDI_DEVICE_FUNCS_CORE_0021</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |

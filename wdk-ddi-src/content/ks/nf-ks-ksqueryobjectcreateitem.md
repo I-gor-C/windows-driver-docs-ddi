@@ -50,11 +50,11 @@ The <b>KsQueryObjectCreateItem</b> function returns the create item assigned to 
 
 ## Syntax
 
-````
-PKSOBJECT_CREATE_ITEM KsQueryObjectCreateItem(
-  _In_ KSOBJECT_HEADER Header
+```
+KSDDKAPI PKSOBJECT_CREATE_ITEM KsQueryObjectCreateItem(
+  KSOBJECT_HEADER Header
 );
-````
+```
 
 ## Parameters
 

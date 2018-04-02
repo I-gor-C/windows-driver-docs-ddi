@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# ~CWiauDbgFn method
+# CWiauDbgFn::~CWiauDbgFn method
 The <b>CWiauDbgFn::~CWiauDbgFn</b> destructor is called when the function or method being traced by <b>CWiauDbgFn::CWiauDbgFn</b> is exited.
 
 ## Syntax
 
-````
-void ~CWiauDbgFn();
-````
+```
+void ~CWiauDbgFn(
+
+);
+```
 
 ## Parameters
 
@@ -72,8 +74,8 @@ This method does not return a value.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/4be4007c-5f04-48f2-b88c-c2d71f6e8b7b">CWiauDbgFn</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540348">CWiauDbgFn::CWiauDbgFn</a>
-
-
-
-<a href="..\wiautil\nl-wiautil-cwiaudbgfn.md">CWiauDbgFn</a>

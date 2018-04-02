@@ -7,7 +7,7 @@ old-location: display\umdetwlogmapallocation.htm
 old-project: display
 ms.assetid: 60456f6a-3de7-46ae-b486-f53041ce1508
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: UMDEtwLogMapAllocation, UMDEtwLogMapAllocation function [Display Devices], display.umdetwlogmapallocation, umdprovider/UMDEtwLogMapAllocation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,16 +50,16 @@ Describes how a Microsoft DirectX graphics kernel subsystem (Dxgkrnl.sys) memory
 
 ## Syntax
 
-````
+```
 void UMDEtwLogMapAllocation(
-   ULONGLONG                  hD3DAllocation,
-   ULONGLONG                  hDxgAllocation,
-   ULONGLONG                  Offset,
-   ULONGLONG                  Size,
-   UMDETW_ALLOCATION_USAGE    Usage,
-   UMDETW_ALLOCATION_SEMANTIC Semantic
+  ULONGLONG                  hD3DAllocation,
+  ULONGLONG                  hDxgAllocation,
+  ULONGLONG                  Offset,
+  ULONGLONG                  Size,
+  UMDETW_ALLOCATION_USAGE    Usage,
+  UMDETW_ALLOCATION_SEMANTIC Semantic
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ void UMDEtwLogMapAllocation(
 
 A handle to the Direct3D allocation.
 
- For Direct3D 10 user-mode drivers, the handle will be the value of the <i>hResource</i> parameter of the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a> function. For Direct3D 9 user-mode drivers, the handle will be the value of the <i>pResource</i> parameter that the driver returns in the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a> function.
+ For Direct3D 10 user-mode drivers, the handle will be the value of the <i>hResource</i> parameter of the <a href="https://msdn.microsoft.com/c21839f0-8302-49f9-a2b4-4009fbd2d88c">CreateResource(D3D10)</a> function. For Direct3D 9 user-mode drivers, the handle will be the value of the <i>pResource</i> parameter that the driver returns in the <a href="https://msdn.microsoft.com/5b74c989-1a62-4415-a19a-dd0ba2fcff83">CreateResource</a> function.
 
 The driver can set this value to <b>NULL</b> if it uses allocations internally.
 
@@ -85,11 +85,11 @@ The size, in bytes, of the Direct3D allocation within the Dxgkrnl allocation.
 
 `Usage`
 
-A <a href="..\umdprovider\ns-umdprovider-_umdetw_allocation_usage.md">UMDETW_ALLOCATION_USAGE</a> structure that indicates the reason for this mapping.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/jj542442">UMDETW_ALLOCATION_USAGE</a> structure that indicates the reason for this mapping.
 
 `Semantic`
 
-If the allocation is used internally by the user-mode driver, this is a <a href="..\umdprovider\ne-umdprovider-_umdetw_allocation_semantic.md">UMDETW_ALLOCATION_SEMANTIC</a> structure that indicates what the allocation is used for.
+If the allocation is used internally by the user-mode driver, this is a <a href="https://msdn.microsoft.com/library/windows/hardware/jj542441">UMDETW_ALLOCATION_SEMANTIC</a> structure that indicates what the allocation is used for.
 
 
 ## Return Value
@@ -172,16 +172,16 @@ FORCEINLINE void UMDEtwLogMapAllocation(ULONGLONG hD3DAllocation,
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource.md">CreateResource</a>
+<a href="https://msdn.microsoft.com/5b74c989-1a62-4415-a19a-dd0ba2fcff83">CreateResource</a>
 
 
 
-<a href="..\umdprovider\ne-umdprovider-_umdetw_allocation_semantic.md">UMDETW_ALLOCATION_SEMANTIC</a>
+<a href="https://msdn.microsoft.com/c21839f0-8302-49f9-a2b4-4009fbd2d88c">CreateResource(D3D10)</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d10ddi_createresource.md">CreateResource(D3D10)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj542441">UMDETW_ALLOCATION_SEMANTIC</a>
 
 
 
-<a href="..\umdprovider\ns-umdprovider-_umdetw_allocation_usage.md">UMDETW_ALLOCATION_USAGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj542442">UMDETW_ALLOCATION_USAGE</a>

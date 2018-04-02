@@ -53,11 +53,11 @@ The <b>WdfFileObjectWdmGetFileObject</b> method returns the Windows Driver Model
 
 ## Syntax
 
-````
+```
 PFILE_OBJECT WdfFileObjectWdmGetFileObject(
-  _In_ WDFFILEOBJECT FileObject
+  WDFFILEOBJECT FileObject
 );
-````
+```
 
 ## Parameters
 
@@ -68,13 +68,13 @@ A handle to a framework file object.
 
 ## Return Value
 
-<b>WdfFileObjectWdmGetFileObject</b> returns a pointer to the <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure that is associated with the specified framework file object, or <b>NULL</b> if there is no WDM file object for the specified framework file object.
+<b>WdfFileObjectWdmGetFileObject</b> returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a> structure that is associated with the specified framework file object, or <b>NULL</b> if there is no WDM file object for the specified framework file object.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
 ## Remarks
 
-The pointer that the <b>WdfFileObjectWdmGetFileObject</b> method returns is valid until the framework file object is deleted. If the driver provides an <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_cleanup.md">EvtCleanupCallback</a> function for the framework file object, the pointer is valid until the callback function returns.
+The pointer that the <b>WdfFileObjectWdmGetFileObject</b> method returns is valid until the framework file object is deleted. If the driver provides an <a href="https://msdn.microsoft.com/aba2efca-7d1f-4594-af65-13356f0e3f8b">EvtCleanupCallback</a> function for the framework file object, the pointer is valid until the callback function returns.
 
 For more information about framework file objects, see <a href="https://msdn.microsoft.com/93ec5dd7-8ef0-4cea-9253-ea5d7869d4b8">Framework File Objects</a>.
 
@@ -108,4 +108,4 @@ pReturnedFileObject = WdfFileObjectWdmGetFileObject(fileObject);</pre>
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a>

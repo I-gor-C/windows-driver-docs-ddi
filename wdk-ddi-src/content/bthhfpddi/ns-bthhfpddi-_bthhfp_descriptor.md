@@ -7,7 +7,7 @@ old-location: audio\bthhfp_descriptor.htm
 old-project: audio
 ms.assetid: A3C1E53B-2E41-437A-8613-C43DCD4768B5
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PBTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR, BTHHFP_DESCRIPTOR structure [Audio Devices], PBTHHFP_DESCRIPTOR, PBTHHFP_DESCRIPTOR structure pointer [Audio Devices], _BTHHFP_DESCRIPTOR, audio.bthhfp_descriptor, bthhfpddi/BTHHFP_DESCRIPTOR, bthhfpddi/PBTHHFP_DESCRIPTOR"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,19 +46,19 @@ req.typenames: BTHHFP_DESCRIPTOR, *PBTHHFP_DESCRIPTOR
 # _BTHHFP_DESCRIPTOR structure
 The BTHHFP_DESCRIPTOR  data structure stores information describing a paired Handsfree profile (HFP) device.
 
-The HFP driver returns this data structure in the output buffer for the <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a> request.
+The HFP driver returns this data structure in the output buffer for the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265108">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a> request.
 
 ## Syntax
-````
+```
 typedef struct _BTHHFP_DESCRIPTOR {
-  GUID           InputPinCategory;
-  GUID           OutputPinCategory;
-  GUID           ContainerId;
-  BOOL           SupportsVolume;
-  ULONG          VolumePropertyValuesSize;
+  GUID           InputPinCategory;
+  GUID           OutputPinCategory;
+  GUID           ContainerId;
+  BOOL           SupportsVolume;
+  ULONG          VolumePropertyValuesSize;
   UNICODE_STRING FriendlyName;
 } BTHHFP_DESCRIPTOR, *PBTHHFP_DESCRIPTOR;
-````
+```
 
 ## Members
 
@@ -81,7 +81,7 @@ Indicates whether the paired HFP device supports remote volume control.
 
 `VolumePropertyValuesSize`
 
-If remote volume control is supported, this member contains the size of the data returned by the <a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_volumepropertyvalues.md">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a> request.
+If remote volume control is supported, this member contains the size of the data returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/dn265113">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a> request.
 
 `FriendlyName`
 
@@ -116,11 +116,15 @@ For information about the IOCTLs that work with this structure, see <a href="htt
 
 
 
-<a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_descriptor.md">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302029">Bluetooth HFP DDI Structures</a>
 
 
 
-<a href="..\bthhfpddi\ni-bthhfpddi-ioctl_bthhfp_device_get_volumepropertyvalues.md">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265108">IOCTL_BTHHFP_DEVICE_GET_DESCRIPTOR</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265113">IOCTL_BTHHFP_DEVICE_GET_VOLUMEPROPERTYVALUES</a>
 
 
 
@@ -129,7 +133,3 @@ For information about the IOCTLs that work with this structure, see <a href="htt
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/dn265129">KSPROPERTY_JACK_CONTAINERID</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn302029">Bluetooth HFP DDI Structures</a>

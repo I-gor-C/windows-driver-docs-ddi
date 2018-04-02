@@ -50,12 +50,12 @@ The <b>PcwRegister</b> function registers the caller as a provider of the specif
 
 ## Syntax
 
-````
+```
 NTSTATUS PcwRegister(
-  _Out_ PPCW_REGISTRATION             *Registration,
-  _In_  PPCW_REGISTRATION_INFORMATION Info
+  PPCW_REGISTRATION             *Registration,
+  PPCW_REGISTRATION_INFORMATION Info
 );
-````
+```
 
 ## Parameters
 
@@ -139,4 +139,4 @@ The provider calls this function to create a new registration. The registration 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pcwunregister.md">PcwUnregister</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550326">PcwUnregister</a>

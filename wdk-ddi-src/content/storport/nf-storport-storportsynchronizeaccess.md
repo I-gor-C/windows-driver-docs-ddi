@@ -7,7 +7,7 @@ old-location: storage\storportsynchronizeaccess.htm
 old-project: storage
 ms.assetid: eece67ed-faff-4166-8fa0-d501df9c1363
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortSynchronizeAccess, StorPortSynchronizeAccess routine [Storage Devices], storage.storportsynchronizeaccess, storport/StorPortSynchronizeAccess, storprt_25ee1679-940a-4758-9828-123a9ad24268.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,19 +51,19 @@ The <b>StorPortSynchronizeAccess</b> routine provides synchronized access to a m
 
 ## Syntax
 
-````
+```
 STORPORT_API BOOLEAN StorPortSynchronizeAccess(
-  _In_     PVOID                     HwDeviceExtension,
-  _In_     PSTOR_SYNCHRONIZED_ACCESS SynchronizedAccessRoutine,
-  _In_opt_ PVOID                     Context
+  PVOID                     HwDeviceExtension,
+  PSTOR_SYNCHRONIZED_ACCESS SynchronizedAccessRoutine,
+  PVOID                     Context
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
+A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 `SynchronizedAccessRoutine`
 
@@ -80,7 +80,7 @@ The return value from  <i>SynchronizedAccessRoutine</i>.
 
 ## Remarks
 
-Miniport drivers that operate in full-duplex mode, and that access information that is shared between their <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine and interrupt-service routine, must use this routine to access the shared data in a synchronized manner. 
+Miniport drivers that operate in full-duplex mode, and that access information that is shared between their <a href="https://msdn.microsoft.com/library/windows/hardware/ff557423">HwStorStartIo</a> routine and interrupt-service routine, must use this routine to access the shared data in a synchronized manner. 
 
 The miniport driver passes a callback routine to <b>StorPortSynchronizeAccess</b>, and <b>StorPortSynchronizeAccess</b> calls it after guaranteeing exclusive access to sensitive data structures. The miniport driver's callback routine must conform to the following prototype:
 
@@ -103,7 +103,7 @@ where <i>HwDeviceExtension</i> is a pointer to the hardware device extension, an
 
 For more information, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/storage/synchronized-access-within-unsynchronized-miniport-driver-routines">Synchronized Access within Unsynchronized Miniport Driver Routines</a>.
 
-For more information about synchronization routines, see <a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>.
+For more information about synchronization routines, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff553302">KeSynchronizeExecution</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -114,4 +114,4 @@ For more information about synchronization routines, see <a href="..\wdm\nf-wdm-
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kesynchronizeexecution.md">KeSynchronizeExecution</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553302">KeSynchronizeExecution</a>

@@ -46,18 +46,18 @@ req.typenames:
 
 
 # KsTopologyPropertyHandler function
-The <b>KsTopologyPropertyHandler</b> function performs standard handling of the static members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566598">KSPROPSETID_Topology</a> Property Set. The function uses the <a href="..\ks\ns-ks-kstopology.md">KSTOPOLOGY</a> structure, which describes the set of information that is returned by this property set.
+The <b>KsTopologyPropertyHandler</b> function performs standard handling of the static members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566598">KSPROPSETID_Topology</a> Property Set. The function uses the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567146">KSTOPOLOGY</a> structure, which describes the set of information that is returned by this property set.
 
 ## Syntax
 
-````
-NTSTATUS KsTopologyPropertyHandler(
-  _In_          PIRP        Irp,
-  _In_          PKSPROPERTY Property,
-  _Inout_       PVOID       Data,
-  _In_    const KSTOPOLOGY  *Topology
+```
+KSDDKAPI NTSTATUS KsTopologyPropertyHandler(
+  PIRP             Irp,
+  PKSPROPERTY      Property,
+  PVOID            Data,
+  const KSTOPOLOGY *Topology
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ Specifies the topology property-specific data.
 
 `Topology`
 
-Points to a <a href="..\ks\ns-ks-kstopology.md">KSTOPOLOGY</a> structure containing the topology information.
+Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567146">KSTOPOLOGY</a> structure containing the topology information.
 
 
 ## Return Value

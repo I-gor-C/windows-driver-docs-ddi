@@ -7,7 +7,7 @@ old-location: ifsk\fltsetvolumeinformation.htm
 old-project: ifsk
 ms.assetid: ee6b4a41-e4a7-41b8-9ca9-77b9052724a3
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_p_to_z_54f9b03b-9c74-4403-9189-90eb8c93cb3e.xml, FltSetVolumeInformation, FltSetVolumeInformation function [Installable File System Drivers], fltkernel/FltSetVolumeInformation, ifsk.fltsetvolumeinformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,15 +49,15 @@ req.typenames: EXpsFontRestriction
 
 ## Syntax
 
-````
-NTSTATUS FltSetVolumeInformation(
-  _In_  PFLT_INSTANCE        Instance,
-  _Out_ PIO_STATUS_BLOCK     Iosb,
-  _Out_ PVOID                FsInformation,
-  _In_  ULONG                Length,
-  _In_  FS_INFORMATION_CLASS FsInformationClass
+```
+NTSTATUS FLTAPI FltSetVolumeInformation(
+  PFLT_INSTANCE        Instance,
+  PIO_STATUS_BLOCK     Iosb,
+  PVOID                FsInformation,
+  ULONG                Length,
+  FS_INFORMATION_CLASS FsInformationClass
 );
-````
+```
 
 ## Parameters
 
@@ -92,7 +92,7 @@ Type of information to be set for the volume. One of the following.
 
 </td>
 <td>
-Set <a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a> for the volume. 
+Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540258">FILE_FS_CONTROL_INFORMATION</a> for the volume. 
 
 </td>
 </tr>
@@ -102,7 +102,7 @@ Set <a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_
 
 </td>
 <td>
-Set <a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFORMATION</a> for the volume. 
+Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540271">FILE_FS_LABEL_INFORMATION</a> for the volume. 
 
 </td>
 </tr>
@@ -112,7 +112,7 @@ Set <a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFO
 
 </td>
 <td>
-Set <a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a> for the volume. 
+Set <a href="https://msdn.microsoft.com/library/windows/hardware/ff540274">FILE_FS_OBJECTID_INFORMATION</a> for the volume. 
 
 </td>
 </tr>
@@ -176,7 +176,7 @@ The <i>Instance</i> is attached to a network volume. <b>FltSetVolumeInformation<
 
 ## Remarks
 
-To query information about a volume, call <a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>.
+To query information about a volume, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -189,16 +189,16 @@ To query information about a volume, call <a href="..\fltkernel\nf-fltkernel-flt
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltqueryvolumeinformation.md">FltQueryVolumeInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540258">FILE_FS_CONTROL_INFORMATION</a>
 
 
 
-<a href="..\ntifs\ns-ntifs-_file_fs_control_information.md">FILE_FS_CONTROL_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540271">FILE_FS_LABEL_INFORMATION</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_file_fs_objectid_information.md">FILE_FS_OBJECTID_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540274">FILE_FS_OBJECTID_INFORMATION</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_file_fs_label_information.md">FILE_FS_LABEL_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543443">FltQueryVolumeInformation</a>

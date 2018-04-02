@@ -47,14 +47,14 @@ req.typenames:
 The _BRB_SCO_FLUSH_CHANNEL structure describes a flush operation for a SCO channel.
 
 ## Syntax
-````
+```
 struct _BRB_SCO_FLUSH_CHANNEL {
-  BRB_HEADER         Hdr;
-  BTH_ADDR           BtAddress;
+  BRB_HEADER         Hdr;
+  BTH_ADDR           BtAddress;
   SCO_CHANNEL_HANDLE ChannelHandle;
-  ULONG              FlushFlags;
+  ULONG              FlushFlags;
 };
-````
+```
 
 ## Members
 
@@ -62,7 +62,7 @@ struct _BRB_SCO_FLUSH_CHANNEL {
 `Hdr`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 `BtAddress`
@@ -107,8 +107,8 @@ All pending data transfer IRPs will be completed with STATUS_REQUEST_ABORTED. In
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536623">BRB_SCO_FLUSH_CHANNEL</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_get_shared_endpoint_local_address.htm
 old-project: netvista
 ms.assetid: C7B6B7DC-359D-44C2-8348-EC1EE5965800
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_FN_GET_SHARED_ENDPOINT_LOCAL_ADDRESS, NdkGetSharedEndpointLocalAddress, NdkGetSharedEndpointLocalAddress callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkGetSharedEndpointLocalAddress, netvista.ndk_fn_get_shared_endpoint_local_address
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -64,7 +64,7 @@ NTSTATUS NdkFnGetSharedEndpointLocalAddress(
 
 `*pNdkSharedEndpoint`
 
-A pointer to an NDK shared endpoint object  (<a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>).
+A pointer to an NDK shared endpoint object  (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439937">NDK_SHARED_ENDPOINT</a>).
 
 `pAddress`
 
@@ -134,4 +134,4 @@ An error occurred.
 
 ## See Also
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_shared_endpoint.md">NDK_SHARED_ENDPOINT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439937">NDK_SHARED_ENDPOINT</a>

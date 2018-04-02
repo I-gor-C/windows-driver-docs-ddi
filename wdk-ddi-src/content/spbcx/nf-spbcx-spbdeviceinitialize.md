@@ -51,12 +51,12 @@ The <b>SpbDeviceInitialize</b> method completes the initialization of the SPB co
 
 ## Syntax
 
-````
+```
 NTSTATUS SpbDeviceInitialize(
-  _In_ WDFDEVICE              FxDevice,
-  _In_ PSPB_CONTROLLER_CONFIG Config
+  WDFDEVICE              FxDevice,
+  PSPB_CONTROLLER_CONFIG Config
 );
-````
+```
 
 ## Parameters
 
@@ -94,11 +94,11 @@ If the structure pointed to by <i>Config</i> is not filled out correctly, <a hre
 
 ## See Also
 
-<a href="..\wdfchildlist\nc-wdfchildlist-evt_wdf_child_list_create_device.md">EvtChildListCreateDevice</a>
+<a href="https://msdn.microsoft.com/296fbe06-1680-43a8-b5c3-1a1faa19c6c3">EvtChildListCreateDevice</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406207">SPB_CONTROLLER_CONFIG_INIT</a>
+<a href="https://msdn.microsoft.com/b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a">EvtDriverDeviceAdd</a>
 
 
 
@@ -106,4 +106,4 @@ If the structure pointed to by <i>Config</i> is not filled out correctly, <a hre
 
 
 
-<a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406207">SPB_CONTROLLER_CONFIG_INIT</a>

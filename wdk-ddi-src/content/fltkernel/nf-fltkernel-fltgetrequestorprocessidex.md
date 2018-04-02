@@ -7,7 +7,7 @@ old-location: ifsk\fltgetrequestorprocessidex.htm
 old-project: ifsk
 ms.assetid: e6a8b2ca-7e9d-410a-b44b-7e873b6e5833
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_e_to_o_ec80528f-12a7-4d31-9bd8-92050a16bd85.xml, FltGetRequestorProcessIdEx, FltGetRequestorProcessIdEx routine [Installable File System Drivers], fltkernel/FltGetRequestorProcessIdEx, ifsk.fltgetrequestorprocessidex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ The <b>FltGetRequestorProcessIdEx</b> routine returns the kernel-mode handle for
 
 ## Syntax
 
-````
-HANDLE FltGetRequestorProcessIdEx(
-  _In_ PFLT_CALLBACK_DATA CallbackData
+```
+HANDLE FLTAPI FltGetRequestorProcessIdEx(
+  PFLT_CALLBACK_DATA CallbackData
 );
-````
+```
 
 ## Parameters
 
 `CallbackData`
 
-A pointer to an <a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a> structure that identifies the thread and the I/O operation.
+A pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a> structure that identifies the thread and the I/O operation.
 
 
 ## Return Value
@@ -82,8 +82,8 @@ The <b>FltGetRequestorProcessIdEx</b> routine returns the kernel-mode handle for
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltgetrequestorprocess.md">FltGetRequestorProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
 
 
 
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543115">FltGetRequestorProcess</a>

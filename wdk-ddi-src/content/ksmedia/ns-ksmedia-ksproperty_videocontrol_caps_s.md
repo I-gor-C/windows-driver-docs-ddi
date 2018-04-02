@@ -47,13 +47,13 @@ req.typenames: KSPROPERTY_VIDEOCONTROL_CAPS_S, *PKSPROPERTY_VIDEOCONTROL_CAPS_S
 The KSPROPERTY_VIDEOCONTROL_CAPS_S structure describes the video-control capabilities of a minidriver, such as image flipping or event triggering abilities.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_VIDEOCONTROL_CAPS_S {
   KSPROPERTY Property;
-  ULONG      StreamIndex;
-  ULONG      VideoControlCaps;
-} KSPROPERTY_VIDEOCONTROL_CAPS_S, *PKSPROPERTY_VIDEOCONTROL_CAPS_S;
-````
+  ULONG      StreamIndex;
+  ULONG      VideoControlCaps;
+}  *PKSPROPERTY_VIDEOCONTROL_CAPS_S;
+```
 
 ## Members
 
@@ -68,7 +68,7 @@ Contains the zero-based index of the stream.
 
 `VideoControlCaps`
 
-Indicates the video control capabilities for the specified stream. This member must be set to one or more (logically ORed) values from the <a href="..\ksmedia\ne-ksmedia-ks_videocontrolflags.md">KS_VideoControlFlags</a> enumeration.
+Indicates the video control capabilities for the specified stream. This member must be set to one or more (logically ORed) values from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567696">KS_VideoControlFlags</a> enumeration.
 
 
 ## Requirements
@@ -78,7 +78,7 @@ Indicates the video control capabilities for the specified stream. This member m
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksproperty_videocontrol_mode_s.md">KSPROPERTY_VIDEOCONTROL_MODE_S</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
 
 
 
@@ -86,12 +86,12 @@ Indicates the video control capabilities for the specified stream. This member m
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566043">KSPROPERTY_VIDEOCONTROL_MODE_S</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567696">KS_VideoControlFlags</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff568120">PROPSETID_VIDCAP_VIDEOCONTROL</a>
-
-
-
-<a href="..\ksmedia\ne-ksmedia-ks_videocontrolflags.md">KS_VideoControlFlags</a>

@@ -7,7 +7,7 @@ old-location: display\dxgk_createdeviceflags.htm
 old-project: display
 ms.assetid: 31dc1493-a7c9-4ca0-b718-98224d9c5675
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_CREATEDEVICEFLAGS, DXGK_CREATEDEVICEFLAGS structure [Display Devices], DmStructs_f8513fe3-ce39-4555-a667-20ff383583fc.xml, _DXGK_CREATEDEVICEFLAGS, d3dkmddi/DXGK_CREATEDEVICEFLAGS, display.dxgk_createdeviceflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,19 +47,19 @@ req.typenames: DXGK_CREATEDEVICEFLAGS
 The DXGK_CREATEDEVICEFLAGS structure identifies how to create devices.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_CREATEDEVICEFLAGS {
   union {
     struct {
-      UINT SystemDevice  :1;
-      UINT GdiDevice  :1;
-      UINT Reserved  :29;
-      UINT DXGK_DEVICE_RESERVED0  :1;
+      UINT  : 1  SystemDevice;
+      UINT  : 1  GdiDevice;
+      UINT  : 29 Reserved;
+      UINT  : 1  DXGK_DEVICE_RESERVED0;
     };
     UINT Value;
   };
 } DXGK_CREATEDEVICEFLAGS;
-````
+```
 
 ## Members
 
@@ -73,8 +73,8 @@ typedef struct _DXGK_CREATEDEVICEFLAGS {
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createdevice.md">DXGKARG_CREATEDEVICE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557570">DXGKARG_CREATEDEVICE</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createdevice.md">DxgkDdiCreateDevice</a>
+<a href="https://msdn.microsoft.com/a7027735-0ec4-4fad-81fb-1c3aca4ebf2d">DxgkDdiCreateDevice</a>

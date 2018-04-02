@@ -68,4 +68,4 @@ The IID for this interface is IID_IKsAllocatorEx.
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-iksallocator.md">IKsAllocator</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559719">IKsAllocator</a>

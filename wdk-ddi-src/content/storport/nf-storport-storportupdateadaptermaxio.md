@@ -7,7 +7,7 @@ old-location: storage\storportupdateadaptermaxio.htm
 old-project: storage
 ms.assetid: BB18925D-ACFA-426D-ADD3-33C1D8A99396
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortUpdateAdapterMaxIO, StorPortUpdateAdapterMaxIO function [Storage Devices], storage.storportupdateadaptermaxio, storport/StorPortUpdateAdapterMaxIO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,12 +52,12 @@ This function can be called by a miniport to update the maximum IO's supported b
 
 ## Syntax
 
-````
+```
 ULONG StorPortUpdateAdapterMaxIO(
-   PVOID HwDeviceExtension,
-   ULONG MaxIoCount
+  PVOID HwDeviceExtension,
+  ULONG MaxIoCount
 );
-````
+```
 
 ## Parameters
 
@@ -107,4 +107,4 @@ This function returns of the following values.
 
 ## See Also
 
-<a href="..\strmini\ns-strmini-_hw_initialization_data.md">HwInitialize</a>
+<a href="https://msdn.microsoft.com/54f460da-2dfb-4a9d-9b25-edb90f3bfdd5">HwInitialize</a>

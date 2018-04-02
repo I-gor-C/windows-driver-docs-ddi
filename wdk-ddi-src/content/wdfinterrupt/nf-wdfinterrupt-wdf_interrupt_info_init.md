@@ -48,21 +48,21 @@ req.product: Windows 10 or later.
 # WDF_INTERRUPT_INFO_INIT function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
-The <b>WDF_INTERRUPT_INFO_INIT</b> function initializes a <a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a> structure.
+The <b>WDF_INTERRUPT_INFO_INIT</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/hh464020">WDF_INTERRUPT_INFO</a> structure.
 
 ## Syntax
 
-````
-VOID WDF_INTERRUPT_INFO_INIT(
-  _Out_ PWDF_INTERRUPT_INFO Info
+```
+void WDF_INTERRUPT_INFO_INIT(
+  PWDF_INTERRUPT_INFO Info
 );
-````
+```
 
 ## Parameters
 
 `Info`
 
-A pointer to a driver-allocated <a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a> structure.
+A pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh464020">WDF_INTERRUPT_INFO</a> structure.
 
 
 ## Return Value
@@ -71,14 +71,14 @@ None
 
 ## Remarks
 
-The <b>WDF_INTERRUPT_INFO_INIT</b> function zeros the specified <a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a> structure and sets the structure's <b>Size</b> member.
+The <b>WDF_INTERRUPT_INFO_INIT</b> function zeros the specified <a href="https://msdn.microsoft.com/library/windows/hardware/hh464020">WDF_INTERRUPT_INFO</a> structure and sets the structure's <b>Size</b> member.
 
 For more information about handling interrupts in framework-based drivers, see <a href="https://msdn.microsoft.com/08460510-6e5f-4c02-8086-9caa9b4b4c2d">Handling Hardware Interrupts</a>.
 
 
 #### Examples
 
-For a code example that uses <b>WDF_INTERRUPT_INFO_INIT</b>, see <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptgetinfo.md">WdfInterruptGetInfo</a>.
+For a code example that uses <b>WDF_INTERRUPT_INFO_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547367">WdfInterruptGetInfo</a>.
 
 <div class="code"></div>
 
@@ -93,6 +93,8 @@ For a code example that uses <b>WDF_INTERRUPT_INFO_INIT</b>, see <a href="..\wdf
 
 ## See Also
 
-<a href="..\wdfinterrupt\ns-wdfinterrupt-_wdf_interrupt_info.md">WDF_INTERRUPT_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh464020">WDF_INTERRUPT_INFO</a>
 
-<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptgetinfo.md">WdfInterruptGetInfo</a>
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547367">WdfInterruptGetInfo</a>

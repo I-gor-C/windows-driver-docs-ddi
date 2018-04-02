@@ -50,12 +50,12 @@ The <b>KsAcquireResetValue </b>function retrieves the current reset state from a
 
 ## Syntax
 
-````
-NTSTATUS KsAcquireResetValue(
-  _In_  PIRP    Irp,
-  _Out_ KSRESET *ResetValue
+```
+KSDDKAPI NTSTATUS KsAcquireResetValue(
+  PIRP    Irp,
+  KSRESET *ResetValue
 );
-````
+```
 
 ## Parameters
 

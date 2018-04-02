@@ -47,21 +47,21 @@ req.typenames: DriverUnifiedPosErrorReason
 This enumeration indicates the reason for the error.
 
 ## Syntax
-````
-typedef enum _DriverUnifiedPosErrorReason { 
-  UnknownErrorReason  = 0,
-  NoService           = 1,
-  Disabled            = 2,
-  Illegal             = 3,
-   NoHardware         = 4,
-  Closed              = 5,
-  Offline             = 6,
-  Failure             = 7,
-  Timeout             = 8,
-  Busy                = 9,
-  Extended            = 10
-} DriverUnifiedPosErrorReason;
-````
+```
+typedef enum DriverUnifiedPosErrorReason {
+  UnknownErrorReason  ,
+  NoService           ,
+  Disabled            ,
+  Illegal             ,
+  NoHardware          ,
+  Closed              ,
+  Offline             ,
+  Failure             ,
+  Timeout             ,
+  Busy                ,
+  Extended
+} ;
+```
 
 ## Constants
 

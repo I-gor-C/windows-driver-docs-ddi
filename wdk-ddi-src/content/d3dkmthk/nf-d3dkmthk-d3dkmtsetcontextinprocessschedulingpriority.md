@@ -7,7 +7,7 @@ old-location: display\d3dkmtsetcontextinprocessschedulingpriority.htm
 old-project: display
 ms.assetid: ebac0d06-53cb-4a84-9af9-f8aa9a6eccb6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTSetContextInProcessSchedulingPriority, D3DKMTSetContextInProcessSchedulingPriority function [Display Devices], d3dkmthk/D3DKMTSetContextInProcessSchedulingPriority, display.d3dkmtsetcontextinprocessschedulingpriority
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ Called by an in-process (in-proc) Microsoft Direct3D composition device to set t
 
 ## Syntax
 
-````
-_Check_return_ NTSTATUS APIENTRY D3DKMTSetContextInProcessSchedulingPriority(
-  _In_ const D3DKMT_SETCONTEXTINPROCESSSCHEDULINGPRIORITY *pContextPriority
+```
+NTSTATUS D3DKMTSetContextInProcessSchedulingPriority(
+  CONST *D3DKMT_SETCONTEXTINPROCESSSCHEDULINGPRIORITY
 );
-````
+```
 
 ## Parameters
 
@@ -105,8 +105,8 @@ Parameters were validated and determined to be incorrect.
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtgetcontextinprocessschedulingpriority.md">D3DKMTGetContextInProcessSchedulingPriority</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh780246">D3DKMTGetContextInProcessSchedulingPriority</a>
 
 
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_setcontextinprocessschedulingpriority.md">D3DKMT_SETCONTEXTINPROCESSSCHEDULINGPRIORITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh780270">D3DKMT_SETCONTEXTINPROCESSSCHEDULINGPRIORITY</a>

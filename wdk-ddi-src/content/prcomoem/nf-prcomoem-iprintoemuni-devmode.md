@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# DevMode method
+# IPrintOemUni::DevMode method
 The <code>IPrintOemUni::DevMode</code> method, provided by rendering plug-ins for Unidrv, performs operations on private <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> members.
 
 ## Syntax
 
-````
-STDMETHOD DevMode(
-   DWORD       dwMode,
-   POEMDMPARAM pOemDMParam
+```
+HRESULT DevMode(
+  DWORD       dwMode,
+  POEMDMPARAM pOemDMParam
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ Specifies a caller-supplied constant. See the Remarks section for more informati
 
 `pOemDMParam`
 
-Caller-supplied pointer to an <a href="..\printoem\ns-printoem-_oemdmparam.md">OEMDMPARAM</a> structure.
+Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure.
 
 
 ## Return Value
@@ -117,8 +117,8 @@ The <code>IPrintOemUni::DevMode</code> method must perform the operation indicat
 
 ## See Also
 
-<a href="..\prcomoem\nn-prcomoem-iprintoemuni.md">IPrintOemUni</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554167">IPrintOemUI::DevMode</a>
+
+
+
+<a href="https://msdn.microsoft.com/097366a0-2ded-435c-9b63-2b736b716032">IPrintOemUni</a>

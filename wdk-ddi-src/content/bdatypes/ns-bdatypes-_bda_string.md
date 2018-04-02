@@ -47,13 +47,13 @@ req.typenames: BDA_STRING, *PBDA_STRING
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_STRING {
   PBDARESULT lResult;
-  ULONG      ulStringSize;
-  BYTE       argbString[MIN_DIMENSION];
+  ULONG      ulStringSize;
+  BYTE       argbString[MIN_DIMENSION];
 } BDA_STRING, *PBDA_STRING;
-````
+```
 
 ## Members
 

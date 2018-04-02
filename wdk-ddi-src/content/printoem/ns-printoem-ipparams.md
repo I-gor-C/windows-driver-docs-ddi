@@ -48,15 +48,15 @@ req.product: Windows 10 or later.
 The IPPARAMS structure is used as an input parameter to a rendering plug-in's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a> method.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct IPPARAMS {
   DWORD dwSize;
   POINT ptOffset;
-  PSTR  pHalftoneOption;
-  BOOL  bBanding;
-  BOOL  bBlankBand;
-} IPPARAMS, *PIPPARAMS;
-````
+  PSTR  pHalftoneOption;
+  BOOL  bBanding;
+  BOOL  bBlankBand;
+}  *PIPPARAMS;
+```
 
 ## Members
 
@@ -89,8 +89,8 @@ Specifies whether a blank band was drawn in the source bitmap supplied to <a hre
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554261">IPrintOemUni::ImageProcessing</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff569161">POINT</a>

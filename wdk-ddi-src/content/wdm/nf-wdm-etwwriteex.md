@@ -50,24 +50,24 @@ The <b>EtwWriteEx</b> function is a tracing function for publishing events that 
 
 ## Syntax
 
-````
+```
 NTSTATUS EtwWriteEx(
-  _In_     REGHANDLE              RegHandle,
-  _In_     PCEVENT_DESCRIPTOR     EventDescriptor,
-  _In_     ULONG64                Filter,
-  _In_     ULONG                  Flags,
-  _In_opt_ LPCGUID                ActivityId,
-  _In_opt_ LPCGUID                RelatedActivityId,
-  _In_     ULONG                  UserDataCount,
-  _In_opt_ PEVENT_DATA_DESCRIPTOR UserData
+  REGHANDLE              RegHandle,
+  PCEVENT_DESCRIPTOR     EventDescriptor,
+  ULONG64                Filter,
+  ULONG                  Flags,
+  LPCGUID                ActivityId,
+  LPCGUID                RelatedActivityId,
+  ULONG                  UserDataCount,
+  PEVENT_DATA_DESCRIPTOR UserData
 );
-````
+```
 
 ## Parameters
 
 `RegHandle`
 
-A pointer to the event provider registration handle, which is returned by the <a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a> function if the event provider registration is successful.
+A pointer to the event provider registration handle, which is returned by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545603">EtwRegister</a> function if the event provider registration is successful.
 
 `EventDescriptor`
 
@@ -83,11 +83,11 @@ Reserved.  Must be  zero (0).
 
 `ActivityId`
 
-The identifier that indicates the activity associated with the event. The <i>ActivityID</i> provides a way to group related events and is used in end-to-end tracing.  If NULL, ETW gets the identifier from the thread local storage. For details on getting this identifier, see <a href="..\wdm\nf-wdm-etwactivityidcontrol.md">EtwActivityIdControl</a>.
+The identifier that indicates the activity associated with the event. The <i>ActivityID</i> provides a way to group related events and is used in end-to-end tracing.  If NULL, ETW gets the identifier from the thread local storage. For details on getting this identifier, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545578">EtwActivityIdControl</a>.
 
 `RelatedActivityId`
 
-Activity identifier from the previous component. Use this parameter to link your component's events to the previous component's events. To get the activity identifier that was set for the previous component, see the descriptions for the <i>ControlCode</i> parameter of the <a href="..\wdm\nf-wdm-etwactivityidcontrol.md">EtwActivityIdControl</a> function.
+Activity identifier from the previous component. Use this parameter to link your component's events to the previous component's events. To get the activity identifier that was set for the previous component, see the descriptions for the <i>ControlCode</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545578">EtwActivityIdControl</a> function.
 
 `UserDataCount`
 
@@ -104,7 +104,7 @@ Returns ERROR_SUCCESS if successful or one of the following values on error.
 
 ## Remarks
 
-The <b>EtwWriteEx</b> function is the kernel-mode equivalent of the user-mode <a href="https://msdn.microsoft.com/00b907cb-45cd-48c7-bea4-4d8a39b4fa24">EventWriteEx</a> function. Event data written with this function requires a manifest. The manifest is embedded in the provider, so the provider must be available for a consumer to consume the data. To ensure that there is a consumer for the event you are publishing, you can precede the call to <b>EtwWrite</b> with a call to <a href="..\wdm\nf-wdm-etweventenabled.md">EtwEventEnabled</a> or <a href="..\wdm\nf-wdm-etwproviderenabled.md">EtwProviderEnabled</a>. 
+The <b>EtwWriteEx</b> function is the kernel-mode equivalent of the user-mode <a href="https://msdn.microsoft.com/00b907cb-45cd-48c7-bea4-4d8a39b4fa24">EventWriteEx</a> function. Event data written with this function requires a manifest. The manifest is embedded in the provider, so the provider must be available for a consumer to consume the data. To ensure that there is a consumer for the event you are publishing, you can precede the call to <b>EtwWrite</b> with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545590">EtwEventEnabled</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff545595">EtwProviderEnabled</a>. 
 
 Use the <i>ActivityId</i> and <i>RelatedActivityId</i> parameters when you want to relate events in different components in an end-to-end tracing scenario. For example, components A, B, and C perform work on a related activity and want to link their events so that a consumer can consume all the events related to that activity. 
 
@@ -121,12 +121,12 @@ You can call <b>EtwWriteEx</b> at any IRQL. However, when IRQL is greater than A
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-etwwrite.md">EtwWrite</a>
-
-
-
-<a href="https://msdn.microsoft.com/00b907cb-45cd-48c7-bea4-4d8a39b4fa24">EventWriteEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545627">EtwWrite</a>
 
 
 
 <a href="https://msdn.microsoft.com/93070eb7-c167-4419-abff-e861877dad07">EventWrite</a>
+
+
+
+<a href="https://msdn.microsoft.com/00b907cb-45cd-48c7-bea4-4d8a39b4fa24">EventWriteEx</a>

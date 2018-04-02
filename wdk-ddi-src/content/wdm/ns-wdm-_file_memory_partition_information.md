@@ -7,7 +7,7 @@ old-location: ifsk\_file_memory_partition_information.htm
 old-project: ifsk
 ms.assetid: 1d74aec3-dbc5-4494-ba52-135e3f545c1b
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: "*PFILE_MEMORY_PARTITION_INFORMATION, FILE_MEMORY_PARTITION_INFORMATION, FILE_MEMORY_PARTITION_INFORMATION structure [Kernel-Mode Driver Architecture], _FILE_MEMORY_PARTITION_INFORMATION, ifsk._file_memory_partition_information, wdm/FILE_MEMORY_PARTITION_INFORMATION"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,18 +50,18 @@ req.product: Windows 10 or later.
 Stores information about memory partition. This structure is used by the <b>ZwSetInformationFile</b> function.
 
 ## Syntax
-````
+```
 typedef struct _FILE_MEMORY_PARTITION_INFORMATION {
   ULONG_PTR OwnerPartitionHandle;
   union {
+    ULONG AllFlags;
     struct {
       UCHAR NoCrossPartitionAccess;
       UCHAR Spare[3];
-    } DUMMYSTRUCTNAME;
-    ULONG AllFlags;
-  } Flags;
-} FILE_MEMORY_PARTITION_INFORMATION, FILE_MEMORY_PARTITION_INFORMATION;
-````
+    } DUMMYSTRUCTNAME;
+  } Flags;
+} *PFILE_MEMORY_PARTITION_INFORMATION, FILE_MEMORY_PARTITION_INFORMATION;
+```
 
 ## Members
 

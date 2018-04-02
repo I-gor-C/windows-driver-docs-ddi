@@ -7,7 +7,7 @@ old-location: netvista\ndisadvancenetbufferlistdatastart.htm
 old-project: netvista
 ms.assetid: 819ac05b-15c2-4a24-ae6b-8a47991a4e7a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisAdvanceNetBufferListDataStart, NdisAdvanceNetBufferListDataStart function [Network Drivers Starting with Windows Vista], ndis/NdisAdvanceNetBufferListDataStart, ndis_netbuf_functions_ref_6d98353d-427f-49ce-9b28-e1c178a8af24.xml, netvista.ndisadvancenetbufferlistdatastart
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,26 +49,26 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 Call the 
   <b>NdisAdvanceNetBufferListDataStart</b> function to release data space that was claimed in previous calls
   to the 
-  <a href="..\ndis\nf-ndis-ndisretreatnetbufferlistdatastart.md">
+  <a href="https://msdn.microsoft.com/76a1294f-d098-4751-9b59-923993379c6e">
   NdisRetreatNetBufferListDataStart</a> function.
 
 ## Syntax
 
-````
-VOID NdisAdvanceNetBufferListDataStart(
-  _In_     PNET_BUFFER_LIST            NetBufferList,
-  _In_     ULONG                       DataOffsetDelta,
-  _In_     BOOLEAN                     FreeMdl,
-  _In_opt_ NET_BUFFER_FREE_MDL_HANDLER FreeMdlHandler
+```
+void NdisAdvanceNetBufferListDataStart(
+  PNET_BUFFER_LIST            NetBufferList,
+  ULONG                       DataOffsetDelta,
+  BOOLEAN                     FreeMdl,
+  NET_BUFFER_FREE_MDL_HANDLER FreeMdlMdlHandler
 );
-````
+```
 
 ## Parameters
 
 `NetBufferList`
 
 A pointer to a previously allocated 
-     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure.
 
 `DataOffsetDelta`
 
@@ -94,15 +94,15 @@ None
 
 <b>NdisAdvanceNetBufferListDataStart</b> releases 
     <i>used data space</i> for all the 
-    <a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a> structures in a 
-    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. If 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a> structures in a 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. If 
     <i>FreeMdl</i> is <b>TRUE</b> and 
-    <a href="..\ndis\nf-ndis-ndisretreatnetbufferlistdatastart.md">
+    <a href="https://msdn.microsoft.com/76a1294f-d098-4751-9b59-923993379c6e">
     NdisRetreatNetBufferListDataStart</a> allocated memory to satisfy the corresponding allocation request,
     
     <b>NdisAdvanceNetBufferListDataStart</b> frees the allocated memory. Calling this function is equivalent
     to calling 
-    <a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
+    <a href="https://msdn.microsoft.com/49b69282-137d-4bb5-92f5-4d27cedbb6d4">
     NdisAdvanceNetBufferDataStart</a> for every NET_BUFFER structure on the NET_BUFFER_LIST structure.
     However, calling 
     <b>NdisAdvanceNetBufferListDataStart</b> is more efficient.
@@ -124,26 +124,26 @@ When protocol drivers call
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-net_buffer_free_mdl_handler.md">NetFreeMdl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568376">NET_BUFFER</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisretreatnetbufferlistdatastart.md">
-   NdisRetreatNetBufferListDataStart</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
 
 
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisadvancenetbufferdatastart.md">
+<a href="https://msdn.microsoft.com/49b69282-137d-4bb5-92f5-4d27cedbb6d4">
    NdisAdvanceNetBufferDataStart</a>
 
 
 
-<a href="..\ndis\ns-ndis-_net_buffer.md">NET_BUFFER</a>
+<a href="https://msdn.microsoft.com/76a1294f-d098-4751-9b59-923993379c6e">
+   NdisRetreatNetBufferListDataStart</a>
 
 
 
-<a href="..\ndis\nc-ndis-net_buffer_allocate_mdl_handler.md">NetAllocateMdl</a>
+<a href="https://msdn.microsoft.com/14247f48-7ef8-481c-aa1e-e657475812fa">NetAllocateMdl</a>
+
+
+
+<a href="https://msdn.microsoft.com/a92b2de9-231d-4dcc-8220-857063a35eb1">NetFreeMdl</a>

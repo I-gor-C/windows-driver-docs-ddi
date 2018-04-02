@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols4_setscopeex.htm
 old-project: debugger
 ms.assetid: 22844EBB-9BE7-47C0-BE1F-075473430F11
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugSymbols4, IDebugSymbols4 interface [Windows Debugging], SetScopeEx method, IDebugSymbols4::SetScopeEx, SetScopeEx method [Windows Debugging], SetScopeEx method [Windows Debugging], IDebugSymbols4 interface, SetScopeEx,IDebugSymbols4.SetScopeEx, dbgeng/IDebugSymbols4::SetScopeEx, debugger.idebugsymbols4_setscopeex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# SetScopeEx method
+# IDebugSymbols4::SetScopeEx method
 Sets the scope as an extended frame structure.
 
 ## Syntax
 
-````
+```
 HRESULT SetScopeEx(
-  [in]           ULONG64                                   InstructionOffset,
-  [in, optional] PDEBUG_STACK_FRAME_EX                     ScopeFrame,
-  [in]           _reads_bytes_opt_(ScopeContextSize) PVOID ScopeContext,
-  [in]           ULONG                                     ScopeContextSize
+  ULONG64               InstructionOffset,
+  PDEBUG_STACK_FRAME_EX ScopeFrame,
+  PVOID                 ScopeContext,
+  ULONG                 ScopeContextSize
 );
-````
+```
 
 ## Parameters
 
@@ -66,7 +66,7 @@ The offset of the instruction for the scope.
 
 `ScopeFrame`
 
-The scope frame to set as a <a href="..\dbgeng\ns-dbgeng-_debug_stack_frame_ex.md">DEBUG_STACK_FRAME_EX</a> structure.
+The scope frame to set as a <a href="https://msdn.microsoft.com/library/windows/hardware/dn818561">DEBUG_STACK_FRAME_EX</a> structure.
 
 `ScopeContext`
 
@@ -90,8 +90,8 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols4.md">IDebugSymbols4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn818561">DEBUG_STACK_FRAME_EX</a>
 
 
 
-<a href="..\dbgeng\ns-dbgeng-_debug_stack_frame_ex.md">DEBUG_STACK_FRAME_EX</a>
+<a href="https://msdn.microsoft.com/BE2734B5-1E67-4E38-B4DF-0C353BFB1F0B">IDebugSymbols4</a>

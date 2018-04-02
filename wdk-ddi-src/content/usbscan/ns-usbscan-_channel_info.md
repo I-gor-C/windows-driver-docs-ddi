@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 # _CHANNEL_INFO structure
-The CHANNEL_INFO structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_get_channel_align_rqst.md">IOCTL_GET_CHANNEL_ALIGN_RQST</a>.
+The CHANNEL_INFO structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542849">IOCTL_GET_CHANNEL_ALIGN_RQST</a>.
 
 ## Syntax
-````
+```
 typedef struct _CHANNEL_INFO {
   unsigned EventChannelSize;
   unsigned uReadDataAlignment;
   unsigned uWriteDataAlignment;
-} CHANNEL_INFO, *PCHANNEL_INFO;
-````
+} *PCHANNEL_INFO, CHANNEL_INFO;
+```
 
 ## Members
 

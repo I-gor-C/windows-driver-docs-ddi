@@ -50,11 +50,11 @@ The <b>SPB_REQUEST_PARAMETERS_INIT</b> function initializes an <a href="https://
 
 ## Syntax
 
-````
-VOID SPB_REQUEST_PARAMETERS_INIT(
-  _Out_ SPB_REQUEST_PARAMETERS *Parameters
+```
+void SPB_REQUEST_PARAMETERS_INIT(
+  SPB_REQUEST_PARAMETERS *Parameters
 );
-````
+```
 
 ## Parameters
 

@@ -50,11 +50,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL WINAPI InitializeMonitor(
-  _In_ LPWSTR pRegistryRoot
+```
+BOOL InitializeMonitor(
+  LPWSTR pRegistryRoot
 );
-````
+```
 
 ## Parameters
 

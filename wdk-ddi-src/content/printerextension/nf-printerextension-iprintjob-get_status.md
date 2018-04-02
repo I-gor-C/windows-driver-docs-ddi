@@ -26,7 +26,7 @@ req.max-support:
 req.namespace: 
 req.assembly: 
 req.type-library: 
-req.lib: printerextension.h
+req.lib: 
 req.dll: 
 req.irql: 
 topic_type:
@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Status method
+# IPrintJob::get_Status method
 Gets the current status of the print job.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_Status(
-  [out, retval] PrintJobStatus *pStatus
+  PrintJobStatus *pStatus
 );
-````
+```
 
 ## Parameters
 
@@ -77,12 +77,11 @@ None
 | **Windows version** | Windows 8.1 Windows Server 2012 R2 |
 | **Target Platform** | Windows |
 | **Header** | printerextension.h |
-| **Library** | printerextension.h |
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a>
 
 
 
-<a href="..\printerextension\ne-printerextension-tagprintjobstatus.md">PrintJobStatus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265435">PrintJobStatus</a>

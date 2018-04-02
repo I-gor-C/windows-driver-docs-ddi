@@ -7,7 +7,7 @@ old-location: debugger\getnumberprocesses.htm
 old-project: debugger
 ms.assetid: bf0c750f-0e29-42d9-a127-953e3d49b969
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetNumberProcesses method [Windows Debugging], GetNumberProcesses method [Windows Debugging], IDebugSystemObjects interface, GetNumberProcesses method [Windows Debugging], IDebugSystemObjects2 interface, GetNumberProcesses method [Windows Debugging], IDebugSystemObjects3 interface, GetNumberProcesses method [Windows Debugging], IDebugSystemObjects4 interface, GetNumberProcesses,IDebugSystemObjects.GetNumberProcesses, IDebugSystemObjects, IDebugSystemObjects interface [Windows Debugging], GetNumberProcesses method, IDebugSystemObjects2 interface [Windows Debugging], GetNumberProcesses method, IDebugSystemObjects2::GetNumberProcesses, IDebugSystemObjects3 interface [Windows Debugging], GetNumberProcesses method, IDebugSystemObjects3::GetNumberProcesses, IDebugSystemObjects4 interface [Windows Debugging], GetNumberProcesses method, IDebugSystemObjects4::GetNumberProcesses, IDebugSystemObjects::GetNumberProcesses, IDebugSystemObjects_28914631-9658-462c-8234-f48bb85efdf6.xml, dbgeng/IDebugSystemObjects2::GetNumberProcesses, dbgeng/IDebugSystemObjects3::GetNumberProcesses, dbgeng/IDebugSystemObjects4::GetNumberProcesses, dbgeng/IDebugSystemObjects::GetNumberProcesses, debugger.getnumberprocesses
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,16 +47,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetNumberProcesses method
+# IDebugSystemObjects::GetNumberProcesses method
 The <b>GetNumberProcesses</b> method returns the number of <a href="https://msdn.microsoft.com/6182ca34-ee5e-47e9-82fe-29266397e3a8">processes</a> for the current target.
 
 ## Syntax
 
-````
+```
 HRESULT GetNumberProcesses(
-  [out] PULONG Number
+  PULONG Number
 );
-````
+```
 
 ## Parameters
 

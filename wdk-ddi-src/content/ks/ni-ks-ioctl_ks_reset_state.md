@@ -44,7 +44,7 @@ req.typenames:
 ---
 
 # IOCTL_KS_RESET_STATE IOCTL
-An application can use IOCTL_KS_RESET_STATE to return a pin to the state it was in at <i>Acquire</i>-time. The application passes IOCTL_KS_RESET_STATE with the parameters described below to the <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a> function.
+An application can use IOCTL_KS_RESET_STATE to return a pin to the state it was in at <i>Acquire</i>-time. The application passes IOCTL_KS_RESET_STATE with the parameters described below to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567142">KsSynchronousDeviceControl</a> function.
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -71,7 +71,7 @@ None.
 If the request is successful, the Status member is set to STATUS_SUCCESS.
 
 ## Remarks
-Initiate a reset on a pin by sending IOCTL_KS_RESET_STATE with a value of KSRESET_BEGIN in the InBuffer parameter of <a href="..\ksproxy\nf-ksproxy-kssynchronousdevicecontrol.md">KsSynchronousDeviceControl</a>. 
+Initiate a reset on a pin by sending IOCTL_KS_RESET_STATE with a value of KSRESET_BEGIN in the InBuffer parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567142">KsSynchronousDeviceControl</a>. 
 
 When the reset state is initiated, existing read and write requests are canceled. While in the reset state, any new read or write requests are rejected with STATUS_DEVICE_NOT_READY.
 
@@ -88,11 +88,7 @@ When the reset state is terminated, the pin can again accept new data and pass d
 
 ## See Also
 
-<a href="..\ks\nc-ks-pfnksfiltervoid.md">AVStrMiniFilterReset</a>
-
-
-
-<a href="..\ks\nf-ks-ksacquireresetvalue.md">KsAcquireResetValue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556317">AVStrMiniFilterReset</a>
 
 
 
@@ -100,4 +96,8 @@ When the reset state is terminated, the pin can again accept new data and pass d
 
 
 
-<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562554">KSFILTER_DISPATCH</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560923">KsAcquireResetValue</a>

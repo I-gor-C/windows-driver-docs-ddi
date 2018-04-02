@@ -47,12 +47,12 @@ req.typenames: KSMETHOD_STREAMIO
 
 
 ## Syntax
-````
-typedef enum  { 
-  KSMETHOD_STREAMIO_READ,
+```
+typedef enum KSMETHOD_STREAMIO {
+  KSMETHOD_STREAMIO_READ   ,
   KSMETHOD_STREAMIO_WRITE
-} KSMETHOD_STREAMIO;
-````
+} ;
+```
 
 ## Constants
 

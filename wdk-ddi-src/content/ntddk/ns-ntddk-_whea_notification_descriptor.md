@@ -47,15 +47,15 @@ req.typenames: WHEA_NOTIFICATION_DESCRIPTOR, *PWHEA_NOTIFICATION_DESCRIPTOR
 The <b>WHEA_NOTIFICATION_DESCRIPTOR</b> structure describes the notification mechanism that is used by an error source.
 
 ## Syntax
-````
-struct WHEA_NOTIFICATION_DESCRIPTOR {
-  UCHAR                   Type;
-  UCHAR                   Length;
+```
+typedef struct _WHEA_NOTIFICATION_DESCRIPTOR {
+  UCHAR                   Type;
+  UCHAR                   Length;
   WHEA_NOTIFICATION_FLAGS Flags;
   union {
     struct {
       ULONG PollInterval;
-    } Polled;
+    } Polled;
     struct {
       ULONG PollInterval;
       ULONG Vector;
@@ -63,7 +63,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
       ULONG SwitchToPollingWindow;
       ULONG ErrorThreshold;
       ULONG ErrorThresholdWindow;
-    } Interrupt;
+    } Interrupt;
     struct {
       ULONG PollInterval;
       ULONG Vector;
@@ -71,7 +71,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
       ULONG SwitchToPollingWindow;
       ULONG ErrorThreshold;
       ULONG ErrorThresholdWindow;
-    } LocalInterrupt;
+    } LocalInterrupt;
     struct {
       ULONG PollInterval;
       ULONG Vector;
@@ -79,7 +79,7 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
       ULONG SwitchToPollingWindow;
       ULONG ErrorThreshold;
       ULONG ErrorThresholdWindow;
-    } Sci;
+    } Sci;
     struct {
       ULONG PollInterval;
       ULONG Vector;
@@ -87,10 +87,34 @@ struct WHEA_NOTIFICATION_DESCRIPTOR {
       ULONG SwitchToPollingWindow;
       ULONG ErrorThreshold;
       ULONG ErrorThresholdWindow;
-    } Nmi;
-  } u;
-};
-````
+    } Nmi;
+    struct {
+      ULONG PollInterval;
+      ULONG Vector;
+      ULONG SwitchToPollingThreshold;
+      ULONG SwitchToPollingWindow;
+      ULONG ErrorThreshold;
+      ULONG ErrorThresholdWindow;
+    } Sea;
+    struct {
+      ULONG PollInterval;
+      ULONG Vector;
+      ULONG SwitchToPollingThreshold;
+      ULONG SwitchToPollingWindow;
+      ULONG ErrorThreshold;
+      ULONG ErrorThresholdWindow;
+    } Sei;
+    struct {
+      ULONG PollInterval;
+      ULONG Vector;
+      ULONG SwitchToPollingThreshold;
+      ULONG SwitchToPollingWindow;
+      ULONG ErrorThreshold;
+      ULONG ErrorThresholdWindow;
+    } Gsiv;
+  } u;
+} WHEA_NOTIFICATION_DESCRIPTOR, *PWHEA_NOTIFICATION_DESCRIPTOR;
+```
 
 ## Members
 
@@ -266,7 +290,7 @@ A single bit that indicates that the operating system can write to the <b>u.</b>
 A union of structures that are specific to each different type of notification mechanism.
 
 ## Remarks
-A WHEA_NOTIFICATION_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a> and <a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a> structures.
+A WHEA_NOTIFICATION_DESCRIPTOR structure is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560531">WHEA_GENERIC_ERROR_DESCRIPTOR</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560646">WHEA_XPF_CMC_DESCRIPTOR</a> structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -276,8 +300,8 @@ A WHEA_NOTIFICATION_DESCRIPTOR structure is contained within the <a href="..\ntd
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560531">WHEA_GENERIC_ERROR_DESCRIPTOR</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560646">WHEA_XPF_CMC_DESCRIPTOR</a>

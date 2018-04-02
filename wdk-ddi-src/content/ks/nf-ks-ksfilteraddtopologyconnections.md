@@ -50,19 +50,19 @@ The<b> KsFilterAddTopologyConnections</b> function adds new topology connections
 
 ## Syntax
 
-````
-NTSTATUS KsFilterAddTopologyConnections(
-  _In_       PKSFILTER             Filter,
-  _In_       ULONG                 NewConnectionsCount,
-  _In_ const KSTOPOLOGY_CONNECTION *NewTopologyConnections
+```
+KSDDKAPI NTSTATUS KsFilterAddTopologyConnections(
+  PKSFILTER                           Filter,
+  ULONG                               NewConnectionsCount,
+  const KSTOPOLOGY_CONNECTION * const NewTopologyConnections
 );
-````
+```
 
 ## Parameters
 
 `Filter`
 
-<i>A pointer</i> to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> to which to add the new connections.
+<i>A pointer</i> to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> to which to add the new connections.
 
 `NewConnectionsCount`
 
@@ -70,7 +70,7 @@ The number of connections in <i>NewTopologyConnections</i>.
 
 `NewTopologyConnections`
 
-A pointer to an array of <a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a> structures containing the new topology connections.
+A pointer to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567148">KSTOPOLOGY_CONNECTION</a> structures containing the new topology connections.
 
 
 ## Return Value
@@ -94,8 +94,8 @@ For more information about mutexes, see <a href="https://msdn.microsoft.com/011e
 
 ## See Also
 
-<a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567148">KSTOPOLOGY_CONNECTION</a>

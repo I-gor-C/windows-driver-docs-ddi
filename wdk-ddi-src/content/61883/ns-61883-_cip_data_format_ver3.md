@@ -47,21 +47,21 @@ req.typenames: CIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT_VER3
 This structure is used by  	<b>CipDataFormat</b>.
 
 ## Syntax
-````
+```
 typedef struct _CIP_DATA_FORMAT_VER3 {
-  UCHAR   FMT;
-  UCHAR   FDF_hi;
-  UCHAR   FDF_mid;
-  UCHAR   FDF_lo;
-  BOOLEAN bHeader;
-  UCHAR   Padding;
-  UCHAR   BlockSize;
-  UCHAR   Fraction;
-  ULONG   BlockPeriod;
-  ULONG   BlockPeriodRemainder;
-  ULONG   BlocksPerPacket;
-} CIP_DATA_FORMAT_VER3, *PCIP_DATA_FORMAT_VER3;
-````
+  UCHAR    FMT;
+  UCHAR    FDF_hi;
+  UCHAR    FDF_mid;
+  UCHAR    FDF_lo;
+  BOOLEAN  bHeader;
+  UCHAR    Padding;
+  UCHAR    BlockSize;
+  UCHAR    Fraction;
+  IN ULONG BlockPeriod;
+  IN ULONG BlockPeriodRemainder;
+  IN ULONG BlocksPerPacket;
+} *PCIP_DATA_FORMAT_VER3, CIP_DATA_FORMAT_VER3;
+```
 
 ## Members
 

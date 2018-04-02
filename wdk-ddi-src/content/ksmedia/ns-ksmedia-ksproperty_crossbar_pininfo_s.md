@@ -47,16 +47,16 @@ req.typenames: KSPROPERTY_CROSSBAR_PININFO_S, *PKSPROPERTY_CROSSBAR_PININFO_S
 The KSPROPERTY_CROSSBAR_PININFO_S structure describes the crossbar pin information for a device.
 
 ## Syntax
-````
-typedef struct {
-  KSPROPERTY     Property;
+```
+typedef struct KSPROPERTY_CROSSBAR_PININFO_S {
+  KSPROPERTY     Property;
   KSPIN_DATAFLOW Direction;
-  ULONG          Index;
-  ULONG          PinType;
-  ULONG          RelatedPinIndex;
-  KSPIN_MEDIUM   Medium;
-} KSPROPERTY_CROSSBAR_PININFO_S, *PKSPROPERTY_CROSSBAR_PININFO_S;
-````
+  ULONG          Index;
+  ULONG          PinType;
+  ULONG          RelatedPinIndex;
+  KSPIN_MEDIUM   Medium;
+} *PKSPROPERTY_CROSSBAR_PININFO_S, KSPROPERTY_CROSSBAR_PININFO_S;
+```
 
 ## Members
 
@@ -143,11 +143,11 @@ All index values are zero-based, and input pins are counted separately from outp
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565121">KSPROPERTY_CROSSBAR_PININFO</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565121">KSPROPERTY_CROSSBAR_PININFO</a>
 
 
 

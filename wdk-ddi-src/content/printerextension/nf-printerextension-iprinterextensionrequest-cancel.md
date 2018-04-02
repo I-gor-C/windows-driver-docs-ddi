@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# Cancel method
+# IPrinterExtensionRequest::Cancel method
 Completes the extension event with a cancellation.
 
 ## Syntax
 
-````
+```
 HRESULT Cancel(
-  [in] HRESULT hr,
-  [in] BSTR    bstrLogMessage
+  HRESULT hrStatus,
+  BSTR    bstrLogMessage
 );
-````
+```
 
 ## Parameters
 
@@ -82,4 +82,4 @@ This method returns an <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensionrequest.md">IPrinterExtensionRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439517">IPrinterExtensionRequest</a>

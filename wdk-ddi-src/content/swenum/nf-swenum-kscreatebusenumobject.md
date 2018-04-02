@@ -53,16 +53,16 @@ The <b>KsCreateBusEnumObject</b> function creates a demand-load bus enumerator o
 
 ## Syntax
 
-````
-NTSTATUS KsCreateBusEnumObject(
-  _In_     PWSTR          BusIdentifier,
-  _In_     PDEVICE_OBJECT BusDeviceObject,
-  _In_     PDEVICE_OBJECT PhysicalDeviceObject,
-  _In_opt_ PDEVICE_OBJECT PnpDeviceObject,
-  _In_opt_ REFGUID        InterfaceGuid,
-  _In_opt_ PWSTR          ServiceRelativePath
+```
+KSDDKAPI NTSTATUS KsCreateBusEnumObject(
+  PWSTR          BusIdentifier,
+  PDEVICE_OBJECT BusDeviceObject,
+  PDEVICE_OBJECT PhysicalDeviceObject,
+  PDEVICE_OBJECT PnpDeviceObject,
+  REFGUID        InterfaceGuid,
+  PWSTR          ServiceRelativePath
 );
-````
+```
 
 ## Parameters
 
@@ -113,4 +113,4 @@ The demand-load bus enumerator object extends a Plug and Play device by servicin
 
 ## See Also
 
-<a href="..\swenum\nf-swenum-ksservicebusenumpnprequest.md">KsServiceBusEnumPnpRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566816">KsServiceBusEnumPnpRequest</a>

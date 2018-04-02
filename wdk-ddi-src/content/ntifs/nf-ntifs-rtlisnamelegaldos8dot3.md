@@ -7,7 +7,7 @@ old-location: ifsk\rtlisnamelegaldos8dot3.htm
 old-project: ifsk
 ms.assetid: 27aa6bd1-c4e2-427e-a9e4-383d66fe2d61
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlIsNameLegalDOS8Dot3, RtlIsNameLegalDOS8Dot3 routine [Installable File System Drivers], ifsk.rtlisnamelegaldos8dot3, ntifs/RtlIsNameLegalDOS8Dot3, rtlref_73bcf962-f0aa-4fa1-9e45-0a471a6b2c40.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ The <b>RtlIsNameLegalDOS8Dot3</b> routine determines whether a given name repres
 
 ## Syntax
 
-````
-BOOLEAN RtlIsNameLegalDOS8Dot3(
-  _In_      PCUNICODE_STRING Name,
-  _Inout_   POEM_STRING      OemName,
-  _Out_opt_ PBOOLEAN         NameContainsSpaces
+```
+NTSYSAPI BOOLEAN RtlIsNameLegalDOS8Dot3(
+  PCUNICODE_STRING Name,
+  POEM_STRING      OemName,
+  PBOOLEAN         NameContainsSpaces
 );
-````
+```
 
 ## Parameters
 
@@ -95,12 +95,12 @@ If the block of memory at <i>Name</i> is nonpaged, the caller can be running at 
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-rtlgenerate8dot3name.md">RtlGenerate8dot3Name</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558741">OEM_STRING</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552285">RtlGenerate8dot3Name</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

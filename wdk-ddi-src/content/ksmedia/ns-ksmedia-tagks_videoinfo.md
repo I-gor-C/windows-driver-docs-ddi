@@ -47,21 +47,21 @@ req.typenames: KS_VIDEOINFO, *PKS_VIDEOINFO
 The KS_VIDEOINFO structure describes the bitmap and color information for a video stream.
 
 ## Syntax
-````
+```
 typedef struct tagKS_VIDEOINFO {
-  RECT                rcSource;
-  RECT                rcTarget;
-  DWORD               dwBitRate;
-  DWORD               dwBitErrorRate;
-  REFERENCE_TIME      AvgTimePerFrame;
+  RECT                rcSource;
+  RECT                rcTarget;
+  DWORD               dwBitRate;
+  DWORD               dwBitErrorRate;
+  REFERENCE_TIME      AvgTimePerFrame;
   KS_BITMAPINFOHEADER bmiHeader;
   union {
-    KS_RGBQUAD       bmiColors[KS_iPALETTE_COLORS];
-    DWORD            dwBitMasks[KS_iMASK_COLORS];
+    KS_RGBQUAD       bmiColors[KS_iPALETTE_COLORS];
+    DWORD            dwBitMasks[KS_iMASK_COLORS];
     KS_TRUECOLORINFO TrueColorInfo;
   };
-} KS_VIDEOINFO, *PKS_VIDEOINFO;
-````
+} *PKS_VIDEOINFO, KS_VIDEOINFO;
+```
 
 ## Members
 
@@ -88,7 +88,7 @@ Specifies the average time per frame in 100-nanosecond units.
 
 `bmiHeader`
 
-Describes a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
+Describes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
 
 ## Remarks
 This structure must not be used unless the <b>biSize</b> member of the KS_BITMAPINFOHEADER member is set to <b>sizeof</b>(KS_BITMAPINFOHEADER).
@@ -106,12 +106,12 @@ The <b>rcTarget</b> member specifies the destination rectangle for the video. Mo
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tag_ks_truecolorinfo.md">KS_TRUECOLORINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_rgbquad.md">KS_RGBQUAD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567675">KS_RGBQUAD</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567685">KS_TRUECOLORINFO</a>

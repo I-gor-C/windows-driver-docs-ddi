@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_QueueProperties method
+# IPrinterScriptContext::get_QueueProperties method
 Provides access to the queue property bag, if the property bag is present.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_QueueProperties(
-  [out, retval] IPrinterScriptablePropertyBag **ppPropertyBag
+  IPrinterScriptablePropertyBag **ppPropertyBag
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh768279">IPrinterScriptContext</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptcontext.md">IPrinterScriptContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973217">IPrinterScriptablePropertyBag</a>

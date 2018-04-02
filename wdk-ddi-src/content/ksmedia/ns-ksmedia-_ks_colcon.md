@@ -47,18 +47,18 @@ req.typenames: KS_COLCON, *PKS_COLCON
 The KS_COLCON structure is used to describe color and contrast settings.
 
 ## Syntax
-````
+```
 typedef struct _KS_COLCON {
-  UCHAR emph1col  :4;
-  UCHAR emph2col  :4;
-  UCHAR backcol  :4;
-  UCHAR patcol  :4;
-  UCHAR emph1con  :4;
-  UCHAR emph2con  :4;
-  UCHAR backcon  :4;
-  UCHAR patcon  :4;
+  UCHAR  : 4 emph1col;
+  UCHAR  : 4 emph2col;
+  UCHAR  : 4 backcol;
+  UCHAR  : 4 patcol;
+  UCHAR  : 4 emph1con;
+  UCHAR  : 4 emph2con;
+  UCHAR  : 4 backcon;
+  UCHAR  : 4 patcon;
 } KS_COLCON, *PKS_COLCON;
-````
+```
 
 ## Members
 
@@ -96,7 +96,7 @@ Indicates
 Indicates
 
 ## Remarks
-The KS_COLCON structure is used by the <a href="..\ksmedia\ns-ksmedia-_ksproperty_sphli.md">KSPROPERTY_SPHLI</a> structure.
+The KS_COLCON structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565627">KSPROPERTY_SPHLI</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -105,4 +105,4 @@ The KS_COLCON structure is used by the <a href="..\ksmedia\ns-ksmedia-_kspropert
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-_ksproperty_sphli.md">KSPROPERTY_SPHLI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565627">KSPROPERTY_SPHLI</a>

@@ -7,7 +7,7 @@ old-location: storage\scsiportwmifireadapterevent.htm
 old-project: storage
 ms.assetid: cb48d1a3-65ef-49f7-b6e5-b3dabf989779
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortWmiFireAdapterEvent, ScsiPortWmiFireAdapterEvent macro [Storage Devices], scsiprt_39ab704d-53a4-46d4-9196-f545710692ae.xml, scsiwmi/ScsiPortWmiFireAdapterEvent, storage.scsiportwmifireadapterevent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,21 +51,21 @@ The <b>ScsiPortWmiFireAdapterEvent</b> routine sends an event associated with an
 
 ## Syntax
 
-````
-VOID ScsiPortWmiFireAdapterEvent(
-  [in] PVOID  HwDeviceExtension,
-  [in] LPGUID Guid,
-  [in] ULONG  InstanceIndex,
-  [in] ULONG  EventDataSize,
-  [in] PVOID  EventData
+```
+void ScsiPortWmiFireAdapterEvent(
+   HwDeviceExtension,
+   Guid,
+   InstanceIndex,
+   EventDataSize,
+   EventData
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
+Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 `Guid`
 
@@ -90,7 +90,7 @@ None
 
 ## Remarks
 
-This routine is a simplified version of the <a href="..\scsiwmi\nf-scsiwmi-scsiportwmifirelogicalunitevent.md">ScsiPortWmiFireLogicalUnitEvent</a> routine. Whereas, ScsiPortWmiFireLogicalUnitEvent can be used to notify the port driver of events associated with adapters and storage devices, <b>ScsiPortWmiFireAdapterEvent</b> is used to notify the port driver of events associated with adapters only.
+This routine is a simplified version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564775">ScsiPortWmiFireLogicalUnitEvent</a> routine. Whereas, ScsiPortWmiFireLogicalUnitEvent can be used to notify the port driver of events associated with adapters and storage devices, <b>ScsiPortWmiFireAdapterEvent</b> is used to notify the port driver of events associated with adapters only.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,4 +100,4 @@ This routine is a simplified version of the <a href="..\scsiwmi\nf-scsiwmi-scsip
 
 ## See Also
 
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmifirelogicalunitevent.md">ScsiPortWmiFireLogicalUnitEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564775">ScsiPortWmiFireLogicalUnitEvent</a>

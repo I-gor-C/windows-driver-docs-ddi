@@ -50,12 +50,12 @@ The <b>KsResolveRequiredAttributes</b> function searches the attributes list tha
 
 ## Syntax
 
-````
-HRESULT KsResolveRequiredAttributes(
-  _In_     PKSDATARANGE     DataRange,
-  _In_opt_ PKSMULTIPLE_ITEM Attributes
+```
+KSDDKAPI HRESULT KsResolveRequiredAttributes(
+  PKSDATARANGE     DataRange,
+  PKSMULTIPLE_ITEM Attributes
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff5616
 
 `Attributes`
 
-Pointer to a buffer that contains a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a> structure, followed by a sequence of KSATTRIBUTE structures that describe attributes. The KSMULTIPLE_ITEM structure is a header that describes the size of the buffer and the number of entries in the list that follows the header. If this pointer is <b>NULL</b>, then <b>KsResolveRequiredAttributes</b> only succeeds if <i>DataRange</i> does not have an attached attribute list.
+Pointer to a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563441">KSMULTIPLE_ITEM</a> structure, followed by a sequence of KSATTRIBUTE structures that describe attributes. The KSMULTIPLE_ITEM structure is a header that describes the size of the buffer and the number of entries in the list that follows the header. If this pointer is <b>NULL</b>, then <b>KsResolveRequiredAttributes</b> only succeeds if <i>DataRange</i> does not have an attached attribute list.
 
 
 ## Return Value
@@ -82,12 +82,12 @@ Returns NOERROR if successful; otherwise, returns an error code.
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
-
-
-
-<a href="..\ks\ns-ks-ksattribute.md">KSATTRIBUTE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560987">KSATTRIBUTE</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563441">KSMULTIPLE_ITEM</a>

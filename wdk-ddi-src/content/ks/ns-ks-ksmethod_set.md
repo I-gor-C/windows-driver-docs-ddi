@@ -47,15 +47,15 @@ req.typenames: KSMETHOD_SET, *PKSMETHOD_SET
 The KSMETHOD_SET structure describes the methods that comprise a kernel streaming method set.
 
 ## Syntax
-````
-typedef struct {
-  const GUID              *Set;
-  ULONG                   MethodsCount;
-  const KSMETHOD_ITEM     *MethodItem;
-  ULONG                   FastIoCount;
+```
+typedef struct KSMETHOD_SET {
+  const GUID              *Set;
+  ULONG                   MethodsCount;
+  const KSMETHOD_ITEM     *MethodItem;
+  ULONG                   FastIoCount;
   const KSFASTMETHOD_ITEM *FastIoTable;
-} KSMETHOD_SET, *PKSMETHOD_SET;
-````
+}  *PKSMETHOD_SET;
+```
 
 ## Members
 
@@ -70,7 +70,7 @@ Specifies the number of methods in this method set.
 
 `MethodItem`
 
-Points to an array of <a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a> structures. Each structure describes one method of the method set.
+Points to an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563420">KSMETHOD_ITEM</a> structures. Each structure describes one method of the method set.
 
 `FastIoCount`
 
@@ -90,4 +90,4 @@ Microsoft provides several system-defined kernel streaming method set GUIDs. Min
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563420">KSMETHOD_ITEM</a>

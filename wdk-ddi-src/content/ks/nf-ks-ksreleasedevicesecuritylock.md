@@ -50,11 +50,11 @@ The <b>KsReleaseDeviceSecurityLock</b> function releases a previously acquired s
 
 ## Syntax
 
-````
-VOID KsReleaseDeviceSecurityLock(
-  _In_ KSDEVICE_HEADER Header
+```
+KSDDKAPI VOID KsReleaseDeviceSecurityLock(
+  KSDEVICE_HEADER Header
 );
-````
+```
 
 ## Parameters
 
@@ -77,4 +77,4 @@ None
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560958">KsAllocateDeviceHeader</a>

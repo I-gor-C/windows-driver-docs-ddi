@@ -7,7 +7,7 @@ old-location: debugger\idebugoutputcallbackswide_output.htm
 old-project: debugger
 ms.assetid: b57661c3-a18f-45ed-b7fc-f6471753566e
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugOutputCallbacksWide, IDebugOutputCallbacksWide interface [Windows Debugging], Output method, IDebugOutputCallbacksWide::Output, Output method [Windows Debugging], Output method [Windows Debugging], IDebugOutputCallbacksWide interface, Output,IDebugOutputCallbacksWide.Output, dbgeng/IDebugOutputCallbacksWide::Output, debugger.idebugoutputcallbackswide_output
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# Output method
+# IDebugOutputCallbacksWide::Output method
 The <b>Output</b> callback method is called by the engine to send output from the client to the  <b>IDebugOutputCallbacksWide</b> object that is registered with the client.
 
 ## Syntax
 
-````
+```
 HRESULT Output(
-  [in] ULONG  Mask,
-  [in] PCWSTR Text
+  ULONG  Mask,
+  PCWSTR Text
 );
-````
+```
 
 ## Parameters
 

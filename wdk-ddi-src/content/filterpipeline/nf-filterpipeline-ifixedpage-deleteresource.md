@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# DeleteResource method
+# IFixedPage::DeleteResource method
 The <b>DeleteResource</b> method deletes a resource that is associated with the page.
 
 ## Syntax
 
-````
+```
 HRESULT DeleteResource(
-  [in] const wchar_t *uri
+  const wchar_t *uri
 );
-````
+```
 
 ## Parameters
 

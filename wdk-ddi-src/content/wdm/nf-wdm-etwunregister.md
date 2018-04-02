@@ -50,11 +50,11 @@ The <b>EtwUnregister</b> function unregisters the event provider and must be cal
 
 ## Syntax
 
-````
+```
 NTSTATUS EtwUnregister(
-  _In_ REGHANDLE RegHandle
+  REGHANDLE RegHandle
 );
-````
+```
 
 ## Parameters
 
@@ -86,4 +86,4 @@ Callers of <b>EtwRegister</b> must be running at IRQL = PASSIVE_LEVEL in the con
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-etwregister.md">EtwRegister</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545603">EtwRegister</a>

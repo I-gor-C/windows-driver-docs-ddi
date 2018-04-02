@@ -50,17 +50,17 @@ The<b> KsFilterFactoryGetSymbolicLink</b> function returns the symbolic link ass
 
 ## Syntax
 
-````
-PUNICODE_STRING KsFilterFactoryGetSymbolicLink(
-  _In_ PKSFILTERFACTORY FilterFactory
+```
+KSDDKAPI PUNICODE_STRING KsFilterFactoryGetSymbolicLink(
+  PKSFILTERFACTORY FilterFactory
 );
-````
+```
 
 ## Parameters
 
 `FilterFactory`
 
-A pointer to a <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> structure for which to acquire the symbolic link.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a> structure for which to acquire the symbolic link.
 
 
 ## Return Value

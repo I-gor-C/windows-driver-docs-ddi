@@ -46,17 +46,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnClientUnsubscribeFromEvents method
+# ISensorDriver::OnClientUnsubscribeFromEvents method
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545598">ISensorDriver::OnClientUnsubscribeFromEvents</a> method notifies the sensor driver that a client application no longer requests event notifications.
 
 ## Syntax
 
-````
+```
 HRESULT OnClientUnsubscribeFromEvents(
-   IWDFFile * pClientFile,
-   LPWSTR     pwszSensorID
+  IWDFFile *pClientFile,
+  LPWSTR   pwszSensorID
 );
-````
+```
 
 ## Parameters
 

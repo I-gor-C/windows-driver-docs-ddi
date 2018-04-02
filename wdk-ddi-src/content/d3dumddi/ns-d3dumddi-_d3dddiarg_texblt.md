@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_texblt.htm
 old-project: display
 ms.assetid: e236ac2e-24d7-45a4-aa88-b496c8d92764
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDIARG_TEXBLT, D3DDDIARG_TEXBLT structure [Display Devices], UMDisplayDriver_param_Structs_4a343a1e-c364-4261-9f86-e179e0fc2f7c.xml, _D3DDDIARG_TEXBLT, d3dumddi/D3DDDIARG_TEXBLT, display.d3dddiarg_texblt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: D3DDDIARG_TEXBLT
 The D3DDDIARG_TEXBLT structure describes parameters for a texture bit-block transfer (bitblt) operation.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDIARG_TEXBLT {
   HANDLE hDstResource;
   HANDLE hSrcResource;
-  UINT   CubeMapFace;
-  POINT  DstPoint;
-  RECT   SrcRect;
+  UINT   CubeMapFace;
+  POINT  DstPoint;
+  RECT   SrcRect;
 } D3DDDIARG_TEXBLT;
-````
+```
 
 ## Members
 
@@ -93,8 +93,8 @@ typedef struct _D3DDDIARG_TEXBLT {
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_texblt.md">TexBlt</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
+
+
+
+<a href="https://msdn.microsoft.com/1ddfd822-7a43-4976-a153-ba862d6dfd82">TexBlt</a>

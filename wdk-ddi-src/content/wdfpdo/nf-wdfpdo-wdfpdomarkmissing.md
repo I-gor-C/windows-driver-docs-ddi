@@ -53,11 +53,11 @@ The <b>WdfPdoMarkMissing</b> method informs the framework that a device is no lo
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfPdoMarkMissing(
-  _In_ WDFDEVICE Device
+  WDFDEVICE Device
 );
-````
+```
 
 ## Parameters
 
@@ -159,12 +159,12 @@ WdfFdoUnlockStaticChildListFromIteration(Device);</pre>
 
 ## See Also
 
-<a href="..\wdffdo\nf-wdffdo-wdffdolockstaticchildlistforiteration.md">WdfFdoLockStaticChildListForIteration</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547282">WdfFdoLockStaticChildListForIteration</a>
 
 
 
-<a href="..\wdffdo\nf-wdffdo-wdffdounlockstaticchildlistfromiteration.md">WdfFdoUnlockStaticChildListFromIteration</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547293">WdfFdoRetrieveNextStaticChild</a>
 
 
 
-<a href="..\wdffdo\nf-wdffdo-wdffdoretrievenextstaticchild.md">WdfFdoRetrieveNextStaticChild</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547297">WdfFdoUnlockStaticChildListFromIteration</a>

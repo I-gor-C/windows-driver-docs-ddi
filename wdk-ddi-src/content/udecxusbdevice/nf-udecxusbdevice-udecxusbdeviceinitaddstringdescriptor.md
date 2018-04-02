@@ -7,7 +7,7 @@ old-location: buses\udecxusbdeviceinitaddstringdescriptor.htm
 old-project: usbref
 ms.assetid: 05971A19-4B66-41F6-9043-DA9C81FA92E5
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UdecxUsbDeviceInitAddStringDescriptor, UdecxUsbDeviceInitAddStringDescriptor function [Buses], buses.udecxusbdeviceinitaddstringdescriptor, udecxusbdevice/UdecxUsbDeviceInitAddStringDescriptor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,20 +51,20 @@ Adds a USB string descriptor to the initialization parameters used to create a v
 
 ## Syntax
 
-````
+```
 NTSTATUS UdecxUsbDeviceInitAddStringDescriptor(
-  _Inout_ PUDECXUSBDEVICE_INIT UdecxUsbDeviceInit,
-  _In_    PCUNICODE_STRING     String,
-  _In_    UCHAR                DescriptorIndex,
-  _In_    USHORT               LanguageId
+  PUDECXUSBDEVICE_INIT UdecxUsbDeviceInit,
+  PCUNICODE_STRING     String,
+  UCHAR                DescriptorIndex,
+  USHORT               LanguageId
 );
-````
+```
 
 ## Parameters
 
 `UdecxUsbDeviceInit`
 
-A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>.
+A pointer to a WDF-allocated structure that contains initialization parameters for the virtual USB device.  The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627968">UdecxUsbDeviceInitAllocate</a>.
 
 `String`
 
@@ -99,7 +99,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 ## See Also
 
-<a href="..\udecxusbdevice\nf-udecxusbdevice-udecxusbdeviceinitallocate.md">UdecxUsbDeviceInitAllocate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
 
 
@@ -107,8 +107,8 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt627968">UdecxUsbDeviceInitAllocate</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>

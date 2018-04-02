@@ -7,7 +7,7 @@ old-location: netvista\fwpsvswitcheventssubscribe0.htm
 old-project: netvista
 ms.assetid: 479ff048-f57f-42ca-8787-f87ed055fdbf
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsvSwitchEventsSubscribe0, FwpsvSwitchEventsSubscribe0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsvSwitchEventsSubscribe0, netvista.fwpsvswitcheventssubscribe0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,16 +51,16 @@ The <b>FwpsvSwitchEventsSubscribe0</b> function registers callback entry points 
 
 ## Syntax
 
-````
-NTSTATUS NTAPI FwpsvSwitchEventsSubscribe0(
-   _In_opt_ const GUID                          *providerGuid,
-   _In_opt_ void                                *notifyContext,
-   _In_ _Reserved_ UINT32                       flags,
-   _In_ _Reserved_ void                         *reserved,
-   _In_ const FWPS_VSWITCH_EVENT_DISPATCH_TABLE *eventDispatchTable,
-   _Out_ UINT32                                 *subscriptionId
+```
+NTSTATUS FwpsvSwitchEventsSubscribe0(
+  const GUID                              *providerGuid,
+  void                                    *notifyContext,
+  UINT32                                  flags,
+  void                                    *reserved,
+  const FWPS_VSWITCH_EVENT_DISPATCH_TABLE *eventDispatchTable,
+  UINT32                                  *subscriptionId
 );
-````
+```
 
 ## Parameters
 
@@ -82,11 +82,11 @@ Reserved. Set to zero.
 
 `eventDispatchTable`
 
-A pointer to an <a href="..\fwpsk\ns-fwpsk-fwps_vswitch_event_dispatch_table0_.md">FWPS_VSWITCH_EVENT_DISPATCH_TABLE</a> structure that defines the callback entry points for virtual switch layer events.
+A pointer to an <a href="https://msdn.microsoft.com/7e949e6d-7448-4f76-b8a1-6d050261fb21">FWPS_VSWITCH_EVENT_DISPATCH_TABLE</a> structure that defines the callback entry points for virtual switch layer events.
 
 `subscriptionId`
 
-A pointer to a variable that contains a unique identifier that WFP assigns to the subscription. The caller must return the subscription identifier to WFP with the  <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventsunsubscribe0.md">FwpsvSwitchEventsUnsubscribe0</a> function.
+A pointer to a variable that contains a unique identifier that WFP assigns to the subscription. The caller must return the subscription identifier to WFP with the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439691">FwpsvSwitchEventsUnsubscribe0</a> function.
 
 
 ## Return Value
@@ -128,10 +128,10 @@ An error occurred.
 
 A callout driver calls the <b>FwpsvSwitchEventsSubscribe0</b> function to register callback entry points for virtual switch  layer events.
 
-The entry points for the callback notification functions are specified in and <a href="..\fwpsk\ns-fwpsk-fwps_vswitch_event_dispatch_table0_.md">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a> structure. 
+The entry points for the callback notification functions are specified in and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451263">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a> structure. 
 
 The callout driver must later call 
-    <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventsunsubscribe0.md">FwpsvSwitchEventsUnsubscribe0</a>  to
+    <a href="https://msdn.microsoft.com/library/windows/hardware/hh439691">FwpsvSwitchEventsUnsubscribe0</a>  to
     free the system resources.
 
 ## Requirements
@@ -145,8 +145,8 @@ The callout driver must later call
 
 ## See Also
 
-<a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventsunsubscribe0.md">FwpsvSwitchEventsUnsubscribe0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451263">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a>
 
 
 
-<a href="..\fwpsk\ns-fwpsk-fwps_vswitch_event_dispatch_table0_.md">FWPS_VSWITCH_EVENT_DISPATCH_TABLE0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439691">FwpsvSwitchEventsUnsubscribe0</a>

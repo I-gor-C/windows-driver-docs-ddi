@@ -7,7 +7,7 @@ old-location: netvista\ndismcmdispatchincomingcallqoschange.htm
 old-project: netvista
 ms.assetid: e3da62c2-4940-4c55-8232-1780d92b7f1f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMCmDispatchIncomingCallQoSChange, NdisMCmDispatchIncomingCallQoSChange macro [Network Drivers Starting with Windows Vista], condis_mcm_ref_d926c691-a75e-4195-9026-67429043a821.xml, ndis/NdisMCmDispatchIncomingCallQoSChange, netvista.ndismcmdispatchincomingcallqoschange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 
 ## Syntax
 
-````
-VOID NdisMCmDispatchIncomingCallQoSChange(
-  [in] NDIS_HANDLE         NdisVcHandle,
-  [in] PCO_CALL_PARAMETERS CallParameters
+```
+void NdisMCmDispatchIncomingCallQoSChange(
+   _H_,
+   _P_
 );
-````
+```
 
 ## Parameters
 
@@ -80,7 +80,7 @@ An MCM driver calls
     is a feature like QoS itself that depends on the signaling protocol.
 
 The MCM driver should call 
-    <a href="..\ndis\nf-ndis-ndismcmactivatevc.md">NdisMCmActivateVc</a> whenever it makes
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562792">NdisMCmActivateVc</a> whenever it makes
     changes in the call parameters for an active VC.
 
 A call to 
@@ -110,30 +110,30 @@ Only connection-oriented miniport drivers that provide integrated call-managemen
 
 
 
-<a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561627">NdisClCloseCall</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismcmcreatevc.md">NdisMCmCreateVc</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561636">NdisClModifyCallQoS</a>
 
 
 
-<a href="..\ndis\nc-ndis-protocol_cl_incoming_call_qos_change.md">
+<a href="https://msdn.microsoft.com/eee2625e-6dc8-4f54-81e9-2d31d25f62d7">
+   NdisCmDispatchIncomingCallQoSChange</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562792">NdisMCmActivateVc</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562812">NdisMCmCreateVc</a>
+
+
+
+<a href="https://msdn.microsoft.com/ca9953f4-35db-4acb-b0ea-887156b4f6ee">
    ProtocolClIncomingCallQosChange</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisclclosecall.md">NdisClCloseCall</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndismcmactivatevc.md">NdisMCmActivateVc</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisclmodifycallqos.md">NdisClModifyCallQoS</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiscmdispatchincomingcallqoschange.md">
-   NdisCmDispatchIncomingCallQoSChange</a>
+<a href="https://msdn.microsoft.com/b086dd24-74f5-474a-8684-09bf92ac731b">ProtocolCoCreateVc</a>

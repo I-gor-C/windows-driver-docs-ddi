@@ -53,12 +53,12 @@ The <b>WdfIoResourceRequirementsListRemove</b> method removes a <a href="https:/
 
 ## Syntax
 
-````
-VOID WdfIoResourceRequirementsListRemove(
-  _In_ WDFIORESREQLIST RequirementsList,
-  _In_ ULONG           Index
+```
+void WdfIoResourceRequirementsListRemove(
+  WDFIORESREQLIST RequirementsList,
+  ULONG           Index
 );
-````
+```
 
 ## Parameters
 
@@ -125,4 +125,4 @@ Example_EvtDeviceFilterRemoveResourceRequirements(
 
 ## See Also
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistremovebyioreslist.md">WdfIoResourceRequirementsListRemoveByIoResList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548575">WdfIoResourceRequirementsListRemoveByIoResList</a>

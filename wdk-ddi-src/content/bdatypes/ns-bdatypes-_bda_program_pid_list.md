@@ -47,13 +47,13 @@ req.typenames: BDA_PROGRAM_PID_LIST, *PBDA_PROGRAM_PID_LIST
 The BDA_PROGRAM_PID_LIST structure describes data of a specific program to view. This data consists of packets that are identified with packet identifiers (PID).
 
 ## Syntax
-````
+```
 typedef struct _BDA_PROGRAM_PID_LIST {
   ULONG ulProgramNumber;
   ULONG ulcPIDs;
   ULONG ulPID[MIN_DIMENSION];
 } BDA_PROGRAM_PID_LIST, *PBDA_PROGRAM_PID_LIST;
-````
+```
 
 ## Members
 
@@ -78,8 +78,8 @@ Array of PIDs that identify packets of program data.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff566536">KSPROPSETID_BdaCA</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564298">KSPROPERTY_BDA_CA_SET_PROGRAM_PIDS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566536">KSPROPSETID_BdaCA</a>

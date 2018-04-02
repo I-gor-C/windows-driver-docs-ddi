@@ -7,7 +7,7 @@ old-location: display\d3dddi_lockflags.htm
 old-project: display
 ms.assetid: b9bc6607-3222-45d0-a0d8-18c815a41771
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_LOCKFLAGS, D3DDDI_LOCKFLAGS structure [Display Devices], D3D_other_Structs_1bff30dd-936f-4753-bcbe-e656c454e675.xml, _D3DDDI_LOCKFLAGS, d3dumddi/D3DDDI_LOCKFLAGS, display.d3dddi_lockflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,26 +47,26 @@ req.typenames: D3DDDI_LOCKFLAGS
 The D3DDDI_LOCKFLAGS structure identifies how to lock a resource.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDI_LOCKFLAGS {
   union {
     struct {
-      UINT ReadOnly  :1;
-      UINT WriteOnly  :1;
-      UINT NoOverwrite  :1;
-      UINT Discard  :1;
-      UINT RangeValid  :1;
-      UINT AreaValid  :1;
-      UINT BoxValid  :1;
-      UINT NotifyOnly  :1;
-      UINT MightDrawFromLocked  :1;
-      UINT DoNotWait  :1;
-      UINT Reserved  :22;
+      UINT  : 1  ReadOnly;
+      UINT  : 1  WriteOnly;
+      UINT  : 1  NoOverwrite;
+      UINT  : 1  Discard;
+      UINT  : 1  RangeValid;
+      UINT  : 1  AreaValid;
+      UINT  : 1  BoxValid;
+      UINT  : 1  NotifyOnly;
+      UINT  : 1  MightDrawFromLocked;
+      UINT  : 1  DoNotWait;
+      UINT  : 22 Reserved;
     };
-    UINT   Value;
+    UINT Value;
   };
 } D3DDDI_LOCKFLAGS;
-````
+```
 
 ## Members
 
@@ -80,4 +80,4 @@ typedef struct _D3DDDI_LOCKFLAGS {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_lock.md">D3DDDIARG_LOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543204">D3DDDIARG_LOCK</a>

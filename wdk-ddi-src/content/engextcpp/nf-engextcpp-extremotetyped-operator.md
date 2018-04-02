@@ -7,7 +7,7 @@ old-location: debugger\extremotetyped_operator_.htm
 old-project: debugger
 ms.assetid: f7a63a6a-24fa-4c93-ac2e-c44f7984a2c8
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_3e10d850-c463-4d43-8639-7b7daf26c749.xml, ExtRemoteTyped, ExtRemoteTyped interface [Windows Debugging], operator* method, ExtRemoteTyped::operator*, debugger.extremotetyped_operator_, operator* method [Windows Debugging], operator* method [Windows Debugging], ExtRemoteTyped interface, operator*,ExtRemoteTyped.operator*
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,14 +44,16 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# operator* method
+# ExtRemoteTyped::operator* method
 The <b>operator*</b> overloaded operator returns the typed data that is pointed to by the typed data represented by this object.
 
 ## Syntax
 
-````
-ExtRemoteData operator*();
-````
+```
+ExtRemoteTyped operator*(
+
+);
+```
 
 ## Parameters
 
@@ -75,8 +77,8 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff544233">ExtRe
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544162">ExtRemoteTyped</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544233">ExtRemoteTyped::Dereference</a>
-
-
-
-<a href="..\engextcpp\nl-engextcpp-extremotetyped.md">ExtRemoteTyped</a>

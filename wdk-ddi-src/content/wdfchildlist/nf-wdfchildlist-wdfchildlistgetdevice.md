@@ -53,11 +53,11 @@ The <b>WdfChildListGetDevice</b> method returns a handle to the framework device
 
 ## Syntax
 
-````
+```
 WDFDEVICE WdfChildListGetDevice(
-  _In_ WDFCHILDLIST ChildList
+  WDFCHILDLIST ChildList
 );
-````
+```
 
 ## Parameters
 

@@ -44,14 +44,16 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
-# UnbindDevice method
+# IBidiSpl::UnbindDevice method
 The <b>UnbindDevice</b> method unbinds a printer from a bidi request.
 
 ## Syntax
 
-````
-HRESULT UnbindDevice();
-````
+```
+HRESULT UnbindDevice(
+
+);
+```
 
 ## Parameters
 
@@ -120,4 +122,4 @@ The <b>HRESULT</b> contains an error code corresponding to the last error.
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144980">IBidiSpl</a>

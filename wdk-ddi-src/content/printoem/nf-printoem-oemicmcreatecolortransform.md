@@ -50,19 +50,19 @@ The <code>OEMIcmCreateColorTransform</code> function creates an ICM color transf
 
 ## Syntax
 
-````
-HANDLE APIENTRY OEMIcmCreateColorTransform(
-           DHPDEV                                   dhpdev,
-           LPLOGCOLORSPACEW                         pLogColorSpace,
-  _In_opt_ _reads_bytes_(cjSourceProfile) PVOID     pvSourceProfile,
-           ULONG                                    cjSourceProfile,
-  _In_     _reads_bytes_(cjDestProfile) PVOID       pvDestProfile,
-           ULONG                                    cjDestProfile,
-  _In_opt_ _reads_bytes_opt_(cjTargetProfile) PVOID pvTargetProfile,
-           ULONG                                    cjTargetProfile,
-           POINTL                                   dwReserved
+```
+HANDLE OEMIcmCreateColorTransform(
+  DHPDEV           dhpdev,
+  LPLOGCOLORSPACEW pLogColorSpace,
+  PVOID            pvSourceProfile,
+  ULONG            cjSourceProfile,
+  PVOID            pvDestProfile,
+  ULONG            cjDestProfile,
+  PVOID            pvTargetProfile,
+  ULONG            cjTargetProfile,
+  DWORD            dwReserved
 );
-````
+```
 
 ## Parameters
 

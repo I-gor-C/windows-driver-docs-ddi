@@ -7,7 +7,7 @@ old-location: netvista\ndiscmdispatchincomingcall.htm
 old-project: netvista
 ms.assetid: 2172aeec-8502-414e-9d01-9292c0eb7ce8
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisCmDispatchIncomingCall, NdisCmDispatchIncomingCall function [Network Drivers Starting with Windows Vista], condis_call_manager_ref_892a99ac-d4f0-4f4b-9656-a43c99d67aca.xml, ndis/NdisCmDispatchIncomingCall, netvista.ndiscmdispatchincomingcall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,13 +51,13 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisCmDispatchIncomingCall(
-  _In_ NDIS_HANDLE         NdisSapHandle,
-  _In_ NDIS_HANDLE         NdisVcHandle,
-  _In_ PCO_CALL_PARAMETERS CallParameters
+  NDIS_HANDLE         NdisSapHandle,
+  NDIS_HANDLE         NdisVcHandle,
+  PCO_CALL_PARAMETERS CallParameters
 );
-````
+```
 
 ## Parameters
 
@@ -65,15 +65,15 @@ NDIS_STATUS NdisCmDispatchIncomingCall(
 
 Specifies the handle identifying the SAP. NDIS set up this handle when the client originally
      called 
-     <a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>, and the call
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561648">NdisClRegisterSap</a>, and the call
      manager originally obtained this handle as an input parameter to its 
-     <a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">
+     <a href="https://msdn.microsoft.com/3e3e7a0e-a8d2-40b2-895b-187d24867080">
      ProtocolCmRegisterSap</a> function.
 
 `NdisVcHandle`
 
 Specifies the handle identifying the VC, created with 
-     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> when the call manager
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a> when the call manager
      processes the incoming call offer directed to this registered SAP.
 
 `CallParameters`
@@ -88,7 +88,7 @@ Pointer to a structure of type
 When 
      <b>NdisCmDispatchIncomingCall</b> returns anything other than NDIS_STATUS_PENDING, the call manager
      should make an internal call to its 
-     <a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
+     <a href="https://msdn.microsoft.com/353e929b-17c8-47e8-82fd-b646e93a5b9a">
      ProtocolCmIncomingCallComplete</a> function. Otherwise, NDIS calls the CM's 
      <i>ProtocolCmIncomingCallComplete</i> function when this operation is completed.
 
@@ -105,7 +105,7 @@ Identified the target SAP, previously registered by a particular client, for the
 </li>
 <li>
 Created a VC for the incoming call with 
-      <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a>
 
 
 </li>
@@ -116,7 +116,7 @@ Possibly negotiated about acceptable call parameters over the network, or accept
 </li>
 <li>
 Activated the VC with 
-      <a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>, causing the
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff561649">NdisCmActivateVc</a>, causing the
       underlying miniport driver to make itself ready for transfers on the VC in accord with the negotiated
       or accepted call parameters
 
@@ -124,14 +124,14 @@ Activated the VC with
 </ul>
 The CM's call to 
     <b>NdisCmDispatchIncomingCall</b> causes NDIS to call the client's 
-    <a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">ProtocolClIncomingCall</a> function,
+    <a href="https://msdn.microsoft.com/8a5922ac-b22b-444e-9ea0-3bb56e71ef33">ProtocolClIncomingCall</a> function,
     within which the client either accepts or rejects the requested connection. After deciding whether to
     accept the connection, the client calls 
-    <a href="..\ndis\nf-ndis-ndisclincomingcallcomplete.md">NdisClIncomingCallComplete</a>,
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561632">NdisClIncomingCallComplete</a>,
     which, in turn, calls the CM's 
-    <a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
+    <a href="https://msdn.microsoft.com/353e929b-17c8-47e8-82fd-b646e93a5b9a">
     ProtocolCmIncomingCallComplete</a> function. If the client accepted the call, the CM next calls 
-    <a href="..\ndis\nf-ndis-ndiscmdispatchcallconnected.md">NdisCmDispatchCallConnected</a>.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561661">NdisCmDispatchCallConnected</a>.
     Otherwise, it deactivates (and possibly deletes) the VC it created, after notifying the remote node that
     the offered call was rejected.
 
@@ -156,54 +156,54 @@ Only stand-alone call managers, which register themselves with NDIS as protocol 
 
 
 
-<a href="..\ndis\nf-ndis-ndisclincomingcallcomplete.md">NdisClIncomingCallComplete</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561632">NdisClIncomingCallComplete</a>
 
 
 
-<a href="..\ndis\nc-ndis-protocol_cm_incoming_call_complete.md">
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561648">NdisClRegisterSap</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561649">NdisCmActivateVc</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561657">NdisCmDeactivateVc</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561661">NdisCmDispatchCallConnected</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561698">NdisCoDeleteVc</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561728">NdisCoSendNetBufferLists</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562830">NdisMCmDispatchIncomingCall</a>
+
+
+
+<a href="https://msdn.microsoft.com/8a5922ac-b22b-444e-9ea0-3bb56e71ef33">ProtocolClIncomingCall</a>
+
+
+
+<a href="https://msdn.microsoft.com/353e929b-17c8-47e8-82fd-b646e93a5b9a">
    ProtocolCmIncomingCallComplete</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisclregistersap.md">NdisClRegisterSap</a>
+<a href="https://msdn.microsoft.com/3e3e7a0e-a8d2-40b2-895b-187d24867080">ProtocolCmRegisterSap</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismcmdispatchincomingcall.md">NdisMCmDispatchIncomingCall</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiscosendnetbufferlists.md">NdisCoSendNetBufferLists</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiscodeletevc.md">NdisCoDeleteVc</a>
-
-
-
-<a href="..\ndis\nc-ndis-protocol_co_receive_net_buffer_lists.md">
+<a href="https://msdn.microsoft.com/1755804c-d82f-465d-862f-8a2340516f8e">
    ProtocolCoReceiveNetBufferLists</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiscmactivatevc.md">NdisCmActivateVc</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiscmdeactivatevc.md">NdisCmDeactivateVc</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndiscmdispatchcallconnected.md">NdisCmDispatchCallConnected</a>
-
-
-
-<a href="..\ndis\nc-ndis-protocol_cl_incoming_call.md">ProtocolClIncomingCall</a>
-
-
-
-<a href="..\ndis\nc-ndis-protocol_cm_reg_sap.md">ProtocolCmRegisterSap</a>

@@ -50,16 +50,16 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-DWORD WINAPI PrinterMessageBoxA(
-  _In_ HANDLE         hPrinter,
-       DWORD          Error,
-  _In_ HWND           hWnd,
-  _In_ LPSTR          pText,
-  _In_ LPSTR          pCaption,
-       DWORD          dwType
+```
+DWORD PrinterMessageBoxA(
+  HANDLE hPrinter,
+  DWORD  Error,
+  HWND   hWnd,
+  LPSTR  pText,
+  LPSTR  pCaption,
+  DWORD  dwType
 );
-````
+```
 
 ## Parameters
 

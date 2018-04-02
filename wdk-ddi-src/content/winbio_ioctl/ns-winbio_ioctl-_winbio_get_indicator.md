@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 # _WINBIO_GET_INDICATOR structure
-The WINBIO_GET_INDICATOR structure is the OUT payload for <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_indicator.md">IOCTL_BIOMETRIC_GET_INDICATOR</a>.
+The WINBIO_GET_INDICATOR structure is the OUT payload for <a href="https://msdn.microsoft.com/library/windows/hardware/ff536433">IOCTL_BIOMETRIC_GET_INDICATOR</a>.
 
 ## Syntax
-````
+```
 typedef struct _WINBIO_GET_INDICATOR {
-  DWORD                   PayloadSize;
-  HRESULT                 WinBioHresult;
+  DWORD                   PayloadSize;
+  HRESULT                 WinBioHresult;
   WINBIO_INDICATOR_STATUS IndicatorStatus;
 } WINBIO_GET_INDICATOR, *PWINBIO_GET_INDICATOR;
-````
+```
 
 ## Members
 
@@ -65,7 +65,7 @@ Specifies the total size of the payload, which includes the fixed length structu
 
 `WinBioHresult`
 
-Specifies an HRESULT that contains the status of the I/O operation. See <a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_indicator.md">IOCTL_BIOMETRIC_GET_INDICATOR</a> for possible values.
+Specifies an HRESULT that contains the status of the I/O operation. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff536433">IOCTL_BIOMETRIC_GET_INDICATOR</a> for possible values.
 
 `IndicatorStatus`
 
@@ -115,8 +115,8 @@ The sensor indicator light is off.  Sensors that do not have an indicator light 
 
 ## See Also
 
-<a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_set_indicator.md">WINBIO_SET_INDICATOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536433">IOCTL_BIOMETRIC_GET_INDICATOR</a>
 
 
 
-<a href="..\winbio_ioctl\ni-winbio_ioctl-ioctl_biometric_get_indicator.md">IOCTL_BIOMETRIC_GET_INDICATOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536477">WINBIO_SET_INDICATOR</a>

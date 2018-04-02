@@ -7,7 +7,7 @@ old-location: audio\pccreatecontentmixed.htm
 old-project: audio
 ms.assetid: 9b916d43-26ab-4354-8537-2d4789c5fb52
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: PcCreateContentMixed, PcCreateContentMixed function [Audio Devices], audio.pccreatecontentmixed, audpc-routines_40c3dd23-60cb-48dc-a570-1ba007a27bb2.xml, portcls/PcCreateContentMixed
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,17 +46,17 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 
 
 # PcCreateContentMixed function
-The <b>PcCreateContentMixed</b> function computes the DRM content rights for a composite stream containing mixed content from some number of KS audio streams. Note that this function call is identical in operation to the <a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a> function, and its parameter definitions and return value are also identical.
+The <b>PcCreateContentMixed</b> function computes the DRM content rights for a composite stream containing mixed content from some number of KS audio streams. Note that this function call is identical in operation to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536348">DrmCreateContentMixed</a> function, and its parameter definitions and return value are also identical.
 
 ## Syntax
 
-````
-PORTCLASSAPI NTSTATUS NTAPI  PcCreateContentMixed(
-  _In_  PULONG paContentId,
-  _In_  ULONG  cContentId,
-  _Out_ PULONG pMixedContentId
+```
+PORTCLASSAPI NTSTATUS PcCreateContentMixed(
+  PULONG paContentId,
+  ULONG  cContentId,
+  PULONG pMixedContentId
 );
-````
+```
 
 ## Parameters
 
@@ -75,11 +75,11 @@ Output pointer for the composite content ID. This parameter points to a caller-a
 
 ## Return Value
 
-See return value definition in <a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>.
+See return value definition in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536348">DrmCreateContentMixed</a>.
 
 ## Remarks
 
-For more information, see the comments in <a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>.
+For more information, see the comments in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536348">DrmCreateContentMixed</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,4 +91,4 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmcreatecont
 
 ## See Also
 
-<a href="..\drmk\nf-drmk-drmcreatecontentmixed.md">DrmCreateContentMixed</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536348">DrmCreateContentMixed</a>

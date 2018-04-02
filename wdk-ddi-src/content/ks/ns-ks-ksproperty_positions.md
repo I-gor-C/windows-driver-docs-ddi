@@ -47,14 +47,14 @@ req.typenames: KSPROPERTY_POSITIONS, *PKSPROPERTY_POSITIONS
 The KSPROPERTY_POSITIONS structure specifies the current position and stop position, relative to the total duration of the stream.
 
 ## Syntax
-````
-typedef struct {
-  LONGLONG         Current;
-  LONGLONG         Stop;
+```
+typedef struct KSPROPERTY_POSITIONS {
+  LONGLONG         Current;
+  LONGLONG         Stop;
   KS_SEEKING_FLAGS CurrentFlags;
   KS_SEEKING_FLAGS StopFlags;
-} KSPROPERTY_POSITIONS, *PKSPROPERTY_POSITIONS;
-````
+} *PKSPROPERTY_POSITIONS, KSPROPERTY_POSITIONS;
+```
 
 ## Members
 
@@ -69,11 +69,11 @@ Specifies the stop position as a 64-bit value.
 
 `CurrentFlags`
 
-A structure of type <a href="..\ks\ne-ks-ks_seeking_flags.md">KS_SEEKING_FLAGS</a> containing flags pertaining to the <b>Current</b> parameter.
+A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff567677">KS_SEEKING_FLAGS</a> containing flags pertaining to the <b>Current</b> parameter.
 
 `StopFlags`
 
-A structure of type <a href="..\ks\ne-ks-ks_seeking_flags.md">KS_SEEKING_FLAGS</a> containing flags pertaining to the <b>Stop</b> parameter.
+A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff567677">KS_SEEKING_FLAGS</a> containing flags pertaining to the <b>Stop</b> parameter.
 
 ## Remarks
 The KSPROPERTY_POSITIONS structure is used with positioning properties in the KSPROPSETID_MediaSeeking property set. These properties correspond to DirectShow's <b>IMediaSeeking::GetPositions</b> and <b>IMediaSeeking::SetPositions</b>.

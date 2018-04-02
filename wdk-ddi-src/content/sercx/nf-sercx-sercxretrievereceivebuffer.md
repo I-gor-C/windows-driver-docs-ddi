@@ -50,13 +50,13 @@ The <b>SerCxRetrieveReceiveBuffer</b> method obtains an input buffer into which 
 
 ## Syntax
 
-````
+```
 NTSTATUS SerCxRetrieveReceiveBuffer(
-  [in]      WDFDEVICE                Device,
-  [in]      ULONG                    Length,
-  [in, out] PSERCX_BUFFER_DESCRIPTOR BufferDescriptor
+  WDFDEVICE                Device,
+  ULONG                    Length,
+  PSERCX_BUFFER_DESCRIPTOR BufferDescriptor
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ The requested buffer length, in bytes. If the <b>SerCxRetrieveReceiveBuffer</b> 
 
 `BufferDescriptor`
 
-A pointer to a caller-allocated <a href="..\sercx\ns-sercx-sercx_buffer_descriptor.md">SERCX_BUFFER_DESCRIPTOR</a> structure. This structure describes the data buffer to use for the receive operation. The caller previously called the <a href="..\sercx\nf-sercx-sercx_buffer_descriptor_init.md">SERCX_BUFFER_DESCRIPTOR_INIT</a> function to initialize this structure. <b>SerCxRetrieveTransmitBuffer</b> writes to the <b>Buffer</b> and <b>Length</b> members of this structure.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/hh439539">SERCX_BUFFER_DESCRIPTOR</a> structure. This structure describes the data buffer to use for the receive operation. The caller previously called the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439542">SERCX_BUFFER_DESCRIPTOR_INIT</a> function to initialize this structure. <b>SerCxRetrieveTransmitBuffer</b> writes to the <b>Buffer</b> and <b>Length</b> members of this structure.
 
 
 ## Return Value
@@ -131,8 +131,8 @@ The serial controller driver calls this method to acquire a buffer to contain in
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercx_buffer_descriptor_init.md">SERCX_BUFFER_DESCRIPTOR_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439539">SERCX_BUFFER_DESCRIPTOR</a>
 
 
 
-<a href="..\sercx\ns-sercx-sercx_buffer_descriptor.md">SERCX_BUFFER_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439542">SERCX_BUFFER_DESCRIPTOR_INIT</a>

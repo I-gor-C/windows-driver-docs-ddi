@@ -47,8 +47,8 @@ req.typenames: KSWAVE_OUTPUT_CAPABILITIES, *PKSWAVE_OUTPUT_CAPABILITIES
 The KSWAVE_OUTPUT_CAPABILITIES structure is used to describe the output capabilities of a device.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSWAVE_OUTPUT_CAPABILITIES {
   ULONG MaximumChannelsPerConnection;
   ULONG MinimumBitsPerSample;
   ULONG MaximumBitsPerSample;
@@ -69,8 +69,8 @@ typedef struct {
   ULONG TotalSampleMemory;
   ULONG FreeSampleMemory;
   ULONG LargestFreeContiguousSampleMemory;
-} KSWAVE_OUTPUT_CAPABILITIES, *PKSWAVE_OUTPUT_CAPABILITIES;
-````
+}  *PKSWAVE_OUTPUT_CAPABILITIES;
+```
 
 ## Members
 

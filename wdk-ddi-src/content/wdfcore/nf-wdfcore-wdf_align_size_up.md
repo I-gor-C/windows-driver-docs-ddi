@@ -53,12 +53,12 @@ The <b>WDF_ALIGN_SIZE_UP</b> function returns the next-higher buffer size that i
 
 ## Syntax
 
-````
+```
 size_t WDF_ALIGN_SIZE_UP(
-  _In_ size_t Length,
-  _In_ size_t AlignTo
+  size_t Length,
+  size_t AlignTo
 );
-````
+```
 
 ## Parameters
 
@@ -77,7 +77,7 @@ The alignment offset, in bytes. This value must be a power of 2, such as 2, 4, 8
 
 ## Remarks
 
-Drivers can use <b>WDF_ALIGN_SIZE_UP</b> or <a href="..\wdfcore\nf-wdfcore-wdf_align_size_down.md">WDF_ALIGN_SIZE_DOWN</a> to calculate a buffer size that is aligned to a specified alignment offset. This calculation is useful if your driver must allocate multiple contiguous buffers, if each buffer must begin at an address alignment boundary.
+Drivers can use <b>WDF_ALIGN_SIZE_UP</b> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff551214">WDF_ALIGN_SIZE_DOWN</a> to calculate a buffer size that is aligned to a specified alignment offset. This calculation is useful if your driver must allocate multiple contiguous buffers, if each buffer must begin at an address alignment boundary.
 
 If the value of either input parameter is too large, arithmetic overflow causes <b>WDF_ALIGN_SIZE_UP</b> to return an invalid value that is smaller than <i>Length</i>. Your code should test for this condition.
 
@@ -115,4 +115,4 @@ if (bufferSizeAligned &lt; bufferSize)
 
 ## See Also
 
-<a href="..\wdfcore\nf-wdfcore-wdf_align_size_down.md">WDF_ALIGN_SIZE_DOWN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551214">WDF_ALIGN_SIZE_DOWN</a>

@@ -7,7 +7,7 @@ old-location: netvista\wskderegister.htm
 old-project: netvista
 ms.assetid: b2ff3d7b-319d-4256-a574-cb32595fd02f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: WskDeregister, WskDeregister function [Network Drivers Starting with Windows Vista], netvista.wskderegister, wsk/WskDeregister, wskref_45c2ad8f-a969-4a82-ac5e-67e4d3c96ffb.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,22 +50,22 @@ req.product: Windows 10 or later.
 The 
   <b>WskDeregister</b> function unregisters a WSK application's registration instance that was previously
   created by 
-  <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>.
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a>.
 
 ## Syntax
 
-````
-VOID WskDeregister(
-  _In_ PWSK_REGISTRATION WskRegistration
+```
+void WskDeregister(
+  PWSK_REGISTRATION WskRegistration
 );
-````
+```
 
 ## Parameters
 
 `WskRegistration`
 
 A pointer to the memory location initialized by 
-     <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> that identifies a WSK
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a> that identifies a WSK
      application's registration instance.
 
 
@@ -76,7 +76,7 @@ None
 ## Remarks
 
 For each call to 
-    <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> that returns a success code, there
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a> that returns a success code, there
     must be exactly one corresponding 
     <b>WskDeregister</b> call that uses the same 
     <i>WskRegistration</i> parameter that was passed to 
@@ -91,7 +91,7 @@ All captured instances of the provider NPI are released.
 </li>
 <li>
 Any outstanding calls to functions pointed to by 
-      <a href="..\wsk\ns-wsk-_wsk_provider_dispatch.md">WSK_PROVIDER_DISPATCH</a> members have
+      <a href="https://msdn.microsoft.com/library/windows/hardware/ff571175">WSK_PROVIDER_DISPATCH</a> members have
       returned.
 
 </li>
@@ -115,8 +115,8 @@ For more information about attaching a WSK application to the WSK subsystem, see
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_registration.md">WSK_REGISTRATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571178">WSK_REGISTRATION</a>
 
 
 
-<a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a>

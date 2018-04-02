@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The DOCEVENT_ESCAPE structure is a container for values used as parameters for the <b>ExtEscape</b> function.
 
 ## Syntax
-````
+```
 typedef struct _DOCEVENT_ESCAPE {
-  int   iEscape;
-  int   cjInput;
+  int   iEscape;
+  int   cjInput;
   PVOID pvInData;
-} DOCEVENT_ESCAPE, *PDOCEVENT_ESCAPE;
-````
+} *PDOCEVENT_ESCAPE, DOCEVENT_ESCAPE;
+```
 
 ## Members
 
@@ -74,7 +74,7 @@ Specifies the value of the <b>ExtEscape</b> function's <i>lpszInData</i> paramet
 ## Remarks
 The DOCEVENT_ESCAPE structure is defined for Windows XP and later.
 
-This structure is used in conjunction with a call to <a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>, in which the <i>iEsc</i> parameter is set to DOCUMENTEVENT_ESCAPE. Before calling either of these functions, the caller must fill in the members of this structure.
+This structure is used in conjunction with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548544">DrvDocumentEvent</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>, in which the <i>iEsc</i> parameter is set to DOCUMENTEVENT_ESCAPE. Before calling either of these functions, the caller must fill in the members of this structure.
 
 Refer to the Microsoft Windows SDK documentation for a description of the <b>ExtEscape</b> function and the three parameters that correspond to the members of this structure.
 
@@ -85,8 +85,8 @@ Refer to the Microsoft Windows SDK documentation for a description of the <b>Ext
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548544">DrvDocumentEvent</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554141">IPrintOemUI2::DocumentEvent</a>
-
-
-
-<a href="..\winddiui\nf-winddiui-drvdocumentevent.md">DrvDocumentEvent</a>

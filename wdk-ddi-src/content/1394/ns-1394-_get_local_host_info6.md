@@ -47,13 +47,13 @@ req.typenames: GET_LOCAL_HOST_INFO6, *PGET_LOCAL_HOST_INFO6
 The GET_LOCAL_HOST_INFO6 structure contains the data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> request using <b>u.GetLocalHostInformation.nLevel</b> = GET_HOST_CSR_CONTENTS.
 
 ## Syntax
-````
+```
 typedef struct _GET_LOCAL_HOST_INFO6 {
   ADDRESS_OFFSET CsrBaseAddress;
-  ULONG          CsrDataLength;
-  PVOID          CsrDataBuffer;
-} GET_LOCAL_HOST_INFO6, *PGET_LOCAL_HOST_INFO6;
-````
+  ULONG          CsrDataLength;
+  PVOID          CsrDataBuffer;
+} *PGET_LOCAL_HOST_INFO6, GET_LOCAL_HOST_INFO6;
+```
 
 ## Members
 
@@ -109,8 +109,8 @@ When submitted in a REQUEST_GET_LOCAL_HOST_INFO request, if the <b>CsrDataLength
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537147">GET_LOCAL_HOST_INFO2</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a>

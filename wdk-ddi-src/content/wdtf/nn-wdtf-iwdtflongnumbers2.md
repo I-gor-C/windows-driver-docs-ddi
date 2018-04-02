@@ -7,7 +7,7 @@ old-location: dtf\iwdtflongnumbers2.htm
 old-project: dtf
 ms.assetid: 2a6c4cf7-179e-4e20-bab4-a4181a0ee64c
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFLongNumbers2, IWDTFLongNumbers2 interface [Windows Device Testing Framework], IWDTFLongNumbers2 interface [Windows Device Testing Framework], described, Microsoft.WDTF.IWDTFLongNumbers2, dtf.iwdtflongnumbers2, wdtf/IWDTFLongNumbers2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,8 +56,8 @@ Defines operations and properties for a collection of long numbers.
 | ---- |:---- |
 | [IWDTFLongNumbers2::Add](nf-wdtf-iwdtflongnumbers2-add.md) | Adds a single long number to the collection. |
 | [IWDTFLongNumbers2::get__NewEnum](nf-wdtf-iwdtflongnumbers2-get__newenum.md) | Gets a new iteration variable that the For Each loop structure implicitly uses. |
-| [IWDTFLongNumbers2::get_Count](nf-wdtf-iwdtflongnumbers2-get_count.md) | Gets the number of devices that are currently provided by the DeviceDepot. |
-| [IWDTFLongNumbers2::get_Item](nf-wdtf-iwdtflongnumbers2-get_item.md) | Gets an individual device in the DeviceDepot. |
+| [IWDTFLongNumbers2::get_Count](nf-wdtf-iwdtflongnumbers2-get_count.md) | Gets the number of long numbers in the collection. |
+| [IWDTFLongNumbers2::get_Item](nf-wdtf-iwdtflongnumbers2-get_item.md) | Gets an individual long number in the collection. |
 | [IWDTFLongNumbers2::Remove](nf-wdtf-iwdtflongnumbers2-remove.md) | Removes a long number from the collection. |
 
 

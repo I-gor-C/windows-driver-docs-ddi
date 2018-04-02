@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Release method
+# IStiDeviceControl::Release method
 The <b>IStiDeviceControl::Release</b> method closes the instance of the COM object that was created when a minidriver client called <a href="https://msdn.microsoft.com/library/windows/hardware/ff543824">IStiUSD::Initialize</a>.
 
 ## Syntax
 
-````
-HRESULT Release();
-````
+```
+ULONG Release(
+
+);
+```
 
 ## Parameters
 
@@ -76,8 +78,8 @@ A still image minidriver receives an <b>IStiDeviceControl</b> interface pointer 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff542933">IStiDeviceControl::AddRef</a>
-
-
-
 <a href="https://msdn.microsoft.com/de58597a-d10a-45b3-bf75-539e5cd00535">IStiDeviceControl</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542933">IStiDeviceControl::AddRef</a>

@@ -7,7 +7,7 @@ old-location: kernel\iowithinstacklimits.htm
 old-project: kernel
 ms.assetid: af182cd5-23b5-4d5b-b3d4-ec65ec087d0b
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoWithinStackLimits, IoWithinStackLimits routine [Kernel-Mode Driver Architecture], k104_631648cb-6ba2-47b1-8745-e6314e17be30.xml, kernel.iowithinstacklimits, wdm/IoWithinStackLimits
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>IoWithinStackLimits</b> routine determines whether a region of memory is 
 
 ## Syntax
 
-````
+```
 LOGICAL IoWithinStackLimits(
-  _In_ ULONG_PTR RegionStart,
-  _In_ SIZE_T    RegionSize
+  ULONG_PTR RegionStart,
+  SIZE_T    RegionSize
 );
-````
+```
 
 ## Parameters
 
@@ -76,7 +76,7 @@ The size of the region.
 
 The <b>IoWithinStackLimits</b> routine considers all possible stack segments and the DPC stack, if necessary.
 
-<div class="alert"><b>Note</b>    For drivers that use <a href="..\ntddk\nf-ntddk-keexpandkernelstackandcallout.md">KeExpandKernelStackAndCallout</a>, <b>IoWithinStackLimits</b> considers only the current thread.</div>
+<div class="alert"><b>Note</b>    For drivers that use <a href="https://msdn.microsoft.com/library/windows/hardware/ff552030">KeExpandKernelStackAndCallout</a>, <b>IoWithinStackLimits</b> considers only the current thread.</div>
 <div> </div>
 
 ## Requirements
@@ -91,12 +91,12 @@ The <b>IoWithinStackLimits</b> routine considers all possible stack segments and
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iogetstacklimits.md">IoGetStackLimits</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549247">IoGetInitialStack</a>
 
 
 
-<a href="..\wdm\nf-wdm-iogetinitialstack.md">IoGetInitialStack</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549286">IoGetRemainingStackSize</a>
 
 
 
-<a href="..\wdm\nf-wdm-iogetremainingstacksize.md">IoGetRemainingStackSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549299">IoGetStackLimits</a>

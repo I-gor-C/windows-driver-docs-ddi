@@ -7,7 +7,7 @@ old-location: audio\iportclsstreamresourcemanager2_addstreamresource2.htm
 old-project: audio
 ms.assetid: C140D11C-41D6-4812-AD95-990CBFA06FE8
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: AddStreamResource2 method [Audio Devices], AddStreamResource2 method [Audio Devices], IPortClsStreamResourceManager2 interface, AddStreamResource2,IPortClsStreamResourceManager2.AddStreamResource2, IPortClsStreamResourceManager2, IPortClsStreamResourceManager2 interface [Audio Devices], AddStreamResource2 method, IPortClsStreamResourceManager2::AddStreamResource2, audio.iportclsstreamresourcemanager2_addstreamresource2, portcls/IPortClsStreamResourceManager2::AddStreamResource2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,26 +45,26 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# AddStreamResource2 method
+# IPortClsStreamResourceManager2::AddStreamResource2 method
 AddStreamResource2 adds a stream resource. 
 Two type of stream resources are supported: interrupts and driver-owned threads. The AddStreamResource2 method can only be used by audio waveRT miniport drivers.
 
 ## Syntax
 
-````
-NTSTATUS  AddStreamResource2(
-  [in]  PDEVICE_OBJECT               PhysicalDeviceObject,
-  [in]  PVOID                        ResourceSet,
-  [in]  PPCSTREAMRESOURCE_DESCRIPTOR ResourceDescriptor,
-  [out] PCSTREAMRESOURCE*            ResourceHandle
+```
+NTSTATUS AddStreamResource2(
+  PDEVICE_OBJECT               PhysicalDeviceObject,
+  PVOID                        ResourceSet,
+  PPCSTREAMRESOURCE_DESCRIPTOR ResourceDescriptor,
+  PCSTREAMRESOURCE             *ResourceHandle
 );
-````
+```
 
 ## Parameters
 
 `PhysicalDeviceObject`
 
-Pointer to the device object. The device object is a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>.
+Pointer to the device object. The device object is a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 `ResourceSet`
 
@@ -72,7 +72,7 @@ PVOID - Reserved for future use, set to NULL. Only device-scoped resources are s
 
 `ResourceDescriptor`
 
-PPCSTREAMRESOURCE_DESCRIPTOR - The resource to add. For more information see, <a href="..\portcls\ns-portcls-_pcstreamresource_descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>.
+PPCSTREAMRESOURCE_DESCRIPTOR - The resource to add. For more information see, <a href="https://msdn.microsoft.com/library/windows/hardware/mt298191">PCSTREAMRESOURCE_DESCRIPTOR</a>.
 
 `ResourceHandle`
 
@@ -103,15 +103,15 @@ Additional standard status codes may be returned.
 
 ## See Also
 
-<a href="..\portcls\ns-portcls-_pcstreamresource_descriptor.md">PCSTREAMRESOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt270106">IPortClsStreamResourceManager</a>
 
 
 
-<a href="..\portcls\nn-portcls-iportclsstreamresourcemanager2.md">IPortClsStreamResourceManager2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt604862">IPortClsStreamResourceManager2</a>
 
 
 
-<a href="..\portcls\nn-portcls-iportclsstreamresourcemanager.md">IPortClsStreamResourceManager</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt298191">PCSTREAMRESOURCE_DESCRIPTOR</a>
 
 
 

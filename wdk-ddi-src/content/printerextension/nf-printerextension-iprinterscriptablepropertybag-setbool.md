@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetBool method
+# IPrinterScriptablePropertyBag::SetBool method
 Writes a specified boolean property value.
 
 ## Syntax
 
-````
+```
 HRESULT SetBool(
-  [in] BSTR bstrName,
-  [in] BOOL bValue
+  BSTR bstrName,
+  BOOL bValue
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +85,4 @@ A call to <b>SetBool</b> will throw an exception, if the specified property is n
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973217">IPrinterScriptablePropertyBag</a>

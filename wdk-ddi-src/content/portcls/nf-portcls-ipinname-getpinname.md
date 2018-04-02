@@ -7,7 +7,7 @@ old-location: audio\ipinname_getpinname.htm
 old-project: audio
 ms.assetid: 97fa159c-ce71-4ce2-8d40-def7671d014c
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: GetPinName method [Audio Devices], GetPinName method [Audio Devices], IPinName interface, GetPinName,IPinName.GetPinName, IPinName, IPinName interface [Audio Devices], GetPinName method, IPinName::GetPinName, audio.ipinname_getpinname, audmp-routines_438a3c13-6571-45ab-ad7a-6ef71336c17f.xml, portcls/IPinName::GetPinName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# GetPinName method
+# IPinName::GetPinName method
 The <code>GetPinName</code> method retrieves the friendly name of an audio endpoint.
 
 ## Syntax
 
-````
+```
 NTSTATUS GetPinName(
-  [in]  PIRP     Irp,
-  [in]  PKSP_PIN Pin,
-  [out] PVOID    Data
+  PIRP     Irp,
+  PKSP_PIN Pin,
+  PVOID    Data
 );
-````
+```
 
 ## Parameters
 
@@ -111,11 +111,11 @@ KSNODETYPE_LOW_FREQUENCY_EFFECTS_SPEAKER
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-ipinname.md">IPinName</a>
-
-
-
 <a href="https://msdn.microsoft.com/e0937d20-dd5b-453f-99f6-4e501f0f0e5b">Friendly Names for Audio Endpoint Devices</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536837">IPinName</a>
 
 
 

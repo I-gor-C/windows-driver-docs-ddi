@@ -7,7 +7,7 @@ old-location: netvista\wskclientevent.htm
 old-project: netvista
 ms.assetid: 5511f540-4448-4cbe-849a-b1712453fae1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: PFN_WSK_CLIENT_EVENT, WskClientEvent, WskClientEvent callback function [Network Drivers Starting with Windows Vista], netvista.wskclientevent, wsk/WskClientEvent, wskref_c9f563f1-19c1-4f8d-ab44-04eedd74763f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -70,7 +70,7 @@ NTSTATUS PfnWskClientEvent(
 
 A pointer to the context value that was specified by the 
      <i>WskClientNpi</i> parameter passed to the 
-     <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a> function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a> function.
 
 `EventType`
 
@@ -137,9 +137,9 @@ The additional information that is contained in the buffer that is pointed to by
 If a WSK application does not implement a 
     <i>WskClientEvent</i> event callback function, it should set the 
     <i>WskClientEvent</i> member of the 
-    <a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a> structure to <b>NULL</b>
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571159">WSK_CLIENT_DISPATCH</a> structure to <b>NULL</b>
     before it calls 
-    <a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a>.
 
 The WSK subsystem calls a WSK application's 
     <i>WskClientEvent</i> event callback function at IRQL &lt;= DISPATCH_LEVEL.
@@ -156,8 +156,8 @@ A WSK application's <i>WskClientEvent</i> event callback function must not wait 
 
 ## See Also
 
-<a href="..\wsk\nf-wsk-wskregister.md">WskRegister</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571159">WSK_CLIENT_DISPATCH</a>
 
 
 
-<a href="..\wsk\ns-wsk-_wsk_client_dispatch.md">WSK_CLIENT_DISPATCH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571143">WskRegister</a>

@@ -7,7 +7,7 @@ old-location: buses\udecxusbendpointsetwdfioqueue.htm
 old-project: usbref
 ms.assetid: 48744342-9137-48F5-9071-528974DE6AD5
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UdecxUsbEndpointSetWdfIoQueue, UdecxUsbEndpointSetWdfIoQueue function [Buses], buses.udecxusbendpointsetwdfioqueue, udecxusbendpoint/UdecxUsbEndpointSetWdfIoQueue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,22 +51,22 @@ Sets a framework queue object with a UDE endpoint.
 
 ## Syntax
 
-````
-FORCEINLINE void UdecxUsbEndpointSetWdfIoQueue(
-  _In_ UDECXUSBENDPOINT UdecxUsbEndpoint,
-  _In_ WDFQUEUE         WdfQueue
+```
+void UdecxUsbEndpointSetWdfIoQueue(
+  UDECXUSBENDPOINT UdecxUsbEndpoint,
+  WDFQUEUE         WdfQueue
 );
-````
+```
 
 ## Parameters
 
 `UdecxUsbEndpoint`
 
-A handle to a UDE endpoint object. The client driver retrieved this pointer in the previous call to <a href="..\udecxusbendpoint\nf-udecxusbendpoint-udecxusbendpointcreate.md">UdecxUsbEndpointCreate</a>.
+A handle to a UDE endpoint object. The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt627983">UdecxUsbEndpointCreate</a>.
 
 `WdfQueue`
 
-A handle to a framework queue object that will handle requests sent to the endpoint. The client driver retrieved this pointer in the previous call to <a href="..\wdfio\nf-wdfio-wdfioqueuecreate.md">WdfIoQueueCreate</a>.
+A handle to a framework queue object that will handle requests sent to the endpoint. The client driver retrieved this pointer in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547401">WdfIoQueueCreate</a>.
 
 
 ## Return Value
@@ -86,12 +86,12 @@ This function does not return a value.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+
+
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-i-o-queues">Creating I/O Queues</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>

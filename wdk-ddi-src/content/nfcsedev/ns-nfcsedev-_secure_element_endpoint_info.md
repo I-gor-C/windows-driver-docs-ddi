@@ -44,15 +44,15 @@ req.typenames: SECURE_ELEMENT_ENDPOINT_INFO, *PSECURE_ELEMENT_ENDPOINT_INFO
 ---
 
 # _SECURE_ELEMENT_ENDPOINT_INFO structure
-SECURE_ELEMENT_ENDPOINT_INFO is a member of <a href="..\nfcsedev\ns-nfcsedev-_secure_element_endpoint_list.md">SECURE_ELEMENT_ENDPOINT_LIST</a>.
+SECURE_ELEMENT_ENDPOINT_INFO is a member of <a href="https://msdn.microsoft.com/library/windows/hardware/dn905622">SECURE_ELEMENT_ENDPOINT_LIST</a>.
 
 ## Syntax
-````
+```
 typedef struct _SECURE_ELEMENT_ENDPOINT_INFO {
-  GUID                guidSecureElementId;
+  GUID                guidSecureElementId;
   SECURE_ELEMENT_TYPE eSecureElementType;
-} SECURE_ELEMENT_ENDPOINT_INFO, *P_SECURE_ELEMENT_ENDPOINT_INFO;
-````
+} *PSECURE_ELEMENT_ENDPOINT_INFO, SECURE_ELEMENT_ENDPOINT_INFO;
+```
 
 ## Members
 

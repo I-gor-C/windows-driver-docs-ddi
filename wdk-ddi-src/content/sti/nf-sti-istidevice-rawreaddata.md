@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# RawReadData method
+# IStiDevice::RawReadData method
 The <b>IStiDevice::RawReadData</b> method reads data from a still image device.
 
 ## Syntax
 
-````
+```
 HRESULT RawReadData(
-  [in, out]      LPVOID       lpBuffer,
-  [in, out]      LPDWORD      lpdwNumberOfBytes,
-  [in, optional] LPOVERLAPPED lpOverlapped
+  LPVOID       lpBuffer,
+  LPDWORD      lpdwNumberOfBytes,
+  LPOVERLAPPED lpOverlapped
 );
-````
+```
 
 ## Parameters
 
@@ -93,8 +93,8 @@ A call to <b>IStiDevice::RawReadData</b> must be preceded by a call to <a href="
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543758">IStiDevice::RawReadCommand</a>
-
-
-
 <a href="https://msdn.microsoft.com/86ce412e-007b-4ea9-9c09-766eee543852">IStiDevice</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543758">IStiDevice::RawReadCommand</a>

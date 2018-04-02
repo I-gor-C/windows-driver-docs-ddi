@@ -7,7 +7,7 @@ old-location: kernel\rtlint8toulong.htm
 old-project: kernel
 ms.assetid: 2C5FA0DA-5517-4BB6-A106-D8A20EDB5D46
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlInt8ToULong, RtlInt8ToULong function [Kernel-Mode Driver Architecture], kernel.rtlint8toulong, ntintsafe/RtlInt8ToULong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>INT8</b> to a value of type <b>ULONG</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlInt8ToULong(
-  _In_  INT8  i8Operand,
-  _Out_ ULONG *pulResult
+  INT8  i8Operand,
+  ULONG *pulResult
 );
-````
+```
 
 ## Parameters
 

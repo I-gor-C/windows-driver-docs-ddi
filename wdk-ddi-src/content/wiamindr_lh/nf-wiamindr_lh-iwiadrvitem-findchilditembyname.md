@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# FindChildItemByName method
+# IWiaDrvItem::FindChildItemByName method
 The <b>IWiaDrvItem::FindChildItemByName</b> method searches the driver item tree for a specific child item.
 
 ## Syntax
 
-````
+```
 HRESULT FindChildItemByName(
-  [in]            BSTR        bstrChildItemName,
-  [out, optional] IWiaDrvItem **ppIChildItem
+  BSTR        __MIDL__IWiaDrvItem0010,
+  IWiaDrvItem **__MIDL__IWiaDrvItem0011
 );
-````
+```
 
 ## Parameters
 
@@ -85,7 +85,7 @@ Minidrivers typically use this method to search a driver item tree for a specifi
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>
+<a href="https://msdn.microsoft.com/0609e1b2-48df-413c-90bd-d7ddea26510a">IWiaDrvItem</a>
 
 
 
@@ -93,4 +93,4 @@ Minidrivers typically use this method to search a driver item tree for a specifi
 
 
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>

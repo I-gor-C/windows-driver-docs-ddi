@@ -7,7 +7,7 @@ old-location: debugger\getnumberevents.htm
 old-project: debugger
 ms.assetid: fb570110-a0a5-4a95-9a26-c4e4ada309b2
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetNumberEvents method [Windows Debugging], GetNumberEvents method [Windows Debugging], IDebugControl3 interface, GetNumberEvents,IDebugControl3.GetNumberEvents, IDebugControl3, IDebugControl3 interface [Windows Debugging], GetNumberEvents method, IDebugControl3::GetNumberEvents, IDebugControl_520cbec0-e8b3-49d1-9938-a8f496585758.xml, dbgeng/IDebugControl3::GetNumberEvents, debugger.getnumberevents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetNumberEvents method
+# IDebugControl3::GetNumberEvents method
 The <b>GetNumberEvents</b> method returns the number of <a href="https://msdn.microsoft.com/library/windows/hardware/ff543067">events</a> for the current target, if the number of events is fixed.
 
 ## Syntax
 
-````
+```
 HRESULT GetNumberEvents(
-  [out] PULONG Events
+  PULONG Events
 );
-````
+```
 
 ## Parameters
 
@@ -111,12 +111,12 @@ For more information, see the topic <a href="https://msdn.microsoft.com/library/
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545755">GetCurrentEventIndex</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550519">IDebugControl3</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556737">SetNextEventIndex</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545755">GetCurrentEventIndex</a>

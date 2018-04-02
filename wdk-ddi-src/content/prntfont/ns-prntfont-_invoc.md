@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The INVOC structure is used for describing printer command strings in <a href="https://msdn.microsoft.com/6e643703-ace1-4660-990c-3a9ca735829d">Unidrv font metrics files</a> (.ufm files) and <a href="https://msdn.microsoft.com/6e643703-ace1-4660-990c-3a9ca735829d">glyph translation table files</a> (.gtt files).
 
 ## Syntax
-````
+```
 typedef struct _INVOC {
   DWORD dwCount;
   DWORD loOffset;
-} INVOC, *PINVOC;
-````
+} *PINVOC, INVOC;
+```
 
 ## Members
 
@@ -72,16 +72,16 @@ Indicates one of the following:
 
 ##### ufm files:
 
-Specifies the byte offset from the beginning of the .ufm file's <a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a> structure to beginning of the command string.
+Specifies the byte offset from the beginning of the .ufm file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff562872">UNIDRVINFO</a> structure to beginning of the command string.
 
 
 
 ##### gtt files:
 
-Specifies the byte offset from the beginning of the .gtt file's <a href="..\prntfont\ns-prntfont-_uni_codepageinfo.md">UNI_CODEPAGEINFO</a> structure to beginning of the command string.
+Specifies the byte offset from the beginning of the .gtt file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563596">UNI_CODEPAGEINFO</a> structure to beginning of the command string.
 
 ## Remarks
-INVOC structures are used within <a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a> structures.
+INVOC structures are used within <a href="https://msdn.microsoft.com/library/windows/hardware/ff562872">UNIDRVINFO</a> structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,4 +90,4 @@ INVOC structures are used within <a href="..\prntfont\ns-prntfont-_unidrvinfo.md
 
 ## See Also
 
-<a href="..\prntfont\ns-prntfont-_unidrvinfo.md">UNIDRVINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562872">UNIDRVINFO</a>

@@ -53,11 +53,11 @@ The <b>WDF_REL_TIMEOUT_IN_MS</b> function converts a specified number of millise
 
 ## Syntax
 
-````
+```
 LONGLONG WDF_REL_TIMEOUT_IN_MS(
-  _In_ ULONGLONG Time
+  ULONGLONG Time
 );
-````
+```
 
 ## Parameters
 
@@ -107,4 +107,4 @@ inTimerQueue = WdfTimerStart(
 
 ## See Also
 
-<a href="..\wdfcore\nf-wdfcore-wdf_abs_timeout_in_ms.md">WDF_ABS_TIMEOUT_IN_MS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551209">WDF_ABS_TIMEOUT_IN_MS</a>

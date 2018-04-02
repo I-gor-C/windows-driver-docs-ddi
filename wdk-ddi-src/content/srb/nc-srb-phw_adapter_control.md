@@ -7,7 +7,7 @@ old-location: storage\phw_adapter_control.htm
 old-project: storage
 ms.assetid: ef58c005-e5e5-409d-9010-59635fd4da02
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "(*PHW_ADAPTER_CONTROL), (*PHW_ADAPTER_CONTROL) callback function [Storage Devices], ide_minikr_fb5a2e9f-b755-417e-b152-ef680c85c16a.xml, srb/(*PHW_ADAPTER_CONTROL), storage.phw_adapter_control"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,24 +69,24 @@ Pointer to the miniport driver's per-HBA storage area.
 
 `ControlType`
 
-Specifies an adapter-control operation. For a list of the allowed operations, see <a href="..\srb\nc-srb-phw_adapter_control.md">HwScsiAdapterControl</a>.
+Specifies an adapter-control operation. For a list of the allowed operations, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557274">HwScsiAdapterControl</a>.
 
 `Parameters`
 
-Contains information related to the <i>ControlType</i>. For an explanation of the meaning of these values, see the discussion accompanying the <i>Parameters</i> parameter of the <a href="..\srb\nc-srb-phw_adapter_control.md">HwScsiAdapterControl</a>.
+Contains information related to the <i>ControlType</i>. For an explanation of the meaning of these values, see the discussion accompanying the <i>Parameters</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557274">HwScsiAdapterControl</a>.
 
 
 ## Return Value
 
-The routine declared by this prototype returns different sets of values depending on the control type. For a complete description of the return values, see <a href="..\srb\nc-srb-phw_adapter_control.md">HwScsiAdapterControl</a>.
+The routine declared by this prototype returns different sets of values depending on the control type. For a complete description of the return values, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557274">HwScsiAdapterControl</a>.
 
 ## Remarks
 
 The adapter control routine for both SCSI and StorPort miniport drivers are declared using this prototype. 
 
-For more information about the SCSI miniport driver's adapter control routine, see <a href="..\srb\nc-srb-phw_adapter_control.md">HwScsiAdapterControl</a>. 
+For more information about the SCSI miniport driver's adapter control routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557274">HwScsiAdapterControl</a>. 
 
-For more information about the adapter control routine that is used with the StorPort driver's miniport driver, see <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>.
+For more information about the adapter control routine that is used with the StorPort driver's miniport driver, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,8 +96,8 @@ For more information about the adapter control routine that is used with the Sto
 
 ## See Also
 
-<a href="..\srb\nc-srb-phw_adapter_control.md">HwScsiAdapterControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557274">HwScsiAdapterControl</a>
 
 
 
-<a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a>

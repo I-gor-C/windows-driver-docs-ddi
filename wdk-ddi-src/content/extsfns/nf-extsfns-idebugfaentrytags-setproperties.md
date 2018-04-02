@@ -7,7 +7,7 @@ old-location: debugger\idebugfaentrytags_setproperties.htm
 old-project: debugger
 ms.assetid: EEBD3291-4DFC-4503-9F5A-49591FE09680
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugFAEntryTags, IDebugFAEntryTags interface [Windows Debugging], SetProperties method, IDebugFAEntryTags::SetProperties, SetProperties method [Windows Debugging], SetProperties method [Windows Debugging], IDebugFAEntryTags interface, SetProperties,IDebugFAEntryTags.SetProperties, debugger.idebugfaentrytags_setproperties, extsfns/IDebugFAEntryTags::SetProperties
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: FA_EXTENSION_PLUGIN_PHASE
 ---
 
 
-# SetProperties method
-The <b>SetProperties</b> method sets the name or description (or both) of a tag in a <a href="..\extsfns\nn-extsfns-idebugfaentrytags.md">DebugFailureAnalysisTags</a> object.
+# IDebugFAEntryTags::SetProperties method
+The <b>SetProperties</b> method sets the name or description (or both) of a tag in a <a href="https://msdn.microsoft.com/B52DFB0E-0035-40C2-B2F5-5E16B16931C2">DebugFailureAnalysisTags</a> object.
 
 ## Syntax
 
-````
+```
 HRESULT SetProperties(
-  [in] FA_TAG Tag,
-  [in] PCSTR  Name,
-  [in] PCSTR  Description,
-  [in] ULONG  Flags
+  FA_TAG Tag,
+  PCSTR  Name,
+  PCSTR  Description,
+  ULONG  Flags
 );
-````
+```
 
 ## Parameters
 
@@ -90,15 +90,15 @@ If this method succeeds, it returns <b>S_OK</b>. Otherwise it returns an error c
 
 ## See Also
 
-<a href="..\extsfns\nn-extsfns-idebugfaentrytags.md">IDebugFAEntryTags</a>
-
-
-
-<a href="..\extsfns\nn-extsfns-idebugfailureanalysis2.md">IDebugFailureAnalysis2</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/jj991811">GetProperties</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983404">IDebugFAEntryTags</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983405">IDebugFailureAnalysis2</a>
 
 
 
@@ -106,4 +106,4 @@ If this method succeeds, it returns <b>S_OK</b>. Otherwise it returns an error c
 
 
 
-<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983432">_EFN_Analyze</a>

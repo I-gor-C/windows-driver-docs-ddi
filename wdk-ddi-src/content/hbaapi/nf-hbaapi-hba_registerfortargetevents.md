@@ -7,7 +7,7 @@ old-location: storage\hba_registerfortargetevents.htm
 old-project: storage
 ms.assetid: a06f6757-e125-4f80-9594-a60fa1fef6e4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_RegisterForTargetEvents, HBA_RegisterForTargetEvents routine [Storage Devices], fibreHBA_rtns_511fff45-f98b-4dbe-a74c-d577497f4e8c.xml, hbaapi/HBA_RegisterForTargetEvents, storage.hba_registerfortargetevents
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ The <b>HBA_RegisterForTargetEvents</b> routine registers for target events with 
 
 ## Syntax
 
-````
+```
 HBA_STATUS HBA_API HBA_RegisterForTargetEvents(
-   HBA_TARGET_CALLBACK callback,
-   void                *userData,
-   HBA_HANDLE          handle,
-   HBA_WWN             hbaPortWWN,
-   HBA_WWN             discoveredPortWWN,
-   HBA_CALLBACKHANDLE  *callbackHandle,
-   HBA_UINT32          allTargets
+  IN void(* )(void *pData,HBA_WWN hbaPortWWN,HBA_WWN discoveredPortWWN,HBA_UINT32 eventType) callback,
+  IN void                                                                                    *pUserData,
+  IN HBA_HANDLE                                                                              Handle,
+  IN HBA_WWN                                                                                 HbaPortWWN,
+  IN HBA_WWN                                                                                 DiscoveredPortWWN,
+  OUT HBA_CALLBACKHANDLE                                                                     *pCallbackHandle,
+  IN HBA_UINT32                                                                              AllTargets
 );
-````
+```
 
 ## Parameters
 
@@ -150,16 +150,16 @@ To stop event delivery, call <b>HBA_RemoveCallback</b>.
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>
-
-
-
-<a href="..\hbaapi\nf-hbaapi-hba_removecallback.md">HBA_RemoveCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557123">HBA_PORT_CALLBACK</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557175">HBA_RemoveCallback</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557233">HBA_STATUS</a>

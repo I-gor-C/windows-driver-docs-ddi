@@ -55,13 +55,13 @@ The <b>WdfDeviceCreateDeviceInterface</b> method creates a device interface for 
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDeviceCreateDeviceInterface(
-  _In_           WDFDEVICE        Device,
-  _In_     const GUID             *InterfaceClassGUID,
-  _In_opt_       PCUNICODE_STRING ReferenceString
+  WDFDEVICE        Device,
+  CONST GUID       *InterfaceClassGUID,
+  PCUNICODE_STRING ReferenceString
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ A pointer to a GUID that identifies the device interface class.
 
 `ReferenceString`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that describes a reference string for the device interface. The string must not contain any path separator characters ("/" or "\").  This parameter is optional and can be <b>NULL</b>.   For more information, see the following Remarks section.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that describes a reference string for the device interface. The string must not contain any path separator characters ("/" or "\").  This parameter is optional and can be <b>NULL</b>.   For more information, see the following Remarks section.
 
 
 ## Return Value
@@ -129,8 +129,8 @@ status = WdfDeviceCreateDeviceInterface(
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetdeviceinterfacestate.md">WdfDeviceSetDeviceInterfaceState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546878">WdfDeviceSetDeviceInterfaceState</a>

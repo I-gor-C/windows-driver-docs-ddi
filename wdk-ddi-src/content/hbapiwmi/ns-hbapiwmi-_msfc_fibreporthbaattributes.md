@@ -7,7 +7,7 @@ old-location: storage\msfc_fibreporthbaattributes.htm
 old-project: storage
 ms.assetid: e8a31f48-bad2-49d1-81be-d345d87a0fd5
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PMSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes structure [Storage Devices], PMSFC_FibrePortHBAAttributes, PMSFC_FibrePortHBAAttributes structure pointer [Storage Devices], _MSFC_FibrePortHBAAttributes, hbapiwmi/MSFC_FibrePortHBAAttributes, hbapiwmi/PMSFC_FibrePortHBAAttributes, storage.msfc_fibreporthbaattributes, structs-Fibre_8721cac7-a44b-4401-991d-1b8822aec5be.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: MSFC_FibrePortHBAAttributes, *PMSFC_FibrePortHBAAttributes
 A WMI provider uses the MSFC_FibrePortHBAAttributes WMI class to expose attribute information associated with a fibre channel port.
 
 ## Syntax
-````
+```
 typedef struct _MSFC_FibrePortHBAAttributes {
-  ULONGLONG                     UniquePortId;
-  ULONG                         HBAStatus;
+  ULONGLONG                     UniquePortId;
+  ULONG                         HBAStatus;
   MSFC_HBAPortAttributesResults Attributes;
-} MSFC_FibrePortHBAAttributes, *PMSFC_FibrePortHBAAttributes;
-````
+} *PMSFC_FibrePortHBAAttributes, MSFC_FibrePortHBAAttributes;
+```
 
 ## Members
 
@@ -68,7 +68,7 @@ Contains the status of the operation. For a list of allowed values and their des
 
 `Attributes`
 
-Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a> that contains information about the port attributes.
+Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562510">MSFC_HBAPortAttributesResults</a> that contains information about the port attributes.
 
 
 ## Requirements
@@ -82,4 +82,4 @@ Contains a structure of type <a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattri
 
 
 
-<a href="..\hbapiwmi\ns-hbapiwmi-_msfc_hbaportattributesresults.md">MSFC_HBAPortAttributesResults</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562510">MSFC_HBAPortAttributesResults</a>

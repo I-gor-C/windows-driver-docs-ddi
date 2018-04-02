@@ -7,7 +7,7 @@ old-location: kernel\rtllongptrtouchar.htm
 old-project: kernel
 ms.assetid: 86E72C5E-9DB1-4EDD-A6B0-272D4622A500
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlLongPtrToUChar, RtlLongPtrToUChar function [Kernel-Mode Driver Architecture], kernel.rtllongptrtouchar, ntintsafe/RtlLongPtrToUChar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>LONG_PTR</b> to a value of type <b>UCHAR</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlLongPtrToUChar(
-  _In_  LONG_PTR lOperand,
-  _Out_ UCHAR    *pch
+  LONG_PTR lOperand,
+  UCHAR    *pch
 );
-````
+```
 
 ## Parameters
 

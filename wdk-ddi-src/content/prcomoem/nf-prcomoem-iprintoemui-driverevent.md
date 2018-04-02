@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# DriverEvent method
-The printer driver's <a href="..\winddiui\nf-winddiui-drvdriverevent.md">DrvDriverEvent</a> function calls a user interface plug-in's <code>IPrintOemUI::DriverEvent</code> method for additional processing of printer driver events.
+# IPrintOemUI::DriverEvent method
+The printer driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548551">DrvDriverEvent</a> function calls a user interface plug-in's <code>IPrintOemUI::DriverEvent</code> method for additional processing of printer driver events.
 
 ## Syntax
 
-````
+```
 HRESULT DriverEvent(
-   DWORD  dwDriverEvent,
-   DWORD  dwLevel,
-   LPBYTE pDriverInfo,
-   LPARAM lParam
+  DWORD  dwDriverEvent,
+  DWORD  dwLevel,
+  LPBYTE pDriverInfo,
+  LPARAM lParam
 );
-````
+```
 
 ## Parameters
 
@@ -191,7 +191,7 @@ The method is not implemented.
 
 ## Remarks
 
-A user interface plug-in's <code>IPrintOemUI::DriverEvent</code> method performs the same types of operations as the <b>DrvDriverEvent</b> function that is exported by user-mode printer interface DLLs. For information about driver events and how they should be processed, see the description of the <a href="..\winddiui\nf-winddiui-drvdriverevent.md">DrvDriverEvent</a> function.
+A user interface plug-in's <code>IPrintOemUI::DriverEvent</code> method performs the same types of operations as the <b>DrvDriverEvent</b> function that is exported by user-mode printer interface DLLs. For information about driver events and how they should be processed, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548551">DrvDriverEvent</a> function.
 
 If you provide a user interface plug-in, the printer driver's <b>DrvDriverEvent</b> function calls the <code>IPrintOemUI::DriverEvent</code> method. The <b>DrvDriverEvent</b> function performs its own processing for the specified event, and then calls the <code>IPrintOemUI::DriverEvent</code> method to handle additional processing of the event.
 
@@ -207,8 +207,8 @@ For more information about creating and installing user interface plug-ins, see 
 
 ## See Also
 
-<a href="..\winddiui\nf-winddiui-drvdriverevent.md">DrvDriverEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548551">DrvDriverEvent</a>
 
 
 
-<a href="..\prcomoem\nn-prcomoem-iprintoemui.md">IPrintOemUI</a>
+<a href="https://msdn.microsoft.com/0ef635dd-9598-4356-94fc-7e5237df9bd9">IPrintOemUI</a>

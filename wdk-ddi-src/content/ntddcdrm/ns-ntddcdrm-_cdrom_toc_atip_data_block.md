@@ -7,7 +7,7 @@ old-location: storage\cdrom_toc_atip_data_block.htm
 old-project: storage
 ms.assetid: b98d0ba9-9c32-44ed-b6c3-db6de26a1663
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PCDROM_TOC_ATIP_DATA_BLOCK, CDROM_TOC_ATIP_DATA_BLOCK, CDROM_TOC_ATIP_DATA_BLOCK structure [Storage Devices], PCDROM_TOC_ATIP_DATA_BLOCK, PCDROM_TOC_ATIP_DATA_BLOCK structure pointer [Storage Devices], _CDROM_TOC_ATIP_DATA_BLOCK, ntddcdrm/CDROM_TOC_ATIP_DATA_BLOCK, ntddcdrm/PCDROM_TOC_ATIP_DATA_BLOCK, storage.cdrom_toc_atip_data_block, structs-CD-ROM_8c2f3446-c864-450a-a873-9e1d29b1e052.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,37 +44,37 @@ req.typenames: CDROM_TOC_ATIP_DATA_BLOCK, *PCDROM_TOC_ATIP_DATA_BLOCK
 ---
 
 # _CDROM_TOC_ATIP_DATA_BLOCK structure
-Device control IRPs with a control code of <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a> and a format of CDROM_READ_TOC_EX_FORMAT_ATIP return their output data in a header structure of type <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_atip_data.md">CDROM_TOC_ATIP_DATA</a> followed by a series of ATIP data block descriptors defined by <b>CDROM_TOC_ATIP_DATA_BLOCK</b>.
+Device control IRPs with a control code of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559367">IOCTL_CDROM_READ_TOC_EX</a> and a format of CDROM_READ_TOC_EX_FORMAT_ATIP return their output data in a header structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff551375">CDROM_TOC_ATIP_DATA</a> followed by a series of ATIP data block descriptors defined by <b>CDROM_TOC_ATIP_DATA_BLOCK</b>.
 
 ## Syntax
-````
+```
 typedef struct _CDROM_TOC_ATIP_DATA_BLOCK {
-  UCHAR CdrwReferenceSpeed  :3;
-  UCHAR Reserved3  :1;
-  UCHAR WritePower  :3;
-  UCHAR True1  :1;
-  UCHAR Reserved4  :6;
-  UCHAR UnrestrictedUse  :1;
-  UCHAR Reserved5  :1;
-  UCHAR A3Valid  :1;
-  UCHAR A2Valid  :1;
-  UCHAR A1Valid  :1;
-  UCHAR DiscSubType  :3;
-  UCHAR IsCdrw  :1;
-  UCHAR True2  :1;
-  UCHAR Reserved7;
-  UCHAR LeadInMsf[3];
-  UCHAR Reserved8;
-  UCHAR LeadOutMsf[3];
-  UCHAR Reserved9;
-  UCHAR A1Values[3];
-  UCHAR Reserved10;
-  UCHAR A2Values[3];
-  UCHAR Reserved11;
-  UCHAR A3Values[3];
-  UCHAR Reserved12;
+  UCHAR  : 3 CdrwReferenceSpeed;
+  UCHAR  : 1 Reserved3;
+  UCHAR  : 3 WritePower;
+  UCHAR  : 1 True1;
+  UCHAR  : 6 Reserved4;
+  UCHAR  : 1 UnrestrictedUse;
+  UCHAR  : 1 Reserved5;
+  UCHAR  : 1 A3Valid;
+  UCHAR  : 1 A2Valid;
+  UCHAR  : 1 A1Valid;
+  UCHAR  : 3 DiscSubType;
+  UCHAR  : 1 IsCdrw;
+  UCHAR  : 1 True2;
+  UCHAR      Reserved7;
+  UCHAR      LeadInMsf[3];
+  UCHAR      Reserved8;
+  UCHAR      LeadOutMsf[3];
+  UCHAR      Reserved9;
+  UCHAR      A1Values[3];
+  UCHAR      Reserved10;
+  UCHAR      A2Values[3];
+  UCHAR      Reserved11;
+  UCHAR      A3Values[3];
+  UCHAR      Reserved12;
 } CDROM_TOC_ATIP_DATA_BLOCK, *PCDROM_TOC_ATIP_DATA_BLOCK;
-````
+```
 
 ## Members
 
@@ -183,12 +183,12 @@ Reserved.
 
 ## See Also
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_atip_data.md">CDROM_TOC_ATIP_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551366">CDROM_READ_TOC_EX</a>
 
 
 
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_read_toc_ex.md">IOCTL_CDROM_READ_TOC_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551375">CDROM_TOC_ATIP_DATA</a>
 
 
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_read_toc_ex.md">CDROM_READ_TOC_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559367">IOCTL_CDROM_READ_TOC_EX</a>

@@ -7,7 +7,7 @@ old-location: kernel\rtlappendunicodetostring.htm
 old-project: kernel
 ms.assetid: 688f033b-1f0e-4f0a-9ccd-457ba726d728
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlAppendUnicodeToString, RtlAppendUnicodeToString routine [Kernel-Mode Driver Architecture], k109_7bbe9676-db08-4bf2-b2d5-37b257621336.xml, kernel.rtlappendunicodetostring, wdm/RtlAppendUnicodeToString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ The <b>RtlAppendUnicodeToString</b> routine concatenates the supplied Unicode st
 
 ## Syntax
 
-````
-NTSTATUS RtlAppendUnicodeToString(
-  _Inout_  PUNICODE_STRING Destination,
-  _In_opt_ PCWSTR          Source
+```
+NTSYSAPI NTSTATUS RtlAppendUnicodeToString(
+  PUNICODE_STRING Destination,
+  PCWSTR          Source
 );
-````
+```
 
 ## Parameters
 
@@ -122,4 +122,4 @@ The <i>Destination</i> buffer must be resident if the caller is running at IRQL 
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-rtlappendunicodestringtostring.md">RtlAppendUnicodeStringToString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561736">RtlAppendUnicodeStringToString</a>

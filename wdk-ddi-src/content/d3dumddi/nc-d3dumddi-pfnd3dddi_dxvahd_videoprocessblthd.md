@@ -7,7 +7,7 @@ old-location: display\videoprocessblthd.htm
 old-project: display
 ms.assetid: 62451fc4-92cc-4553-80cc-0843cf734a62
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3DDDI_DXVAHD_VIDEOPROCESSBLTHD, UserModeDisplayDriver_Functions_72b2babe-fc93-4960-93d3-6bc2022227c8.xml, VideoProcessBltHD, VideoProcessBltHD callback function [Display Devices], d3dumddi/VideoProcessBltHD, display.videoprocessblthd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -113,4 +113,4 @@ The DirectX VA video processing operation is successfully performed.
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_dxvahd_videoprocessblthd.md">D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543101">D3DDDIARG_DXVAHD_VIDEOPROCESSBLTHD</a>

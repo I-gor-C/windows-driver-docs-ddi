@@ -53,13 +53,13 @@ The <b>WdfIoResourceListCreate</b> method creates an empty <a href="https://msdn
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfIoResourceListCreate(
-  _In_     WDFIORESREQLIST        RequirementsList,
-  _In_opt_ PWDF_OBJECT_ATTRIBUTES Attributes,
-  _Out_    WDFIORESLIST           *ResourceList
+  WDFIORESREQLIST        RequirementsList,
+  PWDF_OBJECT_ATTRIBUTES Attributes,
+  WDFIORESLIST           *ResourceList
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ A handle to a framework resource-requirements-list object that represents a devi
 
 `Attributes`
 
-A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new object. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure that contains attributes for the new object. (The structure's <b>ParentObject</b> member must be <b>NULL</b>.) This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 `ResourceList`
 
@@ -90,12 +90,12 @@ A system bug check occurs if the driver supplies an invalid object handle.
 
 For more information about resource requirements lists and logical configurations, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/hardware-resources-for-kmdf-drivers">Hardware Resources for Framework-Based Drivers</a>.
 
-The caller-specified resource-requirements-list object becomes the parent of the new resource-range-list object. The driver cannot change this parent, and the <b>ParentObject</b> member or the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure must be <b>NULL</b>.
+The caller-specified resource-requirements-list object becomes the parent of the new resource-range-list object. The driver cannot change this parent, and the <b>ParentObject</b> member or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure must be <b>NULL</b>.
 
 
 #### Examples
 
-For a code example that uses <b>WdfIoResourceListCreate</b>, see <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistappendioreslist.md">WdfIoResourceRequirementsListAppendIoResList</a>.
+For a code example that uses <b>WdfIoResourceListCreate</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548537">WdfIoResourceRequirementsListAppendIoResList</a>.
 
 <div class="code"></div>
 
@@ -111,4 +111,4 @@ For a code example that uses <b>WdfIoResourceListCreate</b>, see <a href="..\wdf
 
 ## See Also
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a>

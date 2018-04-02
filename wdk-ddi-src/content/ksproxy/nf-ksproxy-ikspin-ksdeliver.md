@@ -44,17 +44,17 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsDeliver method
+# IKsPin::KsDeliver method
 The <b>KsDeliver</b> method delivers a media sample from an output pin to an input pin, continues an I/O operation by retrieving the next buffer from an allocator, and submits the buffer to the associated device.
 
 ## Syntax
 
-````
+```
 HRESULT KsDeliver(
-  [in] IMediaSample *Sample,
-  [in] ULONG        Flags
+  IMediaSample *Sample,
+  ULONG        Flags
 );
-````
+```
 
 ## Parameters
 
@@ -86,7 +86,7 @@ KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM
 
 KSSTREAM_HEADER_OPTIONSF_LOOPEDDATA
 
-These flags are defined in the <b>OptionsFlags</b> member of the <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structure description.
+These flags are defined in the <b>OptionsFlags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a> structure description.
 
 The pin connection checks for the end-of-stream flag (KSSTREAM_HEADER_OPTIONSF_ENDOFSTREAM) to determine if it must deliver an end-of-stream event after the sample completes.
 
@@ -97,7 +97,7 @@ Returns NOERROR if successful; otherwise, returns an error code.
 
 ## Remarks
 
-An interface handler (<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>) calls <b>KsDeliver</b> on the output pin of a filter to deliver a media sample to the input pin of another filter. These input and output pins are connected. 
+An interface handler (<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>) calls <b>KsDeliver</b> on the output pin of a filter to deliver a media sample to the input pin of another filter. These input and output pins are connected. 
 
 For an input pin, <b>KsDeliver</b> is an invalid entry point and returns EFAIL. 
 
@@ -111,7 +111,7 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>
 
 
 

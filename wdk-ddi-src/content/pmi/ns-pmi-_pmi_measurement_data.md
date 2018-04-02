@@ -47,12 +47,12 @@ req.typenames: PMI_MEASUREMENT_DATA, *PPMI_MEASUREMENT_DATA
 The PMI_MEASUREMENT_DATA structure contains the current power measurement that is collected by a power meter.
 
 ## Syntax
-````
+```
 typedef struct _PMI_MEASUREMENT_DATA {
   ULONG Version;
   ULONG CurrentPower;
-} PMI_MEASUREMENT_DATA, *PPMI_MEASUREMENT_DATA;
-````
+} *PPMI_MEASUREMENT_DATA, PMI_MEASUREMENT_DATA;
+```
 
 ## Members
 
@@ -66,7 +66,7 @@ A value that specifies the version of this structure. For Windows 7, Windows Ser
 A value, in units of milliwatts (mW), that specifies the current power meter measurement.
 
 ## Remarks
-The PMI_MEASUREMENT_DATA structure is returned through an <a href="..\pmi\ni-pmi-ioctl_pmi_get_measurement.md">IOCTL_PMI_GET_MEASUREMENT</a> I/O control (IOCTL) query request. If the query request completes successfully, the request returns a PMI_MEASUREMENT_DATA structure.
+The PMI_MEASUREMENT_DATA structure is returned through an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543845">IOCTL_PMI_GET_MEASUREMENT</a> I/O control (IOCTL) query request. If the query request completes successfully, the request returns a PMI_MEASUREMENT_DATA structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -76,4 +76,4 @@ The PMI_MEASUREMENT_DATA structure is returned through an <a href="..\pmi\ni-pmi
 
 ## See Also
 
-<a href="..\pmi\ni-pmi-ioctl_pmi_get_measurement.md">IOCTL_PMI_GET_MEASUREMENT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543845">IOCTL_PMI_GET_MEASUREMENT</a>

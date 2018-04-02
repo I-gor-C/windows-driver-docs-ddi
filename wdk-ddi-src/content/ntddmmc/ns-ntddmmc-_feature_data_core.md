@@ -7,7 +7,7 @@ old-location: storage\feature_data_core.htm
 old-project: storage
 ms.assetid: cd8e989a-1030-4f37-bb39-38974764ccb2
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PFEATURE_DATA_CORE, FEATURE_DATA_CORE, FEATURE_DATA_CORE structure [Storage Devices], PFEATURE_DATA_CORE, PFEATURE_DATA_CORE structure pointer [Storage Devices], _FEATURE_DATA_CORE, ntddmmc/FEATURE_DATA_CORE, ntddmmc/PFEATURE_DATA_CORE, storage.feature_data_core, structs-CD-ROM_1b2608f2-398d-4733-b319-a92d932504e7.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,23 +47,23 @@ req.typenames: FEATURE_DATA_CORE, *PFEATURE_DATA_CORE
 The FEATURE_DATA_CORE structure holds data for the Core feature descriptor.
 
 ## Syntax
-````
+```
 typedef struct _FEATURE_DATA_CORE {
   FEATURE_HEADER Header;
-  UCHAR          PhysicalInterface[4];
-  UCHAR          DeviceBusyEvent  :1;
-  UCHAR          INQUIRY2  :1;
-  UCHAR          Reserved1  :6;
-  UCHAR          Reserved2[3];
-} FEATURE_DATA_CORE, *PFEATURE_DATA_CORE;
-````
+  UCHAR          PhysicalInterface[4];
+  UCHAR  : 1     DeviceBusyEvent;
+  UCHAR  : 1     INQUIRY2;
+  UCHAR  : 6     Reserved1;
+  UCHAR          Reserved2[3];
+} *PFEATURE_DATA_CORE, FEATURE_DATA_CORE;
+```
 
 ## Members
 
 
 `Header`
 
-Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
 `PhysicalInterface`
 
@@ -95,8 +95,8 @@ Indicates the feature named "Core" by the <i>MMC-3 </i>specification. This featu
 
 ## See Also
 
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
 
 
 
-<a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>

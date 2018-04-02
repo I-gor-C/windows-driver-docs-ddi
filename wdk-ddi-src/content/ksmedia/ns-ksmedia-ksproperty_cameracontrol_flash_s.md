@@ -47,12 +47,12 @@ req.typenames: KSPROPERTY_CAMERACONTROL_FLASH_S, *PKSPROPERTY_CAMERACONTROL_FLAS
 Describes flash control properties in the <b>PROPSETID_VIDCAP_CAMERACONTROL_FLASH</b> camera control property set. This structure specifies property values that are used by applications to configure the camera's flash.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_CAMERACONTROL_FLASH_S {
   ULONG Flash;
   ULONG Capabilities;
-} KSPROPERTY_CAMERACONTROL_FLASH_S, *PKSPROPERTY_CAMERACONTROL_FLASH_S;
-````
+}  *PKSPROPERTY_CAMERACONTROL_FLASH_S;
+```
 
 ## Members
 

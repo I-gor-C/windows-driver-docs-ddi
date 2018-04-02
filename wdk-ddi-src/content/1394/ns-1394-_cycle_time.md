@@ -47,13 +47,13 @@ req.typenames: CYCLE_TIME, *PCYCLE_TIME
 The CYCLE_TIME structure contains the IEEE 1394 isochronous cycle time.
 
 ## Syntax
-````
+```
 typedef struct _CYCLE_TIME {
-  ULONG CL_CycleOffset  :12;
-  ULONG CL_CycleCount  :13;
-  ULONG CL_SecondCount  :7;
+  ULONG  : 12 CL_CycleOffset;
+  ULONG  : 13 CL_CycleCount;
+  ULONG  : 7  CL_SecondCount;
 } CYCLE_TIME, *PCYCLE_TIME;
-````
+```
 
 ## Members
 
@@ -80,11 +80,11 @@ The layout of this structure matches that of the CYCLE_TIME register in the <i>I
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537401">ISOCH_DESCRIPTOR</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537649">REQUEST_ISOCH_ALLOCATE_RESOURCES</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537660">REQUEST_ISOCH_TALK</a>
 
 
 
@@ -92,8 +92,8 @@ The layout of this structure matches that of the CYCLE_TIME register in the <i>I
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537401">ISOCH_DESCRIPTOR</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537656">REQUEST_ISOCH_QUERY_CYCLE_TIME</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537660">REQUEST_ISOCH_TALK</a>

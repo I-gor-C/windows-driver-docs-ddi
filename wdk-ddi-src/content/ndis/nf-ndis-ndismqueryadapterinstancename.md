@@ -7,7 +7,7 @@ old-location: netvista\ndismqueryadapterinstancename.htm
 old-project: netvista
 ms.assetid: 7af6ee73-814b-49f8-8641-d3e8dc672ee5
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMQueryAdapterInstanceName, NdisMQueryAdapterInstanceName function [Network Drivers Starting with Windows Vista], miniport_ndis_functions_ref_5e04ebd4-3db8-4cb2-a75c-ce67d938804c.xml, ndis/NdisMQueryAdapterInstanceName, netvista.ndismqueryadapterinstancename
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ The
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisMQueryAdapterInstanceName(
-  _Out_ PNDIS_STRING AdapterInstanceName,
-  _In_  NDIS_HANDLE  MiniportAdapterHandle
+  PNDIS_STRING pAdapterInstanceName,
+  NDIS_HANDLE  MiniportHandle
 );
-````
+```
 
 ## Parameters
 
@@ -82,12 +82,12 @@ A miniport driver uses
     driver controls. This interface is either a physical NIC or a virtual adapter and is called a 
     <i>miniport adapter</i>. The miniport driver specifies the handle to a miniport adapter in 
     <i>MiniportAdapterHandle</i> . This handle to the miniport adapter is passed to the miniport driver's 
-    <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a> function to
+    <a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a> function to
     set up the miniport adapter for network I/O operations.
 
 <b>NdisMQueryAdapterInstanceName</b> allocates memory for the string that specifies the friendly name.
     After the caller finishes using this memory, the caller must call the 
-    <a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a> function to release the
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff562577">NdisFreeMemory</a> function to release the
     memory.
 
 Friendly names are intended to help the user quickly and accurately identify a physical NIC or virtual
@@ -106,12 +106,12 @@ Friendly names are intended to help the user quickly and accurately identify a p
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562577">NdisFreeMemory</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisfreememory.md">NdisFreeMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

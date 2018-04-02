@@ -7,7 +7,7 @@ old-location: netvista\ndis_mac_packet_type.htm
 old-project: netvista
 ms.assetid: 3cfa8fa4-fab0-4f94-abc1-5c7900af208b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_MAC_PACKET_TYPE, NDIS_MAC_PACKET_TYPE, NDIS_MAC_PACKET_TYPE enumeration [Network Drivers Starting with Windows Vista], NdisMacPacketTypeBroadcast, NdisMacPacketTypeMaximum, NdisMacPacketTypeMulticast, NdisMacPacketTypeUndefined, NdisMacPacketTypeUnicast, PNDIS_MAC_PACKET_TYPE, PNDIS_MAC_PACKET_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], _NDIS_MAC_PACKET_TYPE, netvista.ndis_mac_packet_type, ntddndis/NDIS_MAC_PACKET_TYPE, ntddndis/NdisMacPacketTypeBroadcast, ntddndis/NdisMacPacketTypeMaximum, ntddndis/NdisMacPacketTypeMulticast, ntddndis/NdisMacPacketTypeUndefined, ntddndis/NdisMacPacketTypeUnicast, ntddndis/PNDIS_MAC_PACKET_TYPE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: NDIS_MAC_PACKET_TYPE, *PNDIS_MAC_PACKET_TYPE
 The <b>NDIS_MAC_PACKET_TYPE</b> enumeration identifies the type of a destination address field in a media access control (MAC) header to be filtered.
 
 ## Syntax
-````
-typedef enum _NDIS_MAC_PACKET_TYPE { 
-  NdisMacPacketTypeUndefined  = 0,
-  NdisMacPacketTypeUnicast    = 1,
-  NdisMacPacketTypeMulticast  = 2,
-  NdisMacPacketTypeBroadcast  = 3,
-  NdisMacPacketTypeMaximum    = 4
-} NDIS_MAC_PACKET_TYPE, *PNDIS_MAC_PACKET_TYPE;
-````
+```
+typedef enum _NDIS_MAC_PACKET_TYPE {
+  NdisMacPacketTypeUndefined  ,
+  NdisMacPacketTypeUnicast    ,
+  NdisMacPacketTypeMulticast  ,
+  NdisMacPacketTypeBroadcast  ,
+  NdisMacPacketTypeMaximum
+} *PNDIS_MAC_PACKET_TYPE, NDIS_MAC_PACKET_TYPE;
+```
 
 ## Constants
 
@@ -91,7 +91,7 @@ typedef enum _NDIS_MAC_PACKET_TYPE {
 ## Remarks
 
 The <b>NDIS_MAC_PACKET_TYPE</b> enumeration is used in the 
-    <a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+    <a href="https://msdn.microsoft.com/3d387fe9-a7cc-4034-b31e-ba1359db2ae1">
     NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a> structure.
 
 ## Requirements
@@ -102,5 +102,5 @@ The <b>NDIS_MAC_PACKET_TYPE</b> enumeration is used in the
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_receive_filter_field_parameters.md">
+<a href="https://msdn.microsoft.com/3d387fe9-a7cc-4034-b31e-ba1359db2ae1">
    NDIS_RECEIVE_FILTER_FIELD_PARAMETERS</a>

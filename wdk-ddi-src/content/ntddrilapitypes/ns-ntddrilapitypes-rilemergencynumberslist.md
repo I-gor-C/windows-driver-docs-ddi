@@ -7,7 +7,7 @@ old-location: netvista\rilemergencynumberslist.htm
 old-project: netvista
 ms.assetid: bfeaff04-6dd2-4889-9ab3-f20361dc2f5c
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*LPRILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST structure [Network Drivers Starting with Windows Vista], netvista.rilemergencynumberslist, ntddrilapitypes/RILEMERGENCYNUMBERSLIST"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: RILEMERGENCYNUMBERSLIST, *LPRILEMERGENCYNUMBERSLIST
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef struct _RILEMERGENCYNUMBERSLIST {
-  DWORD                  cbSize;
-  DWORD                  dwRilENSize;
-  RILEMERGENCYNUMBER [1] RilEN;
-} RILEMERGENCYNUMBERSLIST, RILEMERGENCYNUMBERSLIST;
-````
+```
+typedef struct RILEMERGENCYNUMBERSLIST {
+  DWORD              cbSize;
+  DWORD              dwRilENSize;
+  RILEMERGENCYNUMBER RilEN[1];
+}  *LPRILEMERGENCYNUMBERSLIST;
+```
 
 ## Members
 

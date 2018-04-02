@@ -7,7 +7,7 @@ old-location: display\d3dkmt_openresource.htm
 old-project: display
 ms.assetid: 5ff63606-ced1-4482-b967-41db4746ac1d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_OPENRESOURCE, D3DKMT_OPENRESOURCE structure [Display Devices], OpenGL_Structs_b069a94a-b78c-4fbf-b78d-7c5b0d025655.xml, _D3DKMT_OPENRESOURCE, d3dkmthk/D3DKMT_OPENRESOURCE, display.d3dkmt_openresource
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,27 +47,24 @@ req.typenames: D3DKMT_OPENRESOURCE
 The D3DKMT_OPENRESOURCE structure describes parameters for opening a resource.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_OPENRESOURCE {
   D3DKMT_HANDLE hDevice;
   D3DKMT_HANDLE hGlobalShare;
-  UINT          NumAllocations;
+  UINT          NumAllocations;
   union {
-    D3DDDI_OPENALLOCATIONINFO  *pOpenAllocationInfo;
-#if ((DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WIN7) || \
-     (D3D_UMD_INTERFACE_VERSION >= D3D_UMD_INTERFACE_VERSION_WIN7))
+    D3DDDI_OPENALLOCATIONINFO  *pOpenAllocationInfo;
     D3DDDI_OPENALLOCATIONINFO2 *pOpenAllocationInfo2;
-#endif 
   };
-  VOID          *pPrivateRuntimeData;
-  UINT          PrivateRuntimeDataSize;
-  VOID          *pResourcePrivateDriverData;
-  UINT          ResourcePrivateDriverDataSize;
-  VOID          *pTotalPrivateDriverDataBuffer;
-  UINT          TotalPrivateDriverDataBufferSize;
+  VOID          *pPrivateRuntimeData;
+  UINT          PrivateRuntimeDataSize;
+  VOID          *pResourcePrivateDriverData;
+  UINT          ResourcePrivateDriverDataSize;
+  VOID          *pTotalPrivateDriverDataBuffer;
+  UINT          TotalPrivateDriverDataBufferSize;
   D3DKMT_HANDLE hResource;
 } D3DKMT_OPENRESOURCE;
-````
+```
 
 ## Members
 
@@ -121,8 +118,8 @@ typedef struct _D3DKMT_OPENRESOURCE {
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_openallocationinfo.md">D3DDDI_OPENALLOCATIONINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544599">D3DDDI_OPENALLOCATIONINFO</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtopenresource.md">D3DKMTOpenResource</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547065">D3DKMTOpenResource</a>

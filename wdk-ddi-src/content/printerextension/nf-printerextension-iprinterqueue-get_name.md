@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Name method
+# IPrinterQueue::get_Name method
 Gets the name of the printer for this print queue.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_Name(
-  [out, retval] BSTR *pbstrName
+  BSTR *pbstrName
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>

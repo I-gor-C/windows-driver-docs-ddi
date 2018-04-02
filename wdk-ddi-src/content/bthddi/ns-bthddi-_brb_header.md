@@ -49,20 +49,20 @@ The BRB_HEADER structure contains header information about a Bluetooth request b
   process.
 
 ## Syntax
-````
+```
 typedef struct _BRB_HEADER {
   LIST_ENTRY ListEntry;
-  ULONG      Length;
-  USHORT     Version;
-  USHORT     Type;
-  ULONG      BthportFlags;
-  NTSTATUS   Status;
-  BTHSTATUS  BtStatus;
-  PVOID      Context[BTHPORT_CONTEXT_SIZE];
-  PVOID      ClientContext[BTHPORT_CONTEXT_SIZE];
-  ULONG      Reserved[BTHPORT_RESERVED_FIELD_SIZE];
+  ULONG      Length;
+  USHORT     Version;
+  USHORT     Type;
+  ULONG      BthportFlags;
+  NTSTATUS   Status;
+  BTHSTATUS  BtStatus;
+  PVOID      Context[BTHPORT_CONTEXT_SIZE];
+  PVOID      ClientContext[BTHPORT_CONTEXT_SIZE];
+  ULONG      Reserved[BTHPORT_RESERVED_FIELD_SIZE];
 } BRB_HEADER;
-````
+```
 
 ## Members
 
@@ -74,9 +74,9 @@ A LIST_ENTRY structure used by the current owner of the BRB to place the BRB in 
 `Length`
 
 The size, in bytes, of the BRB, including the BRB_HEADER structure. The 
-     <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
-     <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
-     <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
+     <a href="https://msdn.microsoft.com/e1ac9d4c-75e2-4d37-86d7-3c3f1486222e">BthAllocateBrb</a>, 
+     <a href="https://msdn.microsoft.com/0b822d28-edaa-40cc-a678-112a356d9022">BthInitializeBrb</a> and 
+     <a href="https://msdn.microsoft.com/cdf156a1-1556-441a-ae3d-9a49daf47990">BthReuseBrb</a> functions automatically set this
      member.
 
 `Version`
@@ -86,9 +86,9 @@ For internal use only. Do not use.
 `Type`
 
 The Bluetooth request block type. The 
-     <a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>, 
-     <a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a> and 
-     <a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a> functions automatically set this
+     <a href="https://msdn.microsoft.com/e1ac9d4c-75e2-4d37-86d7-3c3f1486222e">BthAllocateBrb</a>, 
+     <a href="https://msdn.microsoft.com/0b822d28-edaa-40cc-a678-112a356d9022">BthInitializeBrb</a> and 
+     <a href="https://msdn.microsoft.com/cdf156a1-1556-441a-ae3d-9a49daf47990">BthReuseBrb</a> functions automatically set this
      member.Possible values include:
      
 
@@ -193,7 +193,7 @@ Reserved for future use. Do not use.
 ## Remarks
 The BRB_HEADER structure contains common types of information about the specified BRB. The BRB_HEADER
     structure is used by all BRB structures that are used as the input buffer for 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_internal_bth_submit_brb.md">
+    <a href="https://msdn.microsoft.com/60e4ee90-81d4-47a1-aed4-ee39b9fe3174">
     IOCTL_INTERNAL_BTH_SUBMIT_BRB</a> IOCTLs.
 
 Profile drivers should not modify any of the members of the BRB_HEADER structure except 
@@ -207,12 +207,12 @@ Profile drivers should not modify any of the members of the BRB_HEADER structure
 
 ## See Also
 
-<a href="..\bthddi\nc-bthddi-pfnbth_allocate_brb.md">BthAllocateBrb</a>
+<a href="https://msdn.microsoft.com/e1ac9d4c-75e2-4d37-86d7-3c3f1486222e">BthAllocateBrb</a>
 
 
 
-<a href="..\bthddi\nc-bthddi-pfnbth_initialize_brb.md">BthInitializeBrb</a>
+<a href="https://msdn.microsoft.com/0b822d28-edaa-40cc-a678-112a356d9022">BthInitializeBrb</a>
 
 
 
-<a href="..\bthddi\nc-bthddi-pfnbth_reuse_brb.md">BthReuseBrb</a>
+<a href="https://msdn.microsoft.com/cdf156a1-1556-441a-ae3d-9a49daf47990">BthReuseBrb</a>

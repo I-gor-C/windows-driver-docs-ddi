@@ -7,7 +7,7 @@ old-location: netvista\ndismqueryprobedbars.htm
 old-project: netvista
 ms.assetid: 39deba08-3ff0-4037-b530-0cb4a01fc758
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMQueryProbedBars, NdisMQueryProbedBars function [Network Drivers Starting with Windows Vista], ndis/NdisMQueryProbedBars, netvista.ndismqueryprobedbars
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ A miniport driver calls the <b>NdisMQueryProbedBars</b> function to obtain the v
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisMQueryProbedBars(
-  _In_  NDIS_HANDLE NdisMiniportHandle,
-  _Out_ PULONG      BaseRegisterValues
+  NDIS_HANDLE NdisMiniportHandle,
+  PULONG      BaseRegisterValues
 );
-````
+```
 
 ## Parameters
 
@@ -64,7 +64,7 @@ NDIS_STATUS NdisMQueryProbedBars(
 
 The network adapter handle that NDIS passed to the 
      <i>MiniportAdapterHandle</i> parameter of 
-     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>.
+     <a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>.
 
 `BaseRegisterValues`
 
@@ -152,11 +152,11 @@ The VBD that runs in the Hyper-V parent partition's management operating system 
 
 ## See Also
 
+<b></b>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451143">GUID_PCI_VIRTUALIZATION_INTERFACE</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451870">OID_SRIOV_PROBED_BARS</a>
 
 
 
@@ -164,4 +164,4 @@ The VBD that runs in the Hyper-V parent partition's management operating system 
 
 
 
-<b></b>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451870">OID_SRIOV_PROBED_BARS</a>

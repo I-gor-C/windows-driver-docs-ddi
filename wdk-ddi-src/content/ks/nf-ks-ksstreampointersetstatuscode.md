@@ -50,18 +50,18 @@ The<b> KsStreamPointerSetStatusCode</b> function allows specification of a succe
 
 ## Syntax
 
-````
-NTSTATUS KsStreamPointerSetStatusCode(
-  _In_ PKSSTREAM_POINTER StreamPointer,
-  _In_ NTSTATUS          Status
+```
+KSDDKAPI NTSTATUS KsStreamPointerSetStatusCode(
+  PKSSTREAM_POINTER StreamPointer,
+  NTSTATUS          Status
 );
-````
+```
 
 ## Parameters
 
 `StreamPointer`
 
-A pointer to a <a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a> structure. This pointer points to the frame contained in the IRP.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a> structure. This pointer points to the frame contained in the IRP.
 
 `Status`
 
@@ -89,4 +89,4 @@ Also see <a href="https://msdn.microsoft.com/4bac68a0-34d2-431a-9ed9-8a42751a736
 
 ## See Also
 
-<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563535">KSPIN_DISPATCH</a>

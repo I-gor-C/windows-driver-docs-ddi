@@ -50,12 +50,12 @@ The <b>wiasGetItemType </b>function indicates the item type.
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasGetItemType(
-  _In_  BYTE *pWiasContext,
-  _Out_ LONG *plItemType
+```
+HRESULT wiasGetItemType(
+  BYTE *pWiasContext,
+  LONG *plType
 );
-````
+```
 
 ## Parameters
 

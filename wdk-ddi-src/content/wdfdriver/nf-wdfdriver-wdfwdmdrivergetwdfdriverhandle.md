@@ -53,11 +53,11 @@ The <b>WdfWdmDriverGetWdfDriverHandle</b> method returns a handle to the framewo
 
 ## Syntax
 
-````
+```
 WDFDRIVER WdfWdmDriverGetWdfDriverHandle(
-  _In_ PDRIVER_OBJECT DriverObject
+  PDRIVER_OBJECT DriverObject
 );
-````
+```
 
 ## Parameters
 

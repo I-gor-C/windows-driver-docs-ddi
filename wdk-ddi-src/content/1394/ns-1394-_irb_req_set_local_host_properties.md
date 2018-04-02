@@ -47,12 +47,12 @@ req.typenames: IRB_REQ_SET_LOCAL_HOST_PROPERTIES
 This structure contains the fields required to carry out a SetLocalHostProperties request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_SET_LOCAL_HOST_PROPERTIES {
   ULONG nLevel;
   PVOID Information;
 } IRB_REQ_SET_LOCAL_HOST_PROPERTIES;
-````
+```
 
 ## Members
 

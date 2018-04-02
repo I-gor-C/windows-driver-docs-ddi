@@ -7,7 +7,7 @@ old-location: audio\sounddetector_patternheader.htm
 old-project: audio
 ms.assetid: 43172627-2A05-44AD-8B39-8FC384F9F44E
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: SOUNDDETECTOR_PATTERNHEADER, SOUNDDETECTOR_PATTERNHEADER structure [Audio Devices], audio.sounddetector_patternheader, ksmedia/SOUNDDETECTOR_PATTERNHEADER
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: SOUNDDETECTOR_PATTERNHEADER
 The <b>SOUNDDETECTOR_PATTERNHEADER</b> structure specifies the pattern header for the sound detector in the  <a href="https://msdn.microsoft.com/library/windows/hardware/dn932151">KSPROPERTY_SOUNDDETECTOR_PATTERNS</a> property.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct SOUNDDETECTOR_PATTERNHEADER {
   ULONG Size;
-  GUID  PatternType;
-} SOUNDDETECTOR_PATTERNHEADER;
-````
+  GUID  PatternType;
+};
+```
 
 ## Members
 

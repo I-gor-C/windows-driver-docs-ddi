@@ -7,7 +7,7 @@ old-location: storage\cdrom_streaming_control.htm
 old-project: storage
 ms.assetid: 71D4008C-1F04-408B-93DF-DDE6FD352701
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PCDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL structure [Storage Devices], PCDROM_STREAMING_CONTROL, PCDROM_STREAMING_CONTROL structure pointer [Storage Devices], _CDROM_STREAMING_CONTROL, ntddcdrm/CDROM_STREAMING_CONTROL, ntddcdrm/PCDROM_STREAMING_CONTROL, storage.cdrom_streaming_control"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: CDROM_STREAMING_CONTROL, *PCDROM_STREAMING_CONTROL
 ---
 
 # _CDROM_STREAMING_CONTROL structure
-The <b>CDROM_STREAMING_CONTROL</b> structure is used as an input parameter to the <a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_enable_streaming.md">IOCTL_CDROM_ENABLE_STREAMING</a> IOCTL.
+The <b>CDROM_STREAMING_CONTROL</b> structure is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/gg441241">IOCTL_CDROM_ENABLE_STREAMING</a> IOCTL.
 
 ## Syntax
-````
+```
 typedef struct _CDROM_STREAMING_CONTROL {
-  STREAMING_CONTROL_REQUEST_TYPE    RequestType;
-} CDROM_STREAMING_CONTROL, *PCDROM_STREAMING_CONTROL;
-````
+  STREAMING_CONTROL_REQUEST_TYPE RequestType;
+} *PCDROM_STREAMING_CONTROL, CDROM_STREAMING_CONTROL;
+```
 
 ## Members
 
 
 `RequestType`
 
-The <a href="..\ntddcdrm\ne-ntddcdrm-_streaming_control_request_type.md">STREAMING_CONTROL_REQUEST_TYPE</a>   enumeration specifies the type of request.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/gg441244">STREAMING_CONTROL_REQUEST_TYPE</a>   enumeration specifies the type of request.
 
 
 ## Requirements
@@ -68,8 +68,8 @@ The <a href="..\ntddcdrm\ne-ntddcdrm-_streaming_control_request_type.md">STREAMI
 
 ## See Also
 
-<a href="..\ntddcdrm\ne-ntddcdrm-_streaming_control_request_type.md">STREAMING_CONTROL_REQUEST_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/gg441241">IOCTL_CDROM_ENABLE_STREAMING</a>
 
 
 
-<a href="..\ntddcdrm\ni-ntddcdrm-ioctl_cdrom_enable_streaming.md">IOCTL_CDROM_ENABLE_STREAMING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/gg441244">STREAMING_CONTROL_REQUEST_TYPE</a>

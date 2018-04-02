@@ -46,16 +46,16 @@ req.typenames:
 
 
 # KsQueueWorkItem function
-The <b>KsQueueWorkItem</b> function queues the specified work item with a worker previous created by the <a href="..\ks\nf-ks-ksregisterworker.md">KsRegisterWorker</a> function.
+The <b>KsQueueWorkItem</b> function queues the specified work item with a worker previous created by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566775">KsRegisterWorker</a> function.
 
 ## Syntax
 
-````
-NTSTATUS KsQueueWorkItem(
-  _In_ PKSWORKER        Worker,
-  _In_ PWORK_QUEUE_ITEM WorkItem
+```
+KSDDKAPI NTSTATUS KsQueueWorkItem(
+  PKSWORKER        Worker,
+  PWORK_QUEUE_ITEM WorkItem
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ Specifies the previously allocated worker.
 
 `WorkItem`
 
-Specifies the initialized work item to queue. This work item is only associated with the worker as long as the worker is on a queue. The work item must have been initialized by <a href="..\wdm\nf-wdm-ioallocateworkitem.md">IoAllocateWorkItem</a>.
+Specifies the initialized work item to queue. This work item is only associated with the worker as long as the worker is on a queue. The work item must have been initialized by <a href="https://msdn.microsoft.com/library/windows/hardware/ff548276">IoAllocateWorkItem</a>.
 
 
 ## Return Value

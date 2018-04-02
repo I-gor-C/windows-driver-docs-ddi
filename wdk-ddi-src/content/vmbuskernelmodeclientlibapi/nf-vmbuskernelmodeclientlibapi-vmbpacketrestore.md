@@ -7,7 +7,7 @@ old-location: netvista\vmbpacketrestore.htm
 old-project: netvista
 ms.assetid: CE8BBFB7-FC6C-458B-89EC-355A6DD18399
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VmbPacketRestore, VmbPacketRestore function [Network Drivers Starting with Windows Vista], netvista.vmbpacketrestore, vmbuskernelmodeclientlibapi/VmbPacketRestore
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,13 +53,13 @@ context.
 
 ## Syntax
 
-````
+```
 NTSTATUS VmbPacketRestore(
-  _In_ __drv_aliasesMem VMBPACKET     PacketObject,
-  _In_ reads_bytes_(BufferSize) PVOID Buffer,
-  _In_ ULONG                          BufferSize
+  __drv_aliasesMem VMBPACKET PacketObject,
+  PVOID                      Buffer,
+  ULONG                      BufferSize
 );
-````
+```
 
 ## Parameters
 

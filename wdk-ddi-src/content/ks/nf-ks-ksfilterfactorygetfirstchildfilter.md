@@ -49,26 +49,26 @@ The<b> KsFilterFactoryGetFirstChildFilter</b> function returns the first instant
 
 ## Syntax
 
-````
-PKSFILTER __inline KsFilterFactoryGetFirstChildFilter(
-  _In_ PKSFILTERFACTORY FilterFactory
+```
+PKSFILTER KsFilterFactoryGetFirstChildFilter(
+  PKSFILTERFACTORY FilterFactory
 );
-````
+```
 
 ## Parameters
 
 `FilterFactory`
 
-A pointer to the <a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a> structure for which to find the first instantiated child filter.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a> structure for which to find the first instantiated child filter.
 
 
 ## Return Value
 
-<b>KsFilterFactoryGetFirstChildFilter</b> returns a pointer to the first instantiated <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure created by <i>FilterFactory</i>. If there are no instantiated filters created by <i>FilterFactory</i>, <b>NULL</b> is returned.
+<b>KsFilterFactoryGetFirstChildFilter</b> returns a pointer to the first instantiated <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure created by <i>FilterFactory</i>. If there are no instantiated filters created by <i>FilterFactory</i>, <b>NULL</b> is returned.
 
 ## Remarks
 
-This call is an inline function call to <a href="..\ks\nf-ks-ksgetfirstchild.md">KsGetFirstChild</a>. Note that the object hierarchy is guaranteed to be stable only while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
+This call is an inline function call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562626">KsGetFirstChild</a>. Note that the object hierarchy is guaranteed to be stable only while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,16 +80,16 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetfirstchild.md"
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksgetfirstchild.md">KsGetFirstChild</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilterfactory.md">KSFILTERFACTORY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562530">KSFILTERFACTORY</a>
 
 
 
-<a href="..\ks\nf-ks-ksfiltergetnextsiblingfilter.md">KsFilterGetNextSiblingFilter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562546">KsFilterGetNextSiblingFilter</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562626">KsGetFirstChild</a>

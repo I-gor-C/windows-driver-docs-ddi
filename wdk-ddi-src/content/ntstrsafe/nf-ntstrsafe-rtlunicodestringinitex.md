@@ -7,7 +7,7 @@ old-location: kernel\rtlunicodestringinitex.htm
 old-project: kernel
 ms.assetid: d57fee0b-2dd3-4fad-bc7e-d413c08e2441
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUnicodeStringInitEx, RtlUnicodeStringInitEx function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringinitex, ntstrsafe/RtlUnicodeStringInitEx, safestrings_fab7496b-3acf-416d-8425-6936a73f1ca7.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,17 +46,17 @@ req.typenames: SYSTEM_POWER_STATE_CONTEXT, *PSYSTEM_POWER_STATE_CONTEXT
 
 
 # RtlUnicodeStringInitEx function
-The <b>RtlUnicodeStringInitEx</b> function initializes a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure.
+The <b>RtlUnicodeStringInitEx</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure.
 
 ## Syntax
 
-````
-NTSTATUS RtlUnicodeStringInitEx(
-  _Out_    PUNICODE_STRING  DestinationString,
-  _In_opt_ NTSTRSAFE_PCWSTR pszSrc,
-  _In_     DWORD            dwFlags
+```
+NTSTRSAFEDDI RtlUnicodeStringInitEx(
+  PUNICODE_STRING  DestinationString,
+  NTSTRSAFE_PCWSTR pszSrc,
+  DWORD            dwFlags
 );
-````
+```
 
 ## Parameters
 
@@ -129,7 +129,7 @@ The <b>RtlUnicodeStringInitEx</b> function does the following:
 
 <ul>
 <li>
-Sets the <b>Length</b> member of the <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure to the length, in bytes, of the string that the <i>pszSrc</i> parameter points to. 
+Sets the <b>Length</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure to the length, in bytes, of the string that the <i>pszSrc</i> parameter points to. 
 
 </li>
 <li>
@@ -156,8 +156,8 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562954">RtlUnicodeStringInit</a>
 
 
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringinit.md">RtlUnicodeStringInit</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

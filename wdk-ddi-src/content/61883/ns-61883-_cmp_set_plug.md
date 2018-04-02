@@ -47,12 +47,12 @@ req.typenames: CMP_SET_PLUG, *PCMP_SET_PLUG
 This structure is used to assign settings to a plug.he  request changes transmission settings for a plug control register. Only a driver that created a plug is allowed to set the contents of that plug.
 
 ## Syntax
-````
+```
 typedef struct _CMP_SET_PLUG {
-  HANDLE hPlug;
-  AV_PCR Pcr;
-} CMP_SET_PLUG, *PCMP_SET_PLUG;
-````
+  IN HANDLE hPlug;
+  IN AV_PCR Pcr;
+} *PCMP_SET_PLUG, CMP_SET_PLUG;
+```
 
 ## Members
 

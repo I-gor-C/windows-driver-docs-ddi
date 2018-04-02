@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# UnSubscribe method
+# IStiDevice::UnSubscribe method
 The<b> IStiDevice::UnSubscribe</b> method removes the caller from the list of applications registered to receive notification of device events.
 
 ## Syntax
 
-````
-HRESULT UnSubscribe();
-````
+```
+HRESULT UnSubscribe(
+
+);
+```
 
 ## Parameters
 
@@ -74,8 +76,8 @@ Before calling <b>IStiDevice::UnSubscribe</b>, clients of the <b>IStiDevice</b> 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543768">IStiDevice::Subscribe</a>
-
-
-
 <a href="https://msdn.microsoft.com/86ce412e-007b-4ea9-9c09-766eee543852">IStiDevice</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543768">IStiDevice::Subscribe</a>

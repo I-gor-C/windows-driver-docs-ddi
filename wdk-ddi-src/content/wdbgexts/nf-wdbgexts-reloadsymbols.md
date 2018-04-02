@@ -7,7 +7,7 @@ old-location: debugger\reloadsymbols.htm
 old-project: debugger
 ms.assetid: 5778f57c-52dd-43f4-b0f7-d07e0c40512b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: ReloadSymbols, ReloadSymbols function [Windows Debugging], WdbgExts_Ref_c48c63b8-6c59-42f7-8a44-78462cbf653f.xml, debugger.reloadsymbols, wdbgexts/ReloadSymbols
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>ReloadSymbols</b> function deletes symbol information from the debugger s
 
 ## Syntax
 
-````
-__inline VOID ReloadSymbols(
-  _In_opt_ PSTR Arg
+```
+void ReloadSymbols(
+  PSTR Arg OPTIONAL
 );
-````
+```
 
 ## Parameters
 

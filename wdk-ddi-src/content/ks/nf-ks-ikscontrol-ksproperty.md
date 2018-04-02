@@ -44,26 +44,26 @@ req.typenames:
 ---
 
 
-# KsProperty method
+# IKsControl::KsProperty method
 The <b>IKsControl::KsProperty</b> method sets a property or retrieves property information, together with any other defined support operations available on a property set.
 
 ## Syntax
 
-````
+```
 NTSTATUS KsProperty(
-  [in]      PKSPROPERTY Property,
-  [in]      ULONG       PropertyLength,
-  [in, out] PVOID       PropertyData,
-  [in]      ULONG       DataLength,
-  [out]     ULONG       *BytesReturned
+  PKSPROPERTY Property,
+  ULONG       PropertyLength,
+  PVOID       PropertyData,
+  ULONG       DataLength,
+  ULONG       *BytesReturned
 );
-````
+```
 
 ## Parameters
 
 `Property`
 
-Pointer to a structure that describes a property and the request type of the property request. This structure must be either a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> or a structure that contains a <b>KSPROPERTY</b> structure as its first member. An example of a structure that can be pointed to by this member is the <a href="..\ksmedia\ns-ksmedia-ksproperty_videoprocamp_s.md">KSPROPERTY_VIDEOPROCAMP_S</a> structure.
+Pointer to a structure that describes a property and the request type of the property request. This structure must be either a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a> or a structure that contains a <b>KSPROPERTY</b> structure as its first member. An example of a structure that can be pointed to by this member is the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566089">KSPROPERTY_VIDEOPROCAMP_S</a> structure.
 
 `PropertyLength`
 
@@ -98,12 +98,12 @@ To determine the buffer size that is required for a specific property request, y
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksproperty_item.md">KSPROPERTY_ITEM</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
 
 
 
-<a href="..\ks\ns-ks-ksproperty_set.md">KSPROPERTY_SET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565176">KSPROPERTY_ITEM</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565617">KSPROPERTY_SET</a>

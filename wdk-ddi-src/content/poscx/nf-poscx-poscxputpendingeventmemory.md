@@ -53,14 +53,14 @@ PosCxPutPendingEventMemory tries to delegate a memory object containing the
 
 ## Syntax
 
-````
+```
 NTSTATUS PosCxPutPendingEventMemory(
-  _In_ WDFDEVICE               device,
-  _In_ ULONG                   deviceInterfaceTag,
-  _In_ WDFMEMORY               eventMemory,
-  _In_ POS_CX_EVENT_ATTRIBUTES eventAttr
+  WDFDEVICE               device,
+  ULONG                   deviceInterfaceTag,
+  WDFMEMORY               eventMemory,
+  POS_CX_EVENT_ATTRIBUTES eventAttr
 );
-````
+```
 
 ## Parameters
 
@@ -117,4 +117,4 @@ Possible return values are:
 
 ## See Also
 
-<a href="..\poscx\ne-poscx-_pos_cx_event_attributes.md">POS_CX_EVENT_ATTRIBUTES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt593142">POS_CX_EVENT_ATTRIBUTES</a>

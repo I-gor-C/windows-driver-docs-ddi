@@ -7,7 +7,7 @@ old-location: storage\iscsi_sessionstaticinfo.htm
 old-project: storage
 ms.assetid: c652268f-4a31-4ec1-a668-8700cb7f4e1b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo structure [Storage Devices], PISCSI_SessionStaticInfo, PISCSI_SessionStaticInfo structure pointer [Storage Devices], _ISCSI_SessionStaticInfo, iscsimgt/ISCSI_SessionStaticInfo, iscsimgt/PISCSI_SessionStaticInfo, storage.iscsi_sessionstaticinfo, structs-iSCSI_94ec0954-b409-4acf-8935-7c8dc6b0d095.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,27 +47,27 @@ req.typenames: ISCSI_SessionStaticInfo, *PISCSI_SessionStaticInfo
 The ISCSI_SessionStaticInfo structure provides information about the characteristics of an iSCSI session.
 
 ## Syntax
-````
+```
 typedef struct _ISCSI_SessionStaticInfo {
-  ULONGLONG                  UniqueSessionId;
-  WCHAR                      InitiatoriSCSIName[223 + 1];
-  WCHAR                      TargetiSCSIName[223 + 1];
-  USHORT                     TSID;
-  UCHAR                      ISID[6];
-  BOOLEAN                    InitialR2t;
-  BOOLEAN                    ImmediateData;
-  UCHAR                      Type;
-  BOOLEAN                    DataSequenceInOrder;
-  BOOLEAN                    DataPduInOrder;
-  UCHAR                      ErrorRecoveryLevel;
-  ULONG                      MaxOutstandingR2t;
-  ULONG                      FirstBurstLength;
-  ULONG                      MaxBurstLength;
-  ULONG                      MaxConnections;
-  USHORT                     ConnectionCount;
+  ULONGLONG                  UniqueSessionId;
+  WCHAR                      InitiatoriSCSIName[223 + 1];
+  WCHAR                      TargetiSCSIName[223 + 1];
+  USHORT                     TSID;
+  UCHAR                      ISID[6];
+  BOOLEAN                    InitialR2t;
+  BOOLEAN                    ImmediateData;
+  UCHAR                      Type;
+  BOOLEAN                    DataSequenceInOrder;
+  BOOLEAN                    DataPduInOrder;
+  UCHAR                      ErrorRecoveryLevel;
+  ULONG                      MaxOutstandingR2t;
+  ULONG                      FirstBurstLength;
+  ULONG                      MaxBurstLength;
+  ULONG                      MaxConnections;
+  USHORT                     ConnectionCount;
   ISCSI_ConnectionStaticInfo ConnectionsList[1];
-} ISCSI_SessionStaticInfo, *PISCSI_SessionStaticInfo;
-````
+} *PISCSI_SessionStaticInfo, ISCSI_SessionStaticInfo;
+```
 
 ## Members
 
@@ -187,7 +187,7 @@ The number of connections that currently belong to this session.
 
 `ConnectionsList`
 
-A variable length array of <a href="..\iscsimgt\ns-iscsimgt-_iscsi_connectionstaticinfo.md">ISCSI_ConnectionStaticInfo</a> structures that specifies the static configuration data for each connection that is associated with this session. <b>ConnectionCount</b> indicates the number of elements in the array.
+A variable length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561489">ISCSI_ConnectionStaticInfo</a> structures that specifies the static configuration data for each connection that is associated with this session. <b>ConnectionCount</b> indicates the number of elements in the array.
 
 
 ## Requirements
@@ -197,16 +197,16 @@ A variable length array of <a href="..\iscsimgt\ns-iscsimgt-_iscsi_connectionsta
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-
-
-
-<a href="..\iscsimgt\ns-iscsimgt-_iscsi_connectionstaticinfo.md">ISCSI_ConnectionStaticInfo</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 
 
 
-<a href="..\iscsiop\ne-iscsiop-ploginsessiontype.md">LOGINSESSIONTYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561489">ISCSI_ConnectionStaticInfo</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561598">LOGINSESSIONTYPE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>

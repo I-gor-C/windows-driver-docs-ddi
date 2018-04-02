@@ -48,15 +48,15 @@ req.product: Windows 10 or later.
 The DATA_HEADER structure is used to specify a data section within a Unidrv font format file (.uff file).
 
 ## Syntax
-````
+```
 typedef struct _DATA_HEADER {
   DWORD dwSignature;
-  WORD  wSize;
-  WORD  wDataID;
+  WORD  wSize;
+  WORD  wDataID;
   DWORD dwDataSize;
   DWORD dwReserved;
-} DATA_HEADER, *PDATA_HEADER;
-````
+} *PDATA_HEADER, DATA_HEADER;
+```
 
 ## Members
 
@@ -136,7 +136,7 @@ If the data section contains variable data, this value must be zero.
 
 `dwDataSize`
 
-Specifies the size, in bytes, of all the information represented by this DATA_HEADER structure. For example, if <b>dwSignature</b> is DATA_UFM_SIG, this value represents the size, in bytes, of the font's <a href="..\prntfont\ns-prntfont-_unifm_hdr.md">UNIFM_HDR</a> structure and all associated structures. The size value does not include any byte padding required to align the next DATA_HEADER structure to a DWORD.
+Specifies the size, in bytes, of all the information represented by this DATA_HEADER structure. For example, if <b>dwSignature</b> is DATA_UFM_SIG, this value represents the size, in bytes, of the font's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563587">UNIFM_HDR</a> structure and all associated structures. The size value does not include any byte padding required to align the next DATA_HEADER structure to a DWORD.
 
 `dwReserved`
 
@@ -154,4 +154,4 @@ Each DATA_HEADER structure must be DWORD-aligned.
 
 ## See Also
 
-<a href="..\prntfont\ns-prntfont-_unifm_hdr.md">UNIFM_HDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563587">UNIFM_HDR</a>

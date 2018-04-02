@@ -47,12 +47,12 @@ req.typenames: TRANSPORT_STATE, *PTRANSPORT_STATE
 The TRANSPORT_STATE structure
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct TRANSPORT_STATE {
   ULONG Mode;
   ULONG State;
-} TRANSPORT_STATE, *PTRANSPORT_STATE;
-````
+}  *PTRANSPORT_STATE;
+```
 
 ## Members
 

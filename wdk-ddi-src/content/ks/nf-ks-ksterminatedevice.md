@@ -50,17 +50,17 @@ The<b> KsTerminateDevice </b>function removes an AVStream device.
 
 ## Syntax
 
-````
+```
 void KsTerminateDevice(
-  _In_ PDEVICE_OBJECT DeviceObject
+  PDEVICE_OBJECT DeviceObject
 );
-````
+```
 
 ## Parameters
 
 `DeviceObject`
 
-A pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure corresponding to the device for which to remove AVStream support.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure corresponding to the device for which to remove AVStream support.
 
 
 ## Return Value
@@ -82,28 +82,28 @@ Normally, AVStream calls <b>KsTerminateDevice</b> upon receipt of a PnP remove d
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 
 
 
-<a href="..\ks\nf-ks-ksadddevice.md">KsAddDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>
 
 
 
-<a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561681">KSDEVICE</a>
 
 
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560927">KsAddDevice</a>
 
 
 
-<a href="..\ks\nf-ks-ksinitializedriver.md">KsInitializeDriver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561647">KsCreateDevice</a>
 
 
 
-<a href="..\ks\nf-ks-kscreatedevice.md">KsCreateDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562682">KsInitializeDevice</a>
 
 
 
-<a href="..\ks\ns-ks-_ksdevice.md">KSDEVICE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562683">KsInitializeDriver</a>

@@ -47,15 +47,15 @@ req.typenames: GET_UNIT_CAPABILITIES, *PGET_UNIT_CAPABILITIES
 The GET_UNIT_CAPABILITIES structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536983">Av61883_GetUnitInfo</a> request to retrieve unit information about a device's capabilities.
 
 ## Syntax
-````
+```
 typedef struct _GET_UNIT_CAPABILITIES {
-  ULONG NumOutputPlugs;
-  ULONG NumInputPlugs;
-  ULONG MaxDataRate;
-  ULONG CTSFlags;
-  ULONG HardwareFlags;
-} GET_UNIT_CAPABILITIES, *PGET_UNIT_CAPABILITIES;
-````
+  OUT ULONG NumOutputPlugs;
+  OUT ULONG NumInputPlugs;
+  OUT ULONG MaxDataRate;
+  OUT ULONG CTSFlags;
+  OUT ULONG HardwareFlags;
+} *PGET_UNIT_CAPABILITIES, GET_UNIT_CAPABILITIES;
+```
 
 ## Members
 

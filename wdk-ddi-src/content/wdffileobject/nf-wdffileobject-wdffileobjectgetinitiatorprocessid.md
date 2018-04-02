@@ -52,11 +52,11 @@ The <b>WdfFileObjectGetInitiatorProcessId</b> function retrieves the initiator p
 
 ## Syntax
 
-````
+```
 ULONG WdfFileObjectGetInitiatorProcessId(
-  _In_ WDFFILEOBJECT FileObject
+  WDFFILEOBJECT FileObject
 );
-````
+```
 
 ## Parameters
 
@@ -88,8 +88,8 @@ Starting in Windows 8, a system component may issue a create on behalf of an ap
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetrequestorprocessid.md">WdfRequestGetRequestorProcessId</a>
-
-
-
 <a href="https://msdn.microsoft.com/4D23A651-7231-40CE-B9C2-4382D4E7F683">IWDFDevice3::GetInitiatorProcessId</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265617">WdfRequestGetRequestorProcessId</a>

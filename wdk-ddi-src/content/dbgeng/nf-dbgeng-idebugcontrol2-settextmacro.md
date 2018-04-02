@@ -7,7 +7,7 @@ old-location: debugger\settextmacro.htm
 old-project: debugger
 ms.assetid: 8319ab12-bb23-4de4-b3dc-afd3cd13d03e
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugControl interface [Windows Debugging], SetTextMacro method, IDebugControl2, IDebugControl2 interface [Windows Debugging], SetTextMacro method, IDebugControl2::SetTextMacro, IDebugControl3 interface [Windows Debugging], SetTextMacro method, IDebugControl3::SetTextMacro, IDebugControl::SetTextMacro, IDebugControl_5eac09ea-004d-4231-b865-d191790880fc.xml, SetTextMacro method [Windows Debugging], SetTextMacro method [Windows Debugging], IDebugControl interface, SetTextMacro method [Windows Debugging], IDebugControl2 interface, SetTextMacro method [Windows Debugging], IDebugControl3 interface, SetTextMacro,IDebugControl2.SetTextMacro, dbgeng/IDebugControl2::SetTextMacro, dbgeng/IDebugControl3::SetTextMacro, dbgeng/IDebugControl::SetTextMacro, debugger.settextmacro
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,17 +46,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# SetTextMacro method
+# IDebugControl2::SetTextMacro method
 The <b>SetTextMacro</b>  method sets the value of a fixed-name alias.
 
 ## Syntax
 
-````
+```
 HRESULT SetTextMacro(
-  [in] ULONG Slot,
-  [in] PCSTR Macro
+  ULONG Slot,
+  PCSTR Macro
 );
-````
+```
 
 ## Parameters
 
@@ -105,19 +105,23 @@ For an overview of aliases used by the debugger engine, see <a href="https://msd
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554663">r (Registers)</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549270">GetTextMacro</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol3.md">IDebugControl3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550508">IDebugControl</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550512">IDebugControl2</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550519">IDebugControl3</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554548">RemoveTextReplacements</a>
 
 
 
@@ -125,8 +129,4 @@ For an overview of aliases used by the debugger engine, see <a href="https://msd
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol2.md">IDebugControl2</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554548">RemoveTextReplacements</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554663">r (Registers)</a>

@@ -7,7 +7,7 @@ old-location: audio\ksds3d_hrtf_filter_format_msg.htm
 old-project: audio
 ms.assetid: c0122c96-5bd3-4c1f-85d3-5d4ead5c0c86
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PKSDS3D_HRTF_FILTER_FORMAT_MSG, KSDS3D_HRTF_FILTER_FORMAT_MSG, KSDS3D_HRTF_FILTER_FORMAT_MSG structure [Audio Devices], PKSDS3D_HRTF_FILTER_FORMAT_MSG, PKSDS3D_HRTF_FILTER_FORMAT_MSG structure pointer [Audio Devices], aud-prop_5ad5b67d-5302-44e1-b4e0-16d66334f57b.xml, audio.ksds3d_hrtf_filter_format_msg, ksmedia/KSDS3D_HRTF_FILTER_FORMAT_MSG, ksmedia/PKSDS3D_HRTF_FILTER_FORMAT_MSG"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: KSDS3D_HRTF_FILTER_FORMAT_MSG, *PKSDS3D_HRTF_FILTER_FORMAT_MSG
 The KSDS3D_HRTF_FILTER_FORMAT_MSG structure specifies the filter format to use for a head-relative transfer function (HRTF).
 
 ## Syntax
-````
-typedef struct {
-  KSDS3D_HRTF_FILTER_METHOD  FilterMethod;
-  KSDS3D_HRTF_COEFF_FORMAT   CoeffFormat;
+```
+typedef struct KSDS3D_HRTF_FILTER_FORMAT_MSG {
+  KSDS3D_HRTF_FILTER_METHOD  FilterMethod;
+  KSDS3D_HRTF_COEFF_FORMAT   CoeffFormat;
   KSDS3D_HRTF_FILTER_VERSION Version;
-  ULONG                      Reserved;
-} KSDS3D_HRTF_FILTER_FORMAT_MSG, *PKSDS3D_HRTF_FILTER_FORMAT_MSG;
-````
+  ULONG                      Reserved;
+} *PKSDS3D_HRTF_FILTER_FORMAT_MSG, KSDS3D_HRTF_FILTER_FORMAT_MSG;
+```
 
 ## Members
 
@@ -73,7 +73,7 @@ CASCADE_FORM
 
 </li>
 </ul>
-For more information, see the description of the <b>MaxFilterSize</b> member of <a href="..\ksmedia\ns-ksmedia-ksds3d_hrtf_init_msg.md">KSDS3D_HRTF_INIT_MSG</a>.
+For more information, see the description of the <b>MaxFilterSize</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff537106">KSDS3D_HRTF_INIT_MSG</a>.
 
 `CoeffFormat`
 
@@ -110,8 +110,8 @@ For more information, see <a href="https://msdn.microsoft.com/library/windows/ha
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537482">KSPROPSETID_Hrtf3d</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537353">KSPROPERTY_HRTF3D_FILTER_FORMAT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537482">KSPROPSETID_Hrtf3d</a>

@@ -7,7 +7,7 @@ old-location: storage\storportready.htm
 old-project: storage
 ms.assetid: 37c19ee9-4741-448c-bcbe-12437f4f3b4d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortReady, StorPortReady routine [Storage Devices], storage.storportready, storport/StorPortReady, storprt_6938d8e3-03f8-4f40-a867-07b64d91a6a2.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ The <b>StorPortReady</b> routine notifies the port driver that the adapter is no
 
 ## Syntax
 
-````
+```
 STORPORT_API BOOLEAN StorPortReady(
-  _In_ PVOID HwDeviceExtension
+  PVOID HwDeviceExtension
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
+A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 
 ## Return Value
@@ -81,4 +81,4 @@ The functionality provided by this routine is exclusive to the Storport driver l
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportbusy.md">StorPortBusy</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567041">StorPortBusy</a>

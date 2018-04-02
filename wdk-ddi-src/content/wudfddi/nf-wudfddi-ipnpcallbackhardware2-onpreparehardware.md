@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnPrepareHardware method
+# IPnpCallbackHardware2::OnPrepareHardware method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 
@@ -53,27 +53,27 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 HRESULT OnPrepareHardware(
-  [in] IWDFDevice3        *pWdfDevice,
-  [in] IWDFCmResourceList *pWdfResourcesRaw,
-  [in] IWDFCmResourceList *pWdfResourcesTranslated
+  IWDFDevice3        *pWdfDevice,
+  IWDFCmResourceList *pWdfResourcesRaw,
+  IWDFCmResourceList *pWdfResourcesTranslated
 );
-````
+```
 
 ## Parameters
 
 `pWdfDevice`
 
-A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the framework device object.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface for the framework device object.
 
 `pWdfResourcesRaw`
 
-A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfcmresourcelist.md">IWDFCmResourceList</a> interface for the framework resource-list object that identifies the raw hardware resources that the Plug and Play manager has assigned to the device.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439762">IWDFCmResourceList</a> interface for the framework resource-list object that identifies the raw hardware resources that the Plug and Play manager has assigned to the device.
 
 `pWdfResourcesTranslated`
 
-A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfcmresourcelist.md">IWDFCmResourceList</a> interface for the framework resource-list object that identifies the translated hardware resources that the Plug and Play manager has assigned to the device.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439762">IWDFCmResourceList</a> interface for the framework resource-list object that identifies the translated hardware resources that the Plug and Play manager has assigned to the device.
 
 
 ## Return Value
@@ -106,7 +106,7 @@ See example code in <a href="https://msdn.microsoft.com/243C7299-7C74-408A-8FB9-
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-ipnpcallbackhardware2.md">IPnpCallbackHardware2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439727">IPnpCallbackHardware2</a>
 
 
 

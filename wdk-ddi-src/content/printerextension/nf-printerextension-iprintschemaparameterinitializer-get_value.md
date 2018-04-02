@@ -46,8 +46,8 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Value method
-The <b>Value</b> (get_Value) property gets the current value of the <a href="..\printerextension\nn-printerextension-iprintschemaparameterinitializer.md">IPrintSchemaParameterInitializer</a> object.
+# IPrintSchemaParameterInitializer::get_Value method
+The <b>Value</b> (get_Value) property gets the current value of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn454557">IPrintSchemaParameterInitializer</a> object.
 
  In PrintTicket XML, that’s the value of the &lt;psf:Value&gt; child element for the &lt;psf:ParameterInit&gt; element.
 
@@ -55,11 +55,11 @@ This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_Value(
-  [out, retval] VARIANT *pVar
+  VARIANT *pVar
 );
-````
+```
 
 ## Parameters
 
@@ -108,4 +108,4 @@ The <b>Value</b> (get_Value) property returns the current value of the <b>IPrint
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemaparameterinitializer.md">IPrintSchemaParameterInitializer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn454557">IPrintSchemaParameterInitializer</a>

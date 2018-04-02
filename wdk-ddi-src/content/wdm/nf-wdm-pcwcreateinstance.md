@@ -50,15 +50,15 @@ The <b>PcwCreateInstance</b> function creates a new instance for the specified r
 
 ## Syntax
 
-````
+```
 NTSTATUS PcwCreateInstance(
-  _Out_ PPCW_INSTANCE     *Instance,
-  _In_  PPCW_REGISTRATION Registration,
-  _In_  PCUNICODE_STRING  Name,
-  _In_  ULONG             Count,
-  _In_  PPCW_DATA         Data
+  PPCW_INSTANCE     *Instance,
+  PPCW_REGISTRATION Registration,
+  PCUNICODE_STRING  Name,
+  ULONG             Count,
+  PPCW_DATA         Data
 );
-````
+```
 
 ## Parameters
 
@@ -140,9 +140,9 @@ The size of the structure, specified by <i>Count</i>, overflows the data buffer,
 
 ## Remarks
 
-Before the provider uses this function, the provider must call the <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a> function to create a registration.
+Before the provider uses this function, the provider must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a> function to create a registration.
 
-Use the <a href="..\wdm\nf-wdm-pcwcloseinstance.md">PcwCloseInstance</a> function to close this instance.
+Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550316">PcwCloseInstance</a> function to close this instance.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -156,8 +156,8 @@ Use the <a href="..\wdm\nf-wdm-pcwcloseinstance.md">PcwCloseInstance</a> functio
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550316">PcwCloseInstance</a>
 
 
 
-<a href="..\wdm\nf-wdm-pcwcloseinstance.md">PcwCloseInstance</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a>

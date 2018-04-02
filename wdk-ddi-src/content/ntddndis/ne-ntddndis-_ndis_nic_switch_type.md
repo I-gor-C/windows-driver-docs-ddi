@@ -7,7 +7,7 @@ old-location: netvista\ndis_nic_switch_type.htm
 old-project: netvista
 ms.assetid: F990F166-D9DA-43F5-95D3-86B9B11FACF1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_NIC_SWITCH_TYPE, NDIS_NIC_SWITCH_TYPE, NDIS_NIC_SWITCH_TYPE enumeration [Network Drivers Starting with Windows Vista], NdisNicSwitchTypeExternal, NdisNicSwitchTypeMax, NdisNicSwitchTypeUnspecified, PNDIS_NIC_SWITCH_TYPE, PNDIS_NIC_SWITCH_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], _NDIS_NIC_SWITCH_TYPE, netvista.ndis_nic_switch_type, ntddndis/NDIS_NIC_SWITCH_TYPE, ntddndis/NdisNicSwitchTypeExternal, ntddndis/NdisNicSwitchTypeMax, ntddndis/NdisNicSwitchTypeUnspecified, ntddndis/PNDIS_NIC_SWITCH_TYPE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: NDIS_NIC_SWITCH_TYPE, *PNDIS_NIC_SWITCH_TYPE
 The <b>NDIS_NIC_SWITCH_TYPE</b> enumeration specifies the type of the NIC switch on a network adapter.
 
 ## Syntax
-````
-typedef enum _NDIS_NIC_SWITCH_TYPE { 
-  NdisNicSwitchTypeUnspecified  = 0,
-  NdisNicSwitchTypeExternal     = 1,
-  NdisNicSwitchTypeMax          = 2
-} NDIS_NIC_SWITCH_TYPE, *PNDIS_NIC_SWITCH_TYPE;
-````
+```
+typedef enum _NDIS_NIC_SWITCH_TYPE {
+  NdisNicSwitchTypeUnspecified  ,
+  NdisNicSwitchTypeExternal     ,
+  NdisNicSwitchTypeMax
+} *PNDIS_NIC_SWITCH_TYPE, NDIS_NIC_SWITCH_TYPE;
+```
 
 ## Constants
 
@@ -77,7 +77,7 @@ typedef enum _NDIS_NIC_SWITCH_TYPE {
 
 ## Remarks
 
-The <b>SwitchType</b> member of the <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_parameters.md">NDIS_NIC_SWITCH_PARAMETERS</a> and <a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a> structures is an <b>NDIS_NIC_SWITCH_TYPE</b> enumeration data type. 
+The <b>SwitchType</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451587">NDIS_NIC_SWITCH_PARAMETERS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/hh451582">NDIS_NIC_SWITCH_INFO</a> structures is an <b>NDIS_NIC_SWITCH_TYPE</b> enumeration data type. 
 
 
 
@@ -91,12 +91,12 @@ For more information about the NIC switch, see <a href="https://msdn.microsoft.c
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_info.md">NDIS_NIC_SWITCH_INFO</a>
-
-
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_parameters.md">NDIS_NIC_SWITCH_PARAMETERS</a>
-
-
-
 <b></b>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451582">NDIS_NIC_SWITCH_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451587">NDIS_NIC_SWITCH_PARAMETERS</a>

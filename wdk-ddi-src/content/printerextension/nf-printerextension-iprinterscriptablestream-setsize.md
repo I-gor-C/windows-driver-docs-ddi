@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetSize method
+# IPrinterScriptableStream::SetSize method
 Sets the size of the scriptable stream, in bytes.
 
 ## Syntax
 
-````
+```
 HRESULT SetSize(
-  [in] LONG lSize
+  LONG lSize
 );
-````
+```
 
 ## Parameters
 
@@ -77,4 +77,4 @@ This method returns an <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablestream.md">IPrinterScriptableStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973218">IPrinterScriptableStream</a>

@@ -7,7 +7,7 @@ old-location: storage\storportreadregisterulong64.htm
 old-project: storage
 ms.assetid: 73A9E645-0B71-429F-9033-032BB83E60E4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortReadRegisterUlong64, StorPortReadRegisterUlong64 routine [Storage Devices], storage.storportreadregisterulong64, storport/StorPortReadRegisterUlong64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,12 @@ The <b>StorPortReadRegisterUlong64</b> routine reads a 64-bit value from a speci
 
 ## Syntax
 
-````
- VOID StorPortReadRegisterUlong64(
-  _In_ PULONG64  Register
+```
+void StorPortReadRegisterUlong64(
+   h,
+   r
 );
-````
+```
 
 ## Parameters
 
@@ -84,4 +85,4 @@ The <b>StorPortReadRegisterUlong64</b> routine is only available on the 64-bit v
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportwriteregisterulong64.md">StorPortWriteRegisterUlong64</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967743">StorPortWriteRegisterUlong64</a>

@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddi_video_processor_content_desc.htm
 old-project: display
 ms.assetid: f624ffc4-3313-46a3-9231-15a54c3f2791
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC, D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC structure [Display Devices], d3d10umddi/D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC, display.d3d11_1ddi_video_processor_content_desc
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,25 +47,25 @@ req.typenames: D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC
 Describes a video stream for a video processor.
 
 ## Syntax
-````
+```
 typedef struct D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC {
   D3D11_1DDI_VIDEO_FRAME_FORMAT InputFrameFormat;
-  DXGI_RATIONAL                 InputFrameRate;
-  UINT                          InputWidth;
-  UINT                          InputHeight;
-  DXGI_RATIONAL                 OutputFrameRate;
-  UINT                          OutputWidth;
-  UINT                          OutputHeight;
-  D3D11_1DDI_VIDEO_USAGE        Usage;
-} D3D11_1DDI_VIDEO_PROCESSOR_CONTENT_DESC;
-````
+  DXGI_RATIONAL                 InputFrameRate;
+  UINT                          InputWidth;
+  UINT                          InputHeight;
+  DXGI_RATIONAL                 OutputFrameRate;
+  UINT                          OutputWidth;
+  UINT                          OutputHeight;
+  D3D11_1DDI_VIDEO_USAGE        Usage;
+};
+```
 
 ## Members
 
 
 `InputFrameFormat`
 
-A member of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_frame_format.md">D3D11_1DDI_VIDEO_FRAME_FORMAT</a> enumeration that describes how the video stream is interlaced.
+A member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450954">D3D11_1DDI_VIDEO_FRAME_FORMAT</a> enumeration that describes how the video stream is interlaced.
 
 `InputFrameRate`
 
@@ -93,7 +93,7 @@ The height of the output frames, in pixels.
 
 `Usage`
 
-A member of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_usage.md">D3D11_1DDI_VIDEO_USAGE</a> enumeration that describes how the video processor will be used. The value indicates the desired trade-off between speed and video quality. The driver uses this flag as a hint when it creates the video processor.
+A member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451037">D3D11_1DDI_VIDEO_USAGE</a> enumeration that describes how the video processor will be used. The value indicates the desired trade-off between speed and video quality. The driver uses this flag as a hint when it creates the video processor.
 
 
 ## Requirements
@@ -104,12 +104,12 @@ A member of the <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_usage.md">
 
 ## See Also
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_usage.md">D3D11_1DDI_VIDEO_USAGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450954">D3D11_1DDI_VIDEO_FRAME_FORMAT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451037">D3D11_1DDI_VIDEO_USAGE</a>
 
 
 
 <a href="https://msdn.microsoft.com/0a878d11-dc90-4cad-bde5-54a135e53a86">DXGI_RATIONAL</a>
-
-
-
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_frame_format.md">D3D11_1DDI_VIDEO_FRAME_FORMAT</a>

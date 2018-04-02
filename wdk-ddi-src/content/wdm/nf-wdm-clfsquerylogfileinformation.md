@@ -7,7 +7,7 @@ old-location: kernel\clfsquerylogfileinformation.htm
 old-project: kernel
 ms.assetid: a907f219-9e4a-415f-821c-d419b7fde729
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsQueryLogFileInformation, ClfsQueryLogFileInformation routine [Kernel-Mode Driver Architecture], Clfs_ff89b511-dc33-4407-b967-170b82cb70c3.xml, kernel.clfsquerylogfileinformation, wdm/ClfsQueryLogFileInformation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,24 +51,26 @@ The <b>ClfsQueryLogFileInformation</b> routine returns metadata and state inform
 
 ## Syntax
 
-````
-NTSTATUS  ClfsQueryLogFileInformation(
-  _In_    PLOG_FILE_OBJECT           plfoLog,
-  _In_    CLFS_LOG_INFORMATION_CLASS eInformationClass,
-  _Out_   PVOID                      pinfoBuffer,
-  _Inout_ PULONG                     pcbBuffer
+```
+CLFSUSER_API NTSTATUS ClfsQueryLogFileInformation(
+  PLOG_FILE_OBJECT           plfoLog,
+  CLFS_LOG_INFORMATION_CLASS eInformationClass,
+  PVOID                      pinfoInputBuffer,
+  ULONG                      cbinfoInputBuffer,
+  PVOID                      pinfoBuffer,
+  PULONG                     pcbInfoBuffer
 );
-````
+```
 
 ## Parameters
 
 `plfoLog`
 
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554316">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatelogfile.md">ClfsCreateLogFile</a>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff554316">LOG_FILE_OBJECT</a> structure that represents a CLFS stream. The caller previously obtained this pointer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff540792">ClfsCreateLogFile</a>.
 
 `eInformationClass`
 
-A value from the <a href="..\wdm\ne-wdm-_cls_log_information_class.md">CLFS_LOG_INFORMATION_CLASS</a> enumeration that specifies the type of information being requested.
+A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541812">CLFS_LOG_INFORMATION_CLASS</a> enumeration that specifies the type of information being requested.
 
 `pinfoInputBuffer`
 
@@ -94,7 +96,7 @@ A pointer to a buffer that receives the log information. The structure of this b
 </td>
 <td>
 
-<a href="..\wdm\ns-wdm-_cls_information.md">CLFS_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541790">CLFS_INFORMATION</a>
 
 
 </td>
@@ -106,7 +108,7 @@ A pointer to a buffer that receives the log information. The structure of this b
 </td>
 <td>
 
-<a href="..\wdm\ns-wdm-_cls_information.md">CLFS_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541790">CLFS_INFORMATION</a>
 
 
 </td>
@@ -118,7 +120,7 @@ A pointer to a buffer that receives the log information. The structure of this b
 </td>
 <td>
 
-<a href="..\wdm\ns-wdm-_clfs_log_name_information.md">CLFS_LOG_NAME_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541814">CLFS_LOG_NAME_INFORMATION</a>
 
 
 </td>
@@ -130,7 +132,7 @@ A pointer to a buffer that receives the log information. The structure of this b
 </td>
 <td>
 
-<a href="..\wdm\ns-wdm-_clfs_log_name_information.md">CLFS_LOG_NAME_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541814">CLFS_LOG_NAME_INFORMATION</a>
 
 
 </td>
@@ -142,7 +144,7 @@ A pointer to a buffer that receives the log information. The structure of this b
 </td>
 <td>
 
-<a href="..\wdm\ns-wdm-_clfs_stream_id_information.md">CLFS_STREAM_ID_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541869">CLFS_STREAM_ID_INFORMATION</a>
 
 
 </td>
@@ -174,4 +176,4 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfssetlogfileinformation.md">ClfsSetLogFileInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541761">ClfsSetLogFileInformation</a>

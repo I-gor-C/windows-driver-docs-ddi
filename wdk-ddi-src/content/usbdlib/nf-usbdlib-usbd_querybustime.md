@@ -7,7 +7,7 @@ old-location: buses\usbd_querybustime.htm
 old-project: usbref
 ms.assetid: ae59daf6-da7b-4b04-bb5c-dfd353b937a0
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: USBD_QueryBusTime, USBD_QueryBusTime routine [Buses], buses.usbd_querybustime, usbdlib/USBD_QueryBusTime, usbfunc_2911ce15-3106-4c66-95c8-52ff57318131.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,12 +53,12 @@ See URB_FUNCTION_GET_CURRENT_FRAME_NUMBER for equivalent functionality that is s
 
 ## Syntax
 
-````
-void USBD_QueryBusTime(
-  _In_  PDEVICE_OBJECT RootHubPdo,
-  _Out_ PULONG         CurrentFrame
+```
+NTSTATUS USBD_QueryBusTime(
+  PDEVICE_OBJECT RootHubPdo,
+  PULONG         CurrentFrame
 );
-````
+```
 
 ## Parameters
 
@@ -86,7 +86,7 @@ This routine does not return a value.
 
 ## See Also
 
-<a href="..\usb\ns-usb-_urb_get_current_frame_number.md">URB_GET_CURRENT_FRAME_NUMBER</a>
+<a href="https://msdn.microsoft.com/4c6e5064-83b4-4d3c-ab08-041070128f3c">URB_GET_CURRENT_FRAME_NUMBER</a>
 
 
 

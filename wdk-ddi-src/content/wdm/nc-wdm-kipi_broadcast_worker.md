@@ -7,7 +7,7 @@ old-location: kernel\ipigenericcall.htm
 old-project: kernel
 ms.assetid: 7c4e3d6b-e000-4ac4-b200-966689d05426
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: DrvrRtns_80b940d9-3d19-4525-af3f-8e4058c57ddc.xml, IpiGenericCall, IpiGenericCall routine [Kernel-Mode Driver Architecture], KIPI_BROADCAST_WORKER, kernel.ipigenericcall, wdm/IpiGenericCall
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ ULONG_PTR KipiBroadcastWorker(
 
 `Argument`
 
-Supplies the value that was passed to the <a href="..\wdm\nf-wdm-keipigenericcall.md">KeIpiGenericCall</a> routine that called <i>IpiGenericCall</i>.
+Supplies the value that was passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552198">KeIpiGenericCall</a> routine that called <i>IpiGenericCall</i>.
 
 
 ## Return Value
@@ -123,4 +123,4 @@ The KIPI_BROADCAST_WORKER function type is defined in the Wdm.h header file. To 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keipigenericcall.md">KeIpiGenericCall</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552198">KeIpiGenericCall</a>

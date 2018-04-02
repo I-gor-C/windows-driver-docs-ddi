@@ -44,20 +44,20 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsEvent method
+# IKsControl::KsEvent method
 The <b>KsEvent</b> method enables or disables an event, along with any other defined support operations available on an event set.
 
 ## Syntax
 
-````
+```
 HRESULT KsEvent(
-  [in, optional] PKSEVENT Event,
-  [in]           ULONG    EventLength,
-  [in, out]      LPVOID   EventData,
-  [in]           ULONG    DataLength,
-  [in, out]      ULONG    *BytesReturned
+  PKSEVENT Event,
+  ULONG    EventLength,
+  LPVOID   EventData,
+  ULONG    DataLength,
+  ULONG    *BytesReturned
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ Size, in bytes, of the buffer at <i>Event</i> when the event is enabled and zero
 
 `EventData`
 
-Pointer to a <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that contains data for the event and buffer space that receives data for the event.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a> structure that contains data for the event and buffer space that receives data for the event.
 
 `DataLength`
 
@@ -88,9 +88,9 @@ Returns NOERROR if successful; otherwise, returns an error code. If the call suc
 
 ## Remarks
 
-To disable an event, set <i>Event</i> to <b>NULL</b>, <i>EventLength</i> to zero, and <i>EventData</i> to the pointer to the <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> structure that was previously used to enable the event.
+To disable an event, set <i>Event</i> to <b>NULL</b>, <i>EventLength</i> to zero, and <i>EventData</i> to the pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a> structure that was previously used to enable the event.
 
-The <i>EventData</i> parameter of <b>IKsControl::KsEvent</b> contains a handle in <b>EventHandle.Event</b>. You can wait for the handle to become available and get notifications when the minidriver calls <b>Ks</b><i>Xxx</i><b>GenerateEvents</b> or <a href="..\strmini\nf-strmini-streamclassstreamnotification.md">StreamClassStreamNotification</a>.
+The <i>EventData</i> parameter of <b>IKsControl::KsEvent</b> contains a handle in <b>EventHandle.Event</b>. You can wait for the handle to become available and get notifications when the minidriver calls <b>Ks</b><i>Xxx</i><b>GenerateEvents</b> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff568266">StreamClassStreamNotification</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,16 +100,16 @@ The <i>EventData</i> parameter of <b>IKsControl::KsEvent</b> contains a handle i
 
 ## See Also
 
-<a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561744">KSEVENT</a>
 
 
 
-<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a>
 
 
 
-<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562541">KsFilterGenerateEvents</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563500">KsPinGenerateEvents</a>

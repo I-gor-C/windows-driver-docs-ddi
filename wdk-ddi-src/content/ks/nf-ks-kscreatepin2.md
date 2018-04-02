@@ -51,14 +51,14 @@ Supported starting in Windows 8.
 
 ## Syntax
 
-````
-KSDDKAPI HRESULT WINAPI KsCreatePin2(
-  _In_  HANDLE         FilterHandle,
-  _In_  PKSPIN_CONNECT Connect,
-  _In_  ACCESS_MASK    DesiredAccess,
-  _Out_ PHANDLE        ConnectionHandle
+```
+KSDDKAPI HRESULT KsCreatePin2(
+  HANDLE         FilterHandle,
+  PKSPIN_CONNECT Connect,
+  ACCESS_MASK    DesiredAccess,
+  PHANDLE        ConnectionHandle
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ Specifies the handle of the filter initiating the create request and where the c
 
 `Connect`
 
-Pointer to a <a href="..\ks\ns-ks-kspin_connect.md">KSPIN_CONNECT</a> structure that contains parameters for the requested connection. This should be followed in memory by a <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> data structure, describing the data format requested for the connection.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563531">KSPIN_CONNECT</a> structure that contains parameters for the requested connection. This should be followed in memory by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a> data structure, describing the data format requested for the connection.
 
 `DesiredAccess`
 
@@ -85,7 +85,7 @@ Returns <b>NOERROR</b> if successful; otherwise, returns an error code.
 
 ## Remarks
 
-This is a new version of the <a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a> function and uses the device broker to create the handle to the kernel streaming object. In addition, the Component Object Model (COM) <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a> function must be called before this function is called.
+This is a new version of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561652">KsCreatePin</a> function and uses the device broker to create the handle to the kernel streaming object. In addition, the Component Object Model (COM) <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a> function must be called before this function is called.
 
 The routine sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> request to the driver. The driver accepts the request only if the interface, medium, and data format are compatible.
 
@@ -101,15 +101,7 @@ If <i>Connect</i>-&gt;<b>PinToHandle</b> is <b>NULL</b>, <b>KsCreatePin2</b> cre
 
 ## See Also
 
-<a href="..\ks\nf-ks-kscreatepin.md">KsCreatePin</a>
-
-
-
 <a href="https://msdn.microsoft.com/0f171cf4-87b9-43a6-97f2-80ed344fe376">CoInitialize</a>
-
-
-
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
 
 
 
@@ -117,4 +109,12 @@ If <i>Connect</i>-&gt;<b>PinToHandle</b> is <b>NULL</b>, <b>KsCreatePin2</b> cre
 
 
 
-<a href="..\ks\ns-ks-kspin_connect.md">KSPIN_CONNECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563531">KSPIN_CONNECT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561652">KsCreatePin</a>

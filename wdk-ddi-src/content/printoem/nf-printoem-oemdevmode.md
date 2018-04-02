@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMDevMode(
-   DWORD       dwMode,
-   POEMDMPARAM pOemDMParam
+```
+BOOL OEMDevMode(
+  DWORD       dwMode,
+  POEMDMPARAM pOemDMParam
 );
-````
+```
 
 ## Parameters
 

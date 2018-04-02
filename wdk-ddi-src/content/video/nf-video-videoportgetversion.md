@@ -7,7 +7,7 @@ old-location: display\videoportgetversion.htm
 old-project: display
 ms.assetid: 242eb066-4b2e-4abe-b082-5bfd814c5774
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortGetVersion, VideoPortGetVersion function [Display Devices], VideoPort_Functions_b616e0f2-430a-43ca-a43f-44cdcaec757f.xml, display.videoportgetversion, video/VideoPortGetVersion
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>VideoPortGetVersion</b> function gets version information about the curre
 
 ## Syntax
 
-````
-VP_STATUS VideoPortGetVersion(
-  _In_    PVOID            HwDeviceExtension,
-  _Inout_ PVPOSVERSIONINFO pVpOsVersionInfo
+```
+VIDEOPORT_API VP_STATUS VideoPortGetVersion(
+  IN PVOID                HwDeviceExtension,
+  IN OUT PVPOSVERSIONINFO pVpOsVersionInfo
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ Pointer to the miniport driver's device extension.
 
 `pVpOsVersionInfo`
 
-Pointer to a <a href="..\video\ns-video-_vposversioninfo.md">VPOSVERSIONINFO</a> structure that will receive the operating system version information. The caller should set the <b>Size</b> member of the VPOSVERSIONINFO structure to the size, in bytes, of that structure.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570568">VPOSVERSIONINFO</a> structure that will receive the operating system version information. The caller should set the <b>Size</b> member of the VPOSVERSIONINFO structure to the size, in bytes, of that structure.
 
 
 ## Return Value
@@ -85,4 +85,4 @@ Pointer to a <a href="..\video\ns-video-_vposversioninfo.md">VPOSVERSIONINFO</a>
 
 ## See Also
 
-<a href="..\video\ns-video-_vposversioninfo.md">VPOSVERSIONINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570568">VPOSVERSIONINFO</a>

@@ -47,18 +47,22 @@ req.typenames: CONTROLLER_ATTRIBUTE_FLAGS, *PCONTROLLER_ATTRIBUTE_FLAGS
 The <b>CONTROLLER_ATTRIBUTE_FLAGS</b> structure describes the hardware attributes of the general-purpose I/O (GPIO) controller device.
 
 ## Syntax
-````
+```
 typedef struct _CONTROLLER_ATTRIBUTE_FLAGS {
-  ULONG MemoryMappedController  :1;
-  ULONG ActiveInterruptsAutoClearOnRead  :1;
-  ULONG FormatIoRequestsAsMasks  :1;
-  ULONG DeviceIdlePowerMgmtSupported  :1;
-  ULONG BankIdlePowerMgmtSupported  :1;
-  ULONG EmulateDebouncing  :1;
-  ULONG EmulateActiveBoth  :1;
-  ULONG Reserved  :25;
+  struct {
+    ULONG  : 1  ActiveInterruptsAutoClearOnRead;
+    ULONG  : 1  BankIdlePowerMgmtSupported;
+    ULONG  : 1  DeviceIdlePowerMgmtSupported;
+    ULONG  : 1  EmulateActiveBoth;
+    ULONG  : 1  EmulateDebouncing;
+    ULONG  : 1  FormatIoRequestsAsMasks;
+    ULONG  : 1  IndependentIoHwSupported;
+    ULONG  : 1  MemoryMappedController;
+    ULONG  : 24 Reserved;
+  };
+  ULONG  AsULONG;
 } CONTROLLER_ATTRIBUTE_FLAGS, *PCONTROLLER_ATTRIBUTE_FLAGS;
-````
+```
 
 ## Members
 
@@ -88,26 +92,6 @@ Some GPIO controllers implement active-both interrupt inputs in hardware. Howeve
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439406">CLIENT_ReadGpioPinsUsingMask</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439439">CLIENT_WriteGpioPins</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439479">GPIO_CLIENT_REGISTRATION_PACKET</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439404">CLIENT_ReadGpioPins</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439445">CLIENT_WriteGpioPinsUsingMask</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
 
 
@@ -116,4 +100,24 @@ Some GPIO controllers implement active-both interrupt inputs in hardware. Howeve
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439404">CLIENT_ReadGpioPins</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439406">CLIENT_ReadGpioPinsUsingMask</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh698243">CLIENT_ReconfigureInterrupt</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439439">CLIENT_WriteGpioPins</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439445">CLIENT_WriteGpioPinsUsingMask</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439479">GPIO_CLIENT_REGISTRATION_PACKET</a>

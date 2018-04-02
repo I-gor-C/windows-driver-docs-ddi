@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 The WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure specifies major and minor version numbers for the Kernel-Mode Driver Framework's library.
 
 ## Syntax
-````
+```
 typedef struct _WDF_DRIVER_VERSION_AVAILABLE_PARAMS {
   ULONG Size;
   ULONG MajorVersion;
   ULONG MinorVersion;
-} WDF_DRIVER_VERSION_AVAILABLE_PARAMS, *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS;
-````
+} *PWDF_DRIVER_VERSION_AVAILABLE_PARAMS, WDF_DRIVER_VERSION_AVAILABLE_PARAMS;
+```
 
 ## Members
 
@@ -74,7 +74,7 @@ A numeric value that represents the Kernel-Mode Driver Framework library's major
 A numeric value that represents the Kernel-Mode Driver Framework library's minor version number.
 
 ## Remarks
-The WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure is used as input to the <a href="..\wdfdriver\nf-wdfdriver-wdfdriverisversionavailable.md">WdfDriverIsVersionAvailable</a> method. Drivers should call <a href="..\wdfdriver\nf-wdfdriver-wdf_driver_version_available_params_init.md">WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT</a> to initialize this structure before calling <b>WdfDriverIsVersionAvailable</b>.
+The WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547190">WdfDriverIsVersionAvailable</a> method. Drivers should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff551309">WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT</a> to initialize this structure before calling <b>WdfDriverIsVersionAvailable</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,8 +85,8 @@ The WDF_DRIVER_VERSION_AVAILABLE_PARAMS structure is used as input to the <a hre
 
 ## See Also
 
-<a href="..\wdfdriver\nf-wdfdriver-wdf_driver_version_available_params_init.md">WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551309">WDF_DRIVER_VERSION_AVAILABLE_PARAMS_INIT</a>
 
 
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdriverisversionavailable.md">WdfDriverIsVersionAvailable</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547190">WdfDriverIsVersionAvailable</a>

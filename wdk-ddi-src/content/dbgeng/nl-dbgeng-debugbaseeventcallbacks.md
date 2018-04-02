@@ -7,7 +7,7 @@ old-location: debugger\debugbaseeventcallbacks.htm
 old-project: debugger
 ms.assetid: B0422248-2F5F-4AE6-93C9-D96B5E4A1B5A
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: DebugBaseEventCallbacks, DebugBaseEventCallbacks class [Windows Debugging], DebugBaseEventCallbacks class [Windows Debugging], described, dbgeng/DebugBaseEventCallbacks, debugger.debugbaseeventcallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 # DebugBaseEventCallbacks Class
 The <b>DebugBaseEventCallbacks</b> class provides a base implementation
-of the <a href="..\dbgeng\nn-dbgeng-idebugeventcallbacks.md">IDebugEventCallbacks</a> interface.  
+of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550550">IDebugEventCallbacks</a> interface.  
 
 A program can derive an event callbacks class from <b>DebugBaseEventCallbacks</b> and implement
 only the methods needed. 
@@ -68,8 +68,8 @@ Be careful to implement <a href="https://msdn.microsoft.com/165c83cb-c0be-4a09-9
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugeventcallbacks.md">IDebugEventCallbacks</a>
-
-
-
 <a href="https://msdn.microsoft.com/165c83cb-c0be-4a09-9220-a5208f660308">GetInterestMask</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550550">IDebugEventCallbacks</a>

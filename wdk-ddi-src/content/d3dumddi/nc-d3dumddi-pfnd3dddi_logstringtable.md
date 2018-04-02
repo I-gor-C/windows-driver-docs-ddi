@@ -7,7 +7,7 @@ old-location: display\logmarkerstringtable.htm
 old-project: display
 ms.assetid: DDB42924-5C28-4737-92C1-4FB7A00B09AA
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: LogMarkerStringTable, LogMarkerStringTable callback function [Display Devices], PFND3DDDI_LOGSTRINGTABLE, d3dumddi/LogMarkerStringTable, display.logmarkerstringtable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ A handle to the Event Tracing for Windows (ETW) log that is to be written to.
 
 `pfnLogStringTableEntryCb`
 
-A function pointer to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddicb_logstringtableentry.md">LogMarkerStringTableEntry</a> function that locates a string table entry.
+A function pointer to the <a href="https://msdn.microsoft.com/54D1F822-2D82-498D-A50F-A917FA127496">LogMarkerStringTableEntry</a> function that locates a string table entry.
 
 
 ## Return Value
@@ -87,4 +87,4 @@ This function is free-threaded.
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddicb_logstringtableentry.md">LogMarkerStringTableEntry</a>
+<a href="https://msdn.microsoft.com/54D1F822-2D82-498D-A50F-A917FA127496">LogMarkerStringTableEntry</a>

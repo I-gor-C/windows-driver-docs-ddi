@@ -7,7 +7,7 @@ old-location: display\videoportmovememory.htm
 old-project: display
 ms.assetid: 32b754ef-2a85-4ba7-9d4f-3c2de2501319
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortMoveMemory, VideoPortMoveMemory function [Display Devices], VideoPort_Functions_ab574585-85be-48ea-9713-25867812699a.xml, display.videoportmovememory, video/VideoPortMoveMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>VideoPortMoveMemory</b> function copies data from the source location to 
 
 ## Syntax
 
-````
-VOID VideoPortMoveMemory(
-  _Inout_ PVOID Destination,
-  _Inout_ PVOID Source,
-          ULONG Length
+```
+VIDEOPORT_API VOID VideoPortMoveMemory(
+  PVOID Destination,
+  PVOID Source,
+  ULONG Length
 );
-````
+```
 
 ## Parameters
 
@@ -97,16 +97,16 @@ Callers of <b>VideoPortMoveMemory</b> can be running at any IRQL if both memory 
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570285">VideoPortCompareMemory</a>
 
 
 
-<a href="..\video\nf-video-videoportzerodevicememory.md">VideoPortZeroDeviceMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a>
 
 
 
-<a href="..\video\nf-video-videoportcomparememory.md">VideoPortCompareMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570492">VideoPortZeroDeviceMemory</a>
 
 
 
-<a href="..\video\nf-video-videoportzeromemory.md">VideoPortZeroMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570493">VideoPortZeroMemory</a>

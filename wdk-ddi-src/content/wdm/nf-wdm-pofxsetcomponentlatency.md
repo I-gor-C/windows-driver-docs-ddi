@@ -7,7 +7,7 @@ old-location: kernel\pofxsetcomponentlatency.htm
 old-project: kernel
 ms.assetid: 670AFE37-1617-4171-9504-50B13B8E0F76
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PoFxSetComponentLatency, PoFxSetComponentLatency routine [Kernel-Mode Driver Architecture], kernel.pofxsetcomponentlatency, wdm/PoFxSetComponentLatency
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,23 +50,23 @@ The <b>PoFxSetComponentLatency</b> routine specifies the maximum latency that ca
 
 ## Syntax
 
-````
-VOID PoFxSetComponentLatency(
-  _In_ POHANDLE  Handle,
-  _In_ ULONG     Component,
-  _In_ ULONGLONG Latency
+```
+NTKERNELAPI VOID PoFxSetComponentLatency(
+  POHANDLE  Handle,
+  ULONG     Component,
+  ULONGLONG Latency
 );
-````
+```
 
 ## Parameters
 
 `Handle`
 
-A handle that represents the registration of the device with the power management framework (PoFx). The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.
+A handle that represents the registration of the device with the power management framework (PoFx). The device driver previously received this handle from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439521">PoFxRegisterDevice</a> routine.
 
 `Component`
 
-The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="..\wudfwdm\ns-wudfwdm-_po_fx_device_v1.md">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
+The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439585">PO_FX_DEVICE</a> structure that the device driver used to register the device with PoFx. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
 `Latency`
 
@@ -101,8 +101,8 @@ If a component is in the idle condition when <b>PoFxSetComponentLatency</b> is c
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439585">PO_FX_DEVICE</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_po_fx_device_v1.md">PO_FX_DEVICE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439521">PoFxRegisterDevice</a>

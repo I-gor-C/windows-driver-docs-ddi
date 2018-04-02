@@ -52,13 +52,13 @@ The <b>WDF_WRITE_REGISTER_ULONG64</b> function writes a ULONG64 value to the spe
 
 ## Syntax
 
-````
+```
 void WDF_WRITE_REGISTER_ULONG64(
-  _In_ WDFDEVICE Device,
-  _In_ PULONG64  Register,
-  _In_ ULONG     Value
+  WDFDEVICE Device,
+  PULONG64  Register,
+  ULONG64   Value
 );
-````
+```
 
 ## Parameters
 

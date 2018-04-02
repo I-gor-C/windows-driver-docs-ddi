@@ -44,15 +44,15 @@ req.typenames: SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, *PSECURE_ELEMENT_SET
 ---
 
 # _SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO structure
-SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO is the input parameter for  <a href="..\nfcsedev\ni-nfcsedev-ioctl_nfcse_set_card_emulation_mode.md">IOCTL_NFCSE_SET_CARD_EMULATION_MODE</a>.
+SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO is the input parameter for  <a href="https://msdn.microsoft.com/library/windows/hardware/dn905512">IOCTL_NFCSE_SET_CARD_EMULATION_MODE</a>.
 
 ## Syntax
-````
+```
 typedef struct _SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO {
-  GUID                               guidSecureElementId;
+  GUID                               guidSecureElementId;
   SECURE_ELEMENT_CARD_EMULATION_MODE eMode;
-} SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, *PSECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO;
-````
+} *PSECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO, SECURE_ELEMENT_SET_CARD_EMULATION_MODE_INFO;
+```
 
 ## Members
 

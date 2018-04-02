@@ -7,7 +7,7 @@ old-location: kernel\pofxregistercrashdumpdevice.htm
 old-project: kernel
 ms.assetid: 3237B68F-838A-4443-89FD-DC7815EAB403
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PoFxRegisterCrashdumpDevice, PoFxRegisterCrashdumpDevice routine [Kernel-Mode Driver Architecture], kernel.pofxregistercrashdumpdevice, wdm/PoFxRegisterCrashdumpDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ The <b>PoFxRegisterCrashdumpDevice</b> routine registers a crash-dump device.
 
 ## Syntax
 
-````
-NTSTATUS PoFxRegisterCrashdumpDevice(
-   POHANDLE Handle
+```
+NTKERNELAPI NTSTATUS PoFxRegisterCrashdumpDevice(
+  POHANDLE Handle
 );
-````
+```
 
 ## Parameters
 
 `Handle`
 
-A handle that represents the registration of the crash-dump device with the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx). The device driver previously received this handle from the <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> routine.
+A handle that represents the registration of the crash-dump device with the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx). The device driver previously received this handle from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439521">PoFxRegisterDevice</a> routine.
 
 
 ## Return Value
@@ -101,9 +101,9 @@ There is no PEP for this device.
 
 This routine is called by the driver for a crash-dump device to inform PoFx that the device is part of the crash-dump device chain. Several devices (storage controller, PCI controller, and so on) might need to be turned on so that the Windows kernel can write a crash-dump file to disk. When a fatal system error occurs, the kernel tries to turn on the crash-dump devices and save the crash-dump file.
 
-The driver must call <a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a> to register the device with PoFx before calling <b>PoFxRegisterCrashdumpDevice</b>.
+The driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh439521">PoFxRegisterDevice</a> to register the device with PoFx before calling <b>PoFxRegisterCrashdumpDevice</b>.
 
-The driver for a crash-dump device can call the <a href="..\wdm\nf-wdm-pofxpoweroncrashdumpdevice.md">PoFxPowerOnCrashdumpDevice</a> routine to request that the PEP turn the device on.
+The driver for a crash-dump device can call the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186870">PoFxPowerOnCrashdumpDevice</a> routine to request that the PEP turn the device on.
 
 For more information about crash dumps, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff551880">Kernel-Mode Dump Files</a>.
 
@@ -120,8 +120,8 @@ For more information about crash dumps, see <a href="https://msdn.microsoft.com/
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pofxregisterdevice.md">PoFxRegisterDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186870">PoFxPowerOnCrashdumpDevice</a>
 
 
 
-<a href="..\wdm\nf-wdm-pofxpoweroncrashdumpdevice.md">PoFxPowerOnCrashdumpDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439521">PoFxRegisterDevice</a>

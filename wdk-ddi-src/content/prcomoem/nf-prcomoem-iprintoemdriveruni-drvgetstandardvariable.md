@@ -45,26 +45,26 @@ req.product: Windows 10 or later.
 ---
 
 
-# DrvGetStandardVariable method
+# IPrintOemDriverUni::DrvGetStandardVariable method
 The <code>IPrintOemDriverUni::DrvGetStandardVariable</code> method is provided by the Unidrv driver so that rendering plug-ins can obtain the current value of Unidrv's <a href="https://msdn.microsoft.com/d3f85c0f-7387-4301-8b1e-904471aed4b0">standard variables</a>.
 
 ## Syntax
 
-````
+```
 HRESULT DrvGetStandardVariable(
-   PDEVOBJ pdevobj,
-   DWORD   dwIndex,
-   PVOID   pBuffer,
-   DWORD   cbSize,
-   PDWORD  pcbNeeded
+  PDEVOBJ pdevobj,
+  DWORD   dwIndex,
+  PVOID   pBuffer,
+  DWORD   cbSize,
+  PDWORD  pcbNeeded
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `dwIndex`
 

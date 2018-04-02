@@ -53,18 +53,18 @@ The <b>WdfDmaEnablerSetMaximumScatterGatherElements</b> method sets the maximum 
 
 ## Syntax
 
-````
-VOID WdfDmaEnablerSetMaximumScatterGatherElements(
-  _In_ WDFDMAENABLER DmaEnabler,
-  _In_ size_t        MaximumFragments
+```
+void WdfDmaEnablerSetMaximumScatterGatherElements(
+  WDFDMAENABLER DmaEnabler,
+  size_t        MaximumFragments
 );
-````
+```
 
 ## Parameters
 
 `DmaEnabler`
 
-A handle to a DMA enabler object that the driver obtained from a previous call to <a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>.
+A handle to a DMA enabler object that the driver obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546983">WdfDmaEnablerCreate</a>.
 
 `MaximumFragments`
 
@@ -79,7 +79,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## Remarks
 
-If your driver calls <b>WdfDmaEnablerSetMaximumScatterGatherElements</b>, it must do so within the <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> or <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_prepare_hardware.md">EvtDevicePrepareHardware</a> callback function.
+If your driver calls <b>WdfDmaEnablerSetMaximumScatterGatherElements</b>, it must do so within the <a href="https://msdn.microsoft.com/b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a">EvtDriverDeviceAdd</a> or <a href="https://msdn.microsoft.com/a3d4a983-8a75-44be-bd72-8673d89f9f87">EvtDevicePrepareHardware</a> callback function.
 
 If your driver does not call <b>WdfDmaEnablerSetMaximumScatterGatherElements</b>, the framework uses a default value of WDF_DMA_ENABLER_UNLIMITED_FRAGMENTS, which means that there is no limit to the number of scatter/gather elements.
 
@@ -116,8 +116,8 @@ The following code example sets the maximum number of scatter/gather elements fo
 
 ## See Also
 
-<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablergetmaximumscattergatherelements.md">WdfDmaEnablerGetMaximumScatterGatherElements</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546983">WdfDmaEnablerCreate</a>
 
 
 
-<a href="..\wdfdmaenabler\nf-wdfdmaenabler-wdfdmaenablercreate.md">WdfDmaEnablerCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547005">WdfDmaEnablerGetMaximumScatterGatherElements</a>

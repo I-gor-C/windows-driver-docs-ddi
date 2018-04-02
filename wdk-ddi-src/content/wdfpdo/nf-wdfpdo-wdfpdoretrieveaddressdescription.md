@@ -53,12 +53,12 @@ The <b>WdfPdoRetrieveAddressDescription</b> method retrieves the <a href="https:
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfPdoRetrieveAddressDescription(
-  _In_    WDFDEVICE                             Device,
-  _Inout_ PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER AddressDescription
+  WDFDEVICE                             Device,
+  PWDF_CHILD_ADDRESS_DESCRIPTION_HEADER AddressDescription
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A handle to a framework device object that represents the device's physical devi
 
 `AddressDescription`
 
-A pointer to a caller-allocated buffer that will receive the address description. The address description must contain a <a href="..\wdfchildlist\ns-wdfchildlist-_wdf_child_address_description_header.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure.
+A pointer to a caller-allocated buffer that will receive the address description. The address description must contain a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551219">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER</a> structure.
 
 
 ## Return Value
@@ -123,12 +123,12 @@ A system bug check occurs if the driver supplies an invalid object handle.
 
 ## See Also
 
-<a href="..\wdfchildlist\nf-wdfchildlist-wdf_child_address_description_header_init.md">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551220">WDF_CHILD_ADDRESS_DESCRIPTION_HEADER_INIT</a>
 
 
 
-<a href="..\wdfchildlist\nf-wdfchildlist-wdfchildlistretrieveaddressdescription.md">WdfChildListRetrieveAddressDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545648">WdfChildListRetrieveAddressDescription</a>
 
 
 
-<a href="..\wdfpdo\nf-wdfpdo-wdfpdoretrieveidentificationdescription.md">WdfPdoRetrieveIdentificationDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548824">WdfPdoRetrieveIdentificationDescription</a>

@@ -51,18 +51,18 @@ The HID source driver calls this method to set the results of an asynchronous op
 
 ## Syntax
 
-````
+```
 NTSTATUS VhfAsyncOperationComplete(
-  [in] VHFOPERATIONHANDLE VhfOperationHandle,
-  [in] NTSTATUS           CompletionStatus
+  VHFOPERATIONHANDLE VhfOperationHandle,
+  NTSTATUS           CompletionStatus
 );
-````
+```
 
 ## Parameters
 
 `VhfOperationHandle`
 
-The operation handle set by Virtual HID Framework (VHF). This handle is passed to the HID source driver  in the <i>VhfOperationHandle</i> parameter of <a href="..\vhf\nc-vhf-evt_vhf_async_operation.md">EvtVhfAsyncOperation</a>.
+The operation handle set by Virtual HID Framework (VHF). This handle is passed to the HID source driver  in the <i>VhfOperationHandle</i> parameter of <a href="https://msdn.microsoft.com/C42174FE-202F-405D-840B-8613762F43AC">EvtVhfAsyncOperation</a>.
 
 `CompletionStatus`
 
@@ -75,7 +75,7 @@ If the <b>VhfAsyncOperationComplete</b> call succeeds, the method returns STATUS
 
 ## Remarks
 
-The HID source driver can call  from the event callback or at a later time after returning from the <a href="..\vhf\nc-vhf-evt_vhf_async_operation.md">EvtVhfAsyncOperation</a> callback.
+The HID source driver can call  from the event callback or at a later time after returning from the <a href="https://msdn.microsoft.com/C42174FE-202F-405D-840B-8613762F43AC">EvtVhfAsyncOperation</a> callback.
 
 ## Requirements
 | &nbsp; | &nbsp; |

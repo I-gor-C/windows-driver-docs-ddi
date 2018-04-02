@@ -50,15 +50,15 @@ The <b>KsMethodHandlerWithAllocator</b> functions performs the same handling as 
 
 ## Syntax
 
-````
-NTSTATUS KsMethodHandlerWithAllocator(
-  _In_           PIRP           Irp,
-  _In_           ULONG          MethodSetsCount,
-  _In_     const KSMETHOD_SET   *MethodSet,
-  _In_opt_       PFNKSALLOCATOR Allocator,
-  _In_opt_       ULONG          MethodItemSize
+```
+KSDDKAPI NTSTATUS KsMethodHandlerWithAllocator(
+  PIRP                 Irp,
+  ULONG                MethodSetsCount,
+  const KSMETHOD_SET   *MethodSet,
+  PFNKSALLOCATOR       Allocator,
+  ULONG MethodItemSize OPTIONAL
 );
-````
+```
 
 ## Parameters
 

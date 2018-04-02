@@ -50,18 +50,18 @@ req.product: Windows 10 or later.
 The <b>POWER_ACTION</b> enumeration identifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564553">system power actions</a> that can occur on a computer.
 
 ## Syntax
-````
-typedef enum  { 
-  PowerActionNone           = 0,
-  PowerActionReserved       = ( PowerActionNone + 1 ),
-  PowerActionSleep          = ( PowerActionReserved + 1 ),
-  PowerActionHibernate      = ( PowerActionSleep + 1 ),
-  PowerActionShutdown       = ( PowerActionHibernate + 1 ),
-  PowerActionShutdownReset  = ( PowerActionShutdown + 1 ),
-  PowerActionShutdownOff    = ( PowerActionShutdownReset + 1 ),
-  PowerActionWarmEject      = ( PowerActionShutdownOff + 1 )
-} POWER_ACTION, *PPOWER_ACTION;
-````
+```
+typedef enum __MIDL___MIDL_itf_wudfddi_0000_0000_0001 {
+  PowerActionNone           ,
+  PowerActionReserved       ,
+  PowerActionSleep          ,
+  PowerActionHibernate      ,
+  PowerActionShutdown       ,
+  PowerActionShutdownReset  ,
+  PowerActionShutdownOff    ,
+  PowerActionWarmEject
+} *PPOWER_ACTION, POWER_ACTION;
+```
 
 ## Constants
 

@@ -53,14 +53,14 @@ The <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b> method retrieves an I/O requ
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfRequestRetrieveUnsafeUserOutputBuffer(
-  _In_      WDFREQUEST Request,
-  _In_      size_t     MinimumRequiredLength,
-  _Out_     PVOID      *OutputBuffer,
-  _Out_opt_ size_t     *Length
+  WDFREQUEST Request,
+  size_t     MinimumRequiredLength,
+  PVOID      *OutputBuffer,
+  size_t     *Length
 );
-````
+```
 
 ## Parameters
 
@@ -112,7 +112,7 @@ This value is returned if one of the following occurs:
 
 <ul>
 <li>
-The method was not called from within the driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> callback function.
+The method was not called from within the driver's <a href="https://msdn.microsoft.com/b8bcea29-e404-490e-9d0c-02c96a5690ab">EvtIoInCallerContext</a> callback function.
 
 </li>
 <li>
@@ -149,7 +149,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## Remarks
 
-The <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b> method must be called from an <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a> callback function. After calling <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b>, the driver must call <a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite.md">WdfRequestProbeAndLockUserBufferForWrite</a>. 
+The <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b> method must be called from an <a href="https://msdn.microsoft.com/b8bcea29-e404-490e-9d0c-02c96a5690ab">EvtIoInCallerContext</a> callback function. After calling <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b>, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549989">WdfRequestProbeAndLockUserBufferForWrite</a>. 
 
 The driver can call <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b> if a request's I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff549327">IRP_MJ_READ</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548649">IRP_MJ_DEVICE_CONTROL</a>. 
 
@@ -160,7 +160,7 @@ For more information about <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b>, see 
 
 #### Examples
 
-For a code example that uses <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b>, see <a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforread.md">WdfRequestProbeAndLockUserBufferForRead</a>.
+For a code example that uses <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff549987">WdfRequestProbeAndLockUserBufferForRead</a>.
 
 <div class="code"></div>
 
@@ -176,12 +176,12 @@ For a code example that uses <b>WdfRequestRetrieveUnsafeUserOutputBuffer</b>, se
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestprobeandlockuserbufferforwrite.md">WdfRequestProbeAndLockUserBufferForWrite</a>
+<a href="https://msdn.microsoft.com/b8bcea29-e404-490e-9d0c-02c96a5690ab">EvtIoInCallerContext</a>
 
 
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveunsafeuserinputbuffer.md">WdfRequestRetrieveUnsafeUserInputBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549989">WdfRequestProbeAndLockUserBufferForWrite</a>
 
 
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_io_in_caller_context.md">EvtIoInCallerContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550022">WdfRequestRetrieveUnsafeUserInputBuffer</a>

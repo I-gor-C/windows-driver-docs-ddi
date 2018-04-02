@@ -44,32 +44,32 @@ req.typenames: WHEA_MEMORY_ERROR_SECTION_VALIDBITS, *PWHEA_MEMORY_ERROR_SECTION_
 ---
 
 # _WHEA_MEMORY_ERROR_SECTION_VALIDBITS structure
-The WHEA_MEMORY_ERROR_SECTION_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a> structure contain valid data.
+The WHEA_MEMORY_ERROR_SECTION_VALIDBITS union describes which members of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560565">WHEA_MEMORY_ERROR_SECTION</a> structure contain valid data.
 
 ## Syntax
-````
-typedef union _WHEA_MEMORY_ERROR_SECTION_VALIDBITS {
+```
+typedef struct _WHEA_MEMORY_ERROR_SECTION_VALIDBITS {
   struct {
-    ULONGLONG ErrorStatus  :1;
-    ULONGLONG PhysicalAddress  :1;
-    ULONGLONG PhysicalAddressMask  :1;
-    ULONGLONG Node  :1;
-    ULONGLONG Card  :1;
-    ULONGLONG Module  :1;
-    ULONGLONG Bank  :1;
-    ULONGLONG Device  :1;
-    ULONGLONG Row  :1;
-    ULONGLONG Column  :1;
-    ULONGLONG BitPosition  :1;
-    ULONGLONG RequesterId  :1;
-    ULONGLONG ResponderId  :1;
-    ULONGLONG TargetId  :1;
-    ULONGLONG ErrorType  :1;
-    ULONGLONG Reserved  :49;
-  };
+    ULONGLONG  : 1  Bank;
+    ULONGLONG  : 1  BitPosition;
+    ULONGLONG  : 1  Card;
+    ULONGLONG  : 1  Column;
+    ULONGLONG  : 1  Device;
+    ULONGLONG  : 1  ErrorStatus;
+    ULONGLONG  : 1  ErrorType;
+    ULONGLONG  : 1  Module;
+    ULONGLONG  : 1  Node;
+    ULONGLONG  : 1  PhysicalAddress;
+    ULONGLONG  : 1  PhysicalAddressMask;
+    ULONGLONG  : 1  RequesterId;
+    ULONGLONG  : 1  ResponderId;
+    ULONGLONG  : 1  Row;
+    ULONGLONG  : 1  TargetId;
+    ULONGLONG  : 49 Reserved;
+  } DUMMYSTRUCTNAME;
   ULONGLONG ValidBits;
 } WHEA_MEMORY_ERROR_SECTION_VALIDBITS, *PWHEA_MEMORY_ERROR_SECTION_VALIDBITS;
-````
+```
 
 ## Members
 
@@ -83,7 +83,7 @@ typedef union _WHEA_MEMORY_ERROR_SECTION_VALIDBITS {
 A ULONGLONG representation of the contents of the WHEA_MEMORY_ERROR_SECTION_VALIDBITS union.
 
 ## Remarks
-A WHEA_MEMORY_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a> structure.
+A WHEA_MEMORY_ERROR_SECTION_VALIDBITS union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560565">WHEA_MEMORY_ERROR_SECTION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,4 +93,4 @@ A WHEA_MEMORY_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_memory_error_section.md">WHEA_MEMORY_ERROR_SECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560565">WHEA_MEMORY_ERROR_SECTION</a>

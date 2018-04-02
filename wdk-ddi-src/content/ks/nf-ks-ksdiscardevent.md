@@ -50,11 +50,11 @@ The <b>KsDiscardEvent</b> function discards the memory used by an event entry af
 
 ## Syntax
 
-````
-VOID KsDiscardEvent(
-  _In_ PKSEVENT_ENTRY EventEntry
+```
+KSDDKAPI VOID KsDiscardEvent(
+  PKSEVENT_ENTRY EventEntry
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ None
 
 ## Remarks
 
-Typically, the <b>KsDiscardEvent</b> function is automatically called by the <a href="..\ks\nf-ks-ksdisableevent.md">KsDisableEvent</a> function when a request to disable an event occurs, or by the <a href="..\ks\nf-ks-ksfreeeventlist.md">KsFreeEventList</a> function when a request to free a list of events occurs. This function can only be called at PASSIVE_LEVEL.
+Typically, the <b>KsDiscardEvent</b> function is automatically called by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561694">KsDisableEvent</a> function when a request to disable an event occurs, or by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562561">KsFreeEventList</a> function when a request to free a list of events occurs. This function can only be called at PASSIVE_LEVEL.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,8 +80,8 @@ Typically, the <b>KsDiscardEvent</b> function is automatically called by the <a 
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksdisableevent.md">KsDisableEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561694">KsDisableEvent</a>
 
 
 
-<a href="..\ks\nf-ks-ksfreeeventlist.md">KsFreeEventList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562561">KsFreeEventList</a>

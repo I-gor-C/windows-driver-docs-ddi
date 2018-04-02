@@ -54,11 +54,13 @@ Instead, Microsoft recommends the use of <a href="https://msdn.microsoft.com/lib
 
 ## Syntax
 
-````
-  StreamClassRegisterAdapter(
-    
+```
+NTSTATUS STREAMAPI StreamClassRegisterAdapter(
+  PVOID                   Argument1,
+  PVOID                   Argument2,
+  PHW_INITIALIZATION_DATA HwInitializationData
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: netvista\ndiswdiopenadaptercomplete.htm
 old-project: netvista
 ms.assetid: FD6FF134-A8D7-433E-9353-88965E67749E
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDIS_WDI_OPEN_ADAPTER_COMPLETE, NdisWdiOpenAdapterComplete, NdisWdiOpenAdapterComplete callback function [Network Drivers Starting with Windows Vista], dot11wdi/NdisWdiOpenAdapterComplete, netvista.ndiswdiopenadaptercomplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,9 +45,9 @@ req.typenames: SYNTH_STATS, *PSYNTH_STATS
 
 
 # NDIS_WDI_OPEN_ADAPTER_COMPLETE callback function
-The NdisWdiOpenAdapterComplete callback function is called by the IHV when an Open Task operation from <a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_open_adapter.md">MiniportWdiOpenAdapter</a> has been successfully started.
+The NdisWdiOpenAdapterComplete callback function is called by the IHV when an Open Task operation from <a href="https://msdn.microsoft.com/C4D09CAD-833A-43A0-AC03-EEDE8270EA12">MiniportWdiOpenAdapter</a> has been successfully started.
 
-This is a control path callback inside <a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_init_parameters.md">NDIS_WDI_INIT_PARAMETERS</a>.
+This is a control path callback inside <a href="https://msdn.microsoft.com/library/windows/hardware/mt297621">NDIS_WDI_INIT_PARAMETERS</a>.
 
 ## Syntax
 
@@ -86,8 +86,8 @@ This callback function does not return a value.
 
 ## See Also
 
-<a href="..\dot11wdi\ns-dot11wdi-_ndis_wdi_init_parameters.md">NDIS_WDI_INIT_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/C4D09CAD-833A-43A0-AC03-EEDE8270EA12">MiniportWdiOpenAdapter</a>
 
 
 
-<a href="..\dot11wdi\nc-dot11wdi-miniport_wdi_open_adapter.md">MiniportWdiOpenAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt297621">NDIS_WDI_INIT_PARAMETERS</a>

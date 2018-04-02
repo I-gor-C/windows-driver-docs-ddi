@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 # _USBSCAN_PIPE_INFORMATION structure
-The USBSCAN_PIPE_INFORMATION structure is used to describe a USB transfer pipe for a still image device. An array of USBSCAN_PIPE_INFORMATION structures is supplied within a <a href="..\usbscan\ns-usbscan-_usbscan_pipe_configuration.md">USBSCAN_PIPE_CONFIGURATION</a> structure.
+The USBSCAN_PIPE_INFORMATION structure is used to describe a USB transfer pipe for a still image device. An array of USBSCAN_PIPE_INFORMATION structures is supplied within a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548541">USBSCAN_PIPE_CONFIGURATION</a> structure.
 
 ## Syntax
-````
+```
 typedef struct _USBSCAN_PIPE_INFORMATION {
-  USHORT        MaximumPacketSize;
-  UCHAR         EndpointAddress;
-  UCHAR         Interval;
+  USHORT        MaximumPacketSize;
+  UCHAR         EndpointAddress;
+  UCHAR         Interval;
   RAW_PIPE_TYPE PipeType;
-} USBSCAN_PIPE_INFORMATION, *PUSBSCAN_PIPE_INFORMATION;
-````
+} *PUSBSCAN_PIPE_INFORMATION, USBSCAN_PIPE_INFORMATION;
+```
 
 ## Members
 
@@ -118,7 +118,7 @@ Polling interval, in milliseconds, for interrupt pipes. For more information, se
 
 `PipeType`
 
-A <a href="..\usbscan\ne-usbscan-_raw_pipe_type.md">RAW_PIPE_TYPE</a>-typed value identifying the pipe type.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff547001">RAW_PIPE_TYPE</a>-typed value identifying the pipe type.
 
 
 ## Requirements
@@ -128,8 +128,8 @@ A <a href="..\usbscan\ne-usbscan-_raw_pipe_type.md">RAW_PIPE_TYPE</a>-typed valu
 
 ## See Also
 
-<a href="..\usbscan\ns-usbscan-_usbscan_pipe_configuration.md">USBSCAN_PIPE_CONFIGURATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547001">RAW_PIPE_TYPE</a>
 
 
 
-<a href="..\usbscan\ne-usbscan-_raw_pipe_type.md">RAW_PIPE_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548541">USBSCAN_PIPE_CONFIGURATION</a>

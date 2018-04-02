@@ -50,17 +50,17 @@ The<b> KsGetNodeIdFromIrp </b>function returns the node ID of the node to which 
 
 ## Syntax
 
-````
-ULONG KsGetNodeIdFromIrp(
-  _In_ PIRP Irp
+```
+KSDDKAPI ULONG KsGetNodeIdFromIrp(
+  PIRP Irp
 );
-````
+```
 
 ## Parameters
 
 `Irp`
 
-A pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure for which to determine the associated node ID. This IRP must have been sent to a file object corresponding to a filter, pin, or node.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a> structure for which to determine the associated node ID. This IRP must have been sent to a file object corresponding to a filter, pin, or node.
 
 
 ## Return Value
@@ -79,16 +79,16 @@ A pointer to the <a href="..\wdm\ns-wdm-_irp.md">IRP</a> structure for which to 
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksforwardirp.md">KsForwardIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>
 
 
 
-<a href="..\ks\nf-ks-ksaddirptocancelablequeue.md">KsAddIrpToCancelableQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560934">KsAddIrpToCancelableQueue</a>
 
 
 
-<a href="..\ks\nf-ks-ksdispatchirp.md">KsDispatchIrp</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561709">KsDispatchIrp</a>
 
 
 
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562557">KsForwardIrp</a>

@@ -47,13 +47,13 @@ req.typenames: HID_DEVICE_EXTENSION, *PHID_DEVICE_EXTENSION
 The HID_DEVICE_EXTENSION structure is used by a HID minidriver as its layout for the device extension of a HIDClass device's functional device object.
 
 ## Syntax
-````
+```
 typedef struct _HID_DEVICE_EXTENSION {
   PDEVICE_OBJECT PhysicalDeviceObject;
   PDEVICE_OBJECT NextDeviceObject;
-  PVOID          MiniDeviceExtension;
-} HID_DEVICE_EXTENSION, *PHID_DEVICE_EXTENSION;
-````
+  PVOID          MiniDeviceExtension;
+} *PHID_DEVICE_EXTENSION, HID_DEVICE_EXTENSION;
+```
 
 ## Members
 
@@ -78,4 +78,4 @@ Pointer to the minidriver-specific portion of the device extension.
 
 ## See Also
 
-<a href="..\hidport\nf-hidport-hidregisterminidriver.md">HidRegisterMinidriver</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539835">HidRegisterMinidriver</a>

@@ -7,7 +7,7 @@ old-location: debugger\getsourcefilelineoffsets.htm
 old-project: debugger
 ms.assetid: ace9e23a-d7ea-480a-8001-f25310adee22
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetSourceFileLineOffsets method [Windows Debugging], GetSourceFileLineOffsets method [Windows Debugging], IDebugSymbols interface, GetSourceFileLineOffsets method [Windows Debugging], IDebugSymbols2 interface, GetSourceFileLineOffsets method [Windows Debugging], IDebugSymbols3 interface, GetSourceFileLineOffsets,IDebugSymbols.GetSourceFileLineOffsets, IDebugSymbols, IDebugSymbols interface [Windows Debugging], GetSourceFileLineOffsets method, IDebugSymbols2 interface [Windows Debugging], GetSourceFileLineOffsets method, IDebugSymbols2::GetSourceFileLineOffsets, IDebugSymbols3 interface [Windows Debugging], GetSourceFileLineOffsets method, IDebugSymbols3::GetSourceFileLineOffsets, IDebugSymbols::GetSourceFileLineOffsets, IDebugSymbols_18a64f21-a082-4953-8d69-2b3f7d805c60.xml, dbgeng/IDebugSymbols2::GetSourceFileLineOffsets, dbgeng/IDebugSymbols3::GetSourceFileLineOffsets, dbgeng/IDebugSymbols::GetSourceFileLineOffsets, debugger.getsourcefilelineoffsets
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,19 +46,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetSourceFileLineOffsets method
+# IDebugSymbols::GetSourceFileLineOffsets method
 The <b>GetSourceFileLineOffsets</b>  method maps each line in a source file to a location in the target's memory.
 
 ## Syntax
 
-````
+```
 HRESULT GetSourceFileLineOffsets(
-  [in]            PCSTR    File,
-  [out, optional] PULONG64 Buffer,
-  [in]            ULONG    BufferLines,
-  [out, optional] PULONG   FileLines
+  PCSTR    File,
+  PULONG64 Buffer,
+  ULONG    BufferLines,
+  PULONG   FileLines
 );
-````
+```
 
 ## Parameters
 
@@ -124,7 +124,7 @@ For more information about using the source path, see <a href="https://msdn.micr
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545423">FindSourceFile</a>
 
 
 
@@ -132,12 +132,12 @@ For more information about using the source path, see <a href="https://msdn.micr
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550856">IDebugSymbols</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550864">IDebugSymbols2</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff545423">FindSourceFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

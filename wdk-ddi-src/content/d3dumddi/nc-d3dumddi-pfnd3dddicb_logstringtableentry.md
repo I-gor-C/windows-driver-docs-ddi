@@ -7,7 +7,7 @@ old-location: display\logmarkerstringtableentry.htm
 old-project: display
 ms.assetid: 54D1F822-2D82-498D-A50F-A917FA127496
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: LogMarkerStringTableEntry, LogMarkerStringTableEntry callback function [Display Devices], PFND3DDDICB_LOGSTRINGTABLEENTRY, d3dumddi/LogMarkerStringTableEntry, display.logmarkerstringtableentry
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.typenames: DXGK_PTE
 
 
 # PFND3DDDICB_LOGSTRINGTABLEENTRY callback function
-Locates a string table entry that is used by the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_logstringtable.md">LogMarkerStringTable</a> function to log an Event Tracing for Windows (ETW) marker event. Optionally implemented by Windows Display Driver Model (WDDM) 1.3 and later drivers.
+Locates a string table entry that is used by the <a href="https://msdn.microsoft.com/DDB42924-5C28-4737-92C1-4FB7A00B09AA">LogMarkerStringTable</a> function to log an Event Tracing for Windows (ETW) marker event. Optionally implemented by Windows Display Driver Model (WDDM) 1.3 and later drivers.
 
 ## Syntax
 
@@ -64,7 +64,7 @@ HRESULT Pfnd3dddicbLogstringtableentry(
 
 `hLog`
 
-A handle to the ETW log that is to be written to. Must be the same <i>hLog</i> handle passed to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_logstringtable.md">LogMarkerStringTable</a> function.
+A handle to the ETW log that is to be written to. Must be the same <i>hLog</i> handle passed to the <a href="https://msdn.microsoft.com/DDB42924-5C28-4737-92C1-4FB7A00B09AA">LogMarkerStringTable</a> function.
 
 `StringIndex`
 
@@ -89,4 +89,4 @@ Returns <b>S_OK</b> or an appropriate error result if the function does not comp
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_logstringtable.md">LogMarkerStringTable</a>
+<a href="https://msdn.microsoft.com/DDB42924-5C28-4737-92C1-4FB7A00B09AA">LogMarkerStringTable</a>

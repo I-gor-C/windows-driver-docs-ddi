@@ -50,13 +50,13 @@ The <b>BdaPropertyPinTypes</b> function retrieves a list of pin types in a templ
 
 ## Syntax
 
-````
+```
 NTSTATUS BdaPropertyPinTypes(
-  _In_  PIRP        Irp,
-  _In_  PKSPROPERTY pKSProperty,
-  _Out_ ULONG       *pulProperty
+  PIRP        pIrp,
+  PKSPROPERTY pKSProperty,
+  ULONG       *pulProperty
 );
-````
+```
 
 ## Parameters
 
@@ -92,12 +92,12 @@ A BDA minidriver calls the <b>BdaPropertyPinTypes</b> function to retrieve the l
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564352">KSPROPERTY_BDA_PIN_TYPES</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566561">KSPROPSETID_BdaTopology</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>

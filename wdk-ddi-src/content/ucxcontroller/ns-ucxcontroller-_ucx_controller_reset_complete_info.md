@@ -7,7 +7,7 @@ old-location: buses\_ucx_controller_reset_complete_info.htm
 old-project: usbref
 ms.assetid: 72935645-0567-4FC9-962C-3E823C08D001
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUCX_CONTROLLER_RESET_COMPLETE_INFO, P_UCX_CONTROLLER_RESET_COMPLETE_INFO, P_UCX_CONTROLLER_RESET_COMPLETE_INFO structure pointer [Buses], UCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO structure [Buses], _UCX_CONTROLLER_RESET_COMPLETE_INFO, buses._ucx_controller_reset_complete_info, ucxcontroller/P_UCX_CONTROLLER_RESET_COMPLETE_INFO, ucxcontroller/_UCX_CONTROLLER_RESET_COMPLETE_INFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 # _UCX_CONTROLLER_RESET_COMPLETE_INFO structure
-Contains information about the operation to reset the controller. This is used by the client driver in its <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_reset.md">EVT_UCX_CONTROLLER_RESET</a> callback function.
+Contains information about the operation to reset the controller. This is used by the client driver in its <a href="https://msdn.microsoft.com/library/windows/hardware/mt187822">EVT_UCX_CONTROLLER_RESET</a> callback function.
 
 ## Syntax
-````
+```
 typedef struct _UCX_CONTROLLER_RESET_COMPLETE_INFO {
-  ULONG                Size;
+  ULONG                Size;
   UCX_CONTROLLER_STATE UcxControllerState;
-  BOOLEAN              UcxCoordinated;
-} UCX_CONTROLLER_RESET_COMPLETE_INFO, *P_UCX_CONTROLLER_RESET_COMPLETE_INFO;
-````
+  BOOLEAN              UcxCoordinated;
+} *PUCX_CONTROLLER_RESET_COMPLETE_INFO, UCX_CONTROLLER_RESET_COMPLETE_INFO;
+```
 
 ## Members
 
@@ -72,7 +72,7 @@ The UCX controller state after reset.
 Indicates if the reset was coordinated with UCX (TRUE) or not (FALSE).
 
 ## Remarks
-This structure is populated by a call to <a href="..\ucxcontroller\nf-ucxcontroller-ucxcontrollerresetcomplete.md">UcxControllerResetComplete</a>.
+This structure is populated by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt188035">UcxControllerResetComplete</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

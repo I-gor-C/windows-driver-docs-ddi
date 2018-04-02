@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetFontRestriction method
+# IPartFont2::GetFontRestriction method
 
 
 ## Syntax
 
-````
+```
 HRESULT GetFontRestriction(
-  [out] EXpsFontRestriction *pRestriction
+  EXpsFontRestriction *pRestriction
 );
-````
+```
 
 ## Parameters
 
@@ -75,4 +75,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\filterpipeline\nn-filterpipeline-ipartfont2.md">IPartFont2</a>
+<a href="https://msdn.microsoft.com/AB1EFF6E-4FF5-413E-A4E4-3EEC47CDEBD4">IPartFont2</a>

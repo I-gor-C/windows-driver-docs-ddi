@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetInt32 method
+# IPrinterPropertyBag::SetInt32 method
 Writes an integer property.
 
 ## Syntax
 
-````
+```
 HRESULT SetInt32(
-  [in] BSTR bstrName,
-  [in] LONG nValue
+  BSTR bstrName,
+  LONG nValue
 );
-````
+```
 
 ## Parameters
 
@@ -90,4 +90,4 @@ A call to set a property on a queue property bag will fail with ERROR_ACCESS_DEN
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>

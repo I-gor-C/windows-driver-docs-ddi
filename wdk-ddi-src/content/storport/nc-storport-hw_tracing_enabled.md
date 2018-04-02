@@ -7,7 +7,7 @@ old-location: storage\hwstortracingenabled.htm
 old-project: storage
 ms.assetid: 2B56A2D3-1FA6-4212-A83C-3C20D826353B
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HW_TRACING_ENABLED, HwStorTracingEnabled, HwStorTracingEnabled routine [Storage Devices], storage.hwstortracingenabled, storport/HwStorTracingEnabled
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -105,4 +105,4 @@ HW_TRACING_ENABLED (
 
 ## See Also
 
-<a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a>

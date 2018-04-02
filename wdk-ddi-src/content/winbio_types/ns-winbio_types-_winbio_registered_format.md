@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The WINBIO_REGISTERED_FORMAT structure specifies a biometric data format.
 
 ## Syntax
-````
+```
 typedef struct _WINBIO_REGISTERED_FORMAT {
   USHORT Owner;
   USHORT Type;
-} WINBIO_REGISTERED_FORMAT, *PWINBIO_REGISTERED_FORMAT;
-````
+} *PWINBIO_REGISTERED_FORMAT, WINBIO_REGISTERED_FORMAT;
+```
 
 ## Members
 

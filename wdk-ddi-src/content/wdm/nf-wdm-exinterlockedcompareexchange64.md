@@ -7,7 +7,7 @@ old-location: kernel\exinterlockedcompareexchange64.htm
 old-project: kernel
 ms.assetid: 7d13ca70-e05a-49e0-8dd8-5ab47b4d8169
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExInterlockedCompareExchange64, ExInterlockedCompareExchange64 routine [Kernel-Mode Driver Architecture], k102_424c24f9-3965-40fd-b02b-f9bf1f7df4ec.xml, kernel.exinterlockedcompareexchange64, wdm/ExInterlockedCompareExchange64
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The <b>ExInterlockedCompareExchange64</b> routine compares one integer variable 
 
 ## Syntax
 
-````
-LONGLONG ExInterlockedCompareExchange64(
-  _Inout_ PLONGLONG   Destination,
-  _In_    PLONGLONG   Exchange,
-  _In_    PLONGLONG   Comparand,
-  _In_    PKSPIN_LOCK Lock
+```
+void ExInterlockedCompareExchange64(
+   Destination,
+   Exchange,
+   Comperand,
+   Lock
 );
-````
+```
 
 ## Parameters
 
@@ -104,12 +104,12 @@ Callers of <b>ExInterlockedCompareExchange64</b> can be running at any IRQL. The
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-interlockedexchange.md">InterlockedExchange</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547853">InterlockedCompareExchange</a>
 
 
 
-<a href="..\wdm\nf-wdm-interlockedexchangeadd.md">InterlockedExchangeAdd</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547892">InterlockedExchange</a>
 
 
 
-<a href="..\wdm\nf-wdm-interlockedcompareexchange.md">InterlockedCompareExchange</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547903">InterlockedExchangeAdd</a>

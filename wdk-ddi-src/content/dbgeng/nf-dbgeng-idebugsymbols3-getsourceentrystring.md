@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols3_getsourceentrystring.htm
 old-project: debugger
 ms.assetid: 4742F6DD-F7D6-4EF4-877B-C02630018C8E
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetSourceEntryString method [Windows Debugging], GetSourceEntryString method [Windows Debugging], IDebugSymbols3 interface, GetSourceEntryString,IDebugSymbols3.GetSourceEntryString, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSourceEntryString method, IDebugSymbols3::GetSourceEntryString, dbgeng/IDebugSymbols3::GetSourceEntryString, debugger.idebugsymbols3_getsourceentrystring
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,26 +44,26 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetSourceEntryString method
+# IDebugSymbols3::GetSourceEntryString method
 Queries symbol information and returns locations in the target's memory.
 
 ## Syntax
 
-````
+```
 HRESULT GetSourceEntryString(
-  [in]            PDEBUG_SYMBOL_SOURCE_ENTRY    Entry,
-  [in]            ULONG                         Which,
-  [out]           _writes_opt_(BufferSize) PSTR Buffer,
-  [in]            ULONG                         BufferSize,
-  [out, optional] PULONG                        StringSize
+  PDEBUG_SYMBOL_SOURCE_ENTRY Entry,
+  ULONG                      Which,
+  PSTR                       Buffer,
+  ULONG                      BufferSize,
+  PULONG                     StringSize
 );
-````
+```
 
 ## Parameters
 
 `Entry`
 
-An entry as a <a href="..\dbgeng\ns-dbgeng-_debug_symbol_source_entry.md">DEBUG_SYMBOL_SOURCE_ENTRY</a> structure.
+An entry as a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541680">DEBUG_SYMBOL_SOURCE_ENTRY</a> structure.
 
 `Which`
 
@@ -97,4 +97,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

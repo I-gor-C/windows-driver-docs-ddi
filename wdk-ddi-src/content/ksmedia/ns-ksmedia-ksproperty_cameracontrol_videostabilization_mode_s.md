@@ -47,12 +47,12 @@ req.typenames: KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, *PKSPROPERTY_
 Describes video stabilization control properties in the <b>PROPSETID_VIDCAP_CAMERACONTROL_VIDEO_STABILIZATION</b> camera control property set. This structure specifies property values that are used in requests to the camera driver.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S {
   ULONG VideoStabilizationMode;
   ULONG Capabilities;
-} KSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S, *PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S;
-````
+}  *PKSPROPERTY_CAMERACONTROL_VIDEOSTABILIZATION_MODE_S;
+```
 
 ## Members
 
@@ -118,7 +118,7 @@ The video stabilization settings specified with this structure affect only the d
 
 ## See Also
 
-<a href="..\ksmedia\ne-ksmedia-ksproperty_cameracontrol_video_stabilization_mode.md">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj151595">KSPROPERTY_CAMERACONTROL_VIDEO_STABILIZATION_MODE</a>
 
 
 

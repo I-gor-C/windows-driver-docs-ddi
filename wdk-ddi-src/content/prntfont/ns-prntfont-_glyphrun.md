@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The GLYPHRUN structure is one of the structures used to define the contents of <a href="https://msdn.microsoft.com/6e643703-ace1-4660-990c-3a9ca735829d">glyph translation table files</a> (.gtt files).
 
 ## Syntax
-````
+```
 typedef struct _GLYPHRUN {
   WCHAR wcLow;
-  WORD  wGlyphCount;
+  WORD  wGlyphCount;
 } GLYPHRUN, *PGLYPHRUN;
-````
+```
 
 ## Members
 
@@ -67,7 +67,7 @@ Specifies a Unicode value representing the first glyph in the glyph run.
 Specifies the number of glyphs represented by the glyph run.
 
 ## Remarks
-A .gtt (glyph translation table) file contains an array of GLYPHRUN structures. Each structure identifies a set of Unicode values for which the printer provides glyphs. The array is described by the <b>IoRunOffset</b> and <b>dwRunCount</b> members of a .gtt file's <a href="..\prntfont\ns-prntfont-_uni_glyphsetdata.md">UNI_GLYPHSETDATA</a> structure.
+A .gtt (glyph translation table) file contains an array of GLYPHRUN structures. Each structure identifies a set of Unicode values for which the printer provides glyphs. The array is described by the <b>IoRunOffset</b> and <b>dwRunCount</b> members of a .gtt file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563597">UNI_GLYPHSETDATA</a> structure.
 
 The GLYPHRUN structures must be defined in ascending order, based on the value of <b>wcLow</b>. Unidrv uses the GLYPHRUN array to generate glyph handles. Unidrv stores these glyph handles in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff570578">WCRUN</a> array within an <a href="https://msdn.microsoft.com/library/windows/hardware/ff565625">FD_GLYPHSET</a> structure.
 
@@ -82,7 +82,7 @@ The GLYPHRUN structures must be defined in ascending order, based on the value o
 
 
 
-<a href="..\prntfont\ns-prntfont-_uni_glyphsetdata.md">UNI_GLYPHSETDATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563597">UNI_GLYPHSETDATA</a>
 
 
 

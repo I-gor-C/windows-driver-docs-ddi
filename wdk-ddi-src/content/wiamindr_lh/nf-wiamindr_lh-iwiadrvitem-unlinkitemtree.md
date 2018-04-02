@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# UnlinkItemTree method
+# IWiaDrvItem::UnlinkItemTree method
 The <b>IWiaDrvItem::UnlinkItemTree</b> method unlinks the driver item tree and releases all items in the tree.
 
 ## Syntax
 
-````
+```
 HRESULT UnlinkItemTree(
-  [in] LONG lFlags
+  LONG __MIDL__IWiaDrvItem0005
 );
-````
+```
 
 ## Parameters
 

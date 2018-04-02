@@ -53,12 +53,12 @@ The co-installer's <b>WdfPreDeviceRemove</b> function performs any operations th
 
 ## Syntax
 
-````
+```
 ULONG WdfPreDeviceRemove(
-  _In_     LPCWSTR InfPath,
-  _In_opt_ LPCWSTR InfSectionName
+  LPCWSTR InfPath,
+  LPCWSTR InfSectionName
 );
-````
+```
 
 ## Parameters
 
@@ -100,4 +100,4 @@ For a code example that uses the <b>WdfPreDeviceRemove</b> function, see the ins
 
 ## See Also
 
-<a href="..\wdfinstaller\nf-wdfinstaller-wdfpostdeviceremove.md">WdfPostDeviceRemove</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548833">WdfPostDeviceRemove</a>

@@ -46,19 +46,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnGetDataFields method
+# ISensorDriver::OnGetDataFields method
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545607">ISensorDriver::OnGetDataFields</a> method retrieves current sensor data.
 
 ## Syntax
 
-````
+```
 HRESULT OnGetDataFields(
-   IWDFFile *                     pClientFile,
-   LPWSTR                         pwszSensorID,
-   IPortableDeviceKeyCollection * pDataFields,
-   IPortableDeviceValues **       ppDataValues
+  IWDFFile                     *pClientFile,
+  LPWSTR                       pwszSensorID,
+  IPortableDeviceKeyCollection *pDataFields,
+  IPortableDeviceValues        **ppDataValues
 );
-````
+```
 
 ## Parameters
 

@@ -47,16 +47,16 @@ req.typenames: IRB_REQ_CONTROL
 This structure contains the fields necessary for the 1394 bus driver to carry out a control request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_CONTROL {
   ULONG ulIoControlCode;
-  PMDL  pInBuffer;
+  PMDL  pInBuffer;
   ULONG ulInBufferLength;
-  PMDL  pOutBuffer;
+  PMDL  pOutBuffer;
   ULONG ulOutBufferLength;
   ULONG BytesReturned;
 } IRB_REQ_CONTROL;
-````
+```
 
 ## Members
 

@@ -55,11 +55,11 @@ The <b>WdfCollectionGetLastItem</b> method returns a handle to the last object t
 
 ## Syntax
 
-````
+```
 WDFOBJECT WdfCollectionGetLastItem(
-  _In_ WDFCOLLECTION Collection
+  WDFCOLLECTION Collection
 );
-````
+```
 
 ## Parameters
 
@@ -109,8 +109,8 @@ lastItem = WdfCollectionGetLastItem(hCollection);</pre>
 
 ## See Also
 
-<a href="..\wdfcollection\nf-wdfcollection-wdfcollectiongetfirstitem.md">WdfCollectionGetFirstItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545763">WdfCollectionGetFirstItem</a>
 
 
 
-<a href="..\wdfcollection\nf-wdfcollection-wdfcollectiongetitem.md">WdfCollectionGetItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545770">WdfCollectionGetItem</a>

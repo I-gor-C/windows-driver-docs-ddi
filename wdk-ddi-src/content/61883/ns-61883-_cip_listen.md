@@ -47,11 +47,11 @@ req.typenames: CIP_LISTEN, *PCIP_LISTEN
 This structure is used for a listen request. The request begins isochronous reception on the specified connection. This request will start capturing CIP packets, whether the packets have frames attached.
 
 ## Syntax
-````
+```
 typedef struct _CIP_LISTEN {
-  HANDLE hConnect;
-} CIP_LISTEN, *PCIP_LISTEN;
-````
+  IN HANDLE hConnect;
+} *PCIP_LISTEN, CIP_LISTEN;
+```
 
 ## Members
 

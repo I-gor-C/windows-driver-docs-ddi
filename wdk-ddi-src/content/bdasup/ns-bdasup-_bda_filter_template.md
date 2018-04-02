@@ -47,13 +47,13 @@ req.typenames: BDA_FILTER_TEMPLATE, *PBDA_FILTER_TEMPLATE
 The BDA_FILTER_TEMPLATE structure describes the template topology for a BDA filter.
 
 ## Syntax
-````
+```
 typedef struct _BDA_FILTER_TEMPLATE {
   const KSFILTER_DESCRIPTOR *pFilterDescriptor;
-  ULONG                     ulcPinPairs;
-  const BDA_PIN_PAIRING     *pPinPairs;
+  ULONG                     ulcPinPairs;
+  const BDA_PIN_PAIRING     *pPinPairs;
 } BDA_FILTER_TEMPLATE, *PBDA_FILTER_TEMPLATE;
-````
+```
 
 ## Members
 
@@ -78,16 +78,16 @@ Array of BDA_PIN_PAIRING structures that describe the topology between a pair of
 
 ## See Also
 
-<a href="..\bdasup\nf-bdasup-bdainitfilter.md">BdaInitFilter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556544">BDA_PIN_PAIRING</a>
 
 
 
-<a href="..\bdasup\ns-bdasup-_bda_pin_pairing.md">BDA_PIN_PAIRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556438">BdaCreateFilterFactory</a>
 
 
 
-<a href="..\bdasup\nf-bdasup-bdacreatefilterfactory.md">BdaCreateFilterFactory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556464">BdaInitFilter</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562553">KSFILTER_DESCRIPTOR</a>

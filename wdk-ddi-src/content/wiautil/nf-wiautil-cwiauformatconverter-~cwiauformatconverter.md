@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# ~CWiauFormatConverter method
+# CWiauFormatConverter::~CWiauFormatConverter method
 The <b>CWiauFormatConverter::~CWiauFormatConverter</b> method is the destructor for the <b>CWiauFormatConverter</b> class.
 
 ## Syntax
 
-````
-void ~CWiauFormatConverter();
-````
+```
+void ~CWiauFormatConverter(
+
+);
+```
 
 ## Parameters
 
@@ -72,8 +74,8 @@ This method does not return a value.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/b30c3336-ddc6-459d-97c4-244ca0b50cfc">CWiauFormatConverter</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540370">CWiauFormatConverter::CWiauFormatConverter</a>
-
-
-
-<a href="..\wiautil\nl-wiautil-cwiauformatconverter.md">CWiauFormatConverter</a>

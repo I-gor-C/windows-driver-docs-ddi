@@ -7,7 +7,7 @@ old-location: kernel\pofxregisterpluginex.htm
 old-project: kernel
 ms.assetid: 68753690-A6DC-46BE-9981-F395B98C3245
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PoFxRegisterPluginEx, PoFxRegisterPluginEx routine [Kernel-Mode Driver Architecture], kernel.pofxregisterpluginex, pepfx/PoFxRegisterPluginEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,19 +50,19 @@ The <b>PoFxRegisterPluginEx</b> routine registers a platform extension plug-in (
 
 ## Syntax
 
-````
-NTSTATUS PoFxRegisterPluginEx(
-  _In_    PPEP_INFORMATION        PepInformation,
-  _In_    ULONGLONG               Flags,
-  _Inout_ PPEP_KERNEL_INFORMATION KernelInformation
+```
+NTKERNELAPI NTSTATUS PoFxRegisterPluginEx(
+  PPEP_INFORMATION        PepInformation,
+  ULONGLONG               Flags,
+  PPEP_KERNEL_INFORMATION KernelInformation
 );
-````
+```
 
 ## Parameters
 
 `PepInformation`
 
-A pointer to a <a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a> structure that contains pointers to one or more callback routines that are implemented by the PEP. These routines handle notifications that are sent to the PEP by PoFx.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt186745">PEP_INFORMATION</a> structure that contains pointers to one or more callback routines that are implemented by the PEP. These routines handle notifications that are sent to the PEP by PoFx.
 
 `Flags`
 
@@ -81,7 +81,7 @@ A set of flag bits for configuring the PEP interface. Set this member to zero or
 
 `KernelInformation`
 
-A pointer to a <a href="..\pep_x\ns-pep_x-_pep_kernel_information_struct_v1.md">PEP_KERNEL_INFORMATION</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt629114">PEP_KERNEL_INFORMATION</a> structure.
 
 
 ## Return Value
@@ -134,7 +134,7 @@ A PEP calls this routine to register itself with PoFx.
 
 A PEP cannot unregister, and cannot register twice. If the PEP must be serviced, the operating system must restart.
 
-The <a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a> routine is similar to <b>PoFxRegisterPluginEx</b>, except that it does not take a <i>Flags</i> parameter.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/mt186873">PoFxRegisterPlugin</a> routine is similar to <b>PoFxRegisterPluginEx</b>, except that it does not take a <i>Flags</i> parameter.
 
 The PEP must call <b>PoFxRegisterPluginEx</b> at IRQL = PASSIVE_LEVEL.
 
@@ -149,12 +149,12 @@ The PEP must call <b>PoFxRegisterPluginEx</b> at IRQL = PASSIVE_LEVEL.
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_information.md">PEP_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186745">PEP_INFORMATION</a>
 
 
 
-<a href="..\pepfx\nf-pepfx-pofxregisterplugin.md">PoFxRegisterPlugin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt629114">PEP_KERNEL_INFORMATION</a>
 
 
 
-<a href="..\pep_x\ns-pep_x-_pep_kernel_information_struct_v1.md">PEP_KERNEL_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186873">PoFxRegisterPlugin</a>

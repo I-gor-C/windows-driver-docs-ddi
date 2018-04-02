@@ -7,7 +7,7 @@ old-location: kernel\rtlupcaseunicodestring.htm
 old-project: kernel
 ms.assetid: fe3c6010-532b-4f3d-b3d3-a1c27d4a05f1
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUpcaseUnicodeString, RtlUpcaseUnicodeString routine [Kernel-Mode Driver Architecture], k109_617db3d7-18d8-46eb-a555-59f99d9cae78.xml, kernel.rtlupcaseunicodestring, ntddk/RtlUpcaseUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>RtlUpcaseUnicodeString</b> routine converts a copy of the source string t
 
 ## Syntax
 
-````
-NTSTATUS RtlUpcaseUnicodeString(
-  _Inout_ PUNICODE_STRING  DestinationString,
-  _In_    PCUNICODE_STRING SourceString,
-  _In_    BOOLEAN          AllocateDestinationString
+```
+NTSYSAPI NTSTATUS RtlUpcaseUnicodeString(
+  PUNICODE_STRING  DestinationString,
+  PCUNICODE_STRING SourceString,
+  BOOLEAN          AllocateDestinationString
 );
-````
+```
 
 ## Parameters
 
@@ -90,8 +90,8 @@ If the operation succeeds, <b>RtlUpcaseUnicodeString</b> returns STATUS_SUCCESS.
 
 ## See Also
 
-<a href="..\wudfwdm\nf-wudfwdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlupcaseunicodechar.md">RtlUpcaseUnicodeChar</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563003">RtlUpcaseUnicodeChar</a>

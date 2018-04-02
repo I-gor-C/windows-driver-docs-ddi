@@ -50,17 +50,17 @@ The<b> KsFilterReleaseProcessingMutex </b>function releases the processing mutex
 
 ## Syntax
 
-````
+```
 void KsFilterReleaseProcessingMutex(
-  _In_ PKSFILTER Filter
+  PKSFILTER Filter
 );
-````
+```
 
 ## Parameters
 
 `Filter`
 
-A pointer to a <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure representing the AVStream filter for which to release the processing mutex.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure representing the AVStream filter for which to release the processing mutex.
 
 
 ## Return Value
@@ -82,4 +82,4 @@ For more AVStream-specific information about mutexes, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfilteracquireprocessingmutex.md">KsFilterAcquireProcessingMutex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562524">KsFilterAcquireProcessingMutex</a>

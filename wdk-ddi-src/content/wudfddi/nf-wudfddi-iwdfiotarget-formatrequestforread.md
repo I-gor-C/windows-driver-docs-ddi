@@ -45,40 +45,40 @@ req.product: Windows 10 or later.
 ---
 
 
-# FormatRequestForRead method
+# IWDFIoTarget::FormatRequestForRead method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>FormatRequestForRead</b> method formats an I/O request object for a read operation.
 
 ## Syntax
 
-````
+```
 HRESULT FormatRequestForRead(
-  [in]           IWDFIoRequest     *pRequest,
-  [in, optional] IWDFFile          *pFile,
-  [in, optional] IWDFMemory        *pOutputMemory,
-  [in, optional] PWDFMEMORY_OFFSET pOutputMemoryOffset,
-  [in, optional] PLONGLONG         DeviceOffset
+  IWDFIoRequest     *pRequest,
+  IWDFFile          *pFile,
+  IWDFMemory        *pOutputMemory,
+  PWDFMEMORY_OFFSET pOutputMemoryOffset,
+  PLONGLONG         DeviceOffset
 );
-````
+```
 
 ## Parameters
 
 `pRequest`
 
-A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a> interface for the request object to format.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558985">IWDFIoRequest</a> interface for the request object to format.
 
 `pFile`
 
-A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a> interface for the file object that is associated with the read request. For the default I/O target, this parameter must be non-NULL.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a> interface for the file object that is associated with the read request. For the default I/O target, this parameter must be non-NULL.
 
 `pOutputMemory`
 
-A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface that is used to access the buffer that is used for the read request. This parameter is optional.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a> interface that is used to access the buffer that is used for the read request. This parameter is optional.
 
 `pOutputMemoryOffset`
 
-A pointer to a <a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a> structure that describes the output memory offset that is used for the read. This parameter is optional.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561398">WDFMEMORY_OFFSET</a> structure that describes the output memory offset that is used for the read. This parameter is optional.
 
 `DeviceOffset`
 
@@ -101,20 +101,20 @@ A pointer to the device offset that is used for the read. This parameter is opti
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiotarget.md">IWDFIoTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a>
 
 
 
-<a href="..\wudfddi_types\ns-wudfddi_types-_wdfmemory_offset.md">WDFMEMORY_OFFSET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558985">IWDFIoRequest</a>
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest.md">IWDFIoRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559170">IWDFIoTarget</a>
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a>
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561398">WDFMEMORY_OFFSET</a>

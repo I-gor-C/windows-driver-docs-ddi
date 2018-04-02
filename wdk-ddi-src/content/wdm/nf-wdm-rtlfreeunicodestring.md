@@ -7,7 +7,7 @@ old-location: kernel\rtlfreeunicodestring.htm
 old-project: kernel
 ms.assetid: 505e2ab7-13c3-4cdd-90ba-a37bb38fe160
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlFreeUnicodeString, RtlFreeUnicodeString routine [Kernel-Mode Driver Architecture], k109_c23e6c5e-d2dd-4b88-8249-5f88ad8482ad.xml, kernel.rtlfreeunicodestring, wdm/RtlFreeUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>RtlFreeUnicodeString</b> routine releases storage that was allocated by <
 
 ## Syntax
 
-````
-VOID RtlFreeUnicodeString(
-  _Inout_ PUNICODE_STRING UnicodeString
+```
+NTSYSAPI VOID RtlFreeUnicodeString(
+  PUNICODE_STRING UnicodeString
 );
-````
+```
 
 ## Parameters
 
@@ -83,8 +83,8 @@ This routine does not release the ANSI string buffer passed to <b>RtlAnsiStringT
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlupcaseunicodestring.md">RtlUpcaseUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561729">RtlAnsiStringToUnicodeString</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlansistringtounicodestring.md">RtlAnsiStringToUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563005">RtlUpcaseUnicodeString</a>

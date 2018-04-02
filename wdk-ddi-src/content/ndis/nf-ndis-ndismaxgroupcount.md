@@ -7,7 +7,7 @@ old-location: netvista\ndismaxgroupcount.htm
 old-project: netvista
 ms.assetid: 080707c5-cf46-4066-a241-684cdae37fee
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMaxGroupCount, NdisMaxGroupCount function [Network Drivers Starting with Windows Vista], ndis/NdisMaxGroupCount, ndis_processor_group_ref_5744be61-71b7-4abc-ad66-30b26558c0ac.xml, netvista.ndismaxgroupcount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,9 +52,11 @@ The
 
 ## Syntax
 
-````
-USHORT NdisMaxGroupCount(void);
-````
+```
+USHORT NdisMaxGroupCount(
+
+);
+```
 
 ## Parameters
 
@@ -72,7 +74,7 @@ NDIS drivers call the
     the local computer system.
 
 To obtain the number of groups that are currently active, call the 
-    <a href="..\ndis\nf-ndis-ndisactivegroupcount.md">NdisActiveGroupCount</a> function.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff560700">NdisActiveGroupCount</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,4 +87,4 @@ To obtain the number of groups that are currently active, call the
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisactivegroupcount.md">NdisActiveGroupCount</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560700">NdisActiveGroupCount</a>

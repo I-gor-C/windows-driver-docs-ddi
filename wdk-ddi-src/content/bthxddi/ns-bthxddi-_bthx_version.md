@@ -47,11 +47,11 @@ req.typenames: BTHX_VERSION, *PBTHX_VERSION
 The BTHX_VERSION structure describes the version or versions that the transport driver supports.
 
 ## Syntax
-````
-struct _BTHX_VERSION {
+```
+typedef struct _BTHX_VERSION {
   ULONG Version;
-};
-````
+} *PBTHX_VERSION, BTHX_VERSION;
+```
 
 ## Members
 

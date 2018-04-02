@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 The <b>WDF_REQUEST_FORWARD_OPTIONS</b> structure contains options for requeuing an I/O request from a child device's I/O queue to the parent device's I/O queue.
 
 ## Syntax
-````
+```
 typedef struct _WDF_REQUEST_FORWARD_OPTIONS {
   ULONG Size;
   ULONG Flags;
-} WDF_REQUEST_FORWARD_OPTIONS, *PWDF_REQUEST_FORWARD_OPTIONS;
-````
+} *PWDF_REQUEST_FORWARD_OPTIONS, WDF_REQUEST_FORWARD_OPTIONS;
+```
 
 ## Members
 
@@ -66,12 +66,12 @@ The size, in bytes, of this structure.
 
 `Flags`
 
-A bitwise OR of <a href="..\wdfrequest\ne-wdfrequest-_wdf_request_forward_options_flags.md">WDF_REQUEST_FORWARD_OPTIONS_FLAGS</a>-typed flags.
+A bitwise OR of <a href="https://msdn.microsoft.com/library/windows/hardware/ff552462">WDF_REQUEST_FORWARD_OPTIONS_FLAGS</a>-typed flags.
 
 ## Remarks
-The <b>WDF_REQUEST_FORWARD_OPTIONS</b> structure is used as input to the <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a> method.
+The <b>WDF_REQUEST_FORWARD_OPTIONS</b> structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549959">WdfRequestForwardToParentDeviceIoQueue</a> method.
 
-Your driver must call <a href="..\wdfrequest\nf-wdfrequest-wdf_request_forward_options_init.md">WDF_REQUEST_FORWARD_OPTIONS_INIT</a> to initialize the <b>WDF_REQUEST_FORWARD_OPTIONS</b> structure before the driver calls <a href="..\wdfrequest\nf-wdfrequest-wdfrequestforwardtoparentdeviceioqueue.md">WdfRequestForwardToParentDeviceIoQueue</a>.
+Your driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff552466">WDF_REQUEST_FORWARD_OPTIONS_INIT</a> to initialize the <b>WDF_REQUEST_FORWARD_OPTIONS</b> structure before the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff549959">WdfRequestForwardToParentDeviceIoQueue</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,4 +81,4 @@ Your driver must call <a href="..\wdfrequest\nf-wdfrequest-wdf_request_forward_o
 
 ## See Also
 
-<a href="..\wdfrequest\ne-wdfrequest-_wdf_request_forward_options_flags.md">WDF_REQUEST_FORWARD_OPTIONS_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552462">WDF_REQUEST_FORWARD_OPTIONS_FLAGS</a>

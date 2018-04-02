@@ -47,12 +47,12 @@ req.typenames: EXpsFontOptions
 The EXpsFontOptions enumeration describes the font options for an XPS part.
 
 ## Syntax
-````
-typedef enum  { 
-  Font_Normal,
+```
+typedef enum __MIDL___MIDL_itf_filterpipeline_0000_0000_0002 {
+  Font_Normal       ,
   Font_Obfusticate
 } EXpsFontOptions;
-````
+```
 
 ## Constants
 

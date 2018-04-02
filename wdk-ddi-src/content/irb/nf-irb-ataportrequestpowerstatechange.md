@@ -7,7 +7,7 @@ old-location: storage\ataportrequestpowerstatechange.htm
 old-project: storage
 ms.assetid: 37cf1552-2cbe-4b80-b220-cfa853674e1b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortRequestPowerStateChange, AtaPortRequestPowerStateChange routine [Storage Devices], irb/AtaPortRequestPowerStateChange, storage.ataportrequestpowerstatechange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The <b>AtaPortRequestPowerStateChange</b> routine requests a power state transit
 
 ## Syntax
 
-````
-VOID AtaPortRequestPowerStateChange(
-   IN PVOID           ChannelExtension,
-   IN UCHAR           TargetId,
-   IN UCHAR           Lun,
-   IN IDE_POWER_STATE DesiredPowerState
+```
+void AtaPortRequestPowerStateChange(
+  PVOID           ChannelExtension,
+  UCHAR           TargetId,
+  UCHAR           Lun,
+  IDE_POWER_STATE DesiredPowerState
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ Specifies the logical unit number (LUN).
 
 `DesiredPowerState`
 
-Contains an enumerator value of type <a href="..\irb\ne-irb-ide_power_state.md">IDE_POWER_STATE</a> that indicates the power state to which the indicated device should be changed.
+Contains an enumerator value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559129">IDE_POWER_STATE</a> that indicates the power state to which the indicated device should be changed.
 
 
 ## Return Value
@@ -97,4 +97,4 @@ The <b>AtaPortRequestPowerStateChange</b> routine is used when a miniport driver
 
 ## See Also
 
-<a href="..\irb\ne-irb-ide_power_state.md">IDE_POWER_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559129">IDE_POWER_STATE</a>

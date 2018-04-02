@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 The SFFDISK_DCMD enumeration identifies the type of Secure Digital (SD) card operation.
 
 ## Syntax
-````
-typedef enum  { 
-  SFFDISK_DC_GET_VERSION     = 0,
-  SFFDISK_DC_LOCK_CHANNEL    = 1,
-  SFFDISK_DC_UNLOCK_CHANNEL  = 2,
-  SFFDISK_DC_DEVICE_COMMAND  = 3
-} SFFDISK_DCMD;
-````
+```
+typedef enum SFFDISK_DCMD {
+  SFFDISK_DC_GET_VERSION     ,
+  SFFDISK_DC_LOCK_CHANNEL    ,
+  SFFDISK_DC_UNLOCK_CHANNEL  ,
+  SFFDISK_DC_DEVICE_COMMAND
+} ;
+```
 
 ## Constants
 

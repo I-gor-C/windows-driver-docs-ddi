@@ -47,11 +47,13 @@ req.typenames:
 This enumeration is not implemented.
 
 ## Syntax
-````
-typedef enum _LineDisplayVerticalBitmapAlignment { 
-    = 
-} LineDisplayVerticalBitmapAlignment;
-````
+```
+typedef enum LineDisplayVerticalBitmapAlignment {
+  VerticalAlignmentTop     ,
+  VerticalAlignmentCenter  ,
+  VerticalAlignmentBottom
+} ;
+```
 
 ## Constants
 

@@ -48,11 +48,11 @@ req.product: Windows 10 or later.
 The PDEV_USE_TRUE_COLOR structure indicates whether the output color space should be color or grayscale.
 
 ## Syntax
-````
+```
 typedef struct _PDEV_USE_TRUE_COLOR {
   BOOL bUseTrueColor;
 } PDEV_USE_TRUE_COLOR;
-````
+```
 
 ## Members
 

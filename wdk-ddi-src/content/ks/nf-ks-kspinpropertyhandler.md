@@ -50,15 +50,15 @@ The <b>KsPinPropertyHandler</b> function performs standard handling of the stati
 
 ## Syntax
 
-````
-NTSTATUS KsPinPropertyHandler(
-  _In_          PIRP             Irp,
-  _In_          PKSPROPERTY      Property,
-  _Inout_       PVOID            Data,
-  _In_          ULONG            DescriptorsCount,
-  _In_    const KSPIN_DESCRIPTOR *Descriptor
+```
+KSDDKAPI NTSTATUS KsPinPropertyHandler(
+  PIRP                   Irp,
+  PKSPROPERTY            Property,
+  PVOID                  Data,
+  ULONG                  DescriptorsCount,
+  const KSPIN_DESCRIPTOR *Descriptor
 );
-````
+```
 
 ## Parameters
 
@@ -72,7 +72,7 @@ Specifies the specific property information.
 
 `Data`
 
-Specifies the data parameter mapped to a system address. This is the same parameter passed to a property handler through a <a href="..\ks\nf-ks-kspropertyhandler.md">KsPropertyHandler</a> callback.
+Specifies the data parameter mapped to a system address. This is the same parameter passed to a property handler through a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564263">KsPropertyHandler</a> callback.
 
 `DescriptorsCount`
 

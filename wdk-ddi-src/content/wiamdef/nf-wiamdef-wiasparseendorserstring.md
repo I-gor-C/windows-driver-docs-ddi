@@ -50,14 +50,14 @@ The <b>wiasParseEndorserString</b> function parses an endorser string, replacing
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasParseEndorserString(
-  _In_      BYTE               *pWiasContext,
-            LONG               lFlags,
-  _Out_opt_ WIAS_ENDORSER_INFO *pInfo,
-  _Out_     BSTR               *pOutputString
+```
+HRESULT wiasParseEndorserString(
+  BYTE               *pWiasContext,
+  LONG               lFlags,
+  WIAS_ENDORSER_INFO *pInfo,
+  BSTR               *pOutputString
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ Reserved for system use and should be set to 0.
 
 `pInfo`
 
-Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_info.md">WIAS_ENDORSER_INFO</a> structure containing the page count and a list of custom token/value pairs. Can be <b>NULL</b>.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549556">WIAS_ENDORSER_INFO</a> structure containing the page count and a list of custom token/value pairs. Can be <b>NULL</b>.
 
 `pOutputString`
 
@@ -88,7 +88,7 @@ An application sets the WIA_DPS_ENDORSER_STRING property to a string that can co
 
 The list of standard WIA endorser tokens can be found in <i>wiadef.h</i>.
 
-Drivers can request that <b>wiasParseEndorserString</b> substitute values for vendor-defined tokens by filling out a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_value.md">WIAS_ENDORSER_VALUE</a> structure for each token/value pair, and packaging all of these structures in a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_info.md">WIAS_ENDORSER_INFO</a> structure. The following example shows how this function can be used.
+Drivers can request that <b>wiasParseEndorserString</b> substitute values for vendor-defined tokens by filling out a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549562">WIAS_ENDORSER_VALUE</a> structure for each token/value pair, and packaging all of these structures in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549556">WIAS_ENDORSER_INFO</a> structure. The following example shows how this function can be used.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -118,8 +118,8 @@ Assuming that the WIA_DPS_ENDORSER_STRING property contains "This is $MY_TOKEN$"
 
 ## See Also
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_value.md">WIAS_ENDORSER_VALUE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549556">WIAS_ENDORSER_INFO</a>
 
 
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_info.md">WIAS_ENDORSER_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549562">WIAS_ENDORSER_VALUE</a>

@@ -7,7 +7,7 @@ old-location: display\dxgkcbhardwarecontentprotectionteardown.htm
 old-project: display
 ms.assetid: 7B12B9AD-2288-4CE0-A4D8-F1C96150CE45
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKCB_HARDWARECONTENTPROTECTIONTEARDOWN, DxgkCbHardwareContentProtectionTeardown, DxgkCbHardwareContentProtectionTeardown callback function [Display Devices], d3dkmddi/DxgkCbHardwareContentProtectionTeardown, display.dxgkcbhardwarecontentprotectionteardown
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ A handle to the graphics adapter where the tear-down event is occurring.
 
 `Flags`
 
-Additional flags defined by <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_hardware_content_protection_teardown_flags.md">DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS</a> enumeration.
+Additional flags defined by <a href="https://msdn.microsoft.com/library/windows/hardware/dn906828">DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS</a> enumeration.
 
 
 ## Return Value
@@ -91,4 +91,4 @@ The driver can call this callback at either passive level or at dispatch level.
 
 ## See Also
 
-<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_hardware_content_protection_teardown_flags.md">DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906828">DXGK_HARDWARE_CONTENT_PROTECTION_TEARDOWN_FLAGS</a>

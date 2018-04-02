@@ -52,12 +52,12 @@ The <b>KsCreateDefaultClock</b> function can only be called at PASSIVE_LEVEL.
 
 ## Syntax
 
-````
-NTSTATUS KsCreateDefaultClock(
-  _In_ PIRP            Irp,
-  _In_ PKSDEFAULTCLOCK DefaultClock
+```
+KSDDKAPI NTSTATUS KsCreateDefaultClock(
+  PIRP            Irp,
+  PKSDEFAULTCLOCK DefaultClock
 );
-````
+```
 
 ## Parameters
 
@@ -87,4 +87,4 @@ The clock can be created after using <b>KsAllocateDefaultClock</b> to create and
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksallocatedefaultclock.md">KsAllocateDefaultClock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560952">KsAllocateDefaultClock</a>

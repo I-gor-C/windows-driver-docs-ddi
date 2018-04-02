@@ -7,7 +7,7 @@ old-location: netvista\ndk_srq_dispatch.htm
 old-project: netvista
 ms.assetid: 13297898-A72B-4771-A022-FDCBC281CEA0
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_SRQ_DISPATCH, NDK_SRQ_DISPATCH structure [Network Drivers Starting with Windows Vista], _NDK_SRQ_DISPATCH, ndkpi/NDK_SRQ_DISPATCH, netvista.ndk_srq_dispatch
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,36 +47,36 @@ req.typenames: NDK_SRQ_DISPATCH
 The <b>NDK_SRQ_DISPATCH</b> structure specifies dispatch function entry points for the NDK shared receive queue (SRQ) object.
 
 ## Syntax
-````
+```
 typedef struct _NDK_SRQ_DISPATCH {
-  NDK_FN_CLOSE_OBJECT              NdkCloseSrq;
+  NDK_FN_CLOSE_OBJECT              NdkCloseSrq;
   NDK_FN_QUERY_EXTENSION_INTERFACE NdkQueryExtension;
-  NDK_FN_MODIFY_SRQ                NdkModifySrq;
-  NDK_FN_SRQ_RECEIVE               NdkSrqReceive;
+  NDK_FN_MODIFY_SRQ                NdkModifySrq;
+  NDK_FN_SRQ_RECEIVE               NdkSrqReceive;
 } NDK_SRQ_DISPATCH;
-````
+```
 
 ## Members
 
 
 `NdkCloseSrq`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a> dispatch function.
+The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439863">NDK_FN_CLOSE_OBJECT</a> dispatch function.
 
 `NdkQueryExtension`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_query_extension_interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a> dispatch function.
+The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439905">NDK_FN_QUERY_EXTENSION_INTERFACE</a> dispatch function.
 
 `NdkModifySrq`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_modify_srq.md">NDK_FN_MODIFY_SRQ</a> dispatch function.
+The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439903">NDK_FN_MODIFY_SRQ</a> dispatch function.
 
 `NdkSrqReceive`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_srq_receive.md">NDK_FN_SRQ_RECEIVE</a> dispatch function.
+The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439916">NDK_FN_SRQ_RECEIVE</a> dispatch function.
 
 ## Remarks
-The <b>NDK_SRQ_DISPATCH</b> structure is used in the <a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a> structure.
+The <b>NDK_SRQ_DISPATCH</b> structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439939">NDK_SRQ</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,20 +86,20 @@ The <b>NDK_SRQ_DISPATCH</b> structure is used in the <a href="..\ndkpi\ns-ndkpi-
 
 ## See Also
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_srq_receive.md">NDK_FN_SRQ_RECEIVE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439863">NDK_FN_CLOSE_OBJECT</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_modify_srq.md">NDK_FN_MODIFY_SRQ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439903">NDK_FN_MODIFY_SRQ</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_srq.md">NDK_SRQ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439905">NDK_FN_QUERY_EXTENSION_INTERFACE</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439916">NDK_FN_SRQ_RECEIVE</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_query_extension_interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439939">NDK_SRQ</a>

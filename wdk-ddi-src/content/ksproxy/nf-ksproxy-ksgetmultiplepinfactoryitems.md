@@ -50,14 +50,14 @@ The <b>KsGetMultiplePinFactoryItems</b> function retrieves pin property items in
 
 ## Syntax
 
-````
-HRESULT KsGetMultiplePinFactoryItems(
-  _In_  HANDLE FilterHandle,
-  _In_  ULONG  PinFactoryId,
-  _In_  ULONG  PropertyId,
-  _Out_ PVOID  *Items
+```
+KSDDKAPI HRESULT KsGetMultiplePinFactoryItems(
+  HANDLE FilterHandle,
+  ULONG  PinFactoryId,
+  ULONG  PropertyId,
+  PVOID  *Items
 );
-````
+```
 
 ## Parameters
 
@@ -97,16 +97,16 @@ For more information about <b>CoTaskMemFree</b>, see the Microsoft Windows SDK d
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559910">IKsPinFactory</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
 
 
 
-<a href="..\ksproxy\nn-ksproxy-ikspinfactory.md">IKsPinFactory</a>
-
-
-
-<a href="..\ks\ns-ks-ksp_pin.md">KSP_PIN</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff566584">KSPROPSETID_Pin</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566722">KSP_PIN</a>

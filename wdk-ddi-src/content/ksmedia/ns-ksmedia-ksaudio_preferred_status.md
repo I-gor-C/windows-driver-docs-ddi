@@ -7,7 +7,7 @@ old-location: audio\ksaudio_preferred_status.htm
 old-project: audio
 ms.assetid: 3191aeff-7324-4c2b-9b64-ddc50a561df5
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PKSAUDIO_PREFERRED_STATUS, KSAUDIO_PREFERRED_STATUS, KSAUDIO_PREFERRED_STATUS structure [Audio Devices], PKSAUDIO_PREFERRED_STATUS, PKSAUDIO_PREFERRED_STATUS structure pointer [Audio Devices], aud-prop_a1287dc0-98ad-4071-be11-41e51b6b4846.xml, audio.ksaudio_preferred_status, ksmedia/KSAUDIO_PREFERRED_STATUS, ksmedia/PKSAUDIO_PREFERRED_STATUS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: KSAUDIO_PREFERRED_STATUS, *PKSAUDIO_PREFERRED_STATUS
 The KSAUDIO_PREFERRED_STATUS structure specifies the status of a preferred device.
 
 ## Syntax
-````
-typedef struct {
-  BOOL                             Enable;
+```
+typedef struct KSAUDIO_PREFERRED_STATUS {
+  BOOL                             Enable;
   KSPROPERTY_SYSAUDIO_DEFAULT_TYPE DeviceType;
-  ULONG                            Flags;
-  ULONG                            Reserved;
-} KSAUDIO_PREFERRED_STATUS, *PKSAUDIO_PREFERRED_STATUS;
-````
+  ULONG                            Flags;
+  ULONG                            Reserved;
+} *PKSAUDIO_PREFERRED_STATUS, KSAUDIO_PREFERRED_STATUS;
+```
 
 ## Members
 

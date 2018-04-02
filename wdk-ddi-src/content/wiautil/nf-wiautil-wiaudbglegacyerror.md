@@ -50,11 +50,12 @@ The <b>wiauDbgLegacyError</b> function logs an error message.
 
 ## Syntax
 
-````
-inline void __stdcall wiauDbgLegacyError(
-   LPCSTR   fmt, ...
+```
+void wiauDbgLegacyError(
+  LPCSTR fmt,
+  ...    
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +74,7 @@ None
 
 ## Remarks
 
-The <b>wiauDbgLegacyError</b> function is identical to the <a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a> function except that the latter function has an additional parameter used to identify the function or method that is active when the function is called.
+The <b>wiauDbgLegacyError</b> function is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549633">wiauDbgError</a> function except that the latter function has an additional parameter used to identify the function or method that is active when the function is called.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,4 +85,4 @@ The <b>wiauDbgLegacyError</b> function is identical to the <a href="..\wiautil\n
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549633">wiauDbgError</a>

@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelcleanup.htm
 old-project: netvista
 ms.assetid: E079527D-1687-4A12-B86E-96C89CE458CE
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VmbChannelCleanup, VmbChannelCleanup function [Network Drivers Starting with Windows Vista], netvista.vmbchannelcleanup, vmbuskernelmodeclientlibapi/VmbChannelCleanup
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,16 +49,15 @@ req.product: Windows 10 or later.
 # VmbChannelCleanup function
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
-The <b>VmbChannelCleanup</b> function disposes of a channel that was allocated by using the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelallocate.md">VmbChannelAllocate</a> function  or initialized by using a  VMBus channel initialization function.
+The <b>VmbChannelCleanup</b> function disposes of a channel that was allocated by using the <a href="https://msdn.microsoft.com/97169CF5-566E-4EF6-88AD-7B68E9FE46EC">VmbChannelAllocate</a> function  or initialized by using a  VMBus channel initialization function.
 
 ## Syntax
 
-````
-VOID VmbChannelCleanup(
-  _In_ __drv_freesMem(Mem) VMBCHANNEL Channel
-    
+```
+void VmbChannelCleanup(
+  __drv_freesMem(Mem)VMBCHANNEL Channel
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +72,7 @@ This function does not return a value.
 
 ## Remarks
 
-If the channel was allocated by <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelallocate.md">VmbChannelAllocate</a>, <b>VmbChannelCleanup</b> also releases the channel. 
+If the channel was allocated by <a href="https://msdn.microsoft.com/97169CF5-566E-4EF6-88AD-7B68E9FE46EC">VmbChannelAllocate</a>, <b>VmbChannelCleanup</b> also releases the channel. 
 
 Before you call this function, the channel must be disabled.
 
@@ -89,4 +88,4 @@ Before you call this function, the channel must be disabled.
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelallocate.md">VmbChannelAllocate</a>
+<a href="https://msdn.microsoft.com/97169CF5-566E-4EF6-88AD-7B68E9FE46EC">VmbChannelAllocate</a>

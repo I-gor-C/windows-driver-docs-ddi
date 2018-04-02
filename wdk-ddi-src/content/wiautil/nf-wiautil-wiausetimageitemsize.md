@@ -50,16 +50,16 @@ The <b>wiauSetImageItemSize</b> function calculates the size and width, in bytes
 
 ## Syntax
 
-````
-HRESULT _stdcall wiauSetImageItemSize(
-  _In_     BYTE          *pWiasContext,
-           LONG          lWidth,
-           LONG          lHeight,
-           LONG          lDepth,
-           LONG          lSize,
-  _In_opt_ PWSTR pwszExt pwszExt
+```
+HRESULT wiauSetImageItemSize(
+  BYTE  *pWiasContext,
+  LONG  lWidth,
+  LONG  lHeight,
+  LONG  lDepth,
+  LONG  lSize,
+  PWSTR pwszExt
 );
-````
+```
 
 ## Parameters
 

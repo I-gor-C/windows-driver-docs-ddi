@@ -7,7 +7,7 @@ old-location: kernel\psgetcurrentthreadid.htm
 old-project: kernel
 ms.assetid: c4da1dcb-435d-4e32-8114-3b0ae4352000
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsGetCurrentThreadId, PsGetCurrentThreadId routine [Kernel-Mode Driver Architecture], k108_eae0d8bf-f2fe-49dd-b3b7-6da9114f844a.xml, kernel.psgetcurrentthreadid, ntddk/PsGetCurrentThreadId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,9 +49,11 @@ The <b>PsGetCurrentThreadId</b> routine identifies the current thread.
 
 ## Syntax
 
-````
-HANDLE PsGetCurrentThreadId(void);
-````
+```
+NTKERNELAPI HANDLE PsGetCurrentThreadId(
+
+);
+```
 
 ## Parameters
 
@@ -74,16 +76,16 @@ The <b>PsGetCurrentThreadId</b> routine returns the thread ID of the current thr
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-psgetcurrentprocessid.md">PsGetCurrentProcessId</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552084">KeGetCurrentThread</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-pssetcreatethreadnotifyroutine.md">PsSetCreateThreadNotifyRoutine</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559935">PsGetCurrentProcessId</a>
 
 
 
-<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559936">PsGetCurrentThread</a>
 
 
 
-<a href="..\wdm\nf-wdm-kegetcurrentthread.md">KeGetCurrentThread</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559954">PsSetCreateThreadNotifyRoutine</a>

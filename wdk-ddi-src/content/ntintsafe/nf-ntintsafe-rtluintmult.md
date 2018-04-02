@@ -7,7 +7,7 @@ old-location: kernel\rtluintmult.htm
 old-project: kernel
 ms.assetid: 9972BC53-3CFB-4649-9C54-B194039D804F
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUIntMult, RtlUIntMult function [Kernel-Mode Driver Architecture], kernel.rtluintmult, ntintsafe/RtlUIntMult
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ Multiplies one value of type <b>UINT</b> by another.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlUIntMult(
-  _In_  UINT uMultiplicand,
-  _In_  UINT uMultiplier,
-  _Out_ UINT *puResult
+  UINT uMultiplicand,
+  UINT uMultiplier,
+  UINT *puResult
 );
-````
+```
 
 ## Parameters
 

@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# RawWriteData method
+# IStiDevice::RawWriteData method
 The <b>IStiDevice::RawWriteData</b> method writes data to a still image device.
 
 ## Syntax
 
-````
+```
 HRESULT RawWriteData(
-  [in]           LPVOID       lpBuffer,
-                 DWORD        nNumberOfBytes,
-  [in, optional] LPOVERLAPPED lpOverlapped
+  LPVOID       lpBuffer,
+  DWORD        nNumberOfBytes,
+  LPOVERLAPPED lpOverlapped
 );
-````
+```
 
 ## Parameters
 
@@ -93,8 +93,8 @@ A call to <b>IStiDevice::RawWriteData</b> must be preceded by a call to <a href=
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff543762">IStiDevice::RawWriteCommand</a>
-
-
-
 <a href="https://msdn.microsoft.com/86ce412e-007b-4ea9-9c09-766eee543852">IStiDevice</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543762">IStiDevice::RawWriteCommand</a>

@@ -7,7 +7,7 @@ old-location: debugger\idebugclient6_seteventcontextcallbacks.htm
 old-project: debugger
 ms.assetid: 246573DB-5FEB-4068-8DB8-950F5EDFD1A9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugClient6, IDebugClient6 interface [Windows Debugging], SetEventContextCallbacks method, IDebugClient6::SetEventContextCallbacks, SetEventContextCallbacks method [Windows Debugging], SetEventContextCallbacks method [Windows Debugging], IDebugClient6 interface, SetEventContextCallbacks,IDebugClient6.SetEventContextCallbacks, dbgeng/IDebugClient6::SetEventContextCallbacks, debugger.idebugclient6_seteventcontextcallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# SetEventContextCallbacks method
+# IDebugClient6::SetEventContextCallbacks method
 Registers an event callbacks object with this client.
 
 ## Syntax
 
-````
+```
 HRESULT SetEventContextCallbacks(
-  [in, optional] PDEBUG_EVENT_CONTEXT_CALLBACKS Callbacks
-
+  PDEBUG_EVENT_CONTEXT_CALLBACKS Callbacks
 );
-````
+```
 
 ## Parameters
 
@@ -78,8 +77,8 @@ This event interface replaces the use of <a href="https://msdn.microsoft.com/c74
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/9F8DFF33-DE07-4061-9A9E-3C8172F75EB5">IDebugClient6</a>
+
+
+
 <a href="https://msdn.microsoft.com/c741777b-dfaf-42b0-9dd7-6678281b6359">IDebugClient::SetEventCallbacks</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugclient6.md">IDebugClient6</a>

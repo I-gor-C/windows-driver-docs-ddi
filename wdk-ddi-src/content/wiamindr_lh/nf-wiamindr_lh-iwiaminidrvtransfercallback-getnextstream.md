@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetNextStream method
+# IWiaMiniDrvTransferCallback::GetNextStream method
 Called by the WIA mini-driver to obtain a stream for the current data transfer (download or upload).
 
 ## Syntax
 
-````
+```
 HRESULT GetNextStream(
-  [in]  LONG    lFlags,
-  [in]  BSTR    bstrItemName,
-  [in]  BSTR    bstrFullItemName,
-  [out] IStream **ppIStream
+  LONG    lFlags,
+  BSTR    bstrItemName,
+  BSTR    bstrFullItemName,
+  IStream **ppIStream
 );
-````
+```
 
 ## Parameters
 
@@ -97,20 +97,20 @@ When the current transfer sequence is cancelled, the <b>GetNextStream</b> method
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551561">WIA_IPA_FULL_ITEM_NAME</a>
-
-
-
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrvtransfercallback.md">IWiaMiniDrvTransferCallback</a>
-
-
-
 <a href="https://msdn.microsoft.com/0cdc02bf-23fe-4122-8d5f-f42c3c07da8b">Cancellation of Data Transfers in Windows Vista</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551590">WIA_IPA_ITEM_NAME</a>
-
-
-
 <a href="https://msdn.microsoft.com/83817277-3526-4f64-8e7c-7e02c8cd77bd">Data Transfer Between Legacy Application and Windows Vista Driver</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj151550">IWiaMiniDrvTransferCallback</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551561">WIA_IPA_FULL_ITEM_NAME</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551590">WIA_IPA_ITEM_NAME</a>

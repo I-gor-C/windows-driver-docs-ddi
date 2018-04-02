@@ -7,7 +7,7 @@ old-location: kernel\psremoveloadimagenotifyroutine.htm
 old-project: kernel
 ms.assetid: 5491f9fb-8f87-41ed-9629-18318554ad90
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsRemoveLoadImageNotifyRoutine, PsRemoveLoadImageNotifyRoutine routine [Kernel-Mode Driver Architecture], k108_50aeae5b-9276-4e93-8192-70a51bd87ab4.xml, kernel.psremoveloadimagenotifyroutine, ntddk/PsRemoveLoadImageNotifyRoutine
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,21 +45,21 @@ req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 
 
 # PsRemoveLoadImageNotifyRoutine function
-The <b>PsRemoveLoadImageNotifyRoutine</b> routine removes a callback routine that was registered by the <a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a> routine.
+The <b>PsRemoveLoadImageNotifyRoutine</b> routine removes a callback routine that was registered by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559957">PsSetLoadImageNotifyRoutine</a> routine.
 
 ## Syntax
 
-````
-NTSTATUS PsRemoveLoadImageNotifyRoutine(
-  _In_ PLOAD_IMAGE_NOTIFY_ROUTINE NotifyRoutine
+```
+NTKERNELAPI NTSTATUS PsRemoveLoadImageNotifyRoutine(
+  PLOAD_IMAGE_NOTIFY_ROUTINE NotifyRoutine
 );
-````
+```
 
 ## Parameters
 
 `NotifyRoutine`
 
-Pointer to the callback routine that the driver has previously registered through <a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>.
+Pointer to the callback routine that the driver has previously registered through <a href="https://msdn.microsoft.com/library/windows/hardware/ff559957">PsSetLoadImageNotifyRoutine</a>.
 
 
 ## Return Value
@@ -82,4 +82,4 @@ If the driver's callback routine is currently running, <b>PsRemoveLoadImageNotif
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-pssetloadimagenotifyroutine.md">PsSetLoadImageNotifyRoutine</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559957">PsSetLoadImageNotifyRoutine</a>

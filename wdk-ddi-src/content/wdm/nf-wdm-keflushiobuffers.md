@@ -7,7 +7,7 @@ old-location: kernel\keflushiobuffers.htm
 old-project: kernel
 ms.assetid: 76954a20-7cd7-454b-a965-8c3f0cdb6e8f
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeFlushIoBuffers, KeFlushIoBuffers routine [Kernel-Mode Driver Architecture], k105_265e110c-5dad-444c-a97d-6693d7996c51.xml, kernel.keflushiobuffers, wdm/KeFlushIoBuffers
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>KeFlushIoBuffers</b> routine flushes the memory region described by an MD
 
 ## Syntax
 
-````
-VOID KeFlushIoBuffers(
-  _In_ PMDL    Mdl,
-  _In_ BOOLEAN ReadOperation,
-  _In_ BOOLEAN DmaOperation
+```
+void KeFlushIoBuffers(
+  PMDL    Mdl,
+  BOOLEAN ReadOperation,
+  BOOLEAN DmaOperation
 );
-````
+```
 
 ## Parameters
 
@@ -107,4 +107,4 @@ For more information, see the following topics:
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-pflush_adapter_buffers.md">FlushAdapterBuffers</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545917">FlushAdapterBuffers</a>

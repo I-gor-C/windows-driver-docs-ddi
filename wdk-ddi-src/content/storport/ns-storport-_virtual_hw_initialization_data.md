@@ -7,7 +7,7 @@ old-location: storage\virtual_hw_initialization_data.htm
 old-project: storage
 ms.assetid: 10e7e097-ed84-4200-b7b6-6a838a058fd2
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PVIRTUAL_HW_INITIALIZATION_DATA, PVIRTUAL_HW_INITIALIZATION_DATA, PVIRTUAL_HW_INITIALIZATION_DATA structure pointer [Storage Devices], VIRTUAL_HW_INITIALIZATION_DATA, VIRTUAL_HW_INITIALIZATION_DATA structure [Storage Devices], _VIRTUAL_HW_INITIALIZATION_DATA, storage.virtual_hw_initialization_data, storport/PVIRTUAL_HW_INITIALIZATION_DATA, storport/VIRTUAL_HW_INITIALIZATION_DATA, structs-virtual_afc3c543-a34f-4853-b67b-06d57d0350b6.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,45 +48,45 @@ req.product: Windows 10 or later.
 The <b>VIRTUAL_HW_INITIALIZATION_DATA</b> structure contains information particular to each virtual miniport driver.
 
 ## Syntax
-````
+```
 typedef struct _VIRTUAL_HW_INITIALIZATION_DATA {
-  ULONG                       HwInitializationDataSize;
-  INTERFACE_TYPE              AdapterInterfaceType;
-  PHW_INITIALIZE              HwInitialize;
-  PHW_STARTIO                 HwStartIo;
-  PHW_INTERRUPT               HwInterrupt;
-  PVIRTUAL_HW_FIND_ADAPTER    HwFindAdapter;
-  PHW_RESET_BUS               HwResetBus;
-  PHW_DMA_STARTED             HwDmaStarted;
-  PHW_ADAPTER_STATE           HwAdapterState;
-  ULONG                       DeviceExtensionSize;
-  ULONG                       SpecificLuExtensionSize;
-  ULONG                       SrbExtensionSize;
-  ULONG                       NumberOfAccessRanges;
-  PVOID                       Reserved;
-  UCHAR                       MapBuffers;
-  BOOLEAN                     NeedPhysicalAddresses;
-  BOOLEAN                     TaggedQueuing;
-  BOOLEAN                     AutoRequestSense;
-  BOOLEAN                     MultipleRequestPerLu;
-  BOOLEAN                     ReceiveEvent;
-  USHORT                      VendorIdLength;
-  PVOID                       VendorId;
+  ULONG                       HwInitializationDataSize;
+  INTERFACE_TYPE              AdapterInterfaceType;
+  PHW_INITIALIZE              HwInitialize;
+  PHW_STARTIO                 HwStartIo;
+  PHW_INTERRUPT               HwInterrupt;
+  PVIRTUAL_HW_FIND_ADAPTER    HwFindAdapter;
+  PHW_RESET_BUS               HwResetBus;
+  PHW_DMA_STARTED             HwDmaStarted;
+  PHW_ADAPTER_STATE           HwAdapterState;
+  ULONG                       DeviceExtensionSize;
+  ULONG                       SpecificLuExtensionSize;
+  ULONG                       SrbExtensionSize;
+  ULONG                       NumberOfAccessRanges;
+  PVOID                       Reserved;
+  UCHAR                       MapBuffers;
+  BOOLEAN                     NeedPhysicalAddresses;
+  BOOLEAN                     TaggedQueuing;
+  BOOLEAN                     AutoRequestSense;
+  BOOLEAN                     MultipleRequestPerLu;
+  BOOLEAN                     ReceiveEvent;
+  USHORT                      VendorIdLength;
+  PVOID                       VendorId;
   union {
-    USHORT ReservedUshort;
     USHORT PortVersionFlags;
+    USHORT ReservedUshort;
   };
-  USHORT                      DeviceIdLength;
-  PVOID                       DeviceId;
-  PHW_ADAPTER_CONTROL         HwAdapterControl;
-  PHW_BUILDIO                 HwBuildIo;
-  PHW_FREE_ADAPTER_RESOURCES  HwFreeAdapterResources;
+  USHORT                      DeviceIdLength;
+  PVOID                       DeviceId;
+  PHW_ADAPTER_CONTROL         HwAdapterControl;
+  PHW_BUILDIO                 HwBuildIo;
+  PHW_FREE_ADAPTER_RESOURCES  HwFreeAdapterResources;
   PHW_PROCESS_SERVICE_REQUEST HwProcessServiceRequest;
-  PHW_COMPLETE_SERVICE_IRP    HwCompleteServiceIrp;
-  PHW_INITIALIZE_TRACING      HwInitializeTracing;
-  PHW_CLEANUP_TRACING         HwCleanupTracing;
-} VIRTUAL_HW_INITIALIZATION_DATA, *PVIRTUAL_HW_INITIALIZATION_DATA;
-````
+  PHW_COMPLETE_SERVICE_IRP    HwCompleteServiceIrp;
+  PHW_INITIALIZE_TRACING      HwInitializeTracing;
+  PHW_CLEANUP_TRACING         HwCleanupTracing;
+} *PVIRTUAL_HW_INITIALIZATION_DATA, VIRTUAL_HW_INITIALIZATION_DATA;
+```
 
 ## Members
 
@@ -101,11 +101,11 @@ The Storport driver does not support legacy buses. Therefore, most of the adapte
 
 `HwInitialize`
 
-A pointer to the virtual miniport driver's <a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a> routine, which is a required entry point for all virtual miniport drivers.
+A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a> routine, which is a required entry point for all virtual miniport drivers.
 
 `HwStartIo`
 
-A pointer to the virtual miniport driver's <a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a> routine, which is a required entry point for all virtual miniport drivers.
+A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557423">HwStorStartIo</a> routine, which is a required entry point for all virtual miniport drivers.
 
 `HwInterrupt`
 
@@ -117,7 +117,7 @@ A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/l
 
 `HwResetBus`
 
-A pointer to the virtual miniport driver's <a href="..\storport\nc-storport-hw_reset_bus.md">HwStorResetBus</a> routine, which is a required entry point for all virtual miniport drivers.
+A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557415">HwStorResetBus</a> routine, which is a required entry point for all virtual miniport drivers.
 
 `HwDmaStarted`
 
@@ -189,7 +189,7 @@ The device identifier.
 
 `HwAdapterControl`
 
-A pointer to the virtual miniport driver's <a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a> routine.
+A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a> routine.
 
 `HwBuildIo`
 
@@ -216,7 +216,7 @@ A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/l
 A pointer to the virtual miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557372">HwStorCleanupTracing</a> routine.
 
 ## Remarks
-If a virtual miniport driver will execute only on Windows 8 or later, the driver should use the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure instead of <b>VIRTUAL_HW_INITIALIZATION_DATA</b>.
+If a virtual miniport driver will execute only on Windows 8 or later, the driver should use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a> structure instead of <b>VIRTUAL_HW_INITIALIZATION_DATA</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -225,23 +225,7 @@ If a virtual miniport driver will execute only on Windows 8 or later, the drive
 
 ## See Also
 
-<a href="..\storport\nc-storport-hw_initialize.md">HwStorInitialize</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a>
-
-
-
-<a href="..\storport\nc-storport-hw_startio.md">HwStorStartIo</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557392">HwStorFreeAdapterResources</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff557402">HwStorInitializeTracing</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557365">HwStorAdapterControl</a>
 
 
 
@@ -249,16 +233,32 @@ If a virtual miniport driver will execute only on Windows 8 or later, the drive
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff568008">VirtualHwStorFindAdapter</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557379">HwStorCompleteServiceIrp</a>
 
 
 
-<a href="..\storport\nc-storport-hw_reset_bus.md">HwStorResetBus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557392">HwStorFreeAdapterResources</a>
 
 
 
-<a href="..\storport\nc-storport-hw_adapter_control.md">HwStorAdapterControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557396">HwStorInitialize</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557402">HwStorInitializeTracing</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557410">HwStorProcessServiceRequest</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557415">HwStorResetBus</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557423">HwStorStartIo</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568008">VirtualHwStorFindAdapter</a>

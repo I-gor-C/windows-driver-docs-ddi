@@ -47,13 +47,13 @@ req.typenames: KSPROPERTY_CROSSBAR_CAPS_S, *PKSPROPERTY_CROSSBAR_CAPS_S
 The KSPROPERTY_CROSSBAR_CAPS_S structure describes the crossbar capabilities for a device.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_CROSSBAR_CAPS_S {
   KSPROPERTY Property;
-  ULONG      NumberOfInputs;
-  ULONG      NumberOfOutputs;
-} KSPROPERTY_CROSSBAR_CAPS_S, *PKSPROPERTY_CROSSBAR_CAPS_S;
-````
+  ULONG      NumberOfInputs;
+  ULONG      NumberOfOutputs;
+} *PKSPROPERTY_CROSSBAR_CAPS_S, KSPROPERTY_CROSSBAR_CAPS_S;
+```
 
 ## Members
 

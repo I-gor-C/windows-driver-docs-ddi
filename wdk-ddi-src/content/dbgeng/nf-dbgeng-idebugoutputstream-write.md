@@ -7,7 +7,7 @@ old-location: debugger\idebugoutputstream_write.htm
 old-project: debugger
 ms.assetid: CC609DA8-9778-4AFC-9205-5F68AF15927C
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugOutputStream, IDebugOutputStream interface [Windows Debugging], Write method, IDebugOutputStream::Write, Write method [Windows Debugging], Write method [Windows Debugging], IDebugOutputStream interface, Write,IDebugOutputStream.Write, dbgeng/IDebugOutputStream::Write, debugger.idebugoutputstream_write
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# Write method
+# IDebugOutputStream::Write method
 Writes to the debug output stream.
 
 ## Syntax
 
-````
+```
 HRESULT Write(
-  [in] PCWSTR psz
+  PCWSTR psz
 );
-````
+```
 
 ## Parameters
 
@@ -75,4 +75,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugoutputstream.md">IDebugOutputStream</a>
+<a href="https://msdn.microsoft.com/7A9AB25B-2B8B-4E8A-9E67-79C56181E5D9">IDebugOutputStream</a>

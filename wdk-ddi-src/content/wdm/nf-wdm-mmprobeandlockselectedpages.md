@@ -7,7 +7,7 @@ old-location: kernel\mmprobeandlockselectedpages_.htm
 old-project: kernel
 ms.assetid: 1DA632FF-FD5F-4C4C-8B8E-5AC26069094A
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: MmProbeAndLockSelectedPages, MmProbeAndLockSelectedPages routine [Kernel-Mode Driver Architecture], kernel.mmprobeandlockselectedpages_, wdm/MmProbeAndLockSelectedPages
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The <b>MmProbeAndLockSelectedPages</b> routine probes the selected virtual memor
 
 ## Syntax
 
-````
-VOID MmProbeAndLockSelectedPages (
-  _Inout_ PMDLX                 MemoryDescriptorList,
-  _In_    PFILE_SEGMENT_ELEMENT SegmentArray,
-  _In_    KPROCESSOR_MODE       AccessMode,
-  _In_    LOCK_OPERATION        Operation
+```
+NTKERNELAPI VOID MmProbeAndLockSelectedPages(
+  PMDL                  MemoryDescriptorList,
+  PFILE_SEGMENT_ELEMENT SegmentArray,
+  KPROCESSOR_MODE       AccessMode,
+  LOCK_OPERATION        Operation
 );
-````
+```
 
 ## Parameters
 
@@ -96,4 +96,4 @@ Calls to <b>MmProbeAndLockSelectedPages</b> must be enclosed in a <b>try/except<
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmprobeandlockpages.md">MmProbeAndLockPages</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554664">MmProbeAndLockPages</a>

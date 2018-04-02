@@ -45,22 +45,22 @@ req.typenames:
 
 
 # KsPinRegisterAggregatedClientUnknown function
-This inline function is a wrapper for <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>.
+This inline function is a wrapper for <a href="https://msdn.microsoft.com/library/windows/hardware/ff566767">KsRegisterAggregatedClientUnknown</a>.
 
 ## Syntax
 
-````
-PUNKNOWN __inline KsPinRegisterAggregatedClientUnknown(
-  _In_ PKSPIN   Pin,
-  _In_ PUNKNOWN ClientUnknown
+```
+PUNKNOWN KsPinRegisterAggregatedClientUnknown(
+  PKSPIN   Pin,
+  PUNKNOWN ClientUnknown
 );
-````
+```
 
 ## Parameters
 
 `Pin`
 
-A pointer to a <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure.
 
 `ClientUnknown`
 
@@ -73,7 +73,7 @@ A pointer to an <b>IUnknown</b> interface.
 
 ## Remarks
 
-This inline function only performs a typecast and then calls <a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>.
+This inline function only performs a typecast and then calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff566767">KsRegisterAggregatedClientUnknown</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,4 +84,4 @@ This inline function only performs a typecast and then calls <a href="..\ks\nf-k
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksregisteraggregatedclientunknown.md">KsRegisterAggregatedClientUnknown</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566767">KsRegisterAggregatedClientUnknown</a>

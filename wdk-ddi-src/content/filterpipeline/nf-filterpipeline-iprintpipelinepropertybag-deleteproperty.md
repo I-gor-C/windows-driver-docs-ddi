@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# DeleteProperty method
+# IPrintPipelinePropertyBag::DeleteProperty method
 The <code>DeleteProperty</code> method deletes a property from a property bag.
 
 ## Syntax
 
-````
+```
 BOOL DeleteProperty(
-  [in] const wchar_t *pszName
+  const wchar_t *pszName
 );
-````
+```
 
 ## Parameters
 

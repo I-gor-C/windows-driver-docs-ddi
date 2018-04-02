@@ -122,8 +122,8 @@ In WDM audio, the target for an event request is either a pin instance or a node
 
 ## See Also
 
-<a href="..\portcls\ns-portcls-__unnamed_struct_0cb6_6.md">PCAUTOMATION_TABLE</a>
-
-
-
 <a href="..\portcls\ns-portcls-_pcevent_request.md">PCEVENT_REQUEST</a>
+
+
+
+<a href="..\portcls\ns-portcls-__unnamed_struct_0cb6_6.md">PCAUTOMATION_TABLE</a>

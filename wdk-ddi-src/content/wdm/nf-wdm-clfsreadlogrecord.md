@@ -7,7 +7,7 @@ old-location: kernel\clfsreadlogrecord.htm
 old-project: kernel
 ms.assetid: 9bc64d00-3590-4bc2-aa1f-0d50bb0e628d
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsReadLogRecord, ClfsReadLogRecord routine [Kernel-Mode Driver Architecture], Clfs_e829153c-541e-463a-9ff3-85200929e3d2.xml, kernel.clfsreadlogrecord, wdm/ClfsReadLogRecord
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,33 +51,33 @@ The <b>ClfsReadLogRecord</b> routine reads a target record in a CLFS stream and 
 
 ## Syntax
 
-````
-NTSTATUS ClfsReadLogRecord(
-  _In_    PVOID             pvMarshalContext,
-  _Inout_ PCLFS_LSN         plsnFirst,
-  _In_    CLFS_CONTEXT_MODE peContextMode,
-  _Out_   PVOID             *ppvReadBuffer,
-  _Out_   PULONG            pcbReadBuffer,
-  _Out_   PCLFS_RECORD_TYPE peRecordType,
-  _Out_   PCLFS_LSN         plsnUndoNext,
-  _Out_   PCLFS_LSN         plsnPrevious,
-  _Out_   PVOID             *ppvReadContext
+```
+CLFSUSER_API NTSTATUS ClfsReadLogRecord(
+  PVOID             pvMarshalContext,
+  PCLFS_LSN         plsnFirst,
+  CLFS_CONTEXT_MODE peContextMode,
+  PVOID             *ppvReadBuffer,
+  PULONG            pcbReadBuffer,
+  PCLFS_RECORD_TYPE peRecordType,
+  PCLFS_LSN         plsnUndoNext,
+  PCLFS_LSN         plsnPrevious,
+  PVOID             *ppvReadContext
 );
-````
+```
 
 ## Parameters
 
 `pvMarshalContext`
 
-A pointer to an opaque context that represents a marshalling area. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.
+A pointer to an opaque context that represents a marshalling area. The caller previously obtained this pointer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541520">ClfsCreateMarshallingArea</a>.
 
 `plsnFirst`
 
-A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that supplies the LSN of the target record in the log.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a> structure that supplies the LSN of the target record in the log.
 
 `peContextMode`
 
-A value from the <a href="..\wdm\ne-wdm-_clfs_context_mode.md">CLFS_CONTEXT_MODE</a> enumeration that specifies the initial mode (ClfsContextUndoNext, ClfsContextPrevious, or ClfsContextForward) of the read context returned in <i>ppvReadContext</i>.
+A value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541783">CLFS_CONTEXT_MODE</a> enumeration that specifies the initial mode (ClfsContextUndoNext, ClfsContextPrevious, or ClfsContextForward) of the read context returned in <i>ppvReadContext</i>.
 
 `ppvReadBuffer`
 
@@ -128,7 +128,7 @@ A pointer to a <b>CLFS_LSN</b> structure that receives the previous LSN of the t
 
 `ppvReadContext`
 
-A pointer to a variable that receives a pointer to an opaque read context. The client repeatedly passes this context to  <a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a> to read the remaining records in a sequence. After the client has read all the records in the sequence, it calls <a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a> to free the read context.
+A pointer to a variable that receives a pointer to an opaque read context. The client repeatedly passes this context to  <a href="https://msdn.microsoft.com/library/windows/hardware/ff541690">ClfsReadNextLogRecord</a> to read the remaining records in a sequence. After the client has read all the records in the sequence, it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff541767">ClfsTerminateReadLog</a> to free the read context.
 
 
 ## Return Value
@@ -157,8 +157,8 @@ Read contexts are not thread-safe. Clients are responsible for serializing acces
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsreadnextlogrecord.md">ClfsReadNextLogRecord</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541690">ClfsReadNextLogRecord</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfsterminatereadlog.md">ClfsTerminateReadLog</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541767">ClfsTerminateReadLog</a>

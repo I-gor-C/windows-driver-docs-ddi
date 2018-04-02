@@ -51,12 +51,12 @@ The <b>USBCAMD_SelectAlternateInterface</b> function selects an alternate settin
 
 ## Syntax
 
-````
+```
 NTSTATUS USBCAMD_SelectAlternateInterface(
-  _In_    PVOID                       DeviceContext,
-  _Inout_ PUSBD_INTERFACE_INFORMATION RequestInterface
+  PVOID                       DeviceContext,
+  PUSBD_INTERFACE_INFORMATION RequestInterface
 );
-````
+```
 
 ## Parameters
 
@@ -66,7 +66,7 @@ Pointer to a device-specific context.
 
 `RequestInterface`
 
-Pointer to a <a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a> structure initialized with the proper values for a SELECT_INTERFACE URB request. This interface structure corresponds to a single isochronous interface on the device.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a> structure initialized with the proper values for a SELECT_INTERFACE URB request. This interface structure corresponds to a single isochronous interface on the device.
 
 
 ## Return Value
@@ -117,4 +117,4 @@ This function is typically called by a camera minidriver in response to a reques
 
 ## See Also
 
-<a href="..\usb\ns-usb-_usbd_interface_information.md">USBD_INTERFACE_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539068">USBD_INTERFACE_INFORMATION</a>

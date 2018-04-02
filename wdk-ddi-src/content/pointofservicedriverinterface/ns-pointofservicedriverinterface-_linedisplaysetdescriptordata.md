@@ -47,11 +47,12 @@ req.typenames: LineDisplaySetDescriptorData
 This structure is not implemented.
 
 ## Syntax
-````
+```
 typedef struct _LineDisplaySetDescriptorData {
-   ...;
-} LineDisplaySetDescriptorData, *PLineDisplaySetDescriptorData;
-````
+  UINT32 descriptor;
+  UINT32 attribute;
+} LineDisplaySetDescriptorData;
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: debugger\idebugsystemobjects3_getcurrentsystemservername.htm
 old-project: debugger
 ms.assetid: 4E06AFD0-42D3-479F-B285-34919826F750
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetCurrentSystemServerName method [Windows Debugging], GetCurrentSystemServerName method [Windows Debugging], IDebugSystemObjects3 interface, GetCurrentSystemServerName,IDebugSystemObjects3.GetCurrentSystemServerName, IDebugSystemObjects3, IDebugSystemObjects3 interface [Windows Debugging], GetCurrentSystemServerName method, IDebugSystemObjects3::GetCurrentSystemServerName, dbgeng/IDebugSystemObjects3::GetCurrentSystemServerName, debugger.idebugsystemobjects3_getcurrentsystemservername
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetCurrentSystemServerName method
+# IDebugSystemObjects3::GetCurrentSystemServerName method
 Gets the server name for the current process.
 
 ## Syntax
 
-````
+```
 HRESULT GetCurrentSystemServerName(
-  [out]           _writes_opt_(BufferSize) PSTR Buffer,
-  [in]            ULONG                         BufferSize,
-  [out, optional] PULONG                        NameSize
+  PSTR   Buffer,
+  ULONG  BufferSize,
+  PULONG NameSize
 );
-````
+```
 
 ## Parameters
 
@@ -107,4 +107,4 @@ The method was successful.
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsystemobjects3.md">IDebugSystemObjects3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550892">IDebugSystemObjects3</a>

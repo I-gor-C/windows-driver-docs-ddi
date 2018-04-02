@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# RequestCancel method
+# IPrintJob::RequestCancel method
 Requests the cancellation of a print job.
 
 ## Syntax
 
-````
+```
 HRESULT RequestCancel(
-    void
+
 );
-````
+```
 
 ## Parameters
 
@@ -77,4 +77,4 @@ The <b>RequestCancel</b> method does not wait for the cancellation of a print jo
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a>

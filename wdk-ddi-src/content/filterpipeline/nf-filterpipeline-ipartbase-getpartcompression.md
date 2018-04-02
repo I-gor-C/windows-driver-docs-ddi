@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetPartCompression method
+# IPartBase::GetPartCompression method
 The <b>GetPartCompression</b> method gets the compression of the part.
 
 ## Syntax
 
-````
+```
 HRESULT GetPartCompression(
-  [out] EXpsCompressionOptions *pCompression
+  EXpsCompressionOptions *pCompression
 );
-````
+```
 
 ## Parameters
 

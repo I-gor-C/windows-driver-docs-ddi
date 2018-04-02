@@ -7,7 +7,7 @@ old-location: ifsk\rxcequeryinformation.htm
 old-project: ifsk
 ms.assetid: 58dd579c-3fb8-45c7-a7bc-ca0919166153
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxCeQueryInformation, RxCeQueryInformation function [Installable File System Drivers], ifsk.rxcequeryinformation, rxce/RxCeQueryInformation, rxref_b7508a13-8eb0-42d0-917c-300a5eb4c0e9.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 NTSTATUS RxCeQueryInformation(
-  _In_  PRXCE_VC                          pVc,
-  _In_  RXCE_CONNECTION_INFORMATION_CLASS InformationClass,
-  _Out_ PVOID                             pInformation,
-  _In_  ULONG                             Length
+  IN PRXCE_VC                          pVc,
+  IN RXCE_CONNECTION_INFORMATION_CLASS InformationClass,
+  OUT PVOID                            pInformation,
+  IN ULONG                             Length
 );
-````
+```
 
 ## Parameters
 
@@ -185,8 +185,8 @@ For some values of <i>InformationClass</i>, <b>RxCeQueryInformation</b> calls <b
 
 ## See Also
 
-<a href="..\rxce\nf-rxce-rxcequerytransportinformation.md">RxCeQueryTransportInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553456">RxCeQueryAdapterStatus</a>
 
 
 
-<a href="..\rxce\nf-rxce-rxcequeryadapterstatus.md">RxCeQueryAdapterStatus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553474">RxCeQueryTransportInformation</a>

@@ -50,15 +50,15 @@ The <b>wiasCreatePropContext </b>function allocates a property context to indica
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasCreatePropContext(
-           ULONG                cPropSpec,
-  _In_     PROPSPEC             *pPropSpec,
-           ULONG                cProps,
-  _In_opt_ PROPID               *pProps,
-  _In_     WIA_PROPERTY_CONTEXT *pContext
+```
+HRESULT wiasCreatePropContext(
+  ULONG                cPropSpec,
+  PROPSPEC             *pPropSpec,
+  ULONG                cProps,
+  PROPID               *pProps,
+  WIA_PROPERTY_CONTEXT *pContext
 );
-````
+```
 
 ## Parameters
 
@@ -80,7 +80,7 @@ Pointer to the first element of an array of property identifiers that indicate t
 
 `pContext`
 
-Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a> structure that contains a property context.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure that contains a property context.
 
 
 ## Return Value
@@ -89,9 +89,9 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## Remarks
 
-This function allocates a property context and fills in its values. This function is generally used in <a href="..\wiamdef\nf-wiamdef-wiasvalidateitemproperties.md">wiasValidateItemProperties</a> where the properties written by the application are validated.
+This function allocates a property context and fills in its values. This function is generally used in <a href="https://msdn.microsoft.com/library/windows/hardware/ff549454">wiasValidateItemProperties</a> where the properties written by the application are validated.
 
-Entries in the property context are identifiers for properties that either have dependents, or are themselves dependent on other properties. A context is used to mark which properties are being changed. When the property context is no longer needed, it should be freed by a call to <a href="..\wiamdef\nf-wiamdef-wiasfreepropcontext.md">wiasFreePropContext</a>.
+Entries in the property context are identifiers for properties that either have dependents, or are themselves dependent on other properties. A context is used to mark which properties are being changed. When the property context is no longer needed, it should be freed by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549195">wiasFreePropContext</a>.
 
 The properties to which an application writes are specified by the <i>pPropSpec </i>array. The properties that were changed by the application, as well as any properties dependent on the changed properties, are specified by the <i>pProps</i> array. Only properties that have been changed by the application (and any dependent properties) can be specified in <i>pProps</i>. The PROPSPEC structure is defined in the Windows SDK documentation.
 
@@ -163,12 +163,12 @@ WIA_IPA_FORMAT
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasvalidateitemproperties.md">wiasValidateItemProperties</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a>
 
 
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549195">wiasFreePropContext</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasfreepropcontext.md">wiasFreePropContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549454">wiasValidateItemProperties</a>

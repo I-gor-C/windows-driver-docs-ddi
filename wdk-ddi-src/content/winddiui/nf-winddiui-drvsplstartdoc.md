@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-HANDLE WINAPI DrvSplStartDoc(
-   HANDLE hPrinter,
-   DWORD  JobId
+```
+HANDLE DrvSplStartDoc(
+  HANDLE hPrinter,
+  DWORD  JobId
 );
-````
+```
 
 ## Parameters
 

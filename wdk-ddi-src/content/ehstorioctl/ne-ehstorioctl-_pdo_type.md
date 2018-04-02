@@ -7,7 +7,7 @@ old-location: storage\pdo_type.htm
 old-project: storage
 ms.assetid: 9695d55c-a214-4bba-aba9-38dfa7f54ec9
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PDO_TYPE, PDO_TYPE enumeration [Storage Devices], PDO_TYPE_CONTROL, PDO_TYPE_DISK, PDO_TYPE_SILO, PDO_TYPE_THIS, PDO_TYPE_UNDEFINED, _PDO_TYPE, ehstorioctl/PDO_TYPE, ehstorioctl/PDO_TYPE_CONTROL, ehstorioctl/PDO_TYPE_DISK, ehstorioctl/PDO_TYPE_SILO, ehstorioctl/PDO_TYPE_THIS, ehstorioctl/PDO_TYPE_UNDEFINED, storage.pdo_type, structs-silo_9ef418bc-5275-4fcf-a49b-804ace353da8.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: PDO_TYPE
 This enumeration describes the types of Physical Device Objects (PDOs).
 
 ## Syntax
-````
-typedef enum _PDO_TYPE { 
-  PDO_TYPE_UNDEFINED  = 0,
-  PDO_TYPE_DISK       = 1,
-  PDO_TYPE_CONTROL    = 2,
-  PDO_TYPE_SILO       = 3,
-  PDO_TYPE_THIS       = 256
+```
+typedef enum _PDO_TYPE {
+  PDO_TYPE_UNDEFINED  ,
+  PDO_TYPE_DISK       ,
+  PDO_TYPE_CONTROL    ,
+  PDO_TYPE_SILO       ,
+  PDO_TYPE_THIS
 } PDO_TYPE;
-````
+```
 
 ## Constants
 
@@ -63,7 +63,7 @@ typedef enum _PDO_TYPE {
             
                 <tr>
                     <td>PDO_TYPE_UNDEFINED</td>
-                    <td>Types either enumerated or provided as filter parameter to <a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_device_enumerate_pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a></td>
+                    <td>Types either enumerated or provided as filter parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451409">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a></td>
                 </tr>
             
                 <tr>
@@ -95,4 +95,4 @@ typedef enum _PDO_TYPE {
 
 ## See Also
 
-<a href="..\ehstorioctl\ni-ehstorioctl-ioctl_ehstor_device_enumerate_pdos.md">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451409">IOCTL_EHSTOR_DEVICE_ENUMERATE_PDOS</a>

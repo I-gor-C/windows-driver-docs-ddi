@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 The <b>WDF_WMI_PROVIDER_FLAGS</b> enumeration defines configuration flags for a driver's WMI data provider.
 
 ## Syntax
-````
-typedef enum _WDF_WMI_PROVIDER_FLAGS { 
-  WdfWmiProviderEventOnly   = 0x0001,
-  WdfWmiProviderExpensive   = 0x0002,
-  WdfWmiProviderTracing     = 0x0004,
-  WdfWmiProviderValidFlags  = WdfWmiProviderEventOnly | WdfWmiProviderExpensive | WdfWmiProviderTracing
+```
+typedef enum _WDF_WMI_PROVIDER_FLAGS {
+  WdfWmiProviderEventOnly   ,
+  WdfWmiProviderExpensive   ,
+  WdfWmiProviderTracing     ,
+  WdfWmiProviderValidFlags
 } WDF_WMI_PROVIDER_FLAGS;
-````
+```
 
 ## Constants
 
@@ -65,17 +65,17 @@ typedef enum _WDF_WMI_PROVIDER_FLAGS {
             
                 <tr>
                     <td>WdfWmiProviderEventOnly</td>
-                    <td>WMI clients can receive notification of WMI events, but they cannot query or set instance data. The driver can call <a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancefireevent.md">WdfWmiInstanceFireEvent</a>, but it does not provide any instance-specific callback functions.</td>
+                    <td>WMI clients can receive notification of WMI events, but they cannot query or set instance data. The driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff551182">WdfWmiInstanceFireEvent</a>, but it does not provide any instance-specific callback functions.</td>
                 </tr>
             
                 <tr>
                     <td>WdfWmiProviderExpensive</td>
-                    <td>Collecting the provider's data can potentially affect the driver's performance, so the driver will not collect data unless a WMI client has registered to use it. The framework calls the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a> callback function, passing the <b>WdfWmiInstanceControl</b> value (from the <a href="..\wdfwmi\ne-wdfwmi-_wdf_wmi_provider_control.md">WDF_WMI_PROVIDER_CONTROL</a> enumeration), to inform the driver to begin collecting data. If the driver does not provide an <i>EvtWmiProviderFunctionControl</i> callback function, it can call <a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a>.</td>
+                    <td>Collecting the provider's data can potentially affect the driver's performance, so the driver will not collect data unless a WMI client has registered to use it. The framework calls the driver's <a href="https://msdn.microsoft.com/89b48747-d3aa-48c7-825c-94545f378f07">EvtWmiProviderFunctionControl</a> callback function, passing the <b>WdfWmiInstanceControl</b> value (from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553078">WDF_WMI_PROVIDER_CONTROL</a> enumeration), to inform the driver to begin collecting data. If the driver does not provide an <i>EvtWmiProviderFunctionControl</i> callback function, it can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff551200">WdfWmiProviderIsEnabled</a>.</td>
                 </tr>
             
                 <tr>
                     <td>WdfWmiProviderTracing</td>
-                    <td>The WMI data provider supports WMI event tracing. The driver can obtain the tracing handle by calling <a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidergettracinghandle.md">WdfWmiProviderGetTracingHandle</a>. If this flag is set, no other flags can be set.</td>
+                    <td>The WMI data provider supports WMI event tracing. The driver can obtain the tracing handle by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff551198">WdfWmiProviderGetTracingHandle</a>. If this flag is set, no other flags can be set.</td>
                 </tr>
             
                 <tr>
@@ -86,7 +86,7 @@ typedef enum _WDF_WMI_PROVIDER_FLAGS {
 
 ## Remarks
 
-The <b>WDF_WMI_PROVIDER_FLAGS</b> enumeration is used in the <a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_provider_config.md">WDF_WMI_PROVIDER_CONFIG</a> structure.
+The <b>WDF_WMI_PROVIDER_FLAGS</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553067">WDF_WMI_PROVIDER_CONFIG</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -96,24 +96,24 @@ The <b>WDF_WMI_PROVIDER_FLAGS</b> enumeration is used in the <a href="..\wdfwmi\
 
 ## See Also
 
-<a href="..\wdfwmi\ns-wdfwmi-_wdf_wmi_provider_config.md">WDF_WMI_PROVIDER_CONFIG</a>
+<a href="https://msdn.microsoft.com/89b48747-d3aa-48c7-825c-94545f378f07">EvtWmiProviderFunctionControl</a>
 
 
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiprovidergettracinghandle.md">WdfWmiProviderGetTracingHandle</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553067">WDF_WMI_PROVIDER_CONFIG</a>
 
 
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiinstancefireevent.md">WdfWmiInstanceFireEvent</a>
+<a href="https://msdn.microsoft.com/c545b0a6-bb36-47a7-b55c-ee7eed5ade3a">WdfWmiInstanceControl</a>
 
 
 
-<a href="..\wdfwmi\ne-wdfwmi-_wdf_wmi_provider_control.md">WdfWmiInstanceControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551182">WdfWmiInstanceFireEvent</a>
 
 
 
-<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551198">WdfWmiProviderGetTracingHandle</a>
 
 
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551200">WdfWmiProviderIsEnabled</a>

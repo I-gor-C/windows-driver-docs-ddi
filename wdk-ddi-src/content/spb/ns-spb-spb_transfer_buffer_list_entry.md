@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The <b>SPB_TRANSFER_BUFFER_LIST_ENTRY</b> structure describes either a simple transfer buffer, or an element in an array of one or more transfer buffers.
 
 ## Syntax
-````
-typedef struct _SPB_TRANSFER_BUFFER_LIST_ENTRY {
+```
+typedef struct SPB_TRANSFER_BUFFER_LIST_ENTRY {
   PVOID Buffer;
   ULONG BufferCb;
-} SPB_TRANSFER_BUFFER_LIST_ENTRY, *PSPB_TRANSFER_BUFFER_LIST_ENTRY;
-````
+}  *PSPB_TRANSFER_BUFFER_LIST_ENTRY;
+```
 
 ## Members
 

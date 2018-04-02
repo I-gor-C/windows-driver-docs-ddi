@@ -7,7 +7,7 @@ old-location: display\videoportcreateevent.htm
 old-project: display
 ms.assetid: bb1ef5f0-ccf3-487b-99e6-9ec733c7cd63
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortCreateEvent, VideoPortCreateEvent function [Display Devices], VideoPort_Functions_29412925-5117-4759-b4ea-b4adb4358a8c.xml, display.videoportcreateevent, video/VideoPortCreateEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The <b>VideoPortCreateEvent</b> function creates an event object.
 
 ## Syntax
 
-````
-VP_STATUS VideoPortCreateEvent(
-  _In_  PVOID  HwDeviceExtension,
-  _In_  ULONG  EventFlag,
-  _In_  PVOID  Unused,
-  _Out_ PEVENT *ppEvent
+```
+VIDEOPORT_API VP_STATUS VideoPortCreateEvent(
+  IN PVOID   HwDeviceExtension,
+  IN ULONG   EventFlag,
+  IN PVOID   Unused,
+  OUT PEVENT *ppEvent
 );
-````
+```
 
 ## Parameters
 
@@ -127,4 +127,4 @@ When a notification event is set to the signaled state, all threads that were wa
 
 ## See Also
 
-<a href="..\video\nf-video-videoportdeleteevent.md">VideoPortDeleteEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570292">VideoPortDeleteEvent</a>

@@ -7,7 +7,7 @@ old-location: kernel\zwallocatevirtualmemory.htm
 old-project: kernel
 ms.assetid: bb82c90d-9bd3-4a23-b171-06a3208e424b
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: NtAllocateVirtualMemory, ZwAllocateVirtualMemory, ZwAllocateVirtualMemory routine [Kernel-Mode Driver Architecture], k111_76257300-f41b-4dad-a81f-8ea1b187244a.xml, kernel.zwallocatevirtualmemory, ntifs/NtAllocateVirtualMemory, ntifs/ZwAllocateVirtualMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,16 +50,16 @@ The <b>ZwAllocateVirtualMemory</b> routine reserves, commits, or both, a region 
 
 ## Syntax
 
-````
-NTSTATUS ZwAllocateVirtualMemory(
-  _In_    HANDLE    ProcessHandle,
-  _Inout_ PVOID     *BaseAddress,
-  _In_    ULONG_PTR ZeroBits,
-  _Inout_ PSIZE_T   RegionSize,
-  _In_    ULONG     AllocationType,
-  _In_    ULONG     Protect
+```
+__kernel_entry NTSYSCALLAPI NTSTATUS NtAllocateVirtualMemory(
+  HANDLE    ProcessHandle,
+  PVOID     *BaseAddress,
+  ULONG_PTR ZeroBits,
+  PSIZE_T   RegionSize,
+  ULONG     AllocationType,
+  ULONG     Protect
 );
-````
+```
 
 ## Parameters
 
@@ -347,8 +347,8 @@ For calls from kernel-mode drivers, the <b>Nt<i>Xxx</i></b> and <b>Zw<i>Xxx</i><
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-zwfreevirtualmemory.md">ZwFreeVirtualMemory</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565438">Using Nt and Zw Versions of the Native System Services Routines</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566460">ZwFreeVirtualMemory</a>

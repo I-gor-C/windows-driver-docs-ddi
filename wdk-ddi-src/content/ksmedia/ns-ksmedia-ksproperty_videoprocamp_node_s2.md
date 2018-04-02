@@ -47,22 +47,22 @@ req.typenames: KSPROPERTY_VIDEOPROCAMP_NODE_S2, *PKSPROPERTY_VIDEOPROCAMP_NODE_S
 The KSPROPERTY_VIDEOPROCAMP_NODE_S2 structure describes node-based property settings in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568122">PROPSETID_VIDCAP_VIDEOPROCAMP</a> property set that use two values at the same time.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_VIDEOPROCAMP_NODE_S2 {
   KSP_NODE NodeProperty;
-  LONG     Value1;
-  ULONG    Flags;
-  ULONG    Capabilities;
-  LONG     Value2;
-} KSPROPERTY_VIDEOPROCAMP_NODE_S2, *PKSPROPERTY_VIDEOPROCAMP_NODE_S2;
-````
+  LONG     Value1;
+  ULONG    Flags;
+  ULONG    Capabilities;
+  LONG     Value2;
+}  *PKSPROPERTY_VIDEOPROCAMP_NODE_S2;
+```
 
 ## Members
 
 
 `NodeProperty`
 
-Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.
+Specifies an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff566720">KSP_NODE</a> structure that describes the node, property set, property ID, and request type.
 
 `Value1`
 

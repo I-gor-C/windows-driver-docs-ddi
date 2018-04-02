@@ -7,7 +7,7 @@ old-location: storage\storportregistrywrite.htm
 old-project: storage
 ms.assetid: 9f149e86-7855-4a10-8e0c-8b1aff261946
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortRegistryWrite, StorPortRegistryWrite routine [Storage Devices], storage.storportregistrywrite, storport/StorPortRegistryWrite, storprt_dda4d4a4-d312-4076-8b72-842517a701c5.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,22 +51,22 @@ The <b>StorPortRegistryWrite</b> routine is called by the miniport driver to con
 
 ## Syntax
 
-````
+```
 STORPORT_API BOOLEAN StorPortRegistryWrite(
-  _In_ PVOID  HwDeviceExtension,
-  _In_ PUCHAR ValueName,
-  _In_ ULONG  Global,
-  _In_ ULONG  Type,
-  _In_ PUCHAR Buffer,
-  _In_ ULONG  BufferLength
+  PVOID  HwDeviceExtension,
+  PUCHAR ValueName,
+  ULONG  Global,
+  ULONG  Type,
+  PUCHAR Buffer,
+  ULONG  BufferLength
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>. The port driver frees this memory when it removes the device. The miniport driver must be running at IRQL PASSIVE_LEVEL when it calls this routine.
+A pointer to the hardware device extension. This is a per HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the mapped access ranges for the HBA. This area is available to the miniport driver immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>. The port driver frees this memory when it removes the device. The miniport driver must be running at IRQL PASSIVE_LEVEL when it calls this routine.
 
 `ValueName`
 
@@ -242,4 +242,4 @@ Specifies the size of the buffer pointed to by <i>Buffer</i>.
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportinitialize.md">StorPortInitialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567108">StorPortInitialize</a>

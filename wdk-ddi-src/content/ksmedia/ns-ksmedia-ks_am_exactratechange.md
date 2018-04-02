@@ -47,12 +47,12 @@ req.typenames: KS_AM_ExactRateChange, *PKS_AM_ExactRateChange
 The KS_AM_ExactRateChange structure is not yet implemented.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KS_AM_ExactRateChange {
   REFERENCE_TIME OutputZeroTime;
-  LONG           Rate;
-} KS_AM_ExactRateChange, *PKS_AM_ExactRateChange;
-````
+  LONG           Rate;
+} *PKS_AM_ExactRateChange, KS_AM_ExactRateChange;
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: netvista\rilcallmediaaudioflags.htm
 old-project: netvista
 ms.assetid: 457d0bee-4746-424d-bd22-4e968048bdb9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: RILCALLMEDIAAUDIOFLAGS, RILCALLMEDIAAUDIOFLAGS enumeration [Network Drivers Starting with Windows Vista], RIL_CALLMEDIAAUDIOFLAG_ALL, RIL_CALLMEDIAAUDIOFLAG_TEMPORARILY_UNAVAILABLE, netvista.rilcallmediaaudioflags, ntddrilapitypes/RILCALLMEDIAAUDIOFLAGS, ntddrilapitypes/RIL_CALLMEDIAAUDIOFLAG_ALL, ntddrilapitypes/RIL_CALLMEDIAAUDIOFLAG_TEMPORARILY_UNAVAILABLE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,13 @@ req.typenames: RILCALLMEDIAAUDIOFLAGS
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef enum _RILCALLMEDIAAUDIOFLAGS { 
-  RIL_CALLMEDIAAUDIOFLAG_TEMPORARILY_UNAVAILABLE,
+```
+typedef enum RILCALLMEDIAAUDIOFLAGS {
+  RIL_CALLMEDIAAUDIOFLAG_NONE                     ,
+  RIL_CALLMEDIAAUDIOFLAG_TEMPORARILY_UNAVAILABLE  ,
   RIL_CALLMEDIAAUDIOFLAG_ALL
-} RILCALLMEDIAAUDIOFLAGS;
-````
+} ;
+```
 
 ## Constants
 

@@ -7,7 +7,7 @@ old-location: kernel\transaction_state.htm
 old-project: kernel
 ms.assetid: b97bedc5-6393-49bd-b803-e70e3a3d49df
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: TRANSACTION_STATE, TRANSACTION_STATE enumeration [Kernel-Mode Driver Architecture], TransactionStateCommittedNotify, TransactionStateIndoubt, TransactionStateNormal, _TRANSACTION_STATE, kernel.transaction_state, ktm_ref_051131c5-e3a5-430e-afca-053fcb68f746.xml, wdm/TRANSACTION_STATE, wdm/TransactionStateCommittedNotify, wdm/TransactionStateIndoubt, wdm/TransactionStateNormal
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The <b>TRANSACTION_STATE</b> enumeration defines the states that KTM can assign to a transaction.
 
 ## Syntax
-````
-typedef enum _TRANSACTION_STATE { 
-  TransactionStateNormal           = 1,
-  TransactionStateIndoubt          = 2,
-  TransactionStateCommittedNotify  = 3
+```
+typedef enum _TRANSACTION_STATE {
+  TransactionStateNormal           ,
+  TransactionStateIndoubt          ,
+  TransactionStateCommittedNotify
 } TRANSACTION_STATE;
-````
+```
 
 ## Constants
 
@@ -78,7 +78,7 @@ typedef enum _TRANSACTION_STATE {
 
 ## Remarks
 
-The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a> structure.
+The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564781">TRANSACTION_BASIC_INFORMATION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,4 +88,4 @@ The <b>TRANSACTION_STATE</b> enumeration is used in the <a href="..\wdm\ns-wdm-_
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_transaction_basic_information.md">TRANSACTION_BASIC_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564781">TRANSACTION_BASIC_INFORMATION</a>

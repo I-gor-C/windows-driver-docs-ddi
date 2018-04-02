@@ -7,7 +7,7 @@ old-location: dtf\iwdtftargets2_remove.htm
 old-project: dtf
 ms.assetid: 5db8c912-a446-4ae7-a775-f56ffa979283
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFTargets2, IWDTFTargets2 interface [Windows Device Testing Framework], Remove method, IWDTFTargets2::Remove, Microsoft.WDTF.IWDTFTargets2.Remove, Microsoft::WDTF::IWDTFTargets2::Remove, Remove method [Windows Device Testing Framework], Remove method [Windows Device Testing Framework], IWDTFTargets2 interface, Remove,IWDTFTargets2.Remove, dtf.iwdtftargets2_remove, wdtf/IWDTFTargets2::Remove
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Remove method
+# IWDTFTargets2::Remove method
 Removes an item from the collection.
 
 ## Syntax
 
-````
+```
 HRESULT Remove(
-  [in] IWDTFTarget2 *pTarget
+  IWDTFTarget2 *pTarget
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## Remarks
 
-The lifetime of <a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a> interface 
+The lifetime of <a href="https://msdn.microsoft.com/library/windows/hardware/hh439367">IWDTFTarget2</a> interface 
 instances are tied to their creator. If you remove an item from a collection, the item is
 not destroyed.
 
@@ -82,4 +82,4 @@ not destroyed.
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtftargets2.md">IWDTFTargets2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439458">IWDTFTargets2</a>

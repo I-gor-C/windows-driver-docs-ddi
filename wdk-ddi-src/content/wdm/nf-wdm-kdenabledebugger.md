@@ -46,13 +46,15 @@ req.product: Windows 10 or later.
 
 
 # KdEnableDebugger function
-The <b>KdEnableDebugger</b> routine re-enables the kernel debugger after a call to the <a href="..\wdm\nf-wdm-kddisabledebugger.md">KdDisableDebugger</a> routine disables the kernel debugger.
+The <b>KdEnableDebugger</b> routine re-enables the kernel debugger after a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548083">KdDisableDebugger</a> routine disables the kernel debugger.
 
 ## Syntax
 
-````
-NTSTATUS KdEnableDebugger(void);
-````
+```
+NTKERNELAPI NTSTATUS KdEnableDebugger(
+
+);
+```
 
 ## Parameters
 
@@ -84,4 +86,4 @@ If the kernel debugger is blocked (that is, the <b>KdBlockEnable</b> system vari
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kddisabledebugger.md">KdDisableDebugger</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548083">KdDisableDebugger</a>

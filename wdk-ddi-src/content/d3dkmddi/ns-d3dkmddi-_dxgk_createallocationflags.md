@@ -7,7 +7,7 @@ old-location: display\dxgk_createallocationflags.htm
 old-project: display
 ms.assetid: 3c6c5515-855a-4016-a327-958959981f0f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_CREATEALLOCATIONFLAGS, DXGK_CREATEALLOCATIONFLAGS structure [Display Devices], DmStructs_320b15bf-5664-4fb9-9126-2c063ef75467.xml, _DXGK_CREATEALLOCATIONFLAGS, d3dkmddi/DXGK_CREATEALLOCATIONFLAGS, display.dxgk_createallocationflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,17 @@ req.typenames: DXGK_CREATEALLOCATIONFLAGS
 The DXGK_CREATEALLOCATIONFLAGS structure identifies how to create allocations.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_CREATEALLOCATIONFLAGS {
   union {
     struct {
-      UINT Resource  :1;
-      UINT Reserved  :31;
+      UINT  : 1  Resource;
+      UINT  : 31 Reserved;
     };
     UINT Value;
   };
 } DXGK_CREATEALLOCATIONFLAGS;
-````
+```
 
 ## Members
 
@@ -71,4 +71,4 @@ typedef struct _DXGK_CREATEALLOCATIONFLAGS {
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557559">DXGKARG_CREATEALLOCATION</a>

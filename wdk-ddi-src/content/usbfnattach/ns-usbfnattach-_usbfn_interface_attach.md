@@ -7,7 +7,7 @@ old-location: buses\usbfn_interface_attach.htm
 old-project: usbref
 ms.assetid: C7D7935C-0536-43E6-8924-1DC13B258007
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSBFN_INTERFACE_ATTACH, PUSBFN_INTERFACE_ATTACH, PUSBFN_INTERFACE_ATTACH structure pointer [Buses], USBFN_INTERFACE_ATTACH, USBFN_INTERFACE_ATTACH structure [Buses], _USBFN_INTERFACE_ATTACH, buses.usbfn_interface_attach, usbfnattach/PUSBFN_INTERFACE_ATTACH, usbfnattach/USBFN_INTERFACE_ATTACH"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 Stores pointers to driver-implemented callback functions for handling attach and detach operations.
 
 ## Syntax
-````
+```
 typedef struct _USBFN_INTERFACE_ATTACH {
-  INTERFACE                   InterfaceHeader;
-  PFN_USBFN_GET_ATTACH_ACTION GetAttachAction;
-  PFN_USBFN_GET_ATTACH_ACTION GetAttachActionAbortOperation;
-  PFN_USBFN_SET_DEVICE_STATE  SetDeviceState;
+  INTERFACE                         InterfaceHeader;
+  PFN_USBFN_GET_ATTACH_ACTION       GetAttachAction;
+  PFN_USBFN_GET_ATTACH_ACTION_ABORT GetAttachActionAbortOperation;
+  PFN_USBFN_SET_DEVICE_STATE        SetDeviceState;
 } USBFN_INTERFACE_ATTACH, *PUSBFN_INTERFACE_ATTACH;
-````
+```
 
 ## Members
 
@@ -66,15 +66,15 @@ The interface version number.
 
 `GetAttachAction`
 
-A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action.md">USBFN_GET_ATTACH_ACTION</a> callback function.
+A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187995">USBFN_GET_ATTACH_ACTION</a> callback function.
 
 `GetAttachActionAbortOperation`
 
-A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn_get_attach_action_abort.md">USBFN_GET_ATTACH_ACTION_ABORT</a> callback function.
+A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187996">USBFN_GET_ATTACH_ACTION_ABORT</a> callback function.
 
 `SetDeviceState`
 
-A pointer to the driver's implementation of the <a href="..\usbfnattach\nc-usbfnattach-usbfn_set_device_state.md">USBFN_SET_DEVICE_STATE</a> callback function.
+A pointer to the driver's implementation of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188006">USBFN_SET_DEVICE_STATE</a> callback function.
 
 
 ## Requirements

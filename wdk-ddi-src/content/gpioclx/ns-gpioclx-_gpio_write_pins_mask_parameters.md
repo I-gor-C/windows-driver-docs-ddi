@@ -47,15 +47,15 @@ req.typenames: GPIO_WRITE_PINS_MASK_PARAMETERS, *PGPIO_WRITE_PINS_MASK_PARAMETER
 The <b>GPIO_WRITE_PINS_MASK_PARAMETERS</b> structure describes a write operation on a bank of general-purpose I/O (GPIO) pins.
 
 ## Syntax
-````
+```
 typedef struct _GPIO_WRITE_PINS_MASK_PARAMETERS {
-  BANK_ID               BankId;
-  ULONG64               SetMask;
-  ULONG64               ClearMask;
+  BANK_ID               BankId;
+  ULONG64               SetMask;
+  ULONG64               ClearMask;
   GPIO_WRITE_PINS_FLAGS Flags;
-  PVOID                 Reserved;
-} GPIO_WRITE_PINS_MASK_PARAMETERS, *PGPIO_WRITE_PINS_MASK_PARAMETERS;
-````
+  PVOID                 Reserved;
+} *PGPIO_WRITE_PINS_MASK_PARAMETERS, GPIO_WRITE_PINS_MASK_PARAMETERS;
+```
 
 ## Members
 
@@ -91,12 +91,12 @@ The <i>WriteParameters</i> parameter of the <a href="https://msdn.microsoft.com/
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439445">CLIENT_WriteGpioPinsUsingMask</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>

@@ -7,7 +7,7 @@ old-location: kernel\clfsmgmttailadvancefailure.htm
 old-project: kernel
 ms.assetid: 21a2f593-716a-434a-922c-23544ddb0122
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsMgmtTailAdvanceFailure, ClfsMgmtTailAdvanceFailure routine [Kernel-Mode Driver Architecture], Clfs_management_6512b59a-78e2-4b01-ba4f-00b099c2c53f.xml, kernel.clfsmgmttailadvancefailure, wdm/ClfsMgmtTailAdvanceFailure
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,18 +51,18 @@ The <b>ClfsMgmtTailAdvanceFailure</b> routine notifies CLFS management that the 
 
 ## Syntax
 
-````
-NTSTATUS ClfsMgmtTailAdvanceFailure(
-  _In_ CLFS_MGMT_CLIENT Client,
-  _In_ NTSTATUS         Reason
+```
+CLFSUSER_API NTSTATUS ClfsMgmtTailAdvanceFailure(
+  CLFS_MGMT_CLIENT Client,
+  NTSTATUS         Reason
 );
-````
+```
 
 ## Parameters
 
 `Client`
 
-A pointer to the client. This is the value that was obtained through a call to the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a> routine.
+A pointer to the client. This is the value that was obtained through a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541642">ClfsMgmtRegisterManagedClient</a> routine.
 
 `Reason`
 
@@ -117,7 +117,7 @@ The value that  was supplied for the <i>Client</i> parameter does not represent 
 
 If a client cannot advance its log's tail to or beyond the requested LSN, then the client must call the <b>ClfsMgmtTailAdvanceFailure</b> routine to indicate that it is not able to advance its tail. Until the client either moves its tail as requested or calls the <b>ClfsMgmtTailAdvanceFailure</b> routine, the client will not receive any further requests to move its tail.
 
-The value of the <i>Reason</i> parameter is passed back to the client as the value of the <i>OperationStatus</i> parameter when the <a href="..\wdm\nc-wdm-pclfs_client_lff_handler_complete_callback.md">ClfsLogGrowthCompleteCallback</a> function is invoked.
+The value of the <i>Reason</i> parameter is passed back to the client as the value of the <i>OperationStatus</i> parameter when the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541562">ClfsLogGrowthCompleteCallback</a> function is invoked.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -131,4 +131,4 @@ The value of the <i>Reason</i> parameter is passed back to the client as the val
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541642">ClfsMgmtRegisterManagedClient</a>

@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_ExtentWidthInMicrons method
+# IPrintSchemaPageImageableSize::get_ExtentWidthInMicrons method
 Gets the horizontal distance between the origin and the bounding limit of the application media size.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_ExtentWidthInMicrons(
-  [out, retval] ULONG *pulExtentWidth
+  ULONG *pulExtentWidth
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemapageimageablesize.md">IPrintSchemaPageImageableSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451366">IPrintSchemaPageImageableSize</a>

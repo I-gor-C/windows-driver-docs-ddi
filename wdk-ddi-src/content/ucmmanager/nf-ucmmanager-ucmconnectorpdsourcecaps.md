@@ -7,7 +7,7 @@ old-location: buses\ucmconnectorpdsourcecaps.htm
 old-project: usbref
 ms.assetid: 7C52EE60-7903-42A7-B535-9B8ED7A4B021
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UcmConnectorPdSourceCaps, UcmConnectorPdSourceCaps method [Buses], buses.ucmconnectorpdsourcecaps, ucmmanager/UcmConnectorPdSourceCaps
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,19 +51,19 @@ Notifies the USB connector manager framework extension (UcmCx) with the power so
 
 ## Syntax
 
-````
+```
 NTSTATUS UcmConnectorPdSourceCaps(
-  [in] UCMCONNECTOR              Connector,
-  [in] UCM_PD_POWER_DATA_OBJECT  Pdos[],
-  [in] UCHAR                     PdoCount
+  UCMCONNECTOR                Connector,
+  UCM_PD_POWER_DATA_OBJECT [] Pdos,
+  UCHAR                       PdoCount
 );
-````
+```
 
 ## Parameters
 
 `Connector`
 
-Handle to the connector object that the client driver received in the previous call to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>.
+Handle to the connector object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>.
 
 `Pdos`
 
@@ -80,7 +80,7 @@ Number of elements in the array specified by   <i>Pdos[]</i>.
 
 ## Remarks
 
-If the connector (local connector) is the power source, the client driver can report the  capabilities and changes to those capabilities to UcmCx by using <b>UcmConnectorPdSourceCaps</b>. If connector is a the power sink, report the advertised capabilities received from partner by calling  <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorpdpartnersourcecaps.md">UcmConnectorPdPartnerSourceCaps</a>. The client driver must call <b>UcmConnectorPdPartnerSourceCaps</b> each time the partner re-advertises its capabilities.
+If the connector (local connector) is the power source, the client driver can report the  capabilities and changes to those capabilities to UcmCx by using <b>UcmConnectorPdSourceCaps</b>. If connector is a the power sink, report the advertised capabilities received from partner by calling  <a href="https://msdn.microsoft.com/library/windows/hardware/mt187912">UcmConnectorPdPartnerSourceCaps</a>. The client driver must call <b>UcmConnectorPdPartnerSourceCaps</b> each time the partner re-advertises its capabilities.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,4 +95,4 @@ If the connector (local connector) is the power source, the client driver can re
 
 ## See Also
 
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>

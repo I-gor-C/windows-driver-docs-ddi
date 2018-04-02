@@ -47,24 +47,24 @@ req.typenames: SELF_ID, *PSELF_ID
 The SELF_ID structure contains a raw packet zero self-ID packet. See the <a href="http://go.microsoft.com/fwlink/p/?linkid=8729">IEEE 1394 Trade Association specification</a> website for details.
 
 ## Syntax
-````
+```
 typedef struct _SELF_ID {
-  ULONG SID_Phys_ID  :6;
-  ULONG SID_Packet_ID  :2;
-  ULONG SID_Gap_Count  :6;
-  ULONG SID_Link_Active  :1;
-  ULONG SID_Zero  :1;
-  ULONG SID_Power_Class  :3;
-  ULONG SID_Contender  :1;
-  ULONG SID_Delay  :2;
-  ULONG SID_Speed  :2;
-  ULONG SID_More_Packets  :1;
-  ULONG SID_Initiated_Rst  :1;
-  ULONG SID_Port3  :2;
-  ULONG SID_Port2  :2;
-  ULONG SID_Port1  :2;
-} SELF_ID, *PSELF_ID;
-````
+  ULONG  : 6 SID_Phys_ID;
+  ULONG  : 2 SID_Packet_ID;
+  ULONG  : 6 SID_Gap_Count;
+  ULONG  : 1 SID_Link_Active;
+  ULONG  : 1 SID_Zero;
+  ULONG  : 3 SID_Power_Class;
+  ULONG  : 1 SID_Contender;
+  ULONG  : 2 SID_Delay;
+  ULONG  : 2 SID_Speed;
+  ULONG  : 1 SID_More_Packets;
+  ULONG  : 1 SID_Initiated_Rst;
+  ULONG  : 2 SID_Port3;
+  ULONG  : 2 SID_Port2;
+  ULONG  : 2 SID_Port1;
+} *PSELF_ID, SELF_ID;
+```
 
 ## Members
 

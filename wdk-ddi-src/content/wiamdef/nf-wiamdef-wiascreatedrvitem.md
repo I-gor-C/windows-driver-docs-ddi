@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # wiasCreateDrvItem function
-The <b>wiasCreateDrvItem </b>function creates an <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem Interface</a> object.
+The <b>wiasCreateDrvItem </b>function creates an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543896">IWiaDrvItem Interface</a> object.
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasCreateDrvItem(
-          LONG        lObjectFlags,
-          BSTR        bstrItemName,
-          BSTR        bstrFullItemName,
-  _Inout_ IWiaMiniDrv *pIMiniDrv,
-          LONG        cbDevSpecContext,
-  _Out_   BYTE        **ppDevSpecContext,
-  _Out_   IWiaDrvItem **ppIWiaDrvItem
+```
+HRESULT wiasCreateDrvItem(
+  LONG        lObjectFlags,
+  BSTR        bstrItemName,
+  BSTR        bstrFullItemName,
+  IWiaMiniDrv *pIMiniDrv,
+  LONG        cbDevSpecContext,
+  BYTE        **ppDevSpecContext,
+  IWiaDrvItem **ppIWiaDrvItem
 );
-````
+```
 
 ## Parameters
 
@@ -78,7 +78,7 @@ Specifies a string that contains the item name with path information.
 
 `pIMiniDrv`
 
-Pointer to the <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv Interface</a> of the current minidriver.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545027">IWiaMiniDrv Interface</a> of the current minidriver.
 
 `cbDevSpecContext`
 
@@ -90,7 +90,7 @@ Pointer to a memory location that receives the address of the device specific co
 
 `ppIWiaDrvItem`
 
-Pointer to a memory location that receives the address of an <a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem Interface</a> for the newly created <b>IWiaDrvItem</b> object.
+Pointer to a memory location that receives the address of an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543896">IWiaDrvItem Interface</a> for the newly created <b>IWiaDrvItem</b> object.
 
 
 ## Return Value
@@ -112,4 +112,4 @@ This function creates and initializes an <a href="https://msdn.microsoft.com/1be
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiascreatechildappitem.md">wiasCreateChildAppItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549156">wiasCreateChildAppItem</a>

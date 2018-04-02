@@ -7,7 +7,7 @@ old-location: display\d3dkmt_adapterregistryinfo.htm
 old-project: display
 ms.assetid: b1bad6e8-8592-457a-8f66-40fc5040ae96
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_ADAPTERREGISTRYINFO, D3DKMT_ADAPTERREGISTRYINFO structure [Display Devices], OpenGL_Structs_0d97d602-7fc3-40a2-aa06-2966a6fc04f7.xml, _D3DKMT_ADAPTERREGISTRYINFO, d3dkmthk/D3DKMT_ADAPTERREGISTRYINFO, display.d3dkmt_adapterregistryinfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: D3DKMT_ADAPTERREGISTRYINFO
 The D3DKMT_ADAPTERREGISTRYINFO structure contains registry information about the graphics adapter.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_ADAPTERREGISTRYINFO {
   WCHAR AdapterString[MAX_PATH];
   WCHAR BiosString[MAX_PATH];
   WCHAR DacType[MAX_PATH];
   WCHAR ChipType[MAX_PATH];
 } D3DKMT_ADAPTERREGISTRYINFO;
-````
+```
 
 ## Members
 
@@ -84,8 +84,8 @@ typedef struct _D3DKMT_ADAPTERREGISTRYINFO {
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_queryadapterinfo.md">D3DKMT_QUERYADAPTERINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547100">D3DKMTQueryAdapterInfo</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtqueryadapterinfo.md">D3DKMTQueryAdapterInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548203">D3DKMT_QUERYADAPTERINFO</a>

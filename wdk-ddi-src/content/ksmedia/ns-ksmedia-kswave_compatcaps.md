@@ -47,11 +47,11 @@ req.typenames: KSWAVE_COMPATCAPS, *PKSWAVE_COMPATCAPS
 The KSWAVE_COMPATCAPS structure is used to describe the compatible capabilities of a device.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSWAVE_COMPATCAPS {
   ULONG ulDeviceType;
-} KSWAVE_COMPATCAPS, *PKSWAVE_COMPATCAPS;
-````
+}  *PKSWAVE_COMPATCAPS;
+```
 
 ## Members
 

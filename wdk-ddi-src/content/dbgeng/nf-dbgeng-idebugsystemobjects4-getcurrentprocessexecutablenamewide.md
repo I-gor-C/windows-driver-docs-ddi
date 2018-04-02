@@ -7,7 +7,7 @@ old-location: debugger\getcurrentprocessexecutablenamewide.htm
 old-project: debugger
 ms.assetid: 4b87adca-e838-471b-a600-1327253ee45d
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetCurrentProcessExecutableNameWide method [Windows Debugging], GetCurrentProcessExecutableNameWide method [Windows Debugging], IDebugSystemObjects4 interface, GetCurrentProcessExecutableNameWide,IDebugSystemObjects4.GetCurrentProcessExecutableNameWide, IDebugSystemObjects4, IDebugSystemObjects4 interface [Windows Debugging], GetCurrentProcessExecutableNameWide method, IDebugSystemObjects4::GetCurrentProcessExecutableNameWide, dbgeng/IDebugSystemObjects4::GetCurrentProcessExecutableNameWide, debugger.getcurrentprocessexecutablenamewide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetCurrentProcessExecutableNameWide method
+# IDebugSystemObjects4::GetCurrentProcessExecutableNameWide method
 The <b>GetCurrentProcessExecutableNameWide</b>  method returns the name of executable file loaded in the current process.
 
 ## Syntax
 
-````
+```
 HRESULT GetCurrentProcessExecutableNameWide(
-  [out, optional] PWSTR  Buffer,
-  [in]            ULONG  BufferSize,
-  [out, optional] PULONG ExeSize
+  PWSTR  Buffer,
+  ULONG  BufferSize,
+  PULONG ExeSize
 );
-````
+```
 
 ## Parameters
 

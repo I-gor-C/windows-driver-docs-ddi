@@ -48,11 +48,11 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
-typedef enum  { 
-  kMessageBox  = 0
-} UI_TYPE;
-````
+```
+typedef enum UI_TYPE {
+  kMessageBox
+} ;
+```
 
 ## Constants
 

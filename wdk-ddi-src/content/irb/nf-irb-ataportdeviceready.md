@@ -7,7 +7,7 @@ old-location: storage\ataportdeviceready.htm
 old-project: storage
 ms.assetid: 65cbed1a-35f9-44f7-941a-ffc87cc79649
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortDeviceReady, AtaPortDeviceReady routine [Storage Devices], atartns_28cebf8c-cdda-46f4-9785-184552630769.xml, irb/AtaPortDeviceReady, storage.ataportdeviceready
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>AtaPortDeviceReady</b> routine informs the port driver that the indicated
 
 ## Syntax
 
-````
-VOID __inline AtaPortDeviceReady(
-  _In_ PVOID ChannelExtension,
-  _In_ UCHAR TargetId,
-  _In_ UCHAR Lun
+```
+void AtaPortDeviceReady(
+  PVOID ChannelExtension,
+  UCHAR TargetId,
+  UCHAR Lun
 );
-````
+```
 
 ## Parameters
 
@@ -89,4 +89,4 @@ The port driver resumes the paused request queue for the indicated device. If th
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportdevicebusy.md">AtaPortDeviceBusy</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550155">AtaPortDeviceBusy</a>

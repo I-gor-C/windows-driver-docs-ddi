@@ -47,11 +47,11 @@ req.typenames: BDA_ETHERNET_ADDRESS, *PBDA_ETHERNET_ADDRESS
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_ETHERNET_ADDRESS {
   BYTE rgbAddress[6];
 } BDA_ETHERNET_ADDRESS, *PBDA_ETHERNET_ADDRESS;
-````
+```
 
 ## Members
 

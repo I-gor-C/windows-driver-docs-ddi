@@ -47,25 +47,25 @@ req.typenames: "*PKSSTREAM_SEGMENT, KSSTREAM_SEGMENT"
 The KSSTREAM_SEGMENT structure contains information that describes an I/O operation occurring on a stream.
 
 ## Syntax
-````
+```
 typedef struct _KSSTREAM_SEGMENT {
   IKsInterfaceHandler *KsInterfaceHandler;
-  IKsDataTypeHandler  *KsDataTypeHandler;
-  KSIOOPERATION       IoOperation;
-  HANDLE              CompletionEvent;
-} KSSTREAM_SEGMENT, *PKSSTREAM_SEGMENT;
-````
+  IKsDataTypeHandler  *KsDataTypeHandler;
+  KSIOOPERATION       IoOperation;
+  HANDLE              CompletionEvent;
+} *PKSSTREAM_SEGMENT, KSSTREAM_SEGMENT;
+```
 
 ## Members
 
 
 `KsInterfaceHandler`
 
-Pointer to a <a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a> interface for the I/O operation.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a> interface for the I/O operation.
 
 `KsDataTypeHandler`
 
-Pointer to a <a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a> interface for the I/O operation.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559807">IKsDataTypeHandler</a> interface for the I/O operation.
 
 `IoOperation`
 
@@ -110,20 +110,20 @@ Handle to an event that is used to signal that the I/O operation completed.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559807">IKsDataTypeHandler</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559862">IKsInterfaceHandler::KsCompleteIo</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560713">IKsPin::KsMediaSamplesCompleted</a>
-
-
-
-<a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a>
-
-
-
-<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559869">IKsInterfaceHandler::KsProcessMediaSamples</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560713">IKsPin::KsMediaSamplesCompleted</a>

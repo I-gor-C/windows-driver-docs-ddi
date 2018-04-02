@@ -7,7 +7,7 @@ old-location: debugger\createprocesswide.htm
 old-project: debugger
 ms.assetid: 2a45c971-3dad-47ad-a819-6f2c6e34ad37
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: CreateProcessWide method [Windows Debugging], CreateProcessWide method [Windows Debugging], IDebugClient3 interface, CreateProcessWide method [Windows Debugging], IDebugClient4 interface, CreateProcessWide method [Windows Debugging], IDebugClient5 interface, CreateProcessWide,IDebugClient3.CreateProcessWide, IDebugClient3, IDebugClient3 interface [Windows Debugging], CreateProcessWide method, IDebugClient3::CreateProcessWide, IDebugClient4 interface [Windows Debugging], CreateProcessWide method, IDebugClient4::CreateProcessWide, IDebugClient5 interface [Windows Debugging], CreateProcessWide method, IDebugClient5::CreateProcessWide, dbgeng/IDebugClient3::CreateProcessWide, dbgeng/IDebugClient4::CreateProcessWide, dbgeng/IDebugClient5::CreateProcessWide, debugger.createprocesswide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,18 +46,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# CreateProcessWide method
+# IDebugClient3::CreateProcessWide method
 The <b>CreateProcessWide</b> method creates a process from the specified command line.
 
 ## Syntax
 
-````
+```
 HRESULT CreateProcessWide(
-  [in] ULONG64 Server,
-  [in] PWSTR   CommandLine,
-  [in] ULONG   CreateFlags
+  ULONG64 Server,
+  PWSTR   CommandLine,
+  ULONG   CreateFlags
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ Specifies the command line to execute to create the new process. The <b>CreatePr
 
 `CreateFlags`
 
-Specifies the flags to use when creating the process.  For details on these flags, see the <b>CreateFlags</b> member of the <a href="..\dbgeng\ns-dbgeng-_debug_create_process_options.md">DEBUG_CREATE_PROCESS_OPTIONS</a> structure.
+Specifies the flags to use when creating the process.  For details on these flags, see the <b>CreateFlags</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541464">DEBUG_CREATE_PROCESS_OPTIONS</a> structure.
 
 
 ## Return Value
@@ -112,6 +112,14 @@ For more information about creating and attaching to live user-mode targets, see
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562280">.create (Create Process)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538150">AttachProcess</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539237">ConnectProcessServer</a>
 
 
@@ -124,20 +132,12 @@ For more information about creating and attaching to live user-mode targets, see
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550488">IDebugClient3</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550494">IDebugClient4</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient3.md">IDebugClient3</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff562280">.create (Create Process)</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538150">AttachProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>

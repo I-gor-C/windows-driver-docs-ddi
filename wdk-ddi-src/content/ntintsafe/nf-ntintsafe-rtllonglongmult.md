@@ -7,7 +7,7 @@ old-location: kernel\rtllonglongmult.htm
 old-project: kernel
 ms.assetid: E5FE5EDB-D11D-4EF7-9CEA-CF059398A063
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlLongLongMult, RtlLongLongMult function [Kernel-Mode Driver Architecture], kernel.rtllonglongmult, ntintsafe/RtlLongLongMult
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ Multiplies one value of type <b>LONGLONG</b> by another.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlLongLongMult(
-  _In_  LONGLONG llMultiplicand,
-  _In_  LONGLONG llMultiplier,
-  _Out_ LONGLONG *pllResult
+  LONGLONG llMultiplicand,
+  LONGLONG llMultiplier,
+  LONGLONG *pllResult
 );
-````
+```
 
 ## Parameters
 

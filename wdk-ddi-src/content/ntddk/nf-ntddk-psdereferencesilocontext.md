@@ -7,7 +7,7 @@ old-location: kernel\psdereferencesilocontext.htm
 old-project: kernel
 ms.assetid: B71C7E8F-E136-4C13-B771-03B3C3C1BE64
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsDereferenceSiloContext, PsDereferenceSiloContext routine [Kernel-Mode Driver Architecture], kernel.psdereferencesilocontext, ntddk/PsDereferenceSiloContext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ This routine decrements the reference count on the object.
 
 ## Syntax
 
-````
-void PsDereferenceSiloContext(
-  _In_ PVOID SiloContext
+```
+NTKERNELAPI VOID PsDereferenceSiloContext(
+  PVOID SiloContext
 );
-````
+```
 
 ## Parameters
 
 `SiloContext`
 
-A pointer to the object created by the <a href="..\ntddk\nf-ntddk-pscreatesilocontext.md">PsCreateSiloContext</a> routine. This parameter is required and it cannot be <b>NULL</b>.
+A pointer to the object created by the <a href="https://msdn.microsoft.com/library/windows/hardware/mt735058">PsCreateSiloContext</a> routine. This parameter is required and it cannot be <b>NULL</b>.
 
 
 ## Return Value
@@ -68,7 +68,7 @@ This routine does not return a value.
 
 ## Remarks
 
-If the reference count reaches zero it will call the cleanup callback provided when the <a href="..\ntddk\nf-ntddk-pscreatesilocontext.md">PsCreateSiloContext</a> routine created the object.
+If the reference count reaches zero it will call the cleanup callback provided when the <a href="https://msdn.microsoft.com/library/windows/hardware/mt735058">PsCreateSiloContext</a> routine created the object.
 
 ## Requirements
 | &nbsp; | &nbsp; |

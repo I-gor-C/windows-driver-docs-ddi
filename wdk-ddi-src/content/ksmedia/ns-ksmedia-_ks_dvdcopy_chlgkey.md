@@ -47,12 +47,12 @@ req.typenames: KS_DVDCOPY_CHLGKEY, *PKS_DVDCOPY_CHLGKEY
 The KS_DVDCOPY_CHLGKEY structure is used to describe the challenge key information for the DVD copyright protection authentication process.
 
 ## Syntax
-````
+```
 typedef struct _KS_DVDCOPY_CHLGKEY {
   BYTE ChlgKey[10];
   BYTE Reserved[2];
-} KS_DVDCOPY_CHLGKEY, *PKS_DVDCOPY_CHLGKEY;
-````
+} *PKS_DVDCOPY_CHLGKEY, KS_DVDCOPY_CHLGKEY;
+```
 
 ## Members
 

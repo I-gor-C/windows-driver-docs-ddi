@@ -50,11 +50,11 @@ The <b>UPSStop</b> function causes a UPS minidriver to stop monitoring its UPS u
 
 ## Syntax
 
-````
+```
 void UPSStop(
-   void 
+
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ The <b>UPSStop</b> function must:
 
 <ul>
 <li>
-Cancel all waiting calls to <a href="..\upssvc\nf-upssvc-upswaitforstatechange.md">UPSWaitForStateChange</a>.
+Cancel all waiting calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536316">UPSWaitForStateChange</a>.
 
 </li>
 <li>
@@ -82,7 +82,7 @@ Close and release the UPS unit's COM port.
 
 </li>
 </ul>
-After <b>UPSStop</b> returns, the only function the UPS service can call is <a href="..\upssvc\nf-upssvc-upsinit.md">UPSInit</a>.
+After <b>UPSStop</b> returns, the only function the UPS service can call is <a href="https://msdn.microsoft.com/library/windows/hardware/ff536313">UPSInit</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,4 +92,4 @@ After <b>UPSStop</b> returns, the only function the UPS service can call is <a h
 
 ## See Also
 
-<a href="..\upssvc\nf-upssvc-upsinit.md">UPSInit</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536313">UPSInit</a>

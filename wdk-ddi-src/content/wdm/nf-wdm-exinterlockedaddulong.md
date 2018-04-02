@@ -7,7 +7,7 @@ old-location: kernel\exinterlockedaddulong.htm
 old-project: kernel
 ms.assetid: c418538a-4041-4ea8-8a4c-1f4d35e434c7
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExInterlockedAddUlong, ExInterlockedAddUlong routine [Kernel-Mode Driver Architecture], k102_bec4a58e-ee68-4f9e-8fac-9ef0c193ef10.xml, kernel.exinterlockedaddulong, wdm/ExInterlockedAddUlong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>ExInterlockedAddUlong</b> routine adds an unsigned long value to a given 
 
 ## Syntax
 
-````
-ULONG ExInterlockedAddUlong(
-  _Inout_ PULONG      Addend,
-  _In_    ULONG       Increment,
-  _Inout_ PKSPIN_LOCK Lock
+```
+NTKERNELAPI ULONG ExInterlockedAddUlong(
+  PULONG                                       Addend,
+  ULONG                                        Increment,
+  _Requires_lock_not_held_(*_Curr_)PKSPIN_LOCK Lock
 );
-````
+```
 
 ## Parameters
 
@@ -103,16 +103,16 @@ Callers of <b>ExInterlockedAddUlong</b> run at any IRQL. The storage for the <i>
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-interlockeddecrement.md">InterlockedDecrement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545335">ExInterlockedAddLargeInteger</a>
 
 
 
-<a href="..\wdm\nf-wdm-interlockedincrement.md">InterlockedIncrement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547871">InterlockedDecrement</a>
 
 
 
-<a href="..\wdm\nf-wdm-keinitializespinlock.md">KeInitializeSpinLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547910">InterlockedIncrement</a>
 
 
 
-<a href="..\wdm\nf-wdm-exinterlockedaddlargeinteger.md">ExInterlockedAddLargeInteger</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552160">KeInitializeSpinLock</a>

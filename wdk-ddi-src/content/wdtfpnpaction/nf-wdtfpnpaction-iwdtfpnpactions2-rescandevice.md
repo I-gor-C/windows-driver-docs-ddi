@@ -7,7 +7,7 @@ old-location: dtf\iwdtfpnpactions2_rescandevice.htm
 old-project: dtf
 ms.assetid: c5b2df39-e631-448e-a2fb-6424f86fc19e
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFPNPActions2, IWDTFPNPActions2 interface [Windows Device Testing Framework], RescanDevice method, IWDTFPNPActions2::RescanDevice, RescanDevice method [Windows Device Testing Framework], RescanDevice method [Windows Device Testing Framework], IWDTFPNPActions2 interface, RescanDevice,IWDTFPNPActions2.RescanDevice, dtf.iwdtfpnpactions2_rescandevice, wdtfpnpaction/IWDTFPNPActions2::RescanDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# RescanDevice method
+# IWDTFPNPActions2::RescanDevice method
 Rescans the target device.
 
 ## Syntax
 
-````
+```
 HRESULT RescanDevice(
-  [out, retval] VARIANT_BOOL *pbSuccess
+  VARIANT_BOOL *pbSuccess
 );
-````
+```
 
 ## Parameters
 
@@ -76,4 +76,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\wdtfpnpaction\nn-wdtfpnpaction-iwdtfpnpactions2.md">IWDTFPNPActions2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451094">IWDTFPNPActions2</a>

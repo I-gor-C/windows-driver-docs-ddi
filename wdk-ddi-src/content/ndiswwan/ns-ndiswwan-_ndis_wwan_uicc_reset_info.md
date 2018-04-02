@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_uicc_reset_info.htm
 old-project: netvista
 ms.assetid: 9CBAFC44-187A-41ED-9405-1208167AC75D
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_WWAN_UICC_RESET_INFO, NDIS_WWAN_UICC_RESET_INFO, NDIS_WWAN_UICC_RESET_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_UICC_RESET_INFO, PNDIS_WWAN_UICC_RESET_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_UICC_RESET_INFO, ndiswwan/NDIS_WWAN_UICC_RESET_INFO, ndiswwan/PNDIS_WWAN_UICC_RESET_INFO, netvista.ndis_wwan_uicc_reset_info"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: NDIS_WWAN_UICC_RESET_INFO, *PNDIS_WWAN_UICC_RESET_INFO
 The <b>NDIS_WWAN_UICC_RESET_INFO</b> structure represents the passthrough status of a modem miniport adapter for a UICC smart card.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_WWAN_UICC_RESET_INFO {
-  NDIS_OBJECT_HEADER   Header;
-  WWAN_STATUS          uStatus;
+  NDIS_OBJECT_HEADER   Header;
+  WWAN_STATUS          uStatus;
   WWAN_UICC_RESET_INFO UiccResetInfo;
 } NDIS_WWAN_UICC_RESET_INFO, *PNDIS_WWAN_UICC_RESET_INFO;
-````
+```
 
 ## Members
 
@@ -106,7 +106,7 @@ sizeof(NDIS_WWAN_UICC_RESET_INFO)
  
 
 For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 `uStatus`
 
@@ -163,7 +163,7 @@ The operation failed because the device does not support this OID.
 
 `UiccResetInfo`
 
-A formatted <a href="..\wwan\ns-wwan-_wwan_uicc_reset_info.md">WWAN_UICC_RESET_INFO</a> structure that represents the passthrough status of the miniport adapter.
+A formatted <a href="https://msdn.microsoft.com/1D53135F-3826-4546-A0AD-34697D186E8A">WWAN_UICC_RESET_INFO</a> structure that represents the passthrough status of the miniport adapter.
 
 
 ## Requirements
@@ -178,12 +178,12 @@ A formatted <a href="..\wwan\ns-wwan-_wwan_uicc_reset_info.md">WWAN_UICC_RESET_I
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
+
+
+
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-wwan-uicc-reset">OID_WWAN_UICC_RESET</a>
 
 
 
-<a href="..\wwan\ns-wwan-_wwan_uicc_reset_info.md">WWAN_UICC_RESET_INFO</a>
-
-
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/1D53135F-3826-4546-A0AD-34697D186E8A">WWAN_UICC_RESET_INFO</a>

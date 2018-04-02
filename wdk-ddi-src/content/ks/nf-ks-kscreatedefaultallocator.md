@@ -50,11 +50,11 @@ Given a validated IRP_MJ_CREATE request, the <b>KsCreateDefaultAllocator</b> fun
 
 ## Syntax
 
-````
-NTSTATUS KsCreateDefaultAllocator(
-  _In_ PIRP Irp
+```
+KSDDKAPI NTSTATUS KsCreateDefaultAllocator(
+  PIRP Irp
 );
-````
+```
 
 ## Parameters
 

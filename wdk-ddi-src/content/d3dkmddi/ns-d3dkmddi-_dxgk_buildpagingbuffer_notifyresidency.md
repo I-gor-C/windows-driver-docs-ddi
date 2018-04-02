@@ -7,7 +7,7 @@ old-location: display\dxgk_buildpagingbuffer_notifyresidency.htm
 old-project: display
 ms.assetid: 0E70F621-03CD-4593-88C7-DF6F2ADC902A
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY structure [Display Devices], _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, d3dkmddi/DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY, display.dxgk_buildpagingbuffer_notifyresidency
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,30 +47,30 @@ req.typenames: DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY
 <b> DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY</b> describes a residency allocation change operation.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY {
-  HANDLE                  hAllocation;
+  HANDLE                  hAllocation;
   D3DGPU_PHYSICAL_ADDRESS PhysicalAddress;
   union {
-    UINT Resident  :1;
-    UINT Reserved  :31;
+    UINT  : 31 Reserved;
+    UINT  : 1  Resident;
   };
 } DXGK_BUILDPAGINGBUFFER_NOTIFYRESIDENCY;
-````
+```
 
 ## Members
 
 
 `hAllocation`
 
-The kernel mode driver handle returned from <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>.
+The kernel mode driver handle returned from <a href="https://msdn.microsoft.com/a28287d6-4dfa-4db4-92df-bbcd9379a5b2">DxgkDdiCreateAllocation</a>.
 
 `PhysicalAddress`
 
 The physical address of the allocation. The physical address (0, 0) is invalid and is used when the allocation is being evicted.
 
 ## Remarks
-The paging operations is issued only for allocations, for which the kernel mode driver sets the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>::<b>ExplicitResidencyNotification</b> and <b>AccessedPhysically</b> flags.
+The paging operations is issued only for allocations, for which the kernel mode driver sets the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560966">DXGK_ALLOCATIONINFOFLAGS</a>::<b>ExplicitResidencyNotification</b> and <b>AccessedPhysically</b> flags.
 
 The operation is issued after <i>FillVirtual</i> or <i>TransferVirtual</i> operations when the allocation is committed to a memory segment (<b>Resident</b> == 1). Note that the previous paging operations might not yet be finished by graphics processing unit (GPU).
 
@@ -87,8 +87,8 @@ Note that the <i>NotifyResidency</i> operation will be issued only once during a
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557540">DXGKARG_BUILDPAGINGBUFFER</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+<a href="https://msdn.microsoft.com/a28287d6-4dfa-4db4-92df-bbcd9379a5b2">DxgkDdiCreateAllocation</a>

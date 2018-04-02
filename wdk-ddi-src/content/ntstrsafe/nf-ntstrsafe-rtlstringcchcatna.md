@@ -7,7 +7,7 @@ old-location: kernel\rtlstringcchcatn.htm
 old-project: kernel
 ms.assetid: 2cd45c9e-b9dd-47fb-a480-63258b2fccd4
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlStringCchCatN, RtlStringCchCatNA, RtlStringCchCatNW, RtlStringCchCatNW function [Kernel-Mode Driver Architecture], kernel.rtlstringcchcatn, ntstrsafe/RtlStringCchCatNA, ntstrsafe/RtlStringCchCatNW, safestrings_499b4858-de9a-4be2-a82d-de2da48d37f5.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,14 +52,14 @@ The <b>RtlStringCchCatNW</b> and <b>RtlStringCchCatNA</b> functions concatenate 
 
 ## Syntax
 
-````
-NTSTATUS RtlStringCchCatNW(
-  _Inout_ LPTSTR  pszDest,
-  _In_    size_t  cchDest,
-  _In_    LPCTSTR pszSrc,
-  _In_    size_t  cchMaxAppend
+```
+NTSTRSAFEDDI RtlStringCchCatNA(
+  NTSTRSAFE_PSTR pszDest,
+  size_t         cchDest,
+  STRSAFE_PCNZCH pszSrc,
+  size_t         cchToAppend
 );
-````
+```
 
 ## Parameters
 
@@ -190,7 +190,7 @@ L"string"
 
 If  <i>pszSrc</i> and <i>pszDest</i> point to overlapping strings, the behavior of the function is undefined.
 
-Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnexw.md">RtlStringCchCatNEx</a>.
+Neither <i>pszSrc</i> nor <i>pszDest</i> can be <b>NULL</b>. If you need to handle <b>NULL</b> string pointer values, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff562837">RtlStringCchCatNEx</a>.
 
 For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.
 
@@ -205,12 +205,12 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcbcatnw.md">RtlStringCbCatN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562801">RtlStringCbCatN</a>
 
 
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatw.md">RtlStringCchCat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562834">RtlStringCchCat</a>
 
 
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlstringcchcatnexw.md">RtlStringCchCatNEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562837">RtlStringCchCatNEx</a>

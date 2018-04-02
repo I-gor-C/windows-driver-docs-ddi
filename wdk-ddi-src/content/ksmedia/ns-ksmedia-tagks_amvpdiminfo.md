@@ -47,15 +47,15 @@ req.typenames: KS_AMVPDIMINFO, *PKS_AMVPDIMINFO
 The KS_AMVPDIMINFO structure is used to describe the dimensions of a video port.
 
 ## Syntax
-````
+```
 typedef struct tagKS_AMVPDIMINFO {
   DWORD dwFieldWidth;
   DWORD dwFieldHeight;
   DWORD dwVBIWidth;
   DWORD dwVBIHeight;
-  RECT  rcValidRegion;
+  RECT  rcValidRegion;
 } KS_AMVPDIMINFO, *PKS_AMVPDIMINFO;
-````
+```
 
 ## Members
 
@@ -81,7 +81,7 @@ Specifies the VBI data height.
 Describes a valid rectangle for data cropping.
 
 ## Remarks
-This structure is used by the <a href="..\ksmedia\ns-ksmedia-tagks_amvpdatainfo.md">KS_AMVPDATAINFO</a> structure.
+This structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567261">KS_AMVPDATAINFO</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,4 +90,4 @@ This structure is used by the <a href="..\ksmedia\ns-ksmedia-tagks_amvpdatainfo.
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_amvpdatainfo.md">KS_AMVPDATAINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567261">KS_AMVPDATAINFO</a>

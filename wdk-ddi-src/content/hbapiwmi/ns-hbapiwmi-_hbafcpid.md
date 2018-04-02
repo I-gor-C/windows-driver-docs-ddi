@@ -7,7 +7,7 @@ old-location: storage\hbafcpid.htm
 old-project: storage
 ms.assetid: a4fa3093-a328-4d90-bc51-0e7a6db1ed58
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PHBAFCPID, HBAFCPID, HBAFCPID structure [Storage Devices], PHBAFCPID, PHBAFCPID structure pointer [Storage Devices], _HBAFCPID, hbapiwmi/HBAFCPID, hbapiwmi/PHBAFCPID, storage.hbafcpid, structs-Fibre_d993c5b6-2b58-4fae-981a-8096cd9c9bd0.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: HBAFCPID, *PHBAFCPID
 The HBAFCPID structure contains information that uniquely identifies a logical unit on a fibre channel network.
 
 ## Syntax
-````
+```
 typedef struct _HBAFCPID {
-  ULONG     Fcid;
-  UCHAR     NodeWWN[8];
-  UCHAR     PortWWN[8];
+  ULONG     Fcid;
+  UCHAR     NodeWWN[8];
+  UCHAR     PortWWN[8];
   ULONGLONG FcpLun;
-} HBAFCPID, *PHBAFCPID;
-````
+} *PHBAFCPID, HBAFCPID;
+```
 
 ## Members
 
@@ -87,8 +87,8 @@ For more information about the fibre channel protocol (FCP), see the T11 committ
 
 ## See Also
 
-<a href="..\hbapiwmi\ns-hbapiwmi-_hbafcpbindingentry.md">HBAFCPBindingEntry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556034">HBAFCPBindingEntry</a>
 
 
 
-<a href="..\hbaapi\ns-hbaapi-hba_fcpid.md">HBA_FcpId</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556062">HBA_FcpId</a>

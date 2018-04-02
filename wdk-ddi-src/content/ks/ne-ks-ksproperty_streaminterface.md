@@ -47,11 +47,11 @@ req.typenames: KSPROPERTY_STREAMINTERFACE
 
 
 ## Syntax
-````
-typedef enum  { 
+```
+typedef enum KSPROPERTY_STREAMINTERFACE {
   KSPROPERTY_STREAMINTERFACE_HEADERSIZE
-} KSPROPERTY_STREAMINTERFACE;
-````
+} ;
+```
 
 ## Constants
 

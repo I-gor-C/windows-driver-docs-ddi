@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 The <b>WDF_KPROCESSOR_MODE</b> enumeration type identifies the processor modes in which a thread can execute.
 
 ## Syntax
-````
-typedef enum _WDF_KPROCESSOR_MODE { 
-  WdfKProcessorModeInvalid  = 0,
-  WdfKernelMode             = 1,
-  WdfUserMode               = 2,
-  WdfKProcessorModeMaximum  = 3
-} WDF_KPROCESSOR_MODE, *PWDF_KPROCESSOR_MODE;
-````
+```
+typedef enum _WDF_KPROCESSOR_MODE {
+  WdfKProcessorModeInvalid  ,
+  WdfKernelMode             ,
+  WdfUserMode               ,
+  WdfKProcessorModeMaximum
+} *PWDF_KPROCESSOR_MODE, WDF_KPROCESSOR_MODE;
+```
 
 ## Constants
 

@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetAt method
-Gets a pointer to an <a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a> object.
+# IPrintJobCollection::GetAt method
+Gets a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a> object.
 
 ## Syntax
 
-````
+```
 HRESULT GetAt(
-  [in]          ULONG     ulIndex,
-  [out, retval] IPrintJob **ppJob
+  ULONG     ulIndex,
+  IPrintJob **ppJob
 );
-````
+```
 
 ## Parameters
 
@@ -82,8 +82,8 @@ Returns an <b>HRESULT</b> value. If the method call was not successful, it retur
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintjobcollection.md">IPrintJobCollection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265397">IPrintJobCollection</a>

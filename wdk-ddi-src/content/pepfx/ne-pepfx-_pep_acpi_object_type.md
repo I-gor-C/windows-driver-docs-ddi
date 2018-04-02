@@ -7,7 +7,7 @@ old-location: kernel\pep_acpi_object_type.htm
 old-project: kernel
 ms.assetid: 81875C20-8E0E-4BAC-B85F-3D275F8B4708
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPEP_ACPI_OBJECT_TYPE, PEP_ACPI_OBJECT_TYPE, PEP_ACPI_OBJECT_TYPE enumeration [Kernel-Mode Driver Architecture], PepAcpiObjectTypeMaximum, PepAcpiObjectTypeMethod, _PEP_ACPI_OBJECT_TYPE, kernel.pep_acpi_object_type, pepfx/PEP_ACPI_OBJECT_TYPE, pepfx/PepAcpiObjectTypeMaximum, pepfx/PepAcpiObjectTypeMethod"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: See Remarks.
+req.irql: PASSIVE_LEVEL
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -47,12 +47,13 @@ req.typenames: PEP_ACPI_OBJECT_TYPE, *PPEP_ACPI_OBJECT_TYPE
 The <b>PEP_ACPI_OBJECT_TYPE</b> enumeration indicates the type of ACPI object.
 
 ## Syntax
-````
-typedef enum _PEP_ACPI_OBJECT_TYPE { 
-  PepAcpiObjectTypeMethod,
+```
+typedef enum _PEP_ACPI_OBJECT_TYPE {
+  PepAcpiObjectTypeMethod   ,
+  PepAcpiObjectTypeDevice   ,
   PepAcpiObjectTypeMaximum
-} PEP_ACPI_OBJECT_TYPE;
-````
+} PEP_ACPI_OBJECT_TYPE, *PPEP_ACPI_OBJECT_TYPE;
+```
 
 ## Constants
 
@@ -76,7 +77,7 @@ typedef enum _PEP_ACPI_OBJECT_TYPE {
 
 ## Remarks
 
-The <b>Type</b> member of the <a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_information.md">PEP_ACPI_QUERY_OBJECT_INFORMATION</a> structure is an <b>PEP_ACPI_OBJECT_TYPE</b> enumeration value.
+The <b>Type</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186688">PEP_ACPI_QUERY_OBJECT_INFORMATION</a> structure is an <b>PEP_ACPI_OBJECT_TYPE</b> enumeration value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,4 +87,4 @@ The <b>Type</b> member of the <a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_acpi_query_object_information.md">PEP_ACPI_QUERY_OBJECT_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186688">PEP_ACPI_QUERY_OBJECT_INFORMATION</a>

@@ -7,7 +7,7 @@ old-location: ifsk\rxlockenumerator.htm
 old-project: ifsk
 ms.assetid: 8d14604f-c9e5-4a2d-bb51-ef1925b39118
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxLockEnumerator, RxLockEnumerator function [Installable File System Drivers], ifsk.rxlockenumerator, rxprocs/RxLockEnumerator, rxref_62372da9-aa80-447e-8e79-6bc1f1c5cf54.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,15 +50,15 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 BOOLEAN RxLockEnumerator(
-  _Inout_ PMRX_SRV_OPEN  SrvOpen,
-  _Inout_ PVOID          *ContinuationHandle,
-  _Out_   PLARGE_INTEGER FileOffset,
-  _Out_   PLARGE_INTEGER LockRange,
-  _Out_   PBOOLEAN       IsLockExclusive
+  IN OUT PMRX_SRV_OPEN SrvOpen,
+  IN OUT PVOID         *ContinuationHandle,
+  OUT PLARGE_INTEGER   FileOffset,
+  OUT PLARGE_INTEGER   LockRange,
+  OUT PBOOLEAN         IsLockExclusive
 );
-````
+```
 
 ## Parameters
 
@@ -102,8 +102,8 @@ The <b>RxLockEnumerator</b> routine needs to allocate non-paged pool memory in o
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/6cf4c6f6-a21f-4919-92b5-2403b650d8d0">The SRV_OPEN Structure</a>
-
-
-
 <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/ifs/the-fcb-structure">The FCB Structure</a>
+
+
+
+<a href="https://msdn.microsoft.com/6cf4c6f6-a21f-4919-92b5-2403b650d8d0">The SRV_OPEN Structure</a>

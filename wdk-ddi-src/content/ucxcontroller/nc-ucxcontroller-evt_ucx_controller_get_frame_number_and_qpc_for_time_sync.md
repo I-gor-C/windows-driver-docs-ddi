@@ -7,7 +7,7 @@ old-location: buses\evt_ucx_controller_get_frame_number_and_qpc_for_time_sync.ht
 old-project: usbref
 ms.assetid: A8D666BD-5C2A-416F-901E-5FF7CF38A084
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: EVT_UCX_CONTROLLER_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC, EvtUcxControllerGetFrameNumberAndQpcForTimeSync, EvtUcxControllerGetFrameNumberAndQpcForTimeSync callback function [Buses], buses.evt_ucx_controller_get_frame_number_and_qpc_for_time_sync, ucxcontroller/EvtUcxControllerGetFrameNumberAndQpcForTimeSync
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -75,12 +75,12 @@ A framework request object that contains the request to get the synchronized fra
 `OutputBufferLength`
 
 The length, in bytes, of the request's output buffer, if an output buffer
-        is available. This value is the size of the <a href="..\usbioctl\ns-usbioctl-_usb_frame_number_and_qpc_for_time_sync_information.md">USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION</a> structure.
+        is available. This value is the size of the <a href="https://msdn.microsoft.com/F602B738-4D04-4A75-BE69-CFEC4F76904C">USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION</a> structure.
 
 `InputBufferLength`
 
 The length, in bytes, of the request's input buffer, if an input buffer
-        is available. This value is the size of the <a href="..\usbioctl\ns-usbioctl-_usb_frame_number_and_qpc_for_time_sync_information.md">USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION</a> structure.
+        is available. This value is the size of the <a href="https://msdn.microsoft.com/F602B738-4D04-4A75-BE69-CFEC4F76904C">USB_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC_INFORMATION</a> structure.
 
 
 ## Return Value
@@ -100,4 +100,4 @@ This callback function does not return a value.
 
 ## See Also
 
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_frame_number_and_qpc_for_time_sync.md">IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC</a>
+<a href="https://msdn.microsoft.com/701A7ED2-F35F-4B6B-BC91-ADCF60E294D2">IOCTL_USB_GET_FRAME_NUMBER_AND_QPC_FOR_TIME_SYNC</a>

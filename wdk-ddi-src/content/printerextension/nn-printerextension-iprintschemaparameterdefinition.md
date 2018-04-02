@@ -72,7 +72,7 @@ For more information about the four data types that you can use with the &lt;psf
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451262">IPrintSchemaDisplayableElement</a>
 
 
 

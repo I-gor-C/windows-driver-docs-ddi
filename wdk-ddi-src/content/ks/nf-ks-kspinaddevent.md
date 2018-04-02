@@ -49,22 +49,22 @@ The<b> KsPinAddEvent </b>function adds a specified event to <i>Pin</i>'s event l
 
 ## Syntax
 
-````
-void _inline KsPinAddEvent(
-  _In_ PKSPIN         Pin,
-  _In_ PKSEVENT_ENTRY EventEntry
+```
+void KsPinAddEvent(
+  PKSPIN         Pin,
+  PKSEVENT_ENTRY EventEntry
 );
-````
+```
 
 ## Parameters
 
 `Pin`
 
-A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure to which to add a specified event.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure to which to add a specified event.
 
 `EventEntry`
 
-A pointer to a <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure describing the event to add to <i>Pin</i>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a> structure describing the event to add to <i>Pin</i>.
 
 
 ## Return Value
@@ -73,7 +73,7 @@ None
 
 ## Remarks
 
-This function is an inline function call to <a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>.
+This function is an inline function call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff560931">KsAddEvent</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,11 +85,19 @@ This function is an inline function call to <a href="..\ks\nf-ks-ksaddevent.md">
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingenerateevents.md">KsPinGenerateEvents</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a>
 
 
 
-<a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560931">KsAddEvent</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561662">KsDefaultAddEventHandler</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562541">KsFilterGenerateEvents</a>
 
 
 
@@ -97,12 +105,4 @@ This function is an inline function call to <a href="..\ks\nf-ks-ksaddevent.md">
 
 
 
-<a href="..\ks\nf-ks-ksaddevent.md">KsAddEvent</a>
-
-
-
-<a href="..\ks\nf-ks-ksdefaultaddeventhandler.md">KsDefaultAddEventHandler</a>
-
-
-
-<a href="..\ks\nf-ks-ksfiltergenerateevents.md">KsFilterGenerateEvents</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563500">KsPinGenerateEvents</a>

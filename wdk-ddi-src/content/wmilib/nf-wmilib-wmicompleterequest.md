@@ -7,7 +7,7 @@ old-location: kernel\wmicompleterequest.htm
 old-project: kernel
 ms.assetid: c6377dcc-a83b-4766-b882-25d228a26efe
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: WmiCompleteRequest, WmiCompleteRequest routine [Kernel-Mode Driver Architecture], k902_08bc200c-67e2-4806-b744-621f31ec6af3.xml, kernel.wmicompleterequest, wmilib/WmiCompleteRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -41,7 +41,7 @@ api_name:
 -	WmiCompleteRequest
 product: Windows
 targetos: Windows
-req.typenames: WMI_CHANGER_PROBLEM_DEVICE_ERROR, *PWMI_CHANGER_PROBLEM_DEVICE_ERROR
+req.typenames: DRIVER_INFO_8W, *PDRIVER_INFO_8W, *LPDRIVER_INFO_8W
 req.product: Windows 10 or later.
 ---
 
@@ -51,21 +51,21 @@ The <b>WmiCompleteRequest</b> routine indicates that a driver has finished proce
 
 ## Syntax
 
-````
+```
 NTSTATUS WmiCompleteRequest(
-  _In_    PDEVICE_OBJECT DeviceObject,
-  _Inout_ PIRP           Irp,
-  _In_    NTSTATUS       Status,
-  _In_    ULONG          BufferUsed,
-  _In_    CCHAR          PriorityBoost 
+  PDEVICE_OBJECT DeviceObject,
+  PIRP           Irp,
+  NTSTATUS       Status,
+  ULONG          BufferUsed,
+  CCHAR          PriorityBoost
 );
-````
+```
 
 ## Parameters
 
 `DeviceObject`
 
-A pointer to the driver's <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>.
+A pointer to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>.
 
 `Irp`
 
@@ -81,7 +81,7 @@ Specifies the number of bytes needed in the buffer passed to the driver's <i>DpW
 
 `PriorityBoost`
 
-Specifies a system-defined constant by which to increment the run-time priority of the original thread that requested the operation. WMI calls <a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a> with <i>PriorityBoost</i> when it completes the IRP. See <b>IoCompleteRequest</b> for more information on <i>PriorityBoost</i>.
+Specifies a system-defined constant by which to increment the run-time priority of the original thread that requested the operation. WMI calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548343">IoCompleteRequest</a> with <i>PriorityBoost</i> when it completes the IRP. See <b>IoCompleteRequest</b> for more information on <i>PriorityBoost</i>.
 
 
 ## Return Value
@@ -94,7 +94,7 @@ A driver calls <b>WmiCompleteRequest</b> from a <i>DpWmiXxx</i> routine after it
 
 A driver should always return the return value from <b>WmiCompleteRequest</b> in its <i>DpWmiXxx</i> routine.
 
-A driver must not call <b>WmiCompleteRequest</b> from its <a href="..\wmilib\nc-wmilib-wmi_query_reginfo_callback.md">DpWmiQueryRegInfo</a> routine.
+A driver must not call <b>WmiCompleteRequest</b> from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff544097">DpWmiQueryRegInfo</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -107,32 +107,32 @@ A driver must not call <b>WmiCompleteRequest</b> from its <a href="..\wmilib\nc-
 
 ## See Also
 
-<a href="..\wmilib\nf-wmilib-wmisystemcontrol.md">WmiSystemControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544090">DpWmiExecuteMethod</a>
 
 
 
-<a href="..\wmilib\nc-wmilib-wmi_function_control_callback.md">DpWmiFunctionControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544094">DpWmiFunctionControl</a>
 
 
 
-<a href="..\wmilib\nc-wmilib-wmi_execute_method_callback.md">DpWmiExecuteMethod</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544096">DpWmiQueryDataBlock</a>
 
 
 
-<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544097">DpWmiQueryReginfo</a>
 
 
 
-<a href="..\wmilib\nc-wmilib-wmi_set_dataitem_callback.md">DpWmiSetDataItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544104">DpWmiSetDataBlock</a>
 
 
 
-<a href="..\wmilib\nc-wmilib-wmi_query_reginfo_callback.md">DpWmiQueryReginfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544108">DpWmiSetDataItem</a>
 
 
 
-<a href="..\wmilib\nc-wmilib-wmi_set_datablock_callback.md">DpWmiSetDataBlock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548343">IoCompleteRequest</a>
 
 
 
-<a href="..\wmilib\nc-wmilib-wmi_query_datablock_callback.md">DpWmiQueryDataBlock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565834">WmiSystemControl</a>

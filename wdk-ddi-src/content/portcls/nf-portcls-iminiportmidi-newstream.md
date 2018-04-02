@@ -7,7 +7,7 @@ old-location: audio\iminiportmidi_newstream.htm
 old-project: audio
 ms.assetid: 6760c893-0574-4fb1-b714-d506ebbd0872
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IMiniportMidi, IMiniportMidi interface [Audio Devices], NewStream method, IMiniportMidi::NewStream, NewStream method [Audio Devices], NewStream method [Audio Devices], IMiniportMidi interface, NewStream,IMiniportMidi.NewStream, audio.iminiportmidi_newstream, audmp-routines_4cc2fc38-bf0b-467e-83d4-678189d8fc0f.xml, portcls/IMiniportMidi::NewStream
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,28 +44,28 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# NewStream method
+# IMiniportMidi::NewStream method
 The <code>NewStream</code> method creates a new instance of a logical stream associated with a specified physical channel.
 
 ## Syntax
 
-````
+```
 NTSTATUS NewStream(
-  [out]          PMINIPORTMIDISTREAM *Stream,
-  [in, optional] PUNKNOWN            OuterUnknown,
-  [in]           POOL_TYPE           PoolType,
-  [in]           ULONG               Pin,
-  [in]           BOOLEAN             Capture,
-  [in]           PKSDATAFORMAT       DataFormat,
-  [out]          PSERVICEGROUP       *ServiceGroup
+  PMINIPORTMIDISTREAM *Stream,
+  PUNKNOWN            OuterUnknown,
+  POOL_TYPE           PoolType,
+  ULONG               Pin,
+  BOOLEAN             Capture,
+  PKSDATAFORMAT       DataFormat,
+  PSERVICEGROUP       *ServiceGroup
 );
-````
+```
 
 ## Parameters
 
 `Stream`
 
-Output pointer for the new stream. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the stream object's <a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a> interface.
+Output pointer for the new stream. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the stream object's <a href="https://msdn.microsoft.com/library/windows/hardware/ff536704">IMiniportMidiStream</a> interface.
 
 `OuterUnknown`
 
@@ -73,7 +73,7 @@ Pointer to the <b>IUnknown</b> interface of an object that needs to aggregate th
 
 `PoolType`
 
-Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter is set to one of the <a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a> enumeration values.
+Specifies the type of memory pool from which the storage for the DMA-channel object should be allocated. This parameter is set to one of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a> enumeration values.
 
 `Pin`
 
@@ -85,11 +85,11 @@ Specifies whether the channel is to be used for capture or for playback. If <b>T
 
 `DataFormat`
 
-Pointer to a <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> structure that specifies the data format to use for this stream instance.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a> structure that specifies the data format to use for this stream instance.
 
 `ServiceGroup`
 
-Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a> interface of the stream's service group object. This is the service group that is being registered for interrupt notification.
+Output pointer for the service group. This parameter points to a caller-allocated pointer variable into which the method writes a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536994">IServiceGroup</a> interface of the stream's service group object. This is the service group that is being registered for interrupt notification.
 
 
 ## Return Value
@@ -111,24 +111,24 @@ The <i>Stream</i>, <i>OuterUnknown</i>, and <i>ServiceGroup</i> parameters follo
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportmidistream.md">IMiniportMidiStream</a>
-
-
-
-<a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a>
-
-
-
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
-
-
-
-<a href="..\portcls\nn-portcls-iservicegroup.md">IServiceGroup</a>
-
-
-
-<a href="..\portcls\nn-portcls-iminiportmidi.md">IMiniportMidi</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536765">IMiniport::GetDescription</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536703">IMiniportMidi</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536704">IMiniportMidiStream</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536994">IServiceGroup</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a>

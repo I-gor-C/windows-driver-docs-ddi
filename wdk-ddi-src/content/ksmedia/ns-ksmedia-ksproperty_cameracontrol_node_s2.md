@@ -47,22 +47,22 @@ req.typenames: KSPROPERTY_CAMERACONTROL_NODE_S2, *PKSPROPERTY_CAMERACONTROL_NODE
 The KSPROPERTY_CAMERACONTROL_NODE_S2 structure describes node-based properties in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567802">PROPSETID_VIDCAP_CAMERACONTROL</a> property set that use two values at the same time. This structure specifies property values in requests to the USB video class driver.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_CAMERACONTROL_NODE_S2 {
   KSP_NODE NodeProperty;
-  LONG     Value1;
-  ULONG    Flags;
-  ULONG    Capabilities;
-  LONG     Value2;
-} KSPROPERTY_CAMERACONTROL_NODE_S2, *PKSPROPERTY_CAMERACONTROL_NODE_S2;
-````
+  LONG     Value1;
+  ULONG    Flags;
+  ULONG    Capabilities;
+  LONG     Value2;
+}  *PKSPROPERTY_CAMERACONTROL_NODE_S2;
+```
 
 ## Members
 
 
 `NodeProperty`
 
-Specifies an initialized <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> structure that describes the property set, property ID, request type, and node ID.
+Specifies an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff566720">KSP_NODE</a> structure that describes the property set, property ID, request type, and node ID.
 
 `Value1`
 

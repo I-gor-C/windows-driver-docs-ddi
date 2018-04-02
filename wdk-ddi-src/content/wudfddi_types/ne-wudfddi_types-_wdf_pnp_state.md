@@ -50,18 +50,18 @@ req.product: Windows 10 or later.
 The <b>WDF_PNP_STATE</b> enumeration contains values that identify the status of Plug and Play (PnP) for a device.
 
 ## Syntax
-````
-typedef enum _WDF_PNP_STATE { 
-  WdfPnpStateInvalid           = 0,
-  WdfPnpStateDisabled          = 1,
-  WdfPnpStateFailed            = 2,
-  WdfPnpStateRemoved           = 3,
-  WdfPnpStateResourcesChanged  = 4,
-  WdfPnpStateDontDisplayInUI   = 5,
-  WdfPnpStateNotDisableable    = 6,
-  WdfPnpStateMaximum           = ( WdfPnpStateNotDisableable + 1 )
+```
+typedef enum _WDF_PNP_STATE {
+  WdfPnpStateInvalid           ,
+  WdfPnpStateDisabled          ,
+  WdfPnpStateFailed            ,
+  WdfPnpStateRemoved           ,
+  WdfPnpStateResourcesChanged  ,
+  WdfPnpStateDontDisplayInUI   ,
+  WdfPnpStateNotDisableable    ,
+  WdfPnpStateMaximum
 } WDF_PNP_STATE;
-````
+```
 
 ## Constants
 
@@ -119,8 +119,8 @@ A UMDF driver supplies one of the values of <b>WDF_PNP_STATE</b> to the <a href=
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558834">IWDFDevice::GetPnpState</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558892">IWDFDevice::SetPnpState</a>

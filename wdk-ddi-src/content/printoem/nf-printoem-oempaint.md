@@ -50,15 +50,15 @@ The <code>OEMPaint</code> function is obsolete, and is no longer called by GDI i
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMPaint(
-   SURFOBJ  *pso,
-   CLIPOBJ  *pco,
-   BRUSHOBJ *pbo,
-   POINTL   *pptlBrushOrg,
-   MIX      mix
+```
+BOOL OEMPaint(
+  SURFOBJ  *pso,
+  CLIPOBJ  *pco,
+  BRUSHOBJ *pbo,
+  POINTL   *pptlBrushOrg,
+  MIX      mix
 );
-````
+```
 
 ## Parameters
 

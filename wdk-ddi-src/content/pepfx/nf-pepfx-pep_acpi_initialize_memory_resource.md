@@ -7,7 +7,7 @@ old-location: kernel\pep_acpi_initialize_memory_resource.htm
 old-project: kernel
 ms.assetid: 44EC5408-626A-4FDA-A777-C1A733D690F1
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PEP_ACPI_INITIALIZE_MEMORY_RESOURCE, PEP_ACPI_INITIALIZE_MEMORY_RESOURCE function [Kernel-Mode Driver Architecture], kernel.pep_acpi_initialize_memory_resource, pepfx/PEP_ACPI_INITIALIZE_MEMORY_RESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,20 +45,20 @@ req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
 
 
 # PEP_ACPI_INITIALIZE_MEMORY_RESOURCE function
-The <b>PEP_ACPI_INITIALIZE_MEMORY_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="..\pepfx\ns-pepfx-_pep_acpi_io_memory_resource.md">PEP_ACPI_IO_MEMORY_RESOURCE</a> structure.
+The <b>PEP_ACPI_INITIALIZE_MEMORY_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="https://msdn.microsoft.com/library/windows/hardware/mt186683">PEP_ACPI_IO_MEMORY_RESOURCE</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE VOID PEP_ACPI_INITIALIZE_MEMORY_RESOURCE(
-  _In_  UCHAR              ReadWrite,
-  _In_  ULONG              MinimumAddress,
-  _In_  ULONG              MaximumAddress,
-  _In_  ULONG              Alignment,
-  _In_  ULONG              MemorySize,
-  _Out_ PPEP_ACPI_RESOURCE Resource
+```
+void PEP_ACPI_INITIALIZE_MEMORY_RESOURCE(
+  UCHAR              ReadWrite,
+  ULONG              MinimumAddress,
+  ULONG              MaximumAddress,
+  ULONG              Alignment,
+  ULONG              MemorySize,
+  PPEP_ACPI_RESOURCE Resource
 );
-````
+```
 
 ## Parameters
 
@@ -84,7 +84,7 @@ Specifies the number of bytes in the memory range.
 
 `Resource`
 
-A pointer to the resource. The structure behind the pointer is of type <a href="..\pepfx\ns-pepfx-_pep_acpi_io_memory_resource.md">PEP_ACPI_IO_MEMORY_RESOURCE</a>.
+A pointer to the resource. The structure behind the pointer is of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt186683">PEP_ACPI_IO_MEMORY_RESOURCE</a>.
 
 
 ## Return Value
@@ -101,4 +101,4 @@ This function does not return a value.
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_acpi_io_memory_resource.md">PEP_ACPI_IO_MEMORY_RESOURCE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186683">PEP_ACPI_IO_MEMORY_RESOURCE</a>

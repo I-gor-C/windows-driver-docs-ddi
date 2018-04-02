@@ -47,11 +47,11 @@ req.typenames: UNIT_DIAG_LEVEL, *PUNIT_DIAG_LEVEL
 The UNIT_DDI_VERSION structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536983">Av61883_GetUnitInfo</a> request to retrieve the current diag level
 
 ## Syntax
-````
+```
 typedef struct _UNIT_DIAG_LEVEL {
-  ULONG DiagLevel;
-} UNIT_DIAG_LEVEL, *PUNIT_DIAG_LEVEL;
-````
+  IN ULONG DiagLevel;
+} *PUNIT_DIAG_LEVEL, UNIT_DIAG_LEVEL;
+```
 
 ## Members
 

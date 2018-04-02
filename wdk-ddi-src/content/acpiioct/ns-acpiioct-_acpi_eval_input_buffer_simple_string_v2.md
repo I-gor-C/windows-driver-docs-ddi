@@ -47,18 +47,17 @@ req.typenames: ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, *PACPI_EVAL_INPUT_BUFFER
 This topic describes the  <b>ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2</b> structure.
 
 ## Syntax
-````
+```
 typedef struct _ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2 {
-  ULONG                                                        Signature;
+  ULONG Signature;
   union {
     UCHAR MethodName[4];
     ULONG MethodNameAsUlong;
-  } DUMMYUNIONNAME;
-  ULONG                                                        StringLength;
-  _Field_size_bytes_(StringLength)
-    _Null_terminated_ UCHAR String[ANYSIZE_ARRAY];
+  } DUMMYUNIONNAME;
+  ULONG StringLength;
+  UCHAR String[ANYSIZE_ARRAY];
 } ACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2, *PACPI_EVAL_INPUT_BUFFER_SIMPLE_STRING_V2;
-````
+```
 
 ## Members
 

@@ -51,17 +51,17 @@ req.product: Windows 10 or later.
 The <b>WDF_IO_TARGET_STATE</b> enumeration specifies the states that an I/O target can be in.
 
 ## Syntax
-````
-typedef enum _WDF_IO_TARGET_STATE { 
-  WdfIoTargetStateUndefined        = 0,
-  WdfIoTargetStarted               = 1,
-  WdfIoTargetStopped               = 2,
-  WdfIoTargetClosedForQueryRemove  = 3,
-  WdfIoTargetClosed                = 4,
-  WdfIoTargetDeleted               = 5,
-  WdfIoTargetPurged                = 6
+```
+typedef enum _WDF_IO_TARGET_STATE {
+  WdfIoTargetStateUndefined        ,
+  WdfIoTargetStarted               ,
+  WdfIoTargetStopped               ,
+  WdfIoTargetClosedForQueryRemove  ,
+  WdfIoTargetClosed                ,
+  WdfIoTargetDeleted               ,
+  WdfIoTargetStateMaximum
 } WDF_IO_TARGET_STATE, *PWDF_IO_TARGET_STATE;
-````
+```
 
 ## Constants
 
@@ -105,7 +105,7 @@ typedef enum _WDF_IO_TARGET_STATE {
 
 ## Remarks
 
-To obtain an I/O target's current state, call <a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetgetstate.md">WdfIoTargetGetState</a>.
+To obtain an I/O target's current state, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548631">WdfIoTargetGetState</a>.
 
 For more information about states for I/O targets, see <a href="https://msdn.microsoft.com/37f756bf-b655-428e-b72c-f86c71f1a2db">Controlling a General I/O Target's State</a>.
 
@@ -118,4 +118,4 @@ For more information about states for I/O targets, see <a href="https://msdn.mic
 
 ## See Also
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetgetstate.md">WdfIoTargetGetState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548631">WdfIoTargetGetState</a>

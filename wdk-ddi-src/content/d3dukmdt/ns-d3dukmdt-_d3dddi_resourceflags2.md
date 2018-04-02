@@ -7,7 +7,7 @@ old-location: display\d3dddi_resourceflags2.htm
 old-project: display
 ms.assetid: 2edf2104-ad17-4c84-b991-57e64565029f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_RESOURCEFLAGS2, D3DDDI_RESOURCEFLAGS2 structure [Display Devices], _D3DDDI_RESOURCEFLAGS2, d3dukmdt/D3DDDI_RESOURCEFLAGS2, display.d3dddi_resourceflags2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,27 +44,29 @@ req.typenames: D3DDDI_RESOURCEFLAGS2
 ---
 
 # _D3DDDI_RESOURCEFLAGS2 structure
-Identifies the type of resource to create in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource2.md">CreateResource2</a> function.
+Identifies the type of resource to create in a call to the driver's <a href="https://msdn.microsoft.com/a8326707-cffc-4a20-ad3d-c7862661f513">CreateResource2</a> function.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDI_RESOURCEFLAGS2 {
   union {
     struct {
-      UINT VideoEncoder  :1;
-      UINT UserMemory  :1;
-#if ((DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3) || \
-     (D3D_UMD_INTERFACE_VERSION >= D3D_UMD_INTERFACE_VERSION_WDDM1_3))
-      UINT CrossAdapter  :1;
-      UINT Reserved  :29;
-#else 
-      UINT Reserved  :30;
-#endif 
+      UINT  : 1  VideoEncoder;
+      UINT  : 1  UserMemory;
+      UINT  : 1  CrossAdapter;
+      UINT  : 1  IsDisplayable;
+#if ...
+      UINT  : 28 Reserved;
+#elif
+      UINT  : 29 Reserved;
+#else
+      UINT  : 30 Reserved;
+#endif
     };
-    UINT   Value;
+    UINT Value;
   };
 } D3DDDI_RESOURCEFLAGS2;
-````
+```
 
 ## Members
 
@@ -78,8 +80,8 @@ typedef struct _D3DDDI_RESOURCEFLAGS2 {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_formatop.md">FORMATOP</a>
+<a href="https://msdn.microsoft.com/a8326707-cffc-4a20-ad3d-c7862661f513">CreateResource2</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createresource2.md">CreateResource2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566438">FORMATOP</a>

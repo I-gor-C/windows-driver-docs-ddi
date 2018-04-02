@@ -7,7 +7,7 @@ old-location: display\d3dkmtdestroydevice.htm
 old-project: display
 ms.assetid: 7699214a-0cd2-401a-9f66-199d181abce4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTDestroyDevice, D3DKMTDestroyDevice function [Display Devices], OpenGL_Functions_66b283a1-deee-4a49-a02d-217567d35873.xml, d3dkmthk/D3DKMTDestroyDevice, display.d3dkmtdestroydevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>D3DKMTDestroyDevice</b> function releases a kernel-mode device context.
 
 ## Syntax
 
-````
+```
 NTSTATUS D3DKMTDestroyDevice(
-  _In_ const D3DKMT_DESTROYDEVICE *pData
+  CONST *D3DKMT_DESTROYDEVICE
 );
-````
+```
 
 ## Parameters
 
@@ -113,4 +113,4 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_destroydevice.md">D3DKMT_DESTROYDEVICE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547881">D3DKMT_DESTROYDEVICE</a>

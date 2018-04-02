@@ -50,13 +50,13 @@ The <b>wiasWritePropStr</b> function writes a single string property value to a 
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasWritePropStr(
-  _In_     BYTE   *pWiasContext,
-           PROPID propid,
-  _In_opt_ BSTR   bstr
+```
+HRESULT wiasWritePropStr(
+  BYTE   *pWiasContext,
+  PROPID propid,
+  BSTR   bstr
 );
-````
+```
 
 ## Parameters
 
@@ -89,20 +89,20 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropbin.md">wiasWritePropBin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549341">wiasReadPropStr</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropguid.md">wiasWritePropGuid</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549500">wiasWritePropBin</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswriteproplong.md">wiasWritePropLong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549507">wiasWritePropFloat</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropstr.md">wiasReadPropStr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549512">wiasWritePropGuid</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropfloat.md">wiasWritePropFloat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549515">wiasWritePropLong</a>

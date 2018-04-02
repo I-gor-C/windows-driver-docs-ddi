@@ -50,13 +50,13 @@ The <b>wiasIsPropChanged </b>function tests whether a specified property has bee
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasIsPropChanged(
-        PROPID               props,
-  _In_  WIA_PROPERTY_CONTEXT *pContext,
-  _Out_ BOOL                 *pbChanged
+```
+HRESULT wiasIsPropChanged(
+  PROPID               propid,
+  WIA_PROPERTY_CONTEXT *pContext,
+  BOOL                 *pbChanged
 );
-````
+```
 
 ## Parameters
 
@@ -66,7 +66,7 @@ TBD
 
 `pContext`
 
-Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a> structure that contains the current property context.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure that contains the current property context.
 
 `pbChanged`
 
@@ -79,7 +79,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## Remarks
 
-This function determines whether a property is being changed by looking at the <b>bChanged</b> member value in the property's <a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a> structure. Minidrivers typically use this function to check when an independent property has been changed so that its dependents can be updated.
+This function determines whether a property is being changed by looking at the <b>bChanged</b> member value in the property's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a> structure. Minidrivers typically use this function to check when an independent property has been changed so that its dependents can be updated.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -92,20 +92,20 @@ This function determines whether a property is being changed by looking at the <
 
 ## See Also
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wia_property_context.md">WIA_PROPERTY_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552749">WIA_PROPERTY_CONTEXT</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvalueguid.md">wiasGetChangedValueGuid</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549200">wiasGetChangedValueFloat</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluefloat.md">wiasGetChangedValueFloat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549211">wiasGetChangedValueGuid</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluestr.md">wiasGetChangedValueStr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549214">wiasGetChangedValueLong</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasgetchangedvaluelong.md">wiasGetChangedValueLong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549219">wiasGetChangedValueStr</a>

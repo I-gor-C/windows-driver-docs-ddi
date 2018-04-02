@@ -46,7 +46,7 @@ req.product: Windows 10 or later.
 
 # IPrinterExtensionContextCollection interface
 
-Exposes a collection of <a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a> objects.
+Exposes a collection of <a href="https://msdn.microsoft.com/library/windows/hardware/hh406649">IPrinterExtensionContext</a> objects.
 
 ## Methods
 
@@ -72,8 +72,8 @@ Exposes a collection of <a href="..\printerextension\nn-printerextension-iprinte
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406649">IPrinterExtensionContext</a>
+
+
+
 <a href="https://msdn.microsoft.com/947063C6-563A-4BB7-918E-479941B4583F">IPrinterExtensionEvent::OnPrinterQueuesEnumerated</a>
-
-
-
-<a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>

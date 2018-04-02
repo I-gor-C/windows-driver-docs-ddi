@@ -7,7 +7,7 @@ old-location: netvista\ndis_tcp_ip_checksum_net_buffer_list_info.htm
 old-project: netvista
 ms.assetid: 989ecf50-18c4-4977-b845-b3fea0cade47
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, ndis/NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, ndis/PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, netvista.ndis_tcp_ip_checksum_net_buffer_list_info, tcpip_offload_ref_2ce657f6-a894-420b-bcb0-310819237c5b.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,39 +47,37 @@ req.typenames: NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, *PNDIS_TCP_IP_CHECKSUM
 The <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure specifies information used in offloading
   checksum tasks from the TCP/IP transport to a NIC. The <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure
   is part of the 
-  <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> information (out-of-band data)
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> information (out-of-band data)
   that is associated with a <b>NET_BUFFER_LIST</b> structure.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO {
   union {
     struct {
-      ULONG IsIPv4  :1;
-      ULONG IsIPv6  :1;
-      ULONG TcpChecksum  :1;
-      ULONG UdpChecksum  :1;
-      ULONG IpHeaderChecksum  :1;
-      ULONG Reserved  :11;
-      ULONG TcpHeaderOffset  :10;
-    } Transmit;
+      ULONG  : 1  IsIPv4;
+      ULONG  : 1  IsIPv6;
+      ULONG  : 1  TcpChecksum;
+      ULONG  : 1  UdpChecksum;
+      ULONG  : 1  IpHeaderChecksum;
+      ULONG  : 11 Reserved;
+      ULONG  : 10 TcpHeaderOffset;
+    } Transmit;
+    PVOID Value;
     struct {
-      ULONG TcpChecksumFailed  :1;
-      ULONG UdpChecksumFailed  :1;
-      ULONG IpChecksumFailed  :1;
-      ULONG TcpChecksumSucceeded  :1;
-      ULONG UdpChecksumSucceeded  :1;
-      ULONG IpChecksumSucceeded  :1;
-      ULONG Loopback  :1;
-#if (NDIS_SUPPORT_NDIS630)
-      ULONG TcpChecksumValueInvalid  :1;
-      ULONG IpChecksumValueInvalid  :1;
-#endif 
-    } Receive;
-    PVOID  Value;
+      ULONG  : 1 TcpChecksumFailed;
+      ULONG  : 1 UdpChecksumFailed;
+      ULONG  : 1 IpChecksumFailed;
+      ULONG  : 1 TcpChecksumSucceeded;
+      ULONG  : 1 UdpChecksumSucceeded;
+      ULONG  : 1 IpChecksumSucceeded;
+      ULONG  : 1 Loopback;
+      ULONG  : 1 TcpChecksumValueInvalid;
+      ULONG  : 1 IpChecksumValueInvalid;
+    } Receive;
   };
 } NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO, *PNDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO;
-````
+```
 
 ## Members
 
@@ -88,12 +86,12 @@ typedef struct _NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO {
 The <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure specifies information that is used in
     offloading checksum tasks from the TCP/IP transport to a NIC. The
     <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure is part of the 
-    <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> information (out-of-band
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> information (out-of-band
     data) that is associated with a <b>NET_BUFFER_LIST</b> structure.
 
 Before the TCP/IP transport passes to the miniport driver a TCP/IP packet on which the miniport driver
     will perform checksum tasks, the TCP/IP transport updates the <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b>
-    structure that is associated with the <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure. Specifically, the TCP/IP transport sets
+    structure that is associated with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure. Specifically, the TCP/IP transport sets
     the 
     <b>IsIPv4</b> or 
     <b>IsIPv6</b> flag to indicate that the send packet is an IPv4 or IPv6 packet. If the TCP/IP transport
@@ -127,11 +125,11 @@ To obtain the <b>NDIS_TCP_IP_CHECKSUM_NET_BUFFER_LIST_INFO</b> structure, a driv
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
-
-
-
 <a href="https://msdn.microsoft.com/79A37DAB-D9B3-4FA2-8258-05E10BD6E3CB">Indicating Coalesced Segments</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
 
 
 

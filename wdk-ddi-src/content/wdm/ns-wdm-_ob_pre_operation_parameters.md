@@ -7,7 +7,7 @@ old-location: kernel\ob_pre_operation_parameters.htm
 old-project: kernel
 ms.assetid: 211bd3b1-34ca-414d-9167-0587c90cb56a
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*POB_PRE_OPERATION_PARAMETERS, OB_PRE_OPERATION_PARAMETERS, OB_PRE_OPERATION_PARAMETERS union [Kernel-Mode Driver Architecture], POB_PRE_OPERATION_PARAMETERS, POB_PRE_OPERATION_PARAMETERS union pointer [Kernel-Mode Driver Architecture], _OB_PRE_OPERATION_PARAMETERS, kernel.ob_pre_operation_parameters, kstruct_c_328dfe5b-e8ed-4277-9003-e194abbf81ba.xml, wdm/OB_PRE_OPERATION_PARAMETERS, wdm/POB_PRE_OPERATION_PARAMETERS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,26 +45,26 @@ req.product: Windows 10 or later.
 ---
 
 # _OB_PRE_OPERATION_PARAMETERS structure
-The <b>OB_PRE_OPERATION_PARAMETERS</b> union describes the operation-specific parameters for an <a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a> routine.
+The <b>OB_PRE_OPERATION_PARAMETERS</b> union describes the operation-specific parameters for an <a href="https://msdn.microsoft.com/library/windows/hardware/ff557745">ObjectPreCallback</a> routine.
 
 ## Syntax
-````
-typedef union _OB_PRE_OPERATION_PARAMETERS {
-  OB_PRE_CREATE_HANDLE_INFORMATION    CreateHandleInformation;
+```
+typedef struct _OB_PRE_OPERATION_PARAMETERS {
+  OB_PRE_CREATE_HANDLE_INFORMATION    CreateHandleInformation;
   OB_PRE_DUPLICATE_HANDLE_INFORMATION DuplicateHandleInformation;
-} OB_PRE_OPERATION_PARAMETERS, *POB_PRE_OPERATION_PARAMETERS;
-````
+} *POB_PRE_OPERATION_PARAMETERS, OB_PRE_OPERATION_PARAMETERS;
+```
 
 ## Members
 
 
 `CreateHandleInformation`
 
-An <a href="..\wdm\ns-wdm-_ob_pre_create_handle_information.md">OB_PRE_CREATE_HANDLE_INFORMATION</a> structure that contains information that is specific to a handle that is being opened.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/ff558725">OB_PRE_CREATE_HANDLE_INFORMATION</a> structure that contains information that is specific to a handle that is being opened.
 
 `DuplicateHandleInformation`
 
-An <a href="..\wdm\ns-wdm-_ob_pre_duplicate_handle_information.md">OB_PRE_DUPLICATE_HANDLE_INFORMATION </a> structure that contains information that is specific to a handle that is being duplicated.
+An <a href="https://msdn.microsoft.com/f2798729-98a2-44b6-94a6-180bb4db96cb">OB_PRE_DUPLICATE_HANDLE_INFORMATION </a> structure that contains information that is specific to a handle that is being duplicated.
 
 
 ## Requirements
@@ -75,12 +75,12 @@ An <a href="..\wdm\ns-wdm-_ob_pre_duplicate_handle_information.md">OB_PRE_DUPLIC
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_ob_pre_duplicate_handle_information.md">OB_PRE_DUPLICATE_HANDLE_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558725">OB_PRE_CREATE_HANDLE_INFORMATION</a>
 
 
 
-<a href="..\wdm\nc-wdm-pob_pre_operation_callback.md">ObjectPreCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558726">OB_PRE_DUPLICATE_HANDLE_INFORMATION</a>
 
 
 
-<a href="..\wdm\ns-wdm-_ob_pre_create_handle_information.md">OB_PRE_CREATE_HANDLE_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557745">ObjectPreCallback</a>

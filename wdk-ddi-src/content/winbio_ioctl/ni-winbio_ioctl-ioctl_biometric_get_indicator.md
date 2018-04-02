@@ -57,7 +57,7 @@ None.
 None.
 
 ### Output Buffer
-The AssociatedIrp.SystemBuffer member points to a buffer that contains a <a href="..\winbio_ioctl\ns-winbio_ioctl-_winbio_get_indicator.md">WINBIO_GET_INDICATOR</a> structure.
+The AssociatedIrp.SystemBuffer member points to a buffer that contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff536471">WINBIO_GET_INDICATOR</a> structure.
 
 ### Output Buffer Length
 The smallest valid output buffer size is the size of DWORD.  If the driver receives an DWORD-sized output buffer, the driver should return the buffer size necessary for the requested operation.

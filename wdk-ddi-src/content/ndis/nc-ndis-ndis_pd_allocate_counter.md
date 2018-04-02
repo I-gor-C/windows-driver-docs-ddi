@@ -7,7 +7,7 @@ old-location: netvista\ndispdallocatecounter.htm
 old-project: netvista
 ms.assetid: 86AA537D-952F-4A7A-ACA4-24B8C1AE932A
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDIS_PD_ALLOCATE_COUNTER, NdisPDAllocateCounter, NdisPDAllocateCounter callback function [Network Drivers Starting with Windows Vista], ndis/NdisPDAllocateCounter, netvista.ndispdallocatecounter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -85,7 +85,7 @@ A provider handle that identifies the PD-capable miniport driver's provider obje
 
 `CounterParameters`
 
-An <a href="..\ndis\ns-ndis-_ndis_pd_counter_parameters.md">NDIS_PD_COUNTER_PARAMETERS</a> structure that specifies information such as the counter type.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/dn931836">NDIS_PD_COUNTER_PARAMETERS</a> structure that specifies information such as the counter type.
 
 `CounterHandle`
 
@@ -177,8 +177,8 @@ For information about  _Use_decl_annotations_, see <a href="http://go.microsoft.
 
 ## See Also
 
-<a href="..\ndis\nc-ndis-ndis_pd_free_counter.md">NdisPDFreeCounter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn931836">NDIS_PD_COUNTER_PARAMETERS</a>
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_pd_counter_parameters.md">NDIS_PD_COUNTER_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/60C47437-A999-4F82-B144-6F77410E5C07">NdisPDFreeCounter</a>

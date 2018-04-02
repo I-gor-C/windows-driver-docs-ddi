@@ -7,7 +7,7 @@ old-location: ifsk\seclookupaccountname.htm
 old-project: ifsk
 ms.assetid: 5b1c3cc4-6185-4299-86ed-662a2b445042
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: SecLookupAccountName, SecLookupAccountName function [Installable File System Drivers], ifsk.seclookupaccountname, ksecddref_1f4959e5-ea3b-440d-af1b-df05782eefce.xml, ntifs/SecLookupAccountName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,16 +50,16 @@ req.typenames: TOKEN_TYPE
 
 ## Syntax
 
-````
-NTSTATUS SecLookupAccountName(
-  _In_    PUNICODE_STRING Name,
-  _Inout_ PULONG          SidSize,
-  _Out_   PSID            Sid,
-  _Out_   PSID_NAME_USE   NameUse,
-  _Out_   PULONG          DomainSize,
-  _Inout_ PUNICODE_STRING ReferencedDomain
+```
+KSECDDDECLSPEC NTSTATUS SEC_ENTRY SecLookupAccountName(
+  PUNICODE_STRING                  Name,
+  PULONG                           SidSize,
+  PSID                             Sid,
+  PSID_NAME_USE                    NameUse,
+  PULONG DomainSize                OPTIONAL,
+  PUNICODE_STRING ReferencedDomain OPTIONAL
 );
-````
+```
 
 ## Parameters
 
@@ -188,16 +188,16 @@ In addition to looking up local accounts, local domain accounts, and explicitly 
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-seclookupaccountsid.md">SecLookupAccountSid</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556740">SID</a>
 
 
 
-<a href="..\ntifs\ns-ntifs-_sid.md">SID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556744">SID_NAME_USE</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-seclookupwellknownsid.md">SecLookupWellKnownSid</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556579">SecLookupAccountSid</a>
 
 
 
-<a href="..\ntifs\ne-ntifs-_sid_name_use.md">SID_NAME_USE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556582">SecLookupWellKnownSid</a>

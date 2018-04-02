@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The KERNDATA structure is used for describing printer kerning pairs.
 
 ## Syntax
-````
+```
 typedef struct _KERNDATA {
-  DWORD          dwSize;
-  DWORD          dwKernPairNum;
+  DWORD          dwSize;
+  DWORD          dwKernPairNum;
   FD_KERNINGPAIR KernPair[1];
-} KERNDATA, *PKERNDATA;
-````
+} *PKERNDATA, KERNDATA;
+```
 
 ## Members
 
@@ -72,7 +72,7 @@ Specifies the number of elements in the <b>KernPair</b> array.
 Is an array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff565630">FD_KERNINGPAIR</a> structures.
 
 ## Remarks
-A .ufm file's KERNDATA structures are accessed by a pointer in the file's <a href="..\prntfont\ns-prntfont-_unifm_hdr.md">UNIFM_HDR</a> structure.
+A .ufm file's KERNDATA structures are accessed by a pointer in the file's <a href="https://msdn.microsoft.com/library/windows/hardware/ff563587">UNIFM_HDR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,4 +85,4 @@ A .ufm file's KERNDATA structures are accessed by a pointer in the file's <a hre
 
 
 
-<a href="..\prntfont\ns-prntfont-_unifm_hdr.md">UNIFM_HDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563587">UNIFM_HDR</a>

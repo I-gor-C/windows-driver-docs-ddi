@@ -48,11 +48,11 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
+```
 typedef struct _SPLCLIENT_INFO_2_V3 {
-  UINT64           hSplPrinter;
+  UINT64 hSplPrinter;
 } SPLCLIENT_INFO_2_LONGHORN;
-````
+```
 
 ## Members
 

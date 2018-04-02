@@ -7,7 +7,7 @@ old-location: audio\iminiportwavertoutputstream_getpacketcount.htm
 old-project: audio
 ms.assetid: F2870421-2A6F-4E63-AC91-E251E0B67C06
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: GetPacketCount method [Audio Devices], GetPacketCount method [Audio Devices], IMiniportWaveRTOutputStream interface, GetPacketCount,IMiniportWaveRTOutputStream.GetPacketCount, IMiniportWaveRTOutputStream, IMiniportWaveRTOutputStream interface [Audio Devices], GetPacketCount method, IMiniportWaveRTOutputStream::GetPacketCount, audio.iminiportwavertoutputstream_getpacketcount, portcls/IMiniportWaveRTOutputStream::GetPacketCount
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# GetPacketCount method
+# IMiniportWaveRTOutputStream::GetPacketCount method
 GetPacketCount returns the (1-based) count of packets completely transferred from the WaveRT buffer into hardware.
 
 ## Syntax
 
-````
+```
 NTSTATUS GetPacketCount(
-  [out] UINT64 *pPacketCount 
+  ULONG *pPacketCount
 );
-````
+```
 
 ## Parameters
 
@@ -88,4 +88,4 @@ The driver should reset the packet count to 0 when the stream is in KSSTATE_STOP
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportwavertoutputstream.md">IMiniportWaveRTOutputStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946534">IMiniportWaveRTOutputStream</a>

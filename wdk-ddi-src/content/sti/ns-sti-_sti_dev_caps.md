@@ -45,14 +45,14 @@ req.product: Windows 10 or later.
 ---
 
 # _STI_DEV_CAPS structure
-The STI_DEV_CAPS structure is used as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543745">IStiDevice::GetCapabilities</a> method. It is also a member of the <a href="..\sti\ns-sti-_sti_device_informationw.md">STI_DEVICE_INFORMATION</a> and <a href="..\sti\ns-sti-_sti_wia_device_informationw.md">STI_WIA_DEVICE_INFORMATION</a> structures.
+The STI_DEV_CAPS structure is used as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543745">IStiDevice::GetCapabilities</a> method. It is also a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548361">STI_DEVICE_INFORMATION</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff548408">STI_WIA_DEVICE_INFORMATION</a> structures.
 
 ## Syntax
-````
+```
 typedef struct _STI_DEV_CAPS {
   DWORD dwGeneric;
-} STI_DEV_CAPS, *PSTI_DEV_CAPS;
-````
+} *PSTI_DEV_CAPS, STI_DEV_CAPS;
+```
 
 ## Members
 

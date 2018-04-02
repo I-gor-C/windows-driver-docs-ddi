@@ -53,11 +53,11 @@ The <b>WdfFdoLockStaticChildListForIteration</b> method prepares the framework f
 
 ## Syntax
 
-````
-VOID WdfFdoLockStaticChildListForIteration(
-  _In_ WDFDEVICE Fdo
+```
+void WdfFdoLockStaticChildListForIteration(
+  WDFDEVICE Fdo
 );
-````
+```
 
 ## Parameters
 
@@ -76,20 +76,20 @@ A system bug check occurs if the driver supplies an invalid object handle.
 
 Bus drivers that use static bus enumeration can call <b>WdfFdoLockStaticChildListForIteration</b>. 
 
-After calling <b>WdfFdoLockStaticChildListForIteration</b>, the driver can repeatedly call <a href="..\wdffdo\nf-wdffdo-wdffdoretrievenextstaticchild.md">WdfFdoRetrieveNextStaticChild</a> to obtain information about each child device in the child list. 
+After calling <b>WdfFdoLockStaticChildListForIteration</b>, the driver can repeatedly call <a href="https://msdn.microsoft.com/library/windows/hardware/ff547293">WdfFdoRetrieveNextStaticChild</a> to obtain information about each child device in the child list. 
 
-After the driver has finished calling <a href="..\wdffdo\nf-wdffdo-wdffdoretrievenextstaticchild.md">WdfFdoRetrieveNextStaticChild</a>, it must call <a href="..\wdffdo\nf-wdffdo-wdffdounlockstaticchildlistfromiteration.md">WdfFdoUnlockStaticChildListFromIteration</a>.
+After the driver has finished calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff547293">WdfFdoRetrieveNextStaticChild</a>, it must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff547297">WdfFdoUnlockStaticChildListFromIteration</a>.
 
-If the driver makes changes to the child list after calling <b>WdfFdoLockStaticChildListForIteration</b>, the framework stores all of the changes and notifies the Plug and Play (PnP) manager of the changes when the driver calls <a href="..\wdffdo\nf-wdffdo-wdffdounlockstaticchildlistfromiteration.md">WdfFdoUnlockStaticChildListFromIteration</a>.
+If the driver makes changes to the child list after calling <b>WdfFdoLockStaticChildListForIteration</b>, the framework stores all of the changes and notifies the Plug and Play (PnP) manager of the changes when the driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff547297">WdfFdoUnlockStaticChildListFromIteration</a>.
 
-The driver can nest calls to <b>WdfFdoLockStaticChildListForIteration</b> and <a href="..\wdffdo\nf-wdffdo-wdffdounlockstaticchildlistfromiteration.md">WdfFdoUnlockStaticChildListFromIteration</a>. If the driver nests calls to these methods, the framework stores all of the changes until the last call to <b>WdfFdoUnlockStaticChildListFromIteration</b>.
+The driver can nest calls to <b>WdfFdoLockStaticChildListForIteration</b> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff547297">WdfFdoUnlockStaticChildListFromIteration</a>. If the driver nests calls to these methods, the framework stores all of the changes until the last call to <b>WdfFdoUnlockStaticChildListFromIteration</b>.
 
 For more information about static child lists, see <a href="https://msdn.microsoft.com/58377f17-a9dc-4096-af23-36f8d8dbb87e">Static Enumeration</a>.
 
 
 #### Examples
 
-For a code example that uses <b>WdfFdoLockStaticChildListForIteration</b>, see <a href="..\wdffdo\nf-wdffdo-wdffdoretrievenextstaticchild.md">WdfFdoRetrieveNextStaticChild</a>.
+For a code example that uses <b>WdfFdoLockStaticChildListForIteration</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff547293">WdfFdoRetrieveNextStaticChild</a>.
 
 <div class="code"></div>
 
@@ -105,4 +105,4 @@ For a code example that uses <b>WdfFdoLockStaticChildListForIteration</b>, see <
 
 ## See Also
 
-<a href="..\wdffdo\nf-wdffdo-wdffdounlockstaticchildlistfromiteration.md">WdfFdoUnlockStaticChildListFromIteration</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547297">WdfFdoUnlockStaticChildListFromIteration</a>

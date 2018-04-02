@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetAt method
-Gets a pointer to an <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> object.
+# IPrintSchemaOptionCollection::GetAt method
+Gets a pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> object.
 
 ## Syntax
 
-````
+```
 HRESULT GetAt(
-  [in]                    ULONG              ulIndex,
-  [out, retval, optional] IPrintSchemaOption **ppOption
+  ULONG              ulIndex,
+  IPrintSchemaOption **ppOption
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ Index of the <b>IPrintSchemaOption</b> object within the collection.
 
 `ppOption`
 
-Pointer to an <a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a> object.
+Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a> object.
 
 
 ## Return Value
@@ -82,8 +82,8 @@ Returns an <b>HRESULT</b> value. If the method call was not successful,  it retu
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemaoptioncollection.md">IPrintSchemaOptionCollection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh846198">IPrintSchemaOptionCollection</a>

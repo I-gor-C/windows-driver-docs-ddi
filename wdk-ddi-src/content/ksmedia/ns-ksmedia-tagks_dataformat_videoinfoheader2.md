@@ -47,12 +47,12 @@ req.typenames: KS_DATAFORMAT_VIDEOINFOHEADER2, *PKS_DATAFORMAT_VIDEOINFOHEADER2
 The KS_DATAFORMAT_VIDEOINFOHEADER2 structure describes a video stream that includes settings for bob or weave.
 
 ## Syntax
-````
+```
 typedef struct tagKS_DATAFORMAT_VIDEOINFOHEADER2 {
-  KSDATAFORMAT        DataFormat;
+  KSDATAFORMAT        DataFormat;
   KS_VIDEOINFOHEADER2 VideoInfoHeader2;
-} KS_DATAFORMAT_VIDEOINFOHEADER2, *PKS_DATAFORMAT_VIDEOINFOHEADER2;
-````
+} *PKS_DATAFORMAT_VIDEOINFOHEADER2, KS_DATAFORMAT_VIDEOINFOHEADER2;
+```
 
 ## Members
 
@@ -66,7 +66,7 @@ Specifies the data format.
 Specifies the details of the video stream, including options for specifying bob or weave settings.
 
 ## Remarks
-Minidrivers that do not need to specify bob or weave settings may use the <a href="..\ksmedia\ns-ksmedia-tagks_dataformat_videoinfoheader.md">KS_DATAFORMAT_VIDEOINFOHEADER</a> structure.
+Minidrivers that do not need to specify bob or weave settings may use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567331">KS_DATAFORMAT_VIDEOINFOHEADER</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -75,16 +75,16 @@ Minidrivers that do not need to specify bob or weave settings may use the <a hre
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_dataformat_videoinfoheader.md">KS_DATAFORMAT_VIDEOINFOHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567331">KS_DATAFORMAT_VIDEOINFOHEADER</a>
 
 
 
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md">KS_VIDEOINFOHEADER2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567702">KS_VIDEOINFOHEADER2</a>

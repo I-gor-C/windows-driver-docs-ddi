@@ -47,16 +47,16 @@ req.typenames: TIMECODE
 The TIMECODE union describes a timecode from an external device. This structure is no longer used.
 
 ## Syntax
-````
-typedef union _timecode {
+```
+typedef struct _timecode {
   struct {
-    WORD  wFrameRate;
-    WORD  wFrameFract;
     DWORD dwFrames;
+    WORD  wFrameFract;
+    WORD  wFrameRate;
   };
   DWORDLONG qw;
-} TIMECODE, *PTIMECODE;
-````
+} TIMECODE;
+```
 
 ## Members
 

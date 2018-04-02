@@ -56,7 +56,7 @@ The enumerated list of jobs represents a snapshot of the current job status.
 
 | Method | Description |
 | ---- |:---- |
-| [IPrintJobCollection::get_Count](nf-printerextension-iprintjobcollection-get_count.md) | Gets a count of the number of IPrinterExtensionContext objects in the collection. |
+| [IPrintJobCollection::get_Count](nf-printerextension-iprintjobcollection-get_count.md) | Gets the number of jobs in the print queue. |
 | [IPrintJobCollection::GetAt](nf-printerextension-iprintjobcollection-getat.md) | Gets a pointer to an IPrintJob object. |
 
 ## Remarks
@@ -73,8 +73,8 @@ The order of print jobs in the enumerated list is the same as the order provided
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>
-
-
-
 <a href="http://msdn.microsoft.com/en-us/library/windows/desktop/dd162625(v=vs.85).aspx">EnumJobs</a>
+
+
+
+<a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>

@@ -7,7 +7,7 @@ old-location: debugger\getsourcepathelementwide.htm
 old-project: debugger
 ms.assetid: 724ee7a6-a0ef-440b-a0d4-5eecda77338a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetSourcePathElementWide method [Windows Debugging], GetSourcePathElementWide method [Windows Debugging], IDebugSymbols3 interface, GetSourcePathElementWide,IDebugSymbols3.GetSourcePathElementWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSourcePathElementWide method, IDebugSymbols3::GetSourcePathElementWide, dbgeng/IDebugSymbols3::GetSourcePathElementWide, debugger.getsourcepathelementwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetSourcePathElementWide method
+# IDebugSymbols3::GetSourcePathElementWide method
 The <b>GetSourcePathElementWide</b>  method returns an element from the source path.
 
 ## Syntax
 
-````
+```
 HRESULT GetSourcePathElementWide(
-  [in]            ULONG  Index,
-  [out, optional] PWSTR  Buffer,
-  [in]            ULONG  BufferSize,
-  [out, optional] PULONG ElementSize
+  ULONG  Index,
+  PWSTR  Buffer,
+  ULONG  BufferSize,
+  PULONG ElementSize
 );
-````
+```
 
 ## Parameters
 
@@ -124,12 +124,12 @@ For more information about manipulating the source path, see <a href="https://ms
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538102">AppendSourcePath</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548358">GetSourcePath</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff538102">AppendSourcePath</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

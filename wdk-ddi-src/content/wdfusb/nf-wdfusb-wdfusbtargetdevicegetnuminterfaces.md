@@ -55,17 +55,17 @@ The <b>WdfUsbTargetDeviceGetNumInterfaces</b> method returns the number of USB d
 
 ## Syntax
 
-````
+```
 UCHAR WdfUsbTargetDeviceGetNumInterfaces(
-  _In_ WDFUSBDEVICE UsbDevice
+  WDFUSBDEVICE UsbDevice
 );
-````
+```
 
 ## Parameters
 
 `UsbDevice`
 
-A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.
+A handle to a USB device object that was obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 
 ## Return Value
@@ -109,4 +109,4 @@ numInterfaces = WdfUsbTargetDeviceGetNumInterfaces(UsbDevice);</pre>
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>

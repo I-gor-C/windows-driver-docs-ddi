@@ -50,11 +50,11 @@ A port monitor UI DLL's <b>InitializePrintMonitorUI</b> function supplies the pr
 
 ## Syntax
 
-````
-PMONITORUI WINAPI InitializePrintMonitorUI(
-    void
+```
+PMONITORUI InitializePrintMonitorUI(
+
 );
-````
+```
 
 ## Parameters
 
@@ -62,7 +62,7 @@ This function has no parameters.
 
 ## Return Value
 
-The function should return a pointer to an initialized <a href="..\winsplp\ns-winsplp-_monitorui.md">MONITORUI</a> structure.
+The function should return a pointer to an initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff557541">MONITORUI</a> structure.
 
 ## Remarks
 
@@ -76,8 +76,8 @@ Port monitor UI DLLs are required to export an <b>InitializePrintMonitorUI</b> f
 
 ## See Also
 
-<a href="..\winsplp\ns-winsplp-_monitorui.md">MONITORUI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551600">InitializePrintMonitor</a>
 
 
 
-<a href="..\winsplp\nf-winsplp-initializeprintmonitor.md">InitializePrintMonitor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557541">MONITORUI</a>

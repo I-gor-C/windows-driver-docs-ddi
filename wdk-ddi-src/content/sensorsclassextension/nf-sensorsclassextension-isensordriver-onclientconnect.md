@@ -46,17 +46,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnClientConnect method
+# ISensorDriver::OnClientConnect method
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545573">ISensorDriver::OnClientConnect</a> method notifies the sensor driver that a client application has connected.
 
 ## Syntax
 
-````
+```
 HRESULT OnClientConnect(
-   IWDFFile * pClientFile,
-   LPWSTR     pwszSensorID
+  IWDFFile *pClientFile,
+  LPWSTR   pwszSensorID
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: display\d3dddi_lockasyncflags.htm
 old-project: display
 ms.assetid: 0e6dd14c-5192-4c4b-9dcb-716989d24588
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_LOCKASYNCFLAGS, D3DDDI_LOCKASYNCFLAGS structure [Display Devices], D3D_other_Structs_765c2b3d-14e2-4eaf-978f-764263aa2a99.xml, _D3DDDI_LOCKASYNCFLAGS, d3dumddi/D3DDDI_LOCKASYNCFLAGS, display.d3dddi_lockasyncflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,23 +47,23 @@ req.typenames: D3DDDI_LOCKASYNCFLAGS
 The D3DDDI_LOCKASYNCFLAGS structure identifies how to lock a resource.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDI_LOCKASYNCFLAGS {
   union {
     struct {
-      UINT NoOverwrite  :1;
-      UINT Discard  :1;
-      UINT RangeValid  :1;
-      UINT AreaValid  :1;
-      UINT BoxValid  :1;
-      UINT NoExistingReferences  :1;
-      UINT NotifyOnly  :1;
-      UINT Reserved  :25;
+      UINT  : 1  NoOverwrite;
+      UINT  : 1  Discard;
+      UINT  : 1  RangeValid;
+      UINT  : 1  AreaValid;
+      UINT  : 1  BoxValid;
+      UINT  : 1  NoExistingReferences;
+      UINT  : 1  NotifyOnly;
+      UINT  : 25 Reserved;
     };
-    UINT   Value;
+    UINT Value;
   };
 } D3DDDI_LOCKASYNCFLAGS;
-````
+```
 
 ## Members
 
@@ -77,4 +77,4 @@ typedef struct _D3DDDI_LOCKASYNCFLAGS {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_lockasync.md">D3DDDIARG_LOCKASYNC</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543213">D3DDDIARG_LOCKASYNC</a>

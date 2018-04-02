@@ -49,34 +49,34 @@ Profile drivers use Bluetooth request blocks (BRBs), to send requests to the Blu
   device.
 
 ## Syntax
-````
+```
 typedef struct _BRB {
   union {
-    struct _BRB_HEADER  BrbHeader;
-    struct _BRB_GET_DEVICE_INTERFACE_STRING  BrbGetDeviceInterfaceString;
-    struct _BRB_L2CA_REGISTER_SERVER  BrbL2caRegisterServer;
-    struct _BRB_L2CA_UNREGISTER_SERVER  BrbL2caUnregisterServer;
-    struct _BRB_L2CA_OPEN_CHANNEL  BrbL2caOpenChannel;
-    struct _BRB_L2CA_CLOSE_CHANNEL  BrbL2caCloseChannel;
-    struct _BRB_L2CA_PING  BrbL2caPing;
-    struct _BRB_L2CA_ACL_TRANSFER  BrbL2caAclTransfer;
-    struct _BRB_GET_LOCAL_BD_ADDR  BrbGetLocalBdAddress;
-    struct _BRB_PSM  BrbPsm;
-    struct _BRB_L2CA_UPDATE_CHANNEL  BrbL2caUpdateChannel;
-    struct _BRB_SCO_REGISTER_SERVER  BrbScoRegisterServer;
-    struct _BRB_SCO_UNREGISTER_SERVER  BrbScoUnregisterServer;
-    struct _BRB_SCO_OPEN_CHANNEL  BrbScoOpenChannel;
-    struct _BRB_SCO_CLOSE_CHANNEL  BrbScoCloseChannel;
-    struct _BRB_SCO_FLUSH_CHANNEL  BrbScoFlushChannel;
-    struct _BRB_SCO_TRANSFER  BrbScoTransfer;
-    struct _BRB_SCO_GET_CHANNEL_INFO  BrbScoGetChannelInfo;
-    struct _BRB_SCO_GET_SYSTEM_INFO  BrbScoGetSystemInfo;
-    struct _BRB_ACL_GET_MODE  BrbAclGetMode;
-    struct _BRB_ACL_ENTER_ACTIVE_MODE  BrbAclEnterActiveMode;
-    struct _BRB_L2CA_OPEN_ENHANCED_CHANNEL  BrbL2caOpenEnhancedChannel;
+    _BRB_ACL_ENTER_ACTIVE_MODE       BrbAclEnterActiveMode;
+    _BRB_ACL_GET_MODE                BrbAclGetMode;
+    _BRB_GET_DEVICE_INTERFACE_STRING BrbGetDeviceInterfaceString;
+    _BRB_GET_LOCAL_BD_ADDR           BrbGetLocalBdAddress;
+    _BRB_HEADER                      BrbHeader;
+    _BRB_L2CA_ACL_TRANSFER           BrbL2caAclTransfer;
+    _BRB_L2CA_CLOSE_CHANNEL          BrbL2caCloseChannel;
+    _BRB_L2CA_OPEN_CHANNEL           BrbL2caOpenChannel;
+    _BRB_L2CA_OPEN_ENHANCED_CHANNEL  BrbL2caOpenEnhancedChannel;
+    _BRB_L2CA_PING                   BrbL2caPing;
+    _BRB_L2CA_REGISTER_SERVER        BrbL2caRegisterServer;
+    _BRB_L2CA_UNREGISTER_SERVER      BrbL2caUnregisterServer;
+    _BRB_L2CA_UPDATE_CHANNEL         BrbL2caUpdateChannel;
+    _BRB_PSM                         BrbPsm;
+    _BRB_SCO_CLOSE_CHANNEL           BrbScoCloseChannel;
+    _BRB_SCO_FLUSH_CHANNEL           BrbScoFlushChannel;
+    _BRB_SCO_GET_CHANNEL_INFO        BrbScoGetChannelInfo;
+    _BRB_SCO_GET_SYSTEM_INFO         BrbScoGetSystemInfo;
+    _BRB_SCO_OPEN_CHANNEL            BrbScoOpenChannel;
+    _BRB_SCO_REGISTER_SERVER         BrbScoRegisterServer;
+    _BRB_SCO_TRANSFER                BrbScoTransfer;
+    _BRB_SCO_UNREGISTER_SERVER       BrbScoUnregisterServer;
   };
 } BRB, *PBRB;
-````
+```
 
 ## Members
 
@@ -90,85 +90,85 @@ typedef struct _BRB {
 
 ## See Also
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_get_channel_info.md">_BRB_SCO_GET_CHANNEL_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_unregister_server.md">_BRB_L2CA_UNREGISTER_SERVER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536854">_BRB_ACL_ENTER_ACTIVE_MODE</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_transfer.md">_BRB_SCO_TRANSFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536855">_BRB_ACL_GET_MODE</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_register_server.md">_BRB_L2CA_REGISTER_SERVER</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_sco_get_system_info.md">_BRB_SCO_GET_SYSTEM_INFO</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_sco_register_server.md">_BRB_SCO_REGISTER_SERVER</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_close_channel.md">_BRB_L2CA_CLOSE_CHANNEL</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_get_device_interface_string.md">
+<a href="https://msdn.microsoft.com/340e4b9a-9959-4eda-b26b-674f7fca7156">
    _BRB_GET_DEVICE_INTERFACE_STRING</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_flush_channel.md">_BRB_SCO_FLUSH_CHANNEL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536857">_BRB_GET_LOCAL_BD_ADDR</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_psm.md">_BRB_PSM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536858">_BRB_L2CA_ACL_TRANSFER</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536859">_BRB_L2CA_CLOSE_CHANNEL</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_acl_transfer.md">_BRB_L2CA_ACL_TRANSFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536860">_BRB_L2CA_OPEN_CHANNEL</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_update_channel.md">_BRB_L2CA_UPDATE_CHANNEL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536861">_BRB_L2CA_PING</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_unregister_server.md">_BRB_SCO_UNREGISTER_SERVER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536862">_BRB_L2CA_REGISTER_SERVER</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_acl_get_mode.md">_BRB_ACL_GET_MODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536863">_BRB_L2CA_UNREGISTER_SERVER</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_close_channel.md">_BRB_SCO_CLOSE_CHANNEL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536864">_BRB_L2CA_UPDATE_CHANNEL</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_get_local_bd_addr.md">_BRB_GET_LOCAL_BD_ADDR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536865">_BRB_PSM</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_ping.md">_BRB_L2CA_PING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536866">_BRB_SCO_CLOSE_CHANNEL</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_acl_enter_active_mode.md">_BRB_ACL_ENTER_ACTIVE_MODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536867">_BRB_SCO_FLUSH_CHANNEL</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_sco_open_channel.md">_BRB_SCO_OPEN_CHANNEL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536868">_BRB_SCO_GET_CHANNEL_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536869">_BRB_SCO_GET_SYSTEM_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536870">_BRB_SCO_OPEN_CHANNEL</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536871">_BRB_SCO_REGISTER_SERVER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536872">_BRB_SCO_TRANSFER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536873">_BRB_SCO_UNREGISTER_SERVER</a>

@@ -55,9 +55,11 @@ The <b>WdfVerifierDbgBreakPoint</b> function breaks into a kernel debugger, if a
 
 ## Syntax
 
-````
-VOID WdfVerifierDbgBreakPoint(void);
-````
+```
+void WdfVerifierDbgBreakPoint(
+
+);
+```
 
 ## Parameters
 
@@ -123,4 +125,4 @@ if( !NT_SUCCESS(Status) ) {
 
 ## See Also
 
-<a href="..\wdfverifier\nf-wdfverifier-wdfverifierkebugcheck.md">WdfVerifierKeBugCheck</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551166">WdfVerifierKeBugCheck</a>

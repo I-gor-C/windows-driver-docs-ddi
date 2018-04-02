@@ -7,7 +7,7 @@ old-location: display\dxgk_enginestatus.htm
 old-project: display
 ms.assetid: e052e3bc-688e-4aa8-b987-88ed6963774a
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_ENGINESTATUS, DXGK_ENGINESTATUS structure [Display Devices], _DXGK_ENGINESTATUS, d3dkmddi/DXGK_ENGINESTATUS, display.dxgk_enginestatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,20 +44,20 @@ req.typenames: DXGK_ENGINESTATUS
 ---
 
 # _DXGK_ENGINESTATUS structure
-Indicates the progress of a node within an active physical display adapter (engine) specified by a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryenginestatus.md">DXGKARG_QUERYENGINESTATUS</a> structure.
+Indicates the progress of a node within an active physical display adapter (engine) specified by a <a href="https://msdn.microsoft.com/library/windows/hardware/hh451299">DXGKARG_QUERYENGINESTATUS</a> structure.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_ENGINESTATUS {
   union {
     struct {
-      UINT Responsive;
-      UINT Reserved;
+      UINT  : 1  Responsive;
+      UINT  : 31 Reserved;
     };
-    UINT   Value;
+    UINT Value;
   };
 } DXGK_ENGINESTATUS;
-````
+```
 
 ## Members
 
@@ -71,4 +71,4 @@ typedef struct _DXGK_ENGINESTATUS {
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_queryenginestatus.md">DXGKARG_QUERYENGINESTATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451299">DXGKARG_QUERYENGINESTATUS</a>

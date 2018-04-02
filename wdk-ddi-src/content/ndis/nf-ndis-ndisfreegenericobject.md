@@ -7,7 +7,7 @@ old-location: netvista\ndisfreegenericobject.htm
 old-project: netvista
 ms.assetid: 02c0ea87-d25d-4363-85e3-e47c4c5d8a9b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisFreeGenericObject, NdisFreeGenericObject function [Network Drivers Starting with Windows Vista], ndis/NdisFreeGenericObject, ndis_object_ref_d796ffda-61f1-473d-98ea-5ad3570889e9.xml, netvista.ndisfreegenericobject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,16 +48,16 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisFreeGenericObject function
 Call the 
   <b>NdisFreeGenericObject</b> function to free a generic object that was created with the 
-  <a href="..\ndis\nf-ndis-ndisallocategenericobject.md">
+  <a href="https://msdn.microsoft.com/166584fb-8a81-4a5b-93c9-3ad5348e15a7">
   NdisAllocateGenericObject</a> function.
 
 ## Syntax
 
-````
-VOID NdisFreeGenericObject(
-  _In_ PNDIS_GENERIC_OBJECT NdisGenericObject
+```
+void NdisFreeGenericObject(
+  PNDIS_GENERIC_OBJECT NdisObject
 );
-````
+```
 
 ## Parameters
 
@@ -74,7 +74,7 @@ None
 
 An NDIS handle is required to allocate some NDIS resources (for example, buffer pools). Components
     that do not otherwise have an NDIS handle use a pointer to an 
-    <a href="..\ndis\ns-ndis-_ndis_generic_object.md">NDIS_GENERIC_OBJECT</a> structure as an NDIS
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff565680">NDIS_GENERIC_OBJECT</a> structure as an NDIS
     handle. All resources that were allocated with this generic object pointer as the handle must be freed
     before freeing the generic object.
 
@@ -90,8 +90,8 @@ An NDIS handle is required to allocate some NDIS resources (for example, buffer 
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisallocategenericobject.md">NdisAllocateGenericObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565680">NDIS_GENERIC_OBJECT</a>
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_generic_object.md">NDIS_GENERIC_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561603">NdisAllocateGenericObject</a>

@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+req.irql: 
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -45,27 +45,25 @@ req.product: Windows 10 or later.
 ---
 
 # _OS_DEP_DATA structure
-The OS_DEP_DATA structure defines the data that is stored in the <b>OsData</b> member of the <a href="..\smclib\ns-smclib-_smartcard_extension.md">SMARTCARD_EXTENSION</a> structure, which holds smart card information that is specific to the operating system.
+The OS_DEP_DATA structure defines the data that is stored in the <b>OsData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548974">SMARTCARD_EXTENSION</a> structure, which holds smart card information that is specific to the operating system.
 
 ## Syntax
-````
+```
 typedef struct _OS_DEP_DATA {
   PDEVICE_OBJECT DeviceObject;
-  PIRP           CurrentIrp;
-  PIRP           NotificationIrp;
-  KMUTANT        Mutex;
-  KSPIN_LOCK     SpinLock;
+  PIRP           CurrentIrp;
+  PIRP           NotificationIrp;
+  KMUTANT        Mutex;
+  KSPIN_LOCK     SpinLock;
   struct {
-    BOOLEAN    Removed;
-    LONG       RefCount;
-    KEVENT     RemoveEvent;
+    LONG       RefCount;
+    BOOLEAN    Removed;
+    KEVENT     RemoveEvent;
     LIST_ENTRY TagList;
-  } RemoveLock;
-#ifdef DEBUG_INTERFACE
+  } RemoveLock;
   PDEVICE_OBJECT DebugDeviceObject;
-#endif 
 } OS_DEP_DATA, *POS_DEP_DATA;
-````
+```
 
 ## Members
 
@@ -76,7 +74,7 @@ A pointer to the smart card reader device object. (Must be set by the driver.)
 
 `CurrentIrp`
 
-A pointer to the current IRP to process. Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="..\smclib\ns-smclib-_smartcard_extension.md">SMARTCARD_EXTENSION</a>.
+A pointer to the current IRP to process. Access to this field must be sequentialized by using the spin lock pointed to by the <b>OsData-&gt;SpinLock</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548974">SMARTCARD_EXTENSION</a>.
 
 `NotificationIrp`
 
@@ -88,7 +86,7 @@ Contains a mutex that applications use to synchronize access to the reader drive
 
 `SpinLock`
 
-Contains a mutex that drivers use to synchronize access to protected members of the OS_DEP_DATA structure. For more information, see <a href="..\smclib\ns-smclib-_scard_card_capabilities.md">SCARD_CARD_CAPABILITIES</a>.
+Contains a mutex that drivers use to synchronize access to protected members of the OS_DEP_DATA structure. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548929">SCARD_CARD_CAPABILITIES</a>.
 
 `RemoveLock`
 

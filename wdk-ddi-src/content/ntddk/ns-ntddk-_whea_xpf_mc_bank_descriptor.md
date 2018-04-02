@@ -47,19 +47,19 @@ req.typenames: WHEA_XPF_MC_BANK_DESCRIPTOR, *PWHEA_XPF_MC_BANK_DESCRIPTOR
 The WHEA_XPF_MC_BANK_DESCRIPTOR structure describes a bank of machine check registers for an x86 or x64 processor.
 
 ## Syntax
-````
+```
 typedef struct _WHEA_XPF_MC_BANK_DESCRIPTOR {
-  UCHAR             BankNumber;
-  BOOLEAN           ClearOnInitialization;
-  UCHAR             StatusDataFormat;
+  UCHAR             BankNumber;
+  BOOLEAN           ClearOnInitialization;
+  UCHAR             StatusDataFormat;
   XPF_MC_BANK_FLAGS Flags;
-  ULONG             ControlMsr;
-  ULONG             StatusMsr;
-  ULONG             AddressMsr;
-  ULONG             MiscMsr;
-  ULONGLONG         ControlData;
-} WHEA_XPF_MC_BANK_DESCRIPTOR, *PWHEA_XPF_MC_BANK_DESCRIPTOR;
-````
+  ULONG             ControlMsr;
+  ULONG             StatusMsr;
+  ULONG             AddressMsr;
+  ULONG             MiscMsr;
+  ULONGLONG         ControlData;
+} *PWHEA_XPF_MC_BANK_DESCRIPTOR, WHEA_XPF_MC_BANK_DESCRIPTOR;
+```
 
 ## Members
 
@@ -164,7 +164,7 @@ The model-specific register address of the register bank's IA32_MCi_MISC registe
 The value that the operating system writes to the register bank's control register during initialization.
 
 ## Remarks
-An array of WHEA_XPF_MC_BANK_DESCRIPTOR structures is contained in the <a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a> and <a href="..\ntddk\ns-ntddk-_whea_xpf_mce_descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a> structures.
+An array of WHEA_XPF_MC_BANK_DESCRIPTOR structures is contained in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560646">WHEA_XPF_CMC_DESCRIPTOR</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560649">WHEA_XPF_MCE_DESCRIPTOR</a> structures.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -174,8 +174,8 @@ An array of WHEA_XPF_MC_BANK_DESCRIPTOR structures is contained in the <a href="
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_xpf_mce_descriptor.md">WHEA_XPF_MCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560646">WHEA_XPF_CMC_DESCRIPTOR</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_xpf_cmc_descriptor.md">WHEA_XPF_CMC_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560649">WHEA_XPF_MCE_DESCRIPTOR</a>

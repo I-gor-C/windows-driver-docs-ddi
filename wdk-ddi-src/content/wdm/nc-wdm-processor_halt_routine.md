@@ -7,7 +7,7 @@ old-location: kernel\halt.htm
 old-project: kernel
 ms.assetid: 425239C1-4FBE-4703-B7DB-9DCC17562A6C
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: Halt, Halt routine [Kernel-Mode Driver Architecture], PROCESSOR_HALT_ROUTINE, kernel.halt, wdm/Halt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ NTSTATUS ProcessorHaltRoutine(
 
 `Context`
 
-A pointer to a PEP-defined processor-halt context. This pointer is the <i>Context</i> parameter value that the PEP previously passed to the <a href="..\pepfx\nc-pepfx-pofxcallbackprocessorhalt.md">ProcessorHalt</a> routine.
+A pointer to a PEP-defined processor-halt context. This pointer is the <i>Context</i> parameter value that the PEP previously passed to the <a href="https://msdn.microsoft.com/library/windows/hardware/mt186879">ProcessorHalt</a> routine.
 
 
 ## Return Value
@@ -72,7 +72,7 @@ A <i>Halt</i> callback routine may or may not return. If this routine does retur
 
 ## Remarks
 
-This routine is implemented by the platform extension plug-in (PEP) and is called by the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx). The <a href="..\pepfx\nc-pepfx-pofxcallbackprocessorhalt.md">ProcessorHalt</a> routine accepts a pointer to a <i>Halt</i> callback routine as a parameter.
+This routine is implemented by the platform extension plug-in (PEP) and is called by the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx). The <a href="https://msdn.microsoft.com/library/windows/hardware/mt186879">ProcessorHalt</a> routine accepts a pointer to a <i>Halt</i> callback routine as a parameter.
 
 The PEP's <i>Halt</i> routine is called at the same IRQL at which the PEP called <b>ProcessorHalt</b>.
 
@@ -86,8 +86,8 @@ The PEP's <i>Halt</i> routine is called at the same IRQL at which the PEP called
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_crashdump_information.md">PEP_CRASHDUMP_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186708">PEP_CRASHDUMP_INFORMATION</a>
 
 
 
-<a href="..\pepfx\nc-pepfx-pofxcallbackprocessorhalt.md">ProcessorHalt</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186879">ProcessorHalt</a>

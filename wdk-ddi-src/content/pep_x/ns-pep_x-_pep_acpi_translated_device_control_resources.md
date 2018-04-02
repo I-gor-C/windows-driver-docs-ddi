@@ -7,7 +7,7 @@ old-location: kernel\pep_acpi_translated_device_control_resources.htm
 old-project: kernel
 ms.assetid: 1274EF11-6A0D-4464-992D-4E27C981971F
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES, PEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES, PEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES structure [Kernel-Mode Driver Architecture], _PEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES, kernel.pep_acpi_translated_device_control_resources, pepfx/PEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: PEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES, *PPEP_ACPI_TRANSLAT
 The <b>PEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES</b> structure contains a list of translated power-control resources for the platform extension plug-in (PEP) to use.
 
 ## Syntax
-````
-struct PEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES {
-  PEPHANDLE        DeviceHandle;
-  ULONG            RequestFlags;
-  NTSTATUS         Status;
-  SIZE_T           ResourceBufferSize;
-  CM_RESOURCE_LIST TranslatedResources;
-};
-````
+```
+typedef struct _PEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES {
+  PEPHANDLE         DeviceHandle;
+  ULONG             RequestFlags;
+  NTSTATUS          Status;
+  SIZE_T            TranslatedResourcesSize;
+  PCM_RESOURCE_LIST TranslatedResources;
+} *PPEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES, PEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES;
+```
 
 ## Members
 
@@ -78,7 +78,7 @@ struct PEP_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES {
 
 `TranslatedResources`
 
-[in] A <a href="..\wudfwdm\ns-wudfwdm-_cm_resource_list.md">CM_RESOURCE_LIST</a> structure that serves as the header for the resource list. The remainder of the resource list immediately follows this header.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff541994">CM_RESOURCE_LIST</a> structure that serves as the header for the resource list. The remainder of the resource list immediately follows this header.
 
 ## Remarks
 This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186698">PEP_NOTIFY_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES</a> notification to provide the PEP with a list of translated power control resources. The <b>RequestFlags</b>, <b>ResourceBufferSize</b>, and <b>TranslatedResources</b> members of the structure contain input values that the Windows <a href="https://msdn.microsoft.com/B08F8ABF-FD43-434C-A345-337FBB799D9B">power management framework</a> (PoFx) supplies when this notification is sent. The <b>Status</b> member contains an output value that the PEP writes to the structure in response to the notification.
@@ -91,12 +91,12 @@ This structure is used by the <a href="https://msdn.microsoft.com/en-us/library/
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541994">CM_RESOURCE_LIST</a>
+
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186689">PEP_NOTIFY_ACPI_REGISTER_DEVICE</a>
 
 
 
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/mt186698">PEP_NOTIFY_ACPI_TRANSLATED_DEVICE_CONTROL_RESOURCES</a>
-
-
-
-<a href="..\wudfwdm\ns-wudfwdm-_cm_resource_list.md">CM_RESOURCE_LIST</a>

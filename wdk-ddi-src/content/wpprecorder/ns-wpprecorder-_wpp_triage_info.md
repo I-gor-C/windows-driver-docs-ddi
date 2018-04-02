@@ -49,7 +49,7 @@ Used to locate the WPP log
 for WER reporting.
 
 ## Syntax
-````
+```
 typedef struct _WPP_TRIAGE_INFO {
   ULONG WppAutoLogHeaderSize;
   ULONG WppDriverContextOffset;
@@ -57,7 +57,7 @@ typedef struct _WPP_TRIAGE_INFO {
   ULONG WppSizeOfAutoLogHeaderSizeField;
   ULONG WppDriverContextSize;
 } WPP_TRIAGE_INFO, *PWPP_TRIAGE_INFO;
-````
+```
 
 ## Members
 

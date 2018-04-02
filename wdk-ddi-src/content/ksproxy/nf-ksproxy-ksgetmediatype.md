@@ -50,14 +50,14 @@ The <b>KsGetMediaType</b> function retrieves information about a media type on a
 
 ## Syntax
 
-````
-HRESULT KsGetMediaType(
-  _In_  int           Position,
-  _Out_ AM_MEDIA_TYPE *AmMediaType,
-  _In_  HANDLE        FilterHandle,
-  _In_  ULONG         PinFactoryId
+```
+KSDDKAPI HRESULT KsGetMediaType(
+  int           Position,
+  AM_MEDIA_TYPE *AmMediaType,
+  HANDLE        FilterHandle,
+  ULONG         PinFactoryId
 );
-````
+```
 
 ## Parameters
 
@@ -97,4 +97,4 @@ For more information about AM_MEDIA_TYPE, see the Microsoft Windows SDK document
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-ikspinfactory.md">IKsPinFactory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559910">IKsPinFactory</a>

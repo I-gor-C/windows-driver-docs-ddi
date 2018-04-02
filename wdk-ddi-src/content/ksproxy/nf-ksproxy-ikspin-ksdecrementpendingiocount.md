@@ -44,14 +44,16 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsDecrementPendingIoCount method
+# IKsPin::KsDecrementPendingIoCount method
 The <b>KsDecrementPendingIoCount</b> method decrements the number of input/output (I/O) operations that are in progress on a pin.
 
 ## Syntax
 
-````
-LONG KsDecrementPendingIoCount();
-````
+```
+LONG KsDecrementPendingIoCount(
+
+);
+```
 
 ## Parameters
 
@@ -67,7 +69,7 @@ The <b>KsDecrementPendingIoCount</b> method is typically called from within an i
 
 <ol>
 <li>
-The proxy creates an instance of an interface handler (<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>) to handle a particular media type. 
+The proxy creates an instance of an interface handler (<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>) to handle a particular media type. 
 
 </li>
 <li>
@@ -92,7 +94,7 @@ The client calls the <a href="https://msdn.microsoft.com/library/windows/hardwar
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff559872">IKsInterfaceHandler::KsSetPin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>
 
 
 
@@ -100,12 +102,12 @@ The client calls the <a href="https://msdn.microsoft.com/library/windows/hardwar
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560712">IKsPin::KsIncrementPendingIoCount</a>
-
-
-
-<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559869">IKsInterfaceHandler::KsProcessMediaSamples</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559872">IKsInterfaceHandler::KsSetPin</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560712">IKsPin::KsIncrementPendingIoCount</a>

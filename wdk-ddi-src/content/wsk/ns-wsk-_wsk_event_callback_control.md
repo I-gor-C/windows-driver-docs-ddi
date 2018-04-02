@@ -7,7 +7,7 @@ old-location: netvista\wsk_event_callback_control.htm
 old-project: netvista
 ms.assetid: 152e142a-dda4-4540-b1a9-14625f4653bb
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWSK_EVENT_CALLBACK_CONTROL, PWSK_EVENT_CALLBACK_CONTROL, PWSK_EVENT_CALLBACK_CONTROL structure pointer [Network Drivers Starting with Windows Vista], WSK_EVENT_CALLBACK_CONTROL, WSK_EVENT_CALLBACK_CONTROL structure [Network Drivers Starting with Windows Vista], _WSK_EVENT_CALLBACK_CONTROL, netvista.wsk_event_callback_control, wsk/PWSK_EVENT_CALLBACK_CONTROL, wsk/WSK_EVENT_CALLBACK_CONTROL, wskref_22cd0a01-12fe-4e5a-a423-c3198cc5ab05.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The WSK_EVENT_CALLBACK_CONTROL structure specifies the information for enabling 
   socket's event callback functions.
 
 ## Syntax
-````
+```
 typedef struct _WSK_EVENT_CALLBACK_CONTROL {
   PNPIID NpiId;
-  ULONG  EventMask;
+  ULONG  EventMask;
 } WSK_EVENT_CALLBACK_CONTROL, *PWSK_EVENT_CALLBACK_CONTROL;
-````
+```
 
 ## Members
 
@@ -102,10 +102,6 @@ For more information about enabling and disabling a socket's event callback func
 
 ## See Also
 
-<a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570834">SO_WSK_EVENT_CALLBACK</a>
 
 
@@ -115,4 +111,8 @@ For more information about enabling and disabling a socket's event callback func
 
 
 
-<a href="..\wsk\nc-wsk-pfn_wsk_control_client.md">WskControlClient</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571126">WskControlClient</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571127">WskControlSocket</a>

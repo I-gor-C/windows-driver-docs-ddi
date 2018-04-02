@@ -7,7 +7,7 @@ old-location: kernel\ioclearactivityidthread.htm
 old-project: kernel
 ms.assetid: 2F69FC2F-C336-4B51-8EFC-0A9AA22121B9
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoClearActivityIdThread, IoClearActivityIdThread routine [Kernel-Mode Driver Architecture], kernel.ioclearactivityidthread, ntddk/IoClearActivityIdThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The IoClearActivityIdThread routine clears the activity ID of the current thread
 
 ## Syntax
 
-````
+```
 void IoClearActivityIdThread(
-  _In_ LPCGUID OriginalId
+  LPCGUID OriginalId
 );
-````
+```
 
 ## Parameters
 

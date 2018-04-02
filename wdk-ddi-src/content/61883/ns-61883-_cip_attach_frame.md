@@ -47,14 +47,14 @@ req.typenames: CIP_ATTACH_FRAME, *PCIP_ATTACH_FRAME
 This structure is used in an attach frame request. The  request attaches a frame buffer to the specified plug for a subsequent Talk or Listen request. The IEC-61883 protocol driver subdivides the frames into source packets and blocks. By default, the timestamp returned is the time at completion of the frame transmission.
 
 ## Syntax
-````
+```
 typedef struct _CIP_ATTACH_FRAME {
-  HANDLE     hConnect;
-  ULONG      FrameLength;
-  ULONG      SourceLength;
+  HANDLE     hConnect;
+  ULONG      FrameLength;
+  ULONG      SourceLength;
   PCIP_FRAME Frame;
 } CIP_ATTACH_FRAME, *PCIP_ATTACH_FRAME;
-````
+```
 
 ## Members
 

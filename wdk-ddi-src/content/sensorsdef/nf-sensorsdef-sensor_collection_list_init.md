@@ -46,26 +46,26 @@ req.product: Windows 10 or later.
 
 
 # SENSOR_COLLECTION_LIST_INIT function
-This function initializes a <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a> structure.
+This function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE VOID SENSOR_COLLECTION_LIST_INIT(
-  _Out_ writes_bytes_(CollectionListSize) PSENSOR_COLLECTION_LIST                       pCollectionList,
-  _In_  _Pre_satisfies_(SENSOR_COLLECTION_LIST_HEADER_SIZE <= CollectionListSize) ULONG CollectionListSize
+```
+void SENSOR_COLLECTION_LIST_INIT(
+  PSENSOR_COLLECTION_LIST pCollectionList,
+  ULONG                   CollectionListSize
 );
-````
+```
 
 ## Parameters
 
 `pCollectionList`
 
-A pointer to a <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>.
 
 `CollectionListSize`
 
-The size of the <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>.
+The size of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>.
 
 
 ## Return Value
@@ -81,4 +81,4 @@ This function does not return a value.
 
 ## See Also
 
-<a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>

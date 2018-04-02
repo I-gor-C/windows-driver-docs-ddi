@@ -7,7 +7,7 @@ old-location: netvista\rilterminalcapabilityinfo.htm
 old-project: netvista
 ms.assetid: e6ad67bf-cd16-469e-af49-6a640a4319c0
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*LPRILTERMINALCAPABILITYINFO, RILTERMINALCAPABILITYINFO, RILTERMINALCAPABILITYINFO structure [Network Drivers Starting with Windows Vista], netvista.rilterminalcapabilityinfo, ntddrilapitypes/RILTERMINALCAPABILITYINFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: RILTERMINALCAPABILITYINFO, *LPRILTERMINALCAPABILITYINFO
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef struct _RILTERMINALCAPABILITYINFO {
-  DWORD      dwSize;
-  BYTE [256] bData;
-} RILTERMINALCAPABILITYINFO, RILTERMINALCAPABILITYINFO;
-````
+```
+typedef struct RILTERMINALCAPABILITYINFO {
+  DWORD dwSize;
+  BYTE  bData[256];
+} *LPRILTERMINALCAPABILITYINFO, RILTERMINALCAPABILITYINFO;
+```
 
 ## Members
 

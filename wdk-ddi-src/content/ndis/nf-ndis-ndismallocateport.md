@@ -7,7 +7,7 @@ old-location: netvista\ndismallocateport.htm
 old-project: netvista
 ms.assetid: ca3a2a12-ea80-4f77-9742-b0440fb441f7
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMAllocatePort, NdisMAllocatePort function [Network Drivers Starting with Windows Vista], ndis/NdisMAllocatePort, ndis_ports_ref_c74ffd82-73c0-4e48-98da-d17ddf7976ae.xml, netvista.ndismallocateport
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ The
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisMAllocatePort(
-  _In_    NDIS_HANDLE                MiniportAdapterHandle,
-  _Inout_ PNDIS_PORT_CHARACTERISTICS PortCharacteristics
+  NDIS_HANDLE                NdisMiniportHandle,
+  PNDIS_PORT_CHARACTERISTICS PortCharacteristics
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ TBD
 `PortCharacteristics`
 
 A pointer to an 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">
+     <a href="https://msdn.microsoft.com/fd602dd6-c216-413a-a4da-292739774937">
      NDIS_PORT_CHARACTERISTICS</a> structure that defines the characteristics of the port.
 
 
@@ -143,13 +143,13 @@ After the miniport driver activates the port, NDIS generates a PnP notification 
 When 
     <b>NdisMAllocatePort</b> successfully returns, the 
     <b>PortNumber</b> member of the 
-    <a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">
+    <a href="https://msdn.microsoft.com/fd602dd6-c216-413a-a4da-292739774937">
     NDIS_PORT_CHARACTERISTICS</a> structure that the 
     <i>PortCharacteristics</i> parameter specifies is set to the port number that NDIS assigned to the
     port.
 
 After a port is no longer required, the miniport driver should call the 
-    <a href="..\ndis\nf-ndis-ndismfreeport.md">NdisMFreePort</a> function to free the port.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff563588">NdisMFreePort</a> function to free the port.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -166,15 +166,15 @@ After a port is no longer required, the miniport driver should call the
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_port_characteristics.md">NDIS_PORT_CHARACTERISTICS</a>
+<a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566791">NDIS_PORT_CHARACTERISTICS</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismfreeport.md">NdisMFreePort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563588">NdisMFreePort</a>
 
 
 

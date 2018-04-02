@@ -7,7 +7,7 @@ old-location: storage\storportputscattergatherlist.htm
 old-project: storage
 ms.assetid: 0b380597-09dc-414f-b2c6-f541d35540da
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortPutScatterGatherList, StorPortPutScatterGatherList routine [Storage Devices], storage.storportputscattergatherlist, storport/StorPortPutScatterGatherList, storprt_d8e74add-b512-4584-aa56-d9337ad3d7a9.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,17 +46,17 @@ req.product: Windows 10 or later.
 
 
 # StorPortPutScatterGatherList function
-The <b>StorPortPutScatterGatherList</b> routine releases any resources associated with a scatter/gather list that was previously created by a call to the <a href="..\storport\nf-storport-storportbuildscattergatherlist.md">StorPortBuildScatterGatherList</a> routine.
+The <b>StorPortPutScatterGatherList</b> routine releases any resources associated with a scatter/gather list that was previously created by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567038">StorPortBuildScatterGatherList</a> routine.
 
 ## Syntax
 
-````
+```
 ULONG StorPortPutScatterGatherList(
-  _In_ PVOID                     HwDeviceExtension,
-  _In_ PSTOR_SCATTER_GATHER_LIST ScatterGatherList,
-  _In_ BOOLEAN                   WriteToDevice
+  PVOID                     HwDeviceExtension,
+  PSTOR_SCATTER_GATHER_LIST ScatterGatherList,
+  BOOLEAN                   WriteToDevice
 );
-````
+```
 
 ## Parameters
 
@@ -66,7 +66,7 @@ A pointer to the hardware device extension for the host bus adapter (HBA).
 
 `ScatterGatherList`
 
-A pointer to a buffer that contains a scatter/gather list that was previously created by a call to the <a href="..\storport\nf-storport-storportbuildscattergatherlist.md">StorPortBuildScatterGatherList</a> routine.
+A pointer to a buffer that contains a scatter/gather list that was previously created by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567038">StorPortBuildScatterGatherList</a> routine.
 
 `WriteToDevice`
 
@@ -132,7 +132,7 @@ The call was made at an invalid IRQL.
 
 The <b>StorPortPutScatterGatherList</b> routine does not free the buffer memory for the scatter/gather list, because the miniport driver allocated this memory. 
 
-After the <b>StorPortPutScatterGatherList</b> routine returns, the miniport driver can reuse the buffer to create a new scatter/gather list by calling the <a href="..\storport\nf-storport-storportbuildscattergatherlist.md">StorPortBuildScatterGatherList</a> again. If a miniport driver has finished using the buffer for the scatter/gather list, it should free the memory for the buffer after the <b>StorPortPutScatterGatherList</b> routine returns. If the miniport driver allocates the buffer memory with the <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a> routine, it should free the memory by calling the <a href="..\storport\nf-storport-storportfreepool.md">StorPortFreePool</a> routine.
+After the <b>StorPortPutScatterGatherList</b> routine returns, the miniport driver can reuse the buffer to create a new scatter/gather list by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567038">StorPortBuildScatterGatherList</a> again. If a miniport driver has finished using the buffer for the scatter/gather list, it should free the memory for the buffer after the <b>StorPortPutScatterGatherList</b> routine returns. If the miniport driver allocates the buffer memory with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567031">StorPortAllocatePool</a> routine, it should free the memory by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567065">StorPortFreePool</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -144,4 +144,4 @@ After the <b>StorPortPutScatterGatherList</b> routine returns, the miniport driv
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportbuildscattergatherlist.md">StorPortBuildScatterGatherList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567038">StorPortBuildScatterGatherList</a>

@@ -50,15 +50,15 @@ The <code>IPrintTicketProvider::ConvertPrintTicketToDevMode</code> method conver
 
 ## Syntax
 
-````
+```
 HRESULT ConvertPrintTicketToDevMode(
-  [in]  IXMLDOMDocument2 *pPrintTicket,
-  [in]  ULONG            cbDevmodeIn,
-  [in]  PDEVMODE         pDevmodeIn,
-  [out] ULONG            *pcbDevmodeOut,
-  [out] PDEVMODE         *ppDevmodeOut
+  IN IXMLDOMDocument2 *pPrintTicket,
+  IN ULONG            cbDevmodeIn,
+  IN PDEVMODE         pDevmodeIn,
+  OUT ULONG           *pcbDevmodeOut,
+  OUT PDEVMODE        *ppDevmodeOut
 );
-````
+```
 
 ## Parameters
 

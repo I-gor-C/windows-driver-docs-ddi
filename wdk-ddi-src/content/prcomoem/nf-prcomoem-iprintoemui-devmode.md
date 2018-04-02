@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# DevMode method
+# IPrintOemUI::DevMode method
 The <code>IPrintOemUI::DevMode</code> method, provided by user interface plug-ins, performs operations on the plug-in's private DEVMODEW members.
 
 ## Syntax
 
-````
-STDMETHOD DevMode(
-   DWORD       dwMode,
-   POEMDMPARAM pOemDMParam
+```
+HRESULT DevMode(
+  DWORD       dwMode,
+  POEMDMPARAM pOemDMParam
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ Caller-supplied constant. See the following Remarks section.
 
 `pOemDMParam`
 
-Caller-supplied pointer to an <a href="..\printoem\ns-printoem-_oemdmparam.md">OEMDMPARAM</a> structure.
+Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure.
 
 
 ## Return Value
@@ -116,7 +116,7 @@ The method is not implemented.
 
 User interface plug-ins must implement a <code>IPrintOemUI::DevMode</code> method if they define private <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure members. The method's purpose is to define, validate, or convert (from one version to another) the contents of the private DEVMODEW structure members.
 
-A private DEVMODEW section must be prefaced by a <a href="..\printoem\ns-printoem-_oem_dmextraheader.md">OEM_DMEXTRAHEADER</a> structure.
+A private DEVMODEW section must be prefaced by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559588">OEM_DMEXTRAHEADER</a> structure.
 
 The <code>IPrintOemUI::DevMode</code> method must perform the operation indicated by its <i>dwMode</i> value. Each time <code>IPrintOemUI::DevMode</code> is called, <i>dwMode</i> contains one of the following constants, which are listed in the order they are received:
 
@@ -132,7 +132,7 @@ The <code>IPrintOemUI::DevMode</code> method must perform the operation indicate
 
 
 
-<a href="..\prcomoem\nn-prcomoem-iprintoemui.md">IPrintOemUI</a>
+<a href="https://msdn.microsoft.com/0ef635dd-9598-4356-94fc-7e5237df9bd9">IPrintOemUI</a>
 
 
 

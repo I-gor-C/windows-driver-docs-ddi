@@ -52,16 +52,16 @@ The <b>WdfDeviceAllocAndQueryInterfaceProperty</b> method  allocates a buffer an
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDeviceAllocAndQueryInterfaceProperty(
-  _In_     WDFDEVICE                           Device,
-  _In_     PWDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData,
-  _In_     POOL_TYPE                           PoolType,
-  _In_opt_ PWDF_OBJECT_ATTRIBUTES              PropertyMemoryAttributes,
-  _Out_    WDFMEMORY                           PropertyMemory,
-  _Out_    PDEVPROPTYPE                        Type
+  WDFDEVICE                           Device,
+  PWDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData,
+  POOL_TYPE                           PoolType,
+  PWDF_OBJECT_ATTRIBUTES              PropertyMemoryAttributes,
+  WDFMEMORY                           *PropertyMemory,
+  PDEVPROPTYPE                        Type
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ A handle to a framework device object.
 
 `PropertyData`
 
-A pointer to a <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a> structure that identifies the device interface property to be retrieved.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265629">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a> structure that identifies the device interface property to be retrieved.
 
 `PoolType`
 
@@ -79,7 +79,7 @@ A <b>POOL_TYPE</b>-typed enumerator that specifies the type of memory to be allo
 
 `PropertyMemoryAttributes`
 
-A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that describes object attributes for the memory object that the function will allocate. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure that describes object attributes for the memory object that the function will allocate. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 `PropertyMemory`
 
@@ -117,7 +117,7 @@ The method might return other <a href="https://msdn.microsoft.com/library/window
 
 ## Remarks
 
-The <b>WdfDeviceAllocAndQueryInterfaceProperty</b> method determines the amount of memory that is necessary to hold the requested device interface property. It allocates enough memory to hold the data, and returns a handle to a framework memory object that describes the allocated memory. To access the data, your driver can call <a href="..\wdfmemory\nf-wdfmemory-wdfmemorygetbuffer.md">WdfMemoryGetBuffer</a>. 
+The <b>WdfDeviceAllocAndQueryInterfaceProperty</b> method determines the amount of memory that is necessary to hold the requested device interface property. It allocates enough memory to hold the data, and returns a handle to a framework memory object that describes the allocated memory. To access the data, your driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548715">WdfMemoryGetBuffer</a>. 
 
 For information about related methods, see <a href="https://msdn.microsoft.com/C81988F9-E0DA-439F-B770-DAD86E33D5F3">Accessing the Unified Device Property Model</a>.
 
@@ -134,16 +134,16 @@ For information about related methods, see <a href="https://msdn.microsoft.com/C
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_device_interface_property_data_init.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265629">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryinterfaceproperty.md">WdfDeviceQueryInterfaceProperty</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265630">WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceassigninterfaceproperty.md">WdfDeviceAssignInterfaceProperty</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265600">WdfDeviceAssignInterfaceProperty</a>
 
 
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265607">WdfDeviceQueryInterfaceProperty</a>

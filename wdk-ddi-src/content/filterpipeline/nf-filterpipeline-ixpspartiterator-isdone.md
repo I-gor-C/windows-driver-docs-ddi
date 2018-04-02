@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# IsDone method
+# IXpsPartIterator::IsDone method
 The <code>IsDone</code> method determines whether the iterator has finished  the iteration.
 
 ## Syntax
 
-````
-BOOL STDMETHODCALLTYPE IsDone(
-    None
+```
+BOOL IsDone(
+
 );
-````
+```
 
 ## Parameters
 

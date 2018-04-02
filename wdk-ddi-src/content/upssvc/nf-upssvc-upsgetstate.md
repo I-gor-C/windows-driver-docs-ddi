@@ -50,11 +50,11 @@ The <b>UPSGetState</b> function returns the operational state of the UPS.
 
 ## Syntax
 
-````
+```
 DWORD UPSGetState(
-   void 
+
 );
-````
+```
 
 ## Parameters
 

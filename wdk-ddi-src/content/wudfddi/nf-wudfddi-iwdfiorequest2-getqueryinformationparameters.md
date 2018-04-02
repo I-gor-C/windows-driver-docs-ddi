@@ -45,25 +45,25 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetQueryInformationParameters method
+# IWDFIoRequest2::GetQueryInformationParameters method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
-The <b>GetQueryInformationParameters</b> method retrieves parameters that are associated with a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WdfRequestQueryInformation</a>-typed I/O request.
+The <b>GetQueryInformationParameters</b> method retrieves parameters that are associated with a <a href="https://msdn.microsoft.com/a883f22e-0d6f-4755-882b-ad5a60a09271">WdfRequestQueryInformation</a>-typed I/O request.
 
 ## Syntax
 
-````
+```
 void GetQueryInformationParameters(
-  [out, optional] WDF_FILE_INFORMATION_CLASS *pInformationClass,
-  [out, optional] SIZE_T                     *pSizeInBytes
+  WDF_FILE_INFORMATION_CLASS *pInformationClass,
+  SIZE_T                     *pSizeInBytes
 );
-````
+```
 
 ## Parameters
 
 `pInformationClass`
 
-A pointer to a driver-allocated variable that receives a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_file_information_class.md">WDF_FILE_INFORMATION_CLASS</a>-typed value. This pointer is optional and can be <b>NULL</b>.
+A pointer to a driver-allocated variable that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561405">WDF_FILE_INFORMATION_CLASS</a>-typed value. This pointer is optional and can be <b>NULL</b>.
 
 `pSizeInBytes`
 
@@ -76,7 +76,7 @@ None.
 
 ## Remarks
 
-Your driver can call <b>GetQueryInformationParameters</b> to obtain the parameters that are associated with an I/O request, if the request type is <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WdfRequestQueryInformation</a>. The <i>pInformationClass</i> parameter identifies the type of file information that the driver should provide, and the <i>pSizeInBytes</i> parameter specifies the size of the buffer that will receive the information. The driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559041">IWDFIoRequest2::RetrieveOutputBuffer</a> to obtain the buffer address. 
+Your driver can call <b>GetQueryInformationParameters</b> to obtain the parameters that are associated with an I/O request, if the request type is <a href="https://msdn.microsoft.com/a883f22e-0d6f-4755-882b-ad5a60a09271">WdfRequestQueryInformation</a>. The <i>pInformationClass</i> parameter identifies the type of file information that the driver should provide, and the <i>pSizeInBytes</i> parameter specifies the size of the buffer that will receive the information. The driver can call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559041">IWDFIoRequest2::RetrieveOutputBuffer</a> to obtain the buffer address. 
 
 Your driver must verify that the specified buffer size is large enough to receive the requested file information.
 
@@ -167,7 +167,7 @@ exit:
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558988">IWDFIoRequest2</a>
 
 
 

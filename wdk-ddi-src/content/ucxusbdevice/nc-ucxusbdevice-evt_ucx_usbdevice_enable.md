@@ -7,7 +7,7 @@ old-location: buses\evt_ucx_usbdevice_enable.htm
 old-project: usbref
 ms.assetid: ac46a6eb-c30d-4b1f-8e14-0ae44ae0d4f1
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: EVT_UCX_USBDEVICE_ENABLE, EvtUcxUsbDeviceEnable, EvtUcxUsbDeviceEnable callback function [Buses], PEVT_UCX_USBDEVICE_ENABLE, PEVT_UCX_USBDEVICE_ENABLE callback function pointer [Buses], buses.evt_ucx_usbdevice_enable, ucxusbdevice/EvtUcxUsbDeviceEnable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,7 +69,7 @@ A handle to the UCX controller that the client driver received in a previous cal
 
 `Request`
 
-A structure of type <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_enable.md">USBDEVICE_ENABLE</a>.
+A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/mt188072">USBDEVICE_ENABLE</a>.
 
 
 ## Return Value
@@ -78,7 +78,7 @@ This callback function does not return a value.
 
 ## Remarks
 
-The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a> method.
+The UCX client driver registers this callback function with the USB host controller extension (UCX) by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a> method.
 
 To
     transition the device to the desired state, the host controller driver communicates with the hardware to complete the request.
@@ -132,4 +132,4 @@ UsbDevice_EvtUcxUsbDeviceEnable(
 
 ## See Also
 
-<a href="..\ucxusbdevice\nf-ucxusbdevice-ucxusbdevicecreate.md">UcxUsbDeviceCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188052">UcxUsbDeviceCreate</a>

@@ -7,7 +7,7 @@ old-location: storage\tapeclassallocatesrbbuffer.htm
 old-project: storage
 ms.assetid: f6762d9b-5a3d-49a3-b954-48e4e4a9eacb
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: TapeClassAllocateSrbBuffer, TapeClassAllocateSrbBuffer routine [Storage Devices], minitape/TapeClassAllocateSrbBuffer, storage.tapeclassallocatesrbbuffer, tapeclas_77717175-fd25-4cbe-8baf-8c326a5ec152.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>TapeClassAllocateSrbBuffer</b> routine allocates an <b>Srb-&gt;DataBuffer
 
 ## Syntax
 
-````
-BOOLEAN TapeClassAllocateSrbBuffer(
-  _Inout_ PSCSI_REQUEST_BLOCK Srb,
-  _In_    ULONG               SrbBufferSize
+```
+SCSIPORT_API BOOLEAN TapeClassAllocateSrbBuffer(
+  PSCSI_REQUEST_BLOCK Srb,
+  ULONG               SrbBufferSize
 );
-````
+```
 
 ## Parameters
 

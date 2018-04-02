@@ -55,12 +55,12 @@ The <b>WdfDeviceSetDeviceState</b> method sets the device state for a specified 
 
 ## Syntax
 
-````
-VOID WdfDeviceSetDeviceState(
-  _In_ WDFDEVICE         Device,
-  _In_ PWDF_DEVICE_STATE DeviceState
+```
+void WdfDeviceSetDeviceState(
+  WDFDEVICE         Device,
+  PWDF_DEVICE_STATE DeviceState
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A handle to a framework device object.
 
 `DeviceState`
 
-A pointer to a driver-allocated <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_state.md">WDF_DEVICE_STATE</a> structure that contains the device's state information.
+A pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff551284">WDF_DEVICE_STATE</a> structure that contains the device's state information.
 
 
 ## Return Value
@@ -119,4 +119,4 @@ WdfDeviceSetDeviceState (
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_device_state_init.md">WDF_DEVICE_STATE_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551286">WDF_DEVICE_STATE_INIT</a>

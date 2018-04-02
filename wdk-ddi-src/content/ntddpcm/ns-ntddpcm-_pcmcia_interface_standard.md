@@ -47,18 +47,18 @@ req.typenames: PCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD
 The PCMCIA bus driver makes the PCMCIA_INTERFACE_STANDARD interface available to PCMCIA memory card drivers in order to allow them to make direct calls to the bus driver without allocating IRPs.
 
 ## Syntax
-````
+```
 typedef struct _PCMCIA_INTERFACE_STANDARD {
-  USHORT                       Size;
-  USHORT                       Version;
-  PINTERFACE_REFERENCE         InterfaceReference;
-  PINTERFACE_DEREFERENCE       InterfaceDereference;
-  PVOID                        Context;
+  USHORT                       Size;
+  USHORT                       Version;
+  PINTERFACE_REFERENCE         InterfaceReference;
+  PINTERFACE_DEREFERENCE       InterfaceDereference;
+  PVOID                        Context;
   PPCMCIA_MODIFY_MEMORY_WINDOW ModifyMemoryWindow;
-  PPCMCIA_SET_VPP              SetVpp;
-  PPCMCIA_IS_WRITE_PROTECTED   IsWriteProtected;
-} PCMCIA_INTERFACE_STANDARD, *PPCMCIA_INTERFACE_STANDARD;
-````
+  PPCMCIA_SET_VPP              SetVpp;
+  PPCMCIA_IS_WRITE_PROTECTED   IsWriteProtected;
+} *PPCMCIA_INTERFACE_STANDARD, PCMCIA_INTERFACE_STANDARD;
+```
 
 ## Members
 
@@ -73,11 +73,11 @@ Indicates the version of the returned interface.
 
 `InterfaceReference`
 
-Pointer to the <a href="..\wudfwdm\nc-wudfwdm-pinterface_reference.md">InterfaceReference</a> implementation.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547833">InterfaceReference</a> implementation.
 
 `InterfaceDereference`
 
-Pointer to the <a href="..\wudfwdm\nc-wudfwdm-pinterface_dereference.md">InterfaceDereference</a> implementation.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547829">InterfaceDereference</a> implementation.
 
 `Context`
 
@@ -107,8 +107,8 @@ Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff53
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537610">PCMCIA_MODIFY_MEMORY_WINDOW</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537611">PCMCIA_SET_VPP</a>

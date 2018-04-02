@@ -7,7 +7,7 @@ old-location: audio\iminiportaudioenginenode_getmixformat.htm
 old-project: audio
 ms.assetid: CB0DD6C8-DFB3-42E0-B38F-341677A72E29
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: GetMixFormat method [Audio Devices], GetMixFormat method [Audio Devices], IMiniportAudioEngineNode interface, GetMixFormat,IMiniportAudioEngineNode.GetMixFormat, IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], GetMixFormat method, IMiniportAudioEngineNode::GetMixFormat, audio.iminiportaudioenginenode_getmixformat, portcls/IMiniportAudioEngineNode::GetMixFormat
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# GetMixFormat method
+# IMiniportAudioEngineNode::GetMixFormat method
 Gets the audio data format for the audio engine mixer.
 
 ## Syntax
 
-````
+```
 NTSTATUS GetMixFormat(
-  [in]  ULONG                     ulNodeId,
-  [out] KSDATAFORMAT_WAVEFORMATEX *pFormat,
-  [in]  ULONG                     ulBufferSize
+  ULONG                     ulNodeId,
+  KSDATAFORMAT_WAVEFORMATEX *pFormat,
+  ULONG                     ulBufferSize
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ The ID of the mixer node.
 
 `pFormat`
 
-A structure of type <a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVEFORMATEX</a> that represents the audio data format.
+A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537095">KSDATAFORMAT_WAVEFORMATEX</a> that represents the audio data format.
 
 `ulBufferSize`
 
@@ -86,8 +86,8 @@ The data buffer size.
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVEFORMATEX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302040">IMiniportAudioEngineNode</a>
 
 
 
-<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537095">KSDATAFORMAT_WAVEFORMATEX</a>

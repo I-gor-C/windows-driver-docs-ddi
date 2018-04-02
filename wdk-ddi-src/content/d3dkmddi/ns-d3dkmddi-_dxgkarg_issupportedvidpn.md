@@ -7,7 +7,7 @@ old-location: display\dxgkarg_issupportedvidpn.htm
 old-project: display
 ms.assetid: 37f9f40d-6d32-4eeb-8161-282a84ee89dc
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*INOUT_PDXGKARG_ISSUPPORTEDVIDPN, DXGKARG_ISSUPPORTEDVIDPN, DXGKARG_ISSUPPORTEDVIDPN structure [Display Devices], DmStructs_03198868-50e6-47a1-9119-0fa3bff21ec0.xml, _DXGKARG_ISSUPPORTEDVIDPN, d3dkmddi/DXGKARG_ISSUPPORTEDVIDPN, display.dxgkarg_issupportedvidpn"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,15 +44,15 @@ req.typenames: DXGKARG_ISSUPPORTEDVIDPN
 ---
 
 # _DXGKARG_ISSUPPORTEDVIDPN structure
-The DXGKARG_ISSUPPORTEDVIDPN structure contains arguments for the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_issupportedvidpn.md">DxgkDdiIsSupportedVidPn</a> function. The <i>DxgkDdiIsSupportedVidPn</i> function determines whether a specified video present network (VidPN) is supported on a display adapter.
+The DXGKARG_ISSUPPORTEDVIDPN structure contains arguments for the <a href="https://msdn.microsoft.com/96e96366-6306-4d20-8752-e942f2ed4069">DxgkDdiIsSupportedVidPn</a> function. The <i>DxgkDdiIsSupportedVidPn</i> function determines whether a specified video present network (VidPN) is supported on a display adapter.
 
 ## Syntax
-````
+```
 typedef struct _DXGKARG_ISSUPPORTEDVIDPN {
-  D3DKMDT_HVIDPN hDesiredVidPn;
-  BOOLEAN        IsVidPnSupported;
+  IN D3DKMDT_HVIDPN hDesiredVidPn;
+  OUT BOOLEAN       IsVidPnSupported;
 } DXGKARG_ISSUPPORTEDVIDPN;
-````
+```
 
 ## Members
 
@@ -74,4 +74,4 @@ A Boolean variable that receives <b>TRUE</b> if the VidPN is supported and <b>FA
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_issupportedvidpn.md">DxgkDdiIsSupportedVidPn</a>
+<a href="https://msdn.microsoft.com/96e96366-6306-4d20-8752-e942f2ed4069">DxgkDdiIsSupportedVidPn</a>

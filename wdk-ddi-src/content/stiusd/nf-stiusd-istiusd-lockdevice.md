@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# LockDevice method
+# IStiUSD::LockDevice method
 A still image minidriver's <b>IStiUSD::LockDevice</b> method locks a device for exclusive use by the caller.
 
 ## Syntax
 
-````
-STDMETHODIMP LockDevice();
-````
+```
+HRESULT LockDevice(
+
+);
+```
 
 ## Parameters
 

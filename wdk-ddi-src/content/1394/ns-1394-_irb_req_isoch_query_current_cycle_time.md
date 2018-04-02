@@ -48,11 +48,11 @@ This structure contains the fields necessary for the Bus driver to carry out an
 <b>IsochQueryCurrentCycleTime</b> request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_ISOCH_QUERY_CURRENT_CYCLE_TIME {
   CYCLE_TIME CycleTime;
 } IRB_REQ_ISOCH_QUERY_CURRENT_CYCLE_TIME;
-````
+```
 
 ## Members
 

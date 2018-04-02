@@ -47,12 +47,12 @@ req.typenames: KSTARGET_STATE
 
 
 ## Syntax
-````
-typedef enum  { 
-  KSTARGET_STATE_DISABLED,
+```
+typedef enum KSTARGET_STATE {
+  KSTARGET_STATE_DISABLED  ,
   KSTARGET_STATE_ENABLED
-} KSTARGET_STATE;
-````
+} ;
+```
 
 ## Constants
 

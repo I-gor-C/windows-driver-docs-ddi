@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetUri method
+# IPartBase::GetUri method
 The <b>GetUri</b> method gets the URI of the part.
 
 ## Syntax
 
-````
+```
 HRESULT GetUri(
-  [out] BSTR *uri
+  BSTR *uri
 );
-````
+```
 
 ## Parameters
 

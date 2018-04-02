@@ -7,7 +7,7 @@ old-location: audio\iportclspower_registeradapterpowermanagement.htm
 old-project: audio
 ms.assetid: f4eb9d18-4352-47e2-bd5f-256e1fa831d3
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IPortClsPower, IPortClsPower interface [Audio Devices], RegisterAdapterPowerManagement method, IPortClsPower::RegisterAdapterPowerManagement, RegisterAdapterPowerManagement method [Audio Devices], RegisterAdapterPowerManagement method [Audio Devices], IPortClsPower interface, RegisterAdapterPowerManagement,IPortClsPower.RegisterAdapterPowerManagement, audio.iportclspower_registeradapterpowermanagement, audmp-routines_9c179fd9-d332-478d-a114-469dc1c746fc.xml, portcls/IPortClsPower::RegisterAdapterPowerManagement
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,27 +44,27 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# RegisterAdapterPowerManagement method
+# IPortClsPower::RegisterAdapterPowerManagement method
 The <code>RegisterAdapterPowerManagement</code> method registers the power management interface of the adapter with PortCls.
 
 ## Syntax
 
-````
+```
 NTSTATUS RegisterAdapterPowerManagement(
-  [in] PUNKNOWN       pUnknown,
-  [in] PDEVICE_OBJECT DeviceObject
+  PUNKNOWN       _pUnknown,
+  PDEVICE_OBJECT _DeviceObject
 );
-````
+```
 
 ## Parameters
 
 `_pUnknown`
 
-Specifies a pointer to <b>IUnknown</b>. . PortCls queries this <b>IUnknown</b> object for the <a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a> or the <a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a> interface of the adapter.
+Specifies a pointer to <b>IUnknown</b>. . PortCls queries this <b>IUnknown</b> object for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536485">IAdapterPowerManagement</a> or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536486">IAdapterPowerManagement2</a> interface of the adapter.
 
 `_DeviceObject`
 
-Specifies a pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
+Specifies a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents the functional device object of the adapter.
 
 
 ## Return Value
@@ -85,16 +85,16 @@ When the <code>RegisterAdapterPowerManagement</code> method registers the power 
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iportclspower.md">IPortClsPower</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 
 
 
-<a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536485">IAdapterPowerManagement</a>
 
 
 
-<a href="..\portcls\nn-portcls-iadapterpowermanagement2.md">IAdapterPowerManagement2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536486">IAdapterPowerManagement2</a>
 
 
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536844">IPortClsPower</a>

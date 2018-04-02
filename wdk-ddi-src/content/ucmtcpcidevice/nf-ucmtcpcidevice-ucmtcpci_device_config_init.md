@@ -7,7 +7,7 @@ old-location: buses\ucmtcpci_device_config_init.htm
 old-project: usbref
 ms.assetid: 8845f8f7-683e-487b-924b-596dbbfb98f2
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UCMTCPCI_DEVICE_CONFIG_INIT, UCMTCPCI_DEVICE_CONFIG_INIT method [Buses], buses.ucmtcpci_device_config_init, ucmtcpcidevice/UCMTCPCI_DEVICE_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # UCMTCPCI_DEVICE_CONFIG_INIT function
-Initializes the <a href="..\ucmtcpcidevice\ns-ucmtcpcidevice-_ucmtcpci_device_config.md">UCMTCPCI_DEVICE_CONFIG</a> structure.
+Initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/mt805896">UCMTCPCI_DEVICE_CONFIG</a> structure.
 
 ## Syntax
 
-````
-VOID UCMTCPCI_DEVICE_CONFIG_INIT(
-  _Out_ PUCMTCPCI_DEVICE_CONFIG Config
+```
+void UCMTCPCI_DEVICE_CONFIG_INIT(
+  PUCMTCPCI_DEVICE_CONFIG Config
 );
-````
+```
 
 ## Parameters
 
 `Config`
 
-A pointer to the driver-allocated <a href="..\ucmtcpcidevice\ns-ucmtcpcidevice-_ucmtcpci_device_config.md">UCMTCPCI_DEVICE_CONFIG</a> structure.
+A pointer to the driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt805896">UCMTCPCI_DEVICE_CONFIG</a> structure.
 
 
 ## Return Value
@@ -78,4 +78,4 @@ This method does not return a value.
 
 ## See Also
 
-<a href="..\ucmtcpcidevice\nf-ucmtcpcidevice-ucmtcpcideviceinitialize.md">UcmTcpciDeviceInitialize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt805841">UcmTcpciDeviceInitialize</a>

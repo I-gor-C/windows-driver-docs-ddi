@@ -7,7 +7,7 @@ old-location: netvista\ndis_protocol_restart_parameters.htm
 old-project: netvista
 ms.assetid: 722287da-e0ee-41d5-b85a-0ec55eac41b9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_PROTOCOL_RESTART_PARAMETERS, NDIS_PROTOCOL_RESTART_PARAMETERS, NDIS_PROTOCOL_RESTART_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_PROTOCOL_RESTART_PARAMETERS, PNDIS_PROTOCOL_RESTART_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PROTOCOL_RESTART_PARAMETERS, ndis/NDIS_PROTOCOL_RESTART_PARAMETERS, ndis/PNDIS_PROTOCOL_RESTART_PARAMETERS, netvista.ndis_protocol_restart_parameters, protocol_structures_ref_1a426da7-b2f9-49b0-9069-24ceddcd8ad1.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,22 +46,22 @@ req.typenames: NDIS_PROTOCOL_RESTART_PARAMETERS, *PNDIS_PROTOCOL_RESTART_PARAMET
 # _NDIS_PROTOCOL_RESTART_PARAMETERS structure
 The NDIS_PROTOCOL_RESTART_PARAMETERS structure defines restart parameters for a protocol driver when
   NDIS calls the 
-  <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a> function to
+  <a href="https://msdn.microsoft.com/3f50bcba-c7d2-4d81-bd8b-6080e08fbe74">ProtocolNetPnPEvent</a> function to
   indicate a 
   <b>NetEventRestart</b> event.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_PROTOCOL_RESTART_PARAMETERS {
-  NDIS_OBJECT_HEADER       Header;
-  PUCHAR                   FilterModuleNameBuffer;
-  ULONG                    FilterModuleNameBufferLength;
+  NDIS_OBJECT_HEADER       Header;
+  PUCHAR                   FilterModuleNameBuffer;
+  ULONG                    FilterModuleNameBufferLength;
   PNDIS_RESTART_ATTRIBUTES RestartAttributes;
-  NET_IFINDEX              BoundIfIndex;
-  NET_LUID                 BoundIfNetluid;
-  ULONG                    Flags;
-} NDIS_PROTOCOL_RESTART_PARAMETERS, *PNDIS_PROTOCOL_RESTART_PARAMETERS;
-````
+  NET_IFINDEX              BoundIfIndex;
+  NET_LUID                 BoundIfNetluid;
+  ULONG                    Flags;
+} *PNDIS_PROTOCOL_RESTART_PARAMETERS, NDIS_PROTOCOL_RESTART_PARAMETERS;
+```
 
 ## Members
 
@@ -69,7 +69,7 @@ typedef struct _NDIS_PROTOCOL_RESTART_PARAMETERS {
 `Header`
 
 The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_PROTOCOL_RESTART_PARAMETERS structure. NDIS sets the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_PROTOCOL_RESTART_PARAMETERS, the 
@@ -93,7 +93,7 @@ The length, in bytes, of the buffer in the
 `RestartAttributes`
 
 A pointer to the first entry in a list of 
-     <a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">NDIS_RESTART_ATTRIBUTES</a> structures.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567255">NDIS_RESTART_ATTRIBUTES</a> structures.
      Use the 
      <b>Next</b> member of the NDIS_RESTART_ATTRIBUTES structure to get the next structure in the list.
 
@@ -120,7 +120,7 @@ Reserved for future use.
 
 ## Remarks
 NDIS passes an NDIS_PROTOCOL_RESTART_PARAMETERS structure to a protocol driver when it calls the 
-    <a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a> function to
+    <a href="https://msdn.microsoft.com/3f50bcba-c7d2-4d81-bd8b-6080e08fbe74">ProtocolNetPnPEvent</a> function to
     indicate a 
     <b>NetEventRestart</b> event.
 
@@ -138,12 +138,12 @@ Each name that is specified in the buffer in the
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 
 
 
-<a href="..\ndis\ns-ndis-_ndis_restart_attributes.md">NDIS_RESTART_ATTRIBUTES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567255">NDIS_RESTART_ATTRIBUTES</a>
 
 
 
-<a href="..\ndis\nc-ndis-protocol_net_pnp_event.md">ProtocolNetPnPEvent</a>
+<a href="https://msdn.microsoft.com/3f50bcba-c7d2-4d81-bd8b-6080e08fbe74">ProtocolNetPnPEvent</a>

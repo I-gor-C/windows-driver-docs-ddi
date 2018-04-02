@@ -7,7 +7,7 @@ old-location: display\d3d11ddiarg_createdepthstencilview.htm
 old-project: display
 ms.assetid: 563a443b-f460-4fb2-b179-454466c2291b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D11DDIARG_CREATEDEPTHSTENCILVIEW, D3D11DDIARG_CREATEDEPTHSTENCILVIEW structure [Display Devices], UMDisplayDriver_Dx11param_Structs_17e6fa50-317c-445d-b304-8097f658652f.xml, d3d10umddi/D3D11DDIARG_CREATEDEPTHSTENCILVIEW, display.d3d11ddiarg_createdepthstencilview
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,19 +47,19 @@ req.typenames: D3D11DDIARG_CREATEDEPTHSTENCILVIEW
 The D3D11DDIARG_CREATEDEPTHSTENCILVIEW structure describes the depth-stencil view to create.
 
 ## Syntax
-````
+```
 typedef struct D3D11DDIARG_CREATEDEPTHSTENCILVIEW {
-  D3D10DDI_HRESOURCE    hDrvResource;
-  DXGI_FORMAT           Format;
+  D3D10DDI_HRESOURCE    hDrvResource;
+  DXGI_FORMAT           Format;
   D3D10DDIRESOURCE_TYPE ResourceDimension;
-  UINT                  Flags;
+  UINT                  Flags;
   union {
-    D3D10DDIARG_TEX1D_DEPTHSTENCILVIEW   Tex1D;
-    D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW   Tex2D;
+    D3D10DDIARG_TEX1D_DEPTHSTENCILVIEW   Tex1D;
+    D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW   Tex2D;
     D3D10DDIARG_TEXCUBE_DEPTHSTENCILVIEW TexCube;
   };
-} D3D11DDIARG_CREATEDEPTHSTENCILVIEW;
-````
+};
+```
 
 ## Members
 
@@ -78,7 +78,7 @@ typedef struct D3D11DDIARG_CREATEDEPTHSTENCILVIEW {
 
 `Flags`
 
-[in] A valid bitwise OR of <a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_createdepthstencilview_flag.md">D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG</a>-typed values that indicates the type of depth-stencil view to create.
+[in] A valid bitwise OR of <a href="https://msdn.microsoft.com/library/windows/hardware/ff542167">D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG</a>-typed values that indicates the type of depth-stencil view to create.
 
 
 ## Requirements
@@ -89,7 +89,23 @@ typedef struct D3D11DDIARG_CREATEDEPTHSTENCILVIEW {
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_tex1d_depthstencilview.md">D3D10DDIARG_TEX1D_DEPTHSTENCILVIEW</a>
+<a href="https://msdn.microsoft.com/d92e3bde-9527-401e-aafd-4ba39603d4a7">CalcPrivateDepthStencilViewSize(D3D11)</a>
+
+
+
+<a href="https://msdn.microsoft.com/cf4c34da-71df-4b49-b1c8-73d1a2dbc3cb">CreateDepthStencilView(D3D11)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541754">D3D10DDIARG_TEX1D_DEPTHSTENCILVIEW</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541763">D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541797">D3D10DDIARG_TEXCUBE_DEPTHSTENCILVIEW</a>
 
 
 
@@ -97,20 +113,4 @@ typedef struct D3D11DDIARG_CREATEDEPTHSTENCILVIEW {
 
 
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_ddi_createdepthstencilview_flag.md">D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG</a>
-
-
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_tex2d_depthstencilview.md">D3D10DDIARG_TEX2D_DEPTHSTENCILVIEW</a>
-
-
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createdepthstencilview.md">CreateDepthStencilView(D3D11)</a>
-
-
-
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d10ddiarg_texcube_depthstencilview.md">D3D10DDIARG_TEXCUBE_DEPTHSTENCILVIEW</a>
-
-
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivatedepthstencilviewsize.md">CalcPrivateDepthStencilViewSize(D3D11)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542167">D3D11_DDI_CREATEDEPTHSTENCILVIEW_FLAG</a>

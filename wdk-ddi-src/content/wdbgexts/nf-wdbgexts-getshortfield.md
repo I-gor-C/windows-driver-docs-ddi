@@ -7,7 +7,7 @@ old-location: debugger\getshortfield.htm
 old-project: debugger
 ms.assetid: f5f00e88-b758-4f37-9fe5-5db8f20835b1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetShortField, GetShortField function [Windows Debugging], WdbgExts_Ref_ef67af78-e72f-440c-9ef3-d84b8cca12dc.xml, debugger.getshortfield, wdbgexts/GetShortField
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>GetShortField</b> function reads the value of a member in a structure if 
 
 ## Syntax
 
-````
-__inline ULONG64 GetShortField(
-  _In_ ULONG64 TypeAddress,
-  _In_ LPCSTR  Name,
-  _In_ USHORT  StoreAddress
+```
+ULONG64 GetShortField(
+  IN ULONG64 TypeAddress,
+  IN LPCSTR  Name,
+  IN USHORT  StoreAddress
 );
-````
+```
 
 ## Parameters
 
@@ -259,7 +259,7 @@ If this macro succeeds, it returns the value zero.  If it fails because the call
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553539">ReadField</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550953">InitTypeRead</a>
 
 
 
@@ -267,4 +267,4 @@ If this macro succeeds, it returns the value zero.  If it fails because the call
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550953">InitTypeRead</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553539">ReadField</a>

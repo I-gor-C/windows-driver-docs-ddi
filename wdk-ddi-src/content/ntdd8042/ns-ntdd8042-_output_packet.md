@@ -47,14 +47,14 @@ req.typenames: OUTPUT_PACKET, *POUTPUT_PACKET
 OUTPUT_PACKET contains information about the data that is being written to a keyboard or mouse device by I8042prt.
 
 ## Syntax
-````
+```
 typedef struct _OUTPUT_PACKET {
-  PUCHAR         Bytes;
-  ULONG          CurrentByte;
-  ULONG          ByteCount;
+  PUCHAR         Bytes;
+  ULONG          CurrentByte;
+  ULONG          ByteCount;
   TRANSMIT_STATE State;
-} OUTPUT_PACKET, *POUTPUT_PACKET;
-````
+} *POUTPUT_PACKET, OUTPUT_PACKET;
+```
 
 ## Members
 
@@ -103,7 +103,7 @@ Identifies that a write is not in progress.
 Identifies that a write is in progress.
 
 ## Remarks
-This structure is used with a <a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a> callback routine and a <a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a> callback routine.
+This structure is used with a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543248">PI8042_KEYBOARD_ISR</a> callback routine and a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543252">PI8042_MOUSE_ISR</a> callback routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -112,7 +112,7 @@ This structure is used with a <a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_i
 
 ## See Also
 
-<a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a>
+<a href="https://msdn.microsoft.com/0feca7de-aa80-4d1e-a5fc-901c18169649">KbFilter_IsrHook</a>
 
 
 
@@ -120,8 +120,8 @@ This structure is used with a <a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_i
 
 
 
-<a href="https://msdn.microsoft.com/0feca7de-aa80-4d1e-a5fc-901c18169649">KbFilter_IsrHook</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543248">PI8042_KEYBOARD_ISR</a>
 
 
 
-<a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543252">PI8042_MOUSE_ISR</a>

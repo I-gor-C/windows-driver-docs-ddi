@@ -47,14 +47,14 @@ req.typenames: KSDEGRADE_STANDARD
 The KSDEGRADE_STANDARD enumeration lists different types of degradation.
 
 ## Syntax
-````
-typedef enum  { 
-  KSDEGRADE_STANDARD_SAMPLE       = 0,
-  KSDEGRADE_STANDARD_QUALITY      = 1,
-  KSDEGRADE_STANDARD_COMPUTATION  = 2,
-  KSDEGRADE_STANDARD_SKIP         = 3
-} KSDEGRADE_STANDARD;
-````
+```
+typedef enum KSDEGRADE_STANDARD {
+  KSDEGRADE_STANDARD_SAMPLE       ,
+  KSDEGRADE_STANDARD_QUALITY      ,
+  KSDEGRADE_STANDARD_COMPUTATION  ,
+  KSDEGRADE_STANDARD_SKIP
+} ;
+```
 
 ## Constants
 

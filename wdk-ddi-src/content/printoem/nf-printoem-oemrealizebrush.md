@@ -50,16 +50,16 @@ The <code>OEMRealizeBrush</code> function requests that the driver realize a spe
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMRealizeBrush(
-   BRUSHOBJ *pbo,
-   SURFOBJ  *psoTarget,
-   SURFOBJ  *psoPattern,
-   SURFOBJ  *psoMask,
-   XLATEOBJ *pxlo,
-   ULONG    iHatch
+```
+BOOL OEMRealizeBrush(
+  BRUSHOBJ *pbo,
+  SURFOBJ  *psoTarget,
+  SURFOBJ  *psoPattern,
+  SURFOBJ  *psoMask,
+  XLATEOBJ *pxlo,
+  ULONG    iHatch
 );
-````
+```
 
 ## Parameters
 

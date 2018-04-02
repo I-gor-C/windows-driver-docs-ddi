@@ -47,14 +47,14 @@ req.typenames: KSPROPERTY_CROSSBAR_ROUTE_S, *PKSPROPERTY_CROSSBAR_ROUTE_S
 The KSPROPERTY_CROSSBAR_ROUTE_S structure describes whether a particular routing is possible and specifies the current routing for a pin.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_CROSSBAR_ROUTE_S {
   KSPROPERTY Property;
-  ULONG      IndexInputPin;
-  ULONG      IndexOutputPin;
-  ULONG      CanRoute;
-} KSPROPERTY_CROSSBAR_ROUTE_S, *PKSPROPERTY_CROSSBAR_ROUTE_S;
-````
+  ULONG      IndexInputPin;
+  ULONG      IndexOutputPin;
+  ULONG      CanRoute;
+}  *PKSPROPERTY_CROSSBAR_ROUTE_S;
+```
 
 ## Members
 

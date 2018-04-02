@@ -7,7 +7,7 @@ old-location: buses\usb_superspeed_endpoint_companion_descriptor.htm
 old-project: usbref
 ms.assetid: 725ADCA2-FE86-4131-8D70-2BF63F26F89D
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure pointer [Buses], USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR structure [Buses], _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, buses.usb_superspeed_endpoint_companion_descriptor, usbspec/PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, usbspec/USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,25 +50,26 @@ The <b>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</b> structure is used by USB
  For more information, see section 9.6.7 and Table 9-20 in the official USB 3.0 specification.
 
 ## Syntax
-````
+```
 typedef struct _USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR {
-  UCHAR  bLength;
-  UCHAR  bDescriptorType;
-  UCHAR  bMaxBurst;
+  UCHAR  bLength;
+  UCHAR  bDescriptorType;
+  UCHAR  bMaxBurst;
   union {
-    UCHAR  AsUchar;
+    UCHAR AsUchar;
     struct {
-      UCHAR MaxStreams  :5;
-      UCHAR Reserved1  :3;
-    } Bulk;
+      UCHAR  : 5 MaxStreams;
+      UCHAR  : 3 Reserved1;
+    } Bulk;
     struct {
-      UCHAR Mult  :2;
-      UCHAR Reserved2  :6;
-    } Isochronous;
-  } bmAttributes;
+      UCHAR  : 2 Mult;
+      UCHAR  : 5 Reserved2;
+      UCHAR  : 1 SspCompanion;
+    } Isochronous;
+  } bmAttributes;
   USHORT wBytesPerInterval;
 } USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR, *PUSB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR;
-````
+```
 
 ## Members
 
@@ -96,7 +97,7 @@ Specifies the length of the structures.
 Number of bytes per interval.
 
 ## Remarks
-A client driver that supports streams associated with a bulk endpoint, uses <b>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</b> to get the maximum number of streams supported by the endpoint. That information is required by the client driver in an open-streams request. In the request, the specified value for <b>NumberOfStreams</b> member of the <a href="..\usb\ns-usb-_urb_open_static_streams.md">_URB_OPEN_STATIC_STREAMS</a> structure cannot exceed the <b>MaxStreams</b> value reported in <b>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</b>. For more information about opening streams, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
+A client driver that supports streams associated with a bulk endpoint, uses <b>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</b> to get the maximum number of streams supported by the endpoint. That information is required by the client driver in an open-streams request. In the request, the specified value for <b>NumberOfStreams</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406294">_URB_OPEN_STATIC_STREAMS</a> structure cannot exceed the <b>MaxStreams</b> value reported in <b>USB_SUPERSPEED_ENDPOINT_COMPANION_DESCRIPTOR</b>. For more information about opening streams, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh450846">How to Open and Close Static Streams in a USB Bulk Endpoint</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

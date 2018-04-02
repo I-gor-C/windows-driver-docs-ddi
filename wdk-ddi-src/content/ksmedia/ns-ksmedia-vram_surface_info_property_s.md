@@ -47,12 +47,12 @@ req.typenames: VRAM_SURFACE_INFO_PROPERTY_S, *PVRAM_SURFACE_INFO_PROPERTY_S
 The VRAM_SURFACE_INFO_PROPERTY_S structure describes property items in the KSPROPSETID_VramCapture property set.
 
 ## Syntax
-````
-typedef struct {
-  KSPROPERTY         Property;
+```
+typedef struct VRAM_SURFACE_INFO_PROPERTY_S {
+  KSPROPERTY         Property;
   PVRAM_SURFACE_INFO pVramSurfaceInfo;
-} VRAM_SURFACE_INFO_PROPERTY_S, *PVRAM_SURFACE_INFO_PROPERTY_S;
-````
+} *PVRAM_SURFACE_INFO_PROPERTY_S, VRAM_SURFACE_INFO_PROPERTY_S;
+```
 
 ## Members
 
@@ -63,7 +63,7 @@ This member specifies an initialized <a href="https://msdn.microsoft.com/library
 
 `pVramSurfaceInfo`
 
-This member specifies a pointer to a structure of type <a href="..\ksmedia\ns-ksmedia-vram_surface_info.md">VRAM_SURFACE_INFO</a>.
+This member specifies a pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff568783">VRAM_SURFACE_INFO</a>.
 
 
 ## Requirements
@@ -77,4 +77,4 @@ This member specifies a pointer to a structure of type <a href="..\ksmedia\ns-ks
 
 
 
-<a href="..\ksmedia\ns-ksmedia-vram_surface_info.md">VRAM_SURFACE_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568783">VRAM_SURFACE_INFO</a>

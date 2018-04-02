@@ -47,18 +47,18 @@ req.typenames: BDA_PIN_PAIRING, *PBDA_PIN_PAIRING
 The BDA_PIN_PAIRING structure describes the topology between a pair of input and output pins.
 
 ## Syntax
-````
+```
 typedef struct _BDA_PIN_PAIRING {
-  ULONG       ulInputPin;
-  ULONG       ulOutputPin;
-  ULONG       ulcMaxInputsPerOutput;
-  ULONG       ulcMinInputsPerOutput;
-  ULONG       ulcMaxOutputsPerInput;
-  ULONG       ulcMinOutputsPerInput;
-  ULONG       ulcTopologyJoints;
+  ULONG       ulInputPin;
+  ULONG       ulOutputPin;
+  ULONG       ulcMaxInputsPerOutput;
+  ULONG       ulcMinInputsPerOutput;
+  ULONG       ulcMaxOutputsPerInput;
+  ULONG       ulcMinOutputsPerInput;
+  ULONG       ulcTopologyJoints;
   const ULONG *pTopologyJoints;
-} BDA_PIN_PAIRING, *PBDA_PIN_PAIRING;
-````
+} *PBDA_PIN_PAIRING, BDA_PIN_PAIRING;
+```
 
 ## Members
 
@@ -103,16 +103,16 @@ Array of joint values. The value given to a joint corresponds to the index of an
 
 ## See Also
 
-<a href="..\ks\ns-ks-kstopology_connection.md">KSTOPOLOGY_CONNECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556523">BDA_FILTER_TEMPLATE</a>
 
 
 
-<a href="..\bdasup\ns-bdasup-_bda_filter_template.md">BDA_FILTER_TEMPLATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556558">BDA_TEMPLATE_CONNECTION</a>
 
 
 
-<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563534">KSPIN_DESCRIPTOR_EX</a>
 
 
 
-<a href="..\bdatypes\ns-bdatypes-_bda_template_connection.md">BDA_TEMPLATE_CONNECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567148">KSTOPOLOGY_CONNECTION</a>

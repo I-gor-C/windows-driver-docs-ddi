@@ -51,50 +51,20 @@ req.product: Windows 10 or later.
 The <b>WDF_DEVICE_HWACCESS_TARGET_SIZE</b> enumeration is used internally by the framework. Do not use.
 
 ## Syntax
-````
-typedef enum __WDF_IO_TARGET_STATE { 
-  WdfDeviceHwAccessTargetSizeInvalid  = 0,
-  WdfDeviceHwAccessTargetSizeUchar    = 1,
-  WdfDeviceHwAccessTargetSizeUshort   = 2,
-  WdfDeviceHwAccessTargetSizeUlong    = 3,
-  WdfDeviceHwAccessTargetSizeUlong64  = 4,
-  WdfDeviceHwAccessTargetSizeMaximum  = 5
-} WDF_DEVICE_HWACCESS_TARGET_TYPE, *PWDF_DEVICE_HWACCESS_TARGET_TYPE;
-````
+```
+typedef enum _WDF_DEVICE_HWACCESS_TARGET_SIZE {
+  WdfDeviceHwAccessTargetSizeInvalid  ,
+  WdfDeviceHwAccessTargetSizeUchar    ,
+  WdfDeviceHwAccessTargetSizeUshort   ,
+  WdfDeviceHwAccessTargetSizeUlong    ,
+  WdfDeviceHwAccessTargetSizeUlong64  ,
+  WdfDeviceHwAccessTargetSizeMaximum
+} *PWDF_DEVICE_HWACCESS_TARGET_SIZE, WDF_DEVICE_HWACCESS_TARGET_SIZE;
+```
 
 ## Constants
 
 <table>
-            
-                <tr>
-                    <td>WdfDeviceHwAccessTargetSizeInvalid</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceHwAccessTargetSizeUchar</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceHwAccessTargetSizeUshort</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceHwAccessTargetSizeUlong</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceHwAccessTargetSizeUlong64</td>
-                    <td></td>
-                </tr>
-            
-                <tr>
-                    <td>WdfDeviceHwAccessTargetSizeMaximum</td>
-                    <td></td>
-                </tr>
 </table>
 
 

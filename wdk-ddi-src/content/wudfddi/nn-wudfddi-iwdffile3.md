@@ -69,4 +69,4 @@ Drivers obtain the <b>IWDFFile3</b> interface by calling <b>IWDFFile::QueryInter
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdffile2.md">IWDFFile2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558915">IWDFFile2</a>

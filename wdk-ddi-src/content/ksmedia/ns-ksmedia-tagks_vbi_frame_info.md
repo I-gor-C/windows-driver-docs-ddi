@@ -44,20 +44,20 @@ req.typenames: KS_VBI_FRAME_INFO, *PKS_VBI_FRAME_INFO
 ---
 
 # tagKS_VBI_FRAME_INFO structure
-The KS_VBI_FRAME_INFO structure extends the <a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a> structure for vertical blanking interval (VBI) streams.
+The KS_VBI_FRAME_INFO structure extends the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a> structure for vertical blanking interval (VBI) streams.
 
 ## Syntax
-````
+```
 typedef struct tagKS_VBI_FRAME_INFO {
-  ULONG                  ExtendedHeaderSize;
-  DWORD                  dwFrameFlags;
-  LONGLONG               PictureNumber;
-  LONGLONG               DropCount;
-  DWORD                  dwSamplingFrequency;
+  ULONG                  ExtendedHeaderSize;
+  DWORD                  dwFrameFlags;
+  LONGLONG               PictureNumber;
+  LONGLONG               DropCount;
+  DWORD                  dwSamplingFrequency;
   KS_TVTUNER_CHANGE_INFO TvTunerChangeInfo;
-  KS_VBIINFOHEADER       VBIInfoHeader;
-} KS_VBI_FRAME_INFO, *PKS_VBI_FRAME_INFO;
-````
+  KS_VBIINFOHEADER       VBIInfoHeader;
+} *PKS_VBI_FRAME_INFO, KS_VBI_FRAME_INFO;
+```
 
 ## Members
 
@@ -193,12 +193,12 @@ The <b>dwSamplingFrequency</b> member is not used by Microsoft VBI codecs, but m
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksstream_header.md">KSSTREAM_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567138">KSSTREAM_HEADER</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_vbiinfoheader.md">KS_VBIINFOHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567691">KS_TVTUNER_CHANGE_INFO</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_tvtuner_change_info.md">KS_TVTUNER_CHANGE_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567692">KS_VBIINFOHEADER</a>

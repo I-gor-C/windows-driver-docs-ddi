@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# Reset method
+# IXpsPartIterator::Reset method
 The <code>Reset</code> method sets the iterator to the first element.
 
 ## Syntax
 
-````
-void STDMETHODCALLTYPE Reset(
-    None
+```
+void Reset(
+
 );
-````
+```
 
 ## Parameters
 

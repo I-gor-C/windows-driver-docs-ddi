@@ -50,19 +50,19 @@ The<b> KsPinGetAvailableByteCount</b> routine outputs the number of bytes of inp
 
 ## Syntax
 
-````
-NTSTATUS KsPinGetAvailableByteCount(
-  _In_      PKSPIN Pin,
-  _Out_opt_ PLONG  InputDataBytes,
-  _Out_opt_ PLONG  OutputBufferBytes
+```
+KSDDKAPI NTSTATUS KsPinGetAvailableByteCount(
+  PKSPIN Pin,
+  PLONG  InputDataBytes,
+  PLONG  OutputBufferBytes
 );
-````
+```
 
 ## Parameters
 
 `Pin`
 
-A pointer to a <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> structure for which to calculate these queue parameters.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> structure for which to calculate these queue parameters.
 
 `InputDataBytes`
 
@@ -99,40 +99,40 @@ For additional information, see <a href="https://msdn.microsoft.com/73ab974f-803
 
 ## See Also
 
-<a href="..\ks\nc-ks-pfnkspin.md">AVStrMiniPinProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556351">AVStrMiniPinProcess</a>
 
 
 
-<a href="..\ks\nf-ks-ksfilterreleaseprocessingmutex.md">KsFilterReleaseProcessingMutex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563534">KSPIN_DESCRIPTOR_EX</a>
 
 
 
-<a href="..\ks\ns-ks-_ksstream_pointer.md">KSSTREAM_POINTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563535">KSPIN_DISPATCH</a>
 
 
 
-<a href="..\ks\ns-ks-_kspin_dispatch.md">KSPIN_DISPATCH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567139">KSSTREAM_POINTER</a>
 
 
 
-<a href="..\ks\nf-ks-kspingettrailingedgestreampointer.md">KsPinGetTrailingEdgeStreamPointer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562524">KsFilterAcquireProcessingMutex</a>
 
 
 
-<a href="..\ks\nf-ks-kspingetleadingedgestreampointer.md">KsPinGetLeadingEdgeStreamPointer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562552">KsFilterReleaseProcessingMutex</a>
 
 
 
-<a href="..\ks\nf-ks-ksfilteracquireprocessingmutex.md">KsFilterAcquireProcessingMutex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563488">KsPinAcquireProcessingMutex</a>
 
 
 
-<a href="..\ks\nf-ks-kspinacquireprocessingmutex.md">KsPinAcquireProcessingMutex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563513">KsPinGetLeadingEdgeStreamPointer</a>
 
 
 
-<a href="..\ks\ns-ks-_kspin_descriptor_ex.md">KSPIN_DESCRIPTOR_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563518">KsPinGetTrailingEdgeStreamPointer</a>
 
 
 
-<a href="..\ks\nf-ks-kspinreleaseprocessingmutex.md">KsPinReleaseProcessingMutex</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563527">KsPinReleaseProcessingMutex</a>

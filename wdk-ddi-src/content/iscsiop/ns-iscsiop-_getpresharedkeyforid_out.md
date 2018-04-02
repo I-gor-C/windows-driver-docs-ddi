@@ -7,7 +7,7 @@ old-location: storage\getpresharedkeyforid_out.htm
 old-project: storage
 ms.assetid: 21d6378e-b93b-4e97-842a-a3157e081f31
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PGetPresharedKeyForId_OUT, GetPresharedKeyForId_OUT, GetPresharedKeyForId_OUT structure [Storage Devices], PGetPresharedKeyForId_OUT, PGetPresharedKeyForId_OUT structure pointer [Storage Devices], _GetPresharedKeyForId_OUT, iscsiop/GetPresharedKeyForId_OUT, iscsiop/PGetPresharedKeyForId_OUT, storage.getpresharedkeyforid_out, structs-iSCSI_6807c82b-45b4-44c7-a1e0-a99607c1cd4f.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: GetPresharedKeyForId_OUT, *PGetPresharedKeyForId_OUT
 The GetPresharedKeyForId_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a> method.
 
 ## Syntax
-````
+```
 typedef struct _GetPresharedKeyForId_OUT {
-  ULONG     Status;
+  ULONG     Status;
   ULONGLONG SecurityFlags;
 } GetPresharedKeyForId_OUT, *PGetPresharedKeyForId_OUT;
-````
+```
 
 ## Members
 
@@ -75,7 +75,11 @@ You must initiate this method if the initiator supports IKE.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554973">GetPresharedKeyForId_IN</a>
 
 
 
@@ -87,8 +91,4 @@ You must initiate this method if the initiator supports IKE.
 
 
 
-<a href="..\iscsiop\ns-iscsiop-_getpresharedkeyforid_in.md">GetPresharedKeyForId_IN</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554970">GetPresharedKeyForId</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>

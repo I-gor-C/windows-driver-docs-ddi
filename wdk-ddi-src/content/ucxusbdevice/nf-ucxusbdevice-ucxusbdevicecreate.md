@@ -7,7 +7,7 @@ old-location: buses\_ucxusbdevicecreate.htm
 old-project: usbref
 ms.assetid: 36883440-805F-4588-AA04-3A7BCBEB6D76
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UcxUsbDeviceCreate, UcxUsbDeviceCreate method [Buses], buses._ucxusbdevicecreate, ucxusbdevice/UcxUsbDeviceCreate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ Creates a USB device object on the specified controller.
 
 ## Syntax
 
-````
+```
 NTSTATUS UcxUsbDeviceCreate(
-  [in]           UCXCONTROLLER          Controller,
-  [out]          PUCXUSBDEVICE_INIT     *UsbDeviceInit,
-  [in, optional] PWDF_OBJECT_ATTRIBUTES Attributes,
-  [out]          UCXUSBDEVICE           *UsbDevice
+  UCXCONTROLLER          Controller,
+  PUCXUSBDEVICE_INIT     *UsbDeviceInit,
+  PWDF_OBJECT_ATTRIBUTES Attributes,
+  UCXUSBDEVICE           *UsbDevice
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +73,7 @@ A pointer to a <b>UCXUSBDEVICE_INIT</b> structure that describes various configu
 
 `Attributes`
 
-A pointer to a caller-allocated <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the USB device object.
+A pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure that specifies attributes for the USB device object.
 
 `UsbDevice`
 
@@ -86,9 +86,9 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 ## Remarks
 
-The client driver for the host controller must call this method after the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call. The parent of the new USB device object is the parent hub device specified by UCX.
+The client driver for the host controller must call this method after the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> call. The parent of the new USB device object is the parent hub device specified by UCX.
 
-For a code example, see <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_usbdevice_add.md">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a>.
+For a code example, see <a href="https://msdn.microsoft.com/library/windows/hardware/mt187823">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -102,4 +102,4 @@ For a code example, see <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_contr
 
 ## See Also
 
-<a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_usbdevice_add.md">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187823">EVT_UCX_CONTROLLER_USBDEVICE_ADD</a>

@@ -7,7 +7,7 @@ old-location: display\d3dvalidatetexturestagestate.htm
 old-project: display
 ms.assetid: 6376842f-ebf5-43b0-81d8-fc5b15f595ab
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3dValidateTextureStageState, D3dValidateTextureStageState callback function [Display Devices], LPD3DHAL_VALIDATETEXTURESTAGESTATECB, d3dfncs_f83c205a-4cad-4365-beee-442a66e2c67a.xml, d3dhal/D3dValidateTextureStageState, display.d3dvalidatetexturestagestate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -217,8 +217,8 @@ Attempting the simultaneous use of multiple textures and MIP mapped trilinear fi
 
 ## See Also
 
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_validatetexturestagestatedata.md">D3DHAL_VALIDATETEXTURESTAGESTATEDATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545964">D3DHAL_VALIDATETEXTURESTAGESTATEDATA</a>
 
 
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+<a href="https://msdn.microsoft.com/6128ff7a-0d2c-48df-8b5e-cab33c5a74f5">D3dDrawPrimitives2</a>

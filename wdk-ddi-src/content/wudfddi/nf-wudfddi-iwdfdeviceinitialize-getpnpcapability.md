@@ -45,24 +45,24 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetPnpCapability method
+# IWDFDeviceInitialize::GetPnpCapability method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>GetPnpCapability</b> method determines the state of the specified  Plug and Play (PnP) capability.
 
 ## Syntax
 
-````
+```
 WDF_TRI_STATE GetPnpCapability(
-  [in] WDF_PNP_CAPABILITY Capability
+  WDF_PNP_CAPABILITY Capability
 );
-````
+```
 
 ## Parameters
 
 `Capability`
 
-A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_capability.md">WDF_PNP_CAPABILITY</a>-typed value that identifies the PnP capability to retrieve status about.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561428">WDF_PNP_CAPABILITY</a>-typed value that identifies the PnP capability to retrieve status about.
 
 
 ## Return Value
@@ -121,12 +121,12 @@ The capability is set.
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdeviceinitialize.md">IWDFDeviceInitialize</a>
-
-
-
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_capability.md">WDF_PNP_CAPABILITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556965">IWDFDeviceInitialize</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556993">IWDFDeviceInitialize::SetPnpCapability</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561428">WDF_PNP_CAPABILITY</a>

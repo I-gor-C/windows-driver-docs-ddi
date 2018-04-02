@@ -50,13 +50,13 @@ The <b>KsCacheMedium</b> function improves graph building performance of pins th
 
 ## Syntax
 
-````
-NTSTATUS KsCacheMedium(
-  _In_ PUNICODE_STRING SymbolicLink,
-  _In_ PKSPIN_MEDIUM   Medium,
-  _In_ ULONG           PinDirection
+```
+KSDDKAPI NTSTATUS KsCacheMedium(
+  PUNICODE_STRING SymbolicLink,
+  PKSPIN_MEDIUM   Medium,
+  ULONG           PinDirection
 );
-````
+```
 
 ## Parameters
 

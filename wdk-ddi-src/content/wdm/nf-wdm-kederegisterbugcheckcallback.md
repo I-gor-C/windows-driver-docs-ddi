@@ -7,7 +7,7 @@ old-location: kernel\kederegisterbugcheckcallback.htm
 old-project: kernel
 ms.assetid: 0be95cee-c648-4905-9f4a-ea4e5fc794ed
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeDeregisterBugCheckCallback, KeDeregisterBugCheckCallback routine [Kernel-Mode Driver Architecture], k105_6bb11ae2-ceb1-4640-b59c-47b42496b819.xml, kernel.kederegisterbugcheckcallback, wdm/KeDeregisterBugCheckCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # KeDeregisterBugCheckCallback function
-The <b>KeDeregisterBugCheckCallback</b> routine removes a callback routine that was registered by <a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a>.
+The <b>KeDeregisterBugCheckCallback</b> routine removes a callback routine that was registered by <a href="https://msdn.microsoft.com/library/windows/hardware/ff553105">KeRegisterBugCheckCallback</a>.
 
 ## Syntax
 
-````
-BOOLEAN KeDeregisterBugCheckCallback(
-  _Inout_ PKBUGCHECK_CALLBACK_RECORD CallbackRecord
+```
+NTKERNELAPI BOOLEAN KeDeregisterBugCheckCallback(
+  PKBUGCHECK_CALLBACK_RECORD CallbackRecord
 );
-````
+```
 
 ## Parameters
 
 `CallbackRecord`
 
-Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551853">KBUGCHECK_CALLBACK_RECORD</a> structure. <i>CallbackRecord</i> must be the same value that was passed to <a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a> when the callback was registered.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551853">KBUGCHECK_CALLBACK_RECORD</a> structure. <i>CallbackRecord</i> must be the same value that was passed to <a href="https://msdn.microsoft.com/library/windows/hardware/ff553105">KeRegisterBugCheckCallback</a> when the callback was registered.
 
 
 ## Return Value
@@ -80,4 +80,4 @@ Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff5518
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-keregisterbugcheckcallback.md">KeRegisterBugCheckCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553105">KeRegisterBugCheckCallback</a>

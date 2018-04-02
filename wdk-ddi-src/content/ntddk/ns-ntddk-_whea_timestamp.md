@@ -47,22 +47,22 @@ req.typenames: WHEA_TIMESTAMP, *PWHEA_TIMESTAMP
 The WHEA_TIMESTAMP union describes the time that an error was reported to the operating system.
 
 ## Syntax
-````
-typedef union _WHEA_TIMESTAMP {
+```
+typedef struct _WHEA_TIMESTAMP {
   struct {
-    ULONGLONG Seconds  :8;
-    ULONGLONG Minutes  :8;
-    ULONGLONG Hours  :8;
-    ULONGLONG Precise  :1;
-    ULONGLONG Reserved  :7;
-    ULONGLONG Day  :8;
-    ULONGLONG Month  :8;
-    ULONGLONG Year  :8;
-    ULONGLONG Century  :8;
-  };
+    ULONGLONG  : 8 Century;
+    ULONGLONG  : 8 Day;
+    ULONGLONG  : 8 Hours;
+    ULONGLONG  : 8 Minutes;
+    ULONGLONG  : 8 Month;
+    ULONGLONG  : 1 Precise;
+    ULONGLONG  : 7 Reserved;
+    ULONGLONG  : 8 Seconds;
+    ULONGLONG  : 8 Year;
+  } DUMMYSTRUCTNAME;
   LARGE_INTEGER AsLARGE_INTEGER;
-} WHEA_TIMESTAMP, *PWHEA_TIMESTAMP;
-````
+} *PWHEA_TIMESTAMP, WHEA_TIMESTAMP;
+```
 
 ## Members
 
@@ -76,7 +76,7 @@ typedef union _WHEA_TIMESTAMP {
 A LARGE_INTEGER representation of the contents of the WHEA_TIMESTAMP union.
 
 ## Remarks
-A WHEA_TIMESTAMP union is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure.
+A WHEA_TIMESTAMP union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,4 +86,4 @@ A WHEA_TIMESTAMP union is contained within the <a href="..\ntddk\ns-ntddk-_whea_
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a>

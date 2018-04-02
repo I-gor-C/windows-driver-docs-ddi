@@ -44,16 +44,16 @@ req.typenames: LAMP_INTENSITY_COLOR
 ---
 
 # LAMP_INTENSITY_COLOR structure
-This structure is the I/O parameter type of <a href="..\lamp\ni-lamp-ioctl_lamp_get_intensity_color.md">IOCTL_LAMP_GET_INTENSITY_COLOR</a> and <a href="..\lamp\ni-lamp-ioctl_lamp_set_intensity_color.md">IOCTL_LAMP_SET_INTENSITY_COLOR</a>.
+This structure is the I/O parameter type of <a href="https://msdn.microsoft.com/library/windows/hardware/dn925069">IOCTL_LAMP_GET_INTENSITY_COLOR</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/dn925076">IOCTL_LAMP_SET_INTENSITY_COLOR</a>.
 
 ## Syntax
-````
+```
 typedef struct LAMP_INTENSITY_COLOR {
   BYTE Red;
   BYTE Green;
   BYTE Blue;
-} LAMP_INTENSITY_COLOR;
-````
+};
+```
 
 ## Members
 

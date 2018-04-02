@@ -50,41 +50,41 @@ req.product: Windows 10 or later.
 The <b>WDF_USB_REQUEST_COMPLETION_PARAMS</b> structure contains parameters that are associated with the completion of an I/O request for a USB device.
 
 ## Syntax
-````
+```
 typedef struct _WDF_USB_REQUEST_COMPLETION_PARAMS {
-  USBD_STATUS          UsbdStatus;
+  USBD_STATUS          UsbdStatus;
   WDF_USB_REQUEST_TYPE Type;
   union {
     struct {
       WDFMEMORY Buffer;
-      USHORT    LangID;
-      UCHAR     StringIndex;
-      UCHAR     RequiredSize;
-    } DeviceString;
+      USHORT    LangID;
+      UCHAR     StringIndex;
+      UCHAR     RequiredSize;
+    } DeviceString;
     struct {
-      WDFMEMORY                    Buffer;
+      WDFMEMORY                    Buffer;
       WDF_USB_CONTROL_SETUP_PACKET SetupPacket;
-      ULONG                        Length;
-    } DeviceControlTransfer;
+      ULONG                        Length;
+    } DeviceControlTransfer;
     struct {
       WDFMEMORY Buffer;
-    } DeviceUrb;
+    } DeviceUrb;
     struct {
       WDFMEMORY Buffer;
-      size_t    Length;
-      size_t    Offset;
-    } PipeWrite;
+      size_t    Length;
+      size_t    Offset;
+    } PipeWrite;
     struct {
       WDFMEMORY Buffer;
-      size_t    Length;
-      size_t    Offset;
-    } PipeRead;
+      size_t    Length;
+      size_t    Offset;
+    } PipeRead;
     struct {
       WDFMEMORY Buffer;
-    } PipeUrb;
-  } Parameters;
+    } PipeUrb;
+  } Parameters;
 } WDF_USB_REQUEST_COMPLETION_PARAMS, *PWDF_USB_REQUEST_COMPLETION_PARAMS;
-````
+```
 
 ## Members
 
@@ -95,14 +95,14 @@ The <a href="https://msdn.microsoft.com/library/windows/hardware/ff539136">USBD_
 
 `Type`
 
-A <a href="..\wdfusb\ne-wdfusb-_wdf_usb_request_type.md">WDF_USB_REQUEST_TYPE</a>-typed values that identifies the request type.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff553055">WDF_USB_REQUEST_TYPE</a>-typed values that identifies the request type.
 
 `Parameters`
 
 
 
 ## Remarks
-The <b>WDF_USB_REQUEST_COMPLETION_PARAMS</b> structure is a member of the <a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a> structure.
+The <b>WDF_USB_REQUEST_COMPLETION_PARAMS</b> structure is a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552454">WDF_REQUEST_COMPLETION_PARAMS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -113,12 +113,12 @@ The <b>WDF_USB_REQUEST_COMPLETION_PARAMS</b> structure is a member of the <a hre
 
 ## See Also
 
-<a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_completion_routine.md">CompletionRoutine</a>
+<a href="https://msdn.microsoft.com/7d3eb4d6-9fc7-4924-9b95-f5824713049b">CompletionRoutine</a>
 
 
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetcompletionparams.md">WdfRequestGetCompletionParams</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552454">WDF_REQUEST_COMPLETION_PARAMS</a>
 
 
 
-<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_completion_params.md">WDF_REQUEST_COMPLETION_PARAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549961">WdfRequestGetCompletionParams</a>

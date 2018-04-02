@@ -7,7 +7,7 @@ old-location: storage\stor_crypto_capability.htm
 old-project: storage
 ms.assetid: AC8EBE07-92D6-4985-A575-8AD3321D29FB
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTOR_CRYPTO_CAPABILITY, PSTOR_CRYPTO_CAPABILITY, PSTOR_CRYPTO_CAPABILITY structure pointer [Storage Devices], STOR_CRYPTO_CAPABILITY, STOR_CRYPTO_CAPABILITY structure [Storage Devices], _STOR_CRYPTO_CAPABILITY, storage.stor_crypto_capability, storport/PSTOR_CRYPTO_CAPABILITY, storport/STOR_CRYPTO_CAPABILITY"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,11 +48,16 @@ req.product: Windows 10 or later.
 Reserved for system use.
 
 ## Syntax
-````
+```
 typedef struct _STOR_CRYPTO_CAPABILITY {
-  ;      // Reserved for system use.
+  ULONG                    Version;
+  ULONG                    Size;
+  USHORT                   CryptoCapabilityIndex;
+  USHORT                   DataUnitSizeBitmask;
+  STOR_CRYPTO_ALGORITHM_ID AlgorithmId;
+  STOR_CRYPTO_KEY_SIZE     KeySize;
 } STOR_CRYPTO_CAPABILITY, *PSTOR_CRYPTO_CAPABILITY;
-````
+```
 
 ## Members
 

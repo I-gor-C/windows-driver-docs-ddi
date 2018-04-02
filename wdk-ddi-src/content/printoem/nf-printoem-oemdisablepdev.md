@@ -50,11 +50,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-VOID APIENTRY OEMDisablePDEV(
-   PDEVOBJ pdevobj
+```
+void OEMDisablePDEV(
+  PDEVOBJ pdevobj
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: audio\iminiportstreamaudioenginenode_getlfxstate.htm
 old-project: audio
 ms.assetid: 2810D8B3-DDB7-4B55-839B-B2D079BDC0FC
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: GetLfxState method [Audio Devices], GetLfxState method [Audio Devices], IMiniportStreamAudioEngineNode interface, GetLfxState,IMiniportStreamAudioEngineNode.GetLfxState, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], GetLfxState method, IMiniportStreamAudioEngineNode::GetLfxState, audio.iminiportstreamaudioenginenode_getlfxstate, portcls/IMiniportStreamAudioEngineNode::GetLfxState
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# GetLfxState method
+# IMiniportStreamAudioEngineNode::GetLfxState method
 Gets the state of the local effects (LFX) node that is in the path of the audio stream.
 
 ## Syntax
 
-````
+```
 NTSTATUS GetLfxState(
-  [out] BOOL *pbEnable
+  BOOL *pbEnable
 );
-````
+```
 
 ## Parameters
 
@@ -78,4 +78,4 @@ code.
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265090">IMiniportStreamAudioEngineNode</a>

@@ -55,12 +55,12 @@ The <b>WdfCollectionRemove</b> method removes an object from a specified object 
 
 ## Syntax
 
-````
-VOID WdfCollectionRemove(
-  _In_ WDFCOLLECTION Collection,
-  _In_ WDFOBJECT     Item
+```
+void WdfCollectionRemove(
+  WDFCOLLECTION Collection,
+  WDFOBJECT     Item
 );
-````
+```
 
 ## Parameters
 
@@ -117,4 +117,4 @@ The following code example removes a specified object from a specified object co
 
 ## See Also
 
-<a href="..\wdfcollection\nf-wdfcollection-wdfcollectionremoveitem.md">WdfCollectionRemoveItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545792">WdfCollectionRemoveItem</a>

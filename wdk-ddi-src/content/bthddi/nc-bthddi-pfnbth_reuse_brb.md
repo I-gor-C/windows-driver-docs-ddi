@@ -69,7 +69,7 @@ Pointer to the BRB to reuse.
 `brbType`
 
 Specifies a value from the 
-     <a href="..\bthddi\ne-bthddi-_brb_type.md">BRB_TYPE</a> enumeration to initialize the BRB
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536631">BRB_TYPE</a> enumeration to initialize the BRB
      with.
 
 
@@ -95,4 +95,4 @@ Profile drivers obtain a pointer to the
 
 ## See Also
 
-<a href="..\bthddi\ne-bthddi-_brb_type.md">BRB_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536631">BRB_TYPE</a>

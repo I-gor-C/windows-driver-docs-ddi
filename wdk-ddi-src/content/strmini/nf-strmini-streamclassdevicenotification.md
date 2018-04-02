@@ -51,16 +51,13 @@ Minidrivers use the <b>StreamClassDeviceNotification</b> routine to notify the c
 
 ## Syntax
 
-````
-VOID  StreamClassDeviceNotification(
-  _In_ STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE NotificationType,
-  _In_ PVOID                                      HwDeviceExtension,
-       PHW_STREAM_REQUEST_BLOCK                   pSrb,
-       PKSEVENT_ENTRY                             EventEntry,
-       GUID                                       *EventSet,
-       ULONG                                      EventId
+```
+void StreamClassDeviceNotification(
+  STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE NotificationType,
+  PVOID                                      HwDeviceExtension,
+  ...                                        
 );
-````
+```
 
 ## Parameters
 
@@ -102,7 +99,7 @@ Deletes the event specified by the <i>EventEntry</i> parameter.
 
 `HwDeviceExtension`
 
-Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="..\strmini\ns-strmini-_hw_initialization_data.md">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a>, <a href="..\strmini\ns-strmini-_hw_stream_object.md">HW_STREAM_OBJECT</a>, <a href="..\strmini\ns-strmini-_hw_time_context.md">HW_TIME_CONTEXT</a>, and <a href="..\strmini\ns-strmini-_port_configuration_information.md">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
+Pointer to the minidriver's device extension. The minidriver specifies the size of this buffer in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559682">HW_INITIALIZATION_DATA</a> structure it passes when it registers itself via <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>. The class driver then passes pointers to the buffer in the <b>HwDeviceExtension</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559702">HW_STREAM_REQUEST_BLOCK</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559697">HW_STREAM_OBJECT</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559706">HW_TIME_CONTEXT</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
 `Arg1`
 
@@ -115,7 +112,7 @@ None
 
 ## Remarks
 
-The minidriver uses this routine for requests or events that apply to the minidriver as a whole. Stream-specific requests or events use <a href="..\strmini\nf-strmini-streamclassstreamnotification.md">StreamClassStreamNotification</a>.
+The minidriver uses this routine for requests or events that apply to the minidriver as a whole. Stream-specific requests or events use <a href="https://msdn.microsoft.com/library/windows/hardware/ff568266">StreamClassStreamNotification</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -126,4 +123,4 @@ The minidriver uses this routine for requests or events that apply to the minidr
 
 ## See Also
 
-<a href="..\strmini\nf-strmini-streamclassstreamnotification.md">StreamClassStreamNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568266">StreamClassStreamNotification</a>

@@ -7,7 +7,7 @@ old-location: kernel\ioopendeviceregistrykey.htm
 old-project: kernel
 ms.assetid: c3b67c73-446b-42a8-bc41-2ca42fde3513
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoOpenDeviceRegistryKey, IoOpenDeviceRegistryKey routine [Kernel-Mode Driver Architecture], k104_7b6ab819-56e3-4d4a-956a-51e4a83300f0.xml, kernel.ioopendeviceregistrykey, wdm/IoOpenDeviceRegistryKey
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The <b>IoOpenDeviceRegistryKey</b> routine returns a handle to a device-specific
 
 ## Syntax
 
-````
-NTSTATUS IoOpenDeviceRegistryKey(
-  _In_  PDEVICE_OBJECT DeviceObject,
-  _In_  ULONG          DevInstKeyType,
-  _In_  ACCESS_MASK    DesiredAccess,
-  _Out_ PHANDLE        DevInstRegKey
+```
+NTKERNELAPI NTSTATUS IoOpenDeviceRegistryKey(
+  PDEVICE_OBJECT DeviceObject,
+  ULONG          DevInstKeyType,
+  ACCESS_MASK    DesiredAccess,
+  PHANDLE        DevInstRegKey
 );
-````
+```
 
 ## Parameters
 
@@ -93,7 +93,7 @@ Open a key relative to the current hardware profile for device or driver informa
 
 `DesiredAccess`
 
-Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the access the caller needs to the key. See the <a href="..\wdm\nf-wdm-zwcreatekey.md">ZwCreateKey</a> routine for a description of each KEY_<i>XXX</i> access right.
+Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> value that represents the access the caller needs to the key. See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566425">ZwCreateKey</a> routine for a description of each KEY_<i>XXX</i> access right.
 
 `DevInstRegKey`
 
@@ -135,7 +135,7 @@ Possibly indicates that the <i>DeviceObject</i> is not a valid PDO.
 
 ## Remarks
 
-The driver must call <a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a> to close the handle returned from this routine when access is no longer required.
+The driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a> to close the handle returned from this routine when access is no longer required.
 
 The registry keys opened by this routine are nonvolatile.
 
@@ -158,8 +158,8 @@ Callers of <b>IoOpenDeviceRegistryKey</b> must be running at IRQL = PASSIVE_LEVE
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwclose.md">ZwClose</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566417">ZwClose</a>

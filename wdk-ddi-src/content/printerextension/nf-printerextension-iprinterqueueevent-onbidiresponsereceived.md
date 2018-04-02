@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnBidiResponseReceived method
+# IPrinterQueueEvent::OnBidiResponseReceived method
 Called when a bidi response  is received.
 
 ## Syntax
 
-````
+```
 HRESULT OnBidiResponseReceived(
-  [in] BSTR    bstrResponse,
-  [in] HRESULT hrStatus
+  BSTR    bstrResponse,
+  HRESULT hrStatus
 );
-````
+```
 
 ## Parameters
 
@@ -89,7 +89,7 @@ The <i>bstrResponse</i> parameter is formatted according to the schema that is d
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterqueueevent.md">IPrinterQueueEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>
 
 
 
@@ -97,4 +97,4 @@ The <i>bstrResponse</i> parameter is formatted according to the schema that is d
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439618">IPrinterQueueEvent</a>

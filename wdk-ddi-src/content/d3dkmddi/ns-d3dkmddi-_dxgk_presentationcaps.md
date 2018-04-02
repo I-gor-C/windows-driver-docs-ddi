@@ -7,7 +7,7 @@ old-location: display\dxgk_presentationcaps.htm
 old-project: display
 ms.assetid: 38de4631-535f-4950-b361-d70f8c638c36
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_PRESENTATIONCAPS, DXGK_PRESENTATIONCAPS structure [Display Devices], DmStructs_67f7af73-6eaa-4ac8-ad04-1633bc1504af.xml, _DXGK_PRESENTATIONCAPS, d3dkmddi/DXGK_PRESENTATIONCAPS, display.dxgk_presentationcaps
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,47 +44,44 @@ req.typenames: DXGK_PRESENTATIONCAPS
 ---
 
 # _DXGK_PRESENTATIONCAPS structure
-The DXGK_PRESENTATIONCAPS structure identifies presentation capabilities of a display miniport driver that the driver provides through a call to its <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> function.
+The DXGK_PRESENTATIONCAPS structure identifies presentation capabilities of a display miniport driver that the driver provides through a call to its <a href="https://msdn.microsoft.com/f2f4c54c-7413-48e5-a165-d71f35642b6c">DxgkDdiQueryAdapterInfo</a> function.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_PRESENTATIONCAPS {
   union {
     struct {
-      UINT NoScreenToScreenBlt  :1;
-      UINT NoOverlapScreenBlt  :1;
-      UINT SupportKernelModeCommandBuffer  :1;
-      UINT NoSameBitmapAlphaBlend  :1;
-      UINT NoSameBitmapStretchBlt  :1;
-      UINT NoSameBitmapTransparentBlt  :1;
-      UINT NoSameBitmapOverlappedAlphaBlend  :1;
-      UINT NoSameBitmapOverlappedStretchBlt  :1;
-      UINT DriverSupportsCddDwmInterop  :1;
-      UINT Reserved0  :1;
-      UINT AlignmentShift  :4;
-      UINT MaxTextureWidthShift  :3;
-      UINT MaxTextureHeightShift  :3;
-      UINT SupportAllBltRops  :1;
-      UINT SupportMirrorStretchBlt  :1;
-      UINT SupportMonoStretchBltModes  :1;
-      UINT StagingRectStartPitchAligned  :1;
-      UINT NoSameBitmapBitBlt  :1;
-      UINT NoSameBitmapOverlappedBitBlt  :1;
-      UINT Reserved1  :1;
-      UINT NoTempSurfaceForClearTypeBlend  :1;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WIN8)
-      UINT SupportSoftwareDeviceBitmaps  :1;
-      UINT NoCacheCoherentApertureMemory  :1;
-      UINT SupportLinearHeap  :1;
-      UINT Reserved  :1;
-#else 
-      UINT Reserved  :4;
-#endif 
+      UINT  : 1 NoScreenToScreenBlt;
+      UINT  : 1 NoOverlapScreenBlt;
+      UINT  : 1 SupportKernelModeCommandBuffer;
+      UINT  : 1 NoSameBitmapAlphaBlend;
+      UINT  : 1 NoSameBitmapStretchBlt;
+      UINT  : 1 NoSameBitmapTransparentBlt;
+      UINT  : 1 NoSameBitmapOverlappedAlphaBlend;
+      UINT  : 1 NoSameBitmapOverlappedStretchBlt;
+      UINT  : 1 DriverSupportsCddDwmInterop;
+      UINT  : 1 Reserved0;
+      UINT  : 4 AlignmentShift;
+      UINT  : 3 MaxTextureWidthShift;
+      UINT  : 3 MaxTextureHeightShift;
+      UINT  : 1 SupportAllBltRops;
+      UINT  : 1 SupportMirrorStretchBlt;
+      UINT  : 1 SupportMonoStretchBltModes;
+      UINT  : 1 StagingRectStartPitchAligned;
+      UINT  : 1 NoSameBitmapBitBlt;
+      UINT  : 1 NoSameBitmapOverlappedBitBlt;
+      UINT  : 1 Reserved1;
+      UINT  : 1 NoTempSurfaceForClearTypeBlend;
+      UINT  : 1 SupportSoftwareDeviceBitmaps;
+      UINT  : 1 NoCacheCoherentApertureMemory;
+      UINT  : 1 SupportLinearHeap;
+      UINT  : 1 Reserved;
+      UINT  : 4 Reserved;
     };
-     Value;
+    UINT Value;
   };
 } DXGK_PRESENTATIONCAPS;
-````
+```
 
 ## Members
 
@@ -100,16 +97,16 @@ A display miniport driver can specify presentation capabilities by setting bits 
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_drivercaps.md">DXGK_DRIVERCAPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546039">D3DKMDT_GDISURFACETYPE</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561062">DXGK_DRIVERCAPS</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_renderkm.md">DxgkDdiRenderKm</a>
+<a href="https://msdn.microsoft.com/f2f4c54c-7413-48e5-a165-d71f35642b6c">DxgkDdiQueryAdapterInfo</a>
 
 
 
-<a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_gdisurfacetype.md">D3DKMDT_GDISURFACETYPE</a>
+<a href="https://msdn.microsoft.com/5841934d-7e0a-4bb8-a7f8-17d8c0af351f">DxgkDdiRenderKm</a>

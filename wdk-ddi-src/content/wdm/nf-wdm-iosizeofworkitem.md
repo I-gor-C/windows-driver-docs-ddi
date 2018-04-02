@@ -7,7 +7,7 @@ old-location: kernel\iosizeofworkitem.htm
 old-project: kernel
 ms.assetid: 389f0776-1010-4f3c-b5c5-b8807ff07130
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoSizeofWorkItem, IoSizeofWorkItem routine [Kernel-Mode Driver Architecture], k104_9f2b3349-cd46-48ec-bcff-10e91bd522b5.xml, kernel.iosizeofworkitem, wdm/IoSizeofWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,9 +50,11 @@ The <b>IoSizeofWorkItem</b> routine returns the size, in bytes, of an <a href="h
 
 ## Syntax
 
-````
-ULONG IoSizeofWorkItem(void);
-````
+```
+ULONG IoSizeofWorkItem(
+
+);
+```
 
 ## Parameters
 
@@ -78,8 +80,8 @@ For more information about work items, see <a href="https://msdn.microsoft.com/l
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioinitializeworkitem.md">IoInitializeWorkItem</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549349">IoInitializeWorkItem</a>

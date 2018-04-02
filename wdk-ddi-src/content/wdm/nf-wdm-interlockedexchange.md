@@ -7,7 +7,7 @@ old-location: kernel\interlockedexchange.htm
 old-project: kernel
 ms.assetid: c9bee5b0-eeaf-4c82-9f02-d00cf9202f78
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: InterlockedExchange, InterlockedExchange routine [Kernel-Mode Driver Architecture], k102_ae8d85b7-040e-4c44-9476-68d6919a50e4.xml, kernel.interlockedexchange, wdm/InterlockedExchange
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -55,12 +55,12 @@ The <b>InterlockedExchange</b> routine sets an integer variable to a given value
 
 ## Syntax
 
-````
+```
 LONG InterlockedExchange(
-  _Inout_ LONG volatile *Target,
-  _In_    LONG          Value
+  _Interlocked_operand_ LONG *Target,
+  LONG                       Value
 );
-````
+```
 
 ## Parameters
 
@@ -98,16 +98,16 @@ Interlocked operations cannot be used on non-cached memory.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-interlockeddecrement.md">InterlockedDecrement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545335">ExInterlockedAddLargeInteger</a>
 
 
 
-<a href="..\wdm\nf-wdm-interlockedincrement.md">InterlockedIncrement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545343">ExInterlockedAddUlong</a>
 
 
 
-<a href="..\wdm\nf-wdm-exinterlockedaddlargeinteger.md">ExInterlockedAddLargeInteger</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547871">InterlockedDecrement</a>
 
 
 
-<a href="..\wdm\nf-wdm-exinterlockedaddulong.md">ExInterlockedAddUlong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547910">InterlockedIncrement</a>

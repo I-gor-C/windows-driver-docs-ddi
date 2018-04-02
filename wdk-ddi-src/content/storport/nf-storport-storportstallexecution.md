@@ -7,7 +7,7 @@ old-location: storage\storportstallexecution.htm
 old-project: storage
 ms.assetid: d635d93b-3e69-4ce5-9dc0-60186417d009
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortStallExecution, StorPortStallExecution routine [Storage Devices], storage.storportstallexecution, storport/StorPortStallExecution, storprt_8cddf62f-d26d-4dd8-85f5-5bf35f74c1de.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,11 +51,11 @@ The <b>StorPortStallExecution</b> routine stalls the miniport driver.
 
 ## Syntax
 
-````
+```
 STORPORT_API VOID StorPortStallExecution(
-  _In_ ULONG Delay
+  ULONG Delay
 );
-````
+```
 
 ## Parameters
 
@@ -79,4 +79,4 @@ None
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportstallexecution.md">ScsiPortStallExecution</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564757">ScsiPortStallExecution</a>

@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 # _ERROR_INFOW structure
-The STI_ERROR_INFO structure is used as a parameter for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543749">IStiDevice::GetLastErrorInfo</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543820">IStiUSD::GetLastErrorInfo</a> methods. It is also used as a member of the <a href="..\sti\ns-sti-_sti_diag.md">STI_DIAG</a> structure.
+The STI_ERROR_INFO structure is used as a parameter for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543749">IStiDevice::GetLastErrorInfo</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff543820">IStiUSD::GetLastErrorInfo</a> methods. It is also used as a member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548383">STI_DIAG</a> structure.
 
 ## Syntax
-````
-typedef struct _ERROR_INFO {
+```
+typedef struct _ERROR_INFOW {
   DWORD dwSize;
   DWORD dwGenericError;
   DWORD dwVendorError;
   WCHAR szExtendedErrorText[255];
-} STI_ERROR_INFO, *PSTI_ERROR_INFO;
-````
+} *PSTI_ERROR_INFOW, STI_ERROR_INFOW;
+```
 
 ## Members
 

@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# RetrieveFileName method
+# IWDFFile::RetrieveFileName method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>RetrieveFileName</b> method retrieves the full name of the file that is associated with the underlying kernel-mode device.
 
 ## Syntax
 
-````
+```
 HRESULT RetrieveFileName(
-  [out]     PWSTR pFileName,
-  [in, out] DWORD *pdwFileNameLengthInChars
+  PWSTR pFileName,
+  DWORD *pdwFileNameLengthInChars
 );
-````
+```
 
 ## Parameters
 
@@ -152,4 +152,4 @@ The following code example shows how to retrieve the name of a file.
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a>

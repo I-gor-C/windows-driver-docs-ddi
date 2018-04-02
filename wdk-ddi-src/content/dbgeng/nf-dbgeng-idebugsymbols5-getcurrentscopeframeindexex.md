@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols5_getcurrentscopeframeindexex.htm
 old-project: debugger
 ms.assetid: 0D8198BB-583F-4828-8131-61EB17621F32
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetCurrentScopeFrameIndexEx method [Windows Debugging], GetCurrentScopeFrameIndexEx method [Windows Debugging], IDebugSymbols5 interface, GetCurrentScopeFrameIndexEx,IDebugSymbols5.GetCurrentScopeFrameIndexEx, IDebugSymbols5, IDebugSymbols5 interface [Windows Debugging], GetCurrentScopeFrameIndexEx method, IDebugSymbols5::GetCurrentScopeFrameIndexEx, dbgeng/IDebugSymbols5::GetCurrentScopeFrameIndexEx, debugger.idebugsymbols5_getcurrentscopeframeindexex
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetCurrentScopeFrameIndexEx method
+# IDebugSymbols5::GetCurrentScopeFrameIndexEx method
 Gets the index of the current frame.
 
 ## Syntax
 
-````
+```
 HRESULT GetCurrentScopeFrameIndexEx(
-  [in]  ULONG  Flags,
-  [out] PULONG Index
+  ULONG  Flags,
+  PULONG Index
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols5.md">IDebugSymbols5</a>
+<a href="https://msdn.microsoft.com/0D239C0E-96C8-49F9-BDFD-182F3F7C3976">IDebugSymbols5</a>

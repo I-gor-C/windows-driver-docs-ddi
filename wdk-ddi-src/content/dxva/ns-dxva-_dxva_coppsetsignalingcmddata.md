@@ -7,7 +7,7 @@ old-location: display\dxva_coppsetsignalingcmddata.htm
 old-project: display
 ms.assetid: 88318bb4-bfca-4557-93cb-703840fa692e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXVA_COPPSetSignalingCmdData, DXVA_COPPSetSignalingCmdData structure [Display Devices], _DXVA_COPPSetSignalingCmdData, display.dxva_coppsetsignalingcmddata, dxva/DXVA_COPPSetSignalingCmdData, dxvaref_2fd69b63-8cfc-427f-9616-4de12bd1a848.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,7 +47,7 @@ req.typenames: DXVA_COPPSetSignalingCmdData
 The DXVA_COPPSetSignalingCmdData structure describes how to protect the signal that goes through the physical connector associated with the DirectX VA COPP device.
 
 ## Syntax
-````
+```
 typedef struct _DXVA_COPPSetSignalingCmdData {
   ULONG ActiveTVProtectionStandard;
   ULONG AspectRatioChangeMask1;
@@ -60,7 +60,7 @@ typedef struct _DXVA_COPPSetSignalingCmdData {
   ULONG ExtendedInfoData[4];
   ULONG Reserved;
 } DXVA_COPPSetSignalingCmdData;
-````
+```
 
 ## Members
 
@@ -220,8 +220,8 @@ Reserved. Should be set to zero.
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_coppcommand.md">DXVA_COPPCommand</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539642">COPPCommand</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563141">DXVA_COPPCommand</a>

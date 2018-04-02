@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# WriteToErrorLog method
+# IStiDeviceControl::WriteToErrorLog method
 The <b>IStiDeviceControl::WriteToErrorLog</b> method allows a user-mode still image minidriver to write a message into the still image error log.
 
 ## Syntax
 
-````
+```
 HRESULT WriteToErrorLog(
-   DWORD   dwMessageType,
-   LPCWSTR pszMessage,
-   DWORD   dwErrorCode
+  DWORD   dwMessageType,
+  LPCWSTR pszMessage,
+  DWORD   dwErrorCode
 );
-````
+```
 
 ## Parameters
 

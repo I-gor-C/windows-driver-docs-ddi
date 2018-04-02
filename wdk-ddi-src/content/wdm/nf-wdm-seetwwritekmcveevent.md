@@ -50,12 +50,12 @@ The <b> 	SeEtwWriteKMCveEvent</b> function is a tracing function for publishing 
 
 ## Syntax
 
-````
-__checkReturn HRESULT NTStatus SeEtwWriteKMCveEvent(
-  _In_     PCUNICODE_STRING CveId,
-  _In_opt_ PCUNICODE_STRING AdditionalDetails
+```
+NTSTATUS SeEtwWriteKMCveEvent(
+  PCUNICODE_STRING CveId,
+  PCUNICODE_STRING AdditionalDetails
 );
-````
+```
 
 ## Parameters
 

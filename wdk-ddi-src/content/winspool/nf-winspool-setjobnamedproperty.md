@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-DWORD WINAPI SetJobNamedProperty(
-  _In_       HANDLE                    hPrinter,
-  _In_       DWORD                     JobId,
-  _In_ const PrintNamedProperty        *pProperty
+```
+DWORD SetJobNamedProperty(
+  HANDLE                   hPrinter,
+  DWORD                    JobId,
+  const PrintNamedProperty *pProperty
 );
-````
+```
 
 ## Parameters
 

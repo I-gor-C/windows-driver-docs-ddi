@@ -7,7 +7,7 @@ old-location: storage\storportsetbusdatabyoffset.htm
 old-project: storage
 ms.assetid: ec1db013-b630-421b-8d22-385a2d9b9510
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortSetBusDataByOffset, StorPortSetBusDataByOffset routine [Storage Devices], storage.storportsetbusdatabyoffset, storport/StorPortSetBusDataByOffset, storprt_ebb2afc1-b190-4674-8ee7-bd61953565ab.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ The <b>StorPortSetBusDataByOffset</b> routine writes bus-specific configuration 
 
 ## Syntax
 
-````
+```
 STORPORT_API ULONG StorPortSetBusDataByOffset(
-  _In_ PVOID DeviceExtension,
-  _In_ ULONG BusDataType,
-  _In_ ULONG SystemIoBusNumber,
-  _In_ ULONG SlotNumber,
-  _In_ PVOID Buffer,
-  _In_ ULONG Offset,
-  _In_ ULONG Length
+  PVOID DeviceExtension,
+  ULONG BusDataType,
+  ULONG SystemIoBusNumber,
+  ULONG SlotNumber,
+  PVOID Buffer,
+  ULONG Offset,
+  ULONG Length
 );
-````
+```
 
 ## Parameters
 
@@ -71,11 +71,11 @@ Pointer to the miniport driver's per-HBA storage area.
 
 `BusDataType`
 
-Contains a value of type <a href="..\ntddk\ne-ntddk-_bus_data_type.md">BUS_DATA_TYPE</a> that specifies the type of the bus for which configuration information is to be written. Currently, its value can be <b>PCIConfiguration</b>. However, additional types of standardized, dynamically configurable buses will be supported in future. The upper bound on the bus types supported is always <b>MaximumBusDataType</b>.
+Contains a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff540700">BUS_DATA_TYPE</a> that specifies the type of the bus for which configuration information is to be written. Currently, its value can be <b>PCIConfiguration</b>. However, additional types of standardized, dynamically configurable buses will be supported in future. The upper bound on the bus types supported is always <b>MaximumBusDataType</b>.
 
 `SystemIoBusNumber`
 
-Specifies the system-assigned number of the I/O bus on which the HBA is connected. The miniport driver's <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a> routine obtains this value from the input <b>PORT_CONFIGURATION_INFORMATION</b><b>SystemIoBusNumber</b> member.
+Specifies the system-assigned number of the I/O bus on which the HBA is connected. The miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> routine obtains this value from the input <b>PORT_CONFIGURATION_INFORMATION</b><b>SystemIoBusNumber</b> member.
 
 `SlotNumber`
 
@@ -112,4 +112,4 @@ Indicates the length, in bytes, of the maximum amount of data to return.
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportsetbusdatabyoffset.md">ScsiPortSetBusDataByOffset</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564751">ScsiPortSetBusDataByOffset</a>

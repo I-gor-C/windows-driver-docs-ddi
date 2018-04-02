@@ -7,7 +7,7 @@ old-location: buses\ucm_pd_conn_state.htm
 old-project: usbref
 ms.assetid: 7D146DDF-58A5-40C2-BF21-AF785DC7DB18
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UCM_PD_CONN_STATE, UCM_PD_CONN_STATE enumeration [Buses], UcmPdConnStateInvalid, UcmPdConnStateNegotiationFailed, UcmPdConnStateNegotiationSucceeded, UcmPdConnStateNotSupported, _UCM_PD_CONN_STATE, buses.ucm_pd_conn_state, ucmtypes/UCM_PD_CONN_STATE, ucmtypes/UcmPdConnStateInvalid, ucmtypes/UcmPdConnStateNegotiationFailed, ucmtypes/UcmPdConnStateNegotiationSucceeded, ucmtypes/UcmPdConnStateNotSupported
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 Defines power delivery (PD) negotiation states of a Type-C port.
 
 ## Syntax
-````
-typedef enum _UCM_PD_CONN_STATE { 
-  UcmPdConnStateInvalid               = 0x0,
-  UcmPdConnStateNotSupported,
-  UcmPdConnStateNegotiationFailed,
+```
+typedef enum _UCM_PD_CONN_STATE {
+  UcmPdConnStateInvalid               ,
+  UcmPdConnStateNotSupported          ,
+  UcmPdConnStateNegotiationFailed     ,
   UcmPdConnStateNegotiationSucceeded
 } UCM_PD_CONN_STATE;
-````
+```
 
 ## Constants
 
@@ -93,4 +93,4 @@ typedef enum _UCM_PD_CONN_STATE {
 
 ## See Also
 
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorpdconnectionstatechanged.md">UcmConnectorPdConnectionStateChanged</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187911">UcmConnectorPdConnectionStateChanged</a>

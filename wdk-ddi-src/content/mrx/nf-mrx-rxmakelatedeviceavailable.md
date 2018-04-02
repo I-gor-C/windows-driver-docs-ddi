@@ -7,7 +7,7 @@ old-location: ifsk\rxmakelatedeviceavailable.htm
 old-project: ifsk
 ms.assetid: 0818907f-3346-42a2-b123-3298ea8f9a1d
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxMakeLateDeviceAvailable, RxMakeLateDeviceAvailable routine [Installable File System Drivers], ifsk.rxmakelatedeviceavailable, mrx/RxMakeLateDeviceAvailable, rxref_7586550f-6abe-4e18-8154-09936c3f0488.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ req.typenames: SetDSMCounters_IN, *PSetDSMCounters_IN
 
 ## Syntax
 
-````
-VOID RxMakeLateDeviceAvailable(
-  _In_ PRDBSS_DEVICE_OBJECT RxDeviceObject
+```
+void RxMakeLateDeviceAvailable(
+  IN PRDBSS_DEVICE_OBJECT RxDeviceObject
 );
-````
+```
 
 ## Parameters
 

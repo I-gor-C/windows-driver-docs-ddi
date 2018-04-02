@@ -48,11 +48,11 @@ req.product: Windows 10 or later.
 This enumeration represents the number of step types that can be detected by the pedometer.
 
 ## Syntax
-````
-typedef enum _PEDOMETER_STEP_TYPE_COUNT { 
-  PedometerStepTypeCount  = 3
-} PEDOMETER_STEP_TYPE_COUNT;
-````
+```
+typedef enum PEDOMETER_STEP_TYPE_COUNT {
+  PedometerStepTypeCount
+} ;
+```
 
 ## Constants
 
@@ -72,4 +72,4 @@ typedef enum _PEDOMETER_STEP_TYPE_COUNT {
 
 ## See Also
 
-<a href="..\sensorsdef\ne-sensorsdef-pedometer_step_type.md">PEDOMETER_STEP_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957077">PEDOMETER_STEP_TYPE</a>

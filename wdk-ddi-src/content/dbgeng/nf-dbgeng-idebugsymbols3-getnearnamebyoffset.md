@@ -7,7 +7,7 @@ old-location: debugger\getnearnamebyoffset.htm
 old-project: debugger
 ms.assetid: bcda26ae-484e-41b9-b86a-552b5cecb9a7
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetNearNameByOffset method [Windows Debugging], GetNearNameByOffset method [Windows Debugging], IDebugSymbols interface, GetNearNameByOffset method [Windows Debugging], IDebugSymbols2 interface, GetNearNameByOffset method [Windows Debugging], IDebugSymbols3 interface, GetNearNameByOffset,IDebugSymbols3.GetNearNameByOffset, IDebugSymbols interface [Windows Debugging], GetNearNameByOffset method, IDebugSymbols2 interface [Windows Debugging], GetNearNameByOffset method, IDebugSymbols2::GetNearNameByOffset, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetNearNameByOffset method, IDebugSymbols3::GetNearNameByOffset, IDebugSymbols::GetNearNameByOffset, IDebugSymbols_cdd9bec8-6fe8-4523-ac98-df3ce90fd073.xml, dbgeng/IDebugSymbols2::GetNearNameByOffset, dbgeng/IDebugSymbols3::GetNearNameByOffset, dbgeng/IDebugSymbols::GetNearNameByOffset, debugger.getnearnamebyoffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,21 +46,21 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetNearNameByOffset method
+# IDebugSymbols3::GetNearNameByOffset method
 The <b>GetNearNameByOffset</b>  method returns the name of a symbol that is located near the specified location.
 
 ## Syntax
 
-````
+```
 HRESULT GetNearNameByOffset(
-  [in]            ULONG64  Offset,
-  [in]            LONG     Delta,
-  [out, optional] PSTR     NameBuffer,
-  [in]            ULONG    NameBufferSize,
-  [out, optional] PULONG   NameSize,
-  [out, optional] PULONG64 Displacement
+  ULONG64  Offset,
+  LONG     Delta,
+  PSTR     NameBuffer,
+  ULONG    NameBufferSize,
+  PULONG   NameSize,
+  PULONG64 Displacement
 );
-````
+```
 
 ## Parameters
 
@@ -149,7 +149,7 @@ For more information about symbols and symbol names, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
 
 
 
@@ -157,12 +157,12 @@ For more information about symbols and symbol names, see <a href="https://msdn.m
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550856">IDebugSymbols</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550864">IDebugSymbols2</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols2.md">IDebugSymbols2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

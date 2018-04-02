@@ -7,7 +7,7 @@ old-location: display\destroyvideodecoderoutputview.htm
 old-project: display
 ms.assetid: acb174e5-09cc-41e9-8b30-8c64f6193f7b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW, d3d10umddi/pfnDestroyVideoDecoderOutputView, display.destroyvideodecoderoutputview, pfnDestroyVideoDecoderOutputView, pfnDestroyVideoDecoderOutputView callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.typenames: SETRESULT_INFO, *PSETRESULT_INFO
 
 
 # PFND3D11_1DDI_DESTROYVIDEODECODEROUTPUTVIEW callback function
-Releases resources for the video decoder output view that were created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideodecoderoutputview.md">CreateVideoDecoderOutputView</a> function.
+Releases resources for the video decoder output view that were created through a call to the <a href="https://msdn.microsoft.com/a5a32b4e-799c-4d18-995d-f804e6dff85c">CreateVideoDecoderOutputView</a> function.
 
 ## Syntax
 
@@ -84,4 +84,4 @@ This callback function does not return a value.
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideodecoderoutputview.md">CreateVideoDecoderOutputView</a>
+<a href="https://msdn.microsoft.com/a5a32b4e-799c-4d18-995d-f804e6dff85c">CreateVideoDecoderOutputView</a>

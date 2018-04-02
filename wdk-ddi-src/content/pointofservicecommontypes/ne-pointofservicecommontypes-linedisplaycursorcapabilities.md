@@ -47,11 +47,18 @@ req.typenames:
 This enumeration is not implemented.
 
 ## Syntax
-````
-typedef enum _LineDisplayCursorCapabilities { 
-    = 
-} LineDisplayCursorCapabilities;
-````
+```
+typedef enum LineDisplayCursorCapabilities {
+  CursorNone       ,
+  CursorFixed      ,
+  CursorBlock      ,
+  CursorHalfBlock  ,
+  CursorUnderline  ,
+  CursorReverse    ,
+  CursorOther      ,
+  CursorBlink
+} ;
+```
 
 ## Constants
 

@@ -44,22 +44,22 @@ req.typenames: WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXDEVICE_ERROR_
 ---
 
 # _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS structure
-The WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure contain valid data.
+The WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union describes which members of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560589">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure contain valid data.
 
 ## Syntax
-````
-typedef union _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS {
+```
+typedef struct _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS {
   struct {
-    ULONGLONG ErrorStatus  :1;
-    ULONGLONG IdInfo  :1;
-    ULONGLONG MemoryNumber  :1;
-    ULONGLONG IoNumber  :1;
-    ULONGLONG RegisterDataPairs  :1;
-    ULONGLONG Reserved  :59;
-  };
+    ULONGLONG  : 1  ErrorStatus;
+    ULONGLONG  : 1  IdInfo;
+    ULONGLONG  : 1  IoNumber;
+    ULONGLONG  : 1  MemoryNumber;
+    ULONGLONG  : 1  RegisterDataPairs;
+    ULONGLONG  : 59 Reserved;
+  } DUMMYSTRUCTNAME;
   ULONGLONG ValidBits;
 } WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS;
-````
+```
 
 ## Members
 
@@ -73,7 +73,7 @@ typedef union _WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS {
 A ULONGLONG representation of the contents of the WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union.
 
 ## Remarks
-A WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.
+A WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560589">WHEA_PCIXDEVICE_ERROR_SECTION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,4 +83,4 @@ A WHEA_PCIXDEVICE_ERROR_SECTION_VALIDBITS union is contained within the <a href=
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_pcixdevice_error_section.md">WHEA_PCIXDEVICE_ERROR_SECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560589">WHEA_PCIXDEVICE_ERROR_SECTION</a>

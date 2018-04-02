@@ -7,7 +7,7 @@ old-location: storage\storportreadportuchar.htm
 old-project: storage
 ms.assetid: 6898ca45-e4a2-41ad-a47e-6dfbcc60b00a
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortReadPortUchar, StorPortReadPortUchar routine [Storage Devices], storage.storportreadportuchar, storport/StorPortReadPortUchar, storprt_de88c383-95ac-4f3e-b02d-aec76132e4c3.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ The <b>StorPortReadPortUchar</b> routine reads a value from a specified port add
 
 ## Syntax
 
-````
-STORPORT_API UCHAR StorPortReadPortUchar(
-  _In_ PVOID  HwDeviceExtension,
-  _In_ PUCHAR Port
+```
+void StorPortReadPortUchar(
+   h,
+   p
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ None
 
 ## Remarks
 
-For more information, see the <a href="..\storport\nf-storport-scsiportreadportbufferuchar.md">ScsiPortReadPortBufferUchar</a> routine. For a buffered version of this routine, see <a href="..\storport\nf-storport-storportreadportbufferuchar.md">StorPortReadPortBufferUchar</a>.
+For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564715">ScsiPortReadPortBufferUchar</a> routine. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567468">StorPortReadPortBufferUchar</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,8 +86,8 @@ For more information, see the <a href="..\storport\nf-storport-scsiportreadportb
 
 ## See Also
 
-<a href="..\storport\nf-storport-scsiportreadportbufferuchar.md">ScsiPortReadPortBufferUchar</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564715">ScsiPortReadPortBufferUchar</a>
 
 
 
-<a href="..\storport\nf-storport-storportreadportbufferuchar.md">StorPortReadPortBufferUchar</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567468">StorPortReadPortBufferUchar</a>

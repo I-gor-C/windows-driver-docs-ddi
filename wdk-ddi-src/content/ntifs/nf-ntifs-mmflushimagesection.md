@@ -7,7 +7,7 @@ old-location: ifsk\mmflushimagesection.htm
 old-project: ifsk
 ms.assetid: e5c94f80-8ff8-4945-b1b8-a12190c3dec7
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: MmFlushImageSection, MmFlushImageSection routine [Installable File System Drivers], ifsk.mmflushimagesection, mmref_d6a37cf0-a204-4070-80f6-bd407f671ee8.xml, ntifs/MmFlushImageSection
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>MmFlushImageSection</b> routine flushes the image section for a file.
 
 ## Syntax
 
-````
-BOOLEAN MmFlushImageSection(
-  _In_ PSECTION_OBJECT_POINTERS SectionPointer,
-  _In_ MMFLUSH_TYPE             FlushType
+```
+NTKERNELAPI BOOLEAN MmFlushImageSection(
+  PSECTION_OBJECT_POINTERS SectionObjectPointer,
+  MMFLUSH_TYPE             FlushType
 );
-````
+```
 
 ## Parameters
 
@@ -124,4 +124,4 @@ Before using <b>MmFlushImageSection</b>, file system writers are strongly encour
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ccpurgecachesection.md">CcPurgeCacheSection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539188">CcPurgeCacheSection</a>

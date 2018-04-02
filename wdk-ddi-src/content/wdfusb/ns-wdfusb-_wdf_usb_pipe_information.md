@@ -50,17 +50,17 @@ req.product: Windows 10 or later.
 The <b>WDF_USB_PIPE_INFORMATION</b> structure contains information about a USB pipe and its endpoint.
 
 ## Syntax
-````
+```
 typedef struct _WDF_USB_PIPE_INFORMATION {
-  ULONG             Size;
-  ULONG             MaximumPacketSize;
-  UCHAR             EndpointAddress;
-  UCHAR             Interval;
-  UCHAR             SettingIndex;
+  ULONG             Size;
+  ULONG             MaximumPacketSize;
+  UCHAR             EndpointAddress;
+  UCHAR             Interval;
+  UCHAR             SettingIndex;
   WDF_USB_PIPE_TYPE PipeType;
-  ULONG             MaximumTransferSize;
+  ULONG             MaximumTransferSize;
 } WDF_USB_PIPE_INFORMATION, *PWDF_USB_PIPE_INFORMATION;
-````
+```
 
 ## Members
 
@@ -89,18 +89,18 @@ An index value that identifies the alternate setting, within an interface, that 
 
 `PipeType`
 
-A <a href="..\wdfusb\ne-wdfusb-_wdf_usb_pipe_type.md">WDF_USB_PIPE_TYPE</a>-typed value that specifies the type of pipe.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff553047">WDF_USB_PIPE_TYPE</a>-typed value that specifies the type of pipe.
 
 `MaximumTransferSize`
 
 This member is not used.
 
 ## Remarks
-The <b>WDF_USB_PIPE_INFORMATION</b> structure is filled in by the <a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipegetinformation.md">WdfUsbTargetPipeGetInformation</a>, <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>, and <a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetendpointinformation.md">WdfUsbInterfaceGetEndpointInformation</a> methods.
+The <b>WDF_USB_PIPE_INFORMATION</b> structure is filled in by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551142">WdfUsbTargetPipeGetInformation</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff550057">WdfUsbInterfaceGetConfiguredPipe</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff550063">WdfUsbInterfaceGetEndpointInformation</a> methods.
 
-To initialize a <b>WDF_USB_PIPE_INFORMATION</b> structure, your driver should call <a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_information_init.md">WDF_USB_PIPE_INFORMATION_INIT</a>.
+To initialize a <b>WDF_USB_PIPE_INFORMATION</b> structure, your driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff553040">WDF_USB_PIPE_INFORMATION_INIT</a>.
 
-For more information about the <b>MaximumPacketSize</b> member of this structure, see  the Remarks section of <a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a>.
+For more information about the <b>MaximumPacketSize</b> member of this structure, see  the Remarks section of <a href="https://msdn.microsoft.com/library/windows/hardware/ff539114">USBD_PIPE_INFORMATION</a>.
 
 For information on how to transfer data to and from supported isochronous endpoints in a USB device, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh406225">How to Transfer Data to USB Isochronous Endpoints</a>.
 
@@ -113,24 +113,24 @@ For information on how to transfer data to and from supported isochronous endpoi
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_information_init.md">WDF_USB_PIPE_INFORMATION_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539114">USBD_PIPE_INFORMATION</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipegetinformation.md">WdfUsbTargetPipeGetInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553040">WDF_USB_PIPE_INFORMATION_INIT</a>
 
 
 
-<a href="..\usb\ns-usb-_usbd_pipe_information.md">USBD_PIPE_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553047">WDF_USB_PIPE_TYPE</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetendpointinformation.md">WdfUsbInterfaceGetEndpointInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550057">WdfUsbInterfaceGetConfiguredPipe</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbinterfacegetconfiguredpipe.md">WdfUsbInterfaceGetConfiguredPipe</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550063">WdfUsbInterfaceGetEndpointInformation</a>
 
 
 
-<a href="..\wdfusb\ne-wdfusb-_wdf_usb_pipe_type.md">WDF_USB_PIPE_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551142">WdfUsbTargetPipeGetInformation</a>

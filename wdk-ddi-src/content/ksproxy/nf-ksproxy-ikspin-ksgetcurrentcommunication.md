@@ -44,18 +44,18 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsGetCurrentCommunication method
+# IKsPin::KsGetCurrentCommunication method
 The <b>KsGetCurrentCommunication</b> method retrieves the current communication direction, interface, and medium of a pin.
 
 ## Syntax
 
-````
+```
 HRESULT KsGetCurrentCommunication(
-  [out, optional] KSPIN_COMMUNICATION *Communication,
-  [out, optional] KSPIN_INTERFACE     *Interface,
-  [out, optional] KSPIN_MEDIUM        *Medium
+  KSPIN_COMMUNICATION *Communication,
+  KSPIN_INTERFACE     *Interface,
+  KSPIN_MEDIUM        *Medium
 );
-````
+```
 
 ## Parameters
 
@@ -147,12 +147,12 @@ The current communication direction, interface, and medium of a pin are a subset
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563538">KSPIN_MEDIUM</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565197">KSPROPERTY_PIN_DATAFLOW</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a>

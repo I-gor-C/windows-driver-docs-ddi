@@ -7,7 +7,7 @@ old-location: display\d3dkmt_createoverlay.htm
 old-project: display
 ms.assetid: b020b06c-72e2-4322-a5db-fcfc46db429e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_CREATEOVERLAY, D3DKMT_CREATEOVERLAY structure [Display Devices], OpenGL_Structs_0e2cd78f-0999-48a3-8a7d-329ddb46b46f.xml, _D3DKMT_CREATEOVERLAY, d3dkmthk/D3DKMT_CREATEOVERLAY, display.d3dkmt_createoverlay
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: D3DKMT_CREATEOVERLAY
 The D3DKMT_CREATEOVERLAY structure describes overlay hardware.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_CREATEOVERLAY {
   D3DDDI_VIDEO_PRESENT_SOURCE_ID VidPnSourceId;
-  D3DKMT_HANDLE                  hDevice;
-  D3DDDI_KERNELOVERLAYINFO       OverlayInfo;
-  D3DKMT_HANDLE                  hOverlay;
+  D3DKMT_HANDLE                  hDevice;
+  D3DDDI_KERNELOVERLAYINFO       OverlayInfo;
+  D3DKMT_HANDLE                  hOverlay;
 } D3DKMT_CREATEOVERLAY;
-````
+```
 
 ## Members
 
@@ -69,7 +69,7 @@ typedef struct _D3DKMT_CREATEOVERLAY {
 
 `OverlayInfo`
 
-[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a> structure that describes information about the kernel-mode overlay object.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544577">D3DDDI_KERNELOVERLAYINFO</a> structure that describes information about the kernel-mode overlay object.
 
 `hOverlay`
 
@@ -84,8 +84,8 @@ typedef struct _D3DKMT_CREATEOVERLAY {
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_kerneloverlayinfo.md">D3DDDI_KERNELOVERLAYINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544577">D3DDDI_KERNELOVERLAYINFO</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtcreateoverlay.md">D3DKMTCreateOverlay</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546852">D3DKMTCreateOverlay</a>

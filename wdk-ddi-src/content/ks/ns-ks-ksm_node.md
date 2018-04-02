@@ -44,16 +44,16 @@ req.typenames: KSM_NODE, *PKSM_NODE
 ---
 
 # KSM_NODE structure
-Just as <a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a> is used for properties on a node, the KSM_NODE structure is used for methods on a node.
+Just as <a href="https://msdn.microsoft.com/library/windows/hardware/ff566720">KSP_NODE</a> is used for properties on a node, the KSM_NODE structure is used for methods on a node.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSM_NODE {
   KSMETHOD Method;
-  ULONG    NodeId;
-  ULONG    Reserved;
-} KSM_NODE, *PKSM_NODE;
-````
+  ULONG    NodeId;
+  ULONG    Reserved;
+} *PKSM_NODE, KSM_NODE;
+```
 
 ## Members
 
@@ -78,4 +78,4 @@ Reserved for system use. Should be set to zero.
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksp_node.md">KSP_NODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566720">KSP_NODE</a>

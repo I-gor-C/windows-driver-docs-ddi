@@ -44,21 +44,21 @@ req.typenames: PIPE_STATE
 ---
 
 
-# CreateNodeInstance method
+# IKsTopology::CreateNodeInstance method
 The <b>CreateNodeInstance</b> method requests a KS filter object to open a topology node object.
 
 ## Syntax
 
-````
+```
 HRESULT CreateNodeInstance(
-  [in]           ULONG       NodeId,
-  [in]           ULONG       Flags,
-  [in]           ACCESS_MASK DesiredAccess,
-  [in, optional] IUnknown    *UnkOuter,
-  [in]           REFGUID     InterfaceId,
-  [out]          LPVOID      *Interface
+  ULONG       NodeId,
+  ULONG       Flags,
+  ACCESS_MASK DesiredAccess,
+  IUnknown    *UnkOuter,
+  REFGUID     InterfaceId,
+  LPVOID      *Interface
 );
-````
+```
 
 ## Parameters
 
@@ -72,7 +72,7 @@ A bitmask enumerating the type of topology node object. No flags are currently d
 
 `DesiredAccess`
 
-An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> bitmask specifying the type of access that the caller requires to the topology node object. See <a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a> for a description of each access-right value.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a> bitmask specifying the type of access that the caller requires to the topology node object. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a> for a description of each access-right value.
 
 `UnkOuter`
 
@@ -100,12 +100,12 @@ Returns NOERROR if successful; otherwise, returns an error code.
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-ikstopology.md">IKsTopology</a>
-
-
-
-<a href="..\wdm\nf-wdm-zwcreatefile.md">ZwCreateFile</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560737">IKsTopology</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566424">ZwCreateFile</a>

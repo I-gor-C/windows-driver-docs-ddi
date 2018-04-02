@@ -45,24 +45,24 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetPropertyData method
+# IWDFUnifiedPropertyStore::GetPropertyData method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>GetPropertyData</b> method retrieves the current setting for a device property.
 
 ## Syntax
 
-````
+```
 HRESULT GetPropertyData(
-  [in]            const DEVPROPKEY  *PropertyKey,
-  [in]                  LCID        Lcid,
-  [in]                  ULONG       Flags,
-  [in]                  ULONG       PropertyDataSize,
-  [out, optional]       PVOID       PropertyData,
-  [out]                 ULONG       *PropertyDataRequiredSize,
-  [out]                 DEVPROPTYPE *PropertyType
+  const DEVPROPKEY *PropertyKey,
+  LCID             Lcid,
+  ULONG            Flags,
+  ULONG            PropertyDataSize,
+  PVOID            PropertyData,
+  ULONG            *PropertyDataRequiredSize,
+  DEVPROPTYPE      *PropertyType
 );
-````
+```
 
 ## Parameters
 
@@ -283,7 +283,11 @@ exit:
 
 ## See Also
 
-<a href="..\wudfddi_types\ns-wudfddi_types-_wdf_property_store_root.md">WDF_PROPERTY_STORE_ROOT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451399">IWDFUnifiedPropertyStore</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451403">IWDFUnifiedPropertyStoreFactory</a>
 
 
 
@@ -291,16 +295,12 @@ exit:
 
 
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_property_store_root_class.md">WDF_PROPERTY_STORE_ROOT_CLASS</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystorefactory.md">IWDFUnifiedPropertyStoreFactory</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-iwdfunifiedpropertystore.md">IWDFUnifiedPropertyStore</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451414">SetPropertyData</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561453">WDF_PROPERTY_STORE_ROOT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561458">WDF_PROPERTY_STORE_ROOT_CLASS</a>

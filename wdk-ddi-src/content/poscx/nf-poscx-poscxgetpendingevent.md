@@ -54,12 +54,12 @@ PosCxGetPendingEvent is called either from the device read callback, or when a n
 
 ## Syntax
 
-````
+```
 NTSTATUS PosCxGetPendingEvent(
-  _In_ WDFDEVICE  device,
-  _In_ WDFREQUEST request
+  WDFDEVICE  device,
+  WDFREQUEST request
 );
-````
+```
 
 ## Parameters
 

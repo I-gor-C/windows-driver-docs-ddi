@@ -50,13 +50,13 @@ The <b>BdaPropertyNodeDescriptors</b> function retrieves a list of nodes in a te
 
 ## Syntax
 
-````
+```
 NTSTATUS BdaPropertyNodeDescriptors(
-  _In_      PIRP               Irp,
-  _In_      PKSPROPERTY        pKSProperty,
-  _Out_opt_ BDANODE_DESCRIPTOR *pguidProperty
+  PIRP               pIrp,
+  PKSPROPERTY        pKSProperty,
+  BDANODE_DESCRIPTOR *pNodeDescriptorProperty
 );
-````
+```
 
 ## Parameters
 

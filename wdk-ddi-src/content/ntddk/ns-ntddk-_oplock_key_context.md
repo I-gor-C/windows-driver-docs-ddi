@@ -7,7 +7,7 @@ old-location: ifsk\oplock_key_context.htm
 old-project: ifsk
 ms.assetid: E6A61B8F-CB43-4858-B5CF-32DD022A569E
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: "*POPLOCK_KEY_CONTEXT, OPLOCK_KEY_CONTEXT, OPLOCK_KEY_CONTEXT structure [Installable File System Drivers], OPLOCK_KEY_FLAG_PARENT_KEY, OPLOCK_KEY_FLAG_TARGET_KEY, OPLOCK_KEY_VERSION_WIN7, OPLOCK_KEY_VERSION_WIN8, POPLOCK_KEY_CONTEXT, POPLOCK_KEY_CONTEXT structure pointer [Installable File System Drivers], _OPLOCK_KEY_CONTEXT, ifsk.oplock_key_context, ntddk/OPLOCK_KEY_CONTEXT, ntddk/POPLOCK_KEY_CONTEXT"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,18 @@ req.typenames: OPLOCK_KEY_CONTEXT, *POPLOCK_KEY_CONTEXT
 ---
 
 # _OPLOCK_KEY_CONTEXT structure
-The <b>OPLOCK_KEY_CONTEXT</b> structure is returned from <a href="..\ntddk\nf-ntddk-iogetoplockkeycontextex.md">IoGetOplockKeyContextEx</a>. This structure contains oplock keys for a specific file object.
+The <b>OPLOCK_KEY_CONTEXT</b> structure is returned from <a href="https://msdn.microsoft.com/library/windows/hardware/hh439325">IoGetOplockKeyContextEx</a>. This structure contains oplock keys for a specific file object.
 
 ## Syntax
-````
+```
 typedef struct _OPLOCK_KEY_CONTEXT {
-  ULONG Version  :8;
-  ULONG Flags  :8;
-  GUID  ParentOplockKey;
-  GUID  TargetOplockKey;
+  USHORT Version;
+  USHORT Flags;
+  GUID   ParentOplockKey;
+  GUID   TargetOplockKey;
+  ULONG  Reserved;
 } OPLOCK_KEY_CONTEXT, *POPLOCK_KEY_CONTEXT;
-````
+```
 
 ## Members
 
@@ -134,7 +135,7 @@ A <b>GUID</b>  that represents the target oplock  key value.
 
 
 ## Remarks
-If an oplock is requested for a file during an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> request, a file system that supports oplocks   will attach an oplock key context to the file object created. The oplock key  context is later available through a pointer to an <b>OPLOCK_KEY_CONTEXT</b> structure.  The <b>OPLOCK_KEY_CONTEXT</b> structure is returned from a call to <a href="..\ntddk\nf-ntddk-iogetoplockkeycontextex.md">IoGetOplockKeyContextEx</a>.
+If an oplock is requested for a file during an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a> request, a file system that supports oplocks   will attach an oplock key context to the file object created. The oplock key  context is later available through a pointer to an <b>OPLOCK_KEY_CONTEXT</b> structure.  The <b>OPLOCK_KEY_CONTEXT</b> structure is returned from a call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh439325">IoGetOplockKeyContextEx</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -144,12 +145,12 @@ If an oplock is requested for a file during an <a href="https://msdn.microsoft.c
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-iogetoplockkeycontextex.md">IoGetOplockKeyContextEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406392">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439325">IoGetOplockKeyContextEx</a>
 
 
 
 <a href="https://msdn.microsoft.com/5cbbfecc-2182-40f6-9f54-a8146c1f663f">Oplock Semantics</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406392">DUAL_OPLOCK_KEY_ECP_CONTEXT</a>

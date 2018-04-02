@@ -7,7 +7,7 @@ old-location: storage\iscsi_path.htm
 old-project: storage
 ms.assetid: eebc3e2e-41fe-4087-8916-7c8a71929913
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PISCSI_Path, ISCSI_Path, ISCSI_Path structure [Storage Devices], PISCSI_Path, PISCSI_Path structure pointer [Storage Devices], _ISCSI_Path, iscsimgt/ISCSI_Path, iscsimgt/PISCSI_Path, storage.iscsi_path, structs-iSCSI_fe9f6ee9-2fcd-46eb-a010-98e82dbf8c70.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,16 +47,16 @@ req.typenames: ISCSI_Path, *PISCSI_Path
 The ISCSI_Path structure contains information about a connection of the iSCSI portal.
 
 ## Syntax
-````
+```
 typedef struct _ISCSI_Path {
   ULONGLONG UniqueConnectionId;
   ULONGLONG EstimatedLinkSpeed;
-  ULONG     PathWeight;
-  ULONG     PrimaryPath;
-  ULONG     ConnectionStatus;
-  ULONG     TCPOffLoadAvailable;
+  ULONG     PathWeight;
+  ULONG     PrimaryPath;
+  ULONG     ConnectionStatus;
+  ULONG     TCPOffLoadAvailable;
 } ISCSI_Path, *PISCSI_Path;
-````
+```
 
 ## Members
 
@@ -132,8 +132,8 @@ The iSCSI headers and MOF are included in the platform SDK and WDK.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>

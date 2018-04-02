@@ -7,7 +7,7 @@ old-location: ifsk\rxceteardowntransport.htm
 old-project: ifsk
 ms.assetid: 61376532-c78f-4a22-b8b7-ee55ddcb4b57
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxCeTearDownTransport, RxCeTearDownTransport function [Installable File System Drivers], ifsk.rxceteardowntransport, rxce/RxCeTearDownTransport, rxref_12c54611-8bbf-46bf-9ee9-35072b9322c1.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 NTSTATUS RxCeTearDownTransport(
-  _In_ PRXCE_TRANSPORT pTransport
+  IN PRXCE_TRANSPORT pTransport
 );
-````
+```
 
 ## Parameters
 
@@ -100,4 +100,4 @@ If a transport that has not been bound to is specified in the <i>pTransport</i> 
 
 ## See Also
 
-<a href="..\rxce\nf-rxce-rxcebuildtransport.md">RxCeBuildTransport</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553434">RxCeBuildTransport</a>

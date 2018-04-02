@@ -7,7 +7,7 @@ old-location: storage\scsiportreadportushort.htm
 old-project: storage
 ms.assetid: eb21d8ef-4ad5-48b3-8619-3ed5040652b0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortReadPortUshort, ScsiPortReadPortUshort routine [Storage Devices], scsiprt_3b90fdff-db04-43ca-9c62-8552eed87feb.xml, srb/ScsiPortReadPortUshort, storage.scsiportreadportushort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>ScsiPortReadPortUshort</b> routine reads a USHORT value from the HBA.
 
 ## Syntax
 
-````
-USHORT ScsiPortReadPortUshort(
-  _In_ PUSHORT Port
+```
+void ScsiPortReadPortUshort(
+   Port
 );
-````
+```
 
 ## Parameters
 
@@ -82,4 +82,4 @@ None
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_get_slot_info_status.htm
 old-project: netvista
 ms.assetid: 214AFAD3-B211-4D66-8CFC-58F8EB407B83
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_WWAN_GET_SLOT_INFO, NDIS_WWAN_GET_SLOT_INFO, NDIS_WWAN_GET_SLOT_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_GET_SLOT_INFO, PNDIS_WWAN_GET_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_GET_SLOT_INFO, ndiswwan/NDIS_WWAN_GET_SLOT_INFO, ndiswwan/PNDIS_WWAN_GET_SLOT_INFO, netvista.ndis_wwan_get_slot_info_status"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: NDIS_WWAN_GET_SLOT_INFO, *PNDIS_WWAN_GET_SLOT_INFO
 The <b>NDIS_WWAN_GET_SLOT_INFO</b> structure represents the status of a slot in the modem of the MB device.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_WWAN_GET_SLOT_INFO {
   NDIS_OBJECT_HEADER Header;
-  WWAN_GET_SLOT_INFO SlotInfoStatus;
-} NDIS_WWAN_GET_SLOT_INFO, *PNDIS_WWAN_GET_SLOT_INFO;
-````
+  WWAN_GET_SLOT_INFO GetSlotInfo;
+} *PNDIS_WWAN_GET_SLOT_INFO, NDIS_WWAN_GET_SLOT_INFO;
+```
 
 ## Members
 
@@ -105,7 +105,7 @@ sizeof(NDIS_WWAN_GET_SLOT_INFO)
  
 
 For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 `GetSlotInfo`
 
@@ -120,8 +120,8 @@ For more information about these members, see
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_get_slot_info.md">WWAN_GET_SLOT_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/62955CA4-8631-4A85-8E78-5A91A9DA0069">WWAN_GET_SLOT_INFO</a>

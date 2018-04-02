@@ -50,13 +50,13 @@ This function returns a list of sensor instances associated with a WDFDEVICE.
 
 ## Syntax
 
-````
-FORCEINLINE NTSTATUS Syntax(
-  _In_    WDFDEVICE                          FxDevice,
-  _Out_   _writes_(*pListCount) SENSOROBJECT *pSensorList,
-  _Inout_ PULONG                             pListCount
+```
+NTSTATUS SensorsCxDeviceGetSensorList(
+  WDFDEVICE    FxDevice,
+  SENSOROBJECT *pSensorList,
+  PULONG       pListCount
 );
-````
+```
 
 ## Parameters
 

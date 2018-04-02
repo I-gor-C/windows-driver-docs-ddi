@@ -47,16 +47,16 @@ req.typenames: ACPI_METHOD_ARGUMENT_V2
 This topic describes the  <b>ACPI_METHOD_ARGUMENT_V2</b> structure.
 
 ## Syntax
-````
+```
 typedef struct _ACPI_METHOD_ARGUMENT_V2 {
   USHORT Type;
-  USHORT DataLength;
+  ULONG  DataLength;
   union {
-    ULONG                                 Argument;
-     _Field_size_bytes_(DataLength) UCHAR Data[ANYSIZE_ARRAY];
-  } DUMMYUNIONNAME;
-} ACPI_METHOD_ARGUMENT_V2, *PACPI_METHOD_ARGUMENT_V2;
-````
+    ULONG Argument;
+    UCHAR Data[ANYSIZE_ARRAY];
+  } DUMMYUNIONNAME;
+} ACPI_METHOD_ARGUMENT_V2;
+```
 
 ## Members
 

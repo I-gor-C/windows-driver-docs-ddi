@@ -7,7 +7,7 @@ old-location: ifsk\rtlinsertasrightchild.htm
 old-project: ifsk
 ms.assetid: eaeff5fe-a678-44e5-a78d-ef4816708878
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlInsertAsRightChild, RtlInsertAsRightChild routine [Installable File System Drivers], ifsk.rtlinsertasrightchild, ntddk/RtlInsertAsRightChild, rtlref_e16d0af2-9299-4fda-96ad-75a39f3e505f.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>RtlInsertAsRightChild</b> routine inserts a given splay link into the tre
 
 ## Syntax
 
-````
-VOID RtlInsertAsRightChild(
-  _In_ PRTL_SPLAY_LINKS ParentLinks,
-  _In_ PRTL_SPLAY_LINKS ChildLinks
+```
+void RtlInsertAsRightChild(
+  PRTL_SPLAY_LINKS ParentLinks,
+  PRTL_SPLAY_LINKS ChildLinks
 );
-````
+```
 
 ## Parameters
 
@@ -102,24 +102,24 @@ Callers of <b>RtlInsertAsRightChild</b> must be running at IRQL &lt;= DISPATCH_L
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlinsertasleftchild.md">RtlInsertAsLeftChild</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553010">RtlInitializeSplayLinks</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlsplay.md">RtlSplay</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553017">RtlInsertAsLeftChild</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlisroot.md">RtlIsRoot</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553072">RtlIsRoot</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlparent.md">RtlParent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553165">RtlParent</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlrightchild.md">RtlRightChild</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553200">RtlRightChild</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlinitializesplaylinks.md">RtlInitializeSplayLinks</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553226">RtlSplay</a>

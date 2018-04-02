@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 <b>XPSRAS_PIXEL_FORMAT</b> allows a caller to select the pixel format used by the <a href="http://go.microsoft.com/fwlink/p/?linkid=133875">IWICBitmap</a> interface that is returned by the  <a href="https://msdn.microsoft.com/library/windows/hardware/ff556365">IXpsRasterizer::RasterizeRect</a> method. <b>XPSRAS_PIXEL_FORMAT</b> is provided with  Windows 8 and later versions of Windows.
 
 ## Syntax
-````
-typedef enum _XPSRAS_PIXEL_FORMAT { 
-  XPSRAS_PIXEL_FORMAT_32BPP_PBGRA_UINT_SRGB     = 1,
-  XPSRAS_PIXEL_FORMAT_64BPP_PRGBA_HALF_SCRGB,
+```
+typedef enum __MIDL___MIDL_itf_xpsrassvc_0000_0003_0001 {
+  XPSRAS_PIXEL_FORMAT_32BPP_PBGRA_UINT_SRGB     ,
+  XPSRAS_PIXEL_FORMAT_64BPP_PRGBA_HALF_SCRGB    ,
   XPSRAS_PIXEL_FORMAT_128BPP_PRGBA_FLOAT_SCRGB
 } XPSRAS_PIXEL_FORMAT;
-````
+```
 
 ## Constants
 
@@ -92,8 +92,8 @@ For more information about rasterizing XPS documents, see <a href="https://msdn.
 
 
 
-<a href="https://msdn.microsoft.com/a6a3746a-3638-464b-bca0-60003f37af76">Using the XPS Rasterization Service</a>
-
-
-
 <a href="https://msdn.microsoft.com/00F1C6B7-9AD8-4E42-B433-4BD73E85CFA3">IXpsRasterizationFactory1::CreateRasterizer1</a>
+
+
+
+<a href="https://msdn.microsoft.com/a6a3746a-3638-464b-bca0-60003f37af76">Using the XPS Rasterization Service</a>

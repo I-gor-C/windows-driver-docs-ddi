@@ -7,7 +7,7 @@ old-location: debugger\getsymboltypeidwide.htm
 old-project: debugger
 ms.assetid: b68a5f89-1623-4cab-84bf-3cc6e4031d9b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetSymbolTypeIdWide method [Windows Debugging], GetSymbolTypeIdWide method [Windows Debugging], IDebugSymbols3 interface, GetSymbolTypeIdWide,IDebugSymbols3.GetSymbolTypeIdWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetSymbolTypeIdWide method, IDebugSymbols3::GetSymbolTypeIdWide, dbgeng/IDebugSymbols3::GetSymbolTypeIdWide, debugger.getsymboltypeidwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetSymbolTypeIdWide method
+# IDebugSymbols3::GetSymbolTypeIdWide method
 The <b>GetSymbolTypeIdWide</b>  method returns the type ID and module of the specified symbol.
 
 ## Syntax
 
-````
+```
 HRESULT GetSymbolTypeIdWide(
-  [in]            PCWSTR   Symbol,
-  [out]           PULONG   TypeId,
-  [out, optional] PULONG64 Module
+  PCWSTR   Symbol,
+  PULONG   TypeId,
+  PULONG64 Module
 );
-````
+```
 
 ## Parameters
 
@@ -112,8 +112,8 @@ For more information about symbols, see <a href="https://msdn.microsoft.com/libr
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549376">GetTypeId</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

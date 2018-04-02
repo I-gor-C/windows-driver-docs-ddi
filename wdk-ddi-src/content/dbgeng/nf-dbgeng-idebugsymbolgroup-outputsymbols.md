@@ -7,7 +7,7 @@ old-location: debugger\outputsymbols.htm
 old-project: debugger
 ms.assetid: 1fe99cc4-35d9-432a-aed9-074d40438976
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: ComOther_47d8529f-4fdf-4a79-ae80-61e483c897f2.xml, IDebugSymbolGroup, IDebugSymbolGroup interface [Windows Debugging], OutputSymbols method, IDebugSymbolGroup2 interface [Windows Debugging], OutputSymbols method, IDebugSymbolGroup2::OutputSymbols, IDebugSymbolGroup::OutputSymbols, OutputSymbols method [Windows Debugging], OutputSymbols method [Windows Debugging], IDebugSymbolGroup interface, OutputSymbols method [Windows Debugging], IDebugSymbolGroup2 interface, OutputSymbols,IDebugSymbolGroup.OutputSymbols, dbgeng/IDebugSymbolGroup2::OutputSymbols, dbgeng/IDebugSymbolGroup::OutputSymbols, debugger.outputsymbols
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,19 +45,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# OutputSymbols method
+# IDebugSymbolGroup::OutputSymbols method
 The <b>OutputSymbols</b> method prints the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff558824">symbols</a> to the debugger console.
 
 ## Syntax
 
-````
+```
 HRESULT OutputSymbols(
-  [in] ULONG OutputControl,
-  [in] ULONG Flags,
-  [in] ULONG Start,
-  [in] ULONG Count
+  ULONG OutputControl,
+  ULONG Flags,
+  ULONG Start,
+  ULONG Count
 );
-````
+```
 
 ## Parameters
 
@@ -168,8 +168,8 @@ For more information about symbol groups, see <a href="https://msdn.microsoft.co
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup.md">IDebugSymbolGroup</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550838">IDebugSymbolGroup</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbolgroup2.md">IDebugSymbolGroup2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550846">IDebugSymbolGroup2</a>

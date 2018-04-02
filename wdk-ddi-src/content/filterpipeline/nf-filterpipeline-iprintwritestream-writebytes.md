@@ -44,18 +44,18 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# WriteBytes method
+# IPrintWriteStream::WriteBytes method
 The <code>WriteBytes</code> method writes a specified number of bytes to a stream.
 
 ## Syntax
 
-````
+```
 HRESULT WriteBytes(
-  [in]  void  pvBuffer,
-  [in]  ULONG cbBuffer,
-  [out] ULONG *pcbWritten
+  const void *pvBuffer,
+  ULONG      cbBuffer,
+  ULONG      *pcbWritten
 );
-````
+```
 
 ## Parameters
 

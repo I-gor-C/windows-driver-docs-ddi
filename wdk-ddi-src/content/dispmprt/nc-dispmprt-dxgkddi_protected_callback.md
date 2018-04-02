@@ -7,7 +7,7 @@ old-location: display\dxgkprotectedcallback.htm
 old-project: display
 ms.assetid: 7e282ec6-c159-47a4-af14-2b0cb8e34a8e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKDDI_PROTECTED_CALLBACK, DmFunctions_a4386149-d1c4-45f4-8649-5539783620f4.xml, DxgkProtectedCallback, DxgkProtectedCallback callback function [Display Devices], display.dxgkprotectedcallback, dispmprt/DxgkProtectedCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,7 +45,7 @@ req.typenames: SYMBOL_INFO_EX, *PSYMBOL_INFO_EX
 
 
 # DXGKDDI_PROTECTED_CALLBACK callback function
-The <i>DxgkProtectedCallback</i> callback routine is implemented by the display miniport driver and is called by <a href="..\dispmprt\nc-dispmprt-dxgkcb_exclude_adapter_access.md">DxgkCbExcludeAdapterAccess</a> during a protected state when all access to the display adapter is prevented.
+The <i>DxgkProtectedCallback</i> callback routine is implemented by the display miniport driver and is called by <a href="https://msdn.microsoft.com/e74e79fe-3b36-427e-ae0b-4072a0438c4e">DxgkCbExcludeAdapterAccess</a> during a protected state when all access to the display adapter is prevented.
 
 ## Syntax
 
@@ -68,7 +68,7 @@ void DxgkddiProtectedCallback(
 
 `ProtectedCallbackContext`
 
-A pointer to driver-defined information that was specified in a previous call to <a href="..\dispmprt\nc-dispmprt-dxgkcb_exclude_adapter_access.md">DxgkCbExcludeAdapterAccess</a>.
+A pointer to driver-defined information that was specified in a previous call to <a href="https://msdn.microsoft.com/e74e79fe-3b36-427e-ae0b-4072a0438c4e">DxgkCbExcludeAdapterAccess</a>.
 
 `ProtectionStatus`
 
@@ -118,4 +118,4 @@ The adapter, including its registers and display mode, is maintained in the prop
 
 ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkcb_exclude_adapter_access.md">DxgkCbExcludeAdapterAccess</a>
+<a href="https://msdn.microsoft.com/e74e79fe-3b36-427e-ae0b-4072a0438c4e">DxgkCbExcludeAdapterAccess</a>

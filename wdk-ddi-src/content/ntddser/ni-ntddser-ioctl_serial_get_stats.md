@@ -46,7 +46,7 @@ req.typenames: SD_REQUEST_FUNCTION
 # IOCTL_SERIAL_GET_STATS IOCTL
 The <b>IOCTL_SERIAL_GET_STATS</b> request returns information about the performance of a serial controller. The statistics include the number of characters transmitted, the number of characters received, and useful error statistics. The driver continuously increments performance values.
 
-To reset the accumulated performance values to zero, a client can use an <a href="..\ntddser\ni-ntddser-ioctl_serial_clear_stats.md">IOCTL_SERIAL_CLEAR_STATS</a> request.
+To reset the accumulated performance values to zero, a client can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff546538">IOCTL_SERIAL_CLEAR_STATS</a> request.
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -61,7 +61,7 @@ None.
 The <b>AssociatedIrp.SystemBuffer</b> member points to a client-allocated <b>SERIALPERF_STATS</b> structure that the serial controller driver uses to output performance information.
 
 ### Output Buffer Length
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="..\ntddser\ns-ntddser-_serialperf_stats.md">SERIALPERF_STATS</a> structure.
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/jj680683">SERIALPERF_STATS</a> structure.
 
 ### Input / Output Buffer
 <text></text>
@@ -80,8 +80,8 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the si
 
 ## See Also
 
-<a href="..\ntddser\ns-ntddser-_serialperf_stats.md">SERIALPERF_STATS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546538">IOCTL_SERIAL_CLEAR_STATS</a>
 
 
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_clear_stats.md">IOCTL_SERIAL_CLEAR_STATS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj680683">SERIALPERF_STATS</a>

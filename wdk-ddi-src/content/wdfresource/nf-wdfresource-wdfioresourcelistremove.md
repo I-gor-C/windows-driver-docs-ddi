@@ -53,12 +53,12 @@ The <b>WdfIoResourceListRemove</b> method removes a resource descriptor from a r
 
 ## Syntax
 
-````
-VOID WdfIoResourceListRemove(
-  _In_ WDFIORESLIST ResourceList,
-  _In_ ULONG        Index
+```
+void WdfIoResourceListRemove(
+  WDFIORESLIST ResourceList,
+  ULONG        Index
 );
-````
+```
 
 ## Parameters
 
@@ -116,4 +116,4 @@ The following code example removes the first resource descriptor from a logical 
 
 ## See Also
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistremovebydescriptor.md">WdfIoResourceListRemoveByDescriptor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548528">WdfIoResourceListRemoveByDescriptor</a>

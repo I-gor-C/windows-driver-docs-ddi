@@ -99,7 +99,7 @@ The dialog token received in invitation response packet.
 
 `uIEsOffset`
 
-The offset, in bytes,  of the array of additional information elements (IEs) received in the invitation response packet. This offset is from the start of the buffer that contains this structure.
+The offset, in bytes,  of the array of additional information elements (IEs) received in the the invitation response packet. This offset is from the start of the buffer that contains this structure.
 
 `uIEsLength`
 

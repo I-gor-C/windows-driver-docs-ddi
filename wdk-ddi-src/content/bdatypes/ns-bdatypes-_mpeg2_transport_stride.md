@@ -47,13 +47,13 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 The MPEG2_TRANSPORT_STRIDE structure describes the format block of the MPEG2 transport stride.
 
 ## Syntax
-````
+```
 typedef struct _MPEG2_TRANSPORT_STRIDE {
   DWORD dwOffset;
   DWORD dwPacketLength;
   DWORD dwStride;
-} MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE;
-````
+} *PMPEG2_TRANSPORT_STRIDE, MPEG2_TRANSPORT_STRIDE;
+```
 
 ## Members
 

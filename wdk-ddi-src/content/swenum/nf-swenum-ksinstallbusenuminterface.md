@@ -53,11 +53,11 @@ The <b>KsInstallBusEnumInterface</b> function installs an interface to the deman
 
 ## Syntax
 
-````
-NTSTATUS KsInstallBusEnumInterface(
-  _In_ PIRP Irp
+```
+KSDDKAPI NTSTATUS KsInstallBusEnumInterface(
+  PIRP Irp
 );
-````
+```
 
 ## Parameters
 
@@ -83,8 +83,8 @@ The <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> is assumed to contain a SWENUM_INS
 
 ## See Also
 
-<a href="..\swenum\ns-swenum-_swenum_install_interface.md">SWENUM_INSTALL_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566794">KsRemoveBusEnumInterface</a>
 
 
 
-<a href="..\swenum\nf-swenum-ksremovebusenuminterface.md">KsRemoveBusEnumInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568498">SWENUM_INSTALL_INTERFACE</a>

@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetBytes method
+# IPrinterScriptablePropertyBag::SetBytes method
 Writes a byte array property.
 
 ## Syntax
 
-````
+```
 HRESULT SetBytes(
-  [in] BSTR      bstrName,
-  [in] IDispatch *pdispArray
+  BSTR      bstrName,
+  IDispatch *pArray
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +85,4 @@ A call to <b>SetBytes</b> will throw an exception, if the specified property is 
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973217">IPrinterScriptablePropertyBag</a>

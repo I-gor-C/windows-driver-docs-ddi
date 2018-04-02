@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_DisplayName method
+# IPrintSchemaDisplayableElement::get_DisplayName method
 Gets a displayable string for this item.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_DisplayName(
-  [out, retval] BSTR *pbstrDisplayName
+  BSTR *pbstrDisplayName
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemadisplayableelement.md">IPrintSchemaDisplayableElement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451262">IPrintSchemaDisplayableElement</a>

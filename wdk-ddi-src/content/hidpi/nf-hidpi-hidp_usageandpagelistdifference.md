@@ -49,11 +49,15 @@ The <b>HidP_UsageAndPageListDifference</b> routine is not implemented.
 
 ## Syntax
 
-````
- HidP_UsageAndPageListDifference(
-    
+```
+NTSTATUS HidP_UsageAndPageListDifference(
+  PUSAGE_AND_PAGE PreviousUsageList,
+  PUSAGE_AND_PAGE CurrentUsageList,
+  PUSAGE_AND_PAGE BreakUsageList,
+  PUSAGE_AND_PAGE MakeUsageList,
+  ULONG           UsageListLength
 );
-````
+```
 
 ## Parameters
 

@@ -50,12 +50,12 @@ In a manner very similar to COM, the <b>KsRegisterAggregatedClientUnknown</b> fu
 
 ## Syntax
 
-````
-PUNKNOWN KsRegisterAggregatedClientUnknown(
-  _In_ PVOID    Object,
-  _In_ PUNKNOWN ClientUnknown
+```
+KSDDKAPI PUNKNOWN KsRegisterAggregatedClientUnknown(
+  PVOID    Object,
+  PUNKNOWN ClientUnknown
 );
-````
+```
 
 ## Parameters
 
@@ -93,20 +93,20 @@ Minidrivers do not need to be running in a C++ environment to use this function.
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspinregisteraggregatedclientunknown.md">KsPinRegisterAggregatedClientUnknown</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561688">KsDeviceRegisterAggregatedClientUnknown</a>
 
 
 
-<a href="..\ks\nf-ks-ksfilterfactoryregisteraggregatedclientunknown.md">KsFilterFactoryRegisterAggregatedClientUnknown</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562538">KsFilterFactoryRegisterAggregatedClientUnknown</a>
 
 
 
-<a href="..\ks\nf-ks-ksgetouterunknown.md">KsGetOuterUnknown</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562549">KsFilterRegisterAggregatedClientUnknown</a>
 
 
 
-<a href="..\ks\nf-ks-ksfilterregisteraggregatedclientunknown.md">KsFilterRegisterAggregatedClientUnknown</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562655">KsGetOuterUnknown</a>
 
 
 
-<a href="..\ks\nf-ks-ksdeviceregisteraggregatedclientunknown.md">KsDeviceRegisterAggregatedClientUnknown</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563521">KsPinRegisterAggregatedClientUnknown</a>

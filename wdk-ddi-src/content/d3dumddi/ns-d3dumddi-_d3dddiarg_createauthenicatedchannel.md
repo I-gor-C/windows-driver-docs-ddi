@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_createauthenticatedchannel.htm
 old-project: display
 ms.assetid: 00f8fbbc-1a4d-4cfe-8b87-fd70bf5a2d48
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDIARG_CREATEAUTHENTICATEDCHANNEL, D3DDDIARG_CREATEAUTHENTICATEDCHANNEL structure [Display Devices], UMDisplayDriver_param_Structs_3cdac44d-7cac-43f6-80f5-dd601183fa8b.xml, _D3DDDIARG_CREATEAUTHENICATEDCHANNEL, d3dumddi/D3DDDIARG_CREATEAUTHENTICATEDCHANNEL, display.d3dddiarg_createauthenticatedchannel
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,19 +47,19 @@ req.typenames: D3DDDIARG_CREATEAUTHENTICATEDCHANNEL
 The D3DDDIARG_CREATEAUTHENTICATEDCHANNEL structure identifies a channel to create.
 
 ## Syntax
-````
-typedef struct _D3DDDIARG_CREATEAUTHENTICATEDCHANNEL {
+```
+typedef struct _D3DDDIARG_CREATEAUTHENICATEDCHANNEL {
   DDIAUTHENTICATEDCHANNELTYPE ChannelType;
-  HANDLE                      hChannel;
+  HANDLE                      hChannel;
 } D3DDDIARG_CREATEAUTHENTICATEDCHANNEL;
-````
+```
 
 ## Members
 
 
 `ChannelType`
 
-[in] A <a href="..\d3dumddi\ne-d3dumddi-_ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the channel type to create. This member can be one of the following values.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff549536">DDIAUTHENTICATEDCHANNELTYPE</a>-typed value that indicates the channel type to create. This member can be one of the following values.
 
 <table>
 <tr>
@@ -90,7 +90,7 @@ The authenticated-channel type is hardware.
 
 `hChannel`
 
-[out] A handle to the channel. The user-mode display driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a> function returns this handle to the Microsoft Direct3D runtime.
+[out] A handle to the channel. The user-mode display driver's <a href="https://msdn.microsoft.com/0a565bff-fc6f-41c1-a6fd-3a82dd0d7889">CreateAuthenticatedChannel</a> function returns this handle to the Microsoft Direct3D runtime.
 
 
 ## Requirements
@@ -101,8 +101,8 @@ The authenticated-channel type is hardware.
 
 ## See Also
 
-<a href="..\d3dumddi\ne-d3dumddi-_ddiauthenticatedchanneltype.md">DDIAUTHENTICATEDCHANNELTYPE</a>
+<a href="https://msdn.microsoft.com/0a565bff-fc6f-41c1-a6fd-3a82dd0d7889">CreateAuthenticatedChannel</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createauthenticatedchannel.md">CreateAuthenticatedChannel</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549536">DDIAUTHENTICATEDCHANNELTYPE</a>

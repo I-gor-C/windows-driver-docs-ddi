@@ -7,7 +7,7 @@ old-location: debugger\getdumpfilewide.htm
 old-project: debugger
 ms.assetid: 42acd24e-5952-46b3-bb0b-1eb43125fccd
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetDumpFileWide method [Windows Debugging], GetDumpFileWide method [Windows Debugging], IDebugClient4 interface, GetDumpFileWide method [Windows Debugging], IDebugClient5 interface, GetDumpFileWide,IDebugClient5.GetDumpFileWide, IDebugClient4 interface [Windows Debugging], GetDumpFileWide method, IDebugClient4::GetDumpFileWide, IDebugClient5, IDebugClient5 interface [Windows Debugging], GetDumpFileWide method, IDebugClient5::GetDumpFileWide, dbgeng/IDebugClient4::GetDumpFileWide, dbgeng/IDebugClient5::GetDumpFileWide, debugger.getdumpfilewide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,21 +45,21 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetDumpFileWide method
+# IDebugClient5::GetDumpFileWide method
 The <b>GetDumpFileWide</b> method describes the files containing supporting information that were used when opening the current dump target.
 
 ## Syntax
 
-````
+```
 HRESULT GetDumpFileWide(
-  [in]            ULONG    Index,
-  [out, optional] PWSTR    Buffer,
-  [in]            ULONG    BufferSize,
-  [out, optional] PULONG   NameSize,
-  [out, optional] PULONG64 Handle,
-  [out]           PULONG   Type
+  ULONG    Index,
+  PWSTR    Buffer,
+  ULONG    BufferSize,
+  PULONG   NameSize,
+  PULONG64 Handle,
+  PULONG   Type
 );
-````
+```
 
 ## Parameters
 
@@ -122,7 +122,7 @@ For more information about crash dump files, see <a href="https://msdn.microsoft
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff547887">GetNumberDumpFiles</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a>
 
 
 
@@ -130,12 +130,12 @@ For more information about crash dump files, see <a href="https://msdn.microsoft
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547887">GetNumberDumpFiles</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient4.md">IDebugClient4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550494">IDebugClient4</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537865">AddDumpInformationFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>

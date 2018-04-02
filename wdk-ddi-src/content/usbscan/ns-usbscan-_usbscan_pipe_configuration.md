@@ -45,15 +45,15 @@ req.product: Windows 10 or later.
 ---
 
 # _USBSCAN_PIPE_CONFIGURATION structure
-The USBSCAN_PIPE_CONFIGURATION structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_get_pipe_configuration.md">IOCTL_GET_PIPE_CONFIGURATION</a>.
+The USBSCAN_PIPE_CONFIGURATION structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542859">IOCTL_GET_PIPE_CONFIGURATION</a>.
 
 ## Syntax
-````
+```
 typedef struct _USBSCAN_PIPE_CONFIGURATION {
-  ULONG                    NumberOfPipes;
+  ULONG                    NumberOfPipes;
   USBSCAN_PIPE_INFORMATION PipeInfo[MAX_NUM_PIPES];
 } USBSCAN_PIPE_CONFIGURATION, *PUSBSCAN_PIPE_CONFIGURATION;
-````
+```
 
 ## Members
 
@@ -64,7 +64,7 @@ The number of transfer pipes supported for the device.
 
 `PipeInfo`
 
-Pointer to a <b>NumberOfPipes</b>-sized array of <a href="..\usbscan\ns-usbscan-_usbscan_pipe_information.md">USBSCAN_PIPE_INFORMATION</a> structures.
+Pointer to a <b>NumberOfPipes</b>-sized array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548547">USBSCAN_PIPE_INFORMATION</a> structures.
 
 
 ## Requirements

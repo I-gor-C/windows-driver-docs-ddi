@@ -7,7 +7,7 @@ old-location: ifsk\rtlrealsuccessor.htm
 old-project: ifsk
 ms.assetid: 19180ab8-7ac6-45cb-8f17-b16368bbb32b
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlRealSuccessor, RtlRealSuccessor routine [Installable File System Drivers], ifsk.rtlrealsuccessor, ntddk/RtlRealSuccessor, rtlref_5bf190a8-a1c9-45d8-8be3-73178d2f7add.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>RtlRealSuccessor</b> routine returns a pointer to the successor of the sp
 
 ## Syntax
 
-````
-PRTL_SPLAY_LINKS RtlRealSuccessor(
-  _In_ PRTL_SPLAY_LINKS Links
+```
+NTSYSAPI PRTL_SPLAY_LINKS RtlRealSuccessor(
+  PRTL_SPLAY_LINKS Links
 );
-````
+```
 
 ## Parameters
 
@@ -96,12 +96,12 @@ Callers of <b>RtlRealSuccessor</b> must be running at IRQL &lt;= DISPATCH_LEVEL 
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlsubtreesuccessor.md">RtlSubtreeSuccessor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553186">RtlRealPredecessor</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlrealpredecessor.md">RtlRealPredecessor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553226">RtlSplay</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlsplay.md">RtlSplay</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553239">RtlSubtreeSuccessor</a>

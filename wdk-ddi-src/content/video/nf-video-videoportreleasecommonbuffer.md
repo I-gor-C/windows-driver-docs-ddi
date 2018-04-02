@@ -7,7 +7,7 @@ old-location: display\videoportreleasecommonbuffer.htm
 old-project: display
 ms.assetid: b3733de1-63ef-43b8-b669-dbe7e573b499
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortReleaseCommonBuffer, VideoPortReleaseCommonBuffer function [Display Devices], VideoPort_Functions_78edd589-bea5-43e3-8658-8c6c95a1f0f7.xml, display.videoportreleasecommonbuffer, video/VideoPortReleaseCommonBuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,20 +46,20 @@ req.product: Windows 10 or later.
 
 
 # VideoPortReleaseCommonBuffer function
-The <b>VideoPortReleaseCommonBuffer</b> function frees a common buffer that was previously allocated by <a href="..\video\nf-video-videoportallocatecommonbuffer.md">VideoPortAllocateCommonBuffer</a>.
+The <b>VideoPortReleaseCommonBuffer</b> function frees a common buffer that was previously allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff570178">VideoPortAllocateCommonBuffer</a>.
 
 ## Syntax
 
-````
-VOID VideoPortReleaseCommonBuffer(
-  _In_ PVOID            HwDeviceExtension,
-  _In_ PVP_DMA_ADAPTER  VpDmaAdapter,
-  _In_ ULONG            Length,
-  _In_ PHYSICAL_ADDRESS LogicalAddress,
-  _In_ PVOID            VirtualAddress,
-  _In_ BOOLEAN          CacheEnabled
+```
+VIDEOPORT_API VOID VideoPortReleaseCommonBuffer(
+  IN PVOID            HwDeviceExtension,
+  IN PVP_DMA_ADAPTER  VpDmaAdapter,
+  IN ULONG            Length,
+  IN PHYSICAL_ADDRESS LogicalAddress,
+  IN PVOID            VirtualAddress,
+  IN BOOLEAN          CacheEnabled
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ Pointer to the miniport driver's device extension.
 
 `VpDmaAdapter`
 
-Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This is the structure returned after a call to <a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a> structure that represents the bus-master adapter. This is the structure returned after a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>.
 
 `Length`
 
@@ -81,7 +81,7 @@ Specifies the logical address of the buffer to be freed.
 
 `VirtualAddress`
 
-Pointer to the corresponding virtual address of the allocated memory range. This value was obtained in a prior call to <a href="..\video\nf-video-videoportallocatecommonbuffer.md">VideoPortAllocateCommonBuffer</a>.
+Pointer to the corresponding virtual address of the allocated memory range. This value was obtained in a prior call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff570178">VideoPortAllocateCommonBuffer</a>.
 
 `CacheEnabled`
 
@@ -108,12 +108,12 @@ The parameters passed to <b>VideoPortFreeCommonBuffer</b> must match exactly tho
 
 ## See Also
 
-<a href="..\video\nf-video-videoportgetdmaadapter.md">VideoPortGetDmaAdapter</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff570570">VP_DMA_ADAPTER</a>
 
 
 
-<a href="..\video\nf-video-videoportallocatecommonbuffer.md">VideoPortAllocateCommonBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570178">VideoPortAllocateCommonBuffer</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570312">VideoPortGetDmaAdapter</a>

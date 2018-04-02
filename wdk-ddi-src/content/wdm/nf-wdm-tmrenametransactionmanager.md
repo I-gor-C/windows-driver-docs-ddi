@@ -7,7 +7,7 @@ old-location: kernel\tmrenametransactionmanager_.htm
 old-project: kernel
 ms.assetid: B4124FF4-50CC-474A-B42F-17BCF698AB59
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: TmRenameTransactionManager, TmRenameTransactionManager routine [Kernel-Mode Driver Architecture], kernel.tmrenametransactionmanager_, wdm/TmRenameTransactionManager
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,18 +53,18 @@ The <b>TmRenameTransactionManager</b> routine changes the identity of the transa
 
 ## Syntax
 
-````
-NTSTATUS TmRenameTransactionManager (
-  _In_ PUNICODE_STRING  LogFileName,
-  _In_ LPGUID           ExistingTransactionManagerGuid
+```
+NTKERNELAPI NTSTATUS TmRenameTransactionManager(
+  PUNICODE_STRING LogFileName,
+  LPGUID          ExistingTransactionManagerGuid
 );
-````
+```
 
 ## Parameters
 
 `LogFileName`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the path and file name of a <a href="https://msdn.microsoft.com/4da3cb49-dc20-4713-813b-ff458c99ab90">CLFS</a> log file stream to be associated with the transaction manager object.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains the path and file name of a <a href="https://msdn.microsoft.com/4da3cb49-dc20-4713-813b-ff458c99ab90">CLFS</a> log file stream to be associated with the transaction manager object.
 
 `ExistingTransactionManagerGuid`
 

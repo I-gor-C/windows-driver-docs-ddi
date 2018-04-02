@@ -65,4 +65,4 @@ The <b>IPartThumbnail</b> interface is an abstraction for thumbnails in an XPS d
 
 ## See Also
 
-<a href="..\filterpipeline\nn-filterpipeline-ipartbase.md">IPartBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551846">IPartBase</a>

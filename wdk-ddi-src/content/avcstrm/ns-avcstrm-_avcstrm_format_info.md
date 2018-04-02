@@ -47,22 +47,22 @@ req.typenames: AVCSTRM_FORMAT_INFO, *PAVCSTRM_FORMAT_INFO
 The AVCSTRM_FORMAT_INFO structure is used to describe a data stream.
 
 ## Syntax
-````
+```
 typedef struct _AVCSTRM_FORMAT_INFO {
-  ULONG          SizeOfThisBlock;
+  ULONG          SizeOfThisBlock;
   AVCSTRM_FORMAT AVCStrmFormat;
-  CIP_HDR1       cipHdr1;
-  CIP_HDR2_SYT   cipHdr2;
-  ULONG          SrcPacketsPerFrame;
-  ULONG          FrameSize;
-  ULONG          NumOfRcvBuffers;
-  ULONG          NumOfXmtBuffers;
-  DWORD          OptionFlags;
-  ULONG          AvgTimePerFrame;
-  ULONG          BlockPeriod;
-  ULONG          Reserved[4];
+  CIP_HDR1       cipHdr1;
+  CIP_HDR2_SYT   cipHdr2;
+  ULONG          SrcPacketsPerFrame;
+  ULONG          FrameSize;
+  ULONG          NumOfRcvBuffers;
+  ULONG          NumOfXmtBuffers;
+  DWORD          OptionFlags;
+  ULONG          AvgTimePerFrame;
+  ULONG          BlockPeriod;
+  ULONG          Reserved[4];
 } AVCSTRM_FORMAT_INFO, *PAVCSTRM_FORMAT_INFO;
-````
+```
 
 ## Members
 
@@ -73,7 +73,7 @@ Specifies the size of this data structure, in bytes.
 
 `AVCStrmFormat`
 
-Specifies one of the AV/C streaming subunit formats defined in <a href="..\avcstrm\ne-avcstrm-_avcstrm_format.md">AVCSTRM_FORMAT</a>.
+Specifies one of the AV/C streaming subunit formats defined in <a href="https://msdn.microsoft.com/library/windows/hardware/ff554114">AVCSTRM_FORMAT</a>.
 
 `cipHdr1`
 
@@ -144,20 +144,20 @@ Reserved. Do not use. Must be set to 0.
 
 ## See Also
 
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr2_fdf.md">CIP_HDR2_FDF</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554114">AVCSTRM_FORMAT</a>
 
 
 
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr2_syt.md">CIP_HDR2_SYT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557668">CIP_HDR1</a>
 
 
 
-<a href="..\avcstrm\ne-avcstrm-_avcstrm_format.md">AVCSTRM_FORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557669">CIP_HDR2_FDF</a>
 
 
 
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr2_mpegts.md">CIP_HDR2_MPEGTS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557672">CIP_HDR2_MPEGTS</a>
 
 
 
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr1.md">CIP_HDR1</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557676">CIP_HDR2_SYT</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndis_sriov_read_vf_config_block_parameters.htm
 old-project: netvista
 ms.assetid: fafad6f2-8092-4067-afad-208877309010
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, netvista.ndis_sriov_read_vf_config_block_parameters, ntddndis/NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, ntddndis/PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,22 +47,22 @@ req.typenames: NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, *PNDIS_SRIOV_READ_VF_
 The <b>NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS</b> structure specifies the parameters for a read operation on the configuration block of a network adapter's PCI Express (PCIe) Virtual Function (VF). These parameters are used for the backchannel communication between the miniport drivers for a VF and the PCIe Physical Function (PF).
 
 ## Syntax
-````
+```
 typedef struct _NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS {
-  NDIS_OBJECT_HEADER     Header;
+  NDIS_OBJECT_HEADER     Header;
   NDIS_SRIOV_FUNCTION_ID VFId;
-  ULONG                  BlockId;
-  ULONG                  Length;
-  ULONG                  BufferOffset;
+  ULONG                  BlockId;
+  ULONG                  Length;
+  ULONG                  BufferOffset;
 } NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS, *PNDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS;
-````
+```
 
 ## Members
 
 
 `Header`
 
-The type, revision, and size of the <b>NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS</b> structure. This member is formatted as an <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure.
+The type, revision, and size of the <b>NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS</b> structure. This member is formatted as an <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure.
 
 The miniport driver must set the <b>Type</b> member of <b>Header</b> to NDIS_OBJECT_TYPE_DEFAULT. To specify the version of the <b>NDIS_SRIOV_READ_VF_CONFIG_BLOCK_PARAMETERS</b> structure, the driver must set the <b>Revision</b> member of <b>Header</b> to the following value: 
 
@@ -131,12 +131,12 @@ For more information about backchannel communication within the single root I/O 
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<b></b>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451874">OID_SRIOV_READ_VF_CONFIG_BLOCK</a>
-
-
-
-<b></b>

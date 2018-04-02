@@ -7,7 +7,7 @@ old-location: netvista\rilmsgdcs.htm
 old-project: netvista
 ms.assetid: b9d37683-fd3d-42fd-9ec2-128b76325868
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*LPRILMSGDCS, RILMSGDCS, RILMSGDCS structure [Network Drivers Starting with Windows Vista], netvista.rilmsgdcs, ntddrilapitypes/RILMSGDCS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: RILMSGDCS, *LPRILMSGDCS
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef struct _RILMSGDCS {
-  DWORD                cbSize;
-  DWORD                dwParams;
-  RILMSGDCSTYPE        dwType;
-  DWORD                dwFlags;
-  RILMSGDCSMSGCLASS    dwMsgClass;
-  RILMSGDCSALPHABET    dwAlphabet;
-  RILMSGDCSINDICATION  dwIndication;
-  DWORD                dwLanguage;
-} RILMSGDCS, RILMSGDCS;
-````
+```
+typedef struct RILMSGDCS {
+  DWORD               cbSize;
+  DWORD               dwParams;
+  RILMSGDCSTYPE       dwType;
+  DWORD               dwFlags;
+  RILMSGDCSMSGCLASS   dwMsgClass;
+  RILMSGDCSALPHABET   dwAlphabet;
+  RILMSGDCSINDICATION dwIndication;
+  DWORD               dwLanguage;
+}  *LPRILMSGDCS;
+```
 
 ## Members
 

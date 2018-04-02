@@ -7,7 +7,7 @@ old-location: kernel\key_information_class.htm
 old-project: kernel
 ms.assetid: cb531a0e-c934-4f3e-9b92-07eb3ab75673
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KEY_INFORMATION_CLASS, KEY_INFORMATION_CLASS enumeration [Kernel-Mode Driver Architecture], KeyBasicInformation, KeyCachedInformation, KeyFlagsInformation, KeyFullInformation, KeyHandleTagsInformation, KeyNameInformation, KeyNodeInformation, KeyVirtualizationInformation, MaxKeyInfoClass, _KEY_INFORMATION_CLASS, kernel.key_information_class, sysenum_c64ec9c8-1eda-495a-8b4a-566607e29a78.xml, wdm/KEY_INFORMATION_CLASS, wdm/KeyBasicInformation, wdm/KeyCachedInformation, wdm/KeyFlagsInformation, wdm/KeyFullInformation, wdm/KeyHandleTagsInformation, wdm/KeyNameInformation, wdm/KeyNodeInformation, wdm/KeyVirtualizationInformation, wdm/MaxKeyInfoClass
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,19 +48,21 @@ req.product: Windows 10 or later.
 The <b>KEY_INFORMATION_CLASS</b> enumeration type represents the type of information to supply about a registry key.
 
 ## Syntax
-````
-typedef enum _KEY_INFORMATION_CLASS { 
-  KeyBasicInformation           = 0,
-  KeyNodeInformation            = 1,
-  KeyFullInformation            = 2,
-  KeyNameInformation            = 3,
-  KeyCachedInformation          = 4,
-  KeyFlagsInformation           = 5,
-  KeyVirtualizationInformation  = 6,
-  KeyHandleTagsInformation      = 7,
-  MaxKeyInfoClass               = 8
+```
+typedef enum _KEY_INFORMATION_CLASS {
+  KeyBasicInformation           ,
+  KeyNodeInformation            ,
+  KeyFullInformation            ,
+  KeyNameInformation            ,
+  KeyCachedInformation          ,
+  KeyFlagsInformation           ,
+  KeyVirtualizationInformation  ,
+  KeyHandleTagsInformation      ,
+  KeyTrustInformation           ,
+  KeyLayerInformation           ,
+  MaxKeyInfoClass
 } KEY_INFORMATION_CLASS;
-````
+```
 
 ## Constants
 
@@ -68,27 +70,27 @@ typedef enum _KEY_INFORMATION_CLASS {
             
                 <tr>
                     <td>KeyBasicInformation</td>
-                    <td>A <a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a> structure is supplied.</td>
+                    <td>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff553355">KEY_BASIC_INFORMATION</a> structure is supplied.</td>
                 </tr>
             
                 <tr>
                     <td>KeyNodeInformation</td>
-                    <td>A <a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a> structure is supplied.</td>
+                    <td>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff553392">KEY_NODE_INFORMATION</a> structure is supplied.</td>
                 </tr>
             
                 <tr>
                     <td>KeyFullInformation</td>
-                    <td>A <a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a> structure is supplied.</td>
+                    <td>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff553367">KEY_FULL_INFORMATION</a> structure is supplied.</td>
                 </tr>
             
                 <tr>
                     <td>KeyNameInformation</td>
-                    <td>A <a href="..\ntddk\ns-ntddk-_key_name_information.md">KEY_NAME_INFORMATION</a> structure is supplied.</td>
+                    <td>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff553381">KEY_NAME_INFORMATION</a> structure is supplied.</td>
                 </tr>
             
                 <tr>
                     <td>KeyCachedInformation</td>
-                    <td>A <a href="..\ntddk\ns-ntddk-_key_cached_information.md">KEY_CACHED_INFORMATION</a> structure is supplied.</td>
+                    <td>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff553358">KEY_CACHED_INFORMATION</a> structure is supplied.</td>
                 </tr>
             
                 <tr>
@@ -98,7 +100,7 @@ typedef enum _KEY_INFORMATION_CLASS {
             
                 <tr>
                     <td>KeyVirtualizationInformation</td>
-                    <td>A <a href="..\ntddk\ns-ntddk-_key_virtualization_information.md">KEY_VIRTUALIZATION_INFORMATION</a> structure is supplied.</td>
+                    <td>A <a href="https://msdn.microsoft.com/library/windows/hardware/ff554221">KEY_VIRTUALIZATION_INFORMATION</a> structure is supplied.</td>
                 </tr>
             
                 <tr>
@@ -124,7 +126,7 @@ typedef enum _KEY_INFORMATION_CLASS {
 
 ## Remarks
 
-Use the <b>KEY_INFORMATION_CLASS</b> values to specify the type of data to be supplied by the <a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a> and <a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a> routines.
+Use the <b>KEY_INFORMATION_CLASS</b> values to specify the type of data to be supplied by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566447">ZwEnumerateKey</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567060">ZwQueryKey</a> routines.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -133,32 +135,32 @@ Use the <b>KEY_INFORMATION_CLASS</b> values to specify the type of data to be su
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_key_full_information.md">KEY_FULL_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553355">KEY_BASIC_INFORMATION</a>
 
 
 
-<a href="..\wdm\ns-wdm-_key_basic_information.md">KEY_BASIC_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553358">KEY_CACHED_INFORMATION</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_key_virtualization_information.md">KEY_VIRTUALIZATION_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553367">KEY_FULL_INFORMATION</a>
 
 
 
-<a href="..\wdm\ns-wdm-_key_node_information.md">KEY_NODE_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553381">KEY_NAME_INFORMATION</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_key_cached_information.md">KEY_CACHED_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553392">KEY_NODE_INFORMATION</a>
 
 
 
-<a href="..\wdm\nf-wdm-zwenumeratekey.md">ZwEnumerateKey</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554221">KEY_VIRTUALIZATION_INFORMATION</a>
 
 
 
-<a href="..\wdm\nf-wdm-zwquerykey.md">ZwQueryKey</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566447">ZwEnumerateKey</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_key_name_information.md">KEY_NAME_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567060">ZwQueryKey</a>

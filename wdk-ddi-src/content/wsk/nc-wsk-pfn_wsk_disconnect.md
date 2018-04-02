@@ -7,7 +7,7 @@ old-location: netvista\wskdisconnect.htm
 old-project: netvista
 ms.assetid: 499ff5d0-2030-472c-8de2-44dcd253d7b9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: PFN_WSK_DISCONNECT, WskDisconnect, WskDisconnect callback function [Network Drivers Starting with Windows Vista], netvista.wskdisconnect, wsk/WskDisconnect, wskref_0c0dd54e-03d9-4bb6-9040-68f352cfb6ae.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,13 +69,13 @@ NTSTATUS PfnWskDisconnect(
 `Socket`
 
 A pointer to a 
-     <a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a> structure that specifies the socket
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a> structure that specifies the socket
      object for the socket that is being disconnected.
 
 `Buffer`
 
 A pointer to a 
-     <a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a> structure. This structure describes a data
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571153">WSK_BUF</a> structure. This structure describes a data
      buffer that contains data to be transmitted by the WSK subsystem to the remote transport address before
      the socket is disconnected. If there is no such data to be transmitted, the WSK application sets this
      pointer to <b>NULL</b>. If WSK_FLAG_ABORTIVE is specified in the 
@@ -148,7 +148,7 @@ The WSK subsystem could not disconnect the socket immediately. The WSK subsystem
 <td width="60%">
 The socket is no longer functional. The IRP will be completed with failure status. The WSK
        application must call the 
-       <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a> function to close the
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a> function to close the
        socket as soon as possible.
 
 </td>
@@ -192,7 +192,7 @@ With a graceful disconnect, the IRP is completed only when the disconnect operat
     transmitting data to the remote transport address. In this situation, the WSK application can recover by
     either calling the 
     <b>WskDisconnect</b> function again and specifying the WSK_FLAG_ABORTIVE flag or by calling the 
-    <a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a> function. In either
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a> function. In either
     situation, the WSK subsystem will abortively disconnect the socket and force completion of the pending
     IRP.
 
@@ -214,33 +214,33 @@ A WSK application can completely close the connection by calling the
 
 ## See Also
 
-<a href="..\wsk\nc-wsk-pfn_wsk_close_socket.md">WskCloseSocket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571153">WSK_BUF</a>
 
 
 
-<a href="..\wsk\nc-wsk-pfn_wsk_disconnect_event.md">WskDisconnectEvent</a>
-
-
-
-<a href="..\wsk\nc-wsk-pfn_wsk_socket_connect.md">WskSocketConnect</a>
-
-
-
-<a href="..\wsk\ns-wsk-_wsk_socket.md">WSK_SOCKET</a>
-
-
-
-<a href="..\wsk\ns-wsk-_wsk_buf.md">WSK_BUF</a>
-
-
-
-<a href="..\wsk\ns-wsk-_wsk_provider_stream_dispatch.md">WSK_PROVIDER_STREAM_DISPATCH</a>
-
-
-
-<a href="..\wsk\nc-wsk-pfn_wsk_connect.md">WskConnect</a>
-
-
-
-<a href="..\wsk\ns-wsk-_wsk_provider_connection_dispatch.md">
+<a href="https://msdn.microsoft.com/70a86809-07f2-4723-9e50-4dbdd31ff900">
    WSK_PROVIDER_CONNECTION_DISPATCH</a>
+
+
+
+<a href="https://msdn.microsoft.com/A10B901E-9987-40E9-976B-4CD9455E0AEE">WSK_PROVIDER_STREAM_DISPATCH</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571182">WSK_SOCKET</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571124">WskCloseSocket</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571125">WskConnect</a>
+
+
+
+<a href="https://msdn.microsoft.com/bf12d7b3-080e-46d9-b276-76d42068e7c6">WskDisconnectEvent</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571150">WskSocketConnect</a>

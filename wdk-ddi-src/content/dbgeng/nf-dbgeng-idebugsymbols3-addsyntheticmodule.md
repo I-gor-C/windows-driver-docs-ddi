@@ -7,7 +7,7 @@ old-location: debugger\addsyntheticmodule.htm
 old-project: debugger
 ms.assetid: 87d9f307-996b-47df-b3dd-368fef6c1042
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: AddSyntheticModule method [Windows Debugging], AddSyntheticModule method [Windows Debugging], IDebugSymbols3 interface, AddSyntheticModule,IDebugSymbols3.AddSyntheticModule, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], AddSyntheticModule method, IDebugSymbols3::AddSyntheticModule, IDebugSymbols_ecccfdc4-2942-480c-9f78-c21c4ed46c90.xml, dbgeng/IDebugSymbols3::AddSyntheticModule, debugger.addsyntheticmodule
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,20 +44,20 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# AddSyntheticModule method
+# IDebugSymbols3::AddSyntheticModule method
 The <b>AddSyntheticModule</b>  method adds a synthetic module to the module list the debugger maintains for the <a href="https://msdn.microsoft.com/295b05a3-e27f-4761-a562-7e87e25bfd3b">current process</a>.
 
 ## Syntax
 
-````
+```
 HRESULT AddSyntheticModule(
-  [in] ULONG64 Base,
-  [in] ULONG   Size,
-  [in] PCSTR   ImagePath,
-  [in] PCSTR   ModuleName,
-  [in] ULONG   Flags
+  ULONG64 Base,
+  ULONG   Size,
+  PCSTR   ImagePath,
+  PCSTR   ModuleName,
+  ULONG   Flags
 );
-````
+```
 
 ## Parameters
 
@@ -125,7 +125,7 @@ For more information about synthetic modules, see <a href="https://msdn.microsof
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>
 
 
 

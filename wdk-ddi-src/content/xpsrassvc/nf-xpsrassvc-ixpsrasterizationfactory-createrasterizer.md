@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# CreateRasterizer method
+# IXpsRasterizationFactory::CreateRasterizer method
 The <code>CreateRasterize</code> method creates an XPS rasterizer object.
 
 ## Syntax
 
-````
+```
 HRESULT CreateRasterizer(
-  [in, optional]  IXpsOMPage            *xpsPage,
-  [in]            FLOAT                 DPI,
-  [in]            XPSRAS_RENDERING_MODE nonTextRenderingMode,
-  [in]            XPSRAS_RENDERING_MODE textRenderingMode,
-  [out, optional] IXpsRasterizer        **ppIXPSRasterizer
+  IXpsOMPage            *xpsPage,
+  FLOAT                 DPI,
+  XPSRAS_RENDERING_MODE nonTextRenderingMode,
+  XPSRAS_RENDERING_MODE textRenderingMode,
+  IXpsRasterizer        **ppIXPSRasterizer
 );
-````
+```
 
 ## Parameters
 
@@ -72,7 +72,7 @@ Dots per inch in the rasterized output. This parameter applies to both the x and
 
 `nonTextRenderingMode`
 
-Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following <a href="..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0001_0001.md">XPSRAS_RENDERING_MODE</a> enumeration values:
+Rendering mode for nontext items in the rasterized output. This parameter indicates whether to generate antialiased output. Set this parameter to one of the following <a href="https://msdn.microsoft.com/library/windows/hardware/ff564291">XPSRAS_RENDERING_MODE</a> enumeration values:
 
 <ul>
 <li>
@@ -102,7 +102,7 @@ XPSRAS_RENDERING_MODE_ALIASED
 
 `ppIXPSRasterizer`
 
-This parameter points to a location into which the method writes a pointer to the <a href="..\xpsrassvc\nn-xpsrassvc-ixpsrasterizer.md">IXpsRasterizer</a> interface of the newly created XPS rasterizer object. If the method fails, it writes <b>NULL</b> to this location and returns an error code.
+This parameter points to a location into which the method writes a pointer to the <a href="https://msdn.microsoft.com/1ef99120-2b3b-45aa-bcf7-16bcb9656089">IXpsRasterizer</a> interface of the newly created XPS rasterizer object. If the method fails, it writes <b>NULL</b> to this location and returns an error code.
 
 
 ## Return Value
@@ -172,11 +172,11 @@ For a code example that calls the <code>CreateRasterizer</code> method, see the 
 
 ## See Also
 
-<a href="..\xpsrassvc\ne-xpsrassvc-__midl___midl_itf_xpsrassvc_0000_0001_0001.md">XPSRAS_RENDERING_MODE</a>
+<a href="https://msdn.microsoft.com/559bdc65-282e-42b2-998a-276202376c1e">IXpsRasterizationFactory</a>
 
 
 
-<a href="..\xpsrassvc\nn-xpsrassvc-ixpsrasterizationfactory.md">IXpsRasterizationFactory</a>
+<a href="https://msdn.microsoft.com/1ef99120-2b3b-45aa-bcf7-16bcb9656089">IXpsRasterizer</a>
 
 
 
@@ -184,4 +184,4 @@ For a code example that calls the <code>CreateRasterizer</code> method, see the 
 
 
 
-<a href="..\xpsrassvc\nn-xpsrassvc-ixpsrasterizer.md">IXpsRasterizer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564291">XPSRAS_RENDERING_MODE</a>

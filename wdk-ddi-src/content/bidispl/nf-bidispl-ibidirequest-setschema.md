@@ -44,16 +44,16 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
-# SetSchema method
+# IBidiRequest::SetSchema method
 The <b>SetSchema</b> method sets the bidi schema string.
 
 ## Syntax
 
-````
+```
 HRESULT SetSchema(
-  [in] const LPCWSTR pszSchema
+  const LPCWSTR pszSchema
 );
-````
+```
 
 ## Parameters
 
@@ -125,4 +125,4 @@ The <b>HRESULT</b> contains an error code corresponding to the last error.
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144969">IBidiRequest</a>

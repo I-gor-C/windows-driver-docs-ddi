@@ -44,18 +44,20 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsSetPinFramingCache method
+# IKsPinPipe::KsSetPinFramingCache method
 <p class="CCE_Message">[Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.]
 
 Not recommended for application use.
 
 ## Syntax
 
-````
+```
 HRESULT KsSetPinFramingCache(
-    
+  PKSALLOCATOR_FRAMING_EX FramingEx,
+  PFRAMING_PROP           FramingProp,
+  FRAMING_CACHE_OPS       Option
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +87,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-ikspinpipe.md">IKsPinPipe</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559922">IKsPinPipe</a>

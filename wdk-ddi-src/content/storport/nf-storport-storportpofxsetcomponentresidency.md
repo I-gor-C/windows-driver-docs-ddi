@@ -7,7 +7,7 @@ old-location: storage\storportpofxsetcomponentresidency.htm
 old-project: storage
 ms.assetid: 78DFB17E-5351-419A-9B9B-8CBCD7548910
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortPoFxSetComponentResidency, StorPortPoFxSetComponentResidency routine [Storage Devices], storage.storportpofxsetcomponentresidency, storport/StorPortPoFxSetComponentResidency
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,20 +51,20 @@ The <b>StorPortPoFxSetComponentResidency</b> routine sets the estimated time for
 
 ## Syntax
 
-````
+```
 ULONG StorPortPoFxSetComponentResidency(
-  _In_     PVOID         HwDeviceExtension,
-  _In_opt_ PSTOR_ADDRESS Address,
-  _In_     ULONG         Component,
-  _In_     ULONGLONG     Residency
+  PVOID         HwDeviceExtension,
+  PSTOR_ADDRESS Address,
+  ULONG         Component,
+  ULONGLONG     Residency
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-A pointer to the hardware device extension for the host bus adapter (HBA). This is the device extension used to register the device in a prior call to <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>.
+A pointer to the hardware device extension for the host bus adapter (HBA). This is the device extension used to register the device in a prior call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh920421">StorPortInitializePoFxPower</a>.
 
 `Address`
 
@@ -72,7 +72,7 @@ The address of a storage device unit. This parameter is <b>NULL</b> when setting
 
 `Component`
 
-The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="..\storport\ns-storport-_stor_pofx_device.md">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="..\storport\nf-storport-storportinitializepofxpower.md">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
+The index that identifies the component. This parameter is an index into the <b>Components</b> array in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh920429">STOR_POFX_DEVICE</a> structure that the miniport driver registered for the device with a call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh920421">StorPortInitializePoFxPower</a>. If the <b>Components</b> array contains N elements, component indexes range from 0 to N–1.
 
 `Residency`
 
@@ -158,4 +158,4 @@ The current IRQL &gt; DISPATCH_LEVEL.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pofxsetcomponentresidency.md">PoFxSetComponentResidency</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439536">PoFxSetComponentResidency</a>

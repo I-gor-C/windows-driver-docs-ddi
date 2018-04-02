@@ -52,17 +52,17 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-HRESULT WINAPI RemovePrintDeviceObject(
-  _In_ HANDLE hDeviceObject
+```
+HRESULT RemovePrintDeviceObject(
+  HANDLE hDeviceObject
 );
-````
+```
 
 ## Parameters
 
 `hDeviceObject`
 
-The HANDLE to the device object to be removed. This should be a device object that was  created with <a href="..\winsplp\nf-winsplp-addprintdeviceobject.md">AddPrintDeviceObject</a>.
+The HANDLE to the device object to be removed. This should be a device object that was  created with <a href="https://msdn.microsoft.com/library/windows/hardware/dn917890">AddPrintDeviceObject</a>.
 
 
 ## Return Value
@@ -85,4 +85,4 @@ Call <b>RemovePrintDeviceObject</b> to remove the device object for a printer th
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-addprintdeviceobject.md">AddPrintDeviceObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn917890">AddPrintDeviceObject</a>

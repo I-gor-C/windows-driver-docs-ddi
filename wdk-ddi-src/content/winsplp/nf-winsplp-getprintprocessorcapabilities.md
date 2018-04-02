@@ -50,15 +50,15 @@ A print processor's <b>GetPrintProcessorCapabilities</b> function returns capabi
 
 ## Syntax
 
-````
+```
 DWORD GetPrintProcessorCapabilities(
-  _In_  LPTSTR  pValueName,
-  _In_  DWORD   dwAttributes,
-  _Out_ LPBYTE  pData,
-  _In_  DWORD   nSize,
-  _Out_ LPDWORD pcbNeeded
+  LPTSTR  pValueName,
+  DWORD   dwAttributes,
+  LPBYTE  pData,
+  DWORD   nSize,
+  LPDWORD pcbNeeded
 );
-````
+```
 
 ## Parameters
 

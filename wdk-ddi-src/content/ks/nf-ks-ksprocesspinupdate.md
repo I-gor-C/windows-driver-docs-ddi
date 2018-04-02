@@ -46,21 +46,21 @@ req.typenames:
 
 
 # KsProcessPinUpdate function
-The <b>KsProcessPinUpdate</b> function is called from within a filter-centric filter's <a href="..\ks\nc-ks-pfnksfilterprocess.md">AVStrMiniFilterProcess</a> dispatch to update a process pin.
+The <b>KsProcessPinUpdate</b> function is called from within a filter-centric filter's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556315">AVStrMiniFilterProcess</a> dispatch to update a process pin.
 
 ## Syntax
 
-````
-BOOLEAN KsProcessPinUpdate(
-  _In_ PKSPROCESSPIN ProcessPin
+```
+KSDDKAPI BOOLEAN KsProcessPinUpdate(
+  PKSPROCESSPIN ProcessPin
 );
-````
+```
 
 ## Parameters
 
 `ProcessPin`
 
-A pointer to a <a href="..\ks\ns-ks-_ksprocesspin.md">KSPROCESSPIN</a> structure that represents the process pin to update.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564256">KSPROCESSPIN</a> structure that represents the process pin to update.
 
 
 ## Return Value
@@ -81,8 +81,8 @@ For more information, see <a href="https://msdn.microsoft.com/e56c5102-7ea6-4687
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksprocesspin_indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564256">KSPROCESSPIN</a>
 
 
 
-<a href="..\ks\ns-ks-_ksprocesspin.md">KSPROCESSPIN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564260">KSPROCESSPIN_INDEXENTRY</a>

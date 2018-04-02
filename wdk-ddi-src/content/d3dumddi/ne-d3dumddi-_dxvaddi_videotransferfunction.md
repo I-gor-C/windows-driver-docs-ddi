@@ -7,7 +7,7 @@ old-location: display\dxvaddi_videotransferfunction.htm
 old-project: display
 ms.assetid: 8d798afe-dc75-4cd0-aad7-1f9824bdcf00
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXVA2_Structs_a6fcb795-da10-4824-99b3-5f75a50a17ce.xml, DXVADDI_VIDEOTRANSFERFUNCTION, DXVADDI_VIDEOTRANSFERFUNCTION enumeration [Display Devices], DXVADDI_VideoTransFuncMask, DXVADDI_VideoTransFunc_10, DXVADDI_VideoTransFunc_18, DXVADDI_VideoTransFunc_20, DXVADDI_VideoTransFunc_22, DXVADDI_VideoTransFunc_240M, DXVADDI_VideoTransFunc_28, DXVADDI_VideoTransFunc_709, DXVADDI_VideoTransFunc_Unknown, DXVADDI_VideoTransFunc_sRGB, _DXVADDI_VIDEOTRANSFERFUNCTION, d3dumddi/DXVADDI_VIDEOTRANSFERFUNCTION, d3dumddi/DXVADDI_VideoTransFuncMask, d3dumddi/DXVADDI_VideoTransFunc_10, d3dumddi/DXVADDI_VideoTransFunc_18, d3dumddi/DXVADDI_VideoTransFunc_20, d3dumddi/DXVADDI_VideoTransFunc_22, d3dumddi/DXVADDI_VideoTransFunc_240M, d3dumddi/DXVADDI_VideoTransFunc_28, d3dumddi/DXVADDI_VideoTransFunc_709, d3dumddi/DXVADDI_VideoTransFunc_Unknown, d3dumddi/DXVADDI_VideoTransFunc_sRGB, display.dxvaddi_videotransferfunction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,20 +47,20 @@ req.typenames: DXVADDI_VIDEOTRANSFERFUNCTION
 The DXVADDI_VIDEOTRANSFERFUNCTION enumeration type contains values that identify the conversion function from R'G'B' to RGB.
 
 ## Syntax
-````
-typedef enum _DXVADDI_VIDEOTRANSFERFUNCTION { 
-  DXVADDI_VideoTransFuncMask      = 0x001f,
-  DXVADDI_VideoTransFunc_Unknown  = 0,
-  DXVADDI_VideoTransFunc_10       = 1,
-  DXVADDI_VideoTransFunc_18       = 2,
-  DXVADDI_VideoTransFunc_20       = 3,
-  DXVADDI_VideoTransFunc_22       = 4,
-  DXVADDI_VideoTransFunc_709      = 5,
-  DXVADDI_VideoTransFunc_240M     = 6,
-  DXVADDI_VideoTransFunc_sRGB     = 7,
-  DXVADDI_VideoTransFunc_28       = 8
+```
+typedef enum _DXVADDI_VIDEOTRANSFERFUNCTION {
+  DXVADDI_VideoTransFuncMask      ,
+  DXVADDI_VideoTransFunc_Unknown  ,
+  DXVADDI_VideoTransFunc_10       ,
+  DXVADDI_VideoTransFunc_18       ,
+  DXVADDI_VideoTransFunc_20       ,
+  DXVADDI_VideoTransFunc_22       ,
+  DXVADDI_VideoTransFunc_709      ,
+  DXVADDI_VideoTransFunc_240M     ,
+  DXVADDI_VideoTransFunc_sRGB     ,
+  DXVADDI_VideoTransFunc_28
 } DXVADDI_VIDEOTRANSFERFUNCTION;
-````
+```
 
 ## Constants
 
@@ -95,7 +95,7 @@ typedef enum _DXVADDI_VIDEOTRANSFERFUNCTION {
                     <td>DXVADDI_VideoTransFunc_22</td>
                     <td>Specifies true 2.2 gamma--that is, L' = pow(L, 1/gamma) for L=0..1. 
 
-The BT470-2 SysM primaries (that is, the <a href="..\d3dumddi\ne-d3dumddi-_dxvaddi_videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a> enumeration type) use gamma 2.2.</td>
+The BT470-2 SysM primaries (that is, the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562951">DXVADDI_VIDEOPRIMARIES</a> enumeration type) use gamma 2.2.</td>
                 </tr>
             
                 <tr>
@@ -125,7 +125,7 @@ The SMPTE240M and interim 274M primaries (that is, the DXVADDI_VIDEOPRIMARIES en
 
 ## Remarks
 
-One of the values of DXVADDI_VIDEOTRANSFERFUNCTION can be specified in the <b>VideoTransferFunction</b> member of the <a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a> structure.
+One of the values of DXVADDI_VIDEOTRANSFERFUNCTION can be specified in the <b>VideoTransferFunction</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a> structure.
 
 DXVADDI_VIDEOTRANSFERFUNCTION corresponds to the gamma function of the data. Some transfer functions have corrections to account for 8-bit integer quantization effects.
 
@@ -152,8 +152,8 @@ The following constants can also be used for gamma function:
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_dxvaddi_extendedformat.md">DXVADDI_EXTENDEDFORMAT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562904">DXVADDI_EXTENDEDFORMAT</a>
 
 
 
-<a href="..\d3dumddi\ne-d3dumddi-_dxvaddi_videoprimaries.md">DXVADDI_VIDEOPRIMARIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562951">DXVADDI_VIDEOPRIMARIES</a>

@@ -7,7 +7,7 @@ old-location: display\videoprocessorsetoutputtargetrect.htm
 old-project: display
 ms.assetid: ac1ba2e0-a289-4dee-b739-d3c1ad0970e1
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETOUTPUTTARGETRECT, d3d10umddi/pfnVideoProcessorSetOutputTargetRect, display.videoprocessorsetoutputtargetrect, pfnVideoProcessorSetOutputTargetRect, pfnVideoProcessorSetOutputTargetRect callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -101,8 +101,8 @@ If this function is never called, or if the <i>Enable</i> parameter is FALSE, th
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/741045a2-0a91-490a-907d-5f4900a4a0ae">CreateVideoProcessor</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-
-
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>

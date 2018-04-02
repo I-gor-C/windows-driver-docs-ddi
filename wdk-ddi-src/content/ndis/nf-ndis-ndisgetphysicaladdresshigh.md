@@ -7,7 +7,7 @@ old-location: netvista\ndisgetphysicaladdresshigh.htm
 old-project: netvista
 ms.assetid: 17f8c6dd-7235-4ad0-bc3a-e801b53956ce
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisGetPhysicalAddressHigh, NdisGetPhysicalAddressHigh macro [Network Drivers Starting with Windows Vista], miniport_memory_shared_ref_911e11c6-b90a-4805-83b9-0d75225917e0.xml, ndis/NdisGetPhysicalAddressHigh, netvista.ndisgetphysicaladdresshigh
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 
 ## Syntax
 
-````
-ULONG NdisGetPhysicalAddressHigh(
-  [in] NDIS_PHYSICAL_ADDRESS PhysicalAddress
+```
+void NdisGetPhysicalAddressHigh(
+   _PhysicalAddress
 );
-````
+```
 
 ## Parameters
 
@@ -81,8 +81,8 @@ None
 
 
 
-<a href="..\ndis\nf-ndis-ndissetphysicaladdresshigh.md">NdisSetPhysicalAddressHigh</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562654">NdisGetPhysicalAddressLow</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisgetphysicaladdresslow.md">NdisGetPhysicalAddressLow</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564551">NdisSetPhysicalAddressHigh</a>

@@ -47,13 +47,13 @@ req.typenames: KSVPMAXPIXELRATE, *PKSVPMAXPIXELRATE
 The KSVPMAXPIXELRATE structure is used to describe the maximum pixel rate of a video port.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSVPMAXPIXELRATE {
   AMVPSIZE Size;
-  DWORD    MaxPixelsPerSecond;
-  DWORD    Reserved;
-} KSVPMAXPIXELRATE, *PKSVPMAXPIXELRATE;
-````
+  DWORD    MaxPixelsPerSecond;
+  DWORD    Reserved;
+} *PKSVPMAXPIXELRATE, KSVPMAXPIXELRATE;
+```
 
 ## Members
 

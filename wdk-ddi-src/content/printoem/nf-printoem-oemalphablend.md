@@ -50,17 +50,17 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL  APIENTRY OEMAlphaBlend(
-   SURFOBJ  *psoDest,
-   SURFOBJ  *psoSrc,
-   CLIPOBJ  *pco,
-   XLATEOBJ *pxlo,
-   RECTL    *prclDest,
-   RECTL    *prclSrc,
-   BLENDOBJ *pBlendObj
+```
+BOOL OEMAlphaBlend(
+  SURFOBJ  *psoDest,
+  SURFOBJ  *psoSrc,
+  CLIPOBJ  *pco,
+  XLATEOBJ *pxlo,
+  RECTL    *prclDest,
+  RECTL    *prclSrc,
+  BLENDOBJ *pBlendObj
 );
-````
+```
 
 ## Parameters
 

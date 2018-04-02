@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMGetInfo(
-        DWORD                        dwMode,
-  _Out_ _writes_bytes_(cbSize) PVOID pBuffer,
-        DWORD                        cbSize,
-  _Out_ DWORD                        pcbNeeded
+```
+BOOL OEMGetInfo(
+  DWORD  dwMode,
+  PVOID  pBuffer,
+  DWORD  cbSize,
+  PDWORD pcbNeeded
 );
-````
+```
 
 ## Parameters
 

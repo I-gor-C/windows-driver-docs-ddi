@@ -7,7 +7,7 @@ old-location: storage\comparestorageduids.htm
 old-project: storage
 ms.assetid: bf66a04d-0892-4813-9615-845054526125
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: CompareStorageDuids, CompareStorageDuids routine [Storage Devices], storage.comparestorageduids, storduid/CompareStorageDuids, storertns-general_86f18b5a-ed33-48e8-b13c-76bd2422418d.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>CompareStorageDuids</b> routine compares two device unique identifiers (D
 
 ## Syntax
 
-````
-__inline DUID_MATCH_STATUS CompareStorageDuids(
-  _In_ PSTORAGE_DEVICE_UNIQUE_IDENTIFIER Duid1,
-  _In_ PSTORAGE_DEVICE_UNIQUE_IDENTIFIER Duid2
+```
+DUID_MATCH_STATUS CompareStorageDuids(
+  PSTORAGE_DEVICE_UNIQUE_IDENTIFIER Duid1,
+  PSTORAGE_DEVICE_UNIQUE_IDENTIFIER Duid2
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A pointer to a DUID to compare with the DUID that <i>Duid1</i> points to.
 
 ## Return Value
 
-<b>CompareStorageDuids</b> returns a <a href="..\storduid\ne-storduid-_duid_match_status.md">DUID_MATCH_STATUS</a> value that indicates whether the two DUIDs matched or not, if the operation succeeds. Otherwise, this routine returns a DUID_MATCH_STATUS value that indicates the error status.
+<b>CompareStorageDuids</b> returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552760">DUID_MATCH_STATUS</a> value that indicates whether the two DUIDs matched or not, if the operation succeeds. Otherwise, this routine returns a DUID_MATCH_STATUS value that indicates the error status.
 
 
 ## Requirements
@@ -81,4 +81,4 @@ A pointer to a DUID to compare with the DUID that <i>Duid1</i> points to.
 
 ## See Also
 
-<a href="..\storduid\ne-storduid-_duid_match_status.md">DUID_MATCH_STATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552760">DUID_MATCH_STATUS</a>

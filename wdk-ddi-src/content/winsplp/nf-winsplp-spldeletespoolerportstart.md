@@ -50,11 +50,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL WINAPI SplDeleteSpoolerPortStart(
-  _In_ PCWSTR  pPortName
+```
+BOOL SplDeleteSpoolerPortStart(
+  PCWSTR pPortName
 );
-````
+```
 
 ## Parameters
 

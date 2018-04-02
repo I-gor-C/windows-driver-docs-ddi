@@ -63,7 +63,7 @@ NTSTATUS Pfnksfilterprocess(
 
 `Filter`
 
-Pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure that must process frames.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure that must process frames.
 
 `Index`
 
@@ -76,7 +76,7 @@ Return STATUS_SUCCESS to continue processing. Return STATUS_PENDING to stop proc
 
 ## Remarks
 
-The minidriver specifies this routine's address in the <b>Process</b> member of its <a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a> structure.
+The minidriver specifies this routine's address in the <b>Process</b> member of its <a href="https://msdn.microsoft.com/library/windows/hardware/ff562554">KSFILTER_DISPATCH</a> structure.
 
 The routine is called at either IRQL = DISPATCH_LEVEL or PASSIVE_LEVEL depending on the preference expressed in the filter descriptor. Filter descriptors that specify KSFILTER_FLAG_DISPATCH_LEVEL_PROCESSING may have their process callback at DISPATCH_LEVEL; filter descriptors that do not specify this flag will have their process callback at PASSIVE_LEVEL.
 
@@ -94,8 +94,8 @@ This routine is optional.
 
 ## See Also
 
-<a href="..\ks\ns-ks-_ksprocesspin_indexentry.md">KSPROCESSPIN_INDEXENTRY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562554">KSFILTER_DISPATCH</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilter_dispatch.md">KSFILTER_DISPATCH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564260">KSPROCESSPIN_INDEXENTRY</a>

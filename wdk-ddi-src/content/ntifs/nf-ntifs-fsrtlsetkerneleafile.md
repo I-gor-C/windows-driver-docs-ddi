@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlsetkerneleafile.htm
 old-project: ifsk
 ms.assetid: E5EA2E40-2CC3-4C7B-8BCC-4793F76ECBAD
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlSetKernelEaFile, FsRtlSetKernelEaFile routine [Installable File System Drivers], ifsk.fsrtlsetkerneleafile, ntifs/FsRtlSetKernelEaFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,13 +52,13 @@ The routine <b>FsRtlQueryKernelEaFile</b> is used to set, modify and/or delete e
 
 ## Syntax
 
-````
+```
 NTSTATUS FsRtlSetKernelEaFile(
-  _In_ PFILE_OBJECT         FileObject,
-  _In_ bcount(Length) PVOID EaBuffer,
-  _In_ ULONG                Length
+  PFILE_OBJECT FileObject,
+  PVOID        EaBuffer,
+  ULONG        Length
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A pointer to a <b>FileObject</b> to send the QueryEA request to.
 
 `EaBuffer`
 
-A pointer to a caller-supplied, <a href="..\wdm\ns-wdm-_file_full_ea_information.md">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute values to be set
+A pointer to a caller-supplied, <a href="https://msdn.microsoft.com/library/windows/hardware/ff545793">FILE_FULL_EA_INFORMATION</a>-structured input buffer that contains the extended attribute values to be set
 
 `Length`
 
@@ -168,12 +168,12 @@ You delete EA’s by specifying an <b>EAName</b> with an <b>EaValueLength</b> of
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/B57BC3A4-6116-48EA-905A-CFA7AC0A5E8F">FsRtlQueryKernelEaFile</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff961907">ZwQueryEaFile</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-fsrtlquerykerneleafile.md">FsRtlQueryKernelEaFile</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-zwseteafile.md">ZwSetEaFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff961908">ZwSetEaFile</a>

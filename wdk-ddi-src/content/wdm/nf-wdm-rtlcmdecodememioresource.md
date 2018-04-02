@@ -7,7 +7,7 @@ old-location: kernel\rtlcmdecodememioresource.htm
 old-project: kernel
 ms.assetid: cc2394ce-128e-46a2-8688-a71851af06cf
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlCmDecodeMemIoResource, RtlCmDecodeMemIoResource routine [Kernel-Mode Driver Architecture], k109_da737a74-2fce-4731-b24d-9014272991f1.xml, kernel.rtlcmdecodememioresource, wdm/RtlCmDecodeMemIoResource
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,22 +46,22 @@ req.product: Windows 10 or later.
 
 
 # RtlCmDecodeMemIoResource function
-The <b>RtlCmDecodeMemIoResource</b> routine provides the starting address and length of a <a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes a range of memory or I/O port addresses.
+The <b>RtlCmDecodeMemIoResource</b> routine provides the starting address and length of a <a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes a range of memory or I/O port addresses.
 
 ## Syntax
 
-````
-ULONGLONG RtlCmDecodeMemIoResource(
-  _In_      PCM_PARTIAL_RESOURCE_DESCRIPTOR Descriptor,
-  _Out_opt_ PULONGLONG                      Start
+```
+NTSYSAPI ULONGLONG RtlCmDecodeMemIoResource(
+  PCM_PARTIAL_RESOURCE_DESCRIPTOR Descriptor,
+  PULONGLONG                      Start
 );
-````
+```
 
 ## Parameters
 
 `Descriptor`
 
-A pointer to the <a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure to provide the starting address and length for.
+A pointer to the <a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure to provide the starting address and length for.
 
 `Start`
 
@@ -88,8 +88,8 @@ The <b>Type</b> member of the <b>CM_PARTIAL_RESOURCE_DESCRIPTOR</b> structure mu
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlcmencodememioresource.md">RtlCmEncodeMemIoResource</a>
+<a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561774">RtlCmEncodeMemIoResource</a>

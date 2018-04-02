@@ -7,7 +7,7 @@ old-location: buses\ucm_pd_power_data_object_get_type.htm
 old-project: usbref
 ms.assetid: ACB0AB92-5EC8-4792-AB40-853FC5AAD125
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UCM_PD_POWER_DATA_OBJECT_GET_TYPE, UCM_PD_POWER_DATA_OBJECT_GET_TYPE function [Buses], buses.ucm_pd_power_data_object_get_type, ucmtypes/UCM_PD_POWER_DATA_OBJECT_GET_TYPE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,30 +46,30 @@ req.product: Windows 10 or later.
 
 
 # UCM_PD_POWER_DATA_OBJECT_GET_TYPE function
-Retrieves the type of Power Data Object from the <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a> structure.
+Retrieves the type of Power Data Object from the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE  UCM_PD_POWER_DATA_OBJECT_GET_TYPE(
-  _In_ PUCM_PD_POWER_DATA_OBJECT Pdo
+```
+UCM_PD_POWER_DATA_OBJECT_TYPE UCM_PD_POWER_DATA_OBJECT_GET_TYPE(
+  PUCM_PD_POWER_DATA_OBJECT Pdo
 );
-````
+```
 
 ## Parameters
 
 `Pdo`
 
-A pointer to a <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a> structure that contains the type of Power Data Object.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> structure that contains the type of Power Data Object.
 
 
 ## Return Value
 
-Returns the <b>Common.Type</b> member of the  <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a> structure.
+Returns the <b>Common.Type</b> member of the  <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> structure.
 
 ## Remarks
 
-For information about the Power Data Object including the types of object, see Power Delivery specification. The Type member of <a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a> indicates the type of Power Data Object.
+For information about the Power Data Object including the types of object, see Power Delivery specification. The Type member of <a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a> indicates the type of Power Data Object.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,4 +82,4 @@ For information about the Power Data Object including the types of object, see P
 
 ## See Also
 
-<a href="..\ucmtypes\ns-ucmtypes-_ucm_pd_power_data_object.md">UCM_PD_POWER_DATA_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187935">UCM_PD_POWER_DATA_OBJECT</a>

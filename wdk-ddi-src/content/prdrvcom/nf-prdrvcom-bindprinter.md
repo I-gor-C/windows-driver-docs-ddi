@@ -50,15 +50,16 @@ The <code>IPrintOemPrintTicketProvider::BindPrinter</code> method enables the co
 
 ## Syntax
 
-````
+```
 HRESULT BindPrinter(
-  [in]  HANDLE     hPrinter,
-  [in]  INT        version,
-  [out] POEMPTOPTS pOptions,
-  [out] INT        *cNamespaces,
-  [out] BSTR       **ppNamespaces
+  IN HANDLE     hPrinter,
+  IN INT        version,
+  OUT PSHIMOPTS pOptions,
+  OUT DWORD     *pDevModeFlags,
+  OUT INT       *cNamespaces,
+  OUT BSTR      **ppNamespaces
 );
-````
+```
 
 ## Parameters
 
@@ -152,7 +153,7 @@ An <b>IPrintTicketProvider</b> object does not have to be able to bind more than
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff553170">IPrintOemPrintTicketProvider::GetSupportedVersions</a>
+<a href="https://msdn.microsoft.com/a32b5ec9-b4f2-4f33-879d-252806bd34ed">IPrintOemPrintTicketProvider</a>
 
 
 
@@ -160,8 +161,8 @@ An <b>IPrintTicketProvider</b> object does not have to be able to bind more than
 
 
 
-<a href="..\prcomoem\nn-prcomoem-iprintoemprintticketprovider.md">IPrintOemPrintTicketProvider</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553167">IPrintOemPrintTicketProvider::ConvertPrintTicketToDevMode</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553170">IPrintOemPrintTicketProvider::GetSupportedVersions</a>

@@ -50,12 +50,12 @@ The <code>OEMGetGlyphMode</code> function informs the GDI how to cache glyph inf
 
 ## Syntax
 
-````
-ULONG APIENTRY OEMGetGlyphMode(
-   DHPDEV  dhpdev,
-   FONTOBJ *pfo
+```
+ULONG OEMGetGlyphMode(
+  DHPDEV  dhpdev,
+  FONTOBJ *pfo
 );
-````
+```
 
 ## Parameters
 

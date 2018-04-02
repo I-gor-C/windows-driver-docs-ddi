@@ -50,13 +50,13 @@ The <b>KsCreateClock</b> function creates a handle to a clock instance.
 
 ## Syntax
 
-````
-NTSTATUS KsCreateClock(
-  _In_  HANDLE          ConnectionHandle,
-  _In_  PKSCLOCK_CREATE ClockCreate,
-  _Out_ PHANDLE         ClockHandle
+```
+KSDDKAPI NTSTATUS KsCreateClock(
+  HANDLE          ConnectionHandle,
+  PKSCLOCK_CREATE ClockCreate,
+  PHANDLE         ClockHandle
 );
-````
+```
 
 ## Parameters
 

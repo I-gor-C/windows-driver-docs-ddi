@@ -45,34 +45,34 @@ req.product: Windows 10 or later.
 ---
 
 
-# CreateWdfObject method
+# IWDFDriver::CreateWdfObject method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>CreateWdfObject</b> method creates a custom (or user) WDF object from a parent WDF object.
 
 ## Syntax
 
-````
+```
 HRESULT CreateWdfObject(
-  [in, optional] IUnknown   *pCallbackInterface,
-  [in, optional] IWDFObject *pParentObject,
-  [out]          IWDFObject **ppWdfObject
+  IUnknown   *pCallbackInterface,
+  IWDFObject *pParentObject,
+  IWDFObject **ppWdfObject
 );
-````
+```
 
 ## Parameters
 
 `pCallbackInterface`
 
-A pointer to the <b>IUnknown</b> interface that the framework uses to determine the object-related event callback functions that the driver subscribes to on the newly created custom object. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require notification. If the driver passes a valid pointer, the framework will call <b>QueryInterface</b> on the <b>IUnknown</b> interface for the <a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a> interface. If the framework obtains the driver's <b>IObjectCleanup</b> interface, the framework can subsequently call the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a> method to notify the driver that the custom object is cleaned up.
+A pointer to the <b>IUnknown</b> interface that the framework uses to determine the object-related event callback functions that the driver subscribes to on the newly created custom object. This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require notification. If the driver passes a valid pointer, the framework will call <b>QueryInterface</b> on the <b>IUnknown</b> interface for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556754">IObjectCleanup</a> interface. If the framework obtains the driver's <b>IObjectCleanup</b> interface, the framework can subsequently call the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a> method to notify the driver that the custom object is cleaned up.
 
 `pParentObject`
 
-A pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a> interface for the parent WDF object. If <b>NULL</b>, the driver object becomes the default parent.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a> interface for the parent WDF object. If <b>NULL</b>, the driver object becomes the default parent.
 
 `ppWdfObject`
 
-A pointer to a buffer that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a> interface for the newly created WDF object.
+A pointer to a buffer that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a> interface for the newly created WDF object.
 
 
 ## Return Value
@@ -81,7 +81,7 @@ A pointer to a buffer that receives a pointer to the <a href="..\wudfddi\nn-wudf
 
 ## Remarks
 
-The driver can call <b>CreateWdfObject</b> to create a general <a href="https://msdn.microsoft.com/9d400192-faf0-4d8f-849b-6b955105e21a">framework base object</a> for its own use. The driver can associate context memory, assign a parent object, and register an <a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a> interface. The framework subsequently calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a> method to clean up the child object. 
+The driver can call <b>CreateWdfObject</b> to create a general <a href="https://msdn.microsoft.com/9d400192-faf0-4d8f-849b-6b955105e21a">framework base object</a> for its own use. The driver can associate context memory, assign a parent object, and register an <a href="https://msdn.microsoft.com/library/windows/hardware/ff556754">IObjectCleanup</a> interface. The framework subsequently calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a> method to clean up the child object. 
 
 If no parent object is specified at the <i>pParentObject</i> parameter, the driver becomes the default parent. Therefore, when the driver object is deleted, the framework cleans up the child object. 
 
@@ -100,20 +100,20 @@ If the driver must clean up the child object before the parent object is deleted
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iobjectcleanup.md">IObjectCleanup</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-iwdfdriver.md">IWDFDriver</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556754">IObjectCleanup</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556760">IObjectCleanup::OnCleanup</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558893">IWDFDriver</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560210">IWDFObject::DeleteWdfObject</a>

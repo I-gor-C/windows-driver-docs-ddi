@@ -45,16 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetRequestorMode method
+# IWDFIoRequest2::GetRequestorMode method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>GetRequestorMode</b> method indicates whether an I/O request came from a kernel-mode driver or a user-mode component (either an application or a user-mode driver).
 
 ## Syntax
 
-````
-WDF_KPROCESSOR_MODE GetRequestorMode();
-````
+```
+WDF_KPROCESSOR_MODE GetRequestorMode(
+
+);
+```
 
 ## Parameters
 
@@ -62,7 +64,7 @@ This function has no parameters.
 
 ## Return Value
 
-<b>GetRequestorMode</b> returns a <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_kprocessor_mode.md">WDF_KPROCESSOR_MODE</a>-typed value that indicates whether the current I/O request came from a kernel-mode driver or a user-mode component.
+<b>GetRequestorMode</b> returns a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561423">WDF_KPROCESSOR_MODE</a>-typed value that indicates whether the current I/O request came from a kernel-mode driver or a user-mode component.
 
 ## Remarks
 
@@ -119,8 +121,8 @@ STDMETHODCALLTYPE
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558988">IWDFIoRequest2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559021">IWDFIoRequest2::IsFromUserModeDriver</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest2.md">IWDFIoRequest2</a>

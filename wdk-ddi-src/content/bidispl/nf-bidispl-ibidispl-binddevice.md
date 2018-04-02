@@ -44,17 +44,17 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
-# BindDevice method
+# IBidiSpl::BindDevice method
 The <b>BindDevice</b> method binds a printer to a bidi request. This method is similar to the <a href="https://msdn.microsoft.com/8bbb46a8-2bba-4d15-a2e2-4770b52d2505">OpenPrinter</a> function.
 
 ## Syntax
 
-````
+```
 HRESULT BindDevice(
-  [in] const LPCWSTR pszDeviceName,
-  [in] const DWORD   dwAccess
+  const LPCWSTR pszDeviceName,
+  const DWORD   dwAccess
 );
-````
+```
 
 ## Parameters
 
@@ -157,7 +157,7 @@ The <b>HRESULT</b> contains an error code corresponding to the last error.
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidispl.md">IBidiSpl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144980">IBidiSpl</a>
 
 
 

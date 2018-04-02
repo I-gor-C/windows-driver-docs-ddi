@@ -50,22 +50,22 @@ The<b> KsPinGetAndGate</b> function returns the processing control gate for <i>P
 
 ## Syntax
 
-````
-PKSGATE KsPinGetAndGate(
-  _In_ PKSPIN Pin
+```
+KSDDKAPI PKSGATE KsPinGetAndGate(
+  PKSPIN Pin
 );
-````
+```
 
 ## Parameters
 
 `Pin`
 
-A pointer to the <a href="..\ks\ns-ks-_kspin.md">KSPIN</a> for which to return the processing control gate.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a> for which to return the processing control gate.
 
 
 ## Return Value
 
-Returns a pointer to the <a href="..\ks\ns-ks-_ksgate.md">KSGATE</a> representing the processing control gate for <i>Pin</i>.
+Returns a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a> representing the processing control gate for <i>Pin</i>.
 
 ## Remarks
 
@@ -82,8 +82,8 @@ For more information, see <a href="https://msdn.microsoft.com/c5592f92-a432-44e3
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfiltergetandgate.md">KsFilterGetAndGate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562566">KSGATE</a>
 
 
 
-<a href="..\ks\ns-ks-_ksgate.md">KSGATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562542">KsFilterGetAndGate</a>

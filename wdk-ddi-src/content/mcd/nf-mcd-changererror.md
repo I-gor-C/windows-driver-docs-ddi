@@ -7,7 +7,7 @@ old-location: storage\changererror.htm
 old-project: storage
 ms.assetid: e2196971-47ad-4ac4-a3e9-c8f7f6b05321
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ChangerError, ChangerError function [Storage Devices], chgrmini_5235b77f-51d1-4fa5-b68c-3e649aed829c.xml, mcd/ChangerError, storage.changererror
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ req.typenames: LAMP_INTENSITY_WHITE
 
 ## Syntax
 
-````
-VOID ChangerError(
-   PDEVICE_OBJECT      DeviceObject,
-   PSCSI_REQUEST_BLOCK Srb,
-   NTSTATUS            *Status,
-   BOOLEAN             *Retry
+```
+void ChangerError(
+  PDEVICE_OBJECT      DeviceObject,
+  PSCSI_REQUEST_BLOCK Srb,
+  NTSTATUS            *Status,
+  BOOLEAN             *Retry
 );
-````
+```
 
 ## Parameters
 

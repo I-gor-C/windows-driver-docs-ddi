@@ -7,7 +7,7 @@ old-location: dtf\iwdtfsimpleiostressaction2_continue.htm
 old-project: dtf
 ms.assetid: 5625c4af-329d-4b16-9d5d-0ca962a7abff
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: Continue method [Windows Device Testing Framework], Continue method [Windows Device Testing Framework], IWDTFSimpleIOStressAction2 interface, Continue,IWDTFSimpleIOStressAction2.Continue, IWDTFSimpleIOStressAction2, IWDTFSimpleIOStressAction2 interface [Windows Device Testing Framework], Continue method, IWDTFSimpleIOStressAction2::Continue, Microsoft.WDTF.IWDTFSimpleIOStressAction2.Continue, Microsoft::WDTF::IWDTFSimpleIOStressAction2::Continue, dtf.iwdtfsimpleiostressaction2_continue, wdtfinterfaces/IWDTFSimpleIOStressAction2::Continue
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Continue method
+# IWDTFSimpleIOStressAction2::Continue method
 Continues the I/O.
 
 ## Syntax
 
-````
+```
 HRESULT Continue(
-  [out, retval] VARIANT_BOOL *pbResult
+  VARIANT_BOOL *pResult
 );
-````
+```
 
 ## Parameters
 
@@ -77,4 +77,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\wdtfinterfaces\nn-wdtfinterfaces-iwdtfsimpleiostressaction2.md">IWDTFSimpleIOStressAction2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451157">IWDTFSimpleIOStressAction2</a>

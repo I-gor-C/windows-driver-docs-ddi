@@ -7,7 +7,7 @@ old-location: ifsk\iogetrequestorprocessid.htm
 old-project: ifsk
 ms.assetid: 73fe40ee-f1fe-419b-a866-6c40604f7716
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: IoGetRequestorProcessId, IoGetRequestorProcessId routine [Installable File System Drivers], ifsk.iogetrequestorprocessid, ioref_a08b37d7-b999-4e40-a0aa-c62744fee6dd.xml, ntifs/IoGetRequestorProcessId
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>IoGetRequestorProcessId</b> routine returns the unique 32-bit process ID 
 
 ## Syntax
 
-````
-ULONG IoGetRequestorProcessId(
-  _In_ PIRP Irp
+```
+NTKERNELAPI ULONG IoGetRequestorProcessId(
+  PIRP Irp
 );
-````
+```
 
 ## Parameters
 
@@ -86,4 +86,4 @@ For more information about using system threads and managing synchronization wit
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-iogetrequestorprocess.md">IoGetRequestorProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548385">IoGetRequestorProcess</a>

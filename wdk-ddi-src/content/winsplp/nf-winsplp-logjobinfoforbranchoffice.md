@@ -50,12 +50,12 @@ Allows Branch Office clients to send job events to the host print server.
 
 ## Syntax
 
-````
-HRESULT WINAPI LogJobInfoForBranchOffice(
-  _In_ HANDLE                        hPrinter,
-  _In_ PBranchOfficeJobDataContainer pJobDataContainer
+```
+DWORD LogJobInfoForBranchOffice(
+  HANDLE                        hPrinter,
+  PBranchOfficeJobDataContainer pJobDataContainer
 );
-````
+```
 
 ## Parameters
 

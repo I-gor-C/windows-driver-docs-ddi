@@ -48,18 +48,18 @@ req.product: Windows 10 or later.
 The BIDI_TYPE enumeration lists the possible values of data transferred in a bidi operation.
 
 ## Syntax
-````
-typedef enum  { 
-  BIDI_NULL    = 0,
-  BIDI_INT     = 1,
-  BIDI_FLOAT   = 2,
-  BIDI_BOOL    = 3,
-  BIDI_STRING  = 4,
-  BIDI_TEXT    = 5,
-  BIDI_ENUM    = 6,
-  BIDI_BLOB    = 7
-} BIDI_TYPE;
-````
+```
+typedef enum BIDI_TYPE {
+  BIDI_NULL    ,
+  BIDI_INT     ,
+  BIDI_FLOAT   ,
+  BIDI_BOOL    ,
+  BIDI_STRING  ,
+  BIDI_TEXT    ,
+  BIDI_ENUM    ,
+  BIDI_BLOB
+} ;
+```
 
 ## Constants
 

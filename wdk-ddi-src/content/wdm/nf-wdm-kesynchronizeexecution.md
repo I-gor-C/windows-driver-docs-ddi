@@ -7,7 +7,7 @@ old-location: kernel\kesynchronizeexecution.htm
 old-project: kernel
 ms.assetid: f378a30f-7e6b-4c81-b98b-a5b40e9a1a17
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeSynchronizeExecution, KeSynchronizeExecution routine [Kernel-Mode Driver Architecture], k105_2abf2438-6849-4069-8571-7d24d348056f.xml, kernel.kesynchronizeexecution, wdm/KeSynchronizeExecution
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,19 +50,19 @@ The <b>KeSynchronizeExecution</b> routine synchronizes the execution of the spec
 
 ## Syntax
 
-````
-BOOLEAN KeSynchronizeExecution(
-  _Inout_  PKINTERRUPT           Interrupt,
-  _In_     PKSYNCHRONIZE_ROUTINE SynchronizeRoutine,
-  _In_opt_ PVOID                 SynchronizeContext
+```
+NTKERNELAPI BOOLEAN KeSynchronizeExecution(
+  PKINTERRUPT            Interrupt,
+  PKSYNCHRONIZE_ROUTINE  SynchronizeRoutine,
+  __drv_aliasesMem PVOID SynchronizeContext
 );
-````
+```
 
 ## Parameters
 
 `Interrupt`
 
-A pointer to a set of interrupt objects. The caller obtained this pointer from the <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a> or <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a> routine.
+A pointer to a set of interrupt objects. The caller obtained this pointer from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548371">IoConnectInterrupt</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548378">IoConnectInterruptEx</a> routine.
 
 `SynchronizeRoutine`
 
@@ -83,7 +83,7 @@ When this routine is called, the following occurs:
 
 <ol>
 <li>
-The IRQL is raised to the <i>SynchronizeIrql</i> value specified in the call to <a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a> or <a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>.
+The IRQL is raised to the <i>SynchronizeIrql</i> value specified in the call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff548371">IoConnectInterrupt</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548378">IoConnectInterruptEx</a>.
 
 </li>
 <li>
@@ -113,8 +113,8 @@ Starting with Windows 8, a driver can call <b>KeSynchronizeExecution</b> to syn
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioconnectinterrupt.md">IoConnectInterrupt</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548371">IoConnectInterrupt</a>
 
 
 
-<a href="..\wdm\nf-wdm-ioconnectinterruptex.md">IoConnectInterruptEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548378">IoConnectInterruptEx</a>

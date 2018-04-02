@@ -7,7 +7,7 @@ old-location: kernel\mmfreecontiguousmemoryspecifycache.htm
 old-project: kernel
 ms.assetid: e5958dd7-b287-4f0d-8677-75d850885262
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: MmFreeContiguousMemorySpecifyCache, MmFreeContiguousMemorySpecifyCache routine [Kernel-Mode Driver Architecture], k106_256e3525-d48d-4045-872c-2e2fd6302525.xml, kernel.mmfreecontiguousmemoryspecifycache, wdm/MmFreeContiguousMemorySpecifyCache
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>MmFreeContiguousMemorySpecifyCache</b> routine frees a buffer that was al
 
 ## Syntax
 
-````
-VOID MmFreeContiguousMemorySpecifyCache(
-  _In_ PVOID               BaseAddress,
-  _In_ SIZE_T              NumberOfBytes,
-  _In_ MEMORY_CACHING_TYPE CacheType
+```
+NTKERNELAPI VOID MmFreeContiguousMemorySpecifyCache(
+  PVOID               BaseAddress,
+  SIZE_T              NumberOfBytes,
+  MEMORY_CACHING_TYPE CacheType
 );
-````
+```
 
 ## Parameters
 
@@ -79,7 +79,7 @@ None
 
 ## Remarks
 
-The <b>MmFreeContiguousMemorySpecifyCache</b> routine frees a block of physically contiguous memory that was allocated by a previous call to the <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a> or <a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycachenode.md">MmAllocateContiguousMemorySpecifyCacheNode</a> routine. However, <a href="..\wdm\nf-wdm-mmfreecontiguousmemory.md">MmFreeContiguousMemory</a> is the preferred routine to use to free memory that was allocated by an <b>MmAllocateContiguousMemorySpecifyCache<i>Xxx</i></b> routine. <b>MmFreeContiguousMemory</b> is faster than <b>MmFreeContiguousMemorySpecifyCache</b> and requires fewer parameters.
+The <b>MmFreeContiguousMemorySpecifyCache</b> routine frees a block of physically contiguous memory that was allocated by a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554464">MmAllocateContiguousMemorySpecifyCache</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff554469">MmAllocateContiguousMemorySpecifyCacheNode</a> routine. However, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554503">MmFreeContiguousMemory</a> is the preferred routine to use to free memory that was allocated by an <b>MmAllocateContiguousMemorySpecifyCache<i>Xxx</i></b> routine. <b>MmFreeContiguousMemory</b> is faster than <b>MmFreeContiguousMemorySpecifyCache</b> and requires fewer parameters.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,12 +93,12 @@ The <b>MmFreeContiguousMemorySpecifyCache</b> routine frees a block of physicall
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-mmfreecontiguousmemory.md">MmFreeContiguousMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554464">MmAllocateContiguousMemorySpecifyCache</a>
 
 
 
-<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycache.md">MmAllocateContiguousMemorySpecifyCache</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554469">MmAllocateContiguousMemorySpecifyCacheNode</a>
 
 
 
-<a href="..\wdm\nf-wdm-mmallocatecontiguousmemoryspecifycachenode.md">MmAllocateContiguousMemorySpecifyCacheNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554503">MmFreeContiguousMemory</a>

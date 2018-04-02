@@ -7,7 +7,7 @@ old-location: kernel\rtluint8toint8.htm
 old-project: kernel
 ms.assetid: 92666A78-DC2C-4B0B-B5D3-E724F342D151
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUInt8ToInt8, RtlUInt8ToInt8 function [Kernel-Mode Driver Architecture], kernel.rtluint8toint8, ntintsafe/RtlUInt8ToInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>UINT8</b> to a value of type <b>INT8</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlUInt8ToInt8(
-  _In_  UINT8 u8Operand,
-  _Out_ INT8  *pi8Result
+  UINT8 u8Operand,
+  INT8  *pi8Result
 );
-````
+```
 
 ## Parameters
 

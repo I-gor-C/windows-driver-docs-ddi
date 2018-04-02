@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Init method
+# CWiauFormatConverter::Init method
 The <b>CWiauFormatConverter::Init</b> method initializes the <b>CWiauFormatConverter</b> class and GDI+ for converting images. This method should be called only once.
 
 ## Syntax
 
-````
-HRESULT Init();
-````
+```
+HRESULT Init(
+
+);
+```
 
 ## Parameters
 

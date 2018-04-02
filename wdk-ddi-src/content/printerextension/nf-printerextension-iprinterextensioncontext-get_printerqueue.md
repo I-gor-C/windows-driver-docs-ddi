@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_PrinterQueue method
+# IPrinterExtensionContext::get_PrinterQueue method
 Gets the queue for the printer.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_PrinterQueue(
-  [out, retval] IPrinterQueue **ppQueue
+  IPrinterQueue **ppQueue
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406649">IPrinterExtensionContext</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>

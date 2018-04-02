@@ -7,7 +7,7 @@ old-location: kernel\pep_acpi_initialize_extended_io_resource.htm
 old-project: kernel
 ms.assetid: 95464DE1-221A-4053-B124-4CFD44557CD3
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE, PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE function [Kernel-Mode Driver Architecture], kernel.pep_acpi_initialize_extended_io_resource, pepfx/PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,35 +45,35 @@ req.typenames: PEP_WORK_TYPE, *PPEP_WORK_TYPE
 
 
 # PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE function
-The <b>PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="..\pepfx\ns-pepfx-_pep_acpi_extended_address.md">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
+The <b>PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE</b> function initializes a platform extension plug-in's (PEP) <a href="https://msdn.microsoft.com/library/windows/hardware/mt186670">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE VOID PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE(
-  _In_  BOOLEAN            ResourceUsage,
-  _In_  UCHAR              Decode,
-  _In_  BOOLEAN            IsMinFixed,
-  _In_  BOOLEAN            IsMaxFixed,
-  _In_  UCHAR              ISARanges,
-  _In_  ULONGLONG          AddressGranularity,
-  _In_  ULONGLONG          AddressMinimum,
-  _In_  ULONGLONG          AddressMaximum,
-  _In_  ULONGLONG          AddressTranslation,
-  _In_  ULONGLONG          RangeLength,
-  _In_  ULONGLONG          TypeSpecificAttributes,
-  _In_  PUNICODE_STRING    DescriptorName,
-  _In_  BOOLEAN            TranslationTypeNonStatic,
-  _In_  BOOLEAN            TanslationSparseDensity,
-  _Out_ PPEP_ACPI_RESOURCE Resource
+```
+void PEP_ACPI_INITIALIZE_EXTENDED_IO_RESOURCE(
+  BOOLEAN            ResourceUsage,
+  UCHAR              Decode,
+  BOOLEAN            IsMinFixed,
+  BOOLEAN            IsMaxFixed,
+  UCHAR              ISARanges,
+  ULONGLONG          AddressGranularity,
+  ULONGLONG          AddressMinimum,
+  ULONGLONG          AddressMaximum,
+  ULONGLONG          AddressTranslation,
+  ULONGLONG          RangeLength,
+  ULONGLONG          TypeSpecificAttributes,
+  PUNICODE_STRING    DescriptorName,
+  BOOLEAN            TranslationTypeNonStatic,
+  BOOLEAN            TanslationSparseDensity,
+  PPEP_ACPI_RESOURCE Resource
 );
-````
+```
 
 ## Parameters
 
 `ResourceUsage`
 
-This parameter is copied into the <b>GeneralFlags</b> member of the initialized <a href="..\pepfx\ns-pepfx-_pep_acpi_extended_address.md">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
+This parameter is copied into the <b>GeneralFlags</b> member of the initialized <a href="https://msdn.microsoft.com/library/windows/hardware/mt186670">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
 
 `Decode`
 
@@ -91,7 +91,7 @@ When set, indicates that the maximum address is fixed.
 
 `ISARanges`
 
-This parameter is copied into the <b>TypeSpecificFlags</b> member of the initialized <a href="..\pepfx\ns-pepfx-_pep_acpi_extended_address.md">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
+This parameter is copied into the <b>TypeSpecificFlags</b> member of the initialized <a href="https://msdn.microsoft.com/library/windows/hardware/mt186670">PEP_ACPI_EXTENDED_ADDRESS</a> structure.
 
 `AddressGranularity`
 
@@ -132,7 +132,7 @@ When false, indicates that this is a dense translation. Otherwise, it is sparse.
 
 `Resource`
 
-This is cast to *<a href="..\pepfx\ns-pepfx-_pep_acpi_extended_address.md">PEP_ACPI_EXTENDED_ADDRESS</a>.
+This is cast to *<a href="https://msdn.microsoft.com/library/windows/hardware/mt186670">PEP_ACPI_EXTENDED_ADDRESS</a>.
 
 
 ## Return Value
@@ -149,4 +149,4 @@ This function does not return a value.
 
 ## See Also
 
-<a href="..\pepfx\ns-pepfx-_pep_acpi_extended_address.md">PEP_ACPI_EXTENDED_ADDRESS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt186670">PEP_ACPI_EXTENDED_ADDRESS</a>

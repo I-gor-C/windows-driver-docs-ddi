@@ -7,7 +7,7 @@ old-location: storage\stor_log_event_details.htm
 old-project: storage
 ms.assetid: 2370e730-6c35-45e6-a370-62adc10df53b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTOR_LOG_EVENT_DETAILS, PSTOR_LOG_EVENT_DETAILS, PSTOR_LOG_EVENT_DETAILS structure pointer [Storage Devices], STOR_LOG_EVENT_DETAILS, STOR_LOG_EVENT_DETAILS structure [Storage Devices], _STOR_LOG_EVENT_DETAILS, storage.stor_log_event_details, storport/PSTOR_LOG_EVENT_DETAILS, storport/STOR_LOG_EVENT_DETAILS, structs-storport_ba65fe62-1b9a-4234-b9a4-b145bf549699.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,24 +48,24 @@ req.product: Windows 10 or later.
 The <b>STOR_LOG_EVENT_DETAILS</b> structure provides details pertaining to Storport-specific error log events and system  log events.
 
 ## Syntax
-````
+```
 typedef struct _STOR_LOG_EVENT_DETAILS {
-  ULONG                       InterfaceRevision;
-  ULONG                       Size;
-  ULONG                       Flags;
+  ULONG                       InterfaceRevision;
+  ULONG                       Size;
+  ULONG                       Flags;
   STOR_EVENT_ASSOCIATION_ENUM EventAssociation;
-  ULONG                       PathId;
-  ULONG                       TargetId;
-  ULONG                       LunId;
-  BOOLEAN                     StorportSpecificErrorCode;
-  ULONG                       ErrorCode;
-  ULONG                       UniqueId;
-  ULONG                       DumpDataSize;
-  PVOID                       DumpData;
-  ULONG                       StringCount;
-  PWSTR                       *StringList;
+  ULONG                       PathId;
+  ULONG                       TargetId;
+  ULONG                       LunId;
+  BOOLEAN                     StorportSpecificErrorCode;
+  ULONG                       ErrorCode;
+  ULONG                       UniqueId;
+  ULONG                       DumpDataSize;
+  PVOID                       DumpData;
+  ULONG                       StringCount;
+  PWSTR                       *StringList;
 } STOR_LOG_EVENT_DETAILS, *PSTOR_LOG_EVENT_DETAILS;
-````
+```
 
 ## Members
 
@@ -76,7 +76,7 @@ The revision number of this interface. Set to STOR_CURRENT_LOG_INTERFACE_REVISIO
 
 `Size`
 
-The size of this structure. Set before calling <a href="..\storport\nf-storport-storportlogsystemevent.md">StorPortLogSystemEvent</a>.
+The size of this structure. Set before calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff567428">StorPortLogSystemEvent</a>.
 
 `Flags`
 
@@ -127,7 +127,7 @@ The count of null-terminated Unicode strings contained in the StringList member.
 The list of null-terminated Unicode strings to be appended to the log entry for use in string substitution. These strings are substituted for the place holders "%2" through "%n" in the log message text when the log entry is being displayed. This list consists of an array of pointers to the null-terminated Unicode strings. StringCount contains the count of string pointers in this array, so no list termination entry is needed. If no strings are to be written, StringCount should be set to 0, and this field is ignored.
 
 ## Remarks
-Although <a href="..\storport\nf-storport-storportlogerror.md">StorPortLogError</a> uses <b>PathId</b>, <b>TargetId</b>, and <b>LunId</b> values that are 8bits wide, for <a href="..\storport\nf-storport-storportlogsystemevent.md">StorPortLogSystemEvent</a> they are 32bits wide. The combined size of the miniport driver's dump data and string areas cannot exceed 150 bytes. This restriction is due to the &lt; 255 byte limit that the kernel enforces on the event log entries.
+Although <a href="https://msdn.microsoft.com/library/windows/hardware/ff567426">StorPortLogError</a> uses <b>PathId</b>, <b>TargetId</b>, and <b>LunId</b> values that are 8bits wide, for <a href="https://msdn.microsoft.com/library/windows/hardware/ff567428">StorPortLogSystemEvent</a> they are 32bits wide. The combined size of the miniport driver's dump data and string areas cannot exceed 150 bytes. This restriction is due to the &lt; 255 byte limit that the kernel enforces on the event log entries.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -136,8 +136,8 @@ Although <a href="..\storport\nf-storport-storportlogerror.md">StorPortLogError<
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportlogsystemevent.md">StorPortLogSystemEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567582">STOR_EVENT_ASSOCIATION_ENUM</a>
 
 
 
-<a href="..\storport\ne-storport-_stor_event_association_enum.md">STOR_EVENT_ASSOCIATION_ENUM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567428">StorPortLogSystemEvent</a>

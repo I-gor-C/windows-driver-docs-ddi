@@ -7,7 +7,7 @@ old-location: display\dxgk_generic_descriptor.htm
 old-project: display
 ms.assetid: 181df1a6-044d-406d-bc6d-1b35b3d744fc
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PDXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR structure [Display Devices], DmStructs_f77c03e6-d887-43ba-9499-ce1740cb6c9e.xml, PDXGK_GENERIC_DESCRIPTOR, PDXGK_GENERIC_DESCRIPTOR structure pointer [Display Devices], _DXGK_GENERIC_DESCRIPTOR, display.dxgk_generic_descriptor, dispmprt/DXGK_GENERIC_DESCRIPTOR, dispmprt/PDXGK_GENERIC_DESCRIPTOR"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: DXGK_GENERIC_DESCRIPTOR, *PDXGK_GENERIC_DESCRIPTOR
 The DXGK_GENERIC_DESCRIPTOR structure contains descriptive information about a child device of the display adapter.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_GENERIC_DESCRIPTOR {
   WCHAR HardwareId[DXGK_MAX_REG_SZ_LEN];
   WCHAR InstanceId[DXGK_MAX_REG_SZ_LEN];
   WCHAR CompatibleId[DXGK_MAX_REG_SZ_LEN];
   WCHAR DeviceText[DXGK_MAX_REG_SZ_LEN];
-} DXGK_GENERIC_DESCRIPTOR, *PDXGK_GENERIC_DESCRIPTOR;
-````
+} *PDXGK_GENERIC_DESCRIPTOR, DXGK_GENERIC_DESCRIPTOR;
+```
 
 ## Members
 
@@ -76,7 +76,7 @@ A sequence of wide-character strings, each of which is terminated by a single wi
 A single wide-character string, terminated by two wide NULL characters, that holds the device text of the child device.
 
 ## Remarks
-The display adapter has two types of child devices: <b>TypeVideoOutput</b> and <b>TypeOther</b>. For child devices of type <b>TypeOther</b>, the display port driver passes a DXGK_GENERIC_DESCRIPTOR structure to the display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_query_device_descriptor.md">DxgkDdiQueryDeviceDescriptor</a> function. <i>DxgkDdiQueryDeviceDescriptor</i> must fill in the members of the structure.
+The display adapter has two types of child devices: <b>TypeVideoOutput</b> and <b>TypeOther</b>. For child devices of type <b>TypeOther</b>, the display port driver passes a DXGK_GENERIC_DESCRIPTOR structure to the display miniport driver's <a href="https://msdn.microsoft.com/0dfcc012-9fff-40b6-b71f-da2ca229896c">DxgkDdiQueryDeviceDescriptor</a> function. <i>DxgkDdiQueryDeviceDescriptor</i> must fill in the members of the structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,4 +86,4 @@ The display adapter has two types of child devices: <b>TypeVideoOutput</b> and <
 
 ## See Also
 
-<a href="..\dispmprt\ns-dispmprt-_dxgk_device_descriptor.md">DXGK_DEVICE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561050">DXGK_DEVICE_DESCRIPTOR</a>

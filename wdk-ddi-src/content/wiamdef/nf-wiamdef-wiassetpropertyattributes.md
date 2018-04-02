@@ -50,15 +50,15 @@ The <b>wiasSetPropertyAttributes </b>function sets the access flags and valid va
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasSetPropertyAttributes(
-  _In_  BYTE        *pWiasContext,
-        LONG        cPropSpec,
-  _In_  PROPSPEC    *pPropSpec,
-  _In_  ULONG       *pulAccessFlags,
-  _Out_ PROPVARIANT *pPropVar
+```
+HRESULT wiasSetPropertyAttributes(
+  BYTE        *pWiasContext,
+  LONG        cPropSpec,
+  PROPSPEC    *pPropSpec,
+  ULONG       *pulAccessFlags,
+  PROPVARIANT *pPropVar
 );
-````
+```
 
 ## Parameters
 
@@ -89,7 +89,7 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## Remarks
 
-Minidrivers should use the function <a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a> to initialize groups of simple properties.
+Minidrivers should use the function <a href="https://msdn.microsoft.com/library/windows/hardware/ff549358">wiasSetItemPropAttribs</a> to initialize groups of simple properties.
 
 The minidriver can set the WIA_PROP_CACHEABLE flag on a property that does not change over time. By setting this flag on a property, the minidriver indicates that the WIA service can cache the property value. See the Windows SDK documentation for a list of all property attributes.
 
@@ -106,4 +106,4 @@ The PROPSPEC and PROPVARIANT structures are defined in the Windows SDK documenta
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549358">wiasSetItemPropAttribs</a>

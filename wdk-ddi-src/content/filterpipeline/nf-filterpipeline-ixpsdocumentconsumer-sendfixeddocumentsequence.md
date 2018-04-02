@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SendFixedDocumentSequence method
+# IXpsDocumentConsumer::SendFixedDocumentSequence method
 The <b>SendFixedDocumentSequence</b> method sends a fixed document sequence to the pipeline.
 
 ## Syntax
 
-````
+```
 HRESULT SendFixedDocumentSequence(
-  [in] IFixedDocumentSequence *pIFixedDocumentSequence
+  IFixedDocumentSequence *pIFixedDocumentSequence
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A pointer to an XPS fixed document sequence object.
 
 ## Remarks
 
-Only one <a href="..\filterpipeline\nn-filterpipeline-ifixeddocumentsequence.md">IFixedDocumentSequence</a> interface can be sent. The <code>SendFixedDocumentSequence</code> method will fail if a filter submits more than one such interface for the same print job.
+Only one <a href="https://msdn.microsoft.com/library/windows/hardware/ff550972">IFixedDocumentSequence</a> interface can be sent. The <code>SendFixedDocumentSequence</code> method will fail if a filter submits more than one such interface for the same print job.
 
 ## Requirements
 | &nbsp; | &nbsp; |

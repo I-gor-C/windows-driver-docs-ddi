@@ -50,11 +50,11 @@ For internal use only.
 
 ## Syntax
 
-````
-FORCEINLINE VOID WDF_COMPANION_EVENT_CALLBACKS_INIT(
-  _Out_ PWDF_COMPANION_EVENT_CALLBACKS Callbacks
+```
+void WDF_COMPANION_EVENT_CALLBACKS_INIT(
+  PWDF_COMPANION_EVENT_CALLBACKS Callbacks
 );
-````
+```
 
 ## Parameters
 

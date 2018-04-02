@@ -2,13 +2,13 @@
 UID: NI:ntddser.IOCTL_SERIAL_GET_TIMEOUTS
 title: IOCTL_SERIAL_GET_TIMEOUTS
 author: windows-driver-content
-description: The IOCTL_SERIAL_GET_TIMEOUTS request returns the current setting of the time-out value that the system-supplied bus driver for parallel ports uses with write requests.
-old-location: parports\ioctl_serial_get_timeouts.htm
-old-project: parports
-ms.assetid: 8db92af3-d970-4740-8d49-46019b3ea016
+description: The IOCTL_SERIAL_GET_TIMEOUTS request returns the time-out values that the serial controller driver uses with read and write requests.
+old-location: serports\ioctl_serial_get_timeouts.htm
+old-project: serports
+ms.assetid: b3cff263-6393-4217-a86a-43f9a0bff926
 ms.author: windowsdriverdev
 ms.date: 2/15/2018
-ms.keywords: IOCTL_SERIAL_GET_TIMEOUTS, IOCTL_SERIAL_GET_TIMEOUTS control code [Parallel Ports], cisspd_15ce20eb-36f6-4df2-9ae5-e58b10daeae1.xml, ntddser/IOCTL_SERIAL_GET_TIMEOUTS, parports.ioctl_serial_get_timeouts
+ms.keywords: IOCTL_SERIAL_GET_TIMEOUTS, IOCTL_SERIAL_GET_TIMEOUTS control code [Serial Ports], ntddser/IOCTL_SERIAL_GET_TIMEOUTS, serports.ioctl_serial_get_timeouts, serref_7e3bc962-fbe3-4474-bf7b-1fc035a39a29.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: ioctl
@@ -35,7 +35,7 @@ topic_type:
 api_type:
 -	HeaderDef
 api_location:
--	ntddser.h
+-	Ntddser.h
 api_name:
 -	IOCTL_SERIAL_GET_TIMEOUTS
 product: Windows
@@ -44,9 +44,11 @@ req.typenames: SD_REQUEST_FUNCTION
 ---
 
 # IOCTL_SERIAL_GET_TIMEOUTS IOCTL
-The IOCTL_SERIAL_GET_TIMEOUTS request returns the current setting of the time-out value that the system-supplied bus driver for parallel ports uses with write requests. The parallel port bus driver does not queue a get time-outs request. The write time-out value is used with SPP and SW_ECP modes. 
+The <b>IOCTL_SERIAL_GET_TIMEOUTS</b> request returns the time-out values that the serial controller driver uses with read and write requests.
 
-A client uses an <a href="..\ntddser\ni-ntddser-ioctl_serial_set_timeouts.md">IOCTL_SERIAL_SET_TIMEOUTS</a> request to set time-out values.
+To set time-outs, a client can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff544126">IOCTL_SERIAL_SET_TIMEOUTS</a> request. 
+
+For more information about time-outs, see <a href="https://msdn.microsoft.com/ed5b80a9-93cb-4e3f-9038-e715be35f206">Setting Read and Write Time-Outs for a Serial Device</a>.
 
 ### Major Code
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
@@ -58,10 +60,10 @@ None.
 None.
 
 ### Output Buffer
-The <b>AssociatedIrp.SystemBuffer</b> points to a SERIAL_TIMEOUTS structure that the client allocates to output time-out information. The parallel port bus driver sets the <b>WriteTotalTimeoutConstant</b> member to the time-out value in milliseconds.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a client-allocated <b>SERIAL_TIMEOUTS</b> structure that the serial controller driver uses to output information about read and write time-out values.
 
 ### Output Buffer Length
-The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a SERIAL_TIMEOUTS structure.
+The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439614">SERIAL_TIMEOUTS</a> structure.
 
 ### Input / Output Buffer
 <text></text>
@@ -70,9 +72,9 @@ The <b>Parameters.DeviceIoControl.OutputBufferLength</b> member is set to the si
 <text></text>
 
 ### Status Block
-If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a SERIAL_TIMEOUTS structure. Otherwise, the <b>Information</b> member is set to zero. 
+If the request is successful, the <b>Information</b> member is set to the size, in bytes, of a <a href="https://msdn.microsoft.com/library/windows/hardware/hh439614">SERIAL_TIMEOUTS</a> structure. Otherwise, the <b>Information</b> member is set to zero.
 
-The <b>Status</b> member is set to one of the generic status values returned by device control requests for parallel devices or to  the following value:
+The <b>Status</b> member is set to one of the <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/serports/serial-device-control-requests2">Generic Status Values for Serial Device Control Requests</a>.
 
 
 ## Requirements
@@ -82,4 +84,8 @@ The <b>Status</b> member is set to one of the generic status values returned by 
 
 ## See Also
 
-<a href="..\ntddser\ni-ntddser-ioctl_serial_set_timeouts.md">IOCTL_SERIAL_SET_TIMEOUTS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544126">IOCTL_SERIAL_SET_TIMEOUTS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439614">SERIAL_TIMEOUTS</a>

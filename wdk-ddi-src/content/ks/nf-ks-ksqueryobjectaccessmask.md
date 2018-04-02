@@ -50,11 +50,11 @@ The <b>KsQueryObjectAccessMask</b> function returns the access originally grante
 
 ## Syntax
 
-````
-ACCESS_MASK KsQueryObjectAccessMask(
-  _In_ KSOBJECT_HEADER Header
+```
+KSDDKAPI ACCESS_MASK KsQueryObjectAccessMask(
+  KSOBJECT_HEADER Header
 );
-````
+```
 
 ## Parameters
 
@@ -77,4 +77,4 @@ The <b>KsQueryObjectAccessMask</b> function returns an access mask.
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksallocateobjectheader.md">KsAllocateObjectHeader</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560972">KsAllocateObjectHeader</a>

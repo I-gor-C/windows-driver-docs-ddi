@@ -47,12 +47,12 @@ req.typenames: LPIT, *PLPIT
 Defines an LPI ACPI table.
 
 ## Syntax
-````
+```
 typedef struct _LPIT {
-  DESCRIPTION_HEADER   Header;
+  DESCRIPTION_HEADER   Header;
   LPI_STATE_DESCRIPTOR LpiStates[ANYSIZE_ARRAY];
 } LPIT, *PLPIT;
-````
+```
 
 ## Members
 

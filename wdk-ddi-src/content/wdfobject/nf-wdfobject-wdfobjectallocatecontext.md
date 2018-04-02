@@ -55,13 +55,13 @@ The <b>WdfObjectAllocateContext</b> method allocates context space for a specifi
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfObjectAllocateContext(
-  _In_  WDFOBJECT              Handle,
-  _In_  PWDF_OBJECT_ATTRIBUTES ContextAttributes,
-  _Out_ PVOID                  *Context
+  WDFOBJECT              Handle,
+  PWDF_OBJECT_ATTRIBUTES ContextAttributes,
+  PVOID                  *Context
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ A handle to a framework object.
 
 `ContextAttributes`
 
-A pointer to a caller-supplied <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that describes the context space.
+A pointer to a caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure that describes the context space.
 
 `Context`
 
@@ -151,13 +151,13 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## Remarks
 
-Typically, drivers create object context space by specifying a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure when they call a framework object's creation method, such as <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>. 
+Typically, drivers create object context space by specifying a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure when they call a framework object's creation method, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>. 
 
 If you want your driver to allocate more than one type of context space to some of its objects, the driver can call <b>WdfObjectAllocateContext</b> one or more times after it has called an object's creation method. Each call to <b>WdfObjectAllocateContext</b> must specify a different context type. (The <b>ContextTypeInfo</b> member of the WDF_OBJECT_ATTRIBUTES structure identifies the context type.) 
 
-If your driver calls <b>WdfObjectAllocateContext</b> more than once for a given object, you can provide separate <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_cleanup.md">EvtCleanupCallback</a> and <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_destroy.md">EvtDestroyCallback</a> callback functions for each context.
+If your driver calls <b>WdfObjectAllocateContext</b> more than once for a given object, you can provide separate <a href="https://msdn.microsoft.com/aba2efca-7d1f-4594-af65-13356f0e3f8b">EvtCleanupCallback</a> and <a href="https://msdn.microsoft.com/4c3b08d2-bb25-40bd-b2fc-1b9ea2d452b3">EvtDestroyCallback</a> callback functions for each context.
 
-When calling <b>WdfObjectAllocateContext</b>, do not specify a <b>ParentObject</b> in the <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.
+When calling <b>WdfObjectAllocateContext</b>, do not specify a <b>ParentObject</b> in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure.
 
 When the framework allocates context space for an object, it also zero-initializes the context space.
 
@@ -208,7 +208,7 @@ status = WdfObjectAllocateContext(
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a>
 
 
 
@@ -216,4 +216,4 @@ status = WdfObjectAllocateContext(
 
 
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>

@@ -47,12 +47,14 @@ req.typenames: KSEVENT_DEVICE
 Specifies event notifications that the driver generates to indicate that a device has been lost or preempted.
 
 ## Syntax
-````
-typedef enum  { 
-  KSEVENT_DEVICE_LOST       = 0,
-  KSEVENT_DEVICE_PREEMPTED  = 1
-} KSEVENT_DEVICE;
-````
+```
+typedef enum KSEVENT_DEVICE {
+  KSEVENT_DEVICE_LOST          ,
+  KSEVENT_DEVICE_PREEMPTED     ,
+  KSEVENT_DEVICE_THERMAL_HIGH  ,
+  KSEVENT_DEVICE_THERMAL_LOW
+} ;
+```
 
 ## Constants
 

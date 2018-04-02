@@ -53,18 +53,18 @@ The <b>WdfUsbTargetDeviceRetrieveCurrentFrameNumber</b> method retrieves the cur
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfUsbTargetDeviceRetrieveCurrentFrameNumber(
-  _In_  WDFUSBDEVICE UsbDevice,
-  _Out_ PULONG       CurrentFrameNumber
+  WDFUSBDEVICE UsbDevice,
+  PULONG       CurrentFrameNumber
 );
-````
+```
 
 ## Parameters
 
 `UsbDevice`
 
-A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.
+A handle to a USB device object that was obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 `CurrentFrameNumber`
 
@@ -149,4 +149,4 @@ status = WdfUsbTargetDeviceRetrieveCurrentFrameNumber(
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>

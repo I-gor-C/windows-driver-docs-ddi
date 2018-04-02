@@ -7,7 +7,7 @@ old-location: netvista\fwpmcalloutadd0.htm
 old-project: netvista
 ms.assetid: f88a31c4-f42c-487d-b6d8-f8f609f2faff
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpmCalloutAdd0, FwpmCalloutAdd0 function [Network Drivers Starting with Windows Vista], fwpmk/FwpmCalloutAdd0, netvista.fwpmcalloutadd0, wfp_ref_2_funct_2_fwpm_b1548682-4f29-467f-916d-fa434260b0ae.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,21 +52,21 @@ The
 
 ## Syntax
 
-````
-NTSTATUS NTAPI FwpmCalloutAdd0(
-  _In_            HANDLE               engineHandle,
-  _In_      const FWPM_CALLOUT0        *callout,
-  _In_opt_        PSECURITY_DESCRIPTOR sd,
-  _Out_opt_       UINT32               *id
+```
+NTSTATUS FwpmCalloutAdd0(
+  HANDLE               engineHandle,
+  const FWPM_CALLOUT0  *callout,
+  PSECURITY_DESCRIPTOR sd,
+  UINT32               *id
 );
-````
+```
 
 ## Parameters
 
 `engineHandle`
 
 A handle for an open session to the filter engine. A callout driver calls the 
-     <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a> function to open a
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550075">FwpmEngineOpen0</a> function to open a
      session to the filter engine.
 
 `callout`
@@ -77,7 +77,7 @@ A pointer to a constant
 
 `sd`
 
-A pointer to a constant <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor for
+A pointer to a constant <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor for
      the callout that is being added to the filter engine. This parameter is optional and can be <b>NULL</b>.
 
 `id`
@@ -86,7 +86,7 @@ A pointer to a UINT32-typed variable that receives a run-time identifier that id
      callout in the filter engine. This is the same identifier that is returned when a callout driver
      registers the callout driver's callout functions with the filter engine. The callout driver passes this
      identifier to the 
-     <a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebyid0.md">FwpmCalloutDeleteById0</a> function
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550069">FwpmCalloutDeleteById0</a> function
      when removing the callout from the filter engine. This parameter is optional and can be <b>NULL</b>.
 
 
@@ -168,16 +168,16 @@ A callout and filters that specify the callout for the filter's action can be ad
 
 
 
-<a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebykey0.md">FwpmCalloutDeleteByKey0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550069">FwpmCalloutDeleteById0</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550071">FwpmCalloutDeleteByKey0</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550075">FwpmEngineOpen0</a>
 
 
 
 <a href="https://msdn.microsoft.com/d9539403-7657-4e95-8791-309673d1207d">Types of Callouts</a>
-
-
-
-<a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>
-
-
-
-<a href="..\fwpmk\nf-fwpmk-fwpmcalloutdeletebyid0.md">FwpmCalloutDeleteById0</a>

@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# DumpItemData method
+# IWiaDrvItem::DumpItemData method
 The <b>IWiaDrvItem::DumpItemData</b> method dumps private data associated with an <b>IWiaDrvItem</b> item into an allocated private buffer.
 
 ## Syntax
 
-````
+```
 HRESULT DumpItemData(
-  [out, optional] BSTR *bstrDrvItemData
+  BSTR *__MIDL__IWiaDrvItem0015
 );
-````
+```
 
 ## Parameters
 

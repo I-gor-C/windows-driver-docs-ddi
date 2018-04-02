@@ -50,13 +50,13 @@ The <b>HidP_GetLinkCollectionNodes</b> routine returns a <a href="https://msdn.m
 
 ## Syntax
 
-````
-NTSTATUS __stdcall HidP_GetLinkCollectionNodes(
-  _Out_   PHIDP_LINK_COLLECTION_NODE LinkCollectionNodes,
-  _Inout_ PULONG                     LinkCollectionNodesLength,
-  _In_    PHIDP_PREPARSED_DATA       PreparsedData
+```
+NTSTATUS HidP_GetLinkCollectionNodes(
+  PHIDP_LINK_COLLECTION_NODE LinkCollectionNodes,
+  PULONG                     LinkCollectionNodesLength,
+  PHIDP_PREPARSED_DATA       PreparsedData
 );
-````
+```
 
 ## Parameters
 
@@ -108,7 +108,7 @@ The <i>LinkCollectionNodes</i> buffer is too small to hold the entire link colle
 
 ## Remarks
 
-The required length of the <i>LinkCollectionNodes</i> buffer is specified by the <b>NumberLinkCollectionNodes</b> member of a collection's <a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a> structure.
+The required length of the <i>LinkCollectionNodes</i> buffer is specified by the <b>NumberLinkCollectionNodes</b> member of a collection's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a> structure.
 
 If <b>HidP_GetLinkCollectionNodes</b> returns the status value HIDP_STATUS_BUFFER_TOO_SMALL, it also sets <i>LinkCollectionNodesLength</i> to the length, in array elements, required to hold the link collection nodes information.
 
@@ -125,16 +125,16 @@ For more information, see <a href="https://msdn.microsoft.com/2d3efb38-4eba-43db
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539697">HIDP_CAPS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539764">HIDP_LINK_COLLECTION_NODE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539715">HidP_GetCaps</a>
+
+
+
 <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff539679">_HIDP_PREPARSED_DATA</a>
-
-
-
-<a href="..\hidpi\ns-hidpi-_hidp_link_collection_node.md">HIDP_LINK_COLLECTION_NODE</a>
-
-
-
-<a href="..\hidpi\nf-hidpi-hidp_getcaps.md">HidP_GetCaps</a>
-
-
-
-<a href="..\hidpi\ns-hidpi-_hidp_caps.md">HIDP_CAPS</a>

@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# ConvertDevModeToPrintTicket method
+# IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket method
 The <code>IPrintOemPrintTicketProvider::ConvertDevModeToPrintTicket</code> method converts a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure into a print ticket.
 
 ## Syntax

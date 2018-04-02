@@ -47,7 +47,7 @@ req.typenames: IRB_REQ_GET_CONFIG_ROM
 This structure contains the fields necessary for the bus driver to carry out a GetConfigRom request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_GET_CONFIG_ROM {
   ULONG GenerationCount;
   PCROM ConfigRom;
@@ -56,7 +56,7 @@ typedef struct _IRB_REQ_GET_CONFIG_ROM {
   ULONG VendorLeafIndex;
   ULONG ModelLeafIndex;
 } IRB_REQ_GET_CONFIG_ROM;
-````
+```
 
 ## Members
 

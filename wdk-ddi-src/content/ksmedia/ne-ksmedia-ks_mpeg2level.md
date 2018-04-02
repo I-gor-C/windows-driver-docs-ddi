@@ -47,14 +47,14 @@ req.typenames: KS_MPEG2Level
 The KS_MPEG2Level enumeration describes MPEG-2 levels.
 
 ## Syntax
-````
-typedef enum  { 
-  KS_MPEG2Level_Low       = 0,
-  KS_MPEG2Level_Main      = 1,
-  KS_MPEG2Level_High1440  = 2,
-  KS_MPEG2Level_High      = 3
-} KS_MPEG2Level;
-````
+```
+typedef enum KS_MPEG2Level {
+  KS_MPEG2Level_Low       ,
+  KS_MPEG2Level_Main      ,
+  KS_MPEG2Level_High1440  ,
+  KS_MPEG2Level_High
+} ;
+```
 
 ## Constants
 
@@ -89,4 +89,4 @@ typedef enum  {
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_mpegvideoinfo2.md">KS_MPEGVIDEOINFO2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567667">KS_MPEGVIDEOINFO2</a>

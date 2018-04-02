@@ -7,7 +7,7 @@ old-location: display\dxgk_querypagetableleveldescin.htm
 old-project: display
 ms.assetid: 1B13BBB1-4184-4166-A61F-CC266D0391BF
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_QUERYPAGETABLELEVELDESCIN, DXGK_QUERYPAGETABLELEVELDESCIN structure [Display Devices], _DXGK_QUERYPAGETABLELEVELDESCIN, d3dkmddi/DXGK_QUERYPAGETABLELEVELDESCIN, display.dxgk_querypagetableleveldescin
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: DXGK_QUERYPAGETABLELEVELDESCIN
 The <b>DXGK_QUERYPAGETABLELEVELDESCIN</b> structure is used to request page level descriptors from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560940">Dxgkrnl Interface</a>.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_QUERYPAGETABLELEVELDESCIN {
   WORD LevelIndex;
   WORD PhysicalAdapterIndex;
 } DXGK_QUERYPAGETABLELEVELDESCIN;
-````
+```
 
 ## Members
 
@@ -66,7 +66,7 @@ A zero-based physical adapter index (engine ordinal) for which the data is queri
 A zero-based page table level index for the information requested.
 
 ## Remarks
-To get page table level descriptors Dxgkrnl calls <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_queryadapterinfo.md">DxgkDdiQueryAdapterInfo</a> with the following parameters:
+To get page table level descriptors Dxgkrnl calls <a href="https://msdn.microsoft.com/f2f4c54c-7413-48e5-a165-d71f35642b6c">DxgkDdiQueryAdapterInfo</a> with the following parameters:
 
 <pre class="syntax" xml:space="preserve"><code>DXGKARG_QUERYADAPTERINFO::Type = DXGKQAITYPE_PAGETABLELEVELDESC;
 DXGKARG_QUERYADAPTERINFO::pInputData = DXGK_QUERYPAGETABLELEVELDESCIN 

@@ -7,7 +7,7 @@ old-location: kernel\rtlcopyunicodestring.htm
 old-project: kernel
 ms.assetid: 241801a5-4a02-46f3-a007-f571d58c7825
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlCopyUnicodeString, RtlCopyUnicodeString routine [Kernel-Mode Driver Architecture], k109_5d0b341c-a440-4137-bdc3-77e0da0db58c.xml, kernel.rtlcopyunicodestring, wdm/RtlCopyUnicodeString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,18 +51,18 @@ The <b>RtlCopyUnicodeString</b> routine copies a source string to a destination 
 
 ## Syntax
 
-````
-VOID RtlCopyUnicodeString(
-  _Inout_  PUNICODE_STRING  DestinationString,
-  _In_opt_ PCUNICODE_STRING SourceString
+```
+NTSYSAPI VOID RtlCopyUnicodeString(
+  PUNICODE_STRING  DestinationString,
+  PCUNICODE_STRING SourceString
 );
-````
+```
 
 ## Parameters
 
 `DestinationString`
 
-A pointer to the destination string buffer. This parameter points to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure.
+A pointer to the destination string buffer. This parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure.
 
 `SourceString`
 
@@ -97,8 +97,8 @@ The <i>DestinationString</i> and <i>SourceString</i> buffers must be resident if
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlcopystring.md">RtlCopyString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561814">RtlCopyString</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

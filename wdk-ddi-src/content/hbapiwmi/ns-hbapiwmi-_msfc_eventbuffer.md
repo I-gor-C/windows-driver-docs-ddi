@@ -7,7 +7,7 @@ old-location: storage\msfc_eventbuffer.htm
 old-project: storage
 ms.assetid: 7d41c092-251e-4f93-b5be-ff989b37196b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PMSFC_EventBuffer, MSFC_EventBuffer, MSFC_EventBuffer structure [Storage Devices], PMSFC_EventBuffer, PMSFC_EventBuffer structure pointer [Storage Devices], _MSFC_EventBuffer, hbapiwmi/MSFC_EventBuffer, hbapiwmi/PMSFC_EventBuffer, storage.msfc_eventbuffer, structs-Fibre_d89430e7-c05b-4314-946e-fd8e70d938ac.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: MSFC_EventBuffer, *PMSFC_EventBuffer
 The MSFC_EventBuffer structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553935">GetEventBuffer</a> method to retrieve the next events in the HBA's event queue.
 
 ## Syntax
-````
+```
 typedef struct _MSFC_EventBuffer {
   ULONG EventType;
   ULONG EventInfo[4];
-} MSFC_EventBuffer, *PMSFC_EventBuffer;
-````
+} *PMSFC_EventBuffer, MSFC_EventBuffer;
+```
 
 ## Members
 
@@ -63,12 +63,12 @@ Indicates the type of the event. The values that can be assigned to this member 
 
 `EventInfo`
 
-Contains a structure of type <a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a> that holds information about the events that were retrieved.
+Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff556048">HBA_EventInfo</a> that holds information about the events that were retrieved.
 
 ## Remarks
 The WMI tool suite generates a declaration for this structure in <i>hbapiwm.h </i>after compiling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562483">MSFC_EventBuffer WMI Class</a>. 
 
-The <a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a> structure is declared in <i>hbaapi.h</i>. You must include <i>hbaapi.h</i> to reference this structure.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff556048">HBA_EventInfo</a> structure is declared in <i>hbaapi.h</i>. You must include <i>hbaapi.h</i> to reference this structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,8 +81,8 @@ The <a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a> structure i
 
 
 
-<a href="..\hbaapi\ns-hbaapi-hba_eventinfo.md">HBA_EventInfo</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553935">GetEventBuffer</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556048">HBA_EventInfo</a>

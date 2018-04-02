@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_BidiNotification method
+# IPrinterExtensionEventArgs::get_BidiNotification method
 Gets the text of the bidirectional communication (Bidi) notification, if applicable.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_BidiNotification(
-  [out, retval] BSTR *pbstrBidiNotification
+  BSTR *pbstrBidiNotification
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioneventargs.md">IPrinterExtensionEventArgs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973207">IPrinterExtensionEventArgs</a>

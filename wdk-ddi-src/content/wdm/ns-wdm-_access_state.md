@@ -7,7 +7,7 @@ old-location: ifsk\access_state.htm
 old-project: ifsk
 ms.assetid: 3d1d6407-f853-48d5-bd54-2eacece48b84
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: "*PACCESS_STATE, ACCESS_STATE, ACCESS_STATE structure [Installable File System Drivers], PACCESS_STATE, PACCESS_STATE structure pointer [Installable File System Drivers], _ACCESS_STATE, ifsk.access_state, securitystructures_41c08d1c-9d46-4df7-a1fe-dc274e8b3fe7.xml, wdm/ACCESS_STATE, wdm/PACCESS_STATE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,29 +50,29 @@ The ACCESS_STATE structure describes the state of an access in progress. It cont
 Drivers are not to modify the ACCESS_STATE structure directly. To create and manipulate this structure, use the support routines listed in the See Also section.
 
 ## Syntax
-````
+```
 typedef struct _ACCESS_STATE {
-  LUID                     OperationID;
-  BOOLEAN                  SecurityEvaluated;
-  BOOLEAN                  GenerateAudit;
-  BOOLEAN                  GenerateOnClose;
-  BOOLEAN                  PrivilegesAllocated;
-  ULONG                    Flags;
-  ACCESS_MASK              RemainingDesiredAccess;
-  ACCESS_MASK              PreviouslyGrantedAccess;
-  ACCESS_MASK              OriginalDesiredAccess;
+  LUID                     OperationID;
+  BOOLEAN                  SecurityEvaluated;
+  BOOLEAN                  GenerateAudit;
+  BOOLEAN                  GenerateOnClose;
+  BOOLEAN                  PrivilegesAllocated;
+  ULONG                    Flags;
+  ACCESS_MASK              RemainingDesiredAccess;
+  ACCESS_MASK              PreviouslyGrantedAccess;
+  ACCESS_MASK              OriginalDesiredAccess;
   SECURITY_SUBJECT_CONTEXT SubjectSecurityContext;
-  PSECURITY_DESCRIPTOR     SecurityDescriptor;
-  PVOID                    AuxData;
+  PSECURITY_DESCRIPTOR     SecurityDescriptor;
+  PVOID                    AuxData;
   union {
     INITIAL_PRIVILEGE_SET InitialPrivilegeSet;
-    PRIVILEGE_SET         PrivilegeSet;
-  } Privileges;
-  BOOLEAN                  AuditPrivileges;
-  UNICODE_STRING           ObjectName;
-  UNICODE_STRING           ObjectTypeName;
-} ACCESS_STATE, *PACCESS_STATE;
-````
+    PRIVILEGE_SET         PrivilegeSet;
+  } Privileges;
+  BOOLEAN                  AuditPrivileges;
+  UNICODE_STRING           ObjectName;
+  UNICODE_STRING           ObjectTypeName;
+} *PACCESS_STATE, ACCESS_STATE;
+```
 
 ## Members
 
@@ -115,11 +115,11 @@ An <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS
 
 `SubjectSecurityContext`
 
-A <a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a> structure that contains information about the subject security context that is used to validate and audit access.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a> structure that contains information about the subject security context that is used to validate and audit access.
 
 `SecurityDescriptor`
 
-A pointer to a <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> structure that contains security information for the object that this access relates to.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> structure that contains security information for the object that this access relates to.
 
 `AuxData`
 
@@ -133,13 +133,13 @@ A union that can contain one of the following structures. This union allows thre
 
 #### InitialPrivilegeSet
 
-An <a href="..\wdm\ns-wdm-_privilege_set.md">INITIAL_PRIVILEGE_SET</a> structure that specifies a set of initial privileges for the access. 
+An <a href="https://msdn.microsoft.com/5775c9e9-e647-4544-97e5-45501052b9a9">INITIAL_PRIVILEGE_SET</a> structure that specifies a set of initial privileges for the access. 
 
 
 
 #### PrivilegeSet
 
-A <a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a> structure that specifies a set of privileges for the access.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff551860">PRIVILEGE_SET</a> structure that specifies a set of privileges for the access.
 
 `AuditPrivileges`
 
@@ -147,11 +147,11 @@ A Boolean value that specifies whether a privilege usage should be audited. This
 
 `ObjectName`
 
-A <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the object name string for the access. This member is used for auditing.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains the object name string for the access. This member is used for auditing.
 
 `ObjectTypeName`
 
-A <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the object type name string for the access. This member is used for auditing.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains the object type name string for the access. This member is used for auditing.
 
 
 ## Requirements
@@ -161,52 +161,52 @@ A <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structur
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
-
-
-
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-seappendprivileges.md">SeAppendPrivileges</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-sesetaccessstategenericmapping.md">SeSetAccessStateGenericMapping</a>
-
-
-
-<a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-obopenobjectbypointer.md">ObOpenObjectByPointer</a>
-
-
-
-<a href="..\wdm\ns-wdm-_security_subject_context.md">SECURITY_SUBJECT_CONTEXT</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-seopenobjectfordeleteauditalarm.md">SeOpenObjectForDeleteAuditAlarm</a>
-
-
-
-<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-seopenobjectauditalarm.md">SeOpenObjectAuditAlarm</a>
-
-
-
-<a href="..\wdm\nf-wdm-secapturesubjectcontext.md">SeCaptureSubjectContext</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548630">IRP_MJ_CREATE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550985">ObOpenObjectByPointer</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551860">PRIVILEGE_SET</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563714">SECURITY_SUBJECT_CONTEXT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554762">SeAppendPrivileges</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554792">SeCaptureSubjectContext</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556682">SeOpenObjectAuditAlarm</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556685">SeOpenObjectForDeleteAuditAlarm</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556707">SeSetAccessStateGenericMapping</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

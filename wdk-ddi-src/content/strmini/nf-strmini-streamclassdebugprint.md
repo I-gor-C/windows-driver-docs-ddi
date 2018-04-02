@@ -51,19 +51,19 @@ In a checked build environment, the minidriver can use the <b>StreamClassDebugPr
 
 ## Syntax
 
-````
-VOID __cdecl StreamClassDebugPrint(
-  _In_ STREAM_DEBUG_LEVEL DebugPrintLevel,
-  _In_ PCCHAR             DebugMessage,
-       ...                arguments
+```
+void StreamClassDebugPrint(
+  STREAM_DEBUG_LEVEL DebugPrintLevel,
+  PCSTR              DebugMessage,
+  ...                
 );
-````
+```
 
 ## Parameters
 
 `DebugPrintLevel`
 
-Specifies an enumeration of type <a href="..\strmini\ne-strmini-stream_debug_level.md">STREAM_DEBUG_LEVEL</a>. The debugger prints messages if this parameter is less than or equal to the <i>StreamDebug</i> variable in <i>stream.sys</i> symbols.
+Specifies an enumeration of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff568302">STREAM_DEBUG_LEVEL</a>. The debugger prints messages if this parameter is less than or equal to the <i>StreamDebug</i> variable in <i>stream.sys</i> symbols.
 
 `DebugMessage`
 
@@ -91,8 +91,8 @@ For more information, see <a href="https://msdn.microsoft.com/544b922b-58e4-4cbb
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-dbgprint.md">DbgPrint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543632">DbgPrint</a>
 
 
 
-<a href="..\strmini\nf-strmini-streamclassdebugassert.md">StreamClassDebugAssert</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568233">StreamClassDebugAssert</a>

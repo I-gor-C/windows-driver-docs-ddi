@@ -7,7 +7,7 @@ old-location: display\d3dkmdt_vidpn_target_mode.htm
 old-project: display
 ms.assetid: 9a20e955-7ef1-4cb7-8081-42fb69b55fb6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMDT_VIDPN_TARGET_MODE, D3DKMDT_VIDPN_TARGET_MODE structure [Display Devices], DmStructs_a1ac1f39-cd89-458b-95b5-91fd5cbc507e.xml, _D3DKMDT_VIDPN_TARGET_MODE, d3dkmdt/D3DKMDT_VIDPN_TARGET_MODE, display.d3dkmdt_vidpn_target_mode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,28 +47,34 @@ req.typenames: D3DKMDT_VIDPN_TARGET_MODE
 The D3DKMDT_VIDPN_TARGET_MODE structure contains information about a video present network (VidPN) target mode.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMDT_VIDPN_TARGET_MODE {
   D3DKMDT_VIDEO_PRESENT_TARGET_MODE_ID Id;
-  D3DKMDT_VIDEO_SIGNAL_INFO            VideoSignalInfo;
-  D3DKMDT_MODE_PREFERENCE              Preference;
+  D3DKMDT_VIDEO_SIGNAL_INFO            VideoSignalInfo;
+  union {
+    D3DKMDT_WIRE_FORMAT_AND_PREFERENCE WireFormatAndPreference;
+    struct {
+      D3DKMDT_MODE_PREFERENCE  : 2 Preference;
+    };
+  };
+  D3DKMDT_MODE_PREFERENCE              Preference;
 } D3DKMDT_VIDPN_TARGET_MODE;
-````
+```
 
 ## Members
 
 
 `Id`
 
-An integer that identifies the target mode. The identifier is generated and filled in by the VidPN manager. However, the display miniport driver has the option of overwriting the identifier. For more information, see <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_vidpntargetmodeset_createnewmodeinfo.md">pfnCreateNewModeInfo</a>.
+An integer that identifies the target mode. The identifier is generated and filled in by the VidPN manager. However, the display miniport driver has the option of overwriting the identifier. For more information, see <a href="https://msdn.microsoft.com/ebb37681-fa03-49f5-968b-87c9ff4ebae9">pfnCreateNewModeInfo</a>.
 
 `VideoSignalInfo`
 
-A <a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_video_signal_info.md">D3DKMDT_VIDEO_SIGNAL_INFO</a> structure that contains information about the target mode (for example, video standard, resolution, refresh rate).
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546625">D3DKMDT_VIDEO_SIGNAL_INFO</a> structure that contains information about the target mode (for example, video standard, resolution, refresh rate).
 
 `Preference`
 
-A <a href="..\d3dkmdt\ne-d3dkmdt-_d3dkmdt_mode_preference.md">D3DKMDT_MODE_PREFERENCE</a> enumerator that indicates whether a particular mode is one of the modes that is preferred by the monitor that is connected to the video present target.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff546061">D3DKMDT_MODE_PREFERENCE</a> enumerator that indicates whether a particular mode is one of the modes that is preferred by the monitor that is connected to the video present target.
 
 ## Remarks
 For more information about video present targets and VidPN target modes, see <a href="https://msdn.microsoft.com/62a92f00-b1da-41c2-99af-eef8140b064e">Introduction to Video Present Networks</a> and <a href="https://msdn.microsoft.com/f1aa6277-7af6-4ba0-8ff1-d562f7029540">Enumerating Cofunctional VidPN Source and Target Modes</a>.
@@ -81,11 +87,11 @@ For more information about video present targets and VidPN target modes, see <a 
 
 ## See Also
 
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_monitor_source_mode.md">D3DKMDT_MONITOR_SOURCE_MODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546133">D3DKMDT_MONITOR_SOURCE_MODE</a>
 
 
 
-<a href="..\d3dkmdt\ns-d3dkmdt-_d3dkmdt_vidpn_source_mode.md">D3DKMDT_VIDPN_SOURCE_MODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546724">D3DKMDT_VIDPN_SOURCE_MODE</a>
 
 
 

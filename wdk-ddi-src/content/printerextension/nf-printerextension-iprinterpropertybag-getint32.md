@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetInt32 method
+# IPrinterPropertyBag::GetInt32 method
 Reads an integer property.
 
 ## Syntax
 
-````
+```
 HRESULT GetInt32(
-  [in]          BSTR bstrName,
-  [out, retval] LONG *pnValue
+  BSTR bstrName,
+  LONG *pnValue
 );
-````
+```
 
 ## Parameters
 
@@ -81,4 +81,4 @@ This method returns an <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>

@@ -47,14 +47,14 @@ req.typenames: GPIO_READ_PINS_MASK_PARAMETERS, *PGPIO_READ_PINS_MASK_PARAMETERS
 The <b>GPIO_READ_PINS_MASK_PARAMETERS</b> structure describes a read operation on a bank of general-purpose I/O (GPIO) pins.
 
 ## Syntax
-````
+```
 typedef struct _GPIO_READ_PINS_MASK_PARAMETERS {
-  BANK_ID              BankId;
-  PULONG64             PinValues;
+  BANK_ID              BankId;
+  PULONG64             PinValues;
   GPIO_READ_PINS_FLAGS Flags;
-  PVOID                Reserved;
-} GPIO_READ_PINS_MASK_PARAMETERS, *PGPIO_READ_PINS_MASK_PARAMETERS;
-````
+  PVOID                Reserved;
+} *PGPIO_READ_PINS_MASK_PARAMETERS, GPIO_READ_PINS_MASK_PARAMETERS;
+```
 
 ## Members
 
@@ -86,12 +86,12 @@ The <i>ReadParameters</i> parameter of the <a href="https://msdn.microsoft.com/l
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439399">CLIENT_QueryControllerBasicInformation</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh439406">CLIENT_ReadGpioPinsUsingMask</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh439358">CLIENT_CONTROLLER_BASIC_INFORMATION</a>

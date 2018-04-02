@@ -51,14 +51,14 @@ The <b>SpbRequestGetTransferParameters</b> method retrieves the transfer paramet
 
 ## Syntax
 
-````
+```
 void SpbRequestGetTransferParameters(
-  _In_      SPBREQUEST              SpbRequest,
-  _In_      ULONG                   Index,
-  _Out_opt_ SPB_TRANSFER_DESCRIPTOR *TransferDescriptor,
-  _Out_opt_ PMDL                    *TransferBuffer
+  SPBREQUEST              SpbRequest,
+  ULONG                   Index,
+  SPB_TRANSFER_DESCRIPTOR *TransferDescriptor,
+  PMDL                    *TransferBuffer
 );
-````
+```
 
 ## Parameters
 
@@ -151,7 +151,7 @@ for (ULONG i = 0; i &lt; parameters.SequenceCount; i += 1)
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406218">SPB_TRANSFER_DESCRIPTOR</a>
 
 
 
@@ -159,4 +159,4 @@ for (ULONG i = 0; i &lt; parameters.SequenceCount; i += 1)
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh406218">SPB_TRANSFER_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450922">SpbRequestGetParameters</a>

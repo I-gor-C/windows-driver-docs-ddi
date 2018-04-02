@@ -7,7 +7,7 @@ old-location: display\d3dddicb_lockflags.htm
 old-project: display
 ms.assetid: 4b3a266f-4d60-4d39-81fb-ea2b4aa12a8d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDICB_LOCKFLAGS, D3DDDICB_LOCKFLAGS structure [Display Devices], D3D_other_Structs_6238800f-60d9-472d-aa18-10343abbcee7.xml, _D3DDDICB_LOCKFLAGS, d3dukmdt/D3DDDICB_LOCKFLAGS, display.d3dddicb_lockflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,27 +47,27 @@ req.typenames: D3DDDICB_LOCKFLAGS
 The D3DDDICB_LOCKFLAGS structure identifies how to lock an allocation.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDICB_LOCKFLAGS {
   union {
     struct {
-      UINT ReadOnly  :1;
-      UINT WriteOnly  :1;
-      UINT DonotWait  :1;
-      UINT IgnoreSync  :1;
-      UINT LockEntire  :1;
-      UINT DonotEvict  :1;
-      UINT AcquireAperture  :1;
-      UINT Discard  :1;
-      UINT NoExistingReference  :1;
-      UINT UseAlternateVA  :1;
-      UINT IgnoreReadSync  :1;
-      UINT Reserved  :21;
+      UINT  : 1  ReadOnly;
+      UINT  : 1  WriteOnly;
+      UINT  : 1  DonotWait;
+      UINT  : 1  IgnoreSync;
+      UINT  : 1  LockEntire;
+      UINT  : 1  DonotEvict;
+      UINT  : 1  AcquireAperture;
+      UINT  : 1  Discard;
+      UINT  : 1  NoExistingReference;
+      UINT  : 1  UseAlternateVA;
+      UINT  : 1  IgnoreReadSync;
+      UINT  : 21 Reserved;
     };
-    UINT   Value;
+    UINT Value;
   };
 } D3DDDICB_LOCKFLAGS;
-````
+```
 
 ## Members
 
@@ -101,7 +101,7 @@ Retired or offered allocations cannot be locked. See also <a href="https://msdn.
 
 </li>
 <li>
-An allocation can be locked only if it was created with the <b>CpuVisible</b>  member set in the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a> structure.
+An allocation can be locked only if it was created with the <b>CpuVisible</b>  member set in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560966">DXGK_ALLOCATIONINFOFLAGS</a> structure.
 
 </li>
 <li>
@@ -122,16 +122,16 @@ An allocation that is locked with a swizzled range must be unlocked before it ca
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfoflags.md">DXGK_ALLOCATIONINFOFLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544205">D3DDDICB_LOCK</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_acquireswizzlingrange.md">DxgkDdiAcquireSwizzlingRange</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560966">DXGK_ALLOCATIONINFOFLAGS</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
+<a href="https://msdn.microsoft.com/f861e055-70db-4e0a-9c62-87e2d41f92ae">DxgkDdiAcquireSwizzlingRange</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_lock.md">D3DDDICB_LOCK</a>
+<a href="https://msdn.microsoft.com/69022797-432a-410b-8cbf-e1ef7111e7ea">pfnLockCb</a>

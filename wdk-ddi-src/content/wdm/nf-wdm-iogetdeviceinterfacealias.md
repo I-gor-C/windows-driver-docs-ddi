@@ -7,7 +7,7 @@ old-location: kernel\iogetdeviceinterfacealias.htm
 old-project: kernel
 ms.assetid: 667c9524-be12-4f02-b921-6067abfb1dde
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoGetDeviceInterfaceAlias, IoGetDeviceInterfaceAlias routine [Kernel-Mode Driver Architecture], k104_e33a51e9-4576-4558-9967-9ea27467c326.xml, kernel.iogetdeviceinterfacealias, wdm/IoGetDeviceInterfaceAlias
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,19 +50,19 @@ The <b>IoGetDeviceInterfaceAlias</b> routine returns the alias device interface 
 
 ## Syntax
 
-````
-NTSTATUS IoGetDeviceInterfaceAlias(
-  _In_        PUNICODE_STRING SymbolicLinkName,
-  _In_  const GUID            *AliasInterfaceClassGuid,
-  _Out_       PUNICODE_STRING AliasSymbolicLinkName
+```
+NTKERNELAPI NTSTATUS IoGetDeviceInterfaceAlias(
+  PUNICODE_STRING SymbolicLinkName,
+  CONST GUID      *AliasInterfaceClassGuid,
+  PUNICODE_STRING AliasSymbolicLinkName
 );
-````
+```
 
 ## Parameters
 
 `SymbolicLinkName`
 
-Pointer to the name of the device interface instance for which to retrieve an alias. The caller typically received this string from a call to <a href="..\wdm\nf-wdm-iogetdeviceinterfaces.md">IoGetDeviceInterfaces</a> or in a PnP notification structure.
+Pointer to the name of the device interface instance for which to retrieve an alias. The caller typically received this string from a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff549186">IoGetDeviceInterfaces</a> or in a PnP notification structure.
 
 `AliasInterfaceClassGuid`
 
@@ -70,7 +70,7 @@ Pointer to a GUID specifying the interface class of the alias to retrieve.
 
 `AliasSymbolicLinkName`
 
-Specifies a pointer to a <b>NULL</b> Unicode string. On successful return, <i>AliasSymbolicLinkName</i>.<b>Buffer</b> points to a string containing the name of the alias. The caller must free the Unicode string with <a href="..\wudfwdm\nf-wudfwdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a> when it is no longer needed.
+Specifies a pointer to a <b>NULL</b> Unicode string. On successful return, <i>AliasSymbolicLinkName</i>.<b>Buffer</b> points to a string containing the name of the alias. The caller must free the Unicode string with <a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a> when it is no longer needed.
 
 
 ## Return Value
@@ -142,8 +142,8 @@ Callers of <b>IoGetDeviceInterfaceAlias</b> must be running at IRQL = PASSIVE_LE
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioregisterdeviceinterface.md">IoRegisterDeviceInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549506">IoRegisterDeviceInterface</a>
 
 
 
-<a href="..\wudfwdm\nf-wudfwdm-rtlfreeunicodestring.md">RtlFreeUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561903">RtlFreeUnicodeString</a>

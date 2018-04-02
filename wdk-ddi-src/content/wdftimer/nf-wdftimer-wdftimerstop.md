@@ -55,18 +55,18 @@ The <b>WdfTimerStop</b> method stops a timer's clock.
 
 ## Syntax
 
-````
+```
 BOOLEAN WdfTimerStop(
-  _In_ WDFTIMER Timer,
-  _In_ BOOLEAN  Wait
+  WDFTIMER Timer,
+  BOOLEAN  Wait
 );
-````
+```
 
 ## Parameters
 
 `Timer`
 
-A handle to a framework timer object that was obtained by calling <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>.
+A handle to a framework timer object that was obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a>.
 
 `Wait`
 
@@ -83,7 +83,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## Remarks
 
-When a driver calls <a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a>, its timer object is added to the system's queue of timer objects. If the timer is not a periodic timer, the system removes the timer object from the queue after the timer's "due time" has elapsed. If the timer is a periodic timer, the timer object remains in the queue until the driver calls <b>WdfTimerStop</b>. 
+When a driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff550054">WdfTimerStart</a>, its timer object is added to the system's queue of timer objects. If the timer is not a periodic timer, the system removes the timer object from the queue after the timer's "due time" has elapsed. If the timer is a periodic timer, the timer object remains in the queue until the driver calls <b>WdfTimerStop</b>. 
 
 For more information about framework timer objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-timers">Using Timers</a>.
 
@@ -125,12 +125,12 @@ The following code example stops a specified timer and waits for all of the driv
 
 ## See Also
 
-<a href="..\wdftimer\nf-wdftimer-wdftimerstart.md">WdfTimerStart</a>
-
-
-
 <a href="https://msdn.microsoft.com/abe15fd9-620e-4c24-9a82-32d20a7e49cc">EvtTimerFunc</a>
 
 
 
-<a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550054">WdfTimerStart</a>

@@ -50,14 +50,14 @@ The <b>KsDisableEvent </b>function disables events requested through IOCTL_KS_DI
 
 ## Syntax
 
-````
-NTSTATUS KsDisableEvent(
-  _In_    PIRP              Irp,
-  _Inout_ PLIST_ENTRY       EventsList,
-  _In_    KSEVENTS_LOCKTYPE EventsFlags,
-  _In_    PVOID             EventsLock
+```
+KSDDKAPI NTSTATUS KsDisableEvent(
+  PIRP              Irp,
+  PLIST_ENTRY       EventsList,
+  KSEVENTS_LOCKTYPE EventsFlags,
+  PVOID             EventsLock
 );
-````
+```
 
 ## Parameters
 
@@ -67,11 +67,11 @@ Specifies the IRP passed to the removal function, which uses the IRP to obtain c
 
 `EventsList`
 
-Points to the head of the list of <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> items on which the event may be found. If a client uses multiple event lists and does not know what list this event is on, the client can call this function multiple times. An event not found will return STATUS_UNSUCCESSFUL.
+Points to the head of the list of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a> items on which the event may be found. If a client uses multiple event lists and does not know what list this event is on, the client can call this function multiple times. An event not found will return STATUS_UNSUCCESSFUL.
 
 `EventsFlags`
 
-Specifies a <a href="..\ks\ne-ks-ksevents_locktype.md">KSEVENTS_LOCKTYPE</a> flag specifying the type of exclusion lock to be used in accessing the event list. If no flag is set, then no lock is taken.
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561784">KSEVENTS_LOCKTYPE</a> flag specifying the type of exclusion lock to be used in accessing the event list. If no flag is set, then no lock is taken.
 
 `EventsLock`
 
@@ -95,4 +95,4 @@ It is important that the remove handler synchronize with event generation to ens
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksenableevent.md">KsEnableEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561731">KsEnableEvent</a>

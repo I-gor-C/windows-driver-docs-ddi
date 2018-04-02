@@ -47,17 +47,17 @@ req.typenames: KS_DATARANGE_VIDEO, *PKS_DATARANGE_VIDEO
 The KS_DATARANGE_VIDEO structure describes a range of video streams without bob or weave settings.
 
 ## Syntax
-````
+```
 typedef struct tagKS_DATARANGE_VIDEO {
-  KSDATARANGE                 DataRange;
-  BOOL                        bFixedSizeSamples;
-  BOOL                        bTemporalCompression;
-  DWORD                       StreamDescriptionFlags;
-  DWORD                       MemoryAllocationFlags;
+  KSDATARANGE                 DataRange;
+  BOOL                        bFixedSizeSamples;
+  BOOL                        bTemporalCompression;
+  DWORD                       StreamDescriptionFlags;
+  DWORD                       MemoryAllocationFlags;
   KS_VIDEO_STREAM_CONFIG_CAPS ConfigCaps;
-  KS_VIDEOINFOHEADER          VideoInfoHeader;
-} KS_DATARANGE_VIDEO, *PKS_DATARANGE_VIDEO;
-````
+  KS_VIDEOINFOHEADER          VideoInfoHeader;
+} *PKS_DATARANGE_VIDEO, KS_DATARANGE_VIDEO;
+```
 
 ## Members
 
@@ -112,12 +112,12 @@ For example, a stream that supports RGB16, RGB24, YVU9, and JPEG capture formats
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
-
-
-
-<a href="..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md">KS_VIDEO_STREAM_CONFIG_CAPS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567706">KS_VIDEO_STREAM_CONFIG_CAPS</a>

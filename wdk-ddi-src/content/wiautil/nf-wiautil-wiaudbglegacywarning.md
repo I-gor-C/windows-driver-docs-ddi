@@ -50,11 +50,12 @@ The <b>wiauDbgLegacyWarning</b> function logs a warning message.
 
 ## Syntax
 
-````
-inline void __stdcall wiauDbgLegacyWarning(
-   LPCSTR   fmt, ...
+```
+void wiauDbgLegacyWarning(
+  LPCSTR fmt,
+  ...    
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +74,7 @@ None
 
 ## Remarks
 
-The <b>wiauDbgLegacyWarning</b> function is identical to the <a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.
+The <b>wiauDbgLegacyWarning</b> function is identical to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550163">wiauDbgWarning</a> function except that the latter has a parameter used to identify the function or method that is active when the function is called.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,4 +85,4 @@ The <b>wiauDbgLegacyWarning</b> function is identical to the <a href="..\wiautil
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550163">wiauDbgWarning</a>

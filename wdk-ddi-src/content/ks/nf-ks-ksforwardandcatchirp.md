@@ -52,14 +52,14 @@ If a file object is being used, the caller must initialize the current stack loc
 
 ## Syntax
 
-````
-NTSTATUS KsForwardAndCatchIrp(
-  _In_ PDEVICE_OBJECT DeviceObject ,
-  _In_ PIRP           Irp ,
-  _In_ PFILE_OBJECT   FileObject ,
-  _In_ KSSTACK_USE    StackUse 
+```
+KSDDKAPI NTSTATUS KsForwardAndCatchIrp(
+  PDEVICE_OBJECT DeviceObject,
+  PIRP           Irp,
+  PFILE_OBJECT   FileObject,
+  KSSTACK_USE    StackUse
 );
-````
+```
 
 ## Parameters
 

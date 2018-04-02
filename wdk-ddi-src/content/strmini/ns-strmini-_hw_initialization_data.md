@@ -2,18 +2,18 @@
 UID: NS:strmini._HW_INITIALIZATION_DATA
 title: "_HW_INITIALIZATION_DATA"
 author: windows-driver-content
-description: Each SCSI miniport driver's DriverEntry routine must initialize with zeros and, then, fill in the relevant HW_INITIALIZATION_DATA (SCSI) information for the OS-specific port driver.Note  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the Storport driver and Storport miniport driver models.
-old-location: storage\hw_initialization_data__scsi_.htm
-old-project: storage
-ms.assetid: 58c80d37-a40d-4839-b516-a78720860cbc
+description: The HW_INITIALIZATION_DATA structure specifies the basic information the class driver needs to begin initializing the minidriver.
+old-location: stream\hw_initialization_data.htm
+old-project: stream
+ms.assetid: 5be9ba51-bd6c-4650-9c48-f89267a2ac16
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
-ms.keywords: "*PHW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA structure [Storage Devices], PHW_INITIALIZATION_DATA, PHW_INITIALIZATION_DATA structure pointer [Storage Devices], _HW_INITIALIZATION_DATA, _HW_INITIALIZATION_DATA structure [Storage Devices], srb/HW_INITIALIZATION_DATA, srb/PHW_INITIALIZATION_DATA, storage.hw_initialization_data__scsi_, structs-scsiport_4d9f09a8-742b-4c72-8fc5-dd968bd990d6.xml"
+ms.date: 2/23/2018
+ms.keywords: "*PHW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA structure [Streaming Media Devices], PHW_INITIALIZATION_DATA, PHW_INITIALIZATION_DATA structure pointer [Streaming Media Devices], _HW_INITIALIZATION_DATA, _HW_INITIALIZATION_DATA structure [Streaming Media Devices], strclass-struct_7c987d6a-732c-4de9-b98a-b68873458c41.xml, stream.hw_initialization_data, strmini/HW_INITIALIZATION_DATA, strmini/PHW_INITIALIZATION_DATA"
 ms.prod: windows-hardware
 ms.technology: windows-devices
 ms.topic: struct
 req.header: strmini.h
-req.include-header: Srb.h, Strmini.h
+req.include-header: Strmini.h
 req.target-type: Windows
 req.target-min-winverclnt: 
 req.target-min-winversvr: 
@@ -35,7 +35,7 @@ topic_type:
 api_type:
 -	HeaderDef
 api_location:
--	srb.h
+-	strmini.h
 api_name:
 -	HW_INITIALIZATION_DATA
 product: Windows
@@ -45,99 +45,96 @@ req.product: Windows 10 or later.
 ---
 
 # _HW_INITIALIZATION_DATA structure
-Each SCSI miniport driver's <a href="..\wudfwdm\nc-wudfwdm-driver_initialize.md">DriverEntry</a> routine must initialize with zeros and, then, fill in the relevant HW_INITIALIZATION_DATA (SCSI) information for the OS-specific port driver.
-<div class="alert"><b>Note</b>  The SCSI port driver and SCSI miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
+The HW_INITIALIZATION_DATA structure specifies the basic information the class driver needs to begin initializing the minidriver. The minidriver passes an HW_INITIALIZATION_DATA structure to the class driver when it registers itself by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff568263">StreamClassRegisterMinidriver</a>.
 
 ## Syntax
-````
+```
 typedef struct _HW_INITIALIZATION_DATA {
-  ULONG             HwInitializationDataSize;
-  INTERFACE_TYPE    AdapterInterfaceType;
-  PHW_INITIALIZE    HwInitialize;
-  PHW_STARTIO       HwStartIo;
-  PHW_INTERRUPT     HwInterrupt;
-  PHW_FIND_ADAPTER  HwFindAdapter;
-  PHW_RESET_BUS_BUS HwResetBus;
-  PHW_DMA_STARTED   HwDmaStarted;
-  PHW_ADAPTER_STATE HwAdapterState;
-  ULONG             DeviceExtensionSize;
-  ULONG             SpecificLuExtensionSize;
-  ULONG             SrbExtensionSize;
-  ULONG             NumberOfAccessRanges;
-  PVOID             Reserved;
-  BOOLEAN           MapBuffers;
-  BOOLEAN           NeedPhysicalAddresses;
-  BOOLEAN           TaggedQueuing;
-  BOOLEAN           AutoRequestSense;
-  BOOLEAN           MultipleRequestPerLu;
-  BOOLEAN           ReceiveEvent;
-  USHORT            VendorIdLength;
-  PVOID             VendorId;
-  USHORT            ReservedUshort;
-  USHORT            DeviceIdLength;
-  PVOID             DeviceId;
-  PHW_STOP_ADAPTER  HwAdapterControl;
-} HW_INITIALIZATION_DATA, *PHW_INITIALIZATION_DATA;
-````
+  union {
+    ULONG HwInitializationDataSize;
+    struct {
+      USHORT SizeOfThisPacket;
+      USHORT StreamClassVersion;
+    };
+  };
+  ULONG                       HwInitializationDataSize;
+  PHW_INTERRUPT               HwInterrupt;
+  PHW_RECEIVE_DEVICE_SRB      HwReceivePacket;
+  PHW_CANCEL_SRB              HwCancelPacket;
+  PHW_REQUEST_TIMEOUT_HANDLER HwRequestTimeoutHandler;
+  ULONG                       DeviceExtensionSize;
+  ULONG                       PerRequestExtensionSize;
+  ULONG                       PerStreamExtensionSize;
+  ULONG                       FilterInstanceExtensionSize;
+  BOOLEAN                     BusMasterDMA;
+  BOOLEAN                     Dma24BitAddresses;
+  ULONG                       BufferAlignment;
+  BOOLEAN                     TurnOffSynchronization;
+  ULONG                       DmaBufferSize;
+  ULONG                       NumNameExtensions;
+  PWCHAR                      *NameExtensionArray;
+  ULONG                       Reserved[2];
+} *PHW_INITIALIZATION_DATA, HW_INITIALIZATION_DATA;
+```
 
 ## Members
 
 
 `HwInitializationDataSize`
 
-Specifies the size of this structure in bytes, as returned by <b>sizeof</b>(). In effect, this member indicates the version of this structure being used by the miniport driver. A miniport driver's <b>DriverEntry</b> routine should set this member's value for the port driver.
+Specifies the size of this data structure, in bytes.
 
 `HwInterrupt`
 
-Pointer to the miniport driver's <a href="..\strmini\nc-strmini-phw_interrupt.md">HwScsiInterrupt</a> routine, which is a required entry point for any miniport driver of an HBA that generates interrupts. Set this to <b>NULL</b> if the miniport driver needs no ISR. The prototype for this routine is <a href="..\strmini\nc-strmini-phw_interrupt.md">PHW_INTERRUPT</a>.
+Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568459">StrMiniInterrupt</a> routine.
 
 `HwReceivePacket`
 
-
+Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568463">StrMiniReceiveDevicePacket</a> routine.
 
 `HwCancelPacket`
 
-
+Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568448">StrMiniCancelPacket</a> routine.
 
 `HwRequestTimeoutHandler`
 
-
+Points to the minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff568473">StrMiniRequestTimeout</a> routine.
 
 `DeviceExtensionSize`
 
-Specifies the size in bytes required by the miniport driver for its per-HBA device extension. A miniport driver uses its device extension as storage for driver-determined HBA information. The OS-specific port driver initializes each device extension it allocates with zeros, and passes a pointer to the HBA-specific device extension in every call to a miniport driver except to its <b>DriverEntry</b> routine. The given size does not include any miniport driver-requested per-logical-unit storage, described next.
+Specifies the size in bytes of the buffer the class driver should allocate for the minidriver's device extension. The minidriver may use this buffer to record private information. The class driver passes pointers to this buffer in the <b>HwDeviceExtension</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559697">HW_STREAM_OBJECT</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559702">HW_STREAM_REQUEST_BLOCK</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff559706">HW_TIME_CONTEXT</a>, and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567785">PORT_CONFIGURATION_INFORMATION</a> structures it passes to the minidriver.
 
 `PerRequestExtensionSize`
 
-
+Specifies the size in bytes of the buffer the class driver should allocate for the buffer pointed to by <b>SRBExtension</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559702">HW_STREAM_REQUEST_BLOCK</a> structures it passes to the minidriver. The class driver will allocate one buffer for each HW_STREAM_REQUEST_BLOCK.
 
 `PerStreamExtensionSize`
 
-
+Specifies the size in bytes of the buffer the class driver should allocate for the buffer pointed to by the <b>HwStreamExtension</b> member of a stream's <a href="https://msdn.microsoft.com/library/windows/hardware/ff559697">HW_STREAM_OBJECT</a>. The class driver will allocate one buffer for each stream.
 
 `FilterInstanceExtensionSize`
 
-
+Specifies the size in bytes of the buffer the class extension should allocate for the buffer pointed to by the <b>HwInstanceExtension</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559702">HW_STREAM_REQUEST_BLOCK</a> structures it passes to the minidriver. The class driver allocates one buffer for each instance of the minidriver.
 
 `BusMasterDMA`
 
-
+If <b>TRUE</b>, the device can perform direct bus-master DMA to the minidriver's DMA buffer.
 
 `Dma24BitAddresses`
 
-
+Minidrivers should set this to <b>TRUE</b> if the DMA hardware the devices uses can access only the lower 24 bits of the address space.
 
 `BufferAlignment`
 
-
+Specifies the alignment requirement, in bytes, for DMA buffers. For example, a value of 4 indicates the DMA buffers should be aligned on 4-byte boundaries.
 
 `TurnOffSynchronization`
 
-
+If <b>TRUE</b>, the minidriver will handle its own synchronization; otherwise the class driver handles synchronization. Most minidrivers should set this value to <b>FALSE</b>. See <a href="https://msdn.microsoft.com/2f560e7a-4717-4b3f-9513-e34fcb2b5e6c">Minidriver Synchronization</a> in the <i>Streaming Minidriver Design Guide</i> for more information.
 
 `DmaBufferSize`
 
-
+Specifies the size in bytes of the DMA buffer the class driver should allocate for the minidriver. The minidriver gets a pointer to this buffer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff568243">StreamClassGetDmaBuffer</a>. The class driver allocates contiguous nonpageable memory that will not be available to the operating system, or to other drivers, so this value should be as small as possible.
 
 `NumNameExtensions`
 
@@ -149,32 +146,10 @@ Specifies the size in bytes required by the miniport driver for its per-HBA devi
 
 `Reserved`
 
-Reserved for system use and not available for use by miniport drivers.
+Reserved for system use. Minidrivers should ignore this member.
 
-## Remarks
-Each miniport driver must initialize the HW_INITIALIZATION_DATA structure with zeros before it sets the values of relevant members in this structure and calls <b>ScsiPortInitialize</b>.
-
-The <b>Dma64BitAddresses</b> member of HW_INITIALIZATION_DATA has been eliminated in Windows 2000 (See the discussion under PORT_CONFIGURATION_DATA for further details).
-
-Both HW_INITIALIZATION_DATA and PORT_CONFIGURATION_INFORMATION have a pair of members called <b>SpecificLuExtensionSize</b> and <b>SrbExtensionSize</b> whose values are handled differently than they were prior to Windows 2000. The miniport driver must calculate the initial values of <b>SpecificLuExtensionSize</b> and <b>SrbExtensionSize</b> in HW_INITIALIZATION_DATA based on the assumption that the HBA is capable of handling 32-bit addresses, regardless of what the controller can actually support. (See the discussion under PORT_CONFIGURATION_DATA for further details.)
 
 ## Requirements
 | &nbsp; | &nbsp; |
 | ---- |:---- |
-| **Header** | strmini.h (include Srb.h, Strmini.h) |
-
-## See Also
-
-<a href="..\srb\nc-srb-phw_initialize.md">HwScsiInitialize</a>
-
-
-
-<a href="..\storport\ns-storport-_scsi_request_block.md">SCSI_REQUEST_BLOCK</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552654">DriverEntry of SCSI Miniport Driver</a>
-
-
-
-<a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>
+| **Header** | strmini.h (include Strmini.h) |

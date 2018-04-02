@@ -53,11 +53,11 @@ The <b>WdfIoResourceListGetCount</b> method returns the number of resource descr
 
 ## Syntax
 
-````
+```
 ULONG WdfIoResourceListGetCount(
-  _In_ WDFIORESLIST ResourceList
+  WDFIORESLIST ResourceList
 );
-````
+```
 
 ## Parameters
 
@@ -79,7 +79,7 @@ For more information about resource requirements lists and logical configuration
 
 #### Examples
 
-For a code example that uses <b>WdfIoResourceListGetCount</b>, see <a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetioreslist.md">WdfIoResourceRequirementsListGetIoResList</a>.
+For a code example that uses <b>WdfIoResourceListGetCount</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff548553">WdfIoResourceRequirementsListGetIoResList</a>.
 
 <div class="code"></div>
 
@@ -95,4 +95,4 @@ For a code example that uses <b>WdfIoResourceListGetCount</b>, see <a href="..\w
 
 ## See Also
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcerequirementslistgetioreslist.md">WdfIoResourceRequirementsListGetIoResList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548553">WdfIoResourceRequirementsListGetIoResList</a>

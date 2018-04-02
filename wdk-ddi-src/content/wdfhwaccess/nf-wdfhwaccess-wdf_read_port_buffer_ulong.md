@@ -52,14 +52,14 @@ The <b>WDF_READ_PORT_BUFFER_ULONG</b> function reads a number of ULONG values fr
 
 ## Syntax
 
-````
+```
 void WDF_READ_PORT_BUFFER_ULONG(
-  _In_  WDFDEVICE Device,
-  _In_  PULONG    Port,
-  _Out_ PULONG    Buffer,
-  _In_  ULONG     Count 
+  WDFDEVICE Device,
+  PULONG    Port,
+  PULONG    Buffer,
+  ULONG     Count
 );
-````
+```
 
 ## Parameters
 

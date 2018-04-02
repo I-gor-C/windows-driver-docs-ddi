@@ -7,7 +7,7 @@ old-location: kernel\rtlxunicodestringtoansisize.htm
 old-project: kernel
 ms.assetid: dff228e5-14ea-4ec0-a7f1-247137f9e70d
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlxUnicodeStringToAnsiSize, RtlxUnicodeStringToAnsiSize routine [Kernel-Mode Driver Architecture], k109_f7d1f632-4350-4fb9-ac05-3c36c0d0446e.xml, kernel.rtlxunicodestringtoansisize, wdm/RtlxUnicodeStringToAnsiSize
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>RtlxUnicodeStringToAnsiSize</b> routine returns the number of bytes requi
 
 ## Syntax
 
-````
-ULONG RtlxUnicodeStringToAnsiSize(
-  _In_ PCUNICODE_STRING UnicodeString
+```
+NTSYSAPI ULONG RtlxUnicodeStringToAnsiSize(
+  PCUNICODE_STRING UnicodeString
 );
-````
+```
 
 ## Parameters
 
@@ -83,4 +83,4 @@ The Unicode string is interpreted for the current system locale.
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlunicodestringtoansisize.md">RtlUnicodeStringToAnsiSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553248">RtlUnicodeStringToAnsiSize</a>

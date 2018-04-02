@@ -7,7 +7,7 @@ old-location: display\d3dkmt_waitforsynchronizationobjectfromcpu.htm
 old-project: display
 ms.assetid: 76091965-D87B-4429-85A8-EC8085C773D7
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], WaitAny, _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, d3dkmthk/D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, display.d3dkmt_waitforsynchronizationobjectfromcpu
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
 ---
 
 # _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure
-<b>D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU</b> is used with <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforsynchronizationobjectfromcpu.md">D3DKMTWaitForSynchronizationObjectFromCpu</a> to wait for a monitored fence to reach a certain value.
+<b>D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU</b> is used with <a href="https://msdn.microsoft.com/library/windows/hardware/dn906789">D3DKMTWaitForSynchronizationObjectFromCpu</a> to wait for a monitored fence to reach a certain value.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU {
-  D3DKMT_HANDLE                                    hDevice;
-  UINT                                             ObjectCount;
-  const D3DKMT_HANDLE                              *ObjectHandleArray;
-  const UINT64                                     *FenceValueArray;
-  HANDLE                                           hAsyncEvent;
+  D3DKMT_HANDLE                                    hDevice;
+  UINT                                             ObjectCount;
+  const D3DKMT_HANDLE                              *ObjectHandleArray;
+  const UINT64                                     *FenceValueArray;
+  HANDLE                                           hAsyncEvent;
   D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS Flags;
 } D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU;
-````
+```
 
 ## Members
 
@@ -83,7 +83,7 @@ typedef struct _D3DKMT_WAITFORSYNCHRONIZATIONOBJECTFROMCPU {
 
 `Flags`
 
-[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_waitforsynchronizationobjectfromcpu_flags.md">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a> structure describing the operation.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/dn914421">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a> structure describing the operation.
 
 <table>
 <tr>
@@ -123,8 +123,8 @@ The wait condition is considered to be satisfied when any of the input synchroni
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_waitforsynchronizationobjectfromcpu_flags.md">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn914421">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtwaitforsynchronizationobjectfromcpu.md">D3DKMTWaitForSynchronizationObjectFromCpu</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906789">D3DKMTWaitForSynchronizationObjectFromCpu</a>

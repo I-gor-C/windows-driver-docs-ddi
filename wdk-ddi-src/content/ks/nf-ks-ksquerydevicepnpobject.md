@@ -50,17 +50,17 @@ The <b>KsQueryDevicePnpObject</b> function returns the PnP device object that ca
 
 ## Syntax
 
-````
-PDEVICE_OBJECT KsQueryDevicePnpObject(
-  _In_ KSDEVICE_HEADER Header
+```
+KSDDKAPI PDEVICE_OBJECT KsQueryDevicePnpObject(
+  KSDEVICE_HEADER Header
 );
-````
+```
 
 ## Parameters
 
 `Header`
 
-Points to a header previously allocated by <a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a> whose PnP device object is to be returned.
+Points to a header previously allocated by <a href="https://msdn.microsoft.com/library/windows/hardware/ff560958">KsAllocateDeviceHeader</a> whose PnP device object is to be returned.
 
 
 ## Return Value

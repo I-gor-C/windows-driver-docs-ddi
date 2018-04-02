@@ -44,17 +44,17 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
-# SendRecvXMLString method
+# IBidiSpl2::SendRecvXMLString method
 The <b>SendRecvXMLString</b> method sends a bidirectional printer communication request and receives the response as Unicode strings formatted in accordance with the <a href="https://msdn.microsoft.com/b15b1aff-623e-4159-ab0f-ce386a1377eb">Bidirectional Communication Schemas</a>.
 
 ## Syntax
 
-````
+```
 HRESULT SendRecvXMLString(
-  [in]  BSTR bstrRequest,
-  [out] BSTR *pbstrResponse
+  BSTR bstrRequest,
+  BSTR *pbstrResponse
 );
-````
+```
 
 ## Parameters
 
@@ -125,12 +125,12 @@ Note that the <b>HRESULT</b> may contain a system error code that is defined in 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/42b5e6cf-b434-4734-86f3-b3b9d15ea468">Print Spooler Components</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidispl2.md">IBidiSpl2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144981">IBidiSpl2</a>
+
+
+
+<a href="https://msdn.microsoft.com/42b5e6cf-b434-4734-86f3-b3b9d15ea468">Print Spooler Components</a>

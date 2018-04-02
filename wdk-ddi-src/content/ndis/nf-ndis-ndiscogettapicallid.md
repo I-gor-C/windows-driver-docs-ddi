@@ -7,7 +7,7 @@ old-location: netvista\ndiscogettapicallid.htm
 old-project: netvista
 ms.assetid: 3cb47545-177f-46ef-aff6-33ad8c9a6974
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisCoGetTapiCallId, NdisCoGetTapiCallId function [Network Drivers Starting with Windows Vista], condis_protocol_ref_97e82564-7f8b-42ba-9eda-75842f326c52.xml, ndis/NdisCoGetTapiCallId, netvista.ndiscogettapicallid
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisCoGetTapiCallId(
-  _In_    NDIS_HANDLE NdisVcHandle,
-  _Inout_ PVAR_STRING TapiCallId
+  NDIS_HANDLE NdisVcHandle,
+  PVAR_STRING TapiCallId
 );
-````
+```
 
 ## Parameters
 
@@ -64,7 +64,7 @@ NDIS_STATUS NdisCoGetTapiCallId(
 
 Specifies the NDIS handle to the VC. This handle was supplied by NDIS when the VC was originally
      created with the 
-     <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a> function.
 
 `TapiCallId`
 
@@ -125,7 +125,7 @@ The handle to the VC specified by
 ## Remarks
 
 Suppose a call manager calls 
-    <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> to create a VC for a TAPI
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a> to create a VC for a TAPI
     call. NDIS in turn supplies the handle to the VC to a client. The client passes this VC handle in a call
     to the 
     <b>NdisCoGetTapiCallId</b> function to retrieve a string that identifies the VC. The client can pass this
@@ -136,7 +136,7 @@ The client creates a context for each VC that it manages. The client uses
     identifier to a TAPI application to identify each VC. Later, if a TAPI application passes one of these
     string identifiers down to the client in a VC-related operation, the client must pass this string
     identifier as a Unicode string in a call to 
-    <a href="..\ndis\nf-ndis-ndisclgetprotocolvccontextfromtapicallid.md">
+    <a href="https://msdn.microsoft.com/5c716207-b093-499a-8fad-344b5ac51e25">
     NdisClGetProtocolVcContextFromTapiCallId</a> to get back the correct context for the VC.
 
 For more information about the VAR_STRING structure, see 
@@ -154,9 +154,9 @@ For more information about the VAR_STRING structure, see
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
-
-
-
-<a href="..\ndis\nf-ndis-ndisclgetprotocolvccontextfromtapicallid.md">
+<a href="https://msdn.microsoft.com/5c716207-b093-499a-8fad-344b5ac51e25">
    NdisClGetProtocolVcContextFromTapiCallId</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a>

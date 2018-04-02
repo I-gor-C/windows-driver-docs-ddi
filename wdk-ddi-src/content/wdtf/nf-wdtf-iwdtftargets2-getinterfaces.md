@@ -7,7 +7,7 @@ old-location: dtf\iwdtftargets2_getinterfaces.htm
 old-project: dtf
 ms.assetid: 8e9735b2-23d3-4fe6-8184-31e7707b6400
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: GetInterfaces method [Windows Device Testing Framework], GetInterfaces method [Windows Device Testing Framework], IWDTFTargets2 interface, GetInterfaces,IWDTFTargets2.GetInterfaces, IWDTFTargets2, IWDTFTargets2 interface [Windows Device Testing Framework], GetInterfaces method, IWDTFTargets2::GetInterfaces, Microsoft.WDTF.IWDTFTargets2.GetInterfaces, Microsoft::WDTF::IWDTFTargets2::GetInterfaces, dtf.iwdtftargets2_getinterfaces, wdtf/IWDTFTargets2::GetInterfaces
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetInterfaces method
-Returns a collection of actions that support the interface - one <a href="..\wdtf\nn-wdtf-iwdtfaction2.md">IWDTFAction2</a> for each item
+# IWDTFTargets2::GetInterfaces method
+Returns a collection of actions that support the interface - one <a href="https://msdn.microsoft.com/library/windows/hardware/hh406311">IWDTFAction2</a> for each item
 that has one.
 
 ## Syntax
 
-````
+```
 HRESULT GetInterfaces(
-  [in]           BSTR          ProgID,
-  [in, optional] VARIANT       MoreTargets,
-  [in, optional] VARIANT       MonikerSuffix,
-  [out, retval]  IWDTFActions2 **ppInterface
+  BSTR          WDTFInterfaceName,
+  VARIANT       MoreTargets,
+  VARIANT       MonikerSuffix,
+  IWDTFActions2 **ppInterface
 );
-````
+```
 
 ## Parameters
 
@@ -107,4 +107,4 @@ If any items in the collection fail to return an action, this method fails.
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtftargets2.md">IWDTFTargets2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439458">IWDTFTargets2</a>

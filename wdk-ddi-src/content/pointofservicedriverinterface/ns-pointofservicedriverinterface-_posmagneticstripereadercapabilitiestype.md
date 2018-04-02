@@ -47,21 +47,21 @@ req.typenames: PosMagneticStripeReaderCapabilitiesType
 This structure defines the kinds of magnetic stripe reader (MSR) capabilities that a device supports, such as whether the device supports track data masking.
 
 ## Syntax
-````
+```
 typedef struct _PosMagneticStripeReaderCapabilitiesType {
-  UnifiedPosPowerReportingType            PowerReportingType;
-  LONG                                    IsStatisticsReportingSupported;
-  LONG                                    IsStatisticsUpdatingSupported;
-  UINT32                                  CardAuthenticationLength;
-  UINT32                                  SupportedEncryptionAlgorithms;
-  MagneticStripeReaderAuthenticationLevel AuthenticationLevel;
-  LONG                                    IsIsoSupported;
-  LONG                                    IsJisOneSupported;
-  LONG                                    IsJisTwoSupported;
-  LONG                                    IsTrackDataMaskingSupported;
-  LONG                                    IsTransmitSentinelsSupported;
+  DriverUnifiedPosPowerReportingType            PowerReportingType;
+  LONG                                          IsStatisticsReportingSupported;
+  LONG                                          IsStatisticsUpdatingSupported;
+  UINT32                                        CardAuthenticationLength;
+  UINT32                                        SupportedEncryptionAlgorithms;
+  DriverMagneticStripeReaderAuthenticationLevel AuthenticationLevel;
+  LONG                                          IsIsoSupported;
+  LONG                                          IsJisOneSupported;
+  LONG                                          IsJisTwoSupported;
+  LONG                                          IsTrackDataMaskingSupported;
+  LONG                                          IsTransmitSentinelsSupported;
 } PosMagneticStripeReaderCapabilitiesType;
-````
+```
 
 ## Members
 
@@ -72,11 +72,11 @@ Indicates the type of power reporting that is supported by the device.
 
 `IsStatisticsReportingSupported`
 
-Indicates whether the device supports <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_retrieve_statistics.md">IOCTL_POINT_OF_SERVICE_RETRIEVE_STATISTICS</a>.
+Indicates whether the device supports <a href="https://msdn.microsoft.com/library/windows/hardware/dn772120">IOCTL_POINT_OF_SERVICE_RETRIEVE_STATISTICS</a>.
 
 `IsStatisticsUpdatingSupported`
 
-Indicates whether the device supports <a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_update_statistics.md">IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS</a>.
+Indicates whether the device supports <a href="https://msdn.microsoft.com/library/windows/hardware/dn772126">IOCTL_POINT_OF_SERVICE_UPDATE_STATISTICS</a>.
 
 `CardAuthenticationLength`
 
@@ -84,7 +84,7 @@ The length, in bytes, of the name of the type of authentication that the device 
 
 `SupportedEncryptionAlgorithms`
 
-The supported encryption algorithm. See <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrdataencryption.md">MsrDataEncryption</a>.
+The supported encryption algorithm. See <a href="https://msdn.microsoft.com/library/windows/hardware/dn772169">MsrDataEncryption</a>.
 
 `AuthenticationLevel`
 

@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetHardwareRegisterMappedAddress method
+# IWDFDevice3::GetHardwareRegisterMappedAddress method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 A driver calls <b>GetHardwareRegisterMappedAddress</b> to get the user-mode mapped address of the memory resource it earlier mapped using <a href="https://msdn.microsoft.com/library/windows/hardware/hh451225">MapIoSpace</a>.
 
 ## Syntax
 
-````
-PVOID GetHardwareRegisterMappedAddress(
-  [in] PVOID *PseudoBaseAddress
+```
+void * GetHardwareRegisterMappedAddress(
+  void *PseudoBaseAddress
 );
-````
+```
 
 ## Parameters
 
@@ -90,4 +90,4 @@ If you do use <b>GetHardwareRegisterMappedAddress</b>, you must set the <b>UmdfR
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a>

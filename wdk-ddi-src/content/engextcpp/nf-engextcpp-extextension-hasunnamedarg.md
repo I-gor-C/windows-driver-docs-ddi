@@ -7,7 +7,7 @@ old-location: debugger\hasunnamedarg.htm
 old-project: debugger
 ms.assetid: 26917b2b-abbf-4d1b-b086-104390998a35
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_5d191b46-bac6-415e-8c02-732ce433f950.xml, ExtExtension, ExtExtension class [Windows Debugging], HasUnnamedArg method, ExtExtension::HasUnnamedArg, HasUnnamedArg method [Windows Debugging], HasUnnamedArg method [Windows Debugging], ExtExtension class, HasUnnamedArg,ExtExtension.HasUnnamedArg, debugger.hasunnamedarg
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,22 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# HasUnnamedArg method
+# ExtExtension~r1::HasUnnamedArg method
 The <b>HasUnnamedArg</b> method indicates whether a specified unnamed argument is present in the command line used to invoke the current extension command.
 
 ## Syntax
 
-````
-bool HasUnnamedArg(
-  [in] ULONG Index
+```
+Platform::Boolean HasUnnamedArg(
+  ULONG Index
 );
-````
+```
 
 ## Parameters
 
 `Index`
 
-Specifies the index of the argument.  <i>Index</i> should be between zero and the number of unnamed arguments returned by <a href="..\engextcpp\nf-engextcpp-extextension-getnumunnamedargs.md">GetNumUnnamedArgs</a> minus one (unnamed arguments - 1).
+Specifies the index of the argument.  <i>Index</i> should be between zero and the number of unnamed arguments returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff548001">GetNumUnnamedArgs</a> minus one (unnamed arguments - 1).
 
 
 ## Return Value
@@ -80,8 +80,8 @@ This method should only be called during the execution of an extension command p
 
 ## See Also
 
-<a href="..\engextcpp\nf-engextcpp-extextension-getnumunnamedargs.md">GetNumUnnamedArgs</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543981">ExtExtension</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548001">GetNumUnnamedArgs</a>

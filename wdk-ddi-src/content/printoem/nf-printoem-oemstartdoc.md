@@ -50,13 +50,13 @@ The <code>OEMStartDoc</code> function is called by GDI when it is ready to start
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMStartDoc(
-       SURFOBJ *pso,
-  _In_ PWSTR   pwszDocName,
-       DWORD   dwJobId
+```
+BOOL OEMStartDoc(
+  SURFOBJ *pso,
+  PWSTR   pwszDocName,
+  DWORD   dwJobId
 );
-````
+```
 
 ## Parameters
 

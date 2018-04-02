@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The SD_COMMAND_CLASS enumeration lists the classes of Secure Digital (SD) card commands.
 
 ## Syntax
-````
-typedef enum  { 
-  SDCC_STANDARD  = 0,
-  SDCC_APP_CMD   = 1
-} SD_COMMAND_CLASS;
-````
+```
+typedef enum SD_COMMAND_CLASS {
+  SDCC_STANDARD  ,
+  SDCC_APP_CMD
+} ;
+```
 
 ## Constants
 

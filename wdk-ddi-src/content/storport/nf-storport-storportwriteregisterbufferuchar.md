@@ -7,7 +7,7 @@ old-location: storage\storportwriteregisterbufferuchar.htm
 old-project: storage
 ms.assetid: af8126cd-e931-4106-b543-9c84ee110901
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortWriteRegisterBufferUchar, StorPortWriteRegisterBufferUchar routine [Storage Devices], storage.storportwriteregisterbufferuchar, storport/StorPortWriteRegisterBufferUchar, storprt_21fa4636-6492-4cb1-9281-6f116f1a7591.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,13 +51,14 @@ The <b>StorPortWriteRegisterBufferUchar</b> routine transfers a given number of 
 
 ## Syntax
 
-````
-VOID StorPortWriteRegisterBufferUchar(
-   IN PVOID  HwDeviceExtension,
-   IN PUCHAR Register,
-   IN ULONG  Count
+```
+void StorPortWriteRegisterBufferUchar(
+   h,
+   r,
+   b,
+   c
 );
-````
+```
 
 ## Parameters
 
@@ -92,4 +93,4 @@ None
 
 ## See Also
 
-<a href="..\storport\nf-storport-scsiportwriteregisterbufferuchar.md">ScsiPortWriteRegisterBufferUchar</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564845">ScsiPortWriteRegisterBufferUchar</a>

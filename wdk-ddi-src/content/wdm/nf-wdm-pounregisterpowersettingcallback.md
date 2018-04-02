@@ -7,7 +7,7 @@ old-location: kernel\pounregisterpowersettingcallback.htm
 old-project: kernel
 ms.assetid: 900db70b-4cdb-41e7-a4cf-0dc435b9fe7d
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PoUnregisterPowerSettingCallback, PoUnregisterPowerSettingCallback routine [Kernel-Mode Driver Architecture], kernel.pounregisterpowersettingcallback, portn_52c569d1-68d0-48a4-88e7-c2ffb27aa530.xml, wdm/PoUnregisterPowerSettingCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,15 +46,15 @@ req.product: Windows 10 or later.
 
 
 # PoUnregisterPowerSettingCallback function
-The <b>PoUnregisterPowerSettingCallback</b> routine unregisters a power-setting callback routine that a driver previously registered by calling the <a href="..\wdm\nf-wdm-poregisterpowersettingcallback.md">PoRegisterPowerSettingCallback</a> routine.
+The <b>PoUnregisterPowerSettingCallback</b> routine unregisters a power-setting callback routine that a driver previously registered by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559727">PoRegisterPowerSettingCallback</a> routine.
 
 ## Syntax
 
-````
-NTSTATUS PoUnregisterPowerSettingCallback(
-  _Inout_ PVOID Handle
+```
+NTKERNELAPI NTSTATUS PoUnregisterPowerSettingCallback(
+  PVOID Handle
 );
-````
+```
 
 ## Parameters
 
@@ -114,4 +114,4 @@ A driver must call <b>PoUnregisterPowerSettingCallback</b> to unregister each ca
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-poregisterpowersettingcallback.md">PoRegisterPowerSettingCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559727">PoRegisterPowerSettingCallback</a>

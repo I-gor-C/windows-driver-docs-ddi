@@ -56,7 +56,7 @@ This I/O control function gets the type of device, version, and recommended buff
 Size of the input buffer, in bytes. Set to sizeof(UINT32).
 
 ### Output Buffer
-Pointer to a buffer that receives a <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posdevicebasicstype.md">PosDeviceBasicsType</a>.
+Pointer to a buffer that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/dn772213">PosDeviceBasicsType</a>.
 
 ### Output Buffer Length
 Size of the output buffer, in bytes. Set to sizeof(<i>PosDeviceBasicsType</i>).
@@ -76,7 +76,7 @@ To get extended error information, call <a href="http://go.microsoft.com/fwlink/
 <h3><a id="Parameters"></a><a id="parameters"></a><a id="PARAMETERS"></a>Parameters</h3>
 
 
-Provide the version of the POS WinRT API to inform the driver which version of the runtime it is working with. This IOCTL returns the version of the driver in <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posdevicebasicstype.md">PosDeviceBasicsType</a>, so that you can have the driver version available in the runtime API if you wish to provide it.
+Provide the version of the POS WinRT API to inform the driver which version of the runtime it is working with. This IOCTL returns the version of the driver in <a href="https://msdn.microsoft.com/library/windows/hardware/dn772213">PosDeviceBasicsType</a>, so that you can have the driver version available in the runtime API if you wish to provide it.
 
 ## Requirements
 | &nbsp; | &nbsp; |

@@ -67,7 +67,7 @@ Completes the given extension event with either a cancellation  or success.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioneventargs.md">IPrinterExtensionEventArgs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973207">IPrinterExtensionEventArgs</a>
 
 
 

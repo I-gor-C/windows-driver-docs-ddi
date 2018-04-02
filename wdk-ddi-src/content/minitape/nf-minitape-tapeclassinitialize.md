@@ -7,7 +7,7 @@ old-location: storage\tapeclassinitialize.htm
 old-project: storage
 ms.assetid: f1c70ca5-2caf-4758-99bb-221af0a79211
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: TapeClassInitialize, TapeClassInitialize routine [Storage Devices], minitape/TapeClassInitialize, storage.tapeclassinitialize, tapeclas_92bf66d9-2a7b-4853-ad25-b6f854533a4e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>TapeClassInitialize</b> routine performs much of the driver and device in
 
 ## Syntax
 
-````
-ULONG TapeClassInitialize(
-  _In_ PVOID              Argument1,
-  _In_ PVOID              Argument2,
-  _In_ PTAPE_INIT_DATA_EX TapeInitData
+```
+SCSIPORT_API ULONG TapeClassInitialize(
+  PVOID              Argument1,
+  PVOID              Argument2,
+  PTAPE_INIT_DATA_EX TapeInitData
 );
-````
+```
 
 ## Parameters
 
@@ -98,4 +98,4 @@ A tape miniclass driver allocates a TAPE_INIT_DATA_EX structure on the stack, cl
 
 
 
-<a href="..\minitape\ns-minitape-_tape_init_data_ex.md">TAPE_INIT_DATA_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567968">TAPE_INIT_DATA_EX</a>

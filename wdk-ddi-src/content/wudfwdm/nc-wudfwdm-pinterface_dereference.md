@@ -7,7 +7,7 @@ old-location: kernel\interfacedereference.htm
 old-project: kernel
 ms.assetid: ed23d7fb-0fff-4c04-9291-90e7323f3e6f
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 2/24/2018
 ms.keywords: InterfaceDereference, InterfaceDereference routine [Kernel-Mode Driver Architecture], PINTERFACE_DEREFERENCE, drvr_interface_96e41fd1-22ff-48d9-85ae-94b735ba67bf.xml, kernel.interfacedereference, wdm/InterfaceDereference
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,12 +84,12 @@ The driver that imports the interface is responsible for calling the <i>Interfac
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>
+
+
+
 <a href="..\wdm\ns-wdm-_interface.md">INTERFACE</a>
 
 
 
 <a href="..\wudfwdm\nc-wudfwdm-pinterface_reference.md">InterfaceReference</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff551687">IRP_MN_QUERY_INTERFACE</a>

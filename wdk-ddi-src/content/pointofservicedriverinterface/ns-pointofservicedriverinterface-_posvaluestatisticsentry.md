@@ -47,12 +47,12 @@ req.typenames: PosValueStatisticsEntry
 This structure contains the value of a statistic.
 
 ## Syntax
-````
+```
 typedef struct _PosValueStatisticsEntry {
-  wchar_t       EntryName[STATISTICS_STRING_SIZE];
-  volatile LONG Value;
+  wchar_t EntryName[STATISTICS_STRING_SIZE];
+  LONG    Value;
 } PosValueStatisticsEntry;
-````
+```
 
 ## Members
 

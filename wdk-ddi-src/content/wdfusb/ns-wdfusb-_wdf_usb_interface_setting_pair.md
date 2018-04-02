@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 The <b>WDF_USB_INTERFACE_SETTING_PAIR</b> structure specifies an alternate setting for a specified USB interface.
 
 ## Syntax
-````
+```
 typedef struct _WDF_USB_INTERFACE_SETTING_PAIR {
   WDFUSBINTERFACE UsbInterface;
-  UCHAR           SettingIndex;
-} WDF_USB_INTERFACE_SETTING_PAIR, *PWDF_USB_INTERFACE_SETTING_PAIR;
-````
+  UCHAR           SettingIndex;
+} *PWDF_USB_INTERFACE_SETTING_PAIR, WDF_USB_INTERFACE_SETTING_PAIR;
+```
 
 ## Members
 
@@ -69,7 +69,7 @@ A handle to a framework USB interface object.
 A device-specific index value that identifies an alternate setting for the interface. Alternate settings are described in the USB specification.
 
 ## Remarks
-The <b>WDF_USB_INTERFACE_SETTING_PAIR</b> structure is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a> structure.
+The <b>WDF_USB_INTERFACE_SETTING_PAIR</b> structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552600">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,4 +80,4 @@ The <b>WDF_USB_INTERFACE_SETTING_PAIR</b> structure is used in the <a href="..\w
 
 ## See Also
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_select_config_params.md">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552600">WDF_USB_DEVICE_SELECT_CONFIG_PARAMS</a>

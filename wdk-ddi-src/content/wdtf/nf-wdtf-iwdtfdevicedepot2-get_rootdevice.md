@@ -7,7 +7,7 @@ old-location: dtf\iwdtfdevicedepot2_rootdevice.htm
 old-project: dtf
 ms.assetid: c0d055fb-16d0-41d4-a4d7-af7505f3f7d8
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFDeviceDepot2, IWDTFDeviceDepot2 interface [Windows Device Testing Framework], RootDevice property, IWDTFDeviceDepot2.RootDevice, IWDTFDeviceDepot2::get_RootDevice, Microsoft.WDTF.IWDTFDeviceDepot2.RootDevice, Microsoft::WDTF::IWDTFDeviceDepot2::RootDevice, RootDevice property [Windows Device Testing Framework], RootDevice property [Windows Device Testing Framework], IWDTFDeviceDepot2 interface, dtf.iwdtfdevicedepot2_rootdevice, get_RootDevice,IWDTFDeviceDepot2.get_RootDevice, wdtf/IWDTFDeviceDepot2::RootDevice, wdtf/IWDTFDeviceDepot2::get_RootDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_RootDevice method
+# IWDTFDeviceDepot2::get_RootDevice method
 Gets the root device.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_RootDevice(
-  [out, retval] IWDTFTarget2 **pVal
+  IWDTFTarget2 **pVal
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ None
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtfdevicedepot2.md">IWDTFDeviceDepot2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406391">IWDTFDeviceDepot2</a>
 
 
 
-<a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439367">IWDTFTarget2</a>

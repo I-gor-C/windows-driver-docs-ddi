@@ -7,7 +7,7 @@ old-location: dtf\iwdtftargets2_clear.htm
 old-project: dtf
 ms.assetid: 4fe37240-7cef-4bfb-91be-49a0bca2fa8f
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: Clear method [Windows Device Testing Framework], Clear method [Windows Device Testing Framework], IWDTFTargets2 interface, Clear,IWDTFTargets2.Clear, IWDTFTargets2, IWDTFTargets2 interface [Windows Device Testing Framework], Clear method, IWDTFTargets2::Clear, Microsoft.WDTF.IWDTFTargets2.Clear, Microsoft::WDTF::IWDTFTargets2::Clear, dtf.iwdtftargets2_clear, wdtf/IWDTFTargets2::Clear
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Clear method
+# IWDTFTargets2::Clear method
 Removes all items from the collection.
 
 ## Syntax
 
-````
-HRESULT Clear();
-````
+```
+HRESULT Clear(
+
+);
+```
 
 ## Parameters
 
@@ -64,7 +66,7 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## Remarks
 
-The lifetime of <a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a> interface 
+The lifetime of <a href="https://msdn.microsoft.com/library/windows/hardware/hh439367">IWDTFTarget2</a> interface 
 instances are tied to their creator. If you clear all items from a collection, the items are
 not destroyed.
 
@@ -77,4 +79,4 @@ not destroyed.
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtftargets2.md">IWDTFTargets2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439458">IWDTFTargets2</a>

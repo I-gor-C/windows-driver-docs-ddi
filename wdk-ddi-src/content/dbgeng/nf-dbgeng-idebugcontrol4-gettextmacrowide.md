@@ -7,7 +7,7 @@ old-location: debugger\gettextmacrowide.htm
 old-project: debugger
 ms.assetid: 5b125041-969e-49bb-96d5-b40cc7285315
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetTextMacroWide method [Windows Debugging], GetTextMacroWide method [Windows Debugging], IDebugControl4 interface, GetTextMacroWide,IDebugControl4.GetTextMacroWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetTextMacroWide method, IDebugControl4::GetTextMacroWide, dbgeng/IDebugControl4::GetTextMacroWide, debugger.gettextmacrowide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetTextMacroWide method
+# IDebugControl4::GetTextMacroWide method
 The <b>GetTextMacroWide</b> method returns the value of a fixed-name alias.
 
 ## Syntax
 
-````
+```
 HRESULT GetTextMacroWide(
-  [in]            ULONG  Slot,
-  [out, optional] PWSTR  Buffer,
-  [in]            ULONG  BufferSize,
-  [out, optional] PULONG MacroSize
+  ULONG  Slot,
+  PWSTR  Buffer,
+  ULONG  BufferSize,
+  PULONG MacroSize
 );
-````
+```
 
 ## Parameters
 
@@ -113,20 +113,20 @@ For an overview of aliases used by the <a href="https://msdn.microsoft.com/fa52a
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556809">SetTextMacro</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554663">r (Registers)</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547988">GetNumberTextReplacements</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff549280">GetTextReplacement</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556809">SetTextMacro</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554663">r (Registers)</a>

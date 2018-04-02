@@ -7,7 +7,7 @@ old-location: display\dxgkargcb_notify_interrupt_data.htm
 old-project: display
 ms.assetid: c71078fb-5666-4038-81a0-de9375bafb5c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*IN_CONST_PDXGKARGCB_NOTIFY_INTERRUPT_DATA, DXGKARGCB_NOTIFY_INTERRUPT_DATA, DXGKARGCB_NOTIFY_INTERRUPT_DATA structure [Display Devices], DmStructs_071ed85c-70d6-44d8-95e3-7f6609331f4f.xml, STATUS_INVALID_PARAMETER, STATUS_NO_MEMORY, STATUS_SUCCESS, _DXGKARGCB_NOTIFY_INTERRUPT_DATA, d3dkmddi/DXGKARGCB_NOTIFY_INTERRUPT_DATA, display.dxgkargcb_notify_interrupt_data"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,97 +47,121 @@ req.typenames: DXGKARGCB_NOTIFY_INTERRUPT_DATA
 The DXGKARGCB_NOTIFY_INTERRUPT_DATA structure describes notification information.
 
 ## Syntax
-````
+```
 typedef struct _DXGKARGCB_NOTIFY_INTERRUPT_DATA {
-  DXGK_INTERRUPT_TYPE                InterruptType;
+  DXGK_INTERRUPT_TYPE                InterruptType;
   union {
+    DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS DisplayOnlyPresentProgress;
     struct {
       UINT SubmissionFenceId;
       UINT NodeOrdinal;
       UINT EngineOrdinal;
-    } DmaCompleted;
+    } DmaCompleted;
     struct {
       UINT PreemptionFenceId;
       UINT LastCompletedFenceId;
       UINT NodeOrdinal;
       UINT EngineOrdinal;
-    } DmaPreempted;
+    } DmaPreempted;
     struct {
-      UINT     FaultedFenceId;
+      UINT     FaultedFenceId;
       NTSTATUS Status;
-      UINT     NodeOrdinal;
-      UINT     EngineOrdinal;
-    } DmaFaulted;
+      UINT     NodeOrdinal;
+      UINT     EngineOrdinal;
+    } DmaFaulted;
     struct {
       D3DDDI_VIDEO_PRESENT_TARGET_ID VidPnTargetId;
-      PHYSICAL_ADDRESS               PhysicalAddress;
-      UINT                           PhysicalAdapterMask;
-    } CrtcVsync;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WIN8)
+      PHYSICAL_ADDRESS               PhysicalAddress;
+      UINT                           PhysicalAdapterMask;
+    } CrtcVsync;
     struct {
       D3DDDI_VIDEO_PRESENT_TARGET_ID VidPnTargetId;
-    } DisplayOnlyVsync;
+    } DisplayOnlyVsync;
     struct {
-      D3DDDI_VIDEO_PRESENT_TARGET_ID     VidPnTargetId;
-      UINT                               PhysicalAdapterMask;
-      UINT                               MultiPlaneOverlayVsyncInfoCount;
+      D3DDDI_VIDEO_PRESENT_TARGET_ID     VidPnTargetId;
+      UINT                               PhysicalAdapterMask;
+      UINT                               MultiPlaneOverlayVsyncInfoCount;
       DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO *pMultiPlaneOverlayVsyncInfo;
-    } CrtcVsyncWithMultiPlaneOverlay;
-    DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS DisplayOnlyPresentProgress;
-#endif 
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3)
+    } CrtcVsyncWithMultiPlaneOverlay;
     struct {
       D3DDDI_VIDEO_PRESENT_TARGET_ID VidPnTargetId;
-      DXGK_MIRACAST_CHUNK_INFO       ChunkInfo;
-      PVOID                          pPrivateDriverData;
-      UINT                           PrivateDataDriverSize;
-      NTSTATUS                       Status;
-    } MiracastEncodeChunkCompleted;
-#endif 
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM2_0)
+      DXGK_MIRACAST_CHUNK_INFO       ChunkInfo;
+      PVOID                          pPrivateDriverData;
+      UINT                           PrivateDataDriverSize;
+      NTSTATUS                       Status;
+    } MiracastEncodeChunkCompleted;
     struct {
-      UINT                       FaultedFenceId;
-      UINT64                     FaultedPrimitiveAPISequenceNumber;
+      UINT                       FaultedFenceId;
+      UINT64                     FaultedPrimitiveAPISequenceNumber;
       DXGK_RENDER_PIPELINE_STAGE FaultedPipelineStage;
-      UINT                       FaultedBindTableEntry;
-      DXGK_PAGE_FAULT_FLAGS      PageFaultFlags;
-      D3DGPU_VIRTUAL_ADDRESS     FaultedVirtualAddress;
-      UINT                       NodeOrdinal;
-      UINT                       EngineOrdinal;
-      UINT                       PageTableLevel;
-      DXGK_FAULT_ERROR_CODE      FaultErrorCode;
-      HANDLE                     FaultedProcessHandle;
-    } DmaPageFaulted;
-#endif 
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM2_2)
-    D3DDDI_VIDEO_PRESENT_TARGET_ID         VidPnTargetId;
-    UINT                                   PhysicalAdapterMask;
-    UINT                                   MultiPlaneOverlayVsyncInfoCount;
-    DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2    *pMultiPlaneOverlayVsyncInfo;
-    ULONGLONG                              GpuFrequency;
-    ULONGLONG                              GpuClockCounter;
-#endif 
+      UINT                       FaultedBindTableEntry;
+      DXGK_PAGE_FAULT_FLAGS      PageFaultFlags;
+      D3DGPU_VIRTUAL_ADDRESS     FaultedVirtualAddress;
+      UINT                       NodeOrdinal;
+      UINT                       EngineOrdinal;
+      UINT                       PageTableLevel;
+      DXGK_FAULT_ERROR_CODE      FaultErrorCode;
+      HANDLE                     FaultedProcessHandle;
+    } DmaPageFaulted;
+    struct {
+      D3DDDI_VIDEO_PRESENT_TARGET_ID      VidPnTargetId;
+      UINT                                PhysicalAdapterMask;
+      UINT                                MultiPlaneOverlayVsyncInfoCount;
+      DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO2 *pMultiPlaneOverlayVsyncInfo;
+      ULONGLONG                           GpuFrequency;
+      ULONGLONG                           GpuClockCounter;
+    } CrtcVsyncWithMultiPlaneOverlay2;
+    struct {
+      UINT NodeOrdinal;
+      UINT EngineOrdinal;
+    } MonitoredFenceSignaled;
+    struct {
+      UINT   NodeOrdinal;
+      UINT   EngineOrdinal;
+      UINT64 ContextSwitchFence;
+    } HwContextListSwitchCompleted;
+    struct {
+      UINT64                     FaultedFenceId;
+      D3DGPU_VIRTUAL_ADDRESS     FaultedVirtualAddress;
+      UINT64                     FaultedPrimitiveAPISequenceNumber;
+      union {
+        HANDLE FaultedHwContext;
+        HANDLE FaultedHwQueue;
+        HANDLE FaultedProcessHandle;
+      };
+      UINT                       NodeOrdinal;
+      UINT                       EngineOrdinal;
+      DXGK_RENDER_PIPELINE_STAGE FaultedPipelineStage;
+      UINT                       FaultedBindTableEntry;
+      DXGK_PAGE_FAULT_FLAGS      PageFaultFlags;
+      UINT                       PageTableLevel;
+      DXGK_FAULT_ERROR_CODE      FaultErrorCode;
+    } HwQueuePageFaulted;
+    struct {
+      D3DDDI_VIDEO_PRESENT_TARGET_ID VidPnTargetId;
+      UINT                           NotificationID;
+    } PeriodicMonitoredFenceSignaled;
     struct {
       UINT Reserved[16];
-    } Reserved;
+    } Reserved;
   };
   DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS Flags;
 } DXGKARGCB_NOTIFY_INTERRUPT_DATA;
-````
+```
 
 ## Members
 
 
 `InterruptType`
 
-[in] A <a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>-typed value that indicates the type of interrupt that the display miniport driver notifies the GPU scheduler about.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561136">DXGK_INTERRUPT_TYPE</a>-typed value that indicates the type of interrupt that the display miniport driver notifies the GPU scheduler about.
 
 `Flags`
 
-[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkcb_notify_interrupt_data_flags.md">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a> structure that indicates if the display miniport driver provides a physical adapter mask in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a> function.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff559579">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a> structure that indicates if the display miniport driver provides a physical adapter mask in a call to the <a href="https://msdn.microsoft.com/7968d26d-0195-463d-8954-e7ebef4f9dea">DxgkCbNotifyInterrupt</a> function.
 
 ## Remarks
-Depending on the value in the <b>InterruptType</b> member, the display miniport driver should set the appropriate union member in the DXGKARGCB_NOTIFY_INTERRUPT_DATA structure. For example, for the end of a direct memory access (DMA) buffer fence, which corresponds to a value of DXGK_INTERRUPT_DMA_COMPLETED in <b>InterruptType</b>, the driver must set a value in the <b>SubmissionFenceId</b> member of the <b>DmaCompleted</b> member. This value should be the DMA buffer fence identifier, which the driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a> function assigned to the just completed DMA buffer.
+Depending on the value in the <b>InterruptType</b> member, the display miniport driver should set the appropriate union member in the DXGKARGCB_NOTIFY_INTERRUPT_DATA structure. For example, for the end of a direct memory access (DMA) buffer fence, which corresponds to a value of DXGK_INTERRUPT_DMA_COMPLETED in <b>InterruptType</b>, the driver must set a value in the <b>SubmissionFenceId</b> member of the <b>DmaCompleted</b> member. This value should be the DMA buffer fence identifier, which the driver's <a href="https://msdn.microsoft.com/de1925ab-e444-4cf6-acd9-8fdab26afcec">DxgkDdiSubmitCommand</a> function assigned to the just completed DMA buffer.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -147,36 +171,36 @@ Depending on the value in the <b>InterruptType</b> member, the display miniport 
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_present_displayonly_progress.md">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451245">DXGKARGCB_PRESENT_DISPLAYONLY_PROGRESS</a>
 
 
 
-<a href="..\d3dkmddi\ne-d3dkmddi-_dxgk_interrupt_type.md">DXGK_INTERRUPT_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559579">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_submitcommand.md">DxgkDdiSubmitCommand</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561136">DXGK_INTERRUPT_TYPE</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkcb_notify_interrupt.md">DxgkCbNotifyInterrupt</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn322054">DXGK_MIRACAST_CAPS</a>
 
 
 
-<a href="..\dispmprt\ns-dispmprt-_dxgk_miracast_caps.md">DXGK_MIRACAST_CAPS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn322056">DXGK_MIRACAST_CHUNK_INFO</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_vsync_info.md">DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh780309">DXGK_MULTIPLANE_OVERLAY_VSYNC_INFO</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkcb_notify_interrupt_data_flags.md">DXGKCB_NOTIFY_INTERRUPT_DATA_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906831">DXGK_PAGE_FAULT_FLAGS</a>
 
 
 
-<a href="..\d3dkmdt\ne-d3dkmdt-_dxgk_page_fault_flags.md">DXGK_PAGE_FAULT_FLAGS</a>
+<a href="https://msdn.microsoft.com/7968d26d-0195-463d-8954-e7ebef4f9dea">DxgkCbNotifyInterrupt</a>
 
 
 
-<a href="..\d3dukmdt\ns-d3dukmdt-dxgk_miracast_chunk_info.md">DXGK_MIRACAST_CHUNK_INFO</a>
+<a href="https://msdn.microsoft.com/de1925ab-e444-4cf6-acd9-8fdab26afcec">DxgkDdiSubmitCommand</a>

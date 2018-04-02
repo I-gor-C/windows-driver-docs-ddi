@@ -67,7 +67,7 @@ Pointer to the IRP to possibly move to the destination list from the source list
 
 `Context`
 
-Passed from <a href="..\ks\nf-ks-ksmoveirpsoncancelablequeue.md">KsMoveIrpsOnCancelableQueue</a>.
+Passed from <a href="https://msdn.microsoft.com/library/windows/hardware/ff563434">KsMoveIrpsOnCancelableQueue</a>.
 
 
 ## Return Value
@@ -88,4 +88,4 @@ Returns STATUS_SUCCESS to indicate the passed in IRP should be moved from the so
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksmoveirpsoncancelablequeue.md">KsMoveIrpsOnCancelableQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563434">KsMoveIrpsOnCancelableQueue</a>

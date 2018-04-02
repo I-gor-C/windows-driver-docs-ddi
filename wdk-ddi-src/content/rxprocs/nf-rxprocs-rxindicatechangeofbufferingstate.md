@@ -7,7 +7,7 @@ old-location: ifsk\rxindicatechangeofbufferingstate.htm
 old-project: ifsk
 ms.assetid: 981f5a33-a4f1-438c-8fcf-03a5ab4c0e44
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxIndicateChangeOfBufferingState, RxIndicateChangeOfBufferingState routine [Installable File System Drivers], ifsk.rxindicatechangeofbufferingstate, rxprocs/RxIndicateChangeOfBufferingState, rxref_4a7ba539-c0b8-4c3b-b642-c272d262310b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-VOID RxIndicateChangeOfBufferingState(
-   PMRX_SRV_CALL SrvCall,
-   PVOID         SrvOpenKey,
-   PVOID         MRxContext
+```
+void RxIndicateChangeOfBufferingState(
+  PMRX_SRV_CALL SrvCall,
+  PVOID         SrvOpenKey,
+  PVOID         Context
 );
-````
+```
 
 ## Parameters
 
@@ -96,15 +96,15 @@ If a buffering state request can be processed immediately instead of being queue
 
 ## See Also
 
-<a href="..\rxprocs\nf-rxprocs-rxchangebufferingstate.md">RxChangeBufferingState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554751">RX_CONTEXT</a>
 
 
 
-<a href="..\rxcontx\ns-rxcontx-_rx_context.md">RX_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554335">RxChangeBufferingState</a>
 
 
 
-<a href="..\rxprocs\nf-rxprocs-rxindicatechangeofbufferingstateforsrvopen.md">RxIndicateChangeOfBufferingStateForSrvOpen</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554490">RxIndicateChangeOfBufferingStateForSrvOpen</a>
 
 
 

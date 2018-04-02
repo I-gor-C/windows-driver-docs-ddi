@@ -7,7 +7,7 @@ old-location: storage\track_data.htm
 old-project: storage
 ms.assetid: f412ff4e-6c65-40f8-9747-dc5059e588f6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PTRACK_DATA, PTRACK_DATA, PTRACK_DATA structure pointer [Storage Devices], TRACK_DATA, TRACK_DATA structure [Storage Devices], _TRACK_DATA, ntddcdrm/PTRACK_DATA, ntddcdrm/TRACK_DATA, storage.track_data, structs-CD-ROM_37ea4578-82b7-4b8e-be1b-28c27de349d9.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: TRACK_DATA, *PTRACK_DATA
 ---
 
 # _TRACK_DATA structure
-Track descriptor is used in conjunction with <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc.md">CDROM_TOC</a> and <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_session_data.md">CDROM_TOC_SESSION_DATA</a>.
+Track descriptor is used in conjunction with <a href="https://msdn.microsoft.com/library/windows/hardware/ff551373">CDROM_TOC</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff551389">CDROM_TOC_SESSION_DATA</a>.
 
 ## Syntax
-````
+```
 typedef struct _TRACK_DATA {
-  UCHAR Reserved;
-  UCHAR Control  :4;
-  UCHAR Adr  :4;
-  UCHAR TrackNumber;
-  UCHAR Reserved1;
-  UCHAR Address[4];
-} TRACK_DATA, *PTRACK_DATA;
-````
+  UCHAR      Reserved;
+  UCHAR  : 4 Control;
+  UCHAR  : 4 Adr;
+  UCHAR      TrackNumber;
+  UCHAR      Reserved1;
+  UCHAR      Address[4];
+} *PTRACK_DATA, TRACK_DATA;
+```
 
 ## Members
 
@@ -95,8 +95,8 @@ This structure contains table of contents information for a track.
 
 ## See Also
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc.md">CDROM_TOC</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551373">CDROM_TOC</a>
 
 
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_toc_session_data.md">CDROM_TOC_SESSION_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551389">CDROM_TOC_SESSION_DATA</a>

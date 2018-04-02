@@ -47,13 +47,13 @@ req.typenames: KSSTREAMALLOCATOR_STATUS_EX, *PKSSTREAMALLOCATOR_STATUS_EX
 Client use KSSTREAMALLOCATOR_STATUS_EX to query the status for allocators supporting the extended allocator framing.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSSTREAMALLOCATOR_STATUS_EX {
   KSALLOCATOR_FRAMING_EX Framing;
-  ULONG                  AllocatedFrames;
-  ULONG                  Reserved;
-} KSSTREAMALLOCATOR_STATUS_EX, *PKSSTREAMALLOCATOR_STATUS_EX;
-````
+  ULONG                  AllocatedFrames;
+  ULONG                  Reserved;
+} *PKSSTREAMALLOCATOR_STATUS_EX, KSSTREAMALLOCATOR_STATUS_EX;
+```
 
 ## Members
 

@@ -7,7 +7,7 @@ old-location: display\videoportgetmdl.htm
 old-project: display
 ms.assetid: 03ec6323-a3f9-485d-80c8-92ac99d8e73a
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortGetMdl, VideoPortGetMdl function [Display Devices], VideoPort_Functions_570b04cd-9b69-4d1a-b953-7220d4fc7790.xml, display.videoportgetmdl, video/VideoPortGetMdl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,12 +52,12 @@ The <b>VideoPortGetMdl</b> function is <b>obsolete</b> in Windows 2000 and later
 
 ## Syntax
 
-````
-PVOID VideoPortGetMdl(
-  _In_ PVOID HwDeviceExtension,
-  _In_ PDMA  pDma
+```
+VIDEOPORT_API PVOID VideoPortGetMdl(
+  IN PVOID HwDeviceExtension,
+  IN PDMA  pDma
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ Pointer to the miniport driver's device extension.
 
 `pDma`
 
-Is a handle to the DMA context being queried. This handle was obtained from <a href="..\video\nf-video-videoportlockpages.md">VideoPortLockPages</a> or <a href="..\video\nf-video-videoportdodma.md">VideoPortDoDma</a>.
+Is a handle to the DMA context being queried. This handle was obtained from <a href="https://msdn.microsoft.com/library/windows/hardware/ff570327">VideoPortLockPages</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff570295">VideoPortDoDma</a>.
 
 
 ## Return Value

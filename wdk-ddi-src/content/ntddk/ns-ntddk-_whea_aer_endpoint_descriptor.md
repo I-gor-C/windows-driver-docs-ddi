@@ -47,21 +47,21 @@ req.typenames: WHEA_AER_ENDPOINT_DESCRIPTOR, *PWHEA_AER_ENDPOINT_DESCRIPTOR
 The WHEA_AER_ENDPOINT_DESCRIPTOR structure describes a PCI Express (PCIe) endpoint error source.
 
 ## Syntax
-````
+```
 typedef struct _WHEA_AER_ENDPOINT_DESCRIPTOR {
-  USHORT                        Type;
-  BOOLEAN                       Enabled;
-  UCHAR                         Reserved;
-  ULONG                         BusNumber;
-  WHEA_PCI_SLOT_NUMBER          Slot;
-  USHORT                        DeviceControl;
+  USHORT                        Type;
+  BOOLEAN                       Enabled;
+  UCHAR                         Reserved;
+  ULONG                         BusNumber;
+  WHEA_PCI_SLOT_NUMBER          Slot;
+  USHORT                        DeviceControl;
   AER_ENDPOINT_DESCRIPTOR_FLAGS Flags;
-  ULONG                         UncorrectableErrorMask;
-  ULONG                         UncorrectableErrorSeverity;
-  ULONG                         CorrectableErrorMask;
-  ULONG                         AdvancedCapsAndControl;
-} WHEA_AER_ENDPOINT_DESCRIPTOR, *PWHEA_AER_ENDPOINT_DESCRIPTOR;
-````
+  ULONG                         UncorrectableErrorMask;
+  ULONG                         UncorrectableErrorSeverity;
+  ULONG                         CorrectableErrorMask;
+  ULONG                         AdvancedCapsAndControl;
+} *PWHEA_AER_ENDPOINT_DESCRIPTOR, WHEA_AER_ENDPOINT_DESCRIPTOR;
+```
 
 ## Members
 
@@ -84,7 +84,7 @@ The endpoint's bus number.
 
 `Slot`
 
-A <a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the endpoint is located in the system.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560595">WHEA_PCI_SLOT_NUMBER</a> structure that describes the logical PCI slot where the endpoint is located in the system.
 
 `DeviceControl`
 
@@ -168,7 +168,7 @@ The contents of the endpoint's Correctable Error Mask register.
 The contents of the endpoint's Advanced Error Capabilities and Control register.
 
 ## Remarks
-A WHEA_AER_ENDPOINT_DESCRIPTOR structure is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
+A WHEA_AER_ENDPOINT_DESCRIPTOR structure is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -178,8 +178,8 @@ A WHEA_AER_ENDPOINT_DESCRIPTOR structure is contained within the <a href="..\ntd
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_pci_slot_number.md">WHEA_PCI_SLOT_NUMBER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560505">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_error_source_descriptor.md">WHEA_ERROR_SOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560595">WHEA_PCI_SLOT_NUMBER</a>

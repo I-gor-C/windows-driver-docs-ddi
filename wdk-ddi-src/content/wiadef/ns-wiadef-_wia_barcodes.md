@@ -21,10 +21,10 @@ req.kmdf-ver:
 req.umdf-ver: 
 req.ddi-compliance: 
 req.unicode-ansi: 
-req.idl: 
+req.idl: WDTFSystemAction.idl
 req.max-support: 
-req.namespace: 
-req.assembly: 
+req.namespace: Microsoft.WDTF
+req.assembly: WDTFSystemAction.Interop.dll
 req.type-library: 
 req.lib: 
 req.dll: 
@@ -48,15 +48,15 @@ req.product: Windows 10 or later.
 The <b>WIA_BARCODES</b> structure stores header information for the barcode metadata report of one scan job (one call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543956">IWiaMiniDrv::drvAcquireItemData</a>).
 
 ## Syntax
-````
+```
 typedef struct _WIA_BARCODES {
-  DWORD            Tag;
-  DWORD            Version;
-  DWORD            Size;
-  DWORD            Count;
+  DWORD            Tag;
+  DWORD            Version;
+  DWORD            Size;
+  DWORD            Count;
   WIA_BARCODE_INFO Barcodes[1];
 } WIA_BARCODES;
-````
+```
 
 ## Members
 
@@ -71,15 +71,15 @@ Must be the value 0x00010000 (Version 1.0).
 
 `Size`
 
-The complete size of this <b>WIA_BARCODES</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_barcode_info.md">WIA_BARCODE_INFO</a> list.
+The complete size of this <b>WIA_BARCODES</b> header structure, in bytes, including the complete size of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh706205">WIA_BARCODE_INFO</a> list.
 
 `Count`
 
-Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_barcode_info.md">WIA_BARCODE_INFO</a> elements in the Barcodes sequence.
+Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/hh706205">WIA_BARCODE_INFO</a> elements in the Barcodes sequence.
 
 `Barcodes`
 
-Placeholder for  a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_barcode_info.md">WIA_BARCODE_INFO</a> structures.
+Placeholder for  a sequence of <b>Count</b> contiguous <a href="https://msdn.microsoft.com/library/windows/hardware/hh706205">WIA_BARCODE_INFO</a> structures.
 
 ## Remarks
 The header must be followed by a sequence of barcode information structures, one for each decoded barcode, in the order the barcodes were found and decoded.

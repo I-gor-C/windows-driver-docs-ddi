@@ -50,9 +50,18 @@ The <b>KsFastPropertyHandler</b> function handles fast property requests through
 
 ## Syntax
 
-````
-KSDDKAPI BOOLEAN NTAPI KsFastPropertyHandler(void);
-````
+```
+KSDDKAPI BOOLEAN KsFastPropertyHandler(
+  PFILE_OBJECT         FileObject,
+  PKSPROPERTY          Property,
+  ULONG                PropertyLength,
+  PVOID                Data,
+  ULONG                DataLength,
+  PIO_STATUS_BLOCK     IoStatus,
+  ULONG                PropertySetsCount,
+  const KSPROPERTY_SET *PropertySet
+);
+```
 
 ## Parameters
 
@@ -106,4 +115,4 @@ The owner of a property set can perform prefiltering or postfiltering of the pro
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspropertyhandler.md">KsPropertyHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564263">KsPropertyHandler</a>

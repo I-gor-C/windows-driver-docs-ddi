@@ -50,17 +50,17 @@ The <code>OEMQueryFontData</code> function retrieves information about a realize
 
 ## Syntax
 
-````
-LONG APIENTRY OEMQueryFontData(
-        DHPDEV                       dhpdev,
-        FONTOBJ                      *pfo,
-        ULONG                        iMode,
-        HGLYPH                       hg,
-        GLYPHDATA                    *pgd,
-  _Out_ _writes_bytes_(cjSize) PVOID pv,
-        ULONG                        cjSize
+```
+LONG OEMQueryFontData(
+  DHPDEV    dhpdev,
+  FONTOBJ   *pfo,
+  ULONG     iMode,
+  HGLYPH    hg,
+  GLYPHDATA *pgd,
+  PVOID     pv,
+  ULONG     cjSize
 );
-````
+```
 
 ## Parameters
 

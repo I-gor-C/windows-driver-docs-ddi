@@ -44,16 +44,16 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsGetTime method
+# IKsClockPropertySet::KsGetTime method
 The <b>KsGetTime</b> method retrieves the time of the underlying clock.
 
 ## Syntax
 
-````
+```
 HRESULT KsGetTime(
-  [out] LONGLONG *Time
+  LONGLONG *Time
 );
-````
+```
 
 ## Parameters
 

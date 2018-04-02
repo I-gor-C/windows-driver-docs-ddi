@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# ValidatePrintTicket method
+# IPrintOemPrintTicketProvider::ValidatePrintTicket method
 The <code>IPrintOemPrintTicketProvider::ValidatePrintTicket</code> method validates a print ticket.
 
 ## Syntax

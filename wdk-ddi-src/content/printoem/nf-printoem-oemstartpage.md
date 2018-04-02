@@ -50,11 +50,11 @@ The <code>OEMStartPage</code> function is called by GDI when it is ready to star
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMStartPage(
-   SURFOBJ *pso
+```
+BOOL OEMStartPage(
+  SURFOBJ *pso
 );
-````
+```
 
 ## Parameters
 

@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# RegisterLaunchApplication method
+# IStillImageW::RegisterLaunchApplication method
 The <b>IStillImage::RegisterLaunchApplication</b> method adds an application to the still image event monitor's list of push-model aware applications.
 
 ## Syntax
 
-````
+```
 HRESULT RegisterLaunchApplication(
-  [in] LPWSTR pwszAppName,
-  [in] LPWSTR pwszCommandLine
+  LPWSTR pwszAppName,
+  LPWSTR pwszCommandLine
 );
-````
+```
 
 ## Parameters
 

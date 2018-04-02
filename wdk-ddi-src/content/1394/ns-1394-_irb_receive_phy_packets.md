@@ -47,13 +47,13 @@ req.typenames: IRB_REQ_RECEIVE_PHY_PACKETS
 This structure contains the fields necessary to carry out a ReceivePhyPackets request.
 
 ## Syntax
-````
-typedef struct _IRB_REQ_RECEIVE_PHY_PACKETS {
-  ULONG                        Flags;
+```
+typedef struct _IRB_RECEIVE_PHY_PACKETS {
+  ULONG                        Flags;
   PBUS_PHY_PACKET_NOTIFICATION PhyPacketRoutine;
-  PVOID                        PhyPacketContext;
+  PVOID                        PhyPacketContext;
 } IRB_REQ_RECEIVE_PHY_PACKETS;
-````
+```
 
 ## Members
 

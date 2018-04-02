@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The PCW_COUNTER_INFORMATION structure describes attributes that identify a specific instance of a counter set.
 
 ## Syntax
-````
+```
 typedef struct _PCW_COUNTER_INFORMATION {
-  ULONG64          CounterMask;
+  ULONG64          CounterMask;
   PCUNICODE_STRING InstanceMask;
 } PCW_COUNTER_INFORMATION, *PPCW_COUNTER_INFORMATION;
-````
+```
 
 ## Members
 

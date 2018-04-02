@@ -7,7 +7,7 @@ old-location: display\videoprocessorsetstreamrotation.htm
 old-project: display
 ms.assetid: 9b7d91e0-4913-404c-b7d7-eb63e9919919
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3D11_1DDI_VIDEOPROCESSORSETSTREAMROTATION, d3d10umddi/pfnVideoProcessorSetStreamRotation, display.videoprocessorsetstreamrotation, pfnVideoProcessorSetStreamRotation, pfnVideoProcessorSetStreamRotation callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -104,8 +104,8 @@ The application must update the stream destination rectangle correctly when usin
 
 ## See Also
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_rotation.md">D3D11_1DDI_VIDEO_PROCESSOR_ROTATION</a>
+<a href="https://msdn.microsoft.com/741045a2-0a91-490a-907d-5f4900a4a0ae">CreateVideoProcessor</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessor.md">CreateVideoProcessor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451019">D3D11_1DDI_VIDEO_PROCESSOR_ROTATION</a>

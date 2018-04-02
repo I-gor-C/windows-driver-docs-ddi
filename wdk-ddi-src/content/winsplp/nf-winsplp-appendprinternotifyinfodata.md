@@ -50,13 +50,13 @@ The print spooler's <b>AppendPrinterNotifyInfoData</b> function adds the content
 
 ## Syntax
 
-````
+```
 BOOL AppendPrinterNotifyInfoData(
-  _In_     PPRINTER_NOTIFY_INFO      pInfoDest,
-  _In_opt_ PPRINTER_NOTIFY_INFO_DATA pInfoDataSrc,
-           DWORD                     fdwFlags
+  PPRINTER_NOTIFY_INFO      pInfoDest,
+  PPRINTER_NOTIFY_INFO_DATA pDataSrc,
+  DWORD                     fdwFlags
 );
-````
+```
 
 ## Parameters
 
@@ -87,7 +87,7 @@ If the operation succeeds, the function returns <b>TRUE</b>. Otherwise, the func
 
 ## Remarks
 
-A print provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a> function should call <b>AppendPrinterNotifyInfoData</b> as often as necessary to populate a PRINTER_NOTIFY_INFO_DATA structure array, after first calling <a href="..\winsplp\nf-winsplp-routerallocprinternotifyinfo.md">RouterAllocPrinterNotifyInfo</a> to allocate storage for the array and its associated PRINTER_NOTIFY_INFO structure.
+A print provider's <a href="https://msdn.microsoft.com/library/windows/hardware/ff561930">RefreshPrinterChangeNotification</a> function should call <b>AppendPrinterNotifyInfoData</b> as often as necessary to populate a PRINTER_NOTIFY_INFO_DATA structure array, after first calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff562007">RouterAllocPrinterNotifyInfo</a> to allocate storage for the array and its associated PRINTER_NOTIFY_INFO structure.
 
 Based on whether the PRINTER_NOTIFY_INFO_DATA_COMPACT flag is set, the function either appends the specified PRINTER_NOTIFY_INFO_DATA structure to the end of the structure array or overwrites an existing array element. If the structure is appended, the function increments the PRINTER_NOTIFY_INFO structure's <b>Count</b> member.
 
@@ -113,4 +113,4 @@ For additional information, see <a href="https://msdn.microsoft.com/e75c6f89-9ce
 
 
 
-<a href="..\winsplp\nf-winsplp-routerallocprinternotifyinfo.md">RouterAllocPrinterNotifyInfo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562007">RouterAllocPrinterNotifyInfo</a>

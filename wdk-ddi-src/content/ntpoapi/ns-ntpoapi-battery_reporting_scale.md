@@ -47,12 +47,12 @@ req.typenames: BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE
 Battery miniclass drivers fill in this structure in response to certain <a href="https://msdn.microsoft.com/bd96b79a-5670-4aaf-b72c-619818c2a2e7">BatteryMiniQueryInformation</a> requests.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct BATTERY_REPORTING_SCALE {
   ULONG Granularity;
   ULONG Capacity;
-} BATTERY_REPORTING_SCALE, *PBATTERY_REPORTING_SCALE;
-````
+} *PBATTERY_REPORTING_SCALE, BATTERY_REPORTING_SCALE;
+```
 
 ## Members
 

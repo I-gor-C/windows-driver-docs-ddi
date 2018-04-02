@@ -47,12 +47,12 @@ req.typenames: KSLIST_ENTRY_LOCATION
 
 
 ## Syntax
-````
-typedef enum  { 
-  KsListEntryTail,
+```
+typedef enum KSLIST_ENTRY_LOCATION {
+  KsListEntryTail  ,
   KsListEntryHead
-} KSLIST_ENTRY_LOCATION;
-````
+} ;
+```
 
 ## Constants
 

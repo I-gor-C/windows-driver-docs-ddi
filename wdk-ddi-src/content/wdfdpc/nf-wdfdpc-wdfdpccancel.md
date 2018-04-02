@@ -53,12 +53,12 @@ The <b>WdfDpcCancel</b> method attempts to cancel the execution of a DPC object'
 
 ## Syntax
 
-````
+```
 BOOLEAN WdfDpcCancel(
-  _In_ WDFDPC  Dpc,
-  _In_ BOOLEAN Wait
+  WDFDPC  Dpc,
+  BOOLEAN Wait
 );
-````
+```
 
 ## Parameters
 
@@ -86,7 +86,7 @@ If the <i>Wait</i> parameter is <b>TRUE</b>, <b>WdfDpcCancel</b> must be called 
 
 #### Examples
 
-The following code example cancels the execution of the callback function that is associated with the DPC object that the code example in the <a href="..\wdfdpc\nf-wdfdpc-wdfdpccreate.md">WdfDpcCreate</a> topic created.
+The following code example cancels the execution of the callback function that is associated with the DPC object that the code example in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547140">WdfDpcCreate</a> topic created.
 
 <div class="code"><span codelanguage=""><table>
 <tr>

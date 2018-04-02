@@ -47,13 +47,13 @@ req.typenames:
 The _BRB_ACL_GET_MODE structure describes the ACL mode for the specified remote device.
 
 ## Syntax
-````
+```
 struct _BRB_ACL_GET_MODE {
   BRB_HEADER Hdr;
-  BTH_ADDR   BtAddress;
-  ACL_MODE   AclMode;
+  BTH_ADDR   BtAddress;
+  ACL_MODE   AclMode;
 };
-````
+```
 
 ## Members
 
@@ -61,7 +61,7 @@ struct _BRB_ACL_GET_MODE {
 `Hdr`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 `BtAddress`
@@ -71,7 +71,7 @@ The address of the remote device.
 `AclMode`
 
 A value from the 
-     <a href="..\bthddi\ne-bthddi-_acl_mode.md">ACL_MODE</a> enumeration that specifies the ACL mode of
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536577">ACL_MODE</a> enumeration that specifies the ACL mode of
      the remote device.
 
 ## Remarks
@@ -87,12 +87,12 @@ To get the current ACL connection state for a remote device, profile drivers sho
 
 ## See Also
 
-<a href="..\bthddi\ne-bthddi-_acl_mode.md">ACL_MODE</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536577">ACL_MODE</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536609">BRB_ACL_GET_MODE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a>

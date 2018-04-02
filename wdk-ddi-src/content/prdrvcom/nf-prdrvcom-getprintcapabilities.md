@@ -50,12 +50,12 @@ The <code>IPrintTicketProvider::GetPrintCapabilities</code> method queries the p
 
 ## Syntax
 
-````
+```
 HRESULT GetPrintCapabilities(
-  [in]  IXMLDOMDocument2 *pPrintTicket,
-  [out] IXMLDOMDocument2 **ppCapabilities
+  IN IXMLDOMDocument2  *pPrintTicket,
+  OUT IXMLDOMDocument2 **ppCapabilities
 );
-````
+```
 
 ## Parameters
 

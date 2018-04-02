@@ -76,7 +76,7 @@ Pointer to the input <a href="https://msdn.microsoft.com/library/windows/hardwar
 
 `CurrentOutput`
 
-Pointer to an <a href="..\ntdd8042\ns-ntdd8042-_output_packet.md">OUTPUT_PACKET</a> structure, which specifies an array of bytes that is being written to the hardware device.
+Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff543218">OUTPUT_PACKET</a> structure, which specifies an array of bytes that is being written to the hardware device.
 
 `StatusByte`
 
@@ -92,7 +92,7 @@ Specifies, if <b>TRUE</b>, that processing in the I8042prt keyboard ISR will con
 
 `ScanState`
 
-Pointer to a <a href="..\ntdd8042\ne-ntdd8042-_keyboard_scan_state.md">KEYBOARD_SCAN_STATE</a> enumeration value, which identifies the keyboard scan state.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff542342">KEYBOARD_SCAN_STATE</a> enumeration value, which identifies the keyboard scan state.
 
 
 ## Return Value
@@ -120,7 +120,7 @@ The PI8042_KEYBOARD_ISR callback runs in kernel mode at the IRQL of the I8042prt
 
 
 
-<a href="..\ntdd8042\nc-ntdd8042-pi8042_keyboard_isr.md">PI8042_KEYBOARD_ISR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542342">KEYBOARD_SCAN_STATE</a>
 
 
 
@@ -128,8 +128,8 @@ The PI8042_KEYBOARD_ISR callback runs in kernel mode at the IRQL of the I8042prt
 
 
 
-<a href="..\ntdd8042\ns-ntdd8042-_output_packet.md">OUTPUT_PACKET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543218">OUTPUT_PACKET</a>
 
 
 
-<a href="..\ntdd8042\ne-ntdd8042-_keyboard_scan_state.md">KEYBOARD_SCAN_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543248">PI8042_KEYBOARD_ISR</a>

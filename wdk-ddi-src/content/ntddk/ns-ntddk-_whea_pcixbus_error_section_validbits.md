@@ -44,26 +44,26 @@ req.typenames: WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXBUS_ERROR_SECTIO
 ---
 
 # _WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS structure
-The WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a> structure contain valid data.
+The WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union describes which members of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560583">WHEA_PCIXBUS_ERROR_SECTION</a> structure contain valid data.
 
 ## Syntax
-````
-typedef union _WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS {
+```
+typedef struct _WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS {
   struct {
-    ULONGLONG ErrorStatus  :1;
-    ULONGLONG ErrorType  :1;
-    ULONGLONG BusId  :1;
-    ULONGLONG BusAddress  :1;
-    ULONGLONG BusData  :1;
-    ULONGLONG BusCommand  :1;
-    ULONGLONG RequesterId  :1;
-    ULONGLONG CompleterId  :1;
-    ULONGLONG TargetId  :1;
-    ULONGLONG Reserved  :55;
-  };
+    ULONGLONG  : 1  BusAddress;
+    ULONGLONG  : 1  BusCommand;
+    ULONGLONG  : 1  BusData;
+    ULONGLONG  : 1  BusId;
+    ULONGLONG  : 1  CompleterId;
+    ULONGLONG  : 1  ErrorStatus;
+    ULONGLONG  : 1  ErrorType;
+    ULONGLONG  : 1  RequesterId;
+    ULONGLONG  : 55 Reserved;
+    ULONGLONG  : 1  TargetId;
+  } DUMMYSTRUCTNAME;
   ULONGLONG ValidBits;
-} WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS;
-````
+} *PWHEA_PCIXBUS_ERROR_SECTION_VALIDBITS, WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS;
+```
 
 ## Members
 
@@ -77,7 +77,7 @@ typedef union _WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS {
 A ULONGLONG representation of the contents of the WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union.
 
 ## Remarks
-A WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a> structure.
+A WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560583">WHEA_PCIXBUS_ERROR_SECTION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,4 +87,4 @@ A WHEA_PCIXBUS_ERROR_SECTION_VALIDBITS union is contained within the <a href="..
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_pcixbus_error_section.md">WHEA_PCIXBUS_ERROR_SECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560583">WHEA_PCIXBUS_ERROR_SECTION</a>

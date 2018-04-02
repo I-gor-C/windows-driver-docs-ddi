@@ -7,7 +7,7 @@ old-location: debugger\appendsymbolpathwide.htm
 old-project: debugger
 ms.assetid: 184f40ff-be43-482c-8620-382f11f95548
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: AppendSymbolPathWide method [Windows Debugging], AppendSymbolPathWide method [Windows Debugging], IDebugSymbols3 interface, AppendSymbolPathWide,IDebugSymbols3.AppendSymbolPathWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], AppendSymbolPathWide method, IDebugSymbols3::AppendSymbolPathWide, dbgeng/IDebugSymbols3::AppendSymbolPathWide, debugger.appendsymbolpathwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# AppendSymbolPathWide method
+# IDebugSymbols3::AppendSymbolPathWide method
 The <b>AppendSymbolPathWide</b>  method appends directories to the symbol path.
 
 ## Syntax
 
-````
+```
 HRESULT AppendSymbolPathWide(
-  [in] PCSTR Addition
+  PCWSTR Addition
 );
-````
+```
 
 ## Parameters
 
@@ -101,7 +101,7 @@ For more information about manipulating the symbol path, see <a href="https://ms
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>
 
 
 

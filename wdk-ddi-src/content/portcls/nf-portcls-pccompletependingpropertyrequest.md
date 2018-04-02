@@ -7,7 +7,7 @@ old-location: audio\pccompletependingpropertyrequest.htm
 old-project: audio
 ms.assetid: a4b59403-9a2f-4857-947b-dff8e3ea079c
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: PcCompletePendingPropertyRequest, PcCompletePendingPropertyRequest function [Audio Devices], audio.pccompletependingpropertyrequest, audpc-routines_934503ea-325f-4e57-ba45-e8834a64cefa.xml, portcls/PcCompletePendingPropertyRequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,18 +50,18 @@ The <b>PcCompletePendingPropertyRequest</b> function is called to complete a pen
 
 ## Syntax
 
-````
-NTSTATUS PcCompletePendingPropertyRequest(
-  _In_ PPCPROPERTY_REQUEST PropertyRequest,
-  _In_ NTSTATUS            NtStatus
+```
+PORTCLASSAPI NTSTATUS PcCompletePendingPropertyRequest(
+  PPCPROPERTY_REQUEST PropertyRequest,
+  NTSTATUS            NtStatus
 );
-````
+```
 
 ## Parameters
 
 `PropertyRequest`
 
-Pointer to the property request that was passed to the property handler. The request is a structure of type <a href="..\portcls\ns-portcls-_pcproperty_request.md">PCPROPERTY_REQUEST</a>.
+Pointer to the property request that was passed to the property handler. The request is a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537723">PCPROPERTY_REQUEST</a>.
 
 `NtStatus`
 
@@ -89,8 +89,8 @@ The driver should call <b>PcCompletePendingPropertyRequest</b> only when the req
 
 ## See Also
 
-<a href="..\portcls\ns-portcls-_pcproperty_request.md">PCPROPERTY_REQUEST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548343">IoCompleteRequest</a>
 
 
 
-<a href="..\wdm\nf-wdm-iocompleterequest.md">IoCompleteRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537723">PCPROPERTY_REQUEST</a>

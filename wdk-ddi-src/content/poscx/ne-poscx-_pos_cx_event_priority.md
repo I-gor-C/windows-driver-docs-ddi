@@ -48,13 +48,14 @@ req.product: Windows 10 or later.
 The POS_CX_EVENT_PRIORITY defines the importance of the event and the order it will be delivered to the client application.
 
 ## Syntax
-````
-typedef enum _POS_CX_EVENT_PRIORITY { 
-  POS_CX_EVENT_PRIORITY_INVALID  = 0,
-  POS_CX_EVENT_PRIORITY_DATA     = 1,
-  POS_CX_EVENT_PRIORITY_CONTROL  = 2
+```
+typedef enum _POS_CX_EVENT_PRIORITY {
+  POS_CX_EVENT_PRIORITY_INVALID  ,
+  POS_CX_EVENT_PRIORITY_DATA     ,
+  POS_CX_EVENT_PRIORITY_CONTROL  ,
+  POS_CX_EVENT_PRIORITY__MAX
 } POS_CX_EVENT_PRIORITY;
-````
+```
 
 ## Constants
 

@@ -7,7 +7,7 @@ old-location: display\iddcxswapchainfinishedprocessingframe.htm
 old-project: display
 ms.assetid: 46c4a592-b3d4-479d-b5db-06202b5be290
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IddCxSwapChainFinishedProcessingFrame, IddCxSwapChainFinishedProcessingFrame method [Display Devices], display.iddcxswapchainfinishedprocessingframe, iddcx/IddCxSwapChainFinishedProcessingFrame
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ An OS callback function the driver calls report all GPU command for processing t
 
 ## Syntax
 
-````
+```
 HRESULT IddCxSwapChainFinishedProcessingFrame(
-  _In_ IDDCX_SWAPCHAIN SwapChainObject
+  IDDCX_SWAPCHAIN SwapChainObject
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ The swap-chain object whose current frame is being queried.
 
 ## Remarks
 
-If the driver copies the buffer to a staging surface so it can lock and copy the pixel data to the CPU, then the driver should call this callback once the copy from surface to staging surface has been submitted. If the driver does not call this callback the desktop will not update. It is invalid to call <a href="..\iddcx\nf-iddcx-iddcxswapchainreleaseandacquirebuffer.md">IddCxSwapChainReleaseAndAcquireBuffer</a> before calling <b>IddCxSwapChainFinishedProcessingFrame</b>
+If the driver copies the buffer to a staging surface so it can lock and copy the pixel data to the CPU, then the driver should call this callback once the copy from surface to staging surface has been submitted. If the driver does not call this callback the desktop will not update. It is invalid to call <a href="https://msdn.microsoft.com/library/windows/hardware/mt761929">IddCxSwapChainReleaseAndAcquireBuffer</a> before calling <b>IddCxSwapChainFinishedProcessingFrame</b>
 
 ## Requirements
 | &nbsp; | &nbsp; |

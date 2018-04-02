@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMUpgradePrinter(
-   DWORD dwLevel,
-   PBYTE pDriverUpgradeInfo
+```
+BOOL OEMUpgradePrinter(
+  DWORD dwLevel,
+  PBYTE pDriverUpgradeInfo
 );
-````
+```
 
 ## Parameters
 

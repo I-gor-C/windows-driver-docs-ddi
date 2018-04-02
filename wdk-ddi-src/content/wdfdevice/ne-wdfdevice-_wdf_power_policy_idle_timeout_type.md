@@ -51,13 +51,13 @@ req.product: Windows 10 or later.
    The <b>WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</b> enumeration identifies how the idle timeout for a device is determined.
 
 ## Syntax
-````
-typedef enum _WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE { 
-  DriverManagedIdleTimeout          = 0,
-  SystemManagedIdleTimeout          = 1,
-  SystemManagedIdleTimeoutWithHint  = 2
+```
+typedef enum _WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE {
+  DriverManagedIdleTimeout          ,
+  SystemManagedIdleTimeout          ,
+  SystemManagedIdleTimeoutWithHint
 } WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE, *PWDF_POWER_POLICY_IDLE_TIMEOUT_TYPE;
-````
+```
 
 ## Constants
 
@@ -65,7 +65,7 @@ typedef enum _WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE {
             
                 <tr>
                     <td>DriverManagedIdleTimeout</td>
-                    <td>The idle timeout value is determined by the <b>IdleTimeout</b> member of the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure.</td>
+                    <td>The idle timeout value is determined by the <b>IdleTimeout</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551270">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure.</td>
                 </tr>
             
                 <tr>
@@ -89,7 +89,7 @@ On operating systems earlier than Windows 8, the behavior is the same as <b>Dri
 
 ## Remarks
 
-The <b>WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</b> enumeration is used in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure.
+The <b>WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551270">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,4 +100,4 @@ The <b>WDF_POWER_POLICY_IDLE_TIMEOUT_TYPE</b> enumeration is used in the <a href
 
 ## See Also
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551270">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>

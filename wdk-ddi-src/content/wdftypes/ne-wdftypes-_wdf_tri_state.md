@@ -51,13 +51,13 @@ req.product: Windows 10 or later.
 The WDF_TRI_STATE enumeration type defines three values that the framework uses for some structure members and function parameters.
 
 ## Syntax
-````
-typedef enum _WDF_TRI_STATE { 
-  WdfFalse       = FALSE,
-  WdfTrue        = TRUE,
-  WdfUseDefault  = 2
-} WDF_TRI_STATE, *PWDF_TRI_STATE;
-````
+```
+typedef enum _WDF_TRI_STATE {
+  WdfFalse       ,
+  WdfTrue        ,
+  WdfUseDefault
+} *PWDF_TRI_STATE, WDF_TRI_STATE;
+```
 
 ## Constants
 

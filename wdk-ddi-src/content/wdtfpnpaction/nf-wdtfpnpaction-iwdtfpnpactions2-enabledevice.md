@@ -7,7 +7,7 @@ old-location: dtf\iwdtfpnpactions2_enabledevice.htm
 old-project: dtf
 ms.assetid: a215710d-c2ea-4bbb-9eab-c808501bf8d8
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: EnableDevice method [Windows Device Testing Framework], EnableDevice method [Windows Device Testing Framework], IWDTFPNPActions2 interface, EnableDevice,IWDTFPNPActions2.EnableDevice, IWDTFPNPActions2, IWDTFPNPActions2 interface [Windows Device Testing Framework], EnableDevice method, IWDTFPNPActions2::EnableDevice, dtf.iwdtfpnpactions2_enabledevice, wdtfpnpaction/IWDTFPNPActions2::EnableDevice
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# EnableDevice method
+# IWDTFPNPActions2::EnableDevice method
 Enables the target device.
 
 ## Syntax
 
-````
+```
 HRESULT EnableDevice(
-  [out, retval] VARIANT_BOOL *pbRebootRequired
+  VARIANT_BOOL *pbRebootRequired
 );
-````
+```
 
 ## Parameters
 
@@ -76,4 +76,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\wdtfpnpaction\nn-wdtfpnpaction-iwdtfpnpactions2.md">IWDTFPNPActions2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451094">IWDTFPNPActions2</a>

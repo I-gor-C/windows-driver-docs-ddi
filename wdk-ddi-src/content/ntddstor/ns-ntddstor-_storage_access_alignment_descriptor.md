@@ -7,7 +7,7 @@ old-location: storage\storage_access_alignment_descriptor.htm
 old-project: storage
 ms.assetid: 988122bf-d7de-44a3-a059-c984bf636cd0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure pointer [Storage Devices], STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure [Storage Devices], _STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, ntddstor/PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, ntddstor/STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, storage.storage_access_alignment_descriptor, structs-general_191220fa-6df5-478b-b60e-af8e3f62d441.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,20 +44,20 @@ req.typenames: STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, PSTORAGE_ACCESS_ALIGNMENT_DE
 ---
 
 # _STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure
-The STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure is used in conjunction with the <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> request to retrieve the storage access alignment descriptor data for a device.
+The STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> request to retrieve the storage access alignment descriptor data for a device.
 
 ## Syntax
-````
+```
 typedef struct _STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR {
-  ULONG Version;
-  ULONG Size;
-  ULONG BytesPerCacheLine;
-  ULONG BytesOffsetForCacheAlignment;
-  ULONG BytesPerLogicalSector;
-  ULONG BytesPerPhysicalSector;
-  ULONG BytesOffsetForSectorAlignment;
-} STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, *PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR;
-````
+  __WRAPPED__ ULONG Version;
+  __WRAPPED__ ULONG Size;
+  __WRAPPED__ ULONG BytesPerCacheLine;
+  __WRAPPED__ ULONG BytesOffsetForCacheAlignment;
+  __WRAPPED__ ULONG BytesPerLogicalSector;
+  __WRAPPED__ ULONG BytesPerPhysicalSector;
+  __WRAPPED__ ULONG BytesOffsetForSectorAlignment;
+} PSTORAGE_ACCESS_ALIGNMENT_DESCRIPTOR, STORAGE_ACCESS_ALIGNMENT_DESCRIPTOR;
+```
 
 ## Members
 
@@ -110,7 +110,7 @@ Example:  Offset = 3 Logical sectors
 In this example, BytesOffsetForSectorAlignment = 3 * size_of_logical_sector.
 
 ## Remarks
-Storage class drivers issue a device-control request with the I/O control code  <a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve this structure, which contains access alignment information for data transfer operations. The structure can be retrieved either from the device object for the bus or from an FDO, which forwards the request to the underlying bus.
+Storage class drivers issue a device-control request with the I/O control code  <a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a> to retrieve this structure, which contains access alignment information for data transfer operations. The structure can be retrieved either from the device object for the bus or from an FDO, which forwards the request to the underlying bus.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -119,4 +119,4 @@ Storage class drivers issue a device-control request with the I/O control code  
 
 ## See Also
 
-<a href="..\ntddstor\ni-ntddstor-ioctl_storage_query_property.md">IOCTL_STORAGE_QUERY_PROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560590">IOCTL_STORAGE_QUERY_PROPERTY</a>

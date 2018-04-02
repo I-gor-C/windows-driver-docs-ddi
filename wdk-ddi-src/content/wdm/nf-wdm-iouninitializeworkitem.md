@@ -7,7 +7,7 @@ old-location: kernel\iouninitializeworkitem.htm
 old-project: kernel
 ms.assetid: 8e7713a5-534d-42b4-a719-7b7ce911245a
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoUninitializeWorkItem, IoUninitializeWorkItem routine [Kernel-Mode Driver Architecture], k104_05634a73-eb65-4572-a776-4dcd6b116f52.xml, kernel.iouninitializeworkitem, wdm/IoUninitializeWorkItem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,15 +46,15 @@ req.product: Windows 10 or later.
 
 
 # IoUninitializeWorkItem function
-The <b>IoUninitializeWorkItem</b> routine uninitializes a work item that was initialized by <a href="..\wdm\nf-wdm-ioinitializeworkitem.md">IoInitializeWorkItem</a>.
+The <b>IoUninitializeWorkItem</b> routine uninitializes a work item that was initialized by <a href="https://msdn.microsoft.com/library/windows/hardware/ff549349">IoInitializeWorkItem</a>.
 
 ## Syntax
 
-````
-VOID IoUninitializeWorkItem(
-  _In_ PIO_WORKITEM IoWorkItem
+```
+void IoUninitializeWorkItem(
+  PIO_WORKITEM IoWorkItem
 );
-````
+```
 
 ## Parameters
 
@@ -85,8 +85,8 @@ For more information about work items, see <a href="https://msdn.microsoft.com/l
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-ioinitializeworkitem.md">IoInitializeWorkItem</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550679">IO_WORKITEM</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549349">IoInitializeWorkItem</a>

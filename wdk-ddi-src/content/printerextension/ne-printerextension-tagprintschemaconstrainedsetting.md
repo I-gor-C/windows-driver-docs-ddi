@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 The  PrintSchemaConstrainedSetting enumeration specifies whether the Option is available based on the current device configuration. The <b>constrained</b> attribute appears only in a PrintCapabilities document.
 
 ## Syntax
-````
-typedef enum tagPrintSchemaConstrainedSetting { 
-  PrintSchemaConstrainedSetting_None         = 0,
-  PrintSchemaConstrainedSetting_PrintTicket  = 1,
-  PrintSchemaConstrainedSetting_Admin        = 2,
-  PrintSchemaConstrainedSetting_Device       = 3
+```
+typedef enum tagPrintSchemaConstrainedSetting {
+  PrintSchemaConstrainedSetting_None         ,
+  PrintSchemaConstrainedSetting_PrintTicket  ,
+  PrintSchemaConstrainedSetting_Admin        ,
+  PrintSchemaConstrainedSetting_Device
 } PrintSchemaConstrainedSetting;
-````
+```
 
 ## Constants
 

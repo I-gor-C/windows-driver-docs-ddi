@@ -7,7 +7,7 @@ old-location: display\d3d11_1ddiarg_createvideoprocessor.htm
 old-project: display
 ms.assetid: 957cfebe-4cd9-4a35-822e-ebde4cd9e84c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D11_1DDIARG_CREATEVIDEOPROCESSOR, D3D11_1DDIARG_CREATEVIDEOPROCESSOR structure [Display Devices], d3d10umddi/D3D11_1DDIARG_CREATEVIDEOPROCESSOR, display.d3d11_1ddiarg_createvideoprocessor
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,23 +47,23 @@ req.typenames: D3D11_1DDIARG_CREATEVIDEOPROCESSOR
 Specifies the attributes of a video processor object.
 
 ## Syntax
-````
+```
 typedef struct D3D11_1DDIARG_CREATEVIDEOPROCESSOR {
   D3D11_1DDI_HVIDEOPROCESSORENUM hVideoProcessorEnum;
-  UINT                           RateConversionCapsIndex;
-} D3D11_1DDIARG_CREATEVIDEOPROCESSOR;
-````
+  UINT                           RateConversionCapsIndex;
+};
+```
 
 ## Members
 
 
 `hVideoProcessorEnum`
 
-A handle to a video processor enumeration object that was created through a call to the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessorenum.md">CreateVideoProcessorEnum</a> function.
+A handle to a video processor enumeration object that was created through a call to the <a href="https://msdn.microsoft.com/38c27502-7e8a-45a1-8a7c-315300502480">CreateVideoProcessorEnum</a> function.
 
 `RateConversionCapsIndex`
 
-Specifies the frame-rate conversion capabilities for the video processor. The value is a zero-based index that corresponds to the <i>RateConversionIndex</i> parameter of the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorrateconversioncaps.md">GetVideoProcessorRateConversionCaps</a> method.
+Specifies the frame-rate conversion capabilities for the video processor. The value is a zero-based index that corresponds to the <i>RateConversionIndex</i> parameter of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451690">GetVideoProcessorRateConversionCaps</a> method.
 
 
 ## Requirements
@@ -74,8 +74,8 @@ Specifies the frame-rate conversion capabilities for the video processor. The va
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_getvideoprocessorrateconversioncaps.md">GetVideoProcessorRateConversionCaps</a>
+<a href="https://msdn.microsoft.com/38c27502-7e8a-45a1-8a7c-315300502480">CreateVideoProcessorEnum</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessorenum.md">CreateVideoProcessorEnum</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451690">GetVideoProcessorRateConversionCaps</a>

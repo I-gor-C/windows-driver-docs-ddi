@@ -47,16 +47,16 @@ req.typenames: MOUSE_STATE, *PMOUSE_STATE
 The MOUSE_STATE enumeration type identifies the current state of input from a mouse.
 
 ## Syntax
-````
-typedef enum _MOUSE_STATE { 
-  MouseIdle,
-  XMovement,
-  YMovement,
-  ZMovement,
-  MouseExpectingACK,
+```
+typedef enum _MOUSE_STATE {
+  MouseIdle          ,
+  XMovement          ,
+  YMovement          ,
+  ZMovement          ,
+  MouseExpectingACK  ,
   MouseResetting
 } MOUSE_STATE, *PMOUSE_STATE;
-````
+```
 
 ## Constants
 
@@ -95,7 +95,7 @@ typedef enum _MOUSE_STATE {
 
 ## Remarks
 
-The MOUSE_STATE enumerator is used as input to a <a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a> callback.
+The MOUSE_STATE enumerator is used as input to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543252">PI8042_MOUSE_ISR</a> callback.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -104,8 +104,8 @@ The MOUSE_STATE enumerator is used as input to a <a href="..\ntdd8042\nc-ntdd804
 
 ## See Also
 
-<a href="..\ntdd8042\nc-ntdd8042-pi8042_mouse_isr.md">PI8042_MOUSE_ISR</a>
-
-
-
 <a href="https://msdn.microsoft.com/34d0a7e9-4a1e-43ba-a643-800ebaadc360">MouFilter_IsrHook</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543252">PI8042_MOUSE_ISR</a>

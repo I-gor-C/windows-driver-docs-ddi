@@ -49,10 +49,10 @@ The _BRB_L2CA_OPEN_CHANNEL structure describes a L2CAP channel to open to a remo
   initiated by a remote device.
 
 ## Syntax
-````
+```
 struct _BRB_L2CA_OPEN_CHANNEL {
-  BRB_HEADER                     Hdr;
-  L2CAP_CHANNEL_HANDLE           ChannelHandle;
+  BRB_HEADER                     Hdr;
+  L2CAP_CHANNEL_HANDLE           ChannelHandle;
   union {
     struct {
       USHORT Response;
@@ -60,35 +60,35 @@ struct _BRB_L2CA_OPEN_CHANNEL {
     };
     USHORT Psm;
   };
-  ULONG                          ChannelFlags;
-  BTH_ADDR                       BtAddress;
+  ULONG                          ChannelFlags;
+  BTH_ADDR                       BtAddress;
   struct {
-    ULONG                    Flags;
-    L2CAP_CONFIG_VALUE_RANGE Mtu;
+    PL2CAP_CONFIG_OPTION     ExtraOptions;
+    ULONG                    Flags;
+    L2CAP_FLOWSPEC           Flow;
     L2CAP_CONFIG_VALUE_RANGE FlushTO;
-    L2CAP_FLOWSPEC           Flow;
-    USHORT                   LinkTO;
-    ULONG                    NumExtraOptions;
-    PL2CAP_CONFIG_OPTION     ExtraOptions;
+    USHORT                   LinkTO;
+    L2CAP_CONFIG_VALUE_RANGE Mtu;
+    ULONG                    NumExtraOptions;
     struct {
       UCHAR ServiceType;
       ULONG Latency;
-    } LocalQos;
-  } ConfigOut;
+    } LocalQos;
+  } ConfigOut;
   struct {
-    ULONG                    Flags;
+    ULONG                    Flags;
+    L2CAP_CONFIG_RANGE       FlushTO;
     L2CAP_CONFIG_VALUE_RANGE Mtu;
-    L2CAP_CONFIG_RANGE       FlushTO;
-  } ConfigIn;
-  ULONG                          CallbackFlags;
+  } ConfigIn;
+  ULONG                          CallbackFlags;
   PFNBTHPORT_INDICATION_CALLBACK Callback;
-  PVOID                          CallbackContext;
-  PVOID                          ReferenceObject;
-  CHANNEL_CONFIG_RESULTS         OutResults;
-  CHANNEL_CONFIG_RESULTS         InResults;
-  UCHAR                          IncomingQueueDepth;
+  PVOID                          CallbackContext;
+  PVOID                          ReferenceObject;
+  CHANNEL_CONFIG_RESULTS         OutResults;
+  CHANNEL_CONFIG_RESULTS         InResults;
+  UCHAR                          IncomingQueueDepth;
 };
-````
+```
 
 ## Members
 
@@ -96,7 +96,7 @@ struct _BRB_L2CA_OPEN_CHANNEL {
 `Hdr`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 `ChannelHandle`
@@ -403,7 +403,7 @@ If set, the callback routine will be called when the profile driver receives an 
 `Callback`
 
 The 
-     <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback
+     <a href="https://msdn.microsoft.com/d3ca900d-1dd6-49da-ae94-855de3fbd086">L2CAP Callback
      Function</a> implemented by the profile driver, that the Bluetooth driver stack should call to notify
      the profile driver about any changes to the L2CAP connection.
 
@@ -415,14 +415,14 @@ The context to pass to the callback function specified in the
 `ReferenceObject`
 
 A pointer to an object to pass to 
-     <a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a> and 
-     <a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a> for which to
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff558678">ObReferenceObject</a> and 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a> for which to
      maintain a reference count of.
 
 `OutResults`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_channel_config_results.md">CHANNEL_CONFIG_RESULTS</a> structure that
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536670">CHANNEL_CONFIG_RESULTS</a> structure that
      contains configuration parameters for the outbound request.
 
 `InResults`
@@ -459,7 +459,7 @@ Profile drivers must allocate the memory to store the array that is stored in th
     <b>ExtraOptions</b> member and should not free this memory until the callback function defined in the 
     <b>Callback</b> member returns with an 
     <b>IndicationFreeExtraOptions</b> notification 
-    <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> value passed in its 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536679">INDICATION_CODE</a> value passed in its 
     <i>Indication</i> parameter.
 
 The 
@@ -476,7 +476,7 @@ To accept or reject an incoming L2CAP connection request initiated by a remote d
 
 A profile driver should build and send a <b>BRB_L2CA_OPEN_CHANNEL_RESPONSE</b> request when the Bluetooth
     driver stack calls the profile driver's 
-    <a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a> and passes 
+    <a href="https://msdn.microsoft.com/d3ca900d-1dd6-49da-ae94-855de3fbd086">L2CAP Callback Function</a> and passes 
     <b>IndicationRemoteConnect</b> in the callback function's 
     <i>Indication</i> parameter.
 
@@ -512,27 +512,11 @@ Profile drivers must allocate the memory to store the array that is stored in th
 
 ## See Also
 
-<a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536615">BRB_L2CA_OPEN_CHANNEL</a>
-
-
-
-<a href="..\wdm\nf-wdm-obdereferenceobject.md">ObDereferenceObject</a>
-
-
-
-<a href="..\bthddi\ns-bthddi-_l2cap_config_option.md">L2CAP_CONFIG_OPTION</a>
-
-
-
-<a href="..\bthddi\nc-bthddi-pfnbthport_indication_callback.md">L2CAP Callback Function</a>
-
-
-
-<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536618">BRB_L2CA_REGISTER_SERVER</a>
 
 
 
@@ -541,16 +525,32 @@ Profile drivers must allocate the memory to store the array that is stored in th
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+<a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff536618">BRB_L2CA_REGISTER_SERVER</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536670">CHANNEL_CONFIG_RESULTS</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_channel_config_results.md">CHANNEL_CONFIG_RESULTS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536679">INDICATION_CODE</a>
 
 
 
-<a href="..\wdm\nf-wdm-obreferenceobject.md">ObReferenceObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536680">INDICATION_PARAMETERS</a>
+
+
+
+<a href="https://msdn.microsoft.com/d3ca900d-1dd6-49da-ae94-855de3fbd086">L2CAP Callback Function</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536757">L2CAP_CONFIG_OPTION</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557724">ObDereferenceObject</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558678">ObReferenceObject</a>

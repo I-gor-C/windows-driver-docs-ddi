@@ -47,16 +47,16 @@ req.typenames: CMP_GET_PLUG_STATE, *PCMP_GET_PLUG_STATE
 This structure is used in getting the state of a plug.The  request retrieves state information for the specified plug, including its current connections and bus data format. Plug state is volatile and can change unexpectedly.
 
 ## Syntax
-````
+```
 typedef struct _CMP_GET_PLUG_STATE {
-  HANDLE hPlug;
-  ULONG  State;
-  ULONG  DataRate;
-  ULONG  Payload;
-  ULONG  BC_Connections;
-  ULONG  PP_Connections;
-} CMP_GET_PLUG_STATE, *PCMP_GET_PLUG_STATE;
-````
+  IN HANDLE hPlug;
+  OUT ULONG State;
+  OUT ULONG DataRate;
+  OUT ULONG Payload;
+  OUT ULONG BC_Connections;
+  OUT ULONG PP_Connections;
+} *PCMP_GET_PLUG_STATE, CMP_GET_PLUG_STATE;
+```
 
 ## Members
 

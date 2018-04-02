@@ -7,7 +7,7 @@ old-location: ifsk\fltis32bitprocess.htm
 old-project: ifsk
 ms.assetid: 0ba4d101-5eba-4258-9526-9e9dc3fd142a
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_e_to_o_dbd737ec-e787-4f85-bd9e-833e06e862f0.xml, FltIs32bitProcess, FltIs32bitProcess routine [Installable File System Drivers], fltkernel/FltIs32bitProcess, ifsk.fltis32bitprocess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ The <b>FltIs32bitProcess</b> routine checks whether the originator of the curren
 
 ## Syntax
 
-````
-BOOLEAN FltIs32bitProcess(
-  _In_opt_ PFLT_CALLBACK_DATA CallbackData
+```
+BOOLEAN FLTAPI FltIs32bitProcess(
+  PFLT_CALLBACK_DATA CallbackData
 );
-````
+```
 
 ## Parameters
 
 `CallbackData`
 
-Pointer to the callback data structure for the current I/O operation (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>). This parameter is optional and can be <b>NULL</b>.
+Pointer to the callback data structure for the current I/O operation (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>). This parameter is optional and can be <b>NULL</b>.
 
 
 ## Return Value
@@ -110,16 +110,16 @@ To determine whether a callback data structure represents a file system filter (
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
-
-
-
-<a href="..\wdm\nf-wdm-iois32bitprocess.md">IoIs32bitProcess</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544645">FLT_IS_FASTIO_OPERATION</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff544648">FLT_IS_FS_FILTER_OPERATION</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544654">FLT_IS_IRP_OPERATION</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549372">IoIs32bitProcess</a>

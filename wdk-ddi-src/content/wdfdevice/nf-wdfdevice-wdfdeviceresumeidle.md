@@ -55,11 +55,11 @@ The <b>WdfDeviceResumeIdle</b> method informs the framework that the specified d
 
 ## Syntax
 
-````
-VOID WdfDeviceResumeIdle(
-  _In_ WDFDEVICE Device
+```
+void WdfDeviceResumeIdle(
+   Device
 );
-````
+```
 
 ## Parameters
 
@@ -74,7 +74,7 @@ None
 
 ## Remarks
 
-Every call to <a href="..\wdfdevice\nf-wdfdevice-wdfdevicestopidle.md">WdfDeviceStopIdle</a> must eventually be followed by a call to <b>WdfDeviceResumeIdle</b>, or else the device will never return to a low-power state if it again becomes idle.
+Every call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff546921">WdfDeviceStopIdle</a> must eventually be followed by a call to <b>WdfDeviceResumeIdle</b>, or else the device will never return to a low-power state if it again becomes idle.
 
 Calling <a href="https://msdn.microsoft.com/library/windows/hardware/dn932459">WdfDeviceResumeIdleWithTag</a> instead of <b>WdfDeviceResumeIdle</b> provides additional information (tag value, line number, and file name) that you can view in Microsoft debuggers.
 
@@ -107,11 +107,7 @@ The following code example informs the framework that the specified device is no
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicestopidle.md">WdfDeviceStopIdle</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a>
+<a href="https://msdn.microsoft.com/25F4EEBB-4733-498C-8704-8E015F81FE06">Debugging Power Reference Leaks in WDF</a>
 
 
 
@@ -119,4 +115,8 @@ The following code example informs the framework that the specified device is no
 
 
 
-<a href="https://msdn.microsoft.com/25F4EEBB-4733-498C-8704-8E015F81FE06">Debugging Power Reference Leaks in WDF</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546921">WdfDeviceStopIdle</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn932460">WdfDeviceStopIdleWithTag</a>

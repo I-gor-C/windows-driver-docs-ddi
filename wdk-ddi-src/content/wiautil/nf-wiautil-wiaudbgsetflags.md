@@ -50,11 +50,11 @@ The <b>wiauDbgSetFlags</b> function sets debugging flags.
 
 ## Syntax
 
-````
-inline DWORD __stdcall wiauDbgSetFlags(
-   DWORD flags
+```
+void wiauDbgSetFlags(
+   a
 );
-````
+```
 
 ## Parameters
 
@@ -77,4 +77,4 @@ None
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaudbgflags.md">wiauDbgFlags</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549643">wiauDbgFlags</a>

@@ -7,7 +7,7 @@ old-location: kernel\rtluint8mult.htm
 old-project: kernel
 ms.assetid: 3F9E47F5-1DE3-4949-BE92-8C8F571BFD3D
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUInt8Mult, RtlUInt8Mult function [Kernel-Mode Driver Architecture], kernel.rtluint8mult, ntintsafe/RtlUInt8Mult
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ Multiplies one value of type <b>UINT8</b> by another.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlUInt8Mult(
-  _In_  UINT8 u8Multiplicand,
-  _In_  UINT8 u8Multiplier,
-  _Out_ UINT8 *pu8Result
+  UINT8 u8Multiplicand,
+  UINT8 u8Multiplier,
+  UINT8 *pu8Result
 );
-````
+```
 
 ## Parameters
 

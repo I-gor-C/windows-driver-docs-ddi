@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvAnalyzeItem method
+# IWiaMiniDrv::drvAnalyzeItem method
 The <b>IWiaMiniDrv::drvAnalyzeItem</b> method inspects an item, and creates subitems, if necessary.
 
 ## Syntax
 
-````
+```
 HRESULT drvAnalyzeItem(
-  [in] BYTE *pWiasContext,
-  [in] LONG lFlags,
-  [in] LONG *plDevErrVal
+  BYTE *__MIDL__IWiaMiniDrv0036,
+  LONG __MIDL__IWiaMiniDrv0037,
+  LONG *__MIDL__IWiaMiniDrv0038
 );
-````
+```
 
 ## Parameters
 
@@ -89,7 +89,7 @@ The value pointed to by <i>plDevErrVal</i> can be converted to a string by calli
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 

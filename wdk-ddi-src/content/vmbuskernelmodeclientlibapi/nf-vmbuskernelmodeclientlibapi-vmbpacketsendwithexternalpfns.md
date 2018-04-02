@@ -7,7 +7,7 @@ old-location: netvista\vmbpacketsendwithexternalpfns.htm
 old-project: netvista
 ms.assetid: 50AACCAB-EFEA-42B7-8A34-FE110C7CDEED
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VMBUS_CHANNEL_FORMAT_FLAG_PAGED_BUFFER, VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR_COMPLETION, VmbPacketSendWithExternalPfns, VmbPacketSendWithExternalPfns function [Network Drivers Starting with Windows Vista], netvista.vmbpacketsendwithexternalpfns, vmbuskernelmodeclientlibapi/VmbPacketSendWithExternalPfns
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,17 +53,16 @@ throughout the lifetime of the transaction.
 
 ## Syntax
 
-````
+```
 NTSTATUS VmbPacketSendWithExternalPfns(
-  _In_ __drv_aliasesMem VMBPACKET       PacketObject,
-  _In_ reads_bytes_(BufferLength) PVOID Buffer,
-  _In_ UINT32                           BufferLength,
-  _In_ PPFN_NUMBER                      ExternalDataPfns,
-  _In_ UINT32                           PfnOffset,
-  _In_ UINT32                           PfnLength,
-  _In_ UINT32                           Flags
+  __drv_aliasesMem VMBPACKET PacketObject,
+  PVOID                      Buffer,
+  UINT32                     BufferLength,
+  PPFN_NUMBER                ExternalDataPfns,
+  UINT32                     PfnLength,
+  UINT32                     Flags
 );
-````
+```
 
 ## Parameters
 
@@ -133,7 +132,7 @@ responsibility of the caller.
 
 ## Remarks
 
-This function differs from the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsend.md">VmbPacketSend</a> function in that it allows passing an array of PFNs,  effectively physical addresses.
+This function differs from the <a href="https://msdn.microsoft.com/EBB981CB-0107-497A-B6E6-9271E22A8D5F">VmbPacketSend</a> function in that it allows passing an array of PFNs,  effectively physical addresses.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -146,4 +145,4 @@ This function differs from the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbusk
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsend.md">VmbPacketSend</a>
+<a href="https://msdn.microsoft.com/EBB981CB-0107-497A-B6E6-9271E22A8D5F">VmbPacketSend</a>

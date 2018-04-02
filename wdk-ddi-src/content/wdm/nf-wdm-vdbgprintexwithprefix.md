@@ -51,15 +51,15 @@ The <b>vDbgPrintExWithPrefix</b> routine sends a string to the kernel debugger i
 
 ## Syntax
 
-````
-ULONG vDbgPrintExWithPrefix(
-  _In_ PCCH    Prefix,
-  _In_ ULONG   ComponentId,
-  _In_ ULONG   Level,
-  _In_ PCCH    Format,
-  _In_ va_list arglist
+```
+NTSYSAPI ULONG vDbgPrintExWithPrefix(
+  PCCH    Prefix,
+  ULONG   ComponentId,
+  ULONG   Level,
+  PCCH    Format,
+  va_list arglist
 );
-````
+```
 
 ## Parameters
 
@@ -145,8 +145,8 @@ This routine is defined in Wdm.h. Component filter IDs are defined in Dpfilter.h
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-vdbgprintex.md">vDbgPrintEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543634">DbgPrintEx</a>
 
 
 
-<a href="..\wdm\nf-wdm-dbgprintex.md">DbgPrintEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556075">vDbgPrintEx</a>

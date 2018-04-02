@@ -7,7 +7,7 @@ old-location: netvista\ndk_cq_dispatch.htm
 old-project: netvista
 ms.assetid: 632E4FE8-BA03-4232-80E1-5EB3CC760D14
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_CQ_DISPATCH, NDK_CQ_DISPATCH structure [Network Drivers Starting with Windows Vista], PNDK_CQ_DISPATCH, PNDK_CQ_DISPATCH structure pointer [Network Drivers Starting with Windows Vista], _NDK_CQ_DISPATCH, ndkpi/NDK_CQ_DISPATCH, ndkpi/PNDK_CQ_DISPATCH, netvista.ndk_cq_dispatch
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,53 +47,53 @@ req.typenames: NDK_CQ_DISPATCH
 The <b>NDK_CQ_DISPATCH</b> structure specifies dispatch function entry points for the NDK completion queue (CQ) object.
 
 ## Syntax
-````
+```
 typedef struct _NDK_CQ_DISPATCH {
-  NDK_FN_CLOSE_OBJECT                    NdkCloseCq;
-  NDK_FN_QUERY_EXTENSION_INTERFACE       NdkQueryExtension;
-  NDK_FN_RESIZE_CQ                       NdkResizeCq;
-  NDK_FN_ARM_CQ                          NdkArmCq;
-  NDK_FN_GET_CQ_RESULTS                  NdkGetCqResults;
+  NDK_FN_CLOSE_OBJECT                    NdkCloseCq;
+  NDK_FN_QUERY_EXTENSION_INTERFACE       NdkQueryExtension;
+  NDK_FN_RESIZE_CQ                       NdkResizeCq;
+  NDK_FN_ARM_CQ                          NdkArmCq;
+  NDK_FN_GET_CQ_RESULTS                  NdkGetCqResults;
   NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION NdkControlCqInterruptModeration;
-  NDK_FN_GET_CQ_RESULTS_EX               NdkGetCqResultsEx;
-} NDK_CQ_DISPATCH, *PNDK_CQ_DISPATCH;
-````
+  NDK_FN_GET_CQ_RESULTS_EX               NdkGetCqResultsEx;
+} NDK_CQ_DISPATCH;
+```
 
 ## Members
 
 
 `NdkCloseCq`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a> dispatch function.
+The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439863">NDK_FN_CLOSE_OBJECT</a> dispatch function.
 
 `NdkQueryExtension`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_query_extension_interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a> dispatch function.
+The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439905">NDK_FN_QUERY_EXTENSION_INTERFACE</a> dispatch function.
 
 `NdkResizeCq`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_resize_cq.md">NDK_FN_RESIZE_CQ</a> dispatch function.
+The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439913">NDK_FN_RESIZE_CQ</a> dispatch function.
 
 `NdkArmCq`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_arm_cq.md">NDK_FN_ARM_CQ</a> dispatch function.
+The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439858">NDK_FN_ARM_CQ</a> dispatch function.
 
 `NdkGetCqResults`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_get_cq_results.md">NDK_FN_GET_CQ_RESULTS</a> dispatch function.
+The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/hh439891">NDK_FN_GET_CQ_RESULTS</a> dispatch function.
 
 `NdkControlCqInterruptModeration`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_control_cq_interrupt_moderation.md">NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</a> dispatch function.
+The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/jj552973">NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</a> dispatch function.
 
 `NdkGetCqResultsEx`
 
-The entry point for the object's <a href="..\ndkpi\nc-ndkpi-ndk_fn_get_cq_results_ex.md">NDK_FN_GET_CQ_RESULTS_EX</a> dispatch function. 
+The entry point for the object's <a href="https://msdn.microsoft.com/library/windows/hardware/dn265506">NDK_FN_GET_CQ_RESULTS_EX</a> dispatch function. 
 
 <b>Note</b>  This member is supported only in NDKPI 1.2 (Windows Server 2012 R2) and later.
 
 ## Remarks
-The <b>NDK_CQ_DISPATCH</b> structure is used in the <a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a> structure.
+The <b>NDK_CQ_DISPATCH</b> structure is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439854">NDK_CQ</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -103,28 +103,28 @@ The <b>NDK_CQ_DISPATCH</b> structure is used in the <a href="..\ndkpi\ns-ndkpi-_
 
 ## See Also
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_arm_cq.md">NDK_FN_ARM_CQ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439854">NDK_CQ</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_resize_cq.md">NDK_FN_RESIZE_CQ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439858">NDK_FN_ARM_CQ</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_control_cq_interrupt_moderation.md">NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439863">NDK_FN_CLOSE_OBJECT</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_get_cq_results.md">NDK_FN_GET_CQ_RESULTS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj552973">NDK_FN_CONTROL_CQ_INTERRUPT_MODERATION</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_close_object.md">NDK_FN_CLOSE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439891">NDK_FN_GET_CQ_RESULTS</a>
 
 
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_query_extension_interface.md">NDK_FN_QUERY_EXTENSION_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439905">NDK_FN_QUERY_EXTENSION_INTERFACE</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_cq.md">NDK_CQ</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439913">NDK_FN_RESIZE_CQ</a>

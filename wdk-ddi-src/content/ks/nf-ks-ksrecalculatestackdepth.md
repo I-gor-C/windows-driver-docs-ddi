@@ -50,12 +50,12 @@ The <b>KsRecalculateStackDepth</b> function recalculates the maximum stack depth
 
 ## Syntax
 
-````
-VOID KsRecalculateStackDepth(
-  _In_ KSDEVICE_HEADER Header ,
-  _In_ BOOLEAN         ReuseStackLocation 
+```
+KSDDKAPI VOID KsRecalculateStackDepth(
+  KSDEVICE_HEADER Header,
+  BOOLEAN         ReuseStackLocation
 );
-````
+```
 
 ## Parameters
 
@@ -87,16 +87,16 @@ This function allows IRPs to be forwarded through an object by ensuring that any
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560958">KsAllocateDeviceHeader</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561665">KsDefaultDispatchPnp</a>
 
 
 
-<a href="..\ks\nf-ks-ksallocatedeviceheader.md">KsAllocateDeviceHeader</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566831">KsSetDevicePnpAndBaseObject</a>
 
 
 
-<a href="..\ks\nf-ks-kssettargetdeviceobject.md">KsSetTargetDeviceObject</a>
-
-
-
-<a href="..\ks\nf-ks-kssetdevicepnpandbaseobject.md">KsSetDevicePnpAndBaseObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566845">KsSetTargetDeviceObject</a>

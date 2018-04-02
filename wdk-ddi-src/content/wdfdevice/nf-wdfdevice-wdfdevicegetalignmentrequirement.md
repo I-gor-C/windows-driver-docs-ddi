@@ -53,11 +53,11 @@ The <b>WdfDeviceGetAlignmentRequirement</b> method retrieves a device's address 
 
 ## Syntax
 
-````
+```
 ULONG WdfDeviceGetAlignmentRequirement(
-  _In_ WDFDEVICE Device
+  WDFDEVICE Device
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +85,4 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetalignmentrequirement.md">WdfDeviceSetAlignmentRequirement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546861">WdfDeviceSetAlignmentRequirement</a>

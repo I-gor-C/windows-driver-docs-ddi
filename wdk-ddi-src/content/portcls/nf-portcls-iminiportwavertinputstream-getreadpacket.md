@@ -7,7 +7,7 @@ old-location: audio\iminiportwavertinputstream_getreadpacket.htm
 old-project: audio
 ms.assetid: F26F6820-B761-4DF3-B7D7-9C1B174DEEA2
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: GetReadPacket method [Audio Devices], GetReadPacket method [Audio Devices], IMiniportWaveRTInputStream interface, GetReadPacket,IMiniportWaveRTInputStream.GetReadPacket, IMiniportWaveRTInputStream, IMiniportWaveRTInputStream interface [Audio Devices], GetReadPacket method, IMiniportWaveRTInputStream::GetReadPacket, audio.iminiportwavertinputstream_getreadpacket, portcls/IMiniportWaveRTInputStream::GetReadPacket
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# GetReadPacket method
+# IMiniportWaveRTInputStream::GetReadPacket method
 Returns information about captured data.
 
 ## Syntax
 
-````
+```
 NTSTATUS GetReadPacket(
-  [out] ULONG     *PacketNumber,
-  [out] DWORD     *Flags,
-  [out] ULONGLONG *PerformanceCounterValue,
-  [out] BOOL      *MoreData
+  ULONG   *PacketNumber,
+  DWORD   *Flags,
+  ULONG64 *PerformanceCounterValue,
+  BOOL    *MoreData
 );
-````
+```
 
 ## Parameters
 
@@ -103,4 +103,4 @@ The packet size is the WaveRT buffer size divided by the NotificationCount passe
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportwavertinputstream.md">IMiniportWaveRTInputStream</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946532">IMiniportWaveRTInputStream</a>

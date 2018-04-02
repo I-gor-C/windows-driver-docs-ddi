@@ -47,12 +47,12 @@ req.typenames: KS_DVDCOPY_BUSKEY, *PKS_DVDCOPY_BUSKEY
 The KS_DVDCOPY_BUSKEY structure is used to describe the bus key information for the DVD copyright protection authentication process.
 
 ## Syntax
-````
+```
 typedef struct _KS_DVDCOPY_BUSKEY {
   BYTE BusKey[5];
   BYTE Reserved[1];
 } KS_DVDCOPY_BUSKEY, *PKS_DVDCOPY_BUSKEY;
-````
+```
 
 ## Members
 

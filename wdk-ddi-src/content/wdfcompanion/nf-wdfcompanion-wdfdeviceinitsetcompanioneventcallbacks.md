@@ -50,12 +50,12 @@ For internal use only.
 
 ## Syntax
 
-````
-VOID WdfDeviceInitSetCompanionEventCallbacks(
-  _In_ PWDFDEVICE_INIT                DeviceInit,
-  _In_ PWDF_COMPANION_EVENT_CALLBACKS CompanionEventCallbacks
+```
+void WdfDeviceInitSetCompanionEventCallbacks(
+  PWDFDEVICE_INIT                DeviceInit,
+  PWDF_COMPANION_EVENT_CALLBACKS CompanionEventCallbacks
 );
-````
+```
 
 ## Parameters
 

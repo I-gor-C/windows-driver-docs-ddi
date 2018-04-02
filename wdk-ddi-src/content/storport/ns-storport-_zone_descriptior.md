@@ -7,7 +7,7 @@ old-location: storage\zone_descriptior.htm
 old-project: storage
 ms.assetid: 8326f683-3952-486e-b322-80ce96759366
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR, PZONE_DESCRIPTIOR structure pointer [Storage Devices], ZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR structure [Storage Devices], _ZONE_DESCRIPTIOR, scsi/PZONE_DESCRIPTIOR, scsi/ZONE_DESCRIPTIOR, storage.zone_descriptior"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,21 +49,21 @@ req.product: Windows 10 or later.
 <div> </div>
 
 ## Syntax
-````
+```
 typedef struct _ZONE_DESCRIPTIOR {
-  UCHAR      ZoneType  :4;
-  UCHAR      Reserved1  :4;
-  UCHAR  : 1 Reset  :1;
-  UCHAR      Non_Seq  :1;
-  UCHAR      Reserved2  :2;
-  UCHAR      ZoneCondition  :4;
-  UCHAR      Reserved3[6];
-  UCHAR      ZoneLength[8];
-  UCHAR      ZoneStartLBA[8];
-  UCHAR      WritePointerLBA[8];
-  UCHAR      Reserved4[32];
-} ZONE_DESCRIPTIOR, *PZONE_DESCRIPTIOR;
-````
+  UCHAR  : 4 ZoneType;
+  UCHAR  : 4 Reserved1;
+  UCHAR  : 1 Reset;
+  UCHAR  : 1 Non_Seq;
+  UCHAR  : 2 Reserved2;
+  UCHAR  : 4 ZoneCondition;
+  UCHAR      Reserved3[6];
+  UCHAR      ZoneLength[8];
+  UCHAR      ZoneStartLBA[8];
+  UCHAR      WritePointerLBA[8];
+  UCHAR      Reserved4[32];
+} *PZONE_DESCRIPTIOR, ZONE_DESCRIPTIOR;
+```
 
 ## Members
 

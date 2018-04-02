@@ -50,17 +50,17 @@ A printer interface DLL's <b>DrvDocumentEvent</b> function can handle certain ev
 
 ## Syntax
 
-````
+```
 int DrvDocumentEvent(
-        HANDLE hPrinter,
-        HDC    hdc,
-        int    iEsc,
-        ULONG  cbIn,
-  _In_  PVOID  pvIn,
-        ULONG  cbOut,
-  _Out_ PVOID  pvOut
+  HANDLE hPrinter,
+  HDC    hdc,
+  int    iEsc,
+  ULONG  cbIn,
+  PVOID  pvIn,
+  ULONG  cbOut,
+  PVOID  pvOut
 );
-````
+```
 
 ## Parameters
 
@@ -276,7 +276,7 @@ DOCUMENTEVENT_CREATEDCPRE
 
 </td>
 <td>
-<i>pvIn </i>points to a <a href="..\winddiui\ns-winddiui-_docevent_createdcpre.md">DOCEVENT_CREATEDCPRE</a> structure.
+<i>pvIn </i>points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547612">DOCEVENT_CREATEDCPRE</a> structure.
 
 </td>
 </tr>
@@ -330,7 +330,7 @@ DOCUMENTEVENT_ESCAPE
 
 </td>
 <td>
-<i>pvIn</i> points to a <a href="..\winddiui\ns-winddiui-_docevent_escape.md">DOCEVENT_ESCAPE</a> structure.
+<i>pvIn</i> points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548377">DOCEVENT_ESCAPE</a> structure.
 
 </td>
 </tr>
@@ -453,7 +453,7 @@ DOCUMENTEVENT_QUERYFILTER
 
 </td>
 <td>
-Caller-supplied pointer to buffer containing a <a href="..\winddiui\ns-winddiui-_docevent_filter.md">DOCEVENT_FILTER</a> structure.
+Caller-supplied pointer to buffer containing a <a href="https://msdn.microsoft.com/library/windows/hardware/ff548389">DOCEVENT_FILTER</a> structure.
 
 </td>
 </tr>
@@ -528,7 +528,7 @@ The driver does not support the escape code identified by <i>iEsc</i>.
 
 A <a href="https://msdn.microsoft.com/2a8cf38f-8e27-4e08-9c0f-5d1a4cd854ac">printer interface DLL</a> can optionally provide a <b>DrvDocumentEvent</b> function to perform preprocessing or postprocessing of GDI calls associated with rendering a document. Calls to the <b>DrvDocumentEvent</b> function are made from the user-mode GDI client, when an application makes calls into the GDI client.
 
-For an <i>iEsc</i> value of DOCUMENTEVENT_QUERYFILTER, the spooler can interpret a DOCUMENTEVENT_SUCCESS value returned by <b>DrvDocumentEvent</b> in two ways, depending on whether the driver modified certain members of the <a href="..\winddiui\ns-winddiui-_docevent_filter.md">DOCEVENT_FILTER</a> structure. (The <i>pvOut</i> parameter points to this structure.) When the spooler allocates memory for a structure of this type, it initializes two members of this structure, <b>cElementsReturned</b> and <b>cElementsNeeded</b>, to known values. After <b>DrvDocumentEvent</b> returns, the spooler determines whether the values of these members have changed, and uses that information to interpret the <b>DrvDocumentEvent</b> return value. The following table summarizes this situation.
+For an <i>iEsc</i> value of DOCUMENTEVENT_QUERYFILTER, the spooler can interpret a DOCUMENTEVENT_SUCCESS value returned by <b>DrvDocumentEvent</b> in two ways, depending on whether the driver modified certain members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548389">DOCEVENT_FILTER</a> structure. (The <i>pvOut</i> parameter points to this structure.) When the spooler allocates memory for a structure of this type, it initializes two members of this structure, <b>cElementsReturned</b> and <b>cElementsNeeded</b>, to known values. After <b>DrvDocumentEvent</b> returns, the spooler determines whether the values of these members have changed, and uses that information to interpret the <b>DrvDocumentEvent</b> return value. The following table summarizes this situation.
 
 <table>
 <tr>
@@ -567,7 +567,7 @@ Driver wrote to one or both members.
 <td>
 The spooler accepts this return value without interpretation. If the driver wrote to only one of <b>cElementsNeeded</b> and <b>cElementsReturned</b>, the spooler considers the unchanged member to have a value of zero.
 
-The spooler filters out all events listed in the <b>aDocEventCall</b> member of <a href="..\winddiui\ns-winddiui-_docevent_filter.md">DOCEVENT_FILTER</a>.
+The spooler filters out all events listed in the <b>aDocEventCall</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548389">DOCEVENT_FILTER</a>.
 
 </td>
 </tr>
@@ -612,7 +612,7 @@ If the escape code supplied in the <i>iEsc</i> parameter is DOCUMENTEVENT_CREATE
 
 <ul>
 <li>
-If the job is being sent directly to the printer without spooling, <i>pvIn</i> --&gt; pszDevice points to the printer name. (See the <a href="..\winddiui\ns-winddiui-_docevent_createdcpre.md">DOCEVENT_CREATEDCPRE</a> structure for more information.)
+If the job is being sent directly to the printer without spooling, <i>pvIn</i> --&gt; pszDevice points to the printer name. (See the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547612">DOCEVENT_CREATEDCPRE</a> structure for more information.)
 
 </li>
 <li>
@@ -633,12 +633,12 @@ The <b>DrvDocumentEvent</b> function executes in the context of the user-mode ca
 
 ## See Also
 
-<a href="..\winddiui\ns-winddiui-_docevent_filter.md">DOCEVENT_FILTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547612">DOCEVENT_CREATEDCPRE</a>
 
 
 
-<a href="..\winddiui\ns-winddiui-_docevent_createdcpre.md">DOCEVENT_CREATEDCPRE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548377">DOCEVENT_ESCAPE</a>
 
 
 
-<a href="..\winddiui\ns-winddiui-_docevent_escape.md">DOCEVENT_ESCAPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548389">DOCEVENT_FILTER</a>

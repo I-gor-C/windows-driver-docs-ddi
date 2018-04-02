@@ -7,7 +7,7 @@ old-location: storage\scsiportconvertulongtophysicaladdress.htm
 old-project: storage
 ms.assetid: 98d491f8-eeb5-4152-9bb6-fffabcba0360
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortConvertUlongToPhysicalAddress, ScsiPortConvertUlongToPhysicalAddress routine [Storage Devices], scsiprt_9dc27865-55c2-4599-913c-babe77c62af9.xml, srb/ScsiPortConvertUlongToPhysicalAddress, storage.scsiportconvertulongtophysicaladdress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>ScsiPortConvertUlongToPhysicalAddress</b> routine extends a given ULONG a
 
 ## Syntax
 
-````
-SCSI_PHYSICAL_ADDRESS ScsiPortConvertUlongToPhysicalAddress(
-  _In_ ULONG_PTR UlongAddress
+```
+SCSIPORT_API SCSI_PHYSICAL_ADDRESS ScsiPortConvertUlongToPhysicalAddress(
+  ULONG_PTR UlongAddress
 );
-````
+```
 
 ## Parameters
 
@@ -79,12 +79,12 @@ Specifies a value of type ULONG.
 
 ## See Also
 
-<a href="..\strmini\ns-strmini-_access_range.md">ACCESS_RANGE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550117">ACCESS_RANGE</a>
 
 
 
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>
 
 
 
-<a href="..\srb\nf-srb-scsiportgetvirtualaddress.md">ScsiPortGetVirtualAddress</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564643">ScsiPortGetVirtualAddress</a>

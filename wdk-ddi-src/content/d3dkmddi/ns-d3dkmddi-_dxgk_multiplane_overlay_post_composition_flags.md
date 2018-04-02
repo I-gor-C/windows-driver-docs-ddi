@@ -7,7 +7,7 @@ old-location: display\dxgk_multiplane_overlay_post_composition_flags.htm
 old-project: display
 ms.assetid: F7791AB9-6D20-4560-A478-E30F08C6AC3A
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS, DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS structure [Display Devices], _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS, d3dkmddi/DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS, display.dxgk_multiplane_overlay_post_composition_flags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS
 A structure containing the flags describing the transformations applied to an image.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS {
   union {
     struct {
-      UINT VerticalFlip  :1;
-      UINT HorizontalFlip  :1;
-      UINT Reserved  :30;
+      UINT  : 1  VerticalFlip;
+      UINT  : 1  HorizontalFlip;
+      UINT  : 30 Reserved;
     };
     UINT Value;
   };
 } DXGK_MULTIPLANE_OVERLAY_POST_COMPOSITION_FLAGS;
-````
+```
 
 ## Members
 

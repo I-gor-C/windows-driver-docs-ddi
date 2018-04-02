@@ -7,7 +7,7 @@ old-location: buses\ucx_controller_transport_characteristics_change_flags.htm
 old-project: usbref
 ms.assetid: B5D6BBE4-2FFF-41CB-B747-AA3C6CE9064E
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS union pointer [Buses], UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS union [Buses], _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, buses.ucx_controller_transport_characteristics_change_flags, ucxcontroller/PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, ucxcontroller/UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,18 +45,22 @@ req.product: Windows 10 or later.
 ---
 
 # _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS structure
-Defines flags for the transport characteristics changes. This structure is used in the <a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_set_transport_characteristics_change_notification.md">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a> callback function.
+Defines flags for the transport characteristics changes. This structure is used in the <a href="https://msdn.microsoft.com/559D2215-B78C-41EA-9E2C-6E67AE5276BE">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a> callback function.
 
 ## Syntax
-````
-typedef union _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS {
-  ULONG AsUlong32;
+```
+typedef struct _UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS {
+  ULONG  AsUlong32;
   struct {
-    ULONG                     CurrentRoundtripLatencyChanged  :1;
-    ULONG                     CurrentTotalBandwidthChanged  :1;
+    ULONG  : 1 CurrentRoundtripLatencyChanged;
+    ULONG  : 1 CurrentTotalBandwidthChanged;
+  } Flags;
+  struct {
+    ULONG  : 1 CurrentRoundtripLatencyChanged;
+    ULONG  : 1 CurrentTotalBandwidthChanged;
   };
-} UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS, *PUCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS;
-````
+} UCX_CONTROLLER_TRANSPORT_CHARACTERISTICS_CHANGE_FLAGS;
+```
 
 ## Members
 
@@ -78,4 +82,4 @@ Reserved.
 
 ## See Also
 
-<a href="..\ucxcontroller\nc-ucxcontroller-evt_ucx_controller_set_transport_characteristics_change_notification.md">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a>
+<a href="https://msdn.microsoft.com/559D2215-B78C-41EA-9E2C-6E67AE5276BE">EVT_UCX_CONTROLLER_SET_TRANSPORT_CHARACTERISTICS_CHANGE_NOTIFICATION</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndk_fn_get_remote_token_from_mw.htm
 old-project: netvista
 ms.assetid: 893B53DA-B858-4E21-9DD9-D244702ACF46
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NDK_FN_GET_REMOTE_TOKEN_FROM_MW, NdkGetRemoteTokenFromMw, NdkGetRemoteTokenFromMw callback function [Network Drivers Starting with Windows Vista], ndkpi/NdkGetRemoteTokenFromMw, netvista.ndk_fn_get_remote_token_from_mw
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ UINT32 NdkFnGetRemoteTokenFromMw(
 
 `*pNdkMw`
 
-A pointer to an NDK memory window (MW) object (<a href="..\ndkpi\ns-ndkpi-_ndk_mw.md">NDK_MW</a>).
+A pointer to an NDK memory window (MW) object (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439926">NDK_MW</a>).
 
 
 ## Return Value
@@ -72,7 +72,7 @@ The
 
 ## Remarks
 
-After an <i>NdkBind</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_bind.md">NDK_FN_BIND</a>) call returns control to the caller, <i>NdkGetRemoteTokenFromMw</i> can be called to retrieve the remote token.
+After an <i>NdkBind</i> (<a href="https://msdn.microsoft.com/library/windows/hardware/hh439859">NDK_FN_BIND</a>) call returns control to the caller, <i>NdkGetRemoteTokenFromMw</i> can be called to retrieve the remote token.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,8 +84,8 @@ After an <i>NdkBind</i> (<a href="..\ndkpi\nc-ndkpi-ndk_fn_bind.md">NDK_FN_BIND<
 
 ## See Also
 
-<a href="..\ndkpi\nc-ndkpi-ndk_fn_bind.md">NDK_FN_BIND</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439859">NDK_FN_BIND</a>
 
 
 
-<a href="..\ndkpi\ns-ndkpi-_ndk_mw.md">NDK_MW</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439926">NDK_MW</a>

@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnDriverEvent method
+# IPrinterExtensionEvent::OnDriverEvent method
 Called when a driver event occurs.
 
 ## Syntax
 
-````
+```
 HRESULT OnDriverEvent(
-  [in] IPrinterExtensionEventArgs *pEventArgs
+  IPrinterExtensionEventArgs *pEventArgs
 );
-````
+```
 
 ## Parameters
 
@@ -76,8 +76,8 @@ This method returns an <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioneventargs.md">IPrinterExtensionEventArgs</a>
+<a href="https://msdn.microsoft.com/A0F4DB51-D68E-4516-833A-7E984247796B">IPrinterExtensionEvent</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterextensionevent.md">IPrinterExtensionEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973207">IPrinterExtensionEventArgs</a>

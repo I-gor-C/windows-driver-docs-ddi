@@ -47,12 +47,12 @@ req.typenames: KSCAMERA_EXTENDEDPROP_METADATAINFO, *PKSCAMERA_EXTENDEDPROP_METAD
 This structure represents the metadata information for the extended property control.
 
 ## Syntax
-````
+```
 typedef struct tagKSCAMERA_EXTENDEDPROP_METADATAINFO {
-  LONG  BufferAlignment;
+  LONG  BufferAlignment;
   ULONG MaxMetadataBufferSize;
-} KSCAMERA_EXTENDEDPROP_METADATAINFO, *PKSCAMERA_EXTENDEDPROP_METADATAINFO;
-````
+} *PKSCAMERA_EXTENDEDPROP_METADATAINFO, KSCAMERA_EXTENDEDPROP_METADATAINFO;
+```
 
 ## Members
 

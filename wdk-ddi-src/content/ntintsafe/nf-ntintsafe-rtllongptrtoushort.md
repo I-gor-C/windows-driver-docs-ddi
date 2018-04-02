@@ -7,7 +7,7 @@ old-location: kernel\rtllongptrtoushort.htm
 old-project: kernel
 ms.assetid: B003772E-9A9A-4EE0-BF8F-C956BCE7EDA5
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlLongPtrToUShort, RtlLongPtrToUShort function [Kernel-Mode Driver Architecture], kernel.rtllongptrtoushort, ntintsafe/RtlLongPtrToUShort
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>LONG_PTR</b> to a value of type <b>USHORT</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlLongPtrToUShort(
-  _In_  LONG_PTR lOperand,
-  _Out_ USHORT   *pusResult
+  LONG_PTR lOperand,
+  USHORT   *pusResult
 );
-````
+```
 
 ## Parameters
 

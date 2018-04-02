@@ -7,7 +7,7 @@ old-location: storage\storportfreepool.htm
 old-project: storage
 ms.assetid: e5886fa3-dc37-4764-9304-3609a4ced0ad
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortFreePool, StorPortFreePool routine [Storage Devices], storage.storportfreepool, storport/StorPortFreePool, storprt_a4fd5e23-3c56-4bf3-9751-21f90028d704.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,16 +46,16 @@ req.product: Windows 10 or later.
 
 
 # StorPortFreePool function
-The <b>StorPortFreePool</b> routine frees a block of memory that was previously allocated by a call to the <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a> routine.
+The <b>StorPortFreePool</b> routine frees a block of memory that was previously allocated by a call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567031">StorPortAllocatePool</a> routine.
 
 ## Syntax
 
-````
+```
 ULONG StorPortFreePool(
-  _In_ PVOID HwDeviceExtension,
-  _In_ PVOID BufferPointer
+  PVOID                    HwDeviceExtension,
+  __drv_freesMem(Mem)PVOID BufferPointer
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ A pointer to the hardware device extension for the host bus adapter (HBA).
 
 `BufferPointer`
 
-A pointer to the block of memory to free. This must be a pointer that was returned by a previous call to the <a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a> routine.
+A pointer to the block of memory to free. This must be a pointer that was returned by a previous call to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567031">StorPortAllocatePool</a> routine.
 
 
 ## Return Value
@@ -134,4 +134,4 @@ The call was made at an invalid IRQL.
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportallocatepool.md">StorPortAllocatePool</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567031">StorPortAllocatePool</a>

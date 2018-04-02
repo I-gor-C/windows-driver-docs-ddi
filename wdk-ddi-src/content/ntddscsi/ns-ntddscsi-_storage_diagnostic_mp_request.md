@@ -7,7 +7,7 @@ old-location: storage\storage_diagnostic_mp_request.htm
 old-project: storage
 ms.assetid: 1F2B15A6-7C05-4FBA-B54F-EEF013FF5739
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTORAGE_DIAGNOSTIC_MP_REQUEST, PSTORAGE_DIAGNOSTIC_MP_REQUEST, PSTORAGE_DIAGNOSTIC_MP_REQUEST structure pointer [Storage Devices], STORAGE_DIAGNOSTIC_MP_REQUEST, STORAGE_DIAGNOSTIC_MP_REQUEST structure [Storage Devices], _STORAGE_DIAGNOSTIC_MP_REQUEST, ntddscsi/PSTORAGE_DIAGNOSTIC_MP_REQUEST, ntddscsi/STORAGE_DIAGNOSTIC_MP_REQUEST, storage.storage_diagnostic_mp_request"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST
 ---
 
 # _STORAGE_DIAGNOSTIC_MP_REQUEST structure
-Describes  a diagnostic request to Miniport. The <b>STORAGE_DIAGNOSTIC_MP_REQUEST</b> structure is provided in the input/output buffer of an  <a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_miniport_diagnostic.md">IOCTL_SCSI_MINIPORT_DIAGNOSTIC</a> request.
+Describes  a diagnostic request to Miniport. The <b>STORAGE_DIAGNOSTIC_MP_REQUEST</b> structure is provided in the input/output buffer of an  <a href="https://msdn.microsoft.com/79E89E4A-3B06-40FA-BFA6-598331C0A330">IOCTL_SCSI_MINIPORT_DIAGNOSTIC</a> request.
 
 ## Syntax
-````
+```
 typedef struct _STORAGE_DIAGNOSTIC_MP_REQUEST {
-  ULONG                           Version;
-  ULONG                           Size;
-   STORAGE_DIAGNOSTIC_TARGET_TYPE TargetType;
-  STORAGE_DIAGNOSTIC_LEVEL        Level;
-  GUID                            ProviderId;
-  ULONG                           BufferSize;
-  ULONG                           Reserved;
-   _Field_size_(BufferSize) UCHAR DataBuffer[ANYSIZE_ARRAY];
+  ULONG                             Version;
+  ULONG                             Size;
+  MP_STORAGE_DIAGNOSTIC_TARGET_TYPE TargetType;
+  MP_STORAGE_DIAGNOSTIC_LEVEL       Level;
+  GUID                              ProviderId;
+  ULONG                             BufferSize;
+  ULONG                             Reserved;
+  UCHAR                             DataBuffer[ANYSIZE_ARRAY];
 } STORAGE_DIAGNOSTIC_MP_REQUEST, *PSTORAGE_DIAGNOSTIC_MP_REQUEST;
-````
+```
 
 ## Members
 
@@ -73,11 +73,11 @@ Specifies the whole size of the structure and the associated data buffer.
 
 `TargetType`
 
-Specifies the request target type. See definitions for <a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_target_type.md">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>.
+Specifies the request target type. See definitions for <a href="https://msdn.microsoft.com/8BC338FB-7C76-49D3-96E5-0F20C4A250CE">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>.
 
 `Level`
 
-Specifies the Diagnostic level. See definitions for <a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_level.md">STORAGE_DIAGNOSTIC_LEVEL</a>.
+Specifies the Diagnostic level. See definitions for <a href="https://msdn.microsoft.com/6D705DA8-7F45-4C7A-813F-5AE4F5A1D8ED">STORAGE_DIAGNOSTIC_LEVEL</a>.
 
 `ProviderId`
 
@@ -106,16 +106,16 @@ Specifies the Diagnostic data buffer.
 
 ## See Also
 
-<a href="..\ntddscsi\ni-ntddscsi-ioctl_scsi_miniport_diagnostic.md">IOCTL_SCSI_MINIPORT_DIAGNOSTIC</a>
+<a href="https://msdn.microsoft.com/79E89E4A-3B06-40FA-BFA6-598331C0A330">IOCTL_SCSI_MINIPORT_DIAGNOSTIC</a>
 
 
 
-<a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_target_type.md">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>
+<a href="https://msdn.microsoft.com/68BC990B-DD0C-49CD-95EC-672FD1459B39">STORAGE_DIAGNOSTIC_DATA</a>
 
 
 
-<a href="..\ntddstor\ns-ntddstor-_storage_diagnostic_data.md">STORAGE_DIAGNOSTIC_DATA</a>
+<a href="https://msdn.microsoft.com/6D705DA8-7F45-4C7A-813F-5AE4F5A1D8ED">STORAGE_DIAGNOSTIC_LEVEL</a>
 
 
 
-<a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_level.md">STORAGE_DIAGNOSTIC_LEVEL</a>
+<a href="https://msdn.microsoft.com/8BC338FB-7C76-49D3-96E5-0F20C4A250CE">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>

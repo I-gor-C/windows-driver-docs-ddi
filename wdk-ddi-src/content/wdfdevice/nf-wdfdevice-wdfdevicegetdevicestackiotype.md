@@ -52,13 +52,13 @@ The <b>WdfDeviceGetDeviceStackIoType</b> method retrieves the buffer access meth
 
 ## Syntax
 
-````
+```
 void WdfDeviceGetDeviceStackIoType(
-  _In_  WDFDEVICE          Device,
-  _Out_ WDF_DEVICE_IO_TYPE *ReadWriteIoType,
-  _Out_ WDF_DEVICE_IO_TYPE *IoControlIoType
+  WDFDEVICE          Device,
+  WDF_DEVICE_IO_TYPE *ReadWriteIoType,
+  WDF_DEVICE_IO_TYPE *IoControlIoType
 );
-````
+```
 
 ## Parameters
 
@@ -68,11 +68,11 @@ A handle to a framework device object.
 
 `ReadWriteIoType`
 
-A pointer to a driver-allocated location that receives a <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed value. This value identifies the buffer access method that the framework is using for a device's read and write requests.
+A pointer to a driver-allocated location that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>-typed value. This value identifies the buffer access method that the framework is using for a device's read and write requests.
 
 `IoControlIoType`
 
-A pointer to a driver-allocated location that receives a <a href="..\wdfdevice\ne-wdfdevice-_wdf_device_io_type.md">WDF_DEVICE_IO_TYPE</a>-typed value. This value that identifies the buffer access method that the framework is using for a device's I/O control requests.
+A pointer to a driver-allocated location that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551255">WDF_DEVICE_IO_TYPE</a>-typed value. This value that identifies the buffer access method that the framework is using for a device's I/O control requests.
 
 
 ## Return Value
@@ -98,4 +98,4 @@ For more information about how the framework chooses a buffer access method, see
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265604">WdfDeviceInitSetIoTypeEx</a>

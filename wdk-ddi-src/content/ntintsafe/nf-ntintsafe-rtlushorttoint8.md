@@ -7,7 +7,7 @@ old-location: kernel\rtlushorttoint8.htm
 old-project: kernel
 ms.assetid: 789AC84A-E271-4048-86F7-32EA5A966D71
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUShortToInt8, RtlUShortToInt8 function [Kernel-Mode Driver Architecture], kernel.rtlushorttoint8, ntintsafe/RtlUShortToInt8
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>USHORT</b> to a value of type <b>INT8</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlUShortToInt8(
-  _In_  USHORT usOperand,
-  _Out_ INT8   *pi8Result
+  USHORT usOperand,
+  INT8   *pi8Result
 );
-````
+```
 
 ## Parameters
 

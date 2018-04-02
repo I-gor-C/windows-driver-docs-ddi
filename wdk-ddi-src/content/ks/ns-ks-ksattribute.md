@@ -44,16 +44,16 @@ req.typenames: KSATTRIBUTE, *PKSATTRIBUTE
 ---
 
 # KSATTRIBUTE structure
-The KSATTRIBUTE structure defines an additional attribute of a data format or data range that is not covered by the <a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a> structures or the extended information based on the format and range specifiers.
+The KSATTRIBUTE structure defines an additional attribute of a data format or data range that is not covered by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a> structures or the extended information based on the format and range specifiers.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSATTRIBUTE {
   ULONG Size;
   ULONG Flags;
-  GUID  Attribute;
-} KSATTRIBUTE, *PKSATTRIBUTE;
-````
+  GUID  Attribute;
+} *PKSATTRIBUTE, KSATTRIBUTE;
+```
 
 ## Members
 
@@ -80,8 +80,8 @@ Note that KSATTRIBUTE is used in conjunction with data formats and data ranges; 
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561656">KSDATAFORMAT</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
-
-
-
-<a href="..\ks\ns-ks-ksdataformat.md">KSDATAFORMAT</a>

@@ -7,7 +7,7 @@ old-location: storage\identify_device_data_log_page_zoned_device_info.htm
 old-project: storage
 ms.assetid: 2F0B6C1F-54CC-47CF-B0D0-A53FAB80AF91
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO structure [Storage Devices], PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO structure pointer [Storage Devices], _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, ata/IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, ata/PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, storage.identify_device_data_log_page_zoned_device_info"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,41 +51,41 @@ req.typenames: IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, *PIDENTIFY_DEVIC
 <div> </div>
 
 ## Syntax
-````
+```
 typedef struct _IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO {
   IDENTIFY_DEVICE_DATA_LOG_PAGE_HEADER Header;
   struct {
-    ULONGLONG URSWRZ  :1;
-    ULONGLONG Reserved  :62;
-    ULONGLONG Valid  :1;
-  } ZonedDeviceCapabilities;
+    ULONGLONG  : 62 Reserved;
+    ULONGLONG  : 1  URSWRZ;
+    ULONGLONG  : 1  Valid;
+  } ZonedDeviceCapabilities;
   struct {
-    ULONGLONG Reserved  :63;
-    ULONGLONG Valid  :1;
-  } ZonedDeviceSettings;
+    ULONGLONG  : 63 Reserved;
+    ULONGLONG  : 1  Valid;
+  } ZonedDeviceSettings;
   struct {
-    ULONGLONG Number  :32;
-    ULONGLONG Reserved  :31;
-    ULONGLONG Valid  :1;
-  } OptimalNumberOfOpenSequentialWritePreferredZones;
+    ULONGLONG  : 32 Number;
+    ULONGLONG  : 31 Reserved;
+    ULONGLONG  : 1  Valid;
+  } OptimalNumberOfOpenSequentialWritePreferredZones;
   struct {
-    ULONGLONG Number  :32;
-    ULONGLONG Reserved  :31;
-    ULONGLONG Valid  :1;
-  } OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZones;
+    ULONGLONG  : 32 Number;
+    ULONGLONG  : 31 Reserved;
+    ULONGLONG  : 1  Valid;
+  } OptimalNumberOfNonSequentiallyWrittenSequentialWritePreferredZones;
   struct {
-    ULONGLONG Number  :32;
-    ULONGLONG Reserved  :31;
-    ULONGLONG Valid  :1;
-  } MaxNumberOfOpenSequentialWriteRequiredZones;
+    ULONGLONG  : 32 Number;
+    ULONGLONG  : 31 Reserved;
+    ULONGLONG  : 1  Valid;
+  } MaxNumberOfOpenSequentialWriteRequiredZones;
   struct {
-    ULONGLONG ZacMinorVersion  :16;
-    ULONGLONG Reserved0  :47;
-    ULONGLONG Valid  :1;
-  } Version;
-  UCHAR                                Reserved[456];
+    ULONGLONG  : 47 Reserved0;
+    ULONGLONG  : 1  Valid;
+    ULONGLONG  : 16 ZacMinorVersion;
+  } Version;
+  UCHAR                                Reserved[456];
 } IDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO, *PIDENTIFY_DEVICE_DATA_LOG_PAGE_ZONED_DEVICE_INFO;
-````
+```
 
 ## Members
 

@@ -47,24 +47,24 @@ req.typenames: ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR
 The ISOCH_DESCRIPTOR structure describes a buffer to be attached or detailed from a resource handle, using the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff537651">REQUEST_ISOCH_DETACH_BUFFERS</a> requests.
 
 ## Syntax
-````
+```
 typedef struct _ISOCH_DESCRIPTOR {
-  ULONG                         fulFlags;
-  PMDL                          Mdl;
-  ULONG                         ulLength;
-  ULONG                         nMaxBytesPerFrame;
-  ULONG                         ulSynch;
-  ULONG                         ulTag;
-  CYCLE_TIME                    CycleTime;
+  ULONG                         fulFlags;
+  PMDL                          Mdl;
+  ULONG                         ulLength;
+  ULONG                         nMaxBytesPerFrame;
+  ULONG                         ulSynch;
+  ULONG                         ulTag;
+  CYCLE_TIME                    CycleTime;
   PBUS_ISOCH_DESCRIPTOR_ROUTINE Callback;
-  PVOID                         Context1;
-  PVOID                         Context2;
-  NTSTATUS                      status;
-  ULONG_PTR                     DeviceReserved[8];
-  ULONG_PTR                     BusReserved[8];
-  ULONG_PTR                     PortReserved[16];
-} ISOCH_DESCRIPTOR, *PISOCH_DESCRIPTOR;
-````
+  PVOID                         Context1;
+  PVOID                         Context2;
+  NTSTATUS                      status;
+  ULONG_PTR                     DeviceReserved[8];
+  ULONG_PTR                     BusReserved[8];
+  ULONG_PTR                     PortReserved[16];
+} *PISOCH_DESCRIPTOR, ISOCH_DESCRIPTOR;
+```
 
 ## Members
 
@@ -292,15 +292,15 @@ The DESCRIPTOR_HEADER_SCATTER_GATHER flag is not supported on Windows 98/Me. It 
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537147">GET_LOCAL_HOST_INFO2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537649">REQUEST_ISOCH_ALLOCATE_RESOURCES</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537650">REQUEST_ISOCH_ATTACH_BUFFERS</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537147">GET_LOCAL_HOST_INFO2</a>
 
 
 

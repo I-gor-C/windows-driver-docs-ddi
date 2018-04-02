@@ -47,14 +47,14 @@ req.typenames: KSM_PIN_PAIR, *PKSM_PIN_PAIR
 The KSM_PIN_PAIR structure describes a method request to retrieve the pin pairing structure (BDA_PIN_PAIRING) between a pair of input and output pins.
 
 ## Syntax
-````
+```
 typedef struct _KSM_PIN_PAIR {
   KSMETHOD Method;
-  ULONG    InputPinId;
-  ULONG    OutputPinId;
-  ULONG    Reserved;
-} KSM_PIN_PAIR, *PKSM_PIN_PAIR;
-````
+  ULONG    InputPinId;
+  ULONG    OutputPinId;
+  ULONG    Reserved;
+} *PKSM_PIN_PAIR, KSM_PIN_PAIR;
+```
 
 ## Members
 
@@ -83,7 +83,7 @@ Reserved.
 
 ## See Also
 
-<a href="..\bdasup\ns-bdasup-_bda_pin_pairing.md">BDA_PIN_PAIRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556544">BDA_PIN_PAIRING</a>
 
 
 

@@ -55,11 +55,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 void WdfInterruptReportActive(
-  _In_ WDFINTERRUPT Interrupt
+  WDFINTERRUPT Interrupt
 );
-````
+```
 
 ## Parameters
 
@@ -78,7 +78,7 @@ Only drivers that implement functional state power management call <b>WdfInterru
 
    
 
-A driver does not need to call <b>WdfInterruptReportActive</b> immediately after creating an interrupt.  The driver should only call <b>WdfInterruptReportActive</b> after having previously called <a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptreportinactive.md">WdfInterruptReportInactive</a>.
+A driver does not need to call <b>WdfInterruptReportActive</b> immediately after creating an interrupt.  The driver should only call <b>WdfInterruptReportActive</b> after having previously called <a href="https://msdn.microsoft.com/library/windows/hardware/hh439277">WdfInterruptReportInactive</a>.
 
 Typically, a driver calls <b>WdfInterruptReportActive</b> from either its  <a href="https://msdn.microsoft.com/library/windows/hardware/hh406416">ComponentActiveConditionCallback</a> routine, or from <a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a> when <i>State</i> is 0 (indicating the fully on F0 state).
 
@@ -89,7 +89,7 @@ For more information, see <a href="https://msdn.microsoft.com/F96214C9-702D-402E
 
 #### Examples
 
-The following example shows how a driver might call <b>WdfInterruptReportActive</b> from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a> routine of a KMDF driver. The driver registers a single component by calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmassignpowerframeworksettings.md">WdfDeviceWdmAssignPowerFrameworkSettings</a>.
+The following example shows how a driver might call <b>WdfInterruptReportActive</b> from the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450931">ComponentIdleStateCallback</a> routine of a KMDF driver. The driver registers a single component by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh451097">WdfDeviceWdmAssignPowerFrameworkSettings</a>.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -153,4 +153,4 @@ MyComponentIdleStateCallback(
 
 ## See Also
 
-<a href="..\wdfinterrupt\nf-wdfinterrupt-wdfinterruptreportinactive.md">WdfInterruptReportInactive</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439277">WdfInterruptReportInactive</a>

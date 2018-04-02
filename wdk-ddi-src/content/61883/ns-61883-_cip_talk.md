@@ -47,11 +47,11 @@ req.typenames: CIP_TALK, *PCIP_TALK
 This structure is used to begin transmission. The  request begins isochronous transmission on the specified connection. This request will start transmitting CIP packets, whether there are any frames attached. If no frames are attached, empty CIP packets are transmitted for every isochronous cycle.
 
 ## Syntax
-````
+```
 typedef struct _CIP_TALK {
-  HANDLE hConnect;
+  IN HANDLE hConnect;
 } CIP_TALK, *PCIP_TALK;
-````
+```
 
 ## Members
 

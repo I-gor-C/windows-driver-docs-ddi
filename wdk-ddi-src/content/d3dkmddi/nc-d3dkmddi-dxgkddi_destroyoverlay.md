@@ -7,7 +7,7 @@ old-location: display\dxgkddidestroyoverlay.htm
 old-project: display
 ms.assetid: ea4672a2-ba21-42d4-9ff3-4fa611f86c90
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKDDI_DESTROYOVERLAY, DmFunctions_e4fa2e3e-ac60-4235-92cc-77e71116a4d4.xml, DxgkDdiDestroyOverlay, DxgkDdiDestroyOverlay callback function [Display Devices], d3dkmddi/DxgkDdiDestroyOverlay, display.dxgkddidestroyoverlay
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -62,7 +62,7 @@ NTSTATUS DxgkddiDestroyoverlay(
 
 `hOverlay`
 
-[in] A handle to the overlay to destroy. The display miniport driver's <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createoverlay.md">DxgkDdiCreateOverlay</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <b>hOverlay</b> member of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createoverlay.md">DXGKARG_CREATEOVERLAY</a> structure.
+[in] A handle to the overlay to destroy. The display miniport driver's <a href="https://msdn.microsoft.com/1ccdd16d-fd76-4039-b538-86c77b4e8cbb">DxgkDdiCreateOverlay</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem in the <b>hOverlay</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557572">DXGKARG_CREATEOVERLAY</a> structure.
 
 
 ## Return Value
@@ -83,8 +83,8 @@ NTSTATUS DxgkddiDestroyoverlay(
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createoverlay.md">DxgkDdiCreateOverlay</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557572">DXGKARG_CREATEOVERLAY</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createoverlay.md">DXGKARG_CREATEOVERLAY</a>
+<a href="https://msdn.microsoft.com/1ccdd16d-fd76-4039-b538-86c77b4e8cbb">DxgkDdiCreateOverlay</a>

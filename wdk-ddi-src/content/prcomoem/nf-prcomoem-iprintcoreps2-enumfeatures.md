@@ -45,26 +45,26 @@ req.product: Windows 10 or later.
 ---
 
 
-# EnumFeatures method
+# IPrintCorePS2::EnumFeatures method
 The <code>IPrintCorePS2::EnumFeatures</code> method enumerates a printer's available features.
 
 ## Syntax
 
-````
+```
 HRESULT EnumFeatures(
-  [in]  PDEVOBJ pdevobj,
-  [in]  DWORD   dwFlags,
-  [out] PSTR    pmszFeatureList,
-  [in]  DWORD   cbSize,
-  [out] PDWORD  pcbNeeded
+  PDEVOBJ pdevobj,
+  DWORD   dwFlags,
+  PZZSTR  pmszFeatureList,
+  DWORD   cbSize,
+  PDWORD  pcbNeeded
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `dwFlags`
 
@@ -160,11 +160,11 @@ For more information, see <a href="https://msdn.microsoft.com/4a87cedf-066a-445b
 
 ## See Also
 
-<a href="..\prcomoem\nn-prcomoem-iprintcoreps2.md">IPrintCorePS2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a>
 
 
 
-<a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a>
+<a href="https://msdn.microsoft.com/bf7e15df-49ba-4850-acf6-dab5dc137f48">IPrintCorePS2</a>
 
 
 

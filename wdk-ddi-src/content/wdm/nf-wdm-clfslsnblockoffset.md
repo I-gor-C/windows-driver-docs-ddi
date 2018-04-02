@@ -7,7 +7,7 @@ old-location: kernel\clfslsnblockoffset.htm
 old-project: kernel
 ms.assetid: 8b2cf728-8859-4b7d-99f0-2ee7604ab480
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsLsnBlockOffset, ClfsLsnBlockOffset routine [Kernel-Mode Driver Architecture], Clfs_700ff9e8-40ea-4659-b4a5-99432fb1577c.xml, kernel.clfslsnblockoffset, wdm/ClfsLsnBlockOffset
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ The <b>ClfsLsnBlockOffset</b> routine returns the sector-aligned block offset co
 
 ## Syntax
 
-````
-ULONG ClfsLsnBlockOffset(
-  _In_ const CLFS_LSN *plsn
+```
+CLFSUSER_API ULONG ClfsLsnBlockOffset(
+  const CLFS_LSN *plsn
 );
-````
+```
 
 ## Parameters
 
 `plsn`
 
-A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure from which the block offset is retrieved.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a> structure from which the block offset is retrieved.
 
 
 ## Return Value
@@ -86,12 +86,12 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfslsnrecordsequence.md">ClfsLsnRecordSequence</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541573">ClfsLsnContainer</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfslsncontainer.md">ClfsLsnContainer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541585">ClfsLsnCreate</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfslsncreate.md">ClfsLsnCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541615">ClfsLsnRecordSequence</a>

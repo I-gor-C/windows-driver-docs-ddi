@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-LRESULT APIENTRY OEMDocumentPropertySheets(
-  _In_ PPROPSHEETUI_INFO pPSUIInfo,
-       LPARAM            lParam
+```
+LRESULT OEMDocumentPropertySheets(
+  PPROPSHEETUI_INFO pPSUIInfo,
+  LPARAM            lParam
 );
-````
+```
 
 ## Parameters
 

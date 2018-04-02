@@ -50,16 +50,16 @@ The <code>OEMCopyBits</code> function performs translations between device-manag
 
 ## Syntax
 
-````
-BOOL  APIENTRY OEMCopyBits(
-   SURFOBJ  *psoDest,
-   SURFOBJ  *psoSrc,
-   CLIPOBJ  *pco,
-   XLATEOBJ *pxlo,
-   RECTL    *prclDest,
-   POINTL   *pptlSrc
+```
+BOOL OEMCopyBits(
+  SURFOBJ  *psoDest,
+  SURFOBJ  *psoSrc,
+  CLIPOBJ  *pco,
+  XLATEOBJ *pxlo,
+  RECTL    *prclDest,
+  POINTL   *pptlSrc
 );
-````
+```
 
 ## Parameters
 

@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_WindowModal method
+# IPrinterExtensionEventArgs::get_WindowModal method
 Gets the run mode parameter that determines whether or not the printer extension should be run as modal.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_WindowModal(
-  [out, retval] BOOL *pbModal
+  BOOL *pbModal
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioneventargs.md">IPrinterExtensionEventArgs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973207">IPrinterExtensionEventArgs</a>

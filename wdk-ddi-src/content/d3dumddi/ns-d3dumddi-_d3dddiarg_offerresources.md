@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_offerresources.htm
 old-project: display
 ms.assetid: 3c5e5dae-14f6-47b9-8c27-48ecc73a43ef
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDIARG_OFFERRESOURCES, D3DDDIARG_OFFERRESOURCES structure [Display Devices], _D3DDDIARG_OFFERRESOURCES, d3dumddi/D3DDDIARG_OFFERRESOURCES, display.d3dddiarg_offerresources
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: D3DDDIARG_OFFERRESOURCES
 ---
 
 # _D3DDDIARG_OFFERRESOURCES structure
-Describes video memory resources that the user-mode display driver offers for reuse. Used with the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_offerresources.md">OfferResources</a>  function.
+Describes video memory resources that the user-mode display driver offers for reuse. Used with the <a href="https://msdn.microsoft.com/68551AD7-AC0C-4138-948F-33773F02DA41">OfferResources</a>  function.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDIARG_OFFERRESOURCES {
-  const HANDLE          *pResources;
-  UINT                  Resources;
+  const HANDLE          *pResources;
+  UINT                  Resources;
   D3DDDI_OFFER_PRIORITY Priority;
 } D3DDDIARG_OFFERRESOURCES;
-````
+```
 
 ## Members
 
@@ -68,10 +68,10 @@ typedef struct _D3DDDIARG_OFFERRESOURCES {
 
 `Priority`
 
-[in] A value of type <a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a> that indicates the importance of the resources pointed to by <b>pResources</b>.
+[in] A value of type <a href="https://msdn.microsoft.com/library/windows/hardware/hh439275">D3DDDI_OFFER_PRIORITY</a> that indicates the importance of the resources pointed to by <b>pResources</b>.
 
 ## Remarks
-This structure is pointed to by  the <i>pData</i> parameter of the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_offerresources.md">OfferResources</a> routine.
+This structure is pointed to by  the <i>pData</i> parameter of the <a href="https://msdn.microsoft.com/68551AD7-AC0C-4138-948F-33773F02DA41">OfferResources</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,8 +81,8 @@ This structure is pointed to by  the <i>pData</i> parameter of the <a href="..\d
 
 ## See Also
 
-<a href="..\d3dukmdt\ne-d3dukmdt-_d3dddi_offer_priority.md">D3DDDI_OFFER_PRIORITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439275">D3DDDI_OFFER_PRIORITY</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_offerresources.md">OfferResources</a>
+<a href="https://msdn.microsoft.com/68551AD7-AC0C-4138-948F-33773F02DA41">OfferResources</a>

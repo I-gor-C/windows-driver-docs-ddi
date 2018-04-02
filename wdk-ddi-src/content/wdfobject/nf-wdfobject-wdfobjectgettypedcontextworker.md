@@ -52,12 +52,12 @@ The <b>WdfObjectGetTypedContextWorker</b> method is reserved for internal use on
 
 ## Syntax
 
-````
+```
 PVOID WdfObjectGetTypedContextWorker(
-  _In_ WDFOBJECT                      Handle,
-  _In_ PCWDF_OBJECT_CONTEXT_TYPE_INFO TypeInfo
+  WDFOBJECT                      Handle,
+  PCWDF_OBJECT_CONTEXT_TYPE_INFO TypeInfo
 );
-````
+```
 
 ## Parameters
 

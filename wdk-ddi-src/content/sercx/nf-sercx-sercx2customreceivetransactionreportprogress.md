@@ -50,12 +50,12 @@ The <b>SerCx2CustomReceiveTransactionReportProgress</b> method reports whether p
 
 ## Syntax
 
-````
-VOID SerCx2CustomReceiveTransactionReportProgress(
-  [in] SERCX2CUSTOMRECEIVETRANSACTION             CustomReceive,
-  [in] SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS Progress
+```
+void SerCx2CustomReceiveTransactionReportProgress(
+  SERCX2CUSTOMRECEIVETRANSACTION             CustomReceiveTransaction,
+  SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS Progress
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ Whether progress is being made toward completing the custom-receive transaction.
 <li>SERCX2_CUSTOM_RECEIVE_NO_PROGRESS</li>
 <li>SERCX2_CUSTOM_RECEIVE_BYTES_TRANSFERRED</li>
 </ul>
-For more information about these enumeration constants, see <a href="..\sercx\ne-sercx-_sercx2_custom_receive_transaction_progress.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS</a>.
+For more information about these enumeration constants, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265317">SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS</a>.
 
 
 ## Return Value
@@ -98,7 +98,7 @@ For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C
 
 ## See Also
 
-<a href="..\sercx\nf-sercx-sercx2customreceivetransactioncreate.md">SerCx2CustomReceiveTransactionCreate</a>
+<a href="https://msdn.microsoft.com/B0B08257-E867-4E22-949E-555AD44C2DDE">EvtSerCx2CustomReceiveTransactionQueryProgress</a>
 
 
 
@@ -106,8 +106,8 @@ For more information, see <a href="https://msdn.microsoft.com/29849A8C-6656-444C
 
 
 
-<a href="https://msdn.microsoft.com/B0B08257-E867-4E22-949E-555AD44C2DDE">EvtSerCx2CustomReceiveTransactionQueryProgress</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265317">SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS</a>
 
 
 
-<a href="..\sercx\ne-sercx-_sercx2_custom_receive_transaction_progress.md">SERCX2_CUSTOM_RECEIVE_TRANSACTION_PROGRESS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265251">SerCx2CustomReceiveTransactionCreate</a>

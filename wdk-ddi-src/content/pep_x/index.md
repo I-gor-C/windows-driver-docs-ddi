@@ -2,7 +2,7 @@
 UID: NA:pep_x
 ms.assetid: 58bb1f9b-0265-3590-af11-186f988fd807
 ms.author: windowsdriverdev
-ms.date: 03/13/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -288,7 +288,7 @@ pep_x.h contains the following programming interfaces:
 | [_PEP_INFORMATION](ns-pep_x-_pep_information.md) | The PEP_INFORMATION structure specifies the interface that the platform extension plug-in (PEP) uses to receive notifications from the Windows power management framework (PoFx). |
 | [_PEP_KERNEL_INFORMATION_STRUCT_V1](ns-pep_x-_pep_kernel_information_struct_v1.md) | The PEP_KERNEL_INFORMATION structure specifies the interface that the power extension plug-in (PEP) uses to request services from the Windows power management framework (PoFx). |
 | [_PEP_KERNEL_INFORMATION_STRUCT_V2](ns-pep_x-_pep_kernel_information_struct_v2.md) | The PEP_KERNEL_INFORMATION structure specifies the interface that the power extension plug-in (PEP) uses to request services from the Windows power management framework (PoFx). |
-| [_PEP_KERNEL_INFORMATION_STRUCT_V3](ns-pep_x-_pep_kernel_information_struct_v3.md) | The PEP_KERNEL_INFORMATION_STRUCT_V3 structure specifies the interface that the power extension plug-in (PEP) uses to request services from the Windows power management framework (PoFx). |
+| [_PEP_KERNEL_INFORMATION_STRUCT_V3](ns-pep_x-_pep_kernel_information_struct_v3.md) | The PEP_KERNEL_INFORMATION structure specifies the interface that the power extension plug-in (PEP) uses to request services from the Windows power management framework (PoFx). |
 | [_PEP_LOW_POWER_EPOCH](ns-pep_x-_pep_low_power_epoch.md) | The PEP_LOW_POWER_EPOCH structure is used to provide data for a PEP_DPM_LOW_POWER_EPOCH notification (deprecated). |
 | [_PEP_NOTIFY_COMPONENT_IDLE_STATE](ns-pep_x-_pep_notify_component_idle_state.md) | The PEP_NOTIFY_COMPONENT_IDLE_STATE structure contains status information about a component's pending transition to a new Fx power state. |
 | [_PEP_PERF_STATE](ns-pep_x-_pep_perf_state.md) | The PEP_PERF_STATE structure describes a performance state (P-state) in a P-state set in which the P-states are specified as a list of one or more discrete values. |

@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Selected method
+# IPrintSchemaOption::get_Selected method
 Indicates whether this option is selected.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_Selected(
-  [out, retval] BOOL *pbIsSelected
+  BOOL *pbIsSelected
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemaoption.md">IPrintSchemaOption</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451335">IPrintSchemaOption</a>

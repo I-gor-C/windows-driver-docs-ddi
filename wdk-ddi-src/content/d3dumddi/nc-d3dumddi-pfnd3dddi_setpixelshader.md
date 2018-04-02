@@ -7,7 +7,7 @@ old-location: display\setpixelshader.htm
 old-project: display
 ms.assetid: b7ffd96d-086e-445a-89cf-6f34a5b8a5d4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3DDDI_SETPIXELSHADER, SetPixelShader, SetPixelShader callback function [Display Devices], UserModeDisplayDriver_Functions_dd7fa75c-0753-4786-b04a-2fdd0d0e7071.xml, d3dumddi/SetPixelShader, display.setpixelshader
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -89,4 +89,4 @@ For user-mode display drivers that support pixel shaders before version 2.0, the
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>

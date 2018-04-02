@@ -47,14 +47,14 @@ req.typenames: KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, *PKSPROPERTY_VIDEOCONTROL_
 The KSPROPERTY_VIDEOCONTROL_FRAME_RATES structure describes available frame rates in 100-nanosecond units.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S {
   KSPROPERTY Property;
-  ULONG      StreamIndex;
-  ULONG      RangeIndex;
-  SIZE       Dimensions;
-} KSPROPERTY_VIDEOCONTROL_FRAME_RATES_S, *PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S;
-````
+  ULONG      StreamIndex;
+  ULONG      RangeIndex;
+  SIZE       Dimensions;
+}  *PKSPROPERTY_VIDEOCONTROL_FRAME_RATES_S;
+```
 
 ## Members
 
@@ -76,7 +76,7 @@ Contains the zero-based index into the range list. The value at this location sp
 Specifies the width and height of the image.
 
 ## Remarks
-The minidriver should return a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a> structure containing a list of the frame rates supported. These values should be expressed using type VT_I4.
+The minidriver should return a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563441">KSMULTIPLE_ITEM</a> structure containing a list of the frame rates supported. These values should be expressed using type VT_I4.
 
 ## Requirements
 | &nbsp; | &nbsp; |

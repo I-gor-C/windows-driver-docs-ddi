@@ -44,14 +44,14 @@ req.typenames: KSCLOCK_CREATE, *PKSCLOCK_CREATE
 ---
 
 # KSCLOCK_CREATE structure
-The KSCLOCK_CREATE structure is used in clock create parameters for the <a href="..\ks\nf-ks-kscreateclock.md">KsCreateClock</a> function.
+The KSCLOCK_CREATE structure is used in clock create parameters for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561637">KsCreateClock</a> function.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSCLOCK_CREATE {
   ULONG CreateFlags;
-} KSCLOCK_CREATE, *PKSCLOCK_CREATE;
-````
+} *PKSCLOCK_CREATE, KSCLOCK_CREATE;
+```
 
 ## Members
 
@@ -68,4 +68,4 @@ Currently consists of a flags item, which must be set to zero.
 
 ## See Also
 
-<a href="..\ks\nf-ks-kscreateclock.md">KsCreateClock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561637">KsCreateClock</a>

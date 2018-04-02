@@ -7,7 +7,7 @@ old-location: debugger\field_info.htm
 old-project: debugger
 ms.assetid: 627b14dc-9b13-464c-ba23-6e91bef2b940
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PFIELD_INFO, FIELD_INFO, FIELD_INFO structure [Windows Debugging], PFIELD_INFO, PFIELD_INFO structure pointer [Windows Debugging], WdbgExts_Ref_4c79e59a-cd12-4ad9-affb-b7f0bd7689fb.xml, _FIELD_INFO, debugger.field_info, wdbgexts/FIELD_INFO, wdbgexts/PFIELD_INFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,35 +45,37 @@ req.product: Windows 10 or later.
 ---
 
 # _FIELD_INFO structure
-The <b>FIELD_INFO</b> structure is used by the <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation to provide information about a member in a structure.
+The <b>FIELD_INFO</b> structure is used by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551084">Ioctl</a> operation to provide information about a member in a structure.
 
 ## Syntax
-````
+```
 typedef struct _FIELD_INFO {
-  PUCHAR           fName;
-  PUCHAR           printName;
-  ULONG            size;
-  ULONG            fOptions;
-  ULONG64          address;
+  PUCHAR      fName;
+  PUCHAR      printName;
+  ULONG       size;
+  ULONG       fOptions;
+  ULONG64     address;
   union {
     PVOID fieldCallBack;
     PVOID pBuffer;
   };
-  ULONG            TypeId;
-  ULONG            FieldOffset;
-  ULONG            BufferSize;
-  struct _BitField {
+  ULONG       TypeId;
+  ULONG       FieldOffset;
+  ULONG       BufferSize;
+  struct {
     USHORT Position;
     USHORT Size;
-  } BitField;
-  ULONG            fPointer  :2;
-  ULONG            fArray  :1;
-  ULONG            fStruct  :1;
-  ULONG            fConstant  :1;
-  ULONG            Reserved  :27;
+  } BitField;
+  _BitField   _BitField;
+  ULONG  : 2  fPointer;
+  ULONG  : 1  fArray;
+  ULONG  : 1  fStruct;
+  ULONG  : 1  fConstant;
+  ULONG  : 1  fStatic;
+  ULONG  : 26 Reserved;
 } FIELD_INFO, *PFIELD_INFO;
-````
+```
 
 ## Members
 
@@ -98,7 +100,7 @@ Specifies the flags that determine the behavior of the IG_DUMP_SYMBOL_INFO <b>Io
 
 `address`
 
-Receives the address in the target's memory of the member that is specified by <b>fName</b>.  If no address is supplied for the symbol type in SYM_DUMP_PARAM.<b>addr</b>, <b>address</b> receives the offset of the member relative to the beginning of an instance of the type.  For more information about SYM_DUMP_PARAM, see <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>.
+Receives the address in the target's memory of the member that is specified by <b>fName</b>.  If no address is supplied for the symbol type in SYM_DUMP_PARAM.<b>addr</b>, <b>address</b> receives the offset of the member relative to the beginning of an instance of the type.  For more information about SYM_DUMP_PARAM, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a>.
 
 `TypeId`
 
@@ -173,8 +175,8 @@ Receives a Boolean value that indicates whether the member is a constant.  <b>fC
 
 
 ## Remarks
-When calling the <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a> operation, the <b>fName</b> member of this structure should be set to the name of the symbol's member to which this structure applies and the <b>fOptions</b> member should reflect the desired functionality of the operation.  The other members are either optional, or are filled in by <b>Ioctl</b>.
+When calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551084">Ioctl</a> operation, the <b>fName</b> member of this structure should be set to the name of the symbol's member to which this structure applies and the <b>fOptions</b> member should reflect the desired functionality of the operation.  The other members are either optional, or are filled in by <b>Ioctl</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -187,12 +189,12 @@ When calling the <a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SY
 
 
 
-<a href="..\wdbgexts\nc-wdbgexts-pwindbg_ioctl_routine.md">Ioctl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550906">IG_DUMP_SYMBOL_INFO</a>
 
 
 
-<a href="..\wdbgexts\ns-wdbgexts-_sym_dump_param.md">IG_DUMP_SYMBOL_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551084">Ioctl</a>
 
 
 
-<a href="..\wdbgexts\nc-wdbgexts-psym_dump_field_callback.md">PSYM_DUMP_FIELD_CALLBACK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553487">PSYM_DUMP_FIELD_CALLBACK</a>

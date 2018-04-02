@@ -7,7 +7,7 @@ old-location: debugger\idebugclient5_setquitlockstring.htm
 old-project: debugger
 ms.assetid: 0C4888C7-B7F9-4B23-8AC9-41CB7863AF22
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugClient5, IDebugClient5 interface [Windows Debugging], SetQuitLockString method, IDebugClient5::SetQuitLockString, SetQuitLockString method [Windows Debugging], SetQuitLockString method [Windows Debugging], IDebugClient5 interface, SetQuitLockString,IDebugClient5.SetQuitLockString, dbgeng/IDebugClient5::SetQuitLockString, debugger.idebugclient5_setquitlockstring
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# SetQuitLockString method
+# IDebugClient5::SetQuitLockString method
 Sets a quit lock string.
 
 ## Syntax
 
-````
+```
 HRESULT SetQuitLockString(
-  [in] PCSTR String
+  PCSTR String
 );
-````
+```
 
 ## Parameters
 
@@ -79,4 +79,4 @@ This function provides control over locking the session against
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>

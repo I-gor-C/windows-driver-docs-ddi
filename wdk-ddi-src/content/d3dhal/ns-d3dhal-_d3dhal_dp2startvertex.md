@@ -7,7 +7,7 @@ old-location: display\d3dhal_dp2startvertex.htm
 old-project: display
 ms.assetid: 302ed135-9fde-4101-876f-1f70bed501b0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*LPD3DHAL_DP2STARTVERTEX, D3DHAL_DP2STARTVERTEX, D3DHAL_DP2STARTVERTEX structure [Display Devices], LPD3DHAL_DP2STARTVERTEX, LPD3DHAL_DP2STARTVERTEX structure pointer [Display Devices], _D3DHAL_DP2STARTVERTEX, d3dhal/D3DHAL_DP2STARTVERTEX, d3dhal/LPD3DHAL_DP2STARTVERTEX, d3dstrct_1dafced6-8893-45ac-b5a2-8735fe3dbd6a.xml, display.d3dhal_dp2startvertex"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,14 +44,14 @@ req.typenames: D3DHAL_DP2STARTVERTEX, *LPD3DHAL_DP2STARTVERTEX
 ---
 
 # _D3DHAL_DP2STARTVERTEX structure
-A D3DHAL_DP2STARTVERTEX structure follows certain <a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a> structures in the command buffer, and indicates the offset in the vertex buffer for the first vertex to use in <a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>.
+A D3DHAL_DP2STARTVERTEX structure follows certain <a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a> structures in the command buffer, and indicates the offset in the vertex buffer for the first vertex to use in <a href="https://msdn.microsoft.com/6128ff7a-0d2c-48df-8b5e-cab33c5a74f5">D3dDrawPrimitives2</a>.
 
 ## Syntax
-````
+```
 typedef struct _D3DHAL_DP2STARTVERTEX {
   WORD wVStart;
-} D3DHAL_DP2STARTVERTEX, *LPD3DHAL_DP2STARTVERTEX;
-````
+} *LPD3DHAL_DP2STARTVERTEX, D3DHAL_DP2STARTVERTEX;
+```
 
 ## Members
 
@@ -85,7 +85,7 @@ D3DDP2OP_INDEXEDTRIANGLEFAN
 
 </li>
 </ul>
-The first vertex of such primitives is located (<b>wVStart</b> + <b>dwVertexOffset</b>) bytes from the beginning of the vertex buffer, where <b>dwVertexOffset</b> is a member of <a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>.
+The first vertex of such primitives is located (<b>wVStart</b> + <b>dwVertexOffset</b>) bytes from the beginning of the vertex buffer, where <b>dwVertexOffset</b> is a member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff545957">D3DHAL_DRAWPRIMITIVES2DATA</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -94,27 +94,7 @@ The first vertex of such primitives is located (<b>wVStart</b> + <b>dwVertexOffs
 
 ## See Also
 
-D3DDP2OP_INDEXEDTRIANGLESTRIP
-
-
-
-D3DDP2OP_INDEXEDTRIANGLEFAN
-
-
-
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_drawprimitives2data.md">D3DHAL_DRAWPRIMITIVES2DATA</a>
-
-
-
-<a href="..\d3dhal\ns-d3dhal-_d3dhal_dp2command.md">D3DHAL_DP2COMMAND</a>
-
-
-
 D3DDP2OP_INDEXEDLINELIST2
-
-
-
-D3DDP2OP_INDEXEDTRIANGLELIST2
 
 
 
@@ -122,4 +102,24 @@ D3DDP2OP_INDEXEDLINESTRIP
 
 
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_drawprimitives2cb.md">D3dDrawPrimitives2</a>
+D3DDP2OP_INDEXEDTRIANGLEFAN
+
+
+
+D3DDP2OP_INDEXEDTRIANGLELIST2
+
+
+
+D3DDP2OP_INDEXEDTRIANGLESTRIP
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545454">D3DHAL_DP2COMMAND</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545957">D3DHAL_DRAWPRIMITIVES2DATA</a>
+
+
+
+<a href="https://msdn.microsoft.com/6128ff7a-0d2c-48df-8b5e-cab33c5a74f5">D3dDrawPrimitives2</a>

@@ -7,7 +7,7 @@ old-location: ifsk\rxcequeryadapterstatus.htm
 old-project: ifsk
 ms.assetid: ebe9bec3-6c38-48d8-b9af-03aadbc09d98
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxCeQueryAdapterStatus, RxCeQueryAdapterStatus function [Installable File System Drivers], ifsk.rxcequeryadapterstatus, rxce/RxCeQueryAdapterStatus, rxref_0813f428-95ae-47df-969c-c00563f3b3c8.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 NTSTATUS RxCeQueryAdapterStatus(
-   PRXCE_TRANSPORT        pTransport,
-   struct _ADAPTER_STATUS *pAdapterStatus
+  PRXCE_TRANSPORT pTransport,
+  _ADAPTER_STATUS *pAdapterStatus
 );
-````
+```
 
 ## Parameters
 
@@ -127,12 +127,12 @@ The <i>pTransport</i> parameter passed to this routine was invalid.
 
 ## See Also
 
-<a href="..\rxce\nf-rxce-rxcequerytransportinformation.md">RxCeQueryTransportInformation</a>
-
-
-
-<a href="..\rxce\nf-rxce-rxcequeryinformation.md">RxCeQueryInformation</a>
-
-
-
 <a href="http://go.microsoft.com/fwlink/p/?linkid=138885">ADAPTER_STATUS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553461">RxCeQueryInformation</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553474">RxCeQueryTransportInformation</a>

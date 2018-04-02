@@ -48,21 +48,21 @@ req.product: Windows 10 or later.
 # WDF_IO_TYPE_CONFIG_INIT function
 <p class="CCE_Message">[Applies to KMDF and UMDF]
 
-The <b>WDF_IO_TYPE_CONFIG_INIT</b> function initializes a driver's <a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a> structure.
+The <b>WDF_IO_TYPE_CONFIG_INIT</b> function initializes a driver's <a href="https://msdn.microsoft.com/library/windows/hardware/dn265642">WDF_IO_TYPE_CONFIG</a> structure.
 
 ## Syntax
 
-````
+```
 void WDF_IO_TYPE_CONFIG_INIT(
-  _Out_ PWDF_IO_TYPE_CONFIG IoTypeConfig
+  PWDF_IO_TYPE_CONFIG IoTypeConfig
 );
-````
+```
 
 ## Parameters
 
 `IoTypeConfig`
 
-A pointer to a driver-allocated <a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a> structure.
+A pointer to a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/dn265642">WDF_IO_TYPE_CONFIG</a> structure.
 
 
 ## Return Value
@@ -71,12 +71,12 @@ This function does not return a value.
 
 ## Remarks
 
-The <b>WDF_IO_TYPE_CONFIG_INIT</b> function zeros the specified <a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a> structure and sets the  structure's <b>Size</b> member. It then sets the <b>ReadWriteIoType</b> member to <b>WdfDeviceIoBuffered</b>, and the <b>DeviceControlIoType</b> member to <b>WdfDeviceIoBuffered</b>.
+The <b>WDF_IO_TYPE_CONFIG_INIT</b> function zeros the specified <a href="https://msdn.microsoft.com/library/windows/hardware/dn265642">WDF_IO_TYPE_CONFIG</a> structure and sets the  structure's <b>Size</b> member. It then sets the <b>ReadWriteIoType</b> member to <b>WdfDeviceIoBuffered</b>, and the <b>DeviceControlIoType</b> member to <b>WdfDeviceIoBuffered</b>.
 
 
 #### Examples
 
-For a code example that uses <b>WDF_IO_TYPE_CONFIG_INIT</b>, see <a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>.
+For a code example that uses <b>WDF_IO_TYPE_CONFIG_INIT</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265604">WdfDeviceInitSetIoTypeEx</a>.
 
 <div class="code"></div>
 
@@ -90,8 +90,8 @@ For a code example that uses <b>WDF_IO_TYPE_CONFIG_INIT</b>, see <a href="..\wdf
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetiotypeex.md">WdfDeviceInitSetIoTypeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265642">WDF_IO_TYPE_CONFIG</a>
 
 
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_io_type_config.md">WDF_IO_TYPE_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265604">WdfDeviceInitSetIoTypeEx</a>

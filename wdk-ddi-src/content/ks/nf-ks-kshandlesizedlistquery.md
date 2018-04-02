@@ -50,14 +50,14 @@ The <b>KsHandleSizedListQuery</b> function, depending on the length of the syste
 
 ## Syntax
 
-````
-NTSTATUS KsHandleSizedListQuery(
-  _In_       PIRP  Irp ,
-  _In_       ULONG DataItemsCount ,
-  _In_       ULONG DataItemSize ,
-  _In_ const VOID  *DataItems 
+```
+KSDDKAPI NTSTATUS KsHandleSizedListQuery(
+  PIRP       Irp,
+  ULONG      DataItemsCount,
+  ULONG      DataItemSize,
+  const VOID *DataItems
 );
-````
+```
 
 ## Parameters
 

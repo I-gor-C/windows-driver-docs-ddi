@@ -7,7 +7,7 @@ old-location: display\dxgk_allocationusageinfo1.htm
 old-project: display
 ms.assetid: 6de3363c-fcf8-4350-acee-b401bb3f82a6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_ALLOCATIONUSAGEINFO1, DXGK_ALLOCATIONUSAGEINFO1 structure [Display Devices], DmStructs_262d3b0f-50c6-429b-9b6e-34963d2ae42b.xml, _DXGK_ALLOCATIONUSAGEINFO1, d3dkmddi/DXGK_ALLOCATIONUSAGEINFO1, display.dxgk_allocationusageinfo1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,34 +47,34 @@ req.typenames: DXGK_ALLOCATIONUSAGEINFO1
 The DXGK_ALLOCATIONUSAGEINFO1 structure describes how an allocation can be used in DMA buffering.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_ALLOCATIONUSAGEINFO1 {
   union {
-    struct {
-      UINT PrivateFormat  :1;
-      UINT Swizzled  :1;
-      UINT MipMap  :1;
-      UINT Cube  :1;
-      UINT Volume  :1;
-      UINT Vertex  :1;
-      UINT Index  :1;
-      UINT Reserved  :25;
-    };
     UINT Value;
-  } Flags;
+    struct {
+      UINT  : 1  PrivateFormat;
+      UINT  : 1  Swizzled;
+      UINT  : 1  MipMap;
+      UINT  : 1  Cube;
+      UINT  : 1  Volume;
+      UINT  : 1  Vertex;
+      UINT  : 1  Index;
+      UINT  : 25 Reserved;
+    };
+  } Flags;
   union {
     D3DDDIFORMAT Format;
-    UINT         PrivateFormat;
+    UINT         PrivateFormat;
   };
-  UINT SwizzledFormat;
-  UINT ByteOffset;
-  UINT Width;
-  UINT Height;
-  UINT Pitch;
-  UINT Depth;
-  UINT SlicePitch;
+  UINT  SwizzledFormat;
+  UINT  ByteOffset;
+  UINT  Width;
+  UINT  Height;
+  UINT  Pitch;
+  UINT  Depth;
+  UINT  SlicePitch;
 } DXGK_ALLOCATIONUSAGEINFO1;
-````
+```
 
 ## Members
 
@@ -126,16 +126,16 @@ Specifies a member in the union contained in the <b>Flags</b> member that can ho
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557559">DXGKARG_CREATEALLOCATION</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationusagehint.md">DXGK_ALLOCATIONUSAGEHINT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_createallocation.md">DXGKARG_CREATEALLOCATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560981">DXGK_ALLOCATIONUSAGEHINT</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_createallocation.md">DxgkDdiCreateAllocation</a>
+<a href="https://msdn.microsoft.com/a28287d6-4dfa-4db4-92df-bbcd9379a5b2">DxgkDdiCreateAllocation</a>

@@ -51,11 +51,11 @@ The <b>SpbRequestGetController</b> method returns the WDFDEVICE handle to the de
 
 ## Syntax
 
-````
+```
 WDFDEVICE SpbRequestGetController(
-  _In_ SPBREQUEST SpbRequest
+  SPBREQUEST SpbRequest
 );
-````
+```
 
 ## Parameters
 

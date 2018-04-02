@@ -7,7 +7,7 @@ old-location: netvista\ndis_port_authentication_parameters.htm
 old-project: netvista
 ms.assetid: 7c411d9e-1064-4278-9870-0546891d4743
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS structure [Network Drivers Starting with Windows Vista], PNDIS_PORT_AUTHENTICATION_PARAMETERS, PNDIS_PORT_AUTHENTICATION_PARAMETERS structure pointer [Network Drivers Starting with Windows Vista], _NDIS_PORT_AUTHENTICATION_PARAMETERS, ndis_ports_ref_f78165f6-8166-4889-98e8-6c9f99fe0a0e.xml, netvista.ndis_port_authentication_parameters, ntddndis/NDIS_PORT_AUTHENTICATION_PARAMETERS, ntddndis/PNDIS_PORT_AUTHENTICATION_PARAMETERS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,15 +48,15 @@ The NDIS_PORT_AUTHENTICATION_PARAMETERS structure specifies the state parameters
   port.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
-  NDIS_OBJECT_HEADER            Header;
-  NDIS_PORT_CONTROLL_STATE      SendControlState;
-  NDIS_PORT_CONTROLL_STATE      RcvControlState;
+  NDIS_OBJECT_HEADER            Header;
+  NDIS_PORT_CONTROL_STATE       SendControlState;
+  NDIS_PORT_CONTROL_STATE       RcvControlState;
   NDIS_PORT_AUTHORIZATION_STATE SendAuthorizationState;
   NDIS_PORT_AUTHORIZATION_STATE RcvAuthorizationState;
-} NDIS_PORT_AUTHENTICATION_PARAMETERS, *PNDIS_PORT_AUTHENTICATION_PARAMETERS;
-````
+} *PNDIS_PORT_AUTHENTICATION_PARAMETERS, NDIS_PORT_AUTHENTICATION_PARAMETERS;
+```
 
 ## Members
 
@@ -64,7 +64,7 @@ typedef struct _NDIS_PORT_AUTHENTICATION_PARAMETERS {
 `Header`
 
 The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      NDIS_PORT_AUTHENTICATION_PARAMETERS structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to NDIS_OBJECT_TYPE_DEFAULT, the 
@@ -213,7 +213,7 @@ The NDIS_PORT_AUTHENTICATION_PARAMETERS structure is used in
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 
 
 

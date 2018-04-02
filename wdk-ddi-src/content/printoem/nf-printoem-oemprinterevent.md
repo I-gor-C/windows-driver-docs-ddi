@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMPrinterEvent(
-   PWSTR  pPrinterName,
-   INT    iDriverEvent,
-   DWORD  dwFlags,
-   LPARAM lParam
+```
+BOOL OEMPrinterEvent(
+  PWSTR  pPrinterName,
+  INT    iDriverEvent,
+  DWORD  dwFlags,
+  LPARAM lParam
 );
-````
+```
 
 ## Parameters
 

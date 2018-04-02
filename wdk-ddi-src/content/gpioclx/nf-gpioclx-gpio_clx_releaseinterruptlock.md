@@ -50,12 +50,12 @@ The <b>GPIO_CLX_ReleaseInterruptLock</b> method releases an interrupt lock on th
 
 ## Syntax
 
-````
-VOID GPIO_CLX_ReleaseInterruptLock(
-  _In_ PVOID   Context,
-  _In_ BANK_ID BankId
+```
+void GPIO_CLX_ReleaseInterruptLock(
+  PVOID   Context,
+  BANK_ID BankId
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: kernel\clfsflushtolsn.htm
 old-project: kernel
 ms.assetid: fb7d97d2-8c02-44c8-8cf5-e9c3b3b718bb
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsFlushToLsn, ClfsFlushToLsn routine [Kernel-Mode Driver Architecture], Clfs_80676b51-aa14-42bf-92ae-d11cf0a694b5.xml, kernel.clfsflushtolsn, wdm/ClfsFlushToLsn
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,23 +51,23 @@ The <b>ClfsFlushToLsn</b> routine forces, to stable storage, all records that ha
 
 ## Syntax
 
-````
-NTSTATUS ClfsFlushToLsn(
-  _In_      PVOID     pvMarshalContext,
-  _In_      PCLFS_LSN plsnFlush,
-  _Out_opt_ PCLFS_LSN plsnLastFlushed
+```
+CLFSUSER_API NTSTATUS ClfsFlushToLsn(
+  PVOID     pvMarshalContext,
+  PCLFS_LSN plsnFlush,
+  PCLFS_LSN plsnLastFlushed
 );
-````
+```
 
 ## Parameters
 
 `pvMarshalContext`
 
-A pointer to an opaque context associated with a marshalling area. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.
+A pointer to an opaque context associated with a marshalling area. The caller previously obtained this pointer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541520">ClfsCreateMarshallingArea</a>.
 
 `plsnFlush`
 
-A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure. All records that have an LSN less than or equal to <i>plsnFlush</i> are guaranteed to be forced to stable storage. If <i>plsnFlush</i> is equal to CLFS_LSN_NULL, then all records in the marshalling area are forced to stable storage.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a> structure. All records that have an LSN less than or equal to <i>plsnFlush</i> are guaranteed to be forced to stable storage. If <i>plsnFlush</i> is equal to CLFS_LSN_NULL, then all records in the marshalling area are forced to stable storage.
 
 `plsnLastFlushed`
 
@@ -97,4 +97,4 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsflushbuffers.md">ClfsFlushBuffers</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541544">ClfsFlushBuffers</a>

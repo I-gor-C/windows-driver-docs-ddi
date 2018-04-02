@@ -7,7 +7,7 @@ old-location: buses\_usbdevice_reset.htm
 old-project: usbref
 ms.assetid: 4C07239D-89AE-4A9F-B7EB-CFFE6D47F10B
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSBDEVICE_RESET, P_USBDEVICE_RESET, P_USBDEVICE_RESET structure pointer [Buses], USBDEVICE_RESET, USBDEVICE_RESET structure [Buses], _USBDEVICE_RESET, buses._usbdevice_reset, ucxusbdevice/P_USBDEVICE_RESET, ucxusbdevice/_USBDEVICE_RESET"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,28 +45,24 @@ req.product: Windows 10 or later.
 ---
 
 # _USBDEVICE_RESET structure
-Contains parameters for a request to reset the specified device.  This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_reset.md">EVT_UCX_USBDEVICE_RESET</a> callback function.
+Contains parameters for a request to reset the specified device.  This structure is passed by UCX in request parameters (<b>Parameters.Others.Arg1</b>) of a framework request object of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187845">EVT_UCX_USBDEVICE_RESET</a> callback function.
 
 ## Syntax
-````
+```
 typedef struct _USBDEVICE_RESET {
-#ifdef __cplusplus
   USBDEVICE_MGMT_HEADER Header;
-#else 
-  USBDEVICE_MGMT_HEADER ;
-#endif 
-  UCXENDPOINT           DefaultEndpoint;
-  ULONG                 EndpointsToDisableCount;
-  UCXENDPOINT           *EndpointsToDisable;
-} USBDEVICE_RESET, *P_USBDEVICE_RESET;
-````
+  UCXENDPOINT           DefaultEndpoint;
+  ULONG                 EndpointsToDisableCount;
+  UCXENDPOINT           *EndpointsToDisable;
+} *PUSBDEVICE_RESET, USBDEVICE_RESET;
+```
 
 ## Members
 
 
 `Header`
 
-A <a href="..\ucxusbdevice\ns-ucxusbdevice-_usbdevice_mgmt_header.md">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt188075">USBDEVICE_MGMT_HEADER</a> structure that contains  the handle for the USB hub or device.
 
 `DefaultEndpoint`
 
@@ -88,4 +84,4 @@ A pointer to an array of handles to endpoints to disable.
 
 ## See Also
 
-<a href="..\ucxusbdevice\nc-ucxusbdevice-evt_ucx_usbdevice_reset.md">EVT_UCX_USBDEVICE_RESET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187845">EVT_UCX_USBDEVICE_RESET</a>

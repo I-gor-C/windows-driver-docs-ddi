@@ -7,7 +7,7 @@ old-location: display\d3dhal_contextcreatedata.htm
 old-project: display
 ms.assetid: 9ad169a8-81a7-497c-849a-c36be66caa8e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*LPD3DHAL_CONTEXTCREATEDATA, D3DHAL_CONTEXTCREATEDATA, D3DHAL_CONTEXTCREATEDATA structure [Display Devices], LPD3DHAL_CONTEXTCREATEDATA, LPD3DHAL_CONTEXTCREATEDATA structure pointer [Display Devices], _D3DHAL_CONTEXTCREATEDATA, d3dhal/D3DHAL_CONTEXTCREATEDATA, d3dhal/LPD3DHAL_CONTEXTCREATEDATA, d3dstrct_46c9dd06-302d-423b-8cd6-fc81a4227ab4.xml, display.d3dhal_contextcreatedata"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,31 +44,31 @@ req.typenames: D3DHAL_CONTEXTCREATEDATA
 ---
 
 # _D3DHAL_CONTEXTCREATEDATA structure
-The D3DHAL_CONTEXTCREATEDATA structure contains all of the information that the <a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextcreatecb.md">D3dContextCreate</a> function requires to create a new context.
+The D3DHAL_CONTEXTCREATEDATA structure contains all of the information that the <a href="https://msdn.microsoft.com/c960c3f4-7565-4163-b8c2-a13643110c8c">D3dContextCreate</a> function requires to create a new context.
 
 ## Syntax
-````
+```
 typedef struct _D3DHAL_CONTEXTCREATEDATA {
   union {
     LPDDRAWI_DIRECTDRAW_GBL lpDDGbl;
     LPDDRAWI_DIRECTDRAW_LCL lpDDLcl;
   };
   union {
-    LPDIRECTDRAWSURFACE       lpDDS;
+    LPDIRECTDRAWSURFACE       lpDDS;
     LPDDRAWI_DDRAWSURFACE_LCL lpDDSLcl;
   };
   union {
-    LPDIRECTDRAWSURFACE       lpDDSZ;
+    LPDIRECTDRAWSURFACE       lpDDSZ;
     LPDDRAWI_DDRAWSURFACE_LCL lpDDSZLcl;
   };
   union {
-    DWORD     dwPID;
+    DWORD     dwPID;
     ULONG_PTR dwrstates;
   };
   ULONG_PTR dwhContext;
-  HRESULT   ddrval;
-} D3DHAL_CONTEXTCREATEDATA, *LPD3DHAL_CONTEXTCREATEDATA;
-````
+  HRESULT   ddrval;
+} D3DHAL_CONTEXTCREATEDATA;
+```
 
 ## Members
 
@@ -79,10 +79,10 @@ Specifies a location that indicates, on input, the version of the Direct3D user-
 
 `ddrval`
 
-Specifies the location where the driver writes the return code for <a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextcreatecb.md">D3dContextCreate</a>. A return code of D3D_OK indicates success. A return code of D3DHAL_OUTOFCONTEXTS indicates that the driver cannot create the context. For more information, see <a href="https://msdn.microsoft.com/033beb6e-5872-4cb3-8f39-459e2fff82cd">Return Codes for Direct3D Driver Callbacks</a>.
+Specifies the location where the driver writes the return code for <a href="https://msdn.microsoft.com/c960c3f4-7565-4163-b8c2-a13643110c8c">D3dContextCreate</a>. A return code of D3D_OK indicates success. A return code of D3DHAL_OUTOFCONTEXTS indicates that the driver cannot create the context. For more information, see <a href="https://msdn.microsoft.com/033beb6e-5872-4cb3-8f39-459e2fff82cd">Return Codes for Direct3D Driver Callbacks</a>.
 
 ## Remarks
-When the Direct3D runtime calls the driver's <a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextcreatecb.md">D3dContextCreate</a> function, the runtime specifies a number that indicates the runtime's user-mode version in the <b>dwhContext</b> member. The following table shows a mapping of numbers and user-mode versions.
+When the Direct3D runtime calls the driver's <a href="https://msdn.microsoft.com/c960c3f4-7565-4163-b8c2-a13643110c8c">D3dContextCreate</a> function, the runtime specifies a number that indicates the runtime's user-mode version in the <b>dwhContext</b> member. The following table shows a mapping of numbers and user-mode versions.
 
 <table>
 <tr>
@@ -161,7 +161,7 @@ If the driver successfully creates a context, the driver returns the context ID 
 
 ## See Also
 
-<a href="..\d3dhal\nc-d3dhal-lpd3dhal_contextcreatecb.md">D3dContextCreate</a>
+<a href="https://msdn.microsoft.com/c960c3f4-7565-4163-b8c2-a13643110c8c">D3dContextCreate</a>
 
 
 

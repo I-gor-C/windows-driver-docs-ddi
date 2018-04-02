@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvGetDeviceErrorStr method
+# IWiaMiniDrv::drvGetDeviceErrorStr method
 The <b>IWiaMiniDrv::drvGetDeviceErrorStr </b>method maps an error code to a Unicode string that describes the error.
 
 ## Syntax
 
-````
+```
 HRESULT drvGetDeviceErrorStr(
-  [in]            LONG     lFlags,
-  [in]            LONG     lDevErrVal,
-  [out, optional] LPOLESTR *ppszDevErrStr,
-  [out]           LONG     *plDevErr
+  LONG     __MIDL__IWiaMiniDrv0039,
+  LONG     __MIDL__IWiaMiniDrv0040,
+  LPOLESTR *__MIDL__IWiaMiniDrv0041,
+  LONG     *__MIDL__IWiaMiniDrv0042
 );
-````
+```
 
 ## Parameters
 

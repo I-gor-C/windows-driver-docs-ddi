@@ -63,7 +63,7 @@ NTSTATUS PfnkscontextDispatch(
 
 `Context`
 
-Specifies the user-supplied memory context to be passed as the <i>PowerContext</i> argument to the <a href="..\ks\nf-ks-kssetpowerdispatch.md">KsSetPowerDispatch</a> function.
+Specifies the user-supplied memory context to be passed as the <i>PowerContext</i> argument to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff566843">KsSetPowerDispatch</a> function.
 
 `Irp`
 
@@ -88,4 +88,4 @@ To manipulate the list entry only, <i>KStrContextDispatch</i> can call<b> KsSetP
 
 ## See Also
 
-<a href="..\ks\nf-ks-kssetpowerdispatch.md">KsSetPowerDispatch</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566843">KsSetPowerDispatch</a>

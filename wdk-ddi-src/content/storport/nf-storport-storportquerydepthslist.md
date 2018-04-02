@@ -7,7 +7,7 @@ old-location: storage\storportquerydepthslist.htm
 old-project: storage
 ms.assetid: 5E1CE999-8173-49B6-8CF7-F3A5B193A230
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortQueryDepthSList, StorPortQueryDepthSList routine [Storage Devices], storage.storportquerydepthslist, storport/StorPortQueryDepthSList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ Retrieves the number of entries in a Storport managed singly linked list.
 
 ## Syntax
 
-````
+```
 ULONG StorPortQueryDepthSList(
-  _In_    PVOID              HwDeviceExtension,
-  _Inout_ PSTOR_SLIST_HEADER SListHead,
-  _Out_   PSHORT             Result
+  PVOID              HwDeviceExtension,
+  PSTOR_SLIST_HEADER SListHead,
+  PSHORT             Result
 );
-````
+```
 
 ## Parameters
 
@@ -131,16 +131,16 @@ Since <b>StorPortQueryDepthSList</b> is not interlocked, the list  depth value p
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportinterlockedpopentryslist.md">StorPortInterlockedPopEntrySList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967735">StorPortInitializeSListHead</a>
 
 
 
-<a href="..\storport\nf-storport-storportinitializeslisthead.md">StorPortInitializeSListHead</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967736">StorPortInterlockedFlushSList</a>
 
 
 
-<a href="..\storport\nf-storport-storportinterlockedpushentryslist.md">StorPortInterlockedPushEntrySList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967737">StorPortInterlockedPopEntrySList</a>
 
 
 
-<a href="..\storport\nf-storport-storportinterlockedflushslist.md">StorPortInterlockedFlushSList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967738">StorPortInterlockedPushEntrySList</a>

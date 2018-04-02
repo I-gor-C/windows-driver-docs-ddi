@@ -7,7 +7,7 @@ old-location: display\d3dkmtextractbundleobject.htm
 old-project: display
 ms.assetid: f3193d5b-084f-4df1-9688-26ba5a964cca
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTExtractBundleObject, D3DKMTExtractBundleObject method [Display Devices], d3dkmthk/D3DKMTExtractBundleObject, display.d3dkmtextractbundleobject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ Used to extract the bundle object.
 
 ## Syntax
 
-````
-NTSTATUS  D3DKMTExtractBundleObject(
-  _Inout_ D3DKMT_EXTRACTBUNDLEOBJECT  *D3dkmt_extractbundleobject
+```
+NTSTATUS D3DKMTExtractBundleObject(
+
 );
-````
+```
 
 ## Parameters
 

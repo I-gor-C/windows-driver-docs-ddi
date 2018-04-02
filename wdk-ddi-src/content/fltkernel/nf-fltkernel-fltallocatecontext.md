@@ -7,7 +7,7 @@ old-location: ifsk\fltallocatecontext.htm
 old-project: ifsk
 ms.assetid: 34be4ca1-9484-41c5-9382-4785c36fca1a
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltAllocateContext, FltAllocateContext routine [Installable File System Drivers], FltApiRef_a_to_d_dcc03d8c-1f61-4afb-8774-f98951ebfb1f.xml, fltkernel/FltAllocateContext, ifsk.fltallocatecontext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,15 +49,15 @@ The <b>FltAllocateContext</b> routine allocates a context structure for a specif
 
 ## Syntax
 
-````
-NTSTATUS FltAllocateContext(
-  _In_  PFLT_FILTER      Filter,
-  _In_  FLT_CONTEXT_TYPE ContextType,
-  _In_  SIZE_T           ContextSize,
-  _In_  POOL_TYPE        PoolType,
-  _Out_ PFLT_CONTEXT     *ReturnedContext
+```
+NTSTATUS FLTAPI FltAllocateContext(
+  PFLT_FILTER      Filter,
+  FLT_CONTEXT_TYPE ContextType,
+  SIZE_T           ContextSize,
+  POOL_TYPE        PoolType,
+  PFLT_CONTEXT     *ReturnedContext
 );
-````
+```
 
 ## Parameters
 
@@ -101,7 +101,7 @@ Setting this parameter to an invalid value causes the system to execute an ASSER
 
 `ReturnedContext`
 
-A pointer to a caller-allocated variable that receives the address of the newly allocated context. The caller is responsible for calling <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a> to release this context when it is no longer needed.
+A pointer to a caller-allocated variable that receives the address of the newly allocated context. The caller is responsible for calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff544314">FltReleaseContext</a> to release this context when it is no longer needed.
 
 
 ## Return Value
@@ -143,7 +143,7 @@ The minifilter driver that is specified in the <i>Filter</i> parameter is being 
 </td>
 <td width="60%">
 
-<a href="..\fltkernel\nf-fltkernel-fltallocatecontext.md">FltAllocateContext</a> encountered a pool allocation failure. This is an error code. 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541710">FltAllocateContext</a> encountered a pool allocation failure. This is an error code. 
 
 </td>
 </tr>
@@ -189,7 +189,7 @@ FLT_FILE_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltsetfilecontext.md">FltSetFileContext</a> (starting with Windows Vista)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544511">FltSetFileContext</a> (starting with Windows Vista)
 
 </td>
 </tr>
@@ -200,7 +200,7 @@ FLT_INSTANCE_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltsetinstancecontext.md">FltSetInstanceContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544521">FltSetInstanceContext</a>
 
 
 </td>
@@ -212,7 +212,7 @@ FLT_SECTION_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a> (Windows 8 and later only.)
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450937">FltCreateSectionForDataScan</a> (Windows 8 and later only.)
 
 </td>
 </tr>
@@ -223,7 +223,7 @@ FLT_STREAM_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltsetstreamcontext.md">FltSetStreamContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544543">FltSetStreamContext</a>
 
 
 </td>
@@ -235,7 +235,7 @@ FLT_STREAMHANDLE_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltsetstreamhandlecontext.md">FltSetStreamHandleContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544552">FltSetStreamHandleContext</a>
 
 
 </td>
@@ -247,7 +247,7 @@ FLT_TRANSACTION_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltsettransactioncontext.md">FltSetTransactionContext</a> (starting with Windows Vista)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544554">FltSetTransactionContext</a> (starting with Windows Vista)
 
 </td>
 </tr>
@@ -258,7 +258,7 @@ FLT_VOLUME_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltsetvolumecontext.md">FltSetVolumeContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544557">FltSetVolumeContext</a>
 
 
 </td>
@@ -266,11 +266,11 @@ FLT_VOLUME_CONTEXT
 </table>
  
 
-When a minifilter driver calls <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a> from its <b>DriverEntry</b> routine, it must register each context type that it uses. For more information, see the reference entry for the <a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a> structure. 
+When a minifilter driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a> from its <b>DriverEntry</b> routine, it must register each context type that it uses. For more information, see the reference entry for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544629">FLT_CONTEXT_REGISTRATION</a> structure. 
 
 <b>FltAllocateContext</b> does not initialize the contents of the portion of the context structure specific to the minifilter driver. 
 
-To get the context for an object, call <a href="..\fltkernel\nf-fltkernel-fltgetcontexts.md">FltGetContexts</a> or the appropriate get-context routine from the following table.
+To get the context for an object, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff542997">FltGetContexts</a> or the appropriate get-context routine from the following table.
 
 <table>
 <tr>
@@ -284,7 +284,7 @@ FLT_FILE_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetfilecontext.md">FltGetFileContext</a> (starting with Windows Vista)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543025">FltGetFileContext</a> (starting with Windows Vista)
 
 </td>
 </tr>
@@ -295,7 +295,7 @@ FLT_INSTANCE_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetinstancecontext.md">FltGetInstanceContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543058">FltGetInstanceContext</a>
 
 
 </td>
@@ -307,7 +307,7 @@ FLT_SECTION_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetsectioncontext.md">FltGetSectionContext</a> (starting with Windows 8)
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450981">FltGetSectionContext</a> (starting with Windows 8)
 
 </td>
 </tr>
@@ -318,7 +318,7 @@ FLT_STREAM_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543144">FltGetStreamContext</a>
 
 
 </td>
@@ -330,7 +330,7 @@ FLT_STREAMHANDLE_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetstreamhandlecontext.md">FltGetStreamHandleContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543155">FltGetStreamHandleContext</a>
 
 
 </td>
@@ -342,7 +342,7 @@ FLT_TRANSACTION_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a> (starting with Windows Vista )
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543175">FltGetTransactionContext</a> (starting with Windows Vista )
 
 </td>
 </tr>
@@ -353,7 +353,7 @@ FLT_VOLUME_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumecontext.md">FltGetVolumeContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543189">FltGetVolumeContext</a>
 
 
 </td>
@@ -361,11 +361,11 @@ FLT_VOLUME_CONTEXT
 </table>
  
 
-Contexts are reference-counted and on a successful return from <b>FltAllocateContext</b>, the context  pointed to by <i>ReturnedContext</i> has a reference count of 1. A context is freed automatically when its reference count reaches zero. To increment the reference count on a context, call <a href="..\fltkernel\nf-fltkernel-fltreferencecontext.md">FltReferenceContext</a>. 
+Contexts are reference-counted and on a successful return from <b>FltAllocateContext</b>, the context  pointed to by <i>ReturnedContext</i> has a reference count of 1. A context is freed automatically when its reference count reaches zero. To increment the reference count on a context, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544291">FltReferenceContext</a>. 
 
-To decrement the reference count on a context, call <a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>. 
+To decrement the reference count on a context, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff544314">FltReleaseContext</a>. 
 
-Because contexts are reference-counted, it is not usually necessary to delete them. To delete a context explicitly, call <a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a> or the appropriate delete-context routine from the following table.
+Because contexts are reference-counted, it is not usually necessary to delete them. To delete a context explicitly, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541960">FltDeleteContext</a> or the appropriate delete-context routine from the following table.
 
 <table>
 <tr>
@@ -379,7 +379,7 @@ FLT_FILE_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletefilecontext.md">FltDeleteFileContext</a> (starting with Windows Vista)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541980">FltDeleteFileContext</a> (starting with Windows Vista)
 
 </td>
 </tr>
@@ -390,7 +390,7 @@ FLT_INSTANCE_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltdeleteinstancecontext.md">FltDeleteInstanceContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541982">FltDeleteInstanceContext</a>
 
 
 </td>
@@ -402,7 +402,7 @@ FLT_SECTION_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a> (starting with Windows 8)
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406456">FltCloseSectionForDataScan</a> (starting with Windows 8)
 
 </td>
 </tr>
@@ -413,7 +413,7 @@ FLT_STREAM_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletestreamcontext.md">FltDeleteStreamContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541997">FltDeleteStreamContext</a>
 
 
 </td>
@@ -425,7 +425,7 @@ FLT_STREAMHANDLE_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542016">FltDeleteStreamHandleContext</a>
 
 
 </td>
@@ -437,7 +437,7 @@ FLT_TRANSACTION_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletetransactioncontext.md">FltDeleteTransactionContext</a> (starting with Windows Vista)
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542023">FltDeleteTransactionContext</a> (starting with Windows Vista)
 
 </td>
 </tr>
@@ -448,7 +448,7 @@ FLT_VOLUME_CONTEXT
 </td>
 <td>
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542030">FltDeleteVolumeContext</a>
 
 
 </td>
@@ -466,108 +466,108 @@ FLT_VOLUME_CONTEXT
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltreferencecontext.md">FltReferenceContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544629">FLT_CONTEXT_REGISTRATION</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletecontext.md">FltDeleteContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406456">FltCloseSectionForDataScan</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltgetstreamcontext.md">FltGetStreamContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450937">FltCreateSectionForDataScan</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltgetinstancecontext.md">FltGetInstanceContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541960">FltDeleteContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltgetcontexts.md">FltGetContexts</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541980">FltDeleteFileContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletestreamhandlecontext.md">FltDeleteStreamHandleContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541982">FltDeleteInstanceContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltsetstreamcontext.md">FltSetStreamContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541997">FltDeleteStreamContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletestreamcontext.md">FltDeleteStreamContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542016">FltDeleteStreamHandleContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletefilecontext.md">FltDeleteFileContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542023">FltDeleteTransactionContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltsetstreamhandlecontext.md">FltSetStreamHandleContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542030">FltDeleteVolumeContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltgetfilecontext.md">FltGetFileContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542997">FltGetContexts</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletevolumecontext.md">FltDeleteVolumeContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543025">FltGetFileContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltclosesectionfordatascan.md">FltCloseSectionForDataScan</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543058">FltGetInstanceContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltgettransactioncontext.md">FltGetTransactionContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450981">FltGetSectionContext</a>
 
 
 
-<a href="..\fltkernel\ns-fltkernel-_flt_context_registration.md">FLT_CONTEXT_REGISTRATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543144">FltGetStreamContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltreleasecontext.md">FltReleaseContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543155">FltGetStreamHandleContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltgetstreamhandlecontext.md">FltGetStreamHandleContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543175">FltGetTransactionContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltsetfilecontext.md">FltSetFileContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543189">FltGetVolumeContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltsetinstancecontext.md">FltSetInstanceContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544291">FltReferenceContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltgetsectioncontext.md">FltGetSectionContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltcreatesectionfordatascan.md">FltCreateSectionForDataScan</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544314">FltReleaseContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltsetvolumecontext.md">FltSetVolumeContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544511">FltSetFileContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltgetvolumecontext.md">FltGetVolumeContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544521">FltSetInstanceContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544543">FltSetStreamContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltdeletetransactioncontext.md">FltDeleteTransactionContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544552">FltSetStreamHandleContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltsettransactioncontext.md">FltSetTransactionContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544554">FltSetTransactionContext</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltdeleteinstancecontext.md">FltDeleteInstanceContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544557">FltSetVolumeContext</a>

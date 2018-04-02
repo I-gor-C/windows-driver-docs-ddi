@@ -7,7 +7,7 @@ old-location: kernel\rtlulongptradd.htm
 old-project: kernel
 ms.assetid: 26A9A0B6-07A3-4D42-A5A1-C4CDD541A3FA
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlULongPtrAdd, RtlULongPtrAdd function [Kernel-Mode Driver Architecture], kernel.rtlulongptradd, ntintsafe/RtlULongPtrAdd
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ Adds two values of type <b>ULONG_PTR</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlULongPtrAdd(
-  _In_  ULONG_PTR ulAugend,
-  _In_  ULONG_PTR ulAddend,
-  _Out_ ULONG_PTR *pulResult
+  ULONG_PTR ulAugend,
+  ULONG_PTR ulAddend,
+  ULONG_PTR *pulResult
 );
-````
+```
 
 ## Parameters
 

@@ -55,14 +55,14 @@ The <b>WdfMemoryCopyFromBuffer</b> method copies the contents of a specified sou
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfMemoryCopyFromBuffer(
-  _In_ WDFMEMORY DestinationMemory,
-  _In_ size_t    DestinationOffset,
-  _In_ PVOID     Buffer,
-  _In_ size_t    NumBytesToCopyFrom
+  WDFMEMORY DestinationMemory,
+  size_t    DestinationOffset,
+  PVOID     Buffer,
+  size_t    NumBytesToCopyFrom
 );
-````
+```
 
 ## Parameters
 
@@ -187,8 +187,8 @@ if (!NT_SUCCESS(status)) {
 
 ## See Also
 
-<a href="..\wdfmemory\nf-wdfmemory-wdfmemorycopytobuffer.md">WdfMemoryCopyToBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548703">WdfMemoryCopyToBuffer</a>
 
 
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestretrieveoutputmemory.md">WdfRequestRetrieveOutputMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550019">WdfRequestRetrieveOutputMemory</a>

@@ -7,7 +7,7 @@ old-location: kernel\iowmiallocateinstanceids.htm
 old-project: kernel
 ms.assetid: c382689e-907c-473c-9ab1-da963d7f3ba3
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoWMIAllocateInstanceIds, IoWMIAllocateInstanceIds routine [Kernel-Mode Driver Architecture], k104_52b2c9a6-e9c2-4c9f-b6f1-43ec8c72056a.xml, kernel.iowmiallocateinstanceids, wdm/IoWMIAllocateInstanceIds
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>IoWMIAllocateInstanceIds</b> routine allocates one or more instance IDs t
 
 ## Syntax
 
-````
-NTSTATUS IoWMIAllocateInstanceIds(
-  _In_  GUID  *Guid,
-  _In_  ULONG InstanceCount,
-  _Out_ ULONG *FirstInstanceId
+```
+NTKERNELAPI NTSTATUS IoWMIAllocateInstanceIds(
+  LPCGUID Guid,
+  ULONG   InstanceCount,
+  ULONG   *FirstInstanceId
 );
-````
+```
 
 ## Parameters
 
@@ -134,4 +134,4 @@ If greater than one instance was requested in <i>InstanceCount</i> and the routi
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iowmisuggestinstancename.md">IoWmiSuggestInstanceName</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550505">IoWmiSuggestInstanceName</a>

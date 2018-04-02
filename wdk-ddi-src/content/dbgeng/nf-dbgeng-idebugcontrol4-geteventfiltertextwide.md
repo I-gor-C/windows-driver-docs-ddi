@@ -7,7 +7,7 @@ old-location: debugger\geteventfiltertextwide.htm
 old-project: debugger
 ms.assetid: 76b0d865-a620-4ced-904c-d1d613dbadd1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetEventFilterTextWide method [Windows Debugging], GetEventFilterTextWide method [Windows Debugging], IDebugControl4 interface, GetEventFilterTextWide,IDebugControl4.GetEventFilterTextWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetEventFilterTextWide method, IDebugControl4::GetEventFilterTextWide, dbgeng/IDebugControl4::GetEventFilterTextWide, debugger.geteventfiltertextwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetEventFilterTextWide method
+# IDebugControl4::GetEventFilterTextWide method
 The <b>GetEventFilterTextWide</b>  method returns a short description of an event for a specific filter.
 
 ## Syntax
 
-````
+```
 HRESULT GetEventFilterTextWide(
-  [in]            ULONG  Index,
-  [out, optional] PWSTR  Buffer,
-  [in]            ULONG  BufferSize,
-  [out, optional] PULONG TextSize
+  ULONG  Index,
+  PWSTR  Buffer,
+  ULONG  BufferSize,
+  PULONG TextSize
 );
-````
+```
 
 ## Parameters
 
@@ -126,7 +126,7 @@ For more information about <a href="https://msdn.microsoft.com/library/windows/h
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>
 
 
 

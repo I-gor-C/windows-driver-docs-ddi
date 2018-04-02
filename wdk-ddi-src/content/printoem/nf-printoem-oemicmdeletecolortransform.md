@@ -50,12 +50,12 @@ The <code>OEMIcmDeleteColorTransform</code> function deletes the specified color
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMIcmDeleteColorTransform(
-   DHPDEV dhpdev,
-   HANDLE hcmXform
+```
+BOOL OEMIcmDeleteColorTransform(
+  DHPDEV dhpdev,
+  HANDLE hcmXform
 );
-````
+```
 
 ## Parameters
 

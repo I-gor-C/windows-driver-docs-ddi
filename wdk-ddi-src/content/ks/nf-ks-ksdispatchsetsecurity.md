@@ -50,12 +50,12 @@ The <b>KsDispatchSetSecurity</b> function is used in the KSDISPATCH_TABLE.SetSec
 
 ## Syntax
 
-````
-NTSTATUS KsDispatchSetSecurity(
-  _In_ PDEVICE_OBJECT DeviceObject,
-  _In_ PIRP           Irp
+```
+KSDDKAPI NTSTATUS KsDispatchSetSecurity(
+  PDEVICE_OBJECT DeviceObject,
+  PIRP           Irp
 );
-````
+```
 
 ## Parameters
 

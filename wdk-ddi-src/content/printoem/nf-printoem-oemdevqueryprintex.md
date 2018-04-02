@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMDevQueryPrintEx(
-   POEMUIOBJ           poemuiobj,
-   PDEVQUERYPRINT_INFO pDQPInfo,
-   PDEVMODE            pPublicDM,
-   PVOID               pOEMDM
+```
+BOOL OEMDevQueryPrintEx(
+  POEMUIOBJ           poemuiobj,
+  PDEVQUERYPRINT_INFO pDQPInfo,
+  PDEVMODE            pPublicDM,
+  PVOID               pOEMDM
 );
-````
+```
 
 ## Parameters
 

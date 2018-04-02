@@ -7,7 +7,7 @@ old-location: display\d3dkmtsubmitcommand.htm
 old-project: display
 ms.assetid: E726B4AC-F003-45B3-B467-F123DBE60D87
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTSubmitCommand, D3DKMTSubmitCommand function [Display Devices], d3dkmthk/D3DKMTSubmitCommand, display.d3dkmtsubmitcommand
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,7 +50,7 @@ req.typenames: D3DKMT_DRIVERVERSION
 # D3DKMTSubmitCommand function
 <b>D3DKMTSubmitCommand</b> is used to submit command buffers on contexts that support graphics processing unit (GPU) virtual addressing. These contexts generate commands directly from user mode, manage their own command buffer pool and don’t make use of the allocation or patch location list.
 
-This function replaces the old <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_renderkm.md">Render</a> function for such contexts and must be used in its place. Contexts that operate in legacy patch mode must continue to use the old <i>Render</i> function.
+This function replaces the old <a href="https://msdn.microsoft.com/5841934d-7e0a-4bb8-a7f8-17d8c0af351f">Render</a> function for such contexts and must be used in its place. Contexts that operate in legacy patch mode must continue to use the old <i>Render</i> function.
 
 Although the user mode driver doesn’t generate patch locations, it must still generate a list of primaries, which are being written to. The video memory manager uses the allocation list to determine which primary allocations are being referenced for write by each command buffer. This information is used to synchronize rendering to the primaries with <i>flip</i> operations.
 
@@ -59,11 +59,11 @@ Some kernel mode drivers need information from their user mode driver on how to 
 
 ## Syntax
 
-````
-NTSTATUS APIENTRY D3DKMTSubmitCommand(
-  _In_ const D3DKMT_SUBMITCOMMAND *pData
+```
+NTSTATUS D3DKMTSubmitCommand(
+  CONST *D3DKMT_SUBMITCOMMAND
 );
-````
+```
 
 ## Parameters
 
@@ -118,4 +118,4 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_submitcommand.md">D3DKMT_SUBMITCOMMAND</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906806">D3DKMT_SUBMITCOMMAND</a>

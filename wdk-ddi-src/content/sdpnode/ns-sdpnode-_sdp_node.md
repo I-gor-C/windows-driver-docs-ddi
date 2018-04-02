@@ -49,14 +49,14 @@ The SDP_NODE structure holds information about an element in a tree-based repres
   record.
 
 ## Syntax
-````
+```
 typedef struct _SDP_NODE {
   SDP_NODE_HEADER hdr;
-  ULONG           DataSize;
-  SDP_NODE_DATA   u;
-  PVOID           Reserved;
+  ULONG           DataSize;
+  SDP_NODE_DATA   u;
+  PVOID           Reserved;
 } SDP_NODE, *PSDP_NODE;
-````
+```
 
 ## Members
 
@@ -64,13 +64,13 @@ typedef struct _SDP_NODE {
 `hdr`
 
 An 
-     <a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a> structure that contains
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536850">SDP_NODE_HEADER</a> structure that contains
      links to peer SDP_NODE structures and the data type of the current node.
 
 `DataSize`
 
 The size, in bytes, of the 
-     <a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a> union held in the 
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536849">SDP_NODE_DATA</a> union held in the 
      <b>u</b> member.
 
 `u`
@@ -104,12 +104,12 @@ The header specifies the type of data. Driver developers can access links to pee
 
 ## See Also
 
-<a href="..\sdpnode\ns-sdpnode-_sdp_node_data.md">SDP_NODE_DATA</a>
-
-
-
-<a href="..\sdpnode\ns-sdpnode-_sdp_node_header.md">SDP_NODE_HEADER</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554296">LIST_ENTRY</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536849">SDP_NODE_DATA</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536850">SDP_NODE_HEADER</a>

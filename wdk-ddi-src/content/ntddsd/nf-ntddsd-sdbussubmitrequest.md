@@ -49,12 +49,12 @@ The <b>SdBusSubmitRequest</b> routine sends a synchronous Secure Digital (SD) re
 
 ## Syntax
 
-````
+```
 NTSTATUS SdBusSubmitRequest(
-  _In_ PVOID                 InterfaceContext,
-  _In_ PSDBUS_REQUEST_PACKET Sdrp
+  PVOID                 InterfaceContext,
+  PSDBUS_REQUEST_PACKET Packet
 );
-````
+```
 
 ## Parameters
 
@@ -88,16 +88,16 @@ Callers of <a href="https://msdn.microsoft.com/library/windows/hardware/ff537914
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537906">SdBusOpenInterface</a>
-
-
-
 <a href="https://msdn.microsoft.com/92b8762d-8af3-493c-aa1d-bc245b0cbd83">SDBUS_INTERFACE_STANDARD</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>
-
-
-
 <a href="https://msdn.microsoft.com/09b30bf0-fe85-4ad5-bd3e-113ed3a093ac">SDBUS_REQUEST_PACKET</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537906">SdBusOpenInterface</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537914">SdBusSubmitRequestAsync</a>

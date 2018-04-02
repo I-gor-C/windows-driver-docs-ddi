@@ -52,15 +52,15 @@ The <b>WdfDeviceAssignInterfaceProperty</b> method modifies the current value of
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDeviceAssignInterfaceProperty(
-  _In_     WDFDEVICE                           Device,
-  _In_     PWDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData,
-  _In_     DEVPROPTYPE                         Type,
-  _In_     ULONG                               BufferLength,
-  _In_opt_ PVOID                               PropertyBuffer
+  WDFDEVICE                           Device,
+  PWDF_DEVICE_INTERFACE_PROPERTY_DATA PropertyData,
+  DEVPROPTYPE                         Type,
+  ULONG                               BufferLength,
+  PVOID                               PropertyBuffer
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A handle to a framework device object.
 
 `PropertyData`
 
-A pointer to <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a> structure.
+A pointer to <a href="https://msdn.microsoft.com/library/windows/hardware/dn265629">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a> structure.
 
 `Type`
 
@@ -117,7 +117,7 @@ For information about related methods, see <a href="https://msdn.microsoft.com/C
 
 #### Examples
 
-The following code example initializes a <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a> structure and then calls <b>WdfDeviceAssignInterfaceProperty</b>.
+The following code example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265629">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a> structure and then calls <b>WdfDeviceAssignInterfaceProperty</b>.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -162,16 +162,16 @@ if (!NT_SUCCESS(status)) {
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_device_interface_property_data_init.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265629">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicequeryinterfaceproperty.md">WdfDeviceQueryInterfaceProperty</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265630">WDF_DEVICE_INTERFACE_PROPERTY_DATA_INIT</a>
 
 
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_interface_property_data.md">WDF_DEVICE_INTERFACE_PROPERTY_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265598">WdfDeviceAllocAndQueryInterfaceProperty</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceallocandqueryinterfaceproperty.md">WdfDeviceAllocAndQueryInterfaceProperty</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265607">WdfDeviceQueryInterfaceProperty</a>

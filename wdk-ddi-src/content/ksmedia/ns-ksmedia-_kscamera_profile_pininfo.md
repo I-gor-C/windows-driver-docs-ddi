@@ -47,14 +47,20 @@ req.typenames: KSCAMERA_PROFILE_PININFO, *PKSCAMERA_PROFILE_PININFO
 This structure specifies the available list of media types for each of the camera driver pins.
 
 ## Syntax
-````
+```
 typedef struct _KSCAMERA_PROFILE_PININFO {
-  GUID                        PinCategory;
-  UINT32                      Reserved;
-  UINT32                      MediaInfoCount;
+  GUID                        PinCategory;
+  union {
+    struct {
+      USHORT PinIndex;
+      USHORT ProfileSensorType;
+    };
+    UINT32 Reserved;
+  };
+  UINT32                      MediaInfoCount;
   PKSCAMERA_PROFILE_MEDIAINFO MediaInfos;
-} KSCAMERA_PROFILE_PININFO, *PKSCAMERA_PROFILE_PININFO;
-````
+} *PKSCAMERA_PROFILE_PININFO, KSCAMERA_PROFILE_PININFO;
+```
 
 ## Members
 

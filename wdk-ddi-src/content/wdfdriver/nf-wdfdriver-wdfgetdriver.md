@@ -55,9 +55,11 @@ The <b>WdfGetDriver</b> method returns a handle to the framework driver object t
 
 ## Syntax
 
-````
-WDFDRIVER WdfGetDriver(void);
-````
+```
+WDFDRIVER WdfGetDriver(
+
+);
+```
 
 ## Parameters
 
@@ -65,7 +67,7 @@ This function has no parameters.
 
 ## Return Value
 
-<b>WdfGetDriver</b> returns a handle to a framework driver object, or <b>NULL</b> if the driver has not called <a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>.
+<b>WdfGetDriver</b> returns a handle to a framework driver object, or <b>NULL</b> if the driver has not called <a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a>.
 
 
 ## Requirements
@@ -80,4 +82,4 @@ This function has no parameters.
 
 ## See Also
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivercreate.md">WdfDriverCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547175">WdfDriverCreate</a>

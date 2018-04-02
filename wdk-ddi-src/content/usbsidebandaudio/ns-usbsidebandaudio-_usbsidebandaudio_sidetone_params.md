@@ -7,7 +7,7 @@ old-location: audio\usbsidebandaudio_sidetone_params.htm
 old-project: audio
 ms.assetid: FE97B772-CD08-4F76-88DA-05F24881D062
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PUSBSIDEBANDAUDIO_SIDETONE_PARAMS, PUSBSIDEBANDAUDIO_SIDETONE_PARAMS, PUSBSIDEBANDAUDIO_SIDETONE_PARAMS structure pointer [Audio Devices], USBSIDEBANDAUDIO_SIDETONE_PARAMS, USBSIDEBANDAUDIO_SIDETONE_PARAMS structure [Audio Devices], _USBSIDEBANDAUDIO_SIDETONE_PARAMS, audio.usbsidebandaudio_sidetone_params, usbsidebandaudio/PUSBSIDEBANDAUDIO_SIDETONE_PARAMS, usbsidebandaudio/USBSIDEBANDAUDIO_SIDETONE_PARAMS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,13 @@ req.product: Windows 10 or later.
 TBD
 
 ## Syntax
-````
+```
 typedef struct _USBSIDEBANDAUDIO_SIDETONE_PARAMS {
-  ULONG Reserved 0;
-  BOOL  Reserved 1;
-} USBSIDEBANDAUDIO_SIDETONE_PARAMS, *PUSBSIDEBANDAUDIO_SIDETONE_PARAMS;
-````
+  ULONG                                EpIndex;
+  BOOL                                 Immediate;
+  USBSIDEBANDAUDIO_SIDETONE_DESCRIPTOR Sidetone;
+} *PUSBSIDEBANDAUDIO_SIDETONE_PARAMS, USBSIDEBANDAUDIO_SIDETONE_PARAMS;
+```
 
 ## Members
 

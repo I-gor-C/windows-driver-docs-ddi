@@ -7,7 +7,7 @@ old-location: buses\usbd_pipe_type.htm
 old-project: usbref
 ms.assetid: 4522a7d0-d297-4668-bb4e-e4ceae18f52a
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: USBD_PIPE_TYPE, USBD_PIPE_TYPE enumeration [Buses], UsbdPipeTypeBulk, UsbdPipeTypeControl, UsbdPipeTypeInterrupt, UsbdPipeTypeIsochronous, _USBD_PIPE_TYPE, buses.usbd_pipe_type, usb/USBD_PIPE_TYPE, usb/UsbdPipeTypeBulk, usb/UsbdPipeTypeControl, usb/UsbdPipeTypeInterrupt, usb/UsbdPipeTypeIsochronous, usbstrct_a1fda372-f509-4667-a615-b68936b0a42b.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 The <b>USBD_PIPE_TYPE</b> enumerator indicates the type of pipe.
 
 ## Syntax
-````
-typedef enum _USBD_PIPE_TYPE { 
-  UsbdPipeTypeControl      = 0,
-  UsbdPipeTypeIsochronous  = 1,
-  UsbdPipeTypeBulk         = 2,
-  UsbdPipeTypeInterrupt    = 3
+```
+typedef enum _USBD_PIPE_TYPE {
+  UsbdPipeTypeControl      ,
+  UsbdPipeTypeIsochronous  ,
+  UsbdPipeTypeBulk         ,
+  UsbdPipeTypeInterrupt
 } USBD_PIPE_TYPE;
-````
+```
 
 ## Constants
 

@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetCapabilities method
+# IStiUSD::GetCapabilities method
 A still image minidriver's <b>IStiUSD::GetCapabilities</b> method returns a still image device's capabilities.
 
 ## Syntax
 
-````
+```
 HRESULT GetCapabilities(
-   PSTI_USD_CAPS pUsdCaps
+  PSTI_USD_CAPS pDevCaps
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ If the operation succeeds, the method should return S_OK. Otherwise, it should r
 
 ## Remarks
 
-The <b>IStiUSD::GetCapabilities</b> method should set appropriate device capability flags in the caller-supplied <a href="..\stiusd\ns-stiusd-_sti_usd_caps.md">STI_USD_CAPS</a> structure. It should also set the version number to STI_VERSION.
+The <b>IStiUSD::GetCapabilities</b> method should set appropriate device capability flags in the caller-supplied <a href="https://msdn.microsoft.com/library/windows/hardware/ff548404">STI_USD_CAPS</a> structure. It should also set the version number to STI_VERSION.
 
 ## Requirements
 | &nbsp; | &nbsp; |

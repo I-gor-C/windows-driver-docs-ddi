@@ -47,12 +47,12 @@ req.typenames: KSPROPERTY_SERIALHDR, *PKSPROPERTY_SERIALHDR
 The format of the serialization buffer is a KSPROPERTY_SERIALHDR structure, followed by serialized properties.
 
 ## Syntax
-````
-typedef struct {
-  GUID  PropertySet;
+```
+typedef struct KSPROPERTY_SERIALHDR {
+  GUID  PropertySet;
   ULONG Count;
-} KSPROPERTY_SERIALHDR, *PKSPROPERTY_SERIALHDR;
-````
+} *PKSPROPERTY_SERIALHDR, KSPROPERTY_SERIALHDR;
+```
 
 ## Members
 
@@ -73,4 +73,4 @@ Specifies the count of serialized properties to follow.
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksproperty_serial.md">KSPROPERTY_SERIAL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565224">KSPROPERTY_SERIAL</a>

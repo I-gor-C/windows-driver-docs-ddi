@@ -7,7 +7,7 @@ old-location: buses\usb_hub_type.htm
 old-project: usbref
 ms.assetid: F7516B20-B30F-47BE-BBF3-AB5758D5CF73
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: USB_HUB_TYPE, USB_HUB_TYPE enumeration [Buses], Usb20Hub, Usb30Hub, UsbRootHub, _USB_HUB_TYPE, buses.usb_hub_type, usbioctl/USB_HUB_TYPE, usbioctl/Usb20Hub, usbioctl/Usb30Hub, usbioctl/UsbRootHub
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.product: Windows 10 or later.
 # _USB_HUB_TYPE Enumeration
 The <b>USB_HUB_TYPE</b> enumeration defines constants that indicate the type of USB hub.
 
-The hub type is retrieved by the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_hub_information_ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a> I/O control request.
+The hub type is retrieved by the <a href="https://msdn.microsoft.com/library/windows/hardware/hh450860">IOCTL_USB_GET_HUB_INFORMATION_EX</a> I/O control request.
 
-The request retrieves the hub descriptor associated with the specified hub in the <a href="..\usbioctl\ns-usbioctl-_usb_hub_information_ex.md">USB_HUB_INFORMATION_EX</a> structure. The   <b>HubType</b> member contains a <b>USB_HUB_TYPE</b> enumerator that the application can use to evaluate the type of hub descriptor retrieved by the request.
+The request retrieves the hub descriptor associated with the specified hub in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406262">USB_HUB_INFORMATION_EX</a> structure. The   <b>HubType</b> member contains a <b>USB_HUB_TYPE</b> enumerator that the application can use to evaluate the type of hub descriptor retrieved by the request.
 
 ## Syntax
-````
-typedef enum _USB_HUB_TYPE { 
-  UsbRootHub  = 1,
-  Usb20Hub    = 2,
-  Usb30Hub    = 3
+```
+typedef enum _USB_HUB_TYPE {
+  UsbRootHub  ,
+  Usb20Hub    ,
+  Usb30Hub
 } USB_HUB_TYPE;
-````
+```
 
 ## Constants
 
@@ -89,12 +89,12 @@ typedef enum _USB_HUB_TYPE {
 
 ## See Also
 
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_hub_information_ex.md">IOCTL_USB_GET_HUB_INFORMATION_EX</a>
-
-
-
-<a href="..\usbioctl\ns-usbioctl-_usb_hub_information_ex.md">USB_HUB_INFORMATION_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450860">IOCTL_USB_GET_HUB_INFORMATION_EX</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539322">USB Constants and Enumerations</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406262">USB_HUB_INFORMATION_EX</a>

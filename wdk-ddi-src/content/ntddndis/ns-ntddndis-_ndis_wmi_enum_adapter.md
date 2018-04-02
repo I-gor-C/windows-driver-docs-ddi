@@ -7,7 +7,7 @@ old-location: netvista\ndis_wmi_enum_adapter.htm
 old-project: netvista
 ms.assetid: 89fa481a-b6f4-4948-8fda-e1e19c58da28
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_WMI_ENUM_ADAPTER, NDIS_WMI_ENUM_ADAPTER, NDIS_WMI_ENUM_ADAPTER structure [Network Drivers Starting with Windows Vista], PNDIS_WMI_ENUM_ADAPTER, PNDIS_WMI_ENUM_ADAPTER structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WMI_ENUM_ADAPTER, ndis_wmi_ref_a64c64b4-2108-4b99-937d-098197c5a72c.xml, netvista.ndis_wmi_enum_adapter, ntddndis/NDIS_WMI_ENUM_ADAPTER, ntddndis/PNDIS_WMI_ENUM_ADAPTER"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,15 +49,15 @@ The NDIS_WMI_ENUM_ADAPTER structure is returned when NDIS responds to the
   GUID_NDIS_ENUMERATE_ADAPTERS_EX</a> GUID.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_WMI_ENUM_ADAPTER {
   NDIS_OBJECT_HEADER Header;
-  NET_IFINDEX        IfIndex;
-  NET_LUID           NetLuid;
-  USHORT             DeviceNameLength;
-  CHAR               DeviceName[1];
+  NET_IFINDEX        IfIndex;
+  NET_LUID           NetLuid;
+  USHORT             DeviceNameLength;
+  CHAR               DeviceName[1];
 } NDIS_WMI_ENUM_ADAPTER, *PNDIS_WMI_ENUM_ADAPTER;
-````
+```
 
 ## Members
 
@@ -65,7 +65,7 @@ typedef struct _NDIS_WMI_ENUM_ADAPTER {
 `Header`
 
 The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for this
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for this
      NDIS_WMI_ENUM_ADAPTER structure. Set the 
      <b>Type</b> member of NDIS_OBJECT_HEADER to NDIS_WMI_OBJECT_TYPE_ENUM_ADAPTER, the 
      <b>Revision</b> member to NDIS_WMI_ENUM_ADAPTER_REVISION_1, and the 
@@ -109,4 +109,4 @@ NDIS returns the NDIS_WMI_ENUM_ADAPTER structure when it enumerates miniport ada
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>

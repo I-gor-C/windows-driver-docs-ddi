@@ -50,13 +50,13 @@ Handles clients registering for use of a thread.
 
 ## Syntax
 
-````
-NTSTATUS KsRegisterCountedWorker(
-  _In_  WORK_QUEUE_TYPE  WorkQueueType,
-  _In_  PWORK_QUEUE_ITEM CountedWorkItem,
-  _Out_ PKSWORKER        *Worker
+```
+KSDDKAPI NTSTATUS KsRegisterCountedWorker(
+  WORK_QUEUE_TYPE  WorkQueueType,
+  PWORK_QUEUE_ITEM CountedWorkItem,
+  PKSWORKER        *Worker
 );
-````
+```
 
 ## Parameters
 
@@ -79,7 +79,7 @@ Returns STATUS_SUCCESS if a worker was initialized.
 
 ## Remarks
 
-This must be matched by a corresponding <a href="..\ks\nf-ks-ksunregisterworker.md">KsUnregisterWorker</a> when thread use is completed. This function resembles <a href="..\ks\nf-ks-ksregisterworker.md">KsRegisterWorker</a>, with the addition of passing the work item that will always be queued. This is to be used with <a href="..\ks\nf-ks-ksincrementcountedworker.md">KsIncrementCountedWorker</a> and <a href="..\ks\nf-ks-ksdecrementcountedworker.md">KsDecrementCountedWorker</a> in order to minimize the number of work items queued, and reduce mutual exclusion code necessary in a work item needed to serialize access against multiple work item threads. The worker queue can still be used to queue other work items. This may only be called at PASSIVE_LEVEL.
+This must be matched by a corresponding <a href="https://msdn.microsoft.com/library/windows/hardware/ff567209">KsUnregisterWorker</a> when thread use is completed. This function resembles <a href="https://msdn.microsoft.com/library/windows/hardware/ff566775">KsRegisterWorker</a>, with the addition of passing the work item that will always be queued. This is to be used with <a href="https://msdn.microsoft.com/library/windows/hardware/ff562678">KsIncrementCountedWorker</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff561660">KsDecrementCountedWorker</a> in order to minimize the number of work items queued, and reduce mutual exclusion code necessary in a work item needed to serialize access against multiple work item threads. The worker queue can still be used to queue other work items. This may only be called at PASSIVE_LEVEL.
 
 ## Requirements
 | &nbsp; | &nbsp; |

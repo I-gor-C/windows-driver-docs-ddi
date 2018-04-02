@@ -55,18 +55,18 @@ The <b>WdfUsbTargetDeviceGetInterface</b> method returns a handle to the framewo
 
 ## Syntax
 
-````
+```
 WDFUSBINTERFACE WdfUsbTargetDeviceGetInterface(
-  _In_ WDFUSBDEVICE UsbDevice,
-  _In_ UCHAR        InterfaceIndex
+  WDFUSBDEVICE UsbDevice,
+  UCHAR        InterfaceIndex
 );
-````
+```
 
 ## Parameters
 
 `UsbDevice`
 
-A handle to a USB device object that was obtained from a previous call to <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>.
+A handle to a USB device object that was obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>.
 
 `InterfaceIndex`
 
@@ -122,4 +122,4 @@ numEndpoints = WdfUsbInterfaceGetNumEndpoints(
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicecreatewithparameters.md">WdfUsbTargetDeviceCreateWithParameters</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439428">WdfUsbTargetDeviceCreateWithParameters</a>

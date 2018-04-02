@@ -7,7 +7,7 @@ old-location: kernel\firstentryslist.htm
 old-project: kernel
 ms.assetid: 80444a10-91f3-44b5-ad20-3d3d8f49ca60
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: FirstEntrySList, FirstEntrySList routine [Kernel-Mode Driver Architecture], k109_0a6c7f88-35fa-4cc9-ac3d-03bf1e873cf3.xml, kernel.firstentryslist, wdm/FirstEntrySList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>FirstEntrySList</b> routine returns the first entry in a sequenced singly
 
 ## Syntax
 
-````
-PSLIST_ENTRY FirstEntrySList(
-  _In_ PSLIST_HEADER SListHead
+```
+NTKERNELAPI PSLIST_ENTRY FirstEntrySList(
+  PSLIST_HEADER SListHead
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff56
 
 ## Return Value
 
-<b>FirstEntrySList</b> returns a pointer to the first <a href="..\wdm\ns-wdm-_slist_entry.md">SLIST_ENTRY</a> structure on the list. If the list is empty, the routine returns <b>NULL</b>.
+<b>FirstEntrySList</b> returns a pointer to the first <a href="https://msdn.microsoft.com/library/windows/hardware/ff563805">SLIST_ENTRY</a> structure on the list. If the list is empty, the routine returns <b>NULL</b>.
 
 ## Remarks
 
@@ -82,8 +82,8 @@ Unlike other sequenced singly linked list routines, the <b>FirstEntrySList</b> r
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563805">SLIST_ENTRY</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563810">SLIST_HEADER</a>
-
-
-
-<a href="..\wdm\ns-wdm-_slist_entry.md">SLIST_ENTRY</a>

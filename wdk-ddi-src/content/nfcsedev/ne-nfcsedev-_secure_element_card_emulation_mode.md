@@ -47,13 +47,13 @@ req.typenames: SECURE_ELEMENT_CARD_EMULATION_MODE, *PSECURE_ELEMENT_CARD_EMULATI
 This enumeration indicates the card emulation mode of a secure element.
 
 ## Syntax
-````
-typedef enum _SECURE_ELEMENT_SET_CARD_EMULATION_MODE { 
-  EmulationOff                 = 0,
-  EmulationOnPowerIndependent  = 1,
-  EmulationOnPowerDependent    = 2
-} SECURE_ELEMENT_CARD_EMULATION_MODE;
-````
+```
+typedef enum _SECURE_ELEMENT_CARD_EMULATION_MODE {
+  EmulationOff                 ,
+  EmulationOnPowerIndependent  ,
+  EmulationOnPowerDependent
+} SECURE_ELEMENT_CARD_EMULATION_MODE, *PSECURE_ELEMENT_CARD_EMULATION_MODE;
+```
 
 ## Constants
 

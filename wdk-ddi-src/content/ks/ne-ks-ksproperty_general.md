@@ -47,11 +47,11 @@ req.typenames: KSPROPERTY_GENERAL
 
 
 ## Syntax
-````
-typedef enum  { 
+```
+typedef enum KSPROPERTY_GENERAL {
   KSPROPERTY_GENERAL_COMPONENTID
-} KSPROPERTY_GENERAL;
-````
+} ;
+```
 
 ## Constants
 

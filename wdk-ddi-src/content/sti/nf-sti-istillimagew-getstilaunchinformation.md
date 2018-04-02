@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetSTILaunchInformation method
+# IStillImageW::GetSTILaunchInformation method
 The <b>IStillImage::GetSTILaunchInformation</b> method returns the reason the calling still image application was started, if the still image event monitor started it.
 
 ## Syntax
 
-````
+```
 HRESULT GetSTILaunchInformation(
-  [out]           LPWSTR pwszDeviceName,
-  [out, optional] DWORD  *pdwEventCode,
-  [out]           LPWSTR pwszEventName
+  LPWSTR pwszDeviceName,
+  DWORD  *pdwEventCode,
+  LPWSTR pwszEventName
 );
-````
+```
 
 ## Parameters
 

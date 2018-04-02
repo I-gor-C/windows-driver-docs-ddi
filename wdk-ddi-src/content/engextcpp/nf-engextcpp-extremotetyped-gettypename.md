@@ -7,7 +7,7 @@ old-location: debugger\extremotetyped_gettypename.htm
 old-project: debugger
 ms.assetid: 162b3a05-dccd-4df4-8728-801a8fb39afc
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_063b1f9f-802d-4db4-9661-6f1909d396ee.xml, ExtRemoteTyped, ExtRemoteTyped interface [Windows Debugging], GetTypeName method, ExtRemoteTyped::GetTypeName, GetTypeName method [Windows Debugging], GetTypeName method [Windows Debugging], ExtRemoteTyped interface, GetTypeName,ExtRemoteTyped.GetTypeName, debugger.extremotetyped_gettypename
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,14 +44,16 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# GetTypeName method
+# ExtRemoteTyped::GetTypeName method
 The <b>GetTypeName</b> method returns the type name of the typed data represented by this object.
 
 ## Syntax
 
-````
-PSTR GetTypeName();
-````
+```
+PSTR  throw() GetTypeName(
+
+);
+```
 
 ## Parameters
 
@@ -74,12 +76,12 @@ This function has no parameters.
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544527">EXT_DECLARE_GLOBALS</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543981">ExtExtension</a>
 
 
 
-<a href="..\engextcpp\nl-engextcpp-extremotetyped.md">ExtRemoteTyped</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544527">EXT_DECLARE_GLOBALS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544162">ExtRemoteTyped</a>

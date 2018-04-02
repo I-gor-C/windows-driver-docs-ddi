@@ -48,21 +48,21 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct PrintPropertyValue {
   EPrintPropertyType ePropertyType;
   union {
-    BYTE     propertyByte;
-    PWSTR    propertyString;
-    LONG     propertyInt32;
+    BYTE     propertyByte;
+    LONG     propertyInt32;
     LONGLONG propertyInt64;
+    PWSTR    propertyString;
     struct {
-      DWORD  cbBuf;
+      DWORD  cbBuf;
       LPVOID pBuf;
-    } propertyBlob;
-  } value;
-} PrintPropertyValue;
-````
+    } propertyBlob;
+  } value;
+};
+```
 
 ## Members
 

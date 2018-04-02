@@ -7,7 +7,7 @@ old-location: storage\scsiportreadportulong.htm
 old-project: storage
 ms.assetid: 2b45d62f-1e0c-4445-a8ad-e8d263f7d43c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortReadPortUlong, ScsiPortReadPortUlong routine [Storage Devices], scsiprt_af6cc9e1-eaa8-4c05-a695-ed54690d0f3b.xml, srb/ScsiPortReadPortUlong, storage.scsiportreadportulong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>ScsiPortReadPortUlong</b> routine reads a ULONG value from the HBA.
 
 ## Syntax
 
-````
-ULONG ScsiPortReadPortUlong(
-  _In_ PULONG Port
+```
+void ScsiPortReadPortUlong(
+   Port
 );
-````
+```
 
 ## Parameters
 
@@ -82,4 +82,4 @@ None
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>

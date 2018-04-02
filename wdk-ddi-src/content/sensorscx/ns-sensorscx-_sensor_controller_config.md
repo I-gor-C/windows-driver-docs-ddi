@@ -48,23 +48,32 @@ req.product: Windows 10 or later.
 This structure contains pointers to callback functions that must be implemented by the driver, and passed on to the class extension to call.
 
 ## Syntax
-````
+```
 typedef struct _SENSOR_CONTROLLER_CONFIG {
-  ULONG                                       Size;
-  WDF_TRI_STATE                               DriverIsPowerPolicyOwner;
-  PFN_SENSOR_DRIVER_START_SENSOR              EvtSensorStart;
-  PFN_SENSOR_DRIVER_STOP_SENSOR               EvtSensorStop;
-  PFN_SENSOR_DRIVER_GET_SUPPORTED_DATA_FIELDS EvtSensorGetSupportedDataFields;
-  PFN_SENSOR_DRIVER_GET_DATA_FIELD_PROPERTIES EvtSensorGetDataFieldProperties;
-  PFN_SENSOR_DRIVER_GET_DATA_INTERVAL         EvtSensorGetDataInterval;
-  PFN_SENSOR_DRIVER_SET_DATA_INTERVAL         EvtSensorSetDataInterval;
-  PFN_SENSOR_DRIVER_GET_DATA_THRESHOLDS       EvtSensorGetDataThresholds;
-  PFN_SENSOR_DRIVER_SET_DATA_THRESHOLDS       EvtSensorSetDataThresholds;
-  PFN_SENSOR_DRIVER_GET_PROPERTIES            EvtSensorGetProperties;
-  PFN_SENSOR_DRIVER_DEVICE_IO_CONTROL         EvtSensorDeviceIoControl;
-  void                                        (*EvtSensorSetBatchLatency)();
-} SENSOR_CONTROLLER_CONFIG, *PSENSOR_CONTROLLER_CONFIG;
-````
+  ULONG                                             Size;
+  WDF_TRI_STATE                                     DriverIsPowerPolicyOwner;
+  PFN_SENSOR_DRIVER_START_SENSOR                    EvtSensorStart;
+  PFN_SENSOR_DRIVER_STOP_SENSOR                     EvtSensorStop;
+  PFN_SENSOR_DRIVER_GET_SUPPORTED_DATA_FIELDS       EvtSensorGetSupportedDataFields;
+  PFN_SENSOR_DRIVER_GET_DATA_FIELD_PROPERTIES       EvtSensorGetDataFieldProperties;
+  PFN_SENSOR_DRIVER_GET_DATA_INTERVAL               EvtSensorGetDataInterval;
+  PFN_SENSOR_DRIVER_SET_DATA_INTERVAL               EvtSensorSetDataInterval;
+  PFN_SENSOR_DRIVER_GET_DATA_THRESHOLDS             EvtSensorGetDataThresholds;
+  PFN_SENSOR_DRIVER_SET_DATA_THRESHOLDS             EvtSensorSetDataThresholds;
+  PFN_SENSOR_DRIVER_GET_PROPERTIES                  EvtSensorGetProperties;
+  PFN_SENSOR_DRIVER_DEVICE_IO_CONTROL               EvtSensorDeviceIoControl;
+  PFN_SENSOR_DRIVER_START_SENSOR_HISTORY            EvtSensorStartHistory;
+  PFN_SENSOR_DRIVER_STOP_SENSOR_HISTORY             EvtSensorStopHistory;
+  PFN_SENSOR_DRIVER_CLEAR_SENSOR_HISTORY            EvtSensorClearHistory;
+  PFN_SENSOR_DRIVER_START_HISTORY_RETRIEVAL         EvtSensorStartHistoryRetrieval;
+  PFN_SENSOR_DRIVER_CANCEL_HISTORY_RETRIEVAL        EvtSensorCancelHistoryRetrieval;
+  PFN_SENSOR_DRIVER_SET_BATCH_LATENCY               EvtSensorSetBatchLatency;
+  PFN_SENSOR_DRIVER_START_STATE_CHANGE_NOTIFICATION EvtSensorStartStateChangeNotification;
+  PFN_SENSOR_DRIVER_STOP_STATE_CHANGE_NOTIFICATION  EvtSensorStopStateChangeNotification;
+  PFN_SENSOR_DRIVER_ENABLE_WAKE                     EvtSensorEnableWake;
+  PFN_SENSOR_DRIVER_DISABLE_WAKE                    EvtSensorDisableWake;
+} *PSENSOR_CONTROLLER_CONFIG, SENSOR_CONTROLLER_CONFIG;
+```
 
 ## Members
 
@@ -159,7 +168,7 @@ This callback function sets the batch latency for a specified sensor.
 
 
 ## Remarks
-This structure is given to the class extension using the <a href="..\sensorscx\nf-sensorscx-sensorscxdeviceinitialize.md">SensorsCxDeviceInitialize</a> function. If any of the following function pointers are not set, the driver will fail to load:
+This structure is given to the class extension using the <a href="https://msdn.microsoft.com/library/windows/hardware/dn957086">SensorsCxDeviceInitialize</a> function. If any of the following function pointers are not set, the driver will fail to load:
 
 <ul>
 <li>EvtSensorStart</li>

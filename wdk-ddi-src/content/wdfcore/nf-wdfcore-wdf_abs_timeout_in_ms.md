@@ -53,11 +53,11 @@ The <b>WDF_ABS_TIMEOUT_IN_MS</b> function converts a specified number of millise
 
 ## Syntax
 
-````
+```
 LONGLONG WDF_ABS_TIMEOUT_IN_MS(
-  _In_ ULONGLONG Time
+  ULONGLONG Time
 );
-````
+```
 
 ## Parameters
 
@@ -97,4 +97,4 @@ An absolute time value is a time value that specifies a specific date and time. 
 
 ## See Also
 
-<a href="..\wdfcore\nf-wdfcore-wdf_rel_timeout_in_ms.md">WDF_REL_TIMEOUT_IN_MS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552445">WDF_REL_TIMEOUT_IN_MS</a>

@@ -45,29 +45,29 @@ req.product: Windows 10 or later.
 ---
 
 
-# DrvUpdateUISetting method
+# IPrintCoreUI2::DrvUpdateUISetting method
 The <code>IPrintCoreUI2::DrvUpdateUISetting</code> method is provided by the Windows XP Pscript5 driver so that Pscript5 user interface plug-ins can notify the driver of a modified user interface option.
 
 ## Syntax
 
-````
-STDMETHOD DrvUpdateUISetting(
-   PVOID pci,
-   PVOID pOptItem,
-   DWORD dwPreviousSelection,
-   DWORD dwMode
+```
+HRESULT DrvUpdateUISetting(
+  PVOID pci,
+  PVOID pOptItem,
+  DWORD dwPreviousSelection,
+  DWORD dwMode
 );
-````
+```
 
 ## Parameters
 
 `pci`
 
-Caller-supplied pointer to an <a href="..\printoem\ns-printoem-_oemuiobj.md">OEMUIOBJ</a> structure.
+Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559571">OEMUIOBJ</a> structure.
 
 `pOptItem`
 
-Caller-supplied pointer to an <a href="..\compstui\ns-compstui-_optitem.md">OPTITEM</a> structure describing a user interface option item.
+Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559656">OPTITEM</a> structure describing a user interface option item.
 
 `dwPreviousSelection`
 
@@ -171,11 +171,11 @@ This method is inherited from the <a href="https://msdn.microsoft.com/ed11789f-7
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/e2d2e486-d69d-4a6d-aaab-a7b8806665b4">IPrintCoreUI2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553115">IPrintOemDriverUI::DrvUpdateUISetting</a>
-
-
-
-<a href="..\prcomoem\nn-prcomoem-iprintcoreui2.md">IPrintCoreUI2</a>
 
 
 

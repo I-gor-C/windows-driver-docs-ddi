@@ -7,7 +7,7 @@ old-location: display\d3dkmtfreegpuvirtualaddress.htm
 old-project: display
 ms.assetid: E076E9E6-FA7E-4F46-88B4-D3971E62DE1A
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTFreeGpuVirtualAddress, D3DKMTFreeGpuVirtualAddress function [Display Devices], d3dkmthk/D3DKMTFreeGpuVirtualAddress, display.d3dkmtfreegpuvirtualaddress
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ req.typenames: D3DKMT_DRIVERVERSION
 
 ## Syntax
 
-````
-NTSTATUS APIENTRY D3DKMTFreeGpuVirtualAddress(
-  _In_ const D3DKMT_FREEGPUVIRTUALADDRESS *pData
+```
+NTSTATUS D3DKMTFreeGpuVirtualAddress(
+  CONST *D3DKMT_FREEGPUVIRTUALADDRESS
 );
-````
+```
 
 ## Parameters
 
@@ -101,7 +101,7 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## Remarks
 
-The freed virtual address should not be accessed immediately after the call. If there are outstanding <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtmapgpuvirtualaddress.md">MapGpuVirtualAddress</a> and <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtupdategpuvirtualaddress.md">UpdateGpuVirtualAddress</a> operations, which reference the virtual address, they will be ignored after the virtual address is freed. A new virtual address range can be allocated in place of the freed one immediately after return from the function.
+The freed virtual address should not be accessed immediately after the call. If there are outstanding <a href="https://msdn.microsoft.com/6CE8112F-1DDA-4A8B-8D3D-40DC3737976A">MapGpuVirtualAddress</a> and <a href="https://msdn.microsoft.com/3390A01D-BD4B-4399-AA3E-91BB32264A13">UpdateGpuVirtualAddress</a> operations, which reference the virtual address, they will be ignored after the virtual address is freed. A new virtual address range can be allocated in place of the freed one immediately after return from the function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -114,12 +114,12 @@ The freed virtual address should not be accessed immediately after the call. If 
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtupdategpuvirtualaddress.md">UpdateGpuVirtualAddress</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906795">D3DKMT_FREEGPUVIRTUALADDRESS</a>
 
 
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtmapgpuvirtualaddress.md">MapGpuVirtualAddress</a>
+<a href="https://msdn.microsoft.com/6CE8112F-1DDA-4A8B-8D3D-40DC3737976A">MapGpuVirtualAddress</a>
 
 
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_freegpuvirtualaddress.md">D3DKMT_FREEGPUVIRTUALADDRESS</a>
+<a href="https://msdn.microsoft.com/3390A01D-BD4B-4399-AA3E-91BB32264A13">UpdateGpuVirtualAddress</a>

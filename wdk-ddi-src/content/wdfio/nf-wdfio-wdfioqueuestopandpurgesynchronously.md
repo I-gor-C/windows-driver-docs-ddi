@@ -57,11 +57,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 void WdfIoQueueStopAndPurgeSynchronously(
-  _In_ WDFQUEUE Queue
+  WDFQUEUE Queue
 );
-````
+```
 
 ## Parameters
 
@@ -76,7 +76,7 @@ This method does not return a value.
 
 ## Remarks
 
-This method returns after all the unprocessed and driver-owned requests (not including requests added to the queue after this call is made) are completed or canceled. If new requests are inserted while <b>WdfIoQueueStopAndPurgeSynchronously</b> is in progress, these new requests are not delivered until driver calls <a href="..\wdfio\nf-wdfio-wdfioqueuestart.md">WdfIoQueueStart</a>.
+This method returns after all the unprocessed and driver-owned requests (not including requests added to the queue after this call is made) are completed or canceled. If new requests are inserted while <b>WdfIoQueueStopAndPurgeSynchronously</b> is in progress, these new requests are not delivered until driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff548478">WdfIoQueueStart</a>.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
@@ -93,4 +93,4 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueuestopandpurge.md">WdfIoQueueStopAndPurge</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439289">WdfIoQueueStopAndPurge</a>

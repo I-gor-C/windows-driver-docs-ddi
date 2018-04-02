@@ -7,7 +7,7 @@ old-location: kernel\keraiseirql.htm
 old-project: kernel
 ms.assetid: ee340d85-5a66-4773-b325-831257e9bfd8
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: KeRaiseIrql, KeRaiseIrql routine [Kernel-Mode Driver Architecture], k105_66b09c47-8f95-41ee-8432-5784f306ad62.xml, kernel.keraiseirql, wdm/KeRaiseIrql
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ The <b>KeRaiseIrql</b> routine raises the hardware priority to the specified IRQ
 
 ## Syntax
 
-````
-VOID KeRaiseIrql(
-  _In_  KIRQL  NewIrql,
-  _Out_ PKIRQL OldIrql
+```
+void KeRaiseIrql(
+   a,
+   b
 );
-````
+```
 
 ## Parameters
 
@@ -77,7 +77,7 @@ None
 
 If the new IRQL is less than the current IRQL, a bug check occurs. Otherwise, the current IRQL is set to the specified value.
 
-Callers of this routine can be running at any IRQL. Any caller should restore the original IRQL with <a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a> as soon as possible.
+Callers of this routine can be running at any IRQL. Any caller should restore the original IRQL with <a href="https://msdn.microsoft.com/library/windows/hardware/ff552968">KeLowerIrql</a> as soon as possible.
 
 A call to <b>KeLowerIrql</b> is valid if it specifies <i>NewIrql</i> &lt;= <i>CurrentIrql</i>. A call to <b>KeRaiseIrql</b> is valid if the caller specifies <i>NewIrql</i> &gt;= <i>CurrentIrql</i>.
 
@@ -93,8 +93,8 @@ A call to <b>KeLowerIrql</b> is valid if it specifies <i>NewIrql</i> &lt;= <i>Cu
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kelowerirql.md">KeLowerIrql</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552054">KeGetCurrentIrql</a>
 
 
 
-<a href="..\wdm\nf-wdm-kegetcurrentirql.md">KeGetCurrentIrql</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552968">KeLowerIrql</a>

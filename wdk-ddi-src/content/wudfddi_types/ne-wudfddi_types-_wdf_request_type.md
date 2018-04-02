@@ -51,25 +51,25 @@ req.product: Windows 10 or later.
 The <b>WDF_REQUEST_TYPE</b> enumeration identifies the types of I/O requests that a UMDF request object can represent.
 
 ## Syntax
-````
-typedef enum _WDF_REQUEST_TYPE { 
-  WdfRequestUndefined          = 0,
-  WdfRequestCreate             = 1,
-  WdfRequestCleanup            = 2,
-  WdfRequestRead               = 3,
-  WdfRequestWrite              = 4,
-  WdfRequestDeviceIoControl    = 5,
-  WdfRequestClose              = 6,
-  WdfRequestUsb                = 7,
-  WdfRequestOther              = 8,
-  WdfRequestInternalIoctl      = 9,
-  WdfRequestTypeNoFormat       = 10,
-  WdfRequestFlushBuffers       = 11,
-  WdfRequestQueryInformation   = 12,
-  WdfRequestSetInformation     = 13,
+```
+typedef enum _WDF_REQUEST_TYPE {
+  WdfRequestUndefined         ,
+  WdfRequestCreate            ,
+  WdfRequestCleanup           ,
+  WdfRequestRead              ,
+  WdfRequestWrite             ,
+  WdfRequestDeviceIoControl   ,
+  WdfRequestClose             ,
+  WdfRequestUsb               ,
+  WdfRequestOther             ,
+  WdfRequestInternalIoctl     ,
+  WdfRequestTypeNoFormat      ,
+  WdfRequestFlushBuffers      ,
+  WdfRequestQueryInformation  ,
+  WdfRequestSetInformation    ,
   WdfRequestMaximum
-} WDF_REQUEST_TYPE;
-````
+} WDF_REQUEST_TYPE, *PWDF_REQUEST_TYPE;
+```
 
 ## Constants
 
@@ -82,7 +82,7 @@ typedef enum _WDF_REQUEST_TYPE {
             
                 <tr>
                     <td>WdfRequestCreate</td>
-                    <td>The request object represents a file creation request. The driver receives this type of request object when an application opens a device by calling the Microsoft Win32 <b>CreateFile</b> function. The framework delivers this type of request, along with a newly created file object (<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>), to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556841">IQueueCallbackCreate::OnCreateFile</a> callback function. The new file object represents the HANDLE-typed file handle that the Win32 <b>CreateFile</b> returns.</td>
+                    <td>The request object represents a file creation request. The driver receives this type of request object when an application opens a device by calling the Microsoft Win32 <b>CreateFile</b> function. The framework delivers this type of request, along with a newly created file object (<a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a>), to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff556841">IQueueCallbackCreate::OnCreateFile</a> callback function. The new file object represents the HANDLE-typed file handle that the Win32 <b>CreateFile</b> returns.</td>
                 </tr>
             
                 <tr>
@@ -155,7 +155,7 @@ typedef enum _WDF_REQUEST_TYPE {
 
 The <b>WDF_REQUEST_TYPE</b> enumeration is used as an input parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff557014">IWDFDevice::ConfigureRequestDispatching</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff558946">IWDFIoQueue::ConfigureRequestDispatching</a>. It is also used for the return value of <a href="https://msdn.microsoft.com/library/windows/hardware/ff559124">IWDFIoRequest::GetType</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff560296">IWDFRequestCompletionParams::GetCompletedRequestType</a>.
 
-For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WDF_REQUEST_TYPE</a>.
+For the KMDF version of this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552503">WDF_REQUEST_TYPE</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -164,7 +164,7 @@ For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff556875">IQueueCallbackRead::OnRead</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554905">IFileCallbackCleanup::OnCleanupFile</a>
 
 
 
@@ -180,12 +180,12 @@ For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfd
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556875">IQueueCallbackRead::OnRead</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556885">IQueueCallbackWrite::OnWrite</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554905">IFileCallbackCleanup::OnCleanupFile</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-iwdffile.md">IWDFFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558912">IWDFFile</a>

@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 The <b>SERCX2_TRANSACTION_TYPE</b> enumeration defines constants that indicate the type of data-transfer mechanism to use to perform an I/O transaction.
 
 ## Syntax
-````
-typedef enum _SERCX2_TRANSACTION_TYPE { 
-  SerCx2TransactionTypeDefault,
-  SerCx2TransactionTypePio,
-  SerCx2TransactionTypeSystemDma,
+```
+typedef enum _SERCX2_TRANSACTION_TYPE {
+  SerCx2TransactionTypeDefault    ,
+  SerCx2TransactionTypePio        ,
+  SerCx2TransactionTypeSystemDma  ,
   SerCx2TransactionTypeCustom
 } SERCX2_TRANSACTION_TYPE;
-````
+```
 
 ## Constants
 
@@ -84,7 +84,7 @@ typedef enum _SERCX2_TRANSACTION_TYPE {
 
 ## Remarks
 
-The <a href="..\sercx\nc-sercx-evt_sercx2_select_next_receive_transaction_type.md">EvtSerCx2SelectNextReceiveTransactionType</a> and <a href="..\sercx\nc-sercx-evt_sercx2_select_next_transmit_transaction_type.md">EvtSerCx2SelectNextTransmitTransactionType</a> event callback functions return <b>SERCX2_TRANSACTION_TYPE</b> enumeration values.
+The <a href="https://msdn.microsoft.com/CB4551F4-8B22-4595-8091-CB84671DC60C">EvtSerCx2SelectNextReceiveTransactionType</a> and <a href="https://msdn.microsoft.com/EE46CB43-18BA-4FD7-A60D-07DB1760B8E7">EvtSerCx2SelectNextTransmitTransactionType</a> event callback functions return <b>SERCX2_TRANSACTION_TYPE</b> enumeration values.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,8 +93,8 @@ The <a href="..\sercx\nc-sercx-evt_sercx2_select_next_receive_transaction_type.m
 
 ## See Also
 
-<a href="..\sercx\nc-sercx-evt_sercx2_select_next_receive_transaction_type.md">EvtSerCx2SelectNextReceiveTransactionType</a>
+<a href="https://msdn.microsoft.com/CB4551F4-8B22-4595-8091-CB84671DC60C">EvtSerCx2SelectNextReceiveTransactionType</a>
 
 
 
-<a href="..\sercx\nc-sercx-evt_sercx2_select_next_transmit_transaction_type.md">EvtSerCx2SelectNextTransmitTransactionType</a>
+<a href="https://msdn.microsoft.com/EE46CB43-18BA-4FD7-A60D-07DB1760B8E7">EvtSerCx2SelectNextTransmitTransactionType</a>

@@ -70,7 +70,7 @@ The IID for this interface is IID_IKsPin.
 | [IKsPin::KsQueryMediums](nf-ksproxy-ikspin-ksquerymediums.md) | The KsQueryMediums method retrieves mediums that a pin supports. |
 
 ## Remarks
-An interface handler (<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>) uses many of the <b>IKsPin</b> methods to route media samples of a particular media type.
+An interface handler (<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>) uses many of the <b>IKsPin</b> methods to route media samples of a particular media type.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,4 +80,4 @@ An interface handler (<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKs
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-iksinterfacehandler.md">IKsInterfaceHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559855">IKsInterfaceHandler</a>

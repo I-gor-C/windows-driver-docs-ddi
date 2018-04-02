@@ -7,7 +7,7 @@ old-location: kernel\pssetloadimagenotifyroutineex.htm
 old-project: kernel
 ms.assetid: 792cdb59-e0c2-4697-9934-b7e45a7a31a8
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsSetLoadImageNotifyRoutineEx, PsSetLoadImageNotifyRoutineEx function [Kernel-Mode Driver Architecture], kernel.pssetloadimagenotifyroutineex, ntddk/PsSetLoadImageNotifyRoutineEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,18 +49,18 @@ The <b>PsSetLoadImageNotifyRoutineEx</b> routine registers a driver-supplied cal
 
 ## Syntax
 
-````
- NTSTATUS  PsSetLoadImageNotifyRoutineEx(
-  _In_ PLOAD_IMAGE_NOTIFY_ROUTINE NotifyRoutine,
-  _In_ ULONG_PTR                  Flags
+```
+NTKERNELAPI NTSTATUS PsSetLoadImageNotifyRoutineEx(
+  PLOAD_IMAGE_NOTIFY_ROUTINE NotifyRoutine,
+  ULONG_PTR                  Flags
 );
-````
+```
 
 ## Parameters
 
 `NotifyRoutine`
 
-A pointer to the caller-implemented <a href="..\ntddk\nc-ntddk-pload_image_notify_routine.md">PLOAD_IMAGE_NOTIFY_ROUTINE</a> callback routine for load-image notifications.
+A pointer to the caller-implemented <a href="https://msdn.microsoft.com/library/windows/hardware/mt764088">PLOAD_IMAGE_NOTIFY_ROUTINE</a> callback routine for load-image notifications.
 
 `Flags`
 

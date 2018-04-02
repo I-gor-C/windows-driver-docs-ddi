@@ -44,16 +44,16 @@ req.typenames: BUS_RESET_NOTIFY, *PBUS_RESET_NOTIFY
 ---
 
 # _BUS_RESET_NOTIFY structure
-This structure is used to register or deregister the <a href="..\61883\nc-61883-pbus_reset_routine.md">PBUS_RESET_ROUTINE</a> callback. The request registers the caller to be notified when a reset of the 1394 bus occurs or cancels a previous registration. When the registered callback (bus reset) routine is called, the updated generation count and node address will be specified in parameter <b>BusResetInfo</b>. If a driver registers for bus-reset notification, it must cancel registration before the system unloads the driver.
+This structure is used to register or deregister the <a href="https://msdn.microsoft.com/99555765-A58F-45A1-B146-3742C390E666">PBUS_RESET_ROUTINE</a> callback. The request registers the caller to be notified when a reset of the 1394 bus occurs or cancels a previous registration. When the registered callback (bus reset) routine is called, the updated generation count and node address will be specified in parameter <b>BusResetInfo</b>. If a driver registers for bus-reset notification, it must cancel registration before the system unloads the driver.
 
 ## Syntax
-````
+```
 typedef struct _BUS_RESET_NOTIFY {
-  ULONG              Flags;
-  PBUS_RESET_ROUTINE pfnNotify;
-  PVOID              Context;
-} BUS_RESET_NOTIFY, *PBUS_RESET_NOTIFY;
-````
+  IN ULONG              Flags;
+  IN PBUS_RESET_ROUTINE pfnNotify;
+  IN PVOID              Context;
+} *PBUS_RESET_NOTIFY, BUS_RESET_NOTIFY;
+```
 
 ## Members
 

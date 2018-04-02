@@ -7,7 +7,7 @@ old-location: debugger\input.htm
 old-project: debugger
 ms.assetid: 8a37bce1-762b-4a08-a677-ed2e484c1bba
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugControl, IDebugControl interface [Windows Debugging], Input method, IDebugControl::Input, IDebugControl_10615761-d032-439f-955b-220def3835a9.xml, Input method [Windows Debugging], Input method [Windows Debugging], IDebugControl interface, Input,IDebugControl.Input, dbgeng/IDebugControl::Input, debugger.input
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# Input method
+# IDebugControl::Input method
 The <b>Input</b>  method requests an input string from the <a href="https://msdn.microsoft.com/fa52a1f0-9397-48a5-acbd-ce5347c0baef">debugger engine</a>.
 
 ## Syntax
 
-````
+```
 HRESULT Input(
-  [out]           PSTR   Buffer,
-  [in]            ULONG  BufferSize,
-  [out, optional] PULONG InputSize
+  PSTR   Buffer,
+  ULONG  BufferSize,
+  PULONG InputSize
 );
-````
+```
 
 ## Parameters
 
@@ -118,8 +118,8 @@ For an overview of input in the debugger engine, see <a href="https://msdn.micro
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550508">IDebugControl</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550970">InputWide</a>
-
-
-
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol.md">IDebugControl</a>

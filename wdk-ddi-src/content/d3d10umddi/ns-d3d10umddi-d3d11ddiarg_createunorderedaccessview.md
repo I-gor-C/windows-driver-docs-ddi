@@ -7,7 +7,7 @@ old-location: display\d3d11ddiarg_createunorderedaccessview.htm
 old-project: display
 ms.assetid: 3c977fe6-d0f9-4edc-abeb-0725d68a482d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D11DDIARG_CREATEUNORDEREDACCESSVIEW, D3D11DDIARG_CREATEUNORDEREDACCESSVIEW structure [Display Devices], UMDisplayDriver_Dx11param_Structs_e6b10da8-f790-4182-926a-a7f183dcd59b.xml, d3d10umddi/D3D11DDIARG_CREATEUNORDEREDACCESSVIEW, display.d3d11ddiarg_createunorderedaccessview
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,19 +47,19 @@ req.typenames: D3D11DDIARG_CREATEUNORDEREDACCESSVIEW
 The D3D11DDIARG_CREATEUNORDEREDACCESSVIEW structure describes the unordered access view to create.
 
 ## Syntax
-````
+```
 typedef struct D3D11DDIARG_CREATEUNORDEREDACCESSVIEW {
-  D3D10DDI_HRESOURCE    hDrvResource;
-  DXGI_FORMAT           Format;
+  D3D10DDI_HRESOURCE    hDrvResource;
+  DXGI_FORMAT           Format;
   D3D10DDIRESOURCE_TYPE ResourceDimension;
   union {
     D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW Buffer;
-    D3D11DDIARG_TEX1D_UNORDEREDACCESSVIEW  Tex1D;
-    D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW  Tex2D;
-    D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW  Tex3D;
+    D3D11DDIARG_TEX1D_UNORDEREDACCESSVIEW  Tex1D;
+    D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW  Tex2D;
+    D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW  Tex3D;
   };
-} D3D11DDIARG_CREATEUNORDEREDACCESSVIEW;
-````
+};
+```
 
 ## Members
 
@@ -85,11 +85,11 @@ typedef struct D3D11DDIARG_CREATEUNORDEREDACCESSVIEW {
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_tex2d_unorderedaccessview.md">D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW</a>
+<a href="https://msdn.microsoft.com/6aca5d33-c8c6-4c6b-a66a-e28a958cbc2e">CalcPrivateUnorderedAccessViewSize</a>
 
 
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_tex3d_unorderedaccessview.md">D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW</a>
+<a href="https://msdn.microsoft.com/c5a258e7-6645-46bb-ab2c-a1c8f5e593b7">CreateUnorderedAccessView</a>
 
 
 
@@ -97,16 +97,16 @@ typedef struct D3D11DDIARG_CREATEUNORDEREDACCESSVIEW {
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_createunorderedaccessview.md">CreateUnorderedAccessView</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542033">D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW</a>
 
 
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_tex1d_unorderedaccessview.md">D3D11DDIARG_TEX1D_UNORDEREDACCESSVIEW</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542112">D3D11DDIARG_TEX1D_UNORDEREDACCESSVIEW</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11ddi_calcprivateunorderedaccessviewsize.md">CalcPrivateUnorderedAccessViewSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542116">D3D11DDIARG_TEX2D_UNORDEREDACCESSVIEW</a>
 
 
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11ddiarg_buffer_unorderedaccessview.md">D3D11DDIARG_BUFFER_UNORDEREDACCESSVIEW</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542123">D3D11DDIARG_TEX3D_UNORDEREDACCESSVIEW</a>

@@ -7,7 +7,7 @@ old-location: storage\ioctl_cdrom_play_audio_msf.htm
 old-project: storage
 ms.assetid: cb88fa6b-e96a-41a9-abcc-9ab28b62954f
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_CDROM_PLAY_AUDIO_MSF, IOCTL_CDROM_PLAY_AUDIO_MSF control code [Storage Devices], k307_dce77286-4efa-4b8b-bb78-2c771bd75727.xml, ntddcdrm/IOCTL_CDROM_PLAY_AUDIO_MSF, storage.ioctl_cdrom_play_audio_msf
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,7 +50,7 @@ Plays the specified range of the media. Obsolete, beginning with Windows Vista.
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-The <a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_play_audio_msf.md">CDROM_PLAY_AUDIO_MSF</a> structure in the buffer at <i>Irp-&gt;AssociatedIrp.System</i> contains the starting and ending MSF values.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff551365">CDROM_PLAY_AUDIO_MSF</a> structure in the buffer at <i>Irp-&gt;AssociatedIrp.System</i> contains the starting and ending MSF values.
 
 ### Input Buffer Length
 <i>Parameters.DeviceIoControl.InputBufferLength</i> in the I/O stack location indicates the size, in bytes, of the buffer, which must be greater than or equal to  <b> sizeof</b>(CDROM_PLAY_AUDIO_MSF).
@@ -83,4 +83,4 @@ Client applications should use the <i>Media Control Interface (MCI) API</i> rath
 
 ## See Also
 
-<a href="..\ntddcdrm\ns-ntddcdrm-_cdrom_play_audio_msf.md">CDROM_PLAY_AUDIO_MSF</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551365">CDROM_PLAY_AUDIO_MSF</a>

@@ -7,7 +7,7 @@ old-location: kernel\rtlfillmemory.htm
 old-project: kernel
 ms.assetid: 9a73331a-cc73-4a47-948b-a821600ca6a6
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlFillMemory, RtlFillMemory routine [Kernel-Mode Driver Architecture], k109_db7a2a9f-c7b5-40c3-9755-e386bbaf5353.xml, kernel.rtlfillmemory, wdm/RtlFillMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,13 +52,13 @@ The <b>RtlFillMemory</b> routine fills a block of memory with the specified fill
 
 ## Syntax
 
-````
-VOID RtlFillMemory(
-  _Out_ VOID UNALIGNED *Destination,
-  _In_  SIZE_T         Length,
-  _In_  UCHAR          Fill
+```
+void RtlFillMemory(
+   Destination,
+   Length,
+   Fill
 );
-````
+```
 
 ## Parameters
 
@@ -95,4 +95,4 @@ Callers of <b>RtlFillMemory</b> can be running at any IRQL if the destination me
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlzeromemory.md">RtlZeroMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563610">RtlZeroMemory</a>

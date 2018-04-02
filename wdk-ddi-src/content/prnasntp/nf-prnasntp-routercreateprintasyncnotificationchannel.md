@@ -50,16 +50,16 @@ The <code>RouterCreatePrintAsyncNotificationChannel</code> function creates an a
 
 ## Syntax
 
-````
+```
 HRESULT RouterCreatePrintAsyncNotificationChannel(
-  _In_  PCWSTR                            pName,
-  _In_  PrintAsyncNotificationType        *pNotificationType,
-  _In_  PrintAsyncNotifyUserFilter        eNotificationFilter,
-  _In_  PrintAsyncNotifyConversationStyle eConversationStyle,
-  _In_  IPrintAsyncNotifyCallback         *pCallback,
-  _Out_ IPrintAsyncNotifyChannel          **ppIAsyncNotification
+  PCWSTR                            pName,
+  PrintAsyncNotificationType        *pNotificationType,
+  PrintAsyncNotifyUserFilter        eNotifyFilter,
+  PrintAsyncNotifyConversationStyle eConversationStyle,
+  IPrintAsyncNotifyCallback         *pCallback,
+  IPrintAsyncNotifyChannel          **ppIAsynchNotification
 );
-````
+```
 
 ## Parameters
 

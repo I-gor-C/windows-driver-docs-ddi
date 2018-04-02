@@ -48,9 +48,9 @@ req.product: Windows 10 or later.
 The WIA_PROPERTY_INFO structure is used to store default access and valid value information for an item property of arbitrary type.
 
 ## Syntax
-````
+```
 typedef struct _WIA_PROPERTY_INFO {
-  ULONG   lAccessFlags;
+  ULONG   lAccessFlags;
   VARTYPE vt;
   union {
     struct {
@@ -58,43 +58,43 @@ typedef struct _WIA_PROPERTY_INFO {
       LONG Nom;
       LONG Max;
       LONG Inc;
-    } Range;
+    } Range;
     struct {
       DOUBLE Min;
       DOUBLE Nom;
       DOUBLE Max;
       DOUBLE Inc;
-    } RangeFloat;
+    } RangeFloat;
     struct {
       LONG cNumList;
       LONG Nom;
       BYTE *pList;
-    } List;
+    } List;
     struct {
-      LONG   cNumList;
+      LONG   cNumList;
       DOUBLE Nom;
-      BYTE   *pList;
-    } ListFloat;
+      BYTE   *pList;
+    } ListFloat;
     struct {
       LONG cNumList;
       GUID Nom;
       GUID *pList;
-    } ListGuid;
+    } ListGuid;
     struct {
       LONG cNumList;
       BSTR Nom;
       BSTR *pList;
-    } ListBStr;
+    } ListBStr;
     struct {
       LONG Nom;
       LONG ValidBits;
-    } Flag;
+    } Flag;
     struct {
       LONG Dummy;
-    } None;
-  } ValidVal;
-} WIA_PROPERTY_INFO, *PWIA_PROPERTY_INFO;
-````
+    } None;
+  } ValidVal;
+} *PWIA_PROPERTY_INFO, WIA_PROPERTY_INFO;
+```
 
 ## Members
 
@@ -140,7 +140,7 @@ For a different property whose valid values are defined by a list of three GUID 
 
 A property whose valid values are defined by a bitset of the values 0x01, 0x02, 0x04, and 0x08 would have the WIA_PROP_FLAG bit set in <b>lAccessFlags</b>, and <b>vt</b> would be set to VT_UI4. For such a property, the value stored in <b>Flag.ValidBits</b> would be 0x0F, the bitwise OR of the four flag values previously mentioned.
 
-The following examples show how to use array data with WIA_PROPERTY_INFO and how to call <a href="..\wiamdef\nf-wiamdef-wiaswritemultiple.md">wiasWriteMultiple</a> to set your property values.
+The following examples show how to use array data with WIA_PROPERTY_INFO and how to call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549475">wiasWriteMultiple</a> to set your property values.
 
 Initialization might look like the following example:
 
@@ -193,4 +193,4 @@ At run time, changing the value with <b>wiasWriteMultiple</b> might look like th
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiassetitempropattribs.md">wiasSetItemPropAttribs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549358">wiasSetItemPropAttribs</a>

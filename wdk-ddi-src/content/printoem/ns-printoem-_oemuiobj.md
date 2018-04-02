@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The OEMUIOBJ structure is used as an input argument to several of the methods exported by user interface plug-ins.
 
 ## Syntax
-````
+```
 typedef struct _OEMUIOBJ {
-  DWORD       cbSize;
+  DWORD       cbSize;
   POEMUIPROCS pOemUIProcs;
 } OEMUIOBJ, *POEMUIOBJ;
-````
+```
 
 ## Members
 
@@ -64,7 +64,7 @@ Size of the OEMUIOBJ structure.
 
 `pOemUIProcs`
 
-Pointer to a an <a href="..\printoem\ns-printoem-_oemuiprocs.md">OEMUIPROCS</a> structure, which is a private, internal structure.
+Pointer to a an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559574">OEMUIPROCS</a> structure, which is a private, internal structure.
 
 ## Remarks
 User interface plug-ins do not need to reference an OEMUIOBJ structure's members. Plug-ins receive a pointer to this structure as input to their <a href="https://msdn.microsoft.com/library/windows/hardware/ff554162">IPrintOemUI::DeviceCapabilities</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff554172">IPrintOemUI::DevQueryPrintEx</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff554186">IPrintOemUI::QueryColorProfile</a> methods. Additionally, the OEMCUIPPARAM structure contains an OEMUIOBJ structure pointer. Plug-ins must supply the received pointer when calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff553114">IPrintOemDriverUI::DrvGetDriverSetting</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff553115">IPrintOemDriverUI::DrvUpdateUISetting</a>.

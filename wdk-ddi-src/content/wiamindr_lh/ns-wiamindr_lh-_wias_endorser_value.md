@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The WIAS_ENDORSER_VALUE structure stores token/value pairs for endorser strings.
 
 ## Syntax
-````
+```
 typedef struct _WIAS_ENDORSER_VALUE {
   LPWSTR wszTokenName;
   LPWSTR wszValue;
 } WIAS_ENDORSER_VALUE, *PWIAS_ENDORSER_VALUE;
-````
+```
 
 ## Members
 
@@ -67,7 +67,7 @@ Specifies a string value that represents the token name. Endorser token names be
 Specifies the value with which to replace the token.
 
 ## Remarks
-This structure is used indirectly by the <a href="..\wiamdef\nf-wiamdef-wiasparseendorserstring.md">wiasParseEndorserString</a> function. One of the parameters of this function is a <a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_info.md">WIAS_ENDORSER_INFO</a> structure, which has a WIAS_ENDORSER_VALUE structure as one of its members.
+This structure is used indirectly by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549282">wiasParseEndorserString</a> function. One of the parameters of this function is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff549556">WIAS_ENDORSER_INFO</a> structure, which has a WIAS_ENDORSER_VALUE structure as one of its members.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,8 +77,8 @@ This structure is used indirectly by the <a href="..\wiamdef\nf-wiamdef-wiaspars
 
 ## See Also
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_wias_endorser_info.md">WIAS_ENDORSER_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549556">WIAS_ENDORSER_INFO</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasparseendorserstring.md">wiasParseEndorserString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549282">wiasParseEndorserString</a>

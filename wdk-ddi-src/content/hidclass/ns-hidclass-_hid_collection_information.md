@@ -47,16 +47,16 @@ req.typenames: HID_COLLECTION_INFORMATION, *PHID_COLLECTION_INFORMATION
 The HID_COLLECTION_INFORMATION structure contains general information about a <a href="https://msdn.microsoft.com/dcbee8e3-d03a-45c8-92e4-0897b9f55177">top-level collection</a>.
 
 ## Syntax
-````
+```
 typedef struct _HID_COLLECTION_INFORMATION {
-  ULONG   DescriptorSize;
+  ULONG   DescriptorSize;
   BOOLEAN Polled;
-  UCHAR   Reserved1[1];
-  USHORT  VendorID;
-  USHORT  ProductID;
-  USHORT  VersionNumber;
-} HID_COLLECTION_INFORMATION, *PHID_COLLECTION_INFORMATION;
-````
+  UCHAR   Reserved1[1];
+  USHORT  VendorID;
+  USHORT  ProductID;
+  USHORT  VersionNumber;
+} *PHID_COLLECTION_INFORMATION, HID_COLLECTION_INFORMATION;
+```
 
 ## Members
 
@@ -86,7 +86,7 @@ Specifies a HID device's product ID.
 Specifies the manufacturer's revision number for a HID device.
 
 ## Remarks
-Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a> to obtain a collection's <b>HID_COLLECTION_INFORMATION</b> structure.
+Kernel-mode drivers can use an <a href="https://msdn.microsoft.com/library/windows/hardware/ff541092">IOCTL_HID_GET_COLLECTION_INFORMATION</a> to obtain a collection's <b>HID_COLLECTION_INFORMATION</b> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,12 +95,12 @@ Kernel-mode drivers can use an <a href="..\hidclass\ni-hidclass-ioctl_hid_get_co
 
 ## See Also
 
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_descriptor.md">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539870">HID_COLLECTION_INFORMATION</a>
 
 
 
-<a href="..\hidclass\ns-hidclass-_hid_collection_information.md">HID_COLLECTION_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541089">IOCTL_HID_GET_COLLECTION_DESCRIPTOR</a>
 
 
 
-<a href="..\hidclass\ni-hidclass-ioctl_hid_get_collection_information.md">IOCTL_HID_GET_COLLECTION_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541092">IOCTL_HID_GET_COLLECTION_INFORMATION</a>

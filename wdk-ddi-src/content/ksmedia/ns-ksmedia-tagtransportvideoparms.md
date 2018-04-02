@@ -47,12 +47,12 @@ req.typenames: TRANSPORTVIDEOPARMS, *PTRANSPORTVIDEOPARMS
 The TRANSPORTVIDEOPARMS structure is defined but not presently used. It may be used in the future.
 
 ## Syntax
-````
+```
 typedef struct tagTRANSPORTVIDEOPARMS {
   LONG OutputMode;
   LONG Input;
 } TRANSPORTVIDEOPARMS, *PTRANSPORTVIDEOPARMS;
-````
+```
 
 ## Members
 

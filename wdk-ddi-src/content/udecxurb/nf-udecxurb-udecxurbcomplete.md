@@ -7,7 +7,7 @@ old-location: buses\udecxurbcomplete.htm
 old-project: usbref
 ms.assetid: F0B014F3-AE40-466B-BD9A-0D01DF70DCFF
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UdecxUrbComplete, UdecxUrbComplete function [Buses], buses.udecxurbcomplete, udecxurb/UdecxUrbComplete
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,18 +51,18 @@ Completes the URB request with a USB-specific completion status code.
 
 ## Syntax
 
-````
-FORCEINLINE void UdecxUrbComplete(
-  _In_ WDFREQUEST  Request,
-  _In_ USBD_STATUS UsbdStatus
+```
+void UdecxUrbComplete(
+  WDFREQUEST  Request,
+  USBD_STATUS UsbdStatus
 );
-````
+```
 
 ## Parameters
 
 `Request`
 
-A handle to a framework request object that contains the <a href="..\usb\ns-usb-_urb.md">URB</a> for the transfer.
+A handle to a framework request object that contains the <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a> for the transfer.
 
 `UsbdStatus`
 
@@ -86,8 +86,8 @@ This function does not return a value.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>

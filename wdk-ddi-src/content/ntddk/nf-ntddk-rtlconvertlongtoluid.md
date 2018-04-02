@@ -7,7 +7,7 @@ old-location: kernel\rtlconvertlongtoluid.htm
 old-project: kernel
 ms.assetid: bc03feaf-ee98-4b47-a659-809b5b8b9364
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlConvertLongToLuid, RtlConvertLongToLuid routine [Kernel-Mode Driver Architecture], k109_be3bfbe0-7a0b-43e3-a22e-2cd6e5a92f2e.xml, kernel.rtlconvertlongtoluid, ntddk/RtlConvertLongToLuid
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,15 +45,15 @@ req.typenames: WHEA_RAW_DATA_FORMAT, *PWHEA_RAW_DATA_FORMAT
 
 
 # RtlConvertLongToLuid function
-The <b>RtlConvertLongToLuid</b> routine converts a long integer to a locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>), which is used by the system to represent a security privilege.
+The <b>RtlConvertLongToLuid</b> routine converts a long integer to a locally unique identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>), which is used by the system to represent a security privilege.
 
 ## Syntax
 
-````
-LUID RtlConvertLongToLuid(
-  _In_ LONG Long
+```
+LUID NTAPI_INLINE RtlConvertLongToLuid(
+  LONG Long
 );
-````
+```
 
 ## Parameters
 
@@ -64,11 +64,11 @@ Specifies the long integer to convert.
 
 ## Return Value
 
-<b>RtlConvertLongToLuid</b> returns the converted <a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>.
+<b>RtlConvertLongToLuid</b> returns the converted <a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>.
 
 ## Remarks
 
-<b>RtlConvertLongToLuid</b> is used to convert a system-defined privilege value to the locally unique identifier (<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>) used by the system to represent that privilege. Drivers typically pass a LUID to <b>SeSinglePrivilegeCheck</b>, which is usually called by network transport drivers.
+<b>RtlConvertLongToLuid</b> is used to convert a system-defined privilege value to the locally unique identifier (<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>) used by the system to represent that privilege. Drivers typically pass a LUID to <b>SeSinglePrivilegeCheck</b>, which is usually called by network transport drivers.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,16 +80,16 @@ Specifies the long integer to convert.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557080">LUID</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561798">RtlConvertULongToLuid</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561842">RtlEqualLuid</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-rtlconvertulongtoluid.md">RtlConvertULongToLuid</a>
-
-
-
-<a href="..\igpupvdev\ns-igpupvdev-_luid.md">LUID</a>
-
-
-
-<a href="..\ntddk\nf-ntddk-sesingleprivilegecheck.md">SeSinglePrivilegeCheck</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563740">SeSinglePrivilegeCheck</a>

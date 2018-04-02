@@ -7,7 +7,7 @@ old-location: buses\ucmconnectortypeccurrentadchanged.htm
 old-project: usbref
 ms.assetid: 26C4D840-2287-4DC2-B039-FD8D2FB92288
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UcmConnectorTypeCCurrentAdChanged, UcmConnectorTypeCCurrentAdChanged method [Buses], buses.ucmconnectortypeccurrentadchanged, ucmmanager/UcmConnectorTypeCCurrentAdChanged
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,22 +51,22 @@ Notifies the USB connector manager framework extension (UcmCx) when the specifie
 
 ## Syntax
 
-````
+```
 NTSTATUS UcmConnectorTypeCCurrentAdChanged(
-  [in] UCMCONNECTOR      Connector,
-  [in] UCM_TYPEC_CURRENT CurrentAdvertisement
+  UCMCONNECTOR      Connector,
+  UCM_TYPEC_CURRENT CurrentAdvertisement
 );
-````
+```
 
 ## Parameters
 
 `Connector`
 
-Handle to the connector object that the client driver received in the previous call to <a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>.
+Handle to the connector object that the client driver received in the previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>.
 
 `CurrentAdvertisement`
 
-The new current advertisement of the connector indicated by one of the <a href="..\ucmtypes\ne-ucmtypes-_ucm_typec_current.md">UCM_TYPEC_CURRENT</a>-typed flags.
+The new current advertisement of the connector indicated by one of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187945">UCM_TYPEC_CURRENT</a>-typed flags.
 
 
 ## Return Value
@@ -75,7 +75,7 @@ The new current advertisement of the connector indicated by one of the <a href="
 
 ## Remarks
 
-When using a Type-C connector for charging, the partner connector sends a current advertisement when it's attached to the local connector. That initial advertisement is report to UcmCx  by calling <a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>.  During the lifetime of the connection, the current level advertised by the source might change. The client driver must notify UcmCx about  that change by calling method.
+When using a Type-C connector for charging, the partner connector sends a current advertisement when it's attached to the local connector. That initial advertisement is report to UcmCx  by calling <a href="https://msdn.microsoft.com/library/windows/hardware/mt187915">UcmConnectorTypeCAttach</a>.  During the lifetime of the connection, the current level advertised by the source might change. The client driver must notify UcmCx about  that change by calling method.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,12 +90,12 @@ When using a Type-C connector for charging, the partner connector sends a curren
 
 ## See Also
 
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypecattach.md">UcmConnectorTypeCAttach</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187909">UcmConnectorCreate</a>
 
 
 
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectorcreate.md">UcmConnectorCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187915">UcmConnectorTypeCAttach</a>
 
 
 
-<a href="..\ucmmanager\nf-ucmmanager-ucmconnectortypeccurrentadchanged.md">UcmConnectorTypeCCurrentAdChanged</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187916">UcmConnectorTypeCCurrentAdChanged</a>

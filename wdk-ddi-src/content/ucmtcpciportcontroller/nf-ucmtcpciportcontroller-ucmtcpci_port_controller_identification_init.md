@@ -7,7 +7,7 @@ old-location: buses\ucmtcpci_port_controller_identification_init.htm
 old-project: usbref
 ms.assetid: 4204b849-8195-4a1b-9bb3-1e9cbeb12223
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT, UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT method [Buses], buses.ucmtcpci_port_controller_identification_init, ucmtcpciportcontroller/UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,15 +46,15 @@ req.product: Windows 10 or later.
 
 
 # UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT function
-Initializes the <a href="..\ucmtcpciportcontroller\ns-ucmtcpciportcontroller-_ucmtcpci_port_controller_identification.md">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.
+Initializes the <a href="https://msdn.microsoft.com/library/windows/hardware/mt805879">UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION</a> structure.
 
 ## Syntax
 
-````
-VOID UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT(
-  _Out_ PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION Identification
+```
+void UCMTCPCI_PORT_CONTROLLER_IDENTIFICATION_INIT(
+  PUCMTCPCI_PORT_CONTROLLER_IDENTIFICATION Identification
 );
-````
+```
 
 ## Parameters
 
@@ -78,4 +78,4 @@ This method does not return a value.
 
 ## See Also
 
-<a href="..\ucmtcpciportcontroller\nf-ucmtcpciportcontroller-ucmtcpciportcontrollercreate.md">UcmTcpciPortControllerCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt805844">UcmTcpciPortControllerCreate</a>

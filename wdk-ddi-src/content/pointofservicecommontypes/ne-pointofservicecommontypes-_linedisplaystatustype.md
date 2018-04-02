@@ -47,11 +47,15 @@ req.typenames: LineDisplayStatusType
 This enumeration is not implemented.
 
 ## Syntax
-````
-typedef enum _LineDisplayStatusType { 
-    = 
-} LineDisplayStatusType, *PLineDisplayStatusType;
-````
+```
+typedef enum _LineDisplayStatusType {
+  LineDisplayStatusType_Unknown       ,
+  LineDisplayStatusType_Online        ,
+  LineDisplayStatusType_Off           ,
+  LineDisplayStatusType_Offline       ,
+  LineDisplayStatusType_OffOrOffline
+} LineDisplayStatusType;
+```
 
 ## Constants
 

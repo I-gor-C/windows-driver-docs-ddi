@@ -51,16 +51,16 @@ The <b>StreamClassRegisterFilterWithNoKSPins</b> routine is used to register fil
 
 ## Syntax
 
-````
+```
 NTSTATUS StreamClassRegisterFilterWithNoKSPins(
-  _In_           PDEVICE_OBJECT DeviceObject,
-  _In_     const GUID           *InterfaceClassGUID,
-  _In_           ULONG          PinCount,
-  _In_           BOOL           *PinDirection,
-  _In_           KSPIN_MEDIUM   *MediumList,
-  _In_opt_       GUID           *CategoryList
+  PDEVICE_OBJECT DeviceObject,
+  const GUID     *InterfaceClassGUID,
+  ULONG          PinCount,
+  BOOL           *PinDirection,
+  KSPIN_MEDIUM   *MediumList,
+  GUID           *CategoryList
 );
-````
+```
 
 ## Parameters
 

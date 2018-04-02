@@ -50,12 +50,12 @@ The <b>UPSWaitForStateChange</b> function waits until a specified UPS state chan
 
 ## Syntax
 
-````
+```
 void UPSWaitForStateChange(
-  _In_ DWORD aCurrentState,
-  _In_ DWORD anInterval
+  DWORD aCurrentState,
+  DWORD anInterval
 );
-````
+```
 
 ## Parameters
 
@@ -102,7 +102,7 @@ None
 
 The <b>UPSWaitForStateChange</b> function must wait until either the state of the UPS changes from the value specified by <i>aCurrentState</i>, or until the time specified by <i>anInterval</i> has elapsed, whichever occurs first. 
 
-A call to <a href="..\upssvc\nf-upssvc-upscancelwait.md">UPSCancelWait</a> interrupts <b>UPSWaitForStateChange</b> and causes it to return.
+A call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536311">UPSCancelWait</a> interrupts <b>UPSWaitForStateChange</b> and causes it to return.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -112,4 +112,4 @@ A call to <a href="..\upssvc\nf-upssvc-upscancelwait.md">UPSCancelWait</a> inter
 
 ## See Also
 
-<a href="..\upssvc\nf-upssvc-upscancelwait.md">UPSCancelWait</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536311">UPSCancelWait</a>

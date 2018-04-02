@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_slot_info_status.htm
 old-project: netvista
 ms.assetid: 21D9DE55-2A26-467A-B119-8AFD4B47A4FD
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_WWAN_SLOT_INFO, NDIS_WWAN_SLOT_INFO, NDIS_WWAN_SLOT_INFO structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SLOT_INFO, PNDIS_WWAN_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], _NDIS_WWAN_SLOT_INFO, ndiswwan/NDIS_WWAN_SLOT_INFO, ndiswwan/PNDIS_WWAN_SLOT_INFO, netvista.ndis_wwan_slot_info_status"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: NDIS_WWAN_SLOT_INFO, *PNDIS_WWAN_SLOT_INFO
 The <b>NDIS_WWAN_SLOT_INFO</b> structure represents the information about a slot in the modem of the MB device.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_WWAN_SLOT_INFO {
   NDIS_OBJECT_HEADER Header;
-  WWAN_STATUS        uStatus;
-  WWAN_SLOT_INFO     SlotInfoStatus;
-} NDIS_WWAN_SLOT_INFO, *PNDIS_WWAN_SLOT_INFO;
-````
+  WWAN_STATUS        uStatus;
+  WWAN_SLOT_INFO     SlotInfo;
+} *PNDIS_WWAN_SLOT_INFO, NDIS_WWAN_SLOT_INFO;
+```
 
 ## Members
 
@@ -106,7 +106,7 @@ sizeof(NDIS_WWAN_SLOT_INFO)
  
 
 For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 `uStatus`
 
@@ -196,12 +196,12 @@ The operation failed because the device does not support this OID.
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_slot_info.md">WWAN_SLOT_INFO</a>
-
-
-
 <a href="https://msdn.microsoft.com/FA1E16E4-56A3-4401-875F-D75DD01FE75D">NDIS_STATUS_WWAN_SLOT_INFO</a>
 
 
 
 <a href="https://msdn.microsoft.com/6267D480-5055-4A7A-B2A0-F4DF9154DCD7">OID_WWAN_SLOT_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/F45D253E-E7D7-4600-AF8C-6D4EB096030D">WWAN_SLOT_INFO</a>

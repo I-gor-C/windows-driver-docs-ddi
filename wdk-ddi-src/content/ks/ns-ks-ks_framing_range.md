@@ -47,13 +47,13 @@ req.typenames: KS_FRAMING_RANGE, *PKS_FRAMING_RANGE
 The KS_FRAMING_RANGE structure specifies a range for frame sizes for a given framing item.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KS_FRAMING_RANGE {
   ULONG MinFrameSize;
   ULONG MaxFrameSize;
   ULONG Stepping;
-} KS_FRAMING_RANGE, *PKS_FRAMING_RANGE;
-````
+} *PKS_FRAMING_RANGE, KS_FRAMING_RANGE;
+```
 
 ## Members
 
@@ -80,12 +80,12 @@ When specifying the <b>Stepping</b> member, ensure that the value does not excee
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksallocator_framing.md">KSALLOCATOR_FRAMING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560979">KSALLOCATOR_FRAMING</a>
 
 
 
-<a href="..\ks\ns-ks-ks_framing_item.md">KS_FRAMING_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567646">KS_FRAMING_ITEM</a>
 
 
 
-<a href="..\ks\ns-ks-ks_framing_range_weighted.md">KS_FRAMING_RANGE_WEIGHTED</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567648">KS_FRAMING_RANGE_WEIGHTED</a>

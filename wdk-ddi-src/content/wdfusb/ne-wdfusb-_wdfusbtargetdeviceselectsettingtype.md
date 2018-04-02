@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 The <b>WdfUsbTargetDeviceSelectSettingType</b> enumeration defines techniques for specifying an alternate setting for a USB interface.
 
 ## Syntax
-````
-typedef enum _WdfUsbTargetDeviceSelectSettingType { 
-  WdfUsbInterfaceSelectSettingTypeDescriptor  = 0x10,
-  WdfUsbInterfaceSelectSettingTypeSetting     = 0x11,
-  WdfUsbInterfaceSelectSettingTypeUrb         = 0x12
+```
+typedef enum _WdfUsbTargetDeviceSelectSettingType {
+  WdfUsbInterfaceSelectSettingTypeDescriptor  ,
+  WdfUsbInterfaceSelectSettingTypeSetting     ,
+  WdfUsbInterfaceSelectSettingTypeUrb
 } WdfUsbTargetDeviceSelectSettingType;
-````
+```
 
 ## Constants
 
@@ -64,7 +64,7 @@ typedef enum _WdfUsbTargetDeviceSelectSettingType {
             
                 <tr>
                     <td>WdfUsbInterfaceSelectSettingTypeDescriptor</td>
-                    <td>Specify an interface's alternate setting by providing a <a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a> structure.</td>
+                    <td>Specify an interface's alternate setting by providing a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540065">USB_INTERFACE_DESCRIPTOR</a> structure.</td>
                 </tr>
             
                 <tr>
@@ -74,13 +74,13 @@ typedef enum _WdfUsbTargetDeviceSelectSettingType {
             
                 <tr>
                     <td>WdfUsbInterfaceSelectSettingTypeUrb</td>
-                    <td>Specify an interface's alternate setting by providing a <a href="..\usb\ns-usb-_urb.md">URB</a>.</td>
+                    <td>Specify an interface's alternate setting by providing a <a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>.</td>
                 </tr>
 </table>
 
 ## Remarks
 
-The <b>WdfUsbTargetDeviceSelectSettingType</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_interface_select_setting_params.md">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a> structure.
+The <b>WdfUsbTargetDeviceSelectSettingType</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553003">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,12 +91,12 @@ The <b>WdfUsbTargetDeviceSelectSettingType</b> enumeration is used in the <a hre
 
 ## See Also
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_interface_select_setting_params.md">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff538923">URB</a>
 
 
 
-<a href="..\usbspec\ns-usbspec-_usb_interface_descriptor.md">USB_INTERFACE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540065">USB_INTERFACE_DESCRIPTOR</a>
 
 
 
-<a href="..\usb\ns-usb-_urb.md">URB</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553003">WDF_USB_INTERFACE_SELECT_SETTING_PARAMS</a>

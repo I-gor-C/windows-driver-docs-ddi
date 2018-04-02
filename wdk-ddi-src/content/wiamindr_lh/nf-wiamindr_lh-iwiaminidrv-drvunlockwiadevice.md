@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvUnLockWiaDevice method
+# IWiaMiniDrv::drvUnLockWiaDevice method
 The <b>IWiaMiniDrv::drvUnLockWiaDevice</b> method unlocks the WIA hardware device so that any minidriver can access it.
 
 ## Syntax
 
-````
+```
 HRESULT drvUnLockWiaDevice(
-  [in]  BYTE *pWiasContext,
-  [in]  LONG lFlags,
-  [out] LONG *plDevErrVal
+  BYTE *__MIDL__IWiaMiniDrv0033,
+  LONG __MIDL__IWiaMiniDrv0034,
+  LONG *__MIDL__IWiaMiniDrv0035
 );
-````
+```
 
 ## Parameters
 
@@ -94,12 +94,12 @@ The minidriver's implementation of the <b>IWiaMiniDrv::drvUnLockWiaDevice</b> me
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff544995">IWiaMiniDrv::drvLockWiaDevice</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543982">IWiaMiniDrv::drvGetDeviceErrorStr</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544995">IWiaMiniDrv::drvLockWiaDevice</a>

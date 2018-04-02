@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetNamedCommand method
+# IPrintCoreHelperUni2::GetNamedCommand method
 The <b>GetNamedCommand</b> method returns the specified command.
 
 ## Syntax
 
-````
+```
 HRESULT GetNamedCommand(
-  [in]  PDEVMODE pDevmode,
-  [in]  DWORD    cbSize,
-  [in]  LPCWSTR  pszCommandName,
-  [out] PBYTE    **ppCommandBytes,
-  [out] DWORD    *pcbCommandSize
+  PDEVMODE pDevmode,
+  DWORD    cbSize,
+  PCWSTR   pszCommandName,
+  PBYTE    *ppCommandBytes,
+  DWORD    *pcbCommandSize
 );
-````
+```
 
 ## Parameters
 
@@ -108,4 +108,4 @@ The <b>GetNamedCommand</b> method will not return commands containing references
 
 ## See Also
 
-<a href="..\prcomoem\nn-prcomoem-iprintcorehelperuni2.md">IPrintCoreHelperUni2</a>
+<a href="https://msdn.microsoft.com/F7EC4309-1274-4DA1-B006-A716627010F6">IPrintCoreHelperUni2</a>

@@ -7,7 +7,7 @@ old-location: debugger\idebugclient_getoutputwidth.htm
 old-project: debugger
 ms.assetid: FE76DA51-400E-4F64-B8D9-8738D2F5031A
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetOutputWidth method [Windows Debugging], GetOutputWidth method [Windows Debugging], IDebugClient interface, GetOutputWidth,IDebugClient.GetOutputWidth, IDebugClient, IDebugClient interface [Windows Debugging], GetOutputWidth method, IDebugClient::GetOutputWidth, dbgeng/IDebugClient::GetOutputWidth, debugger.idebugclient_getoutputwidth
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetOutputWidth method
+# IDebugClient::GetOutputWidth method
 Gets the width of an output line for
     commands that produce formatted output.
 
 ## Syntax
 
-````
+```
 HRESULT GetOutputWidth(
-  [out] PULONG Columns
+  PULONG Columns
 );
-````
+```
 
 ## Parameters
 
@@ -97,4 +97,4 @@ This setting is a suggestion that can be overridden by other settings.
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient.md">IDebugClient</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549827">IDebugClient</a>

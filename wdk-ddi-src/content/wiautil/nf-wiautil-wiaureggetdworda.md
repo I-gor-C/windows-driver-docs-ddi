@@ -50,13 +50,13 @@ The <b>wiauRegGetDword</b> function gets a <b>DWORD</b> value from the <b>Device
 
 ## Syntax
 
-````
-HRESULT _stdcall wiauRegGetDword(
-  _In_  HKEY   hkKey,
-  _In_  PCTSTR pwszValueName,
-  _Out_ DWORD  *pdwValue
+```
+HRESULT wiauRegGetDwordA(
+  HKEY  hkKey,
+  PCSTR pszValueName,
+  DWORD *pdwValue
 );
-````
+```
 
 ## Parameters
 

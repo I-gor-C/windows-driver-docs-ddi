@@ -47,18 +47,18 @@ req.typenames: IRB_REQ_ASYNC_STREAM
 This structure contains the fields necessary for the 1394 bus driver to carry out an asynchronous write request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_ASYNC_STREAM {
   ULONG nNumberOfBytesToStream;
   ULONG fulFlags;
-  PMDL  Mdl;
+  PMDL  Mdl;
   ULONG ulTag;
   ULONG nChannel;
   ULONG ulSynch;
   ULONG Reserved;
   UCHAR nSpeed;
 } IRB_REQ_ASYNC_STREAM;
-````
+```
 
 ## Members
 

@@ -45,10 +45,10 @@ req.product: Windows 10 or later.
 ---
 
 # _WIAS_DOWN_SAMPLE_INFO structure
-The WIAS_DOWN_SAMPLE_INFO structure stores information used by the downsampling helper function, <a href="..\wiamdef\nf-wiamdef-wiasdownsamplebuffer.md">wiasDownSampleBuffer</a>.
+The WIAS_DOWN_SAMPLE_INFO structure stores information used by the downsampling helper function, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549185">wiasDownSampleBuffer</a>.
 
 ## Syntax
-````
+```
 typedef struct _WIAS_DOWN_SAMPLE_INFO {
   ULONG ulOriginalWidth;
   ULONG ulOriginalHeight;
@@ -60,10 +60,10 @@ typedef struct _WIAS_DOWN_SAMPLE_INFO {
   ULONG ulActualSize;
   ULONG ulDestBufSize;
   ULONG ulSrcBufSize;
-  BYTE  *pSrcBuffer;
-  BYTE  *pDestBuffer;
+  BYTE  *pSrcBuffer;
+  BYTE  *pDestBuffer;
 } WIAS_DOWN_SAMPLE_INFO, *PWIAS_DOWN_SAMPLE_INFO;
-````
+```
 
 ## Members
 
@@ -125,4 +125,4 @@ Points to the destination buffer.
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiasdownsamplebuffer.md">wiasDownSampleBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549185">wiasDownSampleBuffer</a>

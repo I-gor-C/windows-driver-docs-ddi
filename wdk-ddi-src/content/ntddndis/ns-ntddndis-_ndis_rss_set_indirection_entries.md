@@ -7,7 +7,7 @@ old-location: netvista\ndis_rss_set_indirection_entries.htm
 old-project: netvista
 ms.assetid: 9AB69EC6-FE78-4242-89C7-D36AA16676BF
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_RSS_SET_INDIRECTION_ENTRIES, NDIS_RSS_SET_INDIRECTION_ENTRIES, NDIS_RSS_SET_INDIRECTION_ENTRIES structure [Network Drivers Starting with Windows Vista], PNDIS_RSS_SET_INDIRECTION_ENTRIES, PNDIS_RSS_SET_INDIRECTION_ENTRIES structure pointer [Network Drivers Starting with Windows Vista], _NDIS_RSS_SET_INDIRECTION_ENTRIES, netvista.ndis_rss_set_indirection_entries, ntddndis/NDIS_RSS_SET_INDIRECTION_ENTRIES, ntddndis/PNDIS_RSS_SET_INDIRECTION_ENTRIES"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,15 +48,15 @@ req.typenames: NDIS_RSS_SET_INDIRECTION_ENTRIES, *PNDIS_RSS_SET_INDIRECTION_ENTR
 <div class="alert"><b>Warning</b>  RSSv2 is preview only in Windows 10, version 1709.</div><div> </div>The <b>NDIS_RSS_SET_INDIRECTION_ENTRIES</b> structure represents a set of actions, where each action moves a single entry of the Receive Side Scaling (RSS) indirection table of a specified VPort to a specified target CPU. It is used in the <a href="https://docs.microsoft.com/windows-hardware/drivers/network/oid-gen-rss-set-indirection-table-entries">OID_GEN_RSS_SET_INDIRECTION_TABLE_ENTRIES</a> OID, which is a <a href="https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID</a> for <a href="https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-">RSS Version 2 (RSSv2)</a>.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_RSS_SET_INDIRECTION_ENTRIES {
   NDIS_OBJECT_HEADER Header;
-  ULONG              Flags;
-  ULONG              RssEntrySize;
-  ULONG              RssEntryTableOffset;
-  ULONG              NumberOfRssEntries;
-} NDIS_RSS_SET_INDIRECTION_ENTRIES, *PNDIS_RSS_SET_INDIRECTION_ENTRIES;
-````
+  ULONG              Flags;
+  ULONG              RssEntrySize;
+  ULONG              RssEntryTableOffset;
+  ULONG              NumberOfRssEntries;
+} *PNDIS_RSS_SET_INDIRECTION_ENTRIES, NDIS_RSS_SET_INDIRECTION_ENTRIES;
+```
 
 ## Members
 
@@ -64,7 +64,7 @@ typedef struct _NDIS_RSS_SET_INDIRECTION_ENTRIES {
 `Header`
 
 The 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a> structure for the
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a> structure for the
      <b>NDIS_RSS_SET_INDIRECTION_ENTRIES</b> structure. Set the 
      <b>Type</b> member of the structure that 
      <b>Header</b> specifies to <b>NDIS_OBJECT_TYPE_DEFAULT</b>. 
@@ -83,11 +83,11 @@ An opaque number that needs to be added to the pointer during array traversal.
 
 `RssEntryTableOffset`
 
-The offset of the <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entry.md">NDIS_RSS_SET_INDIRECTION_ENTRY</a> array from the beginning of this structure.
+The offset of the <a href="https://msdn.microsoft.com/4430E19F-C603-4C52-8FC8-C36197FD2996">NDIS_RSS_SET_INDIRECTION_ENTRY</a> array from the beginning of this structure.
 
 `NumberOfRssEntries`
 
-The number of formatted <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entry.md">NDIS_RSS_SET_INDIRECTION_ENTRY</a> structures in the array.
+The number of formatted <a href="https://msdn.microsoft.com/4430E19F-C603-4C52-8FC8-C36197FD2996">NDIS_RSS_SET_INDIRECTION_ENTRY</a> structures in the array.
 
 
 ## Requirements
@@ -98,15 +98,15 @@ The number of formatted <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirecti
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566583">NDIS_NIC_SWITCH_CAPABILITIES</a>
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_nic_switch_capabilities.md">NDIS_NIC_SWITCH_CAPABILITIES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 
 
 
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-">Receive Side Scaling Version 2 (RSSv2)</a>
+<a href="https://msdn.microsoft.com/4430E19F-C603-4C52-8FC8-C36197FD2996">NDIS_RSS_SET_INDIRECTION_ENTRY</a>
 
 
 
@@ -114,8 +114,8 @@ The number of formatted <a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirecti
 
 
 
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/receive-side-scaling-version-2-rssv2-">Receive Side Scaling Version 2 (RSSv2)</a>
+
+
+
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/synchronous-oid-request-interface-in-ndis-6-80">Synchronous OID request interface in NDIS 6.80</a>
-
-
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_rss_set_indirection_entry.md">NDIS_RSS_SET_INDIRECTION_ENTRY</a>

@@ -7,7 +7,7 @@ old-location: debugger\setunnamedargstr.htm
 old-project: debugger
 ms.assetid: 96e309ca-1267-4a5d-97c6-1b15de9190d5
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_0d8a550a-c727-47e5-a5fe-10971e373a9d.xml, ExtExtension, ExtExtension class [Windows Debugging], SetUnnamedArgStr method, ExtExtension::SetUnnamedArgStr, SetUnnamedArgStr method [Windows Debugging], SetUnnamedArgStr method [Windows Debugging], ExtExtension class, SetUnnamedArgStr,ExtExtension.SetUnnamedArgStr, debugger.setunnamedargstr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,24 +44,24 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# SetUnnamedArgStr method
+# ExtExtension~r1::SetUnnamedArgStr method
 The <b>SetUnnamedArgStr</b> method sets an unnamed string argument for the current extension command.
 
 ## Syntax
 
-````
-bool SetUnnamedArgStr(
-  [in] ULONG Index,
-  [in] PCSTR Arg,
-  [in] bool  OnlyIfUnset
+```
+bool  throw() SetUnnamedArgStr(
+  ULONG Index,
+  PCSTR Arg,
+  bool  OnlyIfUnset
 );
-````
+```
 
 ## Parameters
 
 `Index`
 
-Specifies the index of the argument.  The command-line description used in <a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a> must specify that the type of this argument is string.  <i>Index</i> should be between zero and the number of unnamed arguments - as specified in the command-line description used in EXT_COMMAND - minus one.
+Specifies the index of the argument.  The command-line description used in <a href="https://msdn.microsoft.com/library/windows/hardware/ff544514">EXT_COMMAND</a> must specify that the type of this argument is string.  <i>Index</i> should be between zero and the number of unnamed arguments - as specified in the command-line description used in EXT_COMMAND - minus one.
 
 `Arg`
 
@@ -90,7 +90,7 @@ This method should only be called during the execution of an extension command p
 
 ## See Also
 
-<a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544514">EXT_COMMAND</a>
 
 
 

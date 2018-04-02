@@ -50,7 +50,7 @@ This IO control function authenticates the magnetic stripe reader (MSR).
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-Pointer to the input buffer, a <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_msr_authenticate_device.md">MSR_AUTHENTICATE_DEVICE</a> variable.
+Pointer to the input buffer, a <a href="https://msdn.microsoft.com/library/windows/hardware/dn772178">MSR_AUTHENTICATE_DEVICE</a> variable.
 
 ### Input Buffer Length
 Size of the input buffer, in bytes. Set to sizeof(<b>MSR_AUTHENTICATE_DEVICE</b>).

@@ -66,7 +66,7 @@ LONGLONG PfnksclockGettime(
 
 `FileObject`
 
-A pointer to the <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure to which a handle was returned when the clock instance was created.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a> structure to which a handle was returned when the clock instance was created.
 
 
 ## Return Value
@@ -75,7 +75,7 @@ This routine returns the requested time value as a value of type LONGLONG. This 
 
 ## Remarks
 
-You can obtain an entry point for this routine by supplying a driver-allocated <a href="..\ks\ns-ks-ksclock_functiontable.md">KSCLOCK_FUNCTIONTABLE</a> structure in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564466">KSPROPERTY_CLOCK_FUNCTIONTABLE</a> request.
+You can obtain an entry point for this routine by supplying a driver-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/ff561020">KSCLOCK_FUNCTIONTABLE</a> structure in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564466">KSPROPERTY_CLOCK_FUNCTIONTABLE</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,7 +85,7 @@ You can obtain an entry point for this routine by supplying a driver-allocated <
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksclock_functiontable.md">KSCLOCK_FUNCTIONTABLE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561020">KSCLOCK_FUNCTIONTABLE</a>
 
 
 

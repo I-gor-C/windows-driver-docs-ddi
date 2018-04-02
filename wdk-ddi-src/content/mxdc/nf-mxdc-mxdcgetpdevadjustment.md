@@ -49,17 +49,17 @@ The <code>MxdcGetPDEVAdjustment</code> function is exported by a printer interfa
 
 ## Syntax
 
-````
+```
 HRESULT MxdcGetPDEVAdjustment(
-  _In_           HANDLE                    hPrinter,
-  _In_           ULONG                     cbDevMode,
-  _In_     const DEVMODE                   *pDevMode,
-  _In_           ULONG                     cbIn,
-  _In_opt_ const VOID                      *pvIn,
-  _In_           ULONG                     cbPrintPropertiesCollection,
-  _Inout_        PrintPropertiesCollection *pOut
+  HANDLE                    hPrinter,
+  ULONG                     cbDevMode,
+  const DEVMODE             *pDevMode,
+  ULONG                     cbIn,
+  const VOID                *pvIn,
+  ULONG                     cbPrintPropertiesCollection,
+  PrintPropertiesCollection *pPrintPropertiesCollection
 );
-````
+```
 
 ## Parameters
 
@@ -414,4 +414,4 @@ All rotation will be done on the imageable area. If a configuration component (U
 
 
 
-<a href="..\prcomoem\nn-prcomoem-iprintoemuimxdc.md">IPrintOemUIMXDC Interface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554157">IPrintOemUIMXDC Interface</a>

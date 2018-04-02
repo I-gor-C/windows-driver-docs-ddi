@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetString method
+# IPrinterPropertyBag::GetString method
 Reads a string property.
 
 ## Syntax
 
-````
+```
 HRESULT GetString(
-  [in]          BSTR bstrName,
-  [out, retval] BSTR *pbstrValue
+  BSTR bstrName,
+  BSTR *pbstrValue
 );
-````
+```
 
 ## Parameters
 
@@ -81,4 +81,4 @@ This method returns an <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>

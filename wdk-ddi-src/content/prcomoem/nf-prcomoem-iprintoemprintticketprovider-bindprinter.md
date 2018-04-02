@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# BindPrinter method
+# IPrintOemPrintTicketProvider::BindPrinter method
 The <code>IPrintOemPrintTicketProvider::BindPrinter</code> method enables the core driver to associate a set of private namespace uniform resource identifiers (URIs) with a device. This method also allows the plug-in to cache information (such as the printer handle) that can be used at a later time.
 
 ## Syntax

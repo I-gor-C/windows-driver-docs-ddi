@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: "<= DISPATCH_LEVEL (see Remarks section)"
+req.irql: 
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -50,16 +50,16 @@ req.product: Windows 10 or later.
 Defines values to indicate the type I/O control request.
 
 ## Syntax
-````
-typedef enum _SpbIoctl { 
-  IOCTL_SPB_LOCK_CONTROLLER,
-  IOCTL_SPB_UNLOCK_CONTROLLER,
-  IOCTL_SPB_EXECUTE_SEQUENCE,
-  IOCTL_SPB_LOCK_CONNECTION,
-  IOCTL_SPB_UNLOCK_CONNECTION,
+```
+typedef enum SpbIoctl {
+  IOCTL_SPB_LOCK_CONTROLLER    ,
+  IOCTL_SPB_UNLOCK_CONTROLLER  ,
+  IOCTL_SPB_EXECUTE_SEQUENCE   ,
+  IOCTL_SPB_LOCK_CONNECTION    ,
+  IOCTL_SPB_UNLOCK_CONNECTION  ,
   IOCTL_SPB_FULL_DUPLEX
-} SpbIoctl, *PSpbIoctl;
-````
+} *PSpbIoctl, SpbIoctl;
+```
 
 ## Constants
 

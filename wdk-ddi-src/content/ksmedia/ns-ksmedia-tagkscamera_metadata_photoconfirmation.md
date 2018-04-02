@@ -47,13 +47,13 @@ req.typenames: KSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCON
 This structure contains the photo confirmation metadata information that is filled by the camera driver.
 
 ## Syntax
-````
+```
 typedef struct tagKSCAMERA_METADATA_PHOTOCONFIRMATION {
   KSCAMERA_METADATA_ITEMHEADER Header;
-  ULONG                        PhotoConfirmationIndex;
-  ULONG                        Reserved;
+  ULONG                        PhotoConfirmationIndex;
+  ULONG                        Reserved;
 } KSCAMERA_METADATA_PHOTOCONFIRMATION, *PKSCAMERA_METADATA_PHOTOCONFIRMATION;
-````
+```
 
 ## Members
 

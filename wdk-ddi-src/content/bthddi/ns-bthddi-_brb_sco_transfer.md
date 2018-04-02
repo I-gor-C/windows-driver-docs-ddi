@@ -48,18 +48,18 @@ The _BRB_SCO_TRANSFER structure describes a buffer to read isochronous data from
   isochronous data to a SCO channel.
 
 ## Syntax
-````
+```
 struct _BRB_SCO_TRANSFER {
-  BRB_HEADER         Hdr;
-  BTH_ADDR           BtAddress;
+  BRB_HEADER         Hdr;
+  BTH_ADDR           BtAddress;
   SCO_CHANNEL_HANDLE ChannelHandle;
-  ULONG              TransferFlags;
-  ULONG              BufferSize;
-  PVOID              Buffer;
-  PMDL               BufferMDL;
-  ULONGLONG          DataTag;
+  ULONG              TransferFlags;
+  ULONG              BufferSize;
+  PVOID              Buffer;
+  PMDL               BufferMDL;
+  ULONGLONG          DataTag;
 };
-````
+```
 
 ## Members
 
@@ -67,7 +67,7 @@ struct _BRB_SCO_TRANSFER {
 `Hdr`
 
 A 
-     <a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a> structure that contains information
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a> structure that contains information
      about the current BRB.
 
 `BtAddress`
@@ -165,7 +165,7 @@ If both
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536629">BRB_SCO_TRANSFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536612">BRB_HEADER</a>
 
 
 
@@ -177,4 +177,4 @@ If both
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_header.md">BRB_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536629">BRB_SCO_TRANSFER</a>

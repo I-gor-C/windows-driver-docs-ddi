@@ -52,14 +52,14 @@ The <b>WDF_WRITE_REGISTER_BUFFER_ULONG</b> function writes a number of ULONG val
 
 ## Syntax
 
-````
+```
 void WDF_WRITE_REGISTER_BUFFER_ULONG(
-  _In_ WDFDEVICE Device,
-  _In_ PULONG    Register,
-  _In_ PULONG    Buffer,
-  _In_ ULONG     Count 
+  WDFDEVICE Device,
+  PULONG    Register,
+  PULONG    Buffer,
+  ULONG     Count
 );
-````
+```
 
 ## Parameters
 

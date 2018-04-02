@@ -48,15 +48,12 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
+```
 typedef struct _SPLCLIENT_INFO_2_V2 {
-#ifdef _WIN64
-  DWORD64  hSplPrinter;
-#else 
-  DWORD32  hSplPrinter;
-#endif 
+  DWORD64 hSplPrinter;
+  DWORD32 hSplPrinter;
 } SPLCLIENT_INFO_2_WINXP;
-````
+```
 
 ## Members
 

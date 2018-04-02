@@ -50,13 +50,13 @@ The <b>wiasSendEndOfPage </b>function calls the client callback routine during a
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasSendEndOfPage(
-  _In_    BYTE                      *pWiasContext,
-          LONG                      lPageCount,
-  _Inout_ PMINIDRV_TRANSFER_CONTEXT pmdtc
+```
+HRESULT wiasSendEndOfPage(
+  BYTE                      *pWiasContext,
+  LONG                      lPageCount,
+  PMINIDRV_TRANSFER_CONTEXT pmdtc
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ Specifies the total page count.
 
 `pmdtc`
 
-Pointer to a <a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a> structure.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a> structure.
 
 
 ## Return Value
@@ -89,4 +89,4 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a>

@@ -7,7 +7,7 @@ old-location: netvista\fwpscopystreamdatatobuffer0.htm
 old-project: netvista
 ms.assetid: 758733a4-9657-48a4-bbcc-f266c72c1d6a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsCopyStreamDataToBuffer0, FwpsCopyStreamDataToBuffer0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsCopyStreamDataToBuffer0, netvista.fwpscopystreamdatatobuffer0, wfp_ref_2_funct_3_fwps_C_dc46f99c-31e7-4e45-8f0b-fc3d0a96989e.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,21 +52,21 @@ The
 
 ## Syntax
 
-````
-void NTAPI FwpsCopyStreamDataToBuffer0(
-  _In_    const FWPS_STREAM_DATA0 *calloutStreamData,
-  _Inout_       PVOID             buffer,
-  _In_          SIZE_T            bytesToCopy,
-  _Out_         SIZE_T            *bytesCopied
+```
+void FwpsCopyStreamDataToBuffer0(
+  const FWPS_STREAM_DATA0 *calloutStreamData,
+  PVOID                   buffer,
+  SIZE_T                  bytesToCopy,
+  SIZE_T                  *bytesCopied
 );
-````
+```
 
 ## Parameters
 
 `calloutStreamData`
 
 A pointer to a 
-     <a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a> structure that contains
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552419">FWPS_STREAM_DATA0</a> structure that contains
      the stream data to be copied.
 
 `buffer`
@@ -107,4 +107,4 @@ To copy all indicated data to the receiving buffer, ensure that the buffer is at
 
 ## See Also
 
-<a href="..\fwpsk\ns-fwpsk-fwps_stream_data0_.md">FWPS_STREAM_DATA0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552419">FWPS_STREAM_DATA0</a>

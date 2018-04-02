@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
-typedef enum tagOEMPTOPTS { 
-  OEMPT_DEFAULT     = 0,
-  OEMPT_NOSHAPSHOT  = 0x1
+```
+typedef enum tagOEMPTOPTS {
+  OEMPT_DEFAULT     ,
+  OEMPT_NOSNAPSHOT
 } OEMPTOPTS, *POEMPTOPTS;
-````
+```
 
 ## Constants
 

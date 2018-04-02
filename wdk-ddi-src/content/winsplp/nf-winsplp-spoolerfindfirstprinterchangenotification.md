@@ -50,18 +50,18 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL WINAPI SpoolerFindFirstPrinterChangeNotification(
-  _In_      HANDLE                   hPrinter,
-            DWORD                    fdwFilterFlags,
-            DWORD                    fdwOptions,
-  _In_      PVOID                    pPrinterNotifyOptions,
-  _In_opt_  PVOID                    pvReserved,
-  _In_      PVOID                    pNotificationConfig,
-  _Out_opt_ PHANDLE                  phNotify,
-  _Out_opt_ PHANDLE                  phEvent
+```
+BOOL SpoolerFindFirstPrinterChangeNotification(
+  HANDLE  hPrinter,
+  DWORD   fdwFilterFlags,
+  DWORD   fdwOptions,
+  PVOID   pPrinterNotifyOptions,
+  PVOID   pvReserved,
+  PVOID   pNotificationConfig,
+  PHANDLE phNotify,
+  PHANDLE phEvent
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: storage\deleteinitiatornodename_out.htm
 old-project: storage
 ms.assetid: 105f6687-ea0f-45e9-be44-eafdd06156eb
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PDeleteInitiatorNodeName_OUT, DeleteInitiatorNodeName_OUT, DeleteInitiatorNodeName_OUT structure [Storage Devices], PDeleteInitiatorNodeName_OUT, PDeleteInitiatorNodeName_OUT structure pointer [Storage Devices], _DeleteInitiatorNodeName_OUT, iscsiop/DeleteInitiatorNodeName_OUT, iscsiop/PDeleteInitiatorNodeName_OUT, storage.deleteinitiatornodename_out, structs-iSCSI_2a85602a-f8f8-45c5-948d-128e3f5621a0.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,11 +47,11 @@ req.typenames: DeleteInitiatorNodeName_OUT, *PDeleteInitiatorNodeName_OUT
 The DeleteInitiatorNodeName_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552500">DeleteInitiatorNodeName</a> method.
 
 ## Syntax
-````
+```
 typedef struct _DeleteInitiatorNodeName_OUT {
   ULONG Status;
-} DeleteInitiatorNodeName_OUT, *PDeleteInitiatorNodeName_OUT;
-````
+} *PDeleteInitiatorNodeName_OUT, DeleteInitiatorNodeName_OUT;
+```
 
 ## Members
 
@@ -70,12 +70,12 @@ It is optional that you implement this method.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552500">DeleteInitiatorNodeName</a>
 
 
 
-<a href="..\iscsiop\ns-iscsiop-_deleteinitiatornodename_in.md">DeleteInitiatorNodeName_IN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552505">DeleteInitiatorNodeName_IN</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561568">ISCSI_STATUS_QUALIFIERS</a>

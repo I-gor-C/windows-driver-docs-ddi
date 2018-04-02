@@ -7,7 +7,7 @@ old-location: netvista\ndismwriteconfigblock.htm
 old-project: netvista
 ms.assetid: de7f651b-9847-41e9-9f52-71c2365bac44
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMWriteConfigBlock, NdisMWriteConfigBlock function [Network Drivers Starting with Windows Vista], ndis/NdisMWriteConfigBlock, netvista.ndismwriteconfigblock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,14 +51,14 @@ A miniport driver for a PCI Express (PCIe) Virtual Function (VF) calls the <b>Nd
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisMWriteConfigBlock(
-  _In_ NDIS_HANDLE NdisMiniportHandle,
-  _In_ ULONG       BlockId,
-  _In_ PVOID       Buffer,
-  _In_ ULONG       Length
+  NDIS_HANDLE NdisMiniportHandle,
+  ULONG       BlockId,
+  PVOID       Buffer,
+  ULONG       Length
 );
-````
+```
 
 ## Parameters
 
@@ -66,7 +66,7 @@ NDIS_STATUS NdisMWriteConfigBlock(
 
 The network adapter handle that NDIS passed to the 
      <i>MiniportAdapterHandle</i> parameter of 
-     <a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>.
+     <a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>.
 
 `BlockId`
 
@@ -142,7 +142,7 @@ The VBD that runs in a Hyper-V child partition's guest operating system can quer
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/hh451609">WriteVfConfigBlock</a>
+<b></b>
 
 
 
@@ -150,4 +150,4 @@ The VBD that runs in a Hyper-V child partition's guest operating system can quer
 
 
 
-<b></b>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451609">WriteVfConfigBlock</a>

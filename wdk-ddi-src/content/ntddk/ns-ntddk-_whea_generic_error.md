@@ -47,23 +47,23 @@ req.typenames: WHEA_GENERIC_ERROR, *PWHEA_GENERIC_ERROR
 The WHEA_GENERIC_ERROR structure describes error status data for a generic error source.
 
 ## Syntax
-````
+```
 typedef struct _WHEA_GENERIC_ERROR {
   WHEA_GENERIC_ERROR_BLOCKSTATUS BlockStatus;
-  ULONG                          RawDataOffset;
-  ULONG                          RawDataLength;
-  ULONG                          DataLength;
-  WHEA_ERROR_SEVERITY            ErrorSeverity;
-  UCHAR                          Data[1];
+  ULONG                          RawDataOffset;
+  ULONG                          RawDataLength;
+  ULONG                          DataLength;
+  WHEA_ERROR_SEVERITY            ErrorSeverity;
+  UCHAR                          Data[1];
 } WHEA_GENERIC_ERROR, *PWHEA_GENERIC_ERROR;
-````
+```
 
 ## Members
 
 
 `BlockStatus`
 
-A <a href="..\ntddk\ns-ntddk-_whea_generic_error_blockstatus.md">WHEA_GENERIC_ERROR_BLOCKSTATUS</a> union that indicates what kind of error data is reported in the generic error status block.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560525">WHEA_GENERIC_ERROR_BLOCKSTATUS</a> union that indicates what kind of error data is reported in the generic error status block.
 
 `RawDataOffset`
 
@@ -79,14 +79,14 @@ The size, in bytes, of the error data contained in the <b>Data</b> member.
 
 `ErrorSeverity`
 
-A <a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560503">WHEA_ERROR_SEVERITY</a>-typed value that indicates the severity of the error condition.
 
 `Data`
 
 A variable-sized buffer that contains the error data from the generic error source. This buffer contains the generic error status block followed by the raw error data.
 
 ## Remarks
-A generic error source is described by a <a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a> structure. The <b>ErrStatusAddress</b> member of the WHEA_GENERIC_ERROR_DESCRIPTOR structure points to a register that contains the physical address of a WHEA_GENERIC_ERROR structure in firmware reserved memory. This WHEA_GENERIC_ERROR structure contains the error status data for the generic error source.
+A generic error source is described by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560531">WHEA_GENERIC_ERROR_DESCRIPTOR</a> structure. The <b>ErrStatusAddress</b> member of the WHEA_GENERIC_ERROR_DESCRIPTOR structure points to a register that contains the physical address of a WHEA_GENERIC_ERROR structure in firmware reserved memory. This WHEA_GENERIC_ERROR structure contains the error status data for the generic error source.
 
 A WHEA_GENERIC_ERROR structure is included in the <b>RawData</b> member of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure whenever the <b>RawDataFormat </b>member of the WHEA_ERROR_PACKET structure contains <b>WheaRawDataFormatGeneric</b>.
 
@@ -102,12 +102,12 @@ A WHEA_GENERIC_ERROR structure is included in the <b>RawData</b> member of a <a 
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error_descriptor.md">WHEA_GENERIC_ERROR_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560503">WHEA_ERROR_SEVERITY</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_generic_error_blockstatus.md">WHEA_GENERIC_ERROR_BLOCKSTATUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560525">WHEA_GENERIC_ERROR_BLOCKSTATUS</a>
 
 
 
-<a href="..\ntddk\ne-ntddk-_whea_error_severity.md">WHEA_ERROR_SEVERITY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560531">WHEA_GENERIC_ERROR_DESCRIPTOR</a>

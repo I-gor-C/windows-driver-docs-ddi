@@ -55,11 +55,11 @@ The <b>WdfObjectContextGetObject</b> method returns a handle to the framework ob
 
 ## Syntax
 
-````
+```
 WDFOBJECT WdfObjectContextGetObject(
-  _In_ PVOID ContextPointer
+  PVOID ContextPointer
 );
-````
+```
 
 ## Parameters
 

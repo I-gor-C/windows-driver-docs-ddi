@@ -44,18 +44,18 @@ req.typenames: PIPE_STATE
 ---
 
 
-# QuerySupported method
+# IKsPropertySet::QuerySupported method
 The <b>QuerySupported</b> method determines whether a KS object supports a property set and the type of that support.
 
 ## Syntax
 
-````
+```
 HRESULT QuerySupported(
-  [in]  REFGUID PropSet,
-  [in]  ULONG   Id,
-  [out] ULONG   *TypeSupport
+  REFGUID PropSet,
+  ULONG   Id,
+  ULONG   *TypeSupport
 );
-````
+```
 
 ## Parameters
 

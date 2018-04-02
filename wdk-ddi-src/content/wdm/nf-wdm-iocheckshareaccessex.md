@@ -7,7 +7,7 @@ old-location: kernel\iocheckshareaccessex.htm
 old-project: kernel
 ms.assetid: E6CDE415-FCC2-4039-B6DD-168113D9A490
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoCheckShareAccessEx, IoCheckShareAccessEx routine [Kernel-Mode Driver Architecture], kernel.iocheckshareaccessex, wdm/IoCheckShareAccessEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,16 +51,16 @@ The <b>IoCheckShareAccessEx</b> routine is called by file system drivers (FSDs) 
 
 ## Syntax
 
-````
-NTSTATUS IoCheckShareAccessEx(
-  _In_    ACCESS_MASK   DesiredAccess,
-  _In_    ULONG         DesiredShareAccess,
-  _Inout_ PFILE_OBJECT  FileObject,
-  _Inout_ PSHARE_ACCESS ShareAccess,
-  _In_    BOOLEAN       Update,
-  _In_    PBOOLEAN      WritePermission
+```
+NTKERNELAPI NTSTATUS IoCheckShareAccessEx(
+  ACCESS_MASK   DesiredAccess,
+  ULONG         DesiredShareAccess,
+  PFILE_OBJECT  FileObject,
+  PSHARE_ACCESS ShareAccess,
+  BOOLEAN       Update,
+  PBOOLEAN      WritePermission
 );
-````
+```
 
 ## Parameters
 

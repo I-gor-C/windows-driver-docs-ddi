@@ -7,7 +7,7 @@ old-location: buses\_roothub_20port_info.htm
 old-project: usbref
 ms.assetid: AA71D015-B047-497C-A9E1-32E5E73AD0C2
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PROOTHUB_20PORT_INFO, P_ROOTHUB_20PORT_INFO, P_ROOTHUB_20PORT_INFO structure pointer [Buses], ROOTHUB_20PORT_INFO, ROOTHUB_20PORT_INFO structure [Buses], _ROOTHUB_20PORT_INFO, buses._roothub_20port_info, ucxroothub/P_ROOTHUB_20PORT_INFO, ucxroothub/_ROOTHUB_20PORT_INFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 # _ROOTHUB_20PORT_INFO structure
-Provides information about a USB 2.0 root hub port. This structure is passed by UCX in the <a href="..\ucxroothub\nc-ucxroothub-evt_ucx_roothub_get_20port_info.md">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.
+Provides information about a USB 2.0 root hub port. This structure is passed by UCX in the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187834">EVT_UCX_ROOTHUB_GET_20PORT_INFO</a> callback function.
 
 ## Syntax
-````
+```
 typedef struct _ROOTHUB_20PORT_INFO {
-  USHORT                               PortNumber;
-  UCHAR                                MinorRevision;
-  UCHAR                                HubDepth;
-  TRISTATE                             Removable;
-  TRISTATE                             IntegratedHubImplemented;
-  TRISTATE                             DebugCapable;
+  USHORT                               PortNumber;
+  UCHAR                                MinorRevision;
+  UCHAR                                HubDepth;
+  TRISTATE                             Removable;
+  TRISTATE                             IntegratedHubImplemented;
+  TRISTATE                             DebugCapable;
   CONTROLLER_USB_20_HARDWARE_LPM_FLAGS ControllerUsb20HardwareLpmFlags;
-} ROOTHUB_20PORT_INFO, *P_ROOTHUB_20PORT_INFO;
-````
+} *PROOTHUB_20PORT_INFO, ROOTHUB_20PORT_INFO;
+```
 
 ## Members
 
@@ -77,15 +77,15 @@ The hub depth limit.
 
 `Removable`
 
-A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is removable.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt187907">TRISTATE</a> value that indicates if the port is removable.
 
 `IntegratedHubImplemented`
 
-A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is implemented.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt187907">TRISTATE</a> value that indicates if the port is implemented.
 
 `DebugCapable`
 
-A <a href="..\ucxroothub\ne-ucxroothub-_tristate.md">TRISTATE</a> value that indicates if the port is debug capable.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt187907">TRISTATE</a> value that indicates if the port is debug capable.
 
 `ControllerUsb20HardwareLpmFlags`
 

@@ -7,7 +7,7 @@ old-location: ifsk\rtlunicodetocustomcpn.htm
 old-project: ifsk
 ms.assetid: db4335c1-b6c9-4afd-b30f-95b736be696b
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlUnicodeToCustomCPN, RtlUnicodeToCustomCPN function [Installable File System Drivers], ifsk.rtlunicodetocustomcpn, ntifs/RtlUnicodeToCustomCPN, rtlref_0c9942bd-a950-4d59-8fc7-58c41cfe78d4.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,15 +45,20 @@ req.typenames: TOKEN_TYPE
 
 
 # RtlUnicodeToCustomCPN function
-The <b>RtlUnicodeToCustomCPN</b> routine is reserved for system use. See <a href="..\ntifs\nf-ntifs-rtlunicodetomultibyten.md">RtlUnicodeToMultiByteN</a> and <a href="..\ntifs\nf-ntifs-rtlunicodetooemn.md">RtlUnicodeToOemN</a>.
+The <b>RtlUnicodeToCustomCPN</b> routine is reserved for system use. See <a href="https://msdn.microsoft.com/library/windows/hardware/ff553261">RtlUnicodeToMultiByteN</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff553272">RtlUnicodeToOemN</a>.
 
 ## Syntax
 
-````
-  RtlUnicodeToCustomCPN(
-    
+```
+NTSYSAPI NTSTATUS RtlUnicodeToCustomCPN(
+  PCPTABLEINFO CustomCP,
+  PCH          CustomCPString,
+  ULONG        MaxBytesInCustomCPString,
+  PULONG       BytesInCustomCPString,
+  PWCH         UnicodeString,
+  ULONG        BytesInUnicodeString
 );
-````
+```
 
 ## Parameters
 

@@ -50,17 +50,17 @@ For internal use only.
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfCompanionTargetSendTaskSynchronously(
-  _In_     WDFCOMPANIONTARGET     CompanionTarget,
-  _In_     USHORT                 TaskQueueIdentifier,
-  _In_     ULONG                  TaskOperationCode,
-  _In_opt_ PWDF_MEMORY_DESCRIPTOR InputBuffer,
-  _In_opt_ PWDF_MEMORY_DESCRIPTOR OutputBuffer,
-  _In_opt_ PWDF_TASK_SEND_OPTIONS TaskOptions,
-  _Out_    PULONG_PTR             BytesReturned
+  WDFCOMPANIONTARGET     CompanionTarget,
+  USHORT                 TaskQueueIdentifier,
+  ULONG                  TaskOperationCode,
+  PWDF_MEMORY_DESCRIPTOR InputBuffer,
+  PWDF_MEMORY_DESCRIPTOR OutputBuffer,
+  PWDF_TASK_SEND_OPTIONS TaskOptions,
+  PULONG_PTR             BytesReturned
 );
-````
+```
 
 ## Parameters
 

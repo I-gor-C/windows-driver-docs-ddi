@@ -48,26 +48,26 @@ req.product: Windows 10 or later.
 # WDF_COMMON_BUFFER_CONFIG_INIT function
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WDF_COMMON_BUFFER_CONFIG_INIT</b> function initializes a <a href="..\wdfcommonbuffer\ns-wdfcommonbuffer-_wdf_common_buffer_config.md">WDF_COMMON_BUFFER_CONFIG</a> structure.
+The <b>WDF_COMMON_BUFFER_CONFIG_INIT</b> function initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551244">WDF_COMMON_BUFFER_CONFIG</a> structure.
 
 ## Syntax
 
-````
-VOID WDF_COMMON_BUFFER_CONFIG_INIT(
-  _Out_ PWDF_COMMON_BUFFER_CONFIG Config,
-  _In_  ULONG                     AlignmentRequirement
+```
+void WDF_COMMON_BUFFER_CONFIG_INIT(
+  PWDF_COMMON_BUFFER_CONFIG Config,
+  ULONG                     AlignmentRequirement
 );
-````
+```
 
 ## Parameters
 
 `Config`
 
-A pointer to a <a href="..\wdfcommonbuffer\ns-wdfcommonbuffer-_wdf_common_buffer_config.md">WDF_COMMON_BUFFER_CONFIG</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551244">WDF_COMMON_BUFFER_CONFIG</a> structure.
 
 `AlignmentRequirement`
 
-A value for the <b>AlignmentRequirement</b> member of the <a href="..\wdfcommonbuffer\ns-wdfcommonbuffer-_wdf_common_buffer_config.md">WDF_COMMON_BUFFER_CONFIG</a> structure. This value specifies the alignment requirement for the common buffer that the structure describes.
+A value for the <b>AlignmentRequirement</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551244">WDF_COMMON_BUFFER_CONFIG</a> structure. This value specifies the alignment requirement for the common buffer that the structure describes.
 
 
 ## Return Value
@@ -76,7 +76,7 @@ None
 
 ## Remarks
 
-The <b>WDF_COMMON_BUFFER_CONFIG_INIT</b> function zeros the specified <a href="..\wdfcommonbuffer\ns-wdfcommonbuffer-_wdf_common_buffer_config.md">WDF_COMMON_BUFFER_CONFIG</a> structure and sets the structure's <b>AlignmentRequirement</b> member to the specified value.
+The <b>WDF_COMMON_BUFFER_CONFIG_INIT</b> function zeros the specified <a href="https://msdn.microsoft.com/library/windows/hardware/ff551244">WDF_COMMON_BUFFER_CONFIG</a> structure and sets the structure's <b>AlignmentRequirement</b> member to the specified value.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,4 +87,4 @@ The <b>WDF_COMMON_BUFFER_CONFIG_INIT</b> function zeros the specified <a href=".
 
 ## See Also
 
-<a href="..\wdfcommonbuffer\ns-wdfcommonbuffer-_wdf_common_buffer_config.md">WDF_COMMON_BUFFER_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551244">WDF_COMMON_BUFFER_CONFIG</a>

@@ -50,16 +50,16 @@ The <code>OEMQueryAdvanceWidths</code> function returns character advance widths
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMQueryAdvanceWidths(
-        DHPDEV                                       dhpdev,
-        FONTOBJ                                      *pfo,
-        ULONG                                        iMode,
-  _In_  _reads_(cGlyphs) HGLYPH                      *phg,
-  _Out_ _writes_bytes_(cGlyphs*sizeof(USHORT)) PVOID pvWidths,
-        ULONG                                        cGlyphs
+```
+BOOL OEMQueryAdvanceWidths(
+  DHPDEV  dhpdev,
+  FONTOBJ *pfo,
+  ULONG   iMode,
+  HGLYPH  *phg,
+  PVOID   pvWidths,
+  ULONG   cGlyphs
 );
-````
+```
 
 ## Parameters
 

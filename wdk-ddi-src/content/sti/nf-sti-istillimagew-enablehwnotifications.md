@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# EnableHwNotifications method
+# IStillImageW::EnableHwNotifications method
 The <b>IStillImage::EnableHwNotifications</b> method requests the still image event monitor to enable or disable the notification of applications when <a href="https://msdn.microsoft.com/5f9be89c-8442-4894-b2f6-a4d3558464bf">Still Image Device Events</a> occur for a specified device.
 
 ## Syntax
 
-````
+```
 HRESULT EnableHwNotifications(
-  [in] LPCWSTR pwszDeviceName,
-       BOOL    bNewState
+  LPCWSTR pwszDeviceName,
+  BOOL    bNewState
 );
-````
+```
 
 ## Parameters
 

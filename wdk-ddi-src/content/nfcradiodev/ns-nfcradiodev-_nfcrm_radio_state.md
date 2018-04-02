@@ -47,11 +47,11 @@ req.typenames: NFCRM_RADIO_STATE, *PNFCRM_RADIO_STATE
 This structure is used to indicate the radio state.
 
 ## Syntax
-````
-typedef struct _NFCRM_RADIO_STATE  {
+```
+typedef struct _NFCRM_RADIO_STATE {
   BOOLEAN MediaRadioOn;
-} NFCRM_RADIO_STATE, *PNFCRM_RADIO_STATE;
-````
+} *PNFCRM_RADIO_STATE, NFCRM_RADIO_STATE;
+```
 
 ## Members
 

@@ -50,11 +50,11 @@ The <b>DbgBreakPointWithStatus</b> routine breaks into the kernel debugger and s
 
 ## Syntax
 
-````
-NTSYSAPI VOID DbgBreakPointWithStatus(
-  _In_ ULONG Status
+```
+__analysis_noreturn NTSYSAPI VOID DbgBreakPointWithStatus(
+  ULONG Status
 );
-````
+```
 
 ## Parameters
 
@@ -89,7 +89,7 @@ In kernel mode, a break exception that is not handled will cause a bug check. Yo
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kdbreakpointwithstatus.md">KdBreakPointWithStatus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543626">DbgBreakPoint</a>
 
 
 
@@ -97,4 +97,4 @@ In kernel mode, a break exception that is not handled will cause a bug check. Yo
 
 
 
-<a href="..\wdm\nf-wdm-dbgbreakpoint.md">DbgBreakPoint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548065">KdBreakPointWithStatus</a>

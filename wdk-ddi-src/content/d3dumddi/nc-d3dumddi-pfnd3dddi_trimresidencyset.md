@@ -7,7 +7,7 @@ old-location: display\pfntrimresidencyset.htm
 old-project: display
 ms.assetid: 192F419C-F38F-4B42-8111-86D58D6781DA
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3DDDI_TRIMRESIDENCYSET, d3dukmdt/pfnTrimResidencySet, display.pfntrimresidencyset, pfnTrimResidencySet, pfnTrimResidencySet callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -84,4 +84,4 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-d3dddiarg_trimresidencyset.md">D3DDDIARG_TRIMRESIDENCYSET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906759">D3DDDIARG_TRIMRESIDENCYSET</a>

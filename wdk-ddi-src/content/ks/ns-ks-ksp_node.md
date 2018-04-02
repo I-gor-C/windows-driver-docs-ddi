@@ -47,13 +47,13 @@ req.typenames: KSP_NODE, *PKSP_NODE
 Kernel streaming clients use the KSP_NODE structure to specify the property and node type within a KSPROPERTY_TOPOLOGY_NAME property request.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSP_NODE {
   KSPROPERTY Property;
-  ULONG      NodeId;
-  ULONG      Reserved;
-} KSP_NODE, *PKSP_NODE;
-````
+  ULONG      NodeId;
+  ULONG      Reserved;
+}  *PKSP_NODE;
+```
 
 ## Members
 
@@ -78,8 +78,8 @@ Reserved for system use. Should be set to zero.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537143">KSNODEPROPERTY</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564262">KSPROPERTY</a>
-
-
-
-<a href="..\ksmedia\ns-ksmedia-ksnodeproperty.md">KSNODEPROPERTY</a>

@@ -2,7 +2,7 @@
 UID: NA:ntddser
 ms.assetid: 1ef9acf8-d5d8-39b0-a68c-2a25e1e7e669
 ms.author: windowsdriverdev
-ms.date: 03/13/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -39,7 +39,7 @@ ntddser.h contains the following programming interfaces:
 | [IOCTL_SERIAL_GET_MODEMSTATUS](ni-ntddser-ioctl_serial_get_modemstatus.md) | The IOCTL_SERIAL_GET_MODEMSTATUS request updates the modem status, and returns the value of the modem status register before the update. |
 | [IOCTL_SERIAL_GET_PROPERTIES](ni-ntddser-ioctl_serial_get_properties.md) | The IOCTL_SERIAL_GET_PROPERTIES request returns information about the capabilities of a serial controller. The capabilities information is returned in a SERIAL_COMMPROP structure. |
 | [IOCTL_SERIAL_GET_STATS](ni-ntddser-ioctl_serial_get_stats.md) | The IOCTL_SERIAL_GET_STATS request returns information about the performance of a serial controller. |
-| [IOCTL_SERIAL_GET_TIMEOUTS](ni-ntddser-ioctl_serial_get_timeouts.md) | The IOCTL_SERIAL_GET_TIMEOUTS request returns the current setting of the time-out value that the system-supplied bus driver for parallel ports uses with write requests. |
+| [IOCTL_SERIAL_GET_TIMEOUTS](ni-ntddser-ioctl_serial_get_timeouts.md) | The IOCTL_SERIAL_GET_TIMEOUTS request returns the time-out values that the serial controller driver uses with read and write requests. |
 | [IOCTL_SERIAL_GET_WAIT_MASK](ni-ntddser-ioctl_serial_get_wait_mask.md) | The IOCTL_SERIAL_GET_WAIT_MASK request returns the event wait mask that is currently set for the serial controller. |
 | [IOCTL_SERIAL_IMMEDIATE_CHAR](ni-ntddser-ioctl_serial_immediate_char.md) | The IOCTL_SERIAL_IMMEDIATE_CHAR request causes a specified character to be transmitted as soon as possible. |
 | [IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS](ni-ntddser-ioctl_serial_internal_basic_settings.md) | The IOCTL_SERIAL_INTERNAL_BASIC_SETTINGS request sets a serial device to a basic operating mode. |
@@ -60,7 +60,7 @@ ntddser.h contains the following programming interfaces:
 | [IOCTL_SERIAL_SET_MODEM_CONTROL](ni-ntddser-ioctl_serial_set_modem_control.md) | The IOCTL_SERIAL_SET_MODEM_CONTROL request sets the modem control register (MCR) in the UART. No parameter checking is done on the client-supplied register settings. |
 | [IOCTL_SERIAL_SET_QUEUE_SIZE](ni-ntddser-ioctl_serial_set_queue_size.md) | The IOCTL_SERIAL_SET_QUEUE_SIZE request sets the size of the internal receive buffer. If the requested size is greater than the current receive buffer size, a new receive buffer is created. Otherwise, the receive buffer is not changed. |
 | [IOCTL_SERIAL_SET_RTS](ni-ntddser-ioctl_serial_set_rts.md) | The IOCTL_SERIAL_SET_RTS request sets RTS (request to send). |
-| [IOCTL_SERIAL_SET_TIMEOUTS](ni-ntddser-ioctl_serial_set_timeouts.md) | An IOCTL_SERIAL_SET_TIMEOUTS request resets the time-out value that the system-supplied bus driver for parallel ports uses with write requests. |
+| [IOCTL_SERIAL_SET_TIMEOUTS](ni-ntddser-ioctl_serial_set_timeouts.md) | The IOCTL_SERIAL_SET_TIMEOUTS request sets the time-out values that the serial controller driver uses for read and write requests. |
 | [IOCTL_SERIAL_SET_WAIT_MASK](ni-ntddser-ioctl_serial_set_wait_mask.md) | The IOCTL_SERIAL_SET_WAIT_MASK request configures the serial controller driver to notify a client after the occurrence of any one of a specified set of wait events. |
 | [IOCTL_SERIAL_SET_XOFF](ni-ntddser-ioctl_serial_set_xoff.md) | The IOCTL_SERIAL_SET_XOFF request emulates the reception of an XOFF (transmit off) character. |
 | [IOCTL_SERIAL_SET_XON](ni-ntddser-ioctl_serial_set_xon.md) | The IOCTL_SERIAL_SET_XON request emulates the reception of a XON (transmit on) character, which restarts reception of data. |

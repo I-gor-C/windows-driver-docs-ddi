@@ -7,7 +7,7 @@ old-location: storage\disk_int13_info.htm
 old-project: storage
 ms.assetid: 8a9c335a-1c5f-4379-83bb-21391ae46a3c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PDISK_INT13_INFO, DISK_INT13_INFO, DISK_INT13_INFO structure [Storage Devices], PDISK_INT13_INFO, PDISK_INT13_INFO structure pointer [Storage Devices], _DISK_INT13_INFO, ntdddisk/DISK_INT13_INFO, ntdddisk/PDISK_INT13_INFO, storage.disk_int13_info, structs-disk_fc6ee399-d876-44e3-955a-3ab95c1b5134.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: DISK_INT13_INFO, *PDISK_INT13_INFO
 The DISK_INT13_INFO structure is used by the BIOS to report disk detection data for a partition with an INT13 format.
 
 ## Syntax
-````
+```
 typedef struct _DISK_INT13_INFO {
   USHORT DriveSelect;
-  ULONG  MaxCylinders;
+  ULONG  MaxCylinders;
   USHORT SectorsPerTrack;
   USHORT MaxHeads;
   USHORT NumberDrives;
 } DISK_INT13_INFO, *PDISK_INT13_INFO;
-````
+```
 
 ## Members
 
@@ -88,8 +88,8 @@ Indicates the number of drives.
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_disk_ex_int13_info.md">DISK_EX_INT13_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552601">DISK_DETECTION_INFO</a>
 
 
 
-<a href="..\ntdddisk\ns-ntdddisk-_disk_detection_info.md">DISK_DETECTION_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552610">DISK_EX_INT13_INFO</a>

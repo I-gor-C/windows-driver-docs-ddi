@@ -7,7 +7,7 @@ old-location: display\dxgk_transfervirtualflags.htm
 old-project: display
 ms.assetid: E5323A30-5BBE-4084-9F99-91FBDD680C12
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_TRANSFERVIRTUALFLAGS, DXGK_TRANSFERVIRTUALFLAGS structure [Display Devices], _DXGK_TRANSFERVIRTUALFLAGS, d3dkmddi/DXGK_TRANSFERVIRTUALFLAGS, display.dxgk_transfervirtualflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: DXGK_TRANSFERVIRTUALFLAGS
 <b>DXGK_TRANSFERVIRTUALFLAGS</b> is used as part of an allocation transfer operation.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_TRANSFERVIRTUALFLAGS {
   union {
     struct {
-      UINT Src64KBPages  :1;
-      UINT Dst64KBPages  :1;
-      UINT Reserved  :30;
+      UINT  : 1  Src64KBPages;
+      UINT  : 1  Dst64KBPages;
+      UINT  : 30 Reserved;
     };
-    UINT   Flags;
+    UINT Flags;
   };
 } DXGK_TRANSFERVIRTUALFLAGS;
-````
+```
 
 ## Members
 

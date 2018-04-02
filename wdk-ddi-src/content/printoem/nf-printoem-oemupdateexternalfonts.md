@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMUpdateExternalFonts(
-   HANDLE hPrinter,
-   HANDLE hHeap,
-   PWSTR  pwstrCartridges
+```
+BOOL OEMUpdateExternalFonts(
+  HANDLE hPrinter,
+  HANDLE hHeap,
+  PWSTR  pwstrCartridges
 );
-````
+```
 
 ## Parameters
 

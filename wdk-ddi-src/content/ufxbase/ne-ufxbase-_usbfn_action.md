@@ -7,7 +7,7 @@ old-location: buses\usbfn_action.htm
 old-project: usbref
 ms.assetid: 9E9AB3E0-EBDC-4EC3-BFBF-C78EE56BD699
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSBFN_ACTION, USBFN_ACTION, USBFN_ACTION enumeration [Buses], UsbfnActionDetectProprietaryCharger, UsbfnActionNoCad, UsbfnActionNone, _USBFN_ACTION, buses.usbfn_action, ufxbase/USBFN_ACTION, ufxbase/UsbfnActionDetectProprietaryCharger, ufxbase/UsbfnActionNoCad, ufxbase/UsbfnActionNone"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 # _USBFN_ACTION Enumeration
-Defines special actions UFX should take when the client driver calls the <a href="..\ufxclient\nf-ufxclient-ufxdeviceportdetectcompleteex.md">UfxDevicePortDetectCompleteEx</a> function.
+Defines special actions UFX should take when the client driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187963">UfxDevicePortDetectCompleteEx</a> function.
 
 ## Syntax
-````
-typedef enum _USBFN_ACTION { 
-  UsbfnActionNone                      = 0,
-  UsbfnActionNoCad,
+```
+typedef enum _USBFN_ACTION {
+  UsbfnActionNone                      ,
+  UsbfnActionNoCad                     ,
   UsbfnActionDetectProprietaryCharger
-} USBFN_ACTION;
-````
+} *PUSBFN_ACTION, USBFN_ACTION;
+```
 
 ## Constants
 
@@ -72,7 +72,7 @@ typedef enum _USBFN_ACTION {
             
                 <tr>
                     <td>UsbfnActionDetectProprietaryCharger</td>
-                    <td>UFX should initiate proprietary charger detection by calling the client driver’s <a href="..\ufxclient\nc-ufxclient-evt_ufx_device_proprietary_charger_detect.md">EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER</a> callback function.</td>
+                    <td>UFX should initiate proprietary charger detection by calling the client driver’s <a href="https://msdn.microsoft.com/library/windows/hardware/mt187850">EVT_UFX_DEVICE_DETECT_PROPRIETARY_CHARGER</a> callback function.</td>
                 </tr>
 </table>
 

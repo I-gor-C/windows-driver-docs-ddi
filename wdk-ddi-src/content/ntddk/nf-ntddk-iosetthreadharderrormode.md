@@ -7,7 +7,7 @@ old-location: kernel\iosetthreadharderrormode.htm
 old-project: kernel
 ms.assetid: bedb6399-8f79-477a-9a90-4a7dec5c5dae
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoSetThreadHardErrorMode, IoSetThreadHardErrorMode routine [Kernel-Mode Driver Architecture], k104_6e0a2c29-8edf-4d7e-b672-11309231c45e.xml, kernel.iosetthreadharderrormode, ntddk/IoSetThreadHardErrorMode
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>IoSetThreadHardErrorMode</b> routine enables or disables hard error repor
 
 ## Syntax
 
-````
-BOOLEAN IoSetThreadHardErrorMode(
-  _In_ BOOLEAN EnableHardErrors
+```
+NTKERNELAPI BOOLEAN IoSetThreadHardErrorMode(
+  BOOLEAN EnableHardErrors
 );
-````
+```
 
 ## Parameters
 
@@ -82,8 +82,8 @@ If hard errors are disabled for a given thread, calls to <b>IoRaiseHardError</b>
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-ioraiseinformationalharderror.md">IoRaiseInformationalHardError</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549482">IoRaiseHardError</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-ioraiseharderror.md">IoRaiseHardError</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549488">IoRaiseInformationalHardError</a>

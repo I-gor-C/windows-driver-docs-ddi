@@ -51,13 +51,13 @@ req.product: Windows 10 or later.
 The <b>WDF_EVENT_TYPE</b> enumeration specifies  types of events about which a driver can notify a registered application.
 
 ## Syntax
-````
-typedef enum _WDF_EVENT_TYPE { 
-  WdfEventReserved   = 0,
-  WdfEventBroadcast  = 1,
-  WdfEventMaximum    = 2
+```
+typedef enum _WDF_EVENT_TYPE {
+  WdfEventReserved   ,
+  WdfEventBroadcast  ,
+  WdfEventMaximum
 } WDF_EVENT_TYPE;
-````
+```
 
 ## Constants
 
@@ -70,7 +70,7 @@ typedef enum _WDF_EVENT_TYPE {
             
                 <tr>
                     <td>WdfEventBroadcast</td>
-                    <td>In the current version of UMDF, the driver must specify <b>WdfEventBroadcast</b>. For more information, see <a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>.</td>
+                    <td>In the current version of UMDF, the driver must specify <b>WdfEventBroadcast</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn265606">WdfDevicePostEvent</a>.</td>
                 </tr>
             
                 <tr>
@@ -89,8 +89,8 @@ typedef enum _WDF_EVENT_TYPE {
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicepostevent.md">WdfDevicePostEvent</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff558835">IWDFDevice::PostEvent</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265606">WdfDevicePostEvent</a>

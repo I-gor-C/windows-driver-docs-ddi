@@ -47,13 +47,13 @@ req.typenames: BBRT_TABLE, *PBBRT_TABLE
 Defines a Boot Background Resource Table.
 
 ## Syntax
-````
+```
 typedef struct _BBRT_TABLE {
   DESCRIPTION_HEADER Header;
-  ULONG              Background;
-  ULONG              Foreground;
+  ULONG              Background;
+  ULONG              Foreground;
 } BBRT_TABLE, *PBBRT_TABLE;
-````
+```
 
 ## Members
 

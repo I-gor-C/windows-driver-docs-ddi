@@ -58,22 +58,22 @@ These bug codes store information in a
 </ul>
 
 ## Syntax
-````
+```
 typedef struct _SOC_SUBSYSTEM_FAILURE_DETAILS {
   SOC_SUBSYSTEM_TYPE SubsysType;
-  ULONG64            FirmwareVersion;
-  ULONG64            HardwareVersion;
-  ULONG              UnifiedFailureRegionSize;
-  CHAR               UnifiedFailureRegion[1];
+  ULONG64            FirmwareVersion;
+  ULONG64            HardwareVersion;
+  ULONG              UnifiedFailureRegionSize;
+  CHAR               UnifiedFailureRegion[1];
 } SOC_SUBSYSTEM_FAILURE_DETAILS, *PSOC_SUBSYSTEM_FAILURE_DETAILS;
-````
+```
 
 ## Members
 
 
 `SubsysType`
 
-A value in the <a href="..\ntddk\ne-ntddk-_soc_subsystem_type.md">SOC_SYBSYSTEM_TYPE</a> enumeration or a vendor-defined subsystem type. Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors.
+A value in the <a href="https://msdn.microsoft.com/library/windows/hardware/dn376405">SOC_SYBSYSTEM_TYPE</a> enumeration or a vendor-defined subsystem type. Subsystem types in the range 0x10000 through 0x80000000 are reserved for independent hardware vendors.
 
 `FirmwareVersion`
 

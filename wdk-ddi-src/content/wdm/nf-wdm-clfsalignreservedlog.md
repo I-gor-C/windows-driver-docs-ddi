@@ -7,7 +7,7 @@ old-location: kernel\clfsalignreservedlog.htm
 old-project: kernel
 ms.assetid: b79f58bb-af94-4143-9e30-6f50d85cbb3d
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsAlignReservedLog, ClfsAlignReservedLog routine [Kernel-Mode Driver Architecture], Clfs_68de31de-d1f9-4948-ab15-bf8678aebcf2.xml, kernel.clfsalignreservedlog, wdm/ClfsAlignReservedLog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,20 +51,20 @@ The <b>ClfsAlignReservedLog</b> routine calculates the size of the space that mu
 
 ## Syntax
 
-````
-NTSTATUS  ClfsAlignReservedLog(
-  _In_  PVOID     pvMarshalContext,
-  _In_  ULONG     cRecords,
-  _In_  LONGLONG  rgcbReservation[],
-  _Out_ PLONGLONG pcbAlignReservation
+```
+CLFSUSER_API NTSTATUS ClfsAlignReservedLog(
+  PVOID       pvMarshalContext,
+  ULONG       cRecords,
+  LONGLONG [] rgcbReservation,
+  PLONGLONG   pcbAlignReservation
 );
-````
+```
 
 ## Parameters
 
 `pvMarshalContext`
 
-A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfscreatemarshallingarea.md">ClfsCreateMarshallingArea</a>.
+A pointer to an opaque context that represents a marshalling area associated with a CLFS stream. The caller previously obtained this pointer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541520">ClfsCreateMarshallingArea</a>.
 
 `cRecords`
 
@@ -99,4 +99,4 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsallocreservedlog.md">ClfsAllocReservedLog</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540782">ClfsAllocReservedLog</a>

@@ -50,38 +50,38 @@ req.product: Windows 10 or later.
 The WDF_DEVICE_PNP_NOTIFICATION_DATA structure describes a state change within a device's Plug and Play state machine.
 
 ## Syntax
-````
+```
 typedef struct _WDF_DEVICE_PNP_NOTIFICATION_DATA {
   WDF_STATE_NOTIFICATION_TYPE Type;
   union {
     struct {
       WDF_DEVICE_PNP_STATE CurrentState;
       WDF_DEVICE_PNP_STATE NewState;
-    } EnterState;
+    } EnterState;
     struct {
       WDF_DEVICE_PNP_STATE CurrentState;
-    } PostProcessState;
+    } PostProcessState;
     struct {
       WDF_DEVICE_PNP_STATE CurrentState;
       WDF_DEVICE_PNP_STATE NewState;
-    } LeaveState;
-  } Data;
+    } LeaveState;
+  } Data;
 } WDF_DEVICE_PNP_NOTIFICATION_DATA;
-````
+```
 
 ## Members
 
 
 `Type`
 
-A <a href="..\wdfdevice\ne-wdfdevice-_wdf_state_notification_type.md">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerator that identifies the type of state change that is being reported.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff552513">WDF_STATE_NOTIFICATION_TYPE</a>-typed enumerator that identifies the type of state change that is being reported.
 
 `Data`
 
 
 
 ## Remarks
-The WDF_DEVICE_PNP_NOTIFICATION_DATA structure is an input argument to a driver's <a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_pnp_state_change_notification.md">EvtDevicePnpStateChange</a> callback function.
+The WDF_DEVICE_PNP_NOTIFICATION_DATA structure is an input argument to a driver's <a href="https://msdn.microsoft.com/5f08d331-0e58-45a3-93a3-b5e9a40b5af3">EvtDevicePnpStateChange</a> callback function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,4 +91,4 @@ The WDF_DEVICE_PNP_NOTIFICATION_DATA structure is an input argument to a driver'
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitregisterpnpstatechangecallback.md">WdfDeviceInitRegisterPnpStateChangeCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546057">WdfDeviceInitRegisterPnpStateChangeCallback</a>

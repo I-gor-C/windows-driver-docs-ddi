@@ -52,12 +52,12 @@ The <b>WDF_READ_PORT_ULONG</b>  function reads a ULONG value from the specified 
 
 ## Syntax
 
-````
+```
 ULONG WDF_READ_PORT_ULONG(
-  _In_ WDFDEVICE Device,
-  _In_ PULONG    Port
+  WDFDEVICE Device,
+  PULONG    Port
 );
-````
+```
 
 ## Parameters
 

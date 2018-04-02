@@ -7,7 +7,7 @@ old-location: storage\ide_control_action.htm
 old-project: storage
 ms.assetid: a63d1a2f-d560-492f-9b73-198e42cb4300
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IDE_CONTROL_ACTION, IDE_CONTROL_ACTION enumeration [Storage Devices], IdePowerDown, IdePowerUp, IdeStart, IdeStop, IdeVendorDefined, irb/IDE_CONTROL_ACTION, irb/IdePowerDown, irb/IdePowerUp, irb/IdeStart, irb/IdeStop, irb/IdeVendorDefined, storage.ide_control_action, structs-ATA_f5df2197-3199-4b3f-ba0a-7a92cd75e3ac.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,15 +48,15 @@ The IDE_CONTROL_ACTION enumeration type indicates the control action to be perfo
 <div class="alert"><b>Note</b>  The ATA port driver and ATA miniport driver models may be altered or unavailable in the future. Instead, we recommend using the <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-driver">Storport driver</a> and <a href="https://msdn.microsoft.com/en-us/windows/hardware/drivers/storage/storport-miniport-drivers">Storport miniport</a> driver models.</div><div> </div>
 
 ## Syntax
-````
-typedef enum  { 
-  IdeStart          = 0,
-  IdeStop           = 1,
-  IdePowerUp        = 2,
-  IdePowerDown      = 3,
-  IdeVendorDefined  = 4
-} IDE_CONTROL_ACTION;
-````
+```
+typedef enum IDE_CONTROL_ACTION {
+  IdeStart          ,
+  IdeStop           ,
+  IdePowerUp        ,
+  IdePowerDown      ,
+  IdeVendorDefined
+} ;
+```
 
 ## Constants
 

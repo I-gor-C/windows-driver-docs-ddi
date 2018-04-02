@@ -7,7 +7,7 @@ old-location: display\idarg_out_monitorcreate.htm
 old-project: display
 ms.assetid: 713cd675-56a8-42d8-ac75-4af227c55dec
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IDARG_OUT_MONITORCREATE, IDARG_OUT_MONITORCREATE structure [Display Devices], display.idarg_out_monitorcreate, iddcx/IDARG_OUT_MONITORCREATE
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,11 +47,11 @@ req.typenames:
 Gives information about the newly created monitor object.
 
 ## Syntax
-````
-typedef struct IDARG_OUT_MONITORCREATE {
+```
+struct IDARG_OUT_MONITORCREATE {
   IDDCX_MONITOR MonitorObject;
-} IDARG_OUT_MONITORCREATE, *IDARG_OUT_MONITORCREATE;
-````
+};
+```
 
 ## Members
 

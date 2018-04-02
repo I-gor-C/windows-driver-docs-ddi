@@ -51,14 +51,14 @@ The <b>USBCAMD_Debug_LogEntry</b> function is called by the camera minidriver to
 
 ## Syntax
 
-````
-VOID USBCAMD_Debug_LogEntry(
-  _In_ CHAR  *Name,
-  _In_ ULONG Info1,
-  _In_ ULONG Info2,
-  _In_ ULONG Info3
+```
+void USBCAMD_Debug_LogEntry(
+  CHAR  *Name,
+  ULONG Info1,
+  ULONG Info2,
+  ULONG Info3
 );
-````
+```
 
 ## Parameters
 

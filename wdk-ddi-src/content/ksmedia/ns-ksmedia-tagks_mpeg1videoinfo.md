@@ -47,21 +47,21 @@ req.typenames: KS_MPEG1VIDEOINFO, *PKS_MPEG1VIDEOINFO
 The KS_MPEG1VIDEOINFO structure describes an MPEG-1 video stream.
 
 ## Syntax
-````
+```
 typedef struct tagKS_MPEG1VIDEOINFO {
   KS_VIDEOINFOHEADER hdr;
-  DWORD              dwStartTimeCode;
-  DWORD              cbSequenceHeader;
-  BYTE               bSequenceHeader[1];
-} KS_MPEG1VIDEOINFO, *PKS_MPEG1VIDEOINFO;
-````
+  DWORD              dwStartTimeCode;
+  DWORD              cbSequenceHeader;
+  BYTE               bSequenceHeader[1];
+} *PKS_MPEG1VIDEOINFO, KS_MPEG1VIDEOINFO;
+```
 
 ## Members
 
 
 `hdr`
 
-Specifies a <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a> structure that describes the details of the video stream.
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a> structure that describes the details of the video stream.
 
 `dwStartTimeCode`
 
@@ -83,4 +83,4 @@ The length of the <b>bSequenceHeader</b> member, in bytes.
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader.md">KS_VIDEOINFOHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567700">KS_VIDEOINFOHEADER</a>

@@ -7,7 +7,7 @@ old-location: display\miracast_chunk_info.htm
 old-project: display
 ms.assetid: 7015cbc5-f8d1-4e06-bb02-2706a26877f0
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: MIRACAST_CHUNK_INFO, MIRACAST_CHUNK_INFO structure [Display Devices], display.miracast_chunk_info, netdispumdddi/MIRACAST_CHUNK_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,25 +47,25 @@ req.typenames: MIRACAST_CHUNK_INFO
 Contains info about a specified wireless display (Miracast) encode chunk.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct MIRACAST_CHUNK_INFO {
   MIRACAST_CHUNK_TYPE ChunkType;
-  MIRACAST_CHUNK_ID   ChunkId;
-  UINT                ProcessingTime;
-  UINT                EncodeRate;
-} MIRACAST_CHUNK_INFO;
-````
+  MIRACAST_CHUNK_ID   ChunkId;
+  UINT                ProcessingTime;
+  UINT                EncodeRate;
+};
+```
 
 ## Members
 
 
 `ChunkType`
 
-The type of chunk that is to be processed, specified as a <a href="..\netdispumdddi\ne-netdispumdddi-miracast_chunk_type.md">MIRACAST_CHUNK_TYPE</a> enumeration value.
+The type of chunk that is to be processed, specified as a <a href="https://msdn.microsoft.com/library/windows/hardware/dn265474">MIRACAST_CHUNK_TYPE</a> enumeration value.
 
 `ChunkId`
 
-The identifier for this chunk, of type <a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_id.md">MIRACAST_CHUNK_ID</a>.
+The identifier for this chunk, of type <a href="https://msdn.microsoft.com/library/windows/hardware/dn265472">MIRACAST_CHUNK_ID</a>.
 
 `ProcessingTime`
 
@@ -84,8 +84,8 @@ The encode bit rate, in kilobits per second, that the user-mode driver reported 
 
 ## See Also
 
-<a href="..\netdispumdddi\ns-netdispumdddi-miracast_chunk_id.md">MIRACAST_CHUNK_ID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265472">MIRACAST_CHUNK_ID</a>
 
 
 
-<a href="..\netdispumdddi\ne-netdispumdddi-miracast_chunk_type.md">MIRACAST_CHUNK_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265474">MIRACAST_CHUNK_TYPE</a>

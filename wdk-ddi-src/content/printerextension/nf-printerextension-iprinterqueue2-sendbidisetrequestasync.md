@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# SendBidiSetRequestAsync method
+# IPrinterQueue2::SendBidiSetRequestAsync method
 Uses an XML string value to send a Bidi Set request as an asynchronous operation.
 
 This method allows the user to perform device maintenance tasks from within a UWP device app  for printers.
 
 ## Syntax
 
-````
+```
 HRESULT SendBidiSetRequestAsync(
-  [in]          BSTR                            bstrBidiRequest,
-  [in]          IPrinterBidiSetRequestCallback  *pCallback,
-  [out, retval] IPrinterExtensionAsyncOperation ** ppAsyncOperation
+  BSTR                            bstrBidiRequest,
+  IPrinterBidiSetRequestCallback  *pCallback,
+  IPrinterExtensionAsyncOperation **ppAsyncOperation
 );
-````
+```
 
 ## Parameters
 
@@ -89,12 +89,12 @@ This method returns the appropriate <b>HRESULT</b> value.
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensionasyncoperation.md">IPrinterExtensionAsyncOperation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265385">IPrinterBidiSetRequestCallback</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterqueue2.md">IPrinterQueue2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265387">IPrinterExtensionAsyncOperation</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterbidisetrequestcallback.md">IPrinterBidiSetRequestCallback</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265389">IPrinterQueue2</a>

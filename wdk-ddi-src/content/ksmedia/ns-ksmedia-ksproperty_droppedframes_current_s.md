@@ -47,14 +47,14 @@ req.typenames: KSPROPERTY_DROPPEDFRAMES_CURRENT_S, *PKSPROPERTY_DROPPEDFRAMES_CU
 The KSPROPERTY_DROPPEDFRAMES_CURRENT_S structure describes the dropped frame information from the minidriver.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_DROPPEDFRAMES_CURRENT_S {
   KSPROPERTY Property;
-  LONGLONG   PictureNumber;
-  LONGLONG   DropCount;
-  ULONG      AverageFrameSize;
-} KSPROPERTY_DROPPEDFRAMES_CURRENT_S, *PKSPROPERTY_DROPPEDFRAMES_CURRENT_S;
-````
+  LONGLONG   PictureNumber;
+  LONGLONG   DropCount;
+  ULONG      AverageFrameSize;
+}  *PKSPROPERTY_DROPPEDFRAMES_CURRENT_S;
+```
 
 ## Members
 
@@ -89,8 +89,8 @@ For more information about updating <b>PictureNumber</b> and <b>DropCount</b> se
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567806">PROPSETID_VIDCAP_DROPPEDFRAMES</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565135">KSPROPERTY_DROPPEDFRAMES_CURRENT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567806">PROPSETID_VIDCAP_DROPPEDFRAMES</a>

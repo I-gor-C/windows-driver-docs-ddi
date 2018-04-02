@@ -7,7 +7,7 @@ old-location: storage\ufs_geometry_descriptor.htm
 old-project: storage
 ms.assetid: DD3AEB66-E36B-4F18-AFEC-D344132D4B8C
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUFS_GEOMETRY_DESCRIPTOR, PUFS_GEOMETRY_DESCRIPTOR, PUFS_GEOMETRY_DESCRIPTOR structure pointer [Storage Devices], UFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR structure [Storage Devices], storage.ufs_geometry_descriptor, ufs/PUFS_GEOMETRY_DESCRIPTOR, ufs/UFS_GEOMETRY_DESCRIPTOR"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 <b>UFS_GEOMETRY_DESCRIPTOR</b> describes a device's geometric parameters.
 
 ## Syntax
-````
-typedef struct _UFS_GEOMETRY_DESCRIPTOR {
+```
+typedef struct UFS_GEOMETRY_DESCRIPTOR {
   UCHAR bLength;
   UCHAR bDescriptorIDN;
   UCHAR bMediaTechnology;
   UCHAR Reserved1;
-  UCHAR  qTotalRawDeviceCapacity[8];
+  UCHAR qTotalRawDeviceCapacity[8];
   UCHAR bMaxNumberLU;
   UCHAR dSegmentSize[4];
   UCHAR bAllocationUnitSize;
@@ -84,8 +84,8 @@ typedef struct _UFS_GEOMETRY_DESCRIPTOR {
   UCHAR dEnhanced4MaxNAllocU[4];
   UCHAR wEnhanced4CapAdjFac[2];
   UCHAR dOptimalLogicalBlockSize[4];
-} UFS_GEOMETRY_DESCRIPTOR, *PUFS_GEOMETRY_DESCRIPTOR;
-````
+} *PUFS_GEOMETRY_DESCRIPTOR, UFS_GEOMETRY_DESCRIPTOR;
+```
 
 ## Members
 

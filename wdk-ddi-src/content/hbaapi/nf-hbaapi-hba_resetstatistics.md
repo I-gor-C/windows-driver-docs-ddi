@@ -7,7 +7,7 @@ old-location: storage\hba_resetstatistics.htm
 old-project: storage
 ms.assetid: 4e889905-9c5e-446c-8d0e-09e445f7c1a4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: HBA_ResetStatistics, HBA_ResetStatistics routine [Storage Devices], fibreHBA_rtns_37577fde-9a33-4fd7-8e80-abbd7458b4ef.xml, hbaapi/HBA_ResetStatistics, storage.hba_resetstatistics
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>HBA_ResetStatistics</b> routine resets the statistics counters for the in
 
 ## Syntax
 
-````
+```
 void HBA_API HBA_ResetStatistics(
-  _In_ HBA_HANDLE HbaHandle,
-  _In_ HBA_UINT32 PortIndex
+  IN HBA_HANDLE Handle,
+  IN HBA_UINT32 PortIndex
 );
-````
+```
 
 ## Parameters
 
@@ -85,7 +85,7 @@ The <b>HBA_ResetStatistics</b> routine serves similar purpose to the <b>ResetSta
 
 ## See Also
 
-<a href="..\hbaapi\nf-hbaapi-hba_openadapter.md">HBA_OpenAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557097">HBA_OpenAdapter</a>
 
 
 

@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 For internal use only.
 
 ## Syntax
-````
-typedef enum _WDF_TASK_SEND_OPTIONS_FLAGS { 
-  WDF_TASK_SEND_OPTION_TIMEOUT      = 1,
-  WDF_TASK_SEND_OPTION_SYNCHRONOUS  = 2
+```
+typedef enum _WDF_TASK_SEND_OPTIONS_FLAGS {
+  WDF_TASK_SEND_OPTION_TIMEOUT      ,
+  WDF_TASK_SEND_OPTION_SYNCHRONOUS
 } WDF_TASK_SEND_OPTIONS_FLAGS;
-````
+```
 
 ## Constants
 

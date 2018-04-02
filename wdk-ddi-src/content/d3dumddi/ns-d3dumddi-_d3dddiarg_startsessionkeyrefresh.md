@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_startsessionkeyrefresh.htm
 old-project: display
 ms.assetid: f7494ea8-e639-4466-9d56-07d164f57b5b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDIARG_STARTSESSIONKEYREFRESH, D3DDDIARG_STARTSESSIONKEYREFRESH structure [Display Devices], UMDisplayDriver_param_Structs_63d20fb4-b769-45bf-8e3f-badb7b8e52e2.xml, _D3DDDIARG_STARTSESSIONKEYREFRESH, d3dumddi/D3DDDIARG_STARTSESSIONKEYREFRESH, display.d3dddiarg_startsessionkeyrefresh
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,20 +47,20 @@ req.typenames: D3DDDIARG_STARTSESSIONKEYREFRESH
 The D3DDDIARG_STARTSESSIONKEYREFRESH structure contains information about the random number for the encryption session.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDIARG_STARTSESSIONKEYREFRESH {
   HANDLE hCryptoSession;
-  VOID   *pRandomNumber;
-  UINT   RandomNumberSize;
+  VOID   *pRandomNumber;
+  UINT   RandomNumberSize;
 } D3DDDIARG_STARTSESSIONKEYREFRESH;
-````
+```
 
 ## Members
 
 
 `hCryptoSession`
 
-[in] A handle to the encryption session that is created in a call to the driver's <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a> function.
+[in] A handle to the encryption session that is created in a call to the driver's <a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a> function.
 
 `pRandomNumber`
 
@@ -79,4 +79,4 @@ typedef struct _D3DDDIARG_STARTSESSIONKEYREFRESH {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_createcryptosession.md">CreateCryptoSession</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451619">CreateCryptoSession</a>

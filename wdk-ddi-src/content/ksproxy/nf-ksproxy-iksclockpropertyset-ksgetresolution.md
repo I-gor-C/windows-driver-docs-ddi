@@ -44,22 +44,22 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsGetResolution method
+# IKsClockPropertySet::KsGetResolution method
 The <b>KsGetResolution</b> method retrieves the clock resolution from the underlying clock.
 
 ## Syntax
 
-````
+```
 HRESULT KsGetResolution(
-  [out] KSRESOLUTION *Resolution
+  KSRESOLUTION *Resolution
 );
-````
+```
 
 ## Parameters
 
 `Resolution`
 
-Pointer to a variable that receives a <a href="..\ks\ns-ks-ksresolution.md">KSRESOLUTION</a> structure that contains the granularity and error of the underlying clock.
+Pointer to a variable that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/ff566806">KSRESOLUTION</a> structure that contains the granularity and error of the underlying clock.
 
 
 ## Return Value
@@ -80,8 +80,8 @@ The proxy uses the <a href="https://msdn.microsoft.com/library/windows/hardware/
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksresolution.md">KSRESOLUTION</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565092">KSPROPERTY_CLOCK_RESOLUTION</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566806">KSRESOLUTION</a>

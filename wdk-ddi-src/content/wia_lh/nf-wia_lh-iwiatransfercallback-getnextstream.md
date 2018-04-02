@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetNextStream method
+# IWiaTransferCallback::GetNextStream method
 The <b>IWiaTransferCallback::GetNextStream</b> method is implemented by an image processing filter. It is called by the WIA service as a result of an application calling <b>IWiaTransfer::Download</b> or the preview component's <b>IWiaPreview::GetNewPreview</b>. The <b>IWiaTransfer</b> and <b>IWiaPreview</b> interfaces are described in the Microsoft Windows SDK documentation.
 
 ## Syntax
 
-````
+```
 HRESULT GetNextStream(
-  [in]  LONG    lFlags,
-  [in]  BSTR    bstrItemName,
-  [in]  BSTR    bstrFullItemName,
-  [out] IStream **ppDestination
+  LONG    lFlags,
+  BSTR    bstrItemName,
+  BSTR    bstrFullItemName,
+  IStream **ppDestination
 );
-````
+```
 
 ## Parameters
 
@@ -102,8 +102,8 @@ In its <b>IWiaTransferCallback::GetNextStream</b> implementation, the image proc
 
 ## See Also
 
-<a href="..\wia_lh\nn-wia_lh-iwiatransfercallback.md">IWiaTransferCallback</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543916">IWiaImageFilter::InitializeFilter</a>
+
+
+
+<a href="https://msdn.microsoft.com/c85e5faa-b14b-4775-a5cc-cec5e20dc974">IWiaTransferCallback</a>

@@ -47,16 +47,16 @@ req.typenames: IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH
 This structure contains the fields necessary in order for the Bus driver to carry out an <b>IsochAllocateBandwidth</b> request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH {
-  ULONG  nMaxBytesPerFrameRequested;
-  ULONG  fulSpeed;
+  ULONG  nMaxBytesPerFrameRequested;
+  ULONG  fulSpeed;
   HANDLE hBandwidth;
-  ULONG  BytesPerFrameAvailable;
-  ULONG  SpeedSelected;
-  ULONG  nBandwidthUnitsRequired;
+  ULONG  BytesPerFrameAvailable;
+  ULONG  SpeedSelected;
+  ULONG  nBandwidthUnitsRequired;
 } IRB_REQ_ISOCH_ALLOCATE_BANDWIDTH;
-````
+```
 
 ## Members
 

@@ -44,18 +44,18 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
-# SetInputData method
+# IBidiRequest::SetInputData method
 The <b>SetInputData</b> method sets the data to send to the printer.
 
 ## Syntax
 
-````
+```
 HRESULT SetInputData(
-  [in] const DWORD dwType,
-  [in] const BYTE  *pData,
-  [in] const UINT  uSize
+  const DWORD dwType,
+  const BYTE  *pData,
+  const UINT  uSize
 );
-````
+```
 
 ## Parameters
 
@@ -247,4 +247,4 @@ If an application calls <b>SetInputData</b> more than once, only the value of th
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144969">IBidiRequest</a>

@@ -7,7 +7,7 @@ old-location: kernel\auxklibgetimageexportdirectory.htm
 old-project: kernel
 ms.assetid: 994ba853-88b6-4456-8fdb-3199979df05e
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: AuxKlibGetImageExportDirectory, AuxKlibGetImageExportDirectory routine [Kernel-Mode Driver Architecture], aux_klib/AuxKlibGetImageExportDirectory, aux_klib_266e4e59-eaf6-47a4-a5d0-27fc55426273.xml, kernel.auxklibgetimageexportdirectory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,17 +50,17 @@ The <b>AuxKlibGetImageExportDirectory</b> routine returns an image module's expo
 
 ## Syntax
 
-````
+```
 PIMAGE_EXPORT_DIRECTORY AuxKlibGetImageExportDirectory(
-  _In_ PVOID ImageBase
+  PVOID ImageBase
 );
-````
+```
 
 ## Parameters
 
 `ImageBase`
 
-A pointer to the base of an image, which is obtained by calling <a href="..\aux_klib\nf-aux_klib-auxklibquerymoduleinformation.md">AuxKlibQueryModuleInformation</a>.
+A pointer to the base of an image, which is obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff540639">AuxKlibQueryModuleInformation</a>.
 
 
 ## Return Value
@@ -69,7 +69,7 @@ A pointer to the base of an image, which is obtained by calling <a href="..\aux_
 
 ## Remarks
 
-Drivers must call <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlibInitialize</a> before calling <b>AuxKlibGetImageExportDirectory</b>.
+Drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff540636">AuxKlibInitialize</a> before calling <b>AuxKlibGetImageExportDirectory</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,4 +81,4 @@ Drivers must call <a href="..\aux_klib\nf-aux_klib-auxklibinitialize.md">AuxKlib
 
 ## See Also
 
-<a href="..\aux_klib\nf-aux_klib-auxklibquerymoduleinformation.md">AuxKlibQueryModuleInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540639">AuxKlibQueryModuleInformation</a>

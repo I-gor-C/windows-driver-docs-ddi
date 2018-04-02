@@ -53,11 +53,11 @@ The <b>WDF_USB_PIPE_DIRECTION_OUT</b> function determines whether a specified US
 
 ## Syntax
 
-````
+```
 BOOLEAN WDF_USB_PIPE_DIRECTION_OUT(
-  _In_ UCHAR EndpointAddress
+  UCHAR EndpointAddress
 );
-````
+```
 
 ## Parameters
 
@@ -87,8 +87,8 @@ For more information about the <b>WDF_USB_PIPE_DIRECTION_OUT</b> function and US
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeisoutendpoint.md">WdfUsbTargetPipeIsOutEndpoint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553027">WDF_USB_PIPE_DIRECTION_IN</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_direction_in.md">WDF_USB_PIPE_DIRECTION_IN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551153">WdfUsbTargetPipeIsOutEndpoint</a>

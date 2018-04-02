@@ -7,7 +7,7 @@ old-location: kernel\iogetcurrentprocess.htm
 old-project: kernel
 ms.assetid: 97a5c14f-949a-4455-9109-79355e5dec37
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoGetCurrentProcess, IoGetCurrentProcess routine [Kernel-Mode Driver Architecture], k104_f59c640e-e335-46e0-a6ca-2f672bb6fc35.xml, kernel.iogetcurrentprocess, wdm/IoGetCurrentProcess
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,9 +50,11 @@ The <b>IoGetCurrentProcess</b> routine returns a pointer to the current process.
 
 ## Syntax
 
-````
-PEPROCESS  IoGetCurrentProcess(void);
-````
+```
+NTKERNELAPI PEPROCESS IoGetCurrentProcess(
+
+);
+```
 
 ## Parameters
 
@@ -78,4 +80,4 @@ This routine is identical to <a href="https://msdn.microsoft.com/library/windows
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-psgetcurrentthread.md">PsGetCurrentThread</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559936">PsGetCurrentThread</a>

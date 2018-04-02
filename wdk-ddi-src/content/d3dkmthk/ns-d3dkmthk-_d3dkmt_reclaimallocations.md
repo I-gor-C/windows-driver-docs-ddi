@@ -7,7 +7,7 @@ old-location: display\d3dkmt_reclaimallocations.htm
 old-project: display
 ms.assetid: 7fc9295b-90b4-4fa7-abcb-3e3e6a165203
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMT_RECLAIMALLOCATIONS, D3DKMT_RECLAIMALLOCATIONS structure [Display Devices], _D3DKMT_RECLAIMALLOCATIONS, d3dkmthk/D3DKMT_RECLAIMALLOCATIONS, display.d3dkmt_reclaimallocations
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: D3DKMT_RECLAIMALLOCATIONS
 ---
 
 # _D3DKMT_RECLAIMALLOCATIONS structure
-Describes video memory resources that are to be reclaimed and that the driver  previously offered  for reuse. Used with the  <a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreclaimallocations.md">D3DKMTReclaimAllocations</a> function.
+Describes video memory resources that are to be reclaimed and that the driver  previously offered  for reuse. Used with the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439451">D3DKMTReclaimAllocations</a> function.
 
 ## Syntax
-````
+```
 typedef struct _D3DKMT_RECLAIMALLOCATIONS {
-  D3DKMT_HANDLE       hDevice;
-  D3DKMT_HANDLE       *pResources;
-  const D3DKMT_HANDLE *HandleList;
-  BOOL                *pDiscarded;
-  UINT                NumAllocations;
+  D3DKMT_HANDLE       hDevice;
+  D3DKMT_HANDLE       *pResources;
+  CONST D3DKMT_HANDLE *HandleList;
+  BOOL                *pDiscarded;
+  UINT                NumAllocations;
 } D3DKMT_RECLAIMALLOCATIONS;
-````
+```
 
 ## Members
 
@@ -97,4 +97,4 @@ The value of <b>pDiscarded</b> can be <b>NULL</b>. If the driver sets it to <b>N
 
 ## See Also
 
-<a href="..\d3dkmthk\nf-d3dkmthk-d3dkmtreclaimallocations.md">D3DKMTReclaimAllocations</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439451">D3DKMTReclaimAllocations</a>

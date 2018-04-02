@@ -48,13 +48,12 @@ req.product: Windows 10 or later.
 The <b>LOCATION_DESIRED_ACCURACY </b>enumeration type defines values for the <a href="https://msdn.microsoft.com/1BF1568D-A889-4158-9C6D-160D9B06F0DE">SENSOR_PROPERTY_LOCATION_DESIRED_ACCURACY</a> property.
 
 ## Syntax
-````
-enum LOCATION_DESIRED_ACCURACY {
-  LOCATION_DESIRED_ACCURACY_DEFAULT  = 0, 
-  LOCATION_DESIRED_ACCURACY_HIGH     = ( LOCATION_DESIRED_ACCURACY_DEFAULT + 1 ) 
-
-};
-````
+```
+typedef enum LOCATION_DESIRED_ACCURACY {
+  LOCATION_DESIRED_ACCURACY_DEFAULT  ,
+  LOCATION_DESIRED_ACCURACY_HIGH
+} ;
+```
 
 ## Constants
 

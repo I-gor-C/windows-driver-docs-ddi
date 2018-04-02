@@ -7,7 +7,7 @@ old-location: kernel\po_fx_perf_state.htm
 old-project: kernel
 ms.assetid: 06A41593-A052-43A7-B3A7-02185B557FA3
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PPO_FX_PERF_STATE, PO_FX_PERF_STATE, PO_FX_PERF_STATE structure [Kernel-Mode Driver Architecture], PPO_FX_PERF_STATE, PPO_FX_PERF_STATE structure pointer [Kernel-Mode Driver Architecture], _PO_FX_PERF_STATE, kernel.po_fx_perf_state, wdm/PO_FX_PERF_STATE, wdm/PPO_FX_PERF_STATE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,19 +48,19 @@ req.product: Windows 10 or later.
 The <b>PO_FX_PERF_STATE</b> structure represents a performance state for a single component within a device.
 
 ## Syntax
-````
+```
 typedef struct _PO_FX_PERF_STATE {
   ULONGLONG Value;
-  PVOID     Context;
-} PO_FX_PERF_STATE, *PPO_FX_PERF_STATE;
-````
+  PVOID     Context;
+} *PPO_FX_PERF_STATE, PO_FX_PERF_STATE;
+```
 
 ## Members
 
 
 `Value`
 
-The value of this performance state. The units are specified by the <b>Unit</b> member of the <a href="..\wudfwdm\ns-wudfwdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> that contains this performance state. For example, if <b>Value</b> is 100000000 and the <b>Unit</b> member of the  <b>PO_FX_COMPONENT_PERF_SET</b> is <b>PoFxPerfStateUnitFrequency</b>, this performance state represents 100 MHz.
+The value of this performance state. The units are specified by the <b>Unit</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939833">PO_FX_COMPONENT_PERF_SET</a> that contains this performance state. For example, if <b>Value</b> is 100000000 and the <b>Unit</b> member of the  <b>PO_FX_COMPONENT_PERF_SET</b> is <b>PoFxPerfStateUnitFrequency</b>, this performance state represents 100 MHz.
 
 `Context`
 
@@ -70,7 +70,7 @@ A pointer to additional context for the performance state that cannot be present
 <div> </div>
 
 ## Remarks
-The <b>States</b> member of the <a href="..\wudfwdm\ns-wudfwdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a> structure contains an array of <b>PO_FX_PERF_STATE</b> elements.
+The <b>States</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn939833">PO_FX_COMPONENT_PERF_SET</a> structure contains an array of <b>PO_FX_PERF_STATE</b> elements.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,12 +84,12 @@ The <b>States</b> member of the <a href="..\wudfwdm\ns-wudfwdm-_po_fx_component_
 
 
 
-<a href="..\wdm\nf-wdm-pofxregistercomponentperfstates.md">PoFxRegisterComponentPerfStates</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn939833">PO_FX_COMPONENT_PERF_SET</a>
 
 
 
-<a href="..\wudfwdm\ne-wudfwdm-_po_fx_perf_state_unit.md">PO_FX_PERF_STATE_UNIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn939838">PO_FX_PERF_STATE_UNIT</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_po_fx_component_perf_set.md">PO_FX_COMPONENT_PERF_SET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn939778">PoFxRegisterComponentPerfStates</a>

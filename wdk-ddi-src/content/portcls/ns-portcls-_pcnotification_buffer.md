@@ -7,7 +7,7 @@ old-location: audio\pcnotification_buffer.htm
 old-project: audio
 ms.assetid: EEE091E4-29D1-4C6F-B543-C54736660CCA
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PPCNOTIFICATION_BUFFER, PCNOTIFICATION_BUFFER, PCNOTIFICATION_BUFFER structure [Audio Devices], PPCNOTIFICATION_BUFFER, PPCNOTIFICATION_BUFFER structure pointer [Audio Devices], _PCNOTIFICATION_BUFFER, audio.pcnotification_buffer, portcls/PCNOTIFICATION_BUFFER, portcls/PPCNOTIFICATION_BUFFER"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: PCNOTIFICATION_BUFFER, *PPCNOTIFICATION_BUFFER
 ---
 
 # _PCNOTIFICATION_BUFFER structure
-The notification buffer used by <a href="..\portcls\nn-portcls-iportclsnotifications.md">IPortClsNotifications</a>.
+The notification buffer used by <a href="https://msdn.microsoft.com/03F65E4E-C942-4748-8D3E-938A6AC51B2A">IPortClsNotifications</a>.
 
 ## Syntax
-````
+```
 typedef struct _PCNOTIFICATION_BUFFER {
   UCHAR NotificationBuffer[1];
-} PCNOTIFICATION_BUFFER, *PPCNOTIFICATION_BUFFER;
-````
+} *PPCNOTIFICATION_BUFFER, PCNOTIFICATION_BUFFER;
+```
 
 ## Members
 
 
 `NotificationBuffer`
 
-The notification buffer used by <a href="..\portcls\nn-portcls-iportclsnotifications.md">IPortClsNotifications</a>.
+The notification buffer used by <a href="https://msdn.microsoft.com/03F65E4E-C942-4748-8D3E-938A6AC51B2A">IPortClsNotifications</a>.
 
 
 ## Requirements
@@ -69,4 +69,4 @@ The notification buffer used by <a href="..\portcls\nn-portcls-iportclsnotificat
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iportclsnotifications.md">IPortClsNotifications</a>
+<a href="https://msdn.microsoft.com/03F65E4E-C942-4748-8D3E-938A6AC51B2A">IPortClsNotifications</a>

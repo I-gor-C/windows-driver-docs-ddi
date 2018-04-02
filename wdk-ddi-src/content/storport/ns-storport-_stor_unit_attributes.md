@@ -7,7 +7,7 @@ old-location: storage\stor_unit_attributes.htm
 old-project: storage
 ms.assetid: 9677C044-354B-4575-B2EC-187D1B4E8C61
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTOR_UNIT_ATTRIBUTES, PSTOR_UNIT_ATTRIBUTES, PSTOR_UNIT_ATTRIBUTES structure pointer [Storage Devices], STOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES structure [Storage Devices], _STOR_UNIT_ATTRIBUTES, storage.stor_unit_attributes, storport/PSTOR_UNIT_ATTRIBUTES, storport/STOR_UNIT_ATTRIBUTES"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 The <b>STOR_UNIT_ATTRIBUTES</b> structure contains bitfields indicating attribute support for a storage device unit.
 
 ## Syntax
-````
+```
 typedef struct _STOR_UNIT_ATTRIBUTES {
-  ULONG DeviceAttentionSupported  :1;
-  ULONG AsyncNotificationSupported  :1;
-  ULONG D3ColdNotSupported  :1;
-  ULONG Reserved  :29;
-} STOR_UNIT_ATTRIBUTES, *PSTOR_UNIT_ATTRIBUTES;
-````
+  ULONG  : 1  DeviceAttentionSupported;
+  ULONG  : 1  AsyncNotificationSupported;
+  ULONG  : 1  D3ColdNotSupported;
+  ULONG  : 29 Reserved;
+} *PSTOR_UNIT_ATTRIBUTES, STOR_UNIT_ATTRIBUTES;
+```
 
 ## Members
 
@@ -77,9 +77,9 @@ Set to 1 if the D3 Cold power state is NOT supported. Otherwise, set to 0.
 Reserved bits. Must be set to 0.
 
 ## Remarks
-The unit attributes are registered with Storport  using this structure as a parameter to the <a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a> routine.
+The unit attributes are registered with Storport  using this structure as a parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/jj206452">StorPortSetUnitAttributes</a> routine.
 
-If the miniport driver supports asynchronous notifications, the <b>AsyncNotificationSupported</b> field set to 1, it will send notifications to the Storport driver using the <a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a> routine.
+If the miniport driver supports asynchronous notifications, the <b>AsyncNotificationSupported</b> field set to 1, it will send notifications to the Storport driver using the <a href="https://msdn.microsoft.com/library/windows/hardware/hh920419">StorPortAsyncNotificationDetected</a> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -89,8 +89,8 @@ If the miniport driver supports asynchronous notifications, the <b>AsyncNotifica
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportsetunitattributes.md">StorPortSetUnitAttributes</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh920419">StorPortAsyncNotificationDetected</a>
 
 
 
-<a href="..\storport\nf-storport-storportasyncnotificationdetected.md">StorPortAsyncNotificationDetected</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj206452">StorPortSetUnitAttributes</a>

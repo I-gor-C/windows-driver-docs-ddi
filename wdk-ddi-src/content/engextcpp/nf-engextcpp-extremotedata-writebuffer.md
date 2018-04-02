@@ -7,7 +7,7 @@ old-location: debugger\extremotedata_writebuffer.htm
 old-project: debugger
 ms.assetid: b50f0cf3-4cd5-4f9e-9749-49b1c9365a8f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_0a08b058-ddc3-44e4-9d80-bb20d6e8f952.xml, ExtRemoteData, ExtRemoteData class [Windows Debugging], WriteBuffer method, ExtRemoteData::WriteBuffer, WriteBuffer method [Windows Debugging], WriteBuffer method [Windows Debugging], ExtRemoteData class, WriteBuffer,ExtRemoteData.WriteBuffer, debugger.extremotedata_writebuffer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# WriteBuffer method
-The <b>WriteBuffer</b> method writes data to the target's memory.  The data is located in the beginning of the region represented by the <a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a> object.  However, the size of the data can be different.
+# ExtRemoteData::WriteBuffer method
+The <b>WriteBuffer</b> method writes data to the target's memory.  The data is located in the beginning of the region represented by the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a> object.  However, the size of the data can be different.
 
 ## Syntax
 
-````
-ULONG WriteBuffer(
-  [in] PVOID Buffer,
-  [in] ULONG Bytes,
-  [in] bool  MustReadAll
+```
+ULONG  throw() WriteBuffer(
+  PVOID Buffer,
+  ULONG Bytes,
+  bool  MustWriteAll
 );
-````
+```
 
 ## Parameters
 
@@ -85,7 +85,7 @@ Specifies the number of bytes to write.  The <i>Buffer</i> buffer must be at lea
 
 ## See Also
 
-<a href="..\engextcpp\nl-engextcpp-extremotedata.md">ExtRemoteData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544008">ExtRemoteData</a>
 
 
 

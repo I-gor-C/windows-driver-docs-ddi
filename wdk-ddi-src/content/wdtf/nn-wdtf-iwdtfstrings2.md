@@ -7,7 +7,7 @@ old-location: dtf\iwdtfstrings2.htm
 old-project: dtf
 ms.assetid: ea7ebda9-9588-4c72-bac6-2bae1f80538e
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFStrings2, IWDTFStrings2 interface [Windows Device Testing Framework], IWDTFStrings2 interface [Windows Device Testing Framework], described, Microsoft.WDTF.IWDTFStrings2, dtf.iwdtfstrings2, wdtf/IWDTFStrings2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,8 +56,8 @@ Defines operations and properties for a collection of strings.
 | ---- |:---- |
 | [IWDTFStrings2::Add](nf-wdtf-iwdtfstrings2-add.md) | Adds a single string to the collection. |
 | [IWDTFStrings2::get__NewEnum](nf-wdtf-iwdtfstrings2-get__newenum.md) | Gets a new iteration variable that the For Each loop structure implicitly uses. |
-| [IWDTFStrings2::get_Count](nf-wdtf-iwdtfstrings2-get_count.md) | Gets the number of devices that are currently provided by the DeviceDepot. |
-| [IWDTFStrings2::get_Item](nf-wdtf-iwdtfstrings2-get_item.md) | Gets an individual device in the DeviceDepot. |
+| [IWDTFStrings2::get_Count](nf-wdtf-iwdtfstrings2-get_count.md) | Gets the number of strings in the collection. |
+| [IWDTFStrings2::get_Item](nf-wdtf-iwdtfstrings2-get_item.md) | Gets an individual string in the collection. |
 | [IWDTFStrings2::Remove](nf-wdtf-iwdtfstrings2-remove.md) | Removes a string from the collection. |
 
 

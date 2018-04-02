@@ -7,7 +7,7 @@ old-location: kernel\rtlunicodestringvalidate.htm
 old-project: kernel
 ms.assetid: 7c4f452e-df7b-401b-a62e-20e0b2164172
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUnicodeStringValidate, RtlUnicodeStringValidate function [Kernel-Mode Driver Architecture], kernel.rtlunicodestringvalidate, ntstrsafe/RtlUnicodeStringValidate, safestrings_65cec2b6-a948-423e-b7e3-786ae2a9ab1a.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,15 +46,15 @@ req.typenames: SYSTEM_POWER_STATE_CONTEXT, *PSYSTEM_POWER_STATE_CONTEXT
 
 
 # RtlUnicodeStringValidate function
-The <b>RtlUnicodeStringValidate</b> function validates the contents of a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure.
+The <b>RtlUnicodeStringValidate</b> function validates the contents of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure.
 
 ## Syntax
 
-````
-NTSTATUS RtlUnicodeStringValidate(
-  _In_ PCUNICODE_STRING SourceString
+```
+NTSTRSAFEDDI RtlUnicodeStringValidate(
+  PCUNICODE_STRING SourceString
 );
-````
+```
 
 ## Parameters
 
@@ -110,7 +110,7 @@ For information about how to test NTSTATUS values, see <a href="https://msdn.mic
 
 ## Remarks
 
-The <i>SourceString</i> pointer cannot be <b>NULL</b>. If you need to specify a <b>NULL</b> pointer value, use the <a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringvalidateex.md">RtlUnicodeStringValidateEx</a> function.
+The <i>SourceString</i> pointer cannot be <b>NULL</b>. If you need to specify a <b>NULL</b> pointer value, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562982">RtlUnicodeStringValidateEx</a> function.
 
 For more information about the safe string functions, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff565508">Using Safe String Functions</a>.
 
@@ -125,8 +125,8 @@ For more information about the safe string functions, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562982">RtlUnicodeStringValidateEx</a>
 
 
 
-<a href="..\ntstrsafe\nf-ntstrsafe-rtlunicodestringvalidateex.md">RtlUnicodeStringValidateEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

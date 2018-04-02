@@ -53,11 +53,11 @@ The <b>WDF_ABS_TIMEOUT_IN_SEC</b> function converts a specified number of second
 
 ## Syntax
 
-````
+```
 LONGLONG WDF_ABS_TIMEOUT_IN_SEC(
-  _In_ ULONGLONG Time
+  ULONGLONG Time
 );
-````
+```
 
 ## Parameters
 
@@ -86,4 +86,4 @@ An absolute time value is a time value that specifies a specific date and time. 
 
 ## See Also
 
-<a href="..\wdfcore\nf-wdfcore-wdf_rel_timeout_in_sec.md">WDF_REL_TIMEOUT_IN_SEC</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552449">WDF_REL_TIMEOUT_IN_SEC</a>

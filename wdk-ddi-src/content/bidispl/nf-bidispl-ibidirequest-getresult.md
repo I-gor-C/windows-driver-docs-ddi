@@ -44,16 +44,16 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
-# GetResult method
+# IBidiRequest::GetResult method
 The <b>GetResult</b> method tells whether the bidi request was successful.
 
 ## Syntax
 
-````
+```
 HRESULT GetResult(
-  [out] HRESULT *phr
+  HRESULT *phr
 );
-````
+```
 
 ## Parameters
 
@@ -139,4 +139,4 @@ Note that the return value indicates whether the method was successful. It does 
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144969">IBidiRequest</a>

@@ -7,7 +7,7 @@ old-location: kernel\iowmideviceobjecttoinstancename.htm
 old-project: kernel
 ms.assetid: 18692c0d-8b74-495d-b66a-2873837ff797
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoWMIDeviceObjectToInstanceName, IoWMIDeviceObjectToInstanceName routine [Kernel-Mode Driver Architecture], k104_9341dc2b-c948-44bd-891d-a530a8676259.xml, kernel.iowmideviceobjecttoinstancename, wdm/IoWMIDeviceObjectToInstanceName
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,19 +50,19 @@ The <b>IoWMIDeviceObjectToInstanceName</b> routine determines the instance name 
 
 ## Syntax
 
-````
-NTSTATUS IoWMIDeviceObjectToInstanceName(
-  _In_  PVOID           DataBlockObject,
-  _In_  PDEVICE_OBJECT  DeviceObject,
-  _Out_ PUNICODE_STRING InstanceName
+```
+NTKERNELAPI NTSTATUS IoWMIDeviceObjectToInstanceName(
+  PVOID           DataBlockObject,
+  PDEVICE_OBJECT  DeviceObject,
+  PUNICODE_STRING InstanceName
 );
-````
+```
 
 ## Parameters
 
 `DataBlockObject`
 
-Pointer to a WMI data block object. The caller opens the data block object for the WMI class with <a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>.
+Pointer to a WMI data block object. The caller opens the data block object for the WMI class with <a href="https://msdn.microsoft.com/library/windows/hardware/ff550453">IoWMIOpenBlock</a>.
 
 `DeviceObject`
 
@@ -70,7 +70,7 @@ Specifies a device object. The routine returns the instance name for the driver 
 
 `InstanceName`
 
-Pointer to the <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that the routine uses to return the instance name. The caller frees the returned buffer within <b>UNICODE_STRING</b>.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that the routine uses to return the instance name. The caller frees the returned buffer within <b>UNICODE_STRING</b>.
 
 
 ## Return Value
@@ -119,12 +119,12 @@ The driver does not implement any instances of the WMI class specified by <i>Dat
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iowmiopenblock.md">IoWMIOpenBlock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 
 
 
-<a href="..\wdm\nf-wdm-iowmihandletoinstancename.md">IoWMIHandleToInstanceName</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550443">IoWMIHandleToInstanceName</a>
 
 
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550453">IoWMIOpenBlock</a>

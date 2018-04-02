@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 
 
 # wiasPrintDebugHResult function
-The <b>wiasPrintDebugHResult</b> function is <b>obsolete</b> for Windows XP and later, and is no longer supported. Use the <a href="..\wiautil\nf-wiautil-wias_lhresult.md">WIAS_LHRESULT</a> macro instead.
+The <b>wiasPrintDebugHResult</b> function is <b>obsolete</b> for Windows XP and later, and is no longer supported. Use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff549589">WIAS_LHRESULT</a> macro instead.
 
 This function prints an HRESULT string on the Device Manager debug console.
 
 ## Syntax
 
-````
-VOID __stdcall wiasPrintDebugHResult(
-   HINSTANCE  hInstance,
-   HRESULT    hr
+```
+void wiasPrintDebugHResult(
+  HINSTANCE hInstance,
+  HRESULT   hr
 );
-````
+```
 
 ## Parameters
 
@@ -86,4 +86,4 @@ On success, the function returns S_OK. If the function fails, it returns a stand
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wias_lhresult.md">WIAS_LHRESULT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549589">WIAS_LHRESULT</a>

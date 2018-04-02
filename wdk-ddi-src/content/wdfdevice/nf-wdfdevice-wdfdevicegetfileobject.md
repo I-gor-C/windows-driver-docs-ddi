@@ -53,12 +53,12 @@ The <b>WdfDeviceGetFileObject</b> method returns a handle to the framework file 
 
 ## Syntax
 
-````
+```
 WDFFILEOBJECT WdfDeviceGetFileObject(
-  _In_ WDFDEVICE    Device,
-  _In_ PFILE_OBJECT FileObject
+  WDFDEVICE    Device,
+  PFILE_OBJECT FileObject
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A handle to a framework device object.
 
 `FileObject`
 
-A pointer to a WDM <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure.
+A pointer to a WDM <a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a> structure.
 
 
 ## Return Value
@@ -133,4 +133,4 @@ if(fileObject == NULL){
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iogetdeviceobjectpointer.md">IoGetDeviceObjectPointer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549198">IoGetDeviceObjectPointer</a>

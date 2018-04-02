@@ -7,7 +7,7 @@ old-location: display\dxvaddi_videoprocessbltflags.htm
 old-project: display
 ms.assetid: 790a18fa-5481-432a-921b-6310a0ab78d7
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXVA2_Structs_8c40b10b-d3f4-420b-986a-455b20b01288.xml, DXVADDI_VIDEOPROCESSBLTFLAGS, DXVADDI_VIDEOPROCESSBLTFLAGS structure [Display Devices], _DXVADDI_VIDEOPROCESSBLTFLAGS, d3dumddi/DXVADDI_VIDEOPROCESSBLTFLAGS, display.dxvaddi_videoprocessbltflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,21 +47,21 @@ req.typenames: DXVADDI_VIDEOPROCESSBLTFLAGS
 The DXVADDI_VIDEOPROCESSBLTFLAGS structure identifies changes in the current destination surface from the previous destination surface.
 
 ## Syntax
-````
+```
 typedef struct _DXVADDI_VIDEOPROCESSBLTFLAGS {
   union {
     struct {
-      UINT BackgroundChanged  :1;
-      UINT TargetRectChanged  :1;
-      UINT ColorDataChanged  :1;
-      UINT AlphaChanged  :1;
-      UINT Reserved  :12;
-      UINT DestData  :16;
+      UINT  : 1  BackgroundChanged;
+      UINT  : 1  TargetRectChanged;
+      UINT  : 1  ColorDataChanged;
+      UINT  : 1  AlphaChanged;
+      UINT  : 12 Reserved;
+      UINT  : 16 DestData;
     };
-    UINT   Value;
+    UINT Value;
   };
 } DXVADDI_VIDEOPROCESSBLTFLAGS;
-````
+```
 
 ## Members
 
@@ -75,4 +75,4 @@ typedef struct _DXVADDI_VIDEOPROCESSBLTFLAGS {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_videoprocessblt.md">D3DDDIARG_VIDEOPROCESSBLT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544102">D3DDDIARG_VIDEOPROCESSBLT</a>

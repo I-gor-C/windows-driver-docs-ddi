@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 The <b>WDF_WMI_PROVIDER_CONTROL</b> enumeration defines the type of control functions that a WMI data provider can support.
 
 ## Syntax
-````
-typedef enum _WDF_WMI_PROVIDER_CONTROL { 
-  WdfWmiControlInvalid   = 0,
-  WdfWmiEventControl     = 1,
-  WdfWmiInstanceControl  = 2
+```
+typedef enum _WDF_WMI_PROVIDER_CONTROL {
+  WdfWmiControlInvalid   ,
+  WdfWmiEventControl     ,
+  WdfWmiInstanceControl
 } WDF_WMI_PROVIDER_CONTROL;
-````
+```
 
 ## Constants
 
@@ -80,7 +80,7 @@ typedef enum _WDF_WMI_PROVIDER_CONTROL {
 
 ## Remarks
 
-The <b>WDF_WMI_PROVIDER_CONTROL</b> enumeration is used as an input parameter to the <a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a> method and the driver's <a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a> callback function.
+The <b>WDF_WMI_PROVIDER_CONTROL</b> enumeration is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551200">WdfWmiProviderIsEnabled</a> method and the driver's <a href="https://msdn.microsoft.com/89b48747-d3aa-48c7-825c-94545f378f07">EvtWmiProviderFunctionControl</a> callback function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,8 +90,8 @@ The <b>WDF_WMI_PROVIDER_CONTROL</b> enumeration is used as an input parameter to
 
 ## See Also
 
-<a href="..\wdfwmi\nc-wdfwmi-evt_wdf_wmi_provider_function_control.md">EvtWmiProviderFunctionControl</a>
+<a href="https://msdn.microsoft.com/89b48747-d3aa-48c7-825c-94545f378f07">EvtWmiProviderFunctionControl</a>
 
 
 
-<a href="..\wdfwmi\nf-wdfwmi-wdfwmiproviderisenabled.md">WdfWmiProviderIsEnabled</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551200">WdfWmiProviderIsEnabled</a>

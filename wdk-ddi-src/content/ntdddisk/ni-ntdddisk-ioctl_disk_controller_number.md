@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_controller_number.htm
 old-project: storage
 ms.assetid: dbf7829b-c5b9-4428-a296-34199a726ec5
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_DISK_CONTROLLER_NUMBER, IOCTL_DISK_CONTROLLER_NUMBER control code [Storage Devices], k307_227ab511-78ff-4aba-be29-3429329d05e5.xml, ntdddisk/IOCTL_DISK_CONTROLLER_NUMBER, storage.ioctl_disk_controller_number
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ None.
 None.
 
 ### Output Buffer
-The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the <a href="..\ntdddisk\ns-ntdddisk-_disk_controller_number.md">DISK_CONTROLLER_NUMBER</a> data.
+The buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b> contains the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552591">DISK_CONTROLLER_NUMBER</a> data.
 
 ### Output Buffer Length
 <b>Parameters.DeviceIoControl.OutputBufferLength</b> in the IO_STACK_LOCATION structure of the IRP indicates the size, in bytes, of the output buffer, which must be &gt;= <b>sizeof</b>(DISK_CONTROLLER_NUMBER).
@@ -80,4 +80,4 @@ The <b>Status</b> field is set to STATUS_SUCCESS if the operation is successful.
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_disk_controller_number.md">DISK_CONTROLLER_NUMBER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552591">DISK_CONTROLLER_NUMBER</a>

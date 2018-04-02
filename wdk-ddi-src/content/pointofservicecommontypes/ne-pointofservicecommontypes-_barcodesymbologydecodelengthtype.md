@@ -47,13 +47,13 @@ req.typenames: BarcodeSymbologyDecodeLengthType
 The <b>BarcodeSymbologyDecodeLengthType</b>   enum describes values for the decode length which can be set to support a range, two discrete values, or be set to any length.
 
 ## Syntax
-````
-typedef enum _BarcodeSymbologyDecodeLengthType { 
-  DecodeLengthType_AnyLength  = 0,
-  DecodeLengthType_Discrete   = 1,
-  DecodeLengthType_Range      = 2
+```
+typedef enum _BarcodeSymbologyDecodeLengthType {
+  DecodeLengthType_AnyLength  ,
+  DecodeLengthType_Discrete   ,
+  DecodeLengthType_Range
 } BarcodeSymbologyDecodeLengthType;
-````
+```
 
 ## Constants
 

@@ -7,7 +7,7 @@ old-location: kernel\kbugcheck_data.htm
 old-project: kernel
 ms.assetid: 9fecf57b-e77a-458e-80ce-118eed2d48b4
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PKBUGCHECK_DATA, KBUGCHECK_DATA, KBUGCHECK_DATA structure [Kernel-Mode Driver Architecture], PKBUGCHECK_DATA, PKBUGCHECK_DATA structure pointer [Kernel-Mode Driver Architecture], _KBUGCHECK_DATA, aux_klib/KBUGCHECK_DATA, aux_klib/PKBUGCHECK_DATA, aux_klib_ced3c2df-3d09-45d8-8ae8-049d2bc46160.xml, kernel.kbugcheck_data"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,23 +47,23 @@ req.typenames: KBUGCHECK_DATA, *PKBUGCHECK_DATA
 The <b>KBUGCHECK_DATA</b> structure contains bug check parameters.
 
 ## Syntax
-````
+```
 typedef struct _KBUGCHECK_DATA {
-  ULONG     BugCheckDataSize;
-  ULONG     BugCheckCode;
+  ULONG     BugCheckDataSize;
+  ULONG     BugCheckCode;
   ULONG_PTR Parameter1;
   ULONG_PTR Parameter2;
   ULONG_PTR Parameter3;
   ULONG_PTR Parameter4;
 } KBUGCHECK_DATA, *PKBUGCHECK_DATA;
-````
+```
 
 ## Members
 
 
 `BugCheckDataSize`
 
-The size, in bytes, of the <b>KBUGCHECK_DATA</b> structure. Callers of <a href="..\aux_klib\nf-aux_klib-auxklibgetbugcheckdata.md">AuxKlibGetBugCheckData</a> must supply this value.
+The size, in bytes, of the <b>KBUGCHECK_DATA</b> structure. Callers of <a href="https://msdn.microsoft.com/library/windows/hardware/ff540630">AuxKlibGetBugCheckData</a> must supply this value.
 
 `BugCheckCode`
 
@@ -86,7 +86,7 @@ Bug check parameter 3. For more information about this parameter, see specific <
 Bug check parameter 4. For more information about this parameter, see specific <a href="https://msdn.microsoft.com/DBA85578-97CF-4BD7-A67D-1C7AD2E9B2BB">bug check codes</a>.
 
 ## Remarks
-The <b>KBUGCHECK_DATA</b> structure is used as a parameter to <a href="..\aux_klib\nf-aux_klib-auxklibgetbugcheckdata.md">AuxKlibGetBugCheckData</a>.
+The <b>KBUGCHECK_DATA</b> structure is used as a parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff540630">AuxKlibGetBugCheckData</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -95,4 +95,4 @@ The <b>KBUGCHECK_DATA</b> structure is used as a parameter to <a href="..\aux_kl
 
 ## See Also
 
-<a href="..\aux_klib\nf-aux_klib-auxklibgetbugcheckdata.md">AuxKlibGetBugCheckData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540630">AuxKlibGetBugCheckData</a>

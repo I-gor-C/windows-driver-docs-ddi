@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_ExtentHeightInMicrons method
+# IPrintSchemaPageImageableSize::get_ExtentHeightInMicrons method
 Gets the vertical distance between the origin and the bounding limit of the canvas application media size.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_ExtentHeightInMicrons(
-  [out, retval] ULONG *pulExtentHeight
+  ULONG *pulExtentHeight
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemapageimageablesize.md">IPrintSchemaPageImageableSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451366">IPrintSchemaPageImageableSize</a>

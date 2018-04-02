@@ -7,7 +7,7 @@ old-location: kernel\popentrylist.htm
 old-project: kernel
 ms.assetid: b24ec573-4164-4016-a19d-574ebd75ec8f
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PopEntryList, PopEntryList routine [Kernel-Mode Driver Architecture], k109_a5d1634c-e1ab-43ac-ab3f-d0993263f5bb.xml, kernel.popentrylist, wdm/PopEntryList
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,11 +50,11 @@ The <b>PopEntryList</b> routine removes the first entry from a singly linked lis
 
 ## Syntax
 
-````
+```
 PSINGLE_LIST_ENTRY PopEntryList(
-  _Inout_ PSINGLE_LIST_ENTRY ListHead
+  PSINGLE_LIST_ENTRY ListHead
 );
-````
+```
 
 ## Parameters
 
@@ -85,8 +85,8 @@ Callers of <b>PopEntryList</b> can be running at any IRQL. If <b>PopEntryList</b
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exinterlockedpopentrylist.md">ExInterlockedPopEntryList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545408">ExInterlockedPopEntryList</a>
 
 
 
-<a href="..\wudfwdm\nf-wudfwdm-pushentrylist.md">PushEntryList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559964">PushEntryList</a>

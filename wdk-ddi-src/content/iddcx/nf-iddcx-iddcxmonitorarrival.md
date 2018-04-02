@@ -7,7 +7,7 @@ old-location: display\iddcxmonitorarrival.htm
 old-project: display
 ms.assetid: e73a8111-9e54-4040-a38a-441948e10212
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IddCxMonitorArrival, IddCxMonitorArrival method [Display Devices], display.iddcxmonitorarrival, iddcx/IddCxMonitorArrival
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ An OS callback function the driver calls to report a monitor arrival on the WDDM
 
 ## Syntax
 
-````
+```
 NTSTATUS IddCxMonitorArrival(
-  _In_  IDDCX_MONITOR             AdapterObject,
-  _Out_ IDARG_OUT_MONITORARRIVAL* pOutArgs
+  IDDCX_MONITOR            AdapterObject,
+  IDARG_OUT_MONITORARRIVAL *pOutArgs
 );
-````
+```
 
 ## Parameters
 

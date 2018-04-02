@@ -56,7 +56,7 @@ Not used with this operation; set to <b>NULL</b>.
 Not used with this operation; set to <b>0</b> (zero).
 
 ### Output Buffer
-Pointer to a buffer that receives a <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_msr_retrieve_device_authentication_data.md">MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA</a>.
+Pointer to a buffer that receives a <a href="https://msdn.microsoft.com/library/windows/hardware/dn772186">MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA</a>.
 
 ### Output Buffer Length
 Size of the output buffer, in bytes. Set to sizeof(<b>MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA</b>).

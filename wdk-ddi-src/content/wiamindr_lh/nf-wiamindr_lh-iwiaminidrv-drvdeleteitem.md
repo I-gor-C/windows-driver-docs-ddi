@@ -45,18 +45,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvDeleteItem method
+# IWiaMiniDrv::drvDeleteItem method
 The <b>IWiaMiniDrv::drvDeleteItem</b> method deletes the current driver item.
 
 ## Syntax
 
-````
+```
 HRESULT drvDeleteItem(
-  [in]  BYTE *pWiasContext,
-  [in]  LONG lFlags,
-  [out] LONG *plDevErrVal
+  BYTE *__MIDL__IWiaMiniDrv0053,
+  LONG __MIDL__IWiaMiniDrv0054,
+  LONG *__MIDL__IWiaMiniDrv0055
 );
-````
+```
 
 ## Parameters
 
@@ -108,7 +108,7 @@ Since the WIA service verifies these conditions, it is not necessary for the min
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 

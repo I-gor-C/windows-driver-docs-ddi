@@ -47,14 +47,14 @@ req.typenames: NFC_CX_CE_MODE_CONFIG, *PNFC_CX_CE_MODE_CONFIG
 This enumeration specifies CE listening mode flags.
 
 ## Syntax
-````
-typedef enum _NFC_CX_CE_MODE_CONFIG { 
-  NFC_CX_CE_NFC_A    = 0x01,
-  NFC_CX_CE_NFC_B    = 0x02,
-  NFC_CX_CE_NFC_F    = 0x04,
-  NFC_CX_CE_DEFAULT  = NFC_CX_CE_NFC_A | NFC_CX_CE_NFC_B | NFC_CX_CE_NFC_F
+```
+typedef enum _NFC_CX_CE_MODE_CONFIG {
+  NFC_CX_CE_NFC_A    ,
+  NFC_CX_CE_NFC_B    ,
+  NFC_CX_CE_NFC_F    ,
+  NFC_CX_CE_DEFAULT
 } NFC_CX_CE_MODE_CONFIG, *PNFC_CX_CE_MODE_CONFIG;
-````
+```
 
 ## Constants
 

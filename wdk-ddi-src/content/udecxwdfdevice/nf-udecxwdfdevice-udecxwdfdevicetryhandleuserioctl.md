@@ -7,7 +7,7 @@ old-location: buses\udecxwdfdevicetryhandleuserioctl.htm
 old-project: usbref
 ms.assetid: CC199F5C-BF05-4F1F-BEE4-8693F9156D8A
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UdecxWdfDeviceTryHandleUserIoctl, UdecxWdfDeviceTryHandleUserIoctl function [Buses], buses.udecxwdfdevicetryhandleuserioctl, udecxwdfdevice/UdecxWdfDeviceTryHandleUserIoctl
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ Attempts to handle an IOCTL request sent by a user-mode software.
 
 ## Syntax
 
-````
-FORCEINLINE BOOLEAN UdecxWdfDeviceTryHandleUserIoctl(
-  _In_ WDFDEVICE  Device,
-  _In_ WDFREQUEST Request
+```
+BOOLEAN UdecxWdfDeviceTryHandleUserIoctl(
+  WDFDEVICE  UdecxWdfDevice,
+  WDFREQUEST Request
 );
-````
+```
 
 ## Parameters
 
@@ -85,10 +85,10 @@ The UDE client driver presents itself to user-mode software as a host controller
 
 <ul>
 <li>
-<a href="..\usbioctl\ni-usbioctl-ioctl_get_hcd_driverkey_name.md">IOCTL_GET_HCD_DRIVERKEY_NAME</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537236">IOCTL_GET_HCD_DRIVERKEY_NAME</a>
 </li>
 <li>
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_root_hub_name.md">IOCTL_USB_GET_ROOT_HUB_NAME</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537326">IOCTL_USB_GET_ROOT_HUB_NAME</a>
 </li>
 <li>
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537344">IOCTL_USB_USER_REQUEST</a>
@@ -107,8 +107,8 @@ The UDE client driver presents itself to user-mode software as a host controller
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>

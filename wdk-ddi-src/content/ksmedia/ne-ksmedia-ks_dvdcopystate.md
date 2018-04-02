@@ -47,15 +47,15 @@ req.typenames: KS_DVDCOPYSTATE
 The KS_DVDCOPYSTATE enumeration describes the progress of the DVD copyright protection initialization, authentication and key negotiation sequence.
 
 ## Syntax
-````
-typedef enum  { 
-  KS_DVDCOPYSTATE_INITIALIZE                   = 0,
-  KS_DVDCOPYSTATE_INITIALIZE_TITLE             = 1,
-  KS_DVDCOPYSTATE_AUTHENTICATION_NOT_REQUIRED  = 2,
-  KS_DVDCOPYSTATE_AUTHENTICATION_REQUIRED      = 3,
-  KS_DVDCOPYSTATE_DONE                         = 4
-} KS_DVDCOPYSTATE;
-````
+```
+typedef enum KS_DVDCOPYSTATE {
+  KS_DVDCOPYSTATE_INITIALIZE                   ,
+  KS_DVDCOPYSTATE_INITIALIZE_TITLE             ,
+  KS_DVDCOPYSTATE_AUTHENTICATION_NOT_REQUIRED  ,
+  KS_DVDCOPYSTATE_AUTHENTICATION_REQUIRED      ,
+  KS_DVDCOPYSTATE_DONE
+} ;
+```
 
 ## Constants
 
@@ -99,4 +99,4 @@ typedef enum  {
 
 
 
-<a href="..\ksmedia\ns-ksmedia-_ks_dvdcopy_set_copy_state.md">KS_DVDCOPY_SET_COPY_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567639">KS_DVDCOPY_SET_COPY_STATE</a>

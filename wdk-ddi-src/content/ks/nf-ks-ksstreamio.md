@@ -50,21 +50,21 @@ The <b>KsStreamIo</b> function performs a stream read or write against the speci
 
 ## Syntax
 
-````
-NTSTATUS KsStreamIo(
-  _In_     PFILE_OBJECT            FileObject ,
-  _In_opt_ PKEVENT                 Event ,
-  _In_opt_ PVOID                   PortContext ,
-  _In_opt_ PIO_COMPLETION_ROUTINE  CompletionRoutine ,
-  _In_opt_ PVOID                   CompletionContext ,
-  _In_opt_ KSCOMPLETION_INVOCATION CompletionInvocationFlags ,
-  _Out_    PIO_STATUS_BLOCK        IoStatusBlock ,
-  _Inout_  PVOID                   StreamHeaders ,
-  _In_     ULONG                   Length ,
-  _In_     ULONG                   Flags ,
-  _In_     KPROCESSOR_MODE         RequestorMode 
+```
+KSDDKAPI NTSTATUS KsStreamIo(
+  PFILE_OBJECT                                      FileObject,
+  PKEVENT                                           Event,
+  PVOID                                             PortContext,
+  PIO_COMPLETION_ROUTINE                            CompletionRoutine,
+  PVOID                                             CompletionContext,
+  KSCOMPLETION_INVOCATION CompletionInvocationFlags OPTIONAL,
+  PIO_STATUS_BLOCK                                  IoStatusBlock,
+  PVOID                                             StreamHeaders,
+  ULONG                                             Length,
+  ULONG                                             Flags,
+  KPROCESSOR_MODE                                   RequestorMode
 );
-````
+```
 
 ## Parameters
 

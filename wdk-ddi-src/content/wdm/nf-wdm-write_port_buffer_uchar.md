@@ -7,7 +7,7 @@ old-location: kernel\write_port_buffer_uchar.htm
 old-project: kernel
 ms.assetid: 59a7b11a-c6b6-4452-9518-1e5c7c07ec18
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: WRITE_PORT_BUFFER_UCHAR, WRITE_PORT_BUFFER_UCHAR routine [Kernel-Mode Driver Architecture], k103_189a5664-0e12-4e18-a52c-6d04c3e8a7fd.xml, kernel.write_port_buffer_uchar, wdm/WRITE_PORT_BUFFER_UCHAR
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,13 +51,13 @@ The <b>WRITE_PORT_BUFFER_UCHAR</b> routine writes a number of bytes from a buffe
 
 ## Syntax
 
-````
-VOID WRITE_PORT_BUFFER_UCHAR(
-  _In_ PUCHAR Port,
-  _In_ PUCHAR Buffer,
-  _In_ ULONG  Count
+```
+NTHALAPI VOID WRITE_PORT_BUFFER_UCHAR(
+  PUCHAR Port,
+  PUCHAR Buffer,
+  ULONG  Count
 );
-````
+```
 
 ## Parameters
 

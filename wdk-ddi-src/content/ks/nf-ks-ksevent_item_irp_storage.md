@@ -45,15 +45,15 @@ req.typenames:
 
 
 # KSEVENT_ITEM_IRP_STORAGE function
-This macro retrieves a pointer to the <a href="..\ks\ns-ks-ksevent_item.md">KSEVENT_ITEM</a> structure stored in <i>Irp</i>.
+This macro retrieves a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561862">KSEVENT_ITEM</a> structure stored in <i>Irp</i>.
 
 ## Syntax
 
-````
- KSEVENT_ITEM_IRP_STORAGE(
-    Irp
+```
+void KSEVENT_ITEM_IRP_STORAGE(
+   Irp
 );
-````
+```
 
 ## Parameters
 

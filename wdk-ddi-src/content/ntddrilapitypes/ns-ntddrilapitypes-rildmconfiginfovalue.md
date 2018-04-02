@@ -7,7 +7,7 @@ old-location: netvista\rildmconfiginfovalue.htm
 old-project: netvista
 ms.assetid: dda43544-4609-4674-9616-8e09939f0c39
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*LPRILDMCONFIGINFOVALUE, RILDMCONFIGINFOVALUE, RILDMCONFIGINFOVALUE structure [Network Drivers Starting with Windows Vista], netvista.rildmconfiginfovalue, ntddrilapitypes/RILDMCONFIGINFOVALUE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: RILDMCONFIGINFOVALUE, *LPRILDMCONFIGINFOVALUE
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef struct _RILDMCONFIGINFOVALUE {
-  DWORD                cbSize;
-  RILDMCONFIGINFOTYPE  dwType;
-  BOOL                 fValue;
-  DWORD                dwValue;
-  WCHAR [256]          wszValue;
-} RILDMCONFIGINFOVALUE, RILDMCONFIGINFOVALUE;
-````
+```
+typedef struct RILDMCONFIGINFOVALUE {
+  DWORD               cbSize;
+  RILDMCONFIGINFOTYPE dwType;
+  BOOL                fValue;
+  DWORD               dwValue;
+  WCHAR               wszValue[256];
+} *LPRILDMCONFIGINFOVALUE, RILDMCONFIGINFOVALUE;
+```
 
 ## Members
 

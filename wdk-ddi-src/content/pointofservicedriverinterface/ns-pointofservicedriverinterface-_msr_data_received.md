@@ -47,9 +47,9 @@ req.typenames: MSR_DATA_RECEIVED, *PMSR_DATA_RECEIVED
 This structure contains the data read from a swiped magnetic stripe card.
 
 ## Syntax
-````
+```
 typedef struct _MSR_DATA_RECEIVED {
-  MsrCardType   CardType;
+  MsrCardType   CardType;
   unsigned char Track1EncryptedDataLength;
   unsigned char Track2EncryptedDataLength;
   unsigned char Track3EncryptedDataLength;
@@ -76,7 +76,7 @@ typedef struct _MSR_DATA_RECEIVED {
   unsigned char AdditionalSecurityInformationLength;
   unsigned char AdditionalSecurityInformation[MSR_ADDITIONAL_SECURITY_INFORMATION_SIZE];
 } MSR_DATA_RECEIVED, *PMSR_DATA_RECEIVED;
-````
+```
 
 ## Members
 

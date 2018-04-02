@@ -7,7 +7,7 @@ old-location: debugger\extremotetyped_arrayelement.htm
 old-project: debugger
 ms.assetid: abe43441-3e00-4d85-ae84-dd738303ab1b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: ArrayElement method [Windows Debugging], ArrayElement method [Windows Debugging], ExtRemoteTyped interface, ArrayElement,ExtRemoteTyped.ArrayElement, EngExtCpp_Ref_086fc0ab-cf63-4079-86d4-552dd2a1593d.xml, ExtRemoteTyped, ExtRemoteTyped interface [Windows Debugging], ArrayElement method, ExtRemoteTyped::ArrayElement, debugger.extremotetyped_arrayelement
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# ArrayElement method
+# ExtRemoteTyped::ArrayElement method
 The <b>ArrayElement</b> method returns the typed data in the specified array element of the typed data represented by the <b>ExtRemoteTyped</b> object.
 
 ## Syntax
 
-````
-ExtRemoteData ArrayElement(
-  [in] LONG64 Index
+```
+ExtRemoteTyped  throw() ArrayElement(
+  LONG64 Index
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ The <a href="https://msdn.microsoft.com/f7a63a6a-24fa-4c93-ac2e-c44f7984a2c8">Ex
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544162">ExtRemoteTyped</a>
+
+
+
 <a href="https://msdn.microsoft.com/f7a63a6a-24fa-4c93-ac2e-c44f7984a2c8">ExtRemoteTyped::operator[]</a>
-
-
-
-<a href="..\engextcpp\nl-engextcpp-extremotetyped.md">ExtRemoteTyped</a>

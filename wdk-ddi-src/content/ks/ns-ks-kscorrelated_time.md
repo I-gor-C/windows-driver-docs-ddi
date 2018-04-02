@@ -47,12 +47,12 @@ req.typenames: KSCORRELATED_TIME, *PKSCORRELATED_TIME
 The KSCORRELATED_TIME structure contains a clock time as well as the corresponding number of clock ticks since system boot.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSCORRELATED_TIME {
   LONGLONG Time;
   LONGLONG SystemTime;
-} KSCORRELATED_TIME, *PKSCORRELATED_TIME;
-````
+} *PKSCORRELATED_TIME, KSCORRELATED_TIME;
+```
 
 ## Members
 
@@ -68,7 +68,7 @@ A 64-bit integer containing the number of clock ticks since system boot.
 ## Remarks
 Supply this structure in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564465">KSPROPERTY_CLOCK_CORRELATEDTIME</a> property request.
 
-The system time is acquired from <a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>. Note that the performance counter is not suspended when the machine is suspended, so that correlations change when the machine goes through a suspend.
+The system time is acquired from <a href="https://msdn.microsoft.com/library/windows/hardware/ff553053">KeQueryPerformanceCounter</a>. Note that the performance counter is not suspended when the machine is suspended, so that correlations change when the machine goes through a suspend.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,8 +77,8 @@ The system time is acquired from <a href="..\wdm\nf-wdm-kequeryperformancecounte
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kequeryperformancecounter.md">KeQueryPerformanceCounter</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564465">KSPROPERTY_CLOCK_CORRELATEDTIME</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553053">KeQueryPerformanceCounter</a>

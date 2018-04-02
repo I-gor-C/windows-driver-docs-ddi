@@ -7,7 +7,7 @@ old-location: display\dxgk_general_error_code.htm
 old-project: display
 ms.assetid: 678998C5-DC3B-471D-ADBF-876EFB53D227
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_GENERAL_ERROR_CODE, DXGK_GENERAL_ERROR_CODE enumeration [Display Devices], DXGK_GENERAL_ERROR_INVALID_INSTRUCTION, DXGK_GENERAL_ERROR_PAGE_FAULT, _DXGK_GENERAL_ERROR_CODE, d3dkmdt/DXGK_GENERAL_ERROR_CODE, d3dkmdt/DXGK_GENERAL_ERROR_INVALID_INSTRUCTION, d3dkmdt/DXGK_GENERAL_ERROR_PAGE_FAULT, display.dxgk_general_error_code
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: DXGK_GENERAL_ERROR_CODE
 The <b>DXGK_GENERAL_ERROR_CODE</b> enumeration specifies a set of predefined graphics processing unit (GPU) errors reported via a page fault interrupt.
 
 ## Syntax
-````
-typedef enum _DXGK_GENERAL_ERROR_CODE { 
-  DXGK_GENERAL_ERROR_PAGE_FAULT           = 0,
-  DXGK_GENERAL_ERROR_INVALID_INSTRUCTION  = 1
+```
+typedef enum _DXGK_GENERAL_ERROR_CODE {
+  DXGK_GENERAL_ERROR_PAGE_FAULT           ,
+  DXGK_GENERAL_ERROR_INVALID_INSTRUCTION
 } DXGK_GENERAL_ERROR_CODE;
-````
+```
 
 ## Constants
 
@@ -60,7 +60,7 @@ typedef enum _DXGK_GENERAL_ERROR_CODE {
             
                 <tr>
                     <td>DXGK_GENERAL_ERROR_PAGE_FAULT</td>
-                    <td>Indicates that the GPU encountered a page fault. The <b>FaultedVirtualAddress</b> and <b>PageTableLevel</b> members of the <a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure should be used to provide further information about the GPU virtual address operation that caused the fault.</td>
+                    <td>Indicates that the GPU encountered a page fault. The <b>FaultedVirtualAddress</b> and <b>PageTableLevel</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557538">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a> structure should be used to provide further information about the GPU virtual address operation that caused the fault.</td>
                 </tr>
             
                 <tr>
@@ -78,4 +78,4 @@ typedef enum _DXGK_GENERAL_ERROR_CODE {
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkargcb_notify_interrupt_data.md">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557538">DXGKARGCB_NOTIFY_INTERRUPT_DATA</a>

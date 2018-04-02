@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_discard.htm
 old-project: display
 ms.assetid: 6efee74e-9e82-4631-8360-19061b0c015d
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDIARG_DISCARD, D3DDDIARG_DISCARD structure [Display Devices], _D3DDDIARG_DISCARD, d3dumddi/D3DDDIARG_DISCARD, display.d3dddiarg_discard
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: D3DDDIARG_DISCARD
 Defines video display memory that can be discarded because the contents are no longer needed.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDIARG_DISCARD {
-  HANDLE     hResource;
-  UINT       FirstSubResource;
-  UINT       NumSubResources;
+  HANDLE     hResource;
+  UINT       FirstSubResource;
+  UINT       NumSubResources;
   const RECT *pRects;
-  UINT       NumRects;
+  UINT       NumRects;
 } D3DDDIARG_DISCARD;
-````
+```
 
 ## Members
 
@@ -74,7 +74,7 @@ The number of subresources to be discarded.
 
 `pRects`
 
-An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structures for the rectangles in the resource view to discard. If <b>NULL</b>, the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_discard.md">Discard</a> function discards the entire surface.
+An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a> structures for the rectangles in the resource view to discard. If <b>NULL</b>, the <a href="https://msdn.microsoft.com/F3EC7AAE-9DB8-43A1-B756-5F5C91F8372E">Discard</a> function discards the entire surface.
 
 `NumRects`
 
@@ -89,8 +89,8 @@ The number of rectangles in the array that the  <b>pRects</b> member specifies.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/F3EC7AAE-9DB8-43A1-B756-5F5C91F8372E">Discard</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff569234">RECT</a>
-
-
-
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_discard.md">Discard</a>

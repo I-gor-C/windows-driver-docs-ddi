@@ -7,7 +7,7 @@ old-location: storage\ataportwriteportuchar.htm
 old-project: storage
 ms.assetid: 2585da94-babe-479f-8957-adaa9190451e
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortWritePortUchar, AtaPortWritePortUchar routine [Storage Devices], atartns_25e284e4-0c1e-4172-b0d2-4435e23f7270.xml, irb/AtaPortWritePortUchar, storage.ataportwriteportuchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,18 +53,18 @@ The <b>AtaPortWritePortUchar</b> routine transfers an unsigned byte to the HBA.
 
 ## Syntax
 
-````
-VOID AtaPortWritePortUchar(
-  _In_ PUCHAR Port,
-  _In_ UCHAR  Value
+```
+void AtaPortWritePortUchar(
+  PUCHAR Port,
+  UCHAR  Value
 );
-````
+```
 
 ## Parameters
 
 `Port`
 
-A pointer to the I/O port. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>.
+A pointer to the I/O port. The address value that is assigned to this parameter must be within the range of mapped I/O space addresses that are obtained by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>.
 
 `Value`
 
@@ -85,12 +85,12 @@ None
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportgetdevicebase.md">AtaPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550160">AtaPortGetDeviceBase</a>
 
 
 
-<a href="..\irb\nf-irb-ataportwriteportulong.md">AtaPortWritePortUlong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550258">AtaPortWritePortUlong</a>
 
 
 
-<a href="..\irb\nf-irb-ataportwriteportushort.md">AtaPortWritePortUshort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550259">AtaPortWritePortUshort</a>

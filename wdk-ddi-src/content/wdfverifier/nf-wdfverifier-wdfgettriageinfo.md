@@ -52,9 +52,11 @@ The <b>WdfGetTriageInfo</b> method is reserved for internal use only.
 
 ## Syntax
 
-````
-PVOID WdfGetTriageInfo(void);
-````
+```
+PVOID WdfGetTriageInfo(
+
+);
+```
 
 ## Parameters
 

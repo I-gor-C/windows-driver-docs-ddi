@@ -7,7 +7,7 @@ old-location: display\d3dddi_offer_priority.htm
 old-project: display
 ms.assetid: 2e43f782-c89c-4926-83db-efe737544065
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_OFFER_PRIORITY, D3DDDI_OFFER_PRIORITY enumeration [Display Devices], D3DDDI_OFFER_PRIORITY_AUTO, D3DDDI_OFFER_PRIORITY_HIGH, D3DDDI_OFFER_PRIORITY_LOW, D3DDDI_OFFER_PRIORITY_NONE, D3DDDI_OFFER_PRIORITY_NORMAL, _D3DDDI_OFFER_PRIORITY, d3dukmdt/D3DDDI_OFFER_PRIORITY, d3dukmdt/D3DDDI_OFFER_PRIORITY_AUTO, d3dukmdt/D3DDDI_OFFER_PRIORITY_HIGH, d3dukmdt/D3DDDI_OFFER_PRIORITY_LOW, d3dukmdt/D3DDDI_OFFER_PRIORITY_NONE, d3dukmdt/D3DDDI_OFFER_PRIORITY_NORMAL, display.d3dddi_offer_priority
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: D3DDDI_OFFER_PRIORITY
 Indicates the importance of video memory resources  that the user-mode display driver offers for reuse.
 
 ## Syntax
-````
-typedef enum _D3DDDI_OFFER_PRIORITY { 
-  D3DDDI_OFFER_PRIORITY_NONE    = 0,
-  D3DDDI_OFFER_PRIORITY_LOW     = 1,
-  D3DDDI_OFFER_PRIORITY_NORMAL  = 2,
-  D3DDDI_OFFER_PRIORITY_HIGH    = 3,
-  D3DDDI_OFFER_PRIORITY_AUTO    = 4
+```
+typedef enum _D3DDDI_OFFER_PRIORITY {
+  D3DDDI_OFFER_PRIORITY_NONE    ,
+  D3DDDI_OFFER_PRIORITY_LOW     ,
+  D3DDDI_OFFER_PRIORITY_NORMAL  ,
+  D3DDDI_OFFER_PRIORITY_HIGH    ,
+  D3DDDI_OFFER_PRIORITY_AUTO
 } D3DDDI_OFFER_PRIORITY;
-````
+```
 
 ## Constants
 
@@ -65,7 +65,7 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
                     <td>D3DDDI_OFFER_PRIORITY_NONE</td>
                     <td>The allocation should not be offered.
 
-<div class="alert"><b>Note</b>  Do not use this value in the <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>.<b>Priority</b> member.</div>
+<div class="alert"><b>Note</b>  Do not use this value in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451158">D3DDDICB_OFFERALLOCATIONS</a>.<b>Priority</b> member.</div>
 <div> </div></td>
                 </tr>
             
@@ -99,8 +99,8 @@ typedef enum _D3DDDI_OFFER_PRIORITY {
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_offerallocations.md">D3DDDICB_OFFERALLOCATIONS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451158">D3DDDICB_OFFERALLOCATIONS</a>
 
 
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544375">D3DDDI_ALLOCATIONLIST</a>

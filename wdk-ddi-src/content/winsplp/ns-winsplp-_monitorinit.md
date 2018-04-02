@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 # _MONITORINIT structure
-The MONITORINIT structure is used as an input parameter to a print monitor's <a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a> function.
+The MONITORINIT structure is used as an input parameter to a print monitor's <a href="https://msdn.microsoft.com/library/windows/hardware/ff551605">InitializePrintMonitor2</a> function.
 
 ## Syntax
-````
+```
 typedef struct _MONITORINIT {
-  DWORD       cbSize;
-  HANDLE      hSpooler;
+  DWORD       cbSize;
+  HANDLE      hSpooler;
   HKEYMONITOR hckRegistryRoot;
   PMONITORREG pMonitorReg;
-  BOOL        bLocal;
-  LPCWSTR     pszServerName;
-} MONITORINIT, *PMONITORINIT;
-````
+  BOOL        bLocal;
+  LPCWSTR     pszServerName;
+} *PMONITORINIT, MONITORINIT;
+```
 
 ## Members
 
@@ -76,7 +76,7 @@ Registry handle, for use as input to functions identified by the MONITORREG stru
 
 `pMonitorReg`
 
-Pointer to a <a href="..\winsplp\ns-winsplp-_monitorreg.md">MONITORREG</a> structure.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557537">MONITORREG</a> structure.
 
 `bLocal`
 
@@ -94,8 +94,8 @@ Caller-supplied pointer to a string representing a server name.
 
 ## See Also
 
-<a href="..\winsplp\ns-winsplp-_monitorreg.md">MONITORREG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551605">InitializePrintMonitor2</a>
 
 
 
-<a href="..\winsplp\nf-winsplp-initializeprintmonitor2.md">InitializePrintMonitor2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557537">MONITORREG</a>

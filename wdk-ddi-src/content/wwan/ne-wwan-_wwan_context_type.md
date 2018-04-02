@@ -7,7 +7,7 @@ old-location: netvista\wwan_context_type.htm
 old-project: netvista
 ms.assetid: 73a18050-fc89-41df-82ce-0f29c5716496
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWWAN_CONTEXT_TYPE, PWWAN_CONTEXT_TYPE, PWWAN_CONTEXT_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], WWAN_CONTEXT_TYPE, WWAN_CONTEXT_TYPE enumeration [Network Drivers Starting with Windows Vista], WwanContextTypeCustom, WwanContextTypeInternet, WwanContextTypeMax, WwanContextTypeNone, WwanContextTypePurchase, WwanContextTypeVideoShare, WwanContextTypeVoice, WwanContextTypeVpn, WwanRef_2f94e3ef-ec5c-47cc-8fe0-295c517ad43a.xml, _WWAN_CONTEXT_TYPE, netvista.wwan_context_type, wwan/PWWAN_CONTEXT_TYPE, wwan/WWAN_CONTEXT_TYPE, wwan/WwanContextTypeCustom, wwan/WwanContextTypeInternet, wwan/WwanContextTypeMax, wwan/WwanContextTypeNone, wwan/WwanContextTypePurchase, wwan/WwanContextTypeVideoShare, wwan/WwanContextTypeVoice, wwan/WwanContextTypeVpn"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,18 +49,26 @@ The WWAN_CONTEXT_TYPE enumeration lists the different types of connection contex
   by the MB device.
 
 ## Syntax
-````
-typedef enum _WWAN_CONTEXT_TYPE { 
-  WwanContextTypeNone        = 0,
-  WwanContextTypeInternet,
-  WwanContextTypeVpn,
-  WwanContextTypeVoice,
-  WwanContextTypeVideoShare,
-  WwanContextTypeCustom,
-  WwanContextTypePurchase,
+```
+typedef enum _WWAN_CONTEXT_TYPE {
+  WwanContextTypeNone           ,
+  WwanContextTypeInternet       ,
+  WwanContextTypeVpn            ,
+  WwanContextTypeVoice          ,
+  WwanContextTypeVideoShare     ,
+  WwanContextTypeCustom         ,
+  WwanContextTypePurchase       ,
+  WwanContextTypeMms            ,
+  WwanContextTypeIms            ,
+  WwanContextTypeAdmin          ,
+  WwanContextTypeApp            ,
+  WwanContextTypeXcap           ,
+  WwanContextTypeTethering      ,
+  WwanContextTypeEmergencyCall  ,
+  WwanContextTypeLteAttach      ,
   WwanContextTypeMax
 } WWAN_CONTEXT_TYPE, *PWWAN_CONTEXT_TYPE;
-````
+```
 
 ## Constants
 
@@ -162,4 +170,4 @@ This enumeration indicates the usage of the provisioned context. For example, wh
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_context.md">WWAN_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571201">WWAN_CONTEXT</a>

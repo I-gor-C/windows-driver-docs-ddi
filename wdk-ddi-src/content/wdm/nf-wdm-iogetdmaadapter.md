@@ -7,7 +7,7 @@ old-location: kernel\iogetdmaadapter.htm
 old-project: kernel
 ms.assetid: fa108ef4-54b8-4c6a-9d77-25e6b9e2c09d
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoGetDmaAdapter, IoGetDmaAdapter routine [Kernel-Mode Driver Architecture], k104_36398d16-2a22-4a85-a260-265aa9c54bbd.xml, kernel.iogetdmaadapter, wdm/IoGetDmaAdapter
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>IoGetDmaAdapter</b> routine returns a pointer to the DMA adapter structur
 
 ## Syntax
 
-````
-struct _DMA_ADAPTER* IoGetDmaAdapter(
-  _In_opt_ PDEVICE_OBJECT             PhysicalDeviceObject,
-  _In_     struct _DEVICE_DESCRIPTION *DeviceDescription,
-  _Out_    PULONG                     NumberOfMapRegisters
+```
+_DMA_ADAPTER * IoGetDmaAdapter(
+  PDEVICE_OBJECT      PhysicalDeviceObject,
+  _DEVICE_DESCRIPTION *DeviceDescription,
+  PULONG              NumberOfMapRegisters
 );
-````
+```
 
 ## Parameters
 
@@ -66,7 +66,7 @@ Pointer to the physical device object for the device requesting the DMA adapter 
 
 `DeviceDescription`
 
-Pointer to a <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a> structure, which describes the attributes of the physical device.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543107">DEVICE_DESCRIPTION</a> structure, which describes the attributes of the physical device.
 
 `NumberOfMapRegisters`
 
@@ -75,13 +75,13 @@ A pointer to, on output, the maximum number of map registers that the driver can
 
 ## Return Value
 
-<b>IoGetDmaAdapter</b> returns a pointer to a <a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a> structure, which contains pointers to functions that support system-defined DMA operations. If the structure cannot be allocated, the routine returns <b>NULL</b>.
+<b>IoGetDmaAdapter</b> returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544062">DMA_ADAPTER</a> structure, which contains pointers to functions that support system-defined DMA operations. If the structure cannot be allocated, the routine returns <b>NULL</b>.
 
 ## Remarks
 
-Before calling this routine, a driver must zero-initialize the <a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a> structure pointed to by <i>DeviceDescription</i> and then add the relevant information for its device to this structure.
+Before calling this routine, a driver must zero-initialize the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543107">DEVICE_DESCRIPTION</a> structure pointed to by <i>DeviceDescription</i> and then add the relevant information for its device to this structure.
 
-On success, the <b>DmaOperations</b> member of the routine's return value points to a <b>DMA_ADAPTER</b> structure. This structure contains a pointer to a <a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a> structure, which is a table of pointers to functions that the driver can subsequently use to perform DMA operations. The version of this structure that the routine returns is determined as follows:
+On success, the <b>DmaOperations</b> member of the routine's return value points to a <b>DMA_ADAPTER</b> structure. This structure contains a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff544071">DMA_OPERATIONS</a> structure, which is a table of pointers to functions that the driver can subsequently use to perform DMA operations. The version of this structure that the routine returns is determined as follows:
 
 <ul>
 <li> If the driver sets the <b>Version</b> member of the <b>DEVICE_DESCRIPTION</b> structure to DEVICE_DESCRIPTION_VERSION or DEVICE_DESCRIPTION_VERSION1, the returned <b>DMA_ADAPTER</b> structure points to version 1 of the <b>DMA_OPERATIONS</b> structure.</li>
@@ -92,7 +92,7 @@ A PnP driver calls <b>IoGetDmaAdapter</b> when its <a href="https://msdn.microso
 
 The caller uses the <b>MaximumLength</b> member in the <i>DeviceDescription</i> structure to indicate the optimal number of map registers it can use. The I/O manager will attempt to allocate enough map registers to accommodate a DMA transfer operation of this maximum size. On output, the I/O manager returns, in the <i>NumberOfMapRegisters</i> parameter, the number of map registers that it allocates. Drivers should check the returned value; there is no guarantee a driver will receive the same number of map registers it requested.
 
-To free the adapter object, the driver should call <a href="..\wdm\nc-wdm-pput_dma_adapter.md">PutDmaAdapter</a> through the pointer returned in the <b>DMA_ADAPTER</b> structure.
+To free the adapter object, the driver should call <a href="https://msdn.microsoft.com/library/windows/hardware/ff559965">PutDmaAdapter</a> through the pointer returned in the <b>DMA_ADAPTER</b> structure.
 
 <div class="alert"><b>Note</b>  As previously described, <b>IoGetDmaAdapter</b> returns <b>NULL</b> if it does not support the version of the <b>DMA_ADAPTER</b> structure that is specified by <i>DeviceDescription-</i>&gt;<b>Version</b>. Callers should rely on this behavior to determine whether the routine returns a pointer to the requested version of the <b>DMA_ADAPTER</b> structure. When <b>IoGetDmaAdapter</b> returns a pointer to version 1 or version 2 of the <b>DMA_ADAPTER</b> structure, the <b>Version</b> member of this structure is always set to 1. Thus, the caller cannot use the <b>Version</b> member of the returned <b>DMA_ADAPTER</b> structure to distinguish between versions 1 and 2 of this structure.</div>
 <div> </div>
@@ -110,15 +110,19 @@ To free the adapter object, the driver should call <a href="..\wdm\nc-wdm-pput_d
 
 ## See Also
 
-<a href="..\wdm\nc-wdm-pput_dma_adapter.md">PutDmaAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
 
 
 
-<a href="..\wdm\ns-wdm-_dma_operations.md">DMA_OPERATIONS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543107">DEVICE_DESCRIPTION</a>
 
 
 
-<a href="..\wdm\ns-wdm-_dma_adapter.md">DMA_ADAPTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544062">DMA_ADAPTER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544071">DMA_OPERATIONS</a>
 
 
 
@@ -126,8 +130,4 @@ To free the adapter object, the driver should call <a href="..\wdm\nc-wdm-pput_d
 
 
 
-<a href="..\wdm\ns-wdm-_device_description.md">DEVICE_DESCRIPTION</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff540521">AddDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559965">PutDmaAdapter</a>

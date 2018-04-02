@@ -7,7 +7,7 @@ old-location: storage\storage_diagnostic_request.htm
 old-project: storage
 ms.assetid: BAC83B5C-4F14-430D-9CEF-46812FC4DFED
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTORAGE_DIAGNOSTIC_REQUEST, PSTORAGE_DIAGNOSTIC_REQUEST, PSTORAGE_DIAGNOSTIC_REQUEST structure pointer [Storage Devices], STORAGE_DIAGNOSTIC_REQUEST, STORAGE_DIAGNOSTIC_REQUEST structure [Storage Devices], _STORAGE_DIAGNOSTIC_REQUEST, ntddstor/PSTORAGE_DIAGNOSTIC_REQUEST, ntddstor/STORAGE_DIAGNOSTIC_REQUEST, storage.storage_diagnostic_request"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,15 +47,15 @@ req.typenames: STORAGE_DIAGNOSTIC_REQUEST, *PSTORAGE_DIAGNOSTIC_REQUEST
 Describes  a diagnostic request about the storage driver stack. The <b>STORAGE_DIAGNOSTIC_REQUEST</b> structure is provided in the input buffer of an  <a href="https://msdn.microsoft.com/5F71CCBE-F93F-4DCD-A673-1D6DE49C7400">IOCTL_STORAGE_DIAGNOSTIC</a> request.
 
 ## Syntax
-````
+```
 typedef struct _STORAGE_DIAGNOSTIC_REQUEST {
-  ULONG                           Version;
-  ULONG                           Size;
-  ULONG                           Reserved;
-   STORAGE_DIAGNOSTIC_TARGET_TYPE TargetType;
-  STORAGE_DIAGNOSTIC_LEVEL        Level;
+  ULONG                          Version;
+  ULONG                          Size;
+  ULONG                          Reserved;
+  STORAGE_DIAGNOSTIC_TARGET_TYPE TargetType;
+  STORAGE_DIAGNOSTIC_LEVEL       Level;
 } STORAGE_DIAGNOSTIC_REQUEST, *PSTORAGE_DIAGNOSTIC_REQUEST;
-````
+```
 
 ## Members
 
@@ -74,11 +74,11 @@ Reserved for future use.
 
 `TargetType`
 
-Specifies the request target type. See definitions for <a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_target_type.md">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>.
+Specifies the request target type. See definitions for <a href="https://msdn.microsoft.com/8BC338FB-7C76-49D3-96E5-0F20C4A250CE">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>.
 
 `Level`
 
-Specifies the Diagnostic level. See definitions for <a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_level.md">STORAGE_DIAGNOSTIC_LEVEL</a>.
+Specifies the Diagnostic level. See definitions for <a href="https://msdn.microsoft.com/6D705DA8-7F45-4C7A-813F-5AE4F5A1D8ED">STORAGE_DIAGNOSTIC_LEVEL</a>.
 
 
 ## Requirements
@@ -89,16 +89,16 @@ Specifies the Diagnostic level. See definitions for <a href="..\ntddstor\ne-ntdd
 
 ## See Also
 
-<a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_target_type.md">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>
-
-
-
-<a href="..\ntddstor\ns-ntddstor-_storage_diagnostic_data.md">STORAGE_DIAGNOSTIC_DATA</a>
-
-
-
-<a href="..\ntddstor\ne-ntddstor-_storage_diagnostic_level.md">STORAGE_DIAGNOSTIC_LEVEL</a>
-
-
-
 <a href="https://msdn.microsoft.com/5F71CCBE-F93F-4DCD-A673-1D6DE49C7400">IOCTL_STORAGE_DIAGNOSTIC</a>
+
+
+
+<a href="https://msdn.microsoft.com/68BC990B-DD0C-49CD-95EC-672FD1459B39">STORAGE_DIAGNOSTIC_DATA</a>
+
+
+
+<a href="https://msdn.microsoft.com/6D705DA8-7F45-4C7A-813F-5AE4F5A1D8ED">STORAGE_DIAGNOSTIC_LEVEL</a>
+
+
+
+<a href="https://msdn.microsoft.com/8BC338FB-7C76-49D3-96E5-0F20C4A250CE">STORAGE_DIAGNOSTIC_TARGET_TYPE</a>

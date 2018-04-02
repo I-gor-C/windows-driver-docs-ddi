@@ -52,9 +52,12 @@ This function can only be called at PASSIVE_LEVEL.
 
 ## Syntax
 
-````
-KSDDKAPI NTSTATUS NTAPI KsDispatchSpecificProperty(void);
-````
+```
+KSDDKAPI NTSTATUS KsDispatchSpecificProperty(
+  PIRP         Irp,
+  PFNKSHANDLER Handler
+);
+```
 
 ## Parameters
 
@@ -84,4 +87,4 @@ The <b>KsDispatchSpecificProperty</b> function is intended for additional proces
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspropertyhandler.md">KsPropertyHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564263">KsPropertyHandler</a>

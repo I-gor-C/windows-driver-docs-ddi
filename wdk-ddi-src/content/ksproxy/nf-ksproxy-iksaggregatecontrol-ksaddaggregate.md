@@ -44,16 +44,16 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsAddAggregate method
-The <b>KsAddAggregate</b> method adds a COM server as an aggregate provider to the list of interface providers for the KS object that exposes the <a href="..\ksproxy\nn-ksproxy-iksaggregatecontrol.md">IKsAggregateControl</a> interface.
+# IKsAggregateControl::KsAddAggregate method
+The <b>KsAddAggregate</b> method adds a COM server as an aggregate provider to the list of interface providers for the KS object that exposes the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559709">IKsAggregateControl</a> interface.
 
 ## Syntax
 
-````
+```
 HRESULT KsAddAggregate(
-  [in] REFGUID AggregateClass
+  REFGUID AggregateClass
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ Returns NOERROR if successful; otherwise, returns an error code.
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-iksaggregatecontrol.md">IKsAggregateControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559709">IKsAggregateControl</a>
 
 
 

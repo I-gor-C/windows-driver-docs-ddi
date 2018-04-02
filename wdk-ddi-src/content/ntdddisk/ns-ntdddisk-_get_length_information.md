@@ -7,7 +7,7 @@ old-location: storage\get_length_information.htm
 old-project: storage
 ms.assetid: 1c5af24f-fd99-4a64-afd4-aaa8168b1dc5
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PGET_LENGTH_INFORMATION, GET_LENGTH_INFORMATION, GET_LENGTH_INFORMATION structure [Storage Devices], PGET_LENGTH_INFORMATION, PGET_LENGTH_INFORMATION structure pointer [Storage Devices], _GET_LENGTH_INFORMATION, ntdddisk/GET_LENGTH_INFORMATION, ntdddisk/PGET_LENGTH_INFORMATION, storage.get_length_information, structs-disk_6efbf7e7-9fc2-44b0-a9f8-b83219b07a64.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,14 +44,14 @@ req.typenames: GET_LENGTH_INFORMATION, *PGET_LENGTH_INFORMATION
 ---
 
 # _GET_LENGTH_INFORMATION structure
-The GET_LENGTH_INFORMATION structure is used with the <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_length_info.md">IOCTL_DISK_GET_LENGTH_INFO</a> to obtain the length, in bytes, of a disk, partition, or volume.
+The GET_LENGTH_INFORMATION structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560370">IOCTL_DISK_GET_LENGTH_INFO</a> to obtain the length, in bytes, of a disk, partition, or volume.
 
 ## Syntax
-````
+```
 typedef struct _GET_LENGTH_INFORMATION {
   LARGE_INTEGER Length;
-} GET_LENGTH_INFORMATION, *PGET_LENGTH_INFORMATION;
-````
+} *PGET_LENGTH_INFORMATION, GET_LENGTH_INFORMATION;
+```
 
 ## Members
 
@@ -68,4 +68,4 @@ Contains the length, in bytes, of a disk, partition, or volume.
 
 ## See Also
 
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_get_length_info.md">IOCTL_DISK_GET_LENGTH_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560370">IOCTL_DISK_GET_LENGTH_INFO</a>

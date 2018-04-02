@@ -48,20 +48,20 @@ req.product: Windows 10 or later.
 The SD_RESPONSE_TYPE enumeration lists the types of response data that a Secure Digital (SD) card returns in response to a command.
 
 ## Syntax
-````
-typedef enum  { 
-  SDRT_UNSPECIFIED  = 0,
-  SDRT_NONE         = 1,
-  SDRT_1            = 2,
-  SDRT_1B           = 3,
-  SDRT_2            = 4,
-  SDRT_3            = 5,
-  SDRT_4            = 6,
-  SDRT_5            = 7,
-  SDRT_5B           = 8,
-  SDRT_6            = 9
-} SD_RESPONSE_TYPE;
-````
+```
+typedef enum SD_RESPONSE_TYPE {
+  SDRT_UNSPECIFIED  ,
+  SDRT_NONE         ,
+  SDRT_1            ,
+  SDRT_1B           ,
+  SDRT_2            ,
+  SDRT_3            ,
+  SDRT_4            ,
+  SDRT_5            ,
+  SDRT_5B           ,
+  SDRT_6
+} ;
+```
 
 ## Constants
 

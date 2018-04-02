@@ -7,7 +7,7 @@ old-location: kernel\seaccesscheck.htm
 old-project: kernel
 ms.assetid: 90726c66-738f-416f-993a-84cbf2eb67d2
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: SeAccessCheck, SeAccessCheck routine [Kernel-Mode Driver Architecture], k110_7d3f1afa-5728-4ade-8915-aeb77dc3edd3.xml, kernel.seaccesscheck, wdm/SeAccessCheck
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,26 +50,26 @@ The <b>SeAccessCheck</b> routine determines whether the requested access rights 
 
 ## Syntax
 
-````
-BOOLEAN SeAccessCheck(
-  _In_  PSECURITY_DESCRIPTOR      SecurityDescriptor,
-  _In_  PSECURITY_SUBJECT_CONTEXT SubjectSecurityContext,
-  _In_  BOOLEAN                   SubjectContextLocked,
-  _In_  ACCESS_MASK               DesiredAccess,
-  _In_  ACCESS_MASK               PreviouslyGrantedAccess,
-  _Out_ PPRIVILEGE_SET            *Privileges,
-  _In_  PGENERIC_MAPPING          GenericMapping,
-  _In_  KPROCESSOR_MODE           AccessMode,
-  _Out_ PACCESS_MASK              GrantedAccess,
-  _Out_ PNTSTATUS                 AccessStatus
+```
+NTKERNELAPI BOOLEAN SeAccessCheck(
+  PSECURITY_DESCRIPTOR      SecurityDescriptor,
+  PSECURITY_SUBJECT_CONTEXT SubjectSecurityContext,
+  BOOLEAN                   SubjectContextLocked,
+  ACCESS_MASK               DesiredAccess,
+  ACCESS_MASK               PreviouslyGrantedAccess,
+  PPRIVILEGE_SET            *Privileges,
+  PGENERIC_MAPPING          GenericMapping,
+  KPROCESSOR_MODE           AccessMode,
+  PACCESS_MASK              GrantedAccess,
+  PNTSTATUS                 AccessStatus
 );
-````
+```
 
 ## Parameters
 
 `SecurityDescriptor`
 
-Pointer to the <a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor protecting the object being accessed.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a> structure that describes the security descriptor protecting the object being accessed.
 
 `SubjectSecurityContext`
 
@@ -89,11 +89,11 @@ Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff540
 
 `Privileges`
 
-Pointer to a caller-supplied variable to be set to the address of the <a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a> structure that will be used as part of the access validation, or this parameter can be <b>NULL</b>. The returned buffer, if any, must be released by the caller with <a href="..\ntifs\nf-ntifs-sefreeprivileges.md">SeFreePrivileges</a>.
+Pointer to a caller-supplied variable to be set to the address of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551860">PRIVILEGE_SET</a> structure that will be used as part of the access validation, or this parameter can be <b>NULL</b>. The returned buffer, if any, must be released by the caller with <a href="https://msdn.microsoft.com/library/windows/hardware/ff556656">SeFreePrivileges</a>.
 
 `GenericMapping`
 
-Pointer to the <a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a> structure associated with this object type. This value specifies the specific access rights implied by each GENERIC_<i>XXX</i> access right.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a> structure associated with this object type. This value specifies the specific access rights implied by each GENERIC_<i>XXX</i> access right.
 
 `AccessMode`
 
@@ -133,19 +133,23 @@ If this routine returns <b>FALSE</b>, the caller should use the returned <i>Acce
 
 ## See Also
 
-<a href="..\ntifs\ns-ntifs-_security_descriptor.md">SECURITY_DESCRIPTOR</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540466">ACCESS_MASK</a>
 
 
 
-<a href="..\wdm\ns-wdm-_privilege_set.md">PRIVILEGE_SET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546526">GENERIC_MAPPING</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-iogetfileobjectgenericmapping.md">IoGetFileObjectGenericMapping</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549231">IoGetFileObjectGenericMapping</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551860">PRIVILEGE_SET</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563689">SECURITY_DESCRIPTOR</a>
 
 
 
@@ -153,12 +157,8 @@ If this routine returns <b>FALSE</b>, the caller should use the returned <i>Acce
 
 
 
-<a href="..\wdm\nf-wdm-sevalidsecuritydescriptor.md">SeValidSecurityDescriptor</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556656">SeFreePrivileges</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-sefreeprivileges.md">SeFreePrivileges</a>
-
-
-
-<a href="..\wdm\ns-wdm-_generic_mapping.md">GENERIC_MAPPING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563793">SeValidSecurityDescriptor</a>

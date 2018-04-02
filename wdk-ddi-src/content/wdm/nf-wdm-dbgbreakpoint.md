@@ -51,9 +51,11 @@ The <b>DbgBreakPoint</b> routine breaks into the kernel debugger.
 
 ## Syntax
 
-````
-VOID DbgBreakPoint(void);
-````
+```
+__analysis_noreturn VOID DbgBreakPoint(
+
+);
+```
 
 ## Parameters
 
@@ -81,7 +83,7 @@ In kernel mode, a break exception that is not handled will cause a bug check. Yo
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-kdbreakpointwithstatus.md">KdBreakPointWithStatus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543629">DbgBreakPointWithStatus</a>
 
 
 
@@ -89,4 +91,4 @@ In kernel mode, a break exception that is not handled will cause a bug check. Yo
 
 
 
-<a href="..\wdm\nf-wdm-dbgbreakpointwithstatus.md">DbgBreakPointWithStatus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548065">KdBreakPointWithStatus</a>

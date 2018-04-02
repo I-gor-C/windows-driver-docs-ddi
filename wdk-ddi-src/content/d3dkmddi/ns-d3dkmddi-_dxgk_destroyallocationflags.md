@@ -7,7 +7,7 @@ old-location: display\dxgk_destroyallocationflags.htm
 old-project: display
 ms.assetid: 8f848d68-cef4-45a2-bdda-1bc8c9df6272
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_DESTROYALLOCATIONFLAGS, DXGK_DESTROYALLOCATIONFLAGS structure [Display Devices], DmStructs_acc32f8d-3d16-493e-be05-e739bc635bd0.xml, _DXGK_DESTROYALLOCATIONFLAGS, d3dkmddi/DXGK_DESTROYALLOCATIONFLAGS, display.dxgk_destroyallocationflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,17 @@ req.typenames: DXGK_DESTROYALLOCATIONFLAGS
 The DXGK_DESTROYALLOCATIONFLAGS structure identifies how to release allocations.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_DESTROYALLOCATIONFLAGS {
   union {
     struct {
-      UINT DestroyResource  :1;
-      UINT Reserved  :31;
+      UINT  : 1  DestroyResource;
+      UINT  : 31 Reserved;
     };
     UINT Value;
   };
 } DXGK_DESTROYALLOCATIONFLAGS;
-````
+```
 
 ## Members
 
@@ -71,4 +71,4 @@ typedef struct _DXGK_DESTROYALLOCATIONFLAGS {
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_destroyallocation.md">DXGKARG_DESTROYALLOCATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557581">DXGKARG_DESTROYALLOCATION</a>

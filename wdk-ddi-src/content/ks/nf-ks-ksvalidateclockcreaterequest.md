@@ -52,12 +52,12 @@ This can only be called at PASSIVE_LEVEL.
 
 ## Syntax
 
-````
-NTSTATUS KsValidateClockCreateRequest(
-  _In_  PIRP            lrp,
-  _Out_ PKSCLOCK_CREATE *ClockCreate
+```
+KSDDKAPI NTSTATUS KsValidateClockCreateRequest(
+  PIRP            Irp,
+  PKSCLOCK_CREATE *ClockCreate
 );
-````
+```
 
 ## Parameters
 

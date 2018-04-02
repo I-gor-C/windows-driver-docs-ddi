@@ -7,7 +7,7 @@ old-location: storage\storportreadportushort.htm
 old-project: storage
 ms.assetid: e5c9e91a-96b7-4774-8bb4-7519968ce072
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortReadPortUshort, StorPortReadPortUshort routine [Storage Devices], storage.storportreadportushort, storport/StorPortReadPortUshort, storprt_fe44d011-ae82-4255-9df9-c1d8f999fd63.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ The <b>StorPortReadPortUshort</b> routine reads a value from a specified port ad
 
 ## Syntax
 
-````
-STORPORT_API USHORT StorPortReadPortUshort(
-  _In_ PVOID   HwDeviceExtension,
-  _In_ PUSHORT Port
+```
+void StorPortReadPortUshort(
+   h,
+   p
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ None
 
 ## Remarks
 
-For more information, see <a href="..\storport\nf-storport-scsiportreadportbufferushort.md">ScsiPortReadPortBufferUshort</a>. For a buffered version of this routine, see <a href="..\storport\nf-storport-storportreadportbufferushort.md">StorPortReadPortBufferUshort</a>.
+For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff564721">ScsiPortReadPortBufferUshort</a>. For a buffered version of this routine, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff567472">StorPortReadPortBufferUshort</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,8 +86,8 @@ For more information, see <a href="..\storport\nf-storport-scsiportreadportbuffe
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportreadportbufferushort.md">StorPortReadPortBufferUshort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564721">ScsiPortReadPortBufferUshort</a>
 
 
 
-<a href="..\storport\nf-storport-scsiportreadportbufferushort.md">ScsiPortReadPortBufferUshort</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567472">StorPortReadPortBufferUshort</a>

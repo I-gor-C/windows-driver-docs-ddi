@@ -52,19 +52,19 @@ The <b>WRITE_REGISTER_UCHAR</b> routine writes a byte to the specified address.
 
 ## Syntax
 
-````
+```
 void WRITE_REGISTER_UCHAR(
-  _In_ IWDFDevice3 *pDevice,
-  _In_ PUCHAR      Register,
-  _In_ UCHAR       Value
+  IWDFDevice3 *pDevice,
+  PUCHAR      Register,
+  UCHAR       Value
 );
-````
+```
 
 ## Parameters
 
 `pDevice`
 
-Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.
+Specifies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface for the device object of the device to access.
 
 `Register`
 

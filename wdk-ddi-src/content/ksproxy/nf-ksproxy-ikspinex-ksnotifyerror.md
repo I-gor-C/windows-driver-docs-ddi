@@ -44,17 +44,17 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsNotifyError method
+# IKsPinEx::KsNotifyError method
 The <b>KsNotifyError</b> method notifies the filter graph of an error to give the filter graph an opportunity to halt.
 
 ## Syntax
 
-````
-VOID KsNotifyError(
-  [in] IMediaSample *Sample,
-  [in] HRESULT      hr
+```
+void KsNotifyError(
+  IMediaSample *Sample,
+  HRESULT      hr
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +85,4 @@ For more information about <b>IMediaSample</b>, see the Microsoft Windows SDK do
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-ikspinex.md">IKsPinEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559902">IKsPinEx</a>

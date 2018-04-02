@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetFontSubstitution method
+# IPrintCoreHelperUni::GetFontSubstitution method
 The <code>IPrintCoreHelperUni::GetFontSubstitution</code> method indicates which device font, if any, is used as a substitution font for a specified TrueType font.
 
 ## Syntax
 
-````
-STDMETHOD GetFontSubstitution(
-  [in]  PCWSTR pszTrueTypeFontName,
-  [out] PCWSTR *ppszDevFontName
+```
+HRESULT GetFontSubstitution(
+  IN PCWSTR  pszTrueTypeFontName,
+  OUT PCWSTR *ppszDevFontName
 );
-````
+```
 
 ## Parameters
 
@@ -153,7 +153,7 @@ To obtain a list of available fonts, create an information context for the curre
 
 ## See Also
 
-<a href="..\prcomoem\nn-prcomoem-iprintcorehelperuni.md">IPrintCoreHelperUni</a>
+<a href="https://msdn.microsoft.com/e581d190-8185-45c1-80c7-ff8eb305360e">IPrintCoreHelperUni</a>
 
 
 

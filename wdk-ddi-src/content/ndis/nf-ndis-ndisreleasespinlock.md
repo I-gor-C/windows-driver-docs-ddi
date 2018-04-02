@@ -7,7 +7,7 @@ old-location: netvista\ndisreleasespinlock.htm
 old-project: netvista
 ms.assetid: dd833373-2879-49f0-9b16-fddb2f7495c1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisReleaseSpinLock, NdisReleaseSpinLock macro [Network Drivers Starting with Windows Vista], ndis/NdisReleaseSpinLock, ndis_spin_lock_ref_a4e1c783-4682-401c-a198-fdc14cbfa383.xml, netvista.ndisreleasespinlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,15 +48,15 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisReleaseSpinLock function
 The 
   <b>NdisReleaseSpinLock</b> function releases a spin lock that was acquired in a preceding call to the 
-  <a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a> function.
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff560699">NdisAcquireSpinLock</a> function.
 
 ## Syntax
 
-````
-VOID NdisReleaseSpinLock(
-  [in] PNDIS_SPIN_LOCK SpinLock
+```
+void NdisReleaseSpinLock(
+   _SpinLock
 );
-````
+```
 
 ## Parameters
 
@@ -72,12 +72,12 @@ None
 ## Remarks
 
 A driver must initialize its spin lock with 
-    <a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a> before it calls
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561617">NdisAllocateSpinLock</a> before it calls
     any other 
     <b>Ndis..SpinLock</b> function to access the resources protected by that spin lock.
 
 A driver must call 
-    <a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a> to acquire the
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff560699">NdisAcquireSpinLock</a> to acquire the
     spin lock before it can call 
     <b>NdisReleaseSpinLock</b>. Each call to 
     <b>NdisAcquireSpinLock</b> requires a reciprocal call to 
@@ -109,12 +109,12 @@ For more information about acquiring and releasing NDIS spin locks, see
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisdpracquirespinlock.md">NdisDprAcquireSpinLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560699">NdisAcquireSpinLock</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisacquirespinlock.md">NdisAcquireSpinLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561617">NdisAllocateSpinLock</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisallocatespinlock.md">NdisAllocateSpinLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561749">NdisDprAcquireSpinLock</a>

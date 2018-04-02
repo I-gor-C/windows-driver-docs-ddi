@@ -44,18 +44,18 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# InitializeFilter method
+# IPrintPipelineFilter::InitializeFilter method
 The <code>InitializeFilter</code> method initializes a filter.
 
 ## Syntax
 
-````
+```
 HRESULT InitializeFilter(
-  [in] IInterFilterCommunicator     *pICommunicator,
-  [in] IPrintPipelinePropertyBag    *pIPropertyBag,
-  [in] IPrintPipelineManagerControl *pIPipelineControl
+  IInterFilterCommunicator     *pINegotiation,
+  IPrintPipelinePropertyBag    *pIPropertyBag,
+  IPrintPipelineManagerControl *pIPipelineControl
 );
-````
+```
 
 ## Parameters
 
@@ -65,11 +65,11 @@ HRESULT InitializeFilter(
 
 `pIPropertyBag`
 
-A pointer to the<a href="..\filterpipeline\nn-filterpipeline-iprintpipelinepropertybag.md">IPrintPipelinePropertyBag</a> interface.
+A pointer to the<a href="https://msdn.microsoft.com/library/windows/hardware/ff554320">IPrintPipelinePropertyBag</a> interface.
 
 `pIPipelineControl`
 
-A pointer to the <a href="..\filterpipeline\nn-filterpipeline-iprintpipelinemanagercontrol.md">IPrintPipelineManagerControl</a> interface.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554303">IPrintPipelineManagerControl</a> interface.
 
 
 ## Return Value
@@ -99,16 +99,16 @@ Get the read and write interfaces.
 
 ## See Also
 
-<a href="..\filterpipeline\nn-filterpipeline-iprintpipelinefilter.md">IPrintPipelineFilter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551050">IInterFilterCommunicator</a>
 
 
 
-<a href="..\filterpipeline\nn-filterpipeline-iprintpipelinepropertybag.md">IPrintPipelinePropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554286">IPrintPipelineFilter</a>
 
 
 
-<a href="..\filterpipeline\nn-filterpipeline-iinterfiltercommunicator.md">IInterFilterCommunicator</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554303">IPrintPipelineManagerControl</a>
 
 
 
-<a href="..\filterpipeline\nn-filterpipeline-iprintpipelinemanagercontrol.md">IPrintPipelineManagerControl</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554320">IPrintPipelinePropertyBag</a>

@@ -50,20 +50,21 @@ The <b>wiauDbgFlags</b> function determines whether a particular debugging flag 
 
 ## Syntax
 
-````
-inline void __stdcall wiauDbgFlags(
-   DWORD    flags,
-   LPCSTR   prefix,
-   LPCSTR   fname,
-   LPCSTR   fmt, ...
+```
+void wiauDbgFlags(
+  DWORD  flags,
+  LPCSTR prefix,
+  LPCSTR fname,
+  LPCSTR fmt,
+  ...    
 );
-````
+```
 
 ## Parameters
 
 `flags`
 
-Is a set of flags that control which information is placed in the log file or displayed in the debugger. See the <i>flags</i> parameter of <a href="..\wiautil\nf-wiautil-wiaudbgsetflags.md">wiauDbgSetFlags</a> for a list of the flag values.
+Is a set of flags that control which information is placed in the log file or displayed in the debugger. See the <i>flags</i> parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff550159">wiauDbgSetFlags</a> for a list of the flag values.
 
 `prefix`
 
@@ -99,4 +100,4 @@ If message logging to log file, or debugger, or both is enabled and the particul
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaudbgsetflags.md">wiauDbgSetFlags</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550159">wiauDbgSetFlags</a>

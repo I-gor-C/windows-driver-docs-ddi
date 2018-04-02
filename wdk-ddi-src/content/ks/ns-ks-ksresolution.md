@@ -47,12 +47,12 @@ req.typenames: KSRESOLUTION, *PKSRESOLUTION
 The KSRESOLUTION structure specifies granularity and error of a kernel streaming clock.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSRESOLUTION {
   LONGLONG Granularity;
   LONGLONG Error;
-} KSRESOLUTION, *PKSRESOLUTION;
-````
+} *PKSRESOLUTION, KSRESOLUTION;
+```
 
 ## Members
 

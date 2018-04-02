@@ -7,7 +7,7 @@ old-location: storage\iscsi_discoveredtarget2.htm
 old-project: storage
 ms.assetid: 77fb2942-5836-44cb-9a5e-e45f6a022264
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PISCSI_DiscoveredTarget2, ISCSI_DiscoveredTarget2, ISCSI_DiscoveredTarget2 structure [Storage Devices], PISCSI_DiscoveredTarget2, PISCSI_DiscoveredTarget2 structure pointer [Storage Devices], _ISCSI_DiscoveredTarget2, iscsifnd/ISCSI_DiscoveredTarget2, iscsifnd/PISCSI_DiscoveredTarget2, storage.iscsi_discoveredtarget2, structs-iSCSI_5a9fcec3-8447-441c-a2d9-1416c1bbe07e.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: ISCSI_DiscoveredTarget2, *PISCSI_DiscoveredTarget2
 The ISCSI_DiscoveredTarget2 structure contains information that is related to a discovered target device.
 
 ## Syntax
-````
+```
 typedef struct _ISCSI_DiscoveredTarget2 {
-  ULONG                              TargetPortalGroupCount;
-  WCHAR                              TargetName[223 + 1];
-  WCHAR                              TargetAlias[255 + 1];
+  ULONG                              TargetPortalGroupCount;
+  WCHAR                              TargetName[223 + 1];
+  WCHAR                              TargetAlias[255 + 1];
   ISCSI_DiscoveredTargetPortalGroup2 TargetDiscoveredPortalGroups[1];
-} ISCSI_DiscoveredTarget2, *PISCSI_DiscoveredTarget2;
-````
+} *PISCSI_DiscoveredTarget2, ISCSI_DiscoveredTarget2;
+```
 
 ## Members
 
@@ -73,12 +73,12 @@ The human-readable name or description that is assigned to the target device by 
 
 `TargetDiscoveredPortalGroups`
 
-A variable-length array of <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportalgroup2.md">ISCSI_DiscoveredTargetPortalGroup2</a> structures that contains information about the portal groups that the initiator can use to connect to the target.
+A variable-length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561517">ISCSI_DiscoveredTargetPortalGroup2</a> structures that contains information about the portal groups that the initiator can use to connect to the target.
 
 ## Remarks
 The WMI tool suite automatically generates a declaration of the ISCSI_DiscoveredTarget2 structure when it compiles the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561505">ISCSI_DiscoveredTarget2 WMI Class</a> in <i>Discover.mof</i>.
 
-The only difference between the ISCSI_DiscoveredTarget2 structure and the <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget.md">ISCSI_DiscoveredTarget</a> structure is that the <b>TargetDiscoveredPortalGroups</b> member of ISCSI_DiscoveredTarget2 is a <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportalgroup2.md">ISCSI_DiscoveredTargetPortalGroup2</a> structure instead of a <a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a> structure.
+The only difference between the ISCSI_DiscoveredTarget2 structure and the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561501">ISCSI_DiscoveredTarget</a> structure is that the <b>TargetDiscoveredPortalGroups</b> member of ISCSI_DiscoveredTarget2 is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561517">ISCSI_DiscoveredTargetPortalGroup2</a> structure instead of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561515">ISCSI_DiscoveredTargetPortalGroup</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -87,11 +87,7 @@ The only difference between the ISCSI_DiscoveredTarget2 structure and the <a hre
 
 ## See Also
 
-<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtargetportalgroup.md">ISCSI_DiscoveredTargetPortalGroup</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561505">ISCSI_DiscoveredTarget2 WMI Class</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561501">ISCSI_DiscoveredTarget</a>
 
 
 
@@ -99,4 +95,8 @@ The only difference between the ISCSI_DiscoveredTarget2 structure and the <a hre
 
 
 
-<a href="..\iscsifnd\ns-iscsifnd-_iscsi_discoveredtarget.md">ISCSI_DiscoveredTarget</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561505">ISCSI_DiscoveredTarget2 WMI Class</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561515">ISCSI_DiscoveredTargetPortalGroup</a>

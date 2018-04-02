@@ -7,7 +7,7 @@ old-location: netvista\rilhideidsettings.htm
 old-project: netvista
 ms.assetid: 11ca7db9-8e84-4d55-9ea9-7e2ecfa563e0
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*LPRILHIDEIDSETTINGS, RILHIDEIDSETTINGS, RILHIDEIDSETTINGS structure [Network Drivers Starting with Windows Vista], netvista.rilhideidsettings, ntddrilapitypes/RILHIDEIDSETTINGS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,15 +48,15 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef struct _RILHIDEIDSETTINGS {
-  DWORD                         cbSize;
-  DWORD                         dwParams;
-  DWORD                         dwExecutor;
-  RILSERVICESETTINGSSTATUS      dwStatus;
-  RILSERVICEPROVISIONINGSTATUS  dwProvisioning;
-} RILHIDEIDSETTINGS, RILHIDEIDSETTINGS;
-````
+```
+typedef struct RILHIDEIDSETTINGS {
+  DWORD                        cbSize;
+  DWORD                        dwParams;
+  DWORD                        dwExecutor;
+  RILSERVICESETTINGSSTATUS     dwStatus;
+  RILSERVICEPROVISIONINGSTATUS dwProvisioning;
+}  *LPRILHIDEIDSETTINGS;
+```
 
 ## Members
 

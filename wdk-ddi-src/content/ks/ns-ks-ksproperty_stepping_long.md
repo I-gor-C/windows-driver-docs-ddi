@@ -47,13 +47,13 @@ req.typenames: KSPROPERTY_STEPPING_LONG, *PKSPROPERTY_STEPPING_LONG
 The KSPROPERTY_STEPPING_LONG structure defines the valid range of values for a 32-bit property.
 
 ## Syntax
-````
-typedef struct {
-  ULONG                  SteppingDelta;
-  ULONG                  Reserved;
+```
+typedef struct KSPROPERTY_STEPPING_LONG {
+  ULONG                  SteppingDelta;
+  ULONG                  Reserved;
   KSPROPERTY_BOUNDS_LONG Bounds;
-} KSPROPERTY_STEPPING_LONG, *PKSPROPERTY_STEPPING_LONG;
-````
+} *PKSPROPERTY_STEPPING_LONG, KSPROPERTY_STEPPING_LONG;
+```
 
 ## Members
 
@@ -68,10 +68,10 @@ Reserved for system use.
 
 `Bounds`
 
-A structure of type <a href="..\ks\ns-ks-ksproperty_bounds_long.md">KSPROPERTY_BOUNDS_LONG</a> that specifies the range of values over which the <b>SteppingDelta</b> is valid.
+A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff564394">KSPROPERTY_BOUNDS_LONG</a> that specifies the range of values over which the <b>SteppingDelta</b> is valid.
 
 ## Remarks
-The <a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a> structure may contain structures of this type in its <b>Members</b> array.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff565190">KSPROPERTY_MEMBERSLIST</a> structure may contain structures of this type in its <b>Members</b> array.
 
 See the Testcap sample in the Windows Driver Kit (WDK) for examples of usage.
 
@@ -84,8 +84,8 @@ For more information, see <a href="https://msdn.microsoft.com/a385929e-1934-4d88
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksproperty_memberslist.md">KSPROPERTY_MEMBERSLIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564394">KSPROPERTY_BOUNDS_LONG</a>
 
 
 
-<a href="..\ks\ns-ks-ksproperty_bounds_long.md">KSPROPERTY_BOUNDS_LONG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565190">KSPROPERTY_MEMBERSLIST</a>

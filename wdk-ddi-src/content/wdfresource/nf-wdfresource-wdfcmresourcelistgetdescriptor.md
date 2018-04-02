@@ -55,12 +55,12 @@ The <b>WdfCmResourceListGetDescriptor</b> method returns a pointer to a resource
 
 ## Syntax
 
-````
+```
 PCM_PARTIAL_RESOURCE_DESCRIPTOR WdfCmResourceListGetDescriptor(
-  _In_ WDFCMRESLIST List,
-  _In_ ULONG        Index
+  WDFCMRESLIST List,
+  ULONG        Index
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ A zero-based value that is used as an index into the logical configuration that 
 
 ## Return Value
 
-<b>WdfCmResourceListGetDescriptor</b> returns a pointer to the <a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the hardware resource that the <i>Index</i> parameter identifies, if the index value is valid. Otherwise, the method returns <b>NULL</b>.
+<b>WdfCmResourceListGetDescriptor</b> returns a pointer to the <a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a> structure that describes the hardware resource that the <i>Index</i> parameter identifies, if the index value is valid. Otherwise, the method returns <b>NULL</b>.
 
 A system bug check occurs if the driver supplies an invalid object handle.
 
@@ -88,7 +88,7 @@ For more information about resource lists, see <a href="https://docs.microsoft.c
 
 #### Examples
 
-For a code example that uses <b>WdfCmResourceListGetDescriptor</b>, see <a href="..\wdfresource\nf-wdfresource-wdfcmresourcelistgetcount.md">WdfCmResourceListGetCount</a>.
+For a code example that uses <b>WdfCmResourceListGetDescriptor</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545687">WdfCmResourceListGetCount</a>.
 
 <div class="code"></div>
 
@@ -105,4 +105,4 @@ For a code example that uses <b>WdfCmResourceListGetDescriptor</b>, see <a href=
 
 ## See Also
 
-<a href="..\wudfwdm\ns-wudfwdm-_cm_partial_resource_descriptor.md">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/96bf7bab-b8f5-439c-8717-ea6956ed0213">CM_PARTIAL_RESOURCE_DESCRIPTOR</a>

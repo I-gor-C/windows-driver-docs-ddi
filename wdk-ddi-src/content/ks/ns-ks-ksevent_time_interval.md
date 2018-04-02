@@ -47,20 +47,20 @@ req.typenames: KSEVENT_TIME_INTERVAL, *PKSEVENT_TIME_INTERVAL
 The KSEVENT_TIME_INTERVAL structure is used in various events within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561764">KSEVENTSETID_Clock</a> event set.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSEVENT_TIME_INTERVAL {
   KSEVENTDATA EventData;
-  LONGLONG    TimeBase;
-  LONGLONG    Interval;
-} KSEVENT_TIME_INTERVAL, *PKSEVENT_TIME_INTERVAL;
-````
+  LONGLONG    TimeBase;
+  LONGLONG    Interval;
+}  *PKSEVENT_TIME_INTERVAL;
+```
 
 ## Members
 
 
 `EventData`
 
-A structure of type <a href="..\ks\ns-ks-kseventdata.md">KSEVENTDATA</a> that specifies the standard event structure.
+A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff561750">KSEVENTDATA</a> that specifies the standard event structure.
 
 `TimeBase`
 
@@ -82,4 +82,4 @@ Specifies the subsequent interval when the event should continue to be signaled.
 
 
 
-<a href="..\ks\ns-ks-ksevent_time_mark.md">KSEVENT_TIME_MARK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561891">KSEVENT_TIME_MARK</a>

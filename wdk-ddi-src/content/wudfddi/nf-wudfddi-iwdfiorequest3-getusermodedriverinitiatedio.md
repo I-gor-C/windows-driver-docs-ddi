@@ -45,7 +45,7 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetUserModeDriverInitiatedIo method
+# IWDFIoRequest3::GetUserModeDriverInitiatedIo method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 
@@ -54,9 +54,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-BOOL GetUserModeDriverInitiatedIo();
-````
+```
+BOOL GetUserModeDriverInitiatedIo(
+
+);
+```
 
 ## Parameters
 
@@ -70,7 +72,7 @@ The method returns <b>TRUE</b> if the request is marked as UMDF driver-initiated
 
 For additional information, see <a href="https://msdn.microsoft.com/library/windows/hardware/hh451354">SetUserModeDriverInitiatedIo</a>.
 
-The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetusermodedriverinitiatedio.md">WdfRequestGetUserModeInitiatedIo</a>.
+The UMDF 2 equivalent of this method is <a href="https://msdn.microsoft.com/library/windows/hardware/dn265618">WdfRequestGetUserModeInitiatedIo</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,8 +85,8 @@ The UMDF 2 equivalent of this method is <a href="..\wdfrequest\nf-wdfrequest-wdf
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451337">IWDFIoRequest3</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/hh451354">SetUserModeDriverInitiatedIo</a>
-
-
-
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequest3.md">IWDFIoRequest3</a>

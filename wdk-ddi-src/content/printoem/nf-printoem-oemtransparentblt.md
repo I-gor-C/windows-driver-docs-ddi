@@ -50,18 +50,18 @@ The <code>OEMTransparentBlt</code> function provides bit-block transfer capabili
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMTransparentBlt(
-   SURFOBJ  *psoDst,
-   STRFOBJ  *psoSrc,
-   CLIPOBJ  *pco,
-   XLATEOBJ *pxlo,
-   RECTL    *prclDst,
-   RECTL    *prclSrc,
-   ULONG    iTransColor,
-   ULONG    ulReserved
+```
+BOOL OEMTransparentBlt(
+  SURFOBJ  *psoDst,
+  SURFOBJ  *psoSrc,
+  CLIPOBJ  *pco,
+  XLATEOBJ *pxlo,
+  RECTL    *prclDst,
+  RECTL    *prclSrc,
+  ULONG    iTransColor,
+  ULONG    ulReserved
 );
-````
+```
 
 ## Parameters
 

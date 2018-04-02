@@ -7,7 +7,7 @@ old-location: ifsk\ccsetreadaheadgranularity.htm
 old-project: ifsk
 ms.assetid: 3ab0c8b8-1f41-48b7-9c42-ea843ebcd82e
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: CcSetReadAheadGranularity, CcSetReadAheadGranularity routine [Installable File System Drivers], ccref_9b995224-0e59-43c6-b827-c15d9ae6e86c.xml, ifsk.ccsetreadaheadgranularity, ntifs/CcSetReadAheadGranularity
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>CcSetReadAheadGranularity</b> routine sets the read-ahead granularity for
 
 ## Syntax
 
-````
-VOID CcSetReadAheadGranularity(
-  _In_ PFILE_OBJECT FileObject,
-  _In_ ULONG        Granularity
+```
+NTKERNELAPI VOID CcSetReadAheadGranularity(
+  PFILE_OBJECT FileObject,
+  ULONG        Granularity
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +73,7 @@ None
 
 ## Remarks
 
-After <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a> is called to cache a file, but before <b>CcSetReadAheadGranularity</b> is called for the cached file, the default read-ahead granularity for the cached file is equal to PAGE_SIZE.
+After <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a> is called to cache a file, but before <b>CcSetReadAheadGranularity</b> is called for the cached file, the default read-ahead granularity for the cached file is equal to PAGE_SIZE.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,16 +85,16 @@ After <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff539191">CcReadAhead</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539200">CcScheduleReadAhead</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-ccsetadditionalcacheattributes.md">CcSetAdditionalCacheAttributes</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-ccschedulereadahead.md">CcScheduleReadAhead</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539203">CcSetAdditionalCacheAttributes</a>

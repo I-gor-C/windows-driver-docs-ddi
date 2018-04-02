@@ -7,7 +7,7 @@ old-location: debugger\getoffsetbynamewide.htm
 old-project: debugger
 ms.assetid: 576193fc-756f-40fb-abdd-65c088687cb5
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetOffsetByNameWide method [Windows Debugging], GetOffsetByNameWide method [Windows Debugging], IDebugSymbols3 interface, GetOffsetByNameWide,IDebugSymbols3.GetOffsetByNameWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetOffsetByNameWide method, IDebugSymbols3::GetOffsetByNameWide, dbgeng/IDebugSymbols3::GetOffsetByNameWide, debugger.getoffsetbynamewide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetOffsetByNameWide method
+# IDebugSymbols3::GetOffsetByNameWide method
 The <b>GetOffsetByNameWide</b>  method returns the location of a symbol identified by name.
 
 ## Syntax
 
-````
+```
 HRESULT GetOffsetByNameWide(
-  [in]  PCWSTR   Symbol,
-  [out] PULONG64 Offset
+  PCWSTR   Symbol,
+  PULONG64 Offset
 );
-````
+```
 
 ## Parameters
 
@@ -129,8 +129,8 @@ For more information about symbols and symbol names, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547183">GetNameByOffset</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

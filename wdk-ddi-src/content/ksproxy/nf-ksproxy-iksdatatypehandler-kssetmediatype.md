@@ -44,16 +44,16 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsSetMediaType method
+# IKsDataTypeHandler::KsSetMediaType method
 The <b>KsSetMediaType</b> method sets the media type for a data type handler.
 
 ## Syntax
 
-````
+```
 HRESULT KsSetMediaType(
-  [in] const AM_MEDIA_TYPE *MediaType
+  const AM_MEDIA_TYPE *AmMediaType
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ For more information about <b>CMediaType</b> class, see the Microsoft Windows SD
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-iksdatatypehandler.md">IKsDataTypeHandler</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559807">IKsDataTypeHandler</a>

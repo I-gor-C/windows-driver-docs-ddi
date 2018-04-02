@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvGetWiaFormatInfo method
+# IWiaMiniDrv::drvGetWiaFormatInfo method
 The <b>IWiaMiniDrv::drvGetWiaFormatInfo</b> method finds the image formats and media types that the WIA hardware device supports.
 
 ## Syntax
 
-````
+```
 HRESULT drvGetWiaFormatInfo(
-  [in]            BYTE            *pWiasContext,
-  [in]            LONG            lFlags,
-  [out]           LONG            *pcelt,
-  [out, optional] WIA_FORMAT_INFO **ppwfi,
-  [out]           LONG            *plDevErrVal
+  BYTE            *__MIDL__IWiaMiniDrv0059,
+  LONG            __MIDL__IWiaMiniDrv0060,
+  LONG            *__MIDL__IWiaMiniDrv0061,
+  WIA_FORMAT_INFO **__MIDL__IWiaMiniDrv0062,
+  LONG            *__MIDL__IWiaMiniDrv0063
 );
-````
+```
 
 ## Parameters
 
@@ -104,7 +104,7 @@ The minidriver can define a global array to hold the WIA_FORMAT_INFO structures,
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 

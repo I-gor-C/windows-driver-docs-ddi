@@ -7,7 +7,7 @@ old-location: buses\usbd_parseconfigurationdescriptorex.htm
 old-project: usbref
 ms.assetid: c14b3cde-b501-4d07-96ae-f0e0e6320966
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: USBD_ParseConfigurationDescriptorEx, USBD_ParseConfigurationDescriptorEx routine [Buses], buses.usbd_parseconfigurationdescriptorex, usbdlib/USBD_ParseConfigurationDescriptorEx, usbfunc_c493d121-9821-4381-b756-fa417c8f5f93.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ The <b>USBD_ParseConfigurationDescriptorEx</b> routine searches a given configur
 
 ## Syntax
 
-````
-PUSB_INTERFACE_DESCRIPTOR USBD_ParseConfigurationDescriptorEx(
-  _In_ PUSB_CONFIGURATION_DESCRIPTOR ConfigurationDescriptor,
-  _In_ PVOID                         StartPosition,
-  _In_ LONG                          InterfaceNumber,
-  _In_ LONG                          AlternateSetting,
-  _In_ LONG                          InterfaceClass,
-  _In_ LONG                          InterfaceSubClass,
-  _In_ LONG                          InterfaceProtocol
+```
+DECLSPEC_IMPORT PUSB_INTERFACE_DESCRIPTOR USBD_ParseConfigurationDescriptorEx(
+  PUSB_CONFIGURATION_DESCRIPTOR ConfigurationDescriptor,
+  PVOID                         StartPosition,
+  LONG                          InterfaceNumber,
+  LONG                          AlternateSetting,
+  LONG                          InterfaceClass,
+  LONG                          InterfaceSubClass,
+  LONG                          InterfaceProtocol
 );
-````
+```
 
 ## Parameters
 
@@ -100,7 +100,7 @@ Specifies the device- or USB-defined identifier for the interface protocol of th
 
 ## Remarks
 
-Callers can specify more than one of the search criteria (InterfaceNumber, AlternateSetting, InterfaceClass, InterfaceSubClass, and InterfaceProtocol) when using this routine to find an interface within a configuration descriptor. For example code, see <a href="..\usbdlib\nf-usbdlib-usbd_createconfigurationrequestex.md">USBD_CreateConfigurationRequestEx</a>.
+Callers can specify more than one of the search criteria (InterfaceNumber, AlternateSetting, InterfaceClass, InterfaceSubClass, and InterfaceProtocol) when using this routine to find an interface within a configuration descriptor. For example code, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff539029">USBD_CreateConfigurationRequestEx</a>.
 
 When this routine parses the configuration descriptor looking for the interface descriptor that matches the search criteria, it returns the first match, terminating the search. Callers should specify as many search criteria as are necessary to find the desired interface.
 
@@ -118,4 +118,4 @@ When this routine parses the configuration descriptor looking for the interface 
 
 
 
-<a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539241">USB_CONFIGURATION_DESCRIPTOR</a>

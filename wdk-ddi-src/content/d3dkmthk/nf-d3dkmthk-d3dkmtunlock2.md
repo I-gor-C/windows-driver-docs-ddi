@@ -7,7 +7,7 @@ old-location: display\d3dkmtunlock2.htm
 old-project: display
 ms.assetid: DDAA5F5A-4A9C-4E8C-B322-A9B395DC753B
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTUnlock2, D3DKMTUnlock2 function [Display Devices], d3dkmthk/D3DKMTUnlock2, display.d3dkmtunlock2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,11 +51,11 @@ The <b>D3DKMTUnlock2</b> function unlocks a list of allocations.
 
 ## Syntax
 
-````
-NTSTATUS APIENTRY D3DKMTUnlock2(
-  _In_ const D3DKMT_UNLOCK2 *pData
+```
+NTSTATUS D3DKMTUnlock2(
+  CONST *D3DKMT_UNLOCK2
 );
-````
+```
 
 ## Parameters
 
@@ -110,4 +110,4 @@ This function might also return other <b>NTSTATUS</b> values.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_unlock2.md">D3DKMT_UNLOCK2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn914462">D3DKMT_UNLOCK2</a>

@@ -47,23 +47,23 @@ req.typenames: CIP_FRAME, *PCIP_FRAME
 The CIP_FRAME structure describes a frame to be attached to an input or output plug.
 
 ## Syntax
-````
+```
 typedef struct _CIP_FRAME {
   union {
-    PVOID Reserved;
-    PVOID pNext;
+    IN PVOID pNext;
+    IN PVOID Reserved;
   };
-  ULONG                 Flags;
-  PCIP_VALIDATE_ROUTINE pfnValidate;
-  PVOID                 ValidateContext;
-  PCIP_NOTIFY_ROUTINE   pfnNotify;
-  PVOID                 NotifyContext;
-  CYCLE_TIME            Timestamp;
-  ULONG                 Status;
-  PUCHAR                Packet;
-  ULONG                 CompletedBytes;
+  IN ULONG                 Flags;
+  IN PCIP_VALIDATE_ROUTINE pfnValidate;
+  IN PVOID                 ValidateContext;
+  IN PCIP_NOTIFY_ROUTINE   pfnNotify;
+  IN PVOID                 NotifyContext;
+  OUT CYCLE_TIME           Timestamp;
+  OUT ULONG                Status;
+  IN OUT PUCHAR            Packet;
+  OUT ULONG                CompletedBytes;
 } CIP_FRAME, *PCIP_FRAME;
-````
+```
 
 ## Members
 
@@ -215,8 +215,8 @@ Points to the beginning of a caller-allocated data buffer to be transmitted or r
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff536956">Av61883_CancelFrame</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536950">Av61883_AttachFrame</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536956">Av61883_CancelFrame</a>

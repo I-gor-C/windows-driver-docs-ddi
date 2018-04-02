@@ -7,7 +7,7 @@ old-location: ifsk\fltgetactivityidcallbackdata.htm
 old-project: ifsk
 ms.assetid: 3DAA2135-768E-4A37-B2FD-9915F16D8A66
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltGetActivityIdCallbackData, FltGetActivityIdCallbackData routine [Installable File System Drivers], fltkernel/FltGetActivityIdCallbackData, ifsk.fltgetactivityidcallbackdata
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>FltGetActivityIdCallbackData</b> routine retrieves the current activity I
 
 ## Syntax
 
-````
-NTSTATUS FltGetActivityIdCallbackData(
-  _In_  PFLT_CALLBACK_DATA CallbackData,
-  _Out_ LPGUID             Guid
+```
+NTSTATUS FLTAPI FltGetActivityIdCallbackData(
+  PFLT_CALLBACK_DATA CallbackData,
+  LPGUID             Guid
 );
-````
+```
 
 ## Parameters
 
@@ -124,8 +124,8 @@ An activity ID was returned in the <b>GUID</b> value pointed to by <i>Guid</i>.
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltsetactivityidcallbackdata.md">FltSetActivityIdCallbackData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967700">FltPropagateActivityIdToThread</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltpropagateactivityidtothread.md">FltPropagateActivityIdToThread</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967702">FltSetActivityIdCallbackData</a>

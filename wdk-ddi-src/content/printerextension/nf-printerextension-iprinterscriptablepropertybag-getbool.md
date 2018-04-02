@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetBool method
+# IPrinterScriptablePropertyBag::GetBool method
 Gets a specified boolean property.
 
 ## Syntax
 
-````
+```
 HRESULT GetBool(
-  [in]          BSTR bstrName,
-  [out, retval] BOOL *pbValue
+  BSTR bstrName,
+  BOOL *pbValue
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +85,4 @@ A call to <b>GetBool</b> will throw an exception, if the specified property is n
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterscriptablepropertybag.md">IPrinterScriptablePropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973217">IPrinterScriptablePropertyBag</a>

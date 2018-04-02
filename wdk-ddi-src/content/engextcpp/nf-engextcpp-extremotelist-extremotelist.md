@@ -44,7 +44,7 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# ExtRemoteList method
+# ExtRemoteList::ExtRemoteList method
 The <b>ExtRemoteList</b> class provides a wrapper around a singly-linked or doubly-linked list.  The class contains methods that can be used to move both forward and backward through the list.
 
 <b>ExtRemoteList</b> supports both NULL-terminated and circular lists.

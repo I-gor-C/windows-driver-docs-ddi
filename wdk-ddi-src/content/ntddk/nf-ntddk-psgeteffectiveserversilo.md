@@ -7,7 +7,7 @@ old-location: kernel\psgeteffectiveserversilo.htm
 old-project: kernel
 ms.assetid: 60FCFF5B-4040-423F-A9B6-2DFE7DDD9DD0
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsGetEffectiveServerSilo, PsGetEffectiveServerSilo routine [Kernel-Mode Driver Architecture], kernel.psgeteffectiveserversilo, ntddk/PsGetEffectiveServerSilo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ This routine traverses the parent chain of the <i>Silo</i> until finding the eff
 
 ## Syntax
 
-````
-PESILO PsGetEffectiveServerSilo(
-  _In_ PESILO Silo
+```
+NTKERNELAPI PESILO PsGetEffectiveServerSilo(
+  PESILO Silo
 );
-````
+```
 
 ## Parameters
 
@@ -79,4 +79,4 @@ This routine does not fail because it always returns a silo: the server silo or 
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-psishostsilo.md">PsIsHostSilo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt735076">PsIsHostSilo</a>

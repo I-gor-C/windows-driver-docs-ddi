@@ -47,11 +47,15 @@ req.typenames: PCM_DATA_FORMAT, *PPCM_DATA_FORMAT
 This enumeration is for internal use only.
 
 ## Syntax
-````
-typedef enum _PCM_DATA_FORMAT { 
-    = 
-} PCM_DATA_FORMAT, *PPCM_DATA_FORMAT;
-````
+```
+typedef enum _PCM_DATA_FORMAT {
+  ScoPCMCFormatNA            ,
+  ScoPCMFormat1sComplement   ,
+  ScoPCMFormat2sComplement   ,
+  ScoPCMFormatSignMagnitude  ,
+  ScoPCMFormatUnsigned
+} *PPCM_DATA_FORMAT, PCM_DATA_FORMAT;
+```
 
 ## Constants
 

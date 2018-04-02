@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-VOID APIENTRY OEMSendFontCmd(
-   PDEVOBJ      pdevobj,
-   PUNIFONTOBJ  pUFObj,
-   PFINVOCATION pFInv
+```
+void OEMSendFontCmd(
+  PDEVOBJ      pdevobj,
+  PUNIFONTOBJ  pUFObj,
+  PFINVOCATION pFInv
 );
-````
+```
 
 ## Parameters
 

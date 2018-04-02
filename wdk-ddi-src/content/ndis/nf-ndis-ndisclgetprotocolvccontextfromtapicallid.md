@@ -7,7 +7,7 @@ old-location: netvista\ndisclgetprotocolvccontextfromtapicallid.htm
 old-project: netvista
 ms.assetid: 5c716207-b093-499a-8fad-344b5ac51e25
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisClGetProtocolVcContextFromTapiCallId, NdisClGetProtocolVcContextFromTapiCallId function [Network Drivers Starting with Windows Vista], condis_client_ref_0f7c98a1-306b-40b4-b84c-0e624c936e90.xml, ndis/NdisClGetProtocolVcContextFromTapiCallId, netvista.ndisclgetprotocolvccontextfromtapicallid
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 
 ## Syntax
 
-````
+```
 NDIS_STATUS NdisClGetProtocolVcContextFromTapiCallId(
-  _In_  UNICODE_STRING TapiCallId,
-  _Out_ PNDIS_HANDLE   ProtocolVcContext
+  UNICODE_STRING TapiCallId,
+  PNDIS_HANDLE   ProtocolVcContext
 );
-````
+```
 
 ## Parameters
 
@@ -64,13 +64,13 @@ NDIS_STATUS NdisClGetProtocolVcContextFromTapiCallId(
 
 Unicode string that identifies a particular VC. This string is the Unicode version of a string
      identifier that was previously returned by the 
-     <a href="..\ndis\nf-ndis-ndiscogettapicallid.md">NdisCoGetTapiCallID</a> function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff561700">NdisCoGetTapiCallID</a> function.
 
 `ProtocolVcContext`
 
 Pointer to a caller-allocated NDIS_HANDLE that receives a handle to the client context for the VC.
      The client supplied this context to NDIS on return from its 
-     <a href="..\ndis\nc-ndis-protocol_co_create_vc.md">ProtocolCoCreateVc</a> handler.
+     <a href="https://msdn.microsoft.com/b086dd24-74f5-474a-8684-09bf92ac731b">ProtocolCoCreateVc</a> handler.
 
 
 ## Return Value
@@ -110,10 +110,10 @@ The attempt to retrieve the handle to the client VC context failed.
 ## Remarks
 
 Suppose a call manager calls 
-    <a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a> to create a VC for a TAPI
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a> to create a VC for a TAPI
     call. NDIS in turn supplies the handle to the VC to a client. The client passes this VC handle in a call
     to the 
-    <a href="..\ndis\nf-ndis-ndiscogettapicallid.md">NdisCoGetTapiCallId</a> function to
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561700">NdisCoGetTapiCallId</a> function to
     retrieve a string identifier for the VC. The client can then present this identifier as a Unicode string
     to 
     <b>NdisClGetProtocolVcContextFromTapiCallId</b> to get back its context for the VC.
@@ -126,7 +126,7 @@ The client creates a context for each VC that it manages. The client uses
     <b>NdisClGetProtocolVcContextFromTapiCallId</b> to get back the correct context for the VC.
 
 See the 
-    <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure for more
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure for more
     information.
 
 ## Requirements
@@ -141,12 +141,12 @@ See the
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndiscocreatevc.md">NdisCoCreateVc</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561696">NdisCoCreateVc</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561700">NdisCoGetTapiCallId</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndiscogettapicallid.md">NdisCoGetTapiCallId</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

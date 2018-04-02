@@ -50,11 +50,11 @@ The <code>OEMSendPage</code> function is called by GDI when it has finished draw
 
 ## Syntax
 
-````
-BOOL APIENTRY OEMSendPage(
-   SURFOBJ *pso
+```
+BOOL OEMSendPage(
+  SURFOBJ *pso
 );
-````
+```
 
 ## Parameters
 

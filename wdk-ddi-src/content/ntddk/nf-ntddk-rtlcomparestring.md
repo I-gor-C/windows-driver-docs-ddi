@@ -7,7 +7,7 @@ old-location: kernel\rtlcomparestring.htm
 old-project: kernel
 ms.assetid: 59d023d4-a2b4-4183-9572-cb48621c76fb
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlCompareString, RtlCompareString routine [Kernel-Mode Driver Architecture], k109_a794007b-a40a-4081-8302-f7426c4ceaef.xml, kernel.rtlcomparestring, ntddk/RtlCompareString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>RtlCompareString</b> routine compares two counted strings.
 
 ## Syntax
 
-````
-LONG RtlCompareString(
-  _In_ const STRING  *String1,
-  _In_ const STRING  *String2,
-  _In_       BOOLEAN CaseInSensitive
+```
+NTSYSAPI LONG RtlCompareString(
+  const STRING *String1,
+  const STRING *String2,
+  BOOLEAN      CaseInSensitive
 );
-````
+```
 
 ## Parameters
 
@@ -130,8 +130,8 @@ If <b>TRUE</b>, case should be ignored when doing the comparison.
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-rtlequalstring.md">RtlEqualString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561782">RtlCompareUnicodeString</a>
 
 
 
-<a href="..\wudfwdm\nf-wudfwdm-rtlcompareunicodestring.md">RtlCompareUnicodeString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561852">RtlEqualString</a>

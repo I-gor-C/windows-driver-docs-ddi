@@ -7,7 +7,7 @@ old-location: ifsk\rxlogeventwithbufferdirect.htm
 old-project: ifsk
 ms.assetid: 09a7d452-efa1-4846-8077-1f6ce60515e7
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxLogEventWithBufferDirect, RxLogEventWithBufferDirect function [Installable File System Drivers], ifsk.rxlogeventwithbufferdirect, rxprocs/RxLogEventWithBufferDirect, rxref_95cd6139-10e2-4cf1-bfd9-51b3d6dd1119.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,17 +50,17 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-VOID RxLogEventWithBufferDirect(
-  _In_ PVOID           DeviceObject,
-  _In_ PUNICODE_STRING OriginatorId,
-  _In_ ULONG           EventId,
-  _In_ NTSTATUS        Status,
-  _In_ PVOID           DataBuffer,
-  _In_ USHORT          DataBufferLength,
-  _In_ ULONG           LineNumber
+```
+void RxLogEventWithBufferDirect(
+  IN PVOID           DeviceOrDriverObject,
+  IN PUNICODE_STRING OriginatorId,
+  IN ULONG           EventId,
+  IN NTSTATUS        Status,
+  IN PVOID           DataBuffer,
+  IN USHORT          DataBufferLength,
+  IN ULONG           LineNumber
 );
-````
+```
 
 ## Parameters
 
@@ -114,12 +114,12 @@ The <b>RxLogEventWithAnnotation</b> routine needs to allocate memory in order to
 
 ## See Also
 
-<a href="..\rxprocs\nf-rxprocs-rxlogeventdirect.md">RxLogEventDirect</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554515">RxLogEventDirect</a>
 
 
 
-<a href="..\rxlog\nf-rxlog-_rxlog.md">_RxLog</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554519">RxLogEventWithAnnotation</a>
 
 
 
-<a href="..\rxprocs\nf-rxprocs-rxlogeventwithannotation.md">RxLogEventWithAnnotation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557368">_RxLog</a>

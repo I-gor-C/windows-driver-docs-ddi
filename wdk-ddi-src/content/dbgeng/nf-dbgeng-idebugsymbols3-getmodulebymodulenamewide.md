@@ -7,7 +7,7 @@ old-location: debugger\getmodulebymodulenamewide.htm
 old-project: debugger
 ms.assetid: 66ec7c51-3d2c-4a25-a356-4df06ee1b1f5
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetModuleByModuleNameWide method [Windows Debugging], GetModuleByModuleNameWide method [Windows Debugging], IDebugSymbols3 interface, GetModuleByModuleNameWide,IDebugSymbols3.GetModuleByModuleNameWide, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleNameWide method, IDebugSymbols3::GetModuleByModuleNameWide, dbgeng/IDebugSymbols3::GetModuleByModuleNameWide, debugger.getmodulebymodulenamewide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetModuleByModuleNameWide method
+# IDebugSymbols3::GetModuleByModuleNameWide method
 The <b>GetModuleByModuleNameWide</b>  method searches through the target's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552231">modules</a> for one with the specified name.
 
 ## Syntax
 
-````
+```
 HRESULT GetModuleByModuleNameWide(
-  [in]            PCWSTR   Name,
-  [in]            ULONG    StartIndex,
-  [out, optional] PULONG   Index,
-  [out, optional] PULONG64 Base
+  PCWSTR   Name,
+  ULONG    StartIndex,
+  PULONG   Index,
+  PULONG64 Base
 );
-````
+```
 
 ## Parameters
 
@@ -124,8 +124,8 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547102">GetModuleByModuleName2</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

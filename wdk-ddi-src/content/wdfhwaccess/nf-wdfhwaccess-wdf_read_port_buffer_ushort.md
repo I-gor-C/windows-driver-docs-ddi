@@ -52,14 +52,14 @@ The <b>WDF_READ_PORT_BUFFER_USHORT</b> function reads a number of USHORT values 
 
 ## Syntax
 
-````
+```
 void WDF_READ_PORT_BUFFER_USHORT(
-  _In_  WDFDEVICE Device,
-  _In_  PUSHORT   Port,
-  _Out_ PUSHORT   Buffer,
-  _In_  ULONG     Count 
+  WDFDEVICE Device,
+  PUSHORT   Port,
+  PUSHORT   Buffer,
+  ULONG     Count
 );
-````
+```
 
 ## Parameters
 

@@ -47,11 +47,11 @@ req.typenames: LineDisplayCharacterData
 This structure is not implemented.
 
 ## Syntax
-````
+```
 typedef struct _LineDisplayCharacterData {
-   ...;
-} LineDisplayCharacterData, *PLineDisplayCharacterData;
-````
+  UINT32 character;
+} LineDisplayCharacterData;
+```
 
 ## Members
 

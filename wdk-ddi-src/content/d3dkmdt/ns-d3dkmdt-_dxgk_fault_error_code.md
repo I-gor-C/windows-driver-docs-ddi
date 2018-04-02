@@ -7,7 +7,7 @@ old-location: display\dxgk_fault_error_code.htm
 old-project: display
 ms.assetid: 753FC177-D430-40E5-98CD-B3BDFD47ACEF
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_FAULT_ERROR_CODE, DXGK_FAULT_ERROR_CODE structure [Display Devices], _DXGK_FAULT_ERROR_CODE, d3dkmdt/DXGK_FAULT_ERROR_CODE, display.dxgk_fault_error_code
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,20 +47,20 @@ req.typenames: DXGK_FAULT_ERROR_CODE
 The <b>DXGK_FAULT_ERROR_CODE</b> structure provides a status code for the graphics processing unit (GPU) error reported via a page fault interrupt.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_FAULT_ERROR_CODE {
   union {
     struct {
-      UINT                    IsDeviceSpecificCode  :1;
-      DXGK_GENERAL_ERROR_CODE GeneralErrorCode  :31;
+      UINT  : 1                     IsDeviceSpecificCode;
+      DXGK_GENERAL_ERROR_CODE  : 31 GeneralErrorCode;
     };
     struct {
-      UINT IsDeviceSpecificCodeReservedBit  :1;
-      UINT DeviceSpecificCode  :31;
+      UINT  : 1  IsDeviceSpecificCodeReservedBit;
+      UINT  : 31 DeviceSpecificCode;
     };
   };
 } DXGK_FAULT_ERROR_CODE;
-````
+```
 
 ## Members
 
@@ -74,4 +74,4 @@ typedef struct _DXGK_FAULT_ERROR_CODE {
 
 ## See Also
 
-<a href="..\d3dkmdt\ne-d3dkmdt-_dxgk_general_error_code.md">DXGK_GENERAL_ERROR_CODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906347">DXGK_GENERAL_ERROR_CODE</a>

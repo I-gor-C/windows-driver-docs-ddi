@@ -7,7 +7,7 @@ old-location: display\getcapturehandle.htm
 old-project: display
 ms.assetid: b1ca7cf0-fe63-452f-8360-fdba05875719
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: GetCaptureHandle, GetCaptureHandle callback function [Display Devices], PFND3D11_1DDI_GETCAPTUREHANDLE, d3d10umddi/GetCaptureHandle, display.getcapturehandle
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ A handle to the display device (graphics context).
 
 `*pHandleData`
 
-A pointer to a <a href="..\d3d10umddi\ns-d3d10umddi-_d3d11_1ddi_getcapturehandledata.md">D3D11_1DDI_GETCAPTUREHANDLEDATA</a> structure that defines the resource allocation.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh406448">D3D11_1DDI_GETCAPTUREHANDLEDATA</a> structure that defines the resource allocation.
 
 
 ## Return Value
@@ -76,7 +76,7 @@ This callback function does not return a value.
 
 ## Remarks
 
-Before the Microsoft Direct3D runtime calls the <i>GetCaptureHandle</i> function, it sets the <b>hResource</b>  and <b>ArrayIndex</b> members of the <a href="..\d3d10umddi\ns-d3d10umddi-_d3d11_1ddi_getcapturehandledata.md">D3D11_1DDI_GETCAPTUREHANDLEDATA</a> structure to specify a resource. When this function is called, the driver updates the structure with the kernel mode allocation handle associated with the specified resource, as well as the size of the resource data and its offset within an allocated block of memory.
+Before the Microsoft Direct3D runtime calls the <i>GetCaptureHandle</i> function, it sets the <b>hResource</b>  and <b>ArrayIndex</b> members of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh406448">D3D11_1DDI_GETCAPTUREHANDLEDATA</a> structure to specify a resource. When this function is called, the driver updates the structure with the kernel mode allocation handle associated with the specified resource, as well as the size of the resource data and its offset within an allocated block of memory.
 
 <div class="alert"><b>Note</b>  The Direct3D runtime calls this function only for resources that were created with the <b>D3D11_DDI_BIND_CAPTURE</b> flag.</div>
 <div> </div>
@@ -90,4 +90,4 @@ Before the Microsoft Direct3D runtime calls the <i>GetCaptureHandle</i> function
 
 ## See Also
 
-<a href="..\d3d10umddi\ns-d3d10umddi-_d3d11_1ddi_getcapturehandledata.md">D3D11_1DDI_GETCAPTUREHANDLEDATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406448">D3D11_1DDI_GETCAPTUREHANDLEDATA</a>

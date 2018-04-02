@@ -52,13 +52,13 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 BOOL GetJobAttributes(
-  _In_  LPWSTR            pPrinterName,
-  _In_  LPDEVMODEW        pDevmode,
-  _Out_ PATTRIBUTE_INFO_3 pAttributeInfo
+  LPWSTR            pPrinterName,
+  LPDEVMODEW        pDevmode,
+  PATTRIBUTE_INFO_3 pAttributeInfo
 );
-````
+```
 
 ## Parameters
 
@@ -72,7 +72,7 @@ Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows
 
 `pAttributeInfo`
 
-Caller-supplied pointer to an <a href="..\winsplp\ns-winsplp-_attribute_info_3.md">ATTRIBUTE_INFO_3</a> structure that receives information about the print job.
+Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a> structure that receives information about the print job.
 
 
 ## Return Value
@@ -91,7 +91,7 @@ Caller-supplied pointer to an <a href="..\winsplp\ns-winsplp-_attribute_info_3.m
 
 ## See Also
 
-<a href="..\winsplp\ns-winsplp-_attribute_info_3.md">ATTRIBUTE_INFO_3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545093">ATTRIBUTE_INFO_3</a>
 
 
 
@@ -99,4 +99,4 @@ Caller-supplied pointer to an <a href="..\winsplp\ns-winsplp-_attribute_info_3.m
 
 
 
-<a href="..\winsplp\nf-winsplp-getjobattributesex.md">GetJobAttributesEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550459">GetJobAttributesEx</a>

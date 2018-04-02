@@ -47,16 +47,16 @@ req.typenames: KS_VIDEOINFOHEADER, *PKS_VIDEOINFOHEADER
 The KS_VIDEOINFOHEADER structure describes the bitmap and color information for a video stream.
 
 ## Syntax
-````
+```
 typedef struct tagKS_VIDEOINFOHEADER {
-  RECT                rcSource;
-  RECT                rcTarget;
-  DWORD               dwBitRate;
-  DWORD               dwBitErrorRate;
-  REFERENCE_TIME      AvgTimePerFrame;
+  RECT                rcSource;
+  RECT                rcTarget;
+  DWORD               dwBitRate;
+  DWORD               dwBitErrorRate;
+  REFERENCE_TIME      AvgTimePerFrame;
   KS_BITMAPINFOHEADER bmiHeader;
 } KS_VIDEOINFOHEADER, *PKS_VIDEOINFOHEADER;
-````
+```
 
 ## Members
 
@@ -83,10 +83,10 @@ Specifies the average time per frame, in 100-nanosecond units.
 
 `bmiHeader`
 
-Describes a <a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
+Describes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a> structure that contains color and dimension information about the video image bitmap.
 
 ## Remarks
-To describe a video stream with bob or weave settings, use <a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md">KS_VIDEOINFOHEADER2</a>.
+To describe a video stream with bob or weave settings, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff567702">KS_VIDEOINFOHEADER2</a>.
 
 The KS_VIDEOINFOHEADER structure is identical to the Microsoft DirectShow VIDEOINFOHEADER structure.
 
@@ -103,8 +103,8 @@ The <b>rcTarget</b> member specifies the destination rectangle for the video. Mo
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_bitmapinfoheader.md">KS_BITMAPINFOHEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567305">KS_BITMAPINFOHEADER</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_videoinfoheader2.md">KS_VIDEOINFOHEADER2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567702">KS_VIDEOINFOHEADER2</a>

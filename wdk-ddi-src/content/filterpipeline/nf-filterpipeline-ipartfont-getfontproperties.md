@@ -44,17 +44,17 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# GetFontProperties method
+# IPartFont::GetFontProperties method
 The <b>GetFontProperties</b> method gets the font properties.
 
 ## Syntax
 
-````
+```
 HRESULT GetFontProperties(
-  [out] BSTR            *pContentType,
-  [out] EXpsFontOptions *pFontOptions
+  BSTR            *pContentType,
+  EXpsFontOptions *pFontOptions
 );
-````
+```
 
 ## Parameters
 

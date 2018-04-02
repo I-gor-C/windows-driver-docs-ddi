@@ -7,7 +7,7 @@ old-location: netvista\fwpsquerypacketinjectionstate0.htm
 old-project: netvista
 ms.assetid: 785d99a5-a8c9-4763-bdd4-e26f604f6be7
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsQueryPacketInjectionState0, FwpsQueryPacketInjectionState0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsQueryPacketInjectionState0, netvista.fwpsquerypacketinjectionstate0, wfp_ref_2_funct_3_fwps_J-Q_2eb3c709-15f8-46de-a55d-b4e99c085740.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,26 +53,26 @@ The
 
 ## Syntax
 
-````
-FWPS_PACKET_INJECTION_STATE NTAPI FwpsQueryPacketInjectionState0(
-  _In_            HANDLE          injectionHandle,
-  _In_      const NET_BUFFER_LIST *netBufferList,
-  _Out_opt_       HANDLE          *injectionContext
+```
+FWPS_PACKET_INJECTION_STATE FwpsQueryPacketInjectionState0(
+  HANDLE                injectionHandle,
+  const NET_BUFFER_LIST *netBufferList,
+  HANDLE                *injectionContext
 );
-````
+```
 
 ## Parameters
 
 `injectionHandle`
 
 An injection handle that was previously created by a call to the 
-     <a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">
+     <a href="https://msdn.microsoft.com/61cee8ef-1070-46d4-a541-94a9f09b593b">
      FwpsInjectionHandleCreate0</a> function.
 
 `netBufferList`
 
 A pointer to a 
-     <a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a> structure that describes
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a> structure that describes
      the packet data that is being classified. The packet can originate from the network stack, or it can be
      injected into the network stack by a WFP callout driver.
 
@@ -80,7 +80,7 @@ A pointer to a
 
 An optional handle to the injection context. If the pointer is specified, and if the packet
      injection state 
-     <a href="..\fwpsk\ne-fwpsk-fwps_packet_injection_state_.md">FWPS_PACKET_INJECTION_STATE</a> associated with the injection handle is FWPS_PACKET_INJECTED_BY_SELF
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552408">FWPS_PACKET_INJECTION_STATE</a> associated with the injection handle is FWPS_PACKET_INJECTED_BY_SELF
      or FWPS_PACKET_PREVIOUSLY_INJECTED_BY_SELF, the injection context supplied when the packet was injected
      will be returned.
 
@@ -89,7 +89,7 @@ An optional handle to the injection context. If the pointer is specified, and if
 
 The 
      <b>FwpsQueryPacketInjectionState0</b> function returns one of the constant values of the 
-     <a href="..\fwpsk\ne-fwpsk-fwps_packet_injection_state_.md">FWPS_PACKET_INJECTION_STATE</a> enumeration.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff552408">FWPS_PACKET_INJECTION_STATE</a> enumeration.
 
 ## Remarks
 
@@ -114,7 +114,7 @@ If the return value is <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PRE
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a> structure pointed to
     by the 
     <i>classifyOut</i> parameter of the 
-    <a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a> function to one of the following
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a> function to one of the following
     values.
 
 ## Requirements
@@ -128,20 +128,20 @@ If the return value is <b>FWPS_PACKET_INJECTED_BY_SELF</b> or <b>FWPS_PACKET_PRE
 
 ## See Also
 
-<a href="..\fwpsk\nc-fwpsk-fwps_callout_classify_fn0.md">classifyFn</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff551229">FWPS_CLASSIFY_OUT0</a>
 
 
 
-<a href="..\ndis\ns-ndis-_net_buffer_list.md">NET_BUFFER_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552408">FWPS_PACKET_INJECTION_STATE</a>
 
 
 
-<a href="..\fwpsk\ne-fwpsk-fwps_packet_injection_state_.md">FWPS_PACKET_INJECTION_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551180">FwpsInjectionHandleCreate0</a>
 
 
 
-<a href="..\fwpsk\nf-fwpsk-fwpsinjectionhandlecreate0.md">FwpsInjectionHandleCreate0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568388">NET_BUFFER_LIST</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544887">classifyFn</a>

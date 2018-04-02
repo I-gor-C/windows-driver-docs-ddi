@@ -51,16 +51,16 @@ req.product: Windows 10 or later.
 The <b>WDF_REQUEST_SEND_OPTIONS_FLAGS</b> enumeration type defines flags that a driver can specify when it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff559149">IWDFIoRequest::Send</a>.
 
 ## Syntax
-````
-typedef enum _WDF_REQUEST_SEND_OPTIONS_FLAGS { 
-  WDF_REQUEST_SEND_OPTION_TIMEOUT                       = 0x00000001,
-  WDF_REQUEST_SEND_OPTION_SYNCHRONOUS                   = 0x00000002,
-  WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE           = 0x00000004,
-  WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET               = 0x00000008,
-  WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT            = 0x00010000,
-  WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE  = 0x00020000
+```
+typedef enum _WDF_REQUEST_SEND_OPTIONS_FLAGS {
+  WDF_REQUEST_SEND_OPTION_TIMEOUT                       ,
+  WDF_REQUEST_SEND_OPTION_SYNCHRONOUS                   ,
+  WDF_REQUEST_SEND_OPTION_IGNORE_TARGET_STATE           ,
+  WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET               ,
+  WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT            ,
+  WDF_REQUEST_SEND_OPTION_IMPERSONATION_IGNORE_FAILURE
 } WDF_REQUEST_SEND_OPTIONS_FLAGS;
-````
+```
 
 ## Constants
 
@@ -88,7 +88,7 @@ typedef enum _WDF_REQUEST_SEND_OPTIONS_FLAGS {
             
                 <tr>
                     <td>WDF_REQUEST_SEND_OPTION_IMPERSONATE_CLIENT</td>
-                    <td>If set, and if the I/O request type is <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_type.md">WdfRequestCreate</a>, the <a href="https://msdn.microsoft.com/f916b414-9cd9-4745-a021-07c810d0d68b">Send</a> method attempts to pass the client's <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/handling-client-impersonation-in-umdf-drivers">impersonation</a> level to the driver's I/O target. This value is available in UMDF versions 1.9 and later.</td>
+                    <td>If set, and if the I/O request type is <a href="https://msdn.microsoft.com/library/windows/hardware/ff549951">WdfRequestCreate</a>, the <a href="https://msdn.microsoft.com/f916b414-9cd9-4745-a021-07c810d0d68b">Send</a> method attempts to pass the client's <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/handling-client-impersonation-in-umdf-drivers">impersonation</a> level to the driver's I/O target. This value is available in UMDF versions 1.9 and later.</td>
                 </tr>
             
                 <tr>
@@ -107,7 +107,7 @@ If the driver sets the WDF_REQUEST_SEND_OPTION_SEND_AND_FORGET flag, it cannot s
 
 For more information about client impersonation, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/handling-client-impersonation-in-umdf-drivers">Handling Client Impersonation</a>.
 
-For the KMDF version of this enumeration, see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_request_send_options_flags.md">WDF_REQUEST_SEND_OPTIONS_FLAGS</a>.
+For the KMDF version of this enumeration, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552493">WDF_REQUEST_SEND_OPTIONS_FLAGS</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

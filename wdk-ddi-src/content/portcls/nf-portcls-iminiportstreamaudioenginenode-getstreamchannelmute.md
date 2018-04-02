@@ -7,7 +7,7 @@ old-location: audio\iminiportstreamaudioenginenode_getstreamchannelmute.htm
 old-project: audio
 ms.assetid: 16010297-5B08-466C-AB79-4ED12A9539D9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: GetStreamChannelMute method [Audio Devices], GetStreamChannelMute method [Audio Devices], IMiniportStreamAudioEngineNode interface, GetStreamChannelMute,IMiniportStreamAudioEngineNode.GetStreamChannelMute, IMiniportStreamAudioEngineNode, IMiniportStreamAudioEngineNode interface [Audio Devices], GetStreamChannelMute method, IMiniportStreamAudioEngineNode::GetStreamChannelMute, audio.iminiportstreamaudioenginenode_getstreamchannelmute, portcls/IMiniportStreamAudioEngineNode::GetStreamChannelMute
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# GetStreamChannelMute method
+# IMiniportStreamAudioEngineNode::GetStreamChannelMute method
 Gets the state of the Mute node in the path of the audio stream.
 
 ## Syntax
 
-````
+```
 NTSTATUS GetStreamChannelMute(
-  [in]  UINT32 ulChannel,
-  [out] BOOL   *pbMute
+  UINT32 ulChannel,
+  BOOL   *pbMute
 );
-````
+```
 
 ## Parameters
 
@@ -83,4 +83,4 @@ code.
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportstreamaudioenginenode.md">IMiniportStreamAudioEngineNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265090">IMiniportStreamAudioEngineNode</a>

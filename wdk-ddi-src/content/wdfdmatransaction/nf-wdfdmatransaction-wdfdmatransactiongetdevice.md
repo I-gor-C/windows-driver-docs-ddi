@@ -53,22 +53,22 @@ The <b>WdfDmaTransactionGetDevice</b> method returns a handle to the framework d
 
 ## Syntax
 
-````
+```
 WDFDEVICE WdfDmaTransactionGetDevice(
-  _In_ WDFDMATRANSACTION DmaTransaction
+  WDFDMATRANSACTION DmaTransaction
 );
-````
+```
 
 ## Parameters
 
 `DmaTransaction`
 
-A handle to a DMA transaction object that the driver obtained from a previous call to <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>.
+A handle to a DMA transaction object that the driver obtained from a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff547027">WdfDmaTransactionCreate</a>.
 
 
 ## Return Value
 
-<b>WdfDmaTransactionGetDevice</b> returns a handle to the framework device object that the driver specified when it called <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>.
+<b>WdfDmaTransactionGetDevice</b> returns a handle to the framework device object that the driver specified when it called <a href="https://msdn.microsoft.com/library/windows/hardware/ff547027">WdfDmaTransactionCreate</a>.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
@@ -106,4 +106,4 @@ device = WdfDmaTransactionGetDevice(DmaTransaction);</pre>
 
 ## See Also
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactioncreate.md">WdfDmaTransactionCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547027">WdfDmaTransactionCreate</a>

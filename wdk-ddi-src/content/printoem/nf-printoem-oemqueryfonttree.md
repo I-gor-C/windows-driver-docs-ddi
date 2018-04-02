@@ -60,15 +60,15 @@ A mapping of kerning pairs to kerning handles
 
 ## Syntax
 
-````
-PVOID APIENTRY OEMQueryFontTree(
-   DHPDEV    dhpdev,
-   ULONG_PTR iFile,
-   ULONG     iFace,
-   ULONG     iMode,
-   ULONG_PTR *pid
+```
+PVOID OEMQueryFontTree(
+  DHPDEV    dhpdev,
+  ULONG_PTR iFile,
+  ULONG     iFace,
+  ULONG     iMode,
+  ULONG_PTR *pid
 );
-````
+```
 
 ## Parameters
 

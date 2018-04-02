@@ -44,17 +44,17 @@ req.typenames: NFC_CX_LLCP_CONFIG, *PNFC_CX_LLCP_CONFIG
 ---
 
 # _NFC_CX_LLCP_CONFIG structure
-The NFC_CX_LLCP_CONFIG structure is an input parameter to <a href="..\nfccx\nf-nfccx-nfccxsetllcpconfig.md">NfcCxSetLlcpConfig.</a>
+The NFC_CX_LLCP_CONFIG structure is an input parameter to <a href="https://msdn.microsoft.com/8208F61E-DFD9-4AA8-B225-BEB35F80F621">NfcCxSetLlcpConfig.</a>
 
 ## Syntax
-````
+```
 typedef struct _NFC_CX_LLCP_CONFIG {
-  ULONG  Size;
+  ULONG  Size;
   USHORT Miu;
-  UCHAR  LinkTimeout;
-  UCHAR  RecvWindowSize;
-} NFC_CX_LLCP_CONFIG, *PNFC_CX_LLCP_CONFIG;
-````
+  UCHAR  LinkTimeout;
+  UCHAR  RecvWindowSize;
+} *PNFC_CX_LLCP_CONFIG, NFC_CX_LLCP_CONFIG;
+```
 
 ## Members
 

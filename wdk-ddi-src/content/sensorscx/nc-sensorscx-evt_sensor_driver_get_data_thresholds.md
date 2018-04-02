@@ -69,7 +69,7 @@ A reference to a sensor object.
 
 `pThresholds`
 
-A list of threshold properties and their values associated with the <b>Sensor</b>. For more information, see <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>.
+A list of threshold properties and their values associated with the <b>Sensor</b>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>.
 
 `pSize`
 
@@ -97,4 +97,4 @@ This function must be implemented by the driver and is called by the class exten
 
 ## See Also
 
-<a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>

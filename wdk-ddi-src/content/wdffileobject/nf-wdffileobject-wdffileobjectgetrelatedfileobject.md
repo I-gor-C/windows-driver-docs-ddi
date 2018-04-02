@@ -52,11 +52,11 @@ The <b>WdfFileObjectGetRelatedFileObject</b> method retrieves the related file o
 
 ## Syntax
 
-````
+```
 WDFFILEOBJECT WdfFileObjectGetRelatedFileObject(
-  _In_ WDFFILEOBJECT FileObject
+  WDFFILEOBJECT FileObject
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +73,7 @@ A handle to a framework file object.
 
 Use of related file objects is technology-specific. For example, <a href="https://msdn.microsoft.com/dcd28218-b3bf-4e5d-b1a7-6910103afb96">kernel streaming</a> uses related file objects to represent the parent filters of child pins.
 
-For more information about related file objects, see the <a href="https://msdn.microsoft.com/0ac5c19a-b3ec-4f1e-a018-2c11cc18e58d">GetRelatedFileObject</a> member of the kernel-mode <a href="..\wdm\ns-wdm-_file_object.md">FILE_OBJECT</a> structure.
+For more information about related file objects, see the <a href="https://msdn.microsoft.com/0ac5c19a-b3ec-4f1e-a018-2c11cc18e58d">GetRelatedFileObject</a> member of the kernel-mode <a href="https://msdn.microsoft.com/library/windows/hardware/ff545834">FILE_OBJECT</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,4 +88,4 @@ For more information about related file objects, see the <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdffileobject\nf-wdffileobject-wdffileobjectgetfilename.md">WdfFileObjectGetFileName</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547310">WdfFileObjectGetFileName</a>

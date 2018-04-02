@@ -7,7 +7,7 @@ old-location: buses\usb_connection_status.htm
 old-project: usbref
 ms.assetid: 9006f74f-4033-4f07-816c-380d6d8b3a2d
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSB_CONNECTION_STATUS, DeviceCausedOvercurrent, DeviceConnected, DeviceEnumerating, DeviceFailedEnumeration, DeviceGeneralFailure, DeviceHubNestedTooDeeply, DeviceInLegacyHub, DeviceNotEnoughBandwidth, DeviceNotEnoughPower, DeviceReset, NoDeviceConnected, PUSB_CONNECTION_STATUS, PUSB_CONNECTION_STATUS enumeration pointer [Buses], USB_CONNECTION_STATUS, USB_CONNECTION_STATUS enumeration [Buses], _USB_CONNECTION_STATUS, buses.usb_connection_status, usbioctl/DeviceCausedOvercurrent, usbioctl/DeviceConnected, usbioctl/DeviceEnumerating, usbioctl/DeviceFailedEnumeration, usbioctl/DeviceGeneralFailure, usbioctl/DeviceHubNestedTooDeeply, usbioctl/DeviceInLegacyHub, usbioctl/DeviceNotEnoughBandwidth, usbioctl/DeviceNotEnoughPower, usbioctl/DeviceReset, usbioctl/NoDeviceConnected, usbioctl/PUSB_CONNECTION_STATUS, usbioctl/USB_CONNECTION_STATUS, usbstrct_3f747b8b-9fe5-48f1-bfc4-3701ab8be8e9.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,21 +48,21 @@ req.product: Windows 10 or later.
 The <b>USB_CONNECTION_STATUS</b> enumerator indicates the status of the connection to a device on a USB hub port.
 
 ## Syntax
-````
-typedef enum _USB_CONNECTION_STATUS { 
-  NoDeviceConnected         = 0,
-  DeviceConnected           = 1,
-  DeviceFailedEnumeration   = 2,
-  DeviceGeneralFailure      = 3,
-  DeviceCausedOvercurrent   = 4,
-  DeviceNotEnoughPower      = 5,
-  DeviceNotEnoughBandwidth  = 6,
-  DeviceHubNestedTooDeeply  = 7,
-  DeviceInLegacyHub         = 8,
-  DeviceEnumerating         = 9,
-  DeviceReset               = 10
+```
+typedef enum _USB_CONNECTION_STATUS {
+  NoDeviceConnected         ,
+  DeviceConnected           ,
+  DeviceFailedEnumeration   ,
+  DeviceGeneralFailure      ,
+  DeviceCausedOvercurrent   ,
+  DeviceNotEnoughPower      ,
+  DeviceNotEnoughBandwidth  ,
+  DeviceHubNestedTooDeeply  ,
+  DeviceInLegacyHub         ,
+  DeviceEnumerating         ,
+  DeviceReset
 } USB_CONNECTION_STATUS, *PUSB_CONNECTION_STATUS;
-````
+```
 
 ## Constants
 
@@ -130,7 +130,7 @@ typedef enum _USB_CONNECTION_STATUS {
 
 ## Remarks
 
-The USB bus driver reports connection status in a <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex.md">USB_NODE_CONNECTION_INFORMATION_EX</a> structure in response to an <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> request.
+The USB bus driver reports connection status in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff540094">USB_NODE_CONNECTION_INFORMATION_EX</a> structure in response to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537321">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -139,7 +139,7 @@ The USB bus driver reports connection status in a <a href="..\usbioctl\ns-usbioc
 
 ## See Also
 
-<a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537321">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a>
 
 
 
@@ -147,4 +147,4 @@ The USB bus driver reports connection status in a <a href="..\usbioctl\ns-usbioc
 
 
 
-<a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information_ex.md">USB_NODE_CONNECTION_INFORMATION_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540094">USB_NODE_CONNECTION_INFORMATION_EX</a>

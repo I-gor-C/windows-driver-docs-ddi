@@ -7,7 +7,7 @@ old-location: kernel\rtluintptrtolongptr.htm
 old-project: kernel
 ms.assetid: FF032898-E1BB-4821-A685-3774B1DBFADA
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlUIntPtrToLongPtr, RtlUIntPtrToLongPtr function [Kernel-Mode Driver Architecture], kernel.rtluintptrtolongptr, ntintsafe/RtlUIntPtrToLongPtr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>UINT_PTR</b> to a value of type <b>LONG_PTR</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlUIntPtrToLongPtr(
-  _In_  UINT_PTR uOperand,
-  _Out_ LONG_PTR *plResult
+  UINT_PTR uOperand,
+  LONG_PTR *plResult
 );
-````
+```
 
 ## Parameters
 

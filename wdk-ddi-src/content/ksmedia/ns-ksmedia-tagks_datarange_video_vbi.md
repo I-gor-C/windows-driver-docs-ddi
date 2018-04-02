@@ -47,17 +47,17 @@ req.typenames: KS_DATARANGE_VIDEO_VBI, *PKS_DATARANGE_VIDEO_VBI
 The KS_DATARANGE_VIDEO_VBI structure describes a range of data formats containing vertical blanking interval (VBI) data.
 
 ## Syntax
-````
+```
 typedef struct tagKS_DATARANGE_VIDEO_VBI {
-  KSDATARANGE                 DataRange;
-  BOOL                        bFixedSizeSamples;
-  BOOL                        bTemporalCompression;
-  DWORD                       StreamDescriptionFlags;
-  DWORD                       MemoryAllocationFlags;
+  KSDATARANGE                 DataRange;
+  BOOL                        bFixedSizeSamples;
+  BOOL                        bTemporalCompression;
+  DWORD                       StreamDescriptionFlags;
+  DWORD                       MemoryAllocationFlags;
   KS_VIDEO_STREAM_CONFIG_CAPS ConfigCaps;
-  KS_VBIINFOHEADER            VBIInfoHeader;
-} KS_DATARANGE_VIDEO_VBI, *PKS_DATARANGE_VIDEO_VBI;
-````
+  KS_VBIINFOHEADER            VBIInfoHeader;
+} *PKS_DATARANGE_VIDEO_VBI, KS_DATARANGE_VIDEO_VBI;
+```
 
 ## Members
 
@@ -98,12 +98,12 @@ Indicates VBI-specific information for the range of formats being described.
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-_ks_video_stream_config_caps.md">KS_VIDEO_STREAM_CONFIG_CAPS</a>
-
-
-
-<a href="..\ksmedia\ns-ksmedia-tagks_vbiinfoheader.md">KS_VBIINFOHEADER</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561658">KSDATARANGE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567692">KS_VBIINFOHEADER</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567706">KS_VIDEO_STREAM_CONFIG_CAPS</a>

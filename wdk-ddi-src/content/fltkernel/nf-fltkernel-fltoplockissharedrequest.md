@@ -7,7 +7,7 @@ old-location: ifsk\fltoplockissharedrequest.htm
 old-project: ifsk
 ms.assetid: 5387e22a-88df-413f-a6d1-2e208381df67
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_e_to_o_93f74880-eb0d-4040-82a0-e0cb4bfb2cba.xml, FltOplockIsSharedRequest, FltOplockIsSharedRequest routine [Installable File System Drivers], fltkernel/FltOplockIsSharedRequest, ifsk.fltoplockissharedrequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ The <b>FltOplockIsSharedRequest</b> routine determines if a request for an oppor
 
 ## Syntax
 
-````
-BOOLEAN FltOplockIsSharedRequest(
-  _In_ PFLT_CALLBACK_DATA CallbackData
+```
+BOOLEAN FLTAPI FltOplockIsSharedRequest(
+  PFLT_CALLBACK_DATA CallbackData
 );
-````
+```
 
 ## Parameters
 
 `CallbackData`
 
-A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>) structure for the I/O operation. The caller must ensure that the I/O operation has a major code of IRP_MJ_FILE_SYSTEM_CONTROL and a minor code of IRP_MN_USER_FS_REQUEST.
+A pointer to the callback data (<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>) structure for the I/O operation. The caller must ensure that the I/O operation has a major code of IRP_MJ_FILE_SYSTEM_CONTROL and a minor code of IRP_MN_USER_FS_REQUEST.
 
 
 ## Return Value
@@ -79,4 +79,4 @@ A pointer to the callback data (<a href="..\fltkernel\ns-fltkernel-_flt_callback
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtloplockissharedrequest.md">FsRtlOplockIsSharedRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547128">FsRtlOplockIsSharedRequest</a>

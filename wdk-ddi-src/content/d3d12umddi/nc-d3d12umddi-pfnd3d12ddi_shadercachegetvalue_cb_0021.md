@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_shadercachegetvalue_cb_0021.htm
 old-project: display
 ms.assetid: EFC9E2D0-1995-4FE9-840C-7B33081AEF2F
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3D12DDI_SHADERCACHEGETVALUE_CB_0021, d3d12umddi/pfnShaderCacheGetValueCb, display.pfnd3d12ddi_shadercachegetvalue_cb_0021, pfnShaderCacheGetValueCb, pfnShaderCacheGetValueCb callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -101,7 +101,7 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 ## Remarks
 
-Access this callback by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_shadercache_callbacks_0021.md">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a> structure.
+Access this callback by using the <a href="https://msdn.microsoft.com/EBA976B0-3B44-4482-B1B0-31A84150C056">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -111,4 +111,4 @@ Access this callback by using the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_
 
 ## See Also
 
-<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_shadercache_callbacks_0021.md">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a>
+<a href="https://msdn.microsoft.com/EBA976B0-3B44-4482-B1B0-31A84150C056">D3D12DDI_SHADERCACHE_CALLBACKS_0021</a>

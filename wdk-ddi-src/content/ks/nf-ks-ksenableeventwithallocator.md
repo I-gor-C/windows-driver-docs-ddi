@@ -52,18 +52,18 @@ If used, the filter may need to free the buffer in some nonconventional manner. 
 
 ## Syntax
 
-````
-NTSTATUS KsEnableEventWithAllocator(
-  _In_           PIRP              Irp,
-  _In_           ULONG             EventSetsCount,
-  _In_     const KSEVENT_SET       *EventSet,
-  _Inout_        PLIST_ENTRY       EventsList,
-  _In_opt_       KSEVENTS_LOCKTYPE EventsFlags,
-  _In_opt_       PVOID             EventsLock,
-  _In_opt_       PFNKSALLOCATOR    Allocator,
-  _In_opt_       ULONG             EventItemSize
+```
+KSDDKAPI NTSTATUS KsEnableEventWithAllocator(
+  PIRP                          Irp,
+  ULONG                         EventSetsCount,
+  const KSEVENT_SET             *EventSet,
+  PLIST_ENTRY                   EventsList,
+  KSEVENTS_LOCKTYPE EventsFlags OPTIONAL,
+  PVOID                         EventsLock,
+  PFNKSALLOCATOR                Allocator,
+  ULONG                         EventItemSize
 );
-````
+```
 
 ## Parameters
 

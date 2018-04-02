@@ -47,14 +47,14 @@ req.typenames: BTH_RADIO_INFO, *PBTH_RADIO_INFO
 The BTH_RADIO_INFO structure contains information about a remote radio.
 
 ## Syntax
-````
+```
 typedef struct _BTH_RADIO_INFO {
   ULONGLONG lmpSupportedFeatures;
-  USHORT    mfg;
-  USHORT    lmpSubversion;
-  UCHAR     lmpVersion;
-} BTH_RADIO_INFO, *PBTH_RADIO_INFO;
-````
+  USHORT    mfg;
+  USHORT    lmpSubversion;
+  UCHAR     lmpVersion;
+} *PBTH_RADIO_INFO, BTH_RADIO_INFO;
+```
 
 ## Members
 
@@ -77,10 +77,10 @@ The major version number for the LMP that is used by the local radio.
 
 ## Remarks
 The BTH_RADIO_INFO structure is returned as part of the output buffer of 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_bth_get_local_info.md">IOCTL_BTH_GET_LOCAL_INFO</a>. The local
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536684">IOCTL_BTH_GET_LOCAL_INFO</a>. The local
     radio information is returned in the 
     <b>radioInfo</b> member of the 
-    <a href="..\bthioctl\ns-bthioctl-_bth_local_radio_info.md">BTH_LOCAL_RADIO_INFO</a> structure.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536644">BTH_LOCAL_RADIO_INFO</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -90,8 +90,8 @@ The BTH_RADIO_INFO structure is returned as part of the output buffer of
 
 ## See Also
 
-<a href="..\bthioctl\ns-bthioctl-_bth_local_radio_info.md">BTH_LOCAL_RADIO_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536644">BTH_LOCAL_RADIO_INFO</a>
 
 
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_get_local_info.md">IOCTL_BTH_GET_LOCAL_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536684">IOCTL_BTH_GET_LOCAL_INFO</a>

@@ -46,8 +46,8 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Request method
-Gets the <a href="..\printerextension\nn-printerextension-iprinterextensionrequest.md">IPrinterExtensionRequest</a> object for the current event.
+# IPrinterExtensionEventArgs::get_Request method
+Gets the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439517">IPrinterExtensionRequest</a> object for the current event.
 
 This interface is used to complete or cancel the event.
 
@@ -55,11 +55,11 @@ This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_Request(
-  [out, retval] IPrinterExtensionRequest **ppRequest
+  IPrinterExtensionRequest **ppRequest
 );
-````
+```
 
 ## Parameters
 
@@ -82,8 +82,8 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioneventargs.md">IPrinterExtensionEventArgs</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh973207">IPrinterExtensionEventArgs</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterextensionrequest.md">IPrinterExtensionRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439517">IPrinterExtensionRequest</a>

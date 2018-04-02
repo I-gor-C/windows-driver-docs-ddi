@@ -47,25 +47,25 @@ req.typenames: SELF_ID_MORE, *PSELF_ID_MORE
 The SELF_ID_MORE structure contains a raw packet one, two, or three self-ID packet. See the IEEE 1394 specification for details.
 
 ## Syntax
-````
+```
 typedef struct _SELF_ID_MORE {
-  ULONG SID_Phys_ID  :6;
-  ULONG SID_Packet_ID  :2;
-  ULONG SID_PortA  :2;
-  ULONG SID_Reserved2  :2;
-  ULONG SID_Sequence  :3;
-  ULONG SID_One  :1;
-  ULONG SID_PortE  :2;
-  ULONG SID_PortD  :2;
-  ULONG SID_PortC  :2;
-  ULONG SID_PortB  :2;
-  ULONG SID_More_Packets  :1;
-  ULONG SID_Reserved3  :1;
-  ULONG SID_PortH  :2;
-  ULONG SID_PortG  :2;
-  ULONG SID_PortF  :2;
-} SELF_ID_MORE, *PSELF_ID_MORE;
-````
+  ULONG  : 6 SID_Phys_ID;
+  ULONG  : 2 SID_Packet_ID;
+  ULONG  : 2 SID_PortA;
+  ULONG  : 2 SID_Reserved2;
+  ULONG  : 3 SID_Sequence;
+  ULONG  : 1 SID_One;
+  ULONG  : 2 SID_PortE;
+  ULONG  : 2 SID_PortD;
+  ULONG  : 2 SID_PortC;
+  ULONG  : 2 SID_PortB;
+  ULONG  : 1 SID_More_Packets;
+  ULONG  : 1 SID_Reserved3;
+  ULONG  : 2 SID_PortH;
+  ULONG  : 2 SID_PortG;
+  ULONG  : 2 SID_PortF;
+} *PSELF_ID_MORE, SELF_ID_MORE;
+```
 
 ## Members
 

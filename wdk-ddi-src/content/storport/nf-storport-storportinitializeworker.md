@@ -7,7 +7,7 @@ old-location: storage\storportinitializeworker.htm
 old-project: storage
 ms.assetid: 4472A092-B2F4-4220-9685-6BE4FF0A83DB
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortInitializeWorker, StorPortInitializeWorker routine [Storage Devices], storage.storportinitializeworker, storport/StorPortInitializeWorker
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ Creates a new Storport work item that runs in a system worker thread.
 
 ## Syntax
 
-````
+```
 ULONG StorPortInitializeWorker(
-  _In_  PVOID HwDeviceExtension,
-  _Out_ PVOID *Worker
+  PVOID HwDeviceExtension,
+  PVOID *Worker
 );
-````
+```
 
 ## Parameters
 
@@ -125,9 +125,9 @@ The work item was successfully initialized.
 
 ## Remarks
 
-The work item context returned in the <i>Worker</i> parameter by <b>StorPortInitializeWorker</b> is used in future calls to <a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a> or <a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>.
+The work item context returned in the <i>Worker</i> parameter by <b>StorPortInitializeWorker</b> is used in future calls to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451509">StorPortQueueWorkItem</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/hh451478">StorPortFreeWorker</a>.
 
-If the miniport uses the work item during IO processing, we recommended that <b>StorPortInitializeWorker</b> be called during the miniport's <a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a> function to ensure that resources are available when needed.
+If the miniport uses the work item during IO processing, we recommended that <b>StorPortInitializeWorker</b> be called during the miniport's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a> function to ensure that resources are available when needed.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -139,12 +139,12 @@ If the miniport uses the work item during IO processing, we recommended that <b>
 
 ## See Also
 
-<a href="..\storport\nf-storport-storportqueueworkitem.md">StorPortQueueWorkItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557390">HwStorFindAdapter</a>
 
 
 
-<a href="..\storport\nc-storport-hw_find_adapter.md">HwStorFindAdapter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451478">StorPortFreeWorker</a>
 
 
 
-<a href="..\storport\nf-storport-storportfreeworker.md">StorPortFreeWorker</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451509">StorPortQueueWorkItem</a>

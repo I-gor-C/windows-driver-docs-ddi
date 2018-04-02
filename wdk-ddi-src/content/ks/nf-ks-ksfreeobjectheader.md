@@ -50,11 +50,11 @@ The <b>KsFreeObjectHeader</b> function cleans up and frees a previously allocate
 
 ## Syntax
 
-````
-VOID KsFreeObjectHeader(
-  _In_ KSOBJECT_HEADER Header
+```
+KSDDKAPI VOID KsFreeObjectHeader(
+  KSOBJECT_HEADER Header
 );
-````
+```
 
 ## Parameters
 
@@ -77,4 +77,4 @@ None
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksallocateobjectheader.md">KsAllocateObjectHeader</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560972">KsAllocateObjectHeader</a>

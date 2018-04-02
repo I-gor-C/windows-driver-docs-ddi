@@ -47,13 +47,13 @@ req.typenames: SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, *PSECURE_ELEMENT_HCE_ACTIV
 
 
 ## Syntax
-````
+```
 typedef struct _SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD {
   USHORT bConnectionId;
-  BYTE   eRfTechType;
-  BYTE   eRfProtocolType;
+  BYTE   eRfTechType;
+  BYTE   eRfProtocolType;
 } SECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD, *PSECURE_ELEMENT_HCE_ACTIVATION_PAYLOAD;
-````
+```
 
 ## Members
 

@@ -63,4 +63,4 @@ The <b>IPartResourceDictionary</b> interface is the abstraction for an XPS resou
 
 ## See Also
 
-<a href="..\filterpipeline\nn-filterpipeline-ipartbase.md">IPartBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551846">IPartBase</a>

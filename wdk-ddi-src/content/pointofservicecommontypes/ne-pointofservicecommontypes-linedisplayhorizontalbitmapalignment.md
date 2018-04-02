@@ -47,11 +47,13 @@ req.typenames:
 This enumeration is not implemented.
 
 ## Syntax
-````
-typedef enum _LineDisplayHorizontalBitmapAlignment { 
-    = 
-} LineDisplayHorizontalBitmapAlignment;
-````
+```
+typedef enum LineDisplayHorizontalBitmapAlignment {
+  HorizontalAlignmentLeft    ,
+  HorizontalAlignmentCenter  ,
+  HorizontalAlignmentRight
+} ;
+```
 
 ## Constants
 

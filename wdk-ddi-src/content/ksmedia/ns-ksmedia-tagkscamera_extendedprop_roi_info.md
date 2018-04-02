@@ -47,14 +47,14 @@ req.typenames: KSCAMERA_EXTENDEDPROP_ROI_INFO, *PKSCAMERA_EXTENDEDPROP_ROI_INFO
 This structure contains information about an ROI.
 
 ## Syntax
-````
+```
 typedef struct tagKSCAMERA_EXTENDEDPROP_ROI_INFO {
-  RECT      Region;
+  RECT      Region;
   ULONGLONG Flags;
-  LONG      Weight;
-  LONG      RegionOfInterestType;
-} KSCAMERA_EXTENDEDPROP_ROI_INFO, *PKSCAMERA_EXTENDEDPROP_ROI_INFO;
-````
+  LONG      Weight;
+  LONG      RegionOfInterestType;
+} *PKSCAMERA_EXTENDEDPROP_ROI_INFO, KSCAMERA_EXTENDEDPROP_ROI_INFO;
+```
 
 ## Members
 
@@ -73,7 +73,7 @@ This is the weight of the region (0-100).
 
 `RegionOfInterestType`
 
-If the region is a face, this value is KSCAMERA_EXTENDEDPROP_ROITYPE_FACE. If the region is anything other than face, this value is KSCAMERA_EXTENDEDPROP_ROITYPE_UNKNOWN. For more information, see the <a href="..\ksmedia\ne-ksmedia-kscamera_extendedprop_roitype.md">KSCAMERA_EXTENDEDPROP_ROITYPE</a> enumeration.
+If the region is a face, this value is KSCAMERA_EXTENDEDPROP_ROITYPE_FACE. If the region is anything other than face, this value is KSCAMERA_EXTENDEDPROP_ROITYPE_UNKNOWN. For more information, see the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925151">KSCAMERA_EXTENDEDPROP_ROITYPE</a> enumeration.
 
 
 ## Requirements

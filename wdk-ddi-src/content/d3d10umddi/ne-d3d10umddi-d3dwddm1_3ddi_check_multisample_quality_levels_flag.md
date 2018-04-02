@@ -7,7 +7,7 @@ old-location: display\d3dwddm1_3ddi_check_multisample_quality_levels_flag.htm
 old-project: display
 ms.assetid: C69CDCCF-3E5F-4E1A-8781-A995F8E4F2C2
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG, D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG enumeration [Display Devices], D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_TILED_RESOURCE, d3d10umddi/D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG, d3d10umddi/D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_TILED_RESOURCE, display.d3dwddm1_3ddi_check_multisample_quality_levels_flag
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,15 +44,14 @@ req.typenames: D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG
 ---
 
 # D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG Enumeration
-Identifies how to check multisample quality levels using the <a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_checkmultisamplequalitylevels.md">CheckMultisampleQualityLevels(D3D11_2)</a> function.
+Identifies how to check multisample quality levels using the <a href="https://msdn.microsoft.com/A3AD5F2F-4FB9-407C-A436-A0B5F96002D7">CheckMultisampleQualityLevels(D3D11_2)</a> function.
 
 ## Syntax
-````
-enum D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG {
-  D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_TILED_RESOURCE  = 0x00000001 
-
-};
-````
+```
+typedef enum D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG {
+  D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_TILED_RESOURCE
+} ;
+```
 
 ## Constants
 
@@ -73,4 +72,4 @@ enum D3DWDDM1_3DDI_CHECK_MULTISAMPLE_QUALITY_LEVELS_FLAG {
 
 ## See Also
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3dwddm1_3ddi_checkmultisamplequalitylevels.md">CheckMultisampleQualityLevels(D3D11_2)</a>
+<a href="https://msdn.microsoft.com/A3AD5F2F-4FB9-407C-A436-A0B5F96002D7">CheckMultisampleQualityLevels(D3D11_2)</a>

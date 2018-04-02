@@ -50,11 +50,11 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
+```
 PVOID RouterAllocBidiMem(
-  _In_ size_t NumBytes
+  size_t NumBytes
 );
-````
+```
 
 ## Parameters
 
@@ -69,7 +69,7 @@ Specifies the size, in bytes, of the block of memory to be allocated.
 
 ## Remarks
 
-When the memory allocated by this function is no longer needed, it can be returned by a call to <a href="..\winsplp\nf-winsplp-routerfreebidimem.md">RouterFreeBidiMem</a>.
+When the memory allocated by this function is no longer needed, it can be returned by a call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562012">RouterFreeBidiMem</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -82,8 +82,8 @@ When the memory allocated by this function is no longer needed, it can be return
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562012">RouterFreeBidiMem</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562071">SendRecvBidiDataFromPort</a>
-
-
-
-<a href="..\winsplp\nf-winsplp-routerfreebidimem.md">RouterFreeBidiMem</a>

@@ -55,11 +55,11 @@ The <b>WdfCollectionGetCount</b> method returns the number of objects that are c
 
 ## Syntax
 
-````
+```
 ULONG WdfCollectionGetCount(
-  _In_ WDFCOLLECTION Collection
+  WDFCOLLECTION Collection
 );
-````
+```
 
 ## Parameters
 
@@ -118,4 +118,4 @@ for (i = 0; i &lt; count; i++) {
 
 ## See Also
 
-<a href="..\wdfcollection\nf-wdfcollection-wdfcollectiongetitem.md">WdfCollectionGetItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545770">WdfCollectionGetItem</a>

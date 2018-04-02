@@ -7,7 +7,7 @@ old-location: display\dxva_videochromasubsampling.htm
 old-project: display
 ms.assetid: aa8f736f-1311-4217-8750-cdd134c6945c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXVA_VideoChromaSubsampling, DXVA_VideoChromaSubsampling enumeration [Display Devices], DXVA_VideoChromaSubsamplingMask, DXVA_VideoChromaSubsamplingShift, DXVA_VideoChromaSubsampling_Cosited, DXVA_VideoChromaSubsampling_DV_PAL, DXVA_VideoChromaSubsampling_Horizontally_Cosited, DXVA_VideoChromaSubsampling_MPEG1, DXVA_VideoChromaSubsampling_MPEG2, DXVA_VideoChromaSubsampling_ProgressiveChroma, DXVA_VideoChromaSubsampling_Unknown, DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes, DXVA_VideoChromaSubsampling_Vertically_Cosited, _DXVA_VideoChromaSubsampling, display.dxva_videochromasubsampling, dxva/DXVA_VideoChromaSubsampling, dxva/DXVA_VideoChromaSubsamplingMask, dxva/DXVA_VideoChromaSubsamplingShift, dxva/DXVA_VideoChromaSubsampling_Cosited, dxva/DXVA_VideoChromaSubsampling_DV_PAL, dxva/DXVA_VideoChromaSubsampling_Horizontally_Cosited, dxva/DXVA_VideoChromaSubsampling_MPEG1, dxva/DXVA_VideoChromaSubsampling_MPEG2, dxva/DXVA_VideoChromaSubsampling_ProgressiveChroma, dxva/DXVA_VideoChromaSubsampling_Unknown, dxva/DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes, dxva/DXVA_VideoChromaSubsampling_Vertically_Cosited, dxvaref_2939ec96-fb1f-4911-916e-40d043bb58d5.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,21 +47,21 @@ req.typenames: DXVA_VideoChromaSubsampling
 The DXVA_VideoChromaSubsampling enumeration type contains enumerators that identify the chroma encoding scheme for Y'Cb'Cr' data.
 
 ## Syntax
-````
-typedef enum _DXVA_VideoChromaSubsampling { 
-  DXVA_VideoChromaSubsamplingShift                            = (DXVA_ExtColorData_ShiftBase + 0),
-  DXVA_VideoChromaSubsamplingMask                             = DXVAColorMask(5, DXVA_VideoChromaSubsamplingShift),
-  DXVA_VideoChromaSubsampling_Unknown                         = 0,
-  DXVA_VideoChromaSubsampling_ProgressiveChroma               = 0x8,
-  DXVA_VideoChromaSubsampling_Horizontally_Cosited            = 0x4,
-  DXVA_VideoChromaSubsampling_Vertically_Cosited              = 0x2,
-  DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes  = 0x1,
-  DXVA_VideoChromaSubsampling_MPEG2                           = DXVA_VideoChromaSubsampling_Horizontally_Cosited | DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes,
-  DXVA_VideoChromaSubsampling_MPEG1                           = DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes,
-  DXVA_VideoChromaSubsampling_DV_PAL                          = DXVA_VideoChromaSubsampling_Horizontally_Cosited | DXVA_VideoChromaSubsampling_Vertically_Cosited,
-  DXVA_VideoChromaSubsampling_Cosited                         = DXVA_VideoChromaSubsampling_Horizontally_Cosited | DXVA_VideoChromaSubsampling_Vertically_Cosited | DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes
+```
+typedef enum _DXVA_VideoChromaSubsampling {
+  DXVA_VideoChromaSubsamplingShift                            ,
+  DXVA_VideoChromaSubsamplingMask                             ,
+  DXVA_VideoChromaSubsampling_Unknown                         ,
+  DXVA_VideoChromaSubsampling_ProgressiveChroma               ,
+  DXVA_VideoChromaSubsampling_Horizontally_Cosited            ,
+  DXVA_VideoChromaSubsampling_Vertically_Cosited              ,
+  DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes  ,
+  DXVA_VideoChromaSubsampling_MPEG2                           ,
+  DXVA_VideoChromaSubsampling_MPEG1                           ,
+  DXVA_VideoChromaSubsampling_DV_PAL                          ,
+  DXVA_VideoChromaSubsampling_Cosited
 } DXVA_VideoChromaSubsampling;
-````
+```
 
 ## Constants
 
@@ -99,7 +99,7 @@ typedef enum _DXVA_VideoChromaSubsampling {
             
                 <tr>
                     <td>DXVA_VideoChromaSubsampling_Vertically_AlignedChromaPlanes</td>
-                    <td>Specifies that the Pb and Pr (or Cb and Cr) planes have the same phase alignment. This enumerator can only be set to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure if the data is vertically cosited.</td>
+                    <td>Specifies that the Pb and Pr (or Cb and Cr) planes have the same phase alignment. This enumerator can only be set to 0 in the <b>VideoChromaSubsampling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure if the data is vertically cosited.</td>
                 </tr>
             
                 <tr>
@@ -125,7 +125,7 @@ typedef enum _DXVA_VideoChromaSubsampling {
 
 ## Remarks
 
-The enumerators of DXVA_VideoChromaSubsampling can be ORed together to create a value in the <b>VideoChromaSubsampling</b> member of the <a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a> structure.
+The enumerators of DXVA_VideoChromaSubsampling can be ORed together to create a value in the <b>VideoChromaSubsampling</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a> structure.
 
 Cosite variations indicate that the chroma samples are aligned with the luma samples. Typically, 4:2:0 data with chroma is aligned in one or more directions with the luma data. Note that 4:4:4, 4:2:2 and 4:1:1 data are always cosited in both directions.
 
@@ -137,4 +137,4 @@ Cosite variations indicate that the chroma samples are aligned with the luma sam
 
 ## See Also
 
-<a href="..\dxva\ns-dxva-_dxva_extendedformat.md">DXVA_ExtendedFormat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563967">DXVA_ExtendedFormat</a>

@@ -7,7 +7,7 @@ old-location: storage\ioctl_mountmgr_keep_links_when_offline.htm
 old-project: storage
 ms.assetid: 56af77f9-7c29-4bde-a8ae-9af23af4d296
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE, IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE control code [Storage Devices], k307_7502107c-0301-45d9-a0b6-8aa6e9e231c9.xml, mountmgr/IOCTL_MOUNTMGR_KEEP_LINKS_WHEN_OFFLINE, storage.ioctl_mountmgr_keep_links_when_offline
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,7 +52,7 @@ Clusters use this IOCTL to ensure that a node can continue to access a volume wi
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-The mount manager client loads the following structure with the symbolic link that will persist even after its volume is removed from the system. The initialized structure <a href="..\mountmgr\ns-mountmgr-_mountmgr_target_name.md">MOUNTMGR_TARGET_NAME</a>, defined in <i>Mountmgr.h</i>, is inserted at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
+The mount manager client loads the following structure with the symbolic link that will persist even after its volume is removed from the system. The initialized structure <a href="https://msdn.microsoft.com/library/windows/hardware/ff562289">MOUNTMGR_TARGET_NAME</a>, defined in <i>Mountmgr.h</i>, is inserted at the beginning of the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
 
 ### Input Buffer Length
 <b>Parameters.DeviceIoControl.InputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the input buffer, which must be greater than or equal to <b>sizeof</b>(MOUNTMGR_TARGET_NAME).
@@ -82,4 +82,4 @@ The input buffer size, indicated by <b>InputBufferLength</b>, must be large enou
 
 ## See Also
 
-<a href="..\mountmgr\ns-mountmgr-_mountmgr_target_name.md">MOUNTMGR_TARGET_NAME</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562289">MOUNTMGR_TARGET_NAME</a>

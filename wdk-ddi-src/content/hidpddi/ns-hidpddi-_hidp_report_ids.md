@@ -47,15 +47,15 @@ req.typenames: HIDP_REPORT_IDS, *PHIDP_REPORT_IDS
 Contains report ID information for a top-level collection.
 
 ## Syntax
-````
+```
 typedef struct _HIDP_REPORT_IDS {
-  UCHAR               ReportID;
-  UCHAR               CollectionNumber;
-  USHORT              InputLength;
-  USHORT              OutputLength;
-  USHORT              FeatureLength;
-} HIDP_REPORT_IDS, *PHIDP_REPORT_IDS;
-````
+  UCHAR  ReportID;
+  UCHAR  CollectionNumber;
+  USHORT InputLength;
+  USHORT OutputLength;
+  USHORT FeatureLength;
+} *PHIDP_REPORT_IDS, HIDP_REPORT_IDS;
+```
 
 ## Members
 
@@ -66,7 +66,7 @@ The report ID of the top-level collection.
 
 `CollectionNumber`
 
-The index of the collection in the array of  <a href="..\hidpddi\ns-hidpddi-_hidp_collection_desc.md">HIDP_COLLECTION_DESC</a> structure.
+The index of the collection in the array of  <a href="https://msdn.microsoft.com/library/windows/hardware/mt740161">HIDP_COLLECTION_DESC</a> structure.
 
 `InputLength`
 
@@ -88,4 +88,4 @@ The length of a feature report of this report ID.
 
 ## See Also
 
-<a href="..\hidpddi\nf-hidpddi-hidp_getcollectiondescription.md">HidP_GetCollectionDescription</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt740164">HidP_GetCollectionDescription</a>

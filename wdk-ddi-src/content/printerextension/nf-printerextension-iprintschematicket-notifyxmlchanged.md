@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# NotifyXmlChanged method
+# IPrintSchemaTicket::NotifyXmlChanged method
 Notifies the print system that the XML DOM object has changed.
 
 ## Syntax
 
-````
+```
 HRESULT NotifyXmlChanged(
-    None
+
 );
-````
+```
 
 ## Parameters
 
@@ -77,8 +77,8 @@ If the client retrieves the XML DOM object of the PrintTicket by calling <a href
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschematicket.md">IPrintSchemaTicket</a>
-
-
-
 <a href="https://msdn.microsoft.com/5E7F2292-1F71-4581-8E34-86F1464EC08F">IPrintSchemaElement::XmlNode</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451398">IPrintSchemaTicket</a>

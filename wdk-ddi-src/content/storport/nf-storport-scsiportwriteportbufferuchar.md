@@ -7,7 +7,7 @@ old-location: storage\scsiportwriteportbufferuchar.htm
 old-project: storage
 ms.assetid: 83b6425f-52fa-4c57-aac5-698d3a586248
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortWritePortBufferUchar, ScsiPortWritePortBufferUchar routine [Storage Devices], scsiprt_19277863-04fb-4f72-85f5-9bc877bd83c1.xml, srb/ScsiPortWritePortBufferUchar, storage.scsiportwriteportbufferuchar
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,13 +52,13 @@ The <b>ScsiPortWritePortBufferUchar</b> routine transfers a given number of unsi
 
 ## Syntax
 
-````
-VOID ScsiPortWritePortBufferUchar(
-  _In_ PUCHAR Port,
-  _In_ PUCHAR Buffer,
-  _In_ ULONG  Count
+```
+void ScsiPortWritePortBufferUchar(
+   Port,
+   Buffer,
+   Count
 );
-````
+```
 
 ## Parameters
 
@@ -89,4 +89,4 @@ None
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>

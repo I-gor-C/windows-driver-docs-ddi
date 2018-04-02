@@ -52,19 +52,19 @@ The <b>WRITE_REGISTER_ULONG64</b> function writes a ULONG64 value to the specifi
 
 ## Syntax
 
-````
+```
 void WRITE_REGISTER_ULONG64(
-  _In_ IWDFDevice3 *pDevice,
-  _In_ PULONG64    Register,
-  _In_ ULONG       Value
+  IWDFDevice3 *pDevice,
+  PULONG64    Register,
+  ULONG64     Value
 );
-````
+```
 
 ## Parameters
 
 `pDevice`
 
-Specifies a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfdevice3.md">IWDFDevice3</a> interface for the device object of the device to access.
+Specifies a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451197">IWDFDevice3</a> interface for the device object of the device to access.
 
 `Register`
 

@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols2.htm
 old-project: debugger
 ms.assetid: 2764a3b4-ba20-4b2e-8eb1-6ab9c631ccd8
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugSymbols2, IDebugSymbols2 interface [Windows Debugging], IDebugSymbols2 interface [Windows Debugging], described, dbgeng/IDebugSymbols2, debugger.idebugsymbols2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -120,8 +120,8 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550856">IDebugSymbols</a>
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols.md">IDebugSymbols</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

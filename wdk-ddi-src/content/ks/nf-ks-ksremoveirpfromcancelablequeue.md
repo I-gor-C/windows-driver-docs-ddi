@@ -50,14 +50,14 @@ The <b>KsRemoveIrpFromCancelableQueue</b> function pops the next noncanceled IRP
 
 ## Syntax
 
-````
-PIRP KsRemoveIrpFromCancelableQueue(
-  _Inout_ PLIST_ENTRY             QueueHead,
-  _In_    PKSPIN_LOCK             SpinLock,
-  _In_    KSLIST_ENTRY_LOCATION   ListLocation,
-  _In_    KSIRP_REMOVAL_OPERATION RemovalOperation
+```
+KSDDKAPI PIRP KsRemoveIrpFromCancelableQueue(
+  PLIST_ENTRY             QueueHead,
+  PKSPIN_LOCK             SpinLock,
+  KSLIST_ENTRY_LOCATION   ListLocation,
+  KSIRP_REMOVAL_OPERATION RemovalOperation
 );
-````
+```
 
 ## Parameters
 
@@ -115,8 +115,8 @@ typedef enum {
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksreleaseirponcancelablequeue.md">KsReleaseIrpOnCancelableQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566789">KsReleaseIrpOnCancelableQueue</a>
 
 
 
-<a href="..\ks\nf-ks-ksremovespecificirpfromcancelablequeue.md">KsRemoveSpecificIrpFromCancelableQueue</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566802">KsRemoveSpecificIrpFromCancelableQueue</a>

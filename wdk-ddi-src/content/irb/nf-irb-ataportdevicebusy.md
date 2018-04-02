@@ -7,7 +7,7 @@ old-location: storage\ataportdevicebusy.htm
 old-project: storage
 ms.assetid: 919f30b1-025d-4526-a1f6-2d14c482e474
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortDeviceBusy, AtaPortDeviceBusy routine [Storage Devices], atartns_22d36e2a-804e-4d24-910e-051e6dccdeaa.xml, irb/AtaPortDeviceBusy, storage.ataportdevicebusy
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The <b>AtaPortDeviceBusy</b> routine informs the port driver that the indicated 
 
 ## Syntax
 
-````
-VOID __inline AtaPortDeviceBusy(
-  _In_ PVOID ChannelExtension,
-  _In_ UCHAR TargetId,
-  _In_ UCHAR Lun,
-  _In_ ULONG BusyTimeout
+```
+void AtaPortDeviceBusy(
+  PVOID ChannelExtension,
+  UCHAR TargetId,
+  UCHAR Lun,
+  ULONG BusyTimeout
 );
-````
+```
 
 ## Parameters
 
@@ -98,7 +98,7 @@ The miniport driver must not call <b>AtaPortDeviceBusy</b> from its <a href="htt
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportdeviceready.md">AtaPortDeviceReady</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550157">AtaPortDeviceReady</a>
 
 
 

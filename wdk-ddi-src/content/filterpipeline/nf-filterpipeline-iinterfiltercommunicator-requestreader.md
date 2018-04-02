@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# RequestReader method
+# IInterFilterCommunicator::RequestReader method
 The <b>RequestReader</b> method retrieves the reader interface for an <b>IInterFilterCommunicator</b> object.
 
 ## Syntax
 
-````
+```
 HRESULT RequestReader(
-  [out] void **ppIReader
+  void **ppIReader
 );
-````
+```
 
 ## Parameters
 
@@ -78,8 +78,8 @@ The <b>IInterFilterCommunicator</b> object is passed to each filter in the <a hr
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551050">IInterFilterCommunicator</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554291">IPrintPipelineFilter::InitializeFilter</a>
-
-
-
-<a href="..\filterpipeline\nn-filterpipeline-iinterfiltercommunicator.md">IInterFilterCommunicator</a>

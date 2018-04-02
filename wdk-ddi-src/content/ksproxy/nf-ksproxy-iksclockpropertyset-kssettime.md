@@ -44,16 +44,16 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsSetTime method
+# IKsClockPropertySet::KsSetTime method
 The <b>KsSetTime</b> method sets the current time on the underlying clock.
 
 ## Syntax
 
-````
+```
 HRESULT KsSetTime(
-  [in] LONGLONG Time 
+  LONGLONG Time
 );
-````
+```
 
 ## Parameters
 

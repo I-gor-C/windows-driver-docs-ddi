@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The BINARY_CONTAINER structure is a container for binary data.
 
 ## Syntax
-````
+```
 typedef struct _BINARY_CONTAINER {
-  DWORD  cbBuf;
+  DWORD  cbBuf;
   LPBYTE pData;
-} BINARY_CONTAINER, *PBINARY_CONTAINER;
-````
+} *PBINARY_CONTAINER, BINARY_CONTAINER;
+```
 
 ## Members
 
@@ -67,7 +67,7 @@ Specifies the number of bytes of binary data in the <b>pData</b> member.
 Pointer to a buffer that contains the binary data.
 
 ## Remarks
-The BINARY_CONTAINER structure is used in a <a href="..\winspool\ns-winspool-_bidi_data.md">BIDI_DATA</a> structure when the bidi data consists of binary data, as opposed to integer, float, or string data.
+The BINARY_CONTAINER structure is used in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff545177">BIDI_DATA</a> structure when the bidi data consists of binary data, as opposed to integer, float, or string data.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -77,4 +77,4 @@ The BINARY_CONTAINER structure is used in a <a href="..\winspool\ns-winspool-_bi
 
 ## See Also
 
-<a href="..\winspool\ns-winspool-_bidi_data.md">BIDI_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545177">BIDI_DATA</a>

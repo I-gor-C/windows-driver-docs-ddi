@@ -7,7 +7,7 @@ old-location: kernel\obunregistercallbacks.htm
 old-project: kernel
 ms.assetid: 01121323-da0c-4ae9-b0c0-f6302583237c
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ObUnRegisterCallbacks, ObUnRegisterCallbacks routine [Kernel-Mode Driver Architecture], k107_f0c1fdd0-3dcc-466c-a7a1-fab0b38e4e88.xml, kernel.obunregistercallbacks, wdm/ObUnRegisterCallbacks
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # ObUnRegisterCallbacks function
-The <b>ObUnRegisterCallbacks</b> routine unregisters a set of callback routines that were registered with the <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a> routine.
+The <b>ObUnRegisterCallbacks</b> routine unregisters a set of callback routines that were registered with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558692">ObRegisterCallbacks</a> routine.
 
 ## Syntax
 
-````
-VOID ObUnRegisterCallbacks(
-  _In_ PVOID RegistrationHandle
+```
+NTKERNELAPI VOID ObUnRegisterCallbacks(
+  PVOID RegistrationHandle
 );
-````
+```
 
 ## Parameters
 
 `RegistrationHandle`
 
-A value that identifies the set of callback routines to unregister. The <a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a> routine provides this value when it originally registered the callback routines.
+A value that identifies the set of callback routines to unregister. The <a href="https://msdn.microsoft.com/library/windows/hardware/ff558692">ObRegisterCallbacks</a> routine provides this value when it originally registered the callback routines.
 
 
 ## Return Value
@@ -83,4 +83,4 @@ A driver that calls the <b>ObRegisterCallbacks</b> routine must call the <b>ObUn
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-obregistercallbacks.md">ObRegisterCallbacks</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff558692">ObRegisterCallbacks</a>

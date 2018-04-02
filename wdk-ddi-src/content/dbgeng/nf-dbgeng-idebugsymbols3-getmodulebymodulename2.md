@@ -7,7 +7,7 @@ old-location: debugger\getmodulebymodulename2.htm
 old-project: debugger
 ms.assetid: 25ebb316-e801-44fa-bb80-dffe9051db7e
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetModuleByModuleName2 method [Windows Debugging], GetModuleByModuleName2 method [Windows Debugging], IDebugSymbols3 interface, GetModuleByModuleName2,IDebugSymbols3.GetModuleByModuleName2, IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], GetModuleByModuleName2 method, IDebugSymbols3::GetModuleByModuleName2, IDebugSymbols_f5630cfb-3af4-4722-8851-0a12523fbf82.xml, dbgeng/IDebugSymbols3::GetModuleByModuleName2, debugger.getmodulebymodulename2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,20 +44,20 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetModuleByModuleName2 method
+# IDebugSymbols3::GetModuleByModuleName2 method
 The <b>GetModuleByModuleName2</b>  method searches through the process's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552231">modules</a> for one with the specified name.
 
 ## Syntax
 
-````
+```
 HRESULT GetModuleByModuleName2(
-  [in]            PCSTR    Name,
-  [in]            ULONG    StartIndex,
-  [in]            ULONG    Flags,
-  [out, optional] PULONG   Index,
-  [out, optional] PULONG64 Base
+  PCSTR    Name,
+  ULONG    StartIndex,
+  ULONG    Flags,
+  PULONG   Index,
+  PULONG64 Base
 );
-````
+```
 
 ## Parameters
 
@@ -160,4 +160,4 @@ For more information about modules, see <a href="https://msdn.microsoft.com/libr
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

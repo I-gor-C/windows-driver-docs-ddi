@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# get__NewEnum method
-Gets a pointer to the enumerants of <a href="..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md">IPrinterExtensionContextCollection</a> objects.
+# IPrinterExtensionContextCollection::get__NewEnum method
+Gets a pointer to the enumerants of <a href="https://msdn.microsoft.com/library/windows/hardware/hh846191">IPrinterExtensionContextCollection</a> objects.
 
 ## Syntax
 
-````
-HRESULT NewEnum(
-  [out, retval] IUnknown **ppUnk
+```
+HRESULT get__NewEnum(
+  IUnknown **ppUnk
 );
-````
+```
 
 ## Parameters
 
@@ -77,4 +77,4 @@ Returns an <b>HRESULT</b> value. If the property call was not successful,  it re
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioncontextcollection.md">IPrinterExtensionContextCollection</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh846191">IPrinterExtensionContextCollection</a>

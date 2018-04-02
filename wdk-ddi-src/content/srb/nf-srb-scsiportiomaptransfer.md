@@ -7,7 +7,7 @@ old-location: storage\scsiportiomaptransfer.htm
 old-project: storage
 ms.assetid: 627a2d4c-22c8-48ea-b409-dc246c85a316
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortIoMapTransfer, ScsiPortIoMapTransfer routine [Storage Devices], scsiprt_9473c978-7355-4296-b8ac-07b20f6ea441.xml, srb/ScsiPortIoMapTransfer, storage.scsiportiomaptransfer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,20 +52,20 @@ The <b>ScsiPortIoMapTransfer</b> routine sets up the system DMA controller for a
 
 ## Syntax
 
-````
-VOID ScsiPortIoMapTransfer(
-  _In_ PVOID               HwDeviceExtension,
-  _In_ PSCSI_REQUEST_BLOCK Srb,
-  _In_ PVOID               LogicalAddress,
-  _In_ ULONG               Length
+```
+SCSIPORT_API VOID ScsiPortIoMapTransfer(
+  PVOID               HwDeviceExtension,
+  PSCSI_REQUEST_BLOCK Srb,
+  PVOID               LogicalAddress,
+  ULONG               Length
 );
-````
+```
 
 ## Parameters
 
 `HwDeviceExtension`
 
-Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="..\srb\nf-srb-scsiportinitialize.md">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
+Pointer to the hardware device extension. This is a per-HBA storage area that the port driver allocates and initializes on behalf of the miniport driver. Miniport drivers usually store HBA-specific information in this extension, such as the state of the HBA and the HBA's mapped access ranges. This area is available to the miniport driver in the <b>DeviceExtension-&gt;HwDeviceExtension</b> member of the HBA's device object immediately after the miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff564645">ScsiPortInitialize</a>. The port driver frees this memory when it removes the device.
 
 `Srb`
 
@@ -88,7 +88,7 @@ None
 
 Only miniport drivers of HBAs that use a system DMA controller (subordinate DMA) call <b>ScsiPortIoMapTransfer</b>. This routine must be called before such a miniport driver sets up its HBA to transfer data. The range specified by the <i>LogicalAddress</i> and <i>Length</i> must be within the buffer described by the given SRB.
 
-After the operating system-specific port driver programs the system DMA controller, it calls the miniport driver's <a href="..\srb\nc-srb-phw_dma_started.md">HwScsiDmaStarted</a> routine. <i>HwScsiDmaStarted</i> should program the HBA to begin the data transfer. Note that an HBA can interrupt between the miniport driver's call to <b>ScsiPortIoMapTransfer</b> and the operating system-specific port driver's call to the miniport driver's <i>HwScsiDmaStarted</i> routine.
+After the operating system-specific port driver programs the system DMA controller, it calls the miniport driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff557291">HwScsiDmaStarted</a> routine. <i>HwScsiDmaStarted</i> should program the HBA to begin the data transfer. Note that an HBA can interrupt between the miniport driver's call to <b>ScsiPortIoMapTransfer</b> and the operating system-specific port driver's call to the miniport driver's <i>HwScsiDmaStarted</i> routine.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -99,8 +99,8 @@ After the operating system-specific port driver programs the system DMA controll
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportflushdma.md">ScsiPortFlushDma</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557291">HwScsiDmaStarted</a>
 
 
 
-<a href="..\srb\nc-srb-phw_dma_started.md">HwScsiDmaStarted</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564618">ScsiPortFlushDma</a>

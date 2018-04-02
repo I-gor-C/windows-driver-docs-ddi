@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The PUBLISHERINFO structure is used as an input parameter to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff553221">IPrintOemPS::GetInfo</a> method.
 
 ## Syntax
-````
+```
 typedef struct _PUBLISHERINFO {
   DWORD dwMode;
-  WORD  wMinoutlinePPEM;
-  WORD  wMaxbitmapPPEM;
+  WORD  wMinoutlinePPEM;
+  WORD  wMaxbitmapPPEM;
 } PUBLISHERINFO, *PPUBLISHERINFO;
-````
+```
 
 ## Members
 

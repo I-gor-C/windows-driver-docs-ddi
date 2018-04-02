@@ -53,11 +53,11 @@ The <b>WDF_REL_TIMEOUT_IN_SEC</b> function converts a specified number of second
 
 ## Syntax
 
-````
-LONGLONG WDF_REL_TIMEOUT_IN_SEC(
-  _In_ ULONGLONG Time
+```
+WDF_EXTERN_C_START LONGLONG WDF_REL_TIMEOUT_IN_SEC(
+  ULONGLONG Time
 );
-````
+```
 
 ## Parameters
 
@@ -105,8 +105,8 @@ requestSendOptions.Timeout = WDF_REL_TIMEOUT_IN_SEC(5);
 
 ## See Also
 
-<a href="..\wdfrequest\ns-wdfrequest-_wdf_request_send_options.md">WDF_REQUEST_SEND_OPTIONS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551211">WDF_ABS_TIMEOUT_IN_SEC</a>
 
 
 
-<a href="..\wdfcore\nf-wdfcore-wdf_abs_timeout_in_sec.md">WDF_ABS_TIMEOUT_IN_SEC</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552491">WDF_REQUEST_SEND_OPTIONS</a>

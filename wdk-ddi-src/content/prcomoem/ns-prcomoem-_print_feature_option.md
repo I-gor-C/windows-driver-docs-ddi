@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The PRINT_FEATURE_OPTION structure contains information about a feature-option pair, where the option is one option of a particular feature.
 
 ## Syntax
-````
+```
 typedef struct _PRINT_FEATURE_OPTION {
   PCSTR pszFeature;
   PCSTR pszOption;
 } PRINT_FEATURE_OPTION;
-````
+```
 
 ## Members
 
@@ -76,7 +76,15 @@ This structure is used by methods that belong to the <b>IPrintCoreHelper</b>, <b
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552963">IPrintCoreHelper::SetOptions</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552965">IPrintCoreHelper::WhyConstrained</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552912">IPrintCoreHelperPS::SetOptions</a>
 
 
 
@@ -84,16 +92,8 @@ This structure is used by methods that belong to the <b>IPrintCoreHelper</b>, <b
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552963">IPrintCoreHelper::SetOptions</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552947">IPrintCoreHelperUni::WhyConstrained</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552945">IPrintCoreHelperUni::SetOptions</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff552912">IPrintCoreHelperPS::SetOptions</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552947">IPrintCoreHelperUni::WhyConstrained</a>

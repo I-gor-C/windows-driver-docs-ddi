@@ -51,17 +51,17 @@ The <b>StreamClassCompleteRequestAndMarkQueueReady</b> routine completes a reque
 
 ## Syntax
 
-````
-VOID StreamClassCompleteRequestAndMarkQueueReady(
-  _In_ PHW_STREAM_REQUEST_BLOCK Srb
+```
+VOID STREAMAPI StreamClassCompleteRequestAndMarkQueueReady(
+  PHW_STREAM_REQUEST_BLOCK Srb
 );
-````
+```
 
 ## Parameters
 
 `Srb`
 
-Pointer to the <a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a> that the minidriver has completed processing.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559702">HW_STREAM_REQUEST_BLOCK</a> that the minidriver has completed processing.
 
 
 ## Return Value
@@ -81,12 +81,12 @@ This call is equivalent to calling <b>StreamClass</b><i>Xxx</i><b>Notification</
 
 ## See Also
 
-<a href="..\strmini\nf-strmini-streamclassdevicenotification.md">StreamClassDeviceNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559702">HW_STREAM_REQUEST_BLOCK</a>
 
 
 
-<a href="..\strmini\nf-strmini-streamclassstreamnotification.md">StreamClassStreamNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568239">StreamClassDeviceNotification</a>
 
 
 
-<a href="..\strmini\ns-strmini-_hw_stream_request_block.md">HW_STREAM_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568266">StreamClassStreamNotification</a>

@@ -7,7 +7,7 @@ old-location: netvista\ndisgetdevicereservedextension.htm
 old-project: netvista
 ms.assetid: 6b2c56a9-cf77-4734-8f85-0ca740084ce3
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisGetDeviceReservedExtension, NdisGetDeviceReservedExtension function [Network Drivers Starting with Windows Vista], ndis/NdisGetDeviceReservedExtension, ndis_devices_ref_75d6a378-f525-46bb-9a2b-becf6abaa768.xml, netvista.ndisgetdevicereservedextension
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,18 +52,18 @@ The
 
 ## Syntax
 
-````
+```
 PVOID NdisGetDeviceReservedExtension(
-  _In_ PDEVICE_OBJECT DeviceObject
+  PDEVICE_OBJECT DeviceObject
 );
-````
+```
 
 ## Parameters
 
 `DeviceObject`
 
 A pointer to a 
-     <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure.
 
 
 ## Return Value
@@ -83,4 +83,4 @@ A pointer to a
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>

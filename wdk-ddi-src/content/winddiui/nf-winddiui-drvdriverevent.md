@@ -50,14 +50,14 @@ The print spooler calls a printer interface DLL's <b>DrvDriverEvent</b> function
 
 ## Syntax
 
-````
+```
 BOOL DrvDriverEvent(
-           DWORD  dwDriverEvent,
-           DWORD  dwLevel,
-  _In_opt_ LPBYTE pDriverInfo,
-           LPARAM lParam
+  DWORD  dwDriverEvent,
+  DWORD  dwLevel,
+  LPBYTE pDriverInfo,
+  LPARAM lParam
 );
-````
+```
 
 ## Parameters
 

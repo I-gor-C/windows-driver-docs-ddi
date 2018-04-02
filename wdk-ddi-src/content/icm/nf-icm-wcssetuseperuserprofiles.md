@@ -49,13 +49,13 @@ The <code>WcsSetUsePerUserProfiles</code> function allows the user to specify wh
 
 ## Syntax
 
-````
+```
 BOOL WcsSetUsePerUserProfiles(
-  _In_ LPCWSTR pDeviceName,
-  _In_ DWORD   dwDeviceClass,
-  _In_ BOOL    usePerUserProfiles
+  LPCWSTR pDeviceName,
+  DWORD   dwDeviceClass,
+  BOOL    usePerUserProfiles
 );
-````
+```
 
 ## Parameters
 
@@ -113,4 +113,4 @@ This function is executable in Least-Privileged User Account (LUA) context.
 
 ## See Also
 
-<a href="..\icm\nf-icm-wcsgetuseperuserprofiles.md">WcsGetUsePerUserProfiles</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563734">WcsGetUsePerUserProfiles</a>

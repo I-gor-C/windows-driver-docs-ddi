@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-DWORD WINAPI EnumJobNamedProperties(
-  _In_  HANDLE              hPrinter,
-  _In_  DWORD               JobId,
-  _Out_ DWORD               *pcProperties,
-  _Out_ PrintNamedProperty  **ppProperties
+```
+DWORD EnumJobNamedProperties(
+  HANDLE             hPrinter,
+  DWORD              JobId,
+  DWORD              *pcProperties,
+  PrintNamedProperty **ppProperties
 );
-````
+```
 
 ## Parameters
 

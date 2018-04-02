@@ -7,7 +7,7 @@ old-location: netvista\ndismapfile.htm
 old-project: netvista
 ms.assetid: 965bb4c7-826d-425b-b10d-2d5a29ca0f91
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMapFile, NdisMapFile function [Network Drivers Starting with Windows Vista], VOID, ndis/NdisMapFile, ndis_file_ref_5bc73f64-8379-45bb-a37b-fe9a946af119.xml, netvista.ndismapfile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,13 +52,13 @@ The
 
 ## Syntax
 
-````
-VOID NdisMapFile(
-  _Out_ PNDIS_STATUS Status,
-  _Out_ PVOID *      MappedBuffer,
-  _In_  NDIS_HANDLE  FileHandle
+```
+void NdisMapFile(
+  PNDIS_STATUS Status,
+  PVOID        *MappedBuffer,
+  NDIS_HANDLE  FileHandle
 );
-````
+```
 
 ## Parameters
 
@@ -75,7 +75,7 @@ A pointer to a caller-supplied variable in which this function returns the statu
 #### NDIS_STATUS_SUCCESS
 
 The caller has exclusive access to the file contents until the 
-       <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a> function is called.
+       <a href="https://msdn.microsoft.com/library/windows/hardware/ff564641">NdisUnmapFile</a> function is called.
 
 
 
@@ -91,7 +91,7 @@ A pointer to a caller-supplied variable in which this function returns the base 
 `FileHandle`
 
 The handle that was returned by a preceding call to the 
-     <a href="..\ndis\nf-ndis-ndisopenfile.md">NdisOpenFile</a> function.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff563728">NdisOpenFile</a> function.
 
 
 ## Return Value
@@ -105,11 +105,11 @@ None
     <b>NdisMapFile</b> allows only one mapping of a particular file to be outstanding at any time.
     Consequently, a successful caller is given exclusive access to the file data until 
     <b>NdisUnmapFile</b> or the 
-    <a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a> function is called.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561645">NdisCloseFile</a> function is called.
 
 A miniport driver can map and unmap such an open file as necessary, using alternating calls to 
     <b>NdisMapFile</b> and 
-    <a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a>. A call to 
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564641">NdisUnmapFile</a>. A call to 
     <b>NdisCloseFile</b> releases the 
     <i>FileHandle</i> and deallocates the buffer containing the file contents.
 
@@ -128,16 +128,16 @@ A miniport driver can call
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndisclosefile.md">NdisCloseFile</a>
+<a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisunmapfile.md">NdisUnmapFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561645">NdisCloseFile</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisopenfile.md">NdisOpenFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563728">NdisOpenFile</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564641">NdisUnmapFile</a>

@@ -7,7 +7,7 @@ old-location: dtf\iwdtftargets2.htm
 old-project: dtf
 ms.assetid: b8d091e1-464c-43a7-b8fe-a9fa79be31c3
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: IWDTFTargets2, IWDTFTargets2 interface [Windows Device Testing Framework], IWDTFTargets2 interface [Windows Device Testing Framework], described, Microsoft.WDTF.IWDTFTargets2, dtf.iwdtftargets2, wdtf/IWDTFTargets2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -58,8 +58,8 @@ Defines properties and operations for the collection.
 | [IWDTFTargets2::Clear](nf-wdtf-iwdtftargets2-clear.md) | Removes all items from the collection. |
 | [IWDTFTargets2::Eval](nf-wdtf-iwdtftargets2-eval.md) | Evaluates whether all items in the collection match an SDEL statement. |
 | [IWDTFTargets2::get__NewEnum](nf-wdtf-iwdtftargets2-get__newenum.md) | Gets a new iteration variable that the For Each loop structure implicitly uses. |
-| [IWDTFTargets2::get_Count](nf-wdtf-iwdtftargets2-get_count.md) | Gets the number of devices that are currently provided by the DeviceDepot. |
-| [IWDTFTargets2::get_Item](nf-wdtf-iwdtftargets2-get_item.md) | Gets an individual device in the DeviceDepot. |
+| [IWDTFTargets2::get_Count](nf-wdtf-iwdtftargets2-get_count.md) | Gets the number of items in this collection. |
+| [IWDTFTargets2::get_Item](nf-wdtf-iwdtftargets2-get_item.md) | Gets an individual item in the collection. |
 | [IWDTFTargets2::get_WDTF](nf-wdtf-iwdtftargets2-get_wdtf.md) | Gets the main WDTF aggregation object. |
 | [IWDTFTargets2::GetInterfaces](nf-wdtf-iwdtftargets2-getinterfaces.md) | Returns a collection of actions that support the interface - one IWDTFAction2 for each item that has one. |
 | [IWDTFTargets2::GetInterfacesIfExist](nf-wdtf-iwdtftargets2-getinterfacesifexist.md) | Returns a collection of actions that support the interface - one IWDTFAction2 for each item that has one. |

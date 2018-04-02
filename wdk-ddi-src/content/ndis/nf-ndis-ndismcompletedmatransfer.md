@@ -7,7 +7,7 @@ old-location: netvista\ndismcompletedmatransfer.htm
 old-project: netvista
 ms.assetid: 12a8062a-6d4b-4757-a076-56aeb5e4e48c
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisMCompleteDmaTransfer, NdisMCompleteDmaTransfer macro [Network Drivers Starting with Windows Vista], dma_ref_bd601fef-cf06-42ff-9906-d3bf8edef72f.xml, ndis/NdisMCompleteDmaTransfer, netvista.ndismcompletedmatransfer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,16 +51,16 @@ The
 
 ## Syntax
 
-````
-VOID NdisMCompleteDmaTransfer(
-  [out] PNDIS_STATUS Status,
-  [in]  NDIS_HANDLE  MiniportDmaHandle,
-  [in]  PNDIS_BUFFER Buffer,
-  [in]  ULONG        Offset,
-  [in]  ULONG        Length,
-  [in]  BOOLEAN      WriteToDevice
+```
+void NdisMCompleteDmaTransfer(
+   _S,
+   _H,
+   _B,
+   _O,
+   _L,
+   _M_
 );
-````
+```
 
 ## Parameters
 
@@ -111,12 +111,12 @@ None
 
 ## See Also
 
-<a href="..\ndis\nf-ndis-ndismsetupdmatransfer.md">NdisMSetupDmaTransfer</a>
+<a href="https://msdn.microsoft.com/b146fa81-005b-4a6c-962d-4cb023ea790e">MiniportInitializeEx</a>
 
 
 
-<a href="..\ndis\nc-ndis-miniport_initialize.md">MiniportInitializeEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563646">NdisMRegisterDmaChannel</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndismregisterdmachannel.md">NdisMRegisterDmaChannel</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563675">NdisMSetupDmaTransfer</a>

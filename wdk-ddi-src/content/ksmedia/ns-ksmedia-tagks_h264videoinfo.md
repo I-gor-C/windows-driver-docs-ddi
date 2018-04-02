@@ -47,44 +47,48 @@ req.typenames: KS_H264VIDEOINFO, *PKS_H264VIDEOINFO
 The KS_H264VIDEOINFO describes the device capabilities that apply to the current media type.
 
 ## Syntax
-````
-typedef struct _KS_H264VIDEOINFO {
-  WORD  wWidth;
-  WORD  wHeight;
-  WORD  wSARwidth;
-  WORD  wSARheight;
-  WORD  wProfile;
-  BYTE  bLevelIDC;
-  WORD  wConstrainedToolset;
+```
+typedef struct tagKS_H264VIDEOINFO {
+  WORD  wWidth;
+  WORD  wHeight;
+  WORD  wSARwidth;
+  WORD  wSARheight;
+  WORD  wProfile;
+  BYTE  bLevelIDC;
+  WORD  wConstrainedToolset;
   DWORD bmSupportedUsages;
-  WORD  bmCapabilities;
+  WORD  bmCapabilities;
   DWORD bmSVCCapabilities;
   DWORD bmMVCCapabilities;
   DWORD dwFrameInterval;
-  BYTE  bMaxCodecConfigDelay;
-  BYTE  bmSupportedSliceModes;
-  BYTE  bmSupportedSyncFrameTypes;
-  BYTE  bDynamicResolutionScaling;
-  BYTE  bSimulcastSupport;
-  BYTE  bmSupportedRateControlModes;
-  DWORD dwMaxMBperSecOneResolutionNoScalability;
-  DWORD dwMaxMBperSecTwoResolutionsNoScalability;
-  DWORD dwMaxMBperSecThreeResolutionsNoScalability;
-  DWORD dwMaxMBperSecFourResolutionsNoScalability;
-  DWORD dwMaxMBperSecOneResolutionTemporalScalability;
-  DWORD dwMaxMBperSecTwoResolutionsTemporalScalablility;
-  DWORD dwMaxMBperSecThreeResolutionsTemporalScalability;
-  DWORD dwMaxMBperSecFourResolutionsTemporalScalability;
-  DWORD dwMaxMBperSecOneResolutionTemporalQualityScalability;
-  DWORD dwMaxMBperSecTwoResolutionsTemporalQualityScalability;
-  DWORD dwMaxMBperSecThreeResolutionsTemporalQualityScalablity;
-  DWORD dwMaxMBperSecFourResolutionsTemporalQualityScalability;
-  DWORD dwMaxMBperSecOneResolutionFullScalability;
-  DWORD dwMaxMBperSecTwoResolutionsFullScalability;
-  DWORD dwMaxMBperSecThreeResolutionsFullScalability;
-  DWORD dwMaxMBperSecFourResolutionsFullScalability;
+  BYTE  bMaxCodecConfigDelay;
+  BYTE  bmSupportedSliceModes;
+  BYTE  bmSupportedSyncFrameTypes;
+  BYTE  bResolutionScaling;
+  BYTE  bSimulcastSupport;
+  BYTE  bmSupportedRateControlModes;
+  WORD  wMaxMBperSecOneResolutionNoScalability;
+  WORD  wMaxMBperSecTwoResolutionsNoScalability;
+  WORD  wMaxMBperSecThreeResolutionsNoScalability;
+  WORD  wMaxMBperSecFourResolutionsNoScalability;
+  WORD  wMaxMBperSecOneResolutionTemporalScalability;
+  WORD  wMaxMBperSecTwoResolutionsTemporalScalablility;
+  WORD  wMaxMBperSecThreeResolutionsTemporalScalability;
+  WORD  wMaxMBperSecFourResolutionsTemporalScalability;
+  WORD  wMaxMBperSecOneResolutionTemporalQualityScalability;
+  WORD  wMaxMBperSecTwoResolutionsTemporalQualityScalability;
+  WORD  wMaxMBperSecThreeResolutionsTemporalQualityScalablity;
+  WORD  wMaxMBperSecFourResolutionsTemporalQualityScalability;
+  WORD  wMaxMBperSecOneResolutionTemporalSpatialScalability;
+  WORD  wMaxMBperSecTwoResolutionsTemporalSpatialScalability;
+  WORD  wMaxMBperSecThreeResolutionsTemporalSpatialScalablity;
+  WORD  wMaxMBperSecFourResolutionsTemporalSpatialScalability;
+  WORD  wMaxMBperSecOneResolutionFullScalability;
+  WORD  wMaxMBperSecTwoResolutionsFullScalability;
+  WORD  wMaxMBperSecThreeResolutionsFullScalability;
+  WORD  wMaxMBperSecFourResolutionsFullScalability;
 } KS_H264VIDEOINFO, *PKS_H264VIDEOINFO;
-````
+```
 
 ## Members
 
@@ -573,8 +577,8 @@ The KS_H264VIDEOINFO structure contains the frame and the format descriptor info
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_dataformat_h264videoinfo.md">KS_DATAFORMAT_H264VIDEOINFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh463996">KS_DATAFORMAT_H264VIDEOINFO</a>
 
 
 
-<a href="..\ksmedia\ns-ksmedia-tagks_datarange_h264_video.md">KS_DATARANGE_H264_VIDEO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh464002">KS_DATARANGE_H264_VIDEO</a>

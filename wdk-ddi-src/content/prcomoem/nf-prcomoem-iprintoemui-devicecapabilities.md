@@ -45,30 +45,30 @@ req.product: Windows 10 or later.
 ---
 
 
-# DeviceCapabilities method
+# IPrintOemUI::DeviceCapabilities method
 The <code>IPrintOemUI::DeviceCapabilities</code> method enables a user interface plug-in to specify customized device capabilities.
 
 ## Syntax
 
-````
+```
 HRESULT DeviceCapabilities(
-   POEMUIOBJ poemuiobj,
-   HANDLE    hPrinter,
-   PWSTR     pDeviceName,
-   WORD      wCapability,
-   PVOID     pOutput,
-   PDEVMODE  pPublicDM,
-   PVOID     pOEMDM,
-   DWORD     dwOld,
-   DWORD     *dwResult
+  POEMUIOBJ poemuiobj,
+  HANDLE    hPrinter,
+  PWSTR     pDeviceName,
+  WORD      wCapability,
+  PVOID     pOutput,
+  PDEVMODE  pPublicDM,
+  PVOID     pOEMDM,
+  DWORD     dwOld,
+  DWORD     *dwResult
 );
-````
+```
 
 ## Parameters
 
 `poemuiobj`
 
-Caller-supplied pointer to an <a href="..\printoem\ns-printoem-_oemuiobj.md">OEMUIOBJ</a> structure.
+Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559571">OEMUIOBJ</a> structure.
 
 `hPrinter`
 
@@ -80,7 +80,7 @@ Caller-supplied pointer to a string representing the device name.
 
 `wCapability`
 
-Caller-supplied flag indicating the type of information the method should return. For a list of flags, see the description of the <a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a> function.
+Caller-supplied flag indicating the type of information the method should return. For a list of flags, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548539">DrvDeviceCapabilities</a> function.
 
 `pOutput`
 
@@ -96,11 +96,11 @@ Caller-supplied pointer to the user interface plug-in's private DEVMODEW structu
 
 `dwOld`
 
-Caller-supplied return value from the printer driver's <a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a> function, or from another user interface plug-in. For more information, see the following Remarks section.
+Caller-supplied return value from the printer driver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548539">DrvDeviceCapabilities</a> function, or from another user interface plug-in. For more information, see the following Remarks section.
 
 `dwResult`
 
-A return value that is dependent on the flag specified by <i>wCapability</i>. For more information, see the description of the <a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a> function and the following Remarks section.
+A return value that is dependent on the flag specified by <i>wCapability</i>. For more information, see the description of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548539">DrvDeviceCapabilities</a> function and the following Remarks section.
 
 
 ## Return Value
@@ -160,9 +160,9 @@ The method is not implemented.
 
 ## Remarks
 
-A user interface plug-in's <code>IPrintOemUI::DeviceCapabilities</code> method performs the same types of operations as the <a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a> function that is exported by user-mode printer interface DLLs. The method specifies capabilities provided by the printer.
+A user interface plug-in's <code>IPrintOemUI::DeviceCapabilities</code> method performs the same types of operations as the <a href="https://msdn.microsoft.com/library/windows/hardware/ff548539">DrvDeviceCapabilities</a> function that is exported by user-mode printer interface DLLs. The method specifies capabilities provided by the printer.
 
-You can use the <code>IPrintOemUI::DeviceCapabilities</code> method to preempt Unidrv support for a capability, or to add a capability that the printer driver doesn't provide. The driver calls <code>IPrintOemUI::DeviceCapabilities</code> from within its <a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a> function.
+You can use the <code>IPrintOemUI::DeviceCapabilities</code> method to preempt Unidrv support for a capability, or to add a capability that the printer driver doesn't provide. The driver calls <code>IPrintOemUI::DeviceCapabilities</code> from within its <a href="https://msdn.microsoft.com/library/windows/hardware/ff548539">DrvDeviceCapabilities</a> function.
 
 If the <code>IPrintOemUI::DeviceCapabilities</code> method indicates customized support for a capability (by setting appropriate bits in response to a received DC_FIELDS flag), customized code must completely support the capability. Complete support typically includes returning information about the capability in response to calls to the <code>IPrintOemUI::DeviceCapabilities</code> method, plus providing appropriate user-mode or kernel-mode code to implement the capability.
 
@@ -228,8 +228,8 @@ For more information about creating and installing user interface plug-ins, see 
 
 ## See Also
 
-<a href="..\winddiui\nf-winddiui-drvdevicecapabilities.md">DrvDeviceCapabilities</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548539">DrvDeviceCapabilities</a>
 
 
 
-<a href="..\prcomoem\nn-prcomoem-iprintoemui.md">IPrintOemUI</a>
+<a href="https://msdn.microsoft.com/0ef635dd-9598-4356-94fc-7e5237df9bd9">IPrintOemUI</a>

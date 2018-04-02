@@ -47,8 +47,8 @@ req.typenames: KSWAVE_INPUT_CAPABILITIES, *PKSWAVE_INPUT_CAPABILITIES
 The KSWAVE_INPUT_CAPABILITIES structure is used to describe the input capabilities of a device.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSWAVE_INPUT_CAPABILITIES {
   ULONG MaximumChannelsPerConnection;
   ULONG MinimumBitsPerSample;
   ULONG MaximumBitsPerSample;
@@ -56,8 +56,8 @@ typedef struct {
   ULONG MaximumSampleFrequency;
   ULONG TotalConnections;
   ULONG ActiveConnections;
-} KSWAVE_INPUT_CAPABILITIES, *PKSWAVE_INPUT_CAPABILITIES;
-````
+}  *PKSWAVE_INPUT_CAPABILITIES;
+```
 
 ## Members
 

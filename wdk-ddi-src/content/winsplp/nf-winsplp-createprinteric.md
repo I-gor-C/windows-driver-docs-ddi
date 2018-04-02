@@ -50,12 +50,12 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-HANDLE WINAPI CreatePrinterIC(
-  _In_     HANDLE     hPrinter,
-  _In_opt_ LPDEVMODEW pDevMode
+```
+HANDLE CreatePrinterIC(
+  HANDLE     hPrinter,
+  LPDEVMODEW pDevMode
 );
-````
+```
 
 ## Parameters
 

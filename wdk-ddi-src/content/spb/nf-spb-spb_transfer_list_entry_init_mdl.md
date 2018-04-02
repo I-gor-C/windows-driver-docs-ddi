@@ -50,13 +50,13 @@ The <b>SPB_TRANSFER_LIST_ENTRY_INIT_MDL</b> function returns an <a href="https:/
 
 ## Syntax
 
-````
+```
 SPB_TRANSFER_LIST_ENTRY SPB_TRANSFER_LIST_ENTRY_INIT_MDL(
-  _In_ SPB_TRANSFER_DIRECTION Direction,
-  _In_ ULONG                  DelayInUs,
-  _In_ PMDL                   Mdl
+  SPB_TRANSFER_DIRECTION Direction,
+  ULONG                  DelayInUs,
+  PMDL                   Mdl
 );
-````
+```
 
 ## Parameters
 

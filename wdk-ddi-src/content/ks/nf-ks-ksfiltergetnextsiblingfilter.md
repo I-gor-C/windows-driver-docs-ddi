@@ -49,26 +49,26 @@ The<b> KsFilterGetNextSiblingFilter</b> function returns the next instantiated f
 
 ## Syntax
 
-````
-PKSFILTER __inline KsFilterGetNextSiblingFilter(
-  _In_ PKSFILTER Filter
+```
+PKSFILTER KsFilterGetNextSiblingFilter(
+  PKSFILTER Filter
 );
-````
+```
 
 ## Parameters
 
 `Filter`
 
-A pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure for which to find the next sibling filter.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure for which to find the next sibling filter.
 
 
 ## Return Value
 
-<b>KsFilterGetNextSiblingFilter</b> returns a pointer to the next sibling <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure of <i>Filter</i>. If no such instantiated filter exists, it returns <b>NULL</b>.
+<b>KsFilterGetNextSiblingFilter</b> returns a pointer to the next sibling <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure of <i>Filter</i>. If no such instantiated filter exists, it returns <b>NULL</b>.
 
 ## Remarks
 
-This call is an inline function call to <a href="..\ks\nf-ks-ksgetnextsibling.md">KsGetNextSibling</a>. Note that the object hierarchy is only guaranteed stable while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
+This call is an inline function call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff562643">KsGetNextSibling</a>. Note that the object hierarchy is only guaranteed stable while the appropriate mutex is held, in this case the device mutex. For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3-8cfb-0d319901af8b">Mutexes in AVStream</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -80,12 +80,12 @@ This call is an inline function call to <a href="..\ks\nf-ks-ksgetnextsibling.md
 
 ## See Also
 
-<a href="..\ks\nf-ks-ksfilterfactorygetfirstchildfilter.md">KsFilterFactoryGetFirstChildFilter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>
 
 
 
-<a href="..\ks\nf-ks-ksgetnextsibling.md">KsGetNextSibling</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562533">KsFilterFactoryGetFirstChildFilter</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562643">KsGetNextSibling</a>

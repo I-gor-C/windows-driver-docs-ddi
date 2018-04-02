@@ -53,12 +53,12 @@ The <b>WdfDeviceIndicateWakeStatus</b> method informs the framework that the cal
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDeviceIndicateWakeStatus(
-  _In_ WDFDEVICE Device,
-  _In_ NTSTATUS  WaitWakeStatus 
+  WDFDEVICE Device,
+  NTSTATUS  WaitWakeStatus
 );
-````
+```
 
 ## Parameters
 

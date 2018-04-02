@@ -7,7 +7,7 @@ old-location: storage\ioctl_disk_get_length_info.htm
 old-project: storage
 ms.assetid: 62d31b13-bc4a-4b2f-82be-551a61cae218
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_DISK_GET_LENGTH_INFO, IOCTL_DISK_GET_LENGTH_INFO control code [Storage Devices], k307_50fea771-4937-481d-9a1b-f4d69bb939bb.xml, ntdddisk/IOCTL_DISK_GET_LENGTH_INFO, storage.ioctl_disk_get_length_info
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -56,7 +56,7 @@ None.
 None.
 
 ### Output Buffer
-The driver returns the <a href="..\ntdddisk\ns-ntdddisk-_get_length_information.md">GET_LENGTH_INFORMATION</a> data in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
+The driver returns the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554986">GET_LENGTH_INFORMATION</a> data in the buffer at <b>Irp-&gt;AssociatedIrp.SystemBuffer</b>.
 
 ### Output Buffer Length
 <b>Parameters.DeviceIoControl.OutputBufferLength</b> in the I/O stack location of the IRP indicates the size, in bytes, of the buffer, which must be &gt;= <b>sizeof</b>(GET_LENGTH_INFORMATION).
@@ -79,4 +79,4 @@ The <b>Information</b> field is set to the size, in bytes, of the returned data.
 
 ## See Also
 
-<a href="..\ntdddisk\ns-ntdddisk-_get_length_information.md">GET_LENGTH_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554986">GET_LENGTH_INFORMATION</a>

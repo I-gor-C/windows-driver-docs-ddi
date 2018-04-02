@@ -45,25 +45,25 @@ req.product: Windows 10 or later.
 ---
 
 
-# DrvWriteSpoolBuf method
+# IPrintCorePS2::DrvWriteSpoolBuf method
 The <code>IPrintCorePS2::DrvWriteSpoolBuf</code> method is provided by the Pscript5 driver so that a <a href="https://msdn.microsoft.com/e55ca083-2790-4929-9e5b-6fce49eb0404">rendering plug-in</a> can send printer data to the spooler.
 
 ## Syntax
 
-````
+```
 HRESULT DrvWriteSpoolBuf(
-  [in]  PDEVOBJ pdevobj ,
-  [in]  PVOID   pBuffer ,
-  [in]  DWORD   cbSize ,
-  [out] DWORD   *pdwResult 
+  IN PDEVOBJ pdevobj,
+  IN PVOID   pBuffer,
+  IN DWORD   cbSize,
+  OUT DWORD  *pdwResult
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `pBuffer`
 
@@ -134,8 +134,8 @@ This method has the same behavior as <a href="https://msdn.microsoft.com/library
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/bf7e15df-49ba-4850-acf6-dab5dc137f48">IPrintCorePS2</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553103">IPrintOemDriverPS::DrvWriteSpoolBuf</a>
-
-
-
-<a href="..\prcomoem\nn-prcomoem-iprintcoreps2.md">IPrintCorePS2</a>

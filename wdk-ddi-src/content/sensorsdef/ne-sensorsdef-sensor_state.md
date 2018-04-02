@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 This enumeration represents the valid states of a sensor.
 
 ## Syntax
-````
-typedef enum _SENSOR_STATE { 
-  SensorState_Initializing  = 0,
-  SensorState_Idle,
-  SensorState_Active,
+```
+typedef enum SENSOR_STATE {
+  SensorState_Initializing  ,
+  SensorState_Idle          ,
+  SensorState_Active        ,
   SensorState_Error
-} SENSOR_STATE;
-````
+} ;
+```
 
 ## Constants
 

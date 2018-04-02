@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# SendFixedPage method
+# IXpsDocumentConsumer::SendFixedPage method
 The <code>SendFixedPage</code> method sends a fixed page of an XPS document to the pipeline.
 
 ## Syntax
 
-````
+```
 HRESULT SendFixedPage(
-  [in] IFixedPage *pIFixedPage
+  IFixedPage *pIFixedPage
 );
-````
+```
 
 ## Parameters
 

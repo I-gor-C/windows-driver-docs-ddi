@@ -47,13 +47,13 @@ req.typenames: KSPROPERTY_VIDEODECODER_STATUS_S, *PKSPROPERTY_VIDEODECODER_STATU
 The KSPROPERTY_VIDEODECODER_STATUS_S structure describes the present status of a video decoding device, such as number of lines in the incoming analog signal and whether the signal is locked in.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSPROPERTY_VIDEODECODER_STATUS_S {
   KSPROPERTY Property;
-  ULONG      NumberOfLines;
-  ULONG      SignalLocked;
-} KSPROPERTY_VIDEODECODER_STATUS_S, *PKSPROPERTY_VIDEODECODER_STATUS_S;
-````
+  ULONG      NumberOfLines;
+  ULONG      SignalLocked;
+}  *PKSPROPERTY_VIDEODECODER_STATUS_S;
+```
 
 ## Members
 

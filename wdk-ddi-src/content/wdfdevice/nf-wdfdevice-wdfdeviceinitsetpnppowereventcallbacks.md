@@ -55,12 +55,12 @@ The <b>WdfDeviceInitSetPnpPowerEventCallbacks</b> method registers a driver's Pl
 
 ## Syntax
 
-````
-VOID WdfDeviceInitSetPnpPowerEventCallbacks(
-  _In_ PWDFDEVICE_INIT               DeviceInit,
-  _In_ PWDF_PNPPOWER_EVENT_CALLBACKS PnpPowerEventCallbacks
+```
+void WdfDeviceInitSetPnpPowerEventCallbacks(
+  PWDFDEVICE_INIT               DeviceInit,
+  PWDF_PNPPOWER_EVENT_CALLBACKS PnpPowerEventCallbacks
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ A caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windo
 
 `PnpPowerEventCallbacks`
 
-A pointer to a caller-initialized <a href="..\wdfdevice\ns-wdfdevice-_wdf_pnppower_event_callbacks.md">WDF_PNPPOWER_EVENT_CALLBACKS</a> structure.
+A pointer to a caller-initialized <a href="https://msdn.microsoft.com/library/windows/hardware/ff552416">WDF_PNPPOWER_EVENT_CALLBACKS</a> structure.
 
 
 ## Return Value
@@ -79,14 +79,14 @@ None
 
 ## Remarks
 
-If your driver calls <b>WdfDeviceInitSetPnpPowerEventCallbacks</b>, it must do so before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>.
+If your driver calls <b>WdfDeviceInitSetPnpPowerEventCallbacks</b>, it must do so before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>.
 
-For more information about calling <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-a-framework-device-object">Creating a Framework Device Object</a>.
+For more information about calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/creating-a-framework-device-object">Creating a Framework Device Object</a>.
 
 
 #### Examples
 
-The following code example initializes a <a href="..\wdfdevice\ns-wdfdevice-_wdf_pnppower_event_callbacks.md">WDF_PNPPOWER_EVENT_CALLBACKS</a> structure and then calls <b>WdfDeviceInitSetPnpPowerEventCallbacks</b>.
+The following code example initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552416">WDF_PNPPOWER_EVENT_CALLBACKS</a> structure and then calls <b>WdfDeviceInitSetPnpPowerEventCallbacks</b>.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -122,8 +122,8 @@ WdfDeviceInitSetPnpPowerEventCallbacks(
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceinitsetpowerpolicyeventcallbacks.md">WdfDeviceInitSetPowerPolicyEventCallbacks</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552418">WDF_PNPPOWER_EVENT_CALLBACKS_INIT</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdf_pnppower_event_callbacks_init.md">WDF_PNPPOWER_EVENT_CALLBACKS_INIT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546774">WdfDeviceInitSetPowerPolicyEventCallbacks</a>

@@ -7,7 +7,7 @@ old-location: kernel\zwsetinformationresourcemanager.htm
 old-project: kernel
 ms.assetid: 0a0d86c7-1d42-4312-a4f9-9b9ea092ebec
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: NtSetInformationResourceManager, function [Kernel-Mode Driver Architecture], kernel.zwsetinformationresourcemanager, ktm_ref_6b15a16a-ffed-4f3e-9ca3-370b85896dc2.xml, wdm/, wdm/NtSetInformationResourceManager
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,9 +51,14 @@ The <b>ZwSetInformationResourceManager</b> routine is not used.
 
 ## Syntax
 
-````
-void (void);
-````
+```
+__kernel_entry NTSYSCALLAPI NTSTATUS NtSetInformationResourceManager(
+  HANDLE                            ResourceManagerHandle,
+  RESOURCEMANAGER_INFORMATION_CLASS ResourceManagerInformationClass,
+  PVOID                             ResourceManagerInformation,
+  ULONG                             ResourceManagerInformationLength
+);
+```
 
 ## Parameters
 

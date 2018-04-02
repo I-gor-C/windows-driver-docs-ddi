@@ -7,7 +7,7 @@ old-location: ifsk\setokensetnochildprocessrestricted.htm
 old-project: ifsk
 ms.assetid: FCFCBF4C-CBAA-4284-A6F4-67630608CF19
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: SeTokenSetNoChildProcessRestricted, SeTokenSetNoChildProcessRestricted function [Installable File System Drivers], ifsk.setokensetnochildprocessrestricted, ntifs/SeTokenSetNoChildProcessRestricted
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The <b>SeTokenSetNoChildProcessRestricted</b> routine sets the <b>TOKEN_AUDIT_NO
 
 ## Syntax
 
-````
-void NTKERNELAPI SeTokenSetNoChildProcessRestricted(
-  _In_ PACCESS_TOKEN Token,
-  _In_ PBOOLEAN      UnlessSecure,
-  _In_ PBOOLEAN      AuditOnly
+```
+NTKERNELAPI VOID SeTokenSetNoChildProcessRestricted(
+  PACCESS_TOKEN Token,
+  BOOLEAN       UnlessSecure,
+  BOOLEAN       AuditOnly
 );
-````
+```
 
 ## Parameters
 
@@ -95,4 +95,4 @@ Note that both flags cannot be set at the same time
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-setokengetnochildprocessrestricted.md">SeTokenGetNoChildProcessRestricted</a>
+<a href="https://msdn.microsoft.com/6C42E6C4-91EB-44A3-84E1-CAFDBD5CD724">SeTokenGetNoChildProcessRestricted</a>

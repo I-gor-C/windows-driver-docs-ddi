@@ -7,7 +7,7 @@ old-location: netvista\ndis_wwan_sms_send.htm
 old-project: netvista
 ms.assetid: d92c0ebe-4a11-49d9-95aa-182e99ca8dcf
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_WWAN_SMS_SEND, NDIS_WWAN_SMS_SEND, NDIS_WWAN_SMS_SEND structure [Network Drivers Starting with Windows Vista], PNDIS_WWAN_SMS_SEND, PNDIS_WWAN_SMS_SEND structure pointer [Network Drivers Starting with Windows Vista], WwanRef_ef75a09f-b42a-4bd6-ae59-b94d5e4b0e54.xml, _NDIS_WWAN_SMS_SEND, ndiswwan/NDIS_WWAN_SMS_SEND, ndiswwan/PNDIS_WWAN_SMS_SEND, netvista.ndis_wwan_sms_send"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: NDIS_WWAN_SMS_SEND, *PNDIS_WWAN_SMS_SEND
 The NDIS_WWAN_SMS_SEND structure represents an SMS message to send.
 
 ## Syntax
-````
+```
 typedef struct _NDIS_WWAN_SMS_SEND {
   NDIS_OBJECT_HEADER Header;
-  WWAN_SMS_SEND      SmsSend;
+  WWAN_SMS_SEND      SmsSend;
 } NDIS_WWAN_SMS_SEND, *PNDIS_WWAN_SMS_SEND;
-````
+```
 
 ## Members
 
@@ -105,12 +105,12 @@ sizeof(NDIS_WWAN_SMS_SEND)
  
 
 For more information about these members, see 
-     <a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>.
 
 `SmsSend`
 
 A formatted 
-     <a href="..\wwan\ns-wwan-_wwan_sms_send.md">WWAN_SMS_SEND</a> object that represents a SMS
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571250">WWAN_SMS_SEND</a> object that represents a SMS
      text message to send.
 
 
@@ -122,8 +122,8 @@ A formatted
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_sms_send.md">WWAN_SMS_SEND</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566588">NDIS_OBJECT_HEADER</a>
 
 
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_object_header.md">NDIS_OBJECT_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571250">WWAN_SMS_SEND</a>

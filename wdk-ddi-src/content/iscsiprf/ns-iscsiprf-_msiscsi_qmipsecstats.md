@@ -7,7 +7,7 @@ old-location: storage\msiscsi_qmipsecstats.htm
 old-project: storage
 ms.assetid: 265ed956-1065-44be-ac8e-94bab2e4e8b8
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PMSiSCSI_QMIPSECStats, MSiSCSI_QMIPSECStats, MSiSCSI_QMIPSECStats structure [Storage Devices], PMSiSCSI_QMIPSECStats, PMSiSCSI_QMIPSECStats structure pointer [Storage Devices], _MSiSCSI_QMIPSECStats, iscsiprf/MSiSCSI_QMIPSECStats, iscsiprf/PMSiSCSI_QMIPSECStats, storage.msiscsi_qmipsecstats, structs-iSCSI_979ce8ac-35be-4ac1-930a-6614053fc805.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,7 +47,7 @@ req.typenames: MSiSCSI_QMIPSECStats, *PMSiSCSI_QMIPSECStats
 The MSiSCSI_QMIPSECStats structure can be used by an iSCSI initiator to report IPsec statistics for an HBA.
 
 ## Syntax
-````
+```
 typedef struct _MSiSCSI_QMIPSECStats {
   ULONGLONG ActiveSA;
   ULONGLONG PendingKeyOperations;
@@ -67,8 +67,8 @@ typedef struct _MSiSCSI_QMIPSECStats {
   ULONGLONG TransportBytesReceived;
   ULONGLONG TunnelBytesSent;
   ULONGLONG TunnelBytesReceived;
-} MSiSCSI_QMIPSECStats, *PMSiSCSI_QMIPSECStats;
-````
+} *PMSiSCSI_QMIPSECStats, MSiSCSI_QMIPSECStats;
+```
 
 ## Members
 

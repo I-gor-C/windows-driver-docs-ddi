@@ -7,7 +7,7 @@ old-location: kernel\poquerywatchdogtime.htm
 old-project: kernel
 ms.assetid: 4833d4e2-295a-4d38-9ebf-8af68eeff948
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PoQueryWatchdogTime, PoQueryWatchdogTime routine [Kernel-Mode Driver Architecture], kernel.poquerywatchdogtime, portn_1fe369ed-f8f0-4459-943f-a624764c279b.xml, wdm/PoQueryWatchdogTime
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,18 +50,18 @@ The <b>PoQueryWatchdogTime</b> routine indicates whether the power manager has e
 
 ## Syntax
 
-````
-BOOLEAN PoQueryWatchdogTime(
-  _In_  PDEVICE_OBJECT Pdo,
-  _Out_ PULONG         SecondsRemaining
+```
+NTKERNELAPI BOOLEAN PoQueryWatchdogTime(
+  PDEVICE_OBJECT Pdo,
+  PULONG         SecondsRemaining
 );
-````
+```
 
 ## Parameters
 
 `Pdo`
 
-A pointer to a physical device object (PDO). This parameter points to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure that represents a physical device.
+A pointer to a physical device object (PDO). This parameter points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure that represents a physical device.
 
 `SecondsRemaining`
 
@@ -94,4 +94,4 @@ If more than one power watchdog time-out is currently enabled, the routine sets 
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>

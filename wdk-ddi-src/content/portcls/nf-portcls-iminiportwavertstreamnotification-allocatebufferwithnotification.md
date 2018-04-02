@@ -7,7 +7,7 @@ old-location: audio\iminiportwavertstreamnotification_allocatebufferwithnotifica
 old-project: audio
 ms.assetid: df1da549-1677-42ef-9644-3d9c5df66894
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: AllocateBufferWithNotification method [Audio Devices], AllocateBufferWithNotification method [Audio Devices], IMiniportWaveRTStreamNotification interface, AllocateBufferWithNotification,IMiniportWaveRTStreamNotification.AllocateBufferWithNotification, IMiniportWaveRTStreamNotification, IMiniportWaveRTStreamNotification interface [Audio Devices], AllocateBufferWithNotification method, IMiniportWaveRTStreamNotification::AllocateBufferWithNotification, audio.iminiportwavertstreamnotification_allocatebufferwithnotification, audmp-routines_84faf4d3-ee36-4996-8de2-0f89b41c18fe.xml, portcls/IMiniportWaveRTStreamNotification::AllocateBufferWithNotification
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# AllocateBufferWithNotification method
+# IMiniportWaveRTStreamNotification::AllocateBufferWithNotification method
 The <code>AllocateAudioBufferWithNotification</code> method allocates a cyclic buffer for audio data when you want to implement DMA-driven event notification.  If you do not want event notification, you must use <b>IMiniportWaveRTStream::AllocateAudioBuffer</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS AllocateBufferWithNotification(
-  [in]  ULONG               NotificationCount,
-  [in]  ULONG               RequestedSize,
-  [out] PMDL                *AudioBufferMdl,
-  [out] ULONG               *ActualSize,
-  [out] ULONG               *OffsetFromFirstPage,
-  [out] MEMORY_CACHING_TYPE *CacheType
+  ULONG               NotificationCount,
+  ULONG               RequestedSize,
+  PMDL                *AudioBufferMdl,
+  ULONG               *ActualSize,
+  ULONG               *OffsetFromFirstPage,
+  MEMORY_CACHING_TYPE *CacheType
 );
-````
+```
 
 ## Parameters
 
@@ -147,11 +147,11 @@ After receiving a <a href="https://msdn.microsoft.com/library/windows/hardware/f
 
 ## See Also
 
-<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff554414(v=vs.85).aspx">MDL</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536744">IMiniportWaveRTStream::AllocateAudioBuffer</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536739">IMiniportWaveRTStreamNotification</a>
 
 
 
@@ -159,8 +159,8 @@ After receiving a <a href="https://msdn.microsoft.com/library/windows/hardware/f
 
 
 
+<a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff554414(v=vs.85).aspx">MDL</a>
+
+
+
 <a href="http://msdn.microsoft.com/en-us/library/windows/hardware/ff554430(v=vs.85).aspx">MEMORY_CACHING_TYPE</a>
-
-
-
-<a href="..\portcls\nn-portcls-iminiportwavertstreamnotification.md">IMiniportWaveRTStreamNotification</a>

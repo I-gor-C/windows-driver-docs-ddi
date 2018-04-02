@@ -44,20 +44,20 @@ req.typenames: KS_SEEKING_FLAGS
 ---
 
 # KS_SEEKING_FLAGS Enumeration
-The KS_SEEKING_FLAGS enumeration lists positioning options that can be used in conjunction with the <a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a> structure.
+The KS_SEEKING_FLAGS enumeration lists positioning options that can be used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565207">KSPROPERTY_POSITIONS</a> structure.
 
 ## Syntax
-````
-typedef enum  { 
-  KS_SEEKING_NoPositioning           = 0,
-  KS_SEEKING_AbsolutePositioning     = 1,
-  KS_SEEKING_RelativePositioning     = 2,
-  KS_SEEKING_IncrementalPositioning  = 3,
-  KS_SEEKING_PositioningBitsMask     = 0x3,
-  KS_SEEKING_SeekToKeyFrame          = 0x4,
-  KS_SEEKING_ReturnTime              = 0x8
-} KS_SEEKING_FLAGS;
-````
+```
+typedef enum KS_SEEKING_FLAGS {
+  KS_SEEKING_NoPositioning           ,
+  KS_SEEKING_AbsolutePositioning     ,
+  KS_SEEKING_RelativePositioning     ,
+  KS_SEEKING_IncrementalPositioning  ,
+  KS_SEEKING_PositioningBitsMask     ,
+  KS_SEEKING_SeekToKeyFrame          ,
+  KS_SEEKING_ReturnTime
+} ;
+```
 
 ## Constants
 
@@ -101,7 +101,7 @@ typedef enum  {
 
 ## Remarks
 
-The minidriver sets these flag values in a <a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a> structure that it then submits in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a> property request.
+The minidriver sets these flag values in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565207">KSPROPERTY_POSITIONS</a> structure that it then submits in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a> property request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -110,8 +110,8 @@ The minidriver sets these flag values in a <a href="..\ks\ns-ks-ksproperty_posit
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksproperty_positions.md">KSPROPERTY_POSITIONS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565185">KSPROPERTY_MEDIASEEKING_POSITIONS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565207">KSPROPERTY_POSITIONS</a>

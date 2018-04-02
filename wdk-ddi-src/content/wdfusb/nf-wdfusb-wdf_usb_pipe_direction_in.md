@@ -53,11 +53,11 @@ The <b>WDF_USB_PIPE_DIRECTION_IN</b> function determines whether a specified USB
 
 ## Syntax
 
-````
+```
 BOOLEAN WDF_USB_PIPE_DIRECTION_IN(
-  _In_ UCHAR EndpointAddress
+  UCHAR EndpointAddress
 );
-````
+```
 
 ## Parameters
 
@@ -87,8 +87,8 @@ For more information about the <b>WDF_USB_PIPE_DIRECTION_IN</b> function and USB
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdf_usb_pipe_direction_out.md">WDF_USB_PIPE_DIRECTION_OUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553032">WDF_USB_PIPE_DIRECTION_OUT</a>
 
 
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetpipeisinendpoint.md">WdfUsbTargetPipeIsInEndpoint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551151">WdfUsbTargetPipeIsInEndpoint</a>

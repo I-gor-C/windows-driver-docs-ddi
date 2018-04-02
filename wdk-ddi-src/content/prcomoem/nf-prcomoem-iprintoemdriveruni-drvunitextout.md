@@ -45,25 +45,25 @@ req.product: Windows 10 or later.
 ---
 
 
-# DrvUniTextOut method
+# IPrintOemDriverUni::DrvUniTextOut method
 The <code>IPrintOemDriverUni::DrvUniTextOut</code> method is provided by the Unidrv driver so that a rendering plug-in using a device-managed drawing surface can easily output text strings.
 
 ## Syntax
 
-````
+```
 HRESULT DrvUniTextOut(
-   SURFOBJ  *pso,
-   STROBJ   *pstro,
-   FONTOBJ  *pfo,
-   CLIPOBJ  *pco,
-   RECTL    *prclExtra,
-   RECTL    *prclOpaque,
-   BRUSHOBJ *pboFore,
-   BRUSHOBJ *pboOpaque,
-   POINTL   *pptlBrushOrg,
-   MIX      mix
+  SURFOBJ  *pso,
+  STROBJ   *pstro,
+  FONTOBJ  *pfo,
+  CLIPOBJ  *pco,
+  RECTL    *prclExtra,
+  RECTL    *prclOpaque,
+  BRUSHOBJ *pboFore,
+  BRUSHOBJ *pboOpaque,
+  POINTL   *pptlBrushOrg,
+  MIX      mix
 );
-````
+```
 
 ## Parameters
 

@@ -7,7 +7,7 @@ old-location: kernel\rtlshortmult.htm
 old-project: kernel
 ms.assetid: 15DCCCF1-72B1-4944-9BF0-ACAF1DEB9243
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlShortMult, RtlShortMult function [Kernel-Mode Driver Architecture], kernel.rtlshortmult, ntintsafe/RtlShortMult
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ Multiplies one value of type <b>SHORT</b> by another.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlShortMult(
-  _In_  SHORT sMultiplicand,
-  _In_  SHORT sMultiplier,
-  _Out_ SHORT *psResult
+  SHORT sMultiplicand,
+  SHORT sMultiplier,
+  SHORT *psResult
 );
-````
+```
 
 ## Parameters
 

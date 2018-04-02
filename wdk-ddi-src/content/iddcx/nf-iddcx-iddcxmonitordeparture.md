@@ -7,7 +7,7 @@ old-location: display\iddcxmonitordeparture.htm
 old-project: display
 ms.assetid: d23f70ee-a58d-4db1-8f21-b27887d661b9
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: IddCxMonitorDeparture, IddCxMonitorDeparture method [Display Devices], display.iddcxmonitordeparture, iddcx/IddCxMonitorDeparture
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ An OS callback function the driver calls to report a monitor departure from the 
 
 ## Syntax
 
-````
+```
 NTSTATUS IddCxMonitorDeparture(
-  _In_ IDDCX_MONITOR MonitorObject
+  IDDCX_MONITOR MonitorObject
 );
-````
+```
 
 ## Parameters
 

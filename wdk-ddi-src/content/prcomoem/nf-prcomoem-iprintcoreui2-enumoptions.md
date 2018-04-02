@@ -45,27 +45,27 @@ req.product: Windows 10 or later.
 ---
 
 
-# EnumOptions method
+# IPrintCoreUI2::EnumOptions method
 The <code>IPrintCoreUI2::EnumOptions</code> method enumerates the available options of a specific feature.
 
 ## Syntax
 
-````
+```
 HRESULT EnumOptions(
-  [in]  POEMUIOBJ poemuiobj,
-  [in]  DWORD     dwFlags,
-  [in]  PCSTR     pszFeatureKeyword,
-  [out] PSTR      pmszOptionList,
-  [in]  DWORD     cbSize,
-  [out] PDWORD    pcbNeeded
+  POEMUIOBJ poemuiobj,
+  DWORD     dwFlags,
+  PCSTR     pszFeatureKeyword,
+  PZZSTR    pmszOptionList,
+  DWORD     cbSize,
+  PDWORD    pcbNeeded
 );
-````
+```
 
 ## Parameters
 
 `poemuiobj`
 
-Pointer to the current context, an <a href="..\printoem\ns-printoem-_oemuiobj.md">OEMUIOBJ</a> structure.
+Pointer to the current context, an <a href="https://msdn.microsoft.com/library/windows/hardware/ff559571">OEMUIOBJ</a> structure.
 
 `dwFlags`
 
@@ -180,12 +180,12 @@ For more information, see <a href="https://msdn.microsoft.com/6ce16d28-eff7-4701
 
 ## See Also
 
-<a href="..\prcomoem\nn-prcomoem-iprintcoreui2.md">IPrintCoreUI2</a>
-
-
-
-<a href="..\printoem\ns-printoem-_oemuiobj.md">OEMUIOBJ</a>
+<a href="https://msdn.microsoft.com/e2d2e486-d69d-4a6d-aaab-a7b8806665b4">IPrintCoreUI2</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff553050">IPrintCoreUI2::EnumFeatures</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559571">OEMUIOBJ</a>

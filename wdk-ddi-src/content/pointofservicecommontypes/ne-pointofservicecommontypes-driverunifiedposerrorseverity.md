@@ -47,16 +47,16 @@ req.typenames: DriverUnifiedPosErrorSeverity
 This enumeration indicates the severity of the error.
 
 ## Syntax
-````
-typedef enum _DriverUnifiedPosErrorSeverity { 
-  UnknownErrorSeverity  = 0,
-  Warning               = 1,
-  Recoverable           = 2,
-  Unrecoverable         = 3,
-   AssistanceRequired   = 4,
-  Fatal                 = 5
-} DriverUnifiedPosErrorSeverity;
-````
+```
+typedef enum DriverUnifiedPosErrorSeverity {
+  UnknownErrorSeverity  ,
+  Warning               ,
+  Recoverable           ,
+  Unrecoverable         ,
+  AssistanceRequired    ,
+  Fatal
+} ;
+```
 
 ## Constants
 

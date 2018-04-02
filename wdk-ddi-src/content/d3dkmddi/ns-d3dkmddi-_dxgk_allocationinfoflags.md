@@ -7,7 +7,7 @@ old-location: display\dxgk_allocationinfoflags.htm
 old-project: display
 ms.assetid: 04bd00c3-83a8-44bb-9493-cf7f43f10602
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_ALLOCATIONINFOFLAGS, DXGK_ALLOCATIONINFOFLAGS structure [Display Devices], DmStructs_4e6e499c-8427-4c0f-977d-92f648ab027e.xml, _DXGK_ALLOCATIONINFOFLAGS, d3dkmddi/DXGK_ALLOCATIONINFOFLAGS, display.dxgk_allocationinfoflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,50 +47,48 @@ req.typenames: DXGK_ALLOCATIONINFOFLAGS
 The DXGK_ALLOCATIONINFOFLAGS structure identifies properties for an allocation. The display miniport driver specifies these flags for the video memory manager.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_ALLOCATIONINFOFLAGS {
   union {
     struct {
-      UINT CpuVisible  :1;
-      UINT PermanentSysMem  :1;
-      UINT Cached  :1;
-      UINT Protected  :1;
-      UINT ExistingSysMem  :1;
-      UINT ExistingKernelSysMem  :1;
-      UINT FromEndOfSegment  :1;
-      UINT Swizzled  :1;
-      UINT Overlay  :1;
-      UINT Capture  :1;
-      UINT UseAlternateVA  :1;
-      UINT SynchronousPaging  :1;
-      UINT LinkMirrored  :1;
-      UINT LinkInstanced  :1;
-      UINT HistoryBuffer  :1;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM2_0)
-      UINT AccessedPhysically  :1;
-      UINT ExplicitResidencyNotification  :1;
-      UINT Reserved  :2;
-#else 
-      UINT Reserved  :4;
-#endif 
-      UINT DXGK_ALLOC_RESERVED16  :1;
-      UINT DXGK_ALLOC_RESERVED15  :1;
-      UINT DXGK_ALLOC_RESERVED14  :1;
-      UINT DXGK_ALLOC_RESERVED13  :1;
-      UINT DXGK_ALLOC_RESERVED12  :1;
-      UINT DXGK_ALLOC_RESERVED11  :1;
-      UINT DXGK_ALLOC_RESERVED10  :1;
-      UINT DXGK_ALLOC_RESERVED9  :1;
-      UINT DXGK_ALLOC_RESERVED4  :1;
-      UINT DXGK_ALLOC_RESERVED3  :1;
-      UINT DXGK_ALLOC_RESERVED2  :1;
-      UINT DXGK_ALLOC_RESERVED1  :1;
-      UINT DXGK_ALLOC_RESERVED0  :1;
+      UINT  : 1 CpuVisible;
+      UINT  : 1 PermanentSysMem;
+      UINT  : 1 Cached;
+      UINT  : 1 Protected;
+      UINT  : 1 ExistingSysMem;
+      UINT  : 1 ExistingKernelSysMem;
+      UINT  : 1 FromEndOfSegment;
+      UINT  : 1 Swizzled;
+      UINT  : 1 Overlay;
+      UINT  : 1 Capture;
+      UINT  : 1 UseAlternateVA;
+      UINT  : 1 SynchronousPaging;
+      UINT  : 1 LinkMirrored;
+      UINT  : 1 LinkInstanced;
+      UINT  : 1 HistoryBuffer;
+      UINT  : 1 AccessedPhysically;
+      UINT  : 1 ExplicitResidencyNotification;
+      UINT  : 1 HardwareProtected;
+      UINT  : 1 CpuVisibleOnDemand;
+      UINT  : 4 Reserved;
+      UINT  : 1 DXGK_ALLOC_RESERVED16;
+      UINT  : 1 DXGK_ALLOC_RESERVED15;
+      UINT  : 1 DXGK_ALLOC_RESERVED14;
+      UINT  : 1 DXGK_ALLOC_RESERVED13;
+      UINT  : 1 DXGK_ALLOC_RESERVED12;
+      UINT  : 1 DXGK_ALLOC_RESERVED11;
+      UINT  : 1 DXGK_ALLOC_RESERVED10;
+      UINT  : 1 DXGK_ALLOC_RESERVED9;
+      UINT  : 1 DXGK_ALLOC_RESERVED4;
+      UINT  : 1 DXGK_ALLOC_RESERVED3;
+      UINT  : 1 DXGK_ALLOC_RESERVED2;
+      UINT  : 1 DXGK_ALLOC_RESERVED1;
+      UINT  : 1 DXGK_ALLOC_RESERVED0;
     };
     UINT Value;
   };
 } DXGK_ALLOCATIONINFOFLAGS;
-````
+```
 
 ## Members
 
@@ -106,16 +104,16 @@ You can specify properties of an allocation by setting bits in the 32-bit <b>Val
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_unlockcb.md">pfnUnlockCb</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560960">DXGK_ALLOCATIONINFO</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_lockcb.md">pfnLockCb</a>
+<a href="https://msdn.microsoft.com/d315ff53-4a9f-46a3-ad74-d65a5eb72de1">DxgkDdiBuildPagingBuffer</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_allocationinfo.md">DXGK_ALLOCATIONINFO</a>
+<a href="https://msdn.microsoft.com/69022797-432a-410b-8cbf-e1ef7111e7ea">pfnLockCb</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
+<a href="https://msdn.microsoft.com/6684f350-da27-478d-ab7b-36e395f7df8d">pfnUnlockCb</a>

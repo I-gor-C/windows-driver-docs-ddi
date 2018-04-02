@@ -7,7 +7,7 @@ old-location: display\dxgk_patchflags.htm
 old-project: display
 ms.assetid: 4052b760-70b0-4418-84f9-1e520a551a03
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_PATCHFLAGS, DXGK_PATCHFLAGS structure [Display Devices], DmStructs_e798cfa4-1915-42c8-87ad-709df6a5555f.xml, _DXGK_PATCHFLAGS, d3dkmddi/DXGK_PATCHFLAGS, display.dxgk_patchflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,20 +47,20 @@ req.typenames: DXGK_PATCHFLAGS
 The DXGK_PATCHFLAGS structure identifies, in bit-field flags, information about the direct memory access (DMA) buffer that requires patching.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_PATCHFLAGS {
   union {
     struct {
-      UINT Paging  :1;
-      UINT Present  :1;
-      UINT RedirectedPresent  :1;
-      UINT NullRendering  :1;
-      UINT Reserved  :28;
+      UINT  : 1  Paging;
+      UINT  : 1  Present;
+      UINT  : 1  RedirectedPresent;
+      UINT  : 1  NullRendering;
+      UINT  : 28 Reserved;
     };
     UINT Value;
   };
 } DXGK_PATCHFLAGS;
-````
+```
 
 ## Members
 
@@ -74,16 +74,16 @@ typedef struct _DXGK_PATCHFLAGS {
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_present.md">DxgkDdiPresent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557610">DXGKARG_PATCH</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_render.md">DxgkDdiRender</a>
+<a href="https://msdn.microsoft.com/363be784-0e3b-4f9a-a643-80857478bbae">DxgkDdiPatch</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_patch.md">DxgkDdiPatch</a>
+<a href="https://msdn.microsoft.com/1a46b129-1e78-44e6-a609-59eab206692b">DxgkDdiPresent</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_patch.md">DXGKARG_PATCH</a>
+<a href="https://msdn.microsoft.com/fd634768-5e1e-4f40-82fd-5ef69148c3d7">DxgkDdiRender</a>

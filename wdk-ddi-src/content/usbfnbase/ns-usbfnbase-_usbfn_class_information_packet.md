@@ -7,7 +7,7 @@ old-location: buses\usbfn_class_information_packet.htm
 old-project: usbref
 ms.assetid: 18A07670-B610-4D09-8BF0-3C55E781A68B
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSBFN_CLASS_INFORMATION_PACKET, PUSBFN_CLASS_INFORMATION_PACKET, PUSBFN_CLASS_INFORMATION_PACKET structure pointer [Buses], USBFN_CLASS_INFORMATION_PACKET, USBFN_CLASS_INFORMATION_PACKET structure [Buses], _USBFN_CLASS_INFORMATION_PACKET, buses.usbfn_class_information_packet, usbfnbase/PUSBFN_CLASS_INFORMATION_PACKET, usbfnbase/USBFN_CLASS_INFORMATION_PACKET"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,27 +48,27 @@ req.product: Windows 10 or later.
 Describes device interface class information associated with a USB interface. This structure can only hold information about a single function interface.
 
 ## Syntax
-````
+```
 typedef struct _USBFN_CLASS_INFORMATION_PACKET {
   USBFN_CLASS_INTERFACE FullSpeedClassInterface;
   USBFN_CLASS_INTERFACE HighSpeedClassInterface;
-  WCHAR                 InterfaceName[MAX_INTERFACE_NAME_LENGTH];
-  WCHAR                 InterfaceGuid[MAX_INTERFACE_GUID_LENGTH];
-  BOOLEAN               HasInterfaceGuid;
+  WCHAR                 InterfaceName[MAX_INTERFACE_NAME_LENGTH];
+  WCHAR                 InterfaceGuid[MAX_INTERFACE_GUID_LENGTH];
+  BOOLEAN               HasInterfaceGuid;
   USBFN_CLASS_INTERFACE SuperSpeedClassInterface;
 } USBFN_CLASS_INFORMATION_PACKET, *PUSBFN_CLASS_INFORMATION_PACKET;
-````
+```
 
 ## Members
 
 
 `FullSpeedClassInterface`
 
-A <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_interface.md">USBFN_CLASS_INTERFACE</a> structure that describes an interface for full speed device.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt187990">USBFN_CLASS_INTERFACE</a> structure that describes an interface for full speed device.
 
 `HighSpeedClassInterface`
 
-A <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_interface.md">USBFN_CLASS_INTERFACE</a> structure that describes an interface for high speed device.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt187990">USBFN_CLASS_INTERFACE</a> structure that describes an interface for high speed device.
 
 `InterfaceName`
 
@@ -84,7 +84,7 @@ Determines whether the driver has published a device interface is GUID.
 
 `SuperSpeedClassInterface`
 
-A <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_interface.md">USBFN_CLASS_INTERFACE</a> structure that describes an interface for SuperSpeed device.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt187990">USBFN_CLASS_INTERFACE</a> structure that describes an interface for SuperSpeed device.
 
 
 ## Requirements
@@ -94,12 +94,12 @@ A <a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_interface.md">USBFN_CLASS_INTE
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicesetdeviceinterfacestate.md">WdfDeviceSetDeviceInterfaceState</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187990">USBFN_CLASS_INTERFACE</a>
 
 
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreatesymboliclink.md">WdfDeviceCreateSymbolicLink</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545939">WdfDeviceCreateSymbolicLink</a>
 
 
 
-<a href="..\usbfnbase\ns-usbfnbase-_usbfn_class_interface.md">USBFN_CLASS_INTERFACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546878">WdfDeviceSetDeviceInterfaceState</a>

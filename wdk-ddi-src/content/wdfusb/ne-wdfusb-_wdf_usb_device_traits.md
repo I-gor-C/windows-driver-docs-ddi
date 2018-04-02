@@ -50,13 +50,13 @@ req.product: Windows 10 or later.
 The <b>WDF_USB_DEVICE_TRAITS</b> enumeration identifies USB device traits.
 
 ## Syntax
-````
-typedef enum _WDF_USB_DEVICE_TRAITS { 
-  WDF_USB_DEVICE_TRAIT_SELF_POWERED         = 0x00000001,
-  WDF_USB_DEVICE_TRAIT_REMOTE_WAKE_CAPABLE  = 0x00000002,
-  WDF_USB_DEVICE_TRAIT_AT_HIGH_SPEED        = 0x00000004
+```
+typedef enum _WDF_USB_DEVICE_TRAITS {
+  WDF_USB_DEVICE_TRAIT_SELF_POWERED         ,
+  WDF_USB_DEVICE_TRAIT_REMOTE_WAKE_CAPABLE  ,
+  WDF_USB_DEVICE_TRAIT_AT_HIGH_SPEED
 } WDF_USB_DEVICE_TRAITS;
-````
+```
 
 ## Constants
 
@@ -80,7 +80,7 @@ typedef enum _WDF_USB_DEVICE_TRAITS {
 
 ## Remarks
 
-The <b>WDF_USB_DEVICE_TRAITS</b> enumeration is used in the <a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_information.md">WDF_USB_DEVICE_INFORMATION</a> structure.
+The <b>WDF_USB_DEVICE_TRAITS</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff552592">WDF_USB_DEVICE_INFORMATION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,4 +91,4 @@ The <b>WDF_USB_DEVICE_TRAITS</b> enumeration is used in the <a href="..\wdfusb\n
 
 ## See Also
 
-<a href="..\wdfusb\ns-wdfusb-_wdf_usb_device_information.md">WDF_USB_DEVICE_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552592">WDF_USB_DEVICE_INFORMATION</a>

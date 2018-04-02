@@ -7,7 +7,7 @@ old-location: audio\iportclsruntimepower_registerpowercontrolcallback.htm
 old-project: audio
 ms.assetid: 1500E2C2-240F-4087-9275-9FD4170B8BED
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IPortClsRuntimePower, IPortClsRuntimePower interface [Audio Devices], RegisterPowerControlCallback method, IPortClsRuntimePower::RegisterPowerControlCallback, RegisterPowerControlCallback method [Audio Devices], RegisterPowerControlCallback method [Audio Devices], IPortClsRuntimePower interface, RegisterPowerControlCallback,IPortClsRuntimePower.RegisterPowerControlCallback, audio.iportclsruntimepower_registerpowercontrolcallback, portcls/IPortClsRuntimePower::RegisterPowerControlCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# RegisterPowerControlCallback method
+# IPortClsRuntimePower::RegisterPowerControlCallback method
 The port class driver (PortCls) uses the <code>RegisterPowerControlCallback</code>  method to register a power control callback.
 
 ## Syntax
 
-````
+```
 NTSTATUS RegisterPowerControlCallback(
-  [in]           PDEVICE_OBJECT                      DeviceObject,
-  [in]           PCPFNRUNTIME_POWER_CONTROL_CALLBACK Callback,
-  [in, optional] PVOID                               Context
+  PDEVICE_OBJECT                      _DeviceObject,
+  PCPFNRUNTIME_POWER_CONTROL_CALLBACK _Callback,
+  PVOID                               _Context
 );
-````
+```
 
 ## Parameters
 
@@ -86,4 +86,4 @@ The <code>RegisterPowerControlCallback</code> method returns STATUS_SUCCESS, if 
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iportclsruntimepower.md">IPortClsRuntimePower</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265125">IPortClsRuntimePower</a>

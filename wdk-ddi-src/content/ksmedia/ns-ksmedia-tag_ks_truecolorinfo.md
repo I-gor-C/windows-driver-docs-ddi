@@ -47,12 +47,12 @@ req.typenames: KS_TRUECOLORINFO, *PKS_TRUECOLORINFO
 The KS_TRUECOLORINFO structure describes color palette and bitmask information for video images that also contain a palette.
 
 ## Syntax
-````
+```
 typedef struct tag_KS_TRUECOLORINFO {
-  DWORD      dwBitMasks[KS_iMASK_COLORS];
+  DWORD      dwBitMasks[KS_iMASK_COLORS];
   KS_RGBQUAD bmiColors[KS_iPALETTE_COLORS];
 } KS_TRUECOLORINFO, *PKS_TRUECOLORINFO;
-````
+```
 
 ## Members
 
@@ -73,4 +73,4 @@ Array of palette colors.
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-tagks_rgbquad.md">KS_RGBQUAD</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567675">KS_RGBQUAD</a>

@@ -7,7 +7,7 @@ old-location: display\dd_getddiversiondata.htm
 old-project: display
 ms.assetid: 4f96ef86-1155-4483-915e-706cc18c3bca
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DD_GETDDIVERSIONDATA, DD_GETDDIVERSIONDATA structure [Display Devices], _DD_GETDDIVERSIONDATA, d3dhal/DD_GETDDIVERSIONDATA, d3dstrct_c15b9015-5e12-41bc-a44b-751f2a8813e9.xml, display.dd_getddiversiondata
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,20 +50,20 @@ DirectX 9.0 and later versions only.
 DD_GETDDIVERSIONDATA is the data structure pointed to by the <b>lpvData</b> field of <a href="https://msdn.microsoft.com/library/windows/hardware/ff551550">DD_GETDRIVERINFODATA</a> for DD_GETDRIVERINFO2DATA queries with the type D3DGDI2_TYPE_GETDDIVERSION.
 
 ## Syntax
-````
+```
 typedef struct _DD_GETDDIVERSIONDATA {
   DD_GETDRIVERINFO2DATA gdi2;
-  DWORD                 dwDXVersion;
-  DWORD                 dwDDIVersion;
+  DWORD                 dwDXVersion;
+  DWORD                 dwDDIVersion;
 } DD_GETDDIVERSIONDATA;
-````
+```
 
 ## Members
 
 
 `gdi2`
 
-Specifies a <a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data for the query.
+Specifies a <a href="https://msdn.microsoft.com/library/windows/hardware/ff551548">DD_GETDRIVERINFO2DATA</a> structure that contains the <b>GetDriverInfo2</b> data for the query.
 
 `dwDXVersion`
 
@@ -85,7 +85,7 @@ For example, suppose that a hardware vendor builds his display driver with a pre
 
 ## See Also
 
-<a href="..\d3dhal\ns-d3dhal-_dd_getdriverinfo2data.md">DD_GETDRIVERINFO2DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551548">DD_GETDRIVERINFO2DATA</a>
 
 
 

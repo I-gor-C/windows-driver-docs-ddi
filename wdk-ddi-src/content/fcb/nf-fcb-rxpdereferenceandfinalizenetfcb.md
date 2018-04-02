@@ -7,7 +7,7 @@ old-location: ifsk\rxpdereferenceandfinalizenetfcb.htm
 old-project: ifsk
 ms.assetid: 954a4811-4515-4ed4-a4f1-df598d08fc77
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RxpDereferenceAndFinalizeNetFcb, RxpDereferenceAndFinalizeNetFcb function [Installable File System Drivers], fcb/RxpDereferenceAndFinalizeNetFcb, ifsk.rxpdereferenceandfinalizenetfcb, rxref_474f30d3-858e-4179-8236-3068a2325818.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,14 +49,14 @@ req.typenames: FA_ENTRY, *PFA_ENTRY
 
 ## Syntax
 
-````
+```
 BOOLEAN RxpDereferenceAndFinalizeNetFcb(
-  _Out_ PFCB        Fcb,
-  _In_  PRX_CONTEXT RxContext,
-  _In_  BOOLEAN     RecursiveFinalize,
-  _In_  BOOLEAN     ForceFinalize
+  OUT PFCB       ThisFcb,
+  IN PRX_CONTEXT RxContext,
+  IN BOOLEAN     RecursiveFinalize,
+  IN BOOLEAN     ForceFinalize
 );
-````
+```
 
 ## Parameters
 
@@ -97,12 +97,12 @@ On checked builds, <b>RxpDereferenceAndFinalizeNetFcb</b> causes the system to A
 
 ## See Also
 
-<a href="..\fcb\nf-fcb-rxptrackdereference.md">RxpTrackDereference</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554627">RxpReferenceNetFcb</a>
 
 
 
-<a href="..\fcb\nf-fcb-rxptrackreference.md">RxpTrackReference</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554655">RxpTrackDereference</a>
 
 
 
-<a href="..\fcb\nf-fcb-rxpreferencenetfcb.md">RxpReferenceNetFcb</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554659">RxpTrackReference</a>

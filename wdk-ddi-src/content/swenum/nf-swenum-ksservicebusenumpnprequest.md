@@ -53,12 +53,12 @@ The <b>KsServiceBusEnumPnpRequest</b> function services IRP_MJ_PNP requests on b
 
 ## Syntax
 
-````
-NTSTATUS KsServiceBusEnumPnpRequest(
-  _In_    PDEVICE_OBJECT DeviceObject,
-  _Inout_ PIRP           Irp
+```
+KSDDKAPI NTSTATUS KsServiceBusEnumPnpRequest(
+  PDEVICE_OBJECT DeviceObject,
+  PIRP           Irp
 );
-````
+```
 
 ## Parameters
 
@@ -189,12 +189,12 @@ IRP_MN_QUERY_CAPABILITIES
 
 ## See Also
 
-<a href="..\swenum\nf-swenum-ksservicebusenumcreaterequest.md">KsServiceBusEnumCreateRequest</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561634">KsCreateBusEnumObject</a>
 
 
 
-<a href="..\swenum\nf-swenum-kscreatebusenumobject.md">KsCreateBusEnumObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563389">KsIsBusEnumChildDevice</a>
 
 
 
-<a href="..\swenum\nf-swenum-ksisbusenumchilddevice.md">KsIsBusEnumChildDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566814">KsServiceBusEnumCreateRequest</a>

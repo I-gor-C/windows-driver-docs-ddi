@@ -7,7 +7,7 @@ old-location: storage\sendrpl_in.htm
 old-project: storage
 ms.assetid: 0c084258-2bd6-47a8-a060-d4ba2734ebed
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSendRPL_IN, PSendRPL_IN, PSendRPL_IN structure pointer [Storage Devices], SendRPL_IN, SendRPL_IN structure [Storage Devices], _SendRPL_IN, hbapiwmi/PSendRPL_IN, hbapiwmi/SendRPL_IN, storage.sendrpl_in, structs-Fibre_3babb7ed-9d87-4154-b038-8e503750eed4.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,14 +47,14 @@ req.typenames: SendRPL_IN, *PSendRPL_IN
 The SendRPL_IN structure is used to deliver input parameter data to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565488">SendRPL</a> WMI method.
 
 ## Syntax
-````
+```
 typedef struct _SendRPL_IN {
   UCHAR PortWWN[8];
   UCHAR AgentWWN[8];
   ULONG agent_domain;
   ULONG portIndex;
 } SendRPL_IN, *PSendRPL_IN;
-````
+```
 
 ## Members
 

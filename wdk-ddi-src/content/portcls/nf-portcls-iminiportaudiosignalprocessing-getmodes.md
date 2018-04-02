@@ -7,7 +7,7 @@ old-location: audio\iminiportaudiosignalprocessing_getmodes.htm
 old-project: audio
 ms.assetid: 7175453E-DF6D-45F0-B666-CF4FCF1F880C
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: GetModes method [Audio Devices], GetModes method [Audio Devices], IMiniportAudioSignalProcessing interface, GetModes,IMiniportAudioSignalProcessing.GetModes, IMiniportAudioSignalProcessing, IMiniportAudioSignalProcessing interface [Audio Devices], GetModes method, IMiniportAudioSignalProcessing::GetModes, audio.iminiportaudiosignalprocessing_getmodes, portcls/IMiniportAudioSignalProcessing::GetModes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# GetModes method
+# IMiniportAudioSignalProcessing::GetModes method
 The GetModes method, Gets the audio signal processing modes supported by an audio pin.
 
 ## Syntax
 
-````
+```
 NTSTATUS GetModes(
-  [in]            ULONG                            Pin,
-  [out, optional] (*NumSignalProcessingModes) GUID *SignalProcessingModes,
-  [in, out]       ULONG                            *NumSignalProcessingModes
+  ULONG Pin,
+  GUID  *SignalProcessingModes,
+  ULONG *NumSignalProcessingModes
 );
-````
+```
 
 ## Parameters
 
@@ -112,4 +112,4 @@ The following table presents and explains  the error messages than can be return
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iminiportaudiosignalprocessing.md">IMiniportAudioSignalProcessing</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn457659">IMiniportAudioSignalProcessing</a>

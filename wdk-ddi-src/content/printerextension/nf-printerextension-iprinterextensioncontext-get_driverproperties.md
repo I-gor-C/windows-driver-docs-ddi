@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_DriverProperties method
+# IPrinterExtensionContext::get_DriverProperties method
 Gets the driver property bag.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_DriverProperties(
-  [out, retval] IPrinterPropertyBag **ppPropertyBag
+  IPrinterPropertyBag **ppPropertyBag
 );
-````
+```
 
 ## Parameters
 
@@ -85,8 +85,8 @@ The driver property bag uses the following GUID for its property store format ID
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensioncontext.md">IPrinterExtensionContext</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh406649">IPrinterExtensionContext</a>
 
 
 
-<a href="..\printerextension\nn-printerextension-iprinterpropertybag.md">IPrinterPropertyBag</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439547">IPrinterPropertyBag</a>

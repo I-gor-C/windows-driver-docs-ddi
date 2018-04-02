@@ -45,27 +45,27 @@ req.product: Windows 10 or later.
 ---
 
 
-# DrvGetGPDData method
+# IPrintOemDriverUni::DrvGetGPDData method
 The <code>IPrintOemDriverUni::DrvGetGPDData</code> method is provided by the Unidrv driver so that rendering plug-ins can obtain data defined in a printer's <a href="https://msdn.microsoft.com/f67c673d-c6f0-49f0-850a-d8b00e99ddd4">GPD</a> file.
 
 ## Syntax
 
-````
+```
 HRESULT DrvGetGPDData(
-   PDEVOBJ pdevobj,
-   DWORD   dwType,
-   PVOID   pInputData,
-   PVOID   pBuffer,
-   DWORD   cbSize,
-   PDWORD  pcbNeeded
+  PDEVOBJ pdevobj,
+  DWORD   dwType,
+  PVOID   pInputData,
+  PVOID   pBuffer,
+  DWORD   cbSize,
+  PDWORD  pcbNeeded
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `dwType`
 

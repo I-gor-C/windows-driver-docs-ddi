@@ -7,7 +7,7 @@ old-location: display\d3dddicb_waitforsynchronizationobjectfromcpu.htm
 old-project: display
 ms.assetid: 0F5BEDBF-6871-4343-88D1-85E7620171EF
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure [Display Devices], WaitAny, d3dumddi/D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU, display.d3dddicb_waitforsynchronizationobjectfromcpu
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU
 ---
 
 # D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU structure
-<b>D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU</b> is used with <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectfromcpucb.md">pfnWaitForSynchronizationObjectFromCpuCb</a> to wait for a monitored fence to reach a certain value.
+<b>D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU</b> is used with <a href="https://msdn.microsoft.com/304A5BCE-19E6-4F92-B840-FD3BE1CFB856">pfnWaitForSynchronizationObjectFromCpuCb</a> to wait for a monitored fence to reach a certain value.
 
 ## Syntax
-````
+```
 typedef struct D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU {
-  UINT                                             ObjectCount;
-  const D3DKMT_HANDLE                              *ObjectHandleArray;
-  const UINT64                                     *FenceValueArray;
-  HANDLE                                           hAsyncEvent;
+  UINT                                             ObjectCount;
+  const D3DKMT_HANDLE                              *ObjectHandleArray;
+  const UINT64                                     *FenceValueArray;
+  HANDLE                                           hAsyncEvent;
   D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS Flags;
-} D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU;
-````
+};
+```
 
 ## Members
 
@@ -78,7 +78,7 @@ typedef struct D3DDDICB_WAITFORSYNCHRONIZATIONOBJECTFROMCPU {
 
 `Flags`
 
-[in] A <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_waitforsynchronizationobjectfromcpu_flags.md">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a> structure describing the operation.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/dn914421">D3DDDI_WAITFORSYNCHRONIZATIONOBJECTFROMCPU_FLAGS</a> structure describing the operation.
 
 <table>
 <tr>
@@ -118,4 +118,4 @@ The wait condition is considered to be satisfied when any of the input synchroni
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_waitforsynchronizationobjectfromcpucb.md">pfnWaitForSynchronizationObjectFromCpuCb</a>
+<a href="https://msdn.microsoft.com/304A5BCE-19E6-4F92-B840-FD3BE1CFB856">pfnWaitForSynchronizationObjectFromCpuCb</a>

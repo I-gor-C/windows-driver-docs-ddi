@@ -52,13 +52,13 @@ The WIAS_LWARNING macro writes a diagnostic WIA_WARNING message to the log file.
 
 ## Syntax
 
-````
-WIAS_LERROR( WIAS_LWARNING(
-         IWiaLog   *pIWiaLog,
-         LONG      lResId,
-   const CHAR      *format_string, ...
+```
+void WIAS_LWARNING(
+   pILog,
+   ResID,
+   Args
 );
-````
+```
 
 ## Parameters
 
@@ -105,12 +105,12 @@ Please note that it does not write to the new log file used in Windows Vista and
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wias_lerror.md">WIAS_LERROR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549580">WIAS_LERROR</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wias_ltrace.md">WIAS_LTRACE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549589">WIAS_LHRESULT</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wias_lhresult.md">WIAS_LHRESULT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549600">WIAS_LTRACE</a>

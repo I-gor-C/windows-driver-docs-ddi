@@ -7,7 +7,7 @@ old-location: netvista\ndisfreerwlock.htm
 old-project: netvista
 ms.assetid: 1f54e8fe-e6a2-4ddd-9451-289d3df21fde
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: NdisFreeRWLock, NdisFreeRWLock function [Network Drivers Starting with Windows Vista], ndis/NdisFreeRWLock, ndis_processor_group_ref_f711221a-f265-446e-86bc-7b5b4d17f7d9.xml, netvista.ndisfreerwlock
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,15 +48,15 @@ req.typenames: NDIS_SHARED_MEMORY_USAGE, *PNDIS_SHARED_MEMORY_USAGE
 # NdisFreeRWLock function
 The 
   <b>NdisFreeRWLock</b> function frees a read/write lock that was previously allocated with the 
-  <a href="..\ndis\nf-ndis-ndisallocaterwlock.md">NdisAllocateRWLock</a> function.
+  <a href="https://msdn.microsoft.com/library/windows/hardware/ff561615">NdisAllocateRWLock</a> function.
 
 ## Syntax
 
-````
-VOID NdisFreeRWLock(
-  _In_ PNDIS_RW_LOCK_EX Lock
+```
+void NdisFreeRWLock(
+  __drv_freesMem(ndisrwlockex)PNDIS_RW_LOCK_EX Lock
 );
-````
+```
 
 ## Parameters
 
@@ -78,10 +78,10 @@ NDIS drivers call the
     <b>NdisFreeRWLock</b> function to free the 
     <a href="https://msdn.microsoft.com/library/windows/hardware/ff567279">NDIS_RW_LOCK_EX</a> structure and any associated
     resources that were previously allocated with the 
-    <a href="..\ndis\nf-ndis-ndisallocaterwlock.md">NdisAllocateRWLock</a> function.
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff561615">NdisAllocateRWLock</a> function.
 
 A driver must call the 
-    <a href="..\ndis\nf-ndis-ndisreleaserwlock.md">NdisReleaseRWLock</a> function to release a
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff564523">NdisReleaseRWLock</a> function to release a
     read/write lock before it calls the 
     <b>NdisFreeRWLock</b> function.
 
@@ -100,8 +100,8 @@ A driver must call the
 
 
 
-<a href="..\ndis\nf-ndis-ndisreleaserwlock.md">NdisReleaseRWLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561615">NdisAllocateRWLock</a>
 
 
 
-<a href="..\ndis\nf-ndis-ndisallocaterwlock.md">NdisAllocateRWLock</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564523">NdisReleaseRWLock</a>

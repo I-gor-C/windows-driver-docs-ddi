@@ -7,7 +7,7 @@ old-location: display\d3d12ddicb_allocate_0022.htm
 old-project: display
 ms.assetid: C39262BA-D1CE-4634-974A-ACCE8D321830
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3D12DDICB_ALLOCATE_0022, D3D12DDICB_ALLOCATE_0022 structure [Display Devices], d3d12umddi/D3D12DDICB_ALLOCATE_0022, display.d3d12ddicb_allocate_0022
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,16 +47,16 @@ req.typenames: D3D12DDICB_ALLOCATE_0022
 Specifies information for use in an allocation callback function.
 
 ## Syntax
-````
+```
 typedef struct D3D12DDICB_ALLOCATE_0022 {
-  const VOID                    *pPrivateDriverData;
-  UINT                          PrivateDriverDataSize;
-  HANDLE                        hResource;
-  D3DKMT_HANDLE                 hKMResource;
-  UINT                          NumAllocations;
+  CONST VOID                    *pPrivateDriverData;
+  UINT                          PrivateDriverDataSize;
+  HANDLE                        hResource;
+  D3DKMT_HANDLE                 hKMResource;
+  UINT                          NumAllocations;
   D3D12DDI_ALLOCATION_INFO_0022 *pAllocationInfo;
-} D3D12DDICB_ALLOCATE_0022;
-````
+};
+```
 
 ## Members
 
@@ -83,7 +83,7 @@ The number of allocations.
 
 `pAllocationInfo`
 
-Allocation as a <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_allocation_info_0022.md">D3D12DDI_ALLOCATION_INFO_0022</a> structure.
+Allocation as a <a href="https://msdn.microsoft.com/A600C402-EB77-4C44-8349-96DAF11B807C">D3D12DDI_ALLOCATION_INFO_0022</a> structure.
 
 
 ## Requirements
@@ -93,4 +93,4 @@ Allocation as a <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_allocation_info_00
 
 ## See Also
 
-<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_allocation_info_0022.md">D3D12DDI_ALLOCATION_INFO_0022</a>
+<a href="https://msdn.microsoft.com/A600C402-EB77-4C44-8349-96DAF11B807C">D3D12DDI_ALLOCATION_INFO_0022</a>

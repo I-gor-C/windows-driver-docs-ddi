@@ -71,4 +71,4 @@ This interface exposes a work item object.
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfobject.md">IWDFObject</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560200">IWDFObject</a>

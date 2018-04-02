@@ -50,18 +50,18 @@ The<b> KsFilterGetChildPinCount</b><b></b>function<b></b>returns the number of p
 
 ## Syntax
 
-````
-ULONG KsFilterGetChildPinCount(
-  _In_ PKSFILTER Filter,
-  _In_ ULONG     PinId
+```
+KSDDKAPI ULONG KsFilterGetChildPinCount(
+  PKSFILTER Filter,
+  ULONG     PinId
 );
-````
+```
 
 ## Parameters
 
 `Filter`
 
-A pointer to the <a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a> structure for which to find the number of instantiated pins of type <i>PinID</i>.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a> structure for which to find the number of instantiated pins of type <i>PinID</i>.
 
 `PinId`
 
@@ -89,16 +89,16 @@ For more information, see <a href="https://msdn.microsoft.com/011edaaa-7449-41c3
 
 ## See Also
 
-<a href="..\ks\nf-ks-kspingetnextsiblingpin.md">KsPinGetNextSiblingPin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562522">KSFILTER</a>
 
 
 
-<a href="..\ks\nf-ks-ksfiltergetfirstchildpin.md">KsFilterGetFirstChildPin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563483">KSPIN</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilter.md">KSFILTER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562545">KsFilterGetFirstChildPin</a>
 
 
 
-<a href="..\ks\ns-ks-_kspin.md">KSPIN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563514">KsPinGetNextSiblingPin</a>

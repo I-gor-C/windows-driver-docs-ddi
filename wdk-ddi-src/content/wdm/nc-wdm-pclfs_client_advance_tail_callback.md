@@ -7,7 +7,7 @@ old-location: kernel\clfsadvancetailcallback.htm
 old-project: kernel
 ms.assetid: e5c3ac56-9e9f-40b8-b8a8-2eb4d41bca52
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsAdvanceTailCallback, ClfsAdvanceTailCallback callback function [Kernel-Mode Driver Architecture], Clfs_management_86e7d14f-866d-4023-9f97-d495ac16989f.xml, PCLFS_CLIENT_ADVANCE_TAIL_CALLBACK, kernel.clfsadvancetailcallback, wdm/ClfsAdvanceTailCallback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -69,11 +69,11 @@ A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff55
 
 `TargetLsn`
 
-A pointer to a <a href="..\wdm\ns-wdm-_cls_lsn.md">CLFS_LSN</a> structure that contains the LSN that the client should advance its tail to or beyond.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff541824">CLFS_LSN</a> structure that contains the LSN that the client should advance its tail to or beyond.
 
 `ClientData`
 
-A pointer to client-supplied information. You specify this data in the <b>AdvanceTailCallbackData</b> member of the <a href="..\wdm\ns-wdm-_clfs_mgmt_client_registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a> structure.
+A pointer to client-supplied information. You specify this data in the <b>AdvanceTailCallbackData</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541841">CLFS_MGMT_CLIENT_REGISTRATION</a> structure.
 
 
 ## Return Value
@@ -96,7 +96,7 @@ If the request can be processed, create and queue a work item to perform the act
 
 </li>
 </ol>
-When a client calls the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a> routine to register with CLFS management, the client provides both a pointer to the <i>ClfsAdvanceTailCallback</i> function and the custom data that will be passed as a parameter to the <i>ClfsAdvanceTailCallback</i> function when this function is called.
+When a client calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff541642">ClfsMgmtRegisterManagedClient</a> routine to register with CLFS management, the client provides both a pointer to the <i>ClfsAdvanceTailCallback</i> function and the custom data that will be passed as a parameter to the <i>ClfsAdvanceTailCallback</i> function when this function is called.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -108,16 +108,16 @@ When a client calls the <a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md"
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsmgmtregistermanagedclient.md">ClfsMgmtRegisterManagedClient</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541841">CLFS_MGMT_CLIENT_REGISTRATION</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfsadvancelogbase.md">ClfsAdvanceLogBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540773">ClfsAdvanceLogBase</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfsmgmttailadvancefailure.md">ClfsMgmtTailAdvanceFailure</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541642">ClfsMgmtRegisterManagedClient</a>
 
 
 
-<a href="..\wdm\ns-wdm-_clfs_mgmt_client_registration.md">CLFS_MGMT_CLIENT_REGISTRATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541669">ClfsMgmtTailAdvanceFailure</a>

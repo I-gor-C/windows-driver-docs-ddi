@@ -44,16 +44,16 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsPinFactory method
+# IKsPinFactory::KsPinFactory method
 The <b>KsPinFactory</b> method retrieves the identifier of a pin factory.
 
 ## Syntax
 
-````
+```
 HRESULT KsPinFactory(
-  [out] ULONG *PinFactory
+  ULONG *PinFactory
 );
-````
+```
 
 ## Parameters
 
@@ -75,4 +75,4 @@ Returns NOERROR if successful; otherwise, returns an error code.
 
 ## See Also
 
-<a href="..\ksproxy\nn-ksproxy-ikspinfactory.md">IKsPinFactory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559910">IKsPinFactory</a>

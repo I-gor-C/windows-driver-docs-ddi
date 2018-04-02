@@ -50,13 +50,13 @@ The <b>KsForwardIrp</b> function forwards an IRP to the specified driver after i
 
 ## Syntax
 
-````
-NTSTATUS KsForwardIrp(
-  _In_ PIRP         Irp,
-  _In_ PFILE_OBJECT FileObject,
-  _In_ BOOLEAN      ReuseStackLocation
+```
+KSDDKAPI NTSTATUS KsForwardIrp(
+  PIRP         Irp,
+  PFILE_OBJECT FileObject,
+  BOOLEAN      ReuseStackLocation
 );
-````
+```
 
 ## Parameters
 

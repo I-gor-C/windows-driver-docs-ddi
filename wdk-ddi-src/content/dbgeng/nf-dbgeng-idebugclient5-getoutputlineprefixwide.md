@@ -7,7 +7,7 @@ old-location: debugger\idebugclient5_getoutputlineprefixwide.htm
 old-project: debugger
 ms.assetid: 145A478E-826B-4E82-B358-6140D3A4063F
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetOutputLinePrefixWide method [Windows Debugging], GetOutputLinePrefixWide method [Windows Debugging], IDebugClient5 interface, GetOutputLinePrefixWide,IDebugClient5.GetOutputLinePrefixWide, IDebugClient5, IDebugClient5 interface [Windows Debugging], GetOutputLinePrefixWide method, IDebugClient5::GetOutputLinePrefixWide, dbgeng/IDebugClient5::GetOutputLinePrefixWide, debugger.idebugclient5_getoutputlineprefixwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetOutputLinePrefixWide method
+# IDebugClient5::GetOutputLinePrefixWide method
 Gets a Unicode character string prefix for output lines.
 
 ## Syntax
 
-````
+```
 HRESULT GetOutputLinePrefixWide(
-  [out]           _writes_opt_(BufferSize) PWSTR Buffer,
-  [in]            ULONG                          BufferSize,
-  [out, optional] PULONG                         PrefixSize
+  PWSTR  Buffer,
+  ULONG  BufferSize,
+  PULONG PrefixSize
 );
-````
+```
 
 ## Parameters
 
@@ -85,4 +85,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugclient5.md">IDebugClient5</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550497">IDebugClient5</a>

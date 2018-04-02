@@ -47,14 +47,14 @@ req.typenames: ACPI_GET_DEVICE_SPECIFIC_DATA, *PACPI_GET_DEVICE_SPECIFIC_DATA
 The ACPI_GET_DEVICE_SPECIFIC_DATA structure contains input arguments for the IOCTL_ACPI_GET_DEVICE_SPECIFIC_DATA control method.
 
 ## Syntax
-````
+```
 typedef struct _ACPI_GET_DEVICE_SPECIFIC_DATA {
   ULONG Signature;
-  GUID  Section;
+  GUID  Section;
   ULONG PropertyNameLength;
   UCHAR PropertyName[ANYSIZE_ARRAY];
-} ACPI_GET_DEVICE_SPECIFIC_DATA, *PACPI_GET_DEVICE_SPECIFIC_DATA;
-````
+} *PACPI_GET_DEVICE_SPECIFIC_DATA, ACPI_GET_DEVICE_SPECIFIC_DATA;
+```
 
 ## Members
 

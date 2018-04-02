@@ -7,7 +7,7 @@ old-location: display\d3dddiarg_volumeblt1.htm
 old-project: display
 ms.assetid: 685aad54-03f5-4e3c-83a7-a44745acc4fb
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDIARG_VOLUMEBLT1, D3DDDIARG_VOLUMEBLT1 structure [Display Devices], _D3DDDIARG_VOLUMEBLT1, d3dumddi/D3DDDIARG_VOLUMEBLT1, display.d3dddiarg_volumeblt1
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,17 @@ req.typenames: D3DDDIARG_VOLUMEBLT1
 Describes parameters for a volume bit-block transfer (bitblt) operation.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDIARG_VOLUMEBLT1 {
-  HANDLE    hDstResource;
-  HANDLE    hSrcResource;
-  UINT      DstX;
-  UINT      DstY;
-  UINT      DstZ;
+  HANDLE    hDstResource;
+  HANDLE    hSrcResource;
+  UINT      DstX;
+  UINT      DstY;
+  UINT      DstZ;
   D3DDDIBOX SrcBox;
-  UINT      CopyFlags;
+  UINT      CopyFlags;
 } D3DDDIARG_VOLUMEBLT1;
-````
+```
 
 ## Members
 
@@ -84,11 +84,11 @@ typedef struct _D3DDDIARG_VOLUMEBLT1 {
 
 `SrcBox`
 
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddibox.md">D3DDDIBOX</a> structure that describes the source volume texture to copy to the destination.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/hh451148">D3DDDIBOX</a> structure that describes the source volume texture to copy to the destination.
 
 `CopyFlags`
 
-A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="..\d3dumddi\ne-d3dumddi-d3dddi_copy_flags.md">D3DDDI_COPY_FLAGS</a> enumeration type.
+A value that specifies characteristics of a copy operation as a bitwise OR of the values in the <a href="https://msdn.microsoft.com/library/windows/hardware/hh451175">D3DDDI_COPY_FLAGS</a> enumeration type.
 
 
 ## Requirements
@@ -99,8 +99,8 @@ A value that specifies characteristics of a copy operation as a bitwise OR of th
 
 ## See Also
 
-<a href="..\d3dumddi\ne-d3dumddi-d3dddi_copy_flags.md">D3DDDI_COPY_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451148">D3DDDIBOX</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddibox.md">D3DDDIBOX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451175">D3DDDI_COPY_FLAGS</a>

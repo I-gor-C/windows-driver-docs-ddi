@@ -47,14 +47,14 @@ req.typenames: CIP_VALIDATE_INFO, *PCIP_VALIDATE_INFO
 The CIP_VALIDATE_INFO structure contains information about the frame.
 
 ## Syntax
-````
+```
 typedef struct _CIP_VALIDATE_INFO {
-  HANDLE     hConnect;
-  PVOID      Context;
+  HANDLE     hConnect;
+  PVOID      Context;
   CYCLE_TIME TimeStamp;
-  PUCHAR     Packet;
-} CIP_VALIDATE_INFO, *PCIP_VALIDATE_INFO;
-````
+  PUCHAR     Packet;
+} *PCIP_VALIDATE_INFO, CIP_VALIDATE_INFO;
+```
 
 ## Members
 

@@ -51,14 +51,14 @@ req.product: Windows 10 or later.
 The <b>WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</b> enumeration identifies the capabilities that a device can support when it enters a low-power state while it is idling.
 
 ## Syntax
-````
-typedef enum _WDF_POWER_POLICY_S0_IDLE_CAPABILITIES { 
-  IdleCapsInvalid          = 0,
-  IdleCannotWakeFromS0     = 1,
-  IdleCanWakeFromS0        = 2,
-  IdleUsbSelectiveSuspend  = 3
+```
+typedef enum _WDF_POWER_POLICY_S0_IDLE_CAPABILITIES {
+  IdleCapsInvalid          ,
+  IdleCannotWakeFromS0     ,
+  IdleCanWakeFromS0        ,
+  IdleUsbSelectiveSuspend
 } WDF_POWER_POLICY_S0_IDLE_CAPABILITIES;
-````
+```
 
 ## Constants
 
@@ -83,13 +83,13 @@ typedef enum _WDF_POWER_POLICY_S0_IDLE_CAPABILITIES {
                     <td>IdleUsbSelectiveSuspend</td>
                     <td>The device is connected to a USB bus and supports <a href="https://msdn.microsoft.com/library/windows/hardware/ff540144">USB selective suspend</a>. Use this value if your USB-connected device supports both idling and waking itself while the computer is in its working state. If your USB device supports only idling, use <b>IdleCannotWakeFromS0</b>. (Drivers for USB devices must not specify <b>IdleCanWakeFromS0</b>.) See the code examples in the following Examples section.
 
-For Windows XP, the framework supports USB selective suspend only if the device's <a href="..\usbspec\ns-usbspec-_usb_configuration_descriptor.md">USB_CONFIGURATION_DESCRIPTOR</a> structure shows that the device supports <a href="https://msdn.microsoft.com/b32375a9-0f34-474e-b3b9-7216b3d6665d">remote wakeup</a>. For Windows Vista and later versions of Windows, the framework supports USB selective suspend whether or not the device supports remote wakeup.</td>
+For Windows XP, the framework supports USB selective suspend only if the device's <a href="https://msdn.microsoft.com/library/windows/hardware/ff539241">USB_CONFIGURATION_DESCRIPTOR</a> structure shows that the device supports <a href="https://msdn.microsoft.com/b32375a9-0f34-474e-b3b9-7216b3d6665d">remote wakeup</a>. For Windows Vista and later versions of Windows, the framework supports USB selective suspend whether or not the device supports remote wakeup.</td>
                 </tr>
 </table>
 
 ## Remarks
 
-The <b>WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</b> enumeration is used in the <a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure. 
+The <b>WDF_POWER_POLICY_S0_IDLE_CAPABILITIES</b> enumeration is used in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff551270">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a> structure. 
 
 
 #### Examples
@@ -161,4 +161,4 @@ else {...}</pre>
 
 ## See Also
 
-<a href="..\wdfdevice\ns-wdfdevice-_wdf_device_power_policy_idle_settings.md">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551270">WDF_DEVICE_POWER_POLICY_IDLE_SETTINGS</a>

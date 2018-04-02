@@ -7,7 +7,7 @@ old-location: debugger\setunnamedarg.htm
 old-project: debugger
 ms.assetid: cf518a6b-275f-4f9c-9aa8-e2e96c468ff9
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: EngExtCpp_Ref_662530e0-caca-43f0-8b46-b21c8a1f00da.xml, ExtExtension, ExtExtension class [Windows Debugging], SetUnnamedArg method, ExtExtension::SetUnnamedArg, SetUnnamedArg method [Windows Debugging], SetUnnamedArg method [Windows Debugging], ExtExtension class, SetUnnamedArg,ExtExtension.SetUnnamedArg, debugger.setunnamedarg
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,25 +44,25 @@ req.typenames: SILO_DRIVER_CAPABILITIES, *PSILO_DRIVER_CAPABILITIES
 ---
 
 
-# SetUnnamedArg method
+# ExtExtension~r1::SetUnnamedArg method
 The <b>SetUnnamedArg</b> method sets an unnamed argument for the current extension command.
 
 ## Syntax
 
-````
-bool SetUnnamedArg(
-  [in]           ULONG   Index,
-  [in, optional] PCSTR   StrArg,
-  [in]           ULONG64 NumArg,
-  [in]           bool    OnlyIfUnset
+```
+bool  throw() SetUnnamedArg(
+  ULONG   Index,
+  PCSTR   StrArg,
+  ULONG64 NumArg,
+  bool    OnlyIfUnset
 );
-````
+```
 
 ## Parameters
 
 `Index`
 
-Specifies the index of the argument.  <i>Index</i> should be between zero and the number of unnamed arguments, as specified in the command-line description used in <a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a>, minus one (unnamed arguments - 1).
+Specifies the index of the argument.  <i>Index</i> should be between zero and the number of unnamed arguments, as specified in the command-line description used in <a href="https://msdn.microsoft.com/library/windows/hardware/ff544514">EXT_COMMAND</a>, minus one (unnamed arguments - 1).
 
 `StrArg`
 
@@ -101,7 +101,7 @@ This method should only be called during the execution of an extension command p
 
 ## See Also
 
-<a href="..\engextcpp\nf-engextcpp-ext_command.md">EXT_COMMAND</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544514">EXT_COMMAND</a>
 
 
 

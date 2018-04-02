@@ -7,7 +7,7 @@ old-location: display\videoportreadstateevent.htm
 old-project: display
 ms.assetid: b09787b3-aede-4e53-9e22-0e81cf2dadb1
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortReadStateEvent, VideoPortReadStateEvent function [Display Devices], VideoPort_Functions_8cd6da91-d349-4ef7-b61c-2e9a22c5f25e.xml, display.videoportreadstateevent, video/VideoPortReadStateEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>VideoPortReadStateEvent</b> function returns the current state of a given
 
 ## Syntax
 
-````
-LONG VideoPortReadStateEvent(
-  _In_ PVOID  HwDeviceExtension,
-  _In_ PEVENT pEvent
+```
+VIDEOPORT_API LONG VideoPortReadStateEvent(
+  IN PVOID  HwDeviceExtension,
+  IN PEVENT pEvent
 );
-````
+```
 
 ## Parameters
 

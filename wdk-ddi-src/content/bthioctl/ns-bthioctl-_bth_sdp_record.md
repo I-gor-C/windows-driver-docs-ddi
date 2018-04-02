@@ -48,7 +48,7 @@ The BTH_SDP_RECORD structure contains information about an SDP record that is to
   local SDP server.
 
 ## Syntax
-````
+```
 typedef struct _BTH_SDP_RECORD {
   ULONG fSecurity;
   ULONG fOptions;
@@ -56,7 +56,7 @@ typedef struct _BTH_SDP_RECORD {
   ULONG recordLength;
   UCHAR record[1];
 } BTH_SDP_RECORD, *PBTH_SDP_RECORD;
-````
+```
 
 ## Members
 
@@ -210,7 +210,7 @@ The SDP record in its raw stream format. The first byte is defined in this struc
 
 ## Remarks
 This structure is passed as the input buffer and output buffer of 
-    <a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record_with_info.md">
+    <a href="https://msdn.microsoft.com/774d1bda-2d9b-4ab4-97cf-b358471d8716">
     IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</a>.
 
 ## Requirements
@@ -221,5 +221,5 @@ This structure is passed as the input buffer and output buffer of
 
 ## See Also
 
-<a href="..\bthioctl\ni-bthioctl-ioctl_bth_sdp_submit_record_with_info.md">
+<a href="https://msdn.microsoft.com/774d1bda-2d9b-4ab4-97cf-b358471d8716">
    IOCTL_BTH_SDP_SUBMIT_RECORD_WITH_INFO</a>

@@ -50,13 +50,14 @@ The <b>wiauDbgErrorHr</b> function logs a message containing an HRESULT and its 
 
 ## Syntax
 
-````
-inline void __stdcall wiauDbgErrorHr(
-   HRESULT  hr,
-   LPCSTR   fname,
-   LPCSTR   fmt, ...
+```
+void wiauDbgErrorHr(
+  HRESULT hr,
+  LPCSTR  fname,
+  LPCSTR  fmt,
+  ...     
 );
-````
+```
 
 ## Parameters
 
@@ -105,16 +106,16 @@ The <b>wiauDbgErrorHr</b> function typically logs two lines to the log file, or 
 
 ## See Also
 
-<a href="..\wiautil\nf-wiautil-wiaudbgdump.md">wiauDbgDump</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549627">wiauDbgDump</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wiaudbgwarning.md">wiauDbgWarning</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549633">wiauDbgError</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wiaudbgtrace.md">wiauDbgTrace</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550161">wiauDbgTrace</a>
 
 
 
-<a href="..\wiautil\nf-wiautil-wiaudbgerror.md">wiauDbgError</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550163">wiauDbgWarning</a>

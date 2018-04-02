@@ -7,7 +7,7 @@ old-location: ifsk\fltisvolumewritable.htm
 old-project: ifsk
 ms.assetid: 9347bc8d-e8fb-440c-8ceb-ce5e8cb1429e
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_e_to_o_8b8316b0-5943-425e-a978-a2999629f93c.xml, FltIsVolumeWritable, FltIsVolumeWritable routine [Installable File System Drivers], fltkernel/FltIsVolumeWritable, ifsk.fltisvolumewritable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>FltIsVolumeWritable</b> routine determines whether the disk device that c
 
 ## Syntax
 
-````
-NTSTATUS FltIsVolumeWritable(
-  _In_  PVOID    FltObject,
-  _Out_ PBOOLEAN IsWritable
+```
+NTSTATUS FLTAPI FltIsVolumeWritable(
+  PVOID    FltObject,
+  PBOOLEAN IsWritable
 );
-````
+```
 
 ## Parameters
 
@@ -102,7 +102,7 @@ The disk device does not support IOCTL_DISK_IS_WRITABLE requests. This is an err
 
 ## Remarks
 
-<b>FltIsVolumeWritable</b> sends an <a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_is_writable.md">IOCTL_DISK_IS_WRITABLE</a> request to the underlying storage device that is associated with the given volume or instance. 
+<b>FltIsVolumeWritable</b> sends an <a href="https://msdn.microsoft.com/library/windows/hardware/ff560384">IOCTL_DISK_IS_WRITABLE</a> request to the underlying storage device that is associated with the given volume or instance. 
 
 In versions of Windows prior to Windows Vista, the <b>FltIsVolumeWritable</b> routine accepted only volumes, not instances.
 
@@ -118,4 +118,4 @@ In versions of Windows prior to Windows Vista, the <b>FltIsVolumeWritable</b> ro
 
 ## See Also
 
-<a href="..\ntdddisk\ni-ntdddisk-ioctl_disk_is_writable.md">IOCTL_DISK_IS_WRITABLE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560384">IOCTL_DISK_IS_WRITABLE</a>

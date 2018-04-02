@@ -47,14 +47,14 @@ req.typenames: NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE
 The NFC_CX_TRANSPORT_TYPE enumeration specifies transport types.
 
 ## Syntax
-````
-typedef enum _NFC_CX_TRANSPORT_TYPE { 
-  NFC_CX_TRANSPORT_I2C     = 0x00,
-  NFC_CX_TRANSPORT_SPI     = 0x01,
-  NFC_CX_TRANSPORT_UART    = 0x02,
-  NFC_CX_TRANSPORT_CUSTOM  = 0xFF
+```
+typedef enum _NFC_CX_TRANSPORT_TYPE {
+  NFC_CX_TRANSPORT_I2C     ,
+  NFC_CX_TRANSPORT_SPI     ,
+  NFC_CX_TRANSPORT_UART    ,
+  NFC_CX_TRANSPORT_CUSTOM
 } NFC_CX_TRANSPORT_TYPE, *PNFC_CX_TRANSPORT_TYPE;
-````
+```
 
 ## Constants
 

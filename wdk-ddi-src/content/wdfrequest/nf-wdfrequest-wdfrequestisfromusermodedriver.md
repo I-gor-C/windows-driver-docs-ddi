@@ -52,11 +52,11 @@ The <b>WdfRequestIsFromUserModeDriver</b> method indicates whether an I/O reques
 
 ## Syntax
 
-````
+```
 BOOLEAN WdfRequestIsFromUserModeDriver(
-  _In_ WDFREQUEST Request
+  WDFREQUEST Request
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ A handle to a framework request object.
 
 ## Remarks
 
-If your driver supports <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/supporting-kernel-mode-clients-in-umdf-drivers">kernel-mode clients</a>, it should call <b>WdfRequestIsFromUserModeDriver</b> only if <a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetrequestormode.md">WdfRequestGetRequestorMode</a> returns <b>WdfUserMode</b>.
+If your driver supports <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/supporting-kernel-mode-clients-in-umdf-drivers">kernel-mode clients</a>, it should call <b>WdfRequestIsFromUserModeDriver</b> only if <a href="https://msdn.microsoft.com/library/windows/hardware/ff549971">WdfRequestGetRequestorMode</a> returns <b>WdfUserMode</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,4 +86,4 @@ If your driver supports <a href="https://docs.microsoft.com/en-us/windows-hardwa
 
 ## See Also
 
-<a href="..\wdfrequest\nf-wdfrequest-wdfrequestgetrequestormode.md">WdfRequestGetRequestorMode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549971">WdfRequestGetRequestorMode</a>

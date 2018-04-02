@@ -7,7 +7,7 @@ old-location: storage\ataportcompleterequest.htm
 old-project: storage
 ms.assetid: 2dddd012-9a13-49e4-9392-300938e78609
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortCompleteRequest, AtaPortCompleteRequest routine [Storage Devices], atartns_6ed3a9ca-b9b8-4d2f-a2f2-5a57db2071f8.xml, irb/AtaPortCompleteRequest, storage.ataportcompleterequest
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,12 +53,12 @@ The <b>AtaPortCompleteRequest</b> routine completes the indicated IRB.
 
 ## Syntax
 
-````
-VOID AtaPortCompleteRequest(
-  _In_ PVOID              ChannelExtension,
-  _In_ PIDE_REQUEST_BLOCK Irb
+```
+_IRQL_requires_same_ VOID AtaPortCompleteRequest(
+  PVOID              ChannelExtension,
+  PIDE_REQUEST_BLOCK Irb
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A pointer to the channel extension.
 
 `Irb`
 
-A pointer to a structure of type <a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) to be completed.
+A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) to be completed.
 
 
 ## Return Value
@@ -88,4 +88,4 @@ The miniport driver uses this routine to indicate to the port driver that the IR
 
 ## See Also
 
-<a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a>

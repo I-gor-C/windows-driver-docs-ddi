@@ -47,19 +47,19 @@ req.typenames: WHEA_PERSISTENCE_INFO, *PWHEA_PERSISTENCE_INFO
 The WHEA_PERSISTENCE_INFO union describes data that is used by the error record persistence interface for storing an error record.
 
 ## Syntax
-````
-typedef union _WHEA_PERSISTENCE_INFO {
+```
+typedef struct _WHEA_PERSISTENCE_INFO {
   struct {
-    ULONGLONG Signature  :16;
-    ULONGLONG Length  :24;
-    ULONGLONG Identifier  :16;
-    ULONGLONG Attributes  :2;
-    ULONGLONG DoNotLog  :1;
-    ULONGLONG Reserved  :5;
-  };
+    ULONGLONG  : 2  Attributes;
+    ULONGLONG  : 1  DoNotLog;
+    ULONGLONG  : 16 Identifier;
+    ULONGLONG  : 24 Length;
+    ULONGLONG  : 5  Reserved;
+    ULONGLONG  : 16 Signature;
+  } DUMMYSTRUCTNAME;
   ULONGLONG AsULONGLONG;
-} WHEA_PERSISTENCE_INFO, *PWHEA_PERSISTENCE_INFO;
-````
+} *PWHEA_PERSISTENCE_INFO, WHEA_PERSISTENCE_INFO;
+```
 
 ## Members
 
@@ -73,7 +73,7 @@ typedef union _WHEA_PERSISTENCE_INFO {
 A ULONGLONG representation of the contents of the WHEA_PERSISTENCE_INFO union.
 
 ## Remarks
-A WHEA_PERSISTENCE_INFO union is contained within the <a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a> structure.
+A WHEA_PERSISTENCE_INFO union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,4 +83,4 @@ A WHEA_PERSISTENCE_INFO union is contained within the <a href="..\ntddk\ns-ntddk
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_error_record_header.md">WHEA_ERROR_RECORD_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560487">WHEA_ERROR_RECORD_HEADER</a>

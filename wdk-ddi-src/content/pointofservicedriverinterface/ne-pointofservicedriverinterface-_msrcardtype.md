@@ -47,14 +47,14 @@ req.typenames: MsrCardType
 This enumeration defines the kinds of magnetic stripe cards.
 
 ## Syntax
-````
-typedef enum _MsrCardType { 
-  MsrCardType_Unknown,
-  MsrCardType_Bank,
-  MsrCardType_Aamva,
+```
+typedef enum _MsrCardType {
+  MsrCardType_Unknown       ,
+  MsrCardType_Bank          ,
+  MsrCardType_Aamva         ,
   MsrCardType_ExtendedBase
 } MsrCardType;
-````
+```
 
 ## Constants
 

@@ -7,7 +7,7 @@ old-location: audio\pcregisteradapterpowermanagement.htm
 old-project: audio
 ms.assetid: a9e2537d-4d67-4495-b391-55f885b7041a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: PcRegisterAdapterPowerManagement, PcRegisterAdapterPowerManagement function [Audio Devices], audio.pcregisteradapterpowermanagement, audpc-routines_524bed01-a6ba-492c-9e18-7495de15be46.xml, portcls/PcRegisterAdapterPowerManagement
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>PcRegisterAdapterPowerManagement</b> function registers the adapter's pow
 
 ## Syntax
 
-````
-NTSTATUS PcRegisterAdapterPowerManagement(
-  _In_ PUNKNOWN pUnknown,
-  _In_ PVOID    pvContext1
+```
+PORTCLASSAPI NTSTATUS PcRegisterAdapterPowerManagement(
+  PUNKNOWN Unknown,
+  PVOID    pvContext1
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ TBD
 
 `pvContext1`
 
-Pointer to the adapter's <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">functional device object (FDO)</a>. This parameter is a pointer to a system structure of type <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> but is cast to type PVOID.
+Pointer to the adapter's <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-94d8-0ca079885480">functional device object (FDO)</a>. This parameter is a pointer to a system structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> but is cast to type PVOID.
 
 
 ## Return Value
@@ -84,8 +84,8 @@ Pointer to the adapter's <a href="https://msdn.microsoft.com/f697e0db-1db0-4a81-
 
 ## See Also
 
-<a href="..\portcls\nn-portcls-iadapterpowermanagement.md">IAdapterPowerManagement</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 
 
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536485">IAdapterPowerManagement</a>

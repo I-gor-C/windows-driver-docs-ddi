@@ -7,7 +7,7 @@ old-location: storage\scsiportwmidispatchfunction.htm
 old-project: storage
 ms.assetid: 48806050-403b-4375-8b19-e867f905b761
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortWmiDispatchFunction, ScsiPortWmiDispatchFunction routine [Storage Devices], scsiprt_03d0ec2c-b525-48d5-bcc3-cfd89fe020bd.xml, scsiwmi/ScsiPortWmiDispatchFunction, storage.scsiportwmidispatchfunction
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,23 +51,23 @@ The <b>ScsiPortWmiDispatchFunction</b> routine is a dispatch routine for minipor
 
 ## Syntax
 
-````
+```
 BOOLEAN ScsiPortWmiDispatchFunction(
-  _In_ PSCSI_WMILIB_CONTEXT     WmiLibInfo,
-  _In_ UCHAR                    MinorFunction,
-  _In_ PVOID                    DeviceContext,
-  _In_ PSCSIWMI_REQUEST_CONTEXT RequestContext,
-  _In_ PVOID                    DataPath,
-  _In_ ULONG                    BufferSize,
-  _In_ PVOID                    Buffer
+  PSCSI_WMILIB_CONTEXT     WmiLibInfo,
+  UCHAR                    MinorFunction,
+  PVOID                    DeviceContext,
+  PSCSIWMI_REQUEST_CONTEXT RequestContext,
+  PVOID                    DataPath,
+  ULONG                    BufferSize,
+  PVOID                    Buffer
 );
-````
+```
 
 ## Parameters
 
 `WmiLibInfo`
 
-Pointer to a <a href="..\scsiwmi\ns-scsiwmi-_scsiwmilib_context.md">SCSI_WMILIB_CONTEXT</a> structure that contains registration information for a miniport driver's data blocks and event blocks and defines entry points for the miniport driver's WMI library callback routines.
+Pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff565395">SCSI_WMILIB_CONTEXT</a> structure that contains registration information for a miniport driver's data blocks and event blocks and defines entry points for the miniport driver's WMI library callback routines.
 
 `MinorFunction`
 
@@ -129,24 +129,24 @@ Call <b>ScsiPortNotification</b> with <b>RequestComplete</b> and again with <b>N
 
 ## See Also
 
-<a href="..\scsiwmi\ns-scsiwmi-_scsiwmilib_context.md">SCSI_WMILIB_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564946">SCSIWMI_REQUEST_CONTEXT</a>
 
 
 
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnsize.md">ScsiPortWmiGetReturnSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565395">SCSI_WMILIB_CONTEXT</a>
 
 
 
-<a href="..\srb\nf-srb-scsiportnotification.md">ScsiPortNotification</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564657">ScsiPortNotification</a>
 
 
 
-<a href="..\scsiwmi\ns-scsiwmi-scsiwmi_request_context.md">SCSIWMI_REQUEST_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564789">ScsiPortWmiGetReturnSize</a>
 
 
 
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmigetreturnstatus.md">ScsiPortWmiGetReturnStatus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564791">ScsiPortWmiGetReturnStatus</a>
 
 
 
-<a href="..\scsiwmi\nf-scsiwmi-scsiportwmipostprocess.md">ScsiPortWmiPostProcess</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564796">ScsiPortWmiPostProcess</a>

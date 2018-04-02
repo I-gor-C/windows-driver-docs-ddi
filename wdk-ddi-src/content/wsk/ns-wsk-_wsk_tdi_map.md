@@ -7,7 +7,7 @@ old-location: netvista\wsk_tdi_map.htm
 old-project: netvista
 ms.assetid: 4c1407e9-2e4d-41cc-8d50-017c8c2bf20f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWSK_TDI_MAP, PWSK_TDI_MAP, PWSK_TDI_MAP structure pointer [Network Drivers Starting with Windows Vista], WSK_TDI_MAP, WSK_TDI_MAP structure [Network Drivers Starting with Windows Vista], _WSK_TDI_MAP, netvista.wsk_tdi_map, wsk/PWSK_TDI_MAP, wsk/WSK_TDI_MAP, wskref_7be2eb13-c9b8-4fc8-bc00-b3d168353ed0.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The WSK_TDI_MAP structure specifies a mapping between a particular address famil
   <a href="https://msdn.microsoft.com/3878053c-388a-4bbc-a30e-feb16eda2f99">TDI</a> transport.
 
 ## Syntax
-````
+```
 typedef struct _WSK_TDI_MAP {
-  USHORT         SocketType;
+  USHORT         SocketType;
   ADDRESS_FAMILY AddressFamily;
-  ULONG          Protocol;
-  PCWSTR         TdiDeviceName;
+  ULONG          Protocol;
+  PCWSTR         TdiDeviceName;
 } WSK_TDI_MAP, *PWSK_TDI_MAP;
-````
+```
 
 ## Members
 
@@ -88,7 +88,7 @@ A pointer to a null-terminated wide character string that contains the device na
 ## Remarks
 The 
     <b>Map</b> member of the 
-    <a href="..\wsk\ns-wsk-_wsk_tdi_map_info.md">WSK_TDI_MAP_INFO</a> structure points to an
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571192">WSK_TDI_MAP_INFO</a> structure points to an
     array of WSK_TDI_MAP structures, each of which contains a mapping between a particular address family,
     socket type, and protocol to the device name of a 
     <a href="https://msdn.microsoft.com/3878053c-388a-4bbc-a30e-feb16eda2f99">TDI</a> transport.
@@ -110,4 +110,4 @@ For more information about using TDI transports, see
 
 ## See Also
 
-<a href="..\wsk\ns-wsk-_wsk_tdi_map_info.md">WSK_TDI_MAP_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571192">WSK_TDI_MAP_INFO</a>

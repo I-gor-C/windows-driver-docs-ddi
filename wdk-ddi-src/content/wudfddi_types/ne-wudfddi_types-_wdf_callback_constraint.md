@@ -48,13 +48,14 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
-typedef enum _WDF_CALLBACK_CONSTRAINT { 
-  None              = 0,
-  WdfDeviceLevel    = 1,
-  WdfLevelReserved  = 2
+```
+typedef enum _WDF_CALLBACK_CONSTRAINT {
+  None              ,
+  WdfDeviceLevel    ,
+  WdfLevelReserved  ,
+  WdfLevelMaximum
 } WDF_CALLBACK_CONSTRAINT;
-````
+```
 
 ## Constants
 

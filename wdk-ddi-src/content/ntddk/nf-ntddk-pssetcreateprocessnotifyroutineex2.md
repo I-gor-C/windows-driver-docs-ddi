@@ -7,7 +7,7 @@ old-location: kernel\pssetcreateprocessnotifyroutineex2.htm
 old-project: kernel
 ms.assetid: 25B053C1-E3A3-4002-9355-F3EEA8FECB44
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: PsSetCreateProcessNotifyRoutineEx2, PsSetCreateProcessNotifyRoutineEx2 routine [Kernel-Mode Driver Architecture], kernel.pssetcreateprocessnotifyroutineex2, ntddk/PsSetCreateProcessNotifyRoutineEx2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,23 +49,23 @@ The <b>PsSetCreateProcessNotifyRoutineEx2</b> routine registers or removes a cal
 
 ## Syntax
 
-````
-NTSTATUS PsSetCreateProcessNotifyRoutineEx2(
-  _In_ PSCREATEPROCESSNOTIFYTYPE  NotifyType,
-  _In_ PVOID                     NotifyInformation,
-  _In_ BOOLEAN                   Remove
+```
+NTKERNELAPI NTSTATUS PsSetCreateProcessNotifyRoutineEx2(
+  PSCREATEPROCESSNOTIFYTYPE NotifyType,
+  PVOID                     NotifyInformation,
+  BOOLEAN                   Remove
 );
-````
+```
 
 ## Parameters
 
 `NotifyType`
 
-A <a href="..\ntddk\ne-ntddk-_pscreateprocessnotifytype.md">PSCREATEPROCESSNOTIFYTYPE</a>-type value that indicates the type of process notification.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/mt805889">PSCREATEPROCESSNOTIFYTYPE</a>-type value that indicates the type of process notification.
 
 `NotifyInformation`
 
-The address of the notification information for the specified type of process notification. If <i>NotifyType</i> is <b>PsCreateProcessNotifySubsystems</b>, <i>NotifyInformation</i> is a  <a href="..\ntddk\nc-ntddk-pcreate_process_notify_routine_ex.md">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a> that specifies the entry point of the caller-supplied process-creation callback.
+The address of the notification information for the specified type of process notification. If <i>NotifyType</i> is <b>PsCreateProcessNotifySubsystems</b>, <i>NotifyInformation</i> is a  <a href="https://msdn.microsoft.com/library/windows/hardware/mt764086">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a> that specifies the entry point of the caller-supplied process-creation callback.
 
 `Remove`
 
@@ -153,12 +153,12 @@ A driver must remove any callback function that it registers before it unloads. 
 
 ## See Also
 
-<a href="..\ntddk\nc-ntddk-pcreate_process_notify_routine_ex.md">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt764086">PCREATE_PROCESS_NOTIFY_ROUTINE_EX</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutineex.md">PsSetCreateProcessNotifyRoutineEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559951">PsSetCreateProcessNotifyRoutine</a>
 
 
 
-<a href="..\ntddk\nf-ntddk-pssetcreateprocessnotifyroutine.md">PsSetCreateProcessNotifyRoutine</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559953">PsSetCreateProcessNotifyRoutineEx</a>

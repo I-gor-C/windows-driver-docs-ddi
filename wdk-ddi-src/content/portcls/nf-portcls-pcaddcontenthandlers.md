@@ -7,7 +7,7 @@ old-location: audio\pcaddcontenthandlers.htm
 old-project: audio
 ms.assetid: c3ae9de0-3c21-498b-a29c-4ec54677826a
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: PcAddContentHandlers, PcAddContentHandlers function [Audio Devices], audio.pcaddcontenthandlers, audpc-routines_11505f52-36d9-4b58-b1f8-44083705f9b5.xml, portcls/PcAddContentHandlers
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,17 +46,17 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 
 
 # PcAddContentHandlers function
-The <b>PcAddContentHandlers</b> function provides the system with a list of functions that handle protected content. Note that this function call is identical in operation to the <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a> function, and its parameter definitions and return value are also identical.
+The <b>PcAddContentHandlers</b> function provides the system with a list of functions that handle protected content. Note that this function call is identical in operation to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536347">DrmAddContentHandlers</a> function, and its parameter definitions and return value are also identical.
 
 ## Syntax
 
-````
-PORTCLASSAPI NTSTATUS NTAPI PcAddContentHandlers(
-  _In_ ULONG ContentId,
-  _In_ PVOID *paHandlers,
-  _In_ ULONG NumHandlers
+```
+PORTCLASSAPI NTSTATUS PcAddContentHandlers(
+  ULONG ContentId,
+  PVOID *paHandlers,
+  ULONG NumHandlers
 );
-````
+```
 
 ## Parameters
 
@@ -75,11 +75,11 @@ Specifies the number of function pointers in the <i>paHandlers</i> array.
 
 ## Return Value
 
-See return value definition in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
+See return value definition in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536347">DrmAddContentHandlers</a>.
 
 ## Remarks
 
-For more information, see the comments in <a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>.
+For more information, see the comments in <a href="https://msdn.microsoft.com/library/windows/hardware/ff536347">DrmAddContentHandlers</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,4 +91,4 @@ For more information, see the comments in <a href="..\drmk\nf-drmk-drmaddcontent
 
 ## See Also
 
-<a href="..\drmk\nf-drmk-drmaddcontenthandlers.md">DrmAddContentHandlers</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536347">DrmAddContentHandlers</a>

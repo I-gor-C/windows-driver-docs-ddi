@@ -50,12 +50,12 @@ The <b>KsValidateAllocatorCreateRequest</b> function validates an IRP_MJ_CREATE 
 
 ## Syntax
 
-````
-NTSTATUS KsValidateAllocatorCreateRequest(
-  _In_  PIRP                 Irp,
-  _Out_ PKSALLOCATOR_FRAMING *AllocatorFraming
+```
+KSDDKAPI NTSTATUS KsValidateAllocatorCreateRequest(
+  PIRP                 Irp,
+  PKSALLOCATOR_FRAMING *AllocatorFraming
 );
-````
+```
 
 ## Parameters
 

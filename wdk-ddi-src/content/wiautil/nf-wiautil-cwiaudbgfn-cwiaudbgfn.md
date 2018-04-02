@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# CWiauDbgFn method
+# CWiauDbgFn::CWiauDbgFn method
 The <b>CWiauDbgFn::CWiauDbgFn</b> method is used for tracing when a function or method is entered.
 
 ## Syntax
 
-````
+```
 void CWiauDbgFn(
-   LPCSTR   fname
+  LPCSTR fname
 );
-````
+```
 
 ## Parameters
 
@@ -77,8 +77,8 @@ This method does not return a value.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/4be4007c-5f04-48f2-b88c-c2d71f6e8b7b">CWiauDbgFn</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540356">CWiauDbgFn::~CWiauDbgFn</a>
-
-
-
-<a href="..\wiautil\nl-wiautil-cwiaudbgfn.md">CWiauDbgFn</a>

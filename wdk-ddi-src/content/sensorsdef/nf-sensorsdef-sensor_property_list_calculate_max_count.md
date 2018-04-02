@@ -50,17 +50,17 @@ This function calculates the number of PROPERTYKEY elements.
 
 ## Syntax
 
-````
-FORCEINLINE ULONG SENSOR_PROPERTY_LIST_CALCULATE_MAX_COUNT(
-  _In_ PSENSOR_PROPERTY_LIST pPropertyList
+```
+ULONG SENSOR_PROPERTY_LIST_CALCULATE_MAX_COUNT(
+  PSENSOR_PROPERTY_LIST pPropertyList
 );
-````
+```
 
 ## Parameters
 
 `pPropertyList`
 
-A pointer to a <a href="..\sensorsdef\ns-sensorsdef-sensor_property_list.md">SENSOR_PROPERTY_LIST</a> structure.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/dn946699">SENSOR_PROPERTY_LIST</a> structure.
 
 
 ## Return Value
@@ -76,4 +76,4 @@ The <b>SENSOR_PROPERTY_LIST_CALCULATE_MAX_COUNT</b> function returns a ULONG val
 
 ## See Also
 
-<a href="..\sensorsdef\ns-sensorsdef-sensor_property_list.md">SENSOR_PROPERTY_LIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946699">SENSOR_PROPERTY_LIST</a>

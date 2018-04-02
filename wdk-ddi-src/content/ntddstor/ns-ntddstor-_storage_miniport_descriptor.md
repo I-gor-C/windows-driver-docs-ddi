@@ -7,7 +7,7 @@ old-location: storage\storage_miniport_descriptor.htm
 old-project: storage
 ms.assetid: 30497CA8-70B6-48F9-B5D5-45E606A3226E
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTORAGE_MINIPORT_DESCRIPTOR, PSTORAGE_MINIPORT_DESCRIPTOR, PSTORAGE_MINIPORT_DESCRIPTOR structure pointer [Storage Devices], STORAGE_MINIPORT_DESCRIPTOR, STORAGE_MINIPORT_DESCRIPTOR structure [Storage Devices], _STORAGE_MINIPORT_DESCRIPTOR, ntddstor/PSTORAGE_MINIPORT_DESCRIPTOR, ntddstor/STORAGE_MINIPORT_DESCRIPTOR, storage.storage_miniport_descriptor"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,19 +47,19 @@ req.typenames: STORAGE_MINIPORT_DESCRIPTOR, *PSTORAGE_MINIPORT_DESCRIPTOR
 Reserved for system use.
 
 ## Syntax
-````
+```
 typedef struct _STORAGE_MINIPORT_DESCRIPTOR {
-  ULONG                 Version;
-  ULONG                 Size;
-  STORAGE_PORT_CODE_SET Portdriver;
-  BOOLEAN               LUNResetSupported;
-  BOOLEAN               TargetResetSupported;
-  USHORT                IoTimeoutValue;
-  BOOLEAN               ExtraIoInfoSupported;
-  UCHAR                 Reserved0[3];
-  UCHAR                 Reserved1;
+  __WRAPPED__ ULONG                 Version;
+  __WRAPPED__ ULONG                 Size;
+  __WRAPPED__ STORAGE_PORT_CODE_SET Portdriver;
+  __WRAPPED__ BOOLEAN               LUNResetSupported;
+  __WRAPPED__ BOOLEAN               TargetResetSupported;
+  __WRAPPED__ USHORT                IoTimeoutValue;
+  __WRAPPED__ BOOLEAN               ExtraIoInfoSupported;
+  __WRAPPED__ UCHAR                 Reserved0[3];
+  __WRAPPED__ ULONG                 Reserved1;
 } STORAGE_MINIPORT_DESCRIPTOR, *PSTORAGE_MINIPORT_DESCRIPTOR;
-````
+```
 
 ## Members
 

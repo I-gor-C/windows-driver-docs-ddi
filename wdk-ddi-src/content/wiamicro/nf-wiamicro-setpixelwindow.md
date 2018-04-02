@@ -50,21 +50,21 @@ The <b>SetPixelWindow </b>function sets the image area to be scanned.
 
 ## Syntax
 
-````
+```
 WIAMICRO_API HRESULT SetPixelWindow(
-  _Inout_ PSCANINFO pScanInfo,
-          LONG      x,
-          LONG      y,
-          LONG      xExtent,
-          LONG      yExtent
+  PSCANINFO pScanInfo,
+  LONG      x,
+  LONG      y,
+  LONG      xExtent,
+  LONG      yExtent
 );
-````
+```
 
 ## Parameters
 
 `pScanInfo`
 
-Points to a <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure that represents the current state of the device. This is stored by the WIA Flatbed driver to guarantee synchronized settings between the microdriver and the WIA Flatbed driver.
+Points to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547361">SCANINFO</a> structure that represents the current state of the device. This is stored by the WIA Flatbed driver to guarantee synchronized settings between the microdriver and the WIA Flatbed driver.
 
 `x`
 
@@ -89,7 +89,7 @@ If the function succeeds, it returns S_OK. If the function fails, it returns a s
 
 ## Remarks
 
-In this function, the microdriver should set up the <b>Window</b> member of the <a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a> structure, making any device-specific adjustments that are necessary.
+In this function, the microdriver should set up the <b>Window</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff547361">SCANINFO</a> structure, making any device-specific adjustments that are necessary.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -100,8 +100,8 @@ In this function, the microdriver should set up the <b>Window</b> member of the 
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547361">SCANINFO</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff552722">WIA Microdriver Structures</a>
-
-
-
-<a href="..\wiamicro\ns-wiamicro-_scaninfo.md">SCANINFO</a>

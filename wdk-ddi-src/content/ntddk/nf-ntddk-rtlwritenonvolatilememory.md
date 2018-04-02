@@ -7,7 +7,7 @@ old-location: ifsk\rtlwritenonvolatilememory.htm
 old-project: ifsk
 ms.assetid: 49DDDEF8-F949-4674-A18B-9BB091D163C2
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlWriteNonVolatileMemory, RtlWriteNonVolatileMemory routine [Installable File System Drivers], ifsk.rtlwritenonvolatilememory, ntddk/RtlWriteNonVolatileMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,22 +49,22 @@ The routine <b>RtlWriteNonVolatileMemory</b> copies the contents of a source buf
 
 ## Syntax
 
-````
-NTSTATUS RtlWriteNonVolatileMemory(
-   _In_ PVOID                              NvToken,
-   _Out_writes_bytes_(Size) VOID UNALIGNED *NvDestination,
-   _In_reads_bytes_(Size) VOID UNALIGNED   *Source,
-   _In_ SIZE_T                             Size,
-   _In_ ULONG                              Flags
+```
+NTSYSAPI NTSTATUS RtlWriteNonVolatileMemory(
+  PVOID  NvToken,
+  VOID   *NvDestination,
+  VOID   *Source,
+  SIZE_T Size,
+  ULONG  Flags
 );
-````
+```
 
 ## Parameters
 
 `NvToken`
 
 A pointer to an opaque structure that has
-        information about various properties of the non-volatile memory region which <a href="..\ntddk\nf-ntddk-rtlgetnonvolatiletoken.md">RtlGetNonVolatileToken</a> had returned.
+        information about various properties of the non-volatile memory region which <a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a> had returned.
 
 `NvDestination`
 
@@ -118,10 +118,10 @@ The request was successful.
 
 ## Remarks
 
-This is a <a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a> equivalent for non-volatile memory
+This is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561808">RtlCopyMemory</a> equivalent for non-volatile memory
     the value add is only with verifier enabled. When the verifier is enabled,
     ranges that are modified can be tracked in <b>NvToken</b> and can be reported
-    in <a href="..\ntddk\nf-ntddk-rtlfreenonvolatiletoken.md">RtlFreeNonVolatileToken</a> if a flush is not called for a write. This routine is currently not supported for Windows Server until the next major release of Windows Server.
+    in <a href="https://msdn.microsoft.com/8E083814-7408-47D2-A811-2DCBDCD13097">RtlFreeNonVolatileToken</a> if a flush is not called for a write. This routine is currently not supported for Windows Server until the next major release of Windows Server.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -132,7 +132,7 @@ This is a <a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a> equivalent 
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561808">RtlCopyMemory</a>
 
 
 
@@ -145,12 +145,12 @@ RtlFlushNonVolatileMemory</a>
 
 
 
-<a href="https://msdn.microsoft.com/8E083814-7408-47D2-A811-2DCBDCD13097">RtlFreeNonVolatileToken</a>
-
-
-
 <a href="https://msdn.microsoft.com/169C5F41-B372-4056-AAC5-53DD0582A563">RtlFlushNonVolatileMemoryRanges</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlcopymemory.md">RtlCopyMemory</a>
+<a href="https://msdn.microsoft.com/8E083814-7408-47D2-A811-2DCBDCD13097">RtlFreeNonVolatileToken</a>
+
+
+
+<a href="https://msdn.microsoft.com/A9E866D4-C47F-4926-A838-EDB739CF1185">RtlGetNonVolatileToken</a>

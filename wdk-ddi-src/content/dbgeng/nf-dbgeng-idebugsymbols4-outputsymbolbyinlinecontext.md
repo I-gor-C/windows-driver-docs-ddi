@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols4_outputsymbolbyinlinecontext.htm
 old-project: debugger
 ms.assetid: 55BA214C-7161-4B2C-8107-11EE22D63CD6
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugSymbols4, IDebugSymbols4 interface [Windows Debugging], OutputSymbolByInlineContext method, IDebugSymbols4::OutputSymbolByInlineContext, OutputSymbolByInlineContext method [Windows Debugging], OutputSymbolByInlineContext method [Windows Debugging], IDebugSymbols4 interface, OutputSymbolByInlineContext,IDebugSymbols4.OutputSymbolByInlineContext, dbgeng/IDebugSymbols4::OutputSymbolByInlineContext, debugger.idebugsymbols4_outputsymbolbyinlinecontext
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,19 +44,19 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# OutputSymbolByInlineContext method
+# IDebugSymbols4::OutputSymbolByInlineContext method
 Specifies an output symbol by using an inline context.
 
 ## Syntax
 
-````
+```
 HRESULT OutputSymbolByInlineContext(
-  [in] ULONG   OutputControl,
-  [in] ULONG   Flags,
-  [in] ULONG64 Offset,
-  [in] ULONG   InlineContext
+  ULONG   OutputControl,
+  ULONG   Flags,
+  ULONG64 Offset,
+  ULONG   InlineContext
 );
-````
+```
 
 ## Parameters
 
@@ -90,4 +90,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols4.md">IDebugSymbols4</a>
+<a href="https://msdn.microsoft.com/BE2734B5-1E67-4E38-B4DF-0C353BFB1F0B">IDebugSymbols4</a>

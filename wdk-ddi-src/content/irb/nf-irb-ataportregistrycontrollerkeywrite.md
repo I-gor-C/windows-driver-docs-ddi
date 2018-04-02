@@ -7,7 +7,7 @@ old-location: storage\ataportregistrycontrollerkeywrite.htm
 old-project: storage
 ms.assetid: dfe97cce-f349-49a1-9075-c3c3d1a60681
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortRegistryControllerKeyWrite, AtaPortRegistryControllerKeyWrite routine [Storage Devices], atartns_c17cd629-759c-4469-a7f4-61125a791736.xml, irb/AtaPortRegistryControllerKeyWrite, storage.ataportregistrycontrollerkeywrite
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,16 +50,16 @@ The <b>AtaPortRegistryControllerKeyWrite</b> routine writes the data to the indi
 
 ## Syntax
 
-````
-BOOLEAN __inline AtaPortRegistryControllerKeyWrite(
-  _In_ PVOID  ChannelExtension,
-  _In_ UCHAR  ControllerNumber,
-  _In_ PCHAR  ValueName,
-  _In_ UCHAR  ValueType,
-  _In_ PUCHAR Buffer,
-  _In_ PULONG Length
+```
+_IRQL_requires_same_ BOOLEAN AtaPortRegistryControllerKeyWrite(
+  PVOID  ChannelExtension,
+  UCHAR  ControllerNumber,
+  PCHAR  ValueName,
+  UCHAR  ValueType,
+  PUCHAR Buffer,
+  PULONG BufferLength
 );
-````
+```
 
 ## Parameters
 
@@ -131,7 +131,7 @@ TBD
 
 ## Remarks
 
-The buffer should be allocated by using <a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>. 
+The buffer should be allocated by using <a href="https://msdn.microsoft.com/library/windows/hardware/ff550200">AtaPortRegistryAllocateBuffer</a>. 
 
 The miniport driver must call <b>AtaPortRegistryControllerKeyWrite</b> during the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a> routine or the <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a> routine.; The miniport driver cannot call <b>AtaPortRegistryControllerKeyWrite</b> from any other routine or it will return <b>FALSE</b>. Additionally, the miniport driver can only call <b>AtaPortRegistryControllerKeyWrite</b> from its <b>IdeHwControl</b> routine if its <b>IdeHwControl</b> routine was called and had a value of either <b>StartChannel</b> or <b>StopChannel</b> in its <i>ControlAction </i>parameter.
 
@@ -143,12 +143,12 @@ The miniport driver must call <b>AtaPortRegistryControllerKeyWrite</b> during th
 
 ## See Also
 
-<a href="..\irb\nf-irb-ataportregistryallocatebuffer.md">AtaPortRegistryAllocateBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550200">AtaPortRegistryAllocateBuffer</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff557465">IdeHwControl</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff550141">AtaChannelInitRoutine</a>

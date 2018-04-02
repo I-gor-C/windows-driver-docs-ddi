@@ -50,16 +50,16 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-PBYTE APIENTRY OEMImageProcessing(
-   PDEVOBJ           pdevobj,
-   PBYTE             pSrcBitmap,
-   PBITMAPINFOHEADER pBitmapInfoHeader,
-   PBYTE             pColorTable,
-   DWORD             dwCallbackID,
-   PIPPARAMS         pIPParams
+```
+PBYTE OEMImageProcessing(
+  PDEVOBJ           pdevobj,
+  PBYTE             pSrcBitmap,
+  PBITMAPINFOHEADER pBitmapInfoHeader,
+  PBYTE             pColorTable,
+  DWORD             dwCallbackID,
+  PIPPARAMS         pIPParams
 );
-````
+```
 
 ## Parameters
 

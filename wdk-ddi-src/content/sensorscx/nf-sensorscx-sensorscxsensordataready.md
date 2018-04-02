@@ -50,12 +50,12 @@ This function notifies the class extension that the driver has retrieved data.
 
 ## Syntax
 
-````
-FORCEINLINE NTSTATUS SensorsCxSensorDataReady(
-  _In_ SENSOROBJECT            Sensor,
-  _In_ PSENSOR_COLLECTION_LIST pSensorData
+```
+void SensorsCxSensorDataReady(
+  SENSOROBJECT            Sensor,
+  PSENSOR_COLLECTION_LIST pSensorData
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ A reference to a sensor object.
 
 `pSensorData`
 
-A list of <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor properties</a>. For more information, see <a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>.
+A list of <a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor properties</a>. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>.
 
 
 ## Return Value
@@ -104,12 +104,12 @@ This function is implemented by the class extension and the driver must call it.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor properties</a>
-
-
-
-<a href="..\sensorsdef\ns-sensorsdef-sensor_collection_list.md">SENSOR_COLLECTION_LIST</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/mt219125">EvtSensorSetBatchLatency</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn957092">SENSOR_COLLECTION_LIST</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn946698">Sensor properties</a>

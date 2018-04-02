@@ -50,19 +50,19 @@ The <b>KsDispatchFastIoDeviceControlFailure</b> function is used in a KSDISPATCH
 
 ## Syntax
 
-````
-BOOLEAN KsDispatchFastIoDeviceControlFailure(
-  _In_      PFILE_OBJECT     FileObject,
-  _In_      BOOLEAN          Wait,
-  _In_opt_  PVOID            InputBuffer,
-  _In_      ULONG            InputBufferLength,
-  _Out_opt_ PVOID            OutputBuffer,
-  _In_      ULONG            OutputBufferLength,
-  _In_      ULONG            IoControlCode,
-  _Out_     PIO_STATUS_BLOCK IoStatus,
-  _In_      PDEVICE_OBJECT   DeviceObject
+```
+KSDDKAPI BOOLEAN KsDispatchFastIoDeviceControlFailure(
+  PFILE_OBJECT     FileObject,
+  BOOLEAN          Wait,
+  PVOID            InputBuffer,
+  ULONG            InputBufferLength,
+  PVOID            OutputBuffer,
+  ULONG            OutputBufferLength,
+  ULONG            IoControlCode,
+  PIO_STATUS_BLOCK IoStatus,
+  PDEVICE_OBJECT   DeviceObject
 );
-````
+```
 
 ## Parameters
 

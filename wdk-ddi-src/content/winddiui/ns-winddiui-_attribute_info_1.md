@@ -45,10 +45,10 @@ req.product: Windows 10 or later.
 ---
 
 # _ATTRIBUTE_INFO_1 structure
-The ATTRIBUTE_INFO_1 structure is used as a parameter for a printer interface DLL's <a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a> function. All member values are function-supplied.
+The ATTRIBUTE_INFO_1 structure is used as a parameter for a printer interface DLL's <a href="https://msdn.microsoft.com/library/windows/hardware/ff548581">DrvQueryJobAttributes</a> function. All member values are function-supplied.
 
 ## Syntax
-````
+```
 typedef struct _ATTRIBUTE_INFO_1 {
   DWORD dwJobNumberOfPagesPerSide;
   DWORD dwDrvNumberOfPagesPerSide;
@@ -57,8 +57,8 @@ typedef struct _ATTRIBUTE_INFO_1 {
   DWORD dwDrvPageOrderFlags;
   DWORD dwJobNumberOfCopies;
   DWORD dwDrvNumberOfCopies;
-} ATTRIBUTE_INFO_1, *PATTRIBUTE_INFO_1;
-````
+} *PATTRIBUTE_INFO_1, ATTRIBUTE_INFO_1;
+```
 
 ## Members
 
@@ -171,4 +171,4 @@ The print processor uses <b>dwJobNumberOfCopies</b> and <b>dwDrvNumberOfCopies</
 
 ## See Also
 
-<a href="..\winddiui\nf-winddiui-drvqueryjobattributes.md">DrvQueryJobAttributes</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548581">DrvQueryJobAttributes</a>

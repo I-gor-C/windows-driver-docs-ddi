@@ -47,13 +47,13 @@ req.typenames: MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, *PMSR_RETRIEVE_DEVICE_AU
 This structure contains authentication information retrieved from the device.
 
 ## Syntax
-````
+```
 typedef struct _MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA {
   unsigned char KeySerialNumber[MSR_KEY_SERIAL_NUMBER_SIZE];
   unsigned char Challenge1[MSR_CHALLENGE_SIZE];
   unsigned char Challenge2[MSR_CHALLENGE_SIZE];
-} MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, *PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA;
-````
+} *PMSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA, MSR_RETRIEVE_DEVICE_AUTHENTICATION_DATA;
+```
 
 ## Members
 

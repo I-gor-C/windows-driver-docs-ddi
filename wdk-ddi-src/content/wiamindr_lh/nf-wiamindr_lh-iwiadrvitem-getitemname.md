@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetItemName method
+# IWiaDrvItem::GetItemName method
 The <b>IWiaDrvItem::GetItemName</b> method gets the current <b>IWiaDrvItem</b> item name, not including path information.
 
 ## Syntax
 
-````
+```
 HRESULT GetItemName(
-  [out, optional] BSTR *pbstrItemName
+  BSTR *__MIDL__IWiaDrvItem0003
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ If there is enough memory available, the method allocates a string containing th
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/0609e1b2-48df-413c-90bd-d7ddea26510a">IWiaDrvItem</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff543881">IWiaDrvItem::GetFullItemName</a>
-
-
-
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiadrvitem.md">IWiaDrvItem</a>

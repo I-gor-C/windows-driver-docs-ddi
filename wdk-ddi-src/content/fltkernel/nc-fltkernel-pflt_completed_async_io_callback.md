@@ -7,7 +7,7 @@ old-location: ifsk\pflt_completed_async_io_callback.htm
 old-project: ifsk
 ms.assetid: 920e4236-9078-41c6-befb-9e82accbfa59
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltCallbacks_b85c12a6-7d3b-4d0c-9d21-9d9613aa057c.xml, PFLT_COMPLETED_ASYNC_IO_CALLBACK, PFLT_COMPLETED_ASYNC_IO_CALLBACK function pointer [Installable File System Drivers], fltkernel/PFLT_COMPLETED_ASYNC_IO_CALLBACK, ifsk.pflt_completed_async_io_callback
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ Pointer to the callback data structure for the I/O operation.
 
 `Context`
 
-Context pointer that the minifilter driver passed as a parameter to <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>, <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>, or <a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>.
+Context pointer that the minifilter driver passed as a parameter to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a>, or <a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a>.
 
 
 ## Return Value
@@ -76,7 +76,7 @@ None
 
 ## Remarks
 
-When a minifilter driver calls <a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>, <a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a> or <a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a> to initiate an asynchronous I/O operation, the minifilter driver can optionally specify a callback routine to be called when the I/O operation is completed. This is done by specifying a routine of type PFLT_COMPLETED_ASYNC_IO_CALLBACK for the <i>CallbackRoutine</i> parameter. 
+When a minifilter driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>, <a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a> to initiate an asynchronous I/O operation, the minifilter driver can optionally specify a callback routine to be called when the I/O operation is completed. This is done by specifying a routine of type PFLT_COMPLETED_ASYNC_IO_CALLBACK for the <i>CallbackRoutine</i> parameter. 
 
 When the I/O operation is completed, this callback routine is called in an arbitrary thread context, at IRQL &lt;= DISPATCH_LEVEL. 
 
@@ -110,16 +110,16 @@ It cannot acquire resources, mutexes, or fast mutexes. However, it can acquire s
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltreadfile.md">FltReadFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544620">FLT_CALLBACK_DATA</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltperformasynchronousio.md">FltPerformAsynchronousIo</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543420">FltPerformAsynchronousIo</a>
 
 
 
-<a href="..\fltkernel\ns-fltkernel-_flt_callback_data.md">FLT_CALLBACK_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544286">FltReadFile</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltwritefile.md">FltWriteFile</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544610">FltWriteFile</a>

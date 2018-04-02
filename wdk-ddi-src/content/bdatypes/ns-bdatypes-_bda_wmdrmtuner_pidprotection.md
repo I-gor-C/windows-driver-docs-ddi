@@ -47,12 +47,12 @@ req.typenames: BDA_WMDRMTUNER_PIDPROTECTION, *PBDA_WMDRMTUNER_PIDPROTECTION
 
 
 ## Syntax
-````
+```
 typedef struct _BDA_WMDRMTUNER_PIDPROTECTION {
   PBDARESULT lResult;
-  GUID       uuidKeyID;
+  GUID       uuidKeyID;
 } BDA_WMDRMTUNER_PIDPROTECTION, *PBDA_WMDRMTUNER_PIDPROTECTION;
-````
+```
 
 ## Members
 

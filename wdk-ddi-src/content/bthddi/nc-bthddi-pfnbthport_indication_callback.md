@@ -69,22 +69,22 @@ void PfnbthportIndicationCallback(
 For incoming remote connection request indications, this is the context specified by the profile
      driver in the 
      <b>IndicationCallbackContext</b> member of the 
-     <a href="..\bthddi\ns-bthddi-_brb_l2ca_register_server.md">
+     <a href="https://msdn.microsoft.com/b7eca29a-7e3c-4cfc-b285-42faca263c5e">
      _BRB_L2CA_REGISTER_SERVER</a> structure when the profile driver registered the callback function. For
      changes to existing L2CAP connections, this is the 
      <b>CallbackContext</b> member specified by the profile driver when it built and sent a 
-     <a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a> BRB.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536860">_BRB_L2CA_OPEN_CHANNEL</a> BRB.
 
 `Indication`
 
 An 
-     <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> value that indicates the type
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536679">INDICATION_CODE</a> value that indicates the type
      of L2CAP event.
 
 `Parameters`
 
 An 
-     <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a> structure that
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff536680">INDICATION_PARAMETERS</a> structure that
      contains event-specific parameters.
 
 
@@ -100,7 +100,7 @@ A profile driver registers its L2CAP callback function in the following two scen
 <li>
 When a profile driver acts as a server, it registers a L2CAP callback function using the 
       <b>IndicationCallback</b> member of the 
-      <a href="..\bthddi\ns-bthddi-_brb_l2ca_register_server.md">
+      <a href="https://msdn.microsoft.com/b7eca29a-7e3c-4cfc-b285-42faca263c5e">
       _BRB_L2CA_REGISTER_SERVER</a> structure. The Bluetooth driver stack can then notify the profile
       driver when a remote device attempts to contact it.
 
@@ -123,10 +123,10 @@ After the profile driver registers its L2CAP callback function, the callback fun
     connection notifications as a server.
 
 The 
-    <a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a> structure held in
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536680">INDICATION_PARAMETERS</a> structure held in
     the 
     <i>Parameters</i> parameter is interpreted according to the value of the 
-    <a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a> enumeration that the Bluetooth
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff536679">INDICATION_CODE</a> enumeration that the Bluetooth
     driver stack passes to the profile driver's L2CAP callback function through the 
     <i>Indication</i> parameter. For most notifications, there is an INDICATION_PARAMETERS union member that
     corresponds to the event and contains event-specific parameters.
@@ -141,16 +141,16 @@ The
 
 ## See Also
 
-<a href="..\bthddi\ne-bthddi-_indication_code.md">INDICATION_CODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536679">INDICATION_CODE</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_indication_parameters.md">INDICATION_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536680">INDICATION_PARAMETERS</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_open_channel.md">_BRB_L2CA_OPEN_CHANNEL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536860">_BRB_L2CA_OPEN_CHANNEL</a>
 
 
 
-<a href="..\bthddi\ns-bthddi-_brb_l2ca_register_server.md">_BRB_L2CA_REGISTER_SERVER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536862">_BRB_L2CA_REGISTER_SERVER</a>

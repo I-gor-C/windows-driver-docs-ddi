@@ -7,7 +7,7 @@ old-location: netvista\fwpsaleendpointgetbyid0.htm
 old-project: netvista
 ms.assetid: fa9a5078-d254-4b4a-bbfb-256491beff5f
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsAleEndpointGetById0, FwpsAleEndpointGetById0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsAleEndpointGetById0, netvista.fwpsaleendpointgetbyid0, wfp_ref_2_funct_3_fwps_A-B_3feb07cf-ae5a-4412-a51a-8e4d4d65c31d.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,13 +53,13 @@ The
 
 ## Syntax
 
-````
-NTSTATUS NTAPI FwpsAleEndpointGetById0(
-  _In_  HANDLE                        engineHandle,
-  _In_  UINT64                        endpointId,
-  _Out_ FWPS_ALE_ENDPOINT_PROPERTIES0 **properties
+```
+NTSTATUS FwpsAleEndpointGetById0(
+  HANDLE                        engineHandle,
+  UINT64                        endpointId,
+  FWPS_ALE_ENDPOINT_PROPERTIES0 **properties
 );
-````
+```
 
 ## Parameters
 
@@ -67,7 +67,7 @@ NTSTATUS NTAPI FwpsAleEndpointGetById0(
 
 A handle for an open session with the filter engine. This handle is obtained when a session is
      opened by calling 
-     <a href="..\fwpmk\nf-fwpmk-fwpmengineopen0.md">FwpmEngineOpen0</a>.
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff550075">FwpmEngineOpen0</a>.
 
 `endpointId`
 
@@ -126,14 +126,14 @@ An error occurred.
 
 ## See Also
 
-<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointgetsecurityinfo0.md">
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff551126">FwpsAleEndpointEnum0</a>
+
+
+
+<a href="https://msdn.microsoft.com/0c825695-7fef-4eb1-8615-f41c526aa32d">
    FwpsAleEndpointGetSecurityInfo0</a>
 
 
 
-<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointsetsecurityinfo0.md">
+<a href="https://msdn.microsoft.com/7b7fed83-dcf8-466d-8bd7-42a5ed15cced">
    FwpsAleEndpointSetSecurityInfo0</a>
-
-
-
-<a href="..\fwpsk\nf-fwpsk-fwpsaleendpointenum0.md">FwpsAleEndpointEnum0</a>

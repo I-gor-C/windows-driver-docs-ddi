@@ -7,7 +7,7 @@ old-location: kernel\bootdisk_information_ex.htm
 old-project: kernel
 ms.assetid: c358220c-1e29-4889-b214-f2892c9ac47d
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PBOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX, BOOTDISK_INFORMATION_EX structure [Kernel-Mode Driver Architecture], PBOOTDISK_INFORMATION_EX, PBOOTDISK_INFORMATION_EX structure pointer [Kernel-Mode Driver Architecture], _BOOTDISK_INFORMATION_EX, kernel.bootdisk_information_ex, kstruct_a_abc410ed-6eca-4417-b428-565971e85287.xml, wdm/BOOTDISK_INFORMATION_EX, wdm/PBOOTDISK_INFORMATION_EX"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,18 +48,18 @@ req.product: Windows 10 or later.
 The <b>BOOTDISK_INFORMATION_EX</b> structure contains extended information describing the boot and system disks.
 
 ## Syntax
-````
+```
 typedef struct _BOOTDISK_INFORMATION_EX {
   LONGLONG BootPartitionOffset;
   LONGLONG SystemPartitionOffset;
-  ULONG    BootDeviceSignature;
-  ULONG    SystemDeviceSignature;
-  GUID     BootDeviceGuid;
-  GUID     SystemDeviceGuid;
-  BOOLEAN  BootDeviceIsGpt;
-  BOOLEAN  SystemDeviceIsGpt;
+  ULONG    BootDeviceSignature;
+  ULONG    SystemDeviceSignature;
+  GUID     BootDeviceGuid;
+  GUID     SystemDeviceGuid;
+  BOOLEAN  BootDeviceIsGpt;
+  BOOLEAN  SystemDeviceIsGpt;
 } BOOTDISK_INFORMATION_EX, *PBOOTDISK_INFORMATION_EX;
-````
+```
 
 ## Members
 
@@ -97,7 +97,7 @@ If the <b>SystemDeviceIsGpt</b> member is <b>TRUE</b>, this specifies the GUID f
 <b>TRUE</b> if the system disk is formatted with the GPT partition table type.
 
 ## Remarks
-On Windows XP and later, <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.
+On Windows XP and later, <a href="https://msdn.microsoft.com/library/windows/hardware/ff549153">IoGetBootDiskInformation</a> returns this structure to describe the boot and system disks.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -106,8 +106,8 @@ On Windows XP and later, <a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoG
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-iogetbootdiskinformation.md">IoGetBootDiskInformation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540652">BOOTDISK_INFORMATION</a>
 
 
 
-<a href="..\wdm\ns-wdm-_bootdisk_information.md">BOOTDISK_INFORMATION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549153">IoGetBootDiskInformation</a>

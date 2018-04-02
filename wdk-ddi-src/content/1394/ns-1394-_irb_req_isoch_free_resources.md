@@ -47,11 +47,11 @@ req.typenames: IRB_REQ_ISOCH_FREE_RESOURCES
 This structure contains the fields necessary to carry out a IsochFreeResources request.
 
 ## Syntax
-````
+```
 typedef struct _IRB_REQ_ISOCH_FREE_RESOURCES {
   HANDLE hResource;
 } IRB_REQ_ISOCH_FREE_RESOURCES;
-````
+```
 
 ## Members
 

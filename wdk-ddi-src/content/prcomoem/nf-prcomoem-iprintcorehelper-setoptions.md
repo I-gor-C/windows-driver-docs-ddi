@@ -45,28 +45,28 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetOptions method
+# IPrintCoreHelper::SetOptions method
 The <b>IPrintCoreHelper::SetOptions</b> method sets multiple feature-option pairs at the same time.
 
 ## Syntax
 
-````
-STDMETHOD  SetOptions(
-  [in, optional] PDEVMODE                   pDevmode,
-  [in]           DWORD                      cbSize,
-  [in]           BOOL                       bResolveConflicts,
-  [in]           CONST PRINT_FEATURE_OPTION pFOPairs[],
-  [in]           DWORD                      cPairs,
-  [out]          PDWORD                     pcPairsWritten,
-  [out]          PDWORD                     pdwResult
+```
+HRESULT SetOptions(
+  IN PDEVMODE                      pDevmode,
+  OPTIONAL IN DWORD                cbSize,
+  IN BOOL                          bResolveConflicts,
+  IN CONST PRINT_FEATURE_OPTION [] pFOPairs,
+  IN DWORD                         cPairs,
+  OUT PDWORD                       pcPairsWritten,
+  OUT PDWORD                       pdwResult
 );
-````
+```
 
 ## Parameters
 
 `pDevmode`
 
-A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure. If this pointer is provided, <b>IPrintCoreHelper::SetOptions</b> should use the DEVMODEW structure that is pointed to by <i>pDevmode</i> instead of the default or current DEVMODEW structure. If this method is called from the plug-in provider or from either <a href="https://msdn.microsoft.com/library/windows/hardware/ff553205">IPrintOemPS::DevMode</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff554230">IPrintOemUni::DevMode</a>, this parameter is required. In most other situations, the parameter should be <b>NULL</b>. When the core driver sets <i>pDevmode</i> to <b>NULL</b>, it modifies its internal state rather than that of the passed-in DEVMODEW structure. This is required during operations such as full UI replacement, where the DEVMODEW structure returned by a DDI, such as <a href="..\winddiui\nf-winddiui-drvdocumentpropertysheets.md">DrvDocumentPropertySheets</a>, is being serviced by the core driver's UI module.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> structure. If this pointer is provided, <b>IPrintCoreHelper::SetOptions</b> should use the DEVMODEW structure that is pointed to by <i>pDevmode</i> instead of the default or current DEVMODEW structure. If this method is called from the plug-in provider or from either <a href="https://msdn.microsoft.com/library/windows/hardware/ff553205">IPrintOemPS::DevMode</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff554230">IPrintOemUni::DevMode</a>, this parameter is required. In most other situations, the parameter should be <b>NULL</b>. When the core driver sets <i>pDevmode</i> to <b>NULL</b>, it modifies its internal state rather than that of the passed-in DEVMODEW structure. This is required during operations such as full UI replacement, where the DEVMODEW structure returned by a DDI, such as <a href="https://msdn.microsoft.com/library/windows/hardware/ff548548">DrvDocumentPropertySheets</a>, is being serviced by the core driver's UI module.
 
 `cbSize`
 
@@ -191,7 +191,7 @@ For most scenarios, the <i>bResolveConflicts</i> parameter should be set to <b>T
 
 ## See Also
 
-<a href="..\prcomoem\nn-prcomoem-iprintcorehelper.md">IPrintCoreHelper</a>
+<a href="https://msdn.microsoft.com/db13410f-e4cb-4077-bb4b-7963e97b435c">IPrintCoreHelper</a>
 
 
 

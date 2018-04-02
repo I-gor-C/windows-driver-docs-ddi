@@ -7,7 +7,7 @@ old-location: ifsk\fsrtlissystempagingfile.htm
 old-project: ifsk
 ms.assetid: BF92ADEA-4A9F-41E0-BE52-0794D1D827A1
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FsRtlIsPagingFile, FsRtlIsPagingFile routine [Installable File System Drivers], FsRtlIsSystemPagingFile, ifsk.fsrtlissystempagingfile, ntifs/FsRtlIsPagingFile
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,11 +49,11 @@ The <b>FsRtlIsSystemPagingFile</b> routine determines whether a given file is cu
 
 ## Syntax
 
-````
-LOGICAL FsRtlIsPagingFile(
-  _In_ PFILE_OBJECT FileObject
+```
+NTKERNELAPI LOGICAL FsRtlIsSystemPagingFile(
+  PFILE_OBJECT FileObject
 );
-````
+```
 
 ## Parameters
 
@@ -79,12 +79,12 @@ Pointer to a file object for the file.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546873">FsRtlIsPagingFile</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547152">FsRtlPostPagingFileStackOverflow</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff547285">FsRtlSupportsPerStreamContexts</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-fsrtlispagingfile.md">FsRtlIsPagingFile</a>
-
-
-
-<a href="..\ntifs\nf-ntifs-_fsrtl_advanced_fcb_header-fsrtlpostpagingfilestackoverflow~r2.md">FsRtlPostPagingFileStackOverflow</a>

@@ -55,14 +55,14 @@ The <b>WdfObjectReferenceActual</b> method increments the reference count for a 
 
 ## Syntax
 
-````
-VOID WdfObjectReferenceActual(
-  _In_     WDFOBJECT Handle,
-  _In_opt_ PVOID     Tag,
-  _In_     LONG      Line,
-  _In_     PCCH      File
+```
+void WdfObjectReferenceActual(
+  WDFOBJECT Handle,
+  PVOID     Tag,
+  LONG      Line,
+  PCCH      File
 );
-````
+```
 
 ## Parameters
 
@@ -91,7 +91,7 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## Remarks
 
-If your driver calls <b>WdfObjectReferenceActual</b> to increment a reference count, the driver must call <a href="..\wdfobject\nf-wdfobject-wdfobjectdereferenceactual.md">WdfObjectDereferenceActual</a> to decrement the count.
+If your driver calls <b>WdfObjectReferenceActual</b> to increment a reference count, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff548743">WdfObjectDereferenceActual</a> to decrement the count.
 
 Calling <b>WdfObjectReferenceActual</b> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff548763">WdfObjectReferenceWithTag</a> instead of <a href="https://msdn.microsoft.com/library/windows/hardware/ff548758">WdfObjectReference</a> provides additional information (tag value, line number, and file name) to Microsoft debuggers. <b>WdfObjectReferenceActual</b> allows your driver to specify the line number and file name, while <b>WdfObjectReferenceWithTag</b> uses the driver's current line number and file name.
 

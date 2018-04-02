@@ -2,7 +2,7 @@
 UID: NA:storport
 ms.assetid: 366530f2-be44-3f7d-92e4-e74a385c6480
 ms.author: windowsdriverdev
-ms.date: 03/13/18
+ms.date: 02/27/18
 ms.keywords: 
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -13,9 +13,9 @@ ms.topic: portal
 
 
 
-This header is used by Windows kernel, Storage. For more information, see
-- [Windows kernel](../_kernel/index.md)
+This header is used by Storage, Windows kernel. For more information, see
 - [Storage](../_storage/index.md)
+- [Windows kernel](../_kernel/index.md)
 
 Storport.h contain these programming interfaces:
 
@@ -420,7 +420,7 @@ storport.h contains the following programming interfaces:
 | [StorPortRegistryRead](nf-storport-storportregistryread.md) | The StorPortRegistryRead routine reads the registry data for the indicated device and value. |
 | [StorPortRegistryReadAdapterKey](nf-storport-storportregistryreadadapterkey.md) | The StorPortRegistryReadAdapterKey routine is called by the miniport driver to read the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/... |
 | [StorPortRegistryWrite](nf-storport-storportregistrywrite.md) | The StorPortRegistryWrite routine is called by the miniport driver to convert the registry data contained in a specified buffer from ASCII to Unicode and to then write the data to the miniport driver's per-HBA storage area. |
-| [StorPortRegistryWriteAdapterKey](nf-storport-storportregistrywriteadapterkey.md) | The StorPortRegistryWriteAdapterKey routine is called by the miniport driver to write the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/... |
+| [StorPortRegistryWriteAdapterKey](nf-storport-storportregistrywriteadapterkey.md) | The StorPortRegistryReadAdapterKey routine is called by the miniport driver to read the hardware or device registry adapter keys located in registry at HKLM/CurrentControlSet/Enum/&lt;Instance path&gt;/DeviceParameters/... |
 | [StorPortReleaseMSISpinLock](nf-storport-storportreleasemsispinlock.md) | The StorPortReleaseMSISpinLock routine releases a previously acquired message signaled interrupt (MSI) spin lock for the specified message. |
 | [StorPortReleaseSpinLock](nf-storport-storportreleasespinlock.md) | The StorPortReleaseSpinLock routine releases a spinlock acquired by StorPortAcquireSpinLock. |
 | [StorPortRequestTimer](nf-storport-storportrequesttimer.md) | Schedules a callback event for a Storport timer context object. |

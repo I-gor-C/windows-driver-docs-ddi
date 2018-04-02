@@ -52,11 +52,11 @@ The <b>WdfRequestGetRequestorProcessId</b> method retrieves the identifier of th
 
 ## Syntax
 
-````
+```
 ULONG WdfRequestGetRequestorProcessId(
-  _In_ WDFREQUEST Request
+  WDFREQUEST Request
 );
-````
+```
 
 ## Parameters
 
@@ -83,4 +83,4 @@ A handle to a framework request object.
 
 ## See Also
 
-<a href="..\wdffileobject\nf-wdffileobject-wdffileobjectgetinitiatorprocessid.md">WdfFileObjectGetInitiatorProcessId</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265614">WdfFileObjectGetInitiatorProcessId</a>

@@ -47,13 +47,13 @@ req.typenames: KS_DVDCOPY_REGION, *PKS_DVDCOPY_REGION
 The KS_DVDCOPY_REGION structure is used to describe the copy control region according to language restrictions.
 
 ## Syntax
-````
+```
 typedef struct _KS_DVDCOPY_REGION {
   UCHAR Reserved;
   UCHAR RegionData;
   UCHAR Reserved2[2];
-} KS_DVDCOPY_REGION, *PKS_DVDCOPY_REGION;
-````
+} *PKS_DVDCOPY_REGION, KS_DVDCOPY_REGION;
+```
 
 ## Members
 

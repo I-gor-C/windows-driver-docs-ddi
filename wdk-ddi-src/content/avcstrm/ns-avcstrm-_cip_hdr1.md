@@ -47,18 +47,18 @@ req.typenames: CIP_HDR1, *PCIP_HDR1
 The CIP_HDR1 structure describes the generic data structure of the two quadlet CIP headers (first quadlet of the pair).
 
 ## Syntax
-````
+```
 typedef struct _CIP_HDR1 {
-  ULONG DBC  :8;
-  ULONG Rsv00  :2;
-  ULONG SPH  :1;
-  ULONG QPC  :3;
-  ULONG FN  :2;
-  ULONG DBS  :8;
-  ULONG SID  :6;
-  ULONG Bit00  :2;
+  ULONG  : 8 DBC;
+  ULONG  : 2 Rsv00;
+  ULONG  : 1 SPH;
+  ULONG  : 3 QPC;
+  ULONG  : 2 FN;
+  ULONG  : 8 DBS;
+  ULONG  : 6 SID;
+  ULONG  : 2 Bit00;
 } CIP_HDR1, *PCIP_HDR1;
-````
+```
 
 ## Members
 
@@ -103,12 +103,12 @@ Must be set to 0:0.
 
 ## See Also
 
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr2_syt.md">CIP_HDR2_SYT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557669">CIP_HDR2_FDF</a>
 
 
 
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr2_fdf.md">CIP_HDR2_FDF</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557672">CIP_HDR2_MPEGTS</a>
 
 
 
-<a href="..\avcstrm\ns-avcstrm-_cip_hdr2_mpegts.md">CIP_HDR2_MPEGTS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557676">CIP_HDR2_SYT</a>

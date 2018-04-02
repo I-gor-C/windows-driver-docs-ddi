@@ -7,7 +7,7 @@ old-location: netvista\ipsec_offload_v2_operation.htm
 old-project: netvista
 ms.assetid: bb26c8af-1564-4cf8-ab40-b50b4811466d
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PIPSEC_OFFLOAD_V2_OPERATION, IPSEC_OFFLOAD_V2_OPERATION, IPSEC_OFFLOAD_V2_OPERATION enumeration [Network Drivers Starting with Windows Vista], IPsecOffloadV2Ah, IPsecOffloadV2Esp, IPsecOffloadV2Max, PIPSEC_OFFLOAD_V2_OPERATION, PIPSEC_OFFLOAD_V2_OPERATION enumeration pointer [Network Drivers Starting with Windows Vista], _IPSEC_OFFLOAD_V2_OPERATION, ndis/IPSEC_OFFLOAD_V2_OPERATION, ndis/IPsecOffloadV2Ah, ndis/IPsecOffloadV2Esp, ndis/IPsecOffloadV2Max, ndis/PIPSEC_OFFLOAD_V2_OPERATION, netvista.ipsec_offload_v2_operation, task_offload_IPsecv2_ref_37a1424a-fe40-440d-a071-9483c5bcb516.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,13 +50,13 @@ The IPSEC_OFFLOAD_V2_OPERATION enumeration specifies the IPsec operation for whi
   association (SA) is used.
 
 ## Syntax
-````
-typedef enum _IPSEC_OFFLOAD_V2_OPERATION { 
-  IPsecOffloadV2Ah   = 1,
-  IPsecOffloadV2Esp,
+```
+typedef enum _IPSEC_OFFLOAD_V2_OPERATION {
+  IPsecOffloadV2Ah   ,
+  IPsecOffloadV2Esp  ,
   IPsecOffloadV2Max
-} IPSEC_OFFLOAD_V2_OPERATION, *PIPSEC_OFFLOAD_V2_OPERATION;
-````
+} *PIPSEC_OFFLOAD_V2_OPERATION, IPSEC_OFFLOAD_V2_OPERATION;
+```
 
 ## Constants
 
@@ -82,7 +82,7 @@ typedef enum _IPSEC_OFFLOAD_V2_OPERATION {
 
 The IPSEC_OFFLOAD_V2_OPERATION enumeration specifies the operation for which an SA is used in the 
     <b>Operation</b> member of the 
-    <a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
+    <a href="https://msdn.microsoft.com/b2c5611e-930d-41a5-a07e-7de8f8584283">
     IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a> structure.
 
 ## Requirements
@@ -93,5 +93,5 @@ The IPSEC_OFFLOAD_V2_OPERATION enumeration specifies the operation for which an 
 
 ## See Also
 
-<a href="..\ndis\ns-ndis-_ipsec_offload_v2_security_association.md">
+<a href="https://msdn.microsoft.com/b2c5611e-930d-41a5-a07e-7de8f8584283">
    IPSEC_OFFLOAD_V2_SECURITY_ASSOCIATION</a>

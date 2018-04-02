@@ -47,13 +47,13 @@ req.typenames: OPTIMAL_WEIGHT_TOTALS
 
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct OPTIMAL_WEIGHT_TOTALS {
   LONGLONG MinTotalNominator;
   LONGLONG MaxTotalNominator;
   LONGLONG TotalDenominator;
-} OPTIMAL_WEIGHT_TOTALS;
-````
+};
+```
 
 ## Members
 

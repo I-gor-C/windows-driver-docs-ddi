@@ -45,14 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# DeviceReset method
+# IStiUSD::DeviceReset method
 A still image minidriver's <b>IStiUSD::DeviceReset</b> method resets a still image device to a known, initialized state.
 
 ## Syntax
 
-````
-STDMETHODIMP DeviceReset();
-````
+```
+HRESULT DeviceReset(
+
+);
+```
 
 ## Parameters
 

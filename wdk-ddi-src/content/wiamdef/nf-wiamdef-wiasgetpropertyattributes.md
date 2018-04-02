@@ -50,15 +50,15 @@ The <b>wiasGetPropertyAttributes </b>function retrieves the access flags and val
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasGetPropertyAttributes(
-  _In_  BYTE        *pWiasContext,
-        LONG        cPropSpec,
-  _In_  PROPSPEC    *pPropSpec,
-        ULONG       *pulAccessFlags,
-  _Out_ PROPVARIANT *pPropVar
+```
+HRESULT wiasGetPropertyAttributes(
+  BYTE        *pWiasContext,
+  LONG        cPropSpec,
+  PROPSPEC    *pPropSpec,
+  ULONG       *pulAccessFlags,
+  PROPVARIANT *pPropVar
 );
-````
+```
 
 ## Parameters
 

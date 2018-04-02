@@ -49,11 +49,11 @@ Called by the client driver after a WDF device has been created during the AddDe
 
 ## Syntax
 
-````
-NTSTATUS  NfcCxDeviceInitialize(
-   WDFDEVICE Device
+```
+NTSTATUS NfcCxDeviceInitialize(
+  WDFDEVICE Device
 );
-````
+```
 
 ## Parameters
 

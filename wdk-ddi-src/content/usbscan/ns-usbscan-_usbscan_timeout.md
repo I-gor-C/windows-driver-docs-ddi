@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The USBSCAN_TIMEOUT structure stores time-out values for USB bulk IN and bulk OUT operations, and interrupts.
 
 ## Syntax
-````
+```
 typedef struct _USBSCAN_TIMEOUT {
   ULONG TimeoutRead;
   ULONG TimeoutWrite;
   ULONG TimeoutEvent;
 } USBSCAN_TIMEOUT, *PUSBSCAN_TIMEOUT;
-````
+```
 
 ## Members
 
@@ -74,7 +74,7 @@ Specifies the number of seconds to wait for an interrupt to occur.
 ## Remarks
 A value of zero means to wait forever for the read or write operation or interrupt.
 
-The USBSCAN_TIMEOUT structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="..\usbscan\ni-usbscan-ioctl_set_timeout.md">IOCTL_SET_TIMEOUT</a>.
+The USBSCAN_TIMEOUT structure is used as a parameter to <a href="https://msdn.microsoft.com/1d35c087-6672-4fc6-baa1-a886dd9d3878">DeviceIoControl</a>, when the specified I/O control code is <a href="https://msdn.microsoft.com/library/windows/hardware/ff542908">IOCTL_SET_TIMEOUT</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -83,4 +83,4 @@ The USBSCAN_TIMEOUT structure is used as a parameter to <a href="https://msdn.mi
 
 ## See Also
 
-<a href="..\usbscan\ni-usbscan-ioctl_set_timeout.md">IOCTL_SET_TIMEOUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542908">IOCTL_SET_TIMEOUT</a>

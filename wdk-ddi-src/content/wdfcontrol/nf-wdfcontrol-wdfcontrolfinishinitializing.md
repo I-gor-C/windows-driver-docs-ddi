@@ -53,11 +53,11 @@ The <b>WdfControlFinishInitializing</b> method informs the framework that a driv
 
 ## Syntax
 
-````
-VOID WdfControlFinishInitializing(
-  _In_ WDFDEVICE Device
+```
+void WdfControlFinishInitializing(
+  WDFDEVICE Device
 );
-````
+```
 
 ## Parameters
 
@@ -81,7 +81,7 @@ For more information about control device objects and calling <b>WdfControlFinis
 
 #### Examples
 
-For a code example that uses <b>WdfControlFinishInitializing</b>, see <a href="..\wdfcontrol\nf-wdfcontrol-wdfcontroldeviceinitallocate.md">WdfControlDeviceInitAllocate</a>.
+For a code example that uses <b>WdfControlFinishInitializing</b>, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff545841">WdfControlDeviceInitAllocate</a>.
 
 <div class="code"></div>
 

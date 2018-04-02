@@ -7,7 +7,7 @@ old-location: display\pfnd3d12ddi_video_getcaps.htm
 old-project: display
 ms.assetid: 6875B754-115F-481D-8D46-2A383BA6B5E7
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3D12DDI_VIDEO_GETCAPS, d3d12umddi/pfnGetCaps, display.pfnd3d12ddi_video_getcaps, pfnGetCaps, pfnGetCaps callback function [Display Devices]
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -76,7 +76,7 @@ If this callback function succeeds, it returns <b xmlns:loc="http://microsoft.co
 
 ## Remarks
 
-Access this function though the <a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_decode_support_data_0020.md">D3D12DDI_VIDEO_DECODE_SUPPORT_DATA</a> structure.
+Access this function though the <a href="https://msdn.microsoft.com/05274F4B-0473-42BA-A382-B348A85DBFA5">D3D12DDI_VIDEO_DECODE_SUPPORT_DATA</a> structure.
 
 The following list describes the mapping of D3D12DDICAPS_TYPE_VIDEO_0010 type to the meaning of the pInfo, pData, and DataSize parameters.
 
@@ -351,4 +351,4 @@ D3D12DDICAPS_TYPE_VIDEO_DECODE_BITSTREAM_ENCRYPTION_SCHEME_COUNT
 
 ## See Also
 
-<a href="..\d3d12umddi\ns-d3d12umddi-d3d12ddi_video_decode_support_data_0020.md">D3D12DDI_VIDEO_DECODE_SUPPORT_DATA</a>
+<a href="https://msdn.microsoft.com/05274F4B-0473-42BA-A382-B348A85DBFA5">D3D12DDI_VIDEO_DECODE_SUPPORT_DATA</a>

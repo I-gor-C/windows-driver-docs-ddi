@@ -7,7 +7,7 @@ old-location: debugger\debug_typed_data.htm
 old-project: debugger
 ms.assetid: 3173e69e-a6e5-4459-a57e-94cf7b10ef32
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PDEBUG_TYPED_DATA, DEBUG_TYPED_DATA, DEBUG_TYPED_DATA structure [Windows Debugging], PDEBUG_TYPED_DATA, PDEBUG_TYPED_DATA structure pointer [Windows Debugging], Structures_6e8e758c-2c5d-4590-8908-3e1734ea2c7d.xml, _DEBUG_TYPED_DATA, debugger.debug_typed_data, wdbgexts/DEBUG_TYPED_DATA, wdbgexts/PDEBUG_TYPED_DATA"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,21 +48,21 @@ req.product: Windows 10 or later.
 The DEBUG_TYPED_DATA structure describes typed data in the memory of the target.
 
 ## Syntax
-````
+```
 typedef struct _DEBUG_TYPED_DATA {
   ULONG64 ModBase;
   ULONG64 Offset;
   ULONG64 EngineHandle;
   ULONG64 Data;
-  ULONG   Size;
-  ULONG   Flags;
-  ULONG   TypeId;
-  ULONG   BaseTypeId;
-  ULONG   Tag;
-  ULONG   Register;
+  ULONG   Size;
+  ULONG   Flags;
+  ULONG   TypeId;
+  ULONG   BaseTypeId;
+  ULONG   Tag;
+  ULONG   Register;
   ULONG64 Internal[9];
-}  DEBUG_TYPED_DATA, *PDEBUG_TYPED_DATA;
-````
+} *PDEBUG_TYPED_DATA, DEBUG_TYPED_DATA;
+```
 
 ## Members
 
@@ -186,8 +186,8 @@ There is one exception to the preceding rule: the <b>EXT_TDOP_SET_FROM_TYPE_ID_A
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff541547">DEBUG_REQUEST_EXT_TYPED_DATA_ANSI</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554564">Request</a>

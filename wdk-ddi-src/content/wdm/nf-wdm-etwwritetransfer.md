@@ -50,16 +50,16 @@ The <b>EtwWriteTransfer</b> function marks an event that links two activities to
 
 ## Syntax
 
-````
+```
 NTSTATUS EtwWriteTransfer(
-  _In_     REGHANDLE              RegHandle,
-  _In_     PCEVENT_DESCRIPTOR     EventDescriptor,
-  _In_opt_ LPCGUID                ActivityId,
-  _In_opt_ LPCGUID                RelatedActivityId,
-  _In_     ULONG                  UserDataCount,
-  _In_opt_ PEVENT_DATA_DESCRIPTOR UserData
+  REGHANDLE              RegHandle,
+  PCEVENT_DESCRIPTOR     EventDescriptor,
+  LPCGUID                ActivityId,
+  LPCGUID                RelatedActivityId,
+  ULONG                  UserDataCount,
+  PEVENT_DATA_DESCRIPTOR UserData
 );
-````
+```
 
 ## Parameters
 
@@ -108,8 +108,8 @@ You can call <b>EtwWriteTransfer</b> at any IRQL. However, when IRQL is greater 
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-etwwrite.md">EtwWrite</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545627">EtwWrite</a>
 
 
 
-<a href="..\wdm\nf-wdm-etwwritestring.md">EtwWriteString</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545637">EtwWriteString</a>

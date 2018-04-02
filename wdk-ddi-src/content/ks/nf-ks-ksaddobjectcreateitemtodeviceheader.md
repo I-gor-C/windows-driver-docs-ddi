@@ -50,15 +50,15 @@ The <b>KsAddObjectCreateItemToDeviceHeader</b> function adds the specified creat
 
 ## Syntax
 
-````
-NTSTATUS KsAddObjectCreateItemToDeviceHeader(
-  _In_     KSDEVICE_HEADER      Header,
-  _In_     PDRIVER_DISPATCH     Create,
-  _In_     PVOID                Context,
-  _In_     PWSTR                ObjectClass,
-  _In_opt_ PSECURITY_DESCRIPTOR SecurityDescriptor
+```
+KSDDKAPI NTSTATUS KsAddObjectCreateItemToDeviceHeader(
+  KSDEVICE_HEADER      Header,
+  PDRIVER_DISPATCH     Create,
+  PVOID                Context,
+  PWSTR                ObjectClass,
+  PSECURITY_DESCRIPTOR SecurityDescriptor
 );
-````
+```
 
 ## Parameters
 

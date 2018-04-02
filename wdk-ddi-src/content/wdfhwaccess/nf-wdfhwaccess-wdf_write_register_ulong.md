@@ -52,13 +52,13 @@ The <b>WDF_WRITE_REGISTER_ULONG</b> routine writes a ULONG value to the specifie
 
 ## Syntax
 
-````
+```
 void WDF_WRITE_REGISTER_ULONG(
-  _In_ WDFDEVICE Device,
-  _In_ PULONG    Register,
-  _In_ ULONG     Value
+  WDFDEVICE Device,
+  PULONG    Register,
+  ULONG     Value
 );
-````
+```
 
 ## Parameters
 

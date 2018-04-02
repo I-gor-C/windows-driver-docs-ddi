@@ -7,7 +7,7 @@ old-location: kernel\iopropagateactivityidtothread.htm
 old-project: kernel
 ms.assetid: 8E824793-53DF-4573-81B0-6FE925CCB4C4
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoPropagateActivityIdToThread, IoPropagateActivityIdToThread routine [Kernel-Mode Driver Architecture], kernel.iopropagateactivityidtothread, ntddk/IoPropagateActivityIdToThread
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,13 +49,13 @@ The <b>IoPropagateActivityIdToThread</b> routine associates the activity ID from
 
 ## Syntax
 
-````
+```
 NTSTATUS IoPropagateActivityIdToThread(
-  _In_  PIRP    Irp,
-  _Out_ LPGUID  PropagatedId,
-  _Out_ LPCGUID *OriginalId
+  PIRP    Irp,
+  LPGUID  PropagatedId,
+  LPCGUID *OriginalId
 );
-````
+```
 
 ## Parameters
 
@@ -96,7 +96,7 @@ The IRP does not have an ID associated with it.
 
 ## Remarks
 
-This routine should be used by drivers that are tracing aware and are issuing I/O on a worker thread. Note that such drivers must call <a href="..\ntddk\nf-ntddk-ioclearactivityidthread.md">IoClearActivityIdThread</a> with the <i>OriginalId</i> before they return control from the thread, if the call was successful.
+This routine should be used by drivers that are tracing aware and are issuing I/O on a worker thread. Note that such drivers must call <a href="https://msdn.microsoft.com/library/windows/hardware/hh439297">IoClearActivityIdThread</a> with the <i>OriginalId</i> before they return control from the thread, if the call was successful.
 
 Drivers that use I/O work items do not need to call this routine because the I/O subsystem takes care of propagating activity IDs to threads in that case.
 

@@ -50,12 +50,12 @@ The <b>EtwActivityIdControl</b> function creates, queries, and sets the current 
 
 ## Syntax
 
-````
-NTSTATUS EtwActivityIdControl(
-  _In_    ULONG  ControlCode,
-  _Inout_ LPGUID ActivityId
+```
+NTKERNELAPI NTSTATUS EtwActivityIdControl(
+  ULONG  ControlCode,
+  LPGUID ActivityId
 );
-````
+```
 
 ## Parameters
 

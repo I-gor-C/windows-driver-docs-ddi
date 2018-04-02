@@ -49,12 +49,12 @@ This structure is used to set unit information.
 The Av61883_SetUnitInfo request sets the parameters that the IEC-61883 protocol driver should use when capturing and transmitting isochronous packets.
 
 ## Syntax
-````
+```
 typedef struct _SET_UNIT_INFO {
-  ULONG nLevel;
-  PVOID Information;
-} SET_UNIT_INFO, *PSET_UNIT_INFO;
-````
+  IN ULONG     nLevel;
+  IN OUT PVOID Information;
+} *PSET_UNIT_INFO, SET_UNIT_INFO;
+```
 
 ## Members
 

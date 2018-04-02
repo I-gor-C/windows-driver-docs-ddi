@@ -7,7 +7,7 @@ old-location: display\d3dwddm2_0ddi_video_capability_decoder_downsampling.htm
 old-project: display
 ms.assetid: 8D12F2AC-2A64-4FEF-813C-15899FBCA108
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING, D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING structure [Display Devices], d3d10umddi/D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING, display.d3dwddm2_0ddi_video_capability_decoder_downsampling
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING
 <b>D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING</b> describes the details of a video decoder downsampling operation.
 
 ## Syntax
-````
+```
 typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING {
-  const D3D11_1DDI_VIDEO_DECODER_DESC   *pInputDesc;
-  D3DDDI_COLOR_SPACE_TYPE               InputColorSpace;
-  const D3D11_1DDI_VIDEO_DECODER_CONFIG *pInputConfig;
-  const DXGI_RATIONAL                   *pFrameRate;
-  const D3D11_1DDI_VIDEO_DECODER_DESC   *pOutputDesc;
-  D3DDDI_COLOR_SPACE_TYPE               OutputColorSpace;
-  BOOL                                  Supported;
-  BOOL                                  RealTime;
-} D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING;
-````
+  CONST D3D11_1DDI_VIDEO_DECODER_DESC   *pInputDesc;
+  D3DDDI_COLOR_SPACE_TYPE               InputColorSpace;
+  CONST D3D11_1DDI_VIDEO_DECODER_CONFIG *pInputConfig;
+  CONST DXGI_RATIONAL                   *pFrameRate;
+  CONST D3D11_1DDI_VIDEO_DECODER_DESC   *pOutputDesc;
+  D3DDDI_COLOR_SPACE_TYPE               OutputColorSpace;
+  BOOL                                  Supported;
+  BOOL                                  RealTime;
+};
+```
 
 ## Members
 
@@ -73,7 +73,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING {
 
 `pInputConfig`
 
-[in] A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_config.md">D3D11_1DDI_VIDEO_DECODER_CONFIG</a> structure that contains the configuration data associated with the decode profile .
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/hh450947">D3D11_1DDI_VIDEO_DECODER_CONFIG</a> structure that contains the configuration data associated with the decode profile .
 
 `pFrameRate`
 
@@ -81,7 +81,7 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING {
 
 `pOutputDesc`
 
-[in] A <a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_desc.md">D3D11_1DDI_VIDEO_DECODER_DESC</a> structure that contains the resolution and the format of the display frames.  This is the destination resolution and format of the down sample operation.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/hh450951">D3D11_1DDI_VIDEO_DECODER_DESC</a> structure that contains the resolution and the format of the display frames.  This is the destination resolution and format of the down sample operation.
 
 
 
@@ -110,12 +110,12 @@ typedef struct D3DWDDM2_0DDI_VIDEO_CAPABILITY_DECODER_DOWNSAMPLING {
 
 ## See Also
 
-<a href="..\d3dukmdt\ne-d3dukmdt-d3dddi_color_space_type.md">D3DDDI_COLOR_SPACE_TYPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450947">D3D11_1DDI_VIDEO_DECODER_CONFIG</a>
 
 
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_desc.md">D3D11_1DDI_VIDEO_DECODER_DESC</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450951">D3D11_1DDI_VIDEO_DECODER_DESC</a>
 
 
 
-<a href="..\d3d10umddi\ns-d3d10umddi-d3d11_1ddi_video_decoder_config.md">D3D11_1DDI_VIDEO_DECODER_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn906320">D3DDDI_COLOR_SPACE_TYPE</a>

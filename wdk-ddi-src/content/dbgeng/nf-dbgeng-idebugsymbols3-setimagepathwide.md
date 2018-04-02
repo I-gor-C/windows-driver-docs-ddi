@@ -7,7 +7,7 @@ old-location: debugger\setimagepathwide.htm
 old-project: debugger
 ms.assetid: 0675dce8-4724-4880-b311-204fbb6fe194
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugSymbols3, IDebugSymbols3 interface [Windows Debugging], SetImagePathWide method, IDebugSymbols3::SetImagePathWide, SetImagePathWide method [Windows Debugging], SetImagePathWide method [Windows Debugging], IDebugSymbols3 interface, SetImagePathWide,IDebugSymbols3.SetImagePathWide, dbgeng/IDebugSymbols3::SetImagePathWide, debugger.setimagepathwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# SetImagePathWide method
+# IDebugSymbols3::SetImagePathWide method
 The <b>SetImagePathWide</b>  method sets the executable image path.
 
 ## Syntax
 
-````
+```
 HRESULT SetImagePathWide(
-  [in] PCWSTR Path
+  PCWSTR Path
 );
-````
+```
 
 ## Parameters
 
@@ -102,8 +102,8 @@ The executable image path can consist of several directories separated by semico
 
 
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols3.md">IDebugSymbols3</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff546851">GetImagePath</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550870">IDebugSymbols3</a>

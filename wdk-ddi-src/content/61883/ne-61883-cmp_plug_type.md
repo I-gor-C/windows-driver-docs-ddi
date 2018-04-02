@@ -47,12 +47,12 @@ req.typenames: CMP_PLUG_TYPE
 This enumeration specifies the type of a plug.
 
 ## Syntax
-````
-typedef enum  { 
-  CMP_PlugOut  = 0,
+```
+typedef enum CMP_PLUG_TYPE {
+  CMP_PlugOut  ,
   CMP_PlugIn
-} CMP_PLUG_TYPE;
-````
+} ;
+```
 
 ## Constants
 

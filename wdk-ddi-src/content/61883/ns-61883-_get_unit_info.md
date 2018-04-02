@@ -47,12 +47,12 @@ req.typenames: GET_UNIT_INFO, *PGET_UNIT_INFO
 This structure is used to get unit information.The  request retrieves unit information about the device. The Plug and Play ID for a 61883 device is based on its VendorID, ModelID, and Character/Transaction Set.
 
 ## Syntax
-````
+```
 typedef struct _GET_UNIT_INFO {
-  ULONG nLevel;
-  PVOID Information;
+  IN ULONG     nLevel;
+  IN OUT PVOID Information;
 } GET_UNIT_INFO, *PGET_UNIT_INFO;
-````
+```
 
 ## Members
 

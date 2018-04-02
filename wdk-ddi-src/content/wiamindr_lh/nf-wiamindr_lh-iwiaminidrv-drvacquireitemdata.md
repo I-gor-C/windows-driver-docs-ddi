@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvAcquireItemData method
+# IWiaMiniDrv::drvAcquireItemData method
 The <b>IWiaMiniDrv::drvAcquireItemData</b> method is called by the WIA service to transfer data from the device to an application.
 
 ## Syntax
 
-````
+```
 HRESULT drvAcquireItemData(
-  [in]      BYTE                      *pWiasContext,
-  [in]      LONG                      lFlags,
-  [in, out] PMINIDRV_TRANSFER_CONTEXT pmdtc,
-  [out]     LONG                      *plDevErrVal
+  BYTE                      *__MIDL__IWiaMiniDrv0009,
+  LONG                      __MIDL__IWiaMiniDrv0010,
+  PMINIDRV_TRANSFER_CONTEXT __MIDL__IWiaMiniDrv0011,
+  LONG                      *__MIDL__IWiaMiniDrv0012
 );
-````
+```
 
 ## Parameters
 
@@ -92,7 +92,7 @@ For memory-based transfers, a buffer may or may not have already been allocated,
 
 </li>
 <li>
-For file transfers, the minidriver should first write the data to the buffer passed in the WIA service's call to this method, and then call <a href="..\wiamdef\nf-wiamdef-wiaswritepagebuftofile.md">wiasWritePageBufToFile</a> to write the buffer data to the file involved. The minidriver should not attempt to use the file handle specified in <b>pmdtc</b>--&gt;<b>hFile</b> to write the data to the file.
+For file transfers, the minidriver should first write the data to the buffer passed in the WIA service's call to this method, and then call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549484">wiasWritePageBufToFile</a> to write the buffer data to the file involved. The minidriver should not attempt to use the file handle specified in <b>pmdtc</b>--&gt;<b>hFile</b> to write the data to the file.
 
 </li>
 </ul>
@@ -172,11 +172,7 @@ Other error code
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
-
-
-
-<a href="..\wiamdef\nf-wiamdef-wiasgetimageinformation.md">wiasGetImageInformation</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 
@@ -184,4 +180,8 @@ Other error code
 
 
 
-<a href="..\wiamindr_lh\ns-wiamindr_lh-_minidrv_transfer_context.md">MINIDRV_TRANSFER_CONTEXT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545250">MINIDRV_TRANSFER_CONTEXT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549249">wiasGetImageInformation</a>

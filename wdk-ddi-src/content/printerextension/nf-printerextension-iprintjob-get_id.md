@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_Id method
+# IPrintJob::get_Id method
 Gets the print job identifier (ID).
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_Id(
-  [out, retval] ULONG *pulID
+  ULONG *pulID
 );
-````
+```
 
 ## Parameters
 
@@ -83,4 +83,4 @@ You must not use the <b>IPrintJob::Id</b> property  to invoke spooler Job APIs. 
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintjob.md">IPrintJob</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265396">IPrintJob</a>

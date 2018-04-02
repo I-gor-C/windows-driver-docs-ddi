@@ -47,13 +47,13 @@ req.typenames: GET_LOCAL_HOST_INFO2, *PGET_LOCAL_HOST_INFO2
 The GET_LOCAL_HOST_INFO2 structure contains the data returned by a <a href="https://msdn.microsoft.com/library/windows/hardware/ff537644">REQUEST_GET_LOCAL_HOST_INFO</a> request using <b>u.GetLocalHostInformation.nLevel</b> GET_HOST_CAPABILITIES.
 
 ## Syntax
-````
+```
 typedef struct _GET_LOCAL_HOST_INFO2 {
   ULONG HostCapabilities;
   ULONG MaxAsyncReadRequest;
   ULONG MaxAsyncWriteRequest;
 } GET_LOCAL_HOST_INFO2, *PGET_LOCAL_HOST_INFO2;
-````
+```
 
 ## Members
 
@@ -131,7 +131,11 @@ If a host controller supports synchronizing <a href="https://msdn.microsoft.com/
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537649">REQUEST_ISOCH_ALLOCATE_RESOURCES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537157">GET_LOCAL_HOST_INFO7</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537401">ISOCH_DESCRIPTOR</a>
 
 
 
@@ -139,8 +143,4 @@ If a host controller supports synchronizing <a href="https://msdn.microsoft.com/
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537157">GET_LOCAL_HOST_INFO7</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff537401">ISOCH_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537649">REQUEST_ISOCH_ALLOCATE_RESOURCES</a>

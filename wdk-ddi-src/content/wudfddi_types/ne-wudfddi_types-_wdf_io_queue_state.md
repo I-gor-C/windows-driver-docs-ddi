@@ -48,18 +48,18 @@ req.product: Windows 10 or later.
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 
-The <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_state.md">WDF_IO_QUEUE_STATE</a> enumeration contains values that identify the state of an I/O queue.
+The <a href="https://msdn.microsoft.com/library/windows/hardware/ff561417">WDF_IO_QUEUE_STATE</a> enumeration contains values that identify the state of an I/O queue.
 
 ## Syntax
-````
-typedef enum _WDF_IO_QUEUE_STATE { 
-  WdfIoQueueAcceptRequests    = 0x1,
-  WdfIoQueueDispatchRequests  = 0x2,
-  WdfIoQueueNoRequests        = 0x4,
-  WdfIoQueueDriverNoRequests  = 0x8,
-  WdfIoQueuePnpHeld           = 0x10
-} WDF_IO_QUEUE_STATE;
-````
+```
+typedef enum _WDF_IO_QUEUE_STATE {
+  WdfIoQueueAcceptRequests    ,
+  WdfIoQueueDispatchRequests  ,
+  WdfIoQueueNoRequests        ,
+  WdfIoQueueDriverNoRequests  ,
+  WdfIoQueuePnpHeld
+} *PWDF_IO_QUEUE_STATE, WDF_IO_QUEUE_STATE;
+```
 
 ## Constants
 
@@ -74,7 +74,7 @@ If this value is set to 0, the queue completes any automatically forwarded reque
             
                 <tr>
                     <td>WdfIoQueueDispatchRequests</td>
-                    <td>If this value is set to 1, the queue automatically presents requests to the driver, unless the queue is a <b>WdfIoQueueDispatchManual</b> type (see <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a>). 
+                    <td>If this value is set to 1, the queue automatically presents requests to the driver, unless the queue is a <b>WdfIoQueueDispatchManual</b> type (see <a href="https://msdn.microsoft.com/library/windows/hardware/ff552362">WDF_IO_QUEUE_DISPATCH_TYPE</a>). 
 
 If this value is set to 0, the queue does not automatically dispatch requests to the driver. The setting of this status does not prevent the driver from calling the <a href="https://msdn.microsoft.com/library/windows/hardware/ff558967">IWDFIoQueue::RetrieveNextRequest</a> method to manually retrieve a request from the queue.</td>
                 </tr>
@@ -111,8 +111,8 @@ If this value is set to 0, the queue does not automatically dispatch requests to
 
 
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_io_queue_dispatch_type.md">WDF_IO_QUEUE_DISPATCH_TYPE</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff559081">IWDFIoRequest::ForwardToIoQueue</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552362">WDF_IO_QUEUE_DISPATCH_TYPE</a>

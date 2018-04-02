@@ -7,7 +7,7 @@ old-location: display\d3dkmtwaitforsynchronizationobject.htm
 old-project: display
 ms.assetid: 6b622b61-ec39-4ffb-b744-2b33ac560af6
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DKMTWaitForSynchronizationObject, D3DKMTWaitForSynchronizationObject function [Display Devices], OpenGL_Functions_bdec46cd-1e3b-427f-8c65-df2d31171bc5.xml, d3dkmthk/D3DKMTWaitForSynchronizationObject, display.d3dkmtwaitforsynchronizationobject
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,11 +52,11 @@ The <b>D3DKMTWaitForSynchronizationObject</b> function inserts a wait for the sp
 
 ## Syntax
 
-````
+```
 NTSTATUS D3DKMTWaitForSynchronizationObject(
-  _In_ const D3DKMT_WAITFORSYNCHRONIZATIONOBJECT *pData
+  CONST *D3DKMT_WAITFORSYNCHRONIZATIONOBJECT
 );
-````
+```
 
 ## Parameters
 
@@ -124,4 +124,4 @@ This function might also return other NTSTATUS values.
 
 ## See Also
 
-<a href="..\d3dkmthk\ns-d3dkmthk-_d3dkmt_waitforsynchronizationobject.md">D3DKMT_WAITFORSYNCHRONIZATIONOBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548430">D3DKMT_WAITFORSYNCHRONIZATIONOBJECT</a>

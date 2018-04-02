@@ -44,7 +44,7 @@ req.typenames: DXVA_VideoSample32
 ---
 
 
-# SetData method
+# ExtRemoteData::SetData method
 The <b>ExtRemoteData</b> class provides a wrapper around a small section of a target's memory.  <b>ExtRemoteData</b> automatically retrieves the memory and provides a number of convenience methods.
 
 The <b>ExtRemoteData</b> class includes the following constructors and methods:

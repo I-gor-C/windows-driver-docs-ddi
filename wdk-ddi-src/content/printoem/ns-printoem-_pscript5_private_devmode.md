@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The PSCRIPT5_PRIVATE_DEVMODE structure enables Pscript5 plug-ins to determine the size of the private portion of Pscript5's DEVMODEW structure.
 
 ## Syntax
-````
+```
 typedef struct _PSCRIPT5_PRIVATE_DEVMODE {
   WORD wReserved[57];
   WORD wSize;
 } PSCRIPT5_PRIVATE_DEVMODE, *PPSCRIPT5_PRIVATE_DEVMODE;
-````
+```
 
 ## Members
 
@@ -110,7 +110,7 @@ The preceding example starts with the address of the public DEVMODEW structure (
 
 </li>
 <li>
-Verify that the private portion of your plug-in's DEVMODEW structure begins with a valid <a href="..\printoem\ns-printoem-_oem_dmextraheader.md">OEM_DMEXTRAHEADER</a> structure.
+Verify that the private portion of your plug-in's DEVMODEW structure begins with a valid <a href="https://msdn.microsoft.com/library/windows/hardware/ff559588">OEM_DMEXTRAHEADER</a> structure.
 
 </li>
 </ol>
@@ -122,4 +122,4 @@ Verify that the private portion of your plug-in's DEVMODEW structure begins with
 
 ## See Also
 
-<a href="..\printoem\ns-printoem-_unidrv_private_devmode.md">UNIDRV_PRIVATE_DEVMODE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563565">UNIDRV_PRIVATE_DEVMODE</a>

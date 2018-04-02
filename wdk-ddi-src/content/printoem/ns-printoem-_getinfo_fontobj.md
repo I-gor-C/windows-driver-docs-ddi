@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The GETINFO_FONTOBJ structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.
 
 ## Syntax
-````
+```
 typedef struct _GETINFO_FONTOBJ {
-  DWORD   dwSize;
+  DWORD   dwSize;
   FONTOBJ *pFontObj;
 } GETINFO_FONTOBJ, *PGETINFO_FONTOBJ;
-````
+```
 
 ## Members
 
@@ -76,8 +76,8 @@ To obtain a font's FONTOBJ structure contents, a rendering plug-in can supply th
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff565974">FONTOBJ</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>

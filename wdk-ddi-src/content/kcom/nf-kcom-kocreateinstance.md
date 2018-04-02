@@ -52,15 +52,15 @@ The <b>KoCreateInstance</b> function creates an object of the class with the spe
 
 ## Syntax
 
-````
-NTSTATUS KoCreateInstance(
-  _In_     REFCLSID ClassId,
-  _In_opt_ IUnknown *UnkOuter,
-  _In_     ULONG    ClsContext,
-  _In_     REFIID   InterfaceId,
-  _Out_    PVOID    *Interface
+```
+COMDDKAPI NTSTATUS KoCreateInstance(
+  REFCLSID ClassId,
+  IUnknown *UnkOuter,
+  ULONG    ClsContext,
+  REFIID   InterfaceId,
+  PVOID    *Interface
 );
-````
+```
 
 ## Parameters
 

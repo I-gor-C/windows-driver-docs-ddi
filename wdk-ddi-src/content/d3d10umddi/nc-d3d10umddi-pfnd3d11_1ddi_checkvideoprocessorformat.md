@@ -7,7 +7,7 @@ old-location: display\checkvideoprocessorformat.htm
 old-project: display
 ms.assetid: f5f18a53-d121-445a-86b7-649624a2f175
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: CheckVideoProcessorFormat, CheckVideoProcessorFormat callback function [Display Devices], PFND3D11_1DDI_CHECKVIDEOPROCESSORFORMAT, d3d10umddi/CheckVideoProcessorFormat, display.checkvideoprocessorformat
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -105,8 +105,8 @@ If the driver can support neither, it must set the <i>pSupported</i> parameter t
 
 ## See Also
 
-<a href="..\d3d10umddi\ne-d3d10umddi-d3d11_1ddi_video_processor_format_support.md">D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT</a>
+<a href="https://msdn.microsoft.com/38c27502-7e8a-45a1-8a7c-315300502480">CreateVideoProcessorEnum</a>
 
 
 
-<a href="..\d3d10umddi\nc-d3d10umddi-pfnd3d11_1ddi_createvideoprocessorenum.md">CreateVideoProcessorEnum</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh450987">D3D11_1DDI_VIDEO_PROCESSOR_FORMAT_SUPPORT</a>

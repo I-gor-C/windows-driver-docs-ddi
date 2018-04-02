@@ -47,20 +47,20 @@ req.typenames: WHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS
 The WHEA_ERROR_PACKET_FLAGS union defines the error condition reported through a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560465">WHEA_ERROR_PACKET</a> structure.
 
 ## Syntax
-````
-typedef union _WHEA_ERROR_PACKET_FLAGS {
+```
+typedef struct _WHEA_ERROR_PACKET_FLAGS {
   struct {
-    ULONG PreviousError  :1;
-    ULONG Reserved1  :1;
-    ULONG HypervisorError  :1;
-    ULONG Simulated  :1;
-    ULONG PlatformPfaControl  :1;
-    ULONG PlatformDirectedOffline  :1;
-    ULONG Reserved2  :26;
-  };
-  ULONG  AsULONG;
+    ULONG  : 1  HypervisorError;
+    ULONG  : 1  PlatformDirectedOffline;
+    ULONG  : 1  PlatformPfaControl;
+    ULONG  : 1  PreviousError;
+    ULONG  : 1  Reserved1;
+    ULONG  : 26 Reserved2;
+    ULONG  : 1  Simulated;
+  } DUMMYSTRUCTNAME;
+  ULONG  AsULONG;
 } WHEA_ERROR_PACKET_FLAGS, *PWHEA_ERROR_PACKET_FLAGS;
-````
+```
 
 ## Members
 

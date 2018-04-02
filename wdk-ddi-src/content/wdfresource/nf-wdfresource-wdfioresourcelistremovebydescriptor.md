@@ -53,12 +53,12 @@ The <b>WdfIoResourceListRemoveByDescriptor</b> method removes a resource descrip
 
 ## Syntax
 
-````
-VOID WdfIoResourceListRemoveByDescriptor(
-  _In_ WDFIORESLIST            ResourceList,
-  _In_ PIO_RESOURCE_DESCRIPTOR Descriptor
+```
+void WdfIoResourceListRemoveByDescriptor(
+  WDFIORESLIST            ResourceList,
+  PIO_RESOURCE_DESCRIPTOR Descriptor
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A handle to a framework resource-range-list object that represents a logical con
 
 `Descriptor`
 
-A pointer to an <a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
+A pointer to an <a href="https://msdn.microsoft.com/03e3a656-c691-4aff-bcc8-4e0bc8390fd7">IO_RESOURCE_DESCRIPTOR</a> structure that describes a hardware resource.
 
 
 ## Return Value
@@ -146,8 +146,8 @@ for (j = 0; j &lt; resCount; j++) {
 
 ## See Also
 
-<a href="..\wdfresource\nf-wdfresource-wdfioresourcelistremove.md">WdfIoResourceListRemove</a>
+<a href="https://msdn.microsoft.com/03e3a656-c691-4aff-bcc8-4e0bc8390fd7">IO_RESOURCE_DESCRIPTOR</a>
 
 
 
-<a href="..\wdm\ns-wdm-_io_resource_descriptor.md">IO_RESOURCE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548523">WdfIoResourceListRemove</a>

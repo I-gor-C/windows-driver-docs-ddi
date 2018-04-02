@@ -7,7 +7,7 @@ old-location: debugger\getlasteventinformationwide.htm
 old-project: debugger
 ms.assetid: 9ec4ae29-7c9f-4da6-ae5d-57de9423cb30
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetLastEventInformationWide method [Windows Debugging], GetLastEventInformationWide method [Windows Debugging], IDebugControl4 interface, GetLastEventInformationWide,IDebugControl4.GetLastEventInformationWide, IDebugControl4, IDebugControl4 interface [Windows Debugging], GetLastEventInformationWide method, IDebugControl4::GetLastEventInformationWide, dbgeng/IDebugControl4::GetLastEventInformationWide, debugger.getlasteventinformationwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,24 +44,24 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetLastEventInformationWide method
+# IDebugControl4::GetLastEventInformationWide method
 The <b>GetLastEventInformationWide</b>  method returns information about the last event that occurred in a target.
 
 ## Syntax
 
-````
+```
 HRESULT GetLastEventInformationWide(
-  [out]           PULONG Type,
-  [out]           PULONG ProcessId,
-  [out]           PULONG ThreadId,
-  [out, optional] PVOID  ExtraInformation,
-  [in]            ULONG  ExtraInformationSize,
-  [out, optional] PULONG ExtraInformationUsed,
-  [out, optional] PWSTR  Description,
-  [in]            ULONG  DescriptionSize,
-  [out, optional] PULONG DescriptionUsed
+  PULONG Type,
+  PULONG ProcessId,
+  PULONG ThreadId,
+  PVOID  ExtraInformation,
+  ULONG  ExtraInformationSize,
+  PULONG ExtraInformationUsed,
+  PWSTR  Description,
+  ULONG  DescriptionSize,
+  PULONG DescriptionUsed
 );
-````
+```
 
 ## Parameters
 
@@ -151,8 +151,8 @@ For more information about the last event, see the topic <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugcontrol4.md">IDebugControl4</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff548431">GetStoredEventInformation</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550526">IDebugControl4</a>

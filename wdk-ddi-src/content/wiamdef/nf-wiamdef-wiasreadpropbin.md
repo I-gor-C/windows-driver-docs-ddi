@@ -50,15 +50,15 @@ The <b>wiasReadPropBin</b> function retrieves a binary-data property value from 
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasReadPropBin(
-  _In_      BYTE   *pWiasContext,
-            PROPID propid,
-  _Out_     BYTE   **ppbVal,
-  _Out_opt_ BYTE   **ppbValOld,
-            BOOL   bMustExist
+```
+HRESULT wiasReadPropBin(
+  BYTE   *pWiasContext,
+  PROPID propid,
+  BYTE   **ppbVal,
+  BYTE   **ppbValOld,
+  BOOL   bMustExist
 );
-````
+```
 
 ## Parameters
 
@@ -102,20 +102,20 @@ This function allocates a buffer and stores its address in the <i>ppbVal</i> par
 
 ## See Also
 
-<a href="..\wiamdef\nf-wiamdef-wiaswritepropbin.md">wiasWritePropBin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549320">wiasReadPropFloat</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropguid.md">wiasReadPropGuid</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549325">wiasReadPropGuid</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropfloat.md">wiasReadPropFloat</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549330">wiasReadPropLong</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadpropstr.md">wiasReadPropStr</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549341">wiasReadPropStr</a>
 
 
 
-<a href="..\wiamdef\nf-wiamdef-wiasreadproplong.md">wiasReadPropLong</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549500">wiasWritePropBin</a>

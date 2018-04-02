@@ -7,7 +7,7 @@ old-location: kernel\rtlguidfromstring.htm
 old-project: kernel
 ms.assetid: 7bdfc781-93d6-4f49-95f1-46f102908ec5
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlGUIDFromString, RtlGUIDFromString routine [Kernel-Mode Driver Architecture], k109_d6fe22b7-9d81-4024-819c-03bce65d3d14.xml, kernel.rtlguidfromstring, wdm/RtlGUIDFromString
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,12 +51,12 @@ The <b>RtlGUIDFromString</b> routine converts the given Unicode string to a GUID
 
 ## Syntax
 
-````
-NTSTATUS RtlGUIDFromString(
-  _In_  PCUNICODE_STRING GuidString,
-  _Out_ GUID             *Guid
+```
+NTSYSAPI NTSTATUS RtlGUIDFromString(
+  PCUNICODE_STRING GuidString,
+  GUID             *Guid
 );
-````
+```
 
 ## Parameters
 
@@ -86,4 +86,4 @@ If the conversion succeeds, <b>RtlGUIDFromString</b> returns STATUS_SUCCESS. Oth
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-rtlstringfromguid.md">RtlStringFromGUID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562871">RtlStringFromGUID</a>

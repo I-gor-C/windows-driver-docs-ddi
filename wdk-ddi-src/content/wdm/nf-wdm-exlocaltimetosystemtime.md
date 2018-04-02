@@ -7,7 +7,7 @@ old-location: kernel\exlocaltimetosystemtime.htm
 old-project: kernel
 ms.assetid: ef4fcb57-2960-4cd3-9abc-f8c5bc46e1a3
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExLocalTimeToSystemTime, ExLocalTimeToSystemTime routine [Kernel-Mode Driver Architecture], k102_f7743a3b-822e-433e-bdf2-d7bf4ef606f5.xml, kernel.exlocaltimetosystemtime, wdm/ExLocalTimeToSystemTime
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,12 +50,12 @@ The <b>ExLocalTimeToSystemTime</b> routine converts a system time value for the 
 
 ## Syntax
 
-````
-VOID ExLocalTimeToSystemTime(
-  _In_  PLARGE_INTEGER LocalTime,
-  _Out_ PLARGE_INTEGER SystemTime
+```
+NTKERNELAPI VOID ExLocalTimeToSystemTime(
+  PLARGE_INTEGER LocalTime,
+  PLARGE_INTEGER SystemTime
 );
-````
+```
 
 ## Parameters
 
@@ -88,4 +88,4 @@ None
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-exsystemtimetolocaltime.md">ExSystemTimeToLocalTime</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545622">ExSystemTimeToLocalTime</a>

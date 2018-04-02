@@ -50,13 +50,13 @@ The <b>KsValidateTopologyNodeCreateRequest</b> function validates a topology nod
 
 ## Syntax
 
-````
-NTSTATUS KsValidateTopologyNodeCreateRequest(
-  _In_  PIRP           Irp,
-  _In_  PKSTOPOLOGY    Topology,
-  _Out_ PKSNODE_CREATE *NodeCreate
+```
+KSDDKAPI NTSTATUS KsValidateTopologyNodeCreateRequest(
+  PIRP           Irp,
+  PKSTOPOLOGY    Topology,
+  PKSNODE_CREATE *NodeCreate
 );
-````
+```
 
 ## Parameters
 

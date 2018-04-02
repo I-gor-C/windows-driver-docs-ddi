@@ -7,7 +7,7 @@ old-location: storage\storage_hw_firmware_slot_info.htm
 old-project: storage
 ms.assetid: D5DF9785-83E0-4137-8E5F-357F94721CAD
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSTORAGE_HW_FIRMWARE_SLOT_INFO, PSTORAGE_HW_FIRMWARE_SLOT_INFO, PSTORAGE_HW_FIRMWARE_SLOT_INFO structure pointer [Storage Devices], STORAGE_HW_FIRMWARE_SLOT_INFO, STORAGE_HW_FIRMWARE_SLOT_INFO structure [Storage Devices], _STORAGE_HW_FIRMWARE_SLOT_INFO, ntddstor/PSTORAGE_HW_FIRMWARE_SLOT_INFO, ntddstor/STORAGE_HW_FIRMWARE_SLOT_INFO, storage.storage_hw_firmware_slot_info"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,17 +47,17 @@ req.typenames: STORAGE_HW_FIRMWARE_SLOT_INFO, *PSTORAGE_HW_FIRMWARE_SLOT_INFO
 This structure contains information about a slot on a device.
 
 ## Syntax
-````
+```
 typedef struct _STORAGE_HW_FIRMWARE_SLOT_INFO {
-  ULONG Version;
-  ULONG Size;
-  UCHAR SlotNumber;
-  UCHAR ReadOnly  :1;
-  UCHAR Reserved0  :7;
-  UCHAR Reserved1[6];
-  UCHAR Revision[STORAGE_HW_FIRMWARE_REVISION_LENGTH];
+  __WRAPPED__ ULONG      Version;
+  __WRAPPED__ ULONG      Size;
+  __WRAPPED__ UCHAR      SlotNumber;
+  __WRAPPED__ UCHAR  : 1 ReadOnly;
+  __WRAPPED__ UCHAR  : 7 Reserved0;
+  __WRAPPED__ UCHAR      Reserved1[6];
+  __WRAPPED__ UCHAR      Revision[STORAGE_HW_FIRMWARE_REVISION_LENGTH];
 } STORAGE_HW_FIRMWARE_SLOT_INFO, *PSTORAGE_HW_FIRMWARE_SLOT_INFO;
-````
+```
 
 ## Members
 

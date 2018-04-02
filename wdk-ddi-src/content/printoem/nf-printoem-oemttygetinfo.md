@@ -50,15 +50,15 @@ req.product: Windows 10 or later.
 
 ## Syntax
 
-````
-INT APIENTRY OEMTTYGetInfo(
-        PDEVOBJ                      pdevobj,
-        DWORD                        dwInfoIndex,
-  _Out_ _writes_bytes_(dwSize) PVOID pOutputBuf,
-        DWORD                        dwSize,
-  _Out_ DWORD                        *pcbcNeeded
+```
+INT OEMTTYGetInfo(
+  PDEVOBJ pdevobj,
+  DWORD   dwInfoIndex,
+  PVOID   pOutputBuf,
+  DWORD   dwSize,
+  DWORD   *pcbcNeeded
 );
-````
+```
 
 ## Parameters
 

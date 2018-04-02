@@ -7,7 +7,7 @@ old-location: audio\ioctl_bthhfp_device_get_codec_id.htm
 old-project: audio
 ms.assetid: 38B67F0E-46A4-4AB5-B122-F5DE282FE52D
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IOCTL_BTHHFP_DEVICE_GET_CODEC_ID, IOCTL_BTHHFP_DEVICE_GET_CODEC_ID control code [Audio Devices], audio.ioctl_bthhfp_device_get_codec_id, bthhfpddi/IOCTL_BTHHFP_DEVICE_GET_CODEC_ID
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,13 +51,13 @@ An audio driver can send an <b>IOCTL_BTHHFP_DEVICE_GET_CODEC_ID</b>
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-An <a href="..\bthhfpddi\ne-bthhfpddi-_hfp_bypass_codec_id_version.md">HFP_BYPASS_CODEC_ID_VERSION</a> enumeration value. Currently, only REQ_HFP_BYPASS_CODEC_ID_V1 is supported.
+An <a href="https://msdn.microsoft.com/library/windows/hardware/dn798964">HFP_BYPASS_CODEC_ID_VERSION</a> enumeration value. Currently, only REQ_HFP_BYPASS_CODEC_ID_V1 is supported.
 
 ### Input Buffer Length
-The size of an <a href="..\bthhfpddi\ne-bthhfpddi-_hfp_bypass_codec_id_version.md">HFP_BYPASS_CODEC_ID_VERSION</a> enumeration value.
+The size of an <a href="https://msdn.microsoft.com/library/windows/hardware/dn798964">HFP_BYPASS_CODEC_ID_VERSION</a> enumeration value.
 
 ### Output Buffer
-A codec ID structure containing the codec ID information. Currently, only <a href="..\bthhfpddi\ns-bthhfpddi-_hfp_bypass_codec_id_v1.md">HFP_BYPASS_CODEC_ID_V1</a> is supported.
+A codec ID structure containing the codec ID information. Currently, only <a href="https://msdn.microsoft.com/library/windows/hardware/dn913703">HFP_BYPASS_CODEC_ID_V1</a> is supported.
 
 ### Output Buffer Length
 The size of a codec ID structure.

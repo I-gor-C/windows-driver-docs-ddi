@@ -50,11 +50,11 @@ The <b>PcwUnregister</b> function unregisters the provider of the specified coun
 
 ## Syntax
 
-````
-VOID PcwUnregister(
-  _In_ PPCW_REGISTRATION Registration
+```
+void PcwUnregister(
+  PPCW_REGISTRATION Registration
 );
-````
+```
 
 ## Parameters
 
@@ -71,7 +71,7 @@ None
 
 The <b>PcwUnregister</b> function unregisters the provider of the specified counter-set. Instances owned by the counter-set registration are automatically destroyed. These instances should not be touched by the provider while the counter set is being unregistered, or accessed after the counter set is unregistered.
 
-Before the provider uses this function, the provider must call the <a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a> function to create a registration.
+Before the provider uses this function, the provider must call the <a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a> function to create a registration.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,4 +85,4 @@ Before the provider uses this function, the provider must call the <a href="..\w
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-pcwregister.md">PcwRegister</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550323">PcwRegister</a>

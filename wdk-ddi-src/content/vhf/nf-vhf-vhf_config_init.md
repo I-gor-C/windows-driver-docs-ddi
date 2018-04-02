@@ -47,28 +47,28 @@ req.product: Windows 10 or later.
 
 
 # VHF_CONFIG_INIT function
-Use the <b>VHF_CONFIG_INIT</b> function to initialize the required members of the <a href="..\vhf\ns-vhf-_vhf_config.md">VHF_CONFIG</a> structure allocated by the HID source driver.
+Use the <b>VHF_CONFIG_INIT</b> function to initialize the required members of the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925044">VHF_CONFIG</a> structure allocated by the HID source driver.
 
 ## Syntax
 
-````
-FORCEINLINE void VHF_CONFIG_INIT(
-  _Out_ PVHF_CONFIG                                     Config,
-  _In_  PDEVICE_OBJECT                                  DeviceObject,
-  _In_  USHORT                                          ReportDescriptorLength,
-        _In_reads_bytes_(ReportDescriptorLength) PUCHAR ReportDescriptor
+```
+void VHF_CONFIG_INIT(
+  PVHF_CONFIG    Config,
+  PDEVICE_OBJECT DeviceObject,
+  USHORT         ReportDescriptorLength,
+  PUCHAR         ReportDescriptor
 );
-````
+```
 
 ## Parameters
 
 `Config`
 
-A pointer to the <a href="..\vhf\ns-vhf-_vhf_config.md">VHF_CONFIG</a> structure to initialize.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/dn925044">VHF_CONFIG</a> structure to initialize.
 
 `DeviceObject`
 
-A pointer to the <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetdeviceobject.md">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> call.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure for the HID source driver. Get that pointer by calling  <a href="https://msdn.microsoft.com/library/windows/hardware/ff546942">WdfDeviceWdmGetDeviceObject</a> and passing the WDFDEVICE handle that the driver received in the <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> call.
 
 `ReportDescriptorLength`
 

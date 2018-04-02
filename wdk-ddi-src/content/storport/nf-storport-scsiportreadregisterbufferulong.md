@@ -7,7 +7,7 @@ old-location: storage\scsiportreadregisterbufferulong.htm
 old-project: storage
 ms.assetid: 6b2d1893-8878-4ccd-bc0c-845e1cb8f6bf
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: ScsiPortReadRegisterBufferUlong, ScsiPortReadRegisterBufferUlong routine [Storage Devices], scsiprt_4356902d-5810-4006-acbe-40d41c2d68e4.xml, srb/ScsiPortReadRegisterBufferUlong, storage.scsiportreadregisterbufferulong
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -52,13 +52,13 @@ The <b>ScsiPortReadRegisterBufferUlong</b> routine transfers a specified number 
 
 ## Syntax
 
-````
-VOID ScsiPortReadRegisterBufferUlong(
-  _In_ PULONG Register,
-  _In_ PULONG Buffer,
-  _In_ ULONG  Count
+```
+void ScsiPortReadRegisterBufferUlong(
+   Register,
+   Buffer,
+   Count
 );
-````
+```
 
 ## Parameters
 
@@ -92,4 +92,4 @@ None
 
 ## See Also
 
-<a href="..\srb\nf-srb-scsiportgetdevicebase.md">ScsiPortGetDeviceBase</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564629">ScsiPortGetDeviceBase</a>

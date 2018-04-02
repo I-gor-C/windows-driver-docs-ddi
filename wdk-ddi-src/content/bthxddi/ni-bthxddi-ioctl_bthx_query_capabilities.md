@@ -56,7 +56,7 @@ None.
 None.
 
 ### Output Buffer
-The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="..\bthxddi\ns-bthxddi-_bthx_capabilities.md">BTHX_CAPABILITIES</a> structure.
+The <b>AssociatedIrp.SystemBuffer</b> member points to a buffer that holds a <a href="https://msdn.microsoft.com/library/windows/hardware/hh450833">BTHX_CAPABILITIES</a> structure.
 
 ### Output Buffer Length
 The length of the buffer is the size of the <b>BTHX_CAPABILITIES</b> structure.

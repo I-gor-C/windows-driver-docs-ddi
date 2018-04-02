@@ -7,7 +7,7 @@ old-location: storage\storportallocatepool.htm
 old-project: storage
 ms.assetid: e6823b9c-9717-49ab-8e67-c1d522774826
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: StorPortAllocatePool, StorPortAllocatePool routine [Storage Devices], storage.storportallocatepool, storport/StorPortAllocatePool, storprt_4ede181d-6ccf-47af-974d-b0daaa6e723a.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,14 +50,14 @@ The <b>StorPortAllocatePool</b> routine allocates a block of non-contiguous, non
 
 ## Syntax
 
-````
+```
 ULONG StorPortAllocatePool(
-  _In_  PVOID HwDeviceExtension,
-  _In_  ULONG NumberOfBytes,
-  _In_  ULONG Tag,
-  _Out_ PVOID *BufferPointer
+  PVOID HwDeviceExtension,
+  ULONG NumberOfBytes,
+  ULONG Tag,
+  PVOID *BufferPointer
 );
-````
+```
 
 ## Parameters
 
@@ -146,7 +146,7 @@ Unable to allocate memory of the requested size.
 
 ## Remarks
 
-A miniport driver calls the <b>StorPortAllocatePool</b> routine to allocate a block of non-contiguous memory from the non-paged pool. To free the block of memory, the miniport driver calls the <a href="..\storport\nf-storport-storportfreepool.md">StorPortFreePool</a> routine. If the request fails, BufferPointer will be set to <b>NULL</b>.
+A miniport driver calls the <b>StorPortAllocatePool</b> routine to allocate a block of non-contiguous memory from the non-paged pool. To free the block of memory, the miniport driver calls the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567065">StorPortFreePool</a> routine. If the request fails, BufferPointer will be set to <b>NULL</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

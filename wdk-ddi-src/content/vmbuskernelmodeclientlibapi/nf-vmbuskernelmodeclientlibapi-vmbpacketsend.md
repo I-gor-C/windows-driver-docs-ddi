@@ -7,7 +7,7 @@ old-location: netvista\vmbpacketsend.htm
 old-project: netvista
 ms.assetid: EBB981CB-0107-497A-B6E6-9271E22A8D5F
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VMBUS_CHANNEL_FORMAT_FLAG_PAGED_BUFFER, VMBUS_CHANNEL_FORMAT_FLAG_WAIT_FOR_COMPLETION, VmbPacketSend, VmbPacketSend function [Network Drivers Starting with Windows Vista], netvista.vmbpacketsend, vmbuskernelmodeclientlibapi/VmbPacketSend
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,15 +54,15 @@ throughout the lifetime of the transaction.
 
 ## Syntax
 
-````
+```
 NTSTATUS VmbPacketSend(
-  _In_     __drv_aliasesMem VMBPACKET       PacketObject,
-  _In_     reads_bytes_(BufferLength) PVOID Buffer,
-  _In_     UINT32                           BufferLength,
-  _In_opt_ PMDL                             ExternalDataMdl,
-  _In_     UINT32                           Flags
+  __drv_aliasesMem VMBPACKET PacketObject,
+  PVOID                      Buffer,
+  UINT32                     BufferLength,
+  PMDL                       ExternalDataMdl,
+  UINT32                     Flags
 );
-````
+```
 
 ## Parameters
 
@@ -125,7 +125,7 @@ responsibility of the caller.
 
 ## Remarks
 
-For information on other ways to send packets, see the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalmdl.md">VmbPacketSendWithExternalMdl</a>, <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelsendsynchronousrequest.md">VmbChannelSendSynchronousRequest</a>, and <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalpfns.md">VmbPacketSendWithExternalPfns</a> functions.
+For information on other ways to send packets, see the <a href="https://msdn.microsoft.com/C1B3FA0C-65B8-4CE1-B8F5-650DF54C9E1E">VmbPacketSendWithExternalMdl</a>, <a href="https://msdn.microsoft.com/312DED8E-570E-4DEC-B084-36894970F49F">VmbChannelSendSynchronousRequest</a>, and <a href="https://msdn.microsoft.com/50AACCAB-EFEA-42B7-8A34-FE110C7CDEED">VmbPacketSendWithExternalPfns</a> functions.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -139,12 +139,12 @@ For information on other ways to send packets, see the <a href="..\vmbuskernelmo
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbchannelsendsynchronousrequest.md">VmbChannelSendSynchronousRequest</a>
+<a href="https://msdn.microsoft.com/312DED8E-570E-4DEC-B084-36894970F49F">VmbChannelSendSynchronousRequest</a>
 
 
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalpfns.md">VmbPacketSendWithExternalPfns</a>
+<a href="https://msdn.microsoft.com/C1B3FA0C-65B8-4CE1-B8F5-650DF54C9E1E">VmbPacketSendWithExternalMdl</a>
 
 
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketsendwithexternalmdl.md">VmbPacketSendWithExternalMdl</a>
+<a href="https://msdn.microsoft.com/50AACCAB-EFEA-42B7-8A34-FE110C7CDEED">VmbPacketSendWithExternalPfns</a>

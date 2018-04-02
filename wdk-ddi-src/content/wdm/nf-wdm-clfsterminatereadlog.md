@@ -7,7 +7,7 @@ old-location: kernel\clfsterminatereadlog.htm
 old-project: kernel
 ms.assetid: 47633903-0314-4d50-8dd5-ddb0eb934e09
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ClfsTerminateReadLog, ClfsTerminateReadLog routine [Kernel-Mode Driver Architecture], Clfs_691e308a-56d7-498f-af11-8908cc13b1b7.xml, kernel.clfsterminatereadlog, wdm/ClfsTerminateReadLog
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,17 +51,17 @@ The <b>ClfsTerminateReadLog</b> routine invalidates a specified read context aft
 
 ## Syntax
 
-````
-NTSTATUS ClfsTerminateReadLog(
-  _In_ PVOID pvCursorContext
+```
+CLFSUSER_API NTSTATUS ClfsTerminateReadLog(
+  PVOID pvCursorContext
 );
-````
+```
 
 ## Parameters
 
 `pvCursorContext`
 
-A pointer to the read context to be invalidated. The caller previously obtained this pointer by calling <a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a> or <a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>.
+A pointer to the read context to be invalidated. The caller previously obtained this pointer by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541682">ClfsReadLogRecord</a> or <a href="https://msdn.microsoft.com/library/windows/hardware/ff541709">ClfsReadRestartArea</a>.
 
 
 ## Return Value
@@ -88,8 +88,8 @@ For an explanation of CLFS concepts and terminology, see <a href="https://msdn.m
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-clfsreadlogrecord.md">ClfsReadLogRecord</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541682">ClfsReadLogRecord</a>
 
 
 
-<a href="..\wdm\nf-wdm-clfsreadrestartarea.md">ClfsReadRestartArea</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541709">ClfsReadRestartArea</a>

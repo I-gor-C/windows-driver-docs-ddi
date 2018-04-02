@@ -52,13 +52,13 @@ The <b>KoDriverInitialize</b> function initializes a driver object to handle the
 
 ## Syntax
 
-````
-NTSTATUS KoDriverInitialize(
-  _In_ PDRIVER_OBJECT        DriverObject,
-  _In_ PUNICODE_STRING       RegistryPathName,
-  _In_ KoCreateObjectHandler CreateObjectHandler
+```
+COMDDKAPI NTSTATUS KoDriverInitialize(
+  PDRIVER_OBJECT        DriverObject,
+  PUNICODE_STRING       RegistryPathName,
+  KoCreateObjectHandler CreateObjectHandler
 );
-````
+```
 
 ## Parameters
 

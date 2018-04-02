@@ -50,12 +50,12 @@ The <b>KsCreateDefaultSecurity </b>function creates a security descriptor with d
 
 ## Syntax
 
-````
-NTSTATUS KsCreateDefaultSecurity(
-  _In_opt_ PSECURITY_DESCRIPTOR ParentSecurity,
-  _Out_    PSECURITY_DESCRIPTOR *DefaultSecurity
+```
+KSDDKAPI NTSTATUS KsCreateDefaultSecurity(
+  PSECURITY_DESCRIPTOR ParentSecurity,
+  PSECURITY_DESCRIPTOR *DefaultSecurity
 );
-````
+```
 
 ## Parameters
 

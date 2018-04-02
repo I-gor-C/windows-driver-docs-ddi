@@ -7,7 +7,7 @@ old-location: debugger\idebugsymbols4_getnamebyinlinecontextwide.htm
 old-project: debugger
 ms.assetid: D77F5755-75B0-48E6-BC5C-565022F884E1
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: GetNameByInlineContextWide method [Windows Debugging], GetNameByInlineContextWide method [Windows Debugging], IDebugSymbols4 interface, GetNameByInlineContextWide,IDebugSymbols4.GetNameByInlineContextWide, IDebugSymbols4, IDebugSymbols4 interface [Windows Debugging], GetNameByInlineContextWide method, IDebugSymbols4::GetNameByInlineContextWide, dbgeng/IDebugSymbols4::GetNameByInlineContextWide, debugger.idebugsymbols4_getnamebyinlinecontextwide
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,21 +44,21 @@ req.typenames: DOT4_ACTIVITY, *PDOT4_ACTIVITY
 ---
 
 
-# GetNameByInlineContextWide method
+# IDebugSymbols4::GetNameByInlineContextWide method
 Gets a name by inline context.
 
 ## Syntax
 
-````
+```
 HRESULT GetNameByInlineContextWide(
-  [in]            ULONG64                            Offset,
-  [in]            ULONG                              InlineContext,
-  [out]           _writes_opt_(NameBufferSize) PWSTR NameBuffer,
-  [in]            ULONG                              NameBufferSize,
-  [out, optional] PULONG                             NameSize,
-  [out, optional] PULONG64                           Displacement
+  ULONG64  Offset,
+  ULONG    InlineContext,
+  PWSTR    NameBuffer,
+  ULONG    NameBufferSize,
+  PULONG   NameSize,
+  PULONG64 Displacement
 );
-````
+```
 
 ## Parameters
 
@@ -100,4 +100,4 @@ If this method succeeds, it returns <b xmlns:loc="http://microsoft.com/wdcml/l10
 
 ## See Also
 
-<a href="..\dbgeng\nn-dbgeng-idebugsymbols4.md">IDebugSymbols4</a>
+<a href="https://msdn.microsoft.com/BE2734B5-1E67-4E38-B4DF-0C353BFB1F0B">IDebugSymbols4</a>

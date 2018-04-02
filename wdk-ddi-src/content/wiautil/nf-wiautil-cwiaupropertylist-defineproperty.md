@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 
-# DefineProperty method
+# CWiauPropertyList::DefineProperty method
 The <b>CWiauPropertyList::DefineProperty</b> method adds a property definition to a property list object.
 
 ## Syntax
 
-````
+```
 HRESULT DefineProperty(
-   int        *pIdx,
-   PROPID     PropId,
-   LPOLESTR   PropName,
-   ULONG      Access,
-   ULONG      SubType
+  int      *pIdx,
+  PROPID   PropId,
+  LPOLESTR PropName,
+  ULONG    Access,
+  ULONG    SubType
 );
-````
+```
 
 ## Parameters
 
@@ -102,8 +102,8 @@ Before a property can be added to a property list, the property list must be ini
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/4f11bec0-8ff4-4fa0-824c-71ce9774d5d1">CWiauPropertyList</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540396">CWiauPropertyList::Init</a>
-
-
-
-<a href="..\wiautil\nl-wiautil-cwiaupropertylist.md">CWiauPropertyList</a>

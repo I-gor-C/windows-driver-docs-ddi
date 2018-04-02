@@ -7,7 +7,7 @@ old-location: netvista\wwan_modem_config_info.htm
 old-project: netvista
 ms.assetid: 14FBFA51-F4A5-417A-8905-241CEA543774
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWWAN_MODEM_CONFIG_INFO, PWWAN_MODEM_CONFIG_INFO, PWWAN_MODEM_CONFIG_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_MODEM_CONFIG_INFO, WWAN_MODEM_CONFIG_INFO structure [Network Drivers Starting with Windows Vista], _WWAN_MODEM_CONFIG_INFO, netvista.wwan_modem_config_info, wwan/PWWAN_MODEM_CONFIG_INFO, wwan/WWAN_MODEM_CONFIG_INFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,23 +48,23 @@ req.product: Windows 10 or later.
 The <b>WWAN_MODEM_CONFIG_INFO</b> structure represents the modem's configuration information.
 
 ## Syntax
-````
+```
 typedef struct _WWAN_MODEM_CONFIG_INFO {
+  WWAN_MODEM_CONFIG_MODE   ConfigMode;
   WWAN_MODEM_CONFIG_STATUS ConfigStatus;
-  WWAN_MODEM_CONFIG_MODE   ConfigMode;
 } WWAN_MODEM_CONFIG_INFO, *PWWAN_MODEM_CONFIG_INFO;
-````
+```
 
 ## Members
 
 
 `ConfigMode`
 
-The modem's configuration mode. For a list of defined values, see <a href="..\wwan\ne-wwan-_wwan_modem_config_mode.md">WWAN_MODEM_CONFIG_MODE</a>.
+The modem's configuration mode. For a list of defined values, see <a href="https://msdn.microsoft.com/1AA3EDCC-EB6E-4118-8081-CA1914140683">WWAN_MODEM_CONFIG_MODE</a>.
 
 `ConfigStatus`
 
-A formatted <a href="..\wwan\ns-wwan-_wwan_modem_config_status.md">WWAN_MODEM_CONFIG_STATUS</a> structure containing the modem's configuration (config) status.
+A formatted <a href="https://msdn.microsoft.com/3A13CFBC-DBB4-4BB1-ABA4-AB145AED07AA">WWAN_MODEM_CONFIG_STATUS</a> structure containing the modem's configuration (config) status.
 
 
 ## Requirements
@@ -75,7 +75,11 @@ A formatted <a href="..\wwan\ns-wwan-_wwan_modem_config_status.md">WWAN_MODEM_CO
 
 ## See Also
 
-<a href="..\wwan\ne-wwan-_wwan_modem_config_mode.md">WWAN_MODEM_CONFIG_MODE</a>
+<a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-modem-config-info">NDIS_STATUS_WWAN_MODEM_CONFIG_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/07C2BAED-157A-459C-B558-115C0091ECE5">NDIS_WWAN_MODEM_CONFIG_INFO</a>
 
 
 
@@ -83,12 +87,8 @@ A formatted <a href="..\wwan\ns-wwan-_wwan_modem_config_status.md">WWAN_MODEM_CO
 
 
 
-<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_modem_config_info.md">NDIS_WWAN_MODEM_CONFIG_INFO</a>
+<a href="https://msdn.microsoft.com/1AA3EDCC-EB6E-4118-8081-CA1914140683">WWAN_MODEM_CONFIG_MODE</a>
 
 
 
-<a href="..\wwan\ns-wwan-_wwan_modem_config_status.md">WWAN_MODEM_CONFIG_STATUS</a>
-
-
-
-<a href="https://docs.microsoft.com/windows-hardware/drivers/network/ndis-status-wwan-modem-config-info">NDIS_STATUS_WWAN_MODEM_CONFIG_INFO</a>
+<a href="https://msdn.microsoft.com/3A13CFBC-DBB4-4BB1-ABA4-AB145AED07AA">WWAN_MODEM_CONFIG_STATUS</a>

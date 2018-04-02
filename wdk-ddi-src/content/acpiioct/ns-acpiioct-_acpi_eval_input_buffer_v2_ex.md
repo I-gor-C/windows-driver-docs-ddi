@@ -47,12 +47,12 @@ req.typenames: ACPI_EVAL_INPUT_BUFFER_V2_EX, *PACPI_EVAL_INPUT_BUFFER_V2_EX
 This topic describes the  <b>ACPI_EVAL_INPUT_BUFFER_V2_EX</b> structure.
 
 ## Syntax
-````
+```
 typedef struct _ACPI_EVAL_INPUT_BUFFER_V2_EX {
-  ULONG                  Signature;
-  _Null_terminated_ CHAR MethodName[256];
-} ACPI_EVAL_INPUT_BUFFER_V2_EX, *PACPI_EVAL_INPUT_BUFFER_V2_EX;
-````
+  ULONG Signature;
+  CHAR  MethodName[256];
+} *PACPI_EVAL_INPUT_BUFFER_V2_EX, ACPI_EVAL_INPUT_BUFFER_V2_EX;
+```
 
 ## Members
 

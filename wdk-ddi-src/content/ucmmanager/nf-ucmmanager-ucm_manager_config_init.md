@@ -7,7 +7,7 @@ old-location: buses\ucm_manager_config_init.htm
 old-project: usbref
 ms.assetid: 5247D5F0-8422-48C1-81AF-98C8A3537FAD
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UCM_MANAGER_CONFIG_INIT, UCM_MANAGER_CONFIG_INIT function [Buses], buses.ucm_manager_config_init, ucmmanager/UCM_MANAGER_CONFIG_INIT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,21 +46,21 @@ req.product: Windows 10 or later.
 
 
 # UCM_MANAGER_CONFIG_INIT function
-Initializes a <a href="..\ucmmanager\ns-ucmmanager-_ucm_manager_config.md">UCM_MANAGER_CONFIG</a> structure.
+Initializes a <a href="https://msdn.microsoft.com/library/windows/hardware/mt187932">UCM_MANAGER_CONFIG</a> structure.
 
 ## Syntax
 
-````
-FORCEINLINE void UCM_MANAGER_CONFIG_INIT(
-  _Out_ PUCM_MANAGER_CONFIG  Config
+```
+void UCM_MANAGER_CONFIG_INIT(
+  PUCM_MANAGER_CONFIG Config
 );
-````
+```
 
 ## Parameters
 
 `Config`
 
-Pointer to a caller-allocated <a href="..\ucmmanager\ns-ucmmanager-_ucm_manager_config.md">UCM_MANAGER_CONFIG</a> structure to initialize.
+Pointer to a caller-allocated <a href="https://msdn.microsoft.com/library/windows/hardware/mt187932">UCM_MANAGER_CONFIG</a> structure to initialize.
 
 
 ## Return Value
@@ -79,4 +79,4 @@ This function does not return a value.
 
 ## See Also
 
-<a href="..\ucmmanager\ns-ucmmanager-_ucm_manager_config.md">UCM_MANAGER_CONFIG</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187932">UCM_MANAGER_CONFIG</a>

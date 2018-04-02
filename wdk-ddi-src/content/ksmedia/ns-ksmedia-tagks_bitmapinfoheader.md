@@ -47,21 +47,21 @@ req.typenames: KS_BITMAPINFOHEADER, *PKS_BITMAPINFOHEADER
 The KS_BITMAPINFOHEADER structure describes details about the video stream, such as image dimensions and pixel depth.
 
 ## Syntax
-````
+```
 typedef struct tagKS_BITMAPINFOHEADER {
   DWORD biSize;
-  LONG  biWidth;
-  LONG  biHeight;
-  WORD  biPlanes;
-  WORD  biBitCount;
+  LONG  biWidth;
+  LONG  biHeight;
+  WORD  biPlanes;
+  WORD  biBitCount;
   DWORD biCompression;
   DWORD biSizeImage;
-  LONG  biXPelsPerMeter;
-  LONG  biYPelsPerMeter;
+  LONG  biXPelsPerMeter;
+  LONG  biYPelsPerMeter;
   DWORD biClrUsed;
   DWORD biClrImportant;
-} KS_BITMAPINFOHEADER, *PKS_BITMAPINFOHEADER;
-````
+} *PKS_BITMAPINFOHEADER, KS_BITMAPINFOHEADER;
+```
 
 ## Members
 

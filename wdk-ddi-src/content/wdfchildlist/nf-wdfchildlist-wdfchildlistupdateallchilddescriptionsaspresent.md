@@ -53,11 +53,11 @@ The <b>WdfChildListUpdateAllChildDescriptionsAsPresent</b> method informs the fr
 
 ## Syntax
 
-````
-VOID WdfChildListUpdateAllChildDescriptionsAsPresent(
-  _In_ WDFCHILDLIST ChildList
+```
+void WdfChildListUpdateAllChildDescriptionsAsPresent(
+  WDFCHILDLIST ChildList
 );
-````
+```
 
 ## Parameters
 

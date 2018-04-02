@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetNotificationData method
+# IStiUSD::GetNotificationData method
 A still image minidriver's <b>IStiUSD::GetNotificationData</b> method returns a description of the most recent event that occurred on a still image device.
 
 ## Syntax
 
-````
+```
 HRESULT GetNotificationData(
-   LPSTINOTIFY pBuffer
+  LPSTINOTIFY lpNotify
 );
-````
+```
 
 ## Parameters
 

@@ -47,15 +47,15 @@ req.typenames: BarcodeStatus
 This enumeration indicates barcode scanner status values.
 
 ## Syntax
-````
-typedef enum _BarcodeStatus { 
-  BarcodeStatusUpdateType_Online        = 0,
-  BarcodeStatusUpdateType_Off           = 1,
-  BarcodeStatusUpdateType_Offline       = 2,
-  BarcodeStatusUpdateType_OffOrOffline  = 3,
-  BarcodeStatusUpdateType_Extended      = 4
+```
+typedef enum _BarcodeStatus {
+  BarcodeStatusUpdateType_Online        ,
+  BarcodeStatusUpdateType_Off           ,
+  BarcodeStatusUpdateType_Offline       ,
+  BarcodeStatusUpdateType_OffOrOffline  ,
+  BarcodeStatusUpdateType_Extended
 } BarcodeStatus;
-````
+```
 
 ## Constants
 
@@ -63,22 +63,22 @@ typedef enum _BarcodeStatus {
             
                 <tr>
                     <td>BarcodeStatusUpdateType_Online</td>
-                    <td>The device is online. This is valid if <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md">UnifiedPosPowerReportingType</a> is <b>Standard</b> or <b>Advanced</b>.</td>
+                    <td>The device is online. This is valid if <a href="https://msdn.microsoft.com/e0263969-1c6a-4805-a647-d4b9df83ef71">UnifiedPosPowerReportingType</a> is <b>Standard</b> or <b>Advanced</b>.</td>
                 </tr>
             
                 <tr>
                     <td>BarcodeStatusUpdateType_Off</td>
-                    <td>The device power is off or detached from the terminal. This is valid if <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md">UnifiedPosPowerReportingType</a> is <b>Advanced</b>.</td>
+                    <td>The device power is off or detached from the terminal. This is valid if <a href="https://msdn.microsoft.com/e0263969-1c6a-4805-a647-d4b9df83ef71">UnifiedPosPowerReportingType</a> is <b>Advanced</b>.</td>
                 </tr>
             
                 <tr>
                     <td>BarcodeStatusUpdateType_Offline</td>
-                    <td>The device power is on, but it is not ready or unable to respond to requests. This is valid if <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md">UnifiedPosPowerReportingType</a> is <b>Advanced</b>.</td>
+                    <td>The device power is on, but it is not ready or unable to respond to requests. This is valid if <a href="https://msdn.microsoft.com/e0263969-1c6a-4805-a647-d4b9df83ef71">UnifiedPosPowerReportingType</a> is <b>Advanced</b>.</td>
                 </tr>
             
                 <tr>
                     <td>BarcodeStatusUpdateType_OffOrOffline</td>
-                    <td>The device power is off or the device is offline. This is valid if <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-driverunifiedpospowerreportingtype.md">UnifiedPosPowerReportingType</a> is <b>Standard</b>.</td>
+                    <td>The device power is off or the device is offline. This is valid if <a href="https://msdn.microsoft.com/e0263969-1c6a-4805-a647-d4b9df83ef71">UnifiedPosPowerReportingType</a> is <b>Standard</b>.</td>
                 </tr>
             
                 <tr>

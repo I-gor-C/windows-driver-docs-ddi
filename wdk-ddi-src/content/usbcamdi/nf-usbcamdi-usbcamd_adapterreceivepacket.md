@@ -51,24 +51,24 @@ The <b>USBCAMD_AdapterReceivePacket</b> function allows USBCAMD to process an ad
 
 ## Syntax
 
-````
+```
 PVOID USBCAMD_AdapterReceivePacket(
-  _In_ PHW_STREAM_REQUEST_BLOCK Srb,
-  _In_ PUSBCAMD_DEVICE_DATA     DeviceData,
-  _In_ PDEVICE_OBJECT           *DeviceObject,
-  _In_ BOOLEAN                  NeedsCompletion
+  PHW_STREAM_REQUEST_BLOCK Srb,
+  PUSBCAMD_DEVICE_DATA     DeviceData,
+  PDEVICE_OBJECT           *DeviceObject,
+  BOOLEAN                  NeedsCompletion
 );
-````
+```
 
 ## Parameters
 
 `Srb`
 
-Pointer to the SRB passed to the camera minidriver's <a href="..\usbcamdi\nc-usbcamdi-padapter_receive_packet_routine.md">AdapterReceivePacket</a> callback function.
+Pointer to the SRB passed to the camera minidriver's <a href="https://msdn.microsoft.com/library/windows/hardware/ff554080">AdapterReceivePacket</a> callback function.
 
 `DeviceData`
 
-Pointer to the <a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data.md">USBCAMD_DEVICE_DATA</a> structure that contains entry points to the camera minidriver's callback functions.
+Pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff568585">USBCAMD_DEVICE_DATA</a> structure that contains entry points to the camera minidriver's callback functions.
 
 `DeviceObject`
 
@@ -85,7 +85,7 @@ Specifies if USBCAMD is to process and complete the SRB request. Specify <b>TRUE
 
 ## Remarks
 
-Typically, this function is called by the camera minidriver from its <a href="..\usbcamdi\nc-usbcamdi-padapter_receive_packet_routine.md">AdapterReceivePacket</a> routine. 
+Typically, this function is called by the camera minidriver from its <a href="https://msdn.microsoft.com/library/windows/hardware/ff554080">AdapterReceivePacket</a> routine. 
 
 This function can also be used by the minidriver to retrieve the device context by setting the <i>NeedsCompletion</i> parameter to <b>FALSE</b>. In this case, the <i>DeviceData</i> and <i>DeviceObject</i> parameters are ignored.
 
@@ -98,8 +98,8 @@ This function can also be used by the minidriver to retrieve the device context 
 
 ## See Also
 
-<a href="..\usbcamdi\nc-usbcamdi-padapter_receive_packet_routine.md">AdapterReceivePacket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554080">AdapterReceivePacket</a>
 
 
 
-<a href="..\usbcamdi\ns-usbcamdi-_usbcamd_device_data.md">USBCAMD_DEVICE_DATA</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568585">USBCAMD_DEVICE_DATA</a>

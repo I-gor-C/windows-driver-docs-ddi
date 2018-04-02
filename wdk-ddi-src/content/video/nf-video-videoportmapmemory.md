@@ -7,7 +7,7 @@ old-location: display\videoportmapmemory.htm
 old-project: display
 ms.assetid: c1b54ef4-93b5-41df-8a49-8b00cbd4bcee
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortMapMemory, VideoPortMapMemory function [Display Devices], VideoPort_Functions_53fef559-5fbb-4e9a-9152-b44be67bd63c.xml, display.videoportmapmemory, video/VideoPortMapMemory
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,15 +50,15 @@ The <b>VideoPortMapMemory</b> function maps a range of bus-relative physical add
 
 ## Syntax
 
-````
-VP_STATUS VideoPortMapMemory(
-   PVOID            HwDeviceExtension,
-   PHYSICAL_ADDRESS PhysicalAddress,
-   PULONG           Length,
-   PULONG           InIoSpace,
-   PVOID            *VirtualAddress
+```
+VIDEOPORT_API VP_STATUS VideoPortMapMemory(
+  PVOID            HwDeviceExtension,
+  PHYSICAL_ADDRESS PhysicalAddress,
+  PULONG           Length,
+  PULONG           InIoSpace,
+  PVOID            *VirtualAddress
 );
-````
+```
 
 ## Parameters
 
@@ -151,17 +151,17 @@ Pointer to a variable that, on input, is either <b>NULL</b> or a handle to a use
 <b>VideoPortMapMemory</b> runs in kernel mode within the same context as the user-mode thread that initiated the call.
 
 
-<a href="..\video\nf-video-videoportgetdevicebase.md">VideoPortGetDeviceBase</a> and <b>VideoPortMapMemory</b> can both be called by the video miniport driver to map video memory into a virtual address space. If you call both of these functions to map the same physical addresses, or if you call one of the functions more than once to map the same physical addresses, you might have more than one virtual-address range that maps to the same physical-address range. In that case, you must set the VIDEO_MEMORY_SPACE_P6CACHE flag of the <i>InIoSpace</i> parameter to the same value in all of those calls.
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570310">VideoPortGetDeviceBase</a> and <b>VideoPortMapMemory</b> can both be called by the video miniport driver to map video memory into a virtual address space. If you call both of these functions to map the same physical addresses, or if you call one of the functions more than once to map the same physical addresses, you might have more than one virtual-address range that maps to the same physical-address range. In that case, you must set the VIDEO_MEMORY_SPACE_P6CACHE flag of the <i>InIoSpace</i> parameter to the same value in all of those calls.
 
-Every universal memory architecture (UMA) display device uses a frame buffer that is located in main memory rather than on a PCI bus. In this case, do not call <b>VideoPortMapMemory</b> to map the frame buffer. To map a UMA frame buffer into system space, call <a href="..\wdm\nf-wdm-mmmapiospace.md">MmMapIoSpace</a>. To map a UMA frame buffer into the virtual address space of a user-mode process, perform the following steps:
+Every universal memory architecture (UMA) display device uses a frame buffer that is located in main memory rather than on a PCI bus. In this case, do not call <b>VideoPortMapMemory</b> to map the frame buffer. To map a UMA frame buffer into system space, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff554618">MmMapIoSpace</a>. To map a UMA frame buffer into the virtual address space of a user-mode process, perform the following steps:
 
 <ol>
 <li>
-Call <a href="..\wdm\nf-wdm-zwopensection.md">ZwOpenSection</a> to get a handle to the operating system's physical-memory section object, which is named <b>\Device\PhysicalMemory</b>.
+Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff567029">ZwOpenSection</a> to get a handle to the operating system's physical-memory section object, which is named <b>\Device\PhysicalMemory</b>.
 
 </li>
 <li>
-Call <a href="..\wdm\nf-wdm-zwmapviewofsection.md">ZwMapViewOfSection</a> to map a view of the frame buffer into the virtual address space of the current process.
+Call <a href="https://msdn.microsoft.com/library/windows/hardware/ff566481">ZwMapViewOfSection</a> to map a view of the frame buffer into the virtual address space of the current process.
 
 </li>
 </ol>
@@ -237,12 +237,12 @@ Miniport drivers should use <b>VideoPortMapMemory</b> to manage video adapters t
 
 ## See Also
 
-<a href="..\video\nf-video-videoportunmapmemory.md">VideoPortUnmapMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567812">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
 
 
 
-<a href="..\video\ns-video-_video_request_packet.md">VIDEO_REQUEST_PACKET</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570547">VIDEO_REQUEST_PACKET</a>
 
 
 
-<a href="..\ntddvdeo\ni-ntddvdeo-ioctl_video_map_video_memory.md">IOCTL_VIDEO_MAP_VIDEO_MEMORY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570376">VideoPortUnmapMemory</a>

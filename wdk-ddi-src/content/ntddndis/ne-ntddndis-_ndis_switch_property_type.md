@@ -7,7 +7,7 @@ old-location: netvista\ndis_switch_property_type.htm
 old-project: netvista
 ms.assetid: baa1b837-6f9b-41f4-acf8-e640f8e9f8da
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PNDIS_SWITCH_PROPERTY_TYPE, NDIS_SWITCH_PROPERTY_TYPE, NDIS_SWITCH_PROPERTY_TYPE enumeration [Network Drivers Starting with Windows Vista], NdisSwitchPropertyTypeCustom, NdisSwitchPropertyTypeMaximum, NdisSwitchPropertyTypeUndefined, PNDIS_SWITCH_PROPERTY_TYPE, PNDIS_SWITCH_PROPERTY_TYPE enumeration pointer [Network Drivers Starting with Windows Vista], _NDIS_SWITCH_PROPERTY_TYPE, netvista.ndis_switch_property_type, ntddndis/NDIS_SWITCH_PROPERTY_TYPE, ntddndis/NdisSwitchPropertyTypeCustom, ntddndis/NdisSwitchPropertyTypeMaximum, ntddndis/NdisSwitchPropertyTypeUndefined, ntddndis/PNDIS_SWITCH_PROPERTY_TYPE"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: NDIS_SWITCH_PROPERTY_TYPE, *PNDIS_SWITCH_PROPERTY_TYPE
 The <b>NDIS_SWITCH_PROPERTY_TYPE</b> enumeration specifies the type of policy property for a Hyper-V extensible switch.
 
 ## Syntax
-````
-typedef enum _NDIS_SWITCH_PROPERTY_TYPE { 
-  NdisSwitchPropertyTypeUndefined,
-  NdisSwitchPropertyTypeCustom,
+```
+typedef enum _NDIS_SWITCH_PROPERTY_TYPE {
+  NdisSwitchPropertyTypeUndefined  ,
+  NdisSwitchPropertyTypeCustom     ,
   NdisSwitchPropertyTypeMaximum
 } NDIS_SWITCH_PROPERTY_TYPE, *PNDIS_SWITCH_PROPERTY_TYPE;
-````
+```
 
 ## Constants
 
@@ -84,19 +84,19 @@ The <b>PropertyType</b> member of the following structures is an <b>NDIS_SWITCH_
 <ul>
 <li>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_delete_parameters.md">NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598249">NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS</a>
 
 
 </li>
 <li>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_enum_parameters.md">NDIS_SWITCH_PROPERTY_ENUM_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598253">NDIS_SWITCH_PROPERTY_ENUM_PARAMETERS</a>
 
 
 </li>
 <li>
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_parameters.md">NDIS_SWITCH_PROPERTY_PARAMETERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598255">NDIS_SWITCH_PROPERTY_PARAMETERS</a>
 
 
 </li>
@@ -111,16 +111,16 @@ For more information about extensible switch  policies, see <a href="https://msd
 
 ## See Also
 
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_parameters.md">NDIS_SWITCH_PROPERTY_PARAMETERS</a>
-
-
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_enum_parameters.md">NDIS_SWITCH_PROPERTY_ENUM_PARAMETERS</a>
-
-
-
-<a href="..\ntddndis\ns-ntddndis-_ndis_switch_property_delete_parameters.md">NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS</a>
-
-
-
 <b></b>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598249">NDIS_SWITCH_PROPERTY_DELETE_PARAMETERS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598253">NDIS_SWITCH_PROPERTY_ENUM_PARAMETERS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh598255">NDIS_SWITCH_PROPERTY_PARAMETERS</a>

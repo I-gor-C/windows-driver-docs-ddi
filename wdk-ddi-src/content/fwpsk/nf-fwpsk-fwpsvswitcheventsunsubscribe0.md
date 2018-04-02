@@ -7,7 +7,7 @@ old-location: netvista\fwpsvswitcheventsunsubscribe0.htm
 old-project: netvista
 ms.assetid: f83c6834-0438-42b8-ad9f-a1d82fcf361c
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: FwpsvSwitchEventsUnsubscribe0, FwpsvSwitchEventsUnsubscribe0 function [Network Drivers Starting with Windows Vista], fwpsk/FwpsvSwitchEventsUnsubscribe0, netvista.fwpsvswitcheventsunsubscribe0
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,19 +51,19 @@ The <b>FwpsvSwitchEventsUnsubscribe0</b> function releases resources that are as
 
 ## Syntax
 
-````
-void NTAPI FwpsvSwitchEventsUnsubscribe0(
-   _In_ UINT32            subscriptionId,
-   _In_ _Reserved_ UINT32 flags,
-   _In_ _Reserved_ void   *reserved
+```
+void FwpsvSwitchEventsUnsubscribe0(
+  UINT32 subscriptionId,
+  UINT32 flags,
+  void   *reserved
 );
-````
+```
 
 ## Parameters
 
 `subscriptionId`
 
-A unique event subscription identifier that the callout driver obtained by calling  the  <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a> function.
+A unique event subscription identifier that the callout driver obtained by calling  the  <a href="https://msdn.microsoft.com/library/windows/hardware/hh439687">FwpsvSwitchEventsSubscribe0</a> function.
 
 `flags`
 
@@ -80,7 +80,7 @@ None.
 
 ## Remarks
 
-A callout driver calls the <b>FwpsvSwitchEventsUnsubscribe0</b> function to unsubscribe to virtual switch notifications that the callout driver previously subscribed to  by calling the <a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a> function.
+A callout driver calls the <b>FwpsvSwitchEventsUnsubscribe0</b> function to unsubscribe to virtual switch notifications that the callout driver previously subscribed to  by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/hh439687">FwpsvSwitchEventsSubscribe0</a> function.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -93,4 +93,4 @@ A callout driver calls the <b>FwpsvSwitchEventsUnsubscribe0</b> function to unsu
 
 ## See Also
 
-<a href="..\fwpsk\nf-fwpsk-fwpsvswitcheventssubscribe0.md">FwpsvSwitchEventsSubscribe0</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439687">FwpsvSwitchEventsSubscribe0</a>

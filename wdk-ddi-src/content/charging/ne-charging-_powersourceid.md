@@ -47,11 +47,17 @@ req.typenames: POWERSOURCEID, *PPOWERSOURCEID
 This enum is for internal use only.
 
 ## Syntax
-````
-enum  {
-
-};
-````
+```
+typedef enum _POWERSOURCEID {
+  PowerSourceInvalid          ,
+  PowerSourceNone             ,
+  PowerSourceUsbfn            ,
+  PowerSourceWirelessCharger  ,
+  PowerSourceKD               ,
+  PowerSourceUsbTypeC         ,
+  PowerSourceMax
+} *PPOWERSOURCEID, POWERSOURCEID;
+```
 
 ## Constants
 

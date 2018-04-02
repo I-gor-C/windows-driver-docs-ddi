@@ -7,7 +7,7 @@ old-location: storage\feature_data_removable_medium.htm
 old-project: storage
 ms.assetid: b25feb68-75bb-4a9d-b842-e15f619a18c4
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PFEATURE_DATA_REMOVABLE_MEDIUM, FEATURE_DATA_REMOVABLE_MEDIUM, FEATURE_DATA_REMOVABLE_MEDIUM structure [Storage Devices], PFEATURE_DATA_REMOVABLE_MEDIUM, PFEATURE_DATA_REMOVABLE_MEDIUM structure pointer [Storage Devices], _FEATURE_DATA_REMOVABLE_MEDIUM, ntddmmc/FEATURE_DATA_REMOVABLE_MEDIUM, ntddmmc/PFEATURE_DATA_REMOVABLE_MEDIUM, storage.feature_data_removable_medium, structs-CD-ROM_f9ce701e-11b7-478e-969e-c2744477d348.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,25 +47,25 @@ req.typenames: FEATURE_DATA_REMOVABLE_MEDIUM, *PFEATURE_DATA_REMOVABLE_MEDIUM
 The FEATURE_DATA_REMOVABLE_MEDIUM structure contains data for the removable medium feature.
 
 ## Syntax
-````
+```
 typedef struct _FEATURE_DATA_REMOVABLE_MEDIUM {
   FEATURE_HEADER Header;
-  UCHAR          Lockable  :1;
-  UCHAR          Reserved1  :1;
-  UCHAR          DefaultToPrevent  :1;
-  UCHAR          Eject  :1;
-  UCHAR          Reserved2  :1;
-  UCHAR          LoadingMechanism  :3;
-  UCHAR          Reserved3[3];
+  UCHAR  : 1     Lockable;
+  UCHAR  : 1     DBML;
+  UCHAR  : 1     DefaultToPrevent;
+  UCHAR  : 1     Eject;
+  UCHAR  : 1     Load;
+  UCHAR  : 3     LoadingMechanism;
+  UCHAR          Reserved3[3];
 } FEATURE_DATA_REMOVABLE_MEDIUM, *PFEATURE_DATA_REMOVABLE_MEDIUM;
-````
+```
 
 ## Members
 
 
 `Header`
 
-Contains a <a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a> structure with header information for this feature descriptor.
+Contains a <a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a> structure with header information for this feature descriptor.
 
 `Lockable`
 
@@ -105,8 +105,8 @@ This structure holds data for the feature named "Removable Medium" by the <i>MMC
 
 ## See Also
 
-<a href="..\ntddmmc\ns-ntddmmc-_feature_header.md">FEATURE_HEADER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553848">FEATURE_HEADER</a>
 
 
 
-<a href="..\ntddmmc\ne-ntddmmc-_feature_number.md">FEATURE_NUMBER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553850">FEATURE_NUMBER</a>

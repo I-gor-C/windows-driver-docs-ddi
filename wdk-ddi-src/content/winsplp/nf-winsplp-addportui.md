@@ -50,14 +50,14 @@ A port monitor UI DLL's <b>AddPortUI</b> function adds a printer port, then obta
 
 ## Syntax
 
-````
-BOOL WINAPI pfnAddPortUI(
-  _In_opt_  PCWSTR pszServer,
-  _In_      HWND   hWnd,
-  _In_      PCWSTR pszPortNameIn,
-  _Out_opt_ PWSTR  *ppszPortNameOut
+```
+BOOL AddPortUI(
+  PCWSTR pszServer,
+  HWND   hWnd,
+  PCWSTR pszMonitorNameIn,
+  PWSTR  *ppszPortNameOut
 );
-````
+```
 
 ## Parameters
 
@@ -84,7 +84,7 @@ If the operation succeeds, the function should return <b>TRUE</b>. Otherwise Set
 
 ## Remarks
 
-Port monitor UI DLLs are required to define an <b>AddPortUI</b> function and include the function's address in a <a href="..\winsplp\ns-winsplp-_monitorui.md">MONITORUI</a> structure.
+Port monitor UI DLLs are required to define an <b>AddPortUI</b> function and include the function's address in a <a href="https://msdn.microsoft.com/library/windows/hardware/ff557541">MONITORUI</a> structure.
 
 The spooler calls <b>AddPortUI</b> from within its AddPort function. The first three arguments received by <b>AddPortUI</b> are the arguments received by AddPort. (The AddPort function is described in the Microsoft Windows SDK documentation.)
 
@@ -152,7 +152,7 @@ Call ClosePrinter, specifying the handle received from OpenPrinter. This causes 
 
 ## See Also
 
-<a href="..\winsplp\ns-winsplp-_monitorui.md">MONITORUI</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557541">MONITORUI</a>
 
 
 
@@ -160,11 +160,11 @@ Call ClosePrinter, specifying the handle received from OpenPrinter. This causes 
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff564258">XcvDataPort</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff564255">XcvData</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564258">XcvDataPort</a>
 
 
 

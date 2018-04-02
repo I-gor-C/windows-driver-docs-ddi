@@ -48,14 +48,14 @@ req.product: Windows 10 or later.
 The <b>SPB_TRANSFER_DESCRIPTOR</b> structure describes a single transfer in an <a href="https://msdn.microsoft.com/7415DB28-5E93-4F47-B169-7C652969D4C7">I/O transfer sequence</a>.
 
 ## Syntax
-````
-typedef struct _SPB_TRANSFER_DESCRIPTOR {
-  USHORT                 Size;
+```
+typedef struct SPB_TRANSFER_DESCRIPTOR {
+  USHORT                 Size;
   SPB_TRANSFER_DIRECTION Direction;
-  size_t                 TransferLength;
-  ULONG                  DelayInUs;
-} SPB_TRANSFER_DESCRIPTOR, *PSPB_TRANSFER_DESCRIPTOR;
-````
+  size_t                 TransferLength;
+  ULONG                  DelayInUs;
+}  *PSPB_TRANSFER_DESCRIPTOR;
+```
 
 ## Members
 

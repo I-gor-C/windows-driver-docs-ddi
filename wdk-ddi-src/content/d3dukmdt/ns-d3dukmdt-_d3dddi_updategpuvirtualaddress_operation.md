@@ -7,7 +7,7 @@ old-location: display\d3dddi_updategpuvirtualaddress_operation.htm
 old-project: display
 ms.assetid: BCA741A8-2294-43C1-8B9C-3724274D637B
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION structure [Display Devices], _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, d3dukmdt/D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION, display.d3dddi_updategpuvirtualaddress_operation
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,39 +47,39 @@ req.typenames: D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION
 <b>D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION</b> describes a virtual address update operation.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
   D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION_TYPE OperationType;
   union {
     struct {
       D3DGPU_VIRTUAL_ADDRESS BaseAddress;
-      D3DGPU_SIZE_T          SizeInBytes;
-      D3DKMT_HANDLE          hAllocation;
-      D3DGPU_SIZE_T          AllocationOffsetInBytes;
-      D3DGPU_SIZE_T          AllocationSizeInBytes;
-    } Map;
+      D3DGPU_SIZE_T          SizeInBytes;
+      D3DKMT_HANDLE          hAllocation;
+      D3DGPU_SIZE_T          AllocationOffsetInBytes;
+      D3DGPU_SIZE_T          AllocationSizeInBytes;
+    } Map;
     struct {
-      D3DGPU_VIRTUAL_ADDRESS                  BaseAddress;
-      D3DGPU_SIZE_T                           SizeInBytes;
-      D3DKMT_HANDLE                           hAllocation;
-      D3DGPU_SIZE_T                           AllocationOffsetInBytes;
-      D3DGPU_SIZE_T                           AllocationSizeInBytes;
+      D3DGPU_VIRTUAL_ADDRESS                  BaseAddress;
+      D3DGPU_SIZE_T                           SizeInBytes;
+      D3DKMT_HANDLE                           hAllocation;
+      D3DGPU_SIZE_T                           AllocationOffsetInBytes;
+      D3DGPU_SIZE_T                           AllocationSizeInBytes;
       D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE Protection;
-      UINT64                                  DriverProtection;
-    } MapProtect;
+      UINT64                                  DriverProtection;
+    } MapProtect;
     struct {
-      D3DGPU_VIRTUAL_ADDRESS                  BaseAddress;
-      D3DGPU_SIZE_T                           SizeInBytes;
+      D3DGPU_VIRTUAL_ADDRESS                  BaseAddress;
+      D3DGPU_SIZE_T                           SizeInBytes;
       D3DDDIGPUVIRTUALADDRESS_PROTECTION_TYPE Protection;
-    } Unmap;
+    } Unmap;
     struct {
-      D3DGPU_VIRTUAL_ADDRESS BaseAddress;
-      D3DGPU_SIZE_T          SizeInBytes;
+      D3DGPU_VIRTUAL_ADDRESS SourceAddress;
+      D3DGPU_SIZE_T          SizeInBytes;
       D3DGPU_VIRTUAL_ADDRESS DestAddress;
-    } Copy;
+    } Copy;
   };
 } D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION;
-````
+```
 
 ## Members
 
@@ -97,8 +97,8 @@ typedef struct _D3DDDI_UPDATEGPUVIRTUALADDRESS_OPERATION {
 
 ## See Also
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_reservegpuvirtualaddresscb.md">pfnReserveGpuVirtualAddressCb</a>
+<a href="https://msdn.microsoft.com/CEDE03E1-4B0D-4839-B7D6-0826CC103C5E">pfnReserveGpuVirtualAddressCb</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_updategpuvirtualaddresscb.md">pfnUpdateGpuVirtualAddressCb</a>
+<a href="https://msdn.microsoft.com/99D075A0-4483-47D1-BA24-80C45BFF407A">pfnUpdateGpuVirtualAddressCb</a>

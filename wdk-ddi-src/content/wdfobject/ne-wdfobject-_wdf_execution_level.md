@@ -50,14 +50,14 @@ req.product: Windows 10 or later.
 The WDF_EXECUTION_LEVEL enumeration type specifies the maximum IRQL at which the framework will call the event callback functions that a driver has supplied for a framework object.
 
 ## Syntax
-````
-typedef enum _WDF_EXECUTION_LEVEL { 
-  WdfExecutionLevelInvalid            = 0x00,
-  WdfExecutionLevelInheritFromParent  = 0x1,
-  WdfExecutionLevelPassive            = 0x2,
-  WdfExecutionLevelDispatch           = 0x3
+```
+typedef enum _WDF_EXECUTION_LEVEL {
+  WdfExecutionLevelInvalid            ,
+  WdfExecutionLevelInheritFromParent  ,
+  WdfExecutionLevelPassive            ,
+  WdfExecutionLevelDispatch
 } WDF_EXECUTION_LEVEL;
-````
+```
 
 ## Constants
 
@@ -86,7 +86,7 @@ typedef enum _WDF_EXECUTION_LEVEL {
 
 ## Remarks
 
-Drivers use the WDF_EXECUTION_LEVEL enumeration type to specify the <b>ExecutionLevel</b> member of an object's <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure.
+Drivers use the WDF_EXECUTION_LEVEL enumeration type to specify the <b>ExecutionLevel</b> member of an object's <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure.
 
 You can specify an <b>ExecutionLevel</b> value for the following objects:
 
@@ -133,4 +133,4 @@ For more information about execution levels for event callback functions, see <a
 
 ## See Also
 
-<a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a>

@@ -28,7 +28,7 @@ req.assembly:
 req.type-library: 
 req.lib: 
 req.dll: 
-req.irql: Any level (See Remarks section)
+req.irql: 
 topic_type:
 -	APIRef
 -	kbSyntax
@@ -48,47 +48,47 @@ req.product: Windows 10 or later.
 The SCARD_CARD_CAPABILITIES structure declaration defines the data that is stored in the CardCapabilites member of the SMARTCARD_EXTENSION structure and holds all information that is specific to the particular smart card that is currently used.
 
 ## Syntax
-````
+```
 typedef struct _SCARD_CARD_CAPABILITIES {
-  BOOLEAN                InversConvention;
-  ULONG                  etu;
+  BOOLEAN                InversConvention;
+  ULONG                  etu;
   struct {
-     Buffer[64];
-     Length;
-  } ATR;
+    UCHAR Buffer[64];
+    UCHAR Length;
+  } ATR;
   struct {
     UCHAR Buffer[16];
     UCHAR Length;
-  } HistoricalChars;
+  } HistoricalChars;
   PCLOCK_RATE_CONVERSION ClockRateConversion;
-  PBIT_RATE_ADJUSTMENT   BitRateAdjustment;
-  UCHAR                  Fl;
-  UCHAR                  Dl;
-  UCHAR                  II;
-  UCHAR                  P;
-  UCHAR                  N;
-  ULONG                  GT;
+  PBIT_RATE_ADJUSTMENT   BitRateAdjustment;
+  UCHAR                  Fl;
+  UCHAR                  Dl;
+  UCHAR                  II;
+  UCHAR                  P;
+  UCHAR                  N;
+  ULONG                  GT;
   struct {
-    ULONG Supported;
     ULONG Selected;
-  } Protocol;
+    ULONG Supported;
+  } Protocol;
   struct {
     UCHAR WI;
     ULONG WT;
-  } T0;
+  } T0;
   struct {
-    UCHAR IFSC;
-    UCHAR CWI;
-    UCHAR BWI;
-    UCHAR EDC;
-    ULONG CWT;
-    ULONG BWT;
     ULONG BGT;
-  } T1;
-  PTS_DATA               PtsData;
-  UCHAR                  Reserved[100 - sizeof(PTS_DATA)];
-} SCARD_CARD_CAPABILITIES, *PSCARD_CARD_CAPABILITIES;
-````
+    UCHAR BWI;
+    ULONG BWT;
+    UCHAR CWI;
+    ULONG CWT;
+    UCHAR EDC;
+    UCHAR IFSC;
+  } T1;
+  PTS_DATA               PtsData;
+  UCHAR                  Reserved[100 - sizeof(PTS_DATA)];
+} *PSCARD_CARD_CAPABILITIES, SCARD_CARD_CAPABILITIES;
+```
 
 ## Members
 
@@ -266,7 +266,7 @@ Contains a PTS_DATA structure that holds all the information that is required to
 Reserved.
 
 ## Remarks
-The SCARD_CARD_CAPABILITIES structure describes the capabilities of the inserted smart card. If the reader driver uses the smart card driver library, <b>ATR</b> is the only member that the reader driver should populate. The driver library will automatically update all other fields when it receives an <a href="..\winsmcrd\ni-winsmcrd-ioctl_smartcard_set_protocol.md">IOCTL_SMARTCARD_SET_PROTOCOL</a> request.
+The SCARD_CARD_CAPABILITIES structure describes the capabilities of the inserted smart card. If the reader driver uses the smart card driver library, <b>ATR</b> is the only member that the reader driver should populate. The driver library will automatically update all other fields when it receives an <a href="https://msdn.microsoft.com/library/windows/hardware/ff548909">IOCTL_SMARTCARD_SET_PROTOCOL</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |

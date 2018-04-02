@@ -47,11 +47,11 @@ req.typenames: SET_CMP_ADDRESS_TYPE, *PSET_CMP_ADDRESS_TYPE
 The SET_CMP_ADDRESS_TYPE structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537002">Av61883_SetUnitInfo</a> request to set the parameters that the IEC-61883 protocol driver should use when capturing and transmitting isochronous packets.
 
 ## Syntax
-````
+```
 typedef struct _SET_CMP_ADDRESS_TYPE {
-  ULONG Type;
+  IN ULONG Type;
 } SET_CMP_ADDRESS_TYPE, *PSET_CMP_ADDRESS_TYPE;
-````
+```
 
 ## Members
 

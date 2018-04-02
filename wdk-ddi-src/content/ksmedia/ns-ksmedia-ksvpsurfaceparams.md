@@ -47,13 +47,13 @@ req.typenames: KSVPSURFACEPARAMS, *PKSVPSURFACEPARAMS
 The KSVPSURFACEPARAMS structure is used to describe the surface parameters of a video port surface.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSVPSURFACEPARAMS {
   DWORD dwPitch;
   DWORD dwXOrigin;
   DWORD dwYOrigin;
-} KSVPSURFACEPARAMS, *PKSVPSURFACEPARAMS;
-````
+}  *PKSVPSURFACEPARAMS;
+```
 
 ## Members
 

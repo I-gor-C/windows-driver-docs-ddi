@@ -50,13 +50,13 @@ A Point and Print DLL's <code>SpoolerCopyFileEvent</code> function receives noti
 
 ## Syntax
 
-````
+```
 BOOL SpoolerCopyFileEvent(
-  _In_ LPWSTR pszPrinterName,
-  _In_ LPWSTR pszKey,
-  _In_ DWORD  dwCopyFileEvent
+  LPWSTR pszPrinterName,
+  LPWSTR pszKey,
+  DWORD  dwCopyFileEvent
 );
-````
+```
 
 ## Parameters
 
@@ -173,4 +173,4 @@ If <i>dwCopyFileEvent</i> is COPYFILE_EVENT_ADD_PRINTER_CONNECTION or COPYFILE_E
 
 ## See Also
 
-<a href="..\winsplp\nf-winsplp-generatecopyfilepaths.md">GenerateCopyFilePaths</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff549896">GenerateCopyFilePaths</a>

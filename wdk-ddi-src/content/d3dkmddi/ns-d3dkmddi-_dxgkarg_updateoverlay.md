@@ -7,7 +7,7 @@ old-location: display\dxgkarg_updateoverlay.htm
 old-project: display
 ms.assetid: 077f2df2-c115-4702-9472-b43df02dac42
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKARG_UPDATEOVERLAY, DXGKARG_UPDATEOVERLAY structure [Display Devices], DmStructs_4832993a-6e58-4951-a4ea-a954b8008a6e.xml, _DXGKARG_UPDATEOVERLAY, d3dkmddi/DXGKARG_UPDATEOVERLAY, display.dxgkarg_updateoverlay
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: DXGKARG_UPDATEOVERLAY
 The DXGKARG_UPDATEOVERLAY structure describes parameters for modifying an overlay.
 
 ## Syntax
-````
+```
 typedef struct _DXGKARG_UPDATEOVERLAY {
   DXGK_OVERLAYINFO OverlayInfo;
 } DXGKARG_UPDATEOVERLAY;
-````
+```
 
 ## Members
 
 
 `OverlayInfo`
 
-[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_overlayinfo.md">DXGK_OVERLAYINFO</a> structure that contains parameters that are required to modify the overlay.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561988">DXGK_OVERLAYINFO</a> structure that contains parameters that are required to modify the overlay.
 
 
 ## Requirements
@@ -69,8 +69,8 @@ typedef struct _DXGKARG_UPDATEOVERLAY {
 
 ## See Also
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_updateoverlay.md">DxgkDdiUpdateOverlay</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561988">DXGK_OVERLAYINFO</a>
 
 
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_overlayinfo.md">DXGK_OVERLAYINFO</a>
+<a href="https://msdn.microsoft.com/b131dbb9-1e11-4d04-97cb-e15ec2b025c7">DxgkDdiUpdateOverlay</a>

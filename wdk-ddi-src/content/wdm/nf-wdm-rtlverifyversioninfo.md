@@ -7,7 +7,7 @@ old-location: kernel\rtlverifyversioninfo.htm
 old-project: kernel
 ms.assetid: 7c0ca9a0-dfa4-44ab-8d3a-ab43f72c806f
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlVerifyVersionInfo, RtlVerifyVersionInfo routine [Kernel-Mode Driver Architecture], k109_c0301686-a323-499f-ac04-3bc414b016cd.xml, kernel.rtlverifyversioninfo, wdm/RtlVerifyVersionInfo
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,19 +51,19 @@ The <b>RtlVerifyVersionInfo</b> routine compares a specified set of operating sy
 
 ## Syntax
 
-````
-NTSTATUS RtlVerifyVersionInfo(
-  _In_ PRTL_OSVERSIONINFOEXW VersionInfo,
-  _In_ ULONG                 TypeMask,
-  _In_ ULONGLONG             ConditionMask
+```
+NTSYSAPI NTSTATUS RtlVerifyVersionInfo(
+  PRTL_OSVERSIONINFOEXW VersionInfo,
+  ULONG                 TypeMask,
+  ULONGLONG             ConditionMask
 );
-````
+```
 
 ## Parameters
 
 `VersionInfo`
 
-Pointer to an <a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a> structure that specifies the operating system version requirements to compare to the corresponding attributes of the currently running version of the operating system.
+Pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff563620">RTL_OSVERSIONINFOEXW</a> structure that specifies the operating system version requirements to compare to the corresponding attributes of the currently running version of the operating system.
 
 `TypeMask`
 
@@ -464,12 +464,12 @@ To verify a range of system versions, a driver can call <b>RtlVerifyVersionInfo<
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_osversioninfow.md">RTL_OSVERSIONINFOW</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563620">RTL_OSVERSIONINFOEXW</a>
 
 
 
-<a href="..\wdm\nf-wdm-rtlgetversion.md">RtlGetVersion</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563624">RTL_OSVERSIONINFOW</a>
 
 
 
-<a href="..\wdm\ns-wdm-_osversioninfoexw.md">RTL_OSVERSIONINFOEXW</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561910">RtlGetVersion</a>

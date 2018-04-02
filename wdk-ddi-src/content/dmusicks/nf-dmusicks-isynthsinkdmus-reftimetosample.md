@@ -7,7 +7,7 @@ old-location: audio\isynthsinkdmus_reftimetosample.htm
 old-project: audio
 ms.assetid: 20906bcd-3059-4d10-92cb-8efdef929ccd
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: ISynthSinkDMus, ISynthSinkDMus interface [Audio Devices], RefTimeToSample method, ISynthSinkDMus::RefTimeToSample, RefTimeToSample method [Audio Devices], RefTimeToSample method [Audio Devices], ISynthSinkDMus interface, RefTimeToSample,ISynthSinkDMus.RefTimeToSample, audio.isynthsinkdmus_reftimetosample, audmp-routines_8c8379c0-db14-4275-adfc-2dd595879feb.xml, dmusicks/ISynthSinkDMus::RefTimeToSample
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,17 +44,17 @@ req.typenames: DMUS_STREAM_TYPE
 ---
 
 
-# RefTimeToSample method
+# ISynthSinkDMus::RefTimeToSample method
 The <code>RefTimeToSample</code> method converts a reference time into a sample time.
 
 ## Syntax
 
-````
+```
 NTSTATUS RefTimeToSample(
-  [in]  REFERENCE_TIME rfTime,
-  [out] LONGLONG       *pllSampleTime
+  REFERENCE_TIME rfTime,
+  LONGLONG       *pllSampleTime
 );
-````
+```
 
 ## Parameters
 
@@ -89,4 +89,4 @@ The calculation of the reference time from the sample time depends on the sampli
 
 
 
-<a href="..\dmusicks\nn-dmusicks-isynthsinkdmus.md">ISynthSinkDMus</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537011">ISynthSinkDMus</a>

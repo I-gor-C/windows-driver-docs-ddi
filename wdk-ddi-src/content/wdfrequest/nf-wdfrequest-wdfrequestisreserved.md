@@ -53,11 +53,11 @@ The <b>WdfRequestIsReserved</b> method determines whether a specified request ob
 
 ## Syntax
 
-````
+```
 BOOLEAN WdfRequestIsReserved(
-  _In_ WDFREQUEST Request
+  WDFREQUEST Request
 );
-````
+```
 
 ## Parameters
 
@@ -77,7 +77,7 @@ For more information about the <b>WdfRequestIsReserved</b> method, see <a href="
 
 #### Examples
 
-The following code example determines whether a request object that a driver's <a href="..\wdfio\nc-wdfio-evt_wdf_io_queue_io_read.md">EvtIoRead</a> callback function has received is one that the driver created for low-memory situations.
+The following code example determines whether a request object that a driver's <a href="https://msdn.microsoft.com/d6fbb153-1355-4e94-b5d3-a218bd8c565d">EvtIoRead</a> callback function has received is one that the driver created for low-memory situations.
 
 <div class="code"><span codelanguage=""><table>
 <tr>
@@ -118,4 +118,4 @@ The following code example determines whether a request object that a driver's <
 
 ## See Also
 
-<a href="..\wdfio\nf-wdfio-wdfioqueueassignforwardprogresspolicy.md">WdfIoQueueAssignForwardProgressPolicy</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547395">WdfIoQueueAssignForwardProgressPolicy</a>

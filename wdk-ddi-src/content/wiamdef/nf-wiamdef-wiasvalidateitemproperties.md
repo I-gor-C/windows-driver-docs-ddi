@@ -50,13 +50,13 @@ The <b>wiasValidateItemProperties </b>function validates a list of simple item p
 
 ## Syntax
 
-````
-HRESULT _stdcall wiasValidateItemProperties(
-  _In_       BYTE     *pWiasContext,
-             ULONG    nPropSpec,
-  _In_ const PROPSPEC *pPropSpec
+```
+HRESULT wiasValidateItemProperties(
+  BYTE           *pWiasContext,
+  ULONG          nPropSpec,
+  const PROPSPEC *pPropSpec
 );
-````
+```
 
 ## Parameters
 

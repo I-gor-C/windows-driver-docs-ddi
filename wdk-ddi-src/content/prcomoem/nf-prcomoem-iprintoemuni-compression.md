@@ -45,27 +45,27 @@ req.product: Windows 10 or later.
 ---
 
 
-# Compression method
+# IPrintOemUni::Compression method
 The <code>IPrintOemUni::Compression</code> method can be used with Unidrv-supported printers to provide a customized bitmap compression method.
 
 ## Syntax
 
-````
+```
 HRESULT Compression(
-        PDEVOBJ pdevobj,
-        PBYTE   pInBuf,
-        PBYTE   pOutBuf,
-        DWORD   dwInLen,
-        DWORD   dwOutLen,
-  [out] INT     *piResult
+  PDEVOBJ pdevobj,
+  PBYTE   pInBuf,
+  PBYTE   pOutBuf,
+  DWORD   dwInLen,
+  DWORD   dwOutLen,
+  OUT INT *piResult
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `pInBuf`
 

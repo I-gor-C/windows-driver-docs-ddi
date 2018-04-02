@@ -47,23 +47,23 @@ req.typenames: KSCAMERA_PROFILE_MEDIAINFO, *PKSCAMERA_PROFILE_MEDIAINFO
 This structure contains the relevant media type information presented for each camera profile.
 
 ## Syntax
-````
+```
 typedef struct _KSCAMERA_PROFILE_MEDIAINFO {
   struct {
     UINT32 X;
     UINT32 Y;
-  } Resolution;
+  } Resolution;
   struct {
-    UINT32 Numerator;
     UINT32 Denominator;
-  } MaxFrameRate;
+    UINT32 Numerator;
+  } MaxFrameRate;
   ULONGLONG Flags;
-  UINT32    Data0;
-  UINT32    Data1;
-  UINT32    Data2;
-  UINT32    Data3;
-} KSCAMERA_PROFILE_MEDIAINFO, *PKSCAMERA_PROFILE_MEDIAINFO;
-````
+  UINT32    Data0;
+  UINT32    Data1;
+  UINT32    Data2;
+  UINT32    Data3;
+} *PKSCAMERA_PROFILE_MEDIAINFO, KSCAMERA_PROFILE_MEDIAINFO;
+```
 
 ## Members
 

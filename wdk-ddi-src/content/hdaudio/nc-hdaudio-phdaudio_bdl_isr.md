@@ -7,7 +7,7 @@ old-location: audio\phdaudio_bdl_isr.htm
 old-project: audio
 ms.assetid: 9DC36C2E-6609-46C8-870E-44845020A4B2
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: HDAudioBdlIsr, HDAudioBdlIsr callback function [Audio Devices], PHDAUDIO_BDL_ISR, audio.phdaudio_bdl_isr, hdaudio/HDAudioBdlIsr
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -63,7 +63,7 @@ void PhdaudioBdlIsr(
 
 `*Context`
 
-The HD Audio bus driver calls the ISR with the same context value that the client specified in the context parameter of the preceding SetupDmaEngineWithBdl call. For more information, see <a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">PSETUP_DMA_ENGINE_WITH_BDL</a>.
+The HD Audio bus driver calls the ISR with the same context value that the client specified in the context parameter of the preceding SetupDmaEngineWithBdl call. For more information, see <a href="https://msdn.microsoft.com/library/windows/hardware/ff537894">PSETUP_DMA_ENGINE_WITH_BDL</a>.
 
 `InterruptBitMask`
 
@@ -161,4 +161,4 @@ The caller must allocate the buffer memory and BDL from the nonpaged pool.
 
 ## See Also
 
-<a href="..\hdaudio\nc-hdaudio-psetup_dma_engine_with_bdl.md">PSETUP_DMA_ENGINE_WITH_BDL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537894">PSETUP_DMA_ENGINE_WITH_BDL</a>

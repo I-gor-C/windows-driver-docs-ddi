@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The PrintSchemaParameterDataType enumeration identifies the allowed data types for the Print Schema parameter.
 
 ## Syntax
-````
-typedef enum tagPrintSchemaParameterDataType { 
-  PrintSchemaParameterDataType_Integer        = 0,
-  PrintSchemaParameterDataType_NumericString,
+```
+typedef enum tagPrintSchemaParameterDataType {
+  PrintSchemaParameterDataType_Integer        ,
+  PrintSchemaParameterDataType_NumericString  ,
   PrintSchemaParameterDataType_String
 } PrintSchemaParameterDataType;
-````
+```
 
 ## Constants
 

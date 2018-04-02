@@ -45,30 +45,30 @@ req.product: Windows 10 or later.
 ---
 
 
-# DownloadCharGlyph method
+# IPrintOemUni::DownloadCharGlyph method
 The <code>IPrintOemUni::DownloadCharGlyph</code> method enables a rendering plug-in for Unidrv to send a character glyph for a specified soft font to the printer.
 
 ## Syntax
 
-````
+```
 HRESULT DownloadCharGlyph(
-        PDEVOBJ     pdevobj,
-        PUNIFONTOBJ pUFObj,
-        HGLYPH      hGlyph,
-        PDWORD      pdwWidth,
-  [out] DWORD       *pdwResult
+  PDEVOBJ     pdevobj,
+  PUNIFONTOBJ pUFObj,
+  HGLYPH      hGlyph,
+  PDWORD      pdwWidth,
+  OUT DWORD   *pdwResult
 );
-````
+```
 
 ## Parameters
 
 `pdevobj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_devobj.md">DEVOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff547573">DEVOBJ</a> structure.
 
 `pUFObj`
 
-Caller-supplied pointer to a <a href="..\printoem\ns-printoem-_unifontobj.md">UNIFONTOBJ</a> structure.
+Caller-supplied pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563590">UNIFONTOBJ</a> structure.
 
 `hGlyph`
 

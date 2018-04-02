@@ -7,7 +7,7 @@ old-location: kernel\iosetmasterirpstatus.htm
 old-project: kernel
 ms.assetid: 68C7C46B-AFDB-449D-99B5-1F9A5A9AFFA4
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoSetMasterIrpStatus, IoSetMasterIrpStatus routine [Kernel-Mode Driver Architecture], kernel.iosetmasterirpstatus, ntddk/IoSetMasterIrpStatus
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,18 +49,18 @@ The <b>IoSetMasterIrpStatus</b> routine conditionally replaces the <b>Status</b>
 
 ## Syntax
 
-````
-VOID IoSetMasterIrpStatus(
-  _Inout_ PIRP     MasterIrp,
-  _In_    NTSTATUS Status
+```
+NTKERNELAPI VOID IoSetMasterIrpStatus(
+  PIRP     MasterIrp,
+  NTSTATUS Status
 );
-````
+```
 
 ## Parameters
 
 `MasterIrp`
 
-A pointer to the master <a href="..\wdm\ns-wdm-_irp.md">IRP</a>. For more information, see Remarks.
+A pointer to the master <a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>. For more information, see Remarks.
 
 `Status`
 
@@ -99,4 +99,4 @@ There are two exceptions to the general rule. A <i>Status</i> value of STATUS_VE
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_irp.md">IRP</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550694">IRP</a>

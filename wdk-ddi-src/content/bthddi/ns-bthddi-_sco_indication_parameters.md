@@ -48,23 +48,23 @@ The SCO_INDICATION_PARAMETERS structure describes indication parameters about a 
   disconnect notification.
 
 ## Syntax
-````
+```
 typedef struct _SCO_INDICATION_PARAMETERS {
   SCO_CHANNEL_HANDLE ConnectionHandle;
-  BTH_ADDR           BtAddress;
+  BTH_ADDR           BtAddress;
   union {
     struct {
       struct {
         SCO_LINK_TYPE LinkType;
-      } Request;
-    } Connect;
+      } Request;
+    } Connect;
     struct {
       SCO_DISCONNECT_REASON Reason;
-      BOOLEAN               CloseNow;
-    } Disconnect;
-  } Parameters;
-} SCO_INDICATION_PARAMETERS, *PSCO_INDICATION_PARAMETERS;
-````
+      BOOLEAN               CloseNow;
+    } Disconnect;
+  } Parameters;
+} *PSCO_INDICATION_PARAMETERS, SCO_INDICATION_PARAMETERS;
+```
 
 ## Members
 
@@ -84,7 +84,7 @@ The Bluetooth address of the remote device.
 
 ## Remarks
 A profile driver's 
-    <a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a> should process
+    <a href="https://msdn.microsoft.com/abc9fc88-6852-4bfb-8271-7a73a508c397">SCO Callback Function</a> should process
     a notification differently depending upon the value that the Bluetooth driver stack passes in the 
     <i>Indication</i> parameter of the callback function.
 
@@ -106,8 +106,8 @@ When the Bluetooth driver stack passes
 
 ## See Also
 
-<a href="..\bthddi\ne-bthddi-_sco_disconnect_reason.md">SCO_DISCONNECT_REASON</a>
+<a href="https://msdn.microsoft.com/abc9fc88-6852-4bfb-8271-7a73a508c397">SCO Callback Function</a>
 
 
 
-<a href="..\bthddi\nc-bthddi-pfnsco_indication_callback.md">SCO Callback Function</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536775">SCO_DISCONNECT_REASON</a>

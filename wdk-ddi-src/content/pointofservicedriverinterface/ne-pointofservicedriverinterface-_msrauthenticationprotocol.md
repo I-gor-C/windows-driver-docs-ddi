@@ -47,12 +47,12 @@ req.typenames: MsrAuthenticationProtocolType
 This enumeration defines magnetic stripe reader (MSR) authentication protocols.
 
 ## Syntax
-````
-typedef enum _MsrAuthenticationProtocol { 
-  MsrAuthenticationProtocolType_None               = 0,
+```
+typedef enum _MsrAuthenticationProtocol {
+  MsrAuthenticationProtocolType_None               ,
   MsrAuthenticationProtocolType_ChallengeResponse
-} MsrAuthenticationProtocol;
-````
+} MsrAuthenticationProtocolType;
+```
 
 ## Constants
 

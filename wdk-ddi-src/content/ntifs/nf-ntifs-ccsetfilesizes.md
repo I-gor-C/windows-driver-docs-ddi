@@ -7,7 +7,7 @@ old-location: ifsk\ccsetfilesizes.htm
 old-project: ifsk
 ms.assetid: 1fc92167-ceab-4f8e-bd80-a8f1821846ed
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: CcSetFileSizes, CcSetFileSizes routine [Installable File System Drivers], ccref_2d554d89-6378-4a7c-8984-cb54b9e9e01c.xml, ifsk.ccsetfilesizes, ntifs/CcSetFileSizes
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>CcSetFileSizes</b> routine updates the cache maps and section object for 
 
 ## Syntax
 
-````
-VOID CcSetFileSizes(
-  _In_ PFILE_OBJECT   FileObject,
-  _In_ PCC_FILE_SIZES FileSizes
+```
+NTKERNELAPI VOID CcSetFileSizes(
+  PFILE_OBJECT   FileObject,
+  PCC_FILE_SIZES FileSizes
 );
-````
+```
 
 ## Parameters
 
@@ -146,7 +146,7 @@ Its file size is increased or decreased.
 </ul>
 If any failure occurs, <b>CcSetFileSizes</b> raises a status exception for that particular failure. For example, if a pool allocation failure occurs, <b>CcSetFileSizes</b> raises a STATUS_INSUFFICIENT_RESOURCES exception. Therefore, to gain control if a failure occurs, the driver should wrap the call to <b>CcSetFileSizes</b> in a <b>try-except</b> or <b>try-finally</b> statement.
 
-To cache a file, use <a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>.
+To cache a file, use <a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>.
 
 The <b>CcGetFileSizePointer</b> macro returns the size of a file, given a pointer to a file object for the file.
 
@@ -183,4 +183,4 @@ A pointer to a member of the cache manager structure for this file that specifie
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-ccinitializecachemap.md">CcInitializeCacheMap</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539135">CcInitializeCacheMap</a>

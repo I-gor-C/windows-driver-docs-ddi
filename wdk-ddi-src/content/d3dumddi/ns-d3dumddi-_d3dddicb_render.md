@@ -7,7 +7,7 @@ old-location: display\d3dddicb_render.htm
 old-project: display
 ms.assetid: 7a2bf1a8-d416-46bc-a9ba-9122407ea2a2
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDICB_RENDER, D3DDDICB_RENDER structure [Display Devices], D3D_param_Structs_62df043b-dbd7-4faf-a911-683ab12ba79b.xml, _D3DDDICB_RENDER, d3dumddi/D3DDDICB_RENDER, display.d3dddicb_render
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,30 +47,39 @@ req.typenames: D3DDDICB_RENDER
 The D3DDDICB_RENDER structure describes the current command buffer to be rendered.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDICB_RENDER {
-  UINT                     CommandLength;
-  UINT                     CommandOffset;
-  UINT                     NumAllocations;
-  UINT                     NumPatchLocations;
-  VOID                     *pNewCommandBuffer;
-  UINT                     NewCommandBufferSize;
-  D3DDDI_ALLOCATIONLIST    *pNewAllocationList;
-  UINT                     NewAllocationListSize;
+  UINT                     CommandLength;
+  UINT                     CommandOffset;
+  UINT                     NumAllocations;
+  UINT                     NumPatchLocations;
+  VOID                     *pNewCommandBuffer;
+  UINT                     NewCommandBufferSize;
+  D3DDDI_ALLOCATIONLIST    *pNewAllocationList;
+  UINT                     NewAllocationListSize;
   D3DDDI_PATCHLOCATIONLIST *pNewPatchLocationList;
-  UINT                     NewPatchLocationListSize;
-  D3DDDICB_RENDERFLAGS     Flags;
-  HANDLE                   hContext;
-  UINT                     BroadcastContextCount;
-  HANDLE                   BroadcastContext[D3DDDI_MAX_BROADCAST_CONTEXT];
-  ULONG                    QueuedBufferCount;
-#if (D3D_UMD_INTERFACE_VERSION >= D3D_UMD_INTERFACE_VERSION_WIN7)
-  D3DGPU_VIRTUAL_ADDRESS   NewCommandBuffer;
-  VOID                     *pPrivateDriverData;
-  UINT                     PrivateDriverDataSize;
-#endif 
+  UINT                     NewPatchLocationListSize;
+  D3DDDICB_RENDERFLAGS     Flags;
+  HANDLE                   hContext;
+  UINT                     BroadcastContextCount;
+  HANDLE                   BroadcastContext[D3DDDI_MAX_BROADCAST_CONTEXT];
+  ULONG                    QueuedBufferCount;
+  D3DGPU_VIRTUAL_ADDRESS   NewCommandBuffer;
+  VOID                     *pPrivateDriverData;
+  UINT                     PrivateDriverDataSize;
+  D3DDDI_MARKERLOGTYPE     MarkerLogType;
+  UINT                     RenderCBSequence;
+  UINT                     FirstAPISequenceNumberHigh;
+  UINT                     CompletedAPISequenceNumberLow0Size;
+  UINT                     CompletedAPISequenceNumberLow1Size;
+  UINT                     BegunAPISequenceNumberLow0Size;
+  UINT                     BegunAPISequenceNumberLow1Size;
+  CONST UINT               *pCompletedAPISequenceNumberLow0;
+  CONST UINT               *pCompletedAPISequenceNumberLow1;
+  CONST UINT               *pBegunAPISequenceNumberLow0;
+  CONST UINT               *pBegunAPISequenceNumberLow1;
 } D3DDDICB_RENDER;
-````
+```
 
 ## Members
 
@@ -93,7 +102,7 @@ typedef struct _D3DDDICB_RENDER {
 
 `pNewCommandBuffer`
 
-[out] A pointer to a command buffer that the user-mode display driver receives to use in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
+[out] A pointer to a command buffer that the user-mode display driver receives to use in its next call to the <a href="https://msdn.microsoft.com/f242162e-6237-469c-b178-5a51dcf69e32">pfnRenderCb</a> function.
 
 `NewCommandBufferSize`
 
@@ -103,7 +112,7 @@ The driver receives the size, in bytes, of the next command buffer to use.
 
 `pNewAllocationList`
 
-[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a> structures that the user-mode display driver receives to use as the allocation list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
+[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544375">D3DDDI_ALLOCATIONLIST</a> structures that the user-mode display driver receives to use as the allocation list in its next call to the <a href="https://msdn.microsoft.com/f242162e-6237-469c-b178-5a51dcf69e32">pfnRenderCb</a> function.
 
 `NewAllocationListSize`
 
@@ -113,7 +122,7 @@ The driver receives the number of elements for the allocation list that will be 
 
 `pNewPatchLocationList`
 
-[out] An array of <a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a> structures that the user-mode display driver receives to use as the patch-location list in its next call to the <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a> function.
+[out] An array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a> structures that the user-mode display driver receives to use as the patch-location list in its next call to the <a href="https://msdn.microsoft.com/f242162e-6237-469c-b178-5a51dcf69e32">pfnRenderCb</a> function.
 
 `NewPatchLocationListSize`
 
@@ -123,7 +132,7 @@ The driver receives the number of elements for the patch-location list that will
 
 `Flags`
 
-[in] A <a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_renderflags.md">D3DDDICB_RENDERFLAGS</a> structure that indicates information about a command buffer to be rendered.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff544247">D3DDDICB_RENDERFLAGS</a> structure that indicates information about a command buffer to be rendered.
 
 `hContext`
 
@@ -214,16 +223,16 @@ This member is available beginning with Windows 7.
 
 ## See Also
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_allocationlist.md">D3DDDI_ALLOCATIONLIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544247">D3DDDICB_RENDERFLAGS</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_renderflags.md">D3DDDICB_RENDERFLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544375">D3DDDI_ALLOCATIONLIST</a>
 
 
 
-<a href="..\d3dukmdt\ns-d3dukmdt-_d3dddi_patchlocationlist.md">D3DDDI_PATCHLOCATIONLIST</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544630">D3DDDI_PATCHLOCATIONLIST</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_rendercb.md">pfnRenderCb</a>
+<a href="https://msdn.microsoft.com/f242162e-6237-469c-b178-5a51dcf69e32">pfnRenderCb</a>

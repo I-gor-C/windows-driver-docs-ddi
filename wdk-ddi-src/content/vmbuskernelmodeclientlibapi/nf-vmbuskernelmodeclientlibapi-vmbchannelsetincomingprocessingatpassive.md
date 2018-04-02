@@ -7,7 +7,7 @@ old-location: netvista\vmbchannelsetincomingprocessingatpassive.htm
 old-project: netvista
 ms.assetid: D8677CD9-46CB-41AB-8F05-418A31468C07
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VmbChannelSetIncomingProcessingAtPassive, VmbChannelSetIncomingProcessingAtPassive function [Network Drivers Starting with Windows Vista], netvista.vmbchannelsetincomingprocessingatpassive, vmbuskernelmodeclientlibapi/VmbChannelSetIncomingProcessingAtPassive
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -54,12 +54,12 @@ PASSIVE_LEVEL.
 
 ## Syntax
 
-````
-VOID VmbChannelSetIncomingProcessingAtPassive(
-  _In_ VMBCHANNEL Channel,
-  _In_ BOOLEAN    RequirePassive
+```
+void VmbChannelSetIncomingProcessingAtPassive(
+  VMBCHANNEL Channel,
+  BOOLEAN    RequirePassive
 );
-````
+```
 
 ## Parameters
 

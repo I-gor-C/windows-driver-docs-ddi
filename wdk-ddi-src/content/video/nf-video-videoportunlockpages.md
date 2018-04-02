@@ -7,7 +7,7 @@ old-location: display\videoportunlockpages.htm
 old-project: display
 ms.assetid: c233d4e1-285c-4f74-bb37-808cf855b19c
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortUnlockPages, VideoPortUnlockPages function [Display Devices], VideoPort_Functions_f7a233cf-3db5-49db-94e9-d2c6ec96f05d.xml, display.videoportunlockpages, video/VideoPortUnlockPages
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 
 
 # VideoPortUnlockPages function
-The <b>VideoPortUnlockPages</b> function is <b>obsolete</b> in Windows 2000 and later. Use <a href="..\video\nf-video-videoportunlockbuffer.md">VideoPortUnlockBuffer</a> in place of this function.
+The <b>VideoPortUnlockPages</b> function is <b>obsolete</b> in Windows 2000 and later. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ff570373">VideoPortUnlockBuffer</a> in place of this function.
 
 <b>VideoPortUnlockPages</b> releases memory used for packet-based DMA.
 
 ## Syntax
 
-````
-BOOLEAN VideoPortUnlockPages(
-   PVOID hwDeviceExtension,
-   PDMA  pDma
+```
+VIDEOPORT_API BOOLEAN VideoPortUnlockPages(
+  PVOID hwDeviceExtension,
+  PDMA  pDma
 );
-````
+```
 
 ## Parameters
 
@@ -91,4 +91,4 @@ This function can be called only within the context of a DMA IOCTL. It cannot be
 
 ## See Also
 
-<a href="..\video\nf-video-videoportunlockbuffer.md">VideoPortUnlockBuffer</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570373">VideoPortUnlockBuffer</a>

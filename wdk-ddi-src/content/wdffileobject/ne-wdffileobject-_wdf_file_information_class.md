@@ -51,63 +51,63 @@ req.product: Windows 10 or later.
 The <b>WDF_FILE_INFORMATION_CLASS</b> enumeration identifies the types of file information that a driver can obtain or set.
 
 ## Syntax
-````
-typedef enum _WDF_FILE_INFORMATION_CLASS { 
-  WdfFileInformationDirectory                 = 1,
-  WdfFileInformationFullDirectory             = 2,
-  WdfFileInformationBothDirectory             = 3,
-  WdfFileInformationBasic                     = 4,
-  WdfFileInformationStandard                  = 5,
-  WdfFileInformationInternal                  = 6,
-  WdfFileInformationEa                        = 7,
-  WdfFileInformationAccess                    = 8,
-  WdfFileInformationName                      = 9,
-  WdfFileInformationRename                    = 10,
-  WdfFileInformationLink                      = 11,
-  WdfFileInformationNames                     = 12,
-  WdfFileInformationDisposition               = 13,
-  WdfFileInformationPosition                  = 14,
-  WdfFileInformationFullEa                    = 15,
-  WdfFileInformationMode                      = 16,
-  WdfFileInformationAlignment                 = 17,
-  WdfFileInformationAll                       = 18,
-  WdfFileInformationAllocation                = 19,
-  WdfFileInformationEndOfFile                 = 20,
-  WdfFileInformationAlternateName             = 21,
-  WdfFileInformationStream                    = 22,
-  WdfFileInformationPipe                      = 23,
-  WdfFileInformationPipeLocal                 = 24,
-  WdfFileInformationPipeRemote                = 25,
-  WdfFileInformationMailslotQuery             = 26,
-  WdfFileInformationMailslotSet               = 27,
-  WdfFileInformationCompression               = 28,
-  WdfFileInformationObjectId                  = 29,
-  WdfFileInformationCompletion                = 30,
-  WdfFileInformationMoveCluster               = 31,
-  WdfFileInformationQuota                     = 32,
-  WdfFileInformationReparsePoint              = 33,
-  WdfFileInformationNetworkOpen               = 34,
-  WdfFileInformationAttributeTag              = 35,
-  WdfFileInformationTracking                  = 36,
-  WdfFileInformationIdBothDirectory           = 37,
-  WdfFileInformationIdFullDirectory           = 38,
-  WdfFileInformationValidDataLength           = 39,
-  WdfFileInformationShortName                 = 40,
-  WdfFileInformationIoCompletionNotification  = 41,
-  WdfFileInformationIoStatusBlockRange        = 42,
-  WdfFileInformationIoPriorityHint            = 43,
-  WdfFileInformationSfioReserve               = 44,
-  WdfFileInformationSfioVolume                = 45,
-  WdfFileInformationHardLink                  = 46,
-  WdfFileInformationProcessIdsUsingFile       = 47,
-  WdfFileInformationNormalizedName            = 48,
-  WdfFileInformationNetworkPhysicalName       = 49,
-  WdfFileInformationIdGlobalTxDirectory       = 50,
-  WdfFileInformationIsRemoteDevice            = 51,
-  WdfFileInformationAttributeCache            = 52,
-  WdfFileInformationMaximum                   = 53
-} WDF_FILE_INFORMATION_CLASS, *PWDF_FILE_INFORMATION_CLASS;
-````
+```
+typedef enum _WDF_FILE_INFORMATION_CLASS {
+  WdfFileInformationDirectory                 ,
+  WdfFileInformationFullDirectory             ,
+  WdfFileInformationBothDirectory             ,
+  WdfFileInformationBasic                     ,
+  WdfFileInformationStandard                  ,
+  WdfFileInformationInternal                  ,
+  WdfFileInformationEa                        ,
+  WdfFileInformationAccess                    ,
+  WdfFileInformationName                      ,
+  WdfFileInformationRename                    ,
+  WdfFileInformationLink                      ,
+  WdfFileInformationNames                     ,
+  WdfFileInformationDisposition               ,
+  WdfFileInformationPosition                  ,
+  WdfFileInformationFullEa                    ,
+  WdfFileInformationMode                      ,
+  WdfFileInformationAlignment                 ,
+  WdfFileInformationAll                       ,
+  WdfFileInformationAllocation                ,
+  WdfFileInformationEndOfFile                 ,
+  WdfFileInformationAlternateName             ,
+  WdfFileInformationStream                    ,
+  WdfFileInformationPipe                      ,
+  WdfFileInformationPipeLocal                 ,
+  WdfFileInformationPipeRemote                ,
+  WdfFileInformationMailslotQuery             ,
+  WdfFileInformationMailslotSet               ,
+  WdfFileInformationCompression               ,
+  WdfFileInformationObjectId                  ,
+  WdfFileInformationCompletion                ,
+  WdfFileInformationMoveCluster               ,
+  WdfFileInformationQuota                     ,
+  WdfFileInformationReparsePoint              ,
+  WdfFileInformationNetworkOpen               ,
+  WdfFileInformationAttributeTag              ,
+  WdfFileInformationTracking                  ,
+  WdfFileInformationIdBothDirectory           ,
+  WdfFileInformationIdFullDirectory           ,
+  WdfFileInformationValidDataLength           ,
+  WdfFileInformationShortName                 ,
+  WdfFileInformationIoCompletionNotification  ,
+  WdfFileInformationIoStatusBlockRange        ,
+  WdfFileInformationIoPriorityHint            ,
+  WdfFileInformationSfioReserve               ,
+  WdfFileInformationSfioVolume                ,
+  WdfFileInformationHardLink                  ,
+  WdfFileInformationProcessIdsUsingFile       ,
+  WdfFileInformationNormalizedName            ,
+  WdfFileInformationNetworkPhysicalName       ,
+  WdfFileInformationIdGlobalTxDirectory       ,
+  WdfFileInformationIsRemoteDevice            ,
+  WdfFileInformationAttributeCache            ,
+  WdfFileInformationMaximum
+} *PWDF_FILE_INFORMATION_CLASS, WDF_FILE_INFORMATION_CLASS;
+```
 
 ## Constants
 
@@ -385,7 +385,7 @@ The <b>WDF_FILE_INFORMATION_CLASS</b> enumeration is used as an input value to <
 
 For most values that the <b>WDF_FILE_INFORMATION_CLASS</b> enumeration defines, the wdm.h or ntifs.h header file defines a FILE_XXXX_INFORMATION-named structure that the driver can use when obtaining or setting the file information.
 
-For more information about the enumeration value and associated structures, see the description of the <i>FileInformationClass</i> parameter of <a href="..\wdm\nf-wdm-zwqueryinformationfile.md">ZwQueryInformationFile</a> and <a href="..\wdm\nf-wdm-zwsetinformationfile.md">ZwSetInformationFile</a>.
+For more information about the enumeration value and associated structures, see the description of the <i>FileInformationClass</i> parameter of <a href="https://msdn.microsoft.com/library/windows/hardware/ff567052">ZwQueryInformationFile</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/ff567096">ZwSetInformationFile</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |

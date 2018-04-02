@@ -7,7 +7,7 @@ old-location: kernel\iodisconnectinterruptex.htm
 old-project: kernel
 ms.assetid: 6c538468-2f7c-48b0-90f8-deb975c85970
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoDisconnectInterruptEx, IoDisconnectInterruptEx routine [Kernel-Mode Driver Architecture], WdmlibIoDisconnectInterruptEx, k104_3bfae096-0af6-4f61-ae4b-4c83e748b071.xml, kernel.iodisconnectinterruptex, wdm/IoDisconnectInterruptEx, wdm/WdmlibIoDisconnectInterruptEx
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,28 +47,28 @@ req.product: Windows 10 or later.
 
 
 # IoDisconnectInterruptEx function
-For more information, see the <a href="..\iointex\nf-iointex-wdmlibiodisconnectinterruptex.md">WdmlibIoDisconnectInterruptEx</a> function.
+For more information, see the <a href="https://msdn.microsoft.com/B6F8663C-3A13-45DA-80FE-CC8B9194D083">WdmlibIoDisconnectInterruptEx</a> function.
 
 <code>#define IoDisconnectInterruptEx WdmlibIoDisconnectInterruptEx</code>
 
 ## Syntax
 
-````
-VOID IoDisconnectInterruptEx(
-  _Inout_ PIO_DISCONNECT_INTERRUPT_PARAMETERS Parameters
+```
+NTKERNELAPI VOID IoDisconnectInterruptEx(
+  PIO_DISCONNECT_INTERRUPT_PARAMETERS Parameters
 );
-````
+```
 
 ## Parameters
 
 `Parameters`
 
-For more information, see the <a href="..\iointex\nf-iointex-wdmlibiodisconnectinterruptex.md">WdmlibIoDisconnectInterruptEx</a> function.
+For more information, see the <a href="https://msdn.microsoft.com/B6F8663C-3A13-45DA-80FE-CC8B9194D083">WdmlibIoDisconnectInterruptEx</a> function.
 
 
 ## Return Value
 
-For more information, see the <a href="..\iointex\nf-iointex-wdmlibiodisconnectinterruptex.md">WdmlibIoDisconnectInterruptEx</a> function.
+For more information, see the <a href="https://msdn.microsoft.com/B6F8663C-3A13-45DA-80FE-CC8B9194D083">WdmlibIoDisconnectInterruptEx</a> function.
 
 
 ## Requirements
@@ -83,4 +83,4 @@ For more information, see the <a href="..\iointex\nf-iointex-wdmlibiodisconnecti
 
 ## See Also
 
-<a href="..\iointex\nf-iointex-wdmlibiodisconnectinterruptex.md">WdmlibIoDisconnectInterruptEx</a>
+<a href="https://msdn.microsoft.com/B6F8663C-3A13-45DA-80FE-CC8B9194D083">WdmlibIoDisconnectInterruptEx</a>

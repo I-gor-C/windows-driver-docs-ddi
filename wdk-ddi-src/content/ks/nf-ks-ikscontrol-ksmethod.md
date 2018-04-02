@@ -44,20 +44,20 @@ req.typenames:
 ---
 
 
-# KsMethod method
+# IKsControl::KsMethod method
 The <b>IKsControl::KsMethod</b> method sends a method to a KS object, together with any other defined support operations available on a method set.
 
 ## Syntax
 
-````
+```
 NTSTATUS KsMethod(
-  [in]      PKSMETHOD Method,
-  [in]      ULONG     MethodLength,
-  [in, out] PVOID     MethodData,
-  [in]      ULONG     DataLength,
-  [out]     ULONG     *BytesReturned
+  PKSMETHOD Method,
+  ULONG     MethodLength,
+  PVOID     MethodData,
+  ULONG     DataLength,
+  ULONG     *BytesReturned
 );
-````
+```
 
 ## Parameters
 
@@ -98,12 +98,12 @@ To determine the buffer size that is required for a specific method request, you
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksmethod_item.md">KSMETHOD_ITEM</a>
-
-
-
-<a href="..\ks\ns-ks-ksmethod_set.md">KSMETHOD_SET</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563398">KSMETHOD</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563420">KSMETHOD_ITEM</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563423">KSMETHOD_SET</a>

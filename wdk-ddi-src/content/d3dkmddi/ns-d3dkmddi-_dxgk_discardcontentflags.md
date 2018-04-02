@@ -7,7 +7,7 @@ old-location: display\dxgk_discardcontentflags.htm
 old-project: display
 ms.assetid: 0a93d3a2-0274-4b14-9c4b-9ed31a48e600
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGK_DISCARDCONTENTFLAGS, DXGK_DISCARDCONTENTFLAGS structure [Display Devices], DmStructs_9ff479c6-8592-4ebd-b001-c0a7d58772f2.xml, _DXGK_DISCARDCONTENTFLAGS, d3dkmddi/DXGK_DISCARDCONTENTFLAGS, display.dxgk_discardcontentflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,20 +44,20 @@ req.typenames: DXGK_DISCARDCONTENTFLAGS
 ---
 
 # _DXGK_DISCARDCONTENTFLAGS structure
-The DXGK_DISCARDCONTENTFLAGS structure identifies the type of discard-content operation to set up in a call to the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a> function.
+The DXGK_DISCARDCONTENTFLAGS structure identifies the type of discard-content operation to set up in a call to the <a href="https://msdn.microsoft.com/d315ff53-4a9f-46a3-ad74-d65a5eb72de1">DxgkDdiBuildPagingBuffer</a> function.
 
 ## Syntax
-````
+```
 typedef struct _DXGK_DISCARDCONTENTFLAGS {
   union {
     struct {
-      UINT AllocationIsIdle  :1;
-      UINT Reserved  :31;
+      UINT  : 1  AllocationIsIdle;
+      UINT  : 31 Reserved;
     };
     UINT Value;
   };
 } DXGK_DISCARDCONTENTFLAGS;
-````
+```
 
 ## Members
 
@@ -71,8 +71,8 @@ typedef struct _DXGK_DISCARDCONTENTFLAGS {
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_buildpagingbuffer.md">DXGKARG_BUILDPAGINGBUFFER</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557540">DXGKARG_BUILDPAGINGBUFFER</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_buildpagingbuffer.md">DxgkDdiBuildPagingBuffer</a>
+<a href="https://msdn.microsoft.com/d315ff53-4a9f-46a3-ad74-d65a5eb72de1">DxgkDdiBuildPagingBuffer</a>

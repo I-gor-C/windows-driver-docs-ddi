@@ -7,7 +7,7 @@ old-location: netvista\wwan_base_stations_info.htm
 old-project: netvista
 ms.assetid: 66460B28-C2B4-4F05-A133-31A753AF9489
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWWAN_BASE_STATIONS_INFO, PWWAN_BASE_STATIONS_INFO, PWWAN_BASE_STATIONS_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_BASE_STATIONS_INFO, WWAN_BASE_STATIONS_INFO structure [Network Drivers Starting with Windows Vista], _WWAN_BASE_STATIONS_INFO, netvista.wwan_base_stations_info, wwan/PWWAN_BASE_STATIONS_INFO, wwan/WWAN_BASE_STATIONS_INFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 The <b>WWAN_BASE_STATIONS_INFO</b> structure represents information about both serving and neighboring base stations.
 
 ## Syntax
-````
+```
 typedef struct _WWAN_BASE_STATIONS_INFO {
   ULONG SystemType;
   ULONG GSMServingCellOffset;
@@ -69,16 +69,16 @@ typedef struct _WWAN_BASE_STATIONS_INFO {
   ULONG LTEMrlSize;
   ULONG CDMAMrlOffset;
   ULONG CDMAMrlSize;
-  BYTE  BaseStationsData[ANYSIZE_ARRAY];
+  BYTE  BaseStationsData[ANYSIZE_ARRAY];
 } WWAN_BASE_STATIONS_INFO, *PWWAN_BASE_STATIONS_INFO;
-````
+```
 
 ## Members
 
 
 `SystemType`
 
-Indicates the system type (or types) for which serving cell information is valid. This member is a bitmask of one or more system types as defined in the <b>WwanDataClass</b> member of <a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>.
+Indicates the system type (or types) for which serving cell information is valid. This member is a bitmask of one or more system types as defined in the <b>WwanDataClass</b> member of <a href="https://msdn.microsoft.com/library/windows/hardware/ff571204">WWAN_DEVICE_CAPS</a>.
 
 `GSMServingCellOffset`
 
@@ -86,7 +86,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 `GSMServingCellSize`
 
-The size, in bytes, used for the buffer containing the GSM serving cell info, which is formatted as <a href="..\wwan\ns-wwan-_wwan_gsm_serving_cell_info.md">WWAN_GSM_SERVING_CELL_INFO</a>.
+The size, in bytes, used for the buffer containing the GSM serving cell info, which is formatted as <a href="https://msdn.microsoft.com/37F6BD26-55F3-4E46-9C39-97A95B6FF5B1">WWAN_GSM_SERVING_CELL_INFO</a>.
 
 `UMTSServingCellOffset`
 
@@ -94,7 +94,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 `UMTSServingCellSize`
 
-The size, in bytes, used for the buffer containing the UMTS serving cell info, which is formatted as <a href="..\wwan\ns-wwan-_wwan_umts_serving_cell_info.md">WWAN_UMTS_SERVING_CELL_INFO</a>.
+The size, in bytes, used for the buffer containing the UMTS serving cell info, which is formatted as <a href="https://msdn.microsoft.com/62257D65-DCB9-43C3-A862-DAB31C27EF0A">WWAN_UMTS_SERVING_CELL_INFO</a>.
 
 `TDSCDMAServingCellOffset`
 
@@ -102,7 +102,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 `TDSCDMAServingCellSize`
 
-The size, in bytes, used for the buffer containing the TDSCDMA serving cell info, which is formatted as <a href="..\wwan\ns-wwan-_wwan_tdscdma_serving_cell_info.md">WWAN_TDSCDMA_SERVING_CELL_INFO</a>.
+The size, in bytes, used for the buffer containing the TDSCDMA serving cell info, which is formatted as <a href="https://msdn.microsoft.com/5D0DD219-8D81-4F72-B327-119A45CC35B4">WWAN_TDSCDMA_SERVING_CELL_INFO</a>.
 
 `LTEServingCellOffset`
 
@@ -110,7 +110,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 `LTEServingCellSize`
 
-The size, in bytes, used for the buffer containing the LTE serving cell info, which is formatted as <a href="..\wwan\ns-wwan-_wwan_lte_serving_cell_info.md">WWAN_LTE_SERVING_CELL_INFO</a>.
+The size, in bytes, used for the buffer containing the LTE serving cell info, which is formatted as <a href="https://msdn.microsoft.com/17A78DC7-A89D-405A-983E-FC0DC469A4B0">WWAN_LTE_SERVING_CELL_INFO</a>.
 
 `GSMNmrOffset`
 
@@ -118,7 +118,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 `GSMNmrSize`
 
-The size, in bytes, of the buffer containing the GSM network measurement report (NMR), which is formatted as <a href="..\wwan\ns-wwan-_wwan_gsm_nmr.md">WWAN_GSM_NMR</a>.
+The size, in bytes, of the buffer containing the GSM network measurement report (NMR), which is formatted as <a href="https://msdn.microsoft.com/ADEEB57F-79FF-4AA7-84AF-FED413E47057">WWAN_GSM_NMR</a>.
 
 `UMTSMrlOffset`
 
@@ -126,7 +126,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 `UMTSMrlSize`
 
-The size, in bytes, of the buffer containing the UMTS measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan-_wwan_umts_mrl.md">WWAN_UMTS_MRL</a>.
+The size, in bytes, of the buffer containing the UMTS measured results list (MRL), which is formatted as <a href="https://msdn.microsoft.com/B62F63EB-747A-4672-9A79-5065A8BC04D1">WWAN_UMTS_MRL</a>.
 
 `TDSCDMAMrlOffset`
 
@@ -134,7 +134,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 `TDSCDMAMrlSize`
 
-The size, in bytes, of the buffer containing the TDSCDMA measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan-_wwan_tdscdma_mrl.md">WWAN_TDSCDMA_MRL</a>.
+The size, in bytes, of the buffer containing the TDSCDMA measured results list (MRL), which is formatted as <a href="https://msdn.microsoft.com/D919EF5E-502C-4983-AFC5-F3F6E6CC8C3B">WWAN_TDSCDMA_MRL</a>.
 
 `LTEMrlOffset`
 
@@ -142,7 +142,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 `LTEMrlSize`
 
-The size, in bytes, of the buffer containing the LTE measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan-_wwan_lte_mrl.md">WWAN_LTE_MRL</a>.
+The size, in bytes, of the buffer containing the LTE measured results list (MRL), which is formatted as <a href="https://msdn.microsoft.com/5959B7A7-147D-4F20-82CC-EC1DEAAE3494">WWAN_LTE_MRL</a>.
 
 `CDMAMrlOffset`
 
@@ -150,7 +150,7 @@ The offset in bytes, calculated from the beginning of this structure, to the buf
 
 `CDMAMrlSize`
 
-The size, in bytes, of the buffer containing the CDMA measured results list (MRL), which is formatted as <a href="..\wwan\ns-wwan-_wwan_cdma_mrl.md">WWAN_CDMA_MRL</a>.
+The size, in bytes, of the buffer containing the CDMA measured results list (MRL), which is formatted as <a href="https://msdn.microsoft.com/A19B98B5-F2E5-4AF9-9D2B-A7DD47441656">WWAN_CDMA_MRL</a>.
 
 `BaseStationsData`
 
@@ -165,48 +165,48 @@ The size, in bytes, of the buffer containing the CDMA measured results list (MRL
 
 ## See Also
 
-<a href="..\wwan\ns-wwan-_wwan_device_caps.md">WWAN_DEVICE_CAPS</a>
-
-
-
-<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_base_stations_info.md">NDIS_WWAN_BASE_STATIONS_INFO</a>
-
-
-
-<a href="..\wwan\ns-wwan-_wwan_gsm_nmr.md">WWAN_GSM_NMR</a>
-
-
-
-<a href="..\wwan\ns-wwan-_wwan_umts_serving_cell_info.md">WWAN_UMTS_SERVING_CELL_INFO</a>
-
-
-
-<a href="..\wwan\ns-wwan-_wwan_gsm_serving_cell_info.md">WWAN_GSM_SERVING_CELL_INFO</a>
-
-
-
 <a href="https://docs.microsoft.com/windows-hardware/drivers/network/mb-base-stations-information-query-support">MB base stations information query support</a>
 
 
 
-<a href="..\wwan\ns-wwan-_wwan_umts_mrl.md">WWAN_UMTS_MRL</a>
+<a href="https://msdn.microsoft.com/7C0E0903-F564-4F2B-95F9-FA8512FEF61B">NDIS_WWAN_BASE_STATIONS_INFO</a>
 
 
 
-<a href="..\wwan\ns-wwan-_wwan_lte_serving_cell_info.md">WWAN_LTE_SERVING_CELL_INFO</a>
+<a href="https://msdn.microsoft.com/A19B98B5-F2E5-4AF9-9D2B-A7DD47441656">WWAN_CDMA_MRL</a>
 
 
 
-<a href="..\wwan\ns-wwan-_wwan_cdma_mrl.md">WWAN_CDMA_MRL</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571204">WWAN_DEVICE_CAPS</a>
 
 
 
-<a href="..\wwan\ns-wwan-_wwan_tdscdma_mrl.md">WWAN_TDSCDMA_MRL</a>
+<a href="https://msdn.microsoft.com/ADEEB57F-79FF-4AA7-84AF-FED413E47057">WWAN_GSM_NMR</a>
 
 
 
-<a href="..\wwan\ns-wwan-_wwan_lte_mrl.md">WWAN_LTE_MRL</a>
+<a href="https://msdn.microsoft.com/37F6BD26-55F3-4E46-9C39-97A95B6FF5B1">WWAN_GSM_SERVING_CELL_INFO</a>
 
 
 
-<a href="..\wwan\ns-wwan-_wwan_tdscdma_serving_cell_info.md">WWAN_TDSCDMA_SERVING_CELL_INFO</a>
+<a href="https://msdn.microsoft.com/5959B7A7-147D-4F20-82CC-EC1DEAAE3494">WWAN_LTE_MRL</a>
+
+
+
+<a href="https://msdn.microsoft.com/17A78DC7-A89D-405A-983E-FC0DC469A4B0">WWAN_LTE_SERVING_CELL_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/D919EF5E-502C-4983-AFC5-F3F6E6CC8C3B">WWAN_TDSCDMA_MRL</a>
+
+
+
+<a href="https://msdn.microsoft.com/5D0DD219-8D81-4F72-B327-119A45CC35B4">WWAN_TDSCDMA_SERVING_CELL_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/B62F63EB-747A-4672-9A79-5065A8BC04D1">WWAN_UMTS_MRL</a>
+
+
+
+<a href="https://msdn.microsoft.com/62257D65-DCB9-43C3-A862-DAB31C27EF0A">WWAN_UMTS_SERVING_CELL_INFO</a>

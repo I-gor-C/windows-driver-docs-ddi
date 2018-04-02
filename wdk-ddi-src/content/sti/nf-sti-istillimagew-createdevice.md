@@ -45,19 +45,19 @@ req.product: Windows 10 or later.
 ---
 
 
-# CreateDevice method
+# IStillImageW::CreateDevice method
 The <b>IStillImage::CreateDevice</b> method creates an instance of the COM object that defines the <a href="https://msdn.microsoft.com/b026fb74-9ce6-4d4e-8a5b-402731904064">IStiDevice COM Interface</a>, and returns a pointer to the interface.
 
 ## Syntax
 
-````
+```
 HRESULT CreateDevice(
-  [in]           LPWSTR     pwszDeviceName,
-                 DWORD      dwMode,
-  [out]          PSTIDEVICE *pDevice,
-  [in, optional] LPUNKNOWN  punkOuter
+  LPWSTR     pwszDeviceName,
+  DWORD      dwMode,
+  PSTIDEVICE *pDevice,
+  LPUNKNOWN  punkOuter
 );
-````
+```
 
 ## Parameters
 

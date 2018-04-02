@@ -47,14 +47,14 @@ req.typenames: FRAMING_PROP
 
 
 ## Syntax
-````
-typedef enum  { 
-  FramingProp_Uninitialized,
-  FramingProp_None,
-  FramingProp_Old,
+```
+typedef enum FRAMING_PROP {
+  FramingProp_Uninitialized  ,
+  FramingProp_None           ,
+  FramingProp_Old            ,
   FramingProp_Ex
-} FRAMING_PROP;
-````
+} ;
+```
 
 ## Constants
 

@@ -7,7 +7,7 @@ old-location: ifsk\fltsetactivityidcallbackdata.htm
 old-project: ifsk
 ms.assetid: D7CA9DAB-E350-42D5-A008-5CC12D5313D3
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltSetActivityIdCallbackData, FltSetActivityIdCallbackData routine [Installable File System Drivers], fltkernel/FltSetActivityIdCallbackData, ifsk.fltsetactivityidcallbackdata
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ The <b>FltSetActivityIdCallbackData</b> routine sets the a activity ID for an IR
 
 ## Syntax
 
-````
-NTSTATUS FltSetActivityIdCallbackData(
-  _Inout_  PFLT_CALLBACK_DATA CallbackData,
-  _In_opt_ LPGUID             Guid
+```
+NTSTATUS FLTAPI FltSetActivityIdCallbackData(
+  PFLT_CALLBACK_DATA CallbackData,
+  LPCGUID            Guid
 );
-````
+```
 
 ## Parameters
 
@@ -128,8 +128,8 @@ An activity ID pointed to by <i>Guid</i> was set for the IRP in <i>CallbackData<
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltgetactivityidcallbackdata.md">FltGetActivityIdCallbackData</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967698">FltGetActivityIdCallbackData</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltpropagateactivityidtothread.md">FltPropagateActivityIdToThread</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh967700">FltPropagateActivityIdToThread</a>

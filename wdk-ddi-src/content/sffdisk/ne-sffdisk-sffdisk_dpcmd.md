@@ -48,15 +48,15 @@ req.product: Windows 10 or later.
 The SFFDISK_DPCMD enumeration lists the operations performed by an <a href="https://msdn.microsoft.com/library/windows/hardware/ff537273">IOCTL_SFFDISK_DEVICE_PASSWORD</a> request.
 
 ## Syntax
-````
-typedef enum  { 
-  SFFDISK_DP_IS_SUPPORTED           = 0,
-  SFFDISK_DP_SET_PASSWORD           = 1,
-  SFFDISK_DP_LOCK_DEVICE            = 2,
-  SFFDISK_DP_UNLOCK_DEVICE          = 3,
-  SFFDISK_DP_RESET_DEVICE_ALL_DATA  = 4
-} SFFDISK_DPCMD;
-````
+```
+typedef enum SFFDISK_DPCMD {
+  SFFDISK_DP_IS_SUPPORTED           ,
+  SFFDISK_DP_SET_PASSWORD           ,
+  SFFDISK_DP_LOCK_DEVICE            ,
+  SFFDISK_DP_UNLOCK_DEVICE          ,
+  SFFDISK_DP_RESET_DEVICE_ALL_DATA
+} ;
+```
 
 ## Constants
 

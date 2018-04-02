@@ -7,7 +7,7 @@ old-location: buses\ioctl_internal_usbfn_register_usb_string.htm
 old-project: usbref
 ms.assetid: 80CB670A-4E64-4E53-815C-12580BE982B5
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: IOCTL_INTERNAL_USBFN_REGISTER_USB_STRING, IOCTL_INTERNAL_USBFN_REGISTER_USB_STRING control code [Buses], buses.ioctl_internal_usbfn_register_usb_string, usbfnioctl/IOCTL_INTERNAL_USBFN_REGISTER_USB_STRING
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,7 +51,7 @@ The class driver sends this request to register a USB string descriptor.
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-A pointer to a buffer that contains a  <a href="..\usbfnbase\ns-usbfnbase-_usbfn_usb_string.md">USBFN_USB_STRING</a> structure with the USB string descriptor.
+A pointer to a buffer that contains a  <a href="https://msdn.microsoft.com/library/windows/hardware/mt188007">USBFN_USB_STRING</a> structure with the USB string descriptor.
 
 ### Input Buffer Length
 The length of the input buffer must be at least <code>sizeof(USBFN_USB_STRING)</code>.
@@ -72,7 +72,7 @@ None.
 If the request is successful, the USB function class extension (UFX) returns STATUS_SUCCESS, or another status value for which NT_SUCCESS(status) equals TRUE. Otherwise it returns a status value for which NT_SUCCESS(status) equals FALSE.
 
 ## Remarks
-This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_activate_usb_bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.
+This request must be sent after sending the <a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a> request.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -81,8 +81,8 @@ This request must be sent after sending the <a href="..\usbfnioctl\ni-usbfnioctl
 
 ## See Also
 
-<a href="..\usbfnbase\ns-usbfnbase-_usbfn_usb_string.md">USBFN_USB_STRING</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt187891">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a>
 
 
 
-<a href="..\usbfnioctl\ni-usbfnioctl-ioctl_internal_usbfn_activate_usb_bus.md">IOCTL_INTERNAL_USBFN_ACTIVATE_USB_BUS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt188007">USBFN_USB_STRING</a>

@@ -47,12 +47,12 @@ req.typenames: KSDEVICE_THERMAL_STATE
 A KS-defined enumeration for thermal state changes.
 
 ## Syntax
-````
-typedef enum  { 
-  KSDEVICE_THERMAL_STATE_LOW,
+```
+typedef enum KSDEVICE_THERMAL_STATE {
+  KSDEVICE_THERMAL_STATE_LOW   ,
   KSDEVICE_THERMAL_STATE_HIGH
-} KSDEVICE_THERMAL_STATE;
-````
+} ;
+```
 
 ## Constants
 

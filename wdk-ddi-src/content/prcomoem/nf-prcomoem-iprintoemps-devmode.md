@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# DevMode method
+# IPrintOemPS::DevMode method
 The <code>IPrintOemPS::DevMode</code> method, provided by rendering plug-ins for Pscript5, performs operations on private <a href="https://msdn.microsoft.com/library/windows/hardware/ff552837">DEVMODEW</a> members.
 
 ## Syntax
 
-````
-STDMETHOD DevMode(
-   DWORD       dwMode,
-   POEMDMPARAM pOemDMParam
+```
+HRESULT DevMode(
+  DWORD       dwMode,
+  POEMDMPARAM pOemDMParam
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ Caller-supplied constant. See the following Remarks section.
 
 `pOemDMParam`
 
-Caller-supplied pointer to an <a href="..\printoem\ns-printoem-_oemdmparam.md">OEMDMPARAM</a> structure.
+Caller-supplied pointer to an <a href="https://msdn.microsoft.com/library/windows/hardware/ff557686">OEMDMPARAM</a> structure.
 
 
 ## Return Value

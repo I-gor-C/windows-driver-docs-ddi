@@ -47,19 +47,19 @@ req.typenames: VIDEO_OPEN_PARMS, *LPVIDEO_OPEN_PARMS
 
 
 ## Syntax
-````
+```
 typedef struct tag_video_open_parms {
-  DWORD  dwSize;
+  DWORD  dwSize;
   FOURCC fccType;
   FOURCC fccComp;
-  DWORD  dwVersion;
-  DWORD  dwFlags;
-  DWORD  dwError;
+  DWORD  dwVersion;
+  DWORD  dwFlags;
+  DWORD  dwError;
   LPVOID pV1Reserved;
   LPVOID pV2Reserved;
-  DWORD  dnDevNode;
+  DWORD  dnDevNode;
 } VIDEO_OPEN_PARMS, *LPVIDEO_OPEN_PARMS;
-````
+```
 
 ## Members
 

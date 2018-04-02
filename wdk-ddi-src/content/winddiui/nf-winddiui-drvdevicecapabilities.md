@@ -50,15 +50,15 @@ A printer interface DLL's <b>DrvDeviceCapabilities</b> function returns requeste
 
 ## Syntax
 
-````
+```
 DWORD DrvDeviceCapabilities(
-        HANDLE   hPrinter,
-  _In_  PWSTR    pDeviceName,
-        WORD     iDevCap,
-  _Out_ PVOID    pvOutput,
-  _In_  PDEVMODE pDevMode
+  HANDLE   hPrinter,
+  PWSTR    pszDeviceName,
+  WORD     Capability,
+  PVOID    pOutput,
+  PDEVMODE pDevmode
 );
-````
+```
 
 ## Parameters
 

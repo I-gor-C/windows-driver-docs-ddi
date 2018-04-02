@@ -44,30 +44,30 @@ req.typenames: WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, *PWHEA_PROCESSOR_
 ---
 
 # _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS structure
-The WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure contain valid data.
+The WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union describes which members of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560607">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure contain valid data.
 
 ## Syntax
-````
-typedef union _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS {
+```
+typedef struct _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS {
   struct {
-    ULONGLONG ProcessorType  :1;
-    ULONGLONG InstructionSet  :1;
-    ULONGLONG ErrorType  :1;
-    ULONGLONG Operation  :1;
-    ULONGLONG Flags  :1;
-    ULONGLONG Level  :1;
-    ULONGLONG CPUVersion  :1;
-    ULONGLONG CPUBrandString  :1;
-    ULONGLONG ProcessorId  :1;
-    ULONGLONG TargetAddress  :1;
-    ULONGLONG RequesterId  :1;
-    ULONGLONG ResponderId  :1;
-    ULONGLONG InstructionPointer  :1;
-    ULONGLONG Reserved  :51;
-  };
+    ULONGLONG  : 1  CPUBrandString;
+    ULONGLONG  : 1  CPUVersion;
+    ULONGLONG  : 1  ErrorType;
+    ULONGLONG  : 1  Flags;
+    ULONGLONG  : 1  InstructionPointer;
+    ULONGLONG  : 1  InstructionSet;
+    ULONGLONG  : 1  Level;
+    ULONGLONG  : 1  Operation;
+    ULONGLONG  : 1  ProcessorId;
+    ULONGLONG  : 1  ProcessorType;
+    ULONGLONG  : 1  RequesterId;
+    ULONGLONG  : 51 Reserved;
+    ULONGLONG  : 1  ResponderId;
+    ULONGLONG  : 1  TargetAddress;
+  } DUMMYSTRUCTNAME;
   ULONGLONG ValidBits;
 } WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS, *PWHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS;
-````
+```
 
 ## Members
 
@@ -81,7 +81,7 @@ typedef union _WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS {
 A ULONGLONG representation of the contents of the WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union.
 
 ## Remarks
-A WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.
+A WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560607">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -91,4 +91,4 @@ A WHEA_PROCESSOR_GENERIC_ERROR_SECTION_VALIDBITS union is contained within the <
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_processor_generic_error_section.md">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560607">WHEA_PROCESSOR_GENERIC_ERROR_SECTION</a>

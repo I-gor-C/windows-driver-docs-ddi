@@ -44,20 +44,20 @@ req.typenames: MPEG2_TRANSPORT_STRIDE, *PMPEG2_TRANSPORT_STRIDE
 ---
 
 
-# GetOutputData method
+# IBidiRequest::GetOutputData method
 The <b>GetOutputData</b> method gets the specified output data coming back from the printer.
 
 ## Syntax
 
-````
+```
 HRESULT GetOutputData(
-  [in]  const DWORD  dwIndex,
-  [out]       LPWSTR *ppszSchema,
-  [out]       DWORD  *pdwType,
-  [out]       BYTE   **ppData,
-  [out]       ULONG  *uSize
+  const DWORD dwIndex,
+  LPWSTR      *ppszSchema,
+  DWORD       *pdwType,
+  BYTE        **ppData,
+  ULONG       *uSize
 );
-````
+```
 
 ## Parameters
 
@@ -240,10 +240,6 @@ If an application calls <b>GetOutputData</b> with the same index twice, the inte
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/4c857ff4-02c1-487b-bdb0-44d62a4cf4a1">GetEnumCount</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff545163">Bidirectional Communication Interfaces</a>
 
 
@@ -252,4 +248,8 @@ If an application calls <b>GetOutputData</b> with the same index twice, the inte
 
 
 
-<a href="..\bidispl\nn-bidispl-ibidirequest.md">IBidiRequest</a>
+<a href="https://msdn.microsoft.com/4c857ff4-02c1-487b-bdb0-44d62a4cf4a1">GetEnumCount</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/dd144969">IBidiRequest</a>

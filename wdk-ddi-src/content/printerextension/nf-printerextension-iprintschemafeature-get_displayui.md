@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_DisplayUI method
+# IPrintSchemaFeature::get_DisplayUI method
 Gets the setting that indicates whether or not to show the print UI.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_DisplayUI(
-  [out, retval] BOOL *pbShow
+  BOOL *pbShow
 );
-````
+```
 
 ## Parameters
 
@@ -83,4 +83,4 @@ Note that the <b>DisplayUI</b> property  corresponds to the psk:DisplayUI elemen
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemafeature.md">IPrintSchemaFeature</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451284">IPrintSchemaFeature</a>

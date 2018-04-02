@@ -50,7 +50,7 @@ This I/O control function returns the value of the specified property from the d
 [IRP_MJ_DEVICE_CONTROL](xref:"https://docs.microsoft.com/en-us/windows-hardware/drivers/kernel/irp-mj-device-control")
 
 ### Input Buffer
-Pointer to a buffer that contains the <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_pospropertyid.md">PosPropertyId</a> for the property you want to get.
+Pointer to a buffer that contains the <a href="https://msdn.microsoft.com/library/windows/hardware/dn772239">PosPropertyId</a> for the property you want to get.
 
 ### Input Buffer Length
 Size, in bytes, of the buffer pointed to by <i>lpInBuffer</i>. Set to sizeof(<i>PosPropertyId</i>).

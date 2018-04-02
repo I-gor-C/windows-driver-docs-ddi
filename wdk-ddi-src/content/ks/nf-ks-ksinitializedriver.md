@@ -50,32 +50,32 @@ The<b> KsInitializeDriver </b>function initializes the driver object of an AVStr
 
 ## Syntax
 
-````
-NTSTATUS KsInitializeDriver(
-  _In_           PDRIVER_OBJECT      DriverObject,
-  _In_           PUNICODE_STRING     RegistryPath,
-  _In_opt_ const KSDEVICE_DESCRIPTOR *Descriptor
+```
+KSDDKAPI NTSTATUS KsInitializeDriver(
+  PDRIVER_OBJECT            DriverObject,
+  PUNICODE_STRING           RegistryPathName,
+  const KSDEVICE_DESCRIPTOR *Descriptor
 );
-````
+```
 
 ## Parameters
 
 `DriverObject`
 
-A pointer to the <a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a> structure for the AVStream driver being initialized. Minidrivers that call <b>KsInitializeDriver</b> should use the driver object passed to <b>DriverEntry</b> by the operating system.
+A pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a> structure for the AVStream driver being initialized. Minidrivers that call <b>KsInitializeDriver</b> should use the driver object passed to <b>DriverEntry</b> by the operating system.
 
 `RegistryPathName`
 
-A pointer to a Unicode string containing the registry path string passed into the minidriver's **DriverEntry** function by the operating system.
+TBD
 
 `Descriptor`
 
-A pointer to a <a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a> structure that specifies the characteristics of the device being initialized. If this pointer is <b>NULL</b>, a device is created with default characteristics and no associated filter factories.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff561691">KSDEVICE_DESCRIPTOR</a> structure that specifies the characteristics of the device being initialized. If this pointer is <b>NULL</b>, a device is created with default characteristics and no associated filter factories.
 
 
 ## Return Value
 
-<b>KsInitializeDriver</b> returns STATUS_SUCCESS or an appropriate error code as returned by <a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a> or internal AVStream device initialization routines.
+<b>KsInitializeDriver</b> returns STATUS_SUCCESS or an appropriate error code as returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a> or internal AVStream device initialization routines.
 
 ## Remarks
 
@@ -92,11 +92,11 @@ This function is typically called from <b>DriverEntry</b>. If the minidriver pas
 
 ## See Also
 
-<a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a>
 
 
 
-<a href="..\ks\nf-ks-ksinitializedevice.md">KsInitializeDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544174">DRIVER_OBJECT</a>
 
 
 
@@ -104,20 +104,20 @@ This function is typically called from <b>DriverEntry</b>. If the minidriver pas
 
 
 
-<a href="..\wdm\ns-wdm-_driver_object.md">DRIVER_OBJECT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548397">IoCreateDevice</a>
 
 
 
-<a href="..\ks\ns-ks-_ksfilter_descriptor.md">KSFILTER_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561691">KSDEVICE_DESCRIPTOR</a>
 
 
 
-<a href="..\ks\ns-ks-_ksdevice_dispatch.md">KSDEVICE_DISPATCH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561693">KSDEVICE_DISPATCH</a>
 
 
 
-<a href="..\ks\ns-ks-_ksdevice_descriptor.md">KSDEVICE_DESCRIPTOR</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562553">KSFILTER_DESCRIPTOR</a>
 
 
 
-<a href="..\wdm\nf-wdm-iocreatedevice.md">IoCreateDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562682">KsInitializeDevice</a>

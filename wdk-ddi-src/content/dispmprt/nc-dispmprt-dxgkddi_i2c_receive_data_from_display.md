@@ -7,7 +7,7 @@ old-location: display\dxgkddii2creceivedatafromdisplay.htm
 old-project: display
 ms.assetid: 7b412180-e453-4ae4-95a5-e5393e1d9197
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKDDI_I2C_RECEIVE_DATA_FROM_DISPLAY, DmFunctions_5fcf0936-1f93-4445-9a80-545ad88b472b.xml, DxgkDdiI2CReceiveDataFromDisplay, DxgkDdiI2CReceiveDataFromDisplay callback function [Display Devices], display.dxgkddii2creceivedatafromdisplay, dispmprt/DxgkDdiI2CReceiveDataFromDisplay
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -67,7 +67,7 @@ NTSTATUS DxgkddiI2cReceiveDataFromDisplay(
 
 `MiniportDeviceContext`
 
-A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="..\dispmprt\nc-dispmprt-dxgkddi_add_device.md">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.
+A handle to a context block that is associated with a display adapter. The display miniport driver's <a href="https://msdn.microsoft.com/5fd4046f-54c3-4dfc-8d51-0d9ebcde0bea">DxgkDdiAddDevice</a> function previously provided this handle to the Microsoft DirectX graphics kernel subsystem.
 
 `VidPnTargetId`
 
@@ -211,4 +211,4 @@ If the display adapter supports HDCP, <i>DxgkDdiI2CReceiveDataFromDisplay</i> mu
 
 ## See Also
 
-<a href="..\dispmprt\nc-dispmprt-dxgkddi_i2c_transmit_data_to_display.md">DxgkDdiI2CTransmitDataToDisplay</a>
+<a href="https://msdn.microsoft.com/67a08982-5d2f-4cd8-be14-76977fde0aac">DxgkDdiI2CTransmitDataToDisplay</a>

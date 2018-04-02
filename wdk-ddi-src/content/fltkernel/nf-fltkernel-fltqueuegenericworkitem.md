@@ -7,7 +7,7 @@ old-location: ifsk\fltqueuegenericworkitem.htm
 old-project: ifsk
 ms.assetid: 30179fe1-e218-46cd-96a9-816ebab112bf
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_p_to_z_221f809d-f028-4e0f-b7b3-1341c1ed8782.xml, FltQueueGenericWorkItem, FltQueueGenericWorkItem function [Installable File System Drivers], fltkernel/FltQueueGenericWorkItem, ifsk.fltqueuegenericworkitem
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,21 +49,21 @@ req.typenames: EXpsFontRestriction
 
 ## Syntax
 
-````
-NTSTATUS FltQueueGenericWorkItem(
-  _In_     PFLT_GENERIC_WORKITEM         FltWorkItem,
-  _In_     PVOID                         FltObject,
-  _In_     PFLT_GENERIC_WORKITEM_ROUTINE WorkerRoutine,
-  _In_     WORK_QUEUE_TYPE               QueueType,
-  _In_opt_ PVOID                         Context
+```
+NTSTATUS FLTAPI FltQueueGenericWorkItem(
+  PFLT_GENERIC_WORKITEM         FltWorkItem,
+  PVOID                         FltObject,
+  PFLT_GENERIC_WORKITEM_ROUTINE WorkerRoutine,
+  WORK_QUEUE_TYPE               QueueType,
+  PVOID                         Context
 );
-````
+```
 
 ## Parameters
 
 `FltWorkItem`
 
-Pointer to the work item to be added to the work queue. The work item must have been allocated by calling <a href="..\fltkernel\nf-fltkernel-fltallocategenericworkitem.md">FltAllocateGenericWorkItem</a>.
+Pointer to the work item to be added to the work queue. The work item must have been allocated by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff541749">FltAllocateGenericWorkItem</a>.
 
 `FltObject`
 
@@ -173,9 +173,9 @@ The minifilter driver is being unloaded. This is an error code.
 
 <b>FltQueueGenericWorkItem</b> inserts a work item that is not associated with a specific I/O operation into a system work queue. The specified <i>WorkerRoutine</i> callback routine is called in the context of a system thread, at IRQL PASSIVE_LEVEL. 
 
-To allocate a work item, call <a href="..\fltkernel\nf-fltkernel-fltallocategenericworkitem.md">FltAllocateGenericWorkItem</a>. 
+To allocate a work item, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff541749">FltAllocateGenericWorkItem</a>. 
 
-To free the work item when it is no longer needed, call <a href="..\fltkernel\nf-fltkernel-fltfreegenericworkitem.md">FltFreeGenericWorkItem</a>.
+To free the work item when it is no longer needed, call <a href="https://msdn.microsoft.com/library/windows/hardware/ff542971">FltFreeGenericWorkItem</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -188,8 +188,8 @@ To free the work item when it is no longer needed, call <a href="..\fltkernel\nf
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltallocategenericworkitem.md">FltAllocateGenericWorkItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff541749">FltAllocateGenericWorkItem</a>
 
 
 
-<a href="..\fltkernel\nf-fltkernel-fltfreegenericworkitem.md">FltFreeGenericWorkItem</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff542971">FltFreeGenericWorkItem</a>

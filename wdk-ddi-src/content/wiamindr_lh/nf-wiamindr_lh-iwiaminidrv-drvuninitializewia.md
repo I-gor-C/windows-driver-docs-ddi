@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# drvUnInitializeWia method
+# IWiaMiniDrv::drvUnInitializeWia method
 The <b>IWiaMiniDrv::drvUnInitializeWia</b> method releases resources held by the minidriver.
 
 ## Syntax
 
-````
+```
 HRESULT drvUnInitializeWia(
-  [in] BYTE *pWiasContext
+  BYTE *__MIDL__IWiaMiniDrv0064
 );
-````
+```
 
 ## Parameters
 
@@ -80,7 +80,7 @@ The WIA service calls the <b>IWiaMiniDrv::drvUnInitializeWia</b> method when the
 
 ## See Also
 
-<a href="..\wiamindr_lh\nn-wiamindr_lh-iwiaminidrv.md">IWiaMiniDrv</a>
+<a href="https://msdn.microsoft.com/15068d10-5e24-427c-9684-24ce67b75ada">IWiaMiniDrv</a>
 
 
 

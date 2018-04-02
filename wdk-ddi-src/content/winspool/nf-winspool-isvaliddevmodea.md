@@ -50,12 +50,12 @@ The print spooler's <code>IsValidDevmode</code> function verifies that the conte
 
 ## Syntax
 
-````
-BOOL IsValidDevmode(
-  _In_opt_ PDEVMODEW pDevmode,
-           size_t    DevModeSize
+```
+BOOL IsValidDevmodeA(
+  PDEVMODEA pDevmode,
+  size_t    DevmodeSize
 );
-````
+```
 
 ## Parameters
 

@@ -50,12 +50,12 @@ The <b>wiauRegOpenData</b> function opens the <b>DeviceData</b> registry key.
 
 ## Syntax
 
-````
-HRESULT _stdcall wiauRegOpenData(
-  _In_    HKEY hkeyAncestor,
-  _Inout_ HKEY *phkeyDeviceData
+```
+HRESULT wiauRegOpenDataA(
+  HKEY hkeyAncestor,
+  HKEY *phkeyDeviceData
 );
-````
+```
 
 ## Parameters
 

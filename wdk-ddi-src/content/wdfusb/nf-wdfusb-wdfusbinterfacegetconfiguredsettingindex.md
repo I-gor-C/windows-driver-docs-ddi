@@ -55,17 +55,17 @@ The <b>WdfUsbInterfaceGetConfiguredSettingIndex</b> method returns the alternate
 
 ## Syntax
 
-````
+```
 BYTE WdfUsbInterfaceGetConfiguredSettingIndex(
-  _In_ WDFUSBINTERFACE Interface
+  WDFUSBINTERFACE Interface
 );
-````
+```
 
 ## Parameters
 
 `Interface`
 
-A handle to a USB interface object that was obtained by calling <a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>.
+A handle to a USB interface object that was obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550092">WdfUsbTargetDeviceGetInterface</a>.
 
 
 ## Return Value
@@ -109,4 +109,4 @@ settingIndex = WdfUsbInterfaceGetConfiguredSettingIndex(UsbInterface);</pre>
 
 ## See Also
 
-<a href="..\wdfusb\nf-wdfusb-wdfusbtargetdevicegetinterface.md">WdfUsbTargetDeviceGetInterface</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550092">WdfUsbTargetDeviceGetInterface</a>

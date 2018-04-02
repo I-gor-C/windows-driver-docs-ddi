@@ -44,22 +44,22 @@ req.typenames: PIPE_STATE
 ---
 
 
-# KsQueryInterfaces method
+# IKsPin::KsQueryInterfaces method
 The <b>KsQueryInterfaces</b> method retrieves interfaces that a pin supports.
 
 ## Syntax
 
-````
+```
 HRESULT KsQueryInterfaces(
-  [out] PKSMULTIPLE_ITEM *InterfaceList
+  PKSMULTIPLE_ITEM *InterfaceList
 );
-````
+```
 
 ## Parameters
 
 `InterfaceList`
 
-Pointer to a buffer that receives a pointer to a <a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a> structure, followed by a sequence of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a> structures that describe interface types. The KSMULTIPLE_ITEM structure is a header that describes the size of the buffer and the number of entries in the list that follows the header.
+Pointer to a buffer that receives a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff563441">KSMULTIPLE_ITEM</a> structure, followed by a sequence of <a href="https://msdn.microsoft.com/library/windows/hardware/ff563537">KSPIN_INTERFACE</a> structures that describe interface types. The KSMULTIPLE_ITEM structure is a header that describes the size of the buffer and the number of entries in the list that follows the header.
 
 
 ## Return Value
@@ -78,7 +78,7 @@ The returned interfaces are ordered by preference.
 
 ## See Also
 
-<a href="..\ks\ns-ks-ksmultiple_item.md">KSMULTIPLE_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563441">KSMULTIPLE_ITEM</a>
 
 
 

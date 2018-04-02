@@ -45,25 +45,25 @@ req.product: Windows 10 or later.
 ---
 
 
-# SetPnpState method
+# IWDFDevice::SetPnpState method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>SetPnpState</b> method turns on or off (or sets to the default state) the specified Plug and Play (PnP) property of a device.
 
 ## Syntax
 
-````
+```
 void SetPnpState(
-  [in] WDF_PNP_STATE State,
-  [in] WDF_TRI_STATE Value
+  WDF_PNP_STATE State,
+  WDF_TRI_STATE Value
 );
-````
+```
 
 ## Parameters
 
 `State`
 
-A <a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_state.md">WDF_PNP_STATE</a>-typed value that identifies the PnP property to set.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561434">WDF_PNP_STATE</a>-typed value that identifies the PnP property to set.
 
 `Value`
 
@@ -176,7 +176,7 @@ CUmdfHidDevice::OnCompletion(
 
 ## See Also
 
-<a href="..\wudfddi_types\ne-wudfddi_types-_wdf_pnp_state.md">WDF_PNP_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff556917">IWDFDevice</a>
 
 
 
@@ -188,4 +188,4 @@ CUmdfHidDevice::OnCompletion(
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iwdfdevice.md">IWDFDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561434">WDF_PNP_STATE</a>

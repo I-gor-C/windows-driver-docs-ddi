@@ -52,14 +52,14 @@ The <b>WdfRequestImpersonate</b> method registers a driver-supplied event callba
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfRequestImpersonate(
-  _In_     WDFREQUEST                   Request,
-  _In_     SECURITY_IMPERSONATION_LEVEL ImpersonationLevel,
-  _In_     PFN_WDF_REQUEST_IMPERSONATE  EvtRequestImpersonate,
-  _In_opt_ PVOID                        Context
+  WDFREQUEST                   Request,
+  SECURITY_IMPERSONATION_LEVEL ImpersonationLevel,
+  PFN_WDF_REQUEST_IMPERSONATE  EvtRequestImpersonate,
+  PVOID                        Context
 );
-````
+```
 
 ## Parameters
 
@@ -69,15 +69,15 @@ A handle to the framework request object that represents the I/O request that is
 
 `ImpersonationLevel`
 
-A <a href="..\wudfddi\ne-wudfddi-_security_impersonation_level.md">SECURITY_IMPERSONATION_LEVEL</a>-typed value that identifies the level of impersonation.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff556631">SECURITY_IMPERSONATION_LEVEL</a>-typed value that identifies the level of impersonation.
 
 `EvtRequestImpersonate`
 
-A pointer to the driver's <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_impersonate.md">EvtRequestImpersonate</a> event callback function.
+A pointer to the driver's <a href="https://msdn.microsoft.com/FA3FE0C0-57EC-4761-991B-49CA65A79BDD">EvtRequestImpersonate</a> event callback function.
 
 `Context`
 
-A pointer to a buffer that contains context information that is related to the impersonation call. The framework passes this context information in a call to the <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_impersonate.md">EvtRequestImpersonate</a> event callback function. This parameter is optional and can be <b>NULL</b>
+A pointer to a buffer that contains context information that is related to the impersonation call. The framework passes this context information in a call to the <a href="https://msdn.microsoft.com/FA3FE0C0-57EC-4761-991B-49CA65A79BDD">EvtRequestImpersonate</a> event callback function. This parameter is optional and can be <b>NULL</b>
 
 
 ## Return Value
@@ -88,7 +88,7 @@ The method might return other <a href="https://msdn.microsoft.com/library/window
 
 ## Remarks
 
-The <b>WdfRequestImpersonate</b> method does not return until the <a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_impersonate.md">EvtRequestImpersonate</a> event callback function completes.
+The <b>WdfRequestImpersonate</b> method does not return until the <a href="https://msdn.microsoft.com/FA3FE0C0-57EC-4761-991B-49CA65A79BDD">EvtRequestImpersonate</a> event callback function completes.
 
 For more information, see <a href="https://msdn.microsoft.com/02EA93CE-3C4D-4F6F-8E58-DD78EBDB19DE">Handling Client Impersonation in UMDF Drivers</a>.
 
@@ -105,7 +105,7 @@ For more information, see <a href="https://msdn.microsoft.com/02EA93CE-3C4D-4F6F
 
 ## See Also
 
-<a href="..\wdfrequest\nc-wdfrequest-evt_wdf_request_impersonate.md">EvtRequestImpersonate</a>
+<a href="https://msdn.microsoft.com/FA3FE0C0-57EC-4761-991B-49CA65A79BDD">EvtRequestImpersonate</a>
 
 
 

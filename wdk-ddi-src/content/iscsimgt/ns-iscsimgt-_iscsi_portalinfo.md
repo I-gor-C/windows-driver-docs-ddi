@@ -7,7 +7,7 @@ old-location: storage\iscsi_portalinfo.htm
 old-project: storage
 ms.assetid: 0ecfed3e-477a-4014-8491-1a8997ac5b90
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PISCSI_PortalInfo, ISCSI_PortalInfo, ISCSI_PortalInfo structure [Storage Devices], PISCSI_PortalInfo, PISCSI_PortalInfo structure pointer [Storage Devices], _ISCSI_PortalInfo, iscsimgt/ISCSI_PortalInfo, iscsimgt/PISCSI_PortalInfo, storage.iscsi_portalinfo, structs-iSCSI_40fc24e8-364d-4698-911c-4128f471cdcd.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: ISCSI_PortalInfo, *PISCSI_PortalInfo
 The ISCSI_PortalInfo structure contains information about an iSCSI portal.
 
 ## Syntax
-````
+```
 typedef struct _ISCSI_PortalInfo {
-  ULONG            Index;
-  UCHAR            PortalType;
-  UCHAR            Protocol;
-  UCHAR            Reserved1;
-  UCHAR            Reserved2;
+  ULONG            Index;
+  UCHAR            PortalType;
+  UCHAR            Protocol;
+  UCHAR            Reserved1;
+  UCHAR            Reserved2;
   ISCSI_IP_Address IPAddr;
-  ULONG            Port;
-  USHORT           PortalTag;
-} ISCSI_PortalInfo, *PISCSI_PortalInfo;
-````
+  ULONG            Port;
+  USHORT           PortalTag;
+} *PISCSI_PortalInfo, ISCSI_PortalInfo;
+```
 
 ## Members
 
@@ -112,7 +112,7 @@ Reserved for Microsoft use only.
 
 `IPAddr`
 
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a> structure that indicates the portal's network IP address.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a> structure that indicates the portal's network IP address.
 
 `Port`
 
@@ -130,8 +130,8 @@ The portal group tag to which the portal belongs.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561536">ISCSI_IP_Address</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561559">ISCSI_PortalInfo WMI Class</a>
-
-
-
-<a href="..\iscsidef\ns-iscsidef-_iscsi_ip_address.md">ISCSI_IP_Address</a>

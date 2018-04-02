@@ -49,21 +49,21 @@ req.product: Windows 10 or later.
 # WdfDmaTransactionFreeResources function
 <p class="CCE_Message">[Applies to KMDF only]
 
-The <b>WdfDmaTransactionFreeResources</b> method releases DMA resources that the driver previously allocated by calling <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionallocateresources.md">WdfDmaTransactionAllocateResources</a>.
+The <b>WdfDmaTransactionFreeResources</b> method releases DMA resources that the driver previously allocated by calling <a href="https://msdn.microsoft.com/library/windows/hardware/hh451123">WdfDmaTransactionAllocateResources</a>.
 
 ## Syntax
 
-````
+```
 void WdfDmaTransactionFreeResources(
-  _In_ WDFDMATRANSACTION DmaTransaction
+  WDFDMATRANSACTION DmaTransaction
 );
-````
+```
 
 ## Parameters
 
 `DmaTransaction`
 
-A handle to the DMA transaction object that the driver provided in a previous call to <a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionallocateresources.md">WdfDmaTransactionAllocateResources</a>.
+A handle to the DMA transaction object that the driver provided in a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/hh451123">WdfDmaTransactionAllocateResources</a>.
 
 
 ## Return Value
@@ -80,7 +80,7 @@ On operating systems earlier than Windows 8, <b>WdfDmaTransactionFreeResources<
 
 
 
-The driver's call to <b>WdfDmaTransactionFreeResources</b> may cause the framework to call <a href="https://msdn.microsoft.com/c01b94b2-aabf-47dd-952a-06e481579614">EvtProgramDma</a> or <a href="..\wdfdmatransaction\nc-wdfdmatransaction-evt_wdf_reserve_dma.md">EvtReserveDma</a> immediately.
+The driver's call to <b>WdfDmaTransactionFreeResources</b> may cause the framework to call <a href="https://msdn.microsoft.com/c01b94b2-aabf-47dd-952a-06e481579614">EvtProgramDma</a> or <a href="https://msdn.microsoft.com/3663EF19-5F16-43D1-BFBC-28280E28D4DE">EvtReserveDma</a> immediately.
 
 For more information about system-mode DMA, see <a href="https://msdn.microsoft.com/CCC77C15-69CA-44CB-8DEB-29F3EAEA44F6">Supporting System-Mode DMA</a>.
 
@@ -96,4 +96,4 @@ For more information about system-mode DMA, see <a href="https://msdn.microsoft.
 
 ## See Also
 
-<a href="..\wdfdmatransaction\nf-wdfdmatransaction-wdfdmatransactionallocateresources.md">WdfDmaTransactionAllocateResources</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451123">WdfDmaTransactionAllocateResources</a>

@@ -7,7 +7,7 @@ old-location: audio\iminiportaudioenginenode_setdeviceformat.htm
 old-project: audio
 ms.assetid: A6FFC14B-0736-425F-A923-DFF54494887C
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IMiniportAudioEngineNode, IMiniportAudioEngineNode interface [Audio Devices], SetDeviceFormat method, IMiniportAudioEngineNode::SetDeviceFormat, SetDeviceFormat method [Audio Devices], SetDeviceFormat method [Audio Devices], IMiniportAudioEngineNode interface, SetDeviceFormat,IMiniportAudioEngineNode.SetDeviceFormat, audio.iminiportaudioenginenode_setdeviceformat, portcls/IMiniportAudioEngineNode::SetDeviceFormat
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,18 +44,18 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# SetDeviceFormat method
+# IMiniportAudioEngineNode::SetDeviceFormat method
 Sets the audio data format for an audio device.
 
 ## Syntax
 
-````
+```
 NTSTATUS SetDeviceFormat(
-  [in] ULONG                     ulNodeId,
-  [in] KSDATAFORMAT_WAVEFORMATEX *pFormat,
-  [in] ULONG                     ulBufferSize
+  ULONG                     ulNodeId,
+  KSDATAFORMAT_WAVEFORMATEX *pFormat,
+  ULONG                     ulBufferSize
 );
-````
+```
 
 ## Parameters
 
@@ -65,7 +65,7 @@ The ID of the node that represents the device.
 
 `pFormat`
 
-A structure of type <a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVEFORMATEX</a> that represents the audio data format to be set for the device.
+A structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff537095">KSDATAFORMAT_WAVEFORMATEX</a> that represents the audio data format to be set for the device.
 
 `ulBufferSize`
 
@@ -88,8 +88,8 @@ returns an appropriate error code.
 
 ## See Also
 
-<a href="..\ksmedia\ns-ksmedia-ksdataformat_waveformatex.md">KSDATAFORMAT_WAVEFORMATEX</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn302040">IMiniportAudioEngineNode</a>
 
 
 
-<a href="..\portcls\nn-portcls-iminiportaudioenginenode.md">IMiniportAudioEngineNode</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff537095">KSDATAFORMAT_WAVEFORMATEX</a>

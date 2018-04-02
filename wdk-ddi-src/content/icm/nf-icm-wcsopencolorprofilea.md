@@ -50,17 +50,17 @@ The <code>WcsOpenColorProfile</code> function creates a handle to a specified co
 
 ## Syntax
 
-````
-HPROFILE WINAPI WcsOpenColorProfile(
-  _In_     PROFILE pDMPProfile,
-  _In_opt_ PROFILE pCAMPProfile,
-  _In_opt_ PROFILE pGMMPProfile,
-  _In_     DWORD   dwDesiredAccess,
-  _In_     DWORD   dwShareMode,
-  _In_     DWORD   dwCreationMode,
-  _In_     DWORD   dwFlags
+```
+HPROFILE WcsOpenColorProfileA(
+  PPROFILE pCDMPProfile,
+  PPROFILE pCAMPProfile,
+  PPROFILE pGMMPProfile,
+  DWORD    dwDesireAccess,
+  DWORD    dwShareMode,
+  DWORD    dwCreationMode,
+  DWORD    dwFlags
 );
-````
+```
 
 ## Parameters
 

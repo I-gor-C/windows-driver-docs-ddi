@@ -44,16 +44,16 @@ req.typenames: EXpsFontRestriction
 ---
 
 
-# CloseSender method
+# IXpsDocumentConsumer::CloseSender method
 The <code>CloseSender</code> method tells the Pipeline Manager that the filter is done sending XPS parts.
 
 ## Syntax
 
-````
-HRESULT STDMETHODCALLTYPE CloseSender(
-    None
+```
+HRESULT CloseSender(
+
 );
-````
+```
 
 ## Parameters
 

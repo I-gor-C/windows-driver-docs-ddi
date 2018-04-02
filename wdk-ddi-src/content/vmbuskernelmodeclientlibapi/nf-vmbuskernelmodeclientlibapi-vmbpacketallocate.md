@@ -7,7 +7,7 @@ old-location: netvista\vmbpacketallocate.htm
 old-project: netvista
 ms.assetid: F121A7BC-5504-4CF5-8C8A-0568D6C4F77F
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: VmbPacketAllocate, VmbPacketAllocate function [Network Drivers Starting with Windows Vista], netvista.vmbpacketallocate, vmbuskernelmodeclientlibapi/VmbPacketAllocate
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,11 +53,11 @@ The <b>VmbPacketAllocate</b> function allocates a packet from the channel's look
 
 ## Syntax
 
-````
+```
 VMBPACKET VmbPacketAllocate(
-  _In_ VMBCHANNEL Channel
+  VMBCHANNEL Channel
 );
-````
+```
 
 ## Parameters
 
@@ -74,7 +74,7 @@ A handle for a channel.
 
 The default completion routine of a packet automatically releases the packet.
 If the packet is not sent or if the completion routine is changed, the
-client should call the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketfree.md">VmbPacketFree</a> function to release the packet.
+client should call the <a href="https://msdn.microsoft.com/15688701-2385-4F17-A944-D398EEF3C277">VmbPacketFree</a> function to release the packet.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -88,4 +88,4 @@ client should call the <a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmod
 
 ## See Also
 
-<a href="..\vmbuskernelmodeclientlibapi\nf-vmbuskernelmodeclientlibapi-vmbpacketfree.md">VmbPacketFree</a>
+<a href="https://msdn.microsoft.com/15688701-2385-4F17-A944-D398EEF3C277">VmbPacketFree</a>

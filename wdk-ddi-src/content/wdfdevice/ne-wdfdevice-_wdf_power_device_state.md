@@ -50,18 +50,18 @@ req.product: Windows 10 or later.
 The <b>WDF_POWER_DEVICE_STATE</b> enumeration identifies the <a href="https://msdn.microsoft.com/library/windows/hardware/ff543162">device power states</a> that a device might support.
 
 ## Syntax
-````
-typedef enum _WDF_POWER_DEVICE_STATE { 
-  WdfPowerDeviceInvalid                = 0,
-  WdfPowerDeviceD0                     = 1,
-  WdfPowerDeviceD1                     = 2,
-  WdfPowerDeviceD2                     = 3,
-  WdfPowerDeviceD3                     = 4,
-  WdfPowerDeviceD3Final                = 5,
-  WdfPowerDevicePrepareForHibernation  = 6,
-  WdfPowerDeviceMaximum                = 7
-} WDF_POWER_DEVICE_STATE, *PWDF_POWER_DEVICE_STATE;
-````
+```
+typedef enum _WDF_POWER_DEVICE_STATE {
+  WdfPowerDeviceInvalid                ,
+  WdfPowerDeviceD0                     ,
+  WdfPowerDeviceD1                     ,
+  WdfPowerDeviceD2                     ,
+  WdfPowerDeviceD3                     ,
+  WdfPowerDeviceD3Final                ,
+  WdfPowerDevicePrepareForHibernation  ,
+  WdfPowerDeviceMaximum
+} *PWDF_POWER_DEVICE_STATE, WDF_POWER_DEVICE_STATE;
+```
 
 ## Constants
 
@@ -118,8 +118,8 @@ typedef enum _WDF_POWER_DEVICE_STATE {
 
 ## See Also
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_exit.md">EvtDeviceD0Exit</a>
+<a href="https://msdn.microsoft.com/0cfabb0f-2d5e-4445-8683-d2916de5b549">EvtDeviceD0Entry</a>
 
 
 
-<a href="..\wdfdevice\nc-wdfdevice-evt_wdf_device_d0_entry.md">EvtDeviceD0Entry</a>
+<a href="https://msdn.microsoft.com/bc3af732-f9ab-43a4-bc6f-7fa0b4c05a66">EvtDeviceD0Exit</a>

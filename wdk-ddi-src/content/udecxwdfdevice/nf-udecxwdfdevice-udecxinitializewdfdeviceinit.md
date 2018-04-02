@@ -7,7 +7,7 @@ old-location: buses\udecxinitializewdfdeviceinit.htm
 old-project: usbref
 ms.assetid: 6FF62F6B-D83D-45DB-BE83-7A6D61A6AC92
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: UdecxInitializeWdfDeviceInit, UdecxInitializeWdfDeviceInit function [Buses], buses.udecxinitializewdfdeviceinit, udecxwdfdevice/UdecxInitializeWdfDeviceInit
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -51,11 +51,11 @@ Initializes device initialization operations when the Plug and Play (PnP) manage
 
 ## Syntax
 
-````
-FORCEINLINE NTSTATUS UdecxInitializeWdfDeviceInit(
-   PWDFDEVICE_INIT DeviceInit
+```
+NTSTATUS UdecxInitializeWdfDeviceInit(
+  PWDFDEVICE_INIT WdfDeviceInit
 );
-````
+```
 
 ## Parameters
 
@@ -70,7 +70,7 @@ The method returns STATUS_SUCCESS if the operation succeeds. Otherwise, this met
 
 ## Remarks
 
-The client driver for the emulated host controller device calls this method in its <a href="..\wdfdriver\nc-wdfdriver-evt_wdf_driver_device_add.md">EvtDriverDeviceAdd</a> implementation before it calls <a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a> and <a href="..\udecxwdfdevice\nf-udecxwdfdevice-udecxwdfdeviceaddusbdeviceemulation.md">UdecxWdfDeviceAddUsbDeviceEmulation</a>. For code example, see <b>UdecxWdfDeviceAddUsbDeviceEmulation</b>.
+The client driver for the emulated host controller device calls this method in its <a href="https://msdn.microsoft.com/b20db029-ee2c-4fb1-bd69-ccd2e37fdc9a">EvtDriverDeviceAdd</a> implementation before it calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a> and <a href="https://msdn.microsoft.com/library/windows/hardware/mt627990">UdecxWdfDeviceAddUsbDeviceEmulation</a>. For code example, see <b>UdecxWdfDeviceAddUsbDeviceEmulation</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,11 +84,7 @@ The client driver for the emulated host controller device calls this method in i
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>
-
-
-
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicecreate.md">WdfDeviceCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
 
 
 
@@ -96,4 +92,8 @@ The client driver for the emulated host controller device calls this method in i
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/mt595932">Architecture: USB Device Emulation (UDE)</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545926">WdfDeviceCreate</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/mt595939">Write a UDE client driver</a>

@@ -47,15 +47,15 @@ req.typenames: PIPE_STATE
 
 
 ## Syntax
-````
-typedef enum  { 
-  PipeState_DontCare,
-  PipeState_RangeNotFixed,
-  PipeState_RangeFixed,
-  PipeState_CompressionUnknown,
+```
+typedef enum PIPE_STATE {
+  PipeState_DontCare            ,
+  PipeState_RangeNotFixed       ,
+  PipeState_RangeFixed          ,
+  PipeState_CompressionUnknown  ,
   PipeState_Finalized
-} PIPE_STATE;
-````
+} ;
+```
 
 ## Constants
 

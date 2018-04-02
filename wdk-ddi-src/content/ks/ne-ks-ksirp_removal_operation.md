@@ -47,14 +47,14 @@ req.typenames: KSIRP_REMOVAL_OPERATION
 
 
 ## Syntax
-````
-typedef enum  { 
-  KsAcquireOnly,
-  KsAcquireAndRemove,
-  KsAcquireOnlySingleItem,
+```
+typedef enum KSIRP_REMOVAL_OPERATION {
+  KsAcquireOnly                     ,
+  KsAcquireAndRemove                ,
+  KsAcquireOnlySingleItem           ,
   KsAcquireAndRemoveOnlySingleItem
-} KSIRP_REMOVAL_OPERATION;
-````
+} ;
+```
 
 ## Constants
 

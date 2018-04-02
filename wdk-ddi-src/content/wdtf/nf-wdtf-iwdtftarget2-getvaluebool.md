@@ -7,7 +7,7 @@ old-location: dtf\iwdtftarget2_getvaluebool.htm
 old-project: dtf
 ms.assetid: 53be5e16-7c04-41c3-a808-828982eda440
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: GetValueBool method [Windows Device Testing Framework], GetValueBool method [Windows Device Testing Framework], IWDTFTarget2 interface, GetValueBool,IWDTFTarget2.GetValueBool, IWDTFTarget2, IWDTFTarget2 interface [Windows Device Testing Framework], GetValueBool method, IWDTFTarget2::GetValueBool, Microsoft.WDTF.IWDTFTarget2.GetValueBool, Microsoft::WDTF::IWDTFTarget2::GetValueBool, dtf.iwdtftarget2_getvaluebool, wdtf/IWDTFTarget2::GetValueBool
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetValueBool method
+# IWDTFTarget2::GetValueBool method
 Returns a boolean value from the target that is associated with a specified attribute.
 
 ## Syntax
 
-````
+```
 HRESULT GetValueBool(
-  [in]          BSTR         SDEL,
-  [out, retval] VARIANT_BOOL *pValue
+  BSTR         SDEL,
+  VARIANT_BOOL *pValue
 );
-````
+```
 
 ## Parameters
 
@@ -89,4 +89,4 @@ to work properly.
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439367">IWDTFTarget2</a>

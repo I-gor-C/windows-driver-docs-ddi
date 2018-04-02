@@ -53,17 +53,17 @@ The <b>WdfCommonBufferGetLength</b> method returns the length of a specified com
 
 ## Syntax
 
-````
+```
 size_t WdfCommonBufferGetLength(
-  _In_ WDFCOMMONBUFFER CommonBuffer
+  WDFCOMMONBUFFER CommonBuffer
 );
-````
+```
 
 ## Parameters
 
 `CommonBuffer`
 
-A handle to a common buffer object that the driver obtained by a previous call to <a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffercreate.md">WdfCommonBufferCreate</a>.
+A handle to a common buffer object that the driver obtained by a previous call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff545800">WdfCommonBufferCreate</a>.
 
 
 ## Return Value
@@ -107,4 +107,4 @@ bufferLength = WdfCommonBufferGetLength(DevExt-&gt;CommonBuffer); </pre>
 
 ## See Also
 
-<a href="..\wdfcommonbuffer\nf-wdfcommonbuffer-wdfcommonbuffercreate.md">WdfCommonBufferCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff545800">WdfCommonBufferCreate</a>

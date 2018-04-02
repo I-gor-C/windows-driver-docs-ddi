@@ -47,13 +47,13 @@ req.typenames: KSWAVE_BUFFER, *PKSWAVE_BUFFER
 The KSWAVE_BUFFER structure is used to describe a sample buffer.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSWAVE_BUFFER {
   ULONG Attributes;
   ULONG BufferSize;
   PVOID BufferAddress;
-} KSWAVE_BUFFER, *PKSWAVE_BUFFER;
-````
+}  *PKSWAVE_BUFFER;
+```
 
 ## Members
 

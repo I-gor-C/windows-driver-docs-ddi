@@ -55,17 +55,17 @@ The <b>WdfTimerGetParentObject</b> method returns a handle to the parent object 
 
 ## Syntax
 
-````
+```
 WDFOBJECT WdfTimerGetParentObject(
-  _In_ WDFTIMER Timer
+  WDFTIMER Timer
 );
-````
+```
 
 ## Parameters
 
 `Timer`
 
-A handle to a framework timer object that was obtained by calling <a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>.
+A handle to a framework timer object that was obtained by calling <a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a>.
 
 
 ## Return Value
@@ -116,4 +116,4 @@ MyEvtTimerFunc(
 
 ## See Also
 
-<a href="..\wdftimer\nf-wdftimer-wdftimercreate.md">WdfTimerCreate</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff550050">WdfTimerCreate</a>

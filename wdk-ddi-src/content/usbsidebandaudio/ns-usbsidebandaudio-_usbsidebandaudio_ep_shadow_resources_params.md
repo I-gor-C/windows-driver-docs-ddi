@@ -7,7 +7,7 @@ old-location: audio\ususbsidebandaudio_ep_shadow_resources_params.htm
 old-project: audio
 ms.assetid: 56E9C279-402D-492E-ACE0-CB8C5289EA40
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS structure [Audio Devices], _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS, audio.ususbsidebandaudio_ep_shadow_resources_params, usbsidebandaudio/USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ req.product: Windows 10 or later.
 TBD
 
 ## Syntax
-````
-typedef struct _USUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS {
-  ULONG                                    Reserved 0;
-  USBSIDEBANDAUDIO_EP_SHADOW_RESOURCE_TYPE Reserved 1;
-} USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS, *USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS;
-````
+```
+typedef struct _USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS {
+  ULONG                                    EpIndex;
+  USBSIDEBANDAUDIO_EP_SHADOW_RESOURCE_TYPE Type;
+} *PUSBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS, USBSIDEBANDAUDIO_EP_SHADOW_RESOURCES_PARAMS;
+```
 
 ## Members
 

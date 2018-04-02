@@ -53,11 +53,11 @@ The <b>WdfDeviceWdmGetDeviceObject</b> method returns the Windows Driver Model (
 
 ## Syntax
 
-````
+```
 PDEVICE_OBJECT WdfDeviceWdmGetDeviceObject(
-  _In_ WDFDEVICE hDevice
+  WDFDEVICE Device
 );
-````
+```
 
 ## Parameters
 
@@ -68,13 +68,13 @@ TBD
 
 ## Return Value
 
-<b>WdfDeviceWdmGetDeviceObject</b> returns a pointer to a <a href="..\wdm\ns-wdm-_device_object.md">DEVICE_OBJECT</a> structure.
+<b>WdfDeviceWdmGetDeviceObject</b> returns a pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff543147">DEVICE_OBJECT</a> structure.
 
 A bug check occurs if the driver supplies an invalid object handle.
 
 ## Remarks
 
-The pointer that the <b>WdfDeviceWdmGetDeviceObject</b> method returns is valid until the framework device object is deleted. If the driver provides an <a href="..\wdfobject\nc-wdfobject-evt_wdf_object_context_cleanup.md">EvtCleanupCallback</a> function for the framework device object, the pointer is valid until the callback function returns.
+The pointer that the <b>WdfDeviceWdmGetDeviceObject</b> method returns is valid until the framework device object is deleted. If the driver provides an <a href="https://msdn.microsoft.com/aba2efca-7d1f-4594-af65-13356f0e3f8b">EvtCleanupCallback</a> function for the framework device object, the pointer is valid until the callback function returns.
 
 
 #### Examples
@@ -110,4 +110,4 @@ The following code example creates a tracing message that contains pointers to t
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdevicewdmgetphysicaldevice.md">WdfDeviceWdmGetPhysicalDevice</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546946">WdfDeviceWdmGetPhysicalDevice</a>

@@ -7,7 +7,7 @@ old-location: ifsk\rtlunicodetomultibyten.htm
 old-project: ifsk
 ms.assetid: e50199d2-948d-4572-8688-89d92961f85b
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: RtlUnicodeToMultiByteN, RtlUnicodeToMultiByteN routine [Installable File System Drivers], ifsk.rtlunicodetomultibyten, ntifs/RtlUnicodeToMultiByteN, rtlref_233ec1ac-8ecc-4261-8f17-11485d03ec50.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,15 +49,15 @@ The <b>RtlUnicodeToMultiByteN</b> routine translates the specified Unicode strin
 
 ## Syntax
 
-````
-NTSTATUS RtlUnicodeToMultiByteN(
-  _Out_     PCHAR  MultiByteString,
-  _In_      ULONG  MaxBytesInMultiByteString,
-  _Out_opt_ PULONG BytesInMultiByteString,
-  _In_      PCWCH  UnicodeString,
-  _In_      ULONG  BytesInUnicodeString
+```
+NTSYSAPI NTSTATUS RtlUnicodeToMultiByteN(
+  PCHAR  MultiByteString,
+  ULONG  MaxBytesInMultiByteString,
+  PULONG BytesInMultiByteString,
+  PCWCH  UnicodeString,
+  ULONG  BytesInUnicodeString
 );
-````
+```
 
 ## Parameters
 
@@ -109,12 +109,12 @@ For information about other string-handling routines, see <a href="https://msdn.
 
 ## See Also
 
-<a href="..\ntifs\nf-ntifs-rtlmultibytetounicoden.md">RtlMultiByteToUnicodeN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553113">RtlMultiByteToUnicodeN</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlupcaseunicodetomultibyten.md">RtlUpcaseUnicodeToMultiByteN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553266">RtlUnicodeToMultiByteSize</a>
 
 
 
-<a href="..\ntifs\nf-ntifs-rtlunicodetomultibytesize.md">RtlUnicodeToMultiByteSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff553296">RtlUpcaseUnicodeToMultiByteN</a>

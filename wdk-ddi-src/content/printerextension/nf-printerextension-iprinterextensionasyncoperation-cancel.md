@@ -45,16 +45,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# Cancel method
+# IPrinterExtensionAsyncOperation::Cancel method
 Cancels the asynchronous operation.
 
 ## Syntax
 
-````
+```
 HRESULT Cancel(
-    void
+
 );
-````
+```
 
 ## Parameters
 
@@ -78,4 +78,4 @@ Also, note that this method does not wait for the cancellation to be processed -
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprinterextensionasyncoperation.md">IPrinterExtensionAsyncOperation</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn265387">IPrinterExtensionAsyncOperation</a>

@@ -7,7 +7,7 @@ old-location: display\d3dddi_escapeflags.htm
 old-project: display
 ms.assetid: 40648f6a-3393-4374-beff-e097c299f9e9
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: D3DDDI_ESCAPEFLAGS, D3DDDI_ESCAPEFLAGS structure [Display Devices], D3D_other_Structs_5ff9ad07-6a44-4a53-a70c-5abdbe84065a.xml, _D3DDDI_ESCAPEFLAGS, d3dukmdt/D3DDDI_ESCAPEFLAGS, display.d3dddi_escapeflags
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,31 +47,36 @@ req.typenames: D3DDDI_ESCAPEFLAGS
 The D3DDDI_ESCAPEFLAGS structure identifies how the user-mode display driver shares information with the display miniport driver.
 
 ## Syntax
-````
+```
 typedef struct _D3DDDI_ESCAPEFLAGS {
   union {
     struct {
-      UINT HardwareAccess  :1;
-#if ((DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3) || \
-     (D3D_UMD_INTERFACE_VERSION >= D3D_UMD_INTERFACE_VERSION_WDDM1_3))
-
-      UINT DeviceStatusQuery  :1;
-      UINT ChangeFrameLatency  :1;
-      UINT Reserved  :29;
-#else 
-      UINT Reserved  :31;
-#endif 
+      UINT  : 1  HardwareAccess;
+      UINT  : 1  DeviceStatusQuery;
+      UINT  : 1  ChangeFrameLatency;
+      UINT  : 1  NoAdapterSynchronization;
+#if ...
+      UINT  : 1  Reserved;
+      UINT  : 1  VirtualMachineData;
+      UINT  : 26 Reserved2;
+#elif
+      UINT  : 28 Reserved;
+#elif
+      UINT  : 29 Reserved;
+#else
+      UINT  : 31 Reserved;
+#endif
     };
-    UINT   Value;
+    UINT Value;
   };
 } D3DDDI_ESCAPEFLAGS;
-````
+```
 
 ## Members
 
 
 ## Remarks
-If <b>ChangeFrameLatency</b> is set, a <a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_escapecb.md">pfnEscapeCb</a> call will succeed only if:
+If <b>ChangeFrameLatency</b> is set, a <a href="https://msdn.microsoft.com/66c0347f-2cf3-42fc-8641-47c731e958c9">pfnEscapeCb</a> call will succeed only if:
 
 <ul>
 <li>The display miniport driver is responsible for a linked adapter configuration (LDA) provided by a single vendor.</li>
@@ -88,24 +93,24 @@ If these conditions are not met, <i>pfnEscapeCb</i> call returns an <b>E_INVALID
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgkarg_escape.md">DXGKARG_ESCAPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544190">D3DDDICB_ESCAPE</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_framelatencyescape.md">D3DDDI_FRAMELATENCYESCAPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn482417">D3DDDI_EXECUTIONSTATEESCAPE</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddicb_escape.md">D3DDDICB_ESCAPE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn482418">D3DDDI_FRAMELATENCYESCAPE</a>
 
 
 
-<a href="..\d3dumddi\nc-d3dumddi-pfnd3dddi_escapecb.md">pfnEscapeCb</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff557588">DXGKARG_ESCAPE</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_executionstateescape.md">D3DDDI_EXECUTIONSTATEESCAPE</a>
+<a href="https://msdn.microsoft.com/79a524cd-dec1-4ea8-a660-d9d9c644e162">DxgkDdiEscape</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_escape.md">DxgkDdiEscape</a>
+<a href="https://msdn.microsoft.com/66c0347f-2cf3-42fc-8641-47c731e958c9">pfnEscapeCb</a>

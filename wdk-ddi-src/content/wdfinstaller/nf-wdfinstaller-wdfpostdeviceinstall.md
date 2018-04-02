@@ -53,12 +53,12 @@ The co-installer's <b>WdfPostDeviceInstall</b> function performs any operations 
 
 ## Syntax
 
-````
+```
 ULONG WdfPostDeviceInstall(
-  _In_     LPCWSTR InfPath,
-  _In_opt_ LPCWSTR InfSectionName
+  LPCWSTR InfPath,
+  LPCWSTR InfSectionName
 );
-````
+```
 
 ## Parameters
 
@@ -100,4 +100,4 @@ For a code example that uses the <b>WdfPostDeviceInstall</b> function, see the i
 
 ## See Also
 
-<a href="..\wdfinstaller\nf-wdfinstaller-wdfpredeviceinstall.md">WdfPreDeviceInstall</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548835">WdfPreDeviceInstall</a>

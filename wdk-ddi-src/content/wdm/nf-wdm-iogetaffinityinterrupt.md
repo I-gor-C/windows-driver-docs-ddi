@@ -7,7 +7,7 @@ old-location: kernel\iogetaffinityinterrupt.htm
 old-project: kernel
 ms.assetid: aec1ace6-9945-4e7a-b0f6-81591670ecfe
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IoGetAffinityInterrupt, IoGetAffinityInterrupt routine [Kernel-Mode Driver Architecture], WdmlibIoGetAffinityInterrupt, k104_39247b69-50e1-4162-b26e-81b5358738de.xml, kernel.iogetaffinityinterrupt, wdm/IoGetAffinityInterrupt, wdm/WdmlibIoGetAffinityInterrupt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,33 +47,33 @@ req.product: Windows 10 or later.
 
 
 # IoGetAffinityInterrupt function
-For more information, see the <a href="..\iointex\nf-iointex-wdmlibiogetaffinityinterrupt.md">WdmlibIoGetAffinityInterrupt</a> function.
+For more information, see the <a href="https://msdn.microsoft.com/E9E80EB4-C20B-4025-957B-32DC6FAE7F38">WdmlibIoGetAffinityInterrupt</a> function.
 
 <code>#define IoGetAffinityInterrupt WdmlibIoGetAffinityInterrupt</code>
 
 ## Syntax
 
-````
-NTSTATUS IoGetAffinityInterrupt(
-  _In_  PKINTERRUPT     InterruptObject,
-  _Out_ PGROUP_AFFINITY GroupAffinity
+```
+NTKERNELAPI NTSTATUS IoGetAffinityInterrupt(
+  PKINTERRUPT     InterruptObject,
+  PGROUP_AFFINITY GroupAffinity
 );
-````
+```
 
 ## Parameters
 
 `InterruptObject`
 
-For more information, see the <a href="..\iointex\nf-iointex-wdmlibiogetaffinityinterrupt.md">WdmlibIoGetAffinityInterrupt</a> function.
+For more information, see the <a href="https://msdn.microsoft.com/E9E80EB4-C20B-4025-957B-32DC6FAE7F38">WdmlibIoGetAffinityInterrupt</a> function.
 
 `GroupAffinity`
 
-For more information, see the <a href="..\iointex\nf-iointex-wdmlibiogetaffinityinterrupt.md">WdmlibIoGetAffinityInterrupt</a> function.
+For more information, see the <a href="https://msdn.microsoft.com/E9E80EB4-C20B-4025-957B-32DC6FAE7F38">WdmlibIoGetAffinityInterrupt</a> function.
 
 
 ## Return Value
 
-For more information, see the <a href="..\iointex\nf-iointex-wdmlibiogetaffinityinterrupt.md">WdmlibIoGetAffinityInterrupt</a> function.
+For more information, see the <a href="https://msdn.microsoft.com/E9E80EB4-C20B-4025-957B-32DC6FAE7F38">WdmlibIoGetAffinityInterrupt</a> function.
 
 
 ## Requirements
@@ -88,4 +88,4 @@ For more information, see the <a href="..\iointex\nf-iointex-wdmlibiogetaffinity
 
 ## See Also
 
-<a href="..\iointex\nf-iointex-wdmlibiogetaffinityinterrupt.md">WdmlibIoGetAffinityInterrupt</a>
+<a href="https://msdn.microsoft.com/E9E80EB4-C20B-4025-957B-32DC6FAE7F38">WdmlibIoGetAffinityInterrupt</a>

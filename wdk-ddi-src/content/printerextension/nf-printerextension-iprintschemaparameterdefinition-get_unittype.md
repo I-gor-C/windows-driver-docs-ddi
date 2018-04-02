@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_UnitType method
+# IPrintSchemaParameterDefinition::get_UnitType method
 The <b>UnitType</b> property gets the unit type.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_UnitType(
-  [out, retval] BSTR *pbstrUnitType
+  BSTR *pbstrUnitType
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemaparameterdefinition.md">IPrintSchemaParameterDefinition</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn465890">IPrintSchemaParameterDefinition</a>

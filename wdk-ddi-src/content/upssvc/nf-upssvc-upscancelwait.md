@@ -46,15 +46,15 @@ req.product: Windows 10 or later.
 
 
 # UPSCancelWait function
-The <b>UPSCancelWait</b> function cancels all waits initiated by calls to <a href="..\upssvc\nf-upssvc-upswaitforstatechange.md">UPSWaitForStateChange</a>.
+The <b>UPSCancelWait</b> function cancels all waits initiated by calls to <a href="https://msdn.microsoft.com/library/windows/hardware/ff536316">UPSWaitForStateChange</a>.
 
 ## Syntax
 
-````
+```
 void UPSCancelWait(
-   void 
+
 );
-````
+```
 
 ## Parameters
 
@@ -76,4 +76,4 @@ The call returns immediately.
 
 ## See Also
 
-<a href="..\upssvc\nf-upssvc-upswaitforstatechange.md">UPSWaitForStateChange</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536316">UPSWaitForStateChange</a>

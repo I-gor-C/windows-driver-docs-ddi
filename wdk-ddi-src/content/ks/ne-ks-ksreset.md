@@ -47,13 +47,12 @@ req.typenames: KSRESET
 
 
 ## Syntax
-````
-typedef enum  { 
-  KSRESET_BEGIN,
+```
+typedef enum KSRESET {
+  KSRESET_BEGIN  ,
   KSRESET_END
-
-} KSRESET;
-````
+} ;
+```
 
 ## Constants
 

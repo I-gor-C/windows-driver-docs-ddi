@@ -46,18 +46,18 @@ req.product: Windows 10 or later.
 ---
 
 
-# get_OriginWidthInMicrons method
+# IPrintSchemaPageImageableSize::get_OriginWidthInMicrons method
 Gets the horizontal origin of the imageable area relative to the application media size.
 
 This property is read-only.
 
 ## Syntax
 
-````
+```
 HRESULT get_OriginWidthInMicrons(
-  [out, retval] ULONG *pulOriginWidth
+  ULONG *pulOriginWidth
 );
-````
+```
 
 ## Parameters
 
@@ -80,4 +80,4 @@ None
 
 ## See Also
 
-<a href="..\printerextension\nn-printerextension-iprintschemapageimageablesize.md">IPrintSchemaPageImageableSize</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh451366">IPrintSchemaPageImageableSize</a>

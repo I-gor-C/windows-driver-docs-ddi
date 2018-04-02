@@ -7,7 +7,7 @@ old-location: audio\synthdownload.htm
 old-project: audio
 ms.assetid: b6fd9c92-ac36-46ac-b996-d76afaf6b906
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PSYNTHDOWNLOAD, PSYNTHDOWNLOAD, PSYNTHDOWNLOAD structure pointer [Audio Devices], SYNTHDOWNLOAD, SYNTHDOWNLOAD structure [Audio Devices], _SYNTHDOWNLOAD, aud-prop_dbafbabb-05b5-4bf4-9791-e7c2eb78ed4f.xml, audio.synthdownload, dmusprop/PSYNTHDOWNLOAD, dmusprop/SYNTHDOWNLOAD"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,12 +47,12 @@ req.typenames: SYNTHDOWNLOAD, *PSYNTHDOWNLOAD
 The SYNTHDOWNLOAD structure specifies a handle for downloaded DLS data. It also specifies whether the buffer containing the DLS data can be freed.
 
 ## Syntax
-````
+```
 typedef struct _SYNTHDOWNLOAD {
   HANDLE DownloadHandle;
-  BOOL   Free;
-} SYNTHDOWNLOAD, *PSYNTHDOWNLOAD;
-````
+  BOOL   Free;
+} *PSYNTHDOWNLOAD, SYNTHDOWNLOAD;
+```
 
 ## Members
 

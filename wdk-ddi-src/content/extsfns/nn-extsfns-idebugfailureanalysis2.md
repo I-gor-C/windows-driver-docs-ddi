@@ -7,7 +7,7 @@ old-location: debugger\idebugfailureanalysis2.htm
 old-project: debugger
 ms.assetid: 0B44FCB9-D23F-4630-9F9A-FBAD46712B14
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: IDebugFailureAnalysis2, IDebugFailureAnalysis2 interface [Windows Debugging], IDebugFailureAnalysis2 interface [Windows Debugging], described, debugger.idebugfailureanalysis2, extsfns/IDebugFailureAnalysis2
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,7 +57,7 @@ When the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562112">
 | ---- |:---- |
 | [IDebugFailureAnalysis2::AddBuffer](nf-extsfns-idebugfailureanalysis2-addbuffer.md) | The AddBuffer method adds a new FA entry to a DebugFailureAnalysis object, and writes the bytes from a specified buffer to the data block of the new FA entry. |
 | [IDebugFailureAnalysis2::AddExtensionCommand](nf-extsfns-idebugfailureanalysis2-addextensioncommand.md) | The AddExtensionCommand method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified debugger command. |
-| [IDebugFailureAnalysis2::AddString](nf-extsfns-idebugfailureanalysis2-addstring.md) | The AddString method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified string. |
+| [IDebugFailureAnalysis2::AddString](nf-extsfns-idebugfailureanalysis2-addstring.md) | The AddExtensionCommand method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified debugger command. |
 | [IDebugFailureAnalysis2::AddUlong](nf-extsfns-idebugfailureanalysis2-addulong.md) | The AddUlong method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified ULONG value. |
 | [IDebugFailureAnalysis2::AddUlong64](nf-extsfns-idebugfailureanalysis2-addulong64.md) | The AddUlong64 method adds a new FA entry to a DebugFailureAnalysis object and sets the data block of the FA entry to a specified 64-bit value. |
 | [IDebugFailureAnalysis2::Get](nf-extsfns-idebugfailureanalysis2-get.md) | The Get method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. |
@@ -68,7 +68,7 @@ When the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562112">
 | [IDebugFailureAnalysis2::GetFailureType](nf-extsfns-idebugfailureanalysis2-getfailuretype.md) | The GetFailureType method gets the failure type of a DebugFailureAnalysis object. The failure type indicates whether the code being analyzed was running in kernel mode or user mode. |
 | [IDebugFailureAnalysis2::GetNext](nf-extsfns-idebugfailureanalysis2-getnext.md) | The GetNext method searches a DebugFailureAnalysis object for the next FA entry, after a given FA entry, that satisfies conditions specified by the Tag and TagMask parameters. |
 | [IDebugFailureAnalysis2::GetString](nf-extsfns-idebugfailureanalysis2-getstring.md) | The GetString method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it gets the ANSI string value from the entry's data block. |
-| [IDebugFailureAnalysis2::GetUlong](nf-extsfns-idebugfailureanalysis2-getulong.md) | The GetUlong method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it gets the ULONG value from the entry's data block. |
+| [IDebugFailureAnalysis2::GetUlong](nf-extsfns-idebugfailureanalysis2-getulong.md) | The GetString method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it gets the ANSI string value from the entry's data block. |
 | [IDebugFailureAnalysis2::GetUlong64](nf-extsfns-idebugfailureanalysis2-getulong64.md) | The GetUlong64 method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it gets the ULONG64 value from the entry's data block. |
 | [IDebugFailureAnalysis2::NextEntry](nf-extsfns-idebugfailureanalysis2-nextentry.md) | The NextEntry method gets the next FA entry, after a given FA entry, in a DebugFailureAnalysis object. |
 | [IDebugFailureAnalysis2::SetBuffer](nf-extsfns-idebugfailureanalysis2-setbuffer.md) | The SetBuffer method searches a DebugFailureAnalysis object for the first FA entry that has a specified tag. If it finds an FA entry with the specified tag, it overwrites the data block of the FA entry with the bytes in a specified buffer. |
@@ -86,12 +86,12 @@ When the <a href="https://msdn.microsoft.com/library/windows/hardware/ff562112">
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff562112">!analyze</a>
 
 
 
-<a href="..\extsfns\nc-extsfns-ext_analysis_plugin.md">_EFN_Analyze</a>
+<a href="https://msdn.microsoft.com/7648F789-85D5-4247-90DD-2EAA43543483">Writing an Analysis Extension Plug-in to Extend !analyze</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj983432">_EFN_Analyze</a>

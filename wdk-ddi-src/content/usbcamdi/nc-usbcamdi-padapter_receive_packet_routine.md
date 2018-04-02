@@ -82,4 +82,4 @@ A camera's minidriver provides USBCAMD with the address of its <i>AdapterReceive
 
 ## See Also
 
-<a href="..\usbcamdi\nf-usbcamdi-usbcamd_driverentry.md">USBCAMD_DriverEntry</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568593">USBCAMD_DriverEntry</a>

@@ -7,7 +7,7 @@ old-location: kernel\ioctl_ioctl_sysenv_query_variable_info.htm
 old-project: kernel
 ms.assetid: 4056202F-2292-40A5-BE1D-8C1A6FA79B50
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: IOCTL_SYSENV_QUERY_VARIABLE_INFO, IOCTL_SYSENV_QUERY_VARIABLE_INFO control code [Kernel-Mode Driver Architecture], kernel.ioctl_ioctl_sysenv_query_variable_info, ntddsysenv/IOCTL_SYSENV_QUERY_VARIABLE_INFO
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -57,10 +57,10 @@ A pointer to a ULONG variable that contains the attributes of the system environ
 Size of ULONG.
 
 ### Output Buffer
-A pointer to a <a href="..\ntddsysenv\ns-ntddsysenv-_sysenv_variable_info.md">SYSENV_VARIABLE_INFO</a> structure that contains variable information.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/mt791534">SYSENV_VARIABLE_INFO</a> structure that contains variable information.
 
 ### Output Buffer Length
-The size of the <a href="..\ntddsysenv\ns-ntddsysenv-_sysenv_variable_info.md">SYSENV_VARIABLE_INFO</a> structure.
+The size of the <a href="https://msdn.microsoft.com/library/windows/hardware/mt791534">SYSENV_VARIABLE_INFO</a> structure.
 
 ### Input / Output Buffer
 <text></text>
@@ -79,16 +79,16 @@ The size of the <a href="..\ntddsysenv\ns-ntddsysenv-_sysenv_variable_info.md">S
 
 ## See Also
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendioctlsynchronously.md">WdfIoTargetSendIoctlSynchronously</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff542894">Creating IOCTL Requests in Drivers</a>
 
 
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlotherssynchronously.md">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548651">WdfIoTargetSendInternalIoctlOthersSynchronously</a>
 
 
 
-<a href="..\wdfiotarget\nf-wdfiotarget-wdfiotargetsendinternalioctlsynchronously.md">WdfIoTargetSendInternalIoctlSynchronously</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548656">WdfIoTargetSendInternalIoctlSynchronously</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff548660">WdfIoTargetSendIoctlSynchronously</a>

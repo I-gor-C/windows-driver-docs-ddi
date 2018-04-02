@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 
 Represents a single printer queue. 
 
-This interface extends <a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a> and allows a user to manage print jobs and device maintenance from within a UWP  device app for printers, or from a printer extension.
+This interface extends <a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a> and allows a user to manage print jobs and device maintenance from within a UWP  device app for printers, or from a printer extension.
 
 ## Methods
 
@@ -75,8 +75,8 @@ This interface extends <a href="..\printerextension\nn-printerextension-iprinter
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439635">IPrinterQueue</a>
+
+
+
 <a href="https://msdn.microsoft.com/D1236DD2-D4AD-4615-9036-7EC75D6CADCE">Job Management</a>
-
-
-
-<a href="..\printerextension\nn-printerextension-iprinterqueue.md">IPrinterQueue</a>

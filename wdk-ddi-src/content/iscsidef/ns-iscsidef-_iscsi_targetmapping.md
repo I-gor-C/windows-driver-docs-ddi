@@ -7,7 +7,7 @@ old-location: storage\iscsi_targetmapping.htm
 old-project: storage
 ms.assetid: 9b8c5024-5d37-4f85-be00-1a60dd9ab323
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PISCSI_TargetMapping, ISCSI_TargetMapping, ISCSI_TargetMapping structure [Storage Devices], PISCSI_TargetMapping, PISCSI_TargetMapping structure pointer [Storage Devices], _ISCSI_TargetMapping, iscsidef/ISCSI_TargetMapping, iscsidef/PISCSI_TargetMapping, storage.iscsi_targetmapping, structs-iSCSI_5512347c-9b89-4d14-9c84-4e7b9191dbfa.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,18 +47,18 @@ req.typenames: ISCSI_TargetMapping, *PISCSI_TargetMapping
 The ISCSI_TargetMapping structure maps a collection of logical unit numbers (LUNs) that are locally defined to a group of 64-bit iSCSI logical unit numbers.
 
 ## Syntax
-````
+```
 typedef struct _ISCSI_TargetMapping {
-  ULONG         OSBus;
-  ULONG         OSTarget;
-  ULONGLONG     UniqueSessionId;
-  ULONG         LUNCount;
-  WCHAR         TargetName[223 + 1];
-  BOOLEAN       FromPersistentLogin;
-  ULONGLONG     Reserved;
+  ULONG         OSBus;
+  ULONG         OSTarget;
+  ULONGLONG     UniqueSessionId;
+  ULONG         LUNCount;
+  WCHAR         TargetName[223 + 1];
+  BOOLEAN       FromPersistentLogin;
+  ULONGLONG     Reserved;
   ISCSI_LUNList LUNList[1];
-} ISCSI_TargetMapping, *PISCSI_TargetMapping;
-````
+} *PISCSI_TargetMapping, ISCSI_TargetMapping;
+```
 
 ## Members
 
@@ -93,7 +93,7 @@ Reserved for Microsoft use only.
 
 `LUNList`
 
-A <a href="..\iscsidef\ns-iscsidef-_iscsi_lunlist.md">ISCSI_LUNList</a> structure that holds a list of LUNs that are associated with the target device.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff561544">ISCSI_LUNList</a> structure that holds a list of LUNs that are associated with the target device.
 
 ## Remarks
 A 64-bit iSCSI LUN by itself does not uniquely identify the logical unit that it represents. However, the combination of an iSCSI LUN and the name of the target that the logical unit belongs to does provide a unique identification for that logical unit that is valid anywhere in the network. 
@@ -107,16 +107,16 @@ Management applications can use the ISCSI_TargetMapping structure to specify a l
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>
-
-
-
-<a href="..\iscsidef\ns-iscsidef-_iscsi_lunlist.md">ISCSI_LUNList</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff550121">AddConnectionToSession</a>
 
 
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561544">ISCSI_LUNList</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561573">ISCSI_TargetMapping WMI Class</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561599">LoginToTarget</a>

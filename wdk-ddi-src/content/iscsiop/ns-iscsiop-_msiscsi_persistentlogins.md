@@ -7,7 +7,7 @@ old-location: storage\msiscsi_persistentlogins.htm
 old-project: storage
 ms.assetid: c735d9c9-8e87-4a80-af1d-c97d457f78fa
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PMSiSCSI_PersistentLogins, MSiSCSI_PersistentLogins, MSiSCSI_PersistentLogins structure [Storage Devices], PMSiSCSI_PersistentLogins, PMSiSCSI_PersistentLogins structure pointer [Storage Devices], _MSiSCSI_PersistentLogins, iscsiop/MSiSCSI_PersistentLogins, iscsiop/PMSiSCSI_PersistentLogins, storage.msiscsi_persistentlogins, structs-iSCSI_150a8086-8025-4140-9fdb-75d05bfcb0ac.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,13 +47,13 @@ req.typenames: MSiSCSI_PersistentLogins, *PMSiSCSI_PersistentLogins
 The MSiSCSI_PersistentLogins structure contains the list of persistent target logon sessions.
 
 ## Syntax
-````
+```
 typedef struct _MSiSCSI_PersistentLogins {
-  ULONG                  PersistentLoginCount;
-  ULONG                  Reserved;
+  ULONG                  PersistentLoginCount;
+  ULONG                  Reserved;
   ISCSI_Persistent_Login PersistentLogins[1];
-} MSiSCSI_PersistentLogins, *PMSiSCSI_PersistentLogins;
-````
+} *PMSiSCSI_PersistentLogins, MSiSCSI_PersistentLogins;
+```
 
 ## Members
 
@@ -68,7 +68,7 @@ Reserved for Microsoft use only.
 
 `PersistentLogins`
 
-A variable length array of <a href="..\iscsiop\ns-iscsiop-_iscsi_persistent_login.md">ISCSI_Persistent_Login</a> structures, each of which contains information that is associated with a particular persistent logon session that the initiator maintains.
+A variable length array of <a href="https://msdn.microsoft.com/library/windows/hardware/ff561553">ISCSI_Persistent_Login</a> structures, each of which contains information that is associated with a particular persistent logon session that the initiator maintains.
 
 ## Remarks
 Miniport drivers that manage iSCSI initiators automatically establish persistent logon sessions as soon as they are loaded into the storage driver stack. This guarantees that targets for which the initiator maintains persistent logon sessions will be available to the system as early in the startup process as possible. You must implement this class.
@@ -80,12 +80,12 @@ Miniport drivers that manage iSCSI initiators automatically establish persistent
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563096">MSiSCSI_PersistentLogins WMI Class</a>
-
-
-
-<a href="..\iscsiop\ns-iscsiop-_iscsi_persistent_login.md">ISCSI_Persistent_Login</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561553">ISCSI_Persistent_Login</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff561556">ISCSI_Persistent_Login WMI Class</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563096">MSiSCSI_PersistentLogins WMI Class</a>

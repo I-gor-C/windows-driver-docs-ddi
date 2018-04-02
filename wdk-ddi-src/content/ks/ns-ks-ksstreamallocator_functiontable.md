@@ -47,12 +47,12 @@ req.typenames: KSSTREAMALLOCATOR_FUNCTIONTABLE, *PKSSTREAMALLOCATOR_FUNCTIONTABL
 Clients can request the function table of a given allocator by sending a KSSTREAMALLOCATOR_FUNCTIONTABLE structure in a KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE property request.
 
 ## Syntax
-````
-typedef struct {
+```
+typedef struct KSSTREAMALLOCATOR_FUNCTIONTABLE {
   PFNALLOCATOR_ALLOCATEFRAME AllocateFrame;
-  PFNALLOCATOR_FREEFRAME     FreeFrame;
-} KSSTREAMALLOCATOR_FUNCTIONTABLE, *PKSSTREAMALLOCATOR_FUNCTIONTABLE;
-````
+  PFNALLOCATOR_FREEFRAME     FreeFrame;
+}  *PKSSTREAMALLOCATOR_FUNCTIONTABLE;
+```
 
 ## Members
 
@@ -79,12 +79,12 @@ This property is only accessible from kernel-mode.
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565633">KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567151">KStrAllocateFrame</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff567174">KStrFreeFrame</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565633">KSPROPERTY_STREAMALLOCATOR_FUNCTIONTABLE</a>

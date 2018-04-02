@@ -50,17 +50,17 @@ The <b>KsMoveIrpsOnCancelableQueue</b> function moves the specified IRPs from th
 
 ## Syntax
 
-````
-NTSTATUS KsMoveIrpsOnCancelableQueue(
-  _Inout_  PLIST_ENTRY           SourceList,
-  _In_     PKSPIN_LOCK           SourceLock,
-  _Inout_  PLIST_ENTRY           DestinationList,
-  _In_opt_ PKSPIN_LOCK           DestinationLock,
-  _In_     KSLIST_ENTRY_LOCATION ListLocation,
-  _In_     PFNKSIRPLISTCALLBACK  ListCallback ,
-  _In_     PVOID                 Context 
+```
+KSDDKAPI NTSTATUS KsMoveIrpsOnCancelableQueue(
+  PLIST_ENTRY           SourceList,
+  PKSPIN_LOCK           SourceLock,
+  PLIST_ENTRY           DestinationList,
+  PKSPIN_LOCK           DestinationLock,
+  KSLIST_ENTRY_LOCATION ListLocation,
+  PFNKSIRPLISTCALLBACK  ListCallback,
+  PVOID                 Context
 );
-````
+```
 
 ## Parameters
 

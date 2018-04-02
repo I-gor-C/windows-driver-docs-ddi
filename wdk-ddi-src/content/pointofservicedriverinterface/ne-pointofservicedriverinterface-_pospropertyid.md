@@ -47,27 +47,118 @@ req.typenames: PosPropertyId
 This enumeration defines the property identifiers for the properties that device drivers need to handle to be considered a barcode scanner or a magnetic strip reader (MSR).
 
 ## Syntax
-````
-typedef enum _PosPropertyId { 
-  IsEnabled                                         = 1,
-  IsDisabledOnDataReceived                          = 4,
-  BarcodeScannerIsDecodeDataEnabled                 = 5,
-  BarcodeScannerCapabilities                        = 6,
-  BarcodeScannerSupportedSymbologies                = 7,
-  BarcodeScannerActiveSymbologies                   = 8,
-  BarcodeScannerSupportedProfiles                   = 9,
-  BarcodeScannerActiveProfile                       = 10,
-  MagneticStripeReaderIsDecodeDataEnabled           = 11,
-  MagneticStripeReaderCapabilities                  = 12,
-  MagneticStripeReaderSupportedCardTypes            = 13,
-  MagneticStripeReaderDeviceAuthenticationProtocol  = 14,
-  MagneticStripeReaderErrorReportingType            = 15,
-  MagneticStripeReaderTracksToRead                  = 16,
-  MagneticStripeReaderIsTransmitSentinelsEnabled    = 17,
-  MagneticStripeReaderIsDeviceAuthenticated         = 18,
-  MagneticStripeReaderDataEncryptionAlgorithm       = 19
+```
+typedef enum _PosPropertyId {
+  IsEnabled                                         ,
+  IsDisabledOnDataReceived                          ,
+  PowerState                                        ,
+  BarcodeScannerIsDecodeDataEnabled                 ,
+  BarcodeScannerCapabilities                        ,
+  BarcodeScannerSupportedSymbologies                ,
+  BarcodeScannerActiveSymbologies                   ,
+  BarcodeScannerSupportedProfiles                   ,
+  BarcodeScannerActiveProfile                       ,
+  MagneticStripeReaderIsDecodeDataEnabled           ,
+  MagneticStripeReaderCapabilities                  ,
+  MagneticStripeReaderSupportedCardTypes            ,
+  MagneticStripeReaderDeviceAuthenticationProtocol  ,
+  MagneticStripeReaderErrorReportingType            ,
+  MagneticStripeReaderTracksToRead                  ,
+  MagneticStripeReaderIsTransmitSentinelsEnabled    ,
+  MagneticStripeReaderIsDeviceAuthenticated         ,
+  MagneticStripeReaderDataEncryptionAlgorithm       ,
+  BarcodeScannerVideoDeviceId                       ,
+  PrinterCapabilities                               ,
+  PrinterCartridgeNotifyEnabled                     ,
+  PrinterSupportedCharacterSets                     ,
+  PrinterFlagWhenIdle                               ,
+  PrinterFontTypefaceList                           ,
+  PrinterMapCharacterSet                            ,
+  PrinterRotateSpecial                              ,
+  PrinterSupportedJournalLineChars                  ,
+  PrinterSupportedReceiptLineChars                  ,
+  PrinterSupportedReceiptBarcodeRotations           ,
+  PrinterSupportedReceiptBitmapRotations            ,
+  PrinterSupportedSlipLineChars                     ,
+  PrinterSupportedSlipBarcodeRotations              ,
+  PrinterSupportedSlipBitmapRotations               ,
+  PrinterCharacterSet                               ,
+  PrinterCoverOpen                                  ,
+  PrinterMapMode                                    ,
+  PrinterPageModeArea                               ,
+  PrinterPageModeDescriptor                         ,
+  PrinterPageModeHorizontalPosition                 ,
+  PrinterPageModePrintArea                          ,
+  PrinterPageModePrintDirection                     ,
+  PrinterPageModeStation                            ,
+  PrinterPageModeVerticalPosition                   ,
+  PrinterJournalLineChars                           ,
+  PrinterJournalLineHeight                          ,
+  PrinterJournalLineSpacing                         ,
+  PrinterJournalLineWidth                           ,
+  PrinterJournalLetterQuality                       ,
+  PrinterJournalPaperEmpty                          ,
+  PrinterJournalPaperNearEnd                        ,
+  PrinterJournalCartridgeState                      ,
+  PrinterJournalCurrentCartridge                    ,
+  PrinterReceiptLineChars                           ,
+  PrinterReceiptLineHeight                          ,
+  PrinterReceiptLineSpacing                         ,
+  PrinterReceiptLineWidth                           ,
+  PrinterReceiptLetterQuality                       ,
+  PrinterReceiptPaperEmpty                          ,
+  PrinterReceiptPaperNearEmpty                      ,
+  PrinterReceiptSidewaysMaxLines                    ,
+  PrinterReceiptSidewaysMaxChars                    ,
+  PrinterReceiptLinesToPaperCut                     ,
+  PrinterReceiptCartridgeState                      ,
+  PrinterReceiptCurrentCartridge                    ,
+  PrinterSlipLineChars                              ,
+  PrinterSlipLineHeight                             ,
+  PrinterSlipLineSpacing                            ,
+  PrinterSlipLineWidth                              ,
+  PrinterSlipLetterQuality                          ,
+  PrinterSlipPaperEmpty                             ,
+  PrinterSlipPaperNearEmpty                         ,
+  PrinterSlipSidewaysMaxLines                       ,
+  PrinterSlipSideWaysMaxChars                       ,
+  PrinterSlipMaxLines                               ,
+  PrinterSlipLinesNearEndToEnd                      ,
+  PrinterSlipPrintside                              ,
+  PrinterSlipCartridgeState                         ,
+  PrinterSlipCurrentCartridge                       ,
+  PrinterStatusProp                                 ,
+  CashDrawerIsDrawerOpened                          ,
+  CashDrawerCapabilities                            ,
+  CashDrawerStatusProp                              ,
+  LineDisplayCapabilities                           ,
+  LineDisplayCurrentWindow                          ,
+  LineDisplayWindowSizeInCharacters                 ,
+  LineDisplayWindowInterCharacterWaitInterval       ,
+  LineDisplayPhysicalDeviceName                     ,
+  LineDisplayPhysicalDeviceDescription              ,
+  LineDisplayDeviceControlDescription               ,
+  LineDisplayDeviceControlVersion                   ,
+  LineDisplayDeviceServiceVersion                   ,
+  LineDisplayCursorTypeProperty                     ,
+  LineDisplayCursorAutoUpdateEnabled                ,
+  LineDisplayCursorPosition                         ,
+  LineDisplayScreenModeList                         ,
+  LineDisplayScreenMode                             ,
+  LineDisplayMaxBitmapSizeInPixels                  ,
+  LineDisplayCharacterSetList                       ,
+  LineDisplayDeviceBrightness                       ,
+  LineDisplayBlinkRate                              ,
+  LineDisplayCharacterSet                           ,
+  LineDisplayMapCharacterSet                        ,
+  LineDisplayGlyphSizeInPixels                      ,
+  LineDisplayCustomGlyphList                        ,
+  LineDisplayMarqueeFormat                          ,
+  LineDisplayMarqueeRepeatWait                      ,
+  LineDisplayMarqueeUnitWait                        ,
+  LineDisplayMarqueeType
 } PosPropertyId;
-````
+```
 
 ## Constants
 
@@ -95,17 +186,17 @@ typedef enum _PosPropertyId {
             
                 <tr>
                     <td>BarcodeScannerCapabilities</td>
-                    <td>Contains information about what functionality the barcode scanner supports. For example, a barcode scanner may support imaging and standard power reporting but not statistics updating and reporting. For more information about the values for barcode capabilities, see <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posbarcodescannercapabilitiestype.md">PosBarcodeScannerCapabilitiesType</a>. (Read-only).</td>
+                    <td>Contains information about what functionality the barcode scanner supports. For example, a barcode scanner may support imaging and standard power reporting but not statistics updating and reporting. For more information about the values for barcode capabilities, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn772206">PosBarcodeScannerCapabilitiesType</a>. (Read-only).</td>
                 </tr>
             
                 <tr>
                     <td>BarcodeScannerSupportedSymbologies</td>
-                    <td>Contains an array representing the complete list of symbologies that the barcode scanner is capable of reading. Also returns the number of bytes required for the array of symbologies. For symbology definitions, see <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbology.md">BarcodeSymbology</a>. (Read-only).</td>
+                    <td>Contains an array representing the complete list of symbologies that the barcode scanner is capable of reading. Also returns the number of bytes required for the array of symbologies. For symbology definitions, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn757474">BarcodeSymbology</a>. (Read-only).</td>
                 </tr>
             
                 <tr>
                     <td>BarcodeScannerActiveSymbologies</td>
-                    <td>Indicates the symbologies that the barcode scanner is actively handling. (Write-only). For symbology definitions, see <a href="..\pointofservicecommontypes\ne-pointofservicecommontypes-_barcodesymbology.md">BarcodeSymbology</a>.</td>
+                    <td>Indicates the symbologies that the barcode scanner is actively handling. (Write-only). For symbology definitions, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn757474">BarcodeSymbology</a>.</td>
                 </tr>
             
                 <tr>
@@ -125,27 +216,27 @@ typedef enum _PosPropertyId {
             
                 <tr>
                     <td>MagneticStripeReaderCapabilities</td>
-                    <td>Returns a <a href="..\pointofservicedriverinterface\ns-pointofservicedriverinterface-_posmagneticstripereadercapabilitiestype.md">PosMagneticStripeReaderCapabilitiesType</a> that describes the capabilities of the MSR. (Read-Only).</td>
+                    <td>Returns a <a href="https://msdn.microsoft.com/library/windows/hardware/dn772235">PosMagneticStripeReaderCapabilitiesType</a> that describes the capabilities of the MSR. (Read-Only).</td>
                 </tr>
             
                 <tr>
                     <td>MagneticStripeReaderSupportedCardTypes</td>
-                    <td>Returns an array of <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrcardtype.md">MsrCardType</a>s supported by the MSR. (Read-only).</td>
+                    <td>Returns an array of <a href="https://msdn.microsoft.com/library/windows/hardware/dn772167">MsrCardType</a>s supported by the MSR. (Read-only).</td>
                 </tr>
             
                 <tr>
                     <td>MagneticStripeReaderDeviceAuthenticationProtocol</td>
-                    <td>The driver must return a <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrauthenticationprotocol.md">MsrAuthenticationProtocolType</a> that describes the device authentication protocol supported by the MSR. (Read-only).</td>
+                    <td>The driver must return a <a href="https://msdn.microsoft.com/6f06d03e-001e-4340-9b96-8e3654be5c1a">MsrAuthenticationProtocolType</a> that describes the device authentication protocol supported by the MSR. (Read-only).</td>
                 </tr>
             
                 <tr>
                     <td>MagneticStripeReaderErrorReportingType</td>
-                    <td>Specifies the level of error reporting that the MSR supports. For more information about the values for error reporting levels, see <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrerrorreportingtype.md">MsrErrorReportingType</a>. (Read/write).</td>
+                    <td>Specifies the level of error reporting that the MSR supports. For more information about the values for error reporting levels, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn772170">MsrErrorReportingType</a>. (Read/write).</td>
                 </tr>
             
                 <tr>
                     <td>MagneticStripeReaderTracksToRead</td>
-                    <td>Specifies which tracks the application will receive following a card swipe. Does not indicate the capability of the device hardware; instead, it is an application-configurable property representing the tracks to be read. For more information about track values, see <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrtrackids.md">MsrTrackIds</a>. (Read/write).</td>
+                    <td>Specifies which tracks the application will receive following a card swipe. Does not indicate the capability of the device hardware; instead, it is an application-configurable property representing the tracks to be read. For more information about track values, see <a href="https://msdn.microsoft.com/library/windows/hardware/dn772176">MsrTrackIds</a>. (Read/write).</td>
                 </tr>
             
                 <tr>
@@ -160,7 +251,7 @@ typedef enum _PosPropertyId {
             
                 <tr>
                     <td>MagneticStripeReaderDataEncryptionAlgorithm</td>
-                    <td>Specifies the <a href="..\pointofservicedriverinterface\ne-pointofservicedriverinterface-_msrdataencryption.md">MsrDataEncryption</a> that will be used to encrypt the track data. (Read/write).</td>
+                    <td>Specifies the <a href="https://msdn.microsoft.com/library/windows/hardware/dn772169">MsrDataEncryption</a> that will be used to encrypt the track data. (Read/write).</td>
                 </tr>
             
                 <tr>
@@ -622,8 +713,8 @@ typedef enum _PosPropertyId {
 
 ## See Also
 
-<a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_get_property.md">IOCTL_POINT_OF_SERVICE_GET_PROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn772098">IOCTL_POINT_OF_SERVICE_GET_PROPERTY</a>
 
 
 
-<a href="..\pointofservicedriverinterface\ni-pointofservicedriverinterface-ioctl_point_of_service_set_property.md">IOCTL_POINT_OF_SERVICE_SET_PROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn772123">IOCTL_POINT_OF_SERVICE_SET_PROPERTY</a>

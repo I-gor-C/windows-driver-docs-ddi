@@ -7,7 +7,7 @@ old-location: display\videoportstoptimer.htm
 old-project: display
 ms.assetid: 8f6927e1-2342-4816-aa43-1849c3a7702b
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: VideoPortStopTimer, VideoPortStopTimer function [Display Devices], VideoPort_Functions_335cb68f-85a0-4e57-9e91-65df281f68a4.xml, display.videoportstoptimer, video/VideoPortStopTimer
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -46,15 +46,15 @@ req.product: Windows 10 or later.
 
 
 # VideoPortStopTimer function
-The <b>VideoPortStopTimer</b> function disables calls to a miniport driver's <a href="..\video\nc-video-pvideo_hw_timer.md">HwVidTimer</a> function.
+The <b>VideoPortStopTimer</b> function disables calls to a miniport driver's <a href="https://msdn.microsoft.com/bd41bbbf-4ec8-4e6c-8620-d8a9fe0b8bad">HwVidTimer</a> function.
 
 ## Syntax
 
-````
-VOID VideoPortStopTimer(
-   PVOID HwDeviceExtension
+```
+VIDEOPORT_API VOID VideoPortStopTimer(
+  PVOID HwDeviceExtension
 );
-````
+```
 
 ## Parameters
 
@@ -69,9 +69,9 @@ None
 
 ## Remarks
 
-After a miniport driver calls <a href="..\video\nf-video-videoportstarttimer.md">VideoPortStartTimer</a>, its <i>HwVidTimer</i> function is called at approximately one-second intervals until the miniport driver calls <b>VideoPortStopTimer</b>. A miniport driver's <i>HwVidTimer</i> function <i>must not</i> call <b>VideoPortStopTimer</b>.
+After a miniport driver calls <a href="https://msdn.microsoft.com/library/windows/hardware/ff570370">VideoPortStartTimer</a>, its <i>HwVidTimer</i> function is called at approximately one-second intervals until the miniport driver calls <b>VideoPortStopTimer</b>. A miniport driver's <i>HwVidTimer</i> function <i>must not</i> call <b>VideoPortStopTimer</b>.
 
-A miniport driver cannot call <b>VideoPortStartTimer</b> or <b>VideoPortStopTimer</b> if its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function set the <b>HwTimer</b> member of the <a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a> structure to <b>NULL</b>.
+A miniport driver cannot call <b>VideoPortStartTimer</b> or <b>VideoPortStopTimer</b> if its <a href="https://msdn.microsoft.com/library/windows/hardware/ff552644">DriverEntry</a> function set the <b>HwTimer</b> member of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff570505">VIDEO_HW_INITIALIZATION_DATA</a> structure to <b>NULL</b>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -85,16 +85,16 @@ A miniport driver cannot call <b>VideoPortStartTimer</b> or <b>VideoPortStopTime
 
 ## See Also
 
-<a href="..\video\nf-video-videoportstarttimer.md">VideoPortStartTimer</a>
-
-
-
-<a href="..\video\nc-video-pvideo_hw_timer.md">HwVidTimer</a>
-
-
-
-<a href="..\video\ns-video-_video_hw_initialization_data.md">VIDEO_HW_INITIALIZATION_DATA</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff556159">DriverEntry of Video Miniport Driver</a>
+
+
+
+<a href="https://msdn.microsoft.com/bd41bbbf-4ec8-4e6c-8620-d8a9fe0b8bad">HwVidTimer</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570505">VIDEO_HW_INITIALIZATION_DATA</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff570370">VideoPortStartTimer</a>

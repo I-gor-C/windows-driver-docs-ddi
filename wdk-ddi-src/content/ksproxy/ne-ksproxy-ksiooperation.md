@@ -47,12 +47,12 @@ req.typenames: KSIOOPERATION
 
 
 ## Syntax
-````
-typedef enum  { 
-  KsIoOperation_Write,
+```
+typedef enum KSIOOPERATION {
+  KsIoOperation_Write  ,
   KsIoOperation_Read
-} KSIOOPERATION;
-````
+} ;
+```
 
 ## Constants
 

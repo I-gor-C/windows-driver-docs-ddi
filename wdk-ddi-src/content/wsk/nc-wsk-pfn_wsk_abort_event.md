@@ -7,7 +7,7 @@ old-location: netvista\wskabortevent.htm
 old-project: netvista
 ms.assetid: 50e0ef5d-0577-4b5c-b541-fc78079a953c
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: PFN_WSK_ABORT_EVENT, WskAbortEvent, WskAbortEvent callback function [Network Drivers Starting with Windows Vista], netvista.wskabortevent, wsk/WskAbortEvent, wskref_592d9a56-6a77-4c24-aaec-e70f84d23e49.xml
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -68,13 +68,13 @@ NTSTATUS PfnWskAbortEvent(
 
 A pointer to the socket context for the listening socket on which the incoming connection request
      was received. The WSK application provided this pointer to the WSK subsystem when it called the 
-     <a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a> function to create the listening
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a> function to create the listening
      socket.
 
 `InspectID`
 
 A pointer to a 
-     <a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a> structure. The contents of
+     <a href="https://msdn.microsoft.com/library/windows/hardware/ff571170">WSK_INSPECT_ID</a> structure. The contents of
      the structure identify the incoming connection request that has been dropped.
 
 
@@ -96,7 +96,7 @@ The WSK application created a listening socket that has conditional accept mode 
 <li>
 An incoming connection request has been received on the listening socket, and the WSK subsystem has
       called the WSK application's 
-      <a href="..\wsk\nc-wsk-pfn_wsk_inspect_event.md">WskInspectEvent</a> event callback
+      <a href="https://msdn.microsoft.com/40f184ac-4ef3-485a-a529-71c1f2716427">WskInspectEvent</a> event callback
       function.
 
 </li>
@@ -114,12 +114,12 @@ The incoming connection request has been dropped either locally or remotely befo
 When the WSK subsystem calls a WSK application's 
     <i>WskAbortEvent</i> event callback function, the application should terminate the inspection for the
     incoming connection request. The connection request is identified by the contents of the 
-    <a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a> structure that is pointed to
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571170">WSK_INSPECT_ID</a> structure that is pointed to
     by the 
     <i>InspectID</i> parameter.
 
 If the WSK application calls the 
-    <a href="..\wsk\nc-wsk-pfn_wsk_inspect_complete.md">WskInspectComplete</a> function on an incoming connection request that has been aborted, the connection
+    <a href="https://msdn.microsoft.com/library/windows/hardware/ff571136">WskInspectComplete</a> function on an incoming connection request that has been aborted, the connection
     will not be established even if 
     <b>WskInspectAccept</b> is specified in the 
     <i>Action</i> parameter.
@@ -145,24 +145,24 @@ A WSK application's <i>WskAbortEvent</i> event callback function must not wait f
 
 ## See Also
 
-<a href="..\wsk\nc-wsk-pfn_wsk_socket.md">WskSocket</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571162">WSK_CLIENT_LISTEN_DISPATCH</a>
 
 
 
-<a href="..\wsk\ns-wsk-_wsk_client_listen_dispatch.md">WSK_CLIENT_LISTEN_DISPATCH</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571170">WSK_INSPECT_ID</a>
 
 
 
-<a href="..\wsk\ns-wsk-_wsk_inspect_id.md">WSK_INSPECT_ID</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571127">WskControlSocket</a>
 
 
 
-<a href="..\wsk\nc-wsk-pfn_wsk_inspect_complete.md">WskInspectComplete</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571136">WskInspectComplete</a>
 
 
 
-<a href="..\wsk\nc-wsk-pfn_wsk_control_socket.md">WskControlSocket</a>
+<a href="https://msdn.microsoft.com/40f184ac-4ef3-485a-a529-71c1f2716427">WskInspectEvent</a>
 
 
 
-<a href="..\wsk\nc-wsk-pfn_wsk_inspect_event.md">WskInspectEvent</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff571149">WskSocket</a>

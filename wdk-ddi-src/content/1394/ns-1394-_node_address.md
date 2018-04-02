@@ -47,12 +47,12 @@ req.typenames: NODE_ADDRESS, *PNODE_ADDRESS
 The NODE_ADDRESS structure specifies the 10-bit bus number and 6-bit node number that serve as the node address for a 1394 node.
 
 ## Syntax
-````
+```
 typedef struct _NODE_ADDRESS {
-  USHORT NA_Node_Number  :6;
-  USHORT NA_Bus_Number  :10;
+  USHORT  : 6  NA_Node_Number;
+  USHORT  : 10 NA_Bus_Number;
 } NODE_ADDRESS, *PNODE_ADDRESS;
-````
+```
 
 ## Members
 

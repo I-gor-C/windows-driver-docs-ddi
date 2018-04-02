@@ -51,14 +51,14 @@ A minidriver can use the <b>StreamClassDebugAssert</b> routine in a checked buil
 
 ## Syntax
 
-````
-VOID StreamClassDebugAssert(
-  _In_ PCHAR File,
-  _In_ ULONG Line,
-  _In_ PCHAR AssertText,
-  _In_ ULONG AssertValue
+```
+__analysis_noreturn VOID STREAMAPI StreamClassDebugAssert(
+  IN PCHAR File,
+  IN ULONG Line,
+  IN PCHAR AssertText,
+  IN ULONG AssertValue
 );
-````
+```
 
 ## Parameters
 
@@ -96,8 +96,8 @@ When running a checked version of the class driver, asserts are recognized, and 
 
 ## See Also
 
-<a href="..\strmini\nf-strmini-streamclassdebugprint.md">StreamClassDebugPrint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543626">DbgBreakPoint</a>
 
 
 
-<a href="..\wdm\nf-wdm-dbgbreakpoint.md">DbgBreakPoint</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff568235">StreamClassDebugPrint</a>

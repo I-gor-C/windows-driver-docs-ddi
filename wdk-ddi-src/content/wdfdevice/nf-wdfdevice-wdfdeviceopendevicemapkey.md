@@ -55,15 +55,15 @@ The <b>WdfDeviceOpenDevicemapKey</b> method opens the <b>DEVICEMAP</b> key and c
 
 ## Syntax
 
-````
+```
 NTSTATUS WdfDeviceOpenDevicemapKey(
-  _In_     WDFDEVICE              Device,
-  _In_     PCUNICODE_STRING       KeyName,
-  _In_     ACCESS_MASK            DesiredAccess,
-  _In_opt_ PWDF_OBJECT_ATTRIBUTES KeyAttributes,
-  _Out_    WDFKEY                 *Key
+  WDFDEVICE              Device,
+  PCUNICODE_STRING       KeyName,
+  ACCESS_MASK            DesiredAccess,
+  PWDF_OBJECT_ATTRIBUTES KeyAttributes,
+  WDFKEY                 *Key
 );
-````
+```
 
 ## Parameters
 
@@ -73,7 +73,7 @@ A handle to a framework device object.
 
 `KeyName`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that specifies the name of the subkey to open under <b>DEVICEMAP</b>.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that specifies the name of the subkey to open under <b>DEVICEMAP</b>.
 
 `DesiredAccess`
 
@@ -85,7 +85,7 @@ A UMDF driver typically requests <b>KEY_READ</b> or <b>KEY_SET_VALUE</b>.
 
 `KeyAttributes`
 
-A pointer to a <a href="..\wdfobject\ns-wdfobject-_wdf_object_attributes.md">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied attributes for the new registry-key object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff552400">WDF_OBJECT_ATTRIBUTES</a> structure that contains driver-supplied attributes for the new registry-key object. This parameter is optional and can be WDF_NO_OBJECT_ATTRIBUTES.
 
 `Key`
 
@@ -109,7 +109,7 @@ A pointer to a location that receives a handle to the new registry-key object.  
 </td>
 <td width="60%">
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceopendevicemapkey.md">WdfDeviceOpenDevicemapKey</a> was not called at IRQL = PASSIVE_LEVEL. 
+<a href="https://msdn.microsoft.com/library/windows/hardware/dn932458">WdfDeviceOpenDevicemapKey</a> was not called at IRQL = PASSIVE_LEVEL. 
 
 </td>
 </tr>
@@ -161,7 +161,7 @@ The registry contains a <b>HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP</b> key that so
 
 <b>WdfDeviceOpenDevicemapKey</b> returns a volatile <i>Key</i>. This means that the information is not preserved when the corresponding registry hive is unloaded.
 
-When the driver has finished using the registry key that it opened with <b>WdfDeviceOpenDevicemapKey</b>, the driver must call <a href="..\wdfregistry\nf-wdfregistry-wdfregistryclose.md">WdfRegistryClose</a>.
+When the driver has finished using the registry key that it opened with <b>WdfDeviceOpenDevicemapKey</b>, the driver must call <a href="https://msdn.microsoft.com/library/windows/hardware/ff549914">WdfRegistryClose</a>.
 
 For more information about the registry, hardware and software keys, and registry objects, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/using-the-registry-in-umdf-1-x-drivers">Using the Registry in Framework-Based Drivers</a>.
 
@@ -177,8 +177,8 @@ For more information about the registry, hardware and software keys, and registr
 
 ## See Also
 
-<a href="..\wdfdevice\nf-wdfdevice-wdfdeviceopenregistrykey.md">WdfDeviceOpenRegistryKey</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff546804">WdfDeviceOpenRegistryKey</a>
 
 
 
-<a href="..\wdffdo\nf-wdffdo-wdffdoinitopenregistrykey.md">WdfFdoInitOpenRegistryKey</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547249">WdfFdoInitOpenRegistryKey</a>

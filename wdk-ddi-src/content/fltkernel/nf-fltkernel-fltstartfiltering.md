@@ -7,7 +7,7 @@ old-location: ifsk\fltstartfiltering.htm
 old-project: ifsk
 ms.assetid: fc24e764-d584-4927-942f-3b8b4b83af79
 ms.author: windowsdriverdev
-ms.date: 2/16/2018
+ms.date: 3/29/2018
 ms.keywords: FltApiRef_p_to_z_f88abc20-f8b7-4399-85be-bd43674fe536.xml, FltStartFiltering, FltStartFiltering function [Installable File System Drivers], fltkernel/FltStartFiltering, ifsk.fltstartfiltering
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,17 +49,17 @@ req.typenames: EXpsFontRestriction
 
 ## Syntax
 
-````
-NTSTATUS FltStartFiltering(
-  _In_ PFLT_FILTER Filter
+```
+NTSTATUS FLTAPI FltStartFiltering(
+  PFLT_FILTER Filter
 );
-````
+```
 
 ## Parameters
 
 `Filter`
 
-Opaque filter pointer returned by <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>.
+Opaque filter pointer returned by <a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a>.
 
 
 ## Return Value
@@ -86,7 +86,7 @@ Filtering was already started for this minifilter driver. This is an error code.
 
 ## Remarks
 
-A minifilter driver typically calls <b>FltStartFiltering</b> from its <b>DriverEntry</b> routine after it has completed its global initialization and called <a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>. <b>FltStartFiltering</b> notifies the Filter Manager that the minifilter driver is ready to begin attaching to volumes and filtering I/O requests. After the minifilter driver calls this routine, the Filter Manager treats the minifilter driver as a fully active minifilter driver, presenting it with volumes to attach to, as well as I/O requests. The minifilter driver must be prepared to begin receiving these notifications and I/O requests even before <b>FltStartFiltering</b> returns.
+A minifilter driver typically calls <b>FltStartFiltering</b> from its <b>DriverEntry</b> routine after it has completed its global initialization and called <a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a>. <b>FltStartFiltering</b> notifies the Filter Manager that the minifilter driver is ready to begin attaching to volumes and filtering I/O requests. After the minifilter driver calls this routine, the Filter Manager treats the minifilter driver as a fully active minifilter driver, presenting it with volumes to attach to, as well as I/O requests. The minifilter driver must be prepared to begin receiving these notifications and I/O requests even before <b>FltStartFiltering</b> returns.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -99,4 +99,4 @@ A minifilter driver typically calls <b>FltStartFiltering</b> from its <b>DriverE
 
 ## See Also
 
-<a href="..\fltkernel\nf-fltkernel-fltregisterfilter.md">FltRegisterFilter</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544305">FltRegisterFilter</a>

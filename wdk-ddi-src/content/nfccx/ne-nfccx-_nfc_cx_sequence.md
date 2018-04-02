@@ -47,23 +47,23 @@ req.typenames: NFC_CX_SEQUENCE, *PNFC_CX_SEQUENCE
 The NFC_CX_SEQUENCE enumeration specifies sequences.
 
 ## Syntax
-````
-typedef enum _NFC_CX_SEQUENCE { 
-  SequencePreInit              = 0,
-  SequenceInitComplete         = 1,
-  SequencePreRfDiscStart       = 2,
-  SequenceRfDiscStartComplete  = 3,
-  SequencePreRfDiscStop        = 4,
-  SequenceRfDiscStopComplete   = 5,
-  SequencePreNfceeDisc         = 6,
-  SequenceNfceeDiscComplete    = 7,
-  SequencePreShutdown          = 8,
-  SequenceShutdownComplete     = 9,
-  SequencePreRecovery          = 10,
-  SequenceRecoveryComplete     = 11,
-  SequenceMaximum              = 12
-} NFC_CX_SEQUENCE;
-````
+```
+typedef enum _NFC_CX_SEQUENCE {
+  SequencePreInit              ,
+  SequenceInitComplete         ,
+  SequencePreRfDiscStart       ,
+  SequenceRfDiscStartComplete  ,
+  SequencePreRfDiscStop        ,
+  SequenceRfDiscStopComplete   ,
+  SequencePreNfceeDisc         ,
+  SequenceNfceeDiscComplete    ,
+  SequencePreShutdown          ,
+  SequenceShutdownComplete     ,
+  SequencePreRecovery          ,
+  SequenceRecoveryComplete     ,
+  SequenceMaximum
+} NFC_CX_SEQUENCE, *PNFC_CX_SEQUENCE;
+```
 
 ## Constants
 

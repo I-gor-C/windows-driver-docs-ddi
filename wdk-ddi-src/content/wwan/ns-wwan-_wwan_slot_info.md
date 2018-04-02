@@ -7,7 +7,7 @@ old-location: netvista\wwan_slot_info_status.htm
 old-project: netvista
 ms.assetid: F45D253E-E7D7-4600-AF8C-6D4EB096030D
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: "*PWWAN_SLOT_INFO, PWWAN_SLOT_INFO, PWWAN_SLOT_INFO structure pointer [Network Drivers Starting with Windows Vista], WWAN_SLOT_INFO, WWAN_SLOT_INFO structure [Network Drivers Starting with Windows Vista], _WWAN_SLOT_INFO, netvista.wwan_slot_info_status, wwan/PWWAN_SLOT_INFO, wwan/WWAN_SLOT_INFO"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,12 +48,12 @@ req.product: Windows 10 or later.
 The <b>WWAN_SLOT_INFO</b> structure represents the status of a specific SIM card slot on the modem.
 
 ## Syntax
-````
+```
 typedef struct _WWAN_SLOT_INFO {
-  ULONG               SlotIndex;
+  ULONG               SlotIndex;
   WWAN_UICCSLOT_STATE State;
 } WWAN_SLOT_INFO, *PWWAN_SLOT_INFO;
-````
+```
 
 ## Members
 
@@ -64,7 +64,7 @@ The index of the slot being queried.
 
 `State`
 
-The state of the slot being queried, a member of the  <a href="..\wwan\ne-wwan-_wwan_uiccslot_state.md">WWAN_UICCSLOT_STATE</a> enumeration that represents a summary of both the slot and the card state.
+The state of the slot being queried, a member of the  <a href="https://msdn.microsoft.com/63A3C2AA-6EBF-469D-933A-C51F5EC31C47">WWAN_UICCSLOT_STATE</a> enumeration that represents a summary of both the slot and the card state.
 
 
 ## Requirements
@@ -75,11 +75,11 @@ The state of the slot being queried, a member of the  <a href="..\wwan\ne-wwan-_
 
 ## See Also
 
-<a href="..\wwan\ne-wwan-_wwan_uiccslot_state.md">WWAN_UICCSLOT_STATE</a>
-
-
-
 <a href="https://msdn.microsoft.com/FA1E16E4-56A3-4401-875F-D75DD01FE75D">NDIS_STATUS_WWAN_SLOT_INFO</a>
+
+
+
+<a href="https://msdn.microsoft.com/21D9DE55-2A26-467A-B119-8AFD4B47A4FD">NDIS_WWAN_SLOT_INFO</a>
 
 
 
@@ -87,4 +87,4 @@ The state of the slot being queried, a member of the  <a href="..\wwan\ne-wwan-_
 
 
 
-<a href="..\ndiswwan\ns-ndiswwan-_ndis_wwan_slot_info.md">NDIS_WWAN_SLOT_INFO</a>
+<a href="https://msdn.microsoft.com/63A3C2AA-6EBF-469D-933A-C51F5EC31C47">WWAN_UICCSLOT_STATE</a>

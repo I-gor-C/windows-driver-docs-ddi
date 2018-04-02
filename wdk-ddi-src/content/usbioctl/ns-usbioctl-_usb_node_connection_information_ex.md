@@ -7,7 +7,7 @@ old-location: buses\usb_node_connection_information_ex.htm
 old-project: usbref
 ms.assetid: d824e279-50a9-46a1-a93a-9ae17928f146
 ms.author: windowsdriverdev
-ms.date: 2/24/2018
+ms.date: 3/29/2018
 ms.keywords: "*PUSB_NODE_CONNECTION_INFORMATION_EX, PUSB_NODE_CONNECTION_INFORMATION_EX, PUSB_NODE_CONNECTION_INFORMATION_EX structure pointer [Buses], USB_NODE_CONNECTION_INFORMATION_EX, USB_NODE_CONNECTION_INFORMATION_EX structure [Buses], _USB_NODE_CONNECTION_INFORMATION_EX, buses.usb_node_connection_information_ex, usbioctl/PUSB_NODE_CONNECTION_INFORMATION_EX, usbioctl/USB_NODE_CONNECTION_INFORMATION_EX, usbstrct_2ee693b4-4279-4f3a-bbfb-1855f9b917d6.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,22 +45,22 @@ req.product: Windows 10 or later.
 ---
 
 # _USB_NODE_CONNECTION_INFORMATION_EX structure
-The <b>USB_NODE_CONNECTION_INFORMATION_EX</b> structure is used in conjunction with the <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> request to obtain information about the connection associated with the indicated USB port.
+The <b>USB_NODE_CONNECTION_INFORMATION_EX</b> structure is used in conjunction with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff537321">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> request to obtain information about the connection associated with the indicated USB port.
 
 ## Syntax
-````
+```
 typedef struct _USB_NODE_CONNECTION_INFORMATION_EX {
-  ULONG                 ConnectionIndex;
+  ULONG                 ConnectionIndex;
   USB_DEVICE_DESCRIPTOR DeviceDescriptor;
-  UCHAR                 CurrentConfigurationValue;
-  UCHAR                 Speed;
-  BOOLEAN               DeviceIsHub;
-  USHORT                DeviceAddress;
-  ULONG                 NumberOfOpenPipes;
+  UCHAR                 CurrentConfigurationValue;
+  UCHAR                 Speed;
+  BOOLEAN               DeviceIsHub;
+  USHORT                DeviceAddress;
+  ULONG                 NumberOfOpenPipes;
   USB_CONNECTION_STATUS ConnectionStatus;
-  USB_PIPE_INFO         PipeList[];
-} USB_NODE_CONNECTION_INFORMATION_EX, *PUSB_NODE_CONNECTION_INFORMATION_EX;
-````
+  USB_PIPE_INFO         PipeList[0];
+} *PUSB_NODE_CONNECTION_INFORMATION_EX, USB_NODE_CONNECTION_INFORMATION_EX;
+```
 
 ## Members
 
@@ -71,7 +71,7 @@ Contains a value greater than or equal to 1 that specifies the number of the por
 
 `DeviceDescriptor`
 
-Contains a structure of type <a href="..\usbspec\ns-usbspec-_usb_device_descriptor.md">USB_DEVICE_DESCRIPTOR</a> that reports the USB device descriptor returned by the attached device during enumeration.
+Contains a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff539280">USB_DEVICE_DESCRIPTOR</a> that reports the USB device descriptor returned by the attached device during enumeration.
 
 `CurrentConfigurationValue`
 
@@ -79,7 +79,7 @@ Contains the ID used with the SetConfiguration request to specify that current c
 
 `Speed`
 
-Contains a value of type <a href="..\usbspec\ne-usbspec-_usb_device_speed.md">USB_DEVICE_SPEED</a> that indicates the speed of the device.
+Contains a value of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff539294">USB_DEVICE_SPEED</a> that indicates the speed of the device.
 
 `DeviceIsHub`
 
@@ -95,18 +95,18 @@ Indicates the number of open USB pipes associated with the port.
 
 `ConnectionStatus`
 
-Contains an enumerator of type <a href="..\usbioctl\ne-usbioctl-_usb_connection_status.md">USB_CONNECTION_STATUS</a> that indicates the connection status.
+Contains an enumerator of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff539247">USB_CONNECTION_STATUS</a> that indicates the connection status.
 
 `PipeList`
 
-Contains an array of structures of type <a href="..\usbioctl\ns-usbioctl-_usb_pipe_info.md">USB_PIPE_INFO</a> that describes the open pipes associated with the port. Pipe descriptions include the schedule offset of the pipe and the associated endpoint descriptor. This information can be used to calculate bandwidth usage.
+Contains an array of structures of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff540118">USB_PIPE_INFO</a> that describes the open pipes associated with the port. Pipe descriptions include the schedule offset of the pipe and the associated endpoint descriptor. This information can be used to calculate bandwidth usage.
 
 ## Remarks
-If there is no device connected, <a href="..\usbioctl\ni-usbioctl-ioctl_usb_get_node_connection_information_ex.md">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> just returns information about the port. If a device is connected to the port <b>IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</b> returns information about both the port and the connected device.
+If there is no device connected, <a href="https://msdn.microsoft.com/library/windows/hardware/ff537321">IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</a> just returns information about the port. If a device is connected to the port <b>IOCTL_USB_GET_NODE_CONNECTION_INFORMATION_EX</b> returns information about both the port and the connected device.
 
-The <b>USB_NODE_CONNECTION_INFORMATION_EX</b> structure is an extended version of <a href="..\usbioctl\ns-usbioctl-_usb_node_connection_information.md">USB_NODE_CONNECTION_INFORMATION</a>. The two structures are identical, except for one member. In the extended structure, the <b>Speed</b> member indicates the device speed.  
+The <b>USB_NODE_CONNECTION_INFORMATION_EX</b> structure is an extended version of <a href="https://msdn.microsoft.com/library/windows/hardware/ff540090">USB_NODE_CONNECTION_INFORMATION</a>. The two structures are identical, except for one member. In the extended structure, the <b>Speed</b> member indicates the device speed.  
 
-The <b>Speed</b> member of the <b>USB_NODE_CONNECTION_INFORMATION_EX</b> structure is a UCHAR and it can specify any of the values of the <a href="..\usbspec\ne-usbspec-_usb_device_speed.md">USB_DEVICE_SPEED</a> enumerator.
+The <b>Speed</b> member of the <b>USB_NODE_CONNECTION_INFORMATION_EX</b> structure is a UCHAR and it can specify any of the values of the <a href="https://msdn.microsoft.com/library/windows/hardware/ff539294">USB_DEVICE_SPEED</a> enumerator.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -115,12 +115,12 @@ The <b>Speed</b> member of the <b>USB_NODE_CONNECTION_INFORMATION_EX</b> structu
 
 ## See Also
 
-<a href="..\usbioctl\ne-usbioctl-_usb_connection_status.md">USB_CONNECTION_STATUS</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff540160">USB Structures</a>
 
 
 
-<a href="..\usbioctl\ns-usbioctl-_usb_pipe_info.md">USB_PIPE_INFO</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff539247">USB_CONNECTION_STATUS</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff540118">USB_PIPE_INFO</a>

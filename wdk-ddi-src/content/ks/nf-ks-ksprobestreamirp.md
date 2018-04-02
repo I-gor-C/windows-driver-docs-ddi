@@ -50,13 +50,13 @@ The <b>KsProbeStreamIrp</b> function makes the specified modifications to the in
 
 ## Syntax
 
-````
-NTSTATUS KsProbeStreamIrp(
-  _Inout_  PIRP  Irp,
-  _In_     ULONG ProbeFlags,
-  _In_opt_ ULONG HeaderSize
+```
+KSDDKAPI NTSTATUS KsProbeStreamIrp(
+  PIRP             Irp,
+  ULONG            ProbeFlags,
+  ULONG HeaderSize OPTIONAL
 );
-````
+```
 
 ## Parameters
 

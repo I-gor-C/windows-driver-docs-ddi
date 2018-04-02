@@ -45,15 +45,15 @@ req.typenames:
 
 
 # KSEVENT_ENTRY_IRP_STORAGE function
-This macro retrieves a pointer to the <a href="..\ks\ns-ks-_ksevent_entry.md">KSEVENT_ENTRY</a> structure stored in <i>Irp</i>. This information is initialized only for enable requests; it is not initialized for basic support requests. If the event enable is to be handled asynchronously, this storage location must be maintained intact.
+This macro retrieves a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff561853">KSEVENT_ENTRY</a> structure stored in <i>Irp</i>. This information is initialized only for enable requests; it is not initialized for basic support requests. If the event enable is to be handled asynchronously, this storage location must be maintained intact.
 
 ## Syntax
 
-````
- KSEVENT_ENTRY_IRP_STORAGE(
-    Irp
+```
+void KSEVENT_ENTRY_IRP_STORAGE(
+   Irp
 );
-````
+```
 
 ## Parameters
 

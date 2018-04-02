@@ -7,7 +7,7 @@ old-location: storage\ataportgetscattergatherlist.htm
 old-project: storage
 ms.assetid: 11181574-b329-4182-8d17-93d44cb3b839
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: AtaPortGetScatterGatherList, AtaPortGetScatterGatherList routine [Storage Devices], atartns_ef8ff0f5-2d1c-47e1-bf1a-2b554de3969d.xml, irb/AtaPortGetScatterGatherList, storage.ataportgetscattergatherlist
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -53,12 +53,12 @@ The <b>AtaPortGetScatterGatherList</b> routine retrieves the scatter/gather list
 
 ## Syntax
 
-````
-PIDE_SCATTER_GATHER_LIST AtaPortGetScatterGatherList(
-  _In_ PVOID              ChannelExtension,
-  _In_ PIDE_REQUEST_BLOCK Irb
+```
+_IRQL_requires_same_ PIDE_SCATTER_GATHER_LIST AtaPortGetScatterGatherList(
+  PVOID              ChannelExtension,
+  PIDE_REQUEST_BLOCK Irb
 );
-````
+```
 
 ## Parameters
 
@@ -68,7 +68,7 @@ A pointer to the channel extension.
 
 `Irb`
 
-A pointer to a structure of type <a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which a scatter/gather list is constructed.
+A pointer to a structure of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a> that defines the IDE request block (IRB) for which a scatter/gather list is constructed.
 
 
 ## Return Value
@@ -90,4 +90,4 @@ The miniport driver must not modify the scatter/gather list.
 
 ## See Also
 
-<a href="..\irb\ns-irb-_ide_request_block.md">IDE_REQUEST_BLOCK</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559140">IDE_REQUEST_BLOCK</a>

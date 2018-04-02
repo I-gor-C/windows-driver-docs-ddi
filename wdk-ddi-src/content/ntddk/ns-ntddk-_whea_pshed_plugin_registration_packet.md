@@ -47,16 +47,16 @@ req.typenames: WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, *PWHEA_PSHED_PLUGIN_REGIST
 The WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure describes the data required for registering a PSHED plug-in with the PSHED.
 
 ## Syntax
-````
+```
 typedef struct _WHEA_PSHED_PLUGIN_REGISTRATION_PACKET {
-  ULONG                       Length;
-  ULONG                       Version;
-  PVOID                       Context;
-  ULONG                       FunctionalAreaMask;
-  ULONG                       Reserved;
+  ULONG                       Length;
+  ULONG                       Version;
+  PVOID                       Context;
+  ULONG                       FunctionalAreaMask;
+  ULONG                       Reserved;
   WHEA_PSHED_PLUGIN_CALLBACKS Callbacks;
 } WHEA_PSHED_PLUGIN_REGISTRATION_PACKET, *PWHEA_PSHED_PLUGIN_REGISTRATION_PACKET;
-````
+```
 
 ## Members
 
@@ -121,10 +121,10 @@ Reserved for system use. PSHED plug-ins should set this member to zero.
 
 `Callbacks`
 
-A <a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_callbacks.md">WHEA_PSHED_PLUGIN_CALLBACKS</a> structure that describes the callback functions for the PSHED plug-in.
+A <a href="https://msdn.microsoft.com/library/windows/hardware/ff560613">WHEA_PSHED_PLUGIN_CALLBACKS</a> structure that describes the callback functions for the PSHED plug-in.
 
 ## Remarks
-A PSHED plug-in passes an initialized WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure to the <a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a> function when it registers itself with the PSHED.
+A PSHED plug-in passes an initialized WHEA_PSHED_PLUGIN_REGISTRATION_PACKET structure to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559466">PshedRegisterPlugin</a> function when it registers itself with the PSHED.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -134,8 +134,8 @@ A PSHED plug-in passes an initialized WHEA_PSHED_PLUGIN_REGISTRATION_PACKET stru
 
 ## See Also
 
-<a href="..\ntddk\nf-ntddk-pshedregisterplugin.md">PshedRegisterPlugin</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559466">PshedRegisterPlugin</a>
 
 
 
-<a href="..\ntddk\ns-ntddk-_whea_pshed_plugin_callbacks.md">WHEA_PSHED_PLUGIN_CALLBACKS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560613">WHEA_PSHED_PLUGIN_CALLBACKS</a>

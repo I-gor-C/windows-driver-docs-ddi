@@ -7,7 +7,7 @@ old-location: audio\pcnewresourcesublist.htm
 old-project: audio
 ms.assetid: a7e1a7cf-60ea-4489-a1c2-eac5b218af8c
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: PcNewResourceSublist, PcNewResourceSublist function [Audio Devices], audio.pcnewresourcesublist, audpc-routines_3354ba13-6737-4862-b8b4-2afa64dc8eab.xml, portcls/PcNewResourceSublist
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,21 +50,21 @@ The <b>PcNewResourceSublist</b> function creates and initializes an empty resour
 
 ## Syntax
 
-````
-NTSTATUS PcNewResourceSublist(
-  _Out_    PRESOURCELIST *OutResourceList,
-  _In_opt_ PUNKNOWN      OuterUnknown,
-  _In_     POOL_TYPE     PoolType,
-  _In_     PRESOURCELIST ParentList,
-  _In_     ULONG         MaximumEntries
+```
+PORTCLASSAPI NTSTATUS PcNewResourceSublist(
+  PRESOURCELIST *OutResourceList,
+  PUNKNOWN      OuterUnknown,
+  POOL_TYPE     PoolType,
+  PRESOURCELIST ParentList,
+  ULONG         MaximumEntries
 );
-````
+```
 
 ## Parameters
 
 `OutResourceList`
 
-Output pointer to the resource-list object that this function creates. This parameter points to the caller-allocated pointer variable into which the function outputs the pointer to the <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> object. Specify a valid, non-<b>NULL</b> pointer value for this parameter.
+Output pointer to the resource-list object that this function creates. This parameter points to the caller-allocated pointer variable into which the function outputs the pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff536976">IResourceList</a> object. Specify a valid, non-<b>NULL</b> pointer value for this parameter.
 
 `OuterUnknown`
 
@@ -72,11 +72,11 @@ Pointer to the <a href="https://msdn.microsoft.com/33f1d79a-33fc-4ce5-a372-e08bd
 
 `PoolType`
 
-Specifies the type of pool from which the object is to be allocated. This is a <a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a> enumeration value.
+Specifies the type of pool from which the object is to be allocated. This is a <a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a> enumeration value.
 
 `ParentList`
 
-Pointer to the resource list from which the child list will be created. The resource list has an <a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a> interface.
+Pointer to the resource list from which the child list will be created. The resource list has an <a href="https://msdn.microsoft.com/library/windows/hardware/ff536976">IResourceList</a> interface.
 
 `MaximumEntries`
 
@@ -106,12 +106,12 @@ The <i>OutResourceList</i>, <i>OuterUnknown</i>, and <i>ParentList</i> parameter
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536976">IResourceList</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff536981">IResourceList::AddEntryFromParent</a>
 
 
 
-<a href="..\wudfwdm\ne-wudfwdm-_pool_type.md">POOL_TYPE</a>
-
-
-
-<a href="..\portcls\nn-portcls-iresourcelist.md">IResourceList</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559707">POOL_TYPE</a>

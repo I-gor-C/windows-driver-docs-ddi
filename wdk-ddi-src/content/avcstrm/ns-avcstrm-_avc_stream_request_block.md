@@ -47,37 +47,42 @@ req.typenames: AVC_STREAM_REQUEST_BLOCK, *PAVC_STREAM_REQUEST_BLOCK
 The AVC_STREAM_REQUEST_BLOCK structure describes an AV/C streaming request to be processed by <i>avcstrm.sys</i>.
 
 ## Syntax
-````
+```
 typedef struct _AVC_STREAM_REQUEST_BLOCK {
-  ULONG                 SizeOfThisBlock;
-  ULONG                 Version;
-  AVCSTRM_FUNCTION      Function;
-  ULONG                 Flags;
-  NTSTATUS              Status;
-  PVOID                 AVCStreamContext;
-  PVOID                 Context1;
-  PVOID                 Context2;
-  PVOID                 Context3;
-  PVOID                 Context4;
-  ULONG                 Reserved[4];
-  union _tagCommandData  CommandData;
-} AVC_STREAM_REQUEST_BLOCK, *PAVC_STREAM_REQUEST_BLOCK;
-````
+  ULONG            SizeOfThisBlock;
+  ULONG            Version;
+  AVCSTRM_FUNCTION Function;
+  ULONG            Flags;
+  NTSTATUS         Status;
+  PVOID            AVCStreamContext;
+  PVOID            Context1;
+  PVOID            Context2;
+  PVOID            Context3;
+  PVOID            Context4;
+  ULONG            Reserved[4];
+  union {
+    AVCSTRM_BUFFER_STRUCT BufferStruct;
+    AVCSTRM_OPEN_STRUCT   OpenStruct;
+    KSSTATE               StreamState;
+  } CommandData;
+  _tagCommandData  _tagCommandData;
+} *PAVC_STREAM_REQUEST_BLOCK, AVC_STREAM_REQUEST_BLOCK;
+```
 
 ## Members
 
 
 `SizeOfThisBlock`
 
-Specifies the size of the request block in bytes. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
+Specifies the size of the request block in bytes. Do not set this value directly. Instead, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560750">INIT_AVCSTRM_HEADER</a> macro.
 
 `Version`
 
-Specifies the version of <i>avcstrm.sys</i> device driver interface (DDI) to service a request. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
+Specifies the version of <i>avcstrm.sys</i> device driver interface (DDI) to service a request. Do not set this value directly. Instead, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560750">INIT_AVCSTRM_HEADER</a> macro.
 
 `Function`
 
-Indicates the request (function code) <i>avcstrm.sys</i> services. This must be a value from the <a href="..\avcstrm\ne-avcstrm-_avcstrm_function.md">AVCSTRM_FUNCTION</a> enumeration. Do not set this value directly. Instead, use the <a href="..\avcstrm\nf-avcstrm-init_avcstrm_header.md">INIT_AVCSTRM_HEADER</a> macro.
+Indicates the request (function code) <i>avcstrm.sys</i> services. This must be a value from the <a href="https://msdn.microsoft.com/library/windows/hardware/ff554120">AVCSTRM_FUNCTION</a> enumeration. Do not set this value directly. Instead, use the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560750">INIT_AVCSTRM_HEADER</a> macro.
 
 `Flags`
 
@@ -170,43 +175,19 @@ To use this structure, set the IRP's <b>Irp-&gt;Parameters-&gt;Others.Argument1<
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554110">AVCSTRM_CLOSE</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554130">AVCSTRM_READ</a>
-
-
-
-<a href="..\avcstrm\ns-avcstrm-_avcstrm_open_struct.md">AVCSTRM_OPEN_STRUCT</a>
-
-
-
-<a href="..\avcstrm\ne-avcstrm-_avcstrm_function.md">AVCSTRM_FUNCTION</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554124">AVCSTRM_GET_STATE</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554107">AVCSTRM_ABORT_STREAMING</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554132">AVCSTRM_SET_PROPERTY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554108">AVCSTRM_BUFFER_STRUCT</a>
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554125">AVCSTRM_OPEN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554110">AVCSTRM_CLOSE</a>
 
 
 
-<a href="..\ks\ne-ks-pksstate.md">KSSTATE</a>
-
-
-
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff554134">AVCSTRM_SET_STATE</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554120">AVCSTRM_FUNCTION</a>
 
 
 
@@ -214,8 +195,32 @@ To use this structure, set the IRP's <b>Irp-&gt;Parameters-&gt;Others.Argument1<
 
 
 
-<a href="..\avcstrm\ns-avcstrm-_avcstrm_buffer_struct.md">AVCSTRM_BUFFER_STRUCT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554124">AVCSTRM_GET_STATE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554125">AVCSTRM_OPEN</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554127">AVCSTRM_OPEN_STRUCT</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554130">AVCSTRM_READ</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554132">AVCSTRM_SET_PROPERTY</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff554134">AVCSTRM_SET_STATE</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554135">AVCSTRM_WRITE</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566856">KSSTATE</a>

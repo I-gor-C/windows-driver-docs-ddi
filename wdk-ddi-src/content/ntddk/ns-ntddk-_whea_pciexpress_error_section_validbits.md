@@ -44,25 +44,25 @@ req.typenames: WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIEXPRESS_ERROR_
 ---
 
 # _WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS structure
-The WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union describes which members of a <a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure contain valid data.
+The WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union describes which members of a <a href="https://msdn.microsoft.com/library/windows/hardware/ff560576">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure contain valid data.
 
 ## Syntax
-````
-typedef union _WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS {
+```
+typedef struct _WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS {
   struct {
-    ULONGLONG PortType  :1;
-    ULONGLONG Version  :1;
-    ULONGLONG CommandStatus  :1;
-    ULONGLONG DeviceId  :1;
-    ULONGLONG DeviceSerialNumber  :1;
-    ULONGLONG BridgeControlStatus  :1;
-    ULONGLONG ExpressCapability  :1;
-    ULONGLONG AerInfo  :1;
-    ULONGLONG Reserved  :56;
-  };
+    ULONGLONG  : 1  AerInfo;
+    ULONGLONG  : 1  BridgeControlStatus;
+    ULONGLONG  : 1  CommandStatus;
+    ULONGLONG  : 1  DeviceId;
+    ULONGLONG  : 1  DeviceSerialNumber;
+    ULONGLONG  : 1  ExpressCapability;
+    ULONGLONG  : 1  PortType;
+    ULONGLONG  : 56 Reserved;
+    ULONGLONG  : 1  Version;
+  } DUMMYSTRUCTNAME;
   ULONGLONG ValidBits;
 } WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS, *PWHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS;
-````
+```
 
 ## Members
 
@@ -76,7 +76,7 @@ typedef union _WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS {
 A ULONGLONG representation of the contents of the WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union.
 
 ## Remarks
-A WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union is contained within the <a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure.
+A WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union is contained within the <a href="https://msdn.microsoft.com/library/windows/hardware/ff560576">WHEA_PCIEXPRESS_ERROR_SECTION</a> structure.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -86,4 +86,4 @@ A WHEA_PCIEXPRESS_ERROR_SECTION_VALIDBITS union is contained within the <a href=
 
 ## See Also
 
-<a href="..\ntddk\ns-ntddk-_whea_pciexpress_error_section.md">WHEA_PCIEXPRESS_ERROR_SECTION</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff560576">WHEA_PCIEXPRESS_ERROR_SECTION</a>

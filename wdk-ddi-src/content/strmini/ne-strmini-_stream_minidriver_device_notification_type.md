@@ -48,19 +48,17 @@ req.product: Windows 10 or later.
 
 
 ## Syntax
-````
-typedef enum _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE { 
-  ReadyForNextDeviceRequest,
-  DeviceRequestComplete,
-  SignalMultipleDeviceEvents,
-  SignalDeviceEvent,
-  DeleteDeviceEvent,
-#if (NTDDI_VERSION >= NTDDI_WINXP)
-  SignalMultipleDeviceInstanceEvents,
-#endif 
+```
+typedef enum _STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE {
+  ReadyForNextDeviceRequest           ,
+  DeviceRequestComplete               ,
+  SignalMultipleDeviceEvents          ,
+  SignalDeviceEvent                   ,
+  DeleteDeviceEvent                   ,
+  SignalMultipleDeviceInstanceEvents  ,
   DeviceNotificationMaximum
 } STREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE, *PSTREAM_MINIDRIVER_DEVICE_NOTIFICATION_TYPE;
-````
+```
 
 ## Constants
 

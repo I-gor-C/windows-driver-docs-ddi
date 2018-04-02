@@ -7,7 +7,7 @@ old-location: netvista\rilcallaudiomediastateparammask.htm
 old-project: netvista
 ms.assetid: ad016fd6-1fbf-4600-809b-b0a9b368a87b
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: RILCALLAUDIOMEDIASTATEPARAMMASK, RILCALLAUDIOMEDIASTATEPARAMMASK enumeration [Network Drivers Starting with Windows Vista], RIL_PARAM_CALLAUDIO_ALL, RIL_PARAM_CALLAUDIO_FLAGS, RIL_PARAM_CALLAUDIO_QUALITY, netvista.rilcallaudiomediastateparammask, ntddrilapitypes/RILCALLAUDIOMEDIASTATEPARAMMASK, ntddrilapitypes/RIL_PARAM_CALLAUDIO_ALL, ntddrilapitypes/RIL_PARAM_CALLAUDIO_FLAGS, ntddrilapitypes/RIL_PARAM_CALLAUDIO_QUALITY
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,14 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef enum _RILCALLAUDIOMEDIASTATEPARAMMASK { 
-  RIL_PARAM_CALLAUDIO_QUALITY,
-  RIL_PARAM_CALLAUDIO_FLAGS,
+```
+typedef enum RILCALLAUDIOMEDIASTATEPARAMMASK {
+  RIL_PARAM_CALLAUDIO_SOURCE   ,
+  RIL_PARAM_CALLAUDIO_QUALITY  ,
+  RIL_PARAM_CALLAUDIO_FLAGS    ,
   RIL_PARAM_CALLAUDIO_ALL
-} RILCALLAUDIOMEDIASTATEPARAMMASK;
-````
+} ;
+```
 
 ## Constants
 

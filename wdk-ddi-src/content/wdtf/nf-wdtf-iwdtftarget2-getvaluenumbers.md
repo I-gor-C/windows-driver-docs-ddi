@@ -7,7 +7,7 @@ old-location: dtf\iwdtftarget2_getvaluenumbers.htm
 old-project: dtf
 ms.assetid: c8743f5a-fc23-4029-a60d-637935fda781
 ms.author: windowsdriverdev
-ms.date: 2/23/2018
+ms.date: 3/29/2018
 ms.keywords: GetValueNumbers method [Windows Device Testing Framework], GetValueNumbers method [Windows Device Testing Framework], IWDTFTarget2 interface, GetValueNumbers,IWDTFTarget2.GetValueNumbers, IWDTFTarget2, IWDTFTarget2 interface [Windows Device Testing Framework], GetValueNumbers method, IWDTFTarget2::GetValueNumbers, Microsoft.WDTF.IWDTFTarget2.GetValueNumbers, Microsoft::WDTF::IWDTFTarget2::GetValueNumbers, dtf.iwdtftarget2_getvaluenumbers, wdtf/IWDTFTarget2::GetValueNumbers
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -45,17 +45,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetValueNumbers method
+# IWDTFTarget2::GetValueNumbers method
 Returns a collection of number values from the target that are associated with a specified attribute.
 
 ## Syntax
 
-````
+```
 HRESULT GetValueNumbers(
-  [in]          BSTR          SDEL,
-  [out, retval] IWDTFNumbers2 **ppValue
+  BSTR          SDEL,
+  IWDTFNumbers2 **ppValue
 );
-````
+```
 
 ## Parameters
 
@@ -89,4 +89,4 @@ to work properly.
 
 ## See Also
 
-<a href="..\wdtf\nn-wdtf-iwdtftarget2.md">IWDTFTarget2</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/hh439367">IWDTFTarget2</a>

@@ -7,7 +7,7 @@ old-location: display\dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay.htm
 old-project: display
 ms.assetid: 12266cb0-20c1-4077-b3c5-fb902f3805d3
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY, DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY structure [Display Devices], _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY, d3dkmddi/DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY, display.dxgkarg_setvidpnsourceaddresswithmultiplaneoverlay
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,22 +44,20 @@ req.typenames: DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY
 ---
 
 # _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY structure
-Contains arguments for the <a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay.md">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a> function.
+Contains arguments for the <a href="https://msdn.microsoft.com/95108e45-1a3a-4a75-8719-0caadb911469">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a> function.
 
 ## Syntax
-````
+```
 typedef struct _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY {
-  UINT                             ContextCount;
-  HANDLE                           Context[1+D3DDDI_MAX_BROADCAST_CONTEXT];
+  UINT                             ContextCount;
+  HANDLE                           Context[1 + D3DDDI_MAX_BROADCAST_CONTEXT];
   DXGK_SETVIDPNSOURCEADDRESS_FLAGS Flags;
-  D3DDDI_VIDEO_PRESENT_SOURCE_ID   VidPnSourceId;
-  UINT                             PlaneCount;
-  DXGK_MULTIPLANE_OVERLAY_PLANE    *pPlanes;
-#if (DXGKDDI_INTERFACE_VERSION >= DXGKDDI_INTERFACE_VERSION_WDDM1_3)
-  UINT                             Duration;
-#endif 
+  D3DDDI_VIDEO_PRESENT_SOURCE_ID   VidPnSourceId;
+  UINT                             PlaneCount;
+  DXGK_MULTIPLANE_OVERLAY_PLANE    *pPlanes;
+  UINT                             Duration;
 } DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY;
-````
+```
 
 ## Members
 
@@ -74,7 +72,7 @@ typedef struct _DXGKARG_SETVIDPNSOURCEADDRESSWITHMULTIPLANEOVERLAY {
 
 `Flags`
 
-[in] A <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.
+[in] A <a href="https://msdn.microsoft.com/library/windows/hardware/ff562052">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a> structure that identifies the type of display operation to perform.
 
 `VidPnSourceId`
 
@@ -86,7 +84,7 @@ The number of overlay planes that the hardware supports.
 
 `pPlanes`
 
-A pointer to a <a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_multiplane_overlay_plane.md">DXGK_MULTIPLANE_OVERLAY_PLANE</a> structure that specifies the first overlay plane to display.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/hh780305">DXGK_MULTIPLANE_OVERLAY_PLANE</a> structure that specifies the first overlay plane to display.
 
 `Duration`
 
@@ -105,8 +103,8 @@ Must be supported by WDDM 1.3 and later drivers. Available starting with Windows
 
 ## See Also
 
-<a href="..\d3dkmddi\ns-d3dkmddi-_dxgk_setvidpnsourceaddress_flags.md">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff562052">DXGK_SETVIDPNSOURCEADDRESS_FLAGS</a>
 
 
 
-<a href="..\d3dkmddi\nc-d3dkmddi-dxgkddi_setvidpnsourceaddresswithmultiplaneoverlay.md">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a>
+<a href="https://msdn.microsoft.com/95108e45-1a3a-4a75-8719-0caadb911469">DxgkDdiSetVidPnSourceAddressWithMultiPlaneOverlay</a>

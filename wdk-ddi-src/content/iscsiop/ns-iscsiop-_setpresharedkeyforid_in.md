@@ -7,7 +7,7 @@ old-location: storage\setpresharedkeyforid_in.htm
 old-project: storage
 ms.assetid: f941bc28-f906-4399-be54-09e2bc12e443
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PSetPresharedKeyForId_IN, PSetPresharedKeyForId_IN, PSetPresharedKeyForId_IN structure pointer [Storage Devices], SetPresharedKeyForId_IN, SetPresharedKeyForId_IN structure [Storage Devices], _SetPresharedKeyForId_IN, iscsiop/PSetPresharedKeyForId_IN, iscsiop/SetPresharedKeyForId_IN, storage.setpresharedkeyforid_in, structs-iSCSI_610ad061-d9c5-4557-88c0-e7d9a20236a2.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,16 +47,16 @@ req.typenames: SetPresharedKeyForId_IN, *PSetPresharedKeyForId_IN
 The SetPresharedKeyForId_IN structure holds the input data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff565800">SetPresharedKeyForId</a> method.
 
 ## Syntax
-````
+```
 typedef struct _SetPresharedKeyForId_IN {
-  ULONG     PortNumber;
+  ULONG     PortNumber;
   ULONGLONG SecurityFlags;
-  UCHAR     IdType;
-  ULONG     IdSize;
-  ULONG     KeySize;
-  UCHAR     Id[1];
-} SetPresharedKeyForId_IN, *PSetPresharedKeyForId_IN;
-````
+  UCHAR     IdType;
+  ULONG     IdSize;
+  ULONG     KeySize;
+  UCHAR     Id[1];
+} *PSetPresharedKeyForId_IN, SetPresharedKeyForId_IN;
+```
 
 ## Members
 
@@ -142,7 +142,7 @@ You must implement this method.
 
 ## See Also
 
-<a href="..\iscsiop\ns-iscsiop-_setpresharedkeyforid_out.md">SetPresharedKeyForId_OUT</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
 
 
 
@@ -150,4 +150,4 @@ You must implement this method.
 
 
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff565399">SECURITY_FLAG_QUALIFIERS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff565810">SetPresharedKeyForId_OUT</a>

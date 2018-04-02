@@ -7,7 +7,7 @@ old-location: storage\scsiinquiry_out.htm
 old-project: storage
 ms.assetid: ac3ec079-61a5-42fe-a1c0-b7626e5f32d2
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: "*PScsiInquiry_OUT, PScsiInquiry_OUT, PScsiInquiry_OUT structure pointer [Storage Devices], ScsiInquiry_OUT, ScsiInquiry_OUT structure [Storage Devices], _ScsiInquiry_OUT, iscsiop/PScsiInquiry_OUT, iscsiop/ScsiInquiry_OUT, storage.scsiinquiry_out, structs-iSCSI_0c90b572-8a05-4a75-86ce-5b12d82a1c2f.xml"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,7 +47,7 @@ req.typenames: ScsiInquiry_OUT, *PScsiInquiry_OUT
 The ScsiInquiry_OUT structure holds the output data for the <a href="https://msdn.microsoft.com/library/windows/hardware/ff564585">ScsiInquiry</a> method.
 
 ## Syntax
-````
+```
 typedef struct _ScsiInquiry_OUT {
   ULONG Status;
   ULONG ResponseBufferSize;
@@ -55,7 +55,7 @@ typedef struct _ScsiInquiry_OUT {
   UCHAR SenseBuffer[18];
   UCHAR ResponseBuffer[1];
 } ScsiInquiry_OUT, *PScsiInquiry_OUT;
-````
+```
 
 ## Members
 
@@ -98,4 +98,4 @@ You must implement this method.
 
 
 
-<a href="..\iscsiop\ns-iscsiop-_scsiinquiry_in.md">ScsiInquiry_IN</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564598">ScsiInquiry_IN</a>

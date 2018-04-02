@@ -45,26 +45,26 @@ req.product: Windows 10 or later.
 ---
 
 
-# GetWriteParameters method
+# IWDFIoRequestCompletionParams::GetWriteParameters method
 <p class="CCE_Message">[<b>Warning:</b> UMDF 2 is the latest version of UMDF and supersedes UMDF 1.  All new UMDF drivers should be written using UMDF 2.  No new features are being added to UMDF 1 and there is limited support for UMDF 1 on newer versions of Windows 10.  Universal Windows drivers must use UMDF 2.  For more info, see <a href="https://docs.microsoft.com/en-us/windows-hardware/drivers/wdf/getting-started-with-umdf-version-2">Getting Started with UMDF</a>.]
 
 The <b>GetWriteParameters</b> method retrieves parameters that are associated with the completion of a write request.
 
 ## Syntax
 
-````
-void  GetWriteParameters(
-  [out] IWDFMemory **ppWriteMemory,
-  [out] SIZE_T     pBytesWritten,
-  [out] SIZE_T     pWriteMemoryOffset
+```
+void GetWriteParameters(
+  IWDFMemory **ppWriteMemory,
+  SIZE_T     *pBytesWritten,
+  SIZE_T     *pWriteMemoryOffset
 );
-````
+```
 
 ## Parameters
 
 `ppWriteMemory`
 
-A pointer to a variable that receives a pointer to the <a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a> interface for access to the write buffer for the completion of the write request. 
+A pointer to a variable that receives a pointer to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a> interface for access to the write buffer for the completion of the write request. 
 
 This parameter is optional. The driver can pass <b>NULL</b> if the driver does not require the information.
 
@@ -97,8 +97,8 @@ None
 
 ## See Also
 
-<a href="..\wudfddi\nn-wudfddi-iwdfiorequestcompletionparams.md">IWDFIoRequestCompletionParams</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559055">IWDFIoRequestCompletionParams</a>
 
 
 
-<a href="..\wudfddi\nn-wudfddi-iwdfmemory.md">IWDFMemory</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff559249">IWDFMemory</a>

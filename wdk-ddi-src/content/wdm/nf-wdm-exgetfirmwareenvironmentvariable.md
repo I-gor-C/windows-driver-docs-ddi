@@ -7,7 +7,7 @@ old-location: kernel\exgetfirmwareenvironmentvariable.htm
 old-project: kernel
 ms.assetid: 5AD76955-A44C-4231-9394-0B6595CFB33D
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: ExGetFirmwareEnvironmentVariable, ExGetFirmwareEnvironmentVariable routine [Kernel-Mode Driver Architecture], kernel.exgetfirmwareenvironmentvariable, wdm/ExGetFirmwareEnvironmentVariable
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -50,21 +50,21 @@ The <b>ExGetFirmwareEnvironmentVariable</b> routine gets the value of the specif
 
 ## Syntax
 
-````
-NTSTATUS ExGetFirmwareEnvironmentVariable(
-  _In_      PUNICODE_STRING VariableName,
-  _In_      LPGUID          VendorGuid,
-  _Out_opt_ PVOID           Value,
-  _Inout_   PULONG          ValueLength,
-  _Out_opt_ PULONG          Attributes
+```
+NTKERNELAPI NTSTATUS ExGetFirmwareEnvironmentVariable(
+  PUNICODE_STRING VariableName,
+  LPGUID          VendorGuid,
+  PVOID           Value,
+  PULONG          ValueLength,
+  PULONG          Attributes
 );
-````
+```
 
 ## Parameters
 
 `VariableName`
 
-A pointer to a <a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a> structure that contains the name of the specified environment variable.
+A pointer to a <a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a> structure that contains the name of the specified environment variable.
 
 `VendorGuid`
 
@@ -212,7 +212,7 @@ If the caller specifies a non-NULL <i>Attributes</i> parameter, the routine writ
 
 These attribute values are defined as flag bits. The value written to the ULONG variable pointed to by <i>Attributes</i> is either zero or the bitwise OR of one or more attributes in the preceding table. For more information, see the UEFI specification at the <a href="http://go.microsoft.com/fwlink/p/?linkid=183072">UEFI</a> website.
 
-If you create a backup datastore, you can use this function to save all the boot settings for the platform so they can be restored by calling the <a href="..\wdm\nf-wdm-exsetfirmwareenvironmentvariable.md">ExSetFirmwareEnvironmentVariable</a> routine if needed.
+If you create a backup datastore, you can use this function to save all the boot settings for the platform so they can be restored by calling the <a href="https://msdn.microsoft.com/library/windows/hardware/jj151554">ExSetFirmwareEnvironmentVariable</a> routine if needed.
 
 <b>ExGetFirmwareEnvironmentVariable</b> is the kernel-mode equivalent of the Win32 <a href="https://msdn.microsoft.com/18e74e54-ecfe-46bf-8c9d-9eb16d22f3ba">GetFirmwareEnvironmentVariable</a> function.
 
@@ -228,12 +228,12 @@ If you create a backup datastore, you can use this function to save all the boot
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/jj151554">ExSetFirmwareEnvironmentVariable</a>
+
+
+
 <a href="https://msdn.microsoft.com/18e74e54-ecfe-46bf-8c9d-9eb16d22f3ba">GetFirmwareEnvironmentVariable</a>
 
 
 
-<a href="..\wudfwdm\ns-wudfwdm-_unicode_string.md">UNICODE_STRING</a>
-
-
-
-<a href="..\wdm\nf-wdm-exsetfirmwareenvironmentvariable.md">ExSetFirmwareEnvironmentVariable</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff564879">UNICODE_STRING</a>

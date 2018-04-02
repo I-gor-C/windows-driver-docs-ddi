@@ -7,7 +7,7 @@ old-location: kernel\resourcemanager_basic_information.htm
 old-project: kernel
 ms.assetid: b5295760-7f0e-4973-9ce3-4aa35ea5211b
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: "*PRESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION, PRESOURCEMANAGER_BASIC_INFORMATION structure pointer [Kernel-Mode Driver Architecture], RESOURCEMANAGER_BASIC_INFORMATION, RESOURCEMANAGER_BASIC_INFORMATION structure [Kernel-Mode Driver Architecture], _RESOURCEMANAGER_BASIC_INFORMATION, kernel.resourcemanager_basic_information, ktm_ref_bcc9f19b-2cd4-45da-b5df-1f28e832d48e.xml, wdm/PRESOURCEMANAGER_BASIC_INFORMATION, wdm/RESOURCEMANAGER_BASIC_INFORMATION"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,13 @@ req.product: Windows 10 or later.
 The <b>RESOURCEMANAGER_BASIC INFORMATION</b> structure contains information about a <a href="https://msdn.microsoft.com/b44f2035-ee9f-453b-b12d-89ca36a8b280">resource manager object</a>.
 
 ## Syntax
-````
+```
 typedef struct _RESOURCEMANAGER_BASIC_INFORMATION {
-  GUID  ResourceManagerId;
+  GUID  ResourceManagerId;
   ULONG DescriptionLength;
   WCHAR Description[1];
 } RESOURCEMANAGER_BASIC_INFORMATION, *PRESOURCEMANAGER_BASIC_INFORMATION;
-````
+```
 
 ## Members
 
@@ -72,9 +72,9 @@ The length, in bytes, of the character array that the <b>Description</b> member 
 A caller-allocated array of characters that receives a resource manager's description string.
 
 ## Remarks
-The <b>RESOURCEMANAGER_BASIC INFORMATION</b> structure is used with the <a href="..\wdm\nf-wdm-zwqueryinformationresourcemanager.md">ZwQueryInformationResourceManager</a> routine.
+The <b>RESOURCEMANAGER_BASIC INFORMATION</b> structure is used with the <a href="https://msdn.microsoft.com/library/windows/hardware/ff567054">ZwQueryInformationResourceManager</a> routine.
 
-The resource manager's description string, which the <b>Description</b> member receives, is the description that the resource manager previously specified when it called <a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a>.
+The resource manager's description string, which the <b>Description</b> member receives, is the description that the resource manager previously specified when it called <a href="https://msdn.microsoft.com/library/windows/hardware/ff566427">ZwCreateResourceManager</a>.
 
 ## Requirements
 | &nbsp; | &nbsp; |
@@ -84,8 +84,8 @@ The resource manager's description string, which the <b>Description</b> member r
 
 ## See Also
 
-<a href="..\wdm\nf-wdm-zwqueryinformationresourcemanager.md">ZwQueryInformationResourceManager</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff566427">ZwCreateResourceManager</a>
 
 
 
-<a href="..\wdm\nf-wdm-zwcreateresourcemanager.md">ZwCreateResourceManager</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567054">ZwQueryInformationResourceManager</a>

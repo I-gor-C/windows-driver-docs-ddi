@@ -47,19 +47,19 @@ req.typenames: KSMETHOD_ITEM, *PKSMETHOD_ITEM
 The KSMETHOD_ITEM structure describes a single method within a method set.
 
 ## Syntax
-````
-typedef struct {
-  ULONG        MethodId;
+```
+typedef struct KSMETHOD_ITEM {
+  ULONG        MethodId;
   union {
     PFNKSHANDLER MethodHandler;
-    BOOLEAN      MethodSupported;
+    BOOLEAN      MethodSupported;
   };
-  ULONG        MinMethod;
-  ULONG        MinData;
+  ULONG        MinMethod;
+  ULONG        MinData;
   PFNKSHANDLER SupportHandler;
-  ULONG        Flags;
-} KSMETHOD_ITEM, *PKSMETHOD_ITEM;
-````
+  ULONG        Flags;
+}  *PKSMETHOD_ITEM;
+```
 
 ## Members
 
@@ -151,12 +151,12 @@ A minidriver uses the KSMETHOD_ITEM structure to define methods in a method set.
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff567206">KStrSupportHandler</a>
-
-
-
-<a href="..\ks\ns-ks-ksfastmethod_item.md">KSFASTMETHOD_ITEM</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff561944">KSFASTMETHOD_ITEM</a>
 
 
 
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff563398">KSMETHOD</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff567206">KStrSupportHandler</a>

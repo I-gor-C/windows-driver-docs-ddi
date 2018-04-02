@@ -55,11 +55,11 @@ The <b>WdfDeviceGetDriver</b> method returns a handle to the framework driver ob
 
 ## Syntax
 
-````
+```
 WDFDRIVER WdfDeviceGetDriver(
-  _In_ WDFDEVICE Device
+  WDFDEVICE Device
 );
-````
+```
 
 ## Parameters
 
@@ -88,4 +88,4 @@ A bug check occurs if the driver supplies an invalid object handle.
 
 ## See Also
 
-<a href="..\wdfdriver\nf-wdfdriver-wdfdrivergetregistrypath.md">WdfDriverGetRegistryPath</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547187">WdfDriverGetRegistryPath</a>

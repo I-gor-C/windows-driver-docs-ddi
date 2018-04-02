@@ -21,10 +21,10 @@ req.kmdf-ver:
 req.umdf-ver: 
 req.ddi-compliance: 
 req.unicode-ansi: 
-req.idl: 
+req.idl: WDTFSystemAction.idl
 req.max-support: 
-req.namespace: 
-req.assembly: 
+req.namespace: Microsoft.WDTF
+req.assembly: WDTFSystemAction.Interop.dll
 req.type-library: 
 req.lib: 
 req.dll: 
@@ -48,16 +48,17 @@ req.product: Windows 10 or later.
 The <b>WIA_MICR</b> structure stores header information for the MICR metadata report of one scan job (one call to <a href="https://msdn.microsoft.com/library/windows/hardware/ff543956">IWiaMiniDrv::drvAcquireItemData</a>).
 
 ## Syntax
-````
+```
 typedef struct _WIA_MICR {
-  DWORD         Tag;
-  DWORD         Version;
-  DWORD         Size;
-  WCHAR         Placeholder;
-  DWORD         Count;
+  DWORD         Tag;
+  DWORD         Version;
+  DWORD         Size;
+  WCHAR         Placeholder;
+  WORD          Reserved;
+  DWORD         Count;
   WIA_MICR_INFO Micr[1];
 } WIA_MICR;
-````
+```
 
 ## Members
 
@@ -72,7 +73,7 @@ Must be the value 0x00010000 (Version 1.0).
 
 `Size`
 
-The complete size of this <b>WIA_MICR</b> header structure, in bytes, including the complete size of the <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> list.
+The complete size of this <b>WIA_MICR</b> header structure, in bytes, including the complete size of the <a href="https://msdn.microsoft.com/library/windows/hardware/hh706271">WIA_MICR_INFO</a> list.
 
 `Placeholder`
 
@@ -84,11 +85,11 @@ Placeholder for unrecognized characters.
 
 `Count`
 
-Specifies the number of <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> elements in the <b>Micr</b> sequence.
+Specifies the number of <a href="https://msdn.microsoft.com/library/windows/hardware/hh706271">WIA_MICR_INFO</a> elements in the <b>Micr</b> sequence.
 
 `Micr`
 
-Placeholder for a sequence of <b>Count</b> contiguous <a href="..\wiadef\ns-wiadef-_wia_micr_info.md">WIA_MICR_INFO</a> structures.
+Placeholder for a sequence of <b>Count</b> contiguous <a href="https://msdn.microsoft.com/library/windows/hardware/hh706271">WIA_MICR_INFO</a> structures.
 
 ## Remarks
 The header must be followed by a sequence of MICR information structures, one for each decoded MICR code, in the order the MICR codes were found and decoded.

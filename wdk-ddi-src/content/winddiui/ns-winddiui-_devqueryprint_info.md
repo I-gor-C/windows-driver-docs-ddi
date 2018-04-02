@@ -45,20 +45,20 @@ req.product: Windows 10 or later.
 ---
 
 # _DEVQUERYPRINT_INFO structure
-The DEVQUERYPRINT_INFO structure is used as an input parameter to a printer interface DLL's <a href="..\winddiui\nf-winddiui-devqueryprintex.md">DevQueryPrintEx</a> function.
+The DEVQUERYPRINT_INFO structure is used as an input parameter to a printer interface DLL's <a href="https://msdn.microsoft.com/library/windows/hardware/ff547576">DevQueryPrintEx</a> function.
 
 ## Syntax
-````
+```
 typedef struct _DEVQUERYPRINT_INFO {
-  WORD    cbSize;
-  WORD    Level;
-  HANDLE  hPrinter;
+  WORD    cbSize;
+  WORD    Level;
+  HANDLE  hPrinter;
   DEVMODE *pDevMode;
-  LPWSTR  pszErrorStr;
-  DWORD   cchErrorStr;
-  DWORD   cchNeeded;
-} DEVQUERYPRINT_INFO, *PDEVQUERYPRINT_INFO;
-````
+  LPWSTR  pszErrorStr;
+  DWORD   cchErrorStr;
+  DWORD   cchNeeded;
+} *PDEVQUERYPRINT_INFO, DEVQUERYPRINT_INFO;
+```
 
 ## Members
 
@@ -99,4 +99,4 @@ Driver-supplied length, in bytes, of the error string supplied in the buffer poi
 
 ## See Also
 
-<a href="..\winddiui\nf-winddiui-devqueryprintex.md">DevQueryPrintEx</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff547576">DevQueryPrintEx</a>

@@ -7,7 +7,7 @@ old-location: audio\iminiportwavertstreamnotification_unregisternotificationeven
 old-project: audio
 ms.assetid: 5b264784-7680-4c3b-9fc7-0609c53b53a2
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: IMiniportWaveRTStreamNotification, IMiniportWaveRTStreamNotification interface [Audio Devices], UnregisterNotificationEvent method, IMiniportWaveRTStreamNotification::UnregisterNotificationEvent, UnregisterNotificationEvent method [Audio Devices], UnregisterNotificationEvent method [Audio Devices], IMiniportWaveRTStreamNotification interface, UnregisterNotificationEvent,IMiniportWaveRTStreamNotification.UnregisterNotificationEvent, audio.iminiportwavertstreamnotification_unregisternotificationevent, audmp-routines_db635e04-50ae-4aed-b5a5-dfb33f14d153.xml, portcls/IMiniportWaveRTStreamNotification::UnregisterNotificationEvent
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -44,16 +44,16 @@ req.typenames: PC_EXIT_LATENCY, *PPC_EXIT_LATENCY
 ---
 
 
-# UnregisterNotificationEvent method
+# IMiniportWaveRTStreamNotification::UnregisterNotificationEvent method
 The <code>UnregisterNotificationEvent</code> method unregisters an event from DMA driven event notification.
 
 ## Syntax
 
-````
+```
 NTSTATUS UnregisterNotificationEvent(
-  [in] PKEVENT NotificationEvent
+  PKEVENT NotificationEvent
 );
-````
+```
 
 ## Parameters
 
@@ -80,8 +80,8 @@ The port driver calls this method in response to a <a href="https://msdn.microso
 
 ## See Also
 
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff536739">IMiniportWaveRTStreamNotification</a>
+
+
+
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff537387">KSPROPERTY_RTAUDIO_UNREGISTER_NOTIFICATION_EVENT</a>
-
-
-
-<a href="..\portcls\nn-portcls-iminiportwavertstreamnotification.md">IMiniportWaveRTStreamNotification</a>

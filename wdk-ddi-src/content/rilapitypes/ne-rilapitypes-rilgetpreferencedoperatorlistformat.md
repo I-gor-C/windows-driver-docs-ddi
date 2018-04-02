@@ -7,7 +7,7 @@ old-location: netvista\rilgetpreferencedoperatorlistformat.htm
 old-project: netvista
 ms.assetid: 77526649-dc98-4c40-b348-6e5620f6e4eb
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/26/2018
 ms.keywords: RILGETPREFERENCEDOPERATORLISTFORMAT, RILGETPREFERENCEDOPERATORLISTFORMAT enumeration [Network Drivers Starting with Windows Vista], RIL_OPFORMAT_MAX, RIL_OPFORMAT_NUM, RIL_OPFORMAT_SHORT, netvista.rilgetpreferencedoperatorlistformat, ntddrilapitypes/RILGETPREFERENCEDOPERATORLISTFORMAT, ntddrilapitypes/RIL_OPFORMAT_MAX, ntddrilapitypes/RIL_OPFORMAT_NUM, ntddrilapitypes/RIL_OPFORMAT_SHORT
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -48,13 +48,14 @@ req.product: Windows 10 or later.
 This topic supports the Windows driver infrastructure and is not intended to be used directly from your code.
 
 ## Syntax
-````
-typedef enum _RILGETPREFERENCEDOPERATORLISTFORMAT { 
-  RIL_OPFORMAT_SHORT,
-  RIL_OPFORMAT_NUM,
+```
+typedef enum RILGETPREFERENCEDOPERATORLISTFORMAT {
+  RIL_OPFORMAT_LONG   ,
+  RIL_OPFORMAT_SHORT  ,
+  RIL_OPFORMAT_NUM    ,
   RIL_OPFORMAT_MAX
-} RILGETPREFERENCEDOPERATORLISTFORMAT;
-````
+} ;
+```
 
 ## Constants
 

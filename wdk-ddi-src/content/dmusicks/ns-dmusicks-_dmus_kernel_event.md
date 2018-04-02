@@ -7,7 +7,7 @@ old-location: audio\dmus_kernel_event.htm
 old-project: audio
 ms.assetid: 652f64e2-310b-46c9-8b00-c827a7475b07
 ms.author: windowsdriverdev
-ms.date: 2/27/2018
+ms.date: 3/19/2018
 ms.keywords: "*PDMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT structure [Audio Devices], PDMUS_KERNEL_EVENT, PDMUS_KERNEL_EVENT structure pointer [Audio Devices], _DMUS_KERNEL_EVENT, aud-prop_b0db54b3-fff3-46f2-abd7-beb4fe189f8f.xml, audio.dmus_kernel_event, dmusicks/DMUS_KERNEL_EVENT, dmusicks/PDMUS_KERNEL_EVENT"
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -47,23 +47,23 @@ req.typenames: DMUS_KERNEL_EVENT, *PDMUS_KERNEL_EVENT
 The DMUS_KERNEL_EVENT structure is used to package time-stamped music events.
 
 ## Syntax
-````
+```
 typedef struct _DMUS_KERNEL_EVENT {
-  BYTE               bReserved;
-  BYTE               cbStruct;
-  USHORT             cbEvent;
-  USHORT             usChannelGroup;
-  USHORT             usFlags;
-  REFERENCE_TIME     ullPresTime100ns;
-  ULONGLONG          ullBytePosition;
+  BYTE               bReserved;
+  BYTE               cbStruct;
+  USHORT             cbEvent;
+  USHORT             usChannelGroup;
+  USHORT             usFlags;
+  REFERENCE_TIME     ullPresTime100ns;
+  ULONGLONG          ullBytePosition;
   _DMUS_KERNEL_EVENT *pNextEvt;
   union {
-    BYTE               abData[sizeof(PBYTE)];
-    PBYTE              pbData;
+    BYTE               abData[sizeof(PBYTE)];
+    PBYTE              pbData;
     _DMUS_KERNEL_EVENT *pPackageEvt;
-  } uData;
-} DMUS_KERNEL_EVENT, *PDMUS_KERNEL_EVENT;
-````
+  } uData;
+} *PDMUS_KERNEL_EVENT, DMUS_KERNEL_EVENT;
+```
 
 ## Members
 

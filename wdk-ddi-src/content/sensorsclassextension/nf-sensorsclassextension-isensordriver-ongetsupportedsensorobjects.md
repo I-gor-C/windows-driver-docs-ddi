@@ -46,16 +46,16 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnGetSupportedSensorObjects method
+# ISensorDriver::OnGetSupportedSensorObjects method
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545633">ISensorDriver::OnGetSupportedSensorObjects</a> method retrieves the list of sensors that the driver provides.
 
 ## Syntax
 
-````
+```
 HRESULT OnGetSupportedSensorObjects(
-   IPortableDeviceValuesCollection ** ppSensorObjectCollection
+  IPortableDeviceValuesCollection **ppSensorObjectCollection
 );
-````
+```
 
 ## Parameters
 

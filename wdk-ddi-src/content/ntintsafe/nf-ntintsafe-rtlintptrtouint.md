@@ -7,7 +7,7 @@ old-location: kernel\rtlintptrtouint.htm
 old-project: kernel
 ms.assetid: FC12EA01-9DE1-4C07-80F3-15D039F38E06
 ms.author: windowsdriverdev
-ms.date: 3/1/2018
+ms.date: 3/28/2018
 ms.keywords: RtlIntPtrToUInt, RtlIntPtrToUInt function [Kernel-Mode Driver Architecture], kernel.rtlintptrtouint, ntintsafe/RtlIntPtrToUInt
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -49,12 +49,12 @@ Converts a value of type <b>INT_PTR</b> to a value of type <b>UINT</b>.
 
 ## Syntax
 
-````
+```
 NTSTATUS RtlIntPtrToUInt(
-  _In_  INT_PTR iOperand,
-  _Out_ UINT    *puResult
+  INT_PTR iOperand,
+  UINT    *puResult
 );
-````
+```
 
 ## Parameters
 

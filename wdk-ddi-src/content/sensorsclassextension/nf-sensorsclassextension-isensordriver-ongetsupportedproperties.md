@@ -46,17 +46,17 @@ req.product: Windows 10 or later.
 ---
 
 
-# OnGetSupportedProperties method
+# ISensorDriver::OnGetSupportedProperties method
 The <a href="https://msdn.microsoft.com/library/windows/hardware/ff545630">ISensorDriver::OnGetSupportedProperties</a> method retrieves the list of properties that the specified sensor provides.
 
 ## Syntax
 
-````
+```
 HRESULT OnGetSupportedProperties(
-   LPWSTR                          pwszSensorID,
-   IPortableDeviceKeyCollection ** ppSupportedProperties
+  LPWSTR                       pwszSensorID,
+  IPortableDeviceKeyCollection **ppSupportedProperties
 );
-````
+```
 
 ## Parameters
 

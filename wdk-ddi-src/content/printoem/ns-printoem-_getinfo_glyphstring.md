@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 The GETINFO_GLYPHSTRING structure is used as input to the <a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a> callback function.
 
 ## Syntax
-````
+```
 typedef struct _GETINFO_GLYPHSTRING {
   DWORD dwSize;
   DWORD dwCount;
@@ -58,7 +58,7 @@ typedef struct _GETINFO_GLYPHSTRING {
   PVOID pGlyphOut;
   DWORD dwGlyphOutSize;
 } GETINFO_GLYPHSTRING, *PGETINFO_GLYPHSTRING;
-````
+```
 
 ## Members
 
@@ -134,7 +134,7 @@ TYPE_TRANSDATA
 
 </td>
 <td>
-The <b>pGlyphOut</b> array elements are of type <a href="..\prntfont\ns-prntfont-_transdata.md">TRANSDATA</a>. This value is valid only when <b>dwTypeIn</b> has been set to TYPE_GLYPHHANDLE.
+The <b>pGlyphOut</b> array elements are of type <a href="https://msdn.microsoft.com/library/windows/hardware/ff562816">TRANSDATA</a>. This value is valid only when <b>dwTypeIn</b> has been set to TYPE_GLYPHHANDLE.
 
 </td>
 </tr>
@@ -187,8 +187,8 @@ The values that a rendering plug-in specifies for the <b>dwTypeIn </b>and <b>pGl
 
 ## See Also
 
-<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>
-
-
-
 <a href="https://msdn.microsoft.com/library/windows/hardware/ff554267">IPrintOemUni::OutputCharStr</a>
+
+
+
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff563594">UNIFONTOBJ_GetInfo</a>

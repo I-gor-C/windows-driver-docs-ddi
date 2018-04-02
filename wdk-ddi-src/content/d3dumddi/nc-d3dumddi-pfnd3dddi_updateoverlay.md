@@ -7,7 +7,7 @@ old-location: display\updateoverlay.htm
 old-project: display
 ms.assetid: 80d7cc5c-51d8-4b91-9581-b073f9b0e68a
 ms.author: windowsdriverdev
-ms.date: 2/26/2018
+ms.date: 3/29/2018
 ms.keywords: PFND3DDDI_UPDATEOVERLAY, UpdateOverlay, UpdateOverlay callback function [Display Devices], UserModeDisplayDriver_Functions_58c588ce-de18-4aa0-bb22-0c33d053e22f.xml, d3dumddi/UpdateOverlay, display.updateoverlay
 ms.prod: windows-hardware
 ms.technology: windows-devices
@@ -149,8 +149,8 @@ Overlays are independent from the resources that are displayed by using the over
 
 ## See Also
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddiarg_updateoverlay.md">D3DDDIARG_UPDATEOVERLAY</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff543400">D3DDDIARG_UPDATEOVERLAY</a>
 
 
 
-<a href="..\d3dumddi\ns-d3dumddi-_d3dddi_devicefuncs.md">D3DDDI_DEVICEFUNCS</a>
+<a href="https://msdn.microsoft.com/library/windows/hardware/ff544519">D3DDDI_DEVICEFUNCS</a>

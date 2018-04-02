@@ -48,7 +48,7 @@ req.product: Windows 10 or later.
 The SIMULATE_CAPS_1 structure contains information about the types of simulations a spooler supports.
 
 ## Syntax
-````
+```
 typedef struct _SIMULATE_CAPS_1 {
   DWORD dwLevel;
   DWORD dwPageOrderFlags;
@@ -56,7 +56,7 @@ typedef struct _SIMULATE_CAPS_1 {
   DWORD dwCollate;
   DWORD dwNupOptions;
 } SIMULATE_CAPS_1, *PSIMULATE_CAPS_1;
-````
+```
 
 ## Members
 
